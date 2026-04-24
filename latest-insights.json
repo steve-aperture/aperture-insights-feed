@@ -1,39 +1,43 @@
 {
   "feed_name": "Aperture Health Strategies Insights",
   "edition_date": "2026-04-24",
-  "generated_at": "2026-04-24T19:20:00Z",
-  "publish_ready": false,
+  "generated_at": "2026-04-24T19:32:00Z",
+  "publish_ready": true,
   "workflow_version": "1.0",
   "headline": "Today's Healthcare Insights",
   "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
   "summary_note": "Curated from multiple healthcare industry sources.",
   "source_run": {
     "sources_targeted": [
-      "Gmail label: InsightSources/Healthcare Brew",
-      "Gmail label: InsightSources/Healthcare Dive",
-      "Gmail label: InsightSources/Hospitalogy",
-      "Gmail label: InsightSources/Modern Healthcare",
-      "RSS: https://www.statnews.com/feed/"
+      "Gmail label: InsightsSources/Healthcare Brew",
+      "Gmail label: InsightsSources/Healthcare Dive",
+      "Gmail label: InsightsSources/Hospitalogy",
+      "Gmail label: InsightsSources/Modern Healthcare",
+      "RSS: https://www.statnews.com/feed/",
+      "Web fallback: https://www.healthcare-brew.com/issues/latest",
+      "Web fallback: https://www.healthcare-brew.com/all/stories/news"
     ],
     "sources_successful": [
-      "RSS: https://www.statnews.com/feed/"
+      "RSS: STAT (https://www.statnews.com/feed/)",
+      "Web fallback: Healthcare Brew latest issue and archive"
     ],
     "sources_failed": [
-      "Gmail label: InsightSources/Healthcare Brew (only welcome email present; no editorial content)",
-      "Gmail label: InsightSources/Healthcare Dive (no messages in inbox)",
-      "Gmail label: InsightSources/Hospitalogy (only onboarding and community-platform notifications present; no editorial content)",
-      "Gmail label: InsightSources/Modern Healthcare (only welcome email and subscription receipt present; no editorial content)"
+      "Gmail label: InsightsSources/Healthcare Brew — only welcome email present; excluded per workflow rule",
+      "Gmail label: InsightsSources/Healthcare Dive — no messages in label",
+      "Gmail label: InsightsSources/Hospitalogy — only welcome and community-platform notifications; excluded per workflow rule",
+      "Gmail label: InsightsSources/Modern Healthcare — only welcome email and subscription receipt; excluded per workflow rule",
+      "Web fallback: Modern Healthcare — skipped; most editorial content is paywalled and no freely accessible dated articles were verifiable within the source-constrained scope of this run"
     ],
-    "run_notes": "publish_ready set to false because only one source (STAT RSS) produced usable editorial items. All four Gmail labels returned onboarding, welcome, receipt, or platform notification emails only — no newsletter editions have arrived yet. Label spelling in the user workflow doc should also be corrected from 'InsightsSources/' to 'InsightSources/' to match the actual Gmail labels. Six strong STAT items were selected, deduped, and classified. Cross-source confirmation was unavailable; confidence levels reflect single-source reliance even though STAT is a Tier 1 outlet."
+    "run_notes": "Two editorial sources contributed: STAT RSS (Tier 1) and Healthcare Brew web fallback (Tier 2). All four Gmail labels contained only welcome, onboarding, receipt, or platform notification emails, which were excluded per step 3. Modern Healthcare web fallback was skipped because accessible editorial URLs could not be confirmed within scope. Seven final items selected after dedupe. publish_ready = true: more than one editorial source contributed and item count exceeds the four-item threshold."
   },
   "editorial_buckets": [
     {
       "name": "Policy, Payment, and Regulation",
-      "synthesis": "Federal drug policy is pivoting simultaneously on pricing and scheduling: the White House closed its initial round of most-favored-nation deals while fast-tracking psychedelics and moving to reclassify marijuana. State-level pushback on drug affordability boards signals the next battleground for pricing authority.",
+      "synthesis": "Federal drug policy is pivoting on multiple axes at once: the administration closed its first tranche of most-favored-nation pricing deals while also fast-tracking psychedelics review and moving on marijuana rescheduling. State legislatures in Colorado and Virginia are simultaneously defending drug affordability board authority, keeping the pricing fight alive on a second track.",
       "items": [
         {
-          "item_id": "2026-04-24-trump-mfn-regeneron",
-          "canonical_topic": "trump-drug-pricing-mfn-deals",
+          "item_id": "2026-04-24-mfn-regeneron-round-one-close",
+          "canonical_topic": "trump-drug-pricing-mfn-round-one",
           "duplicate_group": "trump-regeneron-mfn",
           "bucket": "Policy, Payment, and Regulation",
           "priority_score": 9,
@@ -53,14 +57,14 @@
               "published_at": "2026-04-24T13:36:57Z"
             }
           ],
-          "title": "White House closes initial round of most-favored-nation drug pricing deals with Regeneron agreement",
-          "summary": "The Regeneron agreement completes the first tranche of 17 most-favored-nation pricing arrangements the administration pursued with major manufacturers. Officials signaled additional rounds ahead, extending reference-price pressure beyond the initial targets and setting up longer-running negotiations across the pharmaceutical industry.",
-          "strategic_implication": "Reference-pricing risk is now a durable planning assumption for payers, IDNs, and 340B strategies, not a one-off political moment.",
+          "title": "White House closes first round of most-favored-nation drug pricing deals with Regeneron agreement",
+          "summary": "The Regeneron deal completes the initial set of 17 most-favored-nation pricing arrangements the administration pursued with major manufacturers. Officials signaled a second round is coming, extending reference-price pressure across a broader slate of drugs and manufacturers over the remainder of the year.",
+          "strategic_implication": "Reference pricing is now a durable planning assumption for payers, IDNs, and 340B strategy, not a one-off political episode.",
           "confidence": "high",
           "tags": ["drug-pricing", "most-favored-nation", "federal-policy", "pharma"]
         },
         {
-          "item_id": "2026-04-24-psychedelics-priority-review",
+          "item_id": "2026-04-24-fda-psychedelics-priority-review",
           "canonical_topic": "fda-psychedelics-priority-review",
           "duplicate_group": "trump-psychedelics-eo",
           "bucket": "Policy, Payment, and Regulation",
@@ -82,14 +86,14 @@
             }
           ],
           "title": "FDA to prioritize review of three psychedelic mental health therapies under new executive order",
-          "summary": "An executive order directs the FDA to expedite review of three psychedelic compounds for mental health indications and accompanies a broader administration pivot that includes marijuana rescheduling. The move rewires federal posture toward controlled substances after decades of restrictive policy.",
-          "strategic_implication": "Behavioral health service lines and payer coverage committees should prepare for accelerated label pathways and new coding, credentialing, and site-of-care questions.",
+          "summary": "An executive order directs the FDA to expedite review of three psychedelic compounds for mental health indications, paired with a broader administration pivot that includes marijuana rescheduling. The move rewires federal posture toward controlled substances after decades of restrictive policy.",
+          "strategic_implication": "Behavioral health service lines and payer medical policy teams should prepare for accelerated label pathways and new coding, credentialing, and site-of-care questions.",
           "confidence": "high",
           "tags": ["fda", "psychedelics", "behavioral-health", "executive-order"]
         },
         {
-          "item_id": "2026-04-23-state-drug-affordability-boards",
-          "canonical_topic": "state-drug-affordability-boards",
+          "item_id": "2026-04-23-state-pdab-pushback",
+          "canonical_topic": "state-drug-affordability-boards-defense",
           "duplicate_group": "state-pdab-pushback",
           "bucket": "Policy, Payment, and Regulation",
           "priority_score": 7,
@@ -103,9 +107,9 @@
               "published_at": "2026-04-23T16:55:21Z"
             }
           ],
-          "title": "Colorado and Virginia legislatures resist efforts to narrow state drug affordability boards",
-          "summary": "Lawmakers in both states pushed back on bills that would limit the authority of prescription drug affordability boards to set upper payment limits. The legislative resistance preserves a state-level pricing lever operating in parallel to federal negotiations.",
-          "strategic_implication": "State PDABs remain a viable second front on price, relevant for payer contracting, specialty pharmacy, and manufacturer state-government affairs planning.",
+          "title": "Colorado and Virginia lawmakers resist efforts to narrow state drug affordability boards",
+          "summary": "Legislators in both states pushed back on bills that would limit the authority of state prescription drug affordability boards to set upper payment limits. The resistance preserves a state-level pricing lever running in parallel to federal most-favored-nation negotiations.",
+          "strategic_implication": "State PDABs remain a viable second front on pricing, relevant to payer contracting, specialty pharmacy, and manufacturer state-government affairs planning.",
           "confidence": "medium",
           "tags": ["drug-pricing", "state-policy", "pdab", "payer"]
         }
@@ -113,10 +117,10 @@
     },
     {
       "name": "Digital Health and AI",
-      "synthesis": "Two signals sit in tension this week: state regulators moving quickly to halt an AI-driven prescribing pilot, while federal regulators streamline Medicare coverage for FDA-designated breakthrough devices. Together they mark where oversight is tightening and where the path to adoption is widening.",
+      "synthesis": "Two signals move in opposite directions this week: a state medical board moved to halt an AI-driven prescribing pilot, while CMS and FDA proposed a faster Medicare coverage pathway for breakthrough-designated devices. Together they sharpen where oversight is tightening and where adoption timelines are opening.",
       "items": [
         {
-          "item_id": "2026-04-24-utah-ai-doctor-suspension",
+          "item_id": "2026-04-24-utah-ai-doctor-pilot-halt",
           "canonical_topic": "utah-ai-prescribing-pilot-suspension",
           "duplicate_group": "utah-doctronic-ai",
           "bucket": "Digital Health and AI",
@@ -131,9 +135,9 @@
               "published_at": "2026-04-24T17:24:06Z"
             }
           ],
-          "title": "Utah medical board urges immediate suspension of state's AI prescription-renewal pilot",
-          "summary": "The state medical board called for halting a pilot that used an autonomous agent to renew prescriptions without a licensed clinician in the loop. The action foregrounds unresolved questions about scope of practice, accountability, and standard of care when AI performs clinical tasks.",
-          "strategic_implication": "Health systems deploying agentic AI in clinical workflows should assume active state regulatory scrutiny and build human-in-the-loop safeguards into governance now.",
+          "title": "Utah medical board calls for immediate suspension of state's AI prescription-renewal pilot",
+          "summary": "The state medical board called for halting a pilot that used an autonomous agent to renew prescriptions without a licensed clinician in the loop. The action elevates unresolved scope-of-practice, accountability, and standard-of-care questions for AI performing clinical work.",
+          "strategic_implication": "Health systems deploying agentic AI in clinical workflows should assume active state regulatory scrutiny and build human-in-the-loop governance now.",
           "confidence": "high",
           "tags": ["ai", "clinical-governance", "state-regulation", "telehealth"]
         },
@@ -154,8 +158,8 @@
             }
           ],
           "title": "CMS and FDA propose accelerated Medicare coverage pathway for breakthrough-designated devices",
-          "summary": "A joint proposal would shorten the lag between FDA breakthrough designation and Medicare national coverage, addressing a long-standing reimbursement gap that has delayed adoption of novel medical devices. The framework is open for comment before finalization.",
-          "strategic_implication": "Device makers, hospital capital planners, and value analysis committees gain a faster route to coverage but should stress-test evidence expectations early.",
+          "summary": "A joint proposal would compress the lag between FDA breakthrough designation and Medicare national coverage, addressing a long-standing reimbursement gap that has slowed adoption of novel medical devices. The draft framework is open for public comment before finalization.",
+          "strategic_implication": "Device makers, hospital capital planners, and value analysis committees gain a faster coverage route but should stress-test evidence expectations early.",
           "confidence": "high",
           "tags": ["cms", "fda", "medical-devices", "medicare-coverage", "reimbursement"]
         }
@@ -163,29 +167,57 @@
     },
     {
       "name": "Market and Industry Signals",
-      "synthesis": "Federal vaccine posture is splintering: the Pentagon is stepping back from routine flu immunization requirements for service members even as international childhood vaccination campaigns expand. The contrast highlights a diverging risk model between military readiness policy and global public health planning.",
+      "synthesis": "Supply-side and research-capacity stressors are compounding: geopolitical risk around the Strait of Hormuz threatens pharmaceutical inputs while a year of NIH funding cuts has left roughly a quarter of surveyed grantees still without restored support. The combination raises cost and pipeline risk across the next planning horizon.",
       "items": [
         {
-          "item_id": "2026-04-23-military-flu-vaccine-requirement",
-          "canonical_topic": "military-flu-vaccine-requirement-dropped",
-          "duplicate_group": "military-flu-requirement",
+          "item_id": "2026-04-22-iran-pharma-supply-chain",
+          "canonical_topic": "iran-war-pharma-supply-chain",
+          "duplicate_group": "hormuz-pharma-supply",
           "bucket": "Market and Industry Signals",
-          "priority_score": 7,
-          "primary_source": "STAT",
-          "source_tier": "Tier 1",
+          "priority_score": 8,
+          "primary_source": "Healthcare Brew",
+          "source_tier": "Tier 2",
           "source_refs": [
             {
-              "source": "STAT",
-              "url": "https://www.statnews.com/2026/04/23/military-flu-shots-no-longer-required-retired-general-criticizes-move/?utm_campaign=rss",
-              "source_type": "rss",
-              "published_at": "2026-04-23T16:15:55Z"
+              "source": "Healthcare Brew",
+              "url": "https://www.healthcare-brew.com/stories/2026/04/22/iran-war-pharmaceuticals-supply-chain",
+              "source_type": "web",
+              "published_at": "2026-04-22T00:00:00Z"
+            },
+            {
+              "source": "Healthcare Brew latest issue",
+              "url": "https://www.healthcare-brew.com/issues/latest",
+              "source_type": "web",
+              "published_at": "2026-04-24T00:00:00Z"
             }
           ],
-          "title": "Military drops routine flu vaccination requirement, drawing warning from retired senior leadership",
-          "summary": "The Department of Defense is no longer requiring annual influenza immunization for service members, a break with more than a century of military practice rooted in pandemic-era readiness. Former senior officers argue the change introduces avoidable force-readiness risk.",
-          "strategic_implication": "VA, TRICARE, and military treatment facility planners should prepare for likely shifts in seasonal illness burden and downstream civilian-network demand.",
+          "title": "Strait of Hormuz disruption raises pharmaceutical supply and cost risk despite adequate near-term US stockpile",
+          "summary": "UK health authorities warned of looming drug shortages tied to Iran war disruption of the Strait of Hormuz, which handles petroleum inputs central to pharma manufacturing. US experts say a multi-month stockpile of essential medicines buffers near-term supply but drug costs could rise.",
+          "strategic_implication": "Pharmacy, supply chain, and GPO leaders should refresh essential-medicines resiliency plans and price-volatility contingencies this quarter.",
           "confidence": "medium",
-          "tags": ["vaccines", "military-health", "va", "public-health"]
+          "tags": ["supply-chain", "geopolitical-risk", "pharma", "drug-shortages"]
+        },
+        {
+          "item_id": "2026-04-22-nih-funding-cuts-researcher-survey",
+          "canonical_topic": "nih-funding-cuts-researcher-survey",
+          "duplicate_group": "nih-grantee-restoration-survey",
+          "bucket": "Market and Industry Signals",
+          "priority_score": 7,
+          "primary_source": "Healthcare Brew",
+          "source_tier": "Tier 2",
+          "source_refs": [
+            {
+              "source": "Healthcare Brew",
+              "url": "https://www.healthcare-brew.com/stories/2026/04/22/funding-cuts-nih-researchers-stand",
+              "source_type": "web",
+              "published_at": "2026-04-22T00:00:00Z"
+            }
+          ],
+          "title": "A year after NIH cuts, only about a third of grantees report full funding restored",
+          "summary": "A survey of roughly 1,000 US-based NIH grantees found 35% had all funding restored, 26% had some restored, and 27% had none restored since the 2025 cuts. Researchers describe durable damage to the ecosystem and early-career pipeline.",
+          "strategic_implication": "Academic medical centers and translational partners should expect continued grant volatility and reassess research workforce, indirect-cost, and industry-sponsored portfolios.",
+          "confidence": "medium",
+          "tags": ["nih", "research-funding", "academic-medicine", "workforce"]
         }
       ]
     }

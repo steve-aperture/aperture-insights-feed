@@ -1,223 +1,237 @@
 {
   "feed_name": "Aperture Health Strategies Insights",
-  "edition_date": "2026-04-24",
-  "generated_at": "2026-04-24T19:32:00Z",
-  "publish_ready": true,
-  "workflow_version": "1.0",
-  "headline": "Today's Healthcare Insights",
-  "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-  "summary_note": "Curated from multiple healthcare industry sources.",
-  "source_run": {
-    "sources_targeted": [
-      "Gmail label: InsightsSources/Healthcare Brew",
-      "Gmail label: InsightsSources/Healthcare Dive",
-      "Gmail label: InsightsSources/Hospitalogy",
-      "Gmail label: InsightsSources/Modern Healthcare",
-      "RSS: https://www.statnews.com/feed/",
-      "Web fallback: https://www.healthcare-brew.com/issues/latest",
-      "Web fallback: https://www.healthcare-brew.com/all/stories/news"
-    ],
-    "sources_successful": [
-      "RSS: STAT (https://www.statnews.com/feed/)",
-      "Web fallback: Healthcare Brew latest issue and archive"
-    ],
-    "sources_failed": [
-      "Gmail label: InsightsSources/Healthcare Brew — only welcome email present; excluded per workflow rule",
-      "Gmail label: InsightsSources/Healthcare Dive — no messages in label",
-      "Gmail label: InsightsSources/Hospitalogy — only welcome and community-platform notifications; excluded per workflow rule",
-      "Gmail label: InsightsSources/Modern Healthcare — only welcome email and subscription receipt; excluded per workflow rule",
-      "Web fallback: Modern Healthcare — skipped; most editorial content is paywalled and no freely accessible dated articles were verifiable within the source-constrained scope of this run"
-    ],
-    "run_notes": "Two editorial sources contributed: STAT RSS (Tier 1) and Healthcare Brew web fallback (Tier 2). All four Gmail labels contained only welcome, onboarding, receipt, or platform notification emails, which were excluded per step 3. Modern Healthcare web fallback was skipped because accessible editorial URLs could not be confirmed within scope. Seven final items selected after dedupe. publish_ready = true: more than one editorial source contributed and item count exceeds the four-item threshold."
-  },
-  "editorial_buckets": [
+  "workflow_version": "2.0",
+  "editions": [
     {
-      "name": "Policy, Payment, and Regulation",
-      "synthesis": "Federal drug policy is pivoting on multiple axes at once: the administration closed its first tranche of most-favored-nation pricing deals while also fast-tracking psychedelics review and moving on marijuana rescheduling. State legislatures in Colorado and Virginia are simultaneously defending drug affordability board authority, keeping the pricing fight alive on a second track.",
-      "items": [
+      "edition_date": "2026-04-24",
+      "generated_at": "2026-04-24T21:03:21Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Curated from multiple healthcare industry sources.",
+      "publish_ready": false,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail label: InsightsSources/Healthcare Brew",
+          "Gmail label: InsightsSources/Healthcare Dive",
+          "Gmail label: InsightsSources/Hospitalogy",
+          "Gmail label: InsightsSources/Modern Healthcare",
+          "RSS: https://www.statnews.com/feed/"
+        ],
+        "sources_successful": [
+          "RSS: STAT (https://www.statnews.com/feed/)"
+        ],
+        "sources_failed": [
+          "Gmail label: InsightsSources/Healthcare Brew \u2014 only welcome email present; excluded per workflow rule",
+          "Gmail label: InsightsSources/Healthcare Dive \u2014 no messages in label",
+          "Gmail label: InsightsSources/Hospitalogy \u2014 only welcome email and community-platform notifications; excluded per workflow rule",
+          "Gmail label: InsightsSources/Modern Healthcare \u2014 only welcome email and subscription receipt; excluded per workflow rule"
+        ],
+        "run_notes": "publish_ready set to false because only one editorial source (STAT RSS, Tier 1) contributed items this run. Gmail labels still contain only welcome, onboarding, receipt, and community-platform notifications, which were excluded per workflow step 2. Six strong items were selected, deduped, and classified across three of the five buckets; the remaining two buckets were retained with empty item arrays and a no-items synthesis per the v2 spec. Cross-source confirmation was unavailable."
+      },
+      "editorial_buckets": [
         {
-          "item_id": "2026-04-24-mfn-regeneron-round-one-close",
-          "canonical_topic": "trump-drug-pricing-mfn-round-one",
-          "duplicate_group": "trump-regeneron-mfn",
-          "bucket": "Policy, Payment, and Regulation",
-          "priority_score": 9,
-          "primary_source": "STAT",
-          "source_tier": "Tier 1",
-          "source_refs": [
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal drug policy is pivoting on multiple axes at once: the administration closed its first tranche of most-favored-nation pricing deals while also fast-tracking psychedelics review and moving on marijuana rescheduling. State legislatures in Colorado and Virginia are simultaneously defending drug affordability board authority, keeping pricing contested on a second track.",
+          "items": [
             {
-              "source": "STAT",
-              "url": "https://www.statnews.com/2026/04/23/trump-drug-price-deal-regeneron-mfn-negotiations/?utm_campaign=rss",
-              "source_type": "rss",
-              "published_at": "2026-04-23T20:05:28Z"
+              "item_id": "2026-04-24-mfn-regeneron-round-one-close",
+              "canonical_topic": "trump-drug-pricing-mfn-round-one",
+              "duplicate_group": "trump-regeneron-mfn",
+              "bucket": "Policy, Payment, and Regulation",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/23/trump-drug-price-deal-regeneron-mfn-negotiations/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-23T20:05:28Z"
+                },
+                {
+                  "source": "STAT Pharmalot",
+                  "url": "https://www.statnews.com/pharmalot/2026/04/24/trump-deal-with-regeneron-reclassifying-medical-marijuana/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-24T13:36:57Z"
+                }
+              ],
+              "title": "White House closes first round of most-favored-nation drug pricing deals with Regeneron agreement",
+              "summary": "The Regeneron agreement completes the initial set of 17 most-favored-nation pricing arrangements the White House pursued with major manufacturers. Officials signaled a second round is coming, extending reference-price pressure across a broader slate of drugs and manufacturers over the remainder of the year.",
+              "strategic_implication": "Reference pricing is now a durable planning assumption for payers, IDNs, and 340B strategy, not a one-off political episode.",
+              "confidence": "high",
+              "tags": [
+                "drug-pricing",
+                "most-favored-nation",
+                "federal-policy",
+                "pharma"
+              ]
             },
             {
-              "source": "STAT Pharmalot",
-              "url": "https://www.statnews.com/pharmalot/2026/04/24/trump-deal-with-regeneron-reclassifying-medical-marijuana/?utm_campaign=rss",
-              "source_type": "rss",
-              "published_at": "2026-04-24T13:36:57Z"
-            }
-          ],
-          "title": "White House closes first round of most-favored-nation drug pricing deals with Regeneron agreement",
-          "summary": "The Regeneron deal completes the initial set of 17 most-favored-nation pricing arrangements the administration pursued with major manufacturers. Officials signaled a second round is coming, extending reference-price pressure across a broader slate of drugs and manufacturers over the remainder of the year.",
-          "strategic_implication": "Reference pricing is now a durable planning assumption for payers, IDNs, and 340B strategy, not a one-off political episode.",
-          "confidence": "high",
-          "tags": ["drug-pricing", "most-favored-nation", "federal-policy", "pharma"]
-        },
-        {
-          "item_id": "2026-04-24-fda-psychedelics-priority-review",
-          "canonical_topic": "fda-psychedelics-priority-review",
-          "duplicate_group": "trump-psychedelics-eo",
-          "bucket": "Policy, Payment, and Regulation",
-          "priority_score": 8,
-          "primary_source": "STAT",
-          "source_tier": "Tier 1",
-          "source_refs": [
-            {
-              "source": "STAT",
-              "url": "https://www.statnews.com/2026/04/24/trump-psychedelic-drugs-fda-priority-review-mental-health-treatment/?utm_campaign=rss",
-              "source_type": "rss",
-              "published_at": "2026-04-24T18:45:38Z"
+              "item_id": "2026-04-24-fda-psychedelics-priority-review",
+              "canonical_topic": "fda-psychedelics-priority-review",
+              "duplicate_group": "trump-psychedelics-eo",
+              "bucket": "Policy, Payment, and Regulation",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/24/trump-psychedelic-drugs-fda-priority-review-mental-health-treatment/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-24T18:45:38Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/23/gop-drug-policy-trump-psychedelics-marijuana/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-23T18:05:52Z"
+                }
+              ],
+              "title": "FDA to prioritize review of three psychedelic mental health therapies under new executive order",
+              "summary": "An executive order directs the FDA to expedite review of three psychedelic compounds for mental health indications, paired with a broader administration pivot that includes marijuana rescheduling. The move rewires federal posture toward controlled substances after decades of restrictive policy.",
+              "strategic_implication": "Behavioral health service lines and payer medical policy teams should prepare for accelerated label pathways and new coding, credentialing, and site-of-care questions.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "psychedelics",
+                "behavioral-health",
+                "executive-order"
+              ]
             },
             {
-              "source": "STAT",
-              "url": "https://www.statnews.com/2026/04/23/gop-drug-policy-trump-psychedelics-marijuana/?utm_campaign=rss",
-              "source_type": "rss",
-              "published_at": "2026-04-23T18:05:52Z"
+              "item_id": "2026-04-23-state-pdab-pushback",
+              "canonical_topic": "state-drug-affordability-boards-defense",
+              "duplicate_group": "state-pdab-pushback",
+              "bucket": "Policy, Payment, and Regulation",
+              "priority_score": 7,
+              "primary_source": "STAT Pharmalot",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT Pharmalot",
+                  "url": "https://www.statnews.com/pharmalot/2026/04/23/legislatures-colorado-virginia-drug-affordability-boards/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-23T16:55:21Z"
+                }
+              ],
+              "title": "Colorado and Virginia lawmakers resist efforts to narrow state drug affordability boards",
+              "summary": "Legislators in both states pushed back on bills that would limit the authority of state prescription drug affordability boards to set upper payment limits. The resistance preserves a state-level pricing lever running in parallel to federal most-favored-nation negotiations.",
+              "strategic_implication": "State PDABs remain a viable second front on pricing, relevant to payer contracting, specialty pharmacy, and manufacturer state-government affairs planning.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "state-policy",
+                "pdab",
+                "payer"
+              ]
             }
-          ],
-          "title": "FDA to prioritize review of three psychedelic mental health therapies under new executive order",
-          "summary": "An executive order directs the FDA to expedite review of three psychedelic compounds for mental health indications, paired with a broader administration pivot that includes marijuana rescheduling. The move rewires federal posture toward controlled substances after decades of restrictive policy.",
-          "strategic_implication": "Behavioral health service lines and payer medical policy teams should prepare for accelerated label pathways and new coding, credentialing, and site-of-care questions.",
-          "confidence": "high",
-          "tags": ["fda", "psychedelics", "behavioral-health", "executive-order"]
+          ]
         },
         {
-          "item_id": "2026-04-23-state-pdab-pushback",
-          "canonical_topic": "state-drug-affordability-boards-defense",
-          "duplicate_group": "state-pdab-pushback",
-          "bucket": "Policy, Payment, and Regulation",
-          "priority_score": 7,
-          "primary_source": "STAT Pharmalot",
-          "source_tier": "Tier 1",
-          "source_refs": [
+          "name": "Digital Health and AI",
+          "synthesis": "Two signals move in opposite directions this edition: a state medical board acted to halt an AI-driven prescribing pilot while CMS and FDA jointly proposed a faster Medicare coverage pathway for breakthrough-designated devices. Together they mark where oversight is tightening and where adoption timelines are opening.",
+          "items": [
             {
-              "source": "STAT Pharmalot",
-              "url": "https://www.statnews.com/pharmalot/2026/04/23/legislatures-colorado-virginia-drug-affordability-boards/?utm_campaign=rss",
-              "source_type": "rss",
-              "published_at": "2026-04-23T16:55:21Z"
-            }
-          ],
-          "title": "Colorado and Virginia lawmakers resist efforts to narrow state drug affordability boards",
-          "summary": "Legislators in both states pushed back on bills that would limit the authority of state prescription drug affordability boards to set upper payment limits. The resistance preserves a state-level pricing lever running in parallel to federal most-favored-nation negotiations.",
-          "strategic_implication": "State PDABs remain a viable second front on pricing, relevant to payer contracting, specialty pharmacy, and manufacturer state-government affairs planning.",
-          "confidence": "medium",
-          "tags": ["drug-pricing", "state-policy", "pdab", "payer"]
-        }
-      ]
-    },
-    {
-      "name": "Digital Health and AI",
-      "synthesis": "Two signals move in opposite directions this week: a state medical board moved to halt an AI-driven prescribing pilot, while CMS and FDA proposed a faster Medicare coverage pathway for breakthrough-designated devices. Together they sharpen where oversight is tightening and where adoption timelines are opening.",
-      "items": [
-        {
-          "item_id": "2026-04-24-utah-ai-doctor-pilot-halt",
-          "canonical_topic": "utah-ai-prescribing-pilot-suspension",
-          "duplicate_group": "utah-doctronic-ai",
-          "bucket": "Digital Health and AI",
-          "priority_score": 9,
-          "primary_source": "STAT",
-          "source_tier": "Tier 1",
-          "source_refs": [
-            {
-              "source": "STAT",
-              "url": "https://www.statnews.com/2026/04/24/doctronic-ai-doctor-pilot-utah-face-backlash-medical-board/?utm_campaign=rss",
-              "source_type": "rss",
-              "published_at": "2026-04-24T17:24:06Z"
-            }
-          ],
-          "title": "Utah medical board calls for immediate suspension of state's AI prescription-renewal pilot",
-          "summary": "The state medical board called for halting a pilot that used an autonomous agent to renew prescriptions without a licensed clinician in the loop. The action elevates unresolved scope-of-practice, accountability, and standard-of-care questions for AI performing clinical work.",
-          "strategic_implication": "Health systems deploying agentic AI in clinical workflows should assume active state regulatory scrutiny and build human-in-the-loop governance now.",
-          "confidence": "high",
-          "tags": ["ai", "clinical-governance", "state-regulation", "telehealth"]
-        },
-        {
-          "item_id": "2026-04-23-cms-fda-breakthrough-devices",
-          "canonical_topic": "cms-fda-breakthrough-coverage",
-          "duplicate_group": "cms-fda-breakthrough-devices",
-          "bucket": "Digital Health and AI",
-          "priority_score": 8,
-          "primary_source": "STAT",
-          "source_tier": "Tier 1",
-          "source_refs": [
-            {
-              "source": "STAT",
-              "url": "https://www.statnews.com/2026/04/23/cms-fda-propose-new-faster-breakthrough-devices-coverage/?utm_campaign=rss",
-              "source_type": "rss",
-              "published_at": "2026-04-23T15:28:06Z"
-            }
-          ],
-          "title": "CMS and FDA propose accelerated Medicare coverage pathway for breakthrough-designated devices",
-          "summary": "A joint proposal would compress the lag between FDA breakthrough designation and Medicare national coverage, addressing a long-standing reimbursement gap that has slowed adoption of novel medical devices. The draft framework is open for public comment before finalization.",
-          "strategic_implication": "Device makers, hospital capital planners, and value analysis committees gain a faster coverage route but should stress-test evidence expectations early.",
-          "confidence": "high",
-          "tags": ["cms", "fda", "medical-devices", "medicare-coverage", "reimbursement"]
-        }
-      ]
-    },
-    {
-      "name": "Market and Industry Signals",
-      "synthesis": "Supply-side and research-capacity stressors are compounding: geopolitical risk around the Strait of Hormuz threatens pharmaceutical inputs while a year of NIH funding cuts has left roughly a quarter of surveyed grantees still without restored support. The combination raises cost and pipeline risk across the next planning horizon.",
-      "items": [
-        {
-          "item_id": "2026-04-22-iran-pharma-supply-chain",
-          "canonical_topic": "iran-war-pharma-supply-chain",
-          "duplicate_group": "hormuz-pharma-supply",
-          "bucket": "Market and Industry Signals",
-          "priority_score": 8,
-          "primary_source": "Healthcare Brew",
-          "source_tier": "Tier 2",
-          "source_refs": [
-            {
-              "source": "Healthcare Brew",
-              "url": "https://www.healthcare-brew.com/stories/2026/04/22/iran-war-pharmaceuticals-supply-chain",
-              "source_type": "web",
-              "published_at": "2026-04-22T00:00:00Z"
+              "item_id": "2026-04-24-utah-ai-doctor-pilot-halt",
+              "canonical_topic": "utah-ai-prescribing-pilot-suspension",
+              "duplicate_group": "utah-doctronic-ai",
+              "bucket": "Digital Health and AI",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/24/doctronic-ai-doctor-pilot-utah-face-backlash-medical-board/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-24T17:24:06Z"
+                }
+              ],
+              "title": "Utah medical board calls for immediate suspension of state's AI prescription-renewal pilot",
+              "summary": "The Utah medical board urged halting a pilot that used an autonomous agent to renew prescriptions without a licensed clinician in the loop. The action elevates unresolved scope-of-practice, accountability, and standard-of-care questions for AI performing clinical work.",
+              "strategic_implication": "Health systems deploying agentic AI in clinical workflows should assume active state regulatory scrutiny and build human-in-the-loop governance now.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "clinical-governance",
+                "state-regulation",
+                "telehealth"
+              ]
             },
             {
-              "source": "Healthcare Brew latest issue",
-              "url": "https://www.healthcare-brew.com/issues/latest",
-              "source_type": "web",
-              "published_at": "2026-04-24T00:00:00Z"
+              "item_id": "2026-04-23-cms-fda-breakthrough-devices",
+              "canonical_topic": "cms-fda-breakthrough-coverage",
+              "duplicate_group": "cms-fda-breakthrough-devices",
+              "bucket": "Digital Health and AI",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/23/cms-fda-propose-new-faster-breakthrough-devices-coverage/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-23T15:28:06Z"
+                }
+              ],
+              "title": "CMS and FDA propose accelerated Medicare coverage pathway for breakthrough-designated devices",
+              "summary": "A joint proposal would compress the lag between FDA breakthrough designation and Medicare national coverage, addressing a long-standing reimbursement gap that has slowed adoption of novel medical devices. The draft framework is open for public comment before finalization.",
+              "strategic_implication": "Device makers, hospital capital planners, and value analysis committees gain a faster coverage route but should stress-test evidence expectations early.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "fda",
+                "medical-devices",
+                "medicare-coverage",
+                "reimbursement"
+              ]
             }
-          ],
-          "title": "Strait of Hormuz disruption raises pharmaceutical supply and cost risk despite adequate near-term US stockpile",
-          "summary": "UK health authorities warned of looming drug shortages tied to Iran war disruption of the Strait of Hormuz, which handles petroleum inputs central to pharma manufacturing. US experts say a multi-month stockpile of essential medicines buffers near-term supply but drug costs could rise.",
-          "strategic_implication": "Pharmacy, supply chain, and GPO leaders should refresh essential-medicines resiliency plans and price-volatility contingencies this quarter.",
-          "confidence": "medium",
-          "tags": ["supply-chain", "geopolitical-risk", "pharma", "drug-shortages"]
+          ]
         },
         {
-          "item_id": "2026-04-22-nih-funding-cuts-researcher-survey",
-          "canonical_topic": "nih-funding-cuts-researcher-survey",
-          "duplicate_group": "nih-grantee-restoration-survey",
-          "bucket": "Market and Industry Signals",
-          "priority_score": 7,
-          "primary_source": "Healthcare Brew",
-          "source_tier": "Tier 2",
-          "source_refs": [
+          "name": "Market and Industry Signals",
+          "synthesis": "No major items surfaced today in this bucket.",
+          "items": []
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "No major items surfaced today in this bucket.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "A long-standing military immunization requirement is being retired, prompting warnings from former senior leaders about force readiness and creating downstream civilian-network demand questions for VA and TRICARE partners.",
+          "items": [
             {
-              "source": "Healthcare Brew",
-              "url": "https://www.healthcare-brew.com/stories/2026/04/22/funding-cuts-nih-researchers-stand",
-              "source_type": "web",
-              "published_at": "2026-04-22T00:00:00Z"
+              "item_id": "2026-04-23-military-flu-vaccine-dropped",
+              "canonical_topic": "military-flu-vaccine-requirement-dropped",
+              "duplicate_group": "military-flu-requirement",
+              "bucket": "Workforce & Clinical Practice",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/23/military-flu-shots-no-longer-required-retired-general-criticizes-move/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-23T16:15:55Z"
+                }
+              ],
+              "title": "Military drops routine flu vaccination requirement, drawing warning from former senior leadership",
+              "summary": "The Department of Defense is no longer requiring annual influenza immunization for service members, a break with a century of practice rooted in pandemic-era readiness. Former senior officers argue the change introduces avoidable force-readiness and downstream community transmission risk.",
+              "strategic_implication": "VA, TRICARE, and military treatment facility planners should prepare for likely shifts in seasonal illness burden and spillover civilian-network demand.",
+              "confidence": "medium",
+              "tags": [
+                "vaccines",
+                "military-health",
+                "va",
+                "public-health",
+                "workforce"
+              ]
             }
-          ],
-          "title": "A year after NIH cuts, only about a third of grantees report full funding restored",
-          "summary": "A survey of roughly 1,000 US-based NIH grantees found 35% had all funding restored, 26% had some restored, and 27% had none restored since the 2025 cuts. Researchers describe durable damage to the ecosystem and early-career pipeline.",
-          "strategic_implication": "Academic medical centers and translational partners should expect continued grant volatility and reassess research workforce, indirect-cost, and industry-sponsored portfolios.",
-          "confidence": "medium",
-          "tags": ["nih", "research-funding", "academic-medicine", "workforce"]
+          ]
         }
       ]
     }

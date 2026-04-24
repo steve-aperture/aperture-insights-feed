@@ -4,7 +4,7 @@
   "editions": [
     {
       "edition_date": "2026-04-24",
-      "generated_at": "2026-04-24T21:03:21Z",
+      "generated_at": "2026-04-24T21:26:48Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
       "summary_note": "Curated from multiple healthcare industry sources.",
@@ -22,11 +22,11 @@
         ],
         "sources_failed": [
           "Gmail label: InsightsSources/Healthcare Brew \u2014 only welcome email present; excluded per workflow rule",
-          "Gmail label: InsightsSources/Healthcare Dive \u2014 no messages in label",
+          "Gmail label: InsightsSources/Healthcare Dive \u2014 only new welcome emails from Supply Chain Dive and MedTech Dive arrived today; excluded per workflow rule",
           "Gmail label: InsightsSources/Hospitalogy \u2014 only welcome email and community-platform notifications; excluded per workflow rule",
           "Gmail label: InsightsSources/Modern Healthcare \u2014 only welcome email and subscription receipt; excluded per workflow rule"
         ],
-        "run_notes": "publish_ready set to false because only one editorial source (STAT RSS, Tier 1) contributed items this run. Gmail labels still contain only welcome, onboarding, receipt, and community-platform notifications, which were excluded per workflow step 2. Six strong items were selected, deduped, and classified across three of the five buckets; the remaining two buckets were retained with empty item arrays and a no-items synthesis per the v2 spec. Cross-source confirmation was unavailable."
+        "run_notes": "Manual refresh at end of business 2026-04-24. Re-checked all four Gmail labels and STAT RSS since the prior run: Gmail still contains no newsletter editorial content (only welcomes, a Modern Healthcare receipt, Hospitalogy community notifications, and two new IndustryDive welcome emails). STAT RSS returned the same 19 items as the prior run with no new publications. Item slate retained after re-scoring: six strong items across three of the five buckets. publish_ready remains false because only one editorial source (STAT, Tier 1) contributed. Today's edition was replaced in place to avoid a duplicate entry for 2026-04-24."
       },
       "editorial_buckets": [
         {

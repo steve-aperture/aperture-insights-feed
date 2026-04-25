@@ -3,6 +3,290 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-04-25",
+      "generated_at": "2026-04-25T18:40:04Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Curated from multiple healthcare industry sources.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail label: InsightsSources/Healthcare Brew",
+          "Gmail label: InsightsSources/Healthcare Dive",
+          "Gmail label: InsightsSources/Hospitalogy",
+          "Gmail label: InsightsSources/Modern Healthcare",
+          "RSS: https://www.statnews.com/feed/"
+        ],
+        "sources_successful": [
+          "RSS: STAT (https://www.statnews.com/feed/)",
+          "Gmail label: InsightsSources/Healthcare Dive \u2014 Healthcare Dive Weekender (2026-04-25) and MedTech Dive Weekender (2026-04-25)"
+        ],
+        "sources_failed": [
+          "Gmail label: InsightsSources/Healthcare Brew \u2014 only welcome email present; excluded per workflow rule",
+          "Gmail label: InsightsSources/Hospitalogy \u2014 only welcome and membership-promo emails plus community-platform notifications; excluded per workflow rule",
+          "Gmail label: InsightsSources/Modern Healthcare \u2014 only welcome email and subscription receipt; excluded per workflow rule"
+        ],
+        "run_notes": "First edition with multi-source editorial input: STAT RSS (Tier 1) plus the Healthcare Dive label, which delivered the Healthcare Dive Saturday Weekender (AMA physician burnout survey) and the sister-property MedTech Dive Weekender (Boston Scientific 2026 guidance cut). Two genuinely new items entered today's slate (BSX guidance, AMA burnout); five strong items from the prior 24 hours of STAT coverage were carried forward as they remain the strongest current signals; one prior item (Strait of Hormuz pharma supply) was dropped as it has aged out of the 24-hour window. Eight items selected total. Supply Chain Dive and Cybersecurity Dive Weekenders also arrived under the Healthcare Dive label but were excluded as off-topic for healthcare strategy."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal drug policy is moving on multiple fronts at once: the White House closed its first tranche of most-favored-nation pricing deals while fast-tracking psychedelics review and marijuana rescheduling. Colorado and Virginia legislatures are simultaneously defending state drug affordability board authority, sustaining a parallel pricing lever.",
+          "items": [
+            {
+              "item_id": "2026-04-24-mfn-regeneron-round-one-close",
+              "canonical_topic": "trump-drug-pricing-mfn-round-one",
+              "duplicate_group": "trump-regeneron-mfn",
+              "bucket": "Policy, Payment, and Regulation",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/23/trump-drug-price-deal-regeneron-mfn-negotiations/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-23T20:05:28Z"
+                },
+                {
+                  "source": "STAT Pharmalot",
+                  "url": "https://www.statnews.com/pharmalot/2026/04/24/trump-deal-with-regeneron-reclassifying-medical-marijuana/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-24T13:36:57Z"
+                }
+              ],
+              "title": "White House closes first round of most-favored-nation drug pricing deals with Regeneron agreement",
+              "summary": "The Regeneron agreement completes the initial set of 17 most-favored-nation pricing arrangements the White House pursued with major manufacturers. Officials signaled a second round is coming, extending reference-price pressure across a broader slate of drugs and manufacturers over the remainder of the year.",
+              "strategic_implication": "Reference pricing is now a durable planning assumption for payers, IDNs, and 340B strategy, not a one-off political episode.",
+              "confidence": "high",
+              "tags": [
+                "drug-pricing",
+                "most-favored-nation",
+                "federal-policy",
+                "pharma"
+              ]
+            },
+            {
+              "item_id": "2026-04-24-fda-psychedelics-priority-review",
+              "canonical_topic": "fda-psychedelics-priority-review",
+              "duplicate_group": "trump-psychedelics-eo",
+              "bucket": "Policy, Payment, and Regulation",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/24/trump-psychedelic-drugs-fda-priority-review-mental-health-treatment/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-24T18:45:38Z"
+                }
+              ],
+              "title": "FDA to prioritize review of three psychedelic mental health therapies under new executive order",
+              "summary": "An executive order directs the FDA to expedite review of three psychedelic compounds for mental health indications, paired with a broader administration pivot that includes marijuana rescheduling. The move rewires federal posture toward controlled substances after decades of restrictive policy.",
+              "strategic_implication": "Behavioral health service lines and payer medical policy teams should prepare for accelerated label pathways and new coding, credentialing, and site-of-care questions.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "psychedelics",
+                "behavioral-health",
+                "executive-order"
+              ]
+            },
+            {
+              "item_id": "2026-04-23-state-pdab-pushback",
+              "canonical_topic": "state-drug-affordability-boards-defense",
+              "duplicate_group": "state-pdab-pushback",
+              "bucket": "Policy, Payment, and Regulation",
+              "priority_score": 7,
+              "primary_source": "STAT Pharmalot",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT Pharmalot",
+                  "url": "https://www.statnews.com/pharmalot/2026/04/23/legislatures-colorado-virginia-drug-affordability-boards/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-23T16:55:21Z"
+                }
+              ],
+              "title": "Colorado and Virginia lawmakers resist efforts to narrow state drug affordability boards",
+              "summary": "Legislators in both states pushed back on bills that would limit the authority of state prescription drug affordability boards to set upper payment limits. The resistance preserves a state-level pricing lever running in parallel to federal most-favored-nation negotiations.",
+              "strategic_implication": "State PDABs remain a viable second front on pricing, relevant to payer contracting, specialty pharmacy, and manufacturer state-government affairs planning.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "state-policy",
+                "pdab",
+                "payer"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Oversight and access pathways are diverging this edition. A state medical board moved to halt an AI-driven prescribing pilot, while CMS and FDA jointly proposed a faster Medicare coverage pathway for breakthrough-designated devices, expanding adoption windows for clinically significant tech.",
+          "items": [
+            {
+              "item_id": "2026-04-24-utah-ai-doctor-pilot-halt",
+              "canonical_topic": "utah-ai-prescribing-pilot-suspension",
+              "duplicate_group": "utah-doctronic-ai",
+              "bucket": "Digital Health and AI",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/24/doctronic-ai-doctor-pilot-utah-face-backlash-medical-board/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-24T17:24:06Z"
+                }
+              ],
+              "title": "Utah medical board calls for immediate suspension of state's AI prescription-renewal pilot",
+              "summary": "The Utah medical board urged halting a pilot that used an autonomous agent to renew prescriptions without a licensed clinician in the loop. The action elevates unresolved scope-of-practice, accountability, and standard-of-care questions for AI performing clinical work.",
+              "strategic_implication": "Health systems deploying agentic AI in clinical workflows should assume active state regulatory scrutiny and build human-in-the-loop governance now.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "clinical-governance",
+                "state-regulation",
+                "telehealth"
+              ]
+            },
+            {
+              "item_id": "2026-04-23-cms-fda-breakthrough-devices",
+              "canonical_topic": "cms-fda-breakthrough-coverage",
+              "duplicate_group": "cms-fda-breakthrough-devices",
+              "bucket": "Digital Health and AI",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/23/cms-fda-propose-new-faster-breakthrough-devices-coverage/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-23T15:28:06Z"
+                }
+              ],
+              "title": "CMS and FDA propose accelerated Medicare coverage pathway for breakthrough-designated devices",
+              "summary": "A joint proposal would compress the lag between FDA breakthrough designation and Medicare national coverage, addressing a long-standing reimbursement gap that has slowed adoption of novel medical devices. The draft framework is open for public comment before finalization.",
+              "strategic_implication": "Device makers, hospital capital planners, and value analysis committees gain a faster coverage route but should stress-test evidence expectations early.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "fda",
+                "medical-devices",
+                "medicare-coverage",
+                "reimbursement"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Competitive pressure is reshaping medtech outlooks: Boston Scientific lowered 2026 sales and EPS guidance, citing PFA share loss to Medtronic, J&J, and Abbott in electrophysiology and slower Watchman standalone volumes.",
+          "items": [
+            {
+              "item_id": "2026-04-22-boston-scientific-2026-guidance-cut",
+              "canonical_topic": "boston-scientific-2026-guidance-cut",
+              "duplicate_group": "bsx-guidance-cut",
+              "bucket": "Market and Industry Signals",
+              "priority_score": 8,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/boston-scientific-slashes-2026-guidance/818196/",
+                  "source_type": "newsletter",
+                  "published_at": "2026-04-22T00:00:00Z"
+                }
+              ],
+              "title": "Boston Scientific lowers 2026 sales and EPS guidance as electrophysiology and Watchman decelerate",
+              "summary": "Boston Scientific cut full-year 2026 sales growth guidance to 7%\u20138.5% from 10.5%\u201311.5% and lowered adjusted EPS to $3.34\u2013$3.41. Management cited PFA share loss to Medtronic, J&J, and Abbott in electrophysiology, slowing Watchman standalone volumes, and weakness in urology.",
+              "strategic_implication": "Cardiac and EP service-line planners should expect tighter device-vendor pricing posture and renegotiated capital deals as competitive pressure intensifies in PFA.",
+              "confidence": "high",
+              "tags": [
+                "medtech",
+                "guidance",
+                "electrophysiology",
+                "watchman",
+                "competition"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "No major items surfaced today in this bucket.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Two workforce signals worth tracking: AMA's latest survey shows physician burnout improving overall but stuck near 50% in front-line specialties, while the Pentagon retired its routine flu vaccination requirement, prompting force-readiness concerns from former senior officers.",
+          "items": [
+            {
+              "item_id": "2026-04-20-ama-physician-burnout-2025-survey",
+              "canonical_topic": "ama-physician-burnout-2025",
+              "duplicate_group": "ama-burnout-survey",
+              "bucket": "Workforce & Clinical Practice",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/physician-burnout-improving-specialties-lag-ama/817927/",
+                  "source_type": "newsletter",
+                  "published_at": "2026-04-20T00:00:00Z"
+                }
+              ],
+              "title": "AMA finds 2025 physician burnout fell to 41.9% but front-line specialties remain elevated",
+              "summary": "An AMA survey of nearly 19,000 physicians put 2025 burnout at 41.9%, down from 43.2% in 2024 and 48.2% in 2023. Emergency medicine, urological surgery, hematology/oncology, and OB/GYN remain near 50%. Hospital-employed physicians fared worse overall.",
+              "strategic_implication": "Workforce strategy should target administrative burden, EHR documentation friction, and high-acuity specialty staffing before broader engagement programs.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "burnout",
+                "ama",
+                "specialty-care",
+                "ehr"
+              ]
+            },
+            {
+              "item_id": "2026-04-23-military-flu-vaccine-dropped",
+              "canonical_topic": "military-flu-vaccine-requirement-dropped",
+              "duplicate_group": "military-flu-requirement",
+              "bucket": "Workforce & Clinical Practice",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/23/military-flu-shots-no-longer-required-retired-general-criticizes-move/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-23T16:15:55Z"
+                }
+              ],
+              "title": "Military drops routine flu vaccination requirement, drawing warning from former senior leadership",
+              "summary": "The Department of Defense is no longer requiring annual influenza immunization for service members, a break with a century of practice rooted in pandemic-era readiness. Former senior officers argue the change introduces avoidable force-readiness and downstream community transmission risk.",
+              "strategic_implication": "VA, TRICARE, and military treatment facility planners should prepare for likely shifts in seasonal illness burden and spillover civilian-network demand.",
+              "confidence": "medium",
+              "tags": [
+                "vaccines",
+                "military-health",
+                "va",
+                "public-health",
+                "workforce"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-04-24",
       "generated_at": "2026-04-24T21:26:48Z",
       "headline": "Today's Healthcare Insights",

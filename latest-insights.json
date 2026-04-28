@@ -3,6 +3,413 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-04-28",
+      "generated_at": "2026-04-28T18:00:34Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Curated from STAT News RSS (Tier 1, live feed) and web search across Healthcare Dive, Fierce Healthcare, JD Supra / Alston & Bird, CBS News / KFF Health News, Healthcare Dive, and PR Newswire earnings releases. Gmail-label sources not attempted in this test run.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "RSS: https://www.statnews.com/feed/",
+          "Gmail label: InsightsSources/Healthcare Brew",
+          "Gmail label: InsightsSources/Healthcare Dive",
+          "Gmail label: InsightsSources/Hospitalogy",
+          "Gmail label: InsightsSources/Modern Healthcare",
+          "Web: Healthcare Dive, Fierce Healthcare, Modern Healthcare, Becker's, KFF Health News",
+          "Web: CMS / HHS / FDA announcements",
+          "Web: Major payer/provider/pharma news"
+        ],
+        "sources_successful": [
+          "RSS: STAT (https://www.statnews.com/feed/) — 12 items published 2026-04-27 to 2026-04-28 retrieved",
+          "Web: Healthcare Dive — Centene Q1 2026 earnings (healthcaredive.com)",
+          "Web: Fierce Healthcare — $50B rural health fund, Centene Q1 headline (fiercehealthcare.com)",
+          "Web: JD Supra / Alston & Bird — Health Care Week in Review April 26-28 (jdsupra.com)",
+          "Web: CBS News / KFF Health News — Big companies and $50B rural health fund",
+          "Web: PR Newswire — Centene Q1 2026 press release",
+          "Web: MarketBeat / Nasdaq — HCA Healthcare Q1 2026 earnings detail",
+          "Web: OpenAI — ChatGPT for Clinicians launch (openai.com)"
+        ],
+        "sources_failed": [
+          "Gmail label: InsightsSources/Healthcare Brew — not_attempted_in_test_run",
+          "Gmail label: InsightsSources/Hospitalogy — not_attempted_in_test_run",
+          "Gmail label: InsightsSources/Modern Healthcare — not_attempted_in_test_run",
+          "RSS: https://www.statnews.com/feed/ — fetch_url returned page_incomplete; retrieved successfully via curl/bash"
+        ],
+        "run_notes": "Test run for 2026-04-28 (Tuesday). STAT RSS retrieved via curl with 12 qualifying items from the past 24 hours (Apr 27–28). Web search provided strong supplemental coverage: Centene Q1 blowout earnings, HCA Q1 results, $50B rural health fund positioning, OpenAI ChatGPT for Clinicians launch, Medicaid work-requirement tracking gap, and Supreme Court skinny-labeling case. Gmail-label sources (Healthcare Brew, Hospitalogy, Modern Healthcare) were not attempted in this test run and are marked accordingly. Nine items selected across all five buckets. STAT+ paywalled items used only their public-facing headlines and descriptions visible in the RSS feed."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Three major policy signals converged today. Medicaid is under simultaneous structural pressure from two directions: CMS's work-requirement law lacks enrollment-tracking mandates, creating a coverage-loss blind spot, while Dr. Oz's Medicaid provider revalidation campaign is accelerating fraud-reduction pressure on states. Separately, the Supreme Court hears oral arguments Wednesday on generic 'skinny labeling,' with major implications for generic drug availability and branded manufacturer patent protection.",
+          "items": [
+            {
+              "item_id": "2026-04-28-medicaid-work-requirements-tracking-gap",
+              "canonical_topic": "medicaid-work-requirements-enrollment-tracking",
+              "duplicate_group": "medicaid-work-requirements",
+              "bucket": "Policy, Payment, and Regulation",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/28/medicaid-work-requirements-enrollment-losses-will-not-be-tracked/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-28T08:30:00Z"
+                }
+              ],
+              "title": "Medicaid work requirements lack federal enrollment-tracking mandate, leaving coverage-loss impact invisible",
+              "summary": "Congress's tax cut law contains Medicaid work requirements but does not require states to report how implementation affects enrollment. Without standardized tracking, the scope of coverage losses may never be systematically documented, according to STAT analysis. Democrats warn the missing accountability layer will obscure the human impact; Republicans say the requirements encourage workforce participation.",
+              "strategic_implication": "Health systems and safety-net hospitals should build their own internal tracking of Medicaid eligibility shifts, as federal data will be incomplete — and plan for enrollment volatility that will be harder to anticipate from public sources.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "federal-policy",
+                "coverage",
+                "safety-net"
+              ]
+            },
+            {
+              "item_id": "2026-04-28-cms-medicaid-provider-revalidation",
+              "canonical_topic": "cms-medicaid-provider-revalidation-oz",
+              "duplicate_group": "cms-medicaid-revalidation",
+              "bucket": "Policy, Payment, and Regulation",
+              "priority_score": 8,
+              "primary_source": "JD Supra / Alston & Bird",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "JD Supra / Alston & Bird Health Care Week in Review",
+                  "url": "https://www.jdsupra.com/legalnews/health-care-week-in-review-fda-and-cms-2100693/",
+                  "source_type": "web",
+                  "published_at": "2026-04-28T00:00:00Z"
+                },
+                {
+                  "source": "HomeCare Magazine",
+                  "url": "https://www.homecaremag.com/news/oz-formally-requsts-medicaid-revalidation-plans-states",
+                  "source_type": "web",
+                  "published_at": "2026-04-24T00:00:00Z"
+                }
+              ],
+              "title": "CMS Administrator Oz orders all 50 states to submit Medicaid provider revalidation plans within 30 days",
+              "summary": "CMS Administrator Mehmet Oz issued letters to all 50 governors and state Medicaid directors on April 23 directing each to submit a two-year provider revalidation strategy within 30 days, with a governor response deadline of May 7. CMS designated providers without National Provider Identifiers as automatically high-risk, and warned that non-compliance will be factored into future fraud-risk assessments.",
+              "strategic_implication": "Medicaid-dependent providers — particularly those without NPIs or with recent enrollment gaps — face near-term scrutiny; compliance, enrollment, and revenue cycle teams should assess exposure immediately.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "cms",
+                "fraud-waste-abuse",
+                "provider-enrollment",
+                "federal-policy"
+              ]
+            },
+            {
+              "item_id": "2026-04-28-scotus-skinny-labeling-generics",
+              "canonical_topic": "supreme-court-skinny-labeling-generics",
+              "duplicate_group": "scotus-skinny-label",
+              "bucket": "Policy, Payment, and Regulation",
+              "priority_score": 8,
+              "primary_source": "STAT Pharmalot",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT Pharmalot",
+                  "url": "https://www.statnews.com/pharmalot/2026/04/28/supreme-court-case-skinny-labeling-generics-access/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-28T15:36:31Z"
+                }
+              ],
+              "title": "Supreme Court hears oral arguments Wednesday on generic 'skinny labeling' with broad implications for drug access",
+              "summary": "The Supreme Court will hear arguments Wednesday on skinny labeling — the practice by which generics seek approval for specific indications to avoid infringing branded patents on other uses. The case tests a key mechanism established by the Hatch-Waxman Act that has underpinned decades of generic market entry strategy. A ruling restricting skinny labeling could substantially narrow the generic carve-out toolkit and delay competition.",
+              "strategic_implication": "Payer formulary teams, PBMs, and generic manufacturers should closely monitor the ruling: a decision narrowing skinny labeling would extend effective exclusivity periods for branded drugs and raise formulary costs.",
+              "confidence": "high",
+              "tags": [
+                "supreme-court",
+                "generics",
+                "drug-pricing",
+                "hatch-waxman",
+                "pharma"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI deployment in clinical settings is bifurcating: OpenAI moved aggressively into the clinician workflow with a free, verified product for licensed US providers, while Google's clinical director publicly defended letting Gemini engage — rather than disengage — with users in mental health crises. Both moves illustrate the competitive pressure to embed AI in care delivery before regulatory guardrails fully form.",
+          "items": [
+            {
+              "item_id": "2026-04-28-openai-chatgpt-for-clinicians",
+              "canonical_topic": "openai-chatgpt-clinicians-launch",
+              "duplicate_group": "openai-clinicians",
+              "bucket": "Digital Health and AI",
+              "priority_score": 9,
+              "primary_source": "OpenAI",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "OpenAI",
+                  "url": "https://openai.com/index/making-chatgpt-better-for-clinicians/",
+                  "source_type": "web",
+                  "published_at": "2026-04-22T00:00:00Z"
+                }
+              ],
+              "title": "OpenAI launches free ChatGPT for Clinicians for verified US physicians, NPs, PAs, and pharmacists",
+              "summary": "OpenAI released ChatGPT for Clinicians as a free, verified tier for licensed US clinicians, covering clinical research synthesis, documentation drafting, and care consultation workflows. The product runs on OpenAI's current frontier model and sits alongside the enterprise ChatGPT for Healthcare that larger health systems have been deploying since earlier this year. OpenAI positions the product as augmenting — not replacing — clinical judgment.",
+              "strategic_implication": "Health systems that have not yet adopted enterprise AI documentation tools now face a credentialed free alternative that individual clinicians can adopt independently — creating shadow-IT and governance risks that IT and compliance leaders should address proactively.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "openai",
+                "clinical-workflow",
+                "documentation",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-04-28-google-gemini-mental-health-ai",
+              "canonical_topic": "google-gemini-mental-health-ai-safety",
+              "duplicate_group": "google-ai-mental-health",
+              "bucket": "Digital Health and AI",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/28/google-gemini-ai-mental-health-safety-interview-clinical-director-megan-jones-bell/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-28T08:30:00Z"
+                }
+              ],
+              "title": "Google's clinical director defends Gemini engagement model for users in mental health crises, citing 'bridge' strategy",
+              "summary": "Google's clinical director Megan Jones Bell told STAT that the company believes keeping Gemini engaged with users experiencing mental health crises — while prominently surfacing crisis hotlines — is more protective than disengagement. Google recently updated Gemini to more prominently connect at-risk users to support resources while maintaining the conversational thread. The position comes amid AMA calls to Congress for safeguards on mental health chatbots.",
+              "strategic_implication": "Behavioral health service lines and digital front-door strategists should evaluate whether consumer AI engagement models align with their clinical protocols and liability frameworks, particularly around crisis escalation pathways.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "mental-health",
+                "google",
+                "gemini",
+                "behavioral-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Two earnings reports landed today with divergent implications. Centene delivered a blowout Q1 — topping analyst EPS estimates by ~50% and raising 2026 guidance — as rate hikes in ACA and Medicare Advantage more than offset Medicaid margin pressure. HCA Healthcare posted solid revenue growth but missed volume expectations on an unusually mild respiratory season; the market sold the stock -9% though management reaffirmed full-year guidance. Separately, large commercial players are positioning to capture a share of the $50B federal Rural Health Transformation Program ahead of October award announcements.",
+          "items": [
+            {
+              "item_id": "2026-04-28-centene-q1-2026-blowout",
+              "canonical_topic": "centene-q1-2026-earnings",
+              "duplicate_group": "centene-q1-2026",
+              "bucket": "Market and Industry Signals",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/centene-hikes-2026-profit-guidance-buoyant-q1/818581/",
+                  "source_type": "web",
+                  "published_at": "2026-04-28T00:00:00Z"
+                },
+                {
+                  "source": "PR Newswire",
+                  "url": "https://www.prnewswire.com/news-releases/centene-corporation-reports-first-quarter-2026-results-302754979.html",
+                  "source_type": "web",
+                  "published_at": "2026-04-28T09:00:00Z"
+                }
+              ],
+              "title": "Centene Q1 adjusted EPS of $3.37 demolishes ~$2.25 consensus; company raises 2026 guidance to >$3.40",
+              "summary": "Centene reported Q1 net profit of $1.5 billion (+18% YoY) on revenue of $49.9 billion (+7% YoY), with adjusted EPS of $3.37 — roughly $1.10 above analyst consensus expectations of $2.20–$2.30. ACA premium rate hikes drove the outperformance, with ACA MLR of 75.3% and Medicare MLR of 84.9% both beating estimates. Management raised full-year EPS guidance to greater than $3.40 and expressed confidence in reaching breakeven Medicaid margins by 2027, citing CMS's finalized more-generous Medicare Advantage rates.",
+              "strategic_implication": "Centene's results validate aggressive premium repricing in ACA markets and suggest payers that invested in rate adequacy may be well-positioned even as Medicaid margins lag — a signal for payer contracting and M&A strategy in the managed care space.",
+              "confidence": "high",
+              "tags": [
+                "centene",
+                "payer",
+                "aca",
+                "medicare-advantage",
+                "earnings"
+              ]
+            },
+            {
+              "item_id": "2026-04-28-hca-q1-2026-results",
+              "canonical_topic": "hca-q1-2026-earnings",
+              "duplicate_group": "hca-q1-2026",
+              "bucket": "Market and Industry Signals",
+              "priority_score": 8,
+              "primary_source": "Nasdaq / HCA Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Nasdaq / HCA Healthcare Press Release",
+                  "url": "https://www.nasdaq.com/press-release/hca-healthcare-reports-first-quarter-2026-results-2026-04-24",
+                  "source_type": "web",
+                  "published_at": "2026-04-24T00:00:00Z"
+                },
+                {
+                  "source": "MarketBeat",
+                  "url": "https://www.marketbeat.com/instant-alerts/hca-healthcare-q1-earnings-call-highlights-2026-04-27/",
+                  "source_type": "web",
+                  "published_at": "2026-04-27T00:00:00Z"
+                }
+              ],
+              "title": "HCA Healthcare Q1 revenue +4.3% but stock falls 9% as mild respiratory season and exchange enrollment attrition weigh on volumes",
+              "summary": "HCA reported Q1 revenues of $19.1B (+4.3%) and adjusted EPS of $7.15 (+10.9%) but missed internal EBITDA targets as respiratory-related admissions fell 42% YoY and exchange equivalent admissions fell ~15% while uninsured admissions rose ~16%. Management estimated a combined $150M ACA exchange drag and $180M from respiratory/weather impacts, while $200M in above-plan Medicaid supplemental payments partially offset the miss. Full-year 2026 guidance was reaffirmed; CEO flagged MA payer denials as a 'specific driver' of revenue cycle pressure.",
+              "strategic_implication": "HCA's results illustrate how systemically fragile volume assumptions are to respiratory season variability and ACA exchange attrition — hospitals should stress-test their FY guidance for similar headwinds, and revenue cycle teams should escalate MA denial management given HCA's flag.",
+              "confidence": "high",
+              "tags": [
+                "hca",
+                "hospital-operations",
+                "medicare-advantage",
+                "aca",
+                "earnings"
+              ]
+            },
+            {
+              "item_id": "2026-04-28-rural-health-50b-fund-commercial-positioning",
+              "canonical_topic": "rural-health-transformation-program-50b",
+              "duplicate_group": "rural-health-50b",
+              "bucket": "Market and Industry Signals",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare / KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare / KFF Health News",
+                  "url": "https://www.fiercehealthcare.com/regulatory/big-companies-position-themselves-payday-50b-federal-rural-health-fund",
+                  "source_type": "web",
+                  "published_at": "2026-04-28T10:00:00Z"
+                },
+                {
+                  "source": "CBS News / KFF Health News",
+                  "url": "https://www.cbsnews.com/news/big-companies-federal-rural-health-fund/",
+                  "source_type": "web",
+                  "published_at": "2026-04-27T00:00:00Z"
+                }
+              ],
+              "title": "Large commercial players are positioning to capture federal Rural Health Transformation Program dollars ahead of October award cycle",
+              "summary": "Reporting from KFF Health News and Fierce Healthcare reveals that major commercial health companies are actively positioning to win contracts and awards from the $50B Rural Health Transformation Program authorized by the One Big Beautiful Bill Act. The fund allocates $10B annually through 2030, with awards for 2027 expected in October 2026. Critics note that states can direct only 15% of funds to direct provider payments, raising questions about whether commercial administrators rather than frontline hospitals will capture most of the benefit.",
+              "strategic_implication": "Health systems serving rural markets — and the consultants and vendors competing for program dollars — face a compressed window to develop state partnership strategies and demonstrate alignment with CMS's MAHA priorities before October award deadlines.",
+              "confidence": "medium",
+              "tags": [
+                "rural-health",
+                "cms",
+                "federal-funding",
+                "hospital-strategy",
+                "commercial-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "HCA Healthcare's Q1 call flagged Medicare Advantage denial and underpayment activity as a 'specific driver' of revenue cycle pressure — a near-universal headwind for large health systems that underscores the urgency of the bipartisan Medicare Advantage Improvement Act introduced this week, which would require MA plans to match Medicare FFS medical-necessity standards and compress prior authorization decision timelines.",
+          "items": [
+            {
+              "item_id": "2026-04-28-medicare-advantage-improvement-act",
+              "canonical_topic": "medicare-advantage-improvement-act-2026",
+              "duplicate_group": "maia-2026",
+              "bucket": "Provider Operations",
+              "priority_score": 8,
+              "primary_source": "Newsweek / AHCANCAL",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Newsweek",
+                  "url": "https://www.newsweek.com/medicare-advantage-could-change-new-bill-11883576",
+                  "source_type": "web",
+                  "published_at": "2026-04-27T00:00:00Z"
+                },
+                {
+                  "source": "AHCANCAL",
+                  "url": "https://www.ahcancal.org/News-and-Communications/Blog/Pages/Medicare-Advantage-Improvement-Act-of-2026-Introduced.aspx",
+                  "source_type": "web",
+                  "published_at": "2026-04-27T00:00:00Z"
+                }
+              ],
+              "title": "Bipartisan Medicare Advantage Improvement Act introduced, requiring MA plans to match FFS coverage standards and speed prior authorization",
+              "summary": "A bipartisan House coalition introduced the Medicare Advantage Improvement Act, which would prohibit MA plans from applying medical necessity criteria more restrictive than Medicare FFS, mandate standard prior authorization decisions within 72 hours (expedited within 24 hours), and require plans to include adequate post-acute care networks including inpatient rehabilitation facilities beginning in 2028. The bill is backed by clinician-lawmakers from both parties and addresses a sustained pattern of MA coverage denials and prior authorization delays that has drawn regulatory and legal scrutiny.",
+              "strategic_implication": "If enacted, MAIA would materially reduce MA plan flexibility to manage utilization through restrictive PA and coverage criteria — an operational tailwind for providers (particularly post-acute) but a margin risk for MA plans that have relied on PA as a cost-management lever.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "prior-authorization",
+                "cms",
+                "payer",
+                "provider-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Two clinical practice signals warrant tracking. New JAMA studies project that HHS's targeted hepatitis B birth-dose vaccine policy will increase neonatal infections and generate millions in additional healthcare costs, as historically unattained screening coverage levels would be required to prevent increases. Separately, the Trump administration formally warned against using federal harm-reduction funds for fentanyl test strips, marking a sharp reversal in federal overdose prevention policy.",
+          "items": [
+            {
+              "item_id": "2026-04-28-hep-b-birth-dose-policy-consequences",
+              "canonical_topic": "hepatitis-b-birth-dose-policy",
+              "duplicate_group": "hep-b-vaccine-policy",
+              "bucket": "Workforce & Clinical Practice",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/27/jama-studies-hepatitis-b-vaccination-newborns/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-27T20:51:08Z"
+                }
+              ],
+              "title": "JAMA studies project new HHS targeted hepatitis B birth-dose policy will increase neonatal infections and add millions in costs",
+              "summary": "Two studies published Monday in JAMA project that the new HHS recommendation to offer hepatitis B vaccine at birth only to infants perceived to be at risk — rather than universally — will produce increased neonatal infections and more cases of chronic hepatitis B in children. Researchers from Boston University, University of Florida, and Johns Hopkins concluded that avoiding increased infections would require historically unattained levels of maternal screening or birth-dose coverage among infants of unscreened mothers.",
+              "strategic_implication": "Health system infection control, pediatric quality, and population health teams should reassess birth-dose protocols against the new evidence; payers with newborn populations should model downstream cost exposure from projected chronic hepatitis B increases.",
+              "confidence": "high",
+              "tags": [
+                "vaccines",
+                "public-health",
+                "pediatrics",
+                "hhs-policy",
+                "hepatitis-b"
+              ]
+            },
+            {
+              "item_id": "2026-04-28-fentanyl-test-strips-federal-ban",
+              "canonical_topic": "trump-fentanyl-harm-reduction-reversal",
+              "duplicate_group": "harm-reduction-policy",
+              "bucket": "Workforce & Clinical Practice",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/04/27/trump-administration-samhsa-clear-shift-from-harm-reduction/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-04-27T18:07:51Z"
+                }
+              ],
+              "title": "Trump administration warns against using federal dollars for fentanyl test strips, marking sharp reversal on harm reduction",
+              "summary": "SAMHSA issued guidance warning against using federal substance use funds for fentanyl test strips, explicitly citing a 'clear shift away from harm reduction and practices' the administration argues facilitate illegal drug use. The move reverses Biden-era guidance that opened federal funding for test strips and signals a broader federal withdrawal from evidence-based harm reduction strategies. Public health and safety-net providers that incorporated fentanyl test strip distribution into funded programs will need to reassess compliance and funding sourcing.",
+              "strategic_implication": "Health systems, FQHCs, and behavioral health providers receiving federal substance use funds should audit program activities immediately for compliance exposure; alternative non-federal funding strategies for harm reduction programming will need to be secured.",
+              "confidence": "high",
+              "tags": [
+                "harm-reduction",
+                "opioids",
+                "samhsa",
+                "public-health",
+                "behavioral-health"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-04-25",
       "generated_at": "2026-04-25T18:40:04Z",
       "headline": "Today's Healthcare Insights",
@@ -19,12 +426,12 @@
         ],
         "sources_successful": [
           "RSS: STAT (https://www.statnews.com/feed/)",
-          "Gmail label: InsightsSources/Healthcare Dive \u2014 Healthcare Dive Weekender (2026-04-25) and MedTech Dive Weekender (2026-04-25)"
+          "Gmail label: InsightsSources/Healthcare Dive — Healthcare Dive Weekender (2026-04-25) and MedTech Dive Weekender (2026-04-25)"
         ],
         "sources_failed": [
-          "Gmail label: InsightsSources/Healthcare Brew \u2014 only welcome email present; excluded per workflow rule",
-          "Gmail label: InsightsSources/Hospitalogy \u2014 only welcome and membership-promo emails plus community-platform notifications; excluded per workflow rule",
-          "Gmail label: InsightsSources/Modern Healthcare \u2014 only welcome email and subscription receipt; excluded per workflow rule"
+          "Gmail label: InsightsSources/Healthcare Brew — only welcome email present; excluded per workflow rule",
+          "Gmail label: InsightsSources/Hospitalogy — only welcome and membership-promo emails plus community-platform notifications; excluded per workflow rule",
+          "Gmail label: InsightsSources/Modern Healthcare — only welcome email and subscription receipt; excluded per workflow rule"
         ],
         "run_notes": "First edition with multi-source editorial input: STAT RSS (Tier 1) plus the Healthcare Dive label, which delivered the Healthcare Dive Saturday Weekender (AMA physician burnout survey) and the sister-property MedTech Dive Weekender (Boston Scientific 2026 guidance cut). Two genuinely new items entered today's slate (BSX guidance, AMA burnout); five strong items from the prior 24 hours of STAT coverage were carried forward as they remain the strongest current signals; one prior item (Strait of Hormuz pharma supply) was dropped as it has aged out of the 24-hour window. Eight items selected total. Supply Chain Dive and Cybersecurity Dive Weekenders also arrived under the Healthcare Dive label but were excluded as off-topic for healthcare strategy."
       },
@@ -204,7 +611,7 @@
                 }
               ],
               "title": "Boston Scientific lowers 2026 sales and EPS guidance as electrophysiology and Watchman decelerate",
-              "summary": "Boston Scientific cut full-year 2026 sales growth guidance to 7%\u20138.5% from 10.5%\u201311.5% and lowered adjusted EPS to $3.34\u2013$3.41. Management cited PFA share loss to Medtronic, J&J, and Abbott in electrophysiology, slowing Watchman standalone volumes, and weakness in urology.",
+              "summary": "Boston Scientific cut full-year 2026 sales growth guidance to 7%–8.5% from 10.5%–11.5% and lowered adjusted EPS to $3.34–$3.41. Management cited PFA share loss to Medtronic, J&J, and Abbott in electrophysiology, slowing Watchman standalone volumes, and weakness in urology.",
               "strategic_implication": "Cardiac and EP service-line planners should expect tighter device-vendor pricing posture and renegotiated capital deals as competitive pressure intensifies in PFA.",
               "confidence": "high",
               "tags": [
@@ -305,10 +712,10 @@
           "RSS: STAT (https://www.statnews.com/feed/)"
         ],
         "sources_failed": [
-          "Gmail label: InsightsSources/Healthcare Brew \u2014 only welcome email present; excluded per workflow rule",
-          "Gmail label: InsightsSources/Healthcare Dive \u2014 only new welcome emails from Supply Chain Dive and MedTech Dive arrived today; excluded per workflow rule",
-          "Gmail label: InsightsSources/Hospitalogy \u2014 only welcome email and community-platform notifications; excluded per workflow rule",
-          "Gmail label: InsightsSources/Modern Healthcare \u2014 only welcome email and subscription receipt; excluded per workflow rule"
+          "Gmail label: InsightsSources/Healthcare Brew — only welcome email present; excluded per workflow rule",
+          "Gmail label: InsightsSources/Healthcare Dive — only new welcome emails from Supply Chain Dive and MedTech Dive arrived today; excluded per workflow rule",
+          "Gmail label: InsightsSources/Hospitalogy — only welcome email and community-platform notifications; excluded per workflow rule",
+          "Gmail label: InsightsSources/Modern Healthcare — only welcome email and subscription receipt; excluded per workflow rule"
         ],
         "run_notes": "Manual refresh at end of business 2026-04-24. Re-checked all four Gmail labels and STAT RSS since the prior run: Gmail still contains no newsletter editorial content (only welcomes, a Modern Healthcare receipt, Hospitalogy community notifications, and two new IndustryDive welcome emails). STAT RSS returned the same 19 items as the prior run with no new publications. Item slate retained after re-scoring: six strong items across three of the five buckets. publish_ready remains false because only one editorial source (STAT, Tier 1) contributed. Today's edition was replaced in place to avoid a duplicate entry for 2026-04-24."
       },

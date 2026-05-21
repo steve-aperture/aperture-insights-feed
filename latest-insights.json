@@ -3,6 +3,312 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-05-21",
+      "generated_at": "2026-05-21T11:14:04Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's signal set clusters around CMS/HHS oversight and insurance-market affordability (WISeR prior auth policy, OCR reorganization, ACA plan design shifts), plus accelerating 'smart hospital' deployments and next-gen obesity therapeutics. Sources include Healthcare Dive, STAT, Fierce Healthcare, and a Business Wire release distributed via Morningstar.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (policy/market/digital health)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (policy/market/digital health)"
+        ],
+        "sources_failed": [
+          "Email (supplementary; not used this run)"
+        ],
+        "run_notes": "Built primarily from RSS + targeted web lookups; did not rely on email newsletters."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal oversight signals continued scrutiny of algorithmic prior authorization and a reshaping of civil-rights enforcement priorities, while ACA affordability pressures are pushing enrollment toward higher-deductible coverage.",
+          "items": [
+            {
+              "item_id": "2026-05-21-medicare-wiser-cra",
+              "canonical_topic": "medicare-wiser-prior-authorization",
+              "duplicate_group": "medicare-wiser-prior-authorization",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/20/democrats-force-vote-to-end-medicare-ai-prior-authorization-pilot/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-20T19:28:21Z"
+                }
+              ],
+              "title": "Democrats move to overturn CMS WISeR AI prior-authorization model via Congressional Review Act",
+              "summary": "Congressional Democrats introduced resolutions in both chambers to overturn CMS’s WISeR model, an Innovation Center pilot that uses AI to approve or deny a defined set of Medicare items and procedures. The Government Accountability Office said WISeR should have been submitted to Congress before it launched in January, making it subject to Congressional Review Act action. CMS said WISeR remains active while the agency reviews the GAO opinion.",
+              "strategic_implication": "If the CRA effort gains traction, it could reset expectations for how quickly CMS can operationalize algorithmic utilization management—and increase compliance and transparency requirements for future models.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "prior-authorization",
+                "ai",
+                "cms",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-05-21-hhs-ocr-reorg",
+              "canonical_topic": "hhs-ocr-reorganization",
+              "duplicate_group": "hhs-ocr-reorganization",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-reorganizes-office-civil-rights-religions-bent-conscious-objection/820704/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-20T13:17:43Z"
+                }
+              ],
+              "title": "HHS reshapes Office for Civil Rights, reinstating conscience-and-religious-freedom division",
+              "summary": "HHS announced a reorganization of the Office for Civil Rights that reinstates a division focused on conscience and religious freedom issues that had been dissolved in 2023. The restructuring creates three divisions covering conscience/religious freedom, civil rights, and health information privacy/cybersecurity, and HHS said it does not expect layoffs. Further details are expected in a Federal Register notice in June.",
+              "strategic_implication": "Providers, payers, and digital health firms should anticipate renewed enforcement and policy activity around conscience objections (e.g., reproductive and gender-affirming care), with downstream implications for access, compliance, and contracting in sensitive service lines.",
+              "confidence": "medium",
+              "tags": [
+                "hhs",
+                "civil-rights",
+                "compliance",
+                "religious-freedom",
+                "policy"
+              ]
+            },
+            {
+              "item_id": "2026-05-21-aca-deductibles-kff",
+              "canonical_topic": "aca-exchange-affordability",
+              "duplicate_group": "aca-exchange-affordability",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/aca-deductibles-reach-record-high-membership-losses-slated-continue-kff/820651/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-20T19:22:01Z"
+                }
+              ],
+              "title": "KFF: ACA exchange deductibles hit record as enrollment shifts toward high-deductible bronze plans",
+              "summary": "KFF reported that average Affordable Care Act marketplace deductibles rose from $2,759 (2025) to $3,786 (2026), the largest single-year increase on record, as enrollees moved into lower-premium bronze plans. The bronze share of selections increased from 30% to 40% year over year, while silver declined from 57% to 43%. KFF also estimated marketplace enrollment could decline by about 5 million people (21.5%) as enhanced subsidies lapse and premium nonpayment increases.",
+              "strategic_implication": "Health systems and payers should plan for higher patient cost sensitivity and collections pressure, plus potential adverse selection as healthier members exit exchange coverage.",
+              "confidence": "medium",
+              "tags": [
+                "aca",
+                "deductibles",
+                "affordability",
+                "insurance",
+                "kff"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital health signals included both faster hospital-scale AI deployments and regulators testing the boundary between 'wellness' and medical device functionality in consumer wearables.",
+          "items": [
+            {
+              "item_id": "2026-05-21-metrohealth-artisight",
+              "canonical_topic": "smart-hospital-virtual-nursing",
+              "duplicate_group": "smart-hospital-virtual-nursing",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/hospitals/metrohealth-partners-artisight-smart-hospital-platform-rollout",
+                  "source_type": "rss",
+                  "published_at": "2026-05-21T00:00:00Z"
+                },
+                {
+                  "source": "Morningstar (Business Wire)",
+                  "url": "https://www.morningstar.com/news/business-wire/20260521350079/artisight-smart-hospital-platform-selected-by-metrohealth",
+                  "source_type": "web",
+                  "published_at": "2026-05-21T10:00:00Z"
+                }
+              ],
+              "title": "MetroHealth selects Artisight smart-hospital platform for ~500 rooms, scaling virtual nursing/sitting with AI",
+              "summary": "MetroHealth partnered with Artisight to deploy its smart-hospital platform across nearly 500 patient rooms spanning five facilities, starting at the Glick Center and expanding over two years. The platform supports virtual nursing, virtual sitting, video and voice services, and AI capabilities including fall monitoring, with integrations into existing workflows such as Epic. Artisight positioned the platform as a clinician-built hub that can shorten deployment cycles and scale virtual care services.",
+              "strategic_implication": "As virtual nursing and monitoring move from pilots to enterprise rollouts, leaders should evaluate ROI assumptions (length of stay, falls, discharge throughput) alongside change-management needs and governance for computer-vision monitoring.",
+              "confidence": "high",
+              "tags": [
+                "virtual-nursing",
+                "smart-hospital",
+                "computer-vision",
+                "epic",
+                "ai-operations"
+              ]
+            },
+            {
+              "item_id": "2026-05-21-whoop-fda-bp",
+              "canonical_topic": "wearables-blood-pressure-fda",
+              "duplicate_group": "wearables-blood-pressure-fda",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/21/whoop-has-not-resolved-fda-dispute-over-blood-pressure-feature/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-21T08:30:00Z"
+                }
+              ],
+              "title": "Whoop says it remains in talks with FDA over blood-pressure feature classification",
+              "summary": "Whoop executives said the company is still in discussions with FDA after an agency warning letter over a feature estimating users’ systolic and diastolic blood pressure. FDA asserted the feature constitutes a medical device requiring review, while Whoop argued it is a wellness feature. FDA’s updated general wellness guidance notes blood-pressure information may qualify if it is non-invasive, not intended to diagnose/treat disease, and does not mimic clinical values unless validated.",
+              "strategic_implication": "Digital health leaders should expect tighter regulatory scrutiny as consumer apps and wearables add clinical-adjacent metrics; product and legal teams may need to invest earlier in validation evidence and regulatory strategy.",
+              "confidence": "medium",
+              "tags": [
+                "wearables",
+                "fda",
+                "blood-pressure",
+                "wellness-guidance",
+                "regulatory"
+              ]
+            },
+            {
+              "item_id": "2026-05-21-aetna-ai-engagement",
+              "canonical_topic": "payer-ai-member-engagement",
+              "duplicate_group": "payer-ai-member-engagement",
+              "priority_score": 5,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-artificial-intelligence-consumer-experience-engagement-aetna-nathan-frank/820344/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-19T13:56:00Z"
+                }
+              ],
+              "title": "Aetna reports reduced calls and higher digital engagement as it embeds conversational AI into member journeys",
+              "summary": "Aetna’s CTO described an 'Ask Anything' conversational AI experience embedded across its app and web properties, paired with a personalization layer, to help members navigate benefits and next steps. Aetna reported Care Paths programs for maternity, diabetes, and musculoskeletal conditions reduced related calls by 8.6% and increased digital engagement by 38%. The insurer emphasized AI governance focused on explainability, monitoring for bias/hallucinations, and continuous feedback loops involving clinicians and a large nursing workforce.",
+              "strategic_implication": "Payers adopting generative interfaces should track operational metrics (call deflection, satisfaction) and invest in governance that can stand up to regulators, employers, and member trust expectations.",
+              "confidence": "medium",
+              "tags": [
+                "payer",
+                "member-engagement",
+                "generative-ai",
+                "governance",
+                "call-center"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Life-sciences pipelines and exchange-market shifts continue to reshape the demand and cost landscape, with next-gen obesity drugs potentially changing long-term utilization patterns.",
+          "items": [
+            {
+              "item_id": "2026-05-21-lilly-retatrutide-phase3",
+              "canonical_topic": "nextgen-obesity-drug-retatrutide",
+              "duplicate_group": "nextgen-obesity-drug-retatrutide",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/21/eli-lilly-retatrutide-triple-g-weight-loss-obesity-discontinuations-trial/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-21T10:45:00Z"
+                }
+              ],
+              "title": "Lilly’s retatrutide posts bariatric-surgery-like weight loss in phase 3 trial, with higher discontinuations",
+              "summary": "STAT reported phase 3 results showing Lilly’s retatrutide delivered 28.3% average weight loss at the highest dose among participants who stayed on therapy over 80 weeks (in people with obesity/overweight without diabetes). Discontinuations due to adverse events were 11% at the highest dose, compared with up to 7% in pivotal trials for Wegovy and Zepbound; including all participants, the average weight loss was reported as 25%. The data suggest significant efficacy but also tolerability tradeoffs.",
+              "strategic_implication": "If efficacy translates to real-world uptake, payers and providers may need to revisit obesity-care pathways, coverage policy, and downstream utilization assumptions (orthopedics, diabetes, cardiovascular risk), while monitoring persistence and adverse-event management.",
+              "confidence": "medium",
+              "tags": [
+                "obesity",
+                "glp-1",
+                "pharma",
+                "retatrutide",
+                "drug-pipeline"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Health system financials and litigation signal persistent margin pressure and an evolving accountability environment for quality ratings and vendor relationships.",
+          "items": [
+            {
+              "item_id": "2026-05-21-commonspirit-loss-conifer",
+              "canonical_topic": "health-system-financial-pressure",
+              "duplicate_group": "health-system-financial-pressure",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/commonspirit-in-red-conifer-exit-operational-woes-earnings/820574/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-19T16:34:00Z"
+                }
+              ],
+              "title": "CommonSpirit posts $3.4B quarterly net loss tied to Conifer exit and reimbursement headwinds",
+              "summary": "CommonSpirit reported a $3.4 billion net loss for the quarter, versus a $69 million net loss in the prior-year period, with revenue flat at $9.7 billion. The system said a large charge linked to exiting a revenue-cycle services contract drove much of the result, and it anticipates a $2.2 billion payout related to the deal (including $1.9 billion to Tenet over coming years). Management also cited reimbursement delays, cost inflation, and a payer mix shift toward Medicare, alongside a $156 million revenue miss due to CMS delays on California’s Medicaid provider tax model.",
+              "strategic_implication": "Large health systems may increasingly internalize revenue-cycle functions and renegotiate vendor contracts, but the transition costs and working-capital impacts can be material—worth scenario planning for boards and finance teams.",
+              "confidence": "high",
+              "tags": [
+                "hospital-finance",
+                "revenue-cycle",
+                "tenet",
+                "medicaid",
+                "margins"
+              ]
+            },
+            {
+              "item_id": "2026-05-21-tenet-leapfrog-fees",
+              "canonical_topic": "hospital-safety-ratings-litigation",
+              "duplicate_group": "hospital-safety-ratings-litigation",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/tenet-hospitals-leapfrog-spar-over-legal-fees-in-hospital-ratings-case/820511/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-19T16:51:06Z"
+                }
+              ],
+              "title": "Tenet Florida hospitals seek ~$10.5M in legal fees as Leapfrog fights to preserve ability to appeal",
+              "summary": "Five Tenet-owned Florida hospitals are seeking nearly $10.5 million in attorneys’ fees and costs after a federal judge found Leapfrog unfairly deflated their safety grades and ordered the grades removed and corrected disclosures issued. Leapfrog argued the fee request is inflated and premature because it has not exhausted its appeal options, and warned the amount exceeds its 2024 revenue of $8 million. The dispute underscores growing tension between rating organizations and providers over methodology and commercial impact.",
+              "strategic_implication": "Hospital leaders should treat third-party rating exposure as a governance issue (reputation, contracting, litigation risk) and consider more proactive engagement on data quality and dispute-resolution pathways.",
+              "confidence": "medium",
+              "tags": [
+                "hospital-ratings",
+                "litigation",
+                "quality",
+                "tenet",
+                "reputation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major workforce-specific headlines dominated today’s feed; the most actionable signals relate to how virtual nursing and AI tools may reshape staffing models and frontline workflows.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-05-20",
       "generated_at": "2026-05-20T11:12:13Z",
       "headline": "Today's Healthcare Insights",
@@ -3322,5 +3628,5 @@
       ]
     }
   ],
-  "last_updated": "2026-05-20T11:14:42Z"
+  "last_updated": "2026-05-21T11:14:04Z"
 }

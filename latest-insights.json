@@ -3,6 +3,426 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-05-22",
+      "generated_at": "2026-05-22T11:11:43Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's themes center on federal payment-rule proposals and preventive-care governance, alongside escalating 340B/channel conflict and continued acceleration of hospital-facing AI deployments. Items were curated from STAT, Healthcare Dive, Fierce Healthcare, Politico, Becker's Hospital Review, and a Business Wire release.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (policy/market/digital health)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (policy/market/digital health)"
+        ],
+        "sources_failed": [
+          "Email (supplementary; not used this run)"
+        ],
+        "run_notes": "Built from RSS plus targeted web lookups for policy/regulatory and digital-health context; no email newsletters were required."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal actions and proposals signal heightened pressure on payment mechanics (Medicaid supplemental payments, Medicare physician reimbursement) and on the governance of preventive-care coverage recommendations.",
+          "items": [
+            {
+              "item_id": "2026-05-22-medicaid-state-directed-payments-rule",
+              "canonical_topic": "medicaid-state-directed-payments",
+              "duplicate_group": "medicaid-state-directed-payments",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/trump-administration-proposes-cracking-down-medicaid-state-directed-payments/820794/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-21T16:27:27Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-proposes-rule-aimed-limiting-medicaid-state-directed-payments",
+                  "source_type": "rss",
+                  "published_at": "2026-05-20T17:21:00Z"
+                }
+              ],
+              "title": "CMS proposes tighter limits on Medicaid state-directed payments, elevating provider margin risk",
+              "summary": "CMS proposed a rule to restrict state-directed payments in Medicaid managed care, a financing mechanism many states use to increase provider reimbursement. Coverage framed the proposal as potentially large federal savings if finalized, with downstream pressure on safety-net and hospital revenues in states that rely heavily on supplemental payments. Stakeholders are expected to contest the scope and implementation timeline during the comment period.",
+              "strategic_implication": "Providers and plans should scenario-test exposure by state/program and prepare unified data on access and financial impact, as a final rule could force rapid contract and rate resets. Health systems with thin Medicaid margins may need contingency operating plans if supplemental payments are reduced or delayed.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "medicaid",
+                "state-directed-payments",
+                "managed-care"
+              ]
+            },
+            {
+              "item_id": "2026-05-22-uspstf-leadership-dismissal",
+              "canonical_topic": "uspstf-preventive-care-coverage",
+              "duplicate_group": "uspstf-preventive-care-coverage",
+              "priority_score": 8,
+              "primary_source": "POLITICO",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "POLITICO",
+                  "url": "https://www.politico.com/news/2026/05/20/rfk-uspstf-preventive-care-task-force-00930447",
+                  "source_type": "web",
+                  "published_at": "2026-05-20T11:10:12Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/kennedy-dismisses-leaders-us-preventive-services-task-force",
+                  "source_type": "rss",
+                  "published_at": "2026-05-20T20:13:00Z"
+                }
+              ],
+              "title": "HHS leadership shakeup at USPSTF raises uncertainty for preventive-coverage roadmap",
+              "summary": "Reports indicated HHS Secretary Robert F. Kennedy Jr. dismissed leaders of the U.S. Preventive Services Task Force, the body whose recommendations drive no-cost coverage requirements for many preventive services. The change injects uncertainty into the timing and direction of future USPSTF recommendations and how payers operationalize them. Industry attention is focused on whether methodology, membership, or prioritization of topics shifts as a result.",
+              "strategic_implication": "Payers and providers should monitor for near-term changes to recommendation cadence or evidence standards, as coverage policies and quality programs are tightly coupled to USPSTF guidance. Benefit design and clinical program leaders may want contingency plans for abrupt preventive-service policy changes.",
+              "confidence": "medium",
+              "tags": [
+                "hhs",
+                "uspstf",
+                "preventive-care",
+                "coverage-policy"
+              ]
+            },
+            {
+              "item_id": "2026-05-22-medicare-physician-pay-reform-hearing",
+              "canonical_topic": "medicare-physician-payment-reform",
+              "duplicate_group": "medicare-physician-payment-reform",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/house-energy-commerce-medicare-physician-pay-reform-consolidation-primary-care/820875/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-21T15:09:49Z"
+                }
+              ],
+              "title": "Medicare physician pay reform resurfaces as lawmakers link underpayment to consolidation",
+              "summary": "A House Energy & Commerce subcommittee hearing revisited Medicare physician payment policy, with witnesses highlighting that payment updates have not kept pace with practice-cost inflation. Coverage emphasized a policy narrative that underpayment accelerates independent-practice sales to hospitals and private equity, potentially increasing total costs. The discussion suggests renewed legislative interest in tying payment updates to inflation measures or other stabilizers.",
+              "strategic_implication": "If Congress pursues reforms, physician groups and health systems should be ready to provide cost and access evidence to shape any inflation index or budget-neutrality tradeoffs. Contracting and network strategies may need adjustment if payment policy slows or accelerates consolidation dynamics.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "physician-payment",
+                "consolidation",
+                "policy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Hospital-facing AI continues to operationalize into enterprise deployments and workflow tooling, signaling a shift from pilots to scaled adoption with leadership and governance implications.",
+          "items": [
+            {
+              "item_id": "2026-05-22-cedars-sinai-openevidence-enterprise",
+              "canonical_topic": "clinical-ai-enterprise-deployment",
+              "duplicate_group": "clinical-ai-enterprise-deployment",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-launches-hands-free-voice-ai-feature-expands-hospital",
+                  "source_type": "rss",
+                  "published_at": "2026-05-21T07:15:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/cedars-sinai-gives-clinicians-enterprise-access-to-openevidence/",
+                  "source_type": "web",
+                  "published_at": "2026-05-20T00:00:00Z"
+                }
+              ],
+              "title": "Cedars-Sinai expands clinician access to OpenEvidence as hands-free voice AI moves into hospitals",
+              "summary": "Fierce Healthcare reported OpenEvidence launched a hands-free voice AI feature and expanded its hospital footprint with a Cedars-Sinai relationship. Becker's Hospital Review separately reported Cedars-Sinai gave clinicians enterprise access to OpenEvidence, reflecting accelerating institutional adoption of point-of-care AI assistance. The combined signal suggests health systems are moving beyond isolated pilots toward governed, enterprise deployments.",
+              "strategic_implication": "Health systems should treat enterprise AI rollouts as change-management programs: credentialing, safety monitoring, and measurable productivity/quality targets need to be defined early. Vendors that can integrate with EHR workflows and provide auditability will have an advantage in procurement cycles.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "voice-ai",
+                "hospital-it",
+                "ehr-workflow"
+              ]
+            },
+            {
+              "item_id": "2026-05-22-canvas-medical-workflow-studio",
+              "canonical_topic": "emr-workflow-automation",
+              "duplicate_group": "emr-workflow-automation",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/canvas-medical-unveils-canvas-studio-customizable-emr-workflow-tool",
+                  "source_type": "rss",
+                  "published_at": "2026-05-20T14:35:00Z"
+                }
+              ],
+              "title": "Canvas Medical launches configurable EHR workflow tooling, intensifying competition around clinician automation",
+              "summary": "Fierce Healthcare reported Canvas Medical introduced Canvas Studio, positioned as a customizable EHR workflow tool for clinicians. The launch aligns with a broader market shift toward configurable, lightweight workflow layers intended to reduce administrative burden and standardize best practices. Adoption will likely depend on integration effort, governance controls, and demonstrable time savings.",
+              "strategic_implication": "Provider IT leaders can use this category to rationalize workflow customization, but should set guardrails to prevent uncontrolled variation and security risk. Vendors should anticipate buyers demanding ROI evidence and interoperability with identity, audit logs, and clinical decision support.",
+              "confidence": "medium",
+              "tags": [
+                "ehr",
+                "workflow",
+                "automation",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-05-22-abridge-tech-chief",
+              "canonical_topic": "ambient-clinical-documentation",
+              "duplicate_group": "ambient-clinical-documentation",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/abridge-taps-new-technology-chief-san-oo/820766/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-21T16:33:00Z"
+                }
+              ],
+              "title": "Abridge names new technology chief as ambient documentation scales across health systems",
+              "summary": "Healthcare Dive reported Abridge appointed a new technology chief, describing the move as coming during an inflection point as the company signs more health system deals. Leadership changes often signal a shift from product iteration toward scaling reliability, integrations, and enterprise readiness. Ambient documentation remains a high-demand wedge for clinician productivity and revenue-cycle documentation completeness.",
+              "strategic_implication": "Health systems evaluating ambient tools should weigh vendor maturity in deployment operations, model governance, and downstream coding impacts. Vendors in this category will face increasing pressure to prove measurable productivity gains without documentation risk.",
+              "confidence": "medium",
+              "tags": [
+                "ambient-scribing",
+                "clinical-documentation",
+                "ai",
+                "health-systems"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Plan-provider channel dynamics are shifting: consolidation debates persist, while integrated systems revisit payer strategies and employer benefits continue experimenting with new financing constructs.",
+          "items": [
+            {
+              "item_id": "2026-05-22-providence-insurance-exit",
+              "canonical_topic": "provider-sponsored-health-plan-strategy",
+              "duplicate_group": "provider-sponsored-health-plan-strategy",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/providence-exits-health-insurance-2027/820842/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-21T13:11:57Z"
+                }
+              ],
+              "title": "Providence moves to wind down most insurance lines for 2027, signaling renewed strain on provider-sponsored plans",
+              "summary": "Healthcare Dive reported Providence will stop offering most Medicaid, ACA, and employer-sponsored plans, while aiming to maintain Medicare Advantage via partnership. The move underscores the operational and regulatory complexity of running regional health plans amid rising costs and policy shifts. It also indicates integrated systems may be selectively retrenching in payer operations to refocus on core delivery economics.",
+              "strategic_implication": "Integrated delivery networks should reassess which insurance products are strategically accretive versus capital- and risk-intensive, especially ahead of policy volatility. Payers may see near-term opportunities to acquire membership or partner with providers exiting certain lines.",
+              "confidence": "medium",
+              "tags": [
+                "health-plans",
+                "provider-sponsored",
+                "medicare-advantage",
+                "strategy"
+              ]
+            },
+            {
+              "item_id": "2026-05-22-hhs-oig-vertical-integration-pbm",
+              "canonical_topic": "pbm-vertical-integration",
+              "duplicate_group": "pbm-vertical-integration",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/vertical-integration-doesnt-appear-lead-higher-drug-costs-medicare-hhs-oig-pbms/820775/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-21T18:25:09Z"
+                }
+              ],
+              "title": "HHS OIG analysis finds limited Medicare drug-price difference tied to PBM-related vertical integration",
+              "summary": "Healthcare Dive reported HHS OIG analyzed pricing for a set of high-cost, commonly used drugs and found a negligible overall difference between vertically integrated plans tied to PBMs and non-integrated plans, while noting data limitations. The report adds nuance to ongoing consolidation and PBM reform debates by suggesting pricing effects may be more context-specific than broadly directional. Industry stakeholders are likely to cite the findings selectively in policy advocacy.",
+              "strategic_implication": "Policy teams should treat the report as a data point rather than closure, and be prepared for follow-on requests for more granular evidence by drug class and benefit design. Plans and PBMs may use the findings defensively; employers and regulators may still pursue transparency and rebate reforms.",
+              "confidence": "medium",
+              "tags": [
+                "pbm",
+                "vertical-integration",
+                "medicare",
+                "drug-pricing"
+              ]
+            },
+            {
+              "item_id": "2026-05-22-ichra-broker-recommendations",
+              "canonical_topic": "ichra-employer-benefits",
+              "duplicate_group": "ichra-employer-benefits",
+              "priority_score": 5,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/study-brokers-increasingly-recommending-ichra-employers",
+                  "source_type": "rss",
+                  "published_at": "2026-05-21T14:38:00Z"
+                }
+              ],
+              "title": "Brokers increasingly recommend ICHRA models, signaling continued experimentation in employer-sponsored coverage",
+              "summary": "Fierce Healthcare reported a study indicating brokers are increasingly recommending Individual Coverage HRAs (ICHRAs) to employers. The signal aligns with sustained employer interest in predictable contributions and shifting risk to individual-market coverage structures. Adoption depends on local marketplace stability, employee experience, and administrative support.",
+              "strategic_implication": "Payers and benefits platforms can position around decision support, plan selection, and navigation to reduce churn and adverse selection. Providers should watch for shifts in payer mix and network steerage as employers move coverage into the individual market.",
+              "confidence": "medium",
+              "tags": [
+                "employers",
+                "ichra",
+                "benefits",
+                "individual-market"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Health systems are investing in operational modernization while facing performance-measurement and trust challenges that can complicate transformation narratives.",
+          "items": [
+            {
+              "item_id": "2026-05-22-metrohealth-artisight-smart-hospital",
+              "canonical_topic": "smart-hospital-platforms",
+              "duplicate_group": "smart-hospital-platforms",
+              "priority_score": 7,
+              "primary_source": "Business Wire",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Business Wire",
+                  "url": "https://www.businesswire.com/news/home/20260521350079/en/Artisight-Smart-Hospital-Platform-Selected-by-MetroHealth",
+                  "source_type": "web",
+                  "published_at": "2026-05-21T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/hospitals/metrohealth-partners-artisight-smart-hospital-platform-rollout",
+                  "source_type": "rss",
+                  "published_at": "2026-05-20T10:57:00Z"
+                }
+              ],
+              "title": "MetroHealth selects Artisight smart hospital platform, reinforcing demand for real-time operational intelligence",
+              "summary": "A Business Wire release announced MetroHealth selected Artisight's Smart Hospital Platform, and Fierce Healthcare covered the rollout as part of the vendor's hospital expansion. Smart-hospital platforms typically blend sensors, computer vision, and workflow tooling to improve throughput, safety monitoring, and staffing efficiency. The move reflects continued investment in operational visibility as labor and capacity constraints persist.",
+              "strategic_implication": "Providers should ensure these deployments are tied to measurable operational KPIs (throughput, falls, response times) and aligned with privacy and workforce acceptance. Vendors will need to prove integration, governance, and sustainable savings to expand beyond early adopters.",
+              "confidence": "medium",
+              "tags": [
+                "smart-hospital",
+                "operations",
+                "computer-vision",
+                "workflow"
+              ]
+            },
+            {
+              "item_id": "2026-05-22-mgb-outcomes-claims",
+              "canonical_topic": "health-system-outcomes-transparency",
+              "duplicate_group": "health-system-outcomes-transparency",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/21/mass-general-brigham-says-it-is-saving-more-lives-some-doctors-arent-so-sure/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T02:27:52Z"
+                }
+              ],
+              "title": "Mass General Brigham outcome claims draw internal skepticism, highlighting measurement and change-management risk",
+              "summary": "STAT reported Mass General Brigham said it is saving more lives, while some clinicians questioned the conclusion. The debate underscores the sensitivity of outcomes measurement, attribution, and internal trust during major systemwide performance initiatives. Transparent methodology and clinician engagement can be decisive for sustaining improvement programs.",
+              "strategic_implication": "Health systems should treat outcomes claims as governance artifacts: clear denominators, risk adjustment, and peer review are essential to maintain credibility. Weak measurement narratives can undermine adoption of operational and clinical transformation programs.",
+              "confidence": "medium",
+              "tags": [
+                "quality",
+                "outcomes",
+                "measurement",
+                "change-management"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical workforce dynamics continue to be shaped by administrative burden, emerging care-model proposals, and compliance expectations tied to employment policies.",
+          "items": [
+            {
+              "item_id": "2026-05-22-mens-health-office",
+              "canonical_topic": "mens-health-policy",
+              "duplicate_group": "mens-health-policy",
+              "priority_score": 4,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/22/state-of-mens-health-act-new-office-slowed/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T10:00:00Z"
+                }
+              ],
+              "title": "Momentum builds for a federal men's health office, but implementation could be slow",
+              "summary": "STAT reported a federal office of men's health has moved closer to reality through proposed legislation, but could still take years to implement. New federal structures typically require appropriations, staffing, and program definition before affecting provider operations or payer coverage. The discussion reflects a broader policy focus on targeted population-health initiatives.",
+              "strategic_implication": "Providers and advocacy groups can shape early program priorities, especially around screening, mental health, and chronic disease management. Payers may see new quality-measure or preventive-service emphasis over time if federal programming matures.",
+              "confidence": "low",
+              "tags": [
+                "population-health",
+                "policy",
+                "screening",
+                "public-health"
+              ]
+            },
+            {
+              "item_id": "2026-05-22-vaccine-exemption-settlement",
+              "canonical_topic": "employment-vaccine-policy",
+              "duplicate_group": "employment-vaccine-policy",
+              "priority_score": 4,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/eeoc-millions-for-unvaccinated-workers-affected-by-mass-firing-covid-vaccine/820737/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-19T19:36:00Z"
+                }
+              ],
+              "title": "Vaccine-exemption settlement spotlights ongoing compliance risk in workforce policy enforcement",
+              "summary": "Healthcare Dive reported an employer agreed to pay $4.25 million to settle claims it failed to consider vaccine exemptions. The case highlights continuing legal and HR sensitivity around accommodation processes and documentation, even as many organizations normalize post-pandemic policies. Health employers remain exposed given large workforces and regulated environments.",
+              "strategic_implication": "Health systems should review accommodation workflows, documentation standards, and manager training to reduce litigation and enforcement exposure. Consistent policy application is critical to avoid reputational and operational disruption.",
+              "confidence": "medium",
+              "tags": [
+                "workforce",
+                "compliance",
+                "eeoc",
+                "employee-policy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-05-21",
       "generated_at": "2026-05-21T11:14:04Z",
       "headline": "Today's Healthcare Insights",
@@ -3628,5 +4048,5 @@
       ]
     }
   ],
-  "last_updated": "2026-05-21T11:14:04Z"
+  "last_updated": "2026-05-22T11:11:43Z"
 }

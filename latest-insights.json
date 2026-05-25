@@ -3,6 +3,274 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-05-25",
+      "generated_at": "2026-05-25T11:10:22Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's brief highlights intensifying federal scrutiny of Medicaid payment mechanics and audit enforcement, alongside escalating 340B channel conflict and continued operational AI experimentation. Items were curated primarily from Healthcare Dive and STAT RSS feeds, supplemented by targeted web review for context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (policy/market/digital health)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "Email (supplementary; not used this run)",
+          "Web search (policy/market/digital health)"
+        ],
+        "run_notes": "This run relied on RSS feeds; web-search results were low-signal/limited due to weekend/holiday news cadence."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal oversight is tightening through proposed Medicaid payment constraints and more aggressive program-integrity enforcement, while public-health communications remain politically sensitive.",
+          "items": [
+            {
+              "item_id": "2026-05-25-medicaid-state-directed-payments",
+              "canonical_topic": "medicaid-state-directed-payments",
+              "duplicate_group": "medicaid-state-directed-payments",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/22/medicaid-state-directed-payments-trump-proposes-more-cuts/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T17:19:15Z"
+                }
+              ],
+              "title": "CMS proposes tighter limits on Medicaid state-directed payments to providers",
+              "summary": "A STAT report details how proposed federal policy would further constrain Medicaid state-directed payments (supplemental payments) to providers, building on prior congressional restrictions. The change would reduce states’ flexibility to use managed-care directed payments to raise provider reimbursement. Stakeholders warn the proposals could pressure safety-net hospital finances and amplify access concerns in low-margin markets.",
+              "strategic_implication": "Provider executives should model Medicaid supplemental-payment exposure by state and contract type; payers and systems may face renegotiation pressure as states attempt to replace lost directed-payment support.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "payment-policy",
+                "state-directed-payments",
+                "safety-net"
+              ]
+            },
+            {
+              "item_id": "2026-05-25-hhs-aero-ai-fraud-audits",
+              "canonical_topic": "hhs-aero-ai-fraud-audits",
+              "duplicate_group": "hhs-aero-ai-fraud-audits",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-ai-fraud-state-audit-aero/820989/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T14:53:40Z"
+                }
+              ],
+              "title": "HHS launches AI-backed AERO audits to detect fraud and waste across health programs",
+              "summary": "HHS announced an Audit Enforcement and Risk Oversight (AERO) initiative that uses AI to review years of audit records tied to federally funded health programs across states. The effort is positioned as an integrity push intended to identify fraud, waste, and misuse more quickly than traditional audit methods. Increased audit activity could raise compliance burdens for states and downstream providers that rely on Medicaid and other HHS-funded programs.",
+              "strategic_implication": "Expect tighter documentation and faster recoupment cycles; organizations should stress-test audit readiness, particularly around cost reporting, grant compliance, and managed-care payment pass-throughs.",
+              "confidence": "high",
+              "tags": [
+                "hhs",
+                "program-integrity",
+                "ai",
+                "audits",
+                "compliance"
+              ]
+            },
+            {
+              "item_id": "2026-05-25-cdc-mpox-communications",
+              "canonical_topic": "cdc-mpox-communications",
+              "duplicate_group": "cdc-mpox-communications",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/22/health-news-cdc-mpox-page-caught-in-political-crosshairs/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T13:14:29Z"
+                }
+              ],
+              "title": "CDC mpox guidance page becomes flashpoint in political oversight",
+              "summary": "STAT reports that a CDC mpox web page drew political attention, underscoring continued scrutiny of federal public-health communications. While operational impact is limited, such disputes can slow guidance updates and create uncertainty for providers and local health departments. The episode illustrates how politicization can spill into routine clinical/public-health messaging.",
+              "strategic_implication": "Public-health dependent organizations should maintain redundant clinical guidance pathways (state/local, specialty societies) and document decision rationales when federal guidance shifts.",
+              "confidence": "medium",
+              "tags": [
+                "cdc",
+                "public-health",
+                "infectious-disease",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Operational AI adoption continues to concentrate on administrative workflows where ROI is measurable and regulatory risk is comparatively lower.",
+          "items": [
+            {
+              "item_id": "2026-05-25-ai-front-door-intake",
+              "canonical_topic": "ai-front-door-intake",
+              "duplicate_group": "ai-front-door-intake",
+              "priority_score": 4,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/22/chatbots-doctor-office-check-in-intake-ai/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T08:30:00Z"
+                }
+              ],
+              "title": "AI-enabled intake and check-in emerge as a pragmatic near-term automation target",
+              "summary": "A STAT opinion argues that patient intake and administrative check-in are well-suited for conversational AI and automation given repetitive workflows and high labor burden. While not a new regulatory development, the piece reflects a broader shift toward applying generative AI to revenue-cycle and access operations. Adoption success depends on workflow integration, data quality, and patient experience safeguards.",
+              "strategic_implication": "Health systems can prioritize low-risk administrative AI use cases with measurable ROI, pairing pilots with strong governance for PHI handling and bias/quality monitoring.",
+              "confidence": "low",
+              "tags": [
+                "ai",
+                "patient-access",
+                "revenue-cycle",
+                "automation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Ownership-model experimentation and channel conflict (340B) are reshaping competitive dynamics and financial flows across hospitals and pharmacy intermediaries.",
+          "items": [
+            {
+              "item_id": "2026-05-25-340b-contract-pharmacy-litigation",
+              "canonical_topic": "340b-contract-pharmacy-litigation",
+              "duplicate_group": "340b-contract-pharmacy-litigation",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hospitals-file-340b-lawsuit-cvs-health/820959/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T13:00:55Z"
+                }
+              ],
+              "title": "Hospitals sue CVS, alleging diversion of 340B contract-pharmacy savings",
+              "summary": "A group of hospitals filed suit accusing CVS of improperly retaining or redirecting an estimated $250M in value tied to 340B contract-pharmacy arrangements. The dispute highlights growing friction between covered entities, contract pharmacies, and manufacturers over who captures spread and fees in the 340B channel. Litigation risk is increasing as stakeholders pursue court routes amid slow-moving federal rulemaking.",
+              "strategic_implication": "Health systems should reassess contract-pharmacy economics, audit rights, and fee structures; payers and PBMs should monitor for downstream pricing and access effects as 340B margins are challenged.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "pbm",
+                "contract-pharmacy",
+                "litigation",
+                "drug-pricing"
+              ]
+            },
+            {
+              "item_id": "2026-05-25-quorum-health-nonprofit-transition",
+              "canonical_topic": "quorum-health-nonprofit-transition",
+              "duplicate_group": "quorum-health-nonprofit-transition",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/quorum-health-nonprofit-transition-healthside-partners/820924/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T15:58:52Z"
+                }
+              ],
+              "title": "Quorum Health to transition into a nonprofit system via Healthside Partners deal",
+              "summary": "Healthcare Dive reports that Quorum Health agreed to a transaction that would shift the system into nonprofit ownership/structure through a deal with Healthside Partners. The move reflects ongoing balance-sheet pressure among smaller hospital operators and continued experimentation with ownership models to stabilize rural/community facilities. Similar restructurings may accelerate as capital costs remain elevated.",
+              "strategic_implication": "Boards should consider nonprofit conversions, joint ventures, and managed-services structures as alternatives to distressed sale; diligence should focus on pension/lease liabilities and service-line sustainability.",
+              "confidence": "medium",
+              "tags": [
+                "m-and-a",
+                "hospital-operators",
+                "nonprofit",
+                "rural-health",
+                "restructuring"
+              ]
+            },
+            {
+              "item_id": "2026-05-25-longevity-biotech-funding",
+              "canonical_topic": "longevity-biotech-funding",
+              "duplicate_group": "longevity-biotech-funding",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/22/retro-biosciences-longevity-valuation/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T11:00:00Z"
+                }
+              ],
+              "title": "Longevity startup Retro Biosciences raises at reported $1.8B valuation",
+              "summary": "STAT reports that Retro Biosciences said its latest fundraising round values the company at about $1.8B, highlighting sustained investor appetite for longevity and aging-biology platforms. While not directly provider-facing, funding momentum can influence employer and consumer expectations around preventive and longevity services. The space remains high-risk with long development timelines.",
+              "strategic_implication": "Digital health and provider innovators should watch for adjacent demand signals (screening, consumer longevity clinics) but avoid overcommitting until clinical evidence and reimbursement pathways mature.",
+              "confidence": "low",
+              "tags": [
+                "biotech",
+                "venture-capital",
+                "longevity",
+                "consumer-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinicians are contending with consumer-driven information dynamics that affect visit complexity and demand patterns.",
+          "items": [
+            {
+              "item_id": "2026-05-25-perimenopause-misinformation",
+              "canonical_topic": "perimenopause-misinformation",
+              "duplicate_group": "perimenopause-misinformation",
+              "priority_score": 4,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/23/perimenopause-misinformation-influencers-supplements-hormones/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-23T11:00:00Z"
+                }
+              ],
+              "title": "Clinicians face rising perimenopause misinformation and supplement marketing pressure",
+              "summary": "A STAT opinion highlights how social-media narratives and supplement marketing are influencing patient expectations about perimenopause care, including hormones and alternative regimens. The dynamic can increase visit complexity and create demand for non-evidence-based interventions. It also underscores the need for clear patient education and consistent clinical messaging.",
+              "strategic_implication": "Practices should refresh patient education materials and train teams for expectation-setting conversations; payers may see utilization shifts if demand for hormone therapy and ancillary testing rises.",
+              "confidence": "low",
+              "tags": [
+                "womens-health",
+                "clinical-practice",
+                "misinformation",
+                "patient-education"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-05-22",
       "generated_at": "2026-05-22T11:11:43Z",
       "headline": "Today's Healthcare Insights",
@@ -4048,5 +4316,5 @@
       ]
     }
   ],
-  "last_updated": "2026-05-22T11:11:43Z"
+  "last_updated": "2026-05-25T11:10:22Z"
 }

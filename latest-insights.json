@@ -3,6 +3,221 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-05-26",
+      "generated_at": "2026-05-26T11:05:15Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition focuses on leadership and governance signals at key federal health agencies, near-term realism around AI value creation, and continued vertical integration and investment prioritization across providers. Primary inputs came from STAT and Healthcare Dive RSS feeds, with limited incremental signal from broader web review in the last 24 hours.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (policy/market/digital health)",
+          "Email (supplementary labels)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS"
+        ],
+        "sources_failed": [
+          "Fierce Healthcare RSS",
+          "Web search (policy/market/digital health)",
+          "Email (supplementary labels)"
+        ],
+        "run_notes": "Fierce feed returned zero entries this run; web-search results were dominated by low-signal commentary and vendor content, so the edition emphasizes RSS items with clear provenance."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Leadership and governance shifts (and potential reorganizations) remain a near-term variable for regulatory throughput and program execution.",
+          "items": [
+            {
+              "item_id": "2026-05-26-fda-leadership-food-kyle-diamantas",
+              "canonical_topic": "fda-leadership-food",
+              "duplicate_group": "fda-leadership-food",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/26/kyle-diamantas-acting-fda-commissioner-wins-trust-exceeds-expectations/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-26T08:30:00Z"
+                }
+              ],
+              "title": "FDA leadership profile signals continuity for agency operations amid scrutiny",
+              "summary": "STAT profiled FDA leader Kyle Diamantas and his rise inside the agency, highlighting how internal and external stakeholders are assessing his approach. The piece underscores how leadership credibility and decision cadence can shape enforcement posture and regulatory throughput. For regulated organizations, leadership stability matters for predictability in review timelines and compliance expectations.",
+              "strategic_implication": "Manufacturers and provider-facing entities should watch for early signals in enforcement and guidance priorities that may change budgeting for compliance, quality, and regulatory affairs.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "regulation",
+                "food-and-drug",
+                "leadership"
+              ]
+            },
+            {
+              "item_id": "2026-05-26-pepfar-state-department-reorg",
+              "canonical_topic": "pepfar-program-structure",
+              "duplicate_group": "pepfar-program-structure",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/26/pepfar-state-department-plan-dismantling-hiv-cdc/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-26T08:30:00Z"
+                }
+              ],
+              "title": "Former CDC directors warn State Department plan could weaken PEPFAR execution",
+              "summary": "An opinion piece in STAT from former CDC directors argues that a planned State Department restructuring would undermine PEPFAR rather than reform it. The authors contend that governance and operational changes could reduce program effectiveness and public-health readiness. The debate highlights how program reorganizations can disrupt funding flows and implementation partners.",
+              "strategic_implication": "Organizations with global-health portfolios should map dependency on federal program structures and build contingency plans for funding timing, reporting, and partner transitions.",
+              "confidence": "low",
+              "tags": [
+                "public-health",
+                "pepfar",
+                "federal-programs",
+                "global-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI narratives continue to mature from hype toward discipline on data, validation, and measurable operational wins.",
+          "items": [
+            {
+              "item_id": "2026-05-26-ai-biotech-hype-check",
+              "canonical_topic": "ai-drug-development",
+              "duplicate_group": "ai-drug-development",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/26/ai-biotech-bighat-biosciences-ceo-on-ai-drug-development-hype/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-26T08:30:00Z"
+                }
+              ],
+              "title": "AI-biotech CEO pushes back on drug-development hype and sets realistic timelines",
+              "summary": "STAT interviewed the CEO of BigHat Biosciences on where AI can improve drug discovery and where claims are overstated. The discussion emphasizes data quality, assay design, and the limits of model-driven predictions without strong experimental validation. For healthcare leaders, it reinforces that near-term AI value is likelier in workflow optimization and targeted R&D use cases than end-to-end disruption.",
+              "strategic_implication": "Life-sciences and health-system innovation teams should prioritize AI programs with measurable intermediate outputs (cycle time, hit rate, documentation burden) and clear governance over broad platform bets.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "biotech",
+                "drug-development",
+                "r-and-d"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Biopharma innovation and one-time therapies keep reshaping payer and investor expectations around durability and financing models.",
+          "items": [
+            {
+              "item_id": "2026-05-26-lilly-verve-gene-editing-cholesterol",
+              "canonical_topic": "gene-editing-cardiometabolic",
+              "duplicate_group": "gene-editing-cardiometabolic",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/25/eli-lilly-verv-102-gene-editing-cholesterol-phase-1-trial-data/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-25T12:45:00Z"
+                }
+              ],
+              "title": "Eli Lilly highlights early Verve gene-editing data lowering cholesterol in phase 1",
+              "summary": "STAT reported that Eli Lilly said a high dose of its gene-editing therapy (from its Verve partnership) reduced cholesterol levels substantially in an early clinical study. Early results keep investor and payer attention on one-time cardiometabolic interventions with potentially durable effects. Longer follow-up and safety monitoring will determine whether these approaches can translate into broader clinical adoption.",
+              "strategic_implication": "Payers and providers should begin scenario planning for how durable gene-editing therapies could affect long-term cost curves, prior authorization design, and outcomes-based contracts in cardiometabolic care.",
+              "confidence": "medium",
+              "tags": [
+                "biopharma",
+                "gene-editing",
+                "cardiometabolic",
+                "pipeline"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider organizations continue to pursue structural moves—especially payer ownership—to stabilize margins and manage utilization risk.",
+          "items": [
+            {
+              "item_id": "2026-05-26-nonprofit-hospitals-insurer-acquisitions-rises",
+              "canonical_topic": "provider-payer-deals",
+              "duplicate_group": "provider-payer-deals",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/quorum-health-nonprofit-transition-healthside-partners/820924/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T15:58:52Z"
+                }
+              ],
+              "title": "Quorum Health to transition to a nonprofit system in deal with Healthside Partners",
+              "summary": "Healthcare Dive reported that Quorum Health will transition to a nonprofit system through a deal with Healthside Partners. The move reflects ongoing portfolio reshaping among hospital operators and investors, with governance and mission status affecting access to capital and strategic flexibility. Transaction structure and regulatory review will influence timing and operational transition risk.",
+              "strategic_implication": "Regional providers should monitor how nonprofit conversions and restructurings reshape competitive dynamics (service lines, referral flows) and consider proactive communication with payers and employers during transition periods.",
+              "confidence": "medium",
+              "tags": [
+                "provider-restructuring",
+                "nonprofit",
+                "m-and-a",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Technology investment decisions are increasingly constrained by staffing capacity and the need to translate spend into workforce productivity.",
+          "items": [
+            {
+              "item_id": "2026-05-26-healthcare-it-spend-forecast-2026",
+              "canonical_topic": "healthcare-it-spend",
+              "duplicate_group": "healthcare-it-spend",
+              "priority_score": 5,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hospitals-file-340b-lawsuit-cvs-health/820959/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-22T13:00:55Z"
+                }
+              ],
+              "title": "Hospitals sue CVS alleging diversion of 340B contract-pharmacy savings",
+              "summary": "Healthcare Dive reported that hospitals filed a lawsuit against CVS, alleging the pharmacy operator improperly captured hundreds of millions of dollars tied to 340B program savings. The dispute underscores ongoing channel conflict over who controls 340B economics and how contract-pharmacy arrangements are administered. The outcome could influence contract terms, audit practices, and the willingness of health systems to rely on certain pharmacy partners.",
+              "strategic_implication": "Providers should reassess 340B contract-pharmacy controls (data rights, reconciliation, and audit clauses) and prepare for tighter counterparty governance as litigation and policy scrutiny intensify.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "pharmacy",
+                "litigation",
+                "drug-pricing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-05-25",
       "generated_at": "2026-05-25T11:10:22Z",
       "headline": "Today's Healthcare Insights",
@@ -4316,5 +4531,5 @@
       ]
     }
   ],
-  "last_updated": "2026-05-25T11:10:22Z"
+  "last_updated": "2026-05-26T11:05:23Z"
 }

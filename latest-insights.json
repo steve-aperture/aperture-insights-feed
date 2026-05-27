@@ -3,6 +3,225 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-05-27",
+      "generated_at": "2026-05-27T11:10:29Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition centers on payer-market stress signals (ACA exits), the next wave of consumer/wearable capital markets activity, and how leaders are recalibrating expectations for AI adoption and value. Primary inputs came from STAT and Healthcare Dive RSS feeds, supplemented by targeted web review for federal policy and antitrust signals.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (policy/market/digital health)",
+          "Email (supplementary labels)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Web search (policy/market/digital health)"
+        ],
+        "sources_failed": [
+          "Fierce Healthcare RSS",
+          "Email (supplementary labels)"
+        ],
+        "run_notes": "Fierce feed contained items but none within the last ~36 hours cutoff; email signals were not required for coverage today."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Policy focus is split between drug pricing pressure and procedural/regulatory mechanics that can affect provider economics and deal timing.",
+          "items": [
+            {
+              "item_id": "2026-05-27-aha-hsr-form-hospital-merger-exemption",
+              "canonical_topic": "hospital-merger-antitrust-notification",
+              "duplicate_group": "hospital-merger-antitrust-notification",
+              "priority_score": 6,
+              "primary_source": "American Hospital Association",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "American Hospital Association",
+                  "url": "https://www.aha.org/news/headline/2026-05-26-aha-urges-ftc-doj-exclude-hospital-mergers-premerger-notification-requirements",
+                  "source_type": "web",
+                  "published_at": "2026-05-26T21:09:44Z"
+                }
+              ],
+              "title": "AHA urges FTC/DOJ to exclude hospital mergers from expanded HSR premerger form",
+              "summary": "The American Hospital Association submitted comments urging the FTC and DOJ to exclude hospital mergers from proposed revisions to the Hart-Scott-Rodino premerger notification form. The AHA argued that additional questions would add burden without targeting the issues that typically arise in hospital transactions. If adopted, the agencies’ revisions could increase transaction friction and extend timelines for provider consolidation deals.",
+              "strategic_implication": "Provider and investor deal teams should plan for greater pre-close documentation load and longer regulatory clocks in scenarios where the revised form applies. Systems pursuing partnerships or acquisitions should stress-test timelines and integration assumptions under a more demanding antitrust filing regime.",
+              "confidence": "medium",
+              "tags": [
+                "antitrust",
+                "hsr",
+                "provider-ma",
+                "regulatory",
+                "deal-timing"
+              ]
+            },
+            {
+              "item_id": "2026-05-27-drug-pricing-white-house-steps-medicare",
+              "canonical_topic": "drug-pricing-medicare",
+              "duplicate_group": "drug-pricing-medicare",
+              "priority_score": 5,
+              "primary_source": "Nation Press",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Nation Press",
+                  "url": "https://www.nationpress.com/international/white-house-touts-historic-steps-to-lower-us-drug-prices",
+                  "source_type": "web",
+                  "published_at": "2026-05-27T00:00:00Z"
+                }
+              ],
+              "title": "White House highlights new steps to lower drug prices as Medicare negotiation approaches implementation",
+              "summary": "A White House communication highlighted what it described as major steps to lower U.S. prescription drug prices and pointed consumers to a tool for finding lower-priced medications. The update connects to Medicare drug price negotiation authorities established in the Inflation Reduction Act, with negotiated prices expected to take effect in 2026. Policy signaling suggests continued executive focus on visible near-term affordability actions.",
+              "strategic_implication": "Payers, PBMs, and manufacturers should expect continued scrutiny around list prices and negotiated rates as implementation milestones arrive. Providers should monitor downstream formulary and patient affordability shifts that can change utilization and pharmacy benefit dynamics.",
+              "confidence": "low",
+              "tags": [
+                "drug-pricing",
+                "medicare",
+                "ira",
+                "pbm",
+                "affordability"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "New signal continues to separate high-value, workflow-anchored AI use cases from hype, while wearables companies push further into regulated healthcare adjacency.",
+          "items": [
+            {
+              "item_id": "2026-05-27-stanford-patient-panels-ai-adoption-fault-lines",
+              "canonical_topic": "ai-adoption-clinical-workflows",
+              "duplicate_group": "ai-adoption-clinical-workflows",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/27/stanford-patient-panels-feedback-on-ai-shaping-health-care/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-27T08:30:00Z"
+                }
+              ],
+              "title": "Stanford patient panels highlight friction points shaping real-world health AI adoption",
+              "summary": "STAT reported on Stanford patients participating in panels intended to provide feedback on how AI is used in healthcare settings. The account underscores practical fault lines in adoption, including trust, transparency, and how AI outputs are incorporated into clinical encounters. The theme reinforces that patient-facing acceptance and governance can become gating factors even when the underlying model performance is strong.",
+              "strategic_implication": "Health systems scaling AI should treat patient communication, consent, and explainability as implementation workstreams—not afterthoughts. Vendors that can operationalize feedback loops (and document safety/quality) will be better positioned for enterprise expansion.",
+              "confidence": "medium",
+              "tags": [
+                "health-ai",
+                "governance",
+                "patient-trust",
+                "clinical-workflow",
+                "adoption"
+              ]
+            },
+            {
+              "item_id": "2026-05-27-utah-doctronic-ai-pilot-early-data",
+              "canonical_topic": "ai-pilots-clinical-evidence",
+              "duplicate_group": "ai-pilots-clinical-evidence",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/26/utah-doctronic-ai-experiment-early-data-health-tech/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-26T13:58:11Z"
+                }
+              ],
+              "title": "Early results from Utah's Doctronic AI pilot add evidence on where automation helps most",
+              "summary": "STAT reviewed early data from Utah's Doctronic AI pilot, providing a snapshot of how AI tooling performs in a live deployment. The article adds to the growing body of operational evidence on where automation reduces clinician burden versus where it introduces new oversight or workflow steps. These early deployments are increasingly used by buyers as proof points in enterprise AI procurement.",
+              "strategic_implication": "Providers should define success metrics (cycle time, clinician time saved, safety events, patient experience) up front and insist on measurement during pilots. Investors should value solutions that show durable workflow integration rather than stand-alone model demos.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "pilot-results",
+                "workflow",
+                "evidence",
+                "procurement"
+              ]
+            },
+            {
+              "item_id": "2026-05-27-oura-ipo-healthcare-push",
+              "canonical_topic": "wearables-ipo-healthcare",
+              "duplicate_group": "wearables-ipo-healthcare",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/oura-files-for-ipo-amid-healthcare-push/821108/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-26T14:54:49Z"
+                }
+              ],
+              "title": "Ōura files for IPO as wearables company deepens healthcare positioning",
+              "summary": "Healthcare Dive reported that Ōura filed for an IPO, framing the move alongside the company's healthcare expansion. The filing signals renewed public-market interest in consumer-originated platforms that are moving toward clinical, payer, or employer-aligned use cases. Wearables companies continue to test how far they can push into regulated and reimbursed care pathways.",
+              "strategic_implication": "Health systems and payers evaluating wearables partnerships should separate engagement/behavior-change value from medical-grade monitoring claims and ensure governance over data flows. Public-market comparables may reset valuation expectations for later-stage digital health companies pursuing exits.",
+              "confidence": "medium",
+              "tags": [
+                "wearables",
+                "ipo",
+                "digital-health",
+                "consumerization",
+                "capital-markets"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital-markets moves and payer retrenchment reinforce that margins and unit economics remain decisive, especially in individual-market and consumer-adjacent segments.",
+          "items": [
+            {
+              "item_id": "2026-05-27-pacificsource-exits-aca-montana",
+              "canonical_topic": "aca-exchange-exit",
+              "duplicate_group": "aca-exchange-exit",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/pacificsource-exits-aca-montana/821084/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-26T13:53:33Z"
+                }
+              ],
+              "title": "PacificSource to exit ACA exchanges in Montana, underscoring individual-market stress",
+              "summary": "Healthcare Dive reported that PacificSource will exit ACA exchange markets in Montana, citing financial strain. Exchange participation changes can be early warning indicators for premium pressure, risk pool instability, or competitive dynamics in specific geographies. Provider contracting and patient access can shift quickly when carrier footprints change.",
+              "strategic_implication": "Providers in affected markets should model payer-mix and bad-debt implications and proactively engage remaining plans on network and rate strategy. State policymakers and payers should anticipate member disruption and potential knock-on effects for rural access.",
+              "confidence": "medium",
+              "tags": [
+                "payer",
+                "aca",
+                "exchange",
+                "montana",
+                "insurance-markets"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "No major provider-ops-specific operational stories surfaced across the targeted feeds in the last ~24 hours beyond general market and policy items.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No distinct workforce or clinical practice trend items stood out in today’s short window beyond ongoing AI/workflow discussions.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-05-26",
       "generated_at": "2026-05-26T11:05:15Z",
       "headline": "Today's Healthcare Insights",
@@ -4531,5 +4750,5 @@
       ]
     }
   ],
-  "last_updated": "2026-05-26T11:05:23Z"
+  "last_updated": "2026-05-27T11:10:37Z"
 }

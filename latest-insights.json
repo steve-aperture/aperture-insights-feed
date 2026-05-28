@@ -3,6 +3,172 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-05-28",
+      "generated_at": "2026-05-28T11:08:11Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition tracks litigation and market pressure points: state PBM reforms moving into the courts, a regional ACA exchange pullback, and renewed wearables IPO momentum. Inputs were drawn primarily from STAT and Healthcare Dive RSS, with a limited Tier 2 market signal from Fierce Healthcare where timestamps were not available in the RSS extraction.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (policy/market/digital health)",
+          "Email (supplementary labels)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "Web search (policy/market/digital health)",
+          "Email (supplementary labels)"
+        ],
+        "run_notes": "Web search was attempted but returned mostly low-signal or non-primary results within the last-day filter; RSS provided the actionable items for today."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Policy and payment signals today are dominated by state-level PBM regulation moving into litigation, reinforcing uncertainty for vertically integrated pharmacy models.",
+          "items": [
+            {
+              "canonical_topic": "pbm-vertical-integration-laws",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cvs-lawsuit-tennessee-pbm-pharmacy-ownership-law/821181/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-27T13:10:59Z"
+                }
+              ],
+              "title": "CVS challenges Tennessee law targeting PBM ownership of pharmacies",
+              "summary": "CVS filed suit to block a Tennessee law intended to separate PBMs from owning pharmacies, escalating the legal and compliance uncertainty around state-level PBM reforms. The case adds to a growing patchwork of state rules and court decisions shaping how vertically integrated PBMs operate and contract. For employers and payers, the outcome could influence network design, reimbursement leverage, and pharmacy access strategies.",
+              "strategic_implication": "Health plans and employer sponsors should model contract and network scenarios that assume further state constraints on PBM-owned retail footprints. Provider systems may see knock-on effects in 340B and specialty pharmacy channels depending on how dispensing and reimbursement flows are restructured.",
+              "confidence": "high",
+              "tags": [
+                "pbm",
+                "pharmacy",
+                "state-policy",
+                "vertical-integration",
+                "litigation"
+              ],
+              "item_id": "2026-05-28-cvs-challenges-tennessee-law-targeting-pbm-ownership-of-phar",
+              "duplicate_group": "pbm-vertical-integration-laws"
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital health coverage today highlights the execution risk in AI deployment when patient expectations and hospital priorities diverge.",
+          "items": [
+            {
+              "canonical_topic": "health-ai-trust-adoption-gap",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/27/health-ai-where-patients-hospitals-disagree-ai-prognosis/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-05-27T13:09:50Z"
+                }
+              ],
+              "title": "Survey signal: patients and hospitals diverge on where AI belongs in care",
+              "summary": "New reporting highlighted areas where patient expectations for AI-enabled healthcare differ from hospital leaders’ adoption priorities. The gap appears to be less about general openness to technology and more about trust, transparency, and how AI affects clinician relationships and decision-making. These mismatches can slow rollout or generate reputational risk when AI-enabled workflows are perceived as cost-cutting rather than care-improving.",
+              "strategic_implication": "Health systems should pair AI deployment with clear patient-facing explanations, opt-in/consent patterns where feasible, and measurement of satisfaction impacts alongside clinical and operational KPIs. Vendors should invest in implementation support that anticipates stakeholder misalignment, not just model performance.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "patient-trust",
+                "adoption",
+                "health-systems",
+                "governance"
+              ],
+              "item_id": "2026-05-28-survey-signal-patients-and-hospitals-diverge-on-where-ai-bel",
+              "duplicate_group": "health-ai-trust-adoption-gap"
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Market signals point to insurer strain and a reopening wearables IPO window, both of which can reshape contracting and partnership dynamics.",
+          "items": [
+            {
+              "canonical_topic": "wearables-ipo-pipeline",
+              "priority_score": 5,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/oura-smart-ring-maker-files-confidentially-ipo-consumer-demand-propels-revenue-growth",
+                  "source_type": "rss",
+                  "published_at": null
+                }
+              ],
+              "title": "Fierce: Ōura reported to file confidentially for IPO as demand and revenue rise",
+              "summary": "Fierce Healthcare reported that Ōura has filed confidentially for an IPO, citing growth in consumer demand and revenue. The report aligns with broader signals of wearables firms moving into healthcare-adjacent distribution and clinical validation. Because the feed item did not include an RSS publication timestamp in the extraction, timing should be confirmed before operational decisions are made.",
+              "strategic_implication": "Treat this as a directional market signal rather than a decision trigger, and validate through primary filings when available. Still, health-system and payer partners should assume more vendor roadmap acceleration and potential pricing changes as companies prepare for public-market scrutiny.",
+              "confidence": "low",
+              "tags": [
+                "wearables",
+                "ipo",
+                "market-signals",
+                "consumer-health",
+                "capital-markets"
+              ],
+              "item_id": "2026-05-28-fierce-ura-reported-to-file-confidentially-for-ipo-as-demand",
+              "duplicate_group": "wearables-ipo-pipeline"
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider strategy news reflects ongoing consolidation chess moves and governance decisions that can rapidly alter regional competitive dynamics.",
+          "items": [
+            {
+              "canonical_topic": "health-system-ma-strategy",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/wakemed-declined-offer-from-unc-health-in-midst-of-atrium-deal/821202/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-27T13:19:15Z"
+                }
+              ],
+              "title": "WakeMed reportedly turned down UNC Health offer amid Atrium deal dynamics",
+              "summary": "WakeMed declined an offer from UNC Health while it navigates strategic decisions connected to a separate Atrium-related deal, illustrating the competitive and rapidly shifting nature of regional health-system consolidation. The situation highlights how governance, valuation expectations, and service-line positioning shape affiliation outcomes. Local market share and referral alignment remain central drivers.",
+              "strategic_implication": "Boards should pressure-test the strategic rationale and independence plan alongside affiliation alternatives, including the downstream impact on physician alignment, payer contracting, and capital access. Competitors in the region should anticipate service-line investments and potential talent movement as strategic uncertainty resolves.",
+              "confidence": "medium",
+              "tags": [
+                "provider-ma",
+                "health-systems",
+                "strategy",
+                "governance",
+                "regional-markets"
+              ],
+              "item_id": "2026-05-28-wakemed-reportedly-turned-down-unc-health-offer-amid-atrium-",
+              "duplicate_group": "health-system-ma-strategy"
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-05-27",
       "generated_at": "2026-05-27T11:10:29Z",
       "headline": "Today's Healthcare Insights",
@@ -4750,5 +4916,5 @@
       ]
     }
   ],
-  "last_updated": "2026-05-27T11:10:37Z"
+  "last_updated": "2026-05-28T11:08:19Z"
 }

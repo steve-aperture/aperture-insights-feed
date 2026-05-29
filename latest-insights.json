@@ -3,6 +3,238 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-05-29",
+      "generated_at": "2026-05-29T11:03:59Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s signals center on the federal overhaul of the No Surprises Act dispute process (fees, eligibility timelines, and a new IDR Gateway) and on device/AI governance questions as FDA wellness guidance widens the lane for consumer physiologic estimates. Sources included CMS and cross-checked coverage from Healthcare Dive, plus additional context from STAT and industry newsletters.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "CMS.gov",
+          "STAT",
+          "Healthcare Dive",
+          "Modern Healthcare (email)",
+          "Hospitalogy (email)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "CMS.gov",
+          "STAT",
+          "Healthcare Dive",
+          "Modern Healthcare (email)",
+          "Hospitalogy (email)"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds returned normally; web search prioritized federal policy/regulatory items plus digital health governance signals."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal agencies finalized substantial changes to No Surprises Act arbitration that will reshape payer/provider dispute operations and related litigation posture.",
+          "items": [
+            {
+              "item_id": "2026-05-29-no-surprises-idr-final-rule",
+              "canonical_topic": "no-surprises-act-idr",
+              "duplicate_group": "no-surprises-act-idr",
+              "priority_score": 9,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS Press Release",
+                  "url": "https://www.cms.gov/newsroom/press-releases/federal-rule-takes-aim-health-care-bureaucracy-reducing-dispute-fees-boosting-transparency",
+                  "source_type": "web",
+                  "published_at": "2026-05-28T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/final-surprise-billing-dispute-resolution-rule-hhs-labor-treasury-nsa/821337/",
+                  "source_type": "web",
+                  "published_at": "2026-05-28T00:00:00Z"
+                }
+              ],
+              "title": "HHS/CMS finalize No Surprises Act IDR overhaul, cutting admin fee to $15 and adding IDR Gateway",
+              "summary": "Federal agencies finalized changes to the No Surprises Act independent dispute resolution (IDR) process aimed at reducing ineligible filings and speeding eligibility review. The rule cuts the administrative fee from $115 to $15 per party per dispute and requires standardized claim codes for out-of-network dispute communications. It also sets new timelines for arbiters to assess eligibility and outlines a phased rollout of a centralized “IDR Gateway” for initiating and tracking disputes.",
+              "strategic_implication": "Providers, payers, and third-party dispute submitters should rework IDR intake workflows around the new eligibility checks, batching rules, and coding requirements to avoid friction and denials. The lower fee and batching flexibility could increase volume; leaders should plan for operational capacity, contracting strategy, and dispute governance.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "no-surprises-act",
+                "reimbursement",
+                "idr",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-05-29-bcbs-tx-halomd-dismissal",
+              "canonical_topic": "no-surprises-litigation",
+              "duplicate_group": "no-surprises-litigation",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/bcbs-texas-halomd-surprise-billing-lawsuit-dismissed/821290/",
+                  "source_type": "web",
+                  "published_at": "2026-05-28T00:00:00Z"
+                }
+              ],
+              "title": "Federal judge dismisses BCBS Texas suit targeting HaloMD over No Surprises IDR filings",
+              "summary": "A federal judge dismissed Blue Cross Blue Shield of Texas’ lawsuit alleging that HaloMD and related parties submitted large volumes of ineligible No Surprises Act IDR disputes and received improper awards. The court held that eligibility determinations belong with IDR arbiters rather than being relitigated in court. The decision adds to a string of recent rulings that have limited payer efforts to challenge IDR outcomes via separate litigation.",
+              "strategic_implication": "As courts defer to the IDR process, payers may shift to tighter front-end eligibility controls, documentation demands, and contract tactics rather than post-award litigation. Provider revenue cycle teams should anticipate more stringent payer process controls even as litigation risk may tilt toward arbitration-first resolution.",
+              "confidence": "medium",
+              "tags": [
+                "surprise-billing",
+                "litigation",
+                "payers",
+                "providers",
+                "idr"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "FDA wellness positioning continues to blur the line between consumer estimates and clinical-grade monitoring, increasing the importance of validation and governance.",
+          "items": [
+            {
+              "item_id": "2026-05-29-fda-wellness-bp-glucose-guidance",
+              "canonical_topic": "fda-wellness-device-guidance",
+              "duplicate_group": "fda-wellness-device-guidance",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/28/fda-wellness-guidance-unvetted-blood-pressure-tech-floods-market/",
+                  "source_type": "web",
+                  "published_at": "2026-05-28T00:00:00Z"
+                }
+              ],
+              "title": "FDA wellness guidance widens room for cuffless BP and glucose estimates—raising validation and liability questions",
+              "summary": "A STAT report highlighted how updated FDA wellness guidance allows some products that estimate or infer blood pressure or blood glucose to be marketed without FDA authorization when positioned for wellness use. The clarification is expected to accelerate feature releases for wearables and consumer devices that output physiologic estimates. The coverage also underscored concerns that consumers may treat wellness outputs as clinical-grade without clear validation standards.",
+              "strategic_implication": "Health systems and payers evaluating remote monitoring partnerships should tighten procurement and clinical governance around what data are “actionable” versus informational, and require transparent validation. Digital health leaders should anticipate increased consumer demand and downstream clinical workload if inaccurate readings drive visits or escalation.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "wearables",
+                "digital-health",
+                "ai",
+                "remote-monitoring"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payer margin and cost-management pressure remains a key backdrop as insurers signal ongoing focus on utilization and administrative efficiency.",
+          "items": [
+            {
+              "item_id": "2026-05-29-highmark-q1-profitability-swing",
+              "canonical_topic": "payer-earnings",
+              "duplicate_group": "payer-earnings",
+              "priority_score": 6,
+              "primary_source": "Modern Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Modern Healthcare newsletter",
+                  "url": "(email)",
+                  "source_type": "email",
+                  "published_at": "2026-05-29T11:03:59Z"
+                }
+              ],
+              "title": "Payer profitability remains uneven as plans highlight medical cost and Medicare headwinds",
+              "summary": "Modern Healthcare’s daily briefing flagged that Highmark Health’s insurance division returned to profitability in Q1, underscoring how margin performance is diverging by payer and geography. The same cycle continues to pressure Medicare Advantage economics as utilization trends and regulatory adjustments flow through. For operators, the near-term signal is continued payer focus on cost control and tighter utilization management.",
+              "strategic_implication": "Provider finance teams should expect tougher contract discussions and more aggressive medical management as plans protect margin. Health systems should prioritize denial prevention, documentation excellence, and service line profitability monitoring in markets where payers are under pressure.",
+              "confidence": "low",
+              "tags": [
+                "payers",
+                "earnings",
+                "medicare-advantage",
+                "utilization-management",
+                "margin"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "The new IDR operating model is an immediate workflow and tooling issue for revenue cycle teams and dispute vendors.",
+          "items": [
+            {
+              "item_id": "2026-05-29-idr-gateway-operational-prep",
+              "canonical_topic": "revenue-cycle-ops",
+              "duplicate_group": "revenue-cycle-ops",
+              "priority_score": 5,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/final-surprise-billing-dispute-resolution-rule-hhs-labor-treasury-nsa/821337/",
+                  "source_type": "web",
+                  "published_at": "2026-05-28T00:00:00Z"
+                }
+              ],
+              "title": "No Surprises IDR changes force revenue-cycle teams to revisit dispute batching, eligibility, and coding workflows",
+              "summary": "The finalized IDR rule includes new timelines and batching parameters, including limits on batched disputes, and introduces structured eligibility review steps. These changes will affect how provider organizations and vendors package claims, document out-of-network episodes, and communicate with payers. Operationally, the new process is designed to reduce backlogs but will require updated playbooks and tooling.",
+              "strategic_implication": "Revenue-cycle leaders should map dispute workflows to the new rule, updating staff training, vendor SLAs, and tracking dashboards before the IDR Gateway becomes mandatory. Systems that treat IDR as a “black box” risk delayed recoveries or unnecessary admin spend even with lower fees.",
+              "confidence": "medium",
+              "tags": [
+                "revenue-cycle",
+                "claims",
+                "out-of-network",
+                "operations",
+                "compliance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Leaders are rethinking how clinical oversight and staff roles adapt as automation expands in utilization management and related workflows.",
+          "items": [
+            {
+              "item_id": "2026-05-29-utilization-management-ai-governance",
+              "canonical_topic": "ai-utilization-management",
+              "duplicate_group": "ai-utilization-management",
+              "priority_score": 5,
+              "primary_source": "Hospitalogy",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Hospitalogy newsletter",
+                  "url": "(email)",
+                  "source_type": "email",
+                  "published_at": "2026-05-28T22:12:10Z"
+                }
+              ],
+              "title": "Payers and providers continue reframing utilization management with clinician-led AI governance",
+              "summary": "A Hospitalogy briefing emphasized the ongoing shift in utilization management from reactive denial defense toward proactive clinical governance, including greater use of automation and analytics. The discussion highlighted the need for physician oversight to ensure that automation supports, rather than replaces, clinical judgment. This aligns with broader market movement toward physician advisor programs that are more strategic and data-driven.",
+              "strategic_implication": "Organizations deploying AI in UM should invest in clear clinical accountability, escalation pathways, and auditability to reduce avoidable denials and clinician friction. Workforce planning should account for evolving physician advisor roles and training needs as automation scales.",
+              "confidence": "low",
+              "tags": [
+                "utilization-management",
+                "ai",
+                "physician-advisor",
+                "workforce",
+                "payer-provider"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-05-28",
       "generated_at": "2026-05-28T11:08:11Z",
       "headline": "Today's Healthcare Insights",
@@ -4916,5 +5148,5 @@
       ]
     }
   ],
-  "last_updated": "2026-05-28T11:08:19Z"
+  "last_updated": "2026-05-29T11:03:59Z"
 }

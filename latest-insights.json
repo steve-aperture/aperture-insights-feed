@@ -3,6 +3,285 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-01",
+      "generated_at": "2026-06-01T11:23:03Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s themes: operational fallout from No Surprises Act arbitration changes, continued movement toward practical AI governance frameworks for health systems, and payer/provider actions to reduce administrative friction. Sources included STAT, Healthcare Dive, Fierce Healthcare, and a hospital finance update via LevinPro.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "STAT",
+          "Healthcare Dive",
+          "Fierce Healthcare",
+          "LevinPro"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "STAT",
+          "Healthcare Dive",
+          "Fierce Healthcare",
+          "LevinPro"
+        ],
+        "sources_failed": [
+          "Gmail (supplementary)"
+        ],
+        "run_notes": "RSS feeds returned normally; web reading prioritized policy (No Surprises Act), AI governance, retail/virtual care moves, and select market/legal signals. Gmail was not used this run."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "No Surprises Act arbitration operations remain in flux, and Medicaid payment integrity risks continue to drive enforcement and litigation scrutiny.",
+          "items": [
+            {
+              "item_id": "2026-06-01-no-surprises-idr-critique",
+              "canonical_topic": "no-surprises-act-idr",
+              "duplicate_group": "no-surprises-act-idr",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/01/no-surprises-act-new-arbitration-rules-providers-gaming-system/",
+                  "source_type": "web",
+                  "published_at": "2026-06-01T08:30:00Z"
+                }
+              ],
+              "title": "STAT: New No Surprises Act arbitration fixes may not curb provider gaming and dispute volume",
+              "summary": "STAT reports that stakeholders broadly welcomed the administration’s changes to the No Surprises Act arbitration process, but some warn the updates may not solve incentives that drive high volumes of disputes. The article highlights ongoing concerns that some providers use the process strategically, creating significant costs for insurers and administrative burden for the system. The final rule is positioned as improving insurer-provider communication and reducing ineligible filings, while critics argue additional policy levers may be needed.",
+              "strategic_implication": "Health plans and provider revenue cycle leaders should treat the new operational rules as necessary but insufficient; monitor dispute outcomes and award trends and be ready for continued high filing volume. Compliance teams should also anticipate further regulatory or legislative action targeting arbitration incentives and “egregious” award amounts.",
+              "confidence": "medium",
+              "tags": [
+                "no-surprises-act",
+                "idr",
+                "surprise-billing",
+                "regulation",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-06-01-unitedhealthcare-medicaid-suit-massachusetts",
+              "canonical_topic": "medicaid-risk-adjustment-litigation",
+              "duplicate_group": "medicaid-risk-adjustment-litigation",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/massachusetts-ag-sues-unitedhealthcare-over-alleged-medicaid-fraud",
+                  "source_type": "web",
+                  "published_at": "2026-05-29T00:00:00Z"
+                }
+              ],
+              "title": "Massachusetts AG sues UnitedHealthcare alleging Medicaid upcoding in Senior Care Options",
+              "summary": "Massachusetts Attorney General Andrea Joy Campbell filed suit against UnitedHealthcare alleging it manipulated the health status of MassHealth members in the Senior Care Options program to obtain higher payments. The complaint alleges members were assessed into higher need levels and assigned diagnoses (e.g., depression/anxiety) without corresponding diagnosis or treatment, and that internal reviews flagged issues years earlier. The case adds pressure on Medicaid managed care risk adjustment and assessment practices.",
+              "strategic_implication": "Medicaid managed care organizations and delegated risk partners should re-audit assessment workflows, documentation standards, and vendor oversight, especially for higher-acuity payment tiers. Providers participating in SCO-like models should anticipate tighter documentation demands and potential retroactive payment scrutiny.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "litigation",
+                "unitedhealthcare",
+                "risk-adjustment",
+                "compliance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Health systems and large platforms are tightening AI and digital health governance while retailers and virtual care players expand consumer access points.",
+          "items": [
+            {
+              "item_id": "2026-06-01-chai-ai-governance-playbooks",
+              "canonical_topic": "health-ai-governance",
+              "duplicate_group": "health-ai-governance",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/chai-coalition-health-ai-governance-guidance-health-systems/821291/",
+                  "source_type": "web",
+                  "published_at": "2026-05-29T00:00:00Z"
+                }
+              ],
+              "title": "CHAI publishes health-system AI governance guidance spanning eight critical elements",
+              "summary": "The Coalition for Health AI (CHAI) released governance resources intended as a standard-but-flexible framework health systems can use regardless of size or resourcing. Healthcare Dive reports the guidance includes playbooks on organizational oversight (e.g., governance committee structures), AI tool assessment, risk management, third-party developer management, and monitoring model performance alongside cybersecurity readiness. The release reflects continued industry movement toward repeatable governance patterns for clinical and operational AI.",
+              "strategic_implication": "CIOs/CMIOs should map current AI oversight and vendor intake processes to the CHAI elements to identify gaps in monitoring, policy controls, and accountability. Health systems building AI portfolios can use the framework to speed procurement decisions while tightening post-deployment surveillance.",
+              "confidence": "high",
+              "tags": [
+                "health-ai",
+                "governance",
+                "risk-management",
+                "health-systems",
+                "cybersecurity"
+              ]
+            },
+            {
+              "item_id": "2026-06-01-amazon-health-leadership-change",
+              "canonical_topic": "amazon-health-services",
+              "duplicate_group": "amazon-health-services",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/amazon-taps-amwell-co-founder-roy-schoenberg-health-leader-neil-lindsay-steps-down/821372/",
+                  "source_type": "web",
+                  "published_at": "2026-05-28T00:00:00Z"
+                }
+              ],
+              "title": "Amazon names Amwell co-founder Roy Schoenberg to lead Amazon Health Services starting July 1",
+              "summary": "Amazon appointed Dr. Roy Schoenberg, Amwell’s co-founder and former co-CEO, to lead Amazon Health Services effective July 1, replacing Neil Lindsay. Healthcare Dive notes Lindsay will remain as an advisor through year-end. The leadership change lands as Amazon continues to define its strategy across primary care, pharmacy, and consumer health experiences.",
+              "strategic_implication": "Provider and payer partners should expect potential strategic refresh and product portfolio prioritization as Amazon’s health unit leadership changes. Digital health vendors competing or partnering with Amazon should monitor for shifts in build-vs-buy posture and commercialization focus.",
+              "confidence": "high",
+              "tags": [
+                "amazon",
+                "telehealth",
+                "consumer-health",
+                "strategy",
+                "leadership"
+              ]
+            },
+            {
+              "item_id": "2026-06-01-teladoc-walmart-platform",
+              "canonical_topic": "virtual-care-retail-partnerships",
+              "duplicate_group": "virtual-care-retail-partnerships",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/teladoc-walmart-better-care-services/821250/",
+                  "source_type": "web",
+                  "published_at": "2026-05-28T00:00:00Z"
+                }
+              ],
+              "title": "Teladoc adds urgent care, dermatology, and nutrition support into Walmart’s Better Care Services",
+              "summary": "Teladoc Health is adding its virtual care products to Walmart’s Better Care Services platform, including urgent care, dermatology, and nutrition support. The move expands Walmart’s digital health offering through a scaled virtual care operator rather than building all services in-house. It also reinforces the competitive field of retailer-mediated access points for ambulatory care.",
+              "strategic_implication": "Health systems competing for ambulatory volume should track retailer platform bundles as a growing front door for low-acuity care and specialty adjacencies. Virtual care vendors should expect increased demand for integration, navigation, and longitudinal handoffs to in-person networks.",
+              "confidence": "high",
+              "tags": [
+                "teladoc",
+                "walmart",
+                "virtual-care",
+                "retail-health",
+                "consumer-access"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Legal and financial updates signal ongoing exposure in opioid litigation and continued focus on operating performance and payer mix across major systems.",
+          "items": [
+            {
+              "item_id": "2026-06-01-cvs-walgreens-walmart-opioid-lawsuit-verdict",
+              "canonical_topic": "opioid-litigation",
+              "duplicate_group": "opioid-litigation",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/retail/cvs-walgreens-and-walmart-defeat-opioid-lawsuit-brought-florida-hospitals",
+                  "source_type": "web",
+                  "published_at": "2026-05-31T00:00:00Z"
+                }
+              ],
+              "title": "Florida judge directs verdict for CVS, Walgreens, and Walmart in hospital opioid racketeering case",
+              "summary": "A Florida judge entered a direct verdict in favor of CVS, Walgreens, and Walmart in a lawsuit brought by 16 hospitals alleging the retailers illegally flooded communities with opioids. Fierce Healthcare reports the judge concluded the hospitals’ claimed injuries were indirect for purposes of state racketeering law, and the trial ultimately ended in a mistrial after jurors deadlocked. The hospitals sought damages for unreimbursed and broader opioid-related care costs.",
+              "strategic_implication": "Health systems pursuing opioid cost-recovery litigation may face a higher bar to prove direct harm under certain state racketeering frameworks. Retail pharmacies and distributors may view the outcome as supportive precedent, but settlement dynamics will likely remain jurisdiction-specific.",
+              "confidence": "medium",
+              "tags": [
+                "opioids",
+                "litigation",
+                "retail-pharmacy",
+                "health-systems",
+                "risk"
+              ]
+            },
+            {
+              "item_id": "2026-06-01-advocate-health-q1-financials",
+              "canonical_topic": "hospital-financial-performance",
+              "duplicate_group": "hospital-financial-performance",
+              "priority_score": 5,
+              "primary_source": "LevinPro",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "LevinPro",
+                  "url": "https://healthcare.levinassociates.com/2026/05/29/advocate-health-q1-2026-revenue-earnings-growth/",
+                  "source_type": "web",
+                  "published_at": "2026-05-29T00:00:00Z"
+                }
+              ],
+              "title": "Advocate Health reports Q1 revenue up 10.8% to $10.15B as inpatient/outpatient volumes rise",
+              "summary": "Advocate Health reported total revenue of $10.15B for the quarter ended March 31, 2026, up 10.8% year over year, and operating income of $380.1M versus $329.1M a year earlier. LevinPro attributes performance to higher inpatient and outpatient activity, including higher discharges and outpatient surgeries, while average length of stay improved. The update also notes payer mix with commercial at 45% of patient service revenue, Medicare at 31%, and Medicaid at 22%.",
+              "strategic_implication": "Large-system performance suggests volume stabilization and operational levers (LoS, throughput, productivity) remain key near-term margin drivers even as payer mix shifts. Finance leaders should benchmark service-line throughput metrics and payer mix trends against peers to inform capital and staffing decisions.",
+              "confidence": "medium",
+              "tags": [
+                "hospitals",
+                "earnings",
+                "volumes",
+                "margin",
+                "payer-mix"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Payers are experimenting with targeted administrative simplification (e.g., pediatric prior auth), which can meaningfully alter front-line provider workflows.",
+          "items": [
+            {
+              "item_id": "2026-06-01-unitedhealthcare-peds-prior-auth-reduction",
+              "canonical_topic": "prior-authorization-reform",
+              "duplicate_group": "prior-authorization-reform",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/unitedhealthcare-nix-nearly-two-thirds-pediatric-prior-auths",
+                  "source_type": "web",
+                  "published_at": "2026-05-29T00:00:00Z"
+                }
+              ],
+              "title": "UnitedHealthcare plans to eliminate nearly two-thirds of pediatric prior auth requirements by year-end",
+              "summary": "UnitedHealthcare said it will remove prior authorization requirements for many pediatric services, including diagnostic tests, routine surgeries, and certain specialty services, while keeping prior auth for higher-complexity or more variable care. Fierce Healthcare reports the change targets nearly two-thirds of pediatric prior authorization requirements and will apply across its commercial and Medicaid plans. The insurer also plans waivers for certain procedures when performed at leading pediatric hospitals.",
+              "strategic_implication": "Provider groups should prepare for operational simplification in pediatrics, but also confirm which services remain gated and how waivers will be operationalized. Payers may face pressure to expand similar reductions beyond pediatrics as regulators and employers focus on administrative burden.",
+              "confidence": "medium",
+              "tags": [
+                "prior-authorization",
+                "pediatrics",
+                "unitedhealthcare",
+                "operations",
+                "payer-policy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-05-29",
       "generated_at": "2026-05-29T11:03:59Z",
       "headline": "Today's Healthcare Insights",
@@ -5148,5 +5427,5 @@
       ]
     }
   ],
-  "last_updated": "2026-05-29T11:03:59Z"
+  "last_updated": "2026-06-01T11:23:12Z"
 }

@@ -3,6 +3,357 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-02",
+      "generated_at": "2026-06-02T11:34:51Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Medicaid work requirements, drug channel pricing pressure, and payer litigation led today's signal set, alongside a steady drumbeat of AI governance and telehealth regulatory scrutiny. Sources include CMS fact sheets, STAT, Healthcare Dive, Fierce Healthcare, and Joint Commission announcements.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Perplexity web search: CMS/HHS/FDA",
+          "Perplexity web search: payer/provider moves",
+          "Perplexity web search: AI/digital health",
+          "Gmail (supplementary)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Perplexity web search: CMS/HHS/FDA",
+          "Perplexity web search: payer/provider moves",
+          "Perplexity web search: AI/digital health"
+        ],
+        "sources_failed": [
+          "Gmail (supplementary)"
+        ],
+        "run_notes": "Fierce Healthcare RSS lacked embedded titles/dates for some entries; used alternate primary sources (CMS/Joint Commission/CHS press release) where needed."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Medicaid eligibility administration and federal payment policy remain in flux, with work requirement implementation and IDR rules driving near-term compliance and cost implications.",
+          "items": [
+            {
+              "item_id": "2026-06-02-medicaid-work-requirements-ifc",
+              "canonical_topic": "medicaid-work-requirements",
+              "duplicate_group": "medicaid-work-requirements",
+              "priority_score": 10,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS Fact Sheet",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+                  "source_type": "web",
+                  "published_at": "2026-06-01T00:00:00Z"
+                }
+              ],
+              "title": "CMS issues interim final rule implementing Medicaid community engagement (work) requirements",
+              "summary": "CMS released an interim final rule with comment period implementing a statutory Medicaid community engagement requirement for certain adults, including an 80-hours-per-month qualifying activity standard. CMS says states must generally implement the requirement by Jan. 1, 2027, with specified exemptions and reporting/verification expectations.",
+              "strategic_implication": "States, plans, and providers should prepare for coverage disruption risk and administrative burden as states design verification workflows and outreach; safety-net providers may see shifts in uncompensated care and eligibility churn.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "cms",
+                "work-requirements",
+                "eligibility",
+                "policy"
+              ]
+            },
+            {
+              "item_id": "2026-06-02-no-surprises-act-idr-rule",
+              "canonical_topic": "no-surprises-act-idr",
+              "duplicate_group": "no-surprises-act-idr",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/01/no-surprises-act-new-arbitration-rules-providers-gaming-system/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-01T08:30:00Z"
+                }
+              ],
+              "title": "No Surprises Act IDR rule update raises concern about higher dispute volumes and gaming",
+              "summary": "A new federal rule governing No Surprises Act arbitration is drawing warnings that it could intensify the already-high volume of provider-payment disputes. Observers argue that design choices in the IDR process can influence billing behavior and administrative costs for both payers and providers.",
+              "strategic_implication": "Contracting teams should anticipate continued IDR throughput pressure and consider preemptive dispute-reduction tactics (network strategy, documentation standards, and analytics on out-of-network billing patterns).",
+              "confidence": "medium",
+              "tags": [
+                "no-surprises-act",
+                "idr",
+                "payer-provider",
+                "billing",
+                "regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI governance is maturing from guidance to certification, while telehealth faces renewed structural scrutiny from state corporate practice enforcement.",
+          "items": [
+            {
+              "item_id": "2026-06-02-telehealth-corporate-medicine",
+              "canonical_topic": "telehealth-corporate-practice-medicine",
+              "duplicate_group": "telehealth-corporate-practice-medicine",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/02/telehealth-virtual-rx-boom-corporate-practice-of-medicine-laws/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-02T08:30:00Z"
+                }
+              ],
+              "title": "Telehealth business models face new state pressure as corporate practice rules tighten",
+              "summary": "States are increasing scrutiny of corporate practice of medicine arrangements used by virtual care and online prescribing companies. The resulting enforcement and rulemaking activity is raising questions about ownership structures, clinician contracting, and how fast-growing virtual-first models can scale compliantly across state lines.",
+              "strategic_implication": "Digital health operators should stress-test MSO/PC structures and prescriber networks state-by-state, as compliance risk can translate quickly into access constraints, payer pushback, and slowed growth.",
+              "confidence": "medium",
+              "tags": [
+                "telehealth",
+                "state-policy",
+                "corporate-practice",
+                "virtual-care",
+                "compliance"
+              ]
+            },
+            {
+              "item_id": "2026-06-02-chai-ai-governance-playbooks",
+              "canonical_topic": "health-ai-governance",
+              "duplicate_group": "health-ai-governance",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/chai-coalition-health-ai-governance-guidance-health-systems/821291/",
+                  "source_type": "rss",
+                  "published_at": "2026-05-29T14:32:00Z"
+                },
+                {
+                  "source": "CHAI",
+                  "url": "https://www.chai.org/news/coalition-for-health-ai-chai-releases-comprehensive-governance-playbooks-to",
+                  "source_type": "web",
+                  "published_at": "2026-05-27T00:00:00Z"
+                }
+              ],
+              "title": "CHAI publishes health-system AI governance playbooks across eight control domains",
+              "summary": "The Coalition for Health AI released governance playbooks intended to help health systems implement AI with baseline controls across areas like lifecycle management, risk/impact assessments, third-party management, and training. The playbooks are positioned as a flexible standard that health systems can adapt to their operating context.",
+              "strategic_implication": "Provider CIOs and compliance leaders can use these playbooks to formalize AI intake, monitoring, and vendor controls, reducing operational risk while accelerating deployment of high-value use cases.",
+              "confidence": "medium",
+              "tags": [
+                "health-ai",
+                "governance",
+                "risk-management",
+                "clinical-ai",
+                "cybersecurity"
+              ]
+            },
+            {
+              "item_id": "2026-06-02-joint-commission-ai-certification",
+              "canonical_topic": "responsible-ai-certification",
+              "duplicate_group": "responsible-ai-certification",
+              "priority_score": 6,
+              "primary_source": "Joint Commission",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "GlobeNewswire (Joint Commission release)",
+                  "url": "https://www.globenewswire.com/news-release/2026/06/01/3304442/0/en/joint-commission-releases-first-of-its-kind-exclusively-designed-for-healthcare-organizations-voluntary-responsible-use-of-ai-in-healthcare-certification.html",
+                  "source_type": "web",
+                  "published_at": "2026-06-01T00:00:00Z"
+                }
+              ],
+              "title": "Joint Commission launches voluntary certification for responsible use of AI in healthcare",
+              "summary": "The Joint Commission announced a new voluntary Responsible Use of AI in Healthcare certification program focused on governance, safeguards, monitoring, and education for AI deployment. The certification is positioned as a way for hospitals and health systems to demonstrate responsible implementation practices.",
+              "strategic_implication": "Certification frameworks can become procurement and reputational levers; health systems may want to map existing AI governance to these criteria to avoid future compliance gaps and accelerate vendor alignment.",
+              "confidence": "medium",
+              "tags": [
+                "joint-commission",
+                "ai",
+                "certification",
+                "quality",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Drug channel economics and payer legal exposure are prominent, with 340B data disputes and Medicaid managed care enforcement signaling tighter oversight.",
+          "items": [
+            {
+              "item_id": "2026-06-02-lilly-340b-claims-data",
+              "canonical_topic": "340b-claims-data",
+              "duplicate_group": "340b-claims-data",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT Pharmalot",
+                  "url": "https://www.statnews.com/pharmalot/2026/06/01/lilly-warns-hospitals-submit-claims-data-or-lose-340b-drug-discounts/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-01T22:00:00Z"
+                }
+              ],
+              "title": "Eli Lilly tells hospitals to submit claims data quickly or risk losing 340B discounts",
+              "summary": "Eli Lilly warned hospitals that they must submit claims data within a short window or they could lose access to 340B drug discounts for certain products. The dispute reflects ongoing manufacturer-provider tension over 340B program oversight, data transparency, and contract pharmacy arrangements.",
+              "strategic_implication": "Covered entities should anticipate more manufacturer data demands and potential discount disruptions; finance/pharmacy leaders may need contingency planning for sourcing and margin volatility tied to 340B policy friction.",
+              "confidence": "medium",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "hospital-finance",
+                "pharmacy",
+                "manufacturer"
+              ]
+            },
+            {
+              "item_id": "2026-06-02-massachusetts-unitedhealth-medicaid-suit",
+              "canonical_topic": "medicaid-upcoding-lawsuit",
+              "duplicate_group": "medicaid-upcoding-lawsuit",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/massachusetts-sues-unitedhealthcare-medicaid-fraud-upcoding/821594/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-01T14:31:51Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/05/29/united-healthcare-sued-massachusetts-ag-alleges-100-million-upcode-fraud-medicaid/",
+                  "source_type": "web",
+                  "published_at": "2026-05-29T00:00:00Z"
+                }
+              ],
+              "title": "Massachusetts sues UnitedHealthcare alleging Medicaid managed care overbilling",
+              "summary": "Massachusetts filed suit alleging UnitedHealthcare improperly inflated risk scores and overbilled the state Medicaid program. The case adds to broader scrutiny of risk adjustment practices across government-sponsored managed care.",
+              "strategic_implication": "Plans and delegated providers should ensure documentation, coding governance, and audit readiness are strong, as state-level enforcement can expand quickly and may influence contracting terms and oversight requirements.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "managed-care",
+                "risk-adjustment",
+                "litigation",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-06-02-23andme-ca-ag-suit",
+              "canonical_topic": "genetic-data-privacy-lawsuit",
+              "duplicate_group": "genetic-data-privacy-lawsuit",
+              "priority_score": 6,
+              "primary_source": "Associated Press",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "ABC News / AP",
+                  "url": "https://abcnews.com/Technology/wireStory/california-sues-23andme-alleging-failed-protect-user-data-133400298",
+                  "source_type": "web",
+                  "published_at": "2026-05-28T17:06:00Z"
+                }
+              ],
+              "title": "California AG sues 23andMe successor over alleged failures tied to 2023 genetic data breach",
+              "summary": "California's attorney general sued the company formerly known as 23andMe, alleging failures to protect sensitive genetic data and misleading statements related to a 2023 breach affecting millions of people. The complaint seeks civil penalties and injunctive relief under state privacy laws.",
+              "strategic_implication": "Healthcare-adjacent consumer data companies should expect rising regulatory and litigation exposure around genomic and health data controls; enterprise partners may also reassess third-party risk and consent language.",
+              "confidence": "medium",
+              "tags": [
+                "privacy",
+                "genomics",
+                "cybersecurity",
+                "regulation",
+                "consumer-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Portfolio reshaping continues as systems use targeted acquisitions and divestitures to adjust regional footprint and balance sheet posture.",
+          "items": [
+            {
+              "item_id": "2026-06-02-chs-freeman-arkansas-hospitals",
+              "canonical_topic": "hospital-asset-sale",
+              "duplicate_group": "hospital-asset-sale",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/community-health-system-selling-4-arkansas-hospitals-freeman-health-system-112m",
+                  "source_type": "rss",
+                  "published_at": "2026-06-02T03:33:36Z"
+                },
+                {
+                  "source": "Freeman Health",
+                  "url": "https://www.freemanhealth.com/news/freeman-health-system-completes-acquisition-of-northwest-health-expands-regional-care",
+                  "source_type": "web",
+                  "published_at": "2026-06-01T17:33:14Z"
+                }
+              ],
+              "title": "CHS completes sale of four Arkansas hospitals to Freeman Health, continuing portfolio reshaping",
+              "summary": "Community Health Systems finalized the sale of four Arkansas hospitals to Freeman Health, reflecting continued reconfiguration of hospital portfolios and regional consolidation dynamics. The transaction underscores the role of asset sales as systems focus on balance sheet flexibility and market prioritization.",
+              "strategic_implication": "Regional systems can use targeted acquisitions to strengthen referral networks and scale service lines; sellers may continue divesting to reduce leverage and concentrate on core markets.",
+              "confidence": "medium",
+              "tags": [
+                "m-a",
+                "hospitals",
+                "portfolio",
+                "rural-health",
+                "strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Administrative simplification signals (e.g., prior auth changes) remain incremental; no broad new workforce disruption items surfaced beyond payer UM adjustments.",
+          "items": [
+            {
+              "item_id": "2026-06-02-unitedhealth-peds-prior-auth",
+              "canonical_topic": "prior-authorization-reform",
+              "duplicate_group": "prior-authorization-reform",
+              "priority_score": 6,
+              "primary_source": "BenefitsPRO",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BenefitsPRO",
+                  "url": "https://www.benefitspro.com/amp/2026/06/01/unitedhealthcare-to-cut-pediatric-prior-authorization-requirements-by-two-thirds/",
+                  "source_type": "web",
+                  "published_at": "2026-06-01T00:00:00Z"
+                }
+              ],
+              "title": "UnitedHealthcare moves to reduce pediatric prior authorization requirements by roughly two-thirds",
+              "summary": "UnitedHealthcare announced it will remove a large share of prior authorization requirements for pediatric care, signaling continued payer efforts to reduce administrative friction. The change may also serve as a reputational and provider-relations lever amid broader scrutiny of utilization management practices.",
+              "strategic_implication": "Providers should monitor policy details and actual denial/friction metrics; if effective, similar UM simplifications could become a competitive expectation in contracting and network discussions.",
+              "confidence": "low",
+              "tags": [
+                "prior-authorization",
+                "pediatrics",
+                "payer-policy",
+                "provider-burden",
+                "utilization-management"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-01",
       "generated_at": "2026-06-01T11:23:03Z",
       "headline": "Today's Healthcare Insights",
@@ -5427,5 +5778,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-01T11:23:12Z"
+  "last_updated": "2026-06-02T11:34:51Z"
 }

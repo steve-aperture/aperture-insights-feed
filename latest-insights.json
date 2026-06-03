@@ -3,6 +3,312 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-03",
+      "generated_at": "2026-06-03T11:02:17Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s signal set centers on Medicaid work requirement implementation, 340B drug-pricing friction, and heightened scrutiny of Medicare Advantage coding, alongside rapid acceleration in healthcare AI partnerships and governance. Sources include STAT, Healthcare Dive, Fierce Healthcare, and a Microsoft announcement.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Perplexity web search: CMS/HHS/FDA",
+          "Perplexity web search: payer/provider moves",
+          "Perplexity web search: AI/digital health",
+          "Gmail (supplementary)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Perplexity web search: CMS/HHS/FDA",
+          "Perplexity web search: payer/provider moves",
+          "Perplexity web search: AI/digital health"
+        ],
+        "sources_failed": [
+          "Gmail (supplementary)"
+        ],
+        "run_notes": "Gmail label query returned no results; edition built from RSS plus targeted web lookups. Published_at for Microsoft announcement set to date-only UTC when time not provided."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Drug pricing and Medicaid implementation details are driving near-term compliance and financial exposure, while federal oversight of Medicare Advantage coding remains a live risk area.",
+          "items": [
+            {
+              "item_id": "2026-06-03-medicaid-work-requirements-impact",
+              "canonical_topic": "medicaid-work-requirements",
+              "duplicate_group": "medicaid-work-requirements",
+              "priority_score": 10,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/03/medicaid-work-requirements-experts-say-millions-will-lose-coverage/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-03T08:30:00Z"
+                }
+              ],
+              "title": "Medicaid work requirements guidance raises coverage-loss and operations risks for states",
+              "summary": "New federal guidance and rule language around Medicaid community engagement requirements is drawing concern from states, advocates, and providers about administrative complexity and potential coverage losses. Analysts highlight that tighter exemption definitions and frequent eligibility checks could increase churn even among people who qualify. Implementation timelines appear aggressive for states that need to build verification and reporting processes.",
+              "strategic_implication": "Plans and safety-net providers should model eligibility churn and bad-debt exposure, while investing early in outreach, documentation support, and coordination with state agencies on implementation details.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "policy",
+                "work-requirements",
+                "eligibility",
+                "state-operations"
+              ]
+            },
+            {
+              "item_id": "2026-06-03-ma-overpayments-stroke-dx",
+              "canonical_topic": "medicare-advantage-risk-adjustment",
+              "duplicate_group": "medicare-advantage-risk-adjustment",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/oig-feds-may-have-overpaid-ma-plans-millions-due-unsupported-stroke-diagnoses",
+                  "source_type": "rss",
+                  "published_at": "2026-06-02T16:23:00Z"
+                }
+              ],
+              "title": "OIG flags potential Medicare Advantage overpayments tied to unsupported stroke diagnoses",
+              "summary": "A federal watchdog report suggests Medicare Advantage plans may have received overpayments associated with stroke diagnoses that were not adequately supported in medical records. The findings add to ongoing scrutiny of risk adjustment accuracy and documentation practices. The report may increase pressure for audits, extrapolation risk, and tighter coding governance.",
+              "strategic_implication": "MA plans and provider groups participating in risk arrangements should tighten documentation and internal audit controls, and prepare for payer-provider friction as retrospective reviews intensify.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "risk-adjustment",
+                "oig",
+                "coding",
+                "compliance"
+              ]
+            },
+            {
+              "item_id": "2026-06-03-lilly-340b-data-ultimatum",
+              "canonical_topic": "340b-drug-pricing",
+              "duplicate_group": "340b-drug-pricing",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/eli-lilly-340b-hospital-ultimatum-data-sharing-hrsa/821698/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-02T13:11:14Z"
+                }
+              ],
+              "title": "Eli Lilly tightens 340B stance with near-term claims-data ultimatum for hospitals",
+              "summary": "Eli Lilly warned certain 340B covered entities that they must provide claims data to demonstrate compliance with program rules or lose access to 340B pricing on Lilly drugs. Hospital advocates argue the approach is unlawful and have urged federal intervention. The move adds friction to ongoing manufacturer efforts to reshape 340B oversight and data transparency expectations.",
+              "strategic_implication": "Safety-net systems should assess exposure to manufacturer restrictions, prepare operational responses for pharmacy and finance teams, and track HRSA enforcement signals that could shift purchasing or contract-pharmacy strategies.",
+              "confidence": "medium",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "hrsa",
+                "hospital-finance",
+                "compliance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Major players are pushing toward domain-scale foundation models and more formal AI governance, while providers balance adoption momentum with safety and competency concerns.",
+          "items": [
+            {
+              "item_id": "2026-06-03-microsoft-mayo-frontier-model",
+              "canonical_topic": "frontier-ai-model-healthcare",
+              "duplicate_group": "frontier-ai-model-healthcare",
+              "priority_score": 8,
+              "primary_source": "Microsoft Source",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Microsoft Source",
+                  "url": "https://news.microsoft.com/source/2026/06/02/mayo-clinic-and-microsoft-collaborate-to-develop-a-frontier-ai-model-for-healthcare/",
+                  "source_type": "web",
+                  "published_at": "2026-06-02T00:00:00Z"
+                }
+              ],
+              "title": "Microsoft and Mayo Clinic partner to develop a frontier AI model designed for healthcare use cases",
+              "summary": "Microsoft and Mayo Clinic announced a collaboration to develop and deploy a healthcare-focused frontier AI model, pairing Mayo’s clinical expertise and de-identified longitudinal data with Microsoft’s cloud and AI capabilities. The companies say the model will be made available through Azure Foundry APIs, positioning it as a platform layer that other organizations can integrate. The announcement reflects ongoing movement toward large, domain-specific foundation models in clinical settings.",
+              "strategic_implication": "Health systems should evaluate how foundation-model access shifts buy-vs-build decisions, data governance requirements, and vendor concentration risk, particularly for high-impact clinical and operational workflows.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "microsoft",
+                "mayo-clinic",
+                "foundation-models",
+                "cloud"
+              ]
+            },
+            {
+              "item_id": "2026-06-03-joint-commission-ai-certification",
+              "canonical_topic": "ai-governance-certification",
+              "duplicate_group": "ai-governance-certification",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/joint-commission-launches-voluntary-ai-certification-program-healthcare",
+                  "source_type": "rss",
+                  "published_at": "2026-06-02T10:33:00Z"
+                }
+              ],
+              "title": "Joint Commission launches voluntary AI certification program for healthcare organizations",
+              "summary": "The Joint Commission rolled out a voluntary AI certification offering aimed at helping healthcare organizations demonstrate governance and safety practices for AI use. The program adds a potential external benchmark for policies, oversight structures, and performance monitoring. It also signals a shift from generalized AI guidance to audit-style expectations for deployed tools.",
+              "strategic_implication": "Provider leadership should map current AI governance against emerging certification criteria, since external validation may become a differentiator with payers, regulators, and risk management partners.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "governance",
+                "quality",
+                "joint-commission",
+                "risk-management"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Litigation and antitrust actions continue to shape payer/provider and outpatient platform strategy, adding execution complexity to major transactions and managed care relationships.",
+          "items": [
+            {
+              "item_id": "2026-06-03-massachusetts-unitedhealth-medicaid-suit",
+              "canonical_topic": "medicaid-managed-care-litigation",
+              "duplicate_group": "medicaid-managed-care-litigation",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/massachusetts-sues-unitedhealthcare-medicaid-fraud-upcoding/821594/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-01T14:31:51Z"
+                }
+              ],
+              "title": "Massachusetts sues UnitedHealthcare alleging Medicaid upcoding and improper payments",
+              "summary": "Massachusetts filed suit against UnitedHealthcare alleging the insurer inflated the documented acuity of Medicaid managed care members to increase payments. The case highlights expanding state-level enforcement around managed care program integrity and coding practices. The litigation could become a reference point for other states evaluating contractor oversight and encounter data validation.",
+              "strategic_implication": "Medicaid MCOs and delegated entities should revisit coding governance, encounter data controls, and audit readiness; providers may also see downstream documentation requirements tighten as payers respond.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "managed-care",
+                "litigation",
+                "upcoding",
+                "program-integrity"
+              ]
+            },
+            {
+              "item_id": "2026-06-03-ftc-ascension-amsurg-divestitures",
+              "canonical_topic": "healthcare-antitrust-asc-transactions",
+              "duplicate_group": "healthcare-antitrust-asc-transactions",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ascension-amsurg-ftc-consent-order-surgery-center-divestitures/821741/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-02T15:49:02Z"
+                }
+              ],
+              "title": "FTC requires divestitures as condition for Ascension’s $3.9B AmSurg deal",
+              "summary": "Regulators required Ascension to divest a set of surgery centers to resolve competitive concerns tied to its planned acquisition of AmSurg. The consent order signals continued antitrust focus on ambulatory surgery center consolidation and local market concentration. Ascension positioned the compromise as enabling progress on a broader financial turnaround.",
+              "strategic_implication": "Providers and investors pursuing outpatient platform growth should plan for deeper market-by-market antitrust review, including early divestiture planning and stronger competitive-effect documentation.",
+              "confidence": "medium",
+              "tags": [
+                "ftc",
+                "antitrust",
+                "asc",
+                "m-a",
+                "outpatient"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Organizations are operationalizing AI in day-to-day clinical workflows, with workforce enablement and risk controls emerging as practical bottlenecks.",
+          "items": [
+            {
+              "item_id": "2026-06-03-ai-deskilling-concerns",
+              "canonical_topic": "clinical-ai-adoption",
+              "duplicate_group": "clinical-ai-adoption",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-ai-adoption-accelerates-provider-worries-deskilling-wolters-kluwer/821653/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-02T13:30:00Z"
+                }
+              ],
+              "title": "Clinicians report rising AI adoption alongside concerns about deskilling and lost critical thinking",
+              "summary": "Survey results cited by Healthcare Dive indicate that many clinicians are increasingly using AI tools, while also expressing concern that reliance on AI could erode decision-making skills over time. Respondents flagged risks tied to reduced critical thinking and the need for appropriate oversight and training. The findings reflect a broader operational challenge: deploying automation while maintaining clinical competency and accountability.",
+              "strategic_implication": "Organizations scaling AI should pair implementation with training, human-in-the-loop design, and monitoring for unintended workflow drift to reduce patient safety and liability risk.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "clinical-workflow",
+                "patient-safety",
+                "training",
+                "change-management"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Public health and clinical leaders are amplifying momentum for nutrition and prevention-oriented policy interventions; no other major workforce-specific developments surfaced today.",
+          "items": [
+            {
+              "item_id": "2026-06-03-ultra-processed-food-policy",
+              "canonical_topic": "nutrition-ultra-processed-foods",
+              "duplicate_group": "nutrition-ultra-processed-foods",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/03/ultra-processed-food-experts-want-sweeping-policy-changes/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-03T09:00:00Z"
+                }
+              ],
+              "title": "Public health researchers press for policy action on ultra-processed foods and chronic disease",
+              "summary": "Researchers associated with a special issue of the American Journal of Public Health argue that policy interventions are needed to address health harms linked to ultra-processed foods. Polling cited in the coverage indicates cross-partisan concern and support for measures such as additive safety testing, warning labels, and limits on certain ingredients. The discussion underscores continued momentum for nutrition-related regulation and labeling initiatives.",
+              "strategic_implication": "Health systems and payers should anticipate growing employer and regulatory interest in food-as-health strategies, with potential downstream impacts on benefit design, population health programs, and community partnerships.",
+              "confidence": "medium",
+              "tags": [
+                "public-health",
+                "nutrition",
+                "regulation",
+                "chronic-disease",
+                "policy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-02",
       "generated_at": "2026-06-02T11:34:51Z",
       "headline": "Today's Healthcare Insights",
@@ -5778,5 +6084,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-02T11:34:51Z"
+  "last_updated": "2026-06-03T11:02:18Z"
 }

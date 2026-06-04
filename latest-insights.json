@@ -3,6 +3,316 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-04",
+      "generated_at": "2026-06-04T11:09:02Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s themes center on Medicaid work-requirements implementation, payment-integrity scrutiny in Medicare Advantage, and escalating operational tensions in 340B drug discount compliance. We also highlight emerging AI governance benchmarks and continued consolidation/portfolio reshaping across providers and payers.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "https://www.statnews.com/feed/",
+          "https://www.healthcaredive.com/feeds/news/",
+          "https://www.fiercehealthcare.com/rss/xml",
+          "web search (policy/regulation, digital health, market moves)"
+        ],
+        "sources_successful": [
+          "STAT (RSS)",
+          "Healthcare Dive (RSS)",
+          "Fierce Healthcare (RSS)",
+          "web search"
+        ],
+        "sources_failed": [
+          "email (supplementary)"
+        ],
+        "run_notes": "Built from three RSS feeds plus targeted web search for primary/confirming sources; email was not used this run."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Coverage and payment integrity remain active: states are preparing for Medicaid work requirements, while audit signals intensify for Medicare Advantage risk adjustment.",
+          "items": [
+            {
+              "item_id": "2026-06-04-medicaid-work-requirements-guidance",
+              "canonical_topic": "medicaid-work-requirements",
+              "duplicate_group": "medicaid-work-requirements",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cms-medicaid-work-requirements-final-rule-state-guidance/821631/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-01T18:57:53Z"
+                },
+                {
+                  "source": "U.S. News & World Report",
+                  "url": "https://www.usnews.com/news/health-news/articles/2026-06-03/millions-on-medicaid-may-soon-have-to-prove-theyre-working-to-keep-coverage",
+                  "source_type": "web",
+                  "published_at": "2026-06-03T00:00:00Z"
+                }
+              ],
+              "title": "CMS issues state guidance for Medicaid work requirements implementation",
+              "summary": "CMS released guidance to help states operationalize Medicaid work requirements under a newly finalized national framework. The guidance addresses implementation timing, compliance verification, and categories of exemptions, elevating near-term administrative workload for states and MCOs. Coverage advocates and some stakeholders warn documentation and reporting requirements could increase churn among eligible enrollees.",
+              "strategic_implication": "States and plans should stress-test eligibility/renewal workflows for documentation burden and error rates, and proactively model churn and downstream uncompensated care impacts. Provider orgs may need new patient navigation and billing safeguards as coverage instability rises.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "eligibility",
+                "regulation",
+                "state-ops"
+              ]
+            },
+            {
+              "item_id": "2026-06-04-oig-ma-overpayments-stroke-dx",
+              "canonical_topic": "medicare-advantage-risk-adjustment",
+              "duplicate_group": "medicare-advantage-risk-adjustment",
+              "priority_score": 8,
+              "primary_source": "LeadingAge",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "LeadingAge",
+                  "url": "https://leadingage.org/hhs-oig-says-ma-organizations-overpaid-462m/",
+                  "source_type": "web",
+                  "published_at": "2026-06-02T00:00:00Z"
+                }
+              ],
+              "title": "HHS OIG flags potential Medicare Advantage overpayments tied to unsupported stroke diagnoses",
+              "summary": "An HHS OIG report found sampled high-risk acute stroke diagnosis codes submitted by Medicare Advantage organizations were unsupported in the reviewed records, implying significant potential overpayments. The finding adds momentum to CMS risk-adjustment audit and payment integrity efforts. Plans and delegated risk vendors may face higher documentation expectations and retrospective validation pressure.",
+              "strategic_implication": "MA organizations should tighten coding governance, provider education, and encounter/clinical documentation traceability to reduce audit exposure. Providers participating in MA risk programs may see increased chart review and denial disputes, with implications for clinician time and revenue cycle friction.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "risk-adjustment",
+                "payment-integrity",
+                "audits"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Provider AI adoption is moving from pilots toward governance and external benchmarks, alongside continued investment in frontier-model development partnerships.",
+          "items": [
+            {
+              "item_id": "2026-06-04-microsoft-mayo-frontier-model",
+              "canonical_topic": "frontier-ai-models-healthcare",
+              "duplicate_group": "frontier-ai-models-healthcare",
+              "priority_score": 8,
+              "primary_source": "Microsoft Source",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Microsoft Source",
+                  "url": "https://news.microsoft.com/source/2026/06/02/mayo-clinic-and-microsoft-collaborate-to-develop-a-frontier-ai-model-for-healthcare/",
+                  "source_type": "web",
+                  "published_at": "2026-06-02T00:00:00Z"
+                }
+              ],
+              "title": "Microsoft and Mayo Clinic announce collaboration to develop a frontier AI model for healthcare",
+              "summary": "Microsoft and Mayo Clinic announced a collaboration aimed at developing a frontier AI model designed for healthcare use cases. The effort signals continued investment in large-model development paired with clinical validation and enterprise deployment pathways. Provider systems evaluating GenAI roadmaps may use the announcement as a reference point for governance, data strategy, and vendor partnering approaches.",
+              "strategic_implication": "Health systems should assume model capabilities and vendor packaging will evolve quickly; competitive advantage will hinge on data access, workflow integration, and safety monitoring. Procurement and compliance teams should pressure-test transparency, evaluation, and IP terms when partnering on model development or fine-tuning.",
+              "confidence": "medium",
+              "tags": [
+                "genai",
+                "providers",
+                "partnerships",
+                "data-governance"
+              ]
+            },
+            {
+              "item_id": "2026-06-04-joint-commission-ai-certification",
+              "canonical_topic": "ai-governance-certification",
+              "duplicate_group": "ai-governance-certification",
+              "priority_score": 7,
+              "primary_source": "GlobeNewswire",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "GlobeNewswire",
+                  "url": "https://www.globenewswire.com/news-release/2026/06/01/3304442/0/en/joint-commission-releases-first-of-its-kind-exclusively-designed-for-healthcare-organizations-voluntary-responsible-use-of-ai-in-healthcare-certification.html",
+                  "source_type": "web",
+                  "published_at": "2026-06-01T00:00:00Z"
+                }
+              ],
+              "title": "Joint Commission launches voluntary Responsible Use of AI in Healthcare certification program",
+              "summary": "The Joint Commission announced a new voluntary certification program focused on responsible use of AI in healthcare organizations. The program emphasizes governance, data management, risk/bias reduction, monitoring and validation, and workforce education, rather than certifying specific AI products. This introduces a recognizable external benchmark that could influence board oversight and payer/partner expectations for AI safety practices.",
+              "strategic_implication": "Organizations scaling AI should map their controls to the certification domains to identify gaps in governance, monitoring, and training. Over time, the certification could become a de facto requirement in certain partnerships, contracting, or reputational risk frameworks.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "governance",
+                "safety",
+                "certification"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Regulatory review continues to shape deal structures in ambulatory care, while some regional players reassess Medicare Advantage participation and staffing footprints.",
+          "items": [
+            {
+              "item_id": "2026-06-04-ascension-amsurg-ftc-divestitures",
+              "canonical_topic": "ascension-amsurg-merger",
+              "duplicate_group": "ascension-amsurg-merger",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ascension-amsurg-ftc-consent-order-surgery-center-divestitures/821741/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-02T15:49:02Z"
+                },
+                {
+                  "source": "Federal Trade Commission",
+                  "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/ascensionamsurg-matter-timeline-item-2026-06-02",
+                  "source_type": "web",
+                  "published_at": "2026-06-02T00:00:00Z"
+                }
+              ],
+              "title": "FTC requires surgery-center divestitures to clear Ascension’s $3.9B AmSurg acquisition",
+              "summary": "The FTC issued a proposed consent order requiring divestitures of multiple ambulatory surgery centers as a condition for Ascension to proceed with its acquisition of AmSurg. The remedy underscores heightened antitrust attention on local ASC market concentration and vertical combinations involving large health systems. The order also includes ongoing notification requirements for future ASC deals in specified markets.",
+              "strategic_implication": "Health-system M&A and ambulatory strategy teams should anticipate more frequent remedy packages and longer timelines for ASC transactions in concentrated markets. Physician groups and independent ASCs may gain leverage as divestiture buyers or partners when regulators force asset sales.",
+              "confidence": "high",
+              "tags": [
+                "antitrust",
+                "m-and-a",
+                "asc",
+                "providers"
+              ]
+            },
+            {
+              "item_id": "2026-06-04-presbyterian-exits-ma-2027",
+              "canonical_topic": "medicare-advantage-market-exit",
+              "duplicate_group": "medicare-advantage-market-exit",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/presbyterian-healthcare-services-discontinue-ma-plans-2027",
+                  "source_type": "rss",
+                  "published_at": "2026-06-03T00:00:00Z"
+                },
+                {
+                  "source": "KOB.com",
+                  "url": "https://www.kob.com/new-mexico/presbyterian-to-lay-off-more-than-100-employees-shift-health-care-offerings/",
+                  "source_type": "web",
+                  "published_at": "2026-06-02T00:00:00Z"
+                }
+              ],
+              "title": "Presbyterian Healthcare Services plans to discontinue most Medicare Advantage plans in 2027",
+              "summary": "Presbyterian Healthcare Services said it will discontinue most of its Medicare Advantage plans in 2027 and reduce staffing, reflecting continued pressure on MA margins and operational complexity. The move highlights how regional plans and provider-sponsored insurers are reassessing product footprints amid regulatory and risk-adjustment scrutiny. Beneficiaries may face plan transitions and network changes depending on market alternatives.",
+              "strategic_implication": "Payers should monitor competitive dynamics as exits create enrollment opportunities but also raise scrutiny on network adequacy and affordability. Providers in affected markets should prepare for contracting changes and patient retention strategies as seniors switch coverage.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "payers",
+                "market-exit",
+                "cost-pressure"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Operational pressure points are growing at the intersection of drug pricing programs and member experience, with 340B compliance requirements and plan dissatisfaction both driving cost and friction.",
+          "items": [
+            {
+              "item_id": "2026-06-04-lilly-340b-data-ultimatum",
+              "canonical_topic": "340b-claims-data-dispute",
+              "duplicate_group": "340b-claims-data-dispute",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/eli-lilly-340b-hospital-ultimatum-data-sharing-hrsa/821698/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-02T13:11:14Z"
+                }
+              ],
+              "title": "Eli Lilly sets near-term deadline for 340B providers to submit claims data or lose discounts",
+              "summary": "Eli Lilly warned 340B hospitals and other covered entities that they must comply with claims data submission requirements by a near-term deadline or lose access to 340B discounts for Lilly drugs. The escalation follows broader manufacturer-provider disputes over data transparency, diversion prevention, and the boundaries of HRSA oversight. Operationally, the policy forces covered entities to evaluate data pipelines, compliance posture, and financial exposure tied to discounted drug acquisition.",
+              "strategic_implication": "340B stakeholders should quantify financial risk under multiple scenarios (loss of discounts, partial compliance, litigation outcomes) and ensure pharmacy/RCM teams can support data submissions with defensible governance. Expect more manufacturer-specific requirements, increasing administrative complexity and variance across drug portfolios.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "pharmacy",
+                "compliance",
+                "drug-pricing"
+              ]
+            },
+            {
+              "item_id": "2026-06-04-jd-power-plan-satisfaction",
+              "canonical_topic": "consumer-health-plan-satisfaction",
+              "duplicate_group": "consumer-health-plan-satisfaction",
+              "priority_score": 5,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/consumer-satisfaction-health-plans-low-jd-power/821851/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-03T13:29:14Z"
+                }
+              ],
+              "title": "J.D. Power survey finds lower consumer satisfaction with health plans amid rising costs",
+              "summary": "A J.D. Power survey reported declining consumer satisfaction with health plans, citing cost pressures and related frictions. The findings reinforce the near-term challenge for payers to balance premium affordability with benefit design and service experience. For providers, member dissatisfaction can show up as higher call volumes, billing disputes, and care delays driven by prior authorization and coverage confusion.",
+              "strategic_implication": "Payers should prioritize high-friction member journeys (benefit understanding, digital service, and authorization status) that drive dissatisfaction and downstream utilization leakage. Providers can mitigate revenue-cycle volatility by strengthening eligibility verification, patient financial communications, and denial management workflows.",
+              "confidence": "medium",
+              "tags": [
+                "payers",
+                "consumer-experience",
+                "costs",
+                "prior-authorization"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce cost inflation remains a structural issue, with policy proposals potentially increasing wage floors for foreign-worker staffing in healthcare.",
+          "items": [
+            {
+              "item_id": "2026-06-04-dol-foreign-worker-wage-proposal",
+              "canonical_topic": "healthcare-staffing-costs",
+              "duplicate_group": "healthcare-staffing-costs",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/department-labors-proposed-foreign-worker-wage-increases-are-more-tough-news-healthcare",
+                  "source_type": "rss",
+                  "published_at": "2026-06-02T00:00:00Z"
+                }
+              ],
+              "title": "Proposed Department of Labor wage floor changes could raise costs for healthcare foreign-worker staffing",
+              "summary": "A Department of Labor proposal to increase wage floors for foreign workers could raise labor costs for healthcare employers that rely on international hiring, particularly in rural and underserved areas. The proposal adds another pressure point as systems contend with persistent vacancy rates and contract labor expense. Staffing firms and providers may need to revisit compensation strategies and workforce planning assumptions.",
+              "strategic_implication": "Provider leaders should model sensitivity to wage floor changes in hard-to-recruit roles and geographies, and accelerate retention and workforce redesign efforts to reduce reliance on contingent labor. Policymakers and payers may face renewed pressure to align reimbursement with structural labor cost inflation.",
+              "confidence": "medium",
+              "tags": [
+                "workforce",
+                "staffing",
+                "labor-costs",
+                "rural-health"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-03",
       "generated_at": "2026-06-03T11:02:17Z",
       "headline": "Today's Healthcare Insights",
@@ -6084,5 +6394,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-03T11:02:18Z"
+  "last_updated": "2026-06-04T11:09:02Z"
 }

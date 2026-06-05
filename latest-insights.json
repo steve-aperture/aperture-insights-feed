@@ -3,6 +3,218 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-05",
+      "generated_at": "2026-06-05T11:18:42Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s themes include surprise-billing dispute resolution changes, mounting 340B program friction, and federal oversight capacity constraints. Sources included STAT, Healthcare Dive, and the American Hospital Association.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "Search web (federal + market)",
+          "AHA News"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "Search web",
+          "AHA News"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS yielded several timely policy and market items; web search used to confirm primary-source coverage for federal actions."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal policy signals centered on payment/dispute mechanics (surprise billing) and drug-pricing enforcement pressure (340B), alongside broader federal oversight capacity concerns.",
+          "items": [
+            {
+              "item_id": "2026-06-05-no-surprises-idr-final-rule",
+              "canonical_topic": "no-surprises-act-idr",
+              "duplicate_group": "no-surprises-act-idr",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/surprise-billing-idr-final-rule-insurers-lash-out/821407/",
+                  "source_type": "web",
+                  "published_at": "2026-05-29T00:00:00Z"
+                }
+              ],
+              "title": "No Surprises Act IDR final rule tightens dispute process and standardizes payer-provider communication",
+              "summary": "The administration finalized updates to the federal independent dispute resolution (IDR) process used to settle out-of-network surprise billing disputes. Key changes aim to reduce ineligible disputes, standardize communications, improve the IDR portal, and lower filing fees—moves expected to affect dispute volumes and administrative load for both payers and providers.",
+              "strategic_implication": "Revenue-cycle teams should reassess IDR throughput capacity and dispute selection logic, as lower friction may increase volumes and shift negotiating dynamics with plans.",
+              "confidence": "medium",
+              "tags": [
+                "no-surprises-act",
+                "arbitration",
+                "payer-provider",
+                "revenue-cycle"
+              ]
+            },
+            {
+              "item_id": "2026-06-05-hhs-ohrp-staffing-cuts",
+              "canonical_topic": "human-research-oversight",
+              "duplicate_group": "human-research-oversight",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/05/hhs-cuts-office-human-research-protections-running-on-fumes/",
+                  "source_type": "web",
+                  "published_at": "2026-06-05T00:00:00Z"
+                }
+              ],
+              "title": "HHS human-subjects oversight office shrinks to 10 staff, raising compliance risk for research institutions",
+              "summary": "STAT reports that the HHS Office of Human Research Protections (OHRP) has fallen to about 10 employees after losing more than half its staff since February 2025. The article describes reduced capacity for training, site visits, and compliance work, increasing uncertainty for institutions relying on federal guidance and monitoring for IRBs and human-subject research protections.",
+              "strategic_implication": "Academic medical centers and trial sponsors may need to strengthen internal IRB governance and audit readiness, anticipating less federal coaching and slower issue resolution.",
+              "confidence": "high",
+              "tags": [
+                "clinical-research",
+                "irb",
+                "hhs",
+                "compliance"
+              ]
+            },
+            {
+              "item_id": "2026-06-05-vaccine-schedule-executive-order",
+              "canonical_topic": "vaccine-policy",
+              "duplicate_group": "vaccine-policy",
+              "priority_score": 7,
+              "primary_source": "American Hospital Association",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "AHA News",
+                  "url": "https://www.aha.org/news/headline/2026-06-01-president-signs-eo-childhood-immunization-schedule",
+                  "source_type": "web",
+                  "published_at": "2026-06-01T00:00:00Z"
+                }
+              ],
+              "title": "Executive order directs CDC/ACIP to review HHS assessment and consider aligning US childhood vaccine schedule with peer nations",
+              "summary": "AHA reports an executive order signed May 29 directs the CDC and ACIP to review an HHS scientific assessment comparing US childhood vaccine recommendations to those of other developed nations. The order recommends CDC/ACIP take appropriate steps to update the US schedule to align with other nations, while also recommending vaccines on the schedule remain covered without cost sharing by private insurers and covered by Medicaid/CHIP/VFC.",
+              "strategic_implication": "Health systems should prepare for potential schedule and coverage communications churn that could affect vaccine demand planning, counseling workflows, and public-trust dynamics.",
+              "confidence": "high",
+              "tags": [
+                "vaccines",
+                "cdc",
+                "acip",
+                "public-health"
+              ]
+            },
+            {
+              "item_id": "2026-06-05-lilly-340b-discounts-claims-data",
+              "canonical_topic": "340b-claims-data",
+              "duplicate_group": "340b-claims-data",
+              "priority_score": 8,
+              "primary_source": "American Hospital Association",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "AHA News",
+                  "url": "https://www.aha.org/news/headline/2026-06-02-eli-lilly-moves-deny-340b-pricing-over-data-requirements-aha-urges-federal-action",
+                  "source_type": "web",
+                  "published_at": "2026-06-02T00:00:00Z"
+                }
+              ],
+              "title": "Eli Lilly to deny 340B discounts to providers that do not meet claims-data documentation requirements",
+              "summary": "AHA reports Eli Lilly said June 1 it will deny 340B Drug Pricing Program discounts to providers that do not meet its documentation requirements by the following week. The association argues the policy is unlawful and asks HHS to intervene, noting at least six other manufacturers have announced similar claims-data policies tied to continued access to 340B pricing.",
+              "strategic_implication": "340B covered entities should validate data submission capabilities and legal posture; disruptions could quickly hit pharmacy margins and safety-net funding assumptions.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "safety-net",
+                "pharmacy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Regulatory process integrity and review-speed initiatives stayed in focus, with FDA’s fast-review voucher concept facing calls for a pause and formalization.",
+          "items": [
+            {
+              "item_id": "2026-06-05-fda-priority-voucher-pause",
+              "canonical_topic": "fda-priority-voucher",
+              "duplicate_group": "fda-priority-voucher",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/04/fda-commissioners-voucher-program-town-hall-pharma-patients-urge-pause/",
+                  "source_type": "web",
+                  "published_at": "2026-06-04T00:00:00Z"
+                }
+              ],
+              "title": "Stakeholders urge FDA to pause “national priority voucher” fast-review pathway and restart via formal rulemaking",
+              "summary": "STAT reports patient groups, drugmakers, and academic organizations urged the FDA to pause the Commissioner’s National Priority Voucher program, which offers one- to two-month drug reviews for products aligned with “national priorities.” Speakers argued the criteria are too vague and asked FDA to use standard regulatory processes with public input to revise and relaunch the approach.",
+              "strategic_implication": "Biopharma regulatory teams should treat expedited-pathway assumptions as fragile and prioritize contingency planning for review timelines and evidence packages.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "drug-approval",
+                "regulatory",
+                "biopharma"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Provider M&A remains driven by capital needs and financial sustainability, with a new definitive agreement highlighting the role of large balance sheets in regional expansion.",
+          "items": [
+            {
+              "item_id": "2026-06-05-wvu-independence-definitive-agreement",
+              "canonical_topic": "hospital-m-and-a",
+              "duplicate_group": "hospital-m-and-a",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/wvu-health-system-takes-next-step-toward-buying-independence-health/821971/",
+                  "source_type": "web",
+                  "published_at": "2026-06-04T00:00:00Z"
+                }
+              ],
+              "title": "WVU Health System signs definitive agreement to acquire Independence Health System, pledging $800M investment",
+              "summary": "Healthcare Dive reports WVU Health System signed a definitive agreement to combine with Independence Health System in Pennsylvania. WVU plans an $800 million investment across Independence’s five hospitals, including a new EHR and facility upgrades, with an expected close in September or October pending regulatory approval; Independence has faced recurring operating losses and liquidity pressures.",
+              "strategic_implication": "Regional systems should expect continued consolidation driven by balance-sheet strain and capital needs (EHR modernization, facility upgrades), intensifying competition for referral patterns and payer contracting leverage.",
+              "confidence": "high",
+              "tags": [
+                "m-and-a",
+                "health-systems",
+                "capital",
+                "ehr"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "No major standalone operational transformation stories surfaced beyond those embedded in policy and market developments today.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major workforce or clinical practice guideline changes surfaced in priority sources today beyond vaccine-policy review signals.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-04",
       "generated_at": "2026-06-04T11:09:02Z",
       "headline": "Today's Healthcare Insights",
@@ -6394,5 +6606,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-04T11:09:02Z"
+  "last_updated": "2026-06-05T11:18:47Z"
 }

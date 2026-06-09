@@ -3,6 +3,222 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-09",
+      "generated_at": "2026-06-09T11:01:55Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s edition focuses on federal payment pressure (Medicaid cost containment signals and No Surprises Act IDR changes), the operationalization of patient-generated data, and ongoing biopharma dealmaking. Sources included STAT News RSS plus targeted web reading of regulatory analysis and industry benchmarking releases.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "Search web (CMS/HHS/FDA)",
+          "Holland & Knight (No Surprises Act IDR)",
+          "Morningstar/Accesswire (RCM benchmarking)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "Search web",
+          "Holland & Knight (No Surprises Act IDR)",
+          "Morningstar/Accesswire (RCM benchmarking)"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS was available across all three feeds; key items selected from STAT plus two targeted web reads to diversify beyond paywalled sources. No email sources were required for today’s edition."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal payment pressure and administrative-rule updates continued to dominate, with signals on Medicaid cost containment and evolving No Surprises Act dispute-resolution operations.",
+          "items": [
+            {
+              "item_id": "2026-06-09-medicaid-cuts-hospital-message",
+              "canonical_topic": "medicaid-cuts-hospitals",
+              "duplicate_group": "medicaid-cuts-hospitals",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/06/09/affordability-czar-casey-mulligan-hfma-speech-medicaid-cuts/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-09T08:30:00Z"
+                }
+              ],
+              "title": "Administration affordability lead frames Medicaid cuts to hospital finance leaders",
+              "summary": "STAT reported that the administration's health care affordability lead addressed hospital finance leaders about looming Medicaid cuts, with hospital executives describing mitigation planning. The remarks highlight growing federal focus on Medicaid spending restraint and the near-term operational uncertainty for safety-net and Medicaid-heavy systems.",
+              "strategic_implication": "Provider CFOs should refresh Medicaid exposure and scenario plans now (coverage loss, bad debt, DSH, and state supplemental payment dynamics) and align an external affairs narrative ahead of FY2027 budgeting.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "policy",
+                "hospital-finance",
+                "safety-net"
+              ]
+            },
+            {
+              "item_id": "2026-06-09-no-surprises-act-idr-overhaul",
+              "canonical_topic": "no-surprises-act-idr",
+              "duplicate_group": "no-surprises-act-idr",
+              "priority_score": 6,
+              "primary_source": "Holland & Knight",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Holland & Knight",
+                  "url": "https://www.hklaw.com/en/insights/publications/2026/06/federal-idr-process-overhaul-finalized",
+                  "source_type": "web",
+                  "published_at": "2026-06-08T17:01:14Z"
+                }
+              ],
+              "title": "Final rule updates No Surprises Act IDR batching, timelines, and fees",
+              "summary": "A Holland & Knight analysis summarizes a final rule modifying the federal Independent Dispute Resolution (IDR) process under the No Surprises Act, including updated batching guidelines, process timelines, and administrative fee changes. The piece notes staggered applicability dates through summer 2026 and operational requirements for notices and eligibility determinations.",
+              "strategic_implication": "Revenue cycle and contracting teams should re-check IDR workflows, batching strategy, and vendor/TPA processes to reduce dispute cost per claim and avoid avoidable filing defects as the new timelines and requirements phase in.",
+              "confidence": "medium",
+              "tags": [
+                "no-surprises-act",
+                "idr",
+                "revenue-cycle",
+                "regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Wearable and patient-generated data integration remains a near-term execution challenge as vendors push into clinical workflows and providers weigh liability and workload implications.",
+          "items": [
+            {
+              "item_id": "2026-06-09-wearables-clinical-integration",
+              "canonical_topic": "wearables-clinical-integration",
+              "duplicate_group": "wearables-clinical-integration",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/06/09/wearables-data-oura-whoop-clinical-integration/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-09T08:30:00Z"
+                }
+              ],
+              "title": "Wearable-data platforms push closer to clinical integration",
+              "summary": "STAT reported that consumer wearables are generating large volumes of health data that have mostly remained outside clinical workflows, but new moves by companies such as Oura and Whoop are aimed at tighter clinical integration. The story underscores ongoing questions around data quality, reimbursement, liability, and how providers operationalize continuous patient-generated data.",
+              "strategic_implication": "Health systems evaluating RPM and consumer-device partnerships should define clinical thresholds, triage workflows, and data governance up front to prevent clinician burden and reduce alert fatigue as device data enters EHR-adjacent pathways.",
+              "confidence": "medium",
+              "tags": [
+                "wearables",
+                "rpm",
+                "digital-health",
+                "clinical-workflow"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Biopharma deal activity continued as large manufacturers sought pipeline depth and differentiated oncology assets.",
+          "items": [
+            {
+              "item_id": "2026-06-09-gsk-buys-nuvalent",
+              "canonical_topic": "biopharma-ma",
+              "duplicate_group": "biopharma-ma",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/06/09/gsk-nuvalent-acquistion-oncology-lung-cancer-zidesamtinib-neladalkib/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-09T06:48:20Z"
+                }
+              ],
+              "title": "GSK agrees to acquire Nuvalent for $10.6B in targeted-oncology bet",
+              "summary": "STAT reported that GSK agreed to buy Nuvalent for $10.6B, adding targeted oncology assets to its pipeline. The deal continues a run of biopharma acquisitions as large manufacturers look to offset patent cliffs and refresh growth platforms.",
+              "strategic_implication": "Payers and providers should watch for therapy mix shifts and contracting changes as big pharma consolidates targeted-oncology assets; health-system oncology service lines may see downstream formulary and pathway impacts.",
+              "confidence": "medium",
+              "tags": [
+                "pharma",
+                "m-and-a",
+                "oncology",
+                "pipeline"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Revenue-cycle performance remained a focus, with new vendor benchmarking underscoring the market's emphasis on denials management and self-pay operations.",
+          "items": [
+            {
+              "item_id": "2026-06-09-hospital-rcm-vendor-rankings",
+              "canonical_topic": "hospital-rcm-vendors",
+              "duplicate_group": "hospital-rcm-vendors",
+              "priority_score": 4,
+              "primary_source": "Black Book Research",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Morningstar (via Accesswire)",
+                  "url": "https://www.morningstar.com/news/accesswire/1173908msn/black-book-research-releases-2026-hospital-rcm-evaluation-naming-top-vendors-across-49-revenue-cycle-management-categories",
+                  "source_type": "web",
+                  "published_at": "2026-06-08T17:01:14Z"
+                }
+              ],
+              "title": "New benchmarking highlights top hospital revenue-cycle vendors across 49 categories",
+              "summary": "Black Book Research released a 2026 hospital revenue cycle management (RCM) evaluation naming top vendors across dozens of categories, including eligibility/enrollment and self-pay support. While rankings are not performance guarantees, they can influence shortlists and procurement discussions in a market where RCM performance is tightly linked to operating margin.",
+              "strategic_implication": "Provider finance leaders can use third-party benchmarks as an input to RCM vendor rationalization, but should pair them with local KPI baselines (denials, AR days, clean-claim rate, and underpayment recovery) before making platform changes.",
+              "confidence": "low",
+              "tags": [
+                "revenue-cycle",
+                "rcm",
+                "vendors",
+                "provider-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical practice signals centered on preventive counseling and the evidence base behind alcohol-risk messaging.",
+          "items": [
+            {
+              "item_id": "2026-06-09-alcohol-study-dietary-guidelines",
+              "canonical_topic": "alcohol-health-risk",
+              "duplicate_group": "alcohol-health-risk",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/06/09/suppressed-alcohol-health-study-released-one-drink-or-less-daily/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-09T05:00:00Z"
+                }
+              ],
+              "title": "Suppressed federal alcohol study publishes, reinforcing risk even with light drinking",
+              "summary": "STAT reported that a government-commissioned alcohol study previously discarded by officials was published in a scientific journal and found risks associated with even light drinking. The findings may influence how clinicians counsel patients and how policymakers frame upcoming U.S. dietary guidelines.",
+              "strategic_implication": "Health systems and employers should anticipate renewed attention to alcohol screening and brief interventions, particularly if guideline language shifts and quality programs incorporate stronger screening expectations.",
+              "confidence": "medium",
+              "tags": [
+                "public-health",
+                "clinical-guidelines",
+                "alcohol",
+                "preventive-care"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-08",
       "generated_at": "2026-06-08T11:23:52Z",
       "headline": "Today's Healthcare Insights",
@@ -7147,5 +7363,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-08T11:24:06Z"
+  "last_updated": "2026-06-09T11:01:55Z"
 }

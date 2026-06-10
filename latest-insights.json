@@ -3,6 +3,223 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-10",
+      "generated_at": "2026-06-10T11:15:17Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s edition highlights stepped-up enforcement and procurement signals (hospital price transparency and Illinois Medicaid contracting), along with continued operational risk in large-scale EHR rollouts and rising cybersecurity oversight. Sources included STAT and Healthcare Dive RSS plus targeted primary-source reading from the Senate HELP Committee, PCMA, and the Associated Press.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "Search web (policy/ops)",
+          "PCMA press release",
+          "Senate HELP Committee",
+          "Associated Press"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "Search web",
+          "PCMA press release",
+          "Senate HELP Committee",
+          "Associated Press"
+        ],
+        "sources_failed": [],
+        "run_notes": "All three RSS feeds were available. FierceHealthcare feed metadata was incomplete (missing titles/dates), so primary-source and other Tier-1 coverage was used for verifiable items."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Enforcement and contracting signals stood out, including a broad push on hospital price transparency and major Medicaid managed-care awards in Illinois.",
+          "items": [
+            {
+              "item_id": "2026-06-10-hospital-price-transparency-warnings",
+              "canonical_topic": "hospital-price-transparency-enforcement",
+              "duplicate_group": "hospital-price-transparency-enforcement",
+              "priority_score": 9,
+              "primary_source": "STAT / Associated Press",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/09/trump-administration-warns-hospitals-price-information-fines/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-09T15:35:43+00:00"
+                }
+              ],
+              "title": "Federal officials warn 500+ hospitals on price transparency; penalties can reach $2M per year",
+              "summary": "The Trump administration sent warnings to more than 500 hospitals for failing to provide the public with required pricing information. The notice emphasizes easier access to machine-readable files and more complete, non-estimated pricing for key services. Hospitals that do not create a plan to post clear pricing data could face penalties up to $2 million annually.",
+              "strategic_implication": "Health systems should treat price transparency as an operational compliance program (data quality, file accessibility, governance) rather than a marketing task. Leaders should anticipate more audit-style enforcement and prioritize remediation for high-volume shoppable services.",
+              "confidence": "high",
+              "tags": [
+                "price-transparency",
+                "hospital-compliance",
+                "cms",
+                "consumerism"
+              ]
+            },
+            {
+              "item_id": "2026-06-10-illinois-medicaid-contracts",
+              "canonical_topic": "medicaid-managed-care-contracts-illinois",
+              "duplicate_group": "medicaid-managed-care-contracts-illinois",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/illinois-medicaid-awards-healthchoice-contracts-humana/822278/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-09T10:41:27-04:00"
+                }
+              ],
+              "title": "Illinois selects six insurers for HealthChoice Illinois; contracts represent $140B+ initial value",
+              "summary": "Illinois said it intends to award new HealthChoice Illinois Medicaid managed care contracts to six insurers: Centene, Molina, CVS, HCSC, CountyCare and Humana. The state said the agreement represents more than $140 billion in revenue over the initial term, with additional value if renewed. The program covers more than 2 million Medicaid beneficiaries, with roughly half concentrated in Cook County.",
+              "strategic_implication": "State Medicaid procurement outcomes can quickly reshape managed-care network leverage and administrative requirements for providers. Hospitals and physician groups operating in Illinois should review contract-driven changes (SDOH expectations, behavioral health coordination, authorization rules) and prepare for insurer mix shifts as work requirements approach.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "managed-care",
+                "state-policy",
+                "payer-moves"
+              ]
+            },
+            {
+              "item_id": "2026-06-10-fda-bemotrizinol-sunscreen",
+              "canonical_topic": "fda-bemotrizinol-sunscreen",
+              "duplicate_group": "fda-bemotrizinol-sunscreen",
+              "priority_score": 6,
+              "primary_source": "Associated Press",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Associated Press",
+                  "url": "https://apnews.com/article/sunscreen-fda-bemotrizinol-ingredient-uva-protection-9b9c7e04b418b3c9c1fbaa7ddabade25",
+                  "source_type": "web",
+                  "published_at": "2026-06-09T17:01:32"
+                }
+              ],
+              "title": "FDA clears bemotrizinol, the first new U.S. sunscreen active ingredient in 25+ years",
+              "summary": "FDA approved bemotrizinol for the U.S. market, the first new sunscreen ingredient in more than 25 years. The agency said the ingredient meets standards for UV protection with little irritation or absorption and is safe for adults and children 6 months and older. DSM Nutritional Products is expected to launch it later in the year as Parsol Shield, with an 18-month exclusivity window before broader manufacturer use.",
+              "strategic_implication": "The decision is a signal that the 2020 streamlined pathway can expand consumer-facing preventive products, which may influence dermatology and retail health demand patterns. Manufacturers and retailers should watch how FDA interprets “safe and effective” evidence and how exclusivity shapes near-term market entry.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "consumer-health",
+                "regulatory",
+                "dermatology"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Cybersecurity governance remains a front-burner risk, with Senate oversight pressing large public providers for details and remediation plans.",
+          "items": [
+            {
+              "item_id": "2026-06-10-nyc-hh-cybersecurity-letter",
+              "canonical_topic": "nyc-hh-cyber-letter",
+              "duplicate_group": "nyc-hh-cyber-letter",
+              "priority_score": 7,
+              "primary_source": "Senate HELP Committee",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Senate HELP Committee",
+                  "url": "https://www.help.senate.gov/rep/newsroom/press/chairman-cassidy-presses-zohran-mamdani-nyc-hospital-on-major-health-breach-calls-for-safeguards-to-protect-patients",
+                  "source_type": "web",
+                  "published_at": "2026-06-05T00:00:00"
+                }
+              ],
+              "title": "Senate HELP Chair presses NYC Health + Hospitals on cyber incident; requests answers by June 18",
+              "summary": "Senate HELP Committee Chair Bill Cassidy requested detailed information from New York City leadership about a cybersecurity incident affecting NYC Health + Hospitals. The letter states hostile actors may have accessed personal information and protected health information over a three-month period, potentially including Social Security numbers, biometric information, precise geolocation data, and medical and insurance information. Cassidy asked for responses by June 18, including questions on security controls, notification timelines, remediation steps, and communications to impacted individuals.",
+              "strategic_implication": "Congressional oversight pressure is increasingly converging on healthcare cyber resilience, which may accelerate minimum-control expectations and reporting obligations for large providers. Health systems should reassess third-party risk, incident response readiness, and patient notification workflows as scrutiny expands beyond HIPAA compliance into operational resilience.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "phi",
+                "governance",
+                "congress"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Industry groups continued shaping the affordability narrative, with PBM policy positioning aimed at influencing drug-pricing reform debates.",
+          "items": [
+            {
+              "item_id": "2026-06-10-pcma-affordability-platform",
+              "canonical_topic": "pbm-policy-platform",
+              "duplicate_group": "pbm-policy-platform",
+              "priority_score": 5,
+              "primary_source": "PCMA",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "PCMA",
+                  "url": "https://www.pcmanet.org/press-releases/pcma-releases-policy-platform/",
+                  "source_type": "web",
+                  "published_at": "2026-06-09T00:00:00"
+                }
+              ],
+              "title": "PBM trade group PCMA publishes “Path to Patient Affordability” platform as drug-pricing scrutiny continues",
+              "summary": "PCMA released a policy platform it says outlines six approaches for federal and state policymakers to make healthcare more affordable for patients, positioning PBMs as part of the solution on drug costs. The release emphasizes supply-chain competition and transparency and frames the platform as a legislative roadmap. The announcement comes amid continued attention on prescription drug pricing and PBM reform proposals.",
+              "strategic_implication": "Policy narratives from PBMs, manufacturers, and payers are converging on affordability and transparency, raising the likelihood of incremental reforms even without comprehensive legislation. Provider and payer leaders should monitor how PBM contracting requirements (rebate pass-through, disclosure, point-of-sale pricing) could shift pharmacy benefit economics and member communications.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "pbm",
+                "policy",
+                "pharmacy-benefit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Complex transformation programs are still in focus, as the VA expands its restarted Oracle EHR rollout after reliability and safety concerns.",
+          "items": [
+            {
+              "item_id": "2026-06-10-va-oracle-ehr-ohio-kentucky",
+              "canonical_topic": "va-oracle-ehr-rollout",
+              "duplicate_group": "va-oracle-ehr-rollout",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/va-deploys-oracle-ehr-four-medical-centers-ohio-kentucky/822348/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-09T10:05:41-04:00"
+                }
+              ],
+              "title": "VA expands restarted Oracle EHR rollout to four medical centers in Ohio and Kentucky",
+              "summary": "The VA deployed its Oracle EHR at four medical centers in Ohio and Kentucky, marking another wave of 2026 deployments after years of pause to address reliability, patient-safety and cost concerns. The rollout affects more than 7,200 clinicians and staff and follows deployments in Michigan earlier in the year. The VA says it has fixed hundreds of issues at initial sites and plans additional rollouts in Indiana, Alaska and Cleveland later in 2026.",
+              "strategic_implication": "Large-scale EHR replacements remain a multi-year operational risk program, and the VA’s restart underscores the need for staged deployments, clinician feedback loops, and dedicated go-live staffing. Health systems planning migrations should benchmark incident management, training capacity, and stabilization metrics against public-sector lessons learned.",
+              "confidence": "high",
+              "tags": [
+                "ehr",
+                "oracle-cerner",
+                "implementation",
+                "va"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-09",
       "generated_at": "2026-06-09T11:01:55Z",
       "headline": "Today's Healthcare Insights",
@@ -7363,5 +7580,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-09T11:01:55Z"
+  "last_updated": "2026-06-10T11:15:17Z"
 }

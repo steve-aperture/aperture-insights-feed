@@ -3,6 +3,232 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-11",
+      "generated_at": "2026-06-11T11:04:20Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s edition centers on payer oversight (Medicare Advantage denials and coding scrutiny), major Medicaid contracting shifts in Illinois, and the operational realities of health IT and billing change management. Sources included STAT, HHS OIG, Health Management Associates, EveryCRSReport, Digital Health News, and NAHRI.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "Search web (policy/ops)",
+          "HHS OIG",
+          "Health Management Associates",
+          "EveryCRSReport (CRS)",
+          "Digital Health News",
+          "NAHRI"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "Search web",
+          "HHS OIG",
+          "Health Management Associates",
+          "EveryCRSReport (CRS)",
+          "Digital Health News",
+          "NAHRI"
+        ],
+        "sources_failed": [],
+        "run_notes": "All three RSS feeds were reachable; web search was used to prioritize items with clear primary URLs and dates. Some RSS entries lacked complete published timestamps, so published_at values were taken from the cited web pages where available."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Payment integrity and utilization management remain in focus, with post-acute denials and Medicaid contracting creating near-term compliance and contracting implications.",
+          "items": [
+            {
+              "item_id": "2026-06-11-medicare-advantage-denials-appeals",
+              "canonical_topic": "medicare-advantage-prior-authorization-denials",
+              "duplicate_group": "medicare-advantage-prior-authorization-denials",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/11/medicare-advantage-oig-report-rehab-care-deny-appeal-reverse/",
+                  "source_type": "web",
+                  "published_at": "2026-06-11T00:00:00Z"
+                },
+                {
+                  "source": "HHS OIG",
+                  "url": "https://oig.hhs.gov",
+                  "source_type": "web",
+                  "published_at": "2026-06-11T11:04:20Z"
+                }
+              ],
+              "title": "OIG flags MA rehab-care denials that are frequently overturned on appeal",
+              "summary": "Federal investigators found large Medicare Advantage insurers denied rehabilitative care at higher rates than peers and then frequently reversed those denials when beneficiaries appealed. In one cited finding, denials of nursing-home care were overturned 97% of the time on appeal, raising concerns about the validity of the initial denials. The report and related coverage point to persistent friction between utilization management tools and clinician-recommended post-acute care.",
+              "strategic_implication": "Plans and provider partners should anticipate stronger scrutiny of prior authorization, documentation standards, and appeal outcomes—especially for post-acute transitions. Providers may want to tighten discharge planning and appeal workflows to reduce avoidable delays and uncompensated administrative effort.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "prior-authorization",
+                "post-acute-care",
+                "regulatory-scrutiny"
+              ]
+            },
+            {
+              "item_id": "2026-06-11-illinois-medicaid-managed-care-awards",
+              "canonical_topic": "illinois-medicaid-managed-care-procurement",
+              "duplicate_group": "illinois-medicaid-managed-care-procurement",
+              "priority_score": 8,
+              "primary_source": "Health Management Associates",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Health Management Associates",
+                  "url": "https://www.healthmanagement.com/insights/weekly-roundup-v2/june-10-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-06-10T00:00:00Z"
+                }
+              ],
+              "title": "Illinois posts Medicaid managed-care awards, adding Humana and reaffirming incumbents",
+              "summary": "Illinois’ Department of Healthcare and Family Services issued a notice of award for its HealthChoice Illinois managed-care procurement naming CVS/Aetna, HCSC/BCBSIL, Centene/Meridian, Molina, and Humana for statewide contracts, plus CountyCare for Cook County. The roundup estimates the award at $431.4B over 10 years, with a 4.5-year initial term and 5.5-year renewal term. The state also requires separate contract vehicles for federally funded vs. state-funded services, aligning to CMS rate-development guidance.",
+              "strategic_implication": "Winning and incumbent plans should prepare for network and care-management transitions, while providers should monitor attribution, contracting, and administrative requirements as implementation details emerge. The two-contract structure could increase operational complexity for plans and downstream billing/benefit interpretation for providers.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "managed-care",
+                "state-procurement",
+                "payer-provider-contracting"
+              ]
+            },
+            {
+              "item_id": "2026-06-11-oig-ma-overpayments-stroke-dx",
+              "canonical_topic": "medicare-advantage-risk-adjustment-overpayments",
+              "duplicate_group": "medicare-advantage-risk-adjustment-overpayments",
+              "priority_score": 6,
+              "primary_source": "HHS OIG",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "HHS OIG",
+                  "url": "https://oig.hhs.gov/newsroom/whats-new/",
+                  "source_type": "web",
+                  "published_at": "2026-06-11T11:04:20Z"
+                }
+              ],
+              "title": "HHS OIG highlights potential $462M Medicare Advantage overpayments tied to unsupported stroke codes",
+              "summary": "HHS OIG’s June 2026 “What’s New” listing includes a report stating CMS potentially overpaid Medicare Advantage organizations $462 million based on certain unsupported acute stroke diagnosis codes. The item underscores continued federal attention on diagnosis coding accuracy and documentation in MA payment.",
+              "strategic_implication": "Plans should expect continued audit and enforcement pressure around risk adjustment and diagnosis documentation, with downstream implications for provider documentation workflows. Providers participating in MA value-based contracts may face added documentation burden and retrospective review activity.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "risk-adjustment",
+                "coding",
+                "audit"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Regulators and policymakers continue to frame AI and cybersecurity as linked governance issues, raising expectations for monitoring and change control.",
+          "items": [
+            {
+              "item_id": "2026-06-11-fda-ai-enabled-devices-cybersecurity",
+              "canonical_topic": "fda-ai-enabled-medical-devices-regulation",
+              "duplicate_group": "fda-ai-enabled-medical-devices-regulation",
+              "priority_score": 7,
+              "primary_source": "Congressional Research Service (EveryCRSReport)",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "EveryCRSReport (CRS)",
+                  "url": "https://www.everycrsreport.com/reports/IF13245.html",
+                  "source_type": "web",
+                  "published_at": "2026-06-10T00:00:00Z"
+                }
+              ],
+              "title": "CRS: FDA has not authorized any generative-AI medical device; cybersecurity expectations keep rising",
+              "summary": "A Congressional Research Service brief notes FDA has not authorized a generative-AI-enabled medical device for marketing to date and highlights ongoing debate about whether new oversight frameworks may be needed. The brief also points to FDA’s recent final guidance on device cybersecurity (February 2026) and the agency’s work on predetermined change control plans for AI-enabled devices. For developers and health systems evaluating AI products, the document underscores that cybersecurity and postmarket monitoring expectations are converging with AI governance requirements.",
+              "strategic_implication": "Health systems should align AI procurement with device-grade cybersecurity and lifecycle-change controls (including monitoring and update governance). Vendors should expect buyers to ask for clearer evidence on safety, real-world performance monitoring, and cybersecurity plans as part of contracting and risk management.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "ai-regulation",
+                "medical-devices",
+                "cybersecurity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "No major items surfaced in this area today beyond routine market coverage.",
+          "items": []
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Operational execution and revenue-cycle readiness stood out, from enterprise EHR deployments to upcoming telehealth billing changes for safety-net clinics.",
+          "items": [
+            {
+              "item_id": "2026-06-11-va-oracle-ehr-rollout-ohio-kentucky",
+              "canonical_topic": "va-oracle-ehr-modernization",
+              "duplicate_group": "va-oracle-ehr-modernization",
+              "priority_score": 6,
+              "primary_source": "Digital Health News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Digital Health News",
+                  "url": "https://www.digitalhealthnews.com/va-expands-oracle-ehr-rollout-to-four-medical-centers-in-ohio-and-kentucky",
+                  "source_type": "web",
+                  "published_at": "2026-06-11T00:00:00Z"
+                }
+              ],
+              "title": "VA expands Oracle EHR deployments to four Ohio/Kentucky medical centers after earlier safety pauses",
+              "summary": "The VA reported going live June 7 with Oracle’s EHR at four medical centers in Ohio and Kentucky, affecting more than 7,200 clinicians and staff. The rollout follows earlier 2026 deployments in Michigan and comes after the VA largely paused new deployments in 2023 to address technical problems, performance issues, and patient safety concerns. The outlet reports the VA has now completed eight of 13 planned deployments in 2026 and intends to add roughly 400 staff to support implementations.",
+              "strategic_implication": "Large-scale EHR programs remain a material operational and patient-safety risk; governance, change management, and contingency planning should be treated as enterprise risk disciplines. Peer systems can watch VA’s phased restart for lessons on stabilization metrics, staffing models, and go-live readiness criteria.",
+              "confidence": "medium",
+              "tags": [
+                "ehr",
+                "oracle-cerner",
+                "implementation-risk",
+                "provider-operations"
+              ]
+            },
+            {
+              "item_id": "2026-06-11-rhc-fqhc-telehealth-billing-change",
+              "canonical_topic": "cms-telehealth-billing-rhc-fqhc",
+              "duplicate_group": "cms-telehealth-billing-rhc-fqhc",
+              "priority_score": 5,
+              "primary_source": "NAHRI",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "NAHRI",
+                  "url": "https://nahri.org/articles/new-billing-guidance-rhc-and-fqhc-distant-site-telehealth-services",
+                  "source_type": "web",
+                  "published_at": "2026-06-10T00:00:00Z"
+                }
+              ],
+              "title": "CMS updates distant-site telehealth billing for RHCs/FQHCs starting Oct. 1, 2026",
+              "summary": "CMS issued billing instructions indicating rural health clinics and federally qualified health centers will stop using HCPCS code G2025 for distant-site telehealth services beginning Oct. 1, 2026. Instead, they must bill the specific CPT/HCPCS code describing the service and use modifiers for audio-only (-93) or audio-video (-95) visits. The change follows extended authority for these facilities to furnish distant-site telehealth services through Jan. 1, 2028.",
+              "strategic_implication": "Revenue cycle teams at RHCs/FQHCs should begin updating charge masters, clinician workflows, and claims edits well ahead of the October switch to reduce denials. Payers and partners may see short-term billing friction as coding transitions and modifier use normalize.",
+              "confidence": "medium",
+              "tags": [
+                "telehealth",
+                "rhc",
+                "fqhc",
+                "billing"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-10",
       "generated_at": "2026-06-10T11:15:17Z",
       "headline": "Today's Healthcare Insights",
@@ -7580,5 +7806,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-10T11:15:17Z"
+  "last_updated": "2026-06-11T11:04:20Z"
 }

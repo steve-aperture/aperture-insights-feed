@@ -3,6 +3,313 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-12",
+      "generated_at": "2026-06-12T11:05:06Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s edition highlights mounting scrutiny of Medicare Advantage prior authorization (including OIG findings and Hill pressure around AI-enabled denials), near-term fiscal signals from the Medicare trustees, and how AI adoption is reshaping both provider coding economics and federal oversight. Sources included STAT, Healthcare Dive, Fierce Healthcare, and the American Medical Association.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "Search web (policy/ops)",
+          "AMA"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "FierceHealthcare RSS",
+          "Search web",
+          "AMA"
+        ],
+        "sources_failed": [],
+        "run_notes": "All three RSS feeds were reachable; web results were used to add primary-source context beyond RSS headlines. Several publisher pages did not expose a precise on-page time-of-day, so published_at timestamps use the date where available or the RSS timestamp."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Medicare financing and coverage rules remain in focus: trustees moved up the HI trust fund depletion estimate, while oversight bodies and lawmakers continue pressing Medicare Advantage plans on prior authorization and AI-driven coverage decisions.",
+          "items": [
+            {
+              "item_id": "2026-06-12-ma-pa-denials-oig",
+              "canonical_topic": "medicare-advantage-prior-authorization",
+              "duplicate_group": "medicare-advantage-prior-authorization",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/oig-look-ma-prior-authorization-denials-long-term-care-hospitals-inpatient-rehab",
+                  "source_type": "rss",
+                  "published_at": "2026-06-11T00:00:00Z"
+                }
+              ],
+              "title": "OIG flags high Medicare Advantage prior-authorization denials for LTCH and inpatient rehab",
+              "summary": "A new HHS Office of Inspector General report found the three largest Medicare Advantage insurers denied prior authorization requests for long-term care hospital and inpatient rehab stays more frequently than peers in a reviewed period. The OIG also noted a meaningful share of denials were overturned on appeal, raising questions about initial decision quality and contractor oversight. The report recommends CMS more consistently track request-level prior authorization data (including contractor involvement) and investigate why denial and overturn rates vary widely.",
+              "strategic_implication": "Plans and delegated UM vendors should assume more granular CMS oversight is coming and tighten clinical policy governance, appeal analytics, and contractor training. Providers may see leverage to standardize documentation packets and expedite appeals in LTCH/IRF pathways.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "prior-authorization",
+                "utilization-management",
+                "oig",
+                "post-acute"
+              ]
+            },
+            {
+              "item_id": "2026-06-12-medicare-hi-trustees-2033",
+              "canonical_topic": "medicare-trust-fund",
+              "duplicate_group": "medicare-trust-fund",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medicare-insolvency-date-hi-fund-obbb-trustees-report/822499/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-11T15:02:29Z"
+                }
+              ],
+              "title": "Medicare trustees move HI trust fund depletion estimate up to Q2 2033",
+              "summary": "Medicare trustees reported the Hospital Insurance (Part A) trust fund is now projected to be depleted in the second quarter of 2033, one quarter earlier than the prior estimate. The Healthcare Dive report attributes the shift largely to reduced tax revenue tied to the GOP’s “Big Beautiful Bill” enacted last summer. Under current law, trustees warned that insolvency would trigger across-the-board payment reductions absent legislative changes.",
+              "strategic_implication": "Expect renewed pressure for near-term payment and revenue policy adjustments, with downstream implications for hospital rate updates and Medicare Advantage benchmarks. CFOs should continue scenario planning for reimbursement tightening and greater utilization management.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "trust-fund",
+                "payment-policy",
+                "fiscal-outlook",
+                "part-a"
+              ]
+            },
+            {
+              "item_id": "2026-06-12-ama-medicaid-ai-policies",
+              "canonical_topic": "ama-policy-ai-coverage",
+              "duplicate_group": "ama-policy-ai-coverage",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/medicaid-work-requirement-exemptions-ai-safeguards-coverage-decisions-look-new-ama",
+                  "source_type": "rss",
+                  "published_at": "2026-06-11T00:00:00Z"
+                },
+                {
+                  "source": "American Medical Association",
+                  "url": "https://www.ama-assn.org/health-care-advocacy/advocacy-update/top-stories-advocacy-update-june-2026",
+                  "source_type": "web",
+                  "published_at": "2026-06-12T00:00:00Z"
+                }
+              ],
+              "title": "AMA elevates policy focus on Medicaid work-requirement exemptions and AI safeguards in coverage",
+              "summary": "Fierce Healthcare reported the AMA adopted new policies that call for clearer exemptions as Medicaid work requirements expand and for safeguards when AI is used in coverage and payment decisions. In a related advocacy update, the AMA highlighted CMS Medicaid work requirement rules that define medical frailty in ways the association argues could restrict exemptions and increase administrative burden. Together, the actions signal sustained physician advocacy on both eligibility policy and algorithmic decision-making in payer workflows.",
+              "strategic_implication": "Payers and states implementing work requirements should anticipate pushback on exemption criteria and physician documentation burden. Organizations deploying AI for UM or claims should proactively document governance, bias/quality controls, and human review pathways.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "ama",
+                "ai-governance",
+                "coverage-policy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI adoption is accelerating in both healthcare delivery and government oversight, while new care models continue to package turnkey digital tools to unlock reimbursement in under-served settings like independent pharmacies.",
+          "items": [
+            {
+              "item_id": "2026-06-12-pwc-ai-coding-cost-trend",
+              "canonical_topic": "ai-documentation-coding",
+              "duplicate_group": "ai-documentation-coding",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ai-push-healthcare-costs-higher-health-plans-say-pwc/822645/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-11T18:54:00Z"
+                }
+              ],
+              "title": "Health plans cite AI documentation and coding tools as a key driver of rising medical cost trend",
+              "summary": "Healthcare Dive reported that PwC’s medical cost trend analysis projects commercial healthcare costs will rise 9% next year. Nearly 70% of surveyed plans ranked providers’ use of AI documentation and coding tools among the top three factors increasing costs, reflecting concerns that improved documentation can increase coded acuity and reimbursement. The report also notes other inflationary pressures such as utilization, labor/supply costs, and contracting dynamics.",
+              "strategic_implication": "Payers should refine auditing and risk-adjustment integrity programs for AI-assisted documentation while aligning provider partnerships around appropriate coding. Providers adopting ambient/AI coding tools should invest in compliance guardrails to avoid future recoupments and contract disputes.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "coding",
+                "medical-cost-trend",
+                "documentation",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-06-12-hhs-ai-usecase-growth",
+              "canonical_topic": "hhs-ai-adoption",
+              "duplicate_group": "hhs-ai-adoption",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/all-hhs-agencies-saw-ai-use-case-increases-fy-2025-bipartisan-policy-center",
+                  "source_type": "rss",
+                  "published_at": "2026-06-11T00:00:00Z"
+                }
+              ],
+              "title": "Bipartisan Policy Center analysis shows rapid growth in HHS AI use cases, led by FDA",
+              "summary": "Fierce Healthcare reported that AI use cases increased across HHS agencies between FY 2024 and FY 2025, led by a 148% year-over-year increase at the FDA, alongside gains at CDC, CMS, and NIH. The story notes researchers used HHS’s AI use case inventory and cautioned some increases may reflect reporting changes, while many projects remain pre-deployment. The direction of travel suggests accelerating federal reliance on AI across regulatory, public health, and payment operations.",
+              "strategic_implication": "Digital health and life science firms should assume regulators will become more sophisticated users of AI and may expect higher-quality digital evidence and interoperability. Health systems should monitor emerging federal AI governance expectations as agencies scale internal tooling.",
+              "confidence": "medium",
+              "tags": [
+                "hhs",
+                "fda",
+                "ai",
+                "regulation",
+                "federal"
+              ]
+            },
+            {
+              "item_id": "2026-06-12-pharmacy-rpm-turnkey",
+              "canonical_topic": "pharmacy-remote-patient-monitoring",
+              "duplicate_group": "pharmacy-remote-patient-monitoring",
+              "priority_score": 5,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/digital-health/partners-launch-remote-patient-monitoring-solution-support-pharmacies",
+                  "source_type": "rss",
+                  "published_at": "2026-06-11T00:00:00Z"
+                }
+              ],
+              "title": "Partners launch turnkey remote patient monitoring program designed for independent pharmacies",
+              "summary": "Fierce Healthcare reported OpenLoop, Tenovi, and RxHealing launched an “out-of-the-box” remote patient monitoring (RPM) program to help pharmacies implement RPM and bill Medicare Part B. The partners position the model as lowering operational barriers (devices, tech integration, clinical coverage) and specifically targeting independent and rural pharmacies. The article states that 138 pharmacies have joined since an early April launch.",
+              "strategic_implication": "Pharmacy-centric RPM could expand access in rural markets and create a new channel for chronic care monitoring, but success hinges on workflow integration, quality reporting, and sustainable reimbursement. Providers and payers should watch for evidence on outcomes and avoid duplicative monitoring programs.",
+              "confidence": "medium",
+              "tags": [
+                "rpm",
+                "pharmacies",
+                "virtual-care",
+                "medicare-part-b",
+                "chronic-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payers and diversified healthcare companies continue portfolio reshaping, while patient affordability pressures show up in both financial leadership discussions and strategic divestitures within home-based and end-of-life care.",
+          "items": [
+            {
+              "item_id": "2026-06-12-humana-gentiva-divest",
+              "canonical_topic": "payer-portfolio-divestiture",
+              "duplicate_group": "payer-portfolio-divestiture",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/humana-divests-gentiva-interest-valued-900m/822616/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-11T13:24:42Z"
+                }
+              ],
+              "title": "Humana agrees to sell its interest in end-of-life care provider Gentiva (valued around $900M)",
+              "summary": "Healthcare Dive reported Humana signed an agreement to sell its ownership interest in hospice and palliative care provider Gentiva, valued around $900 million, with buyers not disclosed. The deal is expected to close in the third quarter and is not expected to materially impact earnings, according to the company. The divestiture continues Humana’s shift toward focusing on CenterWell and broader efforts to diversify away from Medicare Advantage margin pressure.",
+              "strategic_implication": "As payers rationalize care-delivery assets, counterparties should anticipate more selective investment and potential partnership opportunities around home health and primary care. Hospice and palliative operators should prepare for increased diligence on quality, staffing stability, and compliance as assets change hands.",
+              "confidence": "medium",
+              "tags": [
+                "humana",
+                "m-and-a",
+                "home-based-care",
+                "hospice",
+                "payer-strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Providers are managing margin and administrative complexity from multiple angles—from workforce and overhead adjustments to renewed calls for simplifying the revenue cycle and reducing billing friction.",
+          "items": [
+            {
+              "item_id": "2026-06-12-hfma-revenue-cycle-friction",
+              "canonical_topic": "revenue-cycle-operations",
+              "duplicate_group": "revenue-cycle-operations",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/12/hfma-conference-healthcare-affordability-revenue-cycle-vendors/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-12T08:30:00Z"
+                }
+              ],
+              "title": "HFMA conference spotlights revenue-cycle vendor sprawl as affordability and billing simplification remain elusive",
+              "summary": "STAT reported that hospital finance leaders at the Healthcare Financial Management Association (HFMA) annual meeting debated affordability amid a crowded exhibit hall of billing and collections vendors. The piece frames revenue-cycle “friction” as a structural cost driver, with significant industry effort devoted to navigating payment and collections complexity. The overarching message is that simplifying billing could help reduce costs and improve patient experience, but alignment across stakeholders remains difficult.",
+              "strategic_implication": "Health systems should prioritize vendor rationalization, automation, and patient-friendly billing experiences while monitoring payer contract terms that drive administrative burden. Payers and providers that can standardize data exchange and reduce back-end work may unlock shared savings and differentiation.",
+              "confidence": "medium",
+              "tags": [
+                "revenue-cycle",
+                "billing",
+                "affordability",
+                "hfma",
+                "operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce actions remain a leading indicator of health system cost containment, with large providers adjusting non-clinical headcount and open requisitions while maintaining frontline capacity.",
+          "items": [
+            {
+              "item_id": "2026-06-12-upmc-layoffs",
+              "canonical_topic": "health-system-workforce",
+              "duplicate_group": "health-system-workforce",
+              "priority_score": 5,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/upmc-lay-off-200-employees-cut-300-open-positions/822511/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-11T14:30:00Z"
+                }
+              ],
+              "title": "UPMC plans layoffs and hiring pullback, cutting 200 roles and 300 open positions",
+              "summary": "Healthcare Dive reported UPMC will lay off around 200 employees and eliminate roughly 300 open positions, primarily in non-clinical or non-member-facing roles. The system said it regularly reassesses its services and will provide enhanced severance and benefits coverage to affected employees. The move reflects ongoing cost-containment and organizational restructuring pressures among large integrated systems.",
+              "strategic_implication": "Expect continued optimization of administrative staffing as systems invest in automation and contend with reimbursement pressure. Operational leaders should pair reductions with service-level monitoring to avoid unintended impacts on access, revenue cycle performance, or patient experience.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "health-systems",
+                "layoffs",
+                "cost-containment",
+                "upmc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-11",
       "generated_at": "2026-06-11T11:04:20Z",
       "headline": "Today's Healthcare Insights",
@@ -7806,5 +8113,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-11T11:04:20Z"
+  "last_updated": "2026-06-12T11:05:06Z"
 }

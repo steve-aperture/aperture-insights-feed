@@ -3,6 +3,297 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-15",
+      "generated_at": "2026-06-15T11:16:33Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s signals center on payment/payer oversight (Medicare Advantage denials and insulin-related enforcement) alongside continued investment and product moves in clinical AI tooling. We curated items from STAT and Healthcare Dive, supplemented with broader web reporting where it added context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Web search"
+        ],
+        "sources_failed": [
+          "Fierce Healthcare RSS"
+        ],
+        "run_notes": "Fierce Healthcare RSS returned zero entries at fetch time; proceeded with STAT + Healthcare Dive plus web search for additional signals."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal oversight and rulemaking signals continue to concentrate around Medicare payment integrity, negotiation mechanics, and enforcement actions that could shift payer/provider administrative burden.",
+          "items": [
+            {
+              "item_id": "2026-06-15-medicare-drug-negotiation-loophole-rule",
+              "canonical_topic": "medicare-drug-price-negotiation-rule",
+              "duplicate_group": "medicare-drug-price-negotiation-rule",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/12/medicare-drug-price-negotiation-loophole-proposed-rule/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-12T21:45:12Z"
+                }
+              ],
+              "title": "CMS revisits Medicare drug price negotiation policy details in proposed rule",
+              "summary": "STAT reported that the Trump administration proposed changes aimed at revisiting a policy gap in the Medicare drug price negotiation program. The proposal could alter how certain drugs qualify or are treated under negotiation timelines, affecting manufacturer planning and downstream payer/provider pricing expectations.",
+              "strategic_implication": "Providers and payers should expect continued volatility in negotiated-price implementation details, with knock-on effects for formulary strategy, Part D/PBM contracting, and patient affordability programs.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "medicare",
+                "drug-pricing",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-06-15-unitedhealth-ftc-insulin-settlement",
+              "canonical_topic": "ftc-insulin-settlement",
+              "duplicate_group": "ftc-insulin-settlement",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/unitedhealth-optum-rx-ftc-proposed-settlement-insulin-case/822857/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-12T20:36:03Z"
+                }
+              ],
+              "title": "UnitedHealth and FTC reach proposed settlement tied to insulin case",
+              "summary": "Healthcare Dive reported that UnitedHealth and the FTC reached a proposed settlement in a case involving insulin. The settlement signals ongoing antitrust and consumer-protection attention on pharmacy benefit and pricing practices.",
+              "strategic_implication": "Payers, PBMs, and provider-affiliated pharmacies should stress-test insulin and specialty-drug program designs for regulator scrutiny, including transparency, rebates, and patient out-of-pocket dynamics.",
+              "confidence": "medium",
+              "tags": [
+                "ftc",
+                "pbm",
+                "insulin",
+                "payer"
+              ]
+            },
+            {
+              "item_id": "2026-06-15-medicaid-demonstration-oversight",
+              "canonical_topic": "medicaid-1115-oversight",
+              "duplicate_group": "medicaid-1115-oversight",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cms-increases-oversight-of-state-medicaid-demonstrations/822778/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-12T12:43:08Z"
+                }
+              ],
+              "title": "CMS increases oversight of state Medicaid demonstrations",
+              "summary": "Healthcare Dive reported that CMS is increasing oversight for state Medicaid demonstrations. The move may tighten reporting, evaluation, and compliance expectations for states and participating managed care and provider entities.",
+              "strategic_implication": "Providers and Medicaid MCOs operating in waiver-heavy states should anticipate more documentation and measurement, plus potential program changes that affect eligibility, benefits, and payment models.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "waivers",
+                "cms",
+                "payment-models"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Clinical AI adoption continues to move from pilots toward scaled partnerships and dedicated federal infrastructure, raising interoperability and governance stakes.",
+          "items": [
+            {
+              "item_id": "2026-06-15-cms-office-health-technology",
+              "canonical_topic": "cms-office-health-technology",
+              "duplicate_group": "cms-office-health-technology",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cms-creates-office-health-technology-products-ai-interoperability/822710/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-12T15:52:00Z"
+                }
+              ],
+              "title": "CMS creates dedicated office for health technology products and AI",
+              "summary": "Healthcare Dive reported that CMS created an office focused on health technology, including products tied to AI and interoperability. The move suggests CMS intends to formalize its approach to digital tooling that touches coverage, quality, and program operations.",
+              "strategic_implication": "Health systems and vendors should track CMS’s emerging expectations and align product roadmaps to interoperability, auditability, and administrative simplification requirements.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "ai",
+                "interoperability",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-06-15-abridge-lilly-nvidia-partnership",
+              "canonical_topic": "ai-scribe-partnership",
+              "duplicate_group": "ai-scribe-partnership",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/abridge-nvidia-eli-lilly-investment-ai-platform-expansion/822783/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-12T14:23:44Z"
+                }
+              ],
+              "title": "Abridge partners with Eli Lilly and Nvidia as AI scribe expansion accelerates",
+              "summary": "Healthcare Dive reported that Abridge partnered with Eli Lilly and Nvidia as the AI scribe vendor pursues expansion. The partnership highlights competitive activity around ambient documentation and broader clinical AI platforms.",
+              "strategic_implication": "Provider leaders should evaluate ambient/clinical AI vendors on integration depth, model update cadence, and total cost as the market consolidates.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "documentation",
+                "partnerships",
+                "health-it"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payer practices and drug affordability remain flashpoints, while capital and partnership activity continues in adjacent healthcare operations and analytics categories.",
+          "items": [
+            {
+              "item_id": "2026-06-15-medicare-advantage-denials-watchdog",
+              "canonical_topic": "medicare-advantage-denials",
+              "duplicate_group": "medicare-advantage-denials",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medicare-advantage-prior-authorization-denials-hhs-oig-post-acute-care/822724/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-12T16:21:39Z"
+                }
+              ],
+              "title": "Federal watchdog flags Medicare Advantage denials and profit incentives",
+              "summary": "Healthcare Dive reported that a federal watchdog found major Medicare Advantage insurers appear to deny care for profit, with focus on prior authorization and post-acute care. The findings add momentum to policy and litigation risk around utilization management practices.",
+              "strategic_implication": "Providers should strengthen denial-management analytics and documentation workflows, while payers should validate utilization management policies to reduce regulatory exposure and network friction.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "prior-authorization",
+                "utilization-management",
+                "oig"
+              ]
+            },
+            {
+              "item_id": "2026-06-15-medicaid-care-disabilities",
+              "canonical_topic": "medicaid-disability-services",
+              "duplicate_group": "medicaid-disability-services",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/15/medicaid-caregivers-state-pay-people-with-disabilities/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-15T08:30:00Z"
+                }
+              ],
+              "title": "States tighten Medicaid fraud controls; disability services feel access strain",
+              "summary": "STAT reported that as states adopt Medicaid fraud-focused approaches, people with disabilities are struggling to find care. The dynamic underscores the tension between program integrity efforts and maintaining adequate access for high-need populations.",
+              "strategic_implication": "Organizations serving Medicaid LTSS populations should prepare for higher verification burden while tracking access and quality metrics likely to become policy focal points.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "ltss",
+                "access",
+                "program-integrity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Operational pressure remains tied to revenue-cycle complexity and payer friction, with incremental adoption of automation/AI pitched as a gap-closure lever.",
+          "items": [
+            {
+              "item_id": "2026-06-15-hfma-revenue-cycle-friction",
+              "canonical_topic": "revenue-cycle-friction",
+              "duplicate_group": "revenue-cycle-friction",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/12/hfma-conference-healthcare-affordability-revenue-cycle-vendors/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-12T08:30:00Z"
+                }
+              ],
+              "title": "Hospital finance leaders push to reduce revenue-cycle friction driving costs",
+              "summary": "STAT reported from a hospital finance conference that participants called to reduce friction in healthcare financial operations that contributes to high costs. The discussion highlights ongoing provider concern about revenue-cycle vendor complexity and administrative burden.",
+              "strategic_implication": "Health systems modernizing RCM should prioritize interoperability, denial automation, and vendor consolidation to reduce cost-to-collect and improve cash predictability.",
+              "confidence": "medium",
+              "tags": [
+                "revenue-cycle",
+                "hospital-finance",
+                "costs",
+                "operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinician experience and quality remain intertwined with documentation burden and emerging guidance on appropriate AI use in care delivery.",
+          "items": [
+            {
+              "item_id": "2026-06-15-clinical-ai-pediatrics-guardrails",
+              "canonical_topic": "clinical-ai-guidance",
+              "duplicate_group": "clinical-ai-guidance",
+              "priority_score": 4,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/15/ai-children-screen-time-pediatrician-prescription-guidance/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-15T08:30:00Z"
+                }
+              ],
+              "title": "Clinician commentary calls for clearer guardrails on AI use for pediatric patients",
+              "summary": "A STAT opinion piece argued that pediatricians need clearer frameworks for directing families toward appropriate AI tools and limiting harms. While not policy, the piece reflects rising clinical demand for practical guidance on AI-enabled patient engagement.",
+              "strategic_implication": "Health systems should develop internal clinical policies and training on patient-facing AI tools, including safety, equity, and documentation expectations.",
+              "confidence": "low",
+              "tags": [
+                "clinician-burnout",
+                "ai-guidelines",
+                "pediatrics",
+                "clinical-practice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-12",
       "generated_at": "2026-06-12T11:05:06Z",
       "headline": "Today's Healthcare Insights",
@@ -8113,5 +8404,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-12T11:05:06Z"
+  "last_updated": "2026-06-15T11:18:01Z"
 }

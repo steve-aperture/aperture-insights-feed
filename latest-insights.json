@@ -3,6 +3,295 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-18",
+      "generated_at": "2026-06-18T11:13:47Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing centers on CMS’s drug-pricing and accreditation oversight actions, plus near-term operational risk signals from cyber incidents and consolidation enforcement. Items were curated from CMS releases, Healthcare Dive, Fierce Healthcare, WHOOP’s announcement, and STAT.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds parsed cleanly; supplemented with targeted web reading for CMS rulemaking/press releases and first-party company statements."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS activity continues to formalize affordability and quality levers: drug price negotiation rulemaking, accreditor oversight, and No Surprises Act process evaluation are all moving in ways that could shift compliance and contracting workload.",
+          "items": [
+            {
+              "item_id": "2026-06-18-cms-drug-negotiation-proposed-rule",
+              "canonical_topic": "medicare-drug-price-negotiation-rule",
+              "duplicate_group": "medicare-drug-price-negotiation-rule",
+              "priority_score": 9,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/initiatives/medicare-prescription-drug-affordability/overview/medicare-drug-price-negotiation-program/regulations-guidance-policy-documents",
+                  "source_type": "web",
+                  "published_at": "2026-06-16"
+                }
+              ],
+              "title": "CMS proposes permanent rule framework for Medicare drug price negotiations starting 2029",
+              "summary": "CMS issued a proposed rule to codify the Medicare Drug Price Negotiation Program, shifting from annual guidance to a regulatory framework. The proposal describes policies for negotiation and renegotiation of high-cost, single-source drugs beginning with the 2029 price applicability year and sets a public comment period timeline. Organizations with pharmacy strategy exposure should track definitions, timelines, and any changes affecting combination products or negotiation eligibility mechanics.",
+              "strategic_implication": "Expect downstream impacts to formulary, contracting, and manufacturer launch sequencing; providers and payers should scenario-test how negotiated-price mechanics could alter Part D economics and patient affordability narratives.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "drug-pricing",
+                "medicare",
+                "ira",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-06-18-cms-accrediting-oversight-final-rule",
+              "canonical_topic": "accrediting-organization-oversight",
+              "duplicate_group": "accrediting-organization-oversight",
+              "priority_score": 8,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-ensures-accrediting-organizations-uphold-trust-standards-oversight",
+                  "source_type": "web",
+                  "published_at": "2026-06-12"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/strengthening-cms-oversight-accrediting-organizations",
+                  "source_type": "web",
+                  "published_at": "2026-06-12"
+                }
+              ],
+              "title": "CMS finalizes tighter oversight and conflict-of-interest limits for accrediting organizations",
+              "summary": "CMS finalized requirements intended to strengthen oversight of accrediting organizations (AOs) that survey Medicare-certified providers and suppliers. The rule adds conflict-of-interest restrictions, increases alignment with state survey agency standards, and establishes a CMS monitoring approach (including validation surveys) tied to AO performance. The changes aim to improve consistency and transparency in provider oversight while reducing burden through standardized policies.",
+              "strategic_implication": "Health systems should anticipate updated accreditation engagement expectations and potential survey-process changes; compliance teams may want to revisit vendor relationships and internal readiness for less predictable survey timing.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "accreditation",
+                "quality",
+                "compliance",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-06-18-cbo-no-surprises-research",
+              "canonical_topic": "no-surprises-act-idr-research",
+              "duplicate_group": "no-surprises-act-idr-research",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cbo-new-no-surprises-research-idr/823064/",
+                  "source_type": "web",
+                  "published_at": "2026-06-17"
+                }
+              ],
+              "title": "CBO calls for additional research on No Surprises Act effects as IDR reforms roll out",
+              "summary": "The Congressional Budget Office highlighted the need for more evidence on how the No Surprises Act is affecting prices, provider networks, and arbitration outcomes, as agencies continue to adjust the independent dispute resolution (IDR) process. Recent regulatory changes are intended to keep ineligible disputes out of the system and improve operations. Stakeholders should expect continued scrutiny of IDR costs, volumes, and behavioral responses.",
+              "strategic_implication": "Payers and revenue-cycle leaders should treat NSA/IDR operations as a moving target, investing in clean eligibility, documentation, and analytics to reduce avoidable dispute friction and cost.",
+              "confidence": "medium",
+              "tags": [
+                "no-surprises-act",
+                "idr",
+                "payment-policy",
+                "arbitration",
+                "cbo"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Consumer-grade biometrics continue converging with clinical data as platforms pursue longitudinal insights, while cyber and privacy posture remains a gating factor for adoption.",
+          "items": [
+            {
+              "item_id": "2026-06-18-whoop-healthex-ehr-integration",
+              "canonical_topic": "wearables-ehr-integration",
+              "duplicate_group": "wearables-ehr-integration",
+              "priority_score": 7,
+              "primary_source": "WHOOP",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "WHOOP",
+                  "url": "https://www.whoop.com/us/en/press-center/whoop-and-healthex-partner-to-connect-medical-records-and-biometric-data-to-deliver-more-personalized-health-insights/",
+                  "source_type": "web",
+                  "published_at": "2026-06-17"
+                }
+              ],
+              "title": "WHOOP launches HealthEx integration to pull medical records into the app alongside biometrics",
+              "summary": "WHOOP announced a partnership with HealthEx enabling U.S. members to connect their electronic health records in the WHOOP app. The integration is positioned as a way to add clinical context to continuous biometric signals and enable more personalized coaching and insights. The company emphasized member consent and the ability to disconnect.",
+              "strategic_implication": "Interoperability features are becoming table-stakes for consumer health platforms; provider partners should evaluate governance, consent, and data provenance before incorporating patient-generated insights into care pathways.",
+              "confidence": "medium",
+              "tags": [
+                "interoperability",
+                "wearables",
+                "ehr",
+                "consumer-health",
+                "data-governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Regulatory enforcement and leadership moves continue to shape competitive posture across providers and payers, with antitrust and contracting practices remaining a focus.",
+          "items": [
+            {
+              "item_id": "2026-06-18-ohiohealth-doj-antitrust-settlement",
+              "canonical_topic": "provider-antitrust-contracting",
+              "duplicate_group": "provider-antitrust-contracting",
+              "priority_score": 8,
+              "primary_source": "DOJ",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "U.S. Department of Justice",
+                  "url": "https://www.justice.gov/opa/pr/justice-department-requires-ohiohealth-stop-using-anticompetitive-healthcare-contract-terms",
+                  "source_type": "web",
+                  "published_at": "2026-06-16"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ohiohealth-doj-settlement-antitrust-lawsuit-insurer-contracts/823122/",
+                  "source_type": "web",
+                  "published_at": "2026-06-17"
+                }
+              ],
+              "title": "OhioHealth settles DOJ antitrust case, agreeing to stop certain insurer contract terms",
+              "summary": "The Department of Justice announced a settlement requiring OhioHealth to stop using contract terms the government characterized as anticompetitive in disputes involving insurer contracting. Healthcare Dive reported the resolution and framed it as a signal of ongoing enforcement focus on provider contracting practices. The agreement adds to the broader trend of scrutiny on system-market power and payer negotiations.",
+              "strategic_implication": "Provider legal and contracting teams should review payer agreement language (including clauses that affect steering, tiering, or network design) and prepare for increased regulatory attention in active negotiations.",
+              "confidence": "high",
+              "tags": [
+                "antitrust",
+                "provider-contracting",
+                "doj",
+                "payer-provider",
+                "consolidation"
+              ]
+            },
+            {
+              "item_id": "2026-06-18-lifepoint-new-coo",
+              "canonical_topic": "provider-leadership-changes",
+              "duplicate_group": "provider-leadership-changes",
+              "priority_score": 5,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/lifepoint-health-taps-coo-aaron-lewis/823135/",
+                  "source_type": "web",
+                  "published_at": "2026-06-17"
+                },
+                {
+                  "source": "Lifepoint Health",
+                  "url": "https://www.lifepointhealth.net/news/lifepoint-health-names-aaron-lewis-president-and-chief-operating-officer",
+                  "source_type": "web",
+                  "published_at": "2026-06-16"
+                }
+              ],
+              "title": "Lifepoint Health names Aaron Lewis as president and COO",
+              "summary": "Lifepoint Health announced that Aaron Lewis will serve as president and chief operating officer, a leadership change covered by Healthcare Dive. The appointment signals continued operational focus for the for-profit hospital operator amid ongoing margin pressure and integration demands across multi-site systems.",
+              "strategic_implication": "Leadership transitions at multi-hospital operators can precede portfolio rebalancing, service line investment shifts, or tighter operational standardization—watch for near-term signals in cost and throughput initiatives.",
+              "confidence": "medium",
+              "tags": [
+                "hospitals",
+                "leadership",
+                "operations",
+                "lifepoint",
+                "strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Cybersecurity and third-party risk remain prominent operational vulnerabilities; recent incidents highlight the need for stronger vendor controls, rapid containment, and clear patient communication.",
+          "items": [
+            {
+              "item_id": "2026-06-18-irhythm-third-party-breach",
+              "canonical_topic": "healthcare-third-party-cyber-risk",
+              "duplicate_group": "healthcare-third-party-cyber-risk",
+              "priority_score": 8,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/irhythm-discloses-data-stolen-third-party-applications-cyberattack/",
+                  "source_type": "web",
+                  "published_at": "2026-06-16"
+                }
+              ],
+              "title": "iRhythm reports third-party application breach with patient PHI and proprietary data taken",
+              "summary": "iRhythm disclosed that an attacker accessed certain third-party-hosted business applications and exfiltrated data that included proprietary information and patient protected health information, with an associated extortion demand. The company indicated clinical/medical systems were not impacted and initiated incident response and investigation. The event underscores exposure created by outsourced applications and credential-based compromise.",
+              "strategic_implication": "Health tech vendors and provider partners should re-assess third-party application inventory, access controls, and incident playbooks—especially for systems storing PHI outside core clinical platforms.",
+              "confidence": "medium",
+              "tags": [
+                "cybersecurity",
+                "phi",
+                "third-party-risk",
+                "incident-response",
+                "medtech"
+              ]
+            },
+            {
+              "item_id": "2026-06-18-one-medical-seniors-breach",
+              "canonical_topic": "healthcare-third-party-cyber-risk",
+              "duplicate_group": "healthcare-third-party-cyber-risk",
+              "priority_score": 7,
+              "primary_source": "One Medical",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "One Medical",
+                  "url": "https://www.onemedical.com/blog/newsworthy/one-medical-seniors-takes-swift-action-to-secure-patient-data/",
+                  "source_type": "web",
+                  "published_at": "2026-06-18"
+                }
+              ],
+              "title": "One Medical Senior Health reports unauthorized access to a third-party file storage system",
+              "summary": "One Medical stated it learned of unauthorized access to a third-party file storage system containing archived legacy Iora Health information and took steps to deactivate the system and revoke access. The company said a limited number of legacy patients were affected and that no other One Medical or Amazon systems were impacted. Notifications to affected patients are underway.",
+              "strategic_implication": "M&A-driven legacy systems remain a persistent security and compliance risk; organizations should prioritize decommissioning and data minimization for acquired platforms and archival repositories.",
+              "confidence": "high",
+              "tags": [
+                "data-breach",
+                "third-party-risk",
+                "primary-care",
+                "m-and-a",
+                "privacy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major workforce- or practice-standard shifts surfaced in top sources today beyond leadership rotation and broader operational/compliance signals.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-16",
       "generated_at": "2026-06-16T11:10:40Z",
       "headline": "Today's Healthcare Insights",
@@ -8667,5 +8956,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-16T11:10:40Z"
+  "last_updated": "2026-06-18T11:13:47Z"
 }

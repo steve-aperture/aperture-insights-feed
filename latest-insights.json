@@ -3,6 +3,305 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-19",
+      "generated_at": "2026-06-19T11:07:10Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s themes: Medicare Advantage quality scoring volatility, heightened privacy/cyber enforcement pressure, and accelerating AI governance conversations. Items were curated from HHS OCR, Healthcare Dive, Fierce Healthcare, STAT, FDA, and U.S. News.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds parsed cleanly; web search used for first-party federal updates and conference remarks."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Medicare and oversight policy signals centered on MA quality scoring recalculations and federal enforcement actions that raise compliance and reporting stakes.",
+          "items": [
+            {
+              "item_id": "2026-06-19-ma-star-ratings-recalculation",
+              "canonical_topic": "medicare-advantage-star-ratings",
+              "duplicate_group": "medicare-advantage-star-ratings",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cms-recalculates-medicare-advantage-stars-clover-lawsuit/823253/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-18T13:24:09Z"
+                }
+              ],
+              "title": "CMS recalculates Medicare Advantage star ratings after Clover lawsuit, adding plan quality volatility",
+              "summary": "CMS recalculated Medicare Advantage star ratings following litigation involving Clover Health, creating another round of adjustments to quality scores used for payments and marketing. The change underscores how measurement and dispute dynamics can materially shift plan performance positioning year-to-year. Plans and provider partners should expect downstream impacts to bonus payments, network negotiations, and member acquisition economics.",
+              "strategic_implication": "Treat star ratings as a scenario variable, not a fixed input; payers and aligned provider groups should stress-test revenue and growth plans against potential future recalculation outcomes.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "medicare-advantage",
+                "star-ratings",
+                "quality",
+                "payment-policy"
+              ]
+            },
+            {
+              "item_id": "2026-06-19-hhs-ocr-ransomware-settlement",
+              "canonical_topic": "hipaa-ransomware-enforcement",
+              "duplicate_group": "hipaa-ransomware-enforcement",
+              "priority_score": 7,
+              "primary_source": "HHS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "HHS",
+                  "url": "https://www.hhs.gov/press-room/ocr-settles-ransomware-investigation-health-plan.html",
+                  "source_type": "web",
+                  "published_at": "2026-06-18T19:06:18"
+                }
+              ],
+              "title": "HHS OCR settles ransomware investigation with health plan, reinforcing HIPAA security expectations",
+              "summary": "HHS’s Office for Civil Rights announced a settlement tied to a ransomware investigation involving a health plan. The action signals continued federal focus on security risk analysis, timely remediation, and documented controls as baseline HIPAA expectations. Enforcement visibility increases pressure on payers and providers to demonstrate programmatic maturity beyond point-in-time compliance.",
+              "strategic_implication": "Organizations should align cyber and compliance programs around evidence-ready controls (risk analysis cadence, vendor oversight, incident playbooks) to reduce enforcement exposure after an event.",
+              "confidence": "high",
+              "tags": [
+                "hhs",
+                "ocr",
+                "hipaa",
+                "ransomware",
+                "cybersecurity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI governance is shifting from experimentation to controls (certification, operationalization), while digital health vendors continue to face breach disclosure pressure.",
+          "items": [
+            {
+              "item_id": "2026-06-19-ai-governance-certification-gap",
+              "canonical_topic": "ai-governance-certification",
+              "duplicate_group": "ai-governance-certification",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/joint-commission-adaptable-ai-blueprint-certification-ken-grubbs-william-walders/823201/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-18T15:32:02Z"
+                }
+              ],
+              "title": "Healthcare leaders debate whether AI certification can close governance gaps as deployments expand",
+              "summary": "Healthcare Dive highlighted growing interest in whether certification frameworks (including emerging Joint Commission work) can help standardize AI governance. The discussion reflects a shift from pilots to scaled deployments where model risk management, monitoring, and accountability become operational requirements. Governance expectations are increasingly intersecting with safety, quality, and compliance functions.",
+              "strategic_implication": "Health systems should inventory deployed AI, define ownership and monitoring, and decide early which external standards they will align to so certification efforts don’t become a reactive scramble.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "governance",
+                "certification",
+                "joint-commission",
+                "quality"
+              ]
+            },
+            {
+              "item_id": "2026-06-19-arcadia-ai-operationalization-survey",
+              "canonical_topic": "ai-operationalization-survey",
+              "duplicate_group": "ai-operationalization-survey",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/ai-implementation-lagging-across-us-healthcare-organizations-arcadia-survey",
+                  "source_type": "rss",
+                  "published_at": "2026-06-18"
+                }
+              ],
+              "title": "Survey: healthcare organizations still struggle to operationalize AI at scale despite growing interest",
+              "summary": "Fierce Healthcare reported survey findings suggesting many healthcare organizations remain early in scaling AI from proofs of concept into operational workflows. Common barriers include data readiness, integration, governance, and change management. The gap between strategy and execution continues to shape ROI timelines and vendor selection.",
+              "strategic_implication": "Buyers should prioritize integration and operating-model readiness (workflow, monitoring, accountability) when evaluating AI tools, not just algorithm performance.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "analytics",
+                "implementation",
+                "workflow",
+                "data"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payer and pharmacy channel conflict continues to play out in state PBM litigation, reinforcing uncertainty for benefit design and network strategy.",
+          "items": [
+            {
+              "item_id": "2026-06-19-pbm-illinois-law-lawsuit",
+              "canonical_topic": "pbm-state-litigation",
+              "duplicate_group": "pbm-state-litigation",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/pcma-sues-illinois-prescription-drug-affordability-act-pbm/823195/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-18T14:22:00Z"
+                }
+              ],
+              "title": "PBM trade group sues to exempt PBMs from Illinois drug law, extending state-by-state policy uncertainty",
+              "summary": "Healthcare Dive reported that PCMA filed suit challenging an Illinois law affecting PBMs. The dispute highlights ongoing friction among PBMs, pharmacies, and state policymakers over pricing, network design, and vertical integration. Litigation timelines can create prolonged uncertainty for employer clients and health plan pharmacy strategies.",
+              "strategic_implication": "Payers and large employers should track state PBM developments as a material benefit-cost risk and maintain contingency plans for network/pharmacy changes if compliance regimes shift.",
+              "confidence": "medium",
+              "tags": [
+                "pbm",
+                "pharmacy",
+                "litigation",
+                "state-policy",
+                "drug-pricing"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Providers are navigating consolidation oversight and new network models, with antitrust settlements and clinically integrated networks shaping near-term contracting leverage.",
+          "items": [
+            {
+              "item_id": "2026-06-19-ohiohealth-doj-antitrust-settlement",
+              "canonical_topic": "provider-antitrust-enforcement",
+              "duplicate_group": "provider-antitrust-enforcement",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ohiohealth-doj-settlement-antitrust-lawsuit-insurer-contracts/823122/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-17T13:04:26Z"
+                }
+              ],
+              "title": "OhioHealth settles DOJ antitrust case over insurer contracting, signaling continued scrutiny of leverage tactics",
+              "summary": "Healthcare Dive reported that OhioHealth reached a settlement with the Department of Justice related to alleged anticompetitive contracting practices. The outcome reinforces that contracting clauses and negotiating behavior remain active enforcement areas. Health systems may face heightened review of contracting terms that could limit insurer steering or tiering.",
+              "strategic_implication": "Provider strategy teams should re-examine payer contracting playbooks and ensure clauses can withstand antitrust scrutiny, especially in concentrated markets.",
+              "confidence": "medium",
+              "tags": [
+                "antitrust",
+                "provider",
+                "contracting",
+                "doj",
+                "payer"
+              ]
+            },
+            {
+              "item_id": "2026-06-19-kansas-cin-launch",
+              "canonical_topic": "clinically-integrated-network",
+              "duplicate_group": "clinically-integrated-network",
+              "priority_score": 5,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/rural-independent-kansas-hospitals-launch-clinically-integrated-network",
+                  "source_type": "rss",
+                  "published_at": "2026-06-18"
+                }
+              ],
+              "title": "Rural Kansas hospitals form clinically integrated network to bolster contracting and care coordination",
+              "summary": "Fierce Healthcare reported that rural, independent hospitals in Kansas launched a clinically integrated network. CIN structures are often used to support shared quality programs, data infrastructure, and contracting strategies without full mergers. The move reflects smaller providers seeking scale advantages amid reimbursement and workforce pressures.",
+              "strategic_implication": "Regional systems and payers should expect more CIN activity as independents pursue scale; partnerships may shift referral patterns and value-based contracting readiness.",
+              "confidence": "medium",
+              "tags": [
+                "provider",
+                "cin",
+                "rural-health",
+                "value-based-care",
+                "network"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical practice signals included vaccine and influenza-treatment updates plus early indicators of workforce pipeline investments tied to federal approval pathways.",
+          "items": [
+            {
+              "item_id": "2026-06-19-moderna-mrna-flu-vaccine-panel",
+              "canonical_topic": "mRNA-flu-vaccine",
+              "duplicate_group": "mRNA-flu-vaccine",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/18/fda-mrna-flu-vaccine-vrbpac-advisers-endorse-moderna-shots/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-18T20:26:25Z"
+                }
+              ],
+              "title": "FDA advisers endorse Moderna’s mRNA flu vaccine, setting up next steps for seasonal vaccine options",
+              "summary": "STAT reported that an FDA advisory committee endorsed Moderna’s mRNA influenza vaccine after a contentious review period. Advisory votes can shape expectations for regulatory action and influence how clinicians and health systems plan for upcoming flu seasons. If authorized, mRNA flu products could expand procurement and patient-communication considerations.",
+              "strategic_implication": "Health systems should monitor regulatory timelines and consider how vaccine portfolio changes could affect supply planning, messaging, and occupational health programs.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "vaccines",
+                "influenza",
+                "clinical-practice",
+                "pharma"
+              ]
+            },
+            {
+              "item_id": "2026-06-19-fda-generic-xofluza",
+              "canonical_topic": "influenza-antiviral-generic",
+              "duplicate_group": "influenza-antiviral-generic",
+              "priority_score": 5,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.globenewswire.com/news-release/2026/06/18/3314199/0/en/fda-approves-first-single-dose-generic-treatment-for-influenza.html",
+                  "source_type": "web",
+                  "published_at": "2026-06-18"
+                }
+              ],
+              "title": "FDA approves first single-dose generic of Xofluza, potentially broadening access to flu treatment",
+              "summary": "An FDA press announcement distributed via GlobeNewswire said the agency approved the first generic of Xofluza (baloxavir marboxil) tablets for treatment and prophylaxis of influenza in eligible patients. A single-dose generic could influence prescribing patterns and payer coverage decisions during flu season. Access and formulary placement will determine real-world uptake.",
+              "strategic_implication": "Payers and pharmacy teams should evaluate formulary positioning and prior authorization rules as single-dose generic antivirals can shift cost and adherence dynamics.",
+              "confidence": "low",
+              "tags": [
+                "fda",
+                "influenza",
+                "generic-drugs",
+                "pharmacy",
+                "access"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-18",
       "generated_at": "2026-06-18T11:13:47Z",
       "headline": "Today's Healthcare Insights",
@@ -8956,5 +9255,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-18T11:13:47Z"
+  "last_updated": "2026-06-19T11:07:10Z"
 }

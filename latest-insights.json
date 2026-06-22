@@ -3,6 +3,223 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-22",
+      "generated_at": "2026-06-22T11:05:58Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s themes: CMS formalizes the path for Medicare drug price negotiation in 2029+, continued FDA decision reversals for rare-disease therapies, and the push to operationalize AI and workforce scheduling at scale. Items were curated from CMS, STAT, Fierce Healthcare, and Healthcare Dive.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds parsed; web search used for first-party CMS proposed rule fact sheet."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal payment and oversight updates focused on codifying Medicare drug price negotiation rules for 2029 and continued scrutiny of pharma program integrity and safety decisions.",
+          "items": [
+            {
+              "item_id": "2026-06-22-cms-drug-price-negotiation-rule",
+              "canonical_topic": "medicare-drug-price-negotiation",
+              "duplicate_group": "medicare-drug-price-negotiation",
+              "priority_score": 9,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/files/document/mdpnp-nprm-fact-sheet.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-06-16T00:00:00Z"
+                }
+              ],
+              "title": "CMS proposes permanent framework for Medicare Drug Price Negotiation starting in 2029",
+              "summary": "CMS issued proposed rule CMS-4215-P to codify the Medicare Drug Price Negotiation Program for initial price applicability year 2029 and beyond, transitioning from guidance-based administration. The proposal would allow CMS to select up to 20 Part D and/or Part B drugs annually starting in 2029, codify formulary inclusion expectations for selected Part D drugs, and set guardrails on negotiated prices relative to the Maximum Fair Price (MFP) plus dispensing fees. CMS also proposes a targeted program-integrity tweak for certain new formulations and includes a Temporary Floor for Small Biotech Drugs for 2029–2030. Public comments are due Aug. 17, 2026.",
+              "strategic_implication": "Manufacturers, plans, and provider pharmacy teams should model the operational impact of a more durable negotiation rulebook (including formulary and pricing constraints) and prepare for earlier policy signaling ahead of 2029 drug selection. Compliance, government pricing, and contracting teams may want to engage during the comment window to shape final definitions and integrity provisions.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "medicare",
+                "drug-pricing",
+                "ira",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-06-22-fda-regenxbio-reversal",
+              "canonical_topic": "fda-rare-disease-gene-therapy",
+              "duplicate_group": "fda-rare-disease-gene-therapy",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/22/fda-reverses-course-regenxbio-gene-therapy-navsunli-hunter-syndrome/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-22T00:00:00Z"
+                }
+              ],
+              "title": "FDA to reconsider Regenxbio gene therapy for Hunter syndrome after prior rejection",
+              "summary": "STAT reports the FDA will reconsider approving Regenxbio’s experimental gene therapy for mucopolysaccharidosis type II (Hunter syndrome), a rare pediatric neurodegenerative disorder, after rejecting it roughly four months earlier. The decision adds to a recent pattern of high-profile FDA reversals described in the report. The development may affect timelines and expectations for rare-disease sponsors navigating late-stage review.",
+              "strategic_implication": "Rare-disease developers and investors should anticipate potentially shifting FDA review posture and plan for scenario-based regulatory timelines, including the need to rapidly respond to re-opened review pathways. Health systems and payers may face uncertainty in forecasting access, utilization management, and budget impact for ultra-orphan therapies.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "gene-therapy",
+                "rare-disease",
+                "regulatory",
+                "biopharma"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI adoption continues to move from pilots to operational execution, with data foundations, governance, and workflow integration emerging as limiting factors.",
+          "items": [
+            {
+              "item_id": "2026-06-22-arcadia-ai-operationalization",
+              "canonical_topic": "healthcare-ai-operationalization",
+              "duplicate_group": "healthcare-ai-operationalization",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/ai-implementation-lagging-across-us-healthcare-organizations-arcadia-survey",
+                  "source_type": "rss",
+                  "published_at": "2026-06-18T00:00:00Z"
+                }
+              ],
+              "title": "Arcadia survey: AI insights often only partially embedded into healthcare decision workflows",
+              "summary": "A survey from Arcadia of 281 healthcare leaders at HIMSS26 found AI integration remains uneven across provider, payer, and service organizations. The report says 53% of AI insights are only partially embedded into decision-making processes and 14% are fully integrated at key decision points. Respondents cited challenges such as embedding AI into daily decision-making (31%), education (27%), and strengthening data foundations (22%).",
+              "strategic_implication": "Health system leaders should treat AI scale-up as an operating model change: invest in data readiness, workflow redesign, and measurement, not just new models. Vendors positioning AI products may need to package stronger implementation support and governance tooling to overcome execution bottlenecks.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "analytics",
+                "workflow",
+                "data-foundation",
+                "governance"
+              ]
+            },
+            {
+              "item_id": "2026-06-22-epicops-teamwork-scheduling",
+              "canonical_topic": "ehr-vendor-erp-operations",
+              "duplicate_group": "ehr-vendor-erp-operations",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/look-epics-long-term-play-build-tech-operations-starting-scheduling",
+                  "source_type": "rss",
+                  "published_at": "2026-06-18T00:00:00Z"
+                }
+              ],
+              "title": "Epic expands beyond EHR with EpicOps; Teamwork targets real-time clinician scheduling",
+              "summary": "Epic is building EpicOps, a healthcare-focused ERP suite intended to unify financial, operational, and clinical data, with scheduling as an initial wedge via the Teamwork module. Fierce Healthcare reports Teamwork provides real-time, assignment-aware clinician and staff scheduling, integrates with Cadence to open appointment slots when shifts are added, and supports shift marketplace and room tracking features. The report says five organizations are live and 11 more are installing, with additional EpicOps modules planned over the next several years.",
+              "strategic_implication": "Provider CIOs/COOs should evaluate whether consolidating scheduling and operational tooling into the EHR ecosystem can reduce administrative overhead but increases vendor concentration risk. Better operational data integration may also accelerate downstream AI use cases (staffing, throughput, supply prediction) if governance and change management keep pace.",
+              "confidence": "high",
+              "tags": [
+                "epic",
+                "ehr",
+                "scheduling",
+                "operations",
+                "erp"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Pharma commercial strategies and consolidation signals continue to intersect with provider affordability programs and contracting pressure points.",
+          "items": [
+            {
+              "item_id": "2026-06-22-lilly-340b-claims-data",
+              "canonical_topic": "340b-claims-data-dispute",
+              "duplicate_group": "340b-claims-data-dispute",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/eli-lillys-ultimatum-hospitals-send-340b-claims-data-june-1-or-lose-discounts",
+                  "source_type": "rss",
+                  "published_at": "2026-06-18T00:00:00Z"
+                }
+              ],
+              "title": "Eli Lilly pulls 340B pricing from some hospitals over claims-level data submission policy",
+              "summary": "Fierce Healthcare reports Eli Lilly implemented a claims-level data submission policy Feb. 1 requiring many 340B covered entities to provide data for pharmacy and medical dispensations, including contract pharmacy dispenses, to identify potential duplicate discounts. The company said about 70% of covered entities (2,350) had complied while roughly 1,000 had not, and it instructed wholesalers to remove 340B pricing eligibility for an initial set of noncompliant entities. Hospital groups argue the policy is unlawful and creates significant administrative burden.",
+              "strategic_implication": "340B hospitals should assess near-term drug acquisition cost exposure and the operational lift of claims-data reporting, including vendor options and legal posture. Manufacturers and policymakers may see escalating pressure for a standardized clearinghouse approach as bilateral data demands proliferate.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "pharma",
+                "compliance",
+                "claims-data"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Providers are using network structures and operational platforms to gain leverage in value-based contracting, capacity management, and shared services.",
+          "items": [
+            {
+              "item_id": "2026-06-22-kansas-high-value-network",
+              "canonical_topic": "clinically-integrated-network-rural",
+              "duplicate_group": "clinically-integrated-network-rural",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/rural-independent-kansas-hospitals-launch-clinically-integrated-network",
+                  "source_type": "rss",
+                  "published_at": "2026-06-18T00:00:00Z"
+                }
+              ],
+              "title": "Seven rural Kansas hospitals form Kansas High Value Network to pursue shared services and VBC",
+              "summary": "Seven independent rural Kansas hospitals formed the Kansas High Value Network (KS-HVN), a clinically integrated network supported by advisory firm Cibolo Health. Fierce Healthcare reports the members collectively represent $545 million in net revenue, operate five critical access hospitals, and serve about 190,000 patients. The network plans to align on clinical metrics and data sharing, pursue shared vendor contracting and purchasing, and support value-based arrangements with insurers.",
+              "strategic_implication": "Rural systems may increasingly use clinically integrated networks as a pathway to scale quality infrastructure and negotiate value-based contracts without full M&A. Payers operating in the region should anticipate more coordinated contracting asks and evaluate how to integrate network-level performance measurement.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "cin",
+                "value-based-care",
+                "shared-services",
+                "contracting"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No distinct new workforce policy item surfaced beyond operational scheduling efforts highlighted in Digital Health and AI.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-19",
       "generated_at": "2026-06-19T11:07:10Z",
       "headline": "Today's Healthcare Insights",
@@ -9255,5 +9472,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-19T11:07:10Z"
+  "last_updated": "2026-06-22T11:05:58Z"
 }

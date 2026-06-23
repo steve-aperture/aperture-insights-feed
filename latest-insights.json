@@ -3,6 +3,354 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-23",
+      "generated_at": "2026-06-23T11:28:54Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s themes: Medicare’s WISeR prior-authorization model is drawing operational pushback, 340B tensions are rising as manufacturers tighten discount policies, and AI productization continues in both clinical decision support and back-office workflows. Items were curated from STAT, Fierce Healthcare, Healthcare Dive, and targeted web reporting.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds parsed; web search added context for WISeR Medicare model and the AbbVie–Apogee transaction."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal oversight and program rules continued to evolve, with attention on prior-authorization experimentation in Medicare and policy implementation details that could reshape Medicaid eligibility and disability-related enforcement.",
+          "items": [
+            {
+              "item_id": "2026-06-23-medicare-prior-auth-ai-wiser",
+              "canonical_topic": "medicare-prior-authorization",
+              "duplicate_group": "medicare-prior-authorization",
+              "priority_score": 8,
+              "primary_source": "CBS News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "CBS News",
+                  "url": "https://www.cbsnews.com/news/medicare-ai-program-wiser-prior-authorization-errors-delays/",
+                  "source_type": "web",
+                  "published_at": "2026-06-23"
+                }
+              ],
+              "title": "Medicare WISeR prior-authorization pilot draws provider and patient backlash",
+              "summary": "Reporting describes implementation issues in CMS' WISeR model that applies prior authorization to a set of services in traditional Medicare. Providers and patients cited denials, administrative delays and concern that automation is being applied too quickly without adequate guardrails. CMS said it is not currently considering changes to the list of services but continues to assess whether changes are warranted.",
+              "strategic_implication": "Health systems should stress-test revenue-cycle and clinical documentation workflows for expanded prior authorization in fee-for-service Medicare, not just Medicare Advantage. Vendors enabling automation should be evaluated for appeals throughput and error-rate transparency.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "prior-authorization",
+                "ai-governance",
+                "utilization-management"
+              ]
+            },
+            {
+              "item_id": "2026-06-23-fda-early-stage-trials-pilot",
+              "canonical_topic": "clinical-trials-regulatory-modernization",
+              "duplicate_group": "clinical-trials-regulatory-modernization",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/22/fda-speed-up-early-stage-single-study-clinical-trials/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-22T15:48:44Z"
+                }
+              ],
+              "title": "FDA outlines pilot program aimed at shortening timelines for early-stage clinical trials",
+              "summary": "STAT reports FDA plans a pilot intended to speed early-stage clinical trials, signaling an effort to compress initial human testing timelines. The initiative is framed as part of broader competitiveness and modernization goals. Details still appear to be emerging, but the direction suggests more flexibility in early study design and review processes.",
+              "strategic_implication": "Sponsors and provider-based research sites should prepare for faster protocol turnarounds and tighter operational readiness, including IRB coordination and data capture. Health systems with research arms may see increased demand for rapid-start trial infrastructure.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "clinical-trials",
+                "regulatory",
+                "drug-development"
+              ]
+            },
+            {
+              "item_id": "2026-06-23-medicaid-work-requirements-medically-frail",
+              "canonical_topic": "medicaid-work-requirements",
+              "duplicate_group": "medicaid-work-requirements",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/23/medicaid-work-requirements-disability-medically-frail/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-23T08:30:00Z"
+                }
+              ],
+              "title": "CMS Medicaid work requirement proposal could narrow 'medically frail' exemptions for disabled workers",
+              "summary": "A STAT opinion piece argues CMS' proposed approach to defining 'medically frail' could create a coverage risk for disabled people who are working but do not meet an 80-hours-per-month threshold. The article characterizes this as a policy design problem that could force individuals to choose between continued employment and maintaining coverage. The piece calls for CMS to decouple the exemption from an inability-to-work standard.",
+              "strategic_implication": "Plans and providers should model churn and coverage-loss risk among medically complex populations if exemption criteria tighten, particularly for safety-net systems. Advocacy and compliance teams may want to track final rule language and state implementation variability.",
+              "confidence": "low",
+              "tags": [
+                "medicaid",
+                "eligibility",
+                "work-requirements",
+                "health-equity"
+              ]
+            },
+            {
+              "item_id": "2026-06-23-doj-olmstead-disability-integration",
+              "canonical_topic": "disability-rights-policy",
+              "duplicate_group": "disability-rights-policy",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/22/doj-memo-targets-disability-integration-olmstead-mandate/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-22T22:20:37Z"
+                }
+              ],
+              "title": "DOJ memo signals potential shift in federal posture on Olmstead disability integration mandate",
+              "summary": "STAT reports the Justice Department issued a memo targeting the Olmstead disability integration mandate, a cornerstone policy affecting how states provide services to people with disabilities. Stakeholders are watching for downstream effects on long-term services and supports and state program design. The memo raises questions about enforcement priorities and legal positioning.",
+              "strategic_implication": "Provider organizations and payers with LTSS exposure should track potential changes in enforcement and state policy responses. Scenario planning may be warranted for home- and community-based services demand and contracting.",
+              "confidence": "medium",
+              "tags": [
+                "ltss",
+                "doj",
+                "disability",
+                "hcbs"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Clinical and operational AI announcements focused on embedding models into clinician-facing tools and scaling automation for administrative work, keeping governance and measurable ROI front and center.",
+          "items": [
+            {
+              "item_id": "2026-06-23-openevidence-ekg-ai-heart",
+              "canonical_topic": "ai-diagnostics",
+              "duplicate_group": "ai-diagnostics",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/23/pathway-labs-echonext-ai-tool-heart-disease-detection/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-23T08:30:00Z"
+                }
+              ],
+              "title": "OpenEvidence plans to add EchoNext AI that flags structural heart risk from EKGs",
+              "summary": "STAT reports Pathway Labs' EchoNext tool will be integrated into OpenEvidence to help detect heart conditions using EKG-derived signals. The announcement highlights continued productization of clinical AI into point-of-care decision support workflows. The deployment will be watched for validation evidence and workflow integration patterns.",
+              "strategic_implication": "Health systems should demand clear model performance documentation and define governance for how AI flags translate into downstream testing. Vendors embedding diagnostics AI into clinician tools will need to show safety monitoring and liability posture.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "diagnostics",
+                "cardiology",
+                "decision-support"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Deal activity and funding signals emphasized continued consolidation and investment in services and operations enablers, even as uncertainty affects timing and valuations.",
+          "items": [
+            {
+              "item_id": "2026-06-23-abbvie-apogee-11b",
+              "canonical_topic": "biopharma-ma",
+              "duplicate_group": "biopharma-ma",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/22/abbvie-apogee-acquisition-immunology-zumilokibart/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-22T11:45:55Z"
+                },
+                {
+                  "source": "CNBC",
+                  "url": "https://www.cnbc.com/2026/06/22/abbvie-to-buy-apogee.html",
+                  "source_type": "web",
+                  "published_at": "2026-06-22"
+                }
+              ],
+              "title": "AbbVie agrees to acquire Apogee Therapeutics in an ~$11B immunology deal",
+              "summary": "STAT and other outlets report AbbVie is acquiring Apogee Therapeutics in a deal valued around $11B, adding next-generation immunology assets. The transaction underscores continued large-cap demand for differentiated biologics pipelines. It also signals sustained M&A appetite even amid policy and reimbursement uncertainty.",
+              "strategic_implication": "Payers and providers should anticipate future pricing and formulary dynamics as immunology portfolios consolidate. Biopharma partners may see shifting alliance strategy as AbbVie integrates and rationalizes overlapping programs.",
+              "confidence": "high",
+              "tags": [
+                "biopharma",
+                "m-and-a",
+                "immunology",
+                "drug-pricing"
+              ]
+            },
+            {
+              "item_id": "2026-06-23-health-services-ma-2026-pwc",
+              "canonical_topic": "health-services-ma",
+              "duplicate_group": "health-services-ma",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/health-services-ma-active-deal-volume-down-reimbusement-uncertainty-pwc/823338/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-22T16:35:00Z"
+                }
+              ],
+              "title": "PwC: Health services M&A remains active in 2026, but uncertainty is slowing volume",
+              "summary": "Healthcare Dive summarizes a PwC view that health services dealmaking remains active in 2026 even as uncertainty dampens overall volume. Buyers are reportedly prioritizing assets with durable cash flows and capabilities that support value-based care and consumer access. The outlook reinforces that financing and regulatory noise are influencing timing rather than eliminating strategic interest.",
+              "strategic_implication": "Health systems should expect continued competitive pressure from platform roll-ups in RCM, MSO, and outpatient services. Leaders evaluating divestitures or partnerships may want to move before macro uncertainty further tightens valuations.",
+              "confidence": "medium",
+              "tags": [
+                "m-and-a",
+                "health-services",
+                "value-based-care",
+                "rcm"
+              ]
+            },
+            {
+              "item_id": "2026-06-23-prosper-ai-series-a",
+              "canonical_topic": "healthcare-operations-ai",
+              "duplicate_group": "healthcare-operations-ai",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/prosper-ai-lands-30m-backed-andreessen-horowitz-build-ai-workforce",
+                  "source_type": "rss",
+                  "published_at": "2026-06-22T11:46:00Z"
+                }
+              ],
+              "title": "Prosper AI raises $30M to build AI workforce tools for healthcare operations",
+              "summary": "Fierce Healthcare reports Prosper AI raised $30M with backing from Andreessen Horowitz to develop AI capabilities for operational workflows. The positioning emphasizes augmenting administrative work and standardizing execution across the patient journey. The round reflects ongoing investor interest in pragmatic operations AI versus purely clinical models.",
+              "strategic_implication": "Provider orgs should separate ROI-ready automation (scheduling, intake, authorizations) from experimental deployments, with clear KPIs and change management. Vendors will face heightened scrutiny on data access, integration burden, and measurable labor savings.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "automation",
+                "ai-operations",
+                "venture-funding"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Hospital operators faced near-term margin pressure alongside escalating pharmacy and 340B policy disputes that can directly affect safety-net economics.",
+          "items": [
+            {
+              "item_id": "2026-06-23-eli-lilly-340b-discounts",
+              "canonical_topic": "340b-discounts",
+              "duplicate_group": "340b-discounts",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/eli-lilly-halts-340b-discounts-hospitals-irate-hrsa/823370/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-22T15:50:00Z"
+                }
+              ],
+              "title": "Hospitals press HHS after Eli Lilly moves to withhold 340B discounts tied to claims-data demands",
+              "summary": "Healthcare Dive reports hospitals are reacting after Eli Lilly followed through on a plan to halt 340B discounts to certain providers that did not comply with its claims data submission requirements. The dispute highlights ongoing friction around manufacturer data demands, contract pharmacy arrangements, and federal enforcement posture. Hospital groups are urging federal intervention.",
+              "strategic_implication": "Safety-net and covered-entity leaders should quantify exposure to manufacturer policy changes and develop contingency plans for pharmacy margins. Expect continued policy and legal volatility around 340B data transparency and enforcement.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "hospital-finance",
+                "pharmacy"
+              ]
+            },
+            {
+              "item_id": "2026-06-23-hospital-margins-april",
+              "canonical_topic": "hospital-margins",
+              "duplicate_group": "hospital-margins",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/hospital-margins-inched-higher-april-still-remain-below-2025",
+                  "source_type": "rss",
+                  "published_at": "2026-06-22T16:15:00Z"
+                }
+              ],
+              "title": "April hospital margins improved modestly but remain below last year, per report cited by Fierce",
+              "summary": "Fierce Healthcare reports a benchmarking update showing hospital margins inched higher in April but are still below 2025 levels. The piece points to ongoing expense pressure relative to revenue performance. The signal reinforces that operating stability remains fragile for many systems heading into the second half of the year.",
+              "strategic_implication": "CFOs should continue to prioritize labor productivity and supply-chain discipline while monitoring payer mix and denial trends. Systems may need to accelerate service-line rationalization and throughput initiatives to protect margin.",
+              "confidence": "medium",
+              "tags": [
+                "hospital-finance",
+                "margins",
+                "operational-efficiency",
+                "labor-costs"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Digital access trends are translating into higher message volume and new workload patterns, forcing teams to retool staffing and clinical protocols for asynchronous care.",
+          "items": [
+            {
+              "item_id": "2026-06-23-patient-portal-messages-doubled",
+              "canonical_topic": "patient-messaging-burden",
+              "duplicate_group": "patient-messaging-burden",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/patient-portal-messages-doubled-2020-physicians-try-balance-digital-and-clinical",
+                  "source_type": "rss",
+                  "published_at": "2026-06-22T18:48:00Z"
+                }
+              ],
+              "title": "Study: patient portal messages more than doubled since 2020, adding to clinician workload",
+              "summary": "Fierce Healthcare covers a study finding patient portal messages have more than doubled since 2020, underscoring how digital access can translate into uncompensated clinician work. The trend adds pressure to primary care and specialty practices already balancing staffing constraints. Health systems are increasingly experimenting with triage models and message management workflows.",
+              "strategic_implication": "Organizations should redesign inbox workflows (team-based triage, response protocols, potential billing pathways) to prevent burnout and protect access. EHR and digital front door strategies need explicit capacity planning for asynchronous care.",
+              "confidence": "medium",
+              "tags": [
+                "clinician-burnout",
+                "patient-portals",
+                "workflow",
+                "primary-care"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-22",
       "generated_at": "2026-06-22T11:05:58Z",
       "headline": "Today's Healthcare Insights",
@@ -9472,5 +9820,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-22T11:05:58Z"
+  "last_updated": "2026-06-23T11:28:54Z"
 }

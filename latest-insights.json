@@ -3,6 +3,344 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-24",
+      "generated_at": "2026-06-24T11:19:50Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s themes: stepped-up federal enforcement and program-integrity actions, renewed friction around 340B pricing and Medicare Advantage Star Ratings methodology, and continued investment in AI-enabled chronic care operations. Items were curated from DOJ releases, STAT, Healthcare Dive, Fierce Healthcare, and targeted web reporting.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds parsed; web sources added primary documents for enforcement and financing announcements."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal enforcement and program rules continue to shift, with a major DOJ fraud operation and ongoing volatility in MA quality measurement and 340B program oversight.",
+          "items": [
+            {
+              "item_id": "2026-06-24-doj-healthcare-fraud-takedown-65b",
+              "canonical_topic": "healthcare-fraud-enforcement",
+              "duplicate_group": "healthcare-fraud-enforcement",
+              "priority_score": 8,
+              "primary_source": "DOJ",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "DOJ",
+                  "url": "https://www.justice.gov/opa/pr/national-health-care-fraud-takedown-results-455-defendants-charged-connection-over-65",
+                  "source_type": "web",
+                  "published_at": "2026-06-23"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/doj-announces-65b-healthcare-fraud-takedown-record-medicaid-enforcement",
+                  "source_type": "rss",
+                  "published_at": "2026-06-23"
+                }
+              ],
+              "title": "DOJ charges 455 defendants in 2026 health care fraud takedown tied to $6.5B in alleged false claims",
+              "summary": "The Department of Justice announced its 2026 National Health Care Fraud Takedown, charging 455 defendants (including 90 licensed medical professionals) in cases involving more than $6.5 billion in alleged false claims. DOJ said cases spanned 56 federal districts across 45 states and territories and highlighted fraud patterns including wound-care allografts, Medicaid billing, genetic testing, telemedicine and durable medical equipment. DOJ also reported more than $182 million seized and stated CMS took administrative actions including provider suspensions and billing-privilege revocations.",
+              "strategic_implication": "Providers and payers should treat the announcement as a signal of intensified program-integrity analytics (including AI-enabled detection) and revisit exposure in high-risk service lines, marketing arrangements and remote-order workflows. Leadership teams may want to validate documentation, utilization and referral guardrails before audits or payment holds occur.",
+              "confidence": "high",
+              "tags": [
+                "fraud",
+                "medicare",
+                "medicaid",
+                "compliance",
+                "enforcement"
+              ]
+            },
+            {
+              "item_id": "2026-06-24-cms-recalculate-2026-ma-star-ratings",
+              "canonical_topic": "medicare-advantage-star-ratings",
+              "duplicate_group": "medicare-advantage-star-ratings",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/unpacking-cms-decision-recalculate-2026-ma-star-ratings-after-clover-health-ruling",
+                  "source_type": "rss",
+                  "published_at": "2026-06-23"
+                }
+              ],
+              "title": "CMS to recalculate 2026 Medicare Advantage Star Ratings after Clover Health court ruling",
+              "summary": "CMS said it will recalculate 2026 Medicare Advantage Star Ratings in response to a federal court ruling in favor of Clover Health that found CMS improperly used certain metrics in Clover’s 2026 scoring. Fierce Healthcare reported CMS would adjust ratings only where recalculation would raise a plan’s score, and that increased scores could enable bid resubmissions. Analysts cited in the report suggested the decision could increase volatility and litigation risk in the Star Ratings program.",
+              "strategic_implication": "MA plans should model revenue and bonus impacts under multiple Star Rating scenarios and prepare stakeholder messaging if contract-level ratings shift. Provider partners may see knock-on effects in network strategy, quality incentives and administrative requirements tied to Stars performance.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "star-ratings",
+                "quality",
+                "regulation",
+                "payer"
+              ]
+            },
+            {
+              "item_id": "2026-06-24-hhs-blueprint-fast-track-early-trials",
+              "canonical_topic": "clinical-trials-modernization",
+              "duplicate_group": "clinical-trials-modernization",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-clinical-trial-streamline-plan-china/823542/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-23"
+                }
+              ],
+              "title": "HHS blueprint targets faster first-in-human trials and clearer IND expectations to keep early R&D in the U.S.",
+              "summary": "Healthcare Dive reported HHS published a blueprint aimed at easing burdens for biotech companies launching early-stage clinical trials and expanding patient access. The plan describes FDA actions to specify necessary pre-IND data, reduce unnecessary documentation, and make protocols more flexible, alongside a pilot that would connect developers with research institutions and support rolling submissions. The blueprint also discusses whether stipends for participants could be permissible under anti-kickback rules and highlights NIH’s role in enabling rural participation through telehealth and remote monitoring.",
+              "strategic_implication": "Health systems with research programs may need stronger rapid-start capabilities (IRB coordination, contracting, data capture) as agencies push for shorter early-trial timelines. Compliance teams should monitor any changes to permissible participant compensation and the operational guardrails that would accompany it.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "hhs",
+                "clinical-trials",
+                "biotech",
+                "regulatory"
+              ]
+            },
+            {
+              "item_id": "2026-06-24-eli-lilly-340b-discounts-paperwork",
+              "canonical_topic": "340b-drug-pricing",
+              "duplicate_group": "340b-drug-pricing",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/eli-lilly-halts-340b-discounts-hospitals-irate-hrsa/823370/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-22"
+                }
+              ],
+              "title": "Eli Lilly halts some 340B discounts over claims-data requirements, prompting hospital calls for HRSA action",
+              "summary": "Healthcare Dive reported Eli Lilly cut off 340B pricing for hospitals that did not comply with its paperwork and claims-data submission requirements. Hospital groups including the American Hospital Association and 340B Health urged HRSA and HHS to intervene, while HRSA declined to comment on the record. The dispute reflects escalating manufacturer-provider conflict over 340B program oversight and data transparency.",
+              "strategic_implication": "Safety-net providers should assess near-term margin exposure for affected Lilly products and plan mitigations if wholesale pricing replaces 340B discounts. More broadly, 340B governance and data-sharing expectations may become a competitive and compliance differentiator as additional manufacturers adopt similar policies.",
+              "confidence": "medium",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "hospital-margin",
+                "hrsa",
+                "pharma"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital health activity centered on scaling AI-assisted chronic care operations and clarifying regulatory boundaries for consumer-facing physiologic estimation features.",
+          "items": [
+            {
+              "item_id": "2026-06-24-cadence-100m-series-c-chronic-care-ai",
+              "canonical_topic": "chronic-care-automation",
+              "duplicate_group": "chronic-care-automation",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/23/cadence-100-million-raise-automate-chronic-care-ai/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-23"
+                },
+                {
+                  "source": "Cadence",
+                  "url": "https://www.cadence.care/post/cadence-raises-100m-series-c-led-by-spark-capital-to-automate-chronic-care",
+                  "source_type": "web",
+                  "published_at": "2026-06-23"
+                }
+              ],
+              "title": "Cadence raises $100M to scale AI-enabled chronic care programs as remote monitoring reimbursement draws scrutiny",
+              "summary": "STAT reported that Cadence raised $100 million led by Spark Capital at a reported $1.23 billion valuation to expand chronic care management and automate clinician work with AI. The company provides remote monitoring programs for conditions such as hypertension, diabetes and heart failure, and reported working with over 20 health systems and supporting more than 100,000 active patients. Cadence’s own announcement emphasized scaling supervised AI agents and cited operational and outcomes metrics, while the STAT story noted scrutiny of remote monitoring billing by payers and federal oversight bodies.",
+              "strategic_implication": "Health systems considering outsourced chronic care programs should weigh capacity gains from automation against compliance and quality-risk exposure in remote monitoring reimbursement. As AI agents become embedded in longitudinal care operations, payers and providers may require clearer evidence standards for outcomes, alert quality and staffing oversight.",
+              "confidence": "high",
+              "tags": [
+                "remote-monitoring",
+                "ai",
+                "chronic-care",
+                "digital-health",
+                "value-based-care"
+              ]
+            },
+            {
+              "item_id": "2026-06-24-whoop-fda-enforcement-bp-feature",
+              "canonical_topic": "wearables-regulatory-boundaries",
+              "duplicate_group": "wearables-regulatory-boundaries",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/23/fda-drops-enforcement-against-wearable-maker-whoop/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-23"
+                }
+              ],
+              "title": "FDA drops further enforcement action against Whoop after changes to its blood pressure feature",
+              "summary": "STAT reported that FDA told wearable maker Whoop it would not take further enforcement action related to the company’s Blood Pressure Insights feature. FDA had previously warned Whoop in July 2025 that releasing the feature without clearance made it a medical device requiring review because it provided a measurement or estimation of blood pressure linked to diagnosing hypo- or hypertension. The report indicates Whoop made changes to the feature, after which FDA ended its enforcement posture.",
+              "strategic_implication": "Digital health teams should treat the episode as a case study in how consumer features can cross into regulated medical-device territory, particularly for physiologic estimates tied to diagnosis. Product and regulatory teams may want tighter pre-launch review for claims language, UI framing and intended-use statements.",
+              "confidence": "medium",
+              "tags": [
+                "wearables",
+                "fda",
+                "regulatory",
+                "blood-pressure",
+                "consumer-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Select financings indicate targeted investor conviction in specialty biopharma even as broader markets remain selective.",
+          "items": [
+            {
+              "item_id": "2026-06-24-ophthalmology-biotech-raises-330m",
+              "canonical_topic": "biotech-funding",
+              "duplicate_group": "biotech-funding",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/24/ophthalmology-biotech-ollin-biosciences/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-24T11:00:00Z"
+                }
+              ],
+              "title": "Ophthalmology biotech draws investor attention with a reported $330M raise",
+              "summary": "STAT reported that ophthalmology-focused biotech Ollin Biosciences raised $330 million, underscoring continued investor appetite for select therapeutic platforms. The round’s size stood out relative to broader market selectivity for new financings. Additional details were not captured beyond the STAT RSS-linked headline context.",
+              "strategic_implication": "Large specialty-therapy rounds can be an early signal of renewed competition for clinical partners and trial sites in that disease area. Provider organizations may want to track whether new assets shift demand for specialty services or create partnership opportunities.",
+              "confidence": "low",
+              "tags": [
+                "biotech",
+                "funding",
+                "ophthalmology",
+                "venture-capital",
+                "market"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider strategy continues to emphasize scale and affiliation, with early-stage merger exploration in New Jersey alongside ongoing leadership and integration efforts.",
+          "items": [
+            {
+              "item_id": "2026-06-24-hackensack-meridian-hunterdon-loi",
+              "canonical_topic": "provider-consolidation",
+              "duplicate_group": "provider-consolidation",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hackensack-meridian-hunterdon-explore-merger-nj-hospitals/823489/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-23"
+                }
+              ],
+              "title": "Hackensack Meridian Health and Hunterdon Health sign nonbinding LOI to pursue merger",
+              "summary": "Healthcare Dive reported Hackensack Meridian Health and Hunterdon Health signed a nonbinding letter of intent after both boards voted to move forward. Executives said a combination would add scale to compete and expand access, services, and investment in research and technology, while noting no immediate operational changes as they work toward a definitive agreement. The parties still must complete due diligence and secure state and federal regulatory approvals.",
+              "strategic_implication": "Regional providers should anticipate continued consolidation as smaller systems seek negotiating leverage and capital capacity. Deal teams should plan early for state oversight and federal review timelines, which remain a critical execution risk.",
+              "confidence": "high",
+              "tags": [
+                "mna",
+                "hospitals",
+                "consolidation",
+                "new-jersey",
+                "strategy"
+              ]
+            },
+            {
+              "item_id": "2026-06-24-multicare-ceo-succession",
+              "canonical_topic": "health-system-leadership",
+              "duplicate_group": "health-system-leadership",
+              "priority_score": 4,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/multicare-ceo-william-robertson-to-retire-florence-chang-named-successor/823423/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-23"
+                }
+              ],
+              "title": "MultiCare names Florence Chang as next CEO as William Robertson plans to retire",
+              "summary": "Healthcare Dive reported that MultiCare Health System will transition leadership as CEO William Robertson plans to retire, with president Florence Chang named as successor effective Jan. 1. The system has expanded through affiliations and reported improved operating performance in early 2026 relative to the prior year. The article noted MultiCare’s focus on reducing contract labor and improving retention and recruitment to manage costs.",
+              "strategic_implication": "Leadership transitions can signal a shift from growth to integration and margin stabilization, with increased emphasis on labor productivity. Peer systems should watch for strategic reprioritization that could influence partnership and competitive dynamics in MultiCare’s markets.",
+              "confidence": "medium",
+              "tags": [
+                "leadership",
+                "health-system",
+                "labor",
+                "operations",
+                "strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Leadership changes remain a key operational variable; no additional major workforce items surfaced today beyond executive transition reporting.",
+          "items": [
+            {
+              "item_id": "2026-06-24-hca-chief-clinical-officer-transition",
+              "canonical_topic": "clinical-leadership-changes",
+              "duplicate_group": "clinical-leadership-changes",
+              "priority_score": 4,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hca-healthcare-chief-clinical-officer-michael-cuffe-step-down/823450/",
+                  "source_type": "rss",
+                  "published_at": "2026-04-27"
+                }
+              ],
+              "title": "HCA chief clinical officer to step down at end of August; will stay on as consultant through February",
+              "summary": "Healthcare Dive reported that Dr. Michael Cuffe, HCA Healthcare’s chief clinical officer, will leave the role at the end of August and remain as an executive consultant through February to support the transition. The company said it will disclose a successor at an appropriate time. The article also referenced broader executive changes and financial context from HCA’s recent performance.",
+              "strategic_implication": "Clinical leadership changes can influence near-term priorities for quality, patient safety and clinician engagement, particularly during operational transformation. Competitors and partners may want to monitor how initiatives shift under new clinical leadership.",
+              "confidence": "low",
+              "tags": [
+                "leadership",
+                "clinical-operations",
+                "workforce",
+                "quality",
+                "hospitals"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-23",
       "generated_at": "2026-06-23T11:28:54Z",
       "headline": "Today's Healthcare Insights",
@@ -9820,5 +10158,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-23T11:28:54Z"
+  "last_updated": "2026-06-24T11:19:50Z"
 }

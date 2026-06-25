@@ -3,6 +3,319 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-25",
+      "generated_at": "2026-06-25T11:03:46Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s themes: federal attention on Medicare’s AI-enabled prior authorization pilot, renewed scrutiny of pharmacy benefit and vertical integration dynamics, and continued capital flowing into voice-based AI front doors. Items were curated from STAT, Healthcare Dive, Fierce Healthcare, and primary web releases.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds parsed for top stories; web search used to capture primary documents and corroborating coverage for enforcement and policy actions."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Policy focus centered on utilization management and program design, with lawmakers pressing for transparency and guardrails around Medicare’s WISeR prior authorization pilot and opioid-treatment access reforms advancing.",
+          "items": [
+            {
+              "item_id": "2026-06-25-wiser-data-transparency-letter",
+              "canonical_topic": "medicare-wiser-prior-authorization",
+              "duplicate_group": "medicare-wiser-prior-authorization",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/democrat-letter-more-data-wiser-medicare-ai-prior-authorization/823581/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-24T14:28:56Z"
+                }
+              ],
+              "title": "House Democrats press CMS for WISeR pilot data as Medicare AI prior auth expands",
+              "summary": "House Democrats sent CMS a letter seeking detailed performance data on the WISeR model, including turnaround times, approval/denial volumes, and appeals. The request reflects concerns that AI-enabled prior authorization in traditional Medicare could delay needed care and add administrative burden. CMS indicated it would review the request and respond directly to Congress.",
+              "strategic_implication": "Plans, vendors, and providers should expect increasing oversight of AI-enabled utilization management, with data transparency and audit-readiness becoming table stakes for participation in federal pilots.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "prior-authorization",
+                "ai",
+                "utilization-management"
+              ]
+            },
+            {
+              "item_id": "2026-06-25-methadone-direct-prescribing-bill",
+              "canonical_topic": "opioid-use-disorder-treatment-access",
+              "duplicate_group": "opioid-use-disorder-treatment-access",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/25/bipartisan-bill-methadone-prescription-pharmacy-pickup/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-25T08:30:00Z"
+                }
+              ],
+              "title": "Bipartisan bill would allow direct methadone prescribing with pharmacy pickup for OUD",
+              "summary": "A bipartisan proposal would expand access to methadone for opioid use disorder by allowing qualified clinicians to prescribe it directly, enabling patients to pick up medication at pharmacies. Supporters argue it would reduce access barriers created by the current clinic-centric model, especially in rural and underserved areas. Operational details and guardrails will determine payer coverage, dispensing workflows, and compliance requirements.",
+              "strategic_implication": "Health systems and payers should plan for potential shifts in OUD treatment pathways, including pharmacy-network readiness, care coordination models, and updated quality measures tied to addiction treatment access.",
+              "confidence": "medium",
+              "tags": [
+                "opioids",
+                "behavioral-health",
+                "pharmacy",
+                "policy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Voice-based AI and agentic workflows continue to attract investment and adoption pressure, while patient trust signals point toward provider-branded AI experiences with explicit human oversight.",
+          "items": [
+            {
+              "item_id": "2026-06-25-assort-health-series-c",
+              "canonical_topic": "voice-ai-patient-access",
+              "duplicate_group": "voice-ai-patient-access",
+              "priority_score": 8,
+              "primary_source": "PR Newswire",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "PR Newswire",
+                  "url": "https://www.prnewswire.com/news-releases/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey-302808634.html",
+                  "source_type": "web",
+                  "published_at": "2026-06-24T11:02:50"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/assort-health-scores-120m-series-c-scale-voice-ai-agent-platform-healthcare",
+                  "source_type": "rss",
+                  "published_at": "2026-06-24T22:10:00Z"
+                }
+              ],
+              "title": "Assort Health raises $120M Series C to scale voice AI agents for access and scheduling",
+              "summary": "Assort Health announced a $120 million Series C financing to expand its voice AI agent platform focused on the patient journey, including intake, scheduling, and access workflows. Coverage framed the round as further validation that health systems are funding automation at the front door amid labor constraints and high call volumes. The financing underscores heightened expectations for measurable ROI, compliance, and integration with EHR and contact-center tooling.",
+              "strategic_implication": "Provider leaders should benchmark voice AI deployments against KPIs (abandonment, conversion, time-to-appointment) and ensure governance for safety, consent, and escalation pathways as agentic systems move into production.",
+              "confidence": "medium",
+              "tags": [
+                "voice-ai",
+                "patient-access",
+                "agentic-ai",
+                "funding"
+              ]
+            },
+            {
+              "item_id": "2026-06-25-patient-preference-provider-ai-agents",
+              "canonical_topic": "patient-trust-ai-agents",
+              "duplicate_group": "patient-trust-ai-agents",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/patients-prefer-healthcare-providers-ai-agents-public-chatbots-and-human",
+                  "source_type": "rss",
+                  "published_at": "2026-06-24T12:09:00Z"
+                }
+              ],
+              "title": "Survey: patients prefer provider-run AI agents over public chatbots, with human oversight required",
+              "summary": "A survey cited by Fierce Healthcare found patients are more comfortable interacting with AI agents offered by their healthcare providers than with general-purpose public chatbots. Respondents emphasized that human oversight and clear escalation options remain non-negotiable for health-related interactions. The finding aligns with a broader trend toward embedded AI experiences inside provider digital front doors.",
+              "strategic_implication": "Digital leaders should treat AI experience design as a trust and safety exercise: clear disclosures, easy handoffs to staff, and monitoring for errors are likely to influence adoption as much as raw automation.",
+              "confidence": "medium",
+              "tags": [
+                "patient-experience",
+                "ai-agents",
+                "trust",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Spending and pricing pressure remain central, and state-level actions signal ongoing scrutiny of vertically integrated payer-PBM-pharmacy models and competitive practices.",
+          "items": [
+            {
+              "item_id": "2026-06-25-us-health-spending-2025-cms-projection",
+              "canonical_topic": "us-health-spending-growth",
+              "duplicate_group": "us-health-spending-growth",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/us-health-spending-spikes-57t-2025/823660/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-24T15:52:32Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/us-health-spending-set-reach-9t-2034-cms-report",
+                  "source_type": "rss",
+                  "published_at": "2026-06-24T19:52:00Z"
+                }
+              ],
+              "title": "CMS: U.S. health spending jumped in 2025 and is projected to keep rising through 2034",
+              "summary": "CMS national health expenditure projections reported a sharp rise in U.S. health spending in 2025, with expectations for continued growth over the next decade. Coverage highlighted the role of higher utilization and the growing impact of costly drug classes on overall spend. CMS also projected sustained growth in Medicare spending over the forecast horizon.",
+              "strategic_implication": "Payers and providers should assume persistent affordability pressure, reinforcing the need for tighter utilization management, site-of-care strategies, and pharmacy cost-containment tied to outcomes.",
+              "confidence": "medium",
+              "tags": [
+                "health-spending",
+                "medicare",
+                "affordability",
+                "pharmacy"
+              ]
+            },
+            {
+              "item_id": "2026-06-25-florida-ag-cvs-caremark-subpoena",
+              "canonical_topic": "pbm-vertical-integration-scrutiny",
+              "duplicate_group": "pbm-vertical-integration-scrutiny",
+              "priority_score": 7,
+              "primary_source": "Florida Attorney General",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Florida Attorney General",
+                  "url": "https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-issues-subpoena-cvs-health-corporation-and-caremark",
+                  "source_type": "web",
+                  "published_at": "2026-06-23T11:02:50"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/florida-attorney-general-probe-cvs-caremark-anticompetitive-pharmacy/823643/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-24T15:01:00Z"
+                }
+              ],
+              "title": "Florida AG subpoenas CVS and Caremark in probe of alleged anticompetitive pharmacy practices",
+              "summary": "Florida’s attorney general issued subpoenas to CVS Health and Caremark as part of a probe into alleged anticompetitive conduct in pharmacy and PBM practices. Reporting framed the investigation around concerns that vertically integrated models can disadvantage independent pharmacies and distort pricing and network access. The matter adds to the broader wave of state and federal attention on PBMs, spread pricing, and pharmacy reimbursement.",
+              "strategic_implication": "Payers and PBMs should anticipate more state-level information requests and potential enforcement actions, making documentation of pricing methodology, reimbursement logic, and network design increasingly important.",
+              "confidence": "high",
+              "tags": [
+                "pbm",
+                "pharmacy",
+                "antitrust",
+                "state-policy"
+              ]
+            },
+            {
+              "item_id": "2026-06-25-centene-board-addition",
+              "canonical_topic": "payer-governance-leadership",
+              "duplicate_group": "payer-governance-leadership",
+              "priority_score": 5,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/centene-adds-lauren-tyler-board-directors/823551/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-24T15:51:31Z"
+                }
+              ],
+              "title": "Centene adds JPMorgan veteran to board as payers emphasize financial discipline",
+              "summary": "Centene added a JPMorgan executive to its board, signaling continued emphasis on capital markets, financial controls, and strategic governance in a volatile payer environment. Board composition changes often reflect priorities around balance sheet management, regulatory risk, and M&A evaluation. The move comes as payers face medical cost trend pressure and increased scrutiny on utilization management.",
+              "strategic_implication": "For large payers, governance moves can foreshadow strategic shifts; provider partners should monitor board and executive changes for implications on contracting posture and portfolio priorities.",
+              "confidence": "medium",
+              "tags": [
+                "payers",
+                "governance",
+                "strategy",
+                "financial-performance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Providers continue to face reimbursement volatility and programmatic constraints, with litigation and policy debates shaping near-term operating risk, especially for rural facilities.",
+          "items": [
+            {
+              "item_id": "2026-06-25-kaiser-82m-reimbursement-case",
+              "canonical_topic": "provider-reimbursement-disputes",
+              "duplicate_group": "provider-reimbursement-disputes",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/kaiser-health-plan-ordered-pay-hospital-82m-over-insufficient-reimbursement",
+                  "source_type": "rss",
+                  "published_at": "2026-06-24T20:55:00Z"
+                }
+              ],
+              "title": "Court orders Kaiser Health Plan to pay hospital $82M in reimbursement dispute",
+              "summary": "A court ordered Kaiser Health Plan to pay a hospital $82 million related to an insufficient reimbursement dispute, highlighting ongoing friction in payment methodologies and contract interpretations. Such disputes can create financial volatility for providers and raise questions about dispute-resolution mechanisms and out-of-network payment exposure. The case is a reminder that reimbursement integrity and contract controls remain operational priorities.",
+              "strategic_implication": "Health systems should re-evaluate payer contract governance, underpayment detection, and escalation workflows to reduce cash-flow exposure and litigation risk.",
+              "confidence": "medium",
+              "tags": [
+                "reimbursement",
+                "payer-contracting",
+                "litigation",
+                "revenue-cycle"
+              ]
+            },
+            {
+              "item_id": "2026-06-25-rural-health-fund-adjustments",
+              "canonical_topic": "rural-hospital-financial-stability",
+              "duplicate_group": "rural-hospital-financial-stability",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/senators-call-50b-rural-health-fund-better-target-small-providers-relax-spending",
+                  "source_type": "rss",
+                  "published_at": "2026-06-24T18:25:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/rural-health-transformation-fund-50-billion-push-hospitals-shrink/823206/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-06T13:00:00Z"
+                }
+              ],
+              "title": "Senators push to retarget rural health fund rules as hospitals adjust service lines",
+              "summary": "Senators urged changes to the $50 billion rural health transformation fund to better target smaller providers and relax spending constraints, amid concerns about how the program is affecting hospital service configurations. Recent reporting has described hospitals using the program to restructure and shrink services to fit financial realities. Policymaker attention suggests potential adjustments to eligibility and allowable uses.",
+              "strategic_implication": "Rural systems should scenario-plan for shifting program rules and align capital and service-line plans to both community need and evolving federal funding guardrails.",
+              "confidence": "low",
+              "tags": [
+                "rural-health",
+                "hospital-operations",
+                "federal-funding",
+                "care-delivery"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major new workforce policy actions surfaced today in the monitored sources; operational pressure continues to drive automation and new care-access models in other buckets.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-24",
       "generated_at": "2026-06-24T11:19:50Z",
       "headline": "Today's Healthcare Insights",
@@ -10158,5 +10471,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-24T11:19:50Z"
+  "last_updated": "2026-06-25T11:03:46Z"
 }

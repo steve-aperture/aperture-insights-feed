@@ -3,6 +3,340 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-29",
+      "generated_at": "2026-06-29T11:09:39Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s signals center on Medicare/Medicaid operational updates, emerging AI governance expectations, and frontline provider economics. Sources include Federal Register/CMS releases plus STAT and Healthcare Dive reporting.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search: CMS/HHS/FDA updates",
+          "Web search: payer/provider/market moves"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search: CMS/HHS/FDA updates"
+        ],
+        "sources_failed": [
+          "Gmail labels (supplementary)"
+        ],
+        "run_notes": "RSS feeds retrieved successfully; web search used to confirm primary URLs for federal documents and selected articles; Gmail not used for gating."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal policy and payment signals today include CMS operational updates and governance changes that could alter compliance and coverage expectations.",
+          "items": [
+            {
+              "item_id": "2026-06-29-medicaid-community-engagement-correction",
+              "canonical_topic": "medicaid-community-engagement",
+              "duplicate_group": "medicaid-community-engagement",
+              "priority_score": 7,
+              "primary_source": "Federal Register (govinfo)",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Federal Register (govinfo)",
+                  "url": "https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/FR-2026-06-29.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-06-29T02:08:41Z"
+                }
+              ],
+              "title": "Federal Register posts CMS correction to Medicaid community engagement requirement rule text",
+              "summary": "The June 29 Federal Register includes a CMS correction related to the Medicaid program’s community engagement requirement, updating the published rule text and related citations. For states and managed care plans, technical corrections can still trigger implementation work (eligibility verification processes, notices, and operational controls) even when policy direction is unchanged.",
+              "strategic_implication": "Compliance and policy teams should treat “corrections” as operational events: confirm whether state-level implementation timelines or system requirements change, and adjust readiness plans accordingly.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "cms",
+                "regulation",
+                "eligibility",
+                "compliance"
+              ]
+            },
+            {
+              "item_id": "2026-06-29-opps-july-2026-update",
+              "canonical_topic": "opps-july-2026-update",
+              "duplicate_group": "opps-july-2026-update",
+              "priority_score": 7,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/files/document/mm14477-hospital-outpatient-prospective-payment-system-july-2026-update.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-06-29T04:08:41Z"
+                }
+              ],
+              "title": "CMS publishes July 2026 OPPS update with new HCPCS coding and packaging/pass-through changes",
+              "summary": "CMS released its July 2026 Hospital Outpatient Prospective Payment System (OPPS) update guidance, describing coding and payment changes effective July 1. The update covers new/updated HCPCS codes and other outpatient payment edits that can affect claims, revenue integrity workflows, and charge description master maintenance.",
+              "strategic_implication": "Revenue cycle and compliance leaders should validate CDM/encoder updates and monitor denial/underpayment patterns in July as payers absorb the new codes and status indicators.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "opps",
+                "billing",
+                "revenue-cycle",
+                "hcpcs"
+              ]
+            },
+            {
+              "item_id": "2026-06-29-medicaid-program-integrity-hearing",
+              "canonical_topic": "medicaid-program-integrity",
+              "duplicate_group": "medicaid-program-integrity",
+              "priority_score": 5,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medicaid-fraud-hearing-house-oversight-subcommittee-minn-calif-ny/823791/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-26T15:57:00Z"
+                }
+              ],
+              "title": "State Medicaid directors defend program integrity amid House hearing on fraud oversight",
+              "summary": "Healthcare Dive reported on a House oversight hearing where state Medicaid directors discussed fraud risks and integrity controls, while lawmakers debated oversight approaches. The attention reinforces that payment integrity, eligibility checks, and managed care monitoring remain active political and operational themes.",
+              "strategic_implication": "States and MCOs should expect continued scrutiny of improper payments and documentation; invest in targeted analytics and provider education to reduce recoveries and disruption.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "program-integrity",
+                "oversight",
+                "fraud-waste-abuse",
+                "managed-care"
+              ]
+            },
+            {
+              "item_id": "2026-06-29-acip-charter-update",
+              "canonical_topic": "acip-charter",
+              "duplicate_group": "acip-charter",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/25/acip-charter-responsibilities-rfk-jr/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-25T20:15:40Z"
+                },
+                {
+                  "source": "CDC ACIP Charter",
+                  "url": "https://www.cdc.gov/acip/about/acip-charter.html",
+                  "source_type": "web",
+                  "published_at": "2026-06-24T00:00:00Z"
+                }
+              ],
+              "title": "New ACIP charter shifts committee responsibilities and expands member criteria, per STAT and CDC posting",
+              "summary": "STAT reported that a newly updated ACIP charter broadens criteria for members and reframes committee responsibilities, including calling for review of alternatives to vaccines. The updated charter is also posted by CDC, making this change a concrete governance signal for the federal immunization advisory process.",
+              "strategic_implication": "Changes to ACIP governance can ripple into coverage, purchasing, and provider practice expectations; payers and providers should track whether recommendations slow or become less predictable.",
+              "confidence": "medium",
+              "tags": [
+                "cdc",
+                "vaccines",
+                "governance",
+                "public-health",
+                "coverage-policy"
+              ]
+            },
+            {
+              "item_id": "2026-06-29-fda-medial-knee-shock-absorber-classification",
+              "canonical_topic": "fda-device-classification",
+              "duplicate_group": "fda-device-classification",
+              "priority_score": 4,
+              "primary_source": "Federal Register (govinfo)",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Federal Register (govinfo)",
+                  "url": "https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/FR-2026-06-29.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-06-29T02:08:41Z"
+                }
+              ],
+              "title": "Federal Register issue includes FDA final rule classifying a medial knee implanted shock absorber device type",
+              "summary": "The June 29 Federal Register table of contents lists an FDA final rule for orthopedic devices, specifically classification of the medial knee implanted shock absorber. Device classification updates can influence clearance pathways, evidence expectations, and competitive dynamics for orthopedic innovators.",
+              "strategic_implication": "Device manufacturers should evaluate whether the classification creates a clearer 510(k)/De Novo pathway and whether payer coverage evidence requirements will follow FDA’s framing.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "medical-devices",
+                "orthopedics",
+                "regulation",
+                "device-market"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Federal agencies continue to frame AI governance expectations while vendors pursue national-scale deployments.",
+          "items": [
+            {
+              "item_id": "2026-06-29-hhs-ai-rfi-takeaways",
+              "canonical_topic": "hhs-ai-governance",
+              "duplicate_group": "hhs-ai-governance",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-update-artificial-intelligence-ai-request-information/823884/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-26T14:28:55Z"
+                }
+              ],
+              "title": "HHS summarizes feedback from government-wide AI request for information, highlighting governance needs",
+              "summary": "Healthcare Dive reported that HHS detailed takeaways from a broad AI request for information, focusing on themes such as governance, safety, and practical implementation. The update signals where federal expectations may converge across agencies on risk management and evidence standards for healthcare AI.",
+              "strategic_implication": "Health systems and vendors should map internal AI use cases to an explicit governance and monitoring framework now, anticipating more formal federal guardrails and procurement expectations.",
+              "confidence": "medium",
+              "tags": [
+                "hhs",
+                "ai",
+                "governance",
+                "regulation",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-06-29-sword-health-portugal-deal",
+              "canonical_topic": "digital-msk-virtual-pt",
+              "duplicate_group": "digital-msk-virtual-pt",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/29/sword-health-portugal-deal-ai-supported-physical-therapy/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-29T08:30:00Z"
+                }
+              ],
+              "title": "STAT: Sword Health lands national-scale contract for AI-supported physical therapy services",
+              "summary": "STAT reported that Sword Health was contracted to provide AI-supported physical therapy at a national scale in Portugal. The deal is a signal that virtual MSK programs are pushing beyond employer benefits into broader public-sector or national health system purchasing.",
+              "strategic_implication": "Digital MSK vendors and payers should expect procurement to emphasize measurable outcomes, fraud controls, and integration with local clinical pathways as these programs scale.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "virtual-care",
+                "musculoskeletal",
+                "ai",
+                "payer-provider-contracting"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Value-based care programs and state-facing accountability guidance remain important medium-term market signals.",
+          "items": [
+            {
+              "item_id": "2026-06-29-ahead-phap-guidance",
+              "canonical_topic": "ahead-model",
+              "duplicate_group": "ahead-model",
+              "priority_score": 5,
+              "primary_source": "CMS Innovation Center",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS Innovation Center",
+                  "url": "https://www.cms.gov/priorities/innovation/files/ahead-phap-overview-guidance.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-06-29T04:08:41Z"
+                }
+              ],
+              "title": "CMS Innovation Center posts 2027 AHEAD model statewide population health accountability plan guidance",
+              "summary": "CMS released an overview and guidance document for the AHEAD Statewide Population Health Accountability Plan (PHAP) for 2027. The guidance signals how participating states may be expected to set targets and report on quality and population health measures, with additional guidance anticipated later in 2026.",
+              "strategic_implication": "States, health systems, and payers engaged in value-based care should align measurement infrastructure early, as AHEAD participation can drive reporting load and contracting priorities.",
+              "confidence": "medium",
+              "tags": [
+                "cms-innovation",
+                "value-based-care",
+                "population-health",
+                "state-policy",
+                "quality-measures"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operators face continued pressure from regulatory participation choices and rising asynchronous patient demand.",
+          "items": [
+            {
+              "item_id": "2026-06-29-patient-messages-surge",
+              "canonical_topic": "patient-portal-message-volume",
+              "duplicate_group": "patient-portal-message-volume",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/patient-portal-messages-clinicians-skyrockets-jama/823785/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-25T15:40:03Z"
+                }
+              ],
+              "title": "Study signals sustained growth in patient portal message volume, raising operational load questions",
+              "summary": "A Healthcare Dive write-up citing a JAMA study reports that patient messages to clinicians via portals have risen sharply over recent years. Increased asynchronous demand can create hidden work for clinical teams, complicate access expectations, and drive burnout if workflows and resourcing do not adapt.",
+              "strategic_implication": "Provider organizations should treat portal messaging as a capacity-managed service line (triage protocols, staffing models, and optional automation) rather than an unbounded inbox.",
+              "confidence": "medium",
+              "tags": [
+                "provider-operations",
+                "patient-engagement",
+                "clinician-burnout",
+                "workflow",
+                "access"
+              ]
+            },
+            {
+              "item_id": "2026-06-29-micro-hospitals-emergency-care-loophole",
+              "canonical_topic": "emergency-care-obligations",
+              "duplicate_group": "emergency-care-obligations",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/29/nutex-health-micro-hospitals-er-loophole-idr-profits/",
+                  "source_type": "web",
+                  "published_at": "2026-06-29T00:00:00Z"
+                }
+              ],
+              "title": "STAT reports on micro-hospitals avoiding Medicare participation, raising questions about ED screening and collections",
+              "summary": "STAT reported that some emergency departments operated by Nutex Health do not contract with Medicare, meaning they are not bound by EMTALA’s prohibition on turning away patients for inability to pay. The story highlights how facility participation choices can reshape patient-facing financial practices and regulatory obligations, with downstream reputational and enforcement risk.",
+              "strategic_implication": "Health systems and investors should assess participation status as a core risk variable (regulatory, brand, payer contracting) and monitor whether federal or state policymakers respond with tighter requirements.",
+              "confidence": "high",
+              "tags": [
+                "provider-operations",
+                "emergency-medicine",
+                "emergency-care",
+                "patient-financial-experience",
+                "regulatory-risk"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-25",
       "generated_at": "2026-06-25T11:03:46Z",
       "headline": "Today's Healthcare Insights",
@@ -10471,5 +10805,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-25T11:03:46Z"
+  "last_updated": "2026-06-29T11:09:39Z"
 }

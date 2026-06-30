@@ -3,6 +3,273 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-06-30",
+      "generated_at": "2026-06-30T11:06:49Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing is led by Medicaid eligibility/work compliance litigation signals, federal interoperability oversight, and near-term access/affordability moves in the ACA market and rural health funding. Sources include AP/STAT/Healthcare Dive/Fierce Healthcare reporting plus ONC and HRSA coverage.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search: CMS/HHS/FDA updates",
+          "Web search: payer/provider/market moves",
+          "Gmail labels (supplementary)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search: CMS/HHS/FDA updates",
+          "Web search: payer/provider/market moves"
+        ],
+        "sources_failed": [
+          "Gmail labels (supplementary)"
+        ],
+        "run_notes": "RSS feeds used for candidate items; web search used to confirm primary URLs; Gmail not used for gating."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "States’ pushback on Medicaid work requirement implementation and new federal interoperability oversight are the most actionable regulatory signals today.",
+          "items": [
+            {
+              "item_id": "2026-06-30-medicaid-work-requirements-lawsuit",
+              "canonical_topic": "medicaid-work-requirements",
+              "duplicate_group": "medicaid-work-requirements",
+              "priority_score": 9,
+              "primary_source": "AP News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "AP News",
+                  "url": "https://apnews.com/article/medicaid-work-requirements-lawsuit-cms-medical-frailty-9056118d7987b46cb5ef40b26b3c9e84",
+                  "source_type": "web",
+                  "published_at": "2026-06-29"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/29/state-lawsuit-block-medicaid-work-requirements/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-29T20:11:47+00:00"
+                }
+              ],
+              "title": "Democratic-led states sue to block stricter Medicaid work requirements guidance",
+              "summary": "A coalition of states filed suit challenging the administration’s interpretation of Medicaid work requirement rules and related exemptions. The dispute centers on how CMS is defining medical frailty and operational compliance steps ahead of the January implementation deadline. The outcome could affect coverage continuity and administrative workload across expansion states.",
+              "strategic_implication": "Payers, providers, and health systems in expansion states should scenario-plan for eligibility churn and patient access disruptions, and align outreach workflows with state-specific timelines. Compliance and revenue-cycle teams should prepare for more frequent coverage verification and charity care pressure if exemptions tighten.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "coverage",
+                "state-policy",
+                "compliance",
+                "health-equity"
+              ]
+            },
+            {
+              "item_id": "2026-06-30-tefca-oversight-onc",
+              "canonical_topic": "tefca-oversight",
+              "duplicate_group": "tefca-oversight",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/onc-tefca-oversight-measures-1-billion-records-exchanged/824013/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-29T15:21:32-04:00"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/more-1b-health-records-exchange-through-tefca-onc-officials-report",
+                  "source_type": "rss",
+                  "published_at": "Jun 26, 2026 5:04pm"
+                }
+              ],
+              "title": "ONC signals tighter TEFCA oversight as exchange volumes scale",
+              "summary": "ONC outlined new oversight and governance measures for the TEFCA interoperability framework as exchange volumes grow into the billions of records. The updates emphasize accountability for QHIN participants and operational expectations as nationwide exchange expands. For organizations relying on TEFCA pathways, program governance is becoming more formal and audit-like.",
+              "strategic_implication": "Health systems and vendors should treat TEFCA participation as a compliance program, with clear ownership for data governance, incident response, and partner management. Contracting and risk teams may need to revisit QHIN-related obligations as oversight increases.",
+              "confidence": "medium",
+              "tags": [
+                "interoperability",
+                "tefca",
+                "onc",
+                "health-it",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Interoperability oversight continues to intersect with AI deployment as organizations scale data-sharing and imaging workflows.",
+          "items": [
+            {
+              "item_id": "2026-06-30-aidoc-fda-breakthrough-chest-xray",
+              "canonical_topic": "ai-imaging-breakthrough-device",
+              "duplicate_group": "ai-imaging-breakthrough-device",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/aidoc-wins-breakthrough-nod-for-ai-that-reads-chest-x-rays/823948/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-26T11:22:23-04:00"
+                }
+              ],
+              "title": "Aidoc wins FDA breakthrough designation for chest X‑ray AI",
+              "summary": "Aidoc received an FDA breakthrough device designation for an AI tool intended to interpret chest X‑rays. The designation can accelerate engagement with the FDA and supports a faster regulatory pathway for select technologies. Imaging leaders continue to see a steady flow of algorithmic tools moving toward broader clinical adoption.",
+              "strategic_implication": "Providers evaluating AI imaging tools should translate regulatory momentum into operational diligence: validation, workflow integration, liability allocation, and measurable outcomes. Payers and risk-bearing systems should watch for evidence that materially reduces downstream utilization or improves time-to-treatment.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "radiology",
+                "fda",
+                "diagnostics",
+                "digital-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Coverage and affordability pressures show up in both ACA marketplace enrollment trends and manufacturer–payer negotiations around high-cost therapies.",
+          "items": [
+            {
+              "item_id": "2026-06-30-aca-enrollment-down-3m",
+              "canonical_topic": "aca-marketplace-enrollment",
+              "duplicate_group": "aca-marketplace-enrollment",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/affordable-care-act-enrollment-declines-3-million-hhs/823975/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-29T10:53:19-04:00"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/aca-marketplace-enrollment-down-3m-february-new-federal-data-show",
+                  "source_type": "rss",
+                  "published_at": "Jun 29, 2026 2:45pm"
+                }
+              ],
+              "title": "ACA marketplace enrollment reported down nearly 3M in new federal data",
+              "summary": "New federal data indicates ACA marketplace enrollment has fallen by nearly three million. The change could reflect subsidy, redetermination, or plan selection dynamics depending on state and consumer segment. Any sustained decline may shift risk pools and revenue expectations for marketplace issuers.",
+              "strategic_implication": "Marketplace insurers should reassess retention and risk-mix assumptions for 2027 pricing, and providers should monitor bad debt and uncompensated care risk in markets with larger drops. Broker and outreach strategies may need to be intensified ahead of open enrollment.",
+              "confidence": "medium",
+              "tags": [
+                "aca",
+                "commercial",
+                "enrollment",
+                "payers",
+                "affordability"
+              ]
+            },
+            {
+              "item_id": "2026-06-30-outcomes-based-contracts-payers-drugmakers",
+              "canonical_topic": "outcomes-based-contracting",
+              "duplicate_group": "outcomes-based-contracting",
+              "priority_score": 5,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/how-payers-drugmakers-can-collaborate-drive-more-outcomes-based-contracts",
+                  "source_type": "rss",
+                  "published_at": "Jun 29, 2026 4:44pm"
+                }
+              ],
+              "title": "Payers and drugmakers push for more outcomes-based contracting models",
+              "summary": "Industry leaders are highlighting collaboration approaches to expand outcomes-based contracts between payers and manufacturers. Barriers remain around data access, attribution, and administrative burden, but interest persists as specialty spend grows. These arrangements increasingly depend on interoperable real-world data and clear endpoints.",
+              "strategic_implication": "Organizations with mature analytics and care management capabilities may be positioned to participate in contracts that reward measurable outcomes—especially for high-cost therapies. Leaders should invest in data-sharing, patient identification, and governance needed to support contract performance measurement.",
+              "confidence": "low",
+              "tags": [
+                "pharmacy",
+                "value-based-care",
+                "outcomes",
+                "pbm",
+                "data"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Rural access funding and leadership transitions remain practical operational signals, especially for systems managing margin pressure and recruitment.",
+          "items": [
+            {
+              "item_id": "2026-06-30-hrsa-rural-health-grant-140m",
+              "canonical_topic": "rural-health-grants",
+              "duplicate_group": "rural-health-grants",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/hrsa-opens-applications-140m-rural-health-grant-funding",
+                  "source_type": "rss",
+                  "published_at": "Jun 29, 2026 3:21pm"
+                }
+              ],
+              "title": "HRSA opens applications for $140M rural health grant funding",
+              "summary": "HRSA opened applications for $140 million in rural health grant funding. The program aims to support rural access, stabilization, and capacity-building initiatives. Rural providers and systems may have a narrow window to assemble competitive applications.",
+              "strategic_implication": "Rural systems should rapidly align grant opportunities to near-term operational priorities (workforce, access points, telehealth infrastructure, or service line stabilization). Regional partners may consider consortium applications to strengthen scale and reporting capabilities.",
+              "confidence": "medium",
+              "tags": [
+                "rural-health",
+                "hrsa",
+                "grants",
+                "provider-strategy",
+                "access"
+              ]
+            },
+            {
+              "item_id": "2026-06-30-rush-ceo-transition-2027",
+              "canonical_topic": "health-system-leadership-transition",
+              "duplicate_group": "health-system-leadership-transition",
+              "priority_score": 4,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/rush-university-health-ceo-step-down-2027/823951/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-29T09:10:22-04:00"
+                }
+              ],
+              "title": "Rush University System for Health CEO plans to step down in 2027",
+              "summary": "Rush University System for Health announced that its CEO intends to step down in 2027. The planned transition provides a runway for succession planning and strategic continuity. Leadership changes at major systems can influence partnership strategy, capital allocation, and performance improvement agendas.",
+              "strategic_implication": "Competitors and partners should anticipate potential strategic reprioritization during the transition period (service lines, ambulatory expansion, or digital partnerships). For Rush and peers, a planned timeline can reduce execution risk if governance and strategic goals are clearly communicated.",
+              "confidence": "low",
+              "tags": [
+                "providers",
+                "health-systems",
+                "leadership",
+                "strategy",
+                "operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major nationwide workforce policy or clinical practice guideline shifts surfaced across the targeted sources in the last day.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-29",
       "generated_at": "2026-06-29T11:09:39Z",
       "headline": "Today's Healthcare Insights",
@@ -10805,5 +11072,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-29T11:09:39Z"
+  "last_updated": "2026-06-30T11:06:49Z"
 }

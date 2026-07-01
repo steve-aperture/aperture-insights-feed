@@ -3,6 +3,246 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-01",
+      "generated_at": "2026-07-01T11:02:19Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing centers on Medicaid work-requirement implementation litigation and near-term federal program operations signals, alongside continued investment in agentic AI and automation for access and pharmacy fulfillment. Sources include state and federal releases plus Reuters/STAT/Fierce/Healthcare Dive coverage.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search: CMS/HHS/FDA updates",
+          "Web search: payer/provider/market moves",
+          "Gmail labels (supplementary)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search: CMS/HHS/FDA updates",
+          "Web search: payer/provider/market moves"
+        ],
+        "sources_failed": [
+          "Gmail labels (supplementary)"
+        ],
+        "run_notes": "RSS feeds used for candidate items; web reading used to confirm primary URLs and dates; Gmail not used for gating."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Regulatory risk today is dominated by Medicaid work requirement implementation disputes and downstream admin burden for eligibility and providers.",
+          "items": [
+            {
+              "item_id": "2026-07-01-medicaid-work-requirements-lawsuit",
+              "canonical_topic": "medicaid-work-requirements",
+              "duplicate_group": "medicaid-work-requirements",
+              "priority_score": 9,
+              "primary_source": "Mass.gov (MA Attorney General)",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Mass.gov",
+                  "url": "https://www.mass.gov/news/ag-campbell-sues-trump-administration-over-unlawful-medicaid-work-requirements-rule",
+                  "source_type": "web",
+                  "published_at": "2026-06-29"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/states-sue-trump-administration-medicaid-work-requirements-rule/824060/",
+                  "source_type": "rss",
+                  "published_at": "2026-06-30T08:58:47-04:00"
+                }
+              ],
+              "title": "States challenge CMS Medicaid work-requirements rule, citing medically frail exemptions and admin burden",
+              "summary": "A coalition of states is challenging HHS/CMS implementation of new Medicaid work requirements, arguing CMS unlawfully narrowed protections for medically frail beneficiaries and imposed additional compliance requirements. States argue reporting requirements risk coverage losses through administrative barriers rather than changes in employment status. The dispute introduces uncertainty for state eligibility operations as implementation ramps toward 2027 deadlines.",
+              "strategic_implication": "Plans and providers in affected states should model eligibility churn, increased coverage verification needs, and potential bad-debt/charity care pressure. Compliance and Medicaid operations teams should track state-specific timelines and exemption definitions as litigation and guidance evolve.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "coverage",
+                "state-policy",
+                "compliance",
+                "eligibility"
+              ]
+            },
+            {
+              "item_id": "2026-07-01-no-surprises-act-idr-final-rule",
+              "canonical_topic": "no-surprises-act-idr",
+              "duplicate_group": "no-surprises-act-idr",
+              "priority_score": 7,
+              "primary_source": "Reuters Practical Law",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Reuters Practical Law",
+                  "url": "https://www.reuters.com/practical-law-the-journal/litigation/no-surprises-act-idr-updates-providers-facilities-2026-07-01/",
+                  "source_type": "web",
+                  "published_at": "2026-07-01T04:16:00"
+                }
+              ],
+              "title": "No Surprises Act IDR updates tighten portal-based negotiation workflow ahead of Aug. 3 effective date",
+              "summary": "A June 2026 final rule updates the federal independent dispute resolution (IDR) process, including making the federal IDR portal the required platform for open negotiation and related notices. The rule also updates timelines for responses, batching limits (raising the cap), and allows certified IDR entities to request additional information during disputes. Most provisions are effective Aug. 3, 2026, with some fee changes already in effect for disputes initiated on or after June 11.",
+              "strategic_implication": "Revenue-cycle and contracting teams should update internal playbooks and vendor workflows to ensure portal-based notices, deadlines, and batching rules are met to avoid forfeiting leverage or having disputes treated as withdrawn. This is also a prompt to refresh payer-remittance analytics and dispute triage capacity.",
+              "confidence": "medium",
+              "tags": [
+                "payment-policy",
+                "surprise-billing",
+                "revenue-cycle",
+                "payer-provider",
+                "compliance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Agentic AI is moving from pilots to operational instrumentation, while frontier AI firms expand deeper into life-sciences tooling and preclinical programs.",
+          "items": [
+            {
+              "item_id": "2026-07-01-anthropic-claude-science-drug-programs",
+              "canonical_topic": "anthropic-claude-science",
+              "duplicate_group": "anthropic-claude-science",
+              "priority_score": 6,
+              "primary_source": "Reuters",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/science/anthropic-unveils-claude-science-ai-platform-scientific-research-2026-06-30/",
+                  "source_type": "web",
+                  "published_at": "2026-06-30T17:02:51"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/06/30/anthropic-ai-drug-development/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-06-30T22:48:28+00:00"
+                }
+              ],
+              "title": "Anthropic launches Claude Science workbench and says it is starting preclinical drug programs",
+              "summary": "Anthropic launched Claude Science, a research workbench designed to help scientists combine literature analysis, coding tools, compute, and workflows in one workspace. Reuters reports it is preconfigured with dozens of scientific databases and can render research artifacts like protein structures and chemistry drawings. The company also said it is launching its own preclinical drug programs focused on neglected diseases.",
+              "strategic_implication": "Life sciences and health-tech leaders should expect faster commercialization of AI-enabled R&D workflows and more competition for scarce data/compute talent. Health systems partnering with AI vendors should evaluate governance, provenance, and validation requirements as tooling becomes more end-to-end.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "life-sciences",
+                "drug-discovery",
+                "research-workflows",
+                "governance"
+              ]
+            },
+            {
+              "item_id": "2026-07-01-hyro-care-intelligence-access-signals",
+              "canonical_topic": "agentic-ai-access-analytics",
+              "duplicate_group": "agentic-ai-access-analytics",
+              "priority_score": 5,
+              "primary_source": "PR Newswire",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "PR Newswire",
+                  "url": "https://www.prnewswire.com/news-releases/with-launch-of-care-intelligence-hyro-becomes-the-first-to-turn-millions-of-ai-agent-conversations-into-patient-access-signals-302813929.html",
+                  "source_type": "web",
+                  "published_at": "2026-06-30T12:00:41"
+                }
+              ],
+              "title": "Hyro launches 'Care Intelligence' to convert AI-agent conversations into patient access signals",
+              "summary": "Hyro announced Care Intelligence, an analytics and agentic intelligence layer intended to convert AI-agent interactions into operational insights for patient access and contact-center performance. The company positions the product as a way to benchmark and optimize access workflows, surfacing issues like scheduling breakdowns, routing accuracy, and demand shifts. The release cites benchmarking built from large-scale interaction data and references health system customers measuring improvements in wait times and abandonment.",
+              "strategic_implication": "As conversational AI scales, executives should treat interaction telemetry as a leading indicator for demand management and leakage, but align it with EHR and scheduling data to avoid optimizing to proxy metrics. Governance should define who owns access KPIs, escalation thresholds, and when automation is allowed to close loops.",
+              "confidence": "low",
+              "tags": [
+                "patient-access",
+                "contact-center",
+                "agentic-ai",
+                "analytics",
+                "operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "PBM consolidation and policy-driven affordability pressure continue to reshape pharmacy economics and contracting leverage.",
+          "items": [
+            {
+              "item_id": "2026-07-01-lucyrx-abarca-pbm-combination",
+              "canonical_topic": "pbm-consolidation",
+              "duplicate_group": "pbm-consolidation",
+              "priority_score": 6,
+              "primary_source": "Mintz",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Mintz",
+                  "url": "https://www.mintz.com/insights-center/news-press/mintz-represents-lucyrx-strategic-combination-abarca-health",
+                  "source_type": "web",
+                  "published_at": "2026-06-25"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/pbm-industry-shifts-lucyrx-and-abarca-health-merge-build-scale",
+                  "source_type": "rss",
+                  "published_at": "2026-06-30"
+                }
+              ],
+              "title": "LucyRx and Abarca Health combine to build a scaled independent PBM amid tightening PBM oversight",
+              "summary": "LucyRx and Abarca Health announced a strategic combination aimed at forming a scaled, independent PBM serving commercial and government clients. Mintz notes the combined platform is positioned around transparency, flexibility, and affordability, with the combined organization serving more than 9 million members. The deal reflects ongoing pharmacy-benefit reshuffling as plan sponsors look for alternatives to the largest PBMs.",
+              "strategic_implication": "Payers and large employers should reassess PBM competitive dynamics and contracting leverage, including pass-through pricing, rebate transparency, and specialty pharmacy strategy. Providers should anticipate shifts in formulary/PA rules and be ready for transition friction that affects access and adherence.",
+              "confidence": "medium",
+              "tags": [
+                "pbm",
+                "pharmacy",
+                "drug-pricing",
+                "payer-strategy",
+                "contracts"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operators are getting clearer signals on corporate-practice risk and governance expectations for retail/venture-backed care models.",
+          "items": [
+            {
+              "item_id": "2026-07-01-carbon-health-california-settlement",
+              "canonical_topic": "corporate-practice-of-medicine",
+              "duplicate_group": "corporate-practice-of-medicine",
+              "priority_score": 7,
+              "primary_source": "California Department of Justice",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "California DOJ",
+                  "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-first-its-kind-settlement-carbon-health-and-its",
+                  "source_type": "web",
+                  "published_at": "2026-06-26"
+                }
+              ],
+              "title": "California AG settlement forces Carbon Health restructuring and $4.4M penalty over corporate practice of medicine",
+              "summary": "California’s attorney general announced a settlement with Carbon Health requiring significant changes to corporate structure and business practices to address alleged violations of the state’s corporate practice of medicine restrictions. The release describes requirements to revise arrangements so physician-owned practices maintain independent control over clinical decisions, along with changes tied to advertising, patient contracts, and billing practices. The settlement includes a $4.4 million payment by Carbon Health and $100,000 by its co-founder/former CEO, subject to court approval.",
+              "strategic_implication": "Health systems partnering with retail/venture-backed clinics should revisit MSO agreements, governance, and clinical independence provisions to reduce enforcement risk. Multi-state operators should map corporate-practice exposure state-by-state and ensure marketing and billing controls match the most restrictive jurisdictions.",
+              "confidence": "high",
+              "tags": [
+                "provider-operations",
+                "compliance",
+                "care-delivery-models",
+                "billing",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-06-30",
       "generated_at": "2026-06-30T11:06:49Z",
       "headline": "Today's Healthcare Insights",
@@ -11072,5 +11312,5 @@
       ]
     }
   ],
-  "last_updated": "2026-06-30T11:06:49Z"
+  "last_updated": "2026-07-01T11:02:19Z"
 }

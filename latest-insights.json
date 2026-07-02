@@ -3,6 +3,315 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-02",
+      "generated_at": "2026-07-02T17:53:29Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s signal set was dominated by Medicare payment policy (including a proposed 2027 rule touching 340B and site-neutral policies) and the operational ripple effects of coverage and interoperability changes, with additional market signals in provider consolidation and drug-pricing litigation.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (CMS/HHS/FDA, payers/providers, digital health, workforce)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Web search (CMS/HHS/FDA, payers/providers, digital health, workforce)"
+        ],
+        "sources_failed": [
+          "Fierce Healthcare RSS (no parseable items)"
+        ],
+        "run_notes": "RSS feeds were used where available; Fierce Healthcare feed returned no parseable items in this run. Web search filled remaining gaps for policy and market developments."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal payment policy and drug-pricing regulation were the main drivers today, with Medicare outpatient payment changes and state-level affordability efforts facing court scrutiny.",
+          "items": [
+            {
+              "item_id": "2026-07-02-medicare-opps-340b-site-neutral-proposed",
+              "canonical_topic": "medicare-opps-340b-site-neutral",
+              "duplicate_group": "medicare-opps-340b-site-neutral",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medicare-slashes-340b-payments-broadens-site-neutral-policies-proposed-2027-payment-rule/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T09:14:31-04:00"
+                },
+                {
+                  "source": "Chicago Tribune (AP)",
+                  "url": "https://www.chicagotribune.com/2026/07/02/trump-medicare-proposed-rule/",
+                  "source_type": "web",
+                  "published_at": "2026-07-02"
+                }
+              ],
+              "title": "Medicare proposes 2027 payment shifts: reduced 340B drug reimbursement and broader site-neutral policies",
+              "summary": "CMS released a proposed 2027 payment rule that would reduce Medicare reimbursement tied to 340B-discounted drugs and expand site-neutral payment policies in outpatient settings. The stated intent is to curb beneficiary cost-sharing and narrow payment differentials across sites of care, but hospitals participating in 340B are likely to argue the changes reduce resources for safety-net services. Comments and stakeholder positioning will matter because the proposal intersects with broader 340B reform debates and ongoing budget pressure on outpatient reimbursement.",
+              "strategic_implication": "Health systems should model margin exposure by service line and site-of-care, and prepare a dual-track strategy: policy advocacy plus operational shifts that reduce reliance on spread pricing for outpatient Part B drugs.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "340b",
+                "site-neutral",
+                "opps",
+                "drug-pricing"
+              ]
+            },
+            {
+              "item_id": "2026-07-02-amgen-enbrel-colorado-price-cap-blocked",
+              "canonical_topic": "state-drug-price-caps-litigation",
+              "duplicate_group": "state-drug-price-caps-litigation",
+              "priority_score": 7,
+              "primary_source": "The Colorado Sun",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "The Colorado Sun",
+                  "url": "https://coloradosun.com/2026/07/02/pdab-enbrel-price-cap-injunction/",
+                  "source_type": "web",
+                  "published_at": "2026-07-02T13:52:29"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/legal/litigation/judge-blocks-colorados-first-of-its-kind-price-cap-amgens-enbrel-2026-07-01/",
+                  "source_type": "web",
+                  "published_at": "2026-07-01T20:52:29"
+                }
+              ],
+              "title": "Federal judge blocks Colorado’s first-in-nation upper payment limit on Amgen’s Enbrel",
+              "summary": "A federal judge issued a preliminary injunction preventing Colorado from enforcing an upper payment limit on Amgen’s Enbrel, pausing a high-profile test of state authority to cap prices on patented drugs. The decision is an early signal that state affordability boards may face significant federal preemption risk when attempting direct price caps on patent-protected products. The outcome will influence how states design affordability interventions and how manufacturers respond to future board actions.",
+              "strategic_implication": "Payers, employers, and state policymakers should expect slower progress on direct price-cap strategies and greater emphasis on alternative levers (rebates, coverage design, and transparency) that are less exposed to patent-law preemption arguments.",
+              "confidence": "high",
+              "tags": [
+                "drug-pricing",
+                "litigation",
+                "state-policy",
+                "biopharma",
+                "affordability"
+              ]
+            },
+            {
+              "item_id": "2026-07-02-medicare-adv-quality-bonus-13b",
+              "canonical_topic": "medicare-advantage-quality-bonus",
+              "duplicate_group": "medicare-advantage-quality-bonus",
+              "priority_score": 6,
+              "primary_source": "KFF",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/medicare/medicare-will-spend-more-than-13-billion-on-the-medicare-advantage-quality-bonus-program-in-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-07-01T17:52:20"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medicare-advantage-bonuses-will-exceed-13b-this-year-kff-finds/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T09:07:09-04:00"
+                }
+              ],
+              "title": "KFF estimates Medicare Advantage quality bonus payments will exceed $13B in 2026",
+              "summary": "KFF reported that Medicare will spend more than $13 billion on Medicare Advantage quality bonus payments in 2026, underscoring the size of the Star Ratings incentive pool. The analysis highlights persistent questions about whether bonus payments meaningfully differentiate plan quality and how policy changes to Star Ratings could reshape incentives. The numbers also add context to ongoing debates about Medicare Advantage payment adequacy and risk-adjustment reform.",
+              "strategic_implication": "Plans and payer-facing providers should treat Stars as both a revenue lever and a strategic risk: shifts to measure sets or scoring can quickly change bonus economics and the affordability of richer benefits used to compete for enrollment.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "star-ratings",
+                "payment-policy",
+                "quality",
+                "cms"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Interoperability enforcement and outcomes-based payment experiments continue to shape where digital health and AI investments can generate near-term ROI.",
+          "items": [
+            {
+              "item_id": "2026-07-02-onc-hio-info-blocking-down",
+              "canonical_topic": "information-blocking-interoperability",
+              "duplicate_group": "information-blocking-interoperability",
+              "priority_score": 6,
+              "primary_source": "ONC (healthit.gov)",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/fewer-health-information-exchanges-say-they-experience-information-blocking/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T12:32:00-04:00"
+                },
+                {
+                  "source": "ONC Data Brief",
+                  "url": "https://healthit.gov/data/data-briefs/trends-in-health-information-organizations-experiences-of-perceived-information-blocking-2019-2025/",
+                  "source_type": "web",
+                  "published_at": "2026-06-26T17:52:26"
+                }
+              ],
+              "title": "ONC data brief: fewer health information exchanges report perceived information blocking (2019–2025 trend)",
+              "summary": "New ONC survey results indicate perceived information blocking among health information organizations has declined since 2019, though it remains common and continues to be reported across vendors and provider organizations. The trend suggests compliance pressure and interoperability initiatives are moving the needle, but also that friction points persist for organizations relying on exchange infrastructure. Reduced blocking risk can improve the feasibility of cross-provider workflows, patient access tools, and downstream analytics use cases.",
+              "strategic_implication": "Provider and payer organizations should revisit interoperability roadmaps and vendor contracting language: as exchange barriers decline, competitive differentiation shifts from “can we get the data” to “can we operationalize it safely and at scale” (care coordination, quality, and utilization management).",
+              "confidence": "high",
+              "tags": [
+                "interoperability",
+                "information-blocking",
+                "onc",
+                "hie",
+                "data-sharing"
+              ]
+            },
+            {
+              "item_id": "2026-07-02-cms-access-outcomes-model",
+              "canonical_topic": "cms-access-payment-model",
+              "duplicate_group": "cms-access-payment-model",
+              "priority_score": 5,
+              "primary_source": "Axios",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Axios",
+                  "url": "https://www.axios.com/2026/07/02/medicares-health-tech-spending-test",
+                  "source_type": "web",
+                  "published_at": "2026-07-02"
+                }
+              ],
+              "title": "CMS outcomes-based payment pilot spotlights health tech ROI expectations",
+              "summary": "Axios reported on CMS launching the ACCESS payment model, an outcomes-based approach that tests whether health tech-enabled care can lower costs while improving measurable clinical outcomes for chronic conditions. The design signals increasing payer scrutiny on whether digital tools translate into quantifiable improvement rather than process metrics. Participation levels and performance benchmarks will shape the near-term market for vendors positioned around outcomes measurement and care enablement.",
+              "strategic_implication": "Digital health vendors and provider partners should tighten evidence strategies (baseline, counterfactual, and measurable endpoints) and align contracts to the same outcomes CMS uses—because reimbursement is increasingly tied to demonstrable clinical impact.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "value-based-care",
+                "cms",
+                "outcomes",
+                "ai"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Policy-driven economics (MA bonus pools, outpatient reimbursement) and continued provider consolidation remain key market signals for 2026 planning.",
+          "items": [
+            {
+              "item_id": "2026-07-02-ahn-heritage-valley-merger-final",
+              "canonical_topic": "provider-consolidation-merger",
+              "duplicate_group": "provider-consolidation-merger",
+              "priority_score": 6,
+              "primary_source": "TribLive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/allegheny-health-network-heritage-valley-finalize-combination/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T10:47:30-04:00"
+                },
+                {
+                  "source": "TribLive",
+                  "url": "https://triblive.com/local/regional/allegheny-health-network-heritage-valley-health-system-finalize-merger/",
+                  "source_type": "web",
+                  "published_at": "2026-07-01T20:52:23"
+                }
+              ],
+              "title": "Allegheny Health Network finalizes combination with Heritage Valley, expanding Western PA footprint",
+              "summary": "Allegheny Health Network announced its combination with Heritage Valley Health System is finalized, adding Heritage Valley hospitals and outpatient sites into AHN’s regional network. The deal reflects continued consolidation among mid-sized systems seeking scale, capital access, and technology modernization (including EHR integration). Regional market impacts can include shifts in payer contracting leverage, referral patterns, and service line rationalization.",
+              "strategic_implication": "Competitors and payers in the region should anticipate contracting and network-adequacy changes during integration; for systems, this is another reminder that “integration readiness” (EHR, revenue cycle, and clinical ops standardization) is a prerequisite to value from M&A.",
+              "confidence": "medium",
+              "tags": [
+                "provider-ma",
+                "health-system",
+                "consolidation",
+                "pennsylvania",
+                "strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider leaders face near-term operational decisions tied to drug spend, reimbursement changes, and integration workstreams rather than discretionary growth initiatives.",
+          "items": [
+            {
+              "item_id": "2026-07-02-medicare-glp1-bridge-rollout",
+              "canonical_topic": "medicare-glp1-bridge",
+              "duplicate_group": "medicare-glp1-bridge",
+              "priority_score": 6,
+              "primary_source": "Los Angeles Times",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Los Angeles Times",
+                  "url": "https://www.latimes.com/world-nation/story/2026-07-01/medicare-is-now-covering-some-glp-1-weight-loss-drugs-for-50-heres-what-to-know",
+                  "source_type": "web",
+                  "published_at": "2026-07-01"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medicare-glp1-bridge-four-million-eligible-kff/824126/",
+                  "source_type": "web",
+                  "published_at": "2026-07-01T17:52:20"
+                }
+              ],
+              "title": "Medicare GLP-1 Bridge rollout triggers operational questions on eligibility, prior auth, and patient navigation",
+              "summary": "Coverage for select GLP-1 obesity drugs under the Medicare GLP-1 Bridge demonstration began July 1, creating immediate workflow needs for providers and pharmacies around eligibility verification and prior authorization. Analyses suggest millions of beneficiaries could qualify, implying meaningful demand for clinical capacity, documentation, and patient support. The program’s structure (outside typical Part D flows) increases the risk of confusion for patients and front-line staff during the initial rollout period.",
+              "strategic_implication": "Providers should proactively standardize intake, documentation, and patient education to avoid administrative churn; payers and retailers will likely compete to own navigation and adherence support as demand expands.",
+              "confidence": "medium",
+              "tags": [
+                "glp-1",
+                "medicare",
+                "prior-authorization",
+                "patient-access",
+                "obesity-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Labor actions and supply constraints continue to surface as practical delivery risks for health systems, especially where staffing and access are already tight.",
+          "items": [
+            {
+              "item_id": "2026-07-02-umass-nurses-strike-vote",
+              "canonical_topic": "nursing-labor-action",
+              "duplicate_group": "nursing-labor-action",
+              "priority_score": 5,
+              "primary_source": "The Boston Globe",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "The Boston Globe",
+                  "url": "https://www.bostonglobe.com/2026/07/02/business/umass-memorial-nurse-strike/",
+                  "source_type": "web",
+                  "published_at": "2026-07-02"
+                }
+              ],
+              "title": "UMass Memorial nurses authorize two-week strike amid staffing and safety concerns",
+              "summary": "Nurses at UMass Memorial Medical Center’s University Campus authorized a 14-day strike as contract talks continued, citing staffing shortages and workplace safety. The action adds to broader labor pressure in the sector and creates near-term continuity-of-operations risk for affected facilities. Even when strikes are averted, the negotiations often result in higher labor costs and escalation of staffing commitments.",
+              "strategic_implication": "Health systems should treat labor actions as both an operational risk and a leading indicator for wage and staffing expectations in their markets; contingency planning and retention strategies remain critical levers as reimbursement pressure persists.",
+              "confidence": "medium",
+              "tags": [
+                "nursing",
+                "workforce",
+                "labor",
+                "staffing",
+                "hospital-operations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-01",
       "generated_at": "2026-07-01T11:02:19Z",
       "headline": "Today's Healthcare Insights",
@@ -11312,5 +11621,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-01T11:02:19Z"
+  "last_updated": "2026-07-02T17:53:29Z"
 }

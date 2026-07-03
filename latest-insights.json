@@ -3,6 +3,313 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-03",
+      "generated_at": "2026-07-03T18:39:19Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing centers on Medicare payment and program-integrity actions, payer program moves, and consolidation/interoperability signals. Sources included Healthcare Dive, STAT, Fierce Healthcare, CMS announcements, and select wire/first-party releases.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (CMS/HHS/FDA, payers/providers, digital health, workforce)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (CMS/HHS/FDA, payers/providers, digital health, workforce)"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds provided the core story set; web search was used to confirm/triangulate primary announcements and add select wire/first-party context."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Medicare payment policy and program-integrity actions were the main policy drivers, with spillovers into 340B economics and home health enrollment controls.",
+          "items": [
+            {
+              "item_id": "2026-07-03-cms-opps-340b-site-neutral-proposed-2027",
+              "canonical_topic": "cms-opps-340b-site-neutral",
+              "duplicate_group": "cms-opps-340b-site-neutral",
+              "priority_score": 10,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/regulators-propose-slashing-340b-payments-broadening-site-neutral-policies-2027/824312/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T09:14:31-04:00"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/02/medicare-hospital-payment-340b-drugs-cut/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T19:52:19+00:00"
+                }
+              ],
+              "title": "CMS proposes OPPS/ASC changes for 2027: deeper 340B payment cuts and broader site-neutral policies",
+              "summary": "CMS released a proposed 2027 OPPS/ASC rule that would reduce Medicare reimbursement for certain drugs acquired via the 340B program and expand site-neutral payment policies for select outpatient services. Hospitals argue the changes would materially reduce safety-net cross-subsidies, while CMS frames the proposal as affordability and payment-alignment. The comment process now becomes a key battleground for hospital finance and outpatient strategy.",
+              "strategic_implication": "Health systems should model service-line exposure (340B margin, imaging/outpatient mix) and pre-position advocacy and operational changes before 2027 finalization. Payers and ambulatory competitors may use the proposal to accelerate site-of-care shifts and contracting pressure.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "340b",
+                "site-neutral",
+                "opps",
+                "hospital-finance"
+              ]
+            },
+            {
+              "item_id": "2026-07-03-cms-home-health-program-integrity-proposed",
+              "canonical_topic": "home-health-program-integrity",
+              "duplicate_group": "home-health-program-integrity",
+              "priority_score": 7,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-proposes-updates-strengthen-medicare-program-integrity-combat-fraud-expand-access-home-health",
+                  "source_type": "web",
+                  "published_at": "2026-07-01T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-mulls-tougher-medicare-enrollment-rules-combat-fraud-part-2027-home-health-payment",
+                  "source_type": "rss",
+                  "published_at": "2026-07-01T17:15:00Z"
+                }
+              ],
+              "title": "CMS proposes tougher enrollment and integrity controls tied to 2027 home health updates",
+              "summary": "CMS outlined proposed updates aimed at strengthening Medicare program integrity and reducing fraud, paired with home health payment policy for 2027. The proposals signal increased scrutiny of enrollment pathways and compliance expectations for home health providers. Operators should anticipate tighter documentation, screening, and oversight requirements.",
+              "strategic_implication": "Home health agencies should assess enrollment/compliance readiness and proactively harden audit trails, as integrity initiatives can quickly translate into claim denials and cash-flow disruption. Health systems and MA plans relying on home health capacity may need contingency plans if smaller agencies struggle to comply.",
+              "confidence": "medium",
+              "tags": [
+                "home-health",
+                "medicare",
+                "program-integrity",
+                "fraud",
+                "enrollment"
+              ]
+            },
+            {
+              "item_id": "2026-07-03-court-blocks-colorado-enbrel-price-cap",
+              "canonical_topic": "drug-pricing-state-pdab",
+              "duplicate_group": "drug-pricing-state-pdab",
+              "priority_score": 6,
+              "primary_source": "Reuters",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/legal/litigation/judge-blocks-colorados-first-of-its-kind-price-cap-amgens-enbrel-2026-07-01/",
+                  "source_type": "web",
+                  "published_at": "2026-07-01T00:00:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/pharmalot/2026/07/02/judge-blocks-colorado-price-cap-on-amgen-enbrel/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T12:54:40+00:00"
+                }
+              ],
+              "title": "Judge blocks Colorado’s first-of-its-kind price cap on Amgen’s Enbrel",
+              "summary": "A federal judge blocked Colorado’s attempt to impose a price cap on Amgen’s Enbrel, pausing one of the most aggressive state-level drug affordability interventions. The case will be closely watched by other states considering similar prescription drug affordability board (PDAB) actions. Manufacturers and payers are likely to treat the ruling as a bellwether for the durability of state price-setting mechanisms.",
+              "strategic_implication": "Life sciences and payer leaders should scenario-plan for a patchwork of state affordability policies while monitoring litigation risk and implementation timelines. Providers may face shifting formulary and patient-assistance dynamics depending on how state efforts proceed.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "pdab",
+                "litigation",
+                "state-policy",
+                "biopharma"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Interoperability and automation themes continued, spanning information-blocking signals and payer administrative workflow modernization.",
+          "items": [
+            {
+              "item_id": "2026-07-03-onc-information-blocking-hie-survey",
+              "canonical_topic": "information-blocking-hie",
+              "duplicate_group": "information-blocking-hie",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/fewer-health-information-exchanges-information-blocking-onc/824257/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T12:32:00-04:00"
+                }
+              ],
+              "title": "ONC survey: fewer health information exchanges report experiencing information blocking",
+              "summary": "A new ONC-linked survey covered by Healthcare Dive found a smaller share of health information exchanges reporting information-blocking experiences. The results suggest incremental progress in data-sharing norms, though measurement and enforcement dynamics continue to evolve. For providers and payers, the operational question remains whether friction is truly falling across referral, prior auth, and care coordination workflows.",
+              "strategic_implication": "Organizations should treat the finding as a prompt to quantify their own exchange friction (time-to-record, failed queries, prior-auth delays) and align vendor and partner SLAs accordingly. Interoperability improvements can translate into measurable throughput and denials reduction if actively managed.",
+              "confidence": "medium",
+              "tags": [
+                "interoperability",
+                "information-blocking",
+                "onc",
+                "hie",
+                "health-it"
+              ]
+            },
+            {
+              "item_id": "2026-07-03-zelis-ai-no-surprises-act-idr",
+              "canonical_topic": "no-surprises-act-idr-automation",
+              "duplicate_group": "no-surprises-act-idr-automation",
+              "priority_score": 5,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/06/zelis-unveils-solution-to-tackle-payer-idr-challenges/",
+                  "source_type": "web",
+                  "published_at": "2026-06-30T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/zelis-rolls-out-ai-solution-tackle-payer-no-surprises-act-disputes",
+                  "source_type": "rss",
+                  "published_at": "2026-07-01T11:39:00Z"
+                }
+              ],
+              "title": "Zelis launches AI-enabled workflow to manage No Surprises Act IDR volume and compliance",
+              "summary": "Zelis introduced an AI-enabled solution aimed at helping payers manage the Independent Dispute Resolution (IDR) process under the No Surprises Act, emphasizing automation of intake, eligibility triage, and brief preparation. The timing aligns with recent federal rule changes intended to streamline IDR operations. The core value proposition is lower administrative cost and fewer missed-deadline losses as dispute volumes remain high.",
+              "strategic_implication": "Payers should benchmark IDR throughput, win rates, and administrative cost per case, then evaluate whether automation meaningfully changes settlement strategy and outcomes. Providers should expect more consistent payer posture and potentially faster dispute timelines as tooling matures.",
+              "confidence": "medium",
+              "tags": [
+                "no-surprises-act",
+                "idr",
+                "payers",
+                "automation",
+                "ai"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payer and life-sciences moves underscored tightening economics (Stars/bonuses, drug pricing oversight) while investors watch operating leverage in services and specialty pharmacy.",
+          "items": [
+            {
+              "item_id": "2026-07-03-elevance-sues-cms-ma-stars-recalculation",
+              "canonical_topic": "medicare-advantage-stars-litigation",
+              "duplicate_group": "medicare-advantage-stars-litigation",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/elevance-sues-cms-medicare-advantage-stars-recalculation/824411/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T14:46:25-04:00"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/02/elevance-lawsuit-medicare-advantage-star-ratings-clover/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T18:34:05+00:00"
+                }
+              ],
+              "title": "Elevance sues CMS over Medicare Advantage star ratings recalculation methodology",
+              "summary": "Elevance filed suit challenging how CMS recalculated 2026 Medicare Advantage Star Ratings after litigation forced revisions to certain measures. The dispute highlights how methodology changes can alter quality bonus payments and competitive positioning across plans. More volatility around Stars could raise uncertainty for bids, benefit design, and provider incentive programs.",
+              "strategic_implication": "Plans should stress-test revenue and membership sensitivity to Stars volatility and revisit quality investment ROI under shifting measure sets. Provider partners may see more aggressive quality-contract renegotiations as plans protect bonus-linked margin.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "star-ratings",
+                "cms",
+                "litigation",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-07-03-evernorth-pharmacy-forward-ai-specialty-pharmacy",
+              "canonical_topic": "specialty-pharmacy-ai",
+              "duplicate_group": "specialty-pharmacy-ai",
+              "priority_score": 6,
+              "primary_source": "Reuters",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/legal/litigation/cigna-invests-100-million-new-ai-powered-specialty-pharmacy-program-2026-07-01/",
+                  "source_type": "web",
+                  "published_at": "2026-07-01T00:00:00Z"
+                },
+                {
+                  "source": "Evernorth",
+                  "url": "https://www.evernorth.com/article/evernorth-launches-pharmacy-forward",
+                  "source_type": "web",
+                  "published_at": "2026-06-30T00:00:00Z"
+                }
+              ],
+              "title": "Evernorth launches Pharmacy Forward with AI focus as specialty pharmacy competition intensifies",
+              "summary": "Evernorth announced Pharmacy Forward, positioning it as a streamlined specialty pharmacy experience and highlighting technology/AI-enabled support for patients on complex therapies. Reuters also reported related investment framing, underscoring continued spend and competition in specialty pharmacy management. Specialty drug growth keeps this segment strategically central for payers and PBMs.",
+              "strategic_implication": "Payers should assess whether new specialty pharmacy models improve adherence and total cost of care enough to justify operational transition costs and potential network friction. Providers and manufacturers may see tighter integration of clinical services, utilization management, and patient engagement under payer-owned specialty channels.",
+              "confidence": "medium",
+              "tags": [
+                "specialty-pharmacy",
+                "pbm",
+                "ai",
+                "payers",
+                "pharmacy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider strategy was shaped by consolidation and reimbursement risk management, with systems positioning for site-of-care and outpatient payment shifts.",
+          "items": [
+            {
+              "item_id": "2026-07-03-ahn-heritage-valley-combination-final",
+              "canonical_topic": "provider-consolidation-pennsylvania",
+              "duplicate_group": "provider-consolidation-pennsylvania",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/allegheny-health-network-heritage-valley-health-system-merger-pennsylvania/824343/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T10:47:30-04:00"
+                }
+              ],
+              "title": "Allegheny Health Network and Heritage Valley finalize combination in Pennsylvania",
+              "summary": "Allegheny Health Network and Heritage Valley finalized their combination, continuing the consolidation trend among regional systems. The deal reflects ongoing scale-seeking behavior amid reimbursement pressure and capital needs. Local market effects could include service rationalization, referral pattern shifts, and payer contracting changes.",
+              "strategic_implication": "Competitor systems should monitor downstream volume migration and contracting leverage effects. Payers should reassess network adequacy and rate-setting assumptions if system concentration increases in key service areas.",
+              "confidence": "medium",
+              "tags": [
+                "provider-consolidation",
+                "m-a",
+                "hospitals",
+                "pennsylvania",
+                "network"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-02",
       "generated_at": "2026-07-02T17:53:29Z",
       "headline": "Today's Healthcare Insights",
@@ -11621,5 +11928,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-02T17:53:29Z"
+  "last_updated": "2026-07-03T18:39:19Z"
 }

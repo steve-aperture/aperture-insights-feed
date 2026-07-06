@@ -3,6 +3,229 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-06",
+      "generated_at": "2026-07-06T11:08:43Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing highlights Medicare program mechanics (Stars and GLP-1 access), interoperability enforcement signals, and consolidation activity. Sources included STAT, Healthcare Dive, Fierce Healthcare, CMS materials, CNBC, and KFF.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (CMS/HHS/FDA, payers/providers, digital health, workforce)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (CMS/HHS/FDA, payers/providers, digital health, workforce)"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds were used to identify candidate stories; web search was used to add first-party context (CMS) and analytical framing (KFF/CNBC)."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Medicare program mechanics dominated, with Stars-related litigation and GLP-1 access policy driving payer and pharmacy workflows.",
+          "items": [
+            {
+              "item_id": "2026-07-06-elevance-sues-cms-ma-star-ratings",
+              "canonical_topic": "elevance-ma-star-ratings-lawsuit",
+              "duplicate_group": "elevance-ma-star-ratings-lawsuit",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/02/elevance-lawsuit-medicare-advantage-star-ratings-clover/",
+                  "source_type": "web",
+                  "published_at": "2026-07-02T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/elevance-sues-cms-medicare-advantage-stars-recalculation/824411/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T18:46:25Z"
+                }
+              ],
+              "title": "Elevance sues CMS over Medicare Advantage star ratings recalculation",
+              "summary": "Elevance Health filed suit against the federal government challenging CMS' approach to recalculating Medicare Advantage star ratings, arguing the agency's fixes did not align with a recent court ruling. The dispute highlights growing legal pressure around Stars methodology, with potential impacts on quality bonus payments and bid recalculations. Leaders should expect continued volatility in Stars-related revenue assumptions and administrative workload.",
+              "strategic_implication": "Plans should stress-test 2027 revenue scenarios under multiple Stars outcomes and tighten governance for bid resubmission and quality-measure documentation. Providers partnering with MA plans should anticipate more conservative utilization management and network pricing posture if quality bonus uncertainty persists.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "star-ratings",
+                "payer-strategy",
+                "litigation"
+              ]
+            },
+            {
+              "item_id": "2026-07-06-cms-glp1-bridge-program-live",
+              "canonical_topic": "cms-glp1-bridge-program",
+              "duplicate_group": "cms-glp1-bridge-program",
+              "priority_score": 9,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CNBC",
+                  "url": "https://www.cnbc.com/2026/06/30/medicare-obesity-drug-glp-1-coverage-starting-july-1.html",
+                  "source_type": "web",
+                  "published_at": "2026-06-30T00:00:00Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/medicare/coverage/prescription-drug-coverage/medicare-glp-1-bridge/information-providers",
+                  "source_type": "web",
+                  "published_at": "2026-07-01T00:00:00Z"
+                }
+              ],
+              "title": "CMS GLP-1 Bridge model goes live, reshaping access and workflow for obesity drugs",
+              "summary": "CMS launched the Medicare GLP-1 Bridge model, enabling eligible Part D beneficiaries to access specified GLP-1 obesity medications with a flat copay and a separate approval workflow. The model changes who adjudicates eligibility and how prior authorization is routed, creating operational implications for prescribers, pharmacies, and plans. Stakeholders should monitor demand and supply dynamics, as well as downstream medical-cost offsets and adherence patterns.",
+              "strategic_implication": "Health systems should rapidly standardize Bridge eligibility and prior-authorization workflows to avoid patient leakage and administrative friction. Payers and PBMs should prepare for utilization shifts and member inquiries, while forecasting potential spillover effects on traditional Part D management and supplemental benefits.",
+              "confidence": "medium",
+              "tags": [
+                "glp-1",
+                "medicare-part-d",
+                "drug-pricing",
+                "prior-authorization"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Interoperability and core health IT vendor dynamics were the key digital signals, with compliance and platform risk both in focus.",
+          "items": [
+            {
+              "item_id": "2026-07-06-oncs-hie-info-blocking-trend",
+              "canonical_topic": "oncs-information-blocking-hie-survey",
+              "duplicate_group": "oncs-information-blocking-hie-survey",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/fewer-health-information-exchanges-information-blocking-onc/824257/",
+                  "source_type": "web",
+                  "published_at": "2026-07-02T00:00:00Z"
+                }
+              ],
+              "title": "ONC analysis: fewer HIEs report information blocking, but a smaller set of repeat actors persists",
+              "summary": "An ONC-related analysis reported that the share of health information exchanges experiencing potential information blocking has declined since 2019, though a meaningful minority still sees routine issues. The findings suggest progress in broad compliance, alongside concentrated repeat behaviors that may attract enforcement attention. Developers and large systems remain focal points for monitoring and remediation.",
+              "strategic_implication": "Provider and payer CIOs should treat information-blocking risk as an ongoing compliance and contracting issue, with explicit data-sharing SLAs and escalation paths. Vendors should harden audit trails and pricing transparency to reduce exposure as enforcement capacity increases.",
+              "confidence": "high",
+              "tags": [
+                "interoperability",
+                "information-blocking",
+                "onc",
+                "health-it"
+              ]
+            },
+            {
+              "item_id": "2026-07-06-epic-leadership-changes-sumit-rana",
+              "canonical_topic": "epic-leadership-changes",
+              "duplicate_group": "epic-leadership-changes",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/epic-preps-leadership-changes-president-sumit-rana-plans-step-away",
+                  "source_type": "rss",
+                  "published_at": "2026-07-05T20:38:00Z"
+                }
+              ],
+              "title": "Epic prepares leadership changes as president Sumit Rana plans to step away",
+              "summary": "Fierce Healthcare reported that Epic is preparing leadership changes, including plans for president Sumit Rana to step away. While customer roadmaps may not change immediately, leadership transitions at core EHR vendors can influence prioritization, partner ecosystems, and sales engagement. Health systems should watch for near-term impacts on implementation support, interoperability initiatives, and product strategy.",
+              "strategic_implication": "CIOs should confirm executive sponsorship and account-team continuity for in-flight Epic programs, especially major upgrades and interoperability workstreams. Digital leaders should also reassess vendor concentration risk and ensure contingency planning for critical platform dependencies.",
+              "confidence": "medium",
+              "tags": [
+                "ehr",
+                "epic",
+                "vendor-strategy",
+                "digital-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Quality bonus economics remain a major market signal for MA strategy as Stars methodology continues to evolve.",
+          "items": [
+            {
+              "item_id": "2026-07-06-kff-ma-quality-bonus-13b-2026",
+              "canonical_topic": "ma-quality-bonus-spending",
+              "duplicate_group": "ma-quality-bonus-spending",
+              "priority_score": 6,
+              "primary_source": "KFF",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/medicare/medicare-will-spend-more-than-13-billion-on-the-medicare-advantage-quality-bonus-program-in-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-07-01T00:00:00Z"
+                }
+              ],
+              "title": "KFF: Medicare Advantage quality bonus payments exceed $13B, with rule changes adding long-run spend pressure",
+              "summary": "KFF estimated Medicare will spend more than $13 billion on the Medicare Advantage quality bonus program in 2026 and described how measurement changes can raise spending absent offsetting payment reforms. The analysis reinforces how Stars methodology and quality bonuses remain central to MA economics and competitive positioning. This context matters as litigation and recalculations create near-term uncertainty.",
+              "strategic_implication": "Payers should align quality-investment ROI models to a shifting measure set and anticipate greater scrutiny of bonus-driven margin. Providers should evaluate contract terms tied to Stars and ensure performance infrastructure can adapt quickly as measures evolve.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "quality-bonus",
+                "kff",
+                "payment-policy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "A notable regional combination underscores continued consolidation and the operational demands of post-merger integration.",
+          "items": [
+            {
+              "item_id": "2026-07-06-ahn-heritage-valley-merger-final",
+              "canonical_topic": "ahn-heritage-valley-merger",
+              "duplicate_group": "ahn-heritage-valley-merger",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/allegheny-health-network-heritage-valley-health-system-merger-pennsylvania/824343/",
+                  "source_type": "web",
+                  "published_at": "2026-07-02T00:00:00Z"
+                }
+              ],
+              "title": "Allegheny Health Network finalizes combination with Heritage Valley in Pennsylvania",
+              "summary": "Allegheny Health Network finalized its combination with Heritage Valley Health System, expanding the Highmark-owned provider footprint and adding hospitals and outpatient sites in western Pennsylvania. The transaction included regulatory conditions intended to preserve services and maintain operations for defined periods. Integration priorities are likely to include EHR alignment, service-line rationalization, and workforce stabilization.",
+              "strategic_implication": "Regional competitors should expect intensified network contracting and site-of-care positioning as AHN integrates and invests. Health system operators can use this as a playbook for managing regulatory commitments, integration sequencing, and community access guarantees in consolidation deals.",
+              "confidence": "high",
+              "tags": [
+                "hospital-mergers",
+                "provider-strategy",
+                "integration",
+                "pennsylvania"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-03",
       "generated_at": "2026-07-03T18:39:19Z",
       "headline": "Today's Healthcare Insights",
@@ -11928,5 +12151,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-03T18:39:19Z"
+  "last_updated": "2026-07-06T11:08:43Z"
 }

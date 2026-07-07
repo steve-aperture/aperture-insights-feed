@@ -3,6 +3,293 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-07",
+      "generated_at": "2026-07-07T11:04:06Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition centers on Medicare payment-policy proposals (site-neutral and 340B), payer cost-pressure narratives, and several notable health IT and M&A moves. Inputs were drawn from STAT, Healthcare Dive, Fierce Healthcare, and supplemental web reporting for added policy context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (CMS/HHS/FDA, payers/providers, digital health, workforce)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (CMS/HHS/FDA, payers/providers, digital health, workforce)"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds were used to identify candidate stories; targeted web search was used to add context around Medicare rulemaking and market implications."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Medicare policy signals remain central, with outpatient payment (340B and site-neutral) and program-integrity proposals shaping 2027 planning.",
+          "items": [
+            {
+              "item_id": "2026-07-07-cms-2027-opps-340b-site-neutral-proposed",
+              "canonical_topic": "cms-2027-opps-340b-site-neutral",
+              "duplicate_group": "cms-2027-opps-340b-site-neutral",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/regulators-propose-slashing-340b-payments-broadening-site-neutral-policies-2027/824312/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T13:14:31Z"
+                },
+                {
+                  "source": "Hall Render",
+                  "url": "https://hallrender.com/2026/07/06/health-provider-news-160/",
+                  "source_type": "web",
+                  "published_at": "2026-07-06T17:02:56Z"
+                }
+              ],
+              "title": "CMS tees up 2027 outpatient payment changes: 340B cuts and expanded site-neutral policies",
+              "summary": "CMS proposed 2027 outpatient payment updates that would reduce certain 340B drug payments and broaden site-neutral payment policies for select services. Hospital groups are signaling significant financial and access concerns, while policymakers frame the changes as parity across sites of service. The proposal adds another planning variable for 2027 budgeting and service-line strategy.",
+              "strategic_implication": "Health systems should quantify the rule’s service-line exposure now (drug margin, imaging, off-campus clinics) and align advocacy, contracting, and capacity plans before finalization.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "medicare",
+                "340b",
+                "site-neutral"
+              ]
+            },
+            {
+              "item_id": "2026-07-07-cms-2027-home-health-enrollment-fraud",
+              "canonical_topic": "cms-home-health-enrollment-fraud",
+              "duplicate_group": "cms-home-health-enrollment-fraud",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-mulls-tougher-medicare-enrollment-rules-combat-fraud-part-2027-home-health-payment",
+                  "source_type": "rss",
+                  "published_at": null
+                },
+                {
+                  "source": "Hall Render",
+                  "url": "https://hallrender.com/2026/07/06/health-provider-news-160/",
+                  "source_type": "web",
+                  "published_at": "2026-07-06T17:02:56Z"
+                }
+              ],
+              "title": "CMS signals tougher Medicare enrollment rules in 2027 home health proposal to curb fraud",
+              "summary": "CMS is considering stricter Medicare enrollment rules for home health providers as part of its 2027 payment rule, positioning the changes as an anti-fraud measure. If adopted, providers may face more stringent screening and compliance expectations as a condition of participation. The direction of travel suggests elevated operational burden and potential network disruption in certain markets.",
+              "strategic_implication": "Payers and downstream providers should anticipate churn in home health capacity and build contingency plans for preferred networks and discharge pathways.",
+              "confidence": "low",
+              "tags": [
+                "cms",
+                "home-health",
+                "program-integrity",
+                "medicare"
+              ]
+            },
+            {
+              "item_id": "2026-07-07-stat-health-insurance-cost-series-takeaways",
+              "canonical_topic": "health-insurance-cost-sharing-trends",
+              "duplicate_group": "health-insurance-cost-sharing-trends",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/07/why-health-insurance-costs-so-much-out-of-pocket-series-key-takeaways/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-07T08:30:00Z"
+                }
+              ],
+              "title": "STAT summarizes key drivers of health insurance cost growth and rising out-of-pocket exposure",
+              "summary": "STAT published takeaways from its reporting series on the drivers of health insurance costs and why out-of-pocket spending remains high for many consumers. The package emphasizes how benefit design and market structure translate into financial friction for patients and employers. The coverage is likely to keep affordability and transparency in the policy and employer spotlight.",
+              "strategic_implication": "Leaders should expect continued demand for clearer member/patient financial navigation and may see intensified scrutiny of benefit design, network adequacy, and billing practices.",
+              "confidence": "medium",
+              "tags": [
+                "affordability",
+                "employers",
+                "cost-sharing",
+                "transparency"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Health IT leaders are watching both vendor consolidation of workflow automation (intake/referrals) and leadership transitions at major EHR platforms.",
+          "items": [
+            {
+              "item_id": "2026-07-07-commure-ai-referral-intake",
+              "canonical_topic": "commure-ai-referral-intake",
+              "duplicate_group": "commure-ai-referral-intake",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/commure-launches-ai-powered-referral-and-patient-intake-platform",
+                  "source_type": "rss",
+                  "published_at": null
+                }
+              ],
+              "title": "Commure rolls out an AI-powered referral and patient intake platform",
+              "summary": "Commure announced an AI-enabled product focused on referrals and patient intake workflows. The positioning suggests continued vendor focus on automating high-friction front-door and care-transition steps where administrative cost and leakage are material. Adoption will hinge on integration depth, model governance, and measurable throughput gains.",
+              "strategic_implication": "Health systems evaluating intake automation should demand clear ROI instrumentation (conversion, scheduling speed, denials) and verify interoperability and data-use controls before scaling.",
+              "confidence": "low",
+              "tags": [
+                "ai",
+                "patient-access",
+                "referrals",
+                "automation"
+              ]
+            },
+            {
+              "item_id": "2026-07-07-epic-president-step-down",
+              "canonical_topic": "epic-leadership-transition",
+              "duplicate_group": "epic-leadership-transition",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/epic-president-sumit-rana-step-down/824462/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-06T14:16:30Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/epic-preps-leadership-changes-president-sumit-rana-plans-step-away",
+                  "source_type": "rss",
+                  "published_at": null
+                }
+              ],
+              "title": "Epic president Sumit Rana plans to step down, signaling a leadership transition at a key EHR vendor",
+              "summary": "Healthcare Dive reported that Epic’s president, Sumit Rana, will step down this summer. Epic is a core infrastructure vendor for many health systems, and leadership shifts can influence product priorities, partnerships, and customer engagement cadence. Most customers will watch for continuity in roadmap execution and implementation support.",
+              "strategic_implication": "CIOs should monitor any roadmap reprioritization and ensure governance for critical upgrades and interoperability initiatives remains stable through the transition.",
+              "confidence": "medium",
+              "tags": [
+                "ehr",
+                "health-it",
+                "vendor-risk",
+                "interoperability"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Biopharma and provider deal activity continues, offering fresh benchmarks for valuation and strategic repositioning.",
+          "items": [
+            {
+              "item_id": "2026-07-07-vertex-acquires-crinetics-10b",
+              "canonical_topic": "biopharma-ma-vertex-crinetics",
+              "duplicate_group": "biopharma-ma-vertex-crinetics",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/06/vertex-acquires-crinetics-pharmaceuticals/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-06T20:52:29Z"
+                }
+              ],
+              "title": "Vertex agrees to acquire Crinetics Pharmaceuticals for $10B, adding momentum to biotech M&A",
+              "summary": "STAT reported that Vertex will acquire Crinetics Pharmaceuticals in a $10 billion deal. The transaction underscores ongoing consolidation and portfolio repositioning in biotech as companies seek pipeline assets and scale. Deal terms and integration approach will be watched for signals about valuation expectations in the current market.",
+              "strategic_implication": "Provider and payer leaders should track downstream formulary and contracting impacts, while life-sciences partners should benchmark the deal as a read-through on late-stage asset pricing.",
+              "confidence": "medium",
+              "tags": [
+                "biopharma",
+                "m-a",
+                "pipeline",
+                "drug-pricing"
+              ]
+            },
+            {
+              "item_id": "2026-07-07-fierce-dealmakers-ascension-amsurg-hims",
+              "canonical_topic": "healthcare-deals-ascension-amsurg-hims",
+              "duplicate_group": "healthcare-deals-ascension-amsurg-hims",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/healthcare-dealmakers-ascension-closes-39b-amsurg-deal-hims-hers-12b-international-play-and",
+                  "source_type": "rss",
+                  "published_at": null
+                }
+              ],
+              "title": "Deal snapshot: Ascension closes its $3.9B AmSurg transaction; other strategic moves in focus",
+              "summary": "Fierce Healthcare highlighted notable healthcare deal activity, including Ascension closing its reported $3.9B AmSurg-related transaction. The update reflects ongoing portfolio and capital-structure adjustments across providers and services platforms. These moves can ripple into physician alignment, outpatient growth strategies, and competitive positioning.",
+              "strategic_implication": "Health systems should reassess local outpatient dynamics and service-line partnerships as large platforms reshape footprint and capital allocation.",
+              "confidence": "low",
+              "tags": [
+                "providers",
+                "transactions",
+                "outpatient",
+                "strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Cyber and operational risk remains elevated, with supplier incidents translating into downstream compliance and continuity work for providers.",
+          "items": [
+            {
+              "item_id": "2026-07-07-medtronic-cyberattack-notifications",
+              "canonical_topic": "medtronic-cyberattack-notifications",
+              "duplicate_group": "medtronic-cyberattack-notifications",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medtronic-starts-to-notify-people-affected-by-cyberattack/824439/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-02T15:45:00Z"
+                },
+                {
+                  "source": "The HIPAA Journal",
+                  "url": "https://www.hipaajournal.com/medical-device-maker-medtronic-data-breach/",
+                  "source_type": "web",
+                  "published_at": "2026-07-01"
+                }
+              ],
+              "title": "Medtronic begins notifying individuals affected by cyber incident, underscoring vendor-risk exposure",
+              "summary": "Healthcare Dive reported that Medtronic started notifying people affected by a cyberattack. Incidents at major device and technology suppliers can create downstream operational and patient-communication obligations for providers and partners. The event reinforces the need for vendor cyber risk monitoring and coordinated incident response playbooks.",
+              "strategic_implication": "Provider leaders should pressure-test third-party risk processes (contract clauses, SBOM/patching expectations, breach notification workflows) and ensure clinical contingency plans for vendor outages.",
+              "confidence": "medium",
+              "tags": [
+                "cybersecurity",
+                "third-party-risk",
+                "medical-devices",
+                "privacy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-06",
       "generated_at": "2026-07-06T11:08:43Z",
       "headline": "Today's Healthcare Insights",
@@ -12151,5 +12438,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-06T11:08:43Z"
+  "last_updated": "2026-07-07T11:04:06Z"
 }

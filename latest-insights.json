@@ -3,6 +3,255 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-08",
+      "generated_at": "2026-07-08T11:11:14Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's signals cluster around payer risk-adjustment scrutiny, heightened cyber disclosure, and a mix of provider M&A and private-equity oversight narratives. Inputs were drawn primarily from Healthcare Dive and STAT, supplemented with targeted web reporting for policy and deal context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (CMS/HHS/FDA, payers/providers, digital health, workforce)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web search (CMS/HHS/FDA, payers/providers, digital health, workforce)"
+        ],
+        "sources_failed": [],
+        "run_notes": "RSS feeds were used to identify candidate stories from the last ~36 hours; targeted web search was used to add context on Medicare/payment policy and major payer/provider developments."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Oversight pressure is building around Medicare Advantage risk adjustment and private-equity structures, reinforcing the need for audit-ready documentation and deal governance.",
+          "items": [
+            {
+              "item_id": "2026-07-08-medicare-advantage-housecalls-audit",
+              "canonical_topic": "medicare-advantage-risk-adjustment-housecalls",
+              "duplicate_group": "medicare-advantage-risk-adjustment-housecalls",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/unitedhealth-housecalls-audit-results-home-visits-medicare-advantage/824596/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-07T15:31:53Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/legal/litigation/unitedhealth-says-most-home-health-diagnoses-were-supported-2025-2026-07-07/",
+                  "source_type": "web",
+                  "published_at": "2026-07-07"
+                }
+              ],
+              "title": "Audit findings on MA home-visit coding keep risk-adjustment scrutiny elevated",
+              "summary": "An external review of UnitedHealth\u0019s in-home senior visit program reported that most diagnoses sampled were supported by medical data, amid ongoing scrutiny of risk-adjustment practices. The story underscores that regulators and media continue to examine diagnoses generated through home assessments and related documentation pathways. Payers and downstream providers should expect continued attention to chart integrity and coding provenance.",
+              "strategic_implication": "Plans and delegated entities should pressure-test their end-to-end risk-adjustment workflow (home visits, chart review, encounter capture) and prioritize audit defensibility over incremental RAF optimization.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "risk-adjustment",
+                "audit",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-07-08-private-equity-nonprofit-jv-oversight",
+              "canonical_topic": "private-equity-nonprofit-joint-ventures-oversight",
+              "duplicate_group": "private-equity-nonprofit-joint-ventures-oversight",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/private-equity-firms-may-skirt-healthcare-oversight-joint-ventures-nonprofits-pesp/824556/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-07T11:38:50Z"
+                }
+              ],
+              "title": "Report flags nonprofit\u0013PE joint ventures as a potential oversight blind spot",
+              "summary": "A new report argues that certain nonprofit\u0013private equity joint-venture structures can reduce regulatory visibility compared with straightforward acquisitions. The coverage highlights state-level and federal interest in transaction oversight, governance rights, and disclosure requirements. Provider organizations considering partnerships may face more questions about control provisions and accountability.",
+              "strategic_implication": "Health systems should treat JV structuring as a compliance and reputation issue\u0010not just financing\u0010and ensure governance terms, reporting, and community-benefit narratives are defensible under likely scrutiny.",
+              "confidence": "medium",
+              "tags": [
+                "private-equity",
+                "m-and-a",
+                "regulation",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Security and quality guardrails remain the practical blockers to scaling digital programs, from cyber disclosures to oversight of consumerized monitoring.",
+          "items": [
+            {
+              "item_id": "2026-07-08-adapthealth-cyberattack-data-stolen",
+              "canonical_topic": "healthcare-cyberattack-data-exfiltration",
+              "duplicate_group": "healthcare-cyberattack-data-exfiltration",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/adapthealth-discloses-patient-data-was-stolen-in-cyberattack/824601/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-07T15:19:06Z"
+                }
+              ],
+              "title": "AdaptHealth says patient data was stolen in cyberattack",
+              "summary": "AdaptHealth disclosed that patient information was taken in a cyber incident, adding to a steady cadence of breach-related disclosures across healthcare services and supply-chain-adjacent vendors. Even when operations stabilize quickly, notification obligations, legal exposure, and downstream partner diligence can persist for months. The incident reinforces that third-party vendor posture is now part of core operational resilience.",
+              "strategic_implication": "Providers and payers should revisit vendor-risk segmentation for DME/home-health partners and ensure contract language (notification timing, indemnities, security controls) matches their current cyber risk appetite.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "data-breach",
+                "digital-health",
+                "vendor-risk"
+              ]
+            },
+            {
+              "item_id": "2026-07-08-consumer-cgm-children-risks-benefits",
+              "canonical_topic": "consumer-cgm-otc-pediatrics",
+              "duplicate_group": "consumer-cgm-otc-pediatrics",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/08/dexcom-stelo-cgm-risk-benefit-otc-glucose-monitoring-children/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-08T08:30:00Z"
+                }
+              ],
+              "title": "Consumer CGMs move into younger ages, raising benefit\u0013harm questions",
+              "summary": "STAT highlighted growing interest in consumer-access continuous glucose monitors and the debate over use in very young children. Clinicians raised concerns about anxiety, over-interpretation, and clinical appropriateness when devices are used outside established indications. The piece reflects a broader trend: consumer monitoring is outpacing clinical guidance and reimbursement policy.",
+              "strategic_implication": "Health systems may need standard counseling and escalation pathways for families bringing consumer-generated data into pediatrics and primary care to avoid unnecessary utilization and clinician burnout.",
+              "confidence": "medium",
+              "tags": [
+                "remote-monitoring",
+                "pediatrics",
+                "consumer-health",
+                "cgms"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Provider consolidation and life-science milestones continue, while affordability narratives keep pressure on employer-sponsored coverage and benefit design.",
+          "items": [
+            {
+              "item_id": "2026-07-08-ascension-williamson-health-deal",
+              "canonical_topic": "provider-ma-ascension-williamson-health",
+              "duplicate_group": "provider-ma-ascension-williamson-health",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ascension-williamson-health-deal-value-tennessee-hospital/824561/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-07T13:06:18Z"
+                },
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/07/ascension-tennessee-health-system-merger/",
+                  "source_type": "web",
+                  "published_at": "2026-07-08"
+                }
+              ],
+              "title": "Ascension\u0019s proposed $1B Williamson Health acquisition signals continued system consolidation",
+              "summary": "Ascension announced plans to acquire Tennessee-based Williamson Health in a deal valued around $1 billion, adding another large transaction to the nonprofit hospital M&A pipeline. As balance-sheet pressure persists, systems are still using scale and market position to stabilize access and fund capital needs. Expect heightened attention to local market concentration, service-line commitments, and post-close integration costs.",
+              "strategic_implication": "Regional systems should benchmark their capital capacity and payer leverage against consolidating peers and proactively plan for referral leakage, labor competition, and service rationalization in adjacent markets.",
+              "confidence": "medium",
+              "tags": [
+                "m-and-a",
+                "hospitals",
+                "nonprofit",
+                "strategy"
+              ]
+            },
+            {
+              "item_id": "2026-07-08-fda-approval-iga-nephropathy-vera",
+              "canonical_topic": "fda-approval-iga-nephropathy",
+              "duplicate_group": "fda-approval-iga-nephropathy",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/07/vera-therapeutics-kidney-disease-treatment-approval/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-07T16:44:36Z"
+                }
+              ],
+              "title": "FDA approval in kidney disease adds another specialty-therapy cost lever for payers",
+              "summary": "STAT reported an FDA approval for a Vera Therapeutics treatment targeting kidney disease, adding to the flow of high-cost specialty therapies moving into chronic-condition categories. As new therapies broaden indications, payer utilization management and specialty pharmacy strategies remain central to affordability and adherence. For providers, coverage pathways and patient-assistance navigation can materially influence uptake.",
+              "strategic_implication": "Payers and systems should anticipate contracting and pathway work (step therapy, site-of-care, prior auth) as specialty therapies increasingly intersect with nephrology and longitudinal chronic-care management.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "pharma",
+                "specialty-drugs",
+                "utilization-management"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Operational leaders are balancing growth moves with rising scrutiny on documentation, compliance, and cyber resilience.",
+          "items": [
+            {
+              "item_id": "2026-07-08-congressional-oversight-healthcare-2026-midterms",
+              "canonical_topic": "congressional-oversight-healthcare",
+              "duplicate_group": "congressional-oversight-healthcare",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-faces-congressional-oversight-2026-midterms/824526/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-07T14:03:47Z"
+                }
+              ],
+              "title": "Congressional oversight agenda signals more hearings and documentation demands for healthcare",
+              "summary": "Healthcare Dive outlined how congressional oversight priorities heading into the 2026 midterms could increase attention on payment models, pricing, and program integrity. Even absent immediate legislation, hearings and investigations can shift operational load for compliance, revenue cycle, and contracting teams. Organizations should monitor where oversight intersects with their major risk areas (billing, prior auth, quality reporting, and transparency).",
+              "strategic_implication": "Provider and payer leaders should prepare for information requests and reputational risk by tightening governance over pricing, billing, and payer denials\u0014and by keeping an up-to-date narrative for policymakers and employers.",
+              "confidence": "medium",
+              "tags": [
+                "policy",
+                "compliance",
+                "congress",
+                "operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major workforce-policy changes surfaced in the last day; the most salient clinical-practice signal was continued debate over integrating consumer monitoring data into routine care.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-07",
       "generated_at": "2026-07-07T11:04:06Z",
       "headline": "Today's Healthcare Insights",
@@ -12438,5 +12687,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-07T11:04:06Z"
+  "last_updated": "2026-07-08T11:11:14Z"
 }

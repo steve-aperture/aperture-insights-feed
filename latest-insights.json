@@ -3,6 +3,307 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-10",
+      "generated_at": "2026-07-10T11:02:36Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s signals center on payer and provider strategy under continued cost pressure, alongside heightened scrutiny of compliance and governance. Items draw from Healthcare Dive, Fierce Healthcare, STAT, and HHS updates across policy, operations, and market moves.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "ASPR (HHS) web",
+          "American Hospital Association (AHA) News web"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "ASPR (HHS) web",
+          "American Hospital Association (AHA) News web"
+        ],
+        "sources_failed": [],
+        "run_notes": "Fierce Healthcare article pages returned 403 in direct fetch; used RSS metadata and descriptions for summaries where needed."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Disaster-response flexibilities and ongoing affordability pressure remain key near-term policy signals.",
+          "items": [
+            {
+              "item_id": "2026-07-10-hhs-phe-guam-cnmi-typhoon-bavi",
+              "canonical_topic": "hhs-public-health-emergency-guam-cnmi",
+              "duplicate_group": "hhs-public-health-emergency-guam-cnmi",
+              "priority_score": 7,
+              "primary_source": "HHS ASPR",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "HHS ASPR",
+                  "url": "https://aspr.hhs.gov/news-updates/newsroom/2026-06/typhoonbavi-response-9July2026",
+                  "source_type": "web",
+                  "published_at": "2026-07-09T16:08:03-04:00"
+                }
+              ],
+              "title": "HHS declares public health emergency for Guam and CNMI after Typhoon Bavi",
+              "summary": "HHS issued a public health emergency declaration for Guam and the Commonwealth of the Northern Mariana Islands following Typhoon Bavi. The declaration is intended to speed federal health and medical response and enable CMS flexibilities for providers serving Medicare and Medicaid beneficiaries during the emergency.",
+              "strategic_implication": "Emergency declarations can trigger temporary payment and compliance flexibilities; provider groups with island operations should check waiver details and document impacts for reimbursement and continuity planning.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "hhs",
+                "medicare",
+                "medicaid",
+                "emergency-preparedness"
+              ]
+            },
+            {
+              "item_id": "2026-07-10-aca-premiums-2027-spike",
+              "canonical_topic": "aca-marketplace-premiums-2027",
+              "duplicate_group": "aca-marketplace-premiums-2027",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/affordable-care-act-premium-increase-2027-kff-peterson-center-healthcare/824695/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-08T14:39:07+00:00"
+                }
+              ],
+              "title": "ACA marketplace premiums projected to rise again in 2027, per KFF/Peterson analysis",
+              "summary": "A KFF-Peterson analysis of insurer rate filings suggests ACA marketplace premiums are likely to increase again in 2027. The analysis highlights ongoing medical cost pressure and utilization dynamics as insurers price for 2027 risk.",
+              "strategic_implication": "Payers and employer sponsors should watch spillover effects (provider contracting, benefit design, and consumer churn) and stress-test 2027 affordability scenarios in key states.",
+              "confidence": "medium",
+              "tags": [
+                "aca",
+                "payer-strategy",
+                "premiums",
+                "affordability",
+                "benefit-design"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Adoption barriers and governance risk continue to shape how health systems operationalize connected devices and clinical AI.",
+          "items": [
+            {
+              "item_id": "2026-07-10-ama-wearables-reimbursement-workflow",
+              "canonical_topic": "wearables-data-clinical-workflow-reimbursement",
+              "duplicate_group": "wearables-data-clinical-workflow-reimbursement",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/physician-wearable-data-use-hindered-workflow-reimbursement-challenges-american-medical-association/824640/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-08T19:10:00+00:00"
+                }
+              ],
+              "title": "Survey: physicians cite reimbursement and workflow barriers to using wearable data in care",
+              "summary": "A survey reported by Healthcare Dive found that clinicians see value in wearable-generated data but face friction integrating it into care delivery. Respondents pointed to limited reimbursement pathways, unclear clinical workflows, and time burden as key barriers.",
+              "strategic_implication": "Health systems and digital partners should align remote monitoring programs to clear clinical protocols and billing pathways; without workflow integration, data volume can increase clinician burden without improving outcomes.",
+              "confidence": "medium",
+              "tags": [
+                "remote-monitoring",
+                "wearables",
+                "workflow",
+                "reimbursement",
+                "clinical-operations"
+              ]
+            },
+            {
+              "item_id": "2026-07-10-mayo-ai-concerns-lawsuit",
+              "canonical_topic": "clinical-ai-governance-litigation",
+              "duplicate_group": "clinical-ai-governance-litigation",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/former-mayo-clinic-research-director-sues-system-over-alleged-retaliation",
+                  "source_type": "rss",
+                  "published_at": "2026-07-09T16:26:00+00:00"
+                }
+              ],
+              "title": "Former Mayo Clinic research director sues over alleged retaliation tied to AI practice concerns",
+              "summary": "Fierce Healthcare reports a lawsuit from a former Mayo Clinic research director alleging retaliation after raising concerns related to AI practices. The suit references claims under the False Claims Act retaliation provision as well as the ADA and FMLA, according to the report.",
+              "strategic_implication": "Clinical AI deployments increasingly carry governance and compliance risk; health systems should document model oversight, validation, and escalation processes to reduce litigation exposure.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "governance",
+                "risk",
+                "compliance",
+                "litigation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Litigation, restructuring, and insurance-market exits signal continued volatility and consolidation pressure across the industry.",
+          "items": [
+            {
+              "item_id": "2026-07-10-cvs-omnicare-doj-settlement",
+              "canonical_topic": "cvs-omnicare-doj-fraud-settlement",
+              "duplicate_group": "cvs-omnicare-doj-fraud-settlement",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cvs-omnicare-unit-agrees-440m-settlement-doj-ongoing-fraud-case",
+                  "source_type": "rss",
+                  "published_at": "2026-07-09T15:10:00+00:00"
+                }
+              ],
+              "title": "CVS Omnicare agrees to $440M settlement with DOJ in ongoing fraud case",
+              "summary": "CVS Health and its Omnicare unit agreed to pay $440 million to the Department of Justice to satisfy a portion of a nearly $950 million judgment as part of an ongoing fraud case, per Fierce Healthcare. The development continues a long-running legal dispute around Omnicare’s operations.",
+              "strategic_implication": "Large settlements can tighten compliance expectations for pharmacy services and long-term care; competitors and provider partners should anticipate increased auditing, contracting scrutiny, and operational controls.",
+              "confidence": "medium",
+              "tags": [
+                "cvs",
+                "doj",
+                "compliance",
+                "pharmacy-services",
+                "litigation"
+              ]
+            },
+            {
+              "item_id": "2026-07-10-resmed-matrixcare-divestiture",
+              "canonical_topic": "resmed-matrixcare-sale",
+              "duplicate_group": "resmed-matrixcare-sale",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/resmed-to-sell-software-business-matrixcare-to-private-equity-firm/824803/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-08T15:28:41+00:00"
+                }
+              ],
+              "title": "ResMed to sell MatrixCare software business to private equity buyer",
+              "summary": "ResMed plans to sell its MatrixCare software business to a private equity firm, according to Healthcare Dive. MatrixCare is used by post-acute and long-term care providers, and the transaction continues reshuffling among healthcare software assets.",
+              "strategic_implication": "Post-acute operators should watch for product roadmap and pricing changes after ownership transitions; vendors may seek margin expansion through consolidation and contract repricing.",
+              "confidence": "medium",
+              "tags": [
+                "m&a",
+                "health-it",
+                "post-acute",
+                "private-equity",
+                "vendor-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-07-10-memorial-hermann-health-plan-winds-down",
+              "canonical_topic": "provider-sponsored-health-plan-exit",
+              "duplicate_group": "provider-sponsored-health-plan-exit",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/memorial-hermann-health-plan-winds-down-commercial-coverage",
+                  "source_type": "rss",
+                  "published_at": "2026-07-09T15:39:00+00:00"
+                }
+              ],
+              "title": "Memorial Hermann Health Plan to wind down employer-focused commercial coverage",
+              "summary": "Memorial Hermann Health Plan told brokers, employers and providers it will wind down and close its employer-focused commercial offerings, Fierce Healthcare reports. The move underscores the operational and capital demands of competing in commercial insurance markets.",
+              "strategic_implication": "Provider-sponsored plan strategy remains volatile; systems evaluating risk-based models may prefer narrower ACO-style arrangements versus full insurance products unless scale and pricing power are clear.",
+              "confidence": "medium",
+              "tags": [
+                "payer-provider",
+                "provider-sponsored-plan",
+                "commercial-insurance",
+                "risk-based-care",
+                "strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Operational initiatives increasingly intersect with public-health priorities, including nutrition and chronic disease prevention.",
+          "items": [
+            {
+              "item_id": "2026-07-10-hhs-hospital-food-healthier-pledge",
+              "canonical_topic": "hospital-food-nutrition-pledge",
+              "duplicate_group": "hospital-food-nutrition-pledge",
+              "priority_score": 5,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/hhs-calls-hospitals-sign-make-hospital-food-healthier-pledge",
+                  "source_type": "rss",
+                  "published_at": "2026-07-09T13:33:00+00:00"
+                }
+              ],
+              "title": "HHS urges hospitals to sign 'Make Hospital Food Healthier' pledge",
+              "summary": "HHS is seeking voluntary commitments from hospitals to serve less processed foods aligned with updated dietary guidance, according to Fierce Healthcare. The effort positions hospital food service as part of chronic disease prevention and longer-term wellness initiatives.",
+              "strategic_implication": "Hospitals can use nutrition commitments to support community health goals and value-based care narratives; leaders should also assess operational impacts (sourcing, labor, cost, patient satisfaction) before signing pledges.",
+              "confidence": "medium",
+              "tags": [
+                "hospital-operations",
+                "nutrition",
+                "public-health",
+                "value-based-care",
+                "patient-experience"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce attention today was driven primarily by commentary rather than new data releases.",
+          "items": [
+            {
+              "item_id": "2026-07-10-primary-care-crisis-paradox",
+              "canonical_topic": "primary-care-workforce",
+              "duplicate_group": "primary-care-workforce",
+              "priority_score": 4,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/10/primary-care-data-pcps-health-care-crisis-investment/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-10T08:30:00+00:00"
+                }
+              ],
+              "title": "STAT opinion highlights the primary-care capacity paradox amid calls for investment",
+              "summary": "A STAT opinion piece argues that primary care is simultaneously described as essential and under-resourced, creating a paradox in policy and investment priorities. The piece frames workforce capacity and practice sustainability as core constraints that affect access and downstream costs.",
+              "strategic_implication": "Even opinion coverage signals growing executive attention: systems and payers should quantify primary-care capacity gaps and consider targeted investments (team-based care, access redesign, and payment support) tied to measurable utilization outcomes.",
+              "confidence": "low",
+              "tags": [
+                "primary-care",
+                "workforce",
+                "payment-models",
+                "access",
+                "care-delivery"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-08",
       "generated_at": "2026-07-08T11:11:14Z",
       "headline": "Today's Healthcare Insights",
@@ -12687,5 +12988,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-08T11:11:14Z"
+  "last_updated": "2026-07-10T11:02:36Z"
 }

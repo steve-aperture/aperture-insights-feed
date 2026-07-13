@@ -3,6 +3,259 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-13",
+      "generated_at": "2026-07-13T11:15:42Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s themes include value-based payment performance signals from CMS, shifting regulatory timelines for cybersecurity compliance, and operating-margin pressure showing up in insurance retrenchment and labor actions. Items draw primarily from STAT, Healthcare Dive, and Fierce Healthcare RSS and targeted web lookups for policy context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, market signals)",
+          "Gmail labels (supplementary)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, market signals)"
+        ],
+        "sources_failed": [
+          "Gmail labels (supplementary)"
+        ],
+        "run_notes": "Email label searches returned no results; edition built from RSS and web lookups."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Value-based payment remains in focus, alongside regulatory timelines that shape compliance planning and investment cycles.",
+          "items": [
+            {
+              "item_id": "2026-07-13-aco-reach-2024-savings-cms",
+              "canonical_topic": "aco-reach-2024-results",
+              "duplicate_group": "aco-reach-2024-results",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/aco-reach-participants-generated-nearly-1b-2024-savings-cms",
+                  "source_type": "rss",
+                  "published_at": "2026-07-10T11:14:47"
+                }
+              ],
+              "title": "CMS says ACO REACH generated nearly $1B in net Medicare savings in 2024",
+              "summary": "CMS released performance results indicating the ACO REACH model produced $988.3 million in net savings in 2024, with $2.5 billion in gross savings before benchmark discounts and shared-savings arrangements. Net shared-savings payments to participating ACOs were reported at $1.5 billion, and most participating organizations earned shared savings. CMS is expected to transition from ACO REACH to its successor model (LEAD) beginning in 2027.",
+              "strategic_implication": "For organizations in value-based care, the reported savings strengthen the policy case for risk-bearing primary care and may shape 2027 model design; finance teams should model how benchmark methodology and downside protection could shift under LEAD.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "value-based-care",
+                "cms",
+                "aco",
+                "payment-models"
+              ]
+            },
+            {
+              "item_id": "2026-07-13-hipaa-security-rule-delayed-2027",
+              "canonical_topic": "hipaa-security-rule-update-timeline",
+              "duplicate_group": "hipaa-security-rule-update-timeline",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/feds-push-back-hipaa-security-rule-overhaul-july-2027",
+                  "source_type": "rss",
+                  "published_at": "2026-07-10T11:14:47"
+                }
+              ],
+              "title": "Federal officials push back HIPAA Security Rule overhaul timeline to July 2027",
+              "summary": "Federal officials delayed the anticipated timeline for the HIPAA Security Rule overhaul, setting expectations that the update will land in July 2027. Stakeholders have argued that proposed requirements could be costly and difficult to implement across diverse provider and payer environments. The delay extends the planning window but does not remove the likelihood of more prescriptive cybersecurity expectations for regulated entities.",
+              "strategic_implication": "CIOs and compliance leaders should use the extra runway to close known gaps (asset inventory, MFA, incident response, vendor risk), aligning investments to likely prescriptive controls while tracking final-rule direction to avoid rework.",
+              "confidence": "medium",
+              "tags": [
+                "hipaa",
+                "cybersecurity",
+                "hhs-ocr",
+                "compliance",
+                "risk-management"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Funding and policy signals point toward automation and security as near-term priorities for scaling digital programs safely.",
+          "items": [
+            {
+              "item_id": "2026-07-13-pearl-health-110m-funding",
+              "canonical_topic": "pearl-health-funding-ai-vbc",
+              "duplicate_group": "pearl-health-funding-ai-vbc",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/pearl-health-banks-110m-fresh-funding-build-out-ai-medicare-providers",
+                  "source_type": "rss",
+                  "published_at": "2026-07-10T11:14:47"
+                }
+              ],
+              "title": "Pearl Health raises $110M to expand AI-enabled platform supporting Medicare value-based care",
+              "summary": "Pearl Health announced $110 million in new financing to expand its platform and services for Medicare-focused providers in value-based arrangements. The company said it will invest in additional AI capabilities, including tools designed to reduce administrative workload and support practice operations. The raise signals continued investor interest in infrastructure that helps independent and physician-led groups manage risk and performance.",
+              "strategic_implication": "Provider groups evaluating risk models should expect faster product cycles and more automation from enabling platforms; executives should pressure-test vendor ROI claims against measurable outcomes (coding integrity, quality performance, PMPM).",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "ai",
+                "value-based-care",
+                "primary-care",
+                "funding"
+              ]
+            },
+            {
+              "item_id": "2026-07-13-wearable-data-workflow-reimbursement-barriers",
+              "canonical_topic": "wearable-data-clinical-workflow",
+              "duplicate_group": "wearable-data-clinical-workflow",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/physician-wearable-data-use-hindered-workflow-reimbursement-challenges-american-medical-association/824640/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-08T19:10:00+00:00"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/doctors-want-wearable-data-healthcare-isnt-ready-it-ama-survey-finds",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T11:15:42Z"
+                }
+              ],
+              "title": "Physicians want wearable data, but reimbursement and workflow gaps still block routine use",
+              "summary": "Survey coverage from industry outlets notes that physicians see potential value in wearable and remote-monitoring data but struggle to incorporate it into routine care. Common obstacles include lack of seamless EHR integration, unclear clinical responsibility for data review, and reimbursement or staffing constraints. The result is that large volumes of patient-generated data remain underutilized despite growing device adoption.",
+              "strategic_implication": "Digital leaders should prioritize “closed-loop” workflows—data triage, alert routing, documentation, and billing—before scaling device programs; otherwise, adoption can stall and clinician burden can rise.",
+              "confidence": "medium",
+              "tags": [
+                "remote-monitoring",
+                "wearables",
+                "ehr-integration",
+                "reimbursement",
+                "workflow"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Strategic retrenchment in provider-sponsored insurance and ongoing enforcement actions underscore margin pressure and governance risk.",
+          "items": [
+            {
+              "item_id": "2026-07-13-memorial-hermann-exits-commercial-plans",
+              "canonical_topic": "provider-sponsored-health-plan-exit",
+              "duplicate_group": "provider-sponsored-health-plan-exit",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/memorial-hermann-exits-commercial-plans/824935/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-10T13:10:41+00:00"
+                }
+              ],
+              "title": "Memorial Hermann winds down commercial insurance offerings amid challenging economics",
+              "summary": "Memorial Hermann said it will exit parts of its commercial insurance business, underscoring the pressure on provider-sponsored plans. Integrated systems have faced rising medical costs, regulatory complexity, and competitive dynamics that can make small-to-midscale health plans difficult to sustain. The move highlights a strategic re-focus on core delivery operations and contracting rather than bearing insurance risk in certain segments.",
+              "strategic_implication": "Health systems with owned plans should reassess scale, stop-loss strategy, and employer distribution; payers may see opportunities to regain share, while providers should prepare for contracting shifts and member transition operations.",
+              "confidence": "medium",
+              "tags": [
+                "payer-provider",
+                "insurance",
+                "health-systems",
+                "strategy",
+                "risk"
+              ]
+            },
+            {
+              "item_id": "2026-07-13-cvs-omnicare-440m-doj-settlement",
+              "canonical_topic": "cvs-omnicare-doj-settlement",
+              "duplicate_group": "cvs-omnicare-doj-settlement",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cvs-omnicare-doj-440-million-settlement-fraud-bankruptcy/824924/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-10T12:50:00+00:00"
+                }
+              ],
+              "title": "CVS’ Omnicare agrees to $440M DOJ settlement as long-running fraud case nears resolution",
+              "summary": "CVS Health’s Omnicare unit agreed to pay $440 million to resolve claims tied to a larger fraud judgment, according to Healthcare Dive coverage. The case has been a prolonged legal overhang and intersects with Omnicare’s financial restructuring. The settlement highlights continued enforcement risk in long-term care pharmacy services and government program billing.",
+              "strategic_implication": "Operators in pharmacy and post-acute supply chains should reinforce compliance programs and auditing, particularly around government program billing and documentation, to reduce downside from enforcement actions and settlements.",
+              "confidence": "medium",
+              "tags": [
+                "doj",
+                "pharmacy",
+                "compliance",
+                "fraud-waste-abuse",
+                "cvs"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Systems are balancing cost inflation with operational continuity, with labor actions highlighting fragility in staffing models.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Labor negotiations and clinical workflow friction remain key constraints on capacity and the uptake of new care modalities.",
+          "items": [
+            {
+              "item_id": "2026-07-13-mass-general-brigham-strike",
+              "canonical_topic": "provider-labor-strike",
+              "duplicate_group": "provider-labor-strike",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/strikes-boil-mass-general-brigham-mount-nittany/824884/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-10T14:13:00+00:00"
+                }
+              ],
+              "title": "Labor actions at Mass General Brigham and others spotlight escalating staffing and wage pressure",
+              "summary": "Healthcare Dive reported on strikes and looming labor actions at large systems including Mass General Brigham, reflecting persistent tension over staffing levels, wages, and working conditions. Work stoppages can disrupt elective volumes and create short-term cost spikes due to contingency staffing. The labor environment remains a near-term operational risk as systems manage inflationary cost structures.",
+              "strategic_implication": "COOs and HR leaders should update contingency staffing playbooks and quantify strike scenarios (premium labor, throughput impact, patient safety risk), while accelerating retention levers that reduce reliance on last-minute coverage.",
+              "confidence": "medium",
+              "tags": [
+                "workforce",
+                "labor",
+                "nursing",
+                "provider-operations",
+                "costs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-10",
       "generated_at": "2026-07-10T11:02:36Z",
       "headline": "Today's Healthcare Insights",
@@ -12988,5 +13241,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-10T11:02:36Z"
+  "last_updated": "2026-07-13T11:15:42Z"
 }

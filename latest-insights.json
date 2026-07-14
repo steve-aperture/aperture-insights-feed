@@ -3,6 +3,361 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-14",
+      "generated_at": "2026-07-14T11:11:01Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition centers on escalating Medicare Advantage friction — star-ratings litigation, an OIG fraud crackdown, and UnitedHealth's contested HouseCalls audit — alongside sustained hospital M&A momentum and continued digital health capital formation. Items draw primarily from STAT and Healthcare Dive RSS, corroborated with Fierce Healthcare RSS and targeted web lookups for policy and stakeholder context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, market signals)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, market signals)"
+        ],
+        "sources_failed": [],
+        "run_notes": "Morning cron gathered 21 RSS items (STAT, Healthcare Dive) plus a small web_search_top_results batch before self-blocking; this run supplemented with a live Fierce Healthcare RSS pull and targeted web searches for stakeholder/factual context on the highest-priority stories, then synthesized the edition."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Medicare Advantage oversight intensified on two fronts — a widening insurer lawsuit campaign against CMS star-ratings methodology and a fresh HHS OIG enforcement focus on Medicaid/MA fraud — while FDA's tobacco risk-claim decision drew renewed scientific pushback and the expiring ACO REACH model posted another strong savings year ahead of its LEAD successor.",
+          "items": [
+            {
+              "item_id": "2026-07-14-ma-stars-lawsuits-scan-alignment",
+              "canonical_topic": "ma-star-ratings-litigation",
+              "duplicate_group": "ma-star-ratings-litigation",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/scan-alignment-sue-cms-ma-star-ratings-recalculation-clover-lawsuits/825091/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T17:42:56Z"
+                }
+              ],
+              "title": "SCAN and Alignment Healthcare sue CMS over Medicare Advantage star-ratings methodology",
+              "summary": "SCAN Health Plan and Alignment Healthcare filed lawsuits against CMS after the agency refused to recalculate their Medicare Advantage star ratings using the same methodology it applied to Clover Health. The suits are the latest in a growing wave of insurer litigation — following Humana, Centene, Elevance, and others in prior cycles — arguing CMS's ratings process is inconsistent and \"undeniably broken.\" Star ratings directly determine quality bonus payments, making the methodology dispute a material revenue issue for plans.",
+              "strategic_implication": "Payers should expect the star-ratings litigation pipeline to keep growing each cycle; health system and MA plan partners should stress-test bonus-payment assumptions and monitor whether CMS moves toward a more standardized recalculation precedent that could retroactively affect 2026-2027 bonus payments.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "cms",
+                "star-ratings",
+                "litigation",
+                "payer-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-07-14-oig-medicaid-ma-fraud-enforcement",
+              "canonical_topic": "oig-medicaid-ma-fraud-enforcement",
+              "duplicate_group": "oig-medicaid-ma-fraud-enforcement",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-watchdog-focused-fraud-medicaid-medicare-advantage-enforcement-oig/825034/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T20:17:00Z"
+                },
+                {
+                  "source": "Goodwin Law",
+                  "url": "https://www.goodwinlaw.com/en/insights/publications/2026/02/alerts-practices-hltc-oigs-latest-guidance-targets-medicare-advantage-fraud",
+                  "source_type": "web_search",
+                  "published_at": "2026-02-11"
+                }
+              ],
+              "title": "HHS OIG says it is sharpening focus on Medicaid and Medicare Advantage fraud enforcement",
+              "summary": "HHS's Office of Inspector General signaled that Medicaid and Medicare Advantage fraud remain top enforcement priorities, building on recent guidance that flags risk-adjustment coding, quality-of-care data integrity for star ratings, and questionable diagnosis capture practices. The announcement follows a string of MA-focused False Claims Act exposure themes OIG has been building since early 2026.",
+              "strategic_implication": "Compliance and risk-adjustment teams at MA plans and Medicaid managed care organizations should audit coding integrity and documentation support now, ahead of likely expanded audits; the enforcement posture also raises FCA exposure for vendors supporting risk-adjustment and quality-reporting workflows.",
+              "confidence": "medium",
+              "tags": [
+                "oig",
+                "medicaid",
+                "medicare-advantage",
+                "fraud-enforcement",
+                "compliance"
+              ]
+            },
+            {
+              "item_id": "2026-07-14-unitedhealth-housecalls-audit-dispute",
+              "canonical_topic": "unitedhealth-housecalls-audit",
+              "duplicate_group": "unitedhealth-housecalls-audit",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/13/unitedhealth-housecalls-audit-report-medicare-advantage-stars-lawsuits/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T15:29:05Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/unitedhealth-housecalls-audit-results-home-visits-medicare-advantage/824596/",
+                  "source_type": "web_search",
+                  "published_at": "2026-07-07"
+                }
+              ],
+              "title": "STAT questions UnitedHealth's HouseCalls audit as more MA stars lawsuits emerge",
+              "summary": "UnitedHealth touted an FTI Consulting audit finding 96.6%-97% of HouseCalls home-visit diagnoses were supported by medical records, a rate the company says is three times better than CMS's industry benchmark. STAT reporting raises questions about how clean and generalizable that result actually is, noting the review's narrow 200-visit sample and reliance on secondary claims data to backfill unsupported diagnoses. The dispute lands alongside a fresh batch of MA star-ratings lawsuits, compounding regulatory scrutiny of UnitedHealth's Medicare Advantage risk-adjustment practices.",
+              "strategic_implication": "Given past Senate and OIG findings on UnitedHealth's risk-adjustment coding, competitors and regulators are likely to keep contesting self-commissioned audits; health systems partnering with Optum/UnitedHealth on risk-adjustment programs should prepare for continued reputational and regulatory volatility around home-visit diagnosis capture.",
+              "confidence": "medium",
+              "tags": [
+                "unitedhealth",
+                "medicare-advantage",
+                "risk-adjustment",
+                "audit",
+                "regulatory-scrutiny"
+              ]
+            },
+            {
+              "item_id": "2026-07-14-aco-reach-2026-savings",
+              "canonical_topic": "aco-reach-savings-cms",
+              "duplicate_group": "aco-reach-savings-cms",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/aco-reach-generates-more-savings-medicare/824965/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T14:40:13Z"
+                }
+              ],
+              "title": "Soon-to-expire ACO REACH model generates more savings for Medicare",
+              "summary": "CMS data show the ACO REACH model continued to generate net savings for Medicare even as the program approaches its scheduled expiration, extending a trend of positive performance results reported earlier this month. Most participating ACOs earned shared savings, reinforcing the policy case for risk-bearing primary care models as CMS prepares to transition participants to the LEAD successor model beginning in 2027.",
+              "strategic_implication": "Value-based care organizations currently in REACH should begin modeling LEAD's benchmark and risk-corridor design now, since transition mechanics will shape 2027 primary-care risk contracting strategy and capital allocation decisions.",
+              "confidence": "medium",
+              "tags": [
+                "aco-reach",
+                "value-based-care",
+                "cms",
+                "medicare",
+                "primary-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital health capital formation remains AI-concentrated even as adoption friction persists at the point of care, and clinicians are increasingly wary of unregulated AI-generated medical content circulating outside clinical oversight.",
+          "items": [
+            {
+              "item_id": "2026-07-14-digital-health-funding-ai-h1-2026",
+              "canonical_topic": "digital-health-funding-h1-2026",
+              "duplicate_group": "digital-health-funding-h1-2026",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/digital-health/digital-health-brought-74b-vc-funding-ai-powered-rebound-fuels-market",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T00:34:00"
+                }
+              ],
+              "title": "Digital health funding hits $7.4B in H1 2026 as AI investment reshapes the market",
+              "summary": "Digital health startups raised $7.4 billion in the first half of 2026, with 19 companies closing 20 megadeals of $100 million or more, representing 45% of all capital invested in the period. The concentration of capital in fewer, larger AI-focused rounds signals investor consolidation around companies with demonstrated enterprise traction rather than broad early-stage bets.",
+              "strategic_implication": "Health system innovation and venture arms should expect fewer but larger AI partnership opportunities with well-capitalized vendors, and should prioritize due diligence on implementation evidence over funding size alone given the megadeal concentration.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "venture-funding",
+                "artificial-intelligence",
+                "market-trends",
+                "investment"
+              ]
+            },
+            {
+              "item_id": "2026-07-14-ai-deepfake-medical-misinformation",
+              "canonical_topic": "ai-deepfake-medical-misinformation",
+              "duplicate_group": "ai-deepfake-medical-misinformation",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/14/deepfakes-ai-generated-medicine-misinformation-regulation-video/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-14T08:30:00Z"
+                }
+              ],
+              "title": "Opinion: AI-generated deepfake 'doctors' are spreading unregulated medical misinformation",
+              "summary": "A STAT opinion piece warns that AI-generated videos convincingly mimicking physicians are proliferating online, delivering medical advice or misinformation without any clinical oversight or regulatory guardrail. The piece calls for clearer regulation and platform accountability as generative video tools make deepfake medical content increasingly difficult for patients to distinguish from legitimate clinician communication.",
+              "strategic_implication": "Health systems and medical societies should get ahead of this risk with patient-facing verification tools (e.g., verified-clinician badges, official channel messaging) and monitor for brand-impersonation exposure as generative AI content tools become more accessible.",
+              "confidence": "medium",
+              "tags": [
+                "artificial-intelligence",
+                "misinformation",
+                "deepfakes",
+                "digital-trust",
+                "regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Hospital M&A activity held its 2026 momentum into Q2 even as insurance-side retrenchment continued, underscoring a bifurcated market where consolidation among providers contrasts with margin-driven pullback in commercial insurance lines.",
+          "items": [
+            {
+              "item_id": "2026-07-14-hospital-ma-q2-2026-kaufman-hall",
+              "canonical_topic": "hospital-ma-q2-2026",
+              "duplicate_group": "hospital-ma-q2-2026",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hospital-health-system-mergers-acquisitions-momentum-kaufman-hall-q2-2026/825114/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T20:05:55Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/hospital-ma-stays-hot-q2-health-systems-position-future",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T17:09:00"
+                }
+              ],
+              "title": "Hospital M&A sustains momentum in Q2 2026 with 18 transactions, Kaufman Hall reports",
+              "summary": "Kaufman Hall reported 18 hospital transactions announced between April and June 2026, continuing a rebound from early 2025 activity levels. The report notes increased participation from mid-to-large independent health systems pursuing deals for growth and long-term sustainability rather than pure distress-driven consolidation, a shift from prior cycles dominated by financially struggling sellers.",
+              "strategic_implication": "Strategy and corporate development teams should expect continued buyer competition for scale-oriented, non-distressed targets; the shift toward growth-motivated M&A suggests valuation multiples may firm further as more financially stable systems enter deal processes.",
+              "confidence": "high",
+              "tags": [
+                "hospital-ma",
+                "consolidation",
+                "kaufman-hall",
+                "health-systems",
+                "corporate-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-07-14-mlr-rebates-2026-kff",
+              "canonical_topic": "mlr-rebates-2026",
+              "duplicate_group": "mlr-rebates-2026",
+              "priority_score": 5,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/insurers-set-pay-out-759m-2026-mlr-rebates-kff",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T13:24:00"
+                }
+              ],
+              "title": "Insurers set to pay out $759M in 2026 medical loss ratio rebates: KFF",
+              "summary": "A new KFF analysis projects insurers will issue $759.2 million in medical loss ratio rebates in 2026, reflecting cases where plans failed to spend the ACA-mandated minimum share of premiums on medical care and quality improvement. The figure offers a market-wide signal of pricing and underwriting accuracy across commercial and individual-market plans.",
+              "strategic_implication": "Payers should treat elevated MLR rebate exposure as an early warning on pricing discipline heading into 2027 rate filings; providers negotiating commercial contracts can use rebate data as leverage in discussions about medical-cost trend assumptions.",
+              "confidence": "medium",
+              "tags": [
+                "medical-loss-ratio",
+                "aca",
+                "health-insurance",
+                "kff",
+                "pricing"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "No new provider-operations-specific signal cleared the priority bar today beyond the M&A and payer-denial themes captured elsewhere; this bucket is intentionally light pending fresh operational data.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Medicaid funding cuts are cascading into direct financial hardship for family caregivers, while federal deprescribing policy continues to reshape prescribing practice expectations for psychiatric medications.",
+          "items": [
+            {
+              "item_id": "2026-07-14-caregivers-medicaid-cuts-financial-ruin",
+              "canonical_topic": "family-caregiver-financial-hardship-medicaid",
+              "duplicate_group": "family-caregiver-financial-hardship-medicaid",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/13/family-caregiver-wages-financial-ruin-medicaid-funding-cuts/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/13/health-news-caregivers-brace-for-pay-cuts-maybe-homelessness/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T11:46:24Z"
+                }
+              ],
+              "title": "States' Medicaid funding cuts push family caregivers toward pay cuts and financial ruin",
+              "summary": "As states absorb federal Medicaid funding reductions, family caregivers who rely on Medicaid-funded home- and community-based services wages report bracing for pay cuts and, in some cases, potential homelessness. STAT reporting frames the cuts as a direct pass-through risk: state budget shortfalls are translating into reduced compensation for a workforce that is disproportionately low-income and dependent on these wages.",
+              "strategic_implication": "Home-based care and long-term services providers should model caregiver workforce attrition risk from wage compression, since further Medicaid HCBS funding pressure could accelerate direct-care worker shortages and disrupt community-based care capacity.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "caregiver-workforce",
+                "home-care",
+                "state-budget",
+                "workforce-shortage"
+              ]
+            },
+            {
+              "item_id": "2026-07-14-hhs-ssri-deprescribing-guidance",
+              "canonical_topic": "hhs-ssri-deprescribing-initiative",
+              "duplicate_group": "hhs-ssri-deprescribing-initiative",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/13/hhs-ssri-deprescribing-experts-gather-clinical-withdrawal-guidance/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-13T08:30:00Z"
+                },
+                {
+                  "source": "HHS",
+                  "url": "https://www.hhs.gov/press-room/wtas-hhs-launches-maha-action-plan-curb-psychiatric-overprescribing.html",
+                  "source_type": "web_search",
+                  "published_at": "2026-05-06"
+                }
+              ],
+              "title": "HHS presses ahead with SSRI deprescribing push, convening clinical withdrawal guidance panel",
+              "summary": "HHS advanced its antidepressant deprescribing initiative by convening a technical expert panel to develop formal clinical guidance on tapering psychiatric medications, building on May 2026 actions that included new CMS billing codes for deprescribing-related visits and a SAMHSA 'Dear Colleague' letter urging non-pharmacological alternatives. The effort, championed by HHS Secretary Kennedy, has drawn criticism from psychiatrists who argue it risks discouraging appropriate medication use.",
+              "strategic_implication": "Behavioral health providers and health systems should prepare clinical workflows and documentation practices for deprescribing-related billing codes, while psychiatry leadership should engage the technical expert panel process to ensure guidance reflects evidence-based tapering practices rather than blanket discontinuation pressure.",
+              "confidence": "medium",
+              "tags": [
+                "hhs",
+                "mental-health",
+                "deprescribing",
+                "clinical-practice",
+                "psychiatry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-13",
       "generated_at": "2026-07-13T11:15:42Z",
       "headline": "Today's Healthcare Insights",
@@ -13241,5 +13596,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-13T11:15:42Z"
+  "last_updated": "2026-07-14T11:12:50Z"
 }

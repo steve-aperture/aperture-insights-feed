@@ -3,6 +3,308 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-15",
+      "generated_at": "2026-07-15T11:05:44Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition highlights two converging themes: tighter Medicare payment/oversight pressure (CMS's proposed outpatient reforms and renewed Medicare Advantage scrutiny) and intensified drug-pricing enforcement (the FTC's Caremark insulin settlement). It draws from STAT, Healthcare Dive, and Fierce Healthcare RSS plus targeted web lookups for agency and regulatory context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, market signals)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, market signals)"
+        ],
+        "sources_failed": [],
+        "run_notes": "Morning run synthesized last ~24–30h of RSS headlines/descriptions and corroborated key items using government/primary web pages (FTC, CMS) plus secondary coverage for earnings and deal context."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS's proposed outpatient and physician payment changes signal continued site-neutral and 340B-related pressure, while Medicare Advantage oversight and federal grantmaking reforms underscore a broader push for accountability across programs.",
+          "items": [
+            {
+              "item_id": "2026-07-15-cms-opps-asc-medicare-reforms",
+              "canonical_topic": "cms-opps-asc-proposed-rule",
+              "duplicate_group": "cms-opps-asc-proposed-rule",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-proposes-major-medicare-reforms-p",
+                  "source_type": "rss",
+                  "published_at": "2026-07-14T17:40:00Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-proposed-rule",
+                  "source_type": "web",
+                  "published_at": "2026-07-14T12:04:35"
+                },
+                {
+                  "source": "Morgan Lewis",
+                  "url": "https://www.morganlewis.com/blogs/healthlawscan/2026/07/cms-proposes-major-changes-to-medicare-outpatient-payments",
+                  "source_type": "web",
+                  "published_at": "2026-07-10"
+                }
+              ],
+              "title": "CMS floats broad outpatient reforms: site-neutral signals, 340B pressure, and compliance tightening",
+              "summary": "CMS proposed a set of Medicare outpatient and related payment policy changes that would materially affect hospital outpatient departments and ASCs, including proposals tied to site-neutral payment concepts and renewed attention to 340B reimbursement policy. Early legal and provider analyses frame the proposal as a multi-front effort combining payment updates with new compliance/process requirements. Comments will shape the final contours and timing, but the direction is consistent with continued pressure on off-campus billing and drug margins in outpatient settings.",
+              "strategic_implication": "Health systems should quantify exposure across off-campus departments and 340B-impacted service lines now, and align a comment strategy that connects payment changes to access and safety-net financing. Vendors and payers should expect downstream contracting renegotiations as hospitals rebalance outpatient economics.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "opps",
+                "340b",
+                "site-neutral",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-07-15-ma-ai-denials-scrutiny",
+              "canonical_topic": "medicare-advantage-ai-denials",
+              "duplicate_group": "medicare-advantage-ai-denials",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-15T09:00:00Z"
+                }
+              ],
+              "title": "Bipartisan spotlight returns to Medicare Advantage as AI-enabled denials draw scrutiny",
+              "summary": "Lawmakers are again questioning Medicare Advantage plans over the use of algorithms and automation in coverage determinations and claim denials. The renewed attention adds to a broader oversight arc that has included audits, prior authorization policy debate, and litigation around plan ratings and marketing. While specifics vary by plan and vendor stack, the common thread is whether automation is being used to accelerate denials or shorten post-acute coverage without adequate clinical review.",
+              "strategic_implication": "MA organizations and their AI/UM vendors should prioritize documentation, appeal-handling performance, and transparent clinical governance to reduce regulatory and reputational risk. Providers should anticipate continued volatility in post-acute authorizations and invest in denial management and contract guardrails.",
+              "confidence": "low",
+              "tags": [
+                "medicare-advantage",
+                "prior-authorization",
+                "ai",
+                "utilization-management",
+                "regulatory-risk"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital health dealmaking continues to consolidate point solutions, while enterprise AI partnerships increasingly emphasize secure deployment pathways rather than experimental pilots.",
+          "items": [
+            {
+              "item_id": "2026-07-15-xr-health-swing-therapeutics-acquisition",
+              "canonical_topic": "digital-therapeutics-manda",
+              "duplicate_group": "digital-therapeutics-manda",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-15T08:30:00Z"
+                }
+              ],
+              "title": "XR Health moves to consolidate digital therapeutics via Swing Therapeutics acquisition",
+              "summary": "XR Health announced it is acquiring Swing Therapeutics, a developer of evidence-based digital therapeutics. The combination points to ongoing consolidation as platforms seek broader clinical footprints and diversified reimbursement pathways. For buyers, the key question is whether integrated offerings can demonstrate measurable outcomes while simplifying procurement and integration into care pathways.",
+              "strategic_implication": "Health systems and payers evaluating digital therapeutics should expect more bundled offerings and fewer standalone vendors, increasing negotiating leverage but raising integration dependencies. DTx vendors without scale may face pressure to partner, merge, or specialize in narrow, high-evidence indications.",
+              "confidence": "low",
+              "tags": [
+                "digital-therapeutics",
+                "virtual-care",
+                "m-a",
+                "behavioral-health",
+                "outcomes"
+              ]
+            },
+            {
+              "item_id": "2026-07-15-ust-anthropic-claude-enterprise",
+              "canonical_topic": "enterprise-ai-partnership",
+              "duplicate_group": "enterprise-ai-partnership",
+              "priority_score": 6,
+              "primary_source": "Anthropic",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Anthropic",
+                  "url": "https://www.anthropic.com/news/ust-claude",
+                  "source_type": "web",
+                  "published_at": "2026-07-09"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/tech-services-company-ust-integrates",
+                  "source_type": "rss",
+                  "published_at": "2026-07-14T16:06:00Z"
+                }
+              ],
+              "title": "Enterprise services firms deepen GenAI delivery: UST integrates Claude into deployment stack",
+              "summary": "UST announced an integration strategy for deploying Anthropic's Claude within enterprise environments, emphasizing delivery, governance, and operationalization. The move reflects a shift from experimentation toward packaged implementation pathways that address data security, monitoring, and workflow integration. Healthcare buyers are increasingly asking not just what a model can do, but how it is deployed safely at scale.",
+              "strategic_implication": "Provider and payer CIOs should treat GenAI as an operating model change, budgeting for governance, monitoring, and change management alongside model access. Implementation partners that can offer repeatable, compliant patterns may outcompete point tools that lack deployment rigor.",
+              "confidence": "medium",
+              "tags": [
+                "genai",
+                "enterprise-it",
+                "governance",
+                "implementation",
+                "vendors"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Earnings and enforcement actions both point to margin pressure: providers cite a growing uninsured mix, while regulators intensify focus on PBM pricing behavior.",
+          "items": [
+            {
+              "item_id": "2026-07-15-ftc-caremark-insulin-settlement",
+              "canonical_topic": "pbm-insulin-pricing-enforcement",
+              "duplicate_group": "pbm-insulin-pricing-enforcement",
+              "priority_score": 9,
+              "primary_source": "Federal Trade Commission",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Federal Trade Commission",
+                  "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-secures-major-settlement-caremark-resolving-antitrust-case-against-second-drug-middleman",
+                  "source_type": "web",
+                  "published_at": "2026-07-14"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cvs-caremark-settlement-ftc-insulin/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-14T19:10:49Z"
+                }
+              ],
+              "title": "FTC-Caremark insulin settlement spotlights PBM list-price incentives and rebate mechanics",
+              "summary": "The FTC announced a proposed settlement with CVS Caremark resolving allegations tied to insulin pricing practices and access barriers. The order focuses on changing incentives that can favor higher list-price drugs and on increasing transparency and pass-through options for plan sponsors and members. CVS said it agreed to additional steps in response to the FTC action.",
+              "strategic_implication": "Plan sponsors and payers should reassess PBM contract terms tied to rebate guarantees and spread pricing, with particular attention to insulin and other high-rebate categories. PBMs may accelerate shifts toward pass-through and fee-based models as enforcement and legislative pressure rises.",
+              "confidence": "high",
+              "tags": [
+                "pbm",
+                "drug-pricing",
+                "insulin",
+                "antitrust",
+                "rebates"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Large-system guidance updates suggest payer mix volatility is again a board-level issue, with uninsured growth and exchange dynamics affecting revenue cycle performance and staffing decisions.",
+          "items": [
+            {
+              "item_id": "2026-07-15-hca-guidance-uninsured",
+              "canonical_topic": "provider-earnings-uninsured-mix",
+              "duplicate_group": "provider-earnings-uninsured-mix",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hca-cuts-2026-earnings-forecast-insurance-coverage-losses/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-14T15:00:00Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/",
+                  "source_type": "web",
+                  "published_at": "2026-07-14T15:04:35"
+                }
+              ],
+              "title": "HCA cuts 2026 outlook, citing more uninsured patients and coverage losses",
+              "summary": "HCA updated its 2026 outlook downward, pointing to a higher share of uninsured patients and insurance coverage losses that are affecting margins. Coverage shifts can increase bad debt and charity care while raising administrative burden across eligibility, collections, and financial assistance workflows. The guidance cut reinforces that payer mix is a key driver of near-term operating performance for large providers.",
+              "strategic_implication": "Health systems should stress-test budgets for uninsured growth, strengthen point-of-service financial counseling, and tighten RCM workflows for eligibility and presumptive charity screening. Payers and states may face renewed pressure to stabilize exchange enrollment and continuity to reduce uncompensated care.",
+              "confidence": "medium",
+              "tags": [
+                "provider-finance",
+                "uninsured",
+                "revenue-cycle",
+                "payer-mix",
+                "earnings"
+              ]
+            },
+            {
+              "item_id": "2026-07-15-medical-debt-credit-reporting-rule",
+              "canonical_topic": "medical-debt-credit-reporting",
+              "duplicate_group": "medical-debt-credit-reporting",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/hhs-promises-its-final-rule-barring-pe",
+                  "source_type": "rss",
+                  "published_at": "2026-07-14T14:53:00Z"
+                }
+              ],
+              "title": "Medical debt policy tightens: federal rulemaking moves to limit credit-reporting penalties",
+              "summary": "Federal regulators advanced a final rule intended to curb how medical debt and related penalties affect consumer credit reporting and financial outcomes. The change reflects continued policy focus on separating medical billing disputes from long-term credit harm. Operationally, it may shift provider collection strategies toward earlier resolution, more transparent billing, and patient-friendly payment options.",
+              "strategic_implication": "Providers should review collection vendor contracts and patient financial communications to align with new constraints and reputational expectations. Payers and providers may see increased emphasis on real-time eligibility and accurate patient estimates to prevent avoidable debt accumulation.",
+              "confidence": "low",
+              "tags": [
+                "medical-debt",
+                "patient-financial-experience",
+                "regulation",
+                "collections",
+                "consumer-protection"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Public health signals remain active, with foodborne illness investigations and clinical practice debates reinforcing the need for rapid, evidence-based communication to patients.",
+          "items": [
+            {
+              "item_id": "2026-07-15-cyclospora-outbreak-lettuce",
+              "canonical_topic": "foodborne-illness-cyclospora",
+              "duplicate_group": "foodborne-illness-cyclospora",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-14T19:13:55Z"
+                }
+              ],
+              "title": "Cyclospora cases hit record levels as investigators zero in on produce supply chains",
+              "summary": "STAT reported that cyclospora illnesses have surged to record levels, with investigators examining produce (including lettuce) as a potential vehicle. Foodborne investigations often face uncertainty because exposures are dispersed across complex supply chains and reporting lags are common. Clinicians and public health teams may need to manage patient questions while guidance evolves.",
+              "strategic_implication": "Health systems should ensure clear triage and testing guidance for GI outbreaks and coordinate messaging with local public health to avoid misinformation. Supply-chain traceability and timely reporting remain critical levers for faster source identification.",
+              "confidence": "low",
+              "tags": [
+                "public-health",
+                "foodborne-illness",
+                "outbreak",
+                "clinical-guidance",
+                "communications"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-14",
       "generated_at": "2026-07-14T11:11:01Z",
       "headline": "Today's Healthcare Insights",
@@ -13596,5 +13898,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-14T11:12:50Z"
+  "last_updated": "2026-07-15T11:05:44Z"
 }

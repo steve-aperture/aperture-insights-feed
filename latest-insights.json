@@ -3,6 +3,252 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-16",
+      "generated_at": "2026-07-16T11:05:03Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition centers on CMS's proposed 2027 Medicare physician payment changes—especially remote monitoring and AI/clinical software policy—and a concurrent drumbeat of cost/competition scrutiny across payers and pharma. It draws from STAT, Healthcare Dive, and Fierce Healthcare RSS plus targeted web lookups for primary and secondary context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, market signals)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, market signals)"
+        ],
+        "sources_failed": [],
+        "run_notes": "Morning run synthesized last ~24h of RSS headlines/descriptions and corroborated key items using targeted web search (including trade and primary sources where available)."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS's proposed 2027 physician fee schedule changes point to tighter billing guardrails and more explicit policy for AI-enabled tools, while ongoing competition enforcement underscores continued drug-pricing and generics scrutiny.",
+          "items": [
+            {
+              "item_id": "2026-07-16-glenmark-generics-price-fixing-settlement",
+              "canonical_topic": "generics-price-fixing-enforcement",
+              "duplicate_group": "generics-price-fixing-enforcement",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/pharmalot/2026/07/15/glenmark-pay-29-million-settle-price-fixing-allegations/",
+                  "source_type": "web",
+                  "published_at": "2026-07-15T20:03:54Z"
+                },
+                {
+                  "source": "Maryland Attorney General",
+                  "url": "https://oag.maryland.gov/News/pages/Announces$29.6MillionMultistateSettlementwithGlenmarkOverConspiracytoInflatePrices.aspx",
+                  "source_type": "web",
+                  "published_at": "2026-07-15T00:00:00Z"
+                }
+              ],
+              "title": "Glenmark agrees to $29.6M multistate settlement over alleged generic drug price-fixing",
+              "summary": "A multistate coalition announced a $29.6 million settlement with Glenmark tied to allegations of conspiring to inflate prices and limit competition for certain generic drugs. The settlement reflects continued state-level and multijurisdiction enforcement focused on legacy generics pricing conduct. While the case is specific, it reinforces that antitrust and consumer-protection exposure remains a material risk for manufacturers and intermediaries.",
+              "strategic_implication": "Life sciences leaders should refresh antitrust compliance and transaction monitoring (communications, contracting, and competitor interactions) and anticipate continuing enforcement that can affect pricing strategy and reserves.",
+              "confidence": "high",
+              "tags": [
+                "pharma",
+                "antitrust",
+                "drug-pricing",
+                "settlement",
+                "generics"
+              ]
+            },
+            {
+              "item_id": "2026-07-16-senate-cdc-nominees-vaccine-pressure",
+              "canonical_topic": "cdc-leadership-confirmation",
+              "duplicate_group": "cdc-leadership-confirmation",
+              "priority_score": 6,
+              "primary_source": "The Hill",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/feed/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-15T20:26:04Z"
+                },
+                {
+                  "source": "The Hill",
+                  "url": "https://thehill.com/policy/healthcare/5970727-schwartz-kaufman-cdc-aspr-testimony/",
+                  "source_type": "web",
+                  "published_at": "2026-07-15T00:00:00Z"
+                }
+              ],
+              "title": "Senate hearing spotlights CDC leadership turmoil and vaccine policy pressures",
+              "summary": "Coverage of a key Senate hearing indicates that leadership changes at CDC are influencing the confirmation environment for incoming health officials, with senators pressing nominees on vaccine-related views and independence. The episode highlights how public-health governance and scientific decision-making are becoming more central to political oversight. Near-term, agencies may face heightened scrutiny over guidance, communications, and advisory processes.",
+              "strategic_implication": "Health systems and life sciences firms should plan for greater volatility in federal public-health guidance and communications, strengthening internal clinical governance to manage rapid shifts in recommendations.",
+              "confidence": "medium",
+              "tags": [
+                "cdc",
+                "public-health",
+                "vaccines",
+                "policy",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "CMS is signaling more direct Medicare policy around clinical software, AI, and remote monitoring program models—raising near-term diligence requirements for vendors and provider partners.",
+          "items": [
+            {
+              "item_id": "2026-07-16-cms-rpm-vendor-ban-proposal",
+              "canonical_topic": "cms-rpm-vendor-billing",
+              "duplicate_group": "cms-rpm-vendor-billing",
+              "priority_score": 10,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/feed/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-15T15:41:50Z"
+                },
+                {
+                  "source": "TechTarget",
+                  "url": "https://www.techtarget.com/virtualhealthcare/feature/CMS-plans-to-eliminate-payment-for-RPM-services-by-third-party-vendors",
+                  "source_type": "web",
+                  "published_at": "2026-07-15T21:03:54Z"
+                }
+              ],
+              "title": "CMS proposes limiting Medicare RPM/RTM billing to practice-employed clinical staff, not vendor-run services",
+              "summary": "CMS' proposed CY2027 Physician Fee Schedule includes a major shift for remote physiologic monitoring (RPM) and remote therapeutic monitoring (RTM): payment would be allowed only when services are furnished by clinical staff employed by the billing practice, rather than outsourced to contracted third-party vendors. The proposal also contemplates additional guardrails (e.g., initiating-visit expectations and valuation updates), citing concerns about fragmented care and program integrity. If finalized, many vendor-operated monitoring programs would need to restructure to remain viable under Medicare billing rules.",
+              "strategic_implication": "Digital health vendors and provider partners should model operational redesigns (employment/supervision, documentation, and initiating-visit workflows) and prepare an evidence-based comment strategy to protect access and compliance ahead of 2027.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "medicare",
+                "remote-monitoring",
+                "revenue-cycle",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-07-16-cms-clinical-software-ai-payment",
+              "canonical_topic": "cms-clinical-software-ai-payment",
+              "duplicate_group": "cms-clinical-software-ai-payment",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/feed/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-16T08:30:00Z"
+                }
+              ],
+              "title": "CMS signals intent to revamp Medicare payment policy for clinical software and AI tools",
+              "summary": "STAT reports that CMS is indicating plans to revise how Medicare pays for certain categories of clinical software and AI-enabled tools. The signal fits with broader rulemaking trends where CMS seeks clearer boundaries on what constitutes billable clinical work versus technology-enabled support, and how costs should be reflected in fee schedule valuation. Details will matter for vendors that rely on provider billing pathways or practice expense assumptions.",
+              "strategic_implication": "Health systems and digital health suppliers should map AI/software offerings to Medicare payment constructs now—anticipating tighter definitions, documentation expectations, and potential downstream effects on contracting and ROI cases.",
+              "confidence": "low",
+              "tags": [
+                "cms",
+                "ai",
+                "clinical-software",
+                "medicare",
+                "health-it"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payers and pharma continue to face margin pressure and legal exposure, with strategy shifts (e.g., Medicaid footprint changes) and enforcement outcomes shaping 2026–2027 planning.",
+          "items": [
+            {
+              "item_id": "2026-07-16-elevance-medicaid-retreat",
+              "canonical_topic": "elevance-medicaid-strategy",
+              "duplicate_group": "elevance-medicaid-strategy",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/15/elevance-health-shrink-medicaid-portfolio-high-costs/",
+                  "source_type": "web",
+                  "published_at": "2026-07-15T18:03:54Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/feed/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-15T17:12:56Z"
+                }
+              ],
+              "title": "Elevance signals a Medicaid footprint pullback as costs stay elevated",
+              "summary": "STAT reports that Elevance Health is planning to shrink parts of its Medicaid portfolio in response to persistently high costs. The move follows a broader payer trend of reassessing Medicaid profitability and risk-adjustment dynamics as states rebid contracts and medical cost trends remain volatile. For providers and states, shifts in payer participation can trigger network churn, renegotiations, and operational disruption.",
+              "strategic_implication": "Provider organizations should stress-test Medicaid revenue concentration and prepare for payer turnover (credentialing, contracting, and care-management handoffs), while states may need contingency planning for procurement and access continuity.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "payers",
+                "elevance",
+                "managed-care",
+                "cost-trends"
+              ]
+            },
+            {
+              "item_id": "2026-07-16-celcuity-gedatolisib-fda-approval",
+              "canonical_topic": "fda-oncology-approval-gedatolisib",
+              "duplicate_group": "fda-oncology-approval-gedatolisib",
+              "priority_score": 6,
+              "primary_source": "Reuters",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/feed/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-15T15:09:21Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/legal/litigation/celcuity-shares-fall-delayed-breast-cancer-drug-launch-eclipses-first-us-fda-2026-07-07-15/",
+                  "source_type": "web",
+                  "published_at": "2026-07-15T00:00:00Z"
+                }
+              ],
+              "title": "FDA approves Celcuity's gedatolisib for a subset of advanced breast cancer patients",
+              "summary": "Reuters reports that FDA approved Celcuity's gedatolisib (Revtorpyk) for certain patients with advanced breast cancer, marking the company's first U.S. approval. Market reaction focused on commercial launch timing and label considerations, underscoring execution risk even after regulatory success. The approval adds another targeted option in a competitive oncology landscape where access, sequencing, and combination strategy drive uptake.",
+              "strategic_implication": "Providers and payers should monitor guideline incorporation and real-world utilization, while manufacturers should anticipate heightened investor and customer scrutiny on launch readiness, distribution, and patient-support execution.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "oncology",
+                "drug-approval",
+                "market-access",
+                "biopharma"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "No single provider-operations headline dominated, but payment-model and vendor-model changes in Medicare could cascade into care management workflows and contracting decisions.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major workforce or clinical practice items surfaced in this signal set today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-15",
       "generated_at": "2026-07-15T11:05:44Z",
       "headline": "Today's Healthcare Insights",
@@ -13898,5 +14144,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-15T11:05:44Z"
+  "last_updated": "2026-07-16T11:05:03Z"
 }

@@ -3,6 +3,456 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-21",
+      "generated_at": "2026-07-21T11:02:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing centers on CMS payment policy direction (site-neutral, physician fee schedule and 340B signals), payer and provider margin pressure, and the next wave of health AI governance and deployment. It draws from STAT, Healthcare Dive, and Fierce Healthcare RSS plus targeted web search for regulatory and market context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, earnings, market moves)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, earnings, market moves)"
+        ],
+        "sources_failed": [],
+        "run_notes": "Morning run synthesized last ~24h of RSS headlines/descriptions and used targeted web search for corroborating context where full-article access is constrained."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS is telegraphing tighter economic discipline (site-neutral expansion, 340B survey-based pricing proposals) while political and industry stakeholders intensify pressure around Medicare drug policy and prior-authorization experiments.",
+          "items": [
+            {
+              "item_id": "2026-07-21-orphan-drugs-price-pilots-exemption",
+              "canonical_topic": "medicare-drug-price-pilots",
+              "duplicate_group": "medicare-drug-price-pilots",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/21/rare-disease-coalition-orphan-drug-exemption-medicare-pilot-price-programs/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-21T08:30:00Z"
+                }
+              ],
+              "title": "Rare-disease drugmakers push for orphan-drug carveout from Medicare drug price pilots",
+              "summary": "A coalition of biotech companies is lobbying the federal government to exempt orphan drugs from newly proposed pilot programs intended to reduce Medicare drug costs. The request signals that manufacturers expect pilots to influence net pricing and utilization beyond IRA negotiation, and are trying to wall off higher-priced specialty categories. The debate also foreshadows provider and payer disputes over access, exceptions and clinical criteria if pilots proceed.",
+              "strategic_implication": "Health systems and payers should model how pilot-driven price changes could ripple into Part B/Part D benefit design and specialty pharmacy operations, and watch for policy carveouts that shift cost pressure to other drug categories.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "drug-pricing",
+                "policy",
+                "specialty-pharmacy"
+              ]
+            },
+            {
+              "item_id": "2026-07-21-opps-340b-site-neutral-proposal",
+              "canonical_topic": "opps-2027-proposed-rule",
+              "duplicate_group": "opps-2027-proposed-rule",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/20/site-neutral-payments-hospitals-health-insurance-earnings-season/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-20T14:38:04Z"
+                },
+                {
+                  "source": "Phelps",
+                  "url": "https://www.phelps.com/insights/cy-2027-opps-proposed-rule-major-payment-changes-ahead-for-hospitalsis-your-organization-ready.html",
+                  "source_type": "web",
+                  "published_at": "2026-07-21T00:02:31Z"
+                }
+              ],
+              "title": "CMS OPPS draft signals deeper 340B payment cuts and new site-neutral expansion for imaging",
+              "summary": "Recent coverage highlights that CMS’ CY 2027 OPPS proposed rule would extend site-neutral payment logic and revisit outpatient drug payment policy, including significant changes tied to 340B acquisition cost data. Legal analysis notes CMS proposes cutting 340B drug payment from ASP+6% to ASP-33.4% (with exemptions for certain hospital types) and expanding site-neutral payment for imaging without contrast in off-campus provider-based departments. The package suggests meaningful revenue redistribution and new compliance/billing mechanics for outpatient departments.",
+              "strategic_implication": "Providers should quantify service-line impacts (340B margin, imaging in off-campus sites) and prepare for attestation/billing workflow changes; payers should anticipate shifting hospital contracting posture as policy compresses outpatient spread.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "opps",
+                "340b",
+                "site-neutral"
+              ]
+            },
+            {
+              "item_id": "2026-07-21-rpm-third-party-vendors-proposal",
+              "canonical_topic": "remote-patient-monitoring-payment",
+              "duplicate_group": "remote-patient-monitoring-payment",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/medicare-proposes-stricter-requirements-remote-monitoring-services-limiting-use-third",
+                  "source_type": "rss",
+                  "published_at": "2026-07-16T14:24:00Z"
+                },
+                {
+                  "source": "Holland & Knight",
+                  "url": "https://www.hklaw.com/en/insights/publications/2026/07/cms-issues-cy-2027-medicare-physician-fee-schedule-proposed-rule",
+                  "source_type": "web",
+                  "published_at": "2026-07-20T12:02:31Z"
+                }
+              ],
+              "title": "Physician Fee Schedule draft would tighten remote monitoring rules, pressuring vendor-led RPM programs",
+              "summary": "Fierce Healthcare reports that CMS proposed stricter requirements for remote monitoring services that would limit the role of third-party vendors, a change that health tech leaders say could disrupt existing RPM programs. The proposal appears in the broader CY 2027 Physician Fee Schedule package that also includes requests for information on future payment reforms. If finalized, the change would likely push health systems to bring more operational responsibility in-house or redesign vendor relationships.",
+              "strategic_implication": "Systems with scaled RPM should inventory which workflows are vendor-performed versus clinician-performed and build contingency operating models (staffing, device logistics, documentation) ahead of 2027 policy finalization.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "rpm",
+                "billing",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-07-21-wiser-prior-auth-political-fight",
+              "canonical_topic": "medicare-prior-authorization-pilot",
+              "duplicate_group": "medicare-prior-authorization-pilot",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/senate-republicans-block-medicare-ai-prior-authorization-pilot-repeal-wiser/825523/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-17T13:30:04Z"
+                }
+              ],
+              "title": "Senate fight over Medicare prior auth pilot keeps WISeR alive amid care-delay concerns",
+              "summary": "Healthcare Dive reports that Senate Republicans blocked Democrats’ attempt to end CMS’ WISeR model, a Medicare pilot that introduces AI-driven prior authorization. Critics argue the model could delay care for seniors, while supporters frame it as a utilization-management modernization effort. The vote signals continued politicization of prior auth policy and a high likelihood of further oversight.",
+              "strategic_implication": "Provider groups should treat Medicare prior auth experimentation as a near-term operational risk (appeals volume, care delays) and align advocacy and data collection to document impact on patient outcomes and throughput.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "prior-authorization",
+                "ai",
+                "regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Healthcare AI is shifting from pilots to scaled deployments and governance frameworks, with payers and health systems prioritizing workflow ownership, security, and measurable operational impact.",
+          "items": [
+            {
+              "item_id": "2026-07-21-chai-public-health-implementation",
+              "canonical_topic": "health-ai-governance",
+              "duplicate_group": "health-ai-governance",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/coalition-health-ai-launches-implementation-initiative-public-health",
+                  "source_type": "rss",
+                  "published_at": "2026-07-16T10:52:00Z"
+                }
+              ],
+              "title": "Coalition for Health AI expands from principles to implementation support for public health agencies",
+              "summary": "Fierce Healthcare reports that the Coalition for Health AI (CHAI) launched an implementation initiative aimed at helping public health agencies adopt AI more safely and consistently, with applications open through early August. The move reflects growing demand for practical governance playbooks (model oversight, validation, monitoring) rather than high-level AI ethics statements. Public sector participation could also normalize standards that vendors and health systems will be expected to meet.",
+              "strategic_implication": "Health systems should anticipate procurement requirements to shift toward auditable AI governance artifacts (monitoring plans, bias testing, incident response) and align internal model-risk management with emerging CHAI-style frameworks.",
+              "confidence": "medium",
+              "tags": [
+                "ai-governance",
+                "public-health",
+                "risk-management",
+                "procurement"
+              ]
+            },
+            {
+              "item_id": "2026-07-21-klas-ai-top-it-priority",
+              "canonical_topic": "healthcare-it-ai-priority",
+              "duplicate_group": "healthcare-it-ai-priority",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/57-global-healthcare-orgs-top-it-priority-ai-klas-report",
+                  "source_type": "rss",
+                  "published_at": "2026-07-20T15:55:00Z"
+                }
+              ],
+              "title": "KLAS survey: AI rises to top IT investment priority globally, overtaking EHR and digitization",
+              "summary": "A KLAS report cited by Fierce Healthcare finds AI is the top healthcare IT investment priority for 57% of surveyed organizations, ahead of EHR and digitization initiatives. The result suggests budget reallocation toward automation and decision-support capabilities, even as core systems remain unfinished work. It also implies a coming wave of integration and change-management needs as AI tools intersect with EHR workflows.",
+              "strategic_implication": "Leaders should treat AI spend as a portfolio decision: prioritize use cases with measurable ROI (documentation, coding, access, throughput) and ensure integration capacity doesn’t become the limiting factor.",
+              "confidence": "medium",
+              "tags": [
+                "health-it",
+                "ai",
+                "ehr",
+                "investment"
+              ]
+            },
+            {
+              "item_id": "2026-07-21-lark-samsung-senior-coach",
+              "canonical_topic": "ai-coaching-seniors",
+              "duplicate_group": "ai-coaching-seniors",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/lark-health-samsung-team-ai-powered-health-coach-us-seniors",
+                  "source_type": "rss",
+                  "published_at": "2026-07-15T12:51:00Z"
+                }
+              ],
+              "title": "Lark Health and Samsung expand AI coaching programs for seniors via Samsung Health",
+              "summary": "Fierce Healthcare reports Lark Health and Samsung are partnering to deliver AI-powered coaching programs for eligible seniors through Samsung Health, with no out-of-pocket costs for participants. The partnership indicates growing distribution leverage for consumer platforms to serve as front doors for chronic disease and prevention programs. It also raises questions about clinical integration, attribution and measurement when engagement happens outside provider-owned channels.",
+              "strategic_implication": "Payers and providers should clarify data-sharing and outcomes measurement expectations in consumer-platform partnerships to ensure these programs translate into quality and cost performance, not just engagement metrics.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "senior-care",
+                "consumer-platforms",
+                "chronic-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Earnings and transaction activity point to sustained margin and membership volatility, while targeted M&A continues around home-based care and oncology data assets.",
+          "items": [
+            {
+              "item_id": "2026-07-21-unitedhealth-q2-profit-outlook",
+              "canonical_topic": "unitedhealth-earnings",
+              "duplicate_group": "unitedhealth-earnings",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/unitedhealth-group-boosts-outlook-it-posts-55b-q2-profit",
+                  "source_type": "rss",
+                  "published_at": "2026-07-16T07:45:00Z"
+                },
+                {
+                  "source": "Becker's Payer",
+                  "url": "https://www.beckerspayer.com/payer/medicare-advantage/unitedhealthcare-tightens-ma-enrollment-loss-projection-for-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-07-20T14:02:31Z"
+                }
+              ],
+              "title": "UnitedHealth posts strong quarter but flags continued cost pressure and MA membership volatility",
+              "summary": "Fierce Healthcare reports UnitedHealth Group posted $5.5B in Q2 profit and boosted its outlook, with leadership emphasizing ongoing cost discipline. Separate payer coverage notes UnitedHealthcare tightened its Medicare Advantage enrollment-loss projection for 2026. Together, the signals suggest large payers remain focused on utilization management and benefit redesign while navigating membership and risk adjustment dynamics.",
+              "strategic_implication": "Provider contract teams should expect continued payer push on unit cost and utilization levers (prior auth, narrower networks, site-of-service), while population health leaders should plan for churn-driven care continuity gaps.",
+              "confidence": "medium",
+              "tags": [
+                "payers",
+                "medicare-advantage",
+                "earnings",
+                "utilization"
+              ]
+            },
+            {
+              "item_id": "2026-07-21-tempus-personalis-acquisition",
+              "canonical_topic": "oncology-data-ma",
+              "duplicate_group": "oncology-data-ma",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/medtech/tempus-buys-out-cancer-genomics-specialist-personalis-15-billion-deal",
+                  "source_type": "rss",
+                  "published_at": "2026-07-20T09:12:00Z"
+                }
+              ],
+              "title": "Tempus to acquire Personalis in $1.5B deal, consolidating oncology genomics and data platforms",
+              "summary": "Fierce Healthcare reports Tempus agreed to buy cancer genomics specialist Personalis for $1.5B, deepening vertical integration in oncology testing and data assets. The transaction underscores the strategic value of longitudinal molecular data linked to outcomes and treatment pathways. Consolidation may also shift partner dynamics for biopharma and health systems using these platforms for trials and precision oncology programs.",
+              "strategic_implication": "Health systems should reassess vendor concentration risk and data-governance terms in precision oncology partnerships, while biopharma teams should anticipate evolving pricing power around real-world data and trial recruitment capabilities.",
+              "confidence": "medium",
+              "tags": [
+                "m-and-a",
+                "oncology",
+                "genomics",
+                "data"
+              ]
+            },
+            {
+              "item_id": "2026-07-21-cardinal-adapthealth-diabetes-unit",
+              "canonical_topic": "home-care-ma",
+              "duplicate_group": "home-care-ma",
+              "priority_score": 6,
+              "primary_source": "U.S. News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "U.S. News",
+                  "url": "https://money.usnews.com/investing/news/articles/2026-07-20/cardinal-health-to-buy-adapthealth-diabetes-unit-strive-medical-for-360-million",
+                  "source_type": "web",
+                  "published_at": "2026-07-20T00:00:00Z"
+                }
+              ],
+              "title": "Cardinal Health expands home-based care footprint with AdaptHealth diabetes unit and Strive Medical acquisitions",
+              "summary": "U.S. News reports Cardinal Health plans to buy AdaptHealth’s diabetes unit and Strive Medical for $360M, expanding its home care and chronic disease supply capabilities. The move continues the trend of supply-chain and distribution players moving closer to the patient in the home. These transactions also indicate continued confidence in durable home-based care demand despite reimbursement and utilization pressures.",
+              "strategic_implication": "Providers and payers should expect more vertically integrated home-care supply offerings and consider how distribution consolidation could affect pricing, service levels and contracting for diabetes and DME categories.",
+              "confidence": "medium",
+              "tags": [
+                "home-care",
+                "dme",
+                "diabetes",
+                "m-and-a"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Operational risk signals include practice distress and cyber incidents, reinforcing the need for cash-flow discipline and resilience planning even as capital and partnerships flow to select areas.",
+          "items": [
+            {
+              "item_id": "2026-07-21-practice-bankruptcies-spike",
+              "canonical_topic": "provider-financial-distress",
+              "duplicate_group": "provider-financial-distress",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-bankruptcies-stabilize-first-half-2026-gibbins-advisors/825676/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-20T17:54:01Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/healthcare-bankruptcy-volume-stabilizes-h1-though-more-practices-are-falling-under",
+                  "source_type": "rss",
+                  "published_at": "2026-07-20T12:21:00Z"
+                }
+              ],
+              "title": "Practice and clinic bankruptcies rise in 2026, highlighting fragility in independent provider economics",
+              "summary": "Healthcare Dive reports clinic and physician practice bankruptcies have spiked in 2026 so far, citing ongoing financial pressures including Medicaid cuts. Fierce Healthcare similarly notes overall healthcare bankruptcy volume is stabilizing, but more practices are falling into distress. The pattern suggests smaller operators remain exposed to payer mix shifts, labor costs and reimbursement compression even as larger systems stabilize.",
+              "strategic_implication": "Health systems and payers should anticipate access gaps and referral-network instability as independent practices fail or sell, and consider targeted support models (MSO services, contracting simplification, value-based transition assistance).",
+              "confidence": "medium",
+              "tags": [
+                "provider-ops",
+                "bankruptcy",
+                "payer-mix",
+                "medicaid"
+              ]
+            },
+            {
+              "item_id": "2026-07-21-catholic-health-ge-partnership",
+              "canonical_topic": "health-system-technology-partnerships",
+              "duplicate_group": "health-system-technology-partnerships",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/ge-healthcare-catholic-health-strike-10-year-500m-technology-partnership",
+                  "source_type": "rss",
+                  "published_at": "2026-07-16T15:12:00Z"
+                }
+              ],
+              "title": "Catholic Health and GE HealthCare sign 10-year, $500M partnership to refresh imaging and digital infrastructure",
+              "summary": "Fierce Healthcare reports GE HealthCare and Catholic Health struck a 10-year, $500M technology partnership covering equipment refresh and digital tools across roughly 40 hospital and outpatient sites. Large-scale vendor partnerships like this increasingly bundle hardware, software and operational support to address capital constraints and standardization needs. The deal also signals competitive pressure to modernize imaging fleets while integrating analytics and workflow tooling.",
+              "strategic_implication": "Systems should evaluate whether long-term, bundled vendor partnerships improve uptime and total cost of ownership, and ensure procurement terms preserve interoperability and future optionality as AI-enabled imaging evolves.",
+              "confidence": "medium",
+              "tags": [
+                "imaging",
+                "capital-planning",
+                "partnerships",
+                "health-it"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce policy and cybersecurity events remain persistent operational variables; organizations should monitor visa and training rules alongside breach trends affecting trust and continuity.",
+          "items": [
+            {
+              "item_id": "2026-07-21-dhs-visa-duration-training",
+              "canonical_topic": "physician-workforce-visa-policy",
+              "duplicate_group": "physician-workforce-visa-policy",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/trump-administration-decouples-visa-duration-training-program-length",
+                  "source_type": "rss",
+                  "published_at": "2026-07-20T17:04:00Z"
+                }
+              ],
+              "title": "DHS changes visa duration rules, adding administrative friction for some residency and fellowship programs",
+              "summary": "Fierce Healthcare reports DHS decoupled the duration of some visas from training program length, creating a four-year cap that could require certain residents and fellows to seek extensions. Given that many training programs run longer than four years, the policy could increase paperwork burden for teaching hospitals and trainees. Over time, additional uncertainty could affect recruitment and pipeline stability for programs that rely heavily on international medical graduates.",
+              "strategic_implication": "Academic medical centers should proactively assess trainee visa exposure by program length, strengthen legal/HR processes for extensions, and plan for contingencies in hard-to-staff specialties.",
+              "confidence": "medium",
+              "tags": [
+                "workforce",
+                "immigration",
+                "gme",
+                "provider-ops"
+              ]
+            },
+            {
+              "item_id": "2026-07-21-clover-health-breach",
+              "canonical_topic": "healthcare-cybersecurity-breaches",
+              "duplicate_group": "healthcare-cybersecurity-breaches",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/clover-health-data-breach/825628/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-20T13:20:19Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/clover-health-reveals-data-breach-sec-filing",
+                  "source_type": "rss",
+                  "published_at": "2026-07-20T13:47:00Z"
+                }
+              ],
+              "title": "Clover Health discloses data breach; incident details still limited as payer cyber risk persists",
+              "summary": "Healthcare Dive and Fierce Healthcare report Clover Health disclosed a data breach in an SEC filing, though the company has not yet confirmed what data was exposed or how many individuals were affected. The disclosure highlights continued cyber exposure for payers, where incidents can trigger regulatory reporting, member trust issues and operational disruption. The lack of early detail is typical, but it can complicate downstream provider and partner communications.",
+              "strategic_implication": "Provider and payer partners should review data-sharing and breach-notification clauses, and accelerate incident-response coordination to reduce uncertainty for members and clinicians when third-party breaches occur.",
+              "confidence": "medium",
+              "tags": [
+                "cybersecurity",
+                "payers",
+                "hipaa",
+                "risk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-20",
       "generated_at": "2026-07-20T11:06:04Z",
       "headline": "Today's Healthcare Insights",
@@ -14618,5 +15068,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-20T11:06:04Z"
+  "last_updated": "2026-07-21T11:04:30Z"
 }

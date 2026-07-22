@@ -3,6 +3,304 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-22",
+      "generated_at": "2026-07-22T11:07:47Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing highlights federal funding and Medicaid oversight actions, continued consolidation in home-based care, and growing urgency around enterprise AI governance in provider settings. It draws from STAT, Healthcare Dive, and Fierce Healthcare RSS plus targeted web search for confirmatory policy and market context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, market moves, health tech)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, market moves, health tech)"
+        ],
+        "sources_failed": [],
+        "run_notes": "Morning run synthesized last ~24h of RSS headlines/descriptions and used targeted web search for corroborating context where full-article access can be constrained."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal agencies are tightening oversight and reallocating funds, creating near-term volatility for state Medicaid cashflow and for federally supported quality, safety, and prevention programs.",
+          "items": [
+            {
+              "item_id": "2026-07-22-medicaid-payments-deferred-ca-mn",
+              "canonical_topic": "medicaid-payment-deferrals",
+              "duplicate_group": "medicaid-payment-deferrals",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/21/medicaid-payments-1-billion-deferred-california-minnesota/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-21T20:10:43Z"
+                },
+                {
+                  "source": "US Department of Health and Human Services",
+                  "url": "https://www.hhs.gov/press-room/hhs-defers-medicaid-payments-california-minnesota-fraud-review.html",
+                  "source_type": "web",
+                  "published_at": "2026-07-21T00:00:00Z"
+                }
+              ],
+              "title": "HHS defers over $1B in Medicaid payments to California and Minnesota pending fraud review",
+              "summary": "Federal officials said they are deferring more than $1 billion in Medicaid payments to California and Minnesota while seeking additional documentation and reviewing suspected fraud and noncompliance. The move adds operational cashflow uncertainty for states and Medicaid managed care partners, and may signal more aggressive, targeted payment controls. Providers serving Medicaid-heavy populations could see downstream payment timing disruption if state payment cycles tighten.",
+              "strategic_implication": "Health systems and payers should stress-test liquidity and claims adjudication workflows for temporary federal payment holds, and tighten internal compliance and documentation readiness for higher scrutiny on high-dollar Medicaid claims.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "payment-policy",
+                "fraud",
+                "state-budgets"
+              ]
+            },
+            {
+              "item_id": "2026-07-22-ahrq-grants-ended-early",
+              "canonical_topic": "ahrq-research-funding-cuts",
+              "duplicate_group": "ahrq-research-funding-cuts",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/22/ahrq-grants-health-quality-researchers-lose-109-million-funding/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-22T08:30:00Z"
+                }
+              ],
+              "title": "AHRQ ends remaining funding on dozens of health quality research grants (~$109M)",
+              "summary": "STAT reported that federal health quality research grants at AHRQ were ended early via non-award notices, with an estimated $109.2 million in remaining funding affected. The cuts create near-term disruption for delivery-system research programs and training pipelines that often underpin quality improvement and patient safety initiatives. The shift may also narrow the evidence base available to providers and payers for operational best practices.",
+              "strategic_implication": "Provider and payer leaders should anticipate slower public-sector evidence generation in care-delivery improvement and consider whether to fill gaps through internal analytics, academic partnerships, or private funding of implementation research.",
+              "confidence": "medium",
+              "tags": [
+                "research",
+                "quality",
+                "federal-funding",
+                "patient-safety"
+              ]
+            },
+            {
+              "item_id": "2026-07-22-cdc-hiv-prevention-funding-risk",
+              "canonical_topic": "hiv-prevention-funding",
+              "duplicate_group": "hiv-prevention-funding",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/21/hiv-aids-prevention-advocates-fear-deep-cuts-cdc-funding/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-21T14:24:32Z"
+                },
+                {
+                  "source": "Save HIV Funding",
+                  "url": "https://savehivfunding.org/statement-cdc-not-renewing-hiv-prevention-funding-for-nearly-100-community-based-organizations/",
+                  "source_type": "web",
+                  "published_at": "2026-07-21T00:00:00Z"
+                }
+              ],
+              "title": "HIV prevention groups warn CDC community-program funding may not be renewed",
+              "summary": "Advocates warned that CDC funding for certain community-based HIV prevention programs may not be renewed, raising the risk of service disruption for testing, outreach, and linkage to PrEP. Reports indicate funds could be redirected through state and local health departments rather than directly to community organizations. The change could introduce contracting delays and reduce the reach of trusted frontline prevention networks.",
+              "strategic_implication": "Public health partners, FQHCs, and Medicaid plans should map local HIV prevention capacity and prepare contingency partnerships if community-based organizations experience funding gaps that increase downstream utilization and avoidable infections.",
+              "confidence": "medium",
+              "tags": [
+                "public-health",
+                "hiv",
+                "cdc",
+                "prevention"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Provider and vendor leaders are shifting from experimentation to governance and competitive execution as AI tools (especially documentation and workflow automation) scale into core clinical operations.",
+          "items": [
+            {
+              "item_id": "2026-07-22-hospital-ai-governance-accountability",
+              "canonical_topic": "provider-ai-governance",
+              "duplicate_group": "provider-ai-governance",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/22/hospital-ai-systems-ceo-leadership-accountability-governance/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-22T08:30:00Z"
+                }
+              ],
+              "title": "Hospitals face growing pressure to formalize AI governance and executive accountability",
+              "summary": "A STAT opinion piece argued that hospital AI programs can drift without clear ownership, continuous monitoring, and leadership-level accountability. As AI tools proliferate across documentation, decision support, and operational workflows, risks include model performance decay, bias, and unclear escalation paths when outputs affect care. The article frames AI governance as an executive function rather than a periodic technical committee activity.",
+              "strategic_implication": "Health system boards and C-suites should treat AI like any other clinical risk program: establish accountable owners, model monitoring, incident response, and clear vendor obligations before scaling beyond low-risk use cases.",
+              "confidence": "medium",
+              "tags": [
+                "health-ai",
+                "governance",
+                "risk-management",
+                "provider-operations"
+              ]
+            },
+            {
+              "item_id": "2026-07-22-nabla-new-ceo-ai-scribe",
+              "canonical_topic": "ambient-ai-scribes",
+              "duplicate_group": "ambient-ai-scribes",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/21/ai-scribe-nabla-new-ceo-plan-gain-marketshare/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-21T12:00:00Z"
+                },
+                {
+                  "source": "PR Newswire",
+                  "url": "https://www.prnewswire.com/news-releases/nabla-appoints-brian-manning-as-chief-executive-officer-to-lead-next-phase-of-growth-302829992.html",
+                  "source_type": "web",
+                  "published_at": "2026-07-21T00:00:00Z"
+                }
+              ],
+              "title": "Nabla names a new CEO as ambient AI scribe market competition intensifies",
+              "summary": "Nabla announced a CEO transition as it seeks to expand in the increasingly crowded ambient documentation (AI scribe) market. Competitive dynamics are shifting toward enterprise procurement criteria: EHR integration depth, security and retention posture, measurable clinician time savings, and deployment support. The move underscores that the category is entering an execution-and-scale phase rather than early experimentation.",
+              "strategic_implication": "Provider buyers should tighten evaluation to outcomes and integration proof, and negotiate data governance and uptime commitments as ambient documentation vendors race to lock in multi-year enterprise contracts.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "ai-scribe",
+                "ehr-integration",
+                "vendor-market"
+              ]
+            },
+            {
+              "item_id": "2026-07-22-epic-executive-departures",
+              "canonical_topic": "ehr-vendor-leadership-churn",
+              "duplicate_group": "ehr-vendor-leadership-churn",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/21/is-there-an-exodus-underway-at-epic-health-tech/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-21T13:43:43Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/4-more-executives-leaving-epic-report/",
+                  "source_type": "web",
+                  "published_at": "2026-07-21T00:00:00Z"
+                }
+              ],
+              "title": "Reports flag additional Epic executive departures, raising customer questions about continuity",
+              "summary": "Industry reporting pointed to additional executive departures at Epic, prompting speculation about leadership churn at a dominant EHR vendor. While staffing changes do not necessarily indicate product risk, they can affect roadmap clarity, customer support continuity, and partner strategy, especially as Epic expands into AI-enabled workflows and new modules. Providers may seek reassurance around account management stability and long-term product commitments.",
+              "strategic_implication": "Health systems heavily dependent on a single EHR vendor should maintain strong governance over roadmap assumptions, ensure contractual clarity on support and integrations, and keep contingency plans for key workflow dependencies.",
+              "confidence": "low",
+              "tags": [
+                "ehr",
+                "vendor-risk",
+                "health-it",
+                "strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "M&A activity and financial distress indicators continue to reinforce a bifurcated market: scaled platforms are buying capabilities, while smaller practices face capital and reimbursement headwinds.",
+          "items": [
+            {
+              "item_id": "2026-07-22-cardinal-home-care-acquisitions",
+              "canonical_topic": "home-based-care-consolidation",
+              "duplicate_group": "home-based-care-consolidation",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cardinal-buys-diabetes-business-strive-medical-360-million/825747/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-21T12:46:52Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/legal/transactional/cardinal-health-buy-adapthealth-diabetes-unit-strive-medical-360-million-2026-07-20/",
+                  "source_type": "web",
+                  "published_at": "2026-07-20T00:00:00Z"
+                }
+              ],
+              "title": "Cardinal Health buys diabetes and DME capabilities to expand at-home services platform",
+              "summary": "Cardinal Health agreed to acquire a diabetes-focused business from AdaptHealth and medical supplier Strive Medical (reported deal value $360 million), expanding its in-home solutions footprint. The acquisitions reflect continued strategic investment in at-home care enablement, including supplies distribution and chronic-condition support infrastructure. The move may intensify competition for payers and providers seeking scaled partners for home-based care pathways.",
+              "strategic_implication": "Providers and payers should expect more vertically integrated home-care offerings from large distributors and evaluate whether bundled supply-and-service models can lower total cost of care without compromising clinical oversight.",
+              "confidence": "high",
+              "tags": [
+                "m-a",
+                "home-based-care",
+                "dme",
+                "cardinal-health"
+              ]
+            },
+            {
+              "item_id": "2026-07-22-practice-bankruptcies-2026",
+              "canonical_topic": "practice-financial-distress",
+              "duplicate_group": "practice-financial-distress",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-bankruptcies-stabilize-first-half-2026-gibbins-advisors/825676/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-20T17:54:01Z"
+                },
+                {
+                  "source": "Gibbins Advisors",
+                  "url": "https://gibbinsadvisors.com/research/healthcare-bankruptcy-filings-stabilize-in-the-first-half-of-2026-but-medicaid-and-policy-reforms-are-set-to-intensify-financial-pressure",
+                  "source_type": "web",
+                  "published_at": "2026-07-20T00:00:00Z"
+                }
+              ],
+              "title": "Clinic and physician practice bankruptcies rise in 2026, signaling ongoing outpatient margin stress",
+              "summary": "Healthcare Dive reported that clinic and physician practice bankruptcies have increased in 2026 to date, even as broader healthcare bankruptcy filings stabilized. Drivers include reimbursement pressure, labor and supply costs, and tighter capital conditions that hit smaller outpatient operators disproportionately. Continued distress could accelerate roll-ups and payer-provider renegotiations around rates and risk contracts.",
+              "strategic_implication": "Health systems and payers should monitor referral-network stability and prepare for acquisition opportunities or access disruptions as independent practices face liquidity constraints.",
+              "confidence": "medium",
+              "tags": [
+                "bankruptcies",
+                "physician-practices",
+                "outpatient",
+                "financial-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "No major provider-specific operational metrics disclosures surfaced beyond the Medicaid cashflow and practice distress signals reflected elsewhere in today’s briefing.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce sentiment and retention pressures continue to intersect with benefits design and care delivery modernization, but no single new operationally actionable development dominated today’s signal set.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-21",
       "generated_at": "2026-07-21T11:02:00Z",
       "headline": "Today's Healthcare Insights",
@@ -15068,5 +15366,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-21T11:04:30Z"
+  "last_updated": "2026-07-22T11:07:47Z"
 }

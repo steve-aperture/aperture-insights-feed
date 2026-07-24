@@ -3,6 +3,282 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-24",
+      "generated_at": "2026-07-24T11:02:09Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing highlights how federal payment and arbitration mechanics are reshaping cash flow (surprise billing and ACA participation), alongside emerging regulatory signals that could expand or constrain new clinical modalities (peptide compounding and clinical AI standards). Inputs came from STAT, Healthcare Dive, Fierce Healthcare, and targeted web reporting for corroboration.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, payment rules, market moves, health tech)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, payment rules, market moves, health tech)"
+        ],
+        "sources_failed": [],
+        "run_notes": "Morning run synthesized last ~24h of RSS headlines/descriptions and used targeted web search for corroborating policy and market context where full-article access can be constrained."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS actions and data releases are reinforcing a tougher payment environment: arbitration volumes remain elevated under the No Surprises Act, while Medicare Advantage and ACA-market moves signal tighter plan economics.",
+          "items": [
+            {
+              "item_id": "2026-07-24-no-surprises-idr-volume-rise",
+              "canonical_topic": "no-surprises-act-idr-volume",
+              "duplicate_group": "no-surprises-act-idr-volume",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/no-surprises-act-disputes-increase-arbiters-progress-speed-backlog-cms/826011/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T17:01:14"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/new-cms-data-spotlights-continued-rise-no-surprises-act-disputes",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T21:01:15"
+                }
+              ],
+              "title": "New CMS data show surprise-billing arbitration volume keeps rising, concentrated among a few initiators",
+              "summary": "New CMS data indicate nearly 1.4 million No Surprises Act disputes were initiated in the second half of 2025, continuing a pattern of rapid growth and heavy concentration among a small number of initiating parties. Providers (or their representatives) account for most filings and frequently prevail in payment determinations, while disputes and eligibility challenges continue to create operational friction for both sides. CMS and certified entities report improving throughput, but volumes remain large enough to keep payer-provider tension elevated.",
+              "strategic_implication": "Health systems, ED staffing groups, and revenue-cycle partners should expect continued scrutiny of IDR strategy, batching, and documentation—while payers will likely pursue tighter network and contracting levers. Arbitration economics are becoming a material driver of unit-cost trend and should be modeled explicitly in contract and budgeting cycles.",
+              "confidence": "high",
+              "tags": [
+                "no-surprises-act",
+                "idr",
+                "payer-provider-contracting",
+                "cost-trend"
+              ]
+            },
+            {
+              "item_id": "2026-07-24-cms-clover-ma-stars-appeal",
+              "canonical_topic": "medicare-advantage-stars-litigation",
+              "duplicate_group": "medicare-advantage-stars-litigation",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cms-appeals-clover-health-medicare-advantage-stars-lawsuit-cms/826003/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T16:01:14"
+                }
+              ],
+              "title": "CMS appeals court ruling that forced Medicare Advantage star-rating recalculation for Clover",
+              "summary": "CMS is appealing a federal court decision that required the agency to recalculate Medicare Advantage star ratings after Clover Health challenged aspects of the methodology. The appeal keeps uncertainty in place for how quickly (and how broadly) star-rating calculations may be adjusted across the market. Star ratings remain a core driver of MA bonus payments, enrollment, and plan profitability.",
+              "strategic_implication": "MA plans should treat Stars methodology as an active regulatory and legal risk area, with potential knock-on effects for benefit design and provider incentive arrangements. Provider groups tied to quality-contracting should watch for measurement changes that could affect performance thresholds and shared-savings economics.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "stars",
+                "regulation",
+                "litigation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Federal agencies continue to define the operating rules for AI-enabled care and consumer-facing telehealth categories, which will shape compliance expectations and time-to-scale for vendors.",
+          "items": [
+            {
+              "item_id": "2026-07-24-hhs-clinical-ai-standards",
+              "canonical_topic": "clinical-ai-standards",
+              "duplicate_group": "clinical-ai-standards",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/23/hhs-convenes-experts-on-clinical-ai-health-tech/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T17:01:14"
+                }
+              ],
+              "title": "HHS convenes experts to shape standards for clinical AI as adoption outpaces policy",
+              "summary": "HHS is convening experts to help develop standards and policy direction for clinical AI, reflecting the gap between rapid deployment and consistent governance expectations. The effort signals growing federal interest in defining evaluation, safety, and performance norms for AI tools used in care delivery. Providers and vendors continue to navigate fragmented guidance across agencies and accreditation or standards bodies.",
+              "strategic_implication": "Health systems should treat AI governance as a board-level risk and readiness capability (model inventory, monitoring, and vendor management). Vendors that can document performance, bias controls, and workflow safety in line with emerging standards may gain procurement advantage.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "regulation",
+                "governance",
+                "health-it"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payers and manufacturers are adjusting footprints and access strategies—reflecting pressure on unit economics in both insurance and specialty pharma pipelines.",
+          "items": [
+            {
+              "item_id": "2026-07-24-molina-aca-cuts-2027",
+              "canonical_topic": "aca-market-exits",
+              "duplicate_group": "aca-market-exits",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/molina-plans-aca-cuts-q2-2026-moh/825934/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T16:01:14"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KBN3TJ14C:4?channel=gZa457",
+                  "source_type": "web",
+                  "published_at": "2026-07-23"
+                }
+              ],
+              "title": "Molina signals deeper ACA pullback for 2027 as exchange margins stay pressured",
+              "summary": "Molina reported plans for additional reductions in its ACA exchange footprint for 2027, citing continued cost pressures and a need to rebalance risk exposure. The move underscores how exchange participation remains sensitive to medical cost trend, risk adjustment dynamics, and regional competitiveness. Fewer plan options in certain geographies could change network bargaining leverage and member churn patterns.",
+              "strategic_implication": "Provider systems in markets where carriers retrench should anticipate more concentrated payer mix and potential shifts in contracting posture. Payer services, analytics, and care-management vendors may see increased demand as plans seek to restore margin through tighter utilization and better risk performance.",
+              "confidence": "high",
+              "tags": [
+                "aca",
+                "payers",
+                "exchange-market",
+                "medical-cost-trend"
+              ]
+            },
+            {
+              "item_id": "2026-07-24-merck-hiv-prevention-licensing",
+              "canonical_topic": "hiv-prep-licensing",
+              "duplicate_group": "hiv-prep-licensing",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/pharmalot/2026/07/24/merck-experimental-hiv-prevention-pill-licensing-deals/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-24T10:45:00Z"
+                }
+              ],
+              "title": "Merck pursues voluntary licensing for an experimental HIV prevention pill to accelerate access in low-income markets",
+              "summary": "Merck is striking voluntary licensing deals for an experimental HIV prevention pill with the stated goal of enabling quicker scale-up and broader production in lower-income countries. The approach mirrors access strategies used for other high-impact infectious disease products, aiming to shorten the lag between regulatory milestones and population-level availability. The program also signals how manufacturers are positioning around global health expectations and reputational risk.",
+              "strategic_implication": "Pharma commercialization teams should assume increasing stakeholder expectations for access commitments earlier in product lifecycles, particularly for prevention categories. Health systems and global health purchasers may see earlier procurement planning needs if supply ramps faster than typical post-approval timelines.",
+              "confidence": "medium",
+              "tags": [
+                "pharma",
+                "global-health",
+                "hiv-prevention",
+                "licensing"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Supply and reimbursement frictions remain a key operational risk, especially where patient access depends on specific device formats or time-intensive administrative processes.",
+          "items": [
+            {
+              "item_id": "2026-07-24-lantus-solostar-short-supply",
+              "canonical_topic": "insulin-pen-supply",
+              "duplicate_group": "insulin-pen-supply",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/23/sanofi-insulin-lantus-solostar-pen-reported-short-supply/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T23:01:14"
+                }
+              ],
+              "title": "Patients report difficulty finding Lantus Solostar insulin pens as product availability tightens",
+              "summary": "Reporting indicates patients and pharmacies are seeing difficulty obtaining Sanofi’s Lantus Solostar insulin pen, even as the product may not appear as an official FDA shortage. Limited availability of specific delivery formats can force therapy switches, increase medication errors risk, and drive additional clinical and pharmacy workload. The issue comes amid broader churn in insulin pen availability across manufacturers.",
+              "strategic_implication": "Provider organizations should stress-test diabetes medication substitution pathways (formularies, education, and prior authorization workflows) to minimize gaps in therapy. Pharmacy operations and population health teams may need proactive outreach to high-risk patients when preferred devices become intermittently unavailable.",
+              "confidence": "medium",
+              "tags": [
+                "drug-supply",
+                "diabetes",
+                "pharmacy-operations",
+                "patient-access"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical practice risk is being shaped both by regulatory decisions on what can be prescribed/dispensed and by public-health surveillance signals that can drive short-term utilization spikes.",
+          "items": [
+            {
+              "item_id": "2026-07-24-fda-peptide-compounding-vote",
+              "canonical_topic": "peptide-compounding-policy",
+              "duplicate_group": "peptide-compounding-policy",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/23/fda-panel-okays-peptides-compound-pharmacies-bpc-157-kpv/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T20:01:19"
+                }
+              ],
+              "title": "FDA advisory committee narrowly recommends allowing compounding of unapproved peptides (BPC-157, KPV) despite safety concerns",
+              "summary": "An FDA advisory committee voted narrowly to recommend that compounding pharmacies be allowed to produce certain unapproved peptides, including BPC-157 and KPV, despite FDA staff objections citing limited evidence on safety and efficacy. The recommendations are not binding, but they can influence subsequent FDA decisions and rulemaking on compounding eligibility. The debate highlights tension between patient demand, telehealth commercialization, and evidentiary standards.",
+              "strategic_implication": "Health systems and clinicians should anticipate patient demand and questions for peptide therapies, while ensuring internal policies distinguish compounded products from FDA-approved drugs. Compliance, pharmacy leadership, and risk teams should monitor FDA follow-through closely because it could reshape prescribing patterns and liability exposure.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "compounding",
+                "telehealth",
+                "clinical-risk"
+              ]
+            },
+            {
+              "item_id": "2026-07-24-cyclospora-outbreak-investigation",
+              "canonical_topic": "cyclospora-outbreak",
+              "duplicate_group": "cyclospora-outbreak",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/23/cyclospora-second-outbreak-reported-fda-cites-72-new-cases/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-23T17:25:03Z"
+                }
+              ],
+              "title": "Federal officials investigate new cyclospora outbreak as case counts rise",
+              "summary": "Federal health officials are investigating a new outbreak involving cyclospora, a parasite that can cause prolonged gastrointestinal illness. Outbreak investigations can drive increased testing and clinical suspicion for affected geographies and can trigger food-safety advisories once a source is identified. Public communication and surveillance updates may evolve quickly as epidemiologic links are confirmed.",
+              "strategic_implication": "Providers should reinforce diagnostic and reporting pathways for GI outbreaks (lab coordination and public-health notification) to reduce delays in identification. Health systems may see short-term ED and outpatient demand upticks tied to patient concern and public-health guidance.",
+              "confidence": "medium",
+              "tags": [
+                "public-health",
+                "infectious-disease",
+                "outbreak",
+                "clinical-operations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-23",
       "generated_at": "2026-07-23T11:07:25Z",
       "headline": "Today's Healthcare Insights",
@@ -15686,5 +15962,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-23T11:07:25Z"
+  "last_updated": "2026-07-24T11:02:09Z"
 }

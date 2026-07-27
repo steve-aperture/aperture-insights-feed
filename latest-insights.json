@@ -3,6 +3,346 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-27",
+      "generated_at": "2026-07-27T11:13:12Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing centers on payment friction and coverage churn—especially the surge in No Surprises Act arbitration activity and ongoing ACA marketplace volatility—alongside a steady drumbeat of generative AI product expansion into consumer and clinical workflows. Inputs drew primarily from Healthcare Dive, Fierce Healthcare, STAT RSS, and targeted web reporting for corroboration.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, payment rules, market moves, health tech)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search (CMS/HHS/FDA, payment rules, market moves, health tech)"
+        ],
+        "sources_failed": [],
+        "run_notes": "Morning run synthesized the last ~24h of RSS headlines/descriptions and used targeted web search for corroborating context where full-article access can be constrained."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS dispute-resolution data and court activity underscore that payment mechanics (IDR, 340B) remain active levers in cost trend and provider cash flow, while ACA enrollment policy continues to generate operational uncertainty.",
+          "items": [
+            {
+              "item_id": "2026-07-27-no-surprises-idr-surge",
+              "canonical_topic": "no-surprises-act-idr-volume",
+              "duplicate_group": "no-surprises-act-idr-volume",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/no-surprises-act-disputes-increase-arbiters-progress-speed-backlog-cms/826011/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/new-cms-data-spotlights-continued-rise-no-surprises-act-disputes",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                },
+                {
+                  "source": "POLITICO",
+                  "url": "https://www.politico.com/newsletters/politico-pulse/2026/07/24/next-in-the-surprise-billing-wars-01010916",
+                  "source_type": "web",
+                  "published_at": "2026-07-24T00:00:00Z"
+                }
+              ],
+              "title": "CMS data show No Surprises Act arbitration volume and payouts continue to climb",
+              "summary": "New CMS releases show nearly 1.4M IDR disputes were initiated in the second half of 2025, up from roughly 1.2M in the first half. Providers or their representatives initiated most disputes and prevailed in the large majority of cases, with IDR determinations frequently exceeding the qualifying payment amount benchmark. Several reports also point to concentration: a small set of billing entities and large provider groups account for a sizable share of filings.",
+              "strategic_implication": "Expect commercial unit-cost pressure and tougher payer-provider contracting dynamics in specialties heavily represented in IDR (e.g., emergency, anesthesia, radiology). Provider CFOs should assume arbitration cash flows remain uncertain and monitor any CMS process reforms that could change timing and yield.",
+              "confidence": "high",
+              "tags": [
+                "no-surprises-act",
+                "commercial-contracting",
+                "payer-provider",
+                "idr",
+                "cost-trend"
+              ]
+            },
+            {
+              "item_id": "2026-07-27-hhs-appeals-aca-integrity-rule",
+              "canonical_topic": "aca-program-integrity-rule-appeal",
+              "duplicate_group": "aca-program-integrity-rule-appeal",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-appeals-invalidation-of-2025-aca-rule/825931/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/hhs-appeals-vacatur-2025-aca-program-integrity-rule",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                },
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/morning-breakout/costs-and-coverage-072426/",
+                  "source_type": "web",
+                  "published_at": "2026-07-24T00:00:00Z"
+                }
+              ],
+              "title": "HHS appeals court decision that tossed parts of the 2025 ACA program integrity rule",
+              "summary": "HHS has filed an appeal seeking to reverse a district court decision that invalidated portions of a 2025 Affordable Care Act marketplace program integrity rule. The disputed provisions included measures intended to tighten enrollment and reduce automatic reenrollment behavior, which stakeholders argued could reduce coverage access. The appeal introduces uncertainty because some of the same policy areas overlap with more recent marketplace rulemaking for the 2027 plan year.",
+              "strategic_implication": "Marketplace insurers and provider revenue-cycle leaders should plan for operational volatility in 2027 enrollment dynamics and member retention, with downstream impact on bad debt and exchange payer mix. Strategy teams should track whether the appeal revives stricter integrity levers or prompts alternative CMS/HHS rulemaking.",
+              "confidence": "medium",
+              "tags": [
+                "aca-marketplace",
+                "enrollment",
+                "payer-mix",
+                "regulation",
+                "coverage"
+              ]
+            },
+            {
+              "item_id": "2026-07-27-dc-circuit-340b-rebate-model",
+              "canonical_topic": "340b-rebate-model-hhs-approval",
+              "duplicate_group": "340b-rebate-model-hhs-approval",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/pharmacy/court-upholds-hhs-control-over-340b-rebate-models/",
+                  "source_type": "web",
+                  "published_at": "2026-07-21T00:00:00Z"
+                },
+                {
+                  "source": "American Hospital Association",
+                  "url": "https://www.aha.org/news/headline/2026-07-21-court-rules-companies-may-not-impose-340b-rebate-model-without-hhs-approval",
+                  "source_type": "web",
+                  "published_at": "2026-07-21T00:00:00Z"
+                }
+              ],
+              "title": "D.C. Circuit backs HHS oversight: drugmakers can’t unilaterally shift 340B discounts to rebates",
+              "summary": "The D.C. Circuit affirmed that manufacturers cannot implement proposed 340B rebate models without prior HHS approval, upholding lower-court decisions in favor of the agency. The ruling preserves the current up-front discount structure for covered entities while leaving open future HHS-authorized rebate mechanisms. The decision follows ongoing tension between manufacturers and covered entities over discount administration and data/reporting requirements.",
+              "strategic_implication": "Safety-net providers should treat the decision as near-term operational stability for 340B cash flows, but not a full de-risking—manufacturer tactics may shift toward claims-data requirements and contract-pharmacy restrictions. Payers and pharmacy benefit leaders should continue to monitor 340B policy shifts that could affect acquisition costs and outpatient pharmacy network strategies.",
+              "confidence": "medium",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "safety-net",
+                "pharmacy",
+                "regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Generative AI is moving from experimentation into consumer-facing and enterprise workflow layers, raising the bar on governance, safety, and measurable ROI.",
+          "items": [
+            {
+              "item_id": "2026-07-27-openai-health-chatgpt",
+              "canonical_topic": "consumer-health-chatbots",
+              "duplicate_group": "consumer-health-chatbots",
+              "priority_score": 7,
+              "primary_source": "OpenAI",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "OpenAI",
+                  "url": "https://openai.com/index/health-in-chatgpt/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/digital-health/openai-makes-health-chatgpt-widely-available-moving-deeper-consumer-health",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                }
+              ],
+              "title": "OpenAI expands ‘Health in ChatGPT,’ pushing consumer-facing health guidance deeper into the stack",
+              "summary": "OpenAI announced broader availability of a health-focused ChatGPT experience, and industry coverage frames it as a step further into consumer health usage. While positioned as informational support, these experiences can shift how patients triage symptoms, choose sites of care, and interpret treatment plans. Health systems and payers will likely see more patient-generated AI content entering clinical and member-service workflows.",
+              "strategic_implication": "Provider organizations should update front-door and clinical governance playbooks to handle AI-influenced demand (more self-triage, more questions, occasional misinformation). Digital leaders should evaluate where branded, clinically constrained copilots can reduce call-center burden while maintaining safety, privacy, and escalation pathways.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "consumer-health",
+                "patient-engagement",
+                "digital-front-door",
+                "governance"
+              ]
+            },
+            {
+              "item_id": "2026-07-27-nabla-ceo-scale",
+              "canonical_topic": "ai-scribes-scaling",
+              "duplicate_group": "ai-scribes-scaling",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/nabla-names-new-ceo-ai-scribe-scale/825975/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                }
+              ],
+              "title": "AI scribe vendor Nabla names new CEO as ambient documentation market moves from pilots to scale",
+              "summary": "Healthcare Dive reports Nabla appointed a new CEO as it looks to scale its AI scribe offering. The ambient documentation category is rapidly shifting from departmental pilots toward enterprise procurement, with heightened scrutiny on clinical safety, workflow fit, and ROI. Leadership changes can signal a transition from product-led growth to commercial execution and integrations.",
+              "strategic_implication": "CIOs and CMIOs should anticipate accelerating vendor consolidation and tighter contract terms (data use, model updates, indemnification). Operational leaders can use the moment to standardize evaluation metrics—note quality, time saved, denial rates, and clinician retention—before scaling.",
+              "confidence": "medium",
+              "tags": [
+                "ai-scribes",
+                "clinical-workflow",
+                "vendor-market",
+                "documentation",
+                "roi"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Earnings commentary and payer actions continue to converge on the same theme: exchange disruption and uninsurance are becoming tangible margin variables, even for large operators.",
+          "items": [
+            {
+              "item_id": "2026-07-27-tenet-q2-guidance-boost",
+              "canonical_topic": "hospital-earnings-aca-headwinds",
+              "duplicate_group": "hospital-earnings-aca-headwinds",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/tenet-healthcare-shrugs-aca-headwinds-sweeping-q2-outperformance-boosts-2026-guidance",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                }
+              ],
+              "title": "Tenet posts strong Q2 performance and raises 2026 guidance despite ACA-related payer mix pressures",
+              "summary": "Fierce Healthcare reports Tenet delivered sweeping second-quarter outperformance and increased its 2026 outlook. Management commentary highlighted resilience even as ACA-market dynamics and coverage shifts create uncertainty for provider payer mix and volumes. The result reinforces a theme across large systems: operational efficiency and service-line mix can offset some reimbursement headwinds.",
+              "strategic_implication": "Regional systems should benchmark their cost structure and outpatient strategy against best-in-class operators; margin resilience is increasingly tied to throughput, site-of-care shifts, and revenue-cycle execution. Expect boards to push for clearer sensitivity analyses around exchange disruption and uninsured growth.",
+              "confidence": "medium",
+              "tags": [
+                "hospital-earnings",
+                "payer-mix",
+                "guidance",
+                "margin",
+                "outpatient"
+              ]
+            },
+            {
+              "item_id": "2026-07-27-hca-aca-volume-uninsurance",
+              "canonical_topic": "aca-coverage-disruptions-uninsured",
+              "duplicate_group": "aca-coverage-disruptions-uninsured",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/hca-healthcare-reports-203b-q2-revenue-amid-aca-coverage-disruptions",
+                  "source_type": "web",
+                  "published_at": "2026-07-24T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/rise-of-uninsured-patients-hits-chs-finances-in-q2/825901/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                }
+              ],
+              "title": "Large hospital operators flag ACA coverage disruptions and rising uninsurance as near-term margin risk",
+              "summary": "Fierce Healthcare reports HCA saw ACA volume drop-offs that shifted toward uninsurance, while Healthcare Dive reports Community Health Systems cited higher uninsured volumes as a financial headwind in Q2. Together, the updates suggest exchange instability and coverage churn are translating quickly into bad debt pressure and operating variance. Operators are watching how enrollment policies and plan participation affect local payer mix.",
+              "strategic_implication": "Revenue-cycle leaders should tighten presumptive eligibility, charity care, and Medicaid/exchange enrollment assistance workflows to protect cash collections. Strategy teams should identify service lines and markets most exposed to exchange churn and model downside scenarios for 2027.",
+              "confidence": "medium",
+              "tags": [
+                "uninsured",
+                "aca-marketplace",
+                "bad-debt",
+                "hospital-margins",
+                "payer-mix"
+              ]
+            },
+            {
+              "item_id": "2026-07-27-molina-aca-exits-2027",
+              "canonical_topic": "aca-marketplace-plan-exits",
+              "duplicate_group": "aca-marketplace-plan-exits",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/molina-plans-additional-aca-cuts-in-2027/825906/",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                }
+              ],
+              "title": "Molina signals additional ACA marketplace pullbacks for 2027, reinforcing selective participation trend",
+              "summary": "Healthcare Dive reports Molina plans additional ACA marketplace cuts in 2027. Insurer retrenchment can reduce consumer choice and increase premium pressure in affected geographies, with downstream effects on provider contracting and uncompensated care. The move fits a broader pattern of payer re-underwriting exchange exposure as risk adjustment, enrollment integrity, and member acuity shift.",
+              "strategic_implication": "Providers in impacted counties should anticipate more out-of-network risk and renegotiation requests as plans narrow networks or exit markets. Health systems should coordinate with community partners to support patient transitions and mitigate avoidable coverage gaps.",
+              "confidence": "medium",
+              "tags": [
+                "payer-strategy",
+                "aca-marketplace",
+                "network",
+                "coverage",
+                "premium"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Care-pathway design (especially in women’s health) is being used as an access and growth strategy, with referral management and capacity the key constraints.",
+          "items": [
+            {
+              "item_id": "2026-07-27-endometriosis-screening-initiative",
+              "canonical_topic": "womens-health-access-initiatives",
+              "duplicate_group": "womens-health-access-initiatives",
+              "priority_score": 5,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/new-university-initiative-offers-screening-referrals-endometriosis",
+                  "source_type": "web",
+                  "published_at": "2026-07-24T00:00:00Z"
+                }
+              ],
+              "title": "University-led initiative aims to streamline endometriosis screening and referrals",
+              "summary": "Fierce Healthcare highlights a university initiative focused on improving endometriosis screening and referral pathways. Programs like this are often designed to reduce diagnostic delay by standardizing intake, triage, and specialist access. The approach mirrors broader women’s health efforts to build clearer care pathways and reduce fragmentation.",
+              "strategic_implication": "Health systems can treat women’s health pathway design as an access and growth lever, especially when paired with capacity planning for specialty clinics. Payers may see opportunities to reduce downstream high-cost utilization by improving early diagnosis and care coordination.",
+              "confidence": "low",
+              "tags": [
+                "womens-health",
+                "care-pathways",
+                "access",
+                "referrals",
+                "population-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major items surfaced in this area today.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-24",
       "generated_at": "2026-07-24T11:02:09Z",
       "headline": "Today's Healthcare Insights",
@@ -15962,5 +16302,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-24T11:02:09Z"
+  "last_updated": "2026-07-27T11:13:12Z"
 }

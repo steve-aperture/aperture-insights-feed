@@ -3,6 +3,374 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-28",
+      "generated_at": "2026-07-28T11:10:17Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s signals point to a renewed CMS push on interoperability commitments, continued legal clarity on 340B mechanics, and a growing need for stronger AI governance as data-connected copilots expand. Coverage draws from STAT, Healthcare Dive, Fierce Healthcare and targeted web context on key items.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Search web (targeted queries)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Search web (targeted queries)"
+        ],
+        "sources_failed": [],
+        "run_notes": "Built summaries from RSS titles/descriptions plus targeted web search for legal/feature details; avoided full-article page fetches where access is restricted."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Regulatory developments centered on CMS’s interoperability push and continued litigation/operational pressure points in 340B and No Surprises Act arbitration.",
+          "items": [
+            {
+              "item_id": "2026-07-28-cms-health-tech-pledges",
+              "canonical_topic": "cms-health-tech-pledges",
+              "duplicate_group": "cms-health-tech-pledges",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/28/medicare-medicaid-evaluates-health-tech-progress-unveils-eight-pledge-categories/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T08:30:00Z"
+                },
+                {
+                  "source": "LinkedIn (Ryan Howells post)",
+                  "url": "https://www.linkedin.com/posts/ryanhowells_breaking-news-cms-announces-new-pledge-activity-7487602191143366656-yYna",
+                  "source_type": "web",
+                  "published_at": "2026-07-27T00:00:00Z"
+                }
+              ],
+              "title": "CMS expands Health Tech Ecosystem with eight new interoperability pledge categories",
+              "summary": "CMS marked one year of its Health Tech Ecosystem by reviewing progress and adding eight new pledge categories aimed at accelerating standardized API-based data exchange and workflow integration. The initiative is framed as a voluntary industry alignment effort around interoperability and patient-facing access, extending beyond prior pledge areas into more specific use cases.",
+              "strategic_implication": "Expect renewed procurement and vendor pressure to demonstrate measurable API-enabled workflows (not just data availability) and to align roadmaps to CMS-backed implementation guides. Health systems should assess which pledge areas map to near-term ROI (scheduling, benefits/cost) and push partners for concrete delivery timelines.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "interoperability",
+                "fhir",
+                "health-it",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-07-28-340b-rebate-model-court",
+              "canonical_topic": "340b-rebate-model-court",
+              "duplicate_group": "340b-rebate-model-court",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/dc-appeals-court-sides-hhs-340b-drug-discount-program-rebate-challenge",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T11:10:17Z"
+                },
+                {
+                  "source": "Justia (D.C. Circuit opinion)",
+                  "url": "https://law.justia.com/cases/federal/appellate-courts/cadc/25-5177/25-5177-2026-07-21.html",
+                  "source_type": "web",
+                  "published_at": "2026-07-21T00:00:00Z"
+                }
+              ],
+              "title": "D.C. Circuit backs HHS authority over 340B rebate-model proposals",
+              "summary": "A federal appeals court sided with HHS in a dispute over whether manufacturers can shift 340B discounts from upfront price reductions to rebate-based approaches. The opinion emphasized that any rebate mechanism would require affirmative HHS action/approval rather than unilateral manufacturer implementation.",
+              "strategic_implication": "Covered entities should plan for continued operational reliance on point-of-sale 340B pricing while the policy debate persists. Manufacturers may redirect efforts toward legislative or regulatory avenues, prolonging uncertainty for pharmacies and contract pharmacy arrangements.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "hhs",
+                "courts",
+                "pharmacy"
+              ]
+            },
+            {
+              "item_id": "2026-07-28-no-surprises-act-disputes",
+              "canonical_topic": "no-surprises-act-disputes",
+              "duplicate_group": "no-surprises-act-disputes",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/new-cms-data-spotlights-continued-rise-no-surprises-act-disputes",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T11:10:17Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/27/prescription-drug-spending-no-surprises-act-arbitration-costs-health-care-inc/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-27T18:13:14Z"
+                }
+              ],
+              "title": "CMS data show continued growth in No Surprises Act arbitration volume",
+              "summary": "New CMS reporting indicates out-of-network billing disputes entering the federal independent dispute resolution (IDR) process continue to climb. The ongoing volume reinforces payer concerns about administrative burden and potential upward pressure on reimbursement benchmarks.",
+              "strategic_implication": "Provider groups with recurring IDR wins may see durable revenue tailwinds, but systems should budget for compliance/legal overhead and consider automation or outsourcing for IDR workflows. Payers may intensify network and prior-authorization strategies to limit exposure.",
+              "confidence": "medium",
+              "tags": [
+                "no-surprises-act",
+                "idr",
+                "cms",
+                "payer-provider",
+                "reimbursement"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI signal quality remains a theme, with consumer-facing connected copilots expanding while health systems reassess how to evaluate and govern ambient documentation tools.",
+          "items": [
+            {
+              "item_id": "2026-07-28-openai-health-chatgpt",
+              "canonical_topic": "openai-health-chatgpt",
+              "duplicate_group": "openai-health-chatgpt",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/openai-makes-health-chatgpt-widely-available-moving-deeper-consumer-health",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T11:10:17Z"
+                },
+                {
+                  "source": "OpenAI Help Center",
+                  "url": "https://help.openai.com/en/articles/20001036-health-in-chatgpt",
+                  "source_type": "web",
+                  "published_at": "2026-07-23T00:00:00Z"
+                }
+              ],
+              "title": "OpenAI broadens ‘Health in ChatGPT’ with medical record and Apple Health connections",
+              "summary": "OpenAI expanded availability of its Health experience in ChatGPT for U.S. adults, allowing users to connect Apple Health and supported medical record sources for more personalized health-related conversations. OpenAI positions the feature as supportive (not diagnostic) and highlights privacy safeguards around connected health data.",
+              "strategic_implication": "Consumer-facing health guidance is converging on data-connected copilots; health systems should anticipate increased patient expectations for AI-assisted explanation of labs and notes and prepare messaging about appropriate use. Vendors enabling patient-record connectivity and consent management may see accelerating demand.",
+              "confidence": "high",
+              "tags": [
+                "generative-ai",
+                "consumer-health",
+                "ehr",
+                "privacy",
+                "patient-engagement"
+              ]
+            },
+            {
+              "item_id": "2026-07-28-ambient-scribe-quality-metrics",
+              "canonical_topic": "ambient-scribe-quality-metrics",
+              "duplicate_group": "ambient-scribe-quality-metrics",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/ai-scribe-adoption-grows-researchers-suki-challenge-industrys-quality",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T11:10:17Z"
+                }
+              ],
+              "title": "Researchers warn common ambient AI scribe scoring may miss clinically meaningful errors",
+              "summary": "Researchers highlighted that standard approaches for scoring AI-generated clinical notes may not reliably detect important mistakes as ambient scribe adoption rises. The critique suggests evaluation methods and monitoring practices need to mature as tools scale beyond pilots.",
+              "strategic_implication": "Health systems should treat ambient documentation as a clinical safety program—define error taxonomies, audit high-risk specialties, and require vendor transparency on evaluation protocols. Expect buyers to demand stronger QA, monitoring, and medicolegal guardrails.",
+              "confidence": "medium",
+              "tags": [
+                "ambient-ai",
+                "clinical-documentation",
+                "patient-safety",
+                "quality",
+                "vendor-risk"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Federal and public-company signals highlight platform-scale AI procurement and continued payer-mix turbulence shaping hospital earnings and guidance.",
+          "items": [
+            {
+              "item_id": "2026-07-28-va-salesforce-ai-contract",
+              "canonical_topic": "va-salesforce-ai-contract",
+              "duplicate_group": "va-salesforce-ai-contract",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/salesforce-awarded-16b-3-year-veteran-affairs-contract-part-veterans-first-initiative",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T11:10:17Z"
+                }
+              ],
+              "title": "VA awards Salesforce $1.6B contract to integrate agentic AI into workflows",
+              "summary": "The Department of Veterans Affairs awarded Salesforce a multiyear contract intended to create a unified platform and embed agentic AI and collaboration tools into VA workflows. The deal underscores federal appetite for enterprise AI paired with integrated data foundations.",
+              "strategic_implication": "Federal wins can set expectations for large-provider IT stacks; commercial health systems may see similar ‘platform + AI agents’ proposals bundled into CRM and contact-center renewals. Procurement teams should separate measurable outcomes (cycle time, access, service) from tooling claims.",
+              "confidence": "medium",
+              "tags": [
+                "va",
+                "salesforce",
+                "agentic-ai",
+                "workflow",
+                "federal"
+              ]
+            },
+            {
+              "item_id": "2026-07-28-hca-aca-uninsured-shift",
+              "canonical_topic": "hca-aca-uninsured-shift",
+              "duplicate_group": "hca-aca-uninsured-shift",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hca-healthcare-q2-2026-aca-patients-uninsured-surgeries/826113/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-27T15:36:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/hca-healthcare-reports-203b-q2-revenue-amid-aca-coverage-disruptions",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T11:10:17Z"
+                }
+              ],
+              "title": "HCA says exchange coverage losses translated ‘almost one-for-one’ into uninsurance in Q2",
+              "summary": "HCA Healthcare reported that patients losing ACA exchange coverage largely became uninsured rather than shifting to employer or other commercial coverage. Management said the shift created headwinds for volume and financial performance during the quarter.",
+              "strategic_implication": "Providers in high-exchange markets should stress-test revenue-cycle assumptions and uncompensated care exposure if coverage disruptions persist. Expect more emphasis on point-of-service financial counseling, Medicaid screening, and tighter capacity allocation toward better-paying service lines.",
+              "confidence": "high",
+              "tags": [
+                "hca",
+                "hospital-earnings",
+                "aca",
+                "uncompensated-care",
+                "revenue-cycle"
+              ]
+            },
+            {
+              "item_id": "2026-07-28-tenet-raises-outlook",
+              "canonical_topic": "tenet-raises-outlook",
+              "duplicate_group": "tenet-raises-outlook",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/tenet-weathers-aca-headwinds-raises-outlook-q2-2026-earnings/826232/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-27T14:19:57Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/tenet-healthcare-shrugs-aca-headwinds-sweeping-q2-outperformance-boosts-2026-guidance",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T11:10:17Z"
+                }
+              ],
+              "title": "Tenet boosts 2026 guidance after strong Q2 despite ACA exchange turbulence",
+              "summary": "Tenet reported strong second-quarter results and raised its full-year outlook even as it cited a financial hit tied to ACA exchange market dynamics. The update contrasts with more severe exchange-related impacts reported by some peers.",
+              "strategic_implication": "Operational outperformance amid payer-mix volatility may further validate Tenet’s portfolio tilt toward ambulatory and focused service lines. Peer systems should benchmark expense discipline, case mix, and ambulatory growth strategies as the coverage environment remains unstable.",
+              "confidence": "medium",
+              "tags": [
+                "tenet",
+                "hospital-earnings",
+                "aca",
+                "ambulatory-care",
+                "margin"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider strategy continues to shift as systems consolidate and re-balance ownership structures in regional markets.",
+          "items": [
+            {
+              "item_id": "2026-07-28-intermountain-idaho-hospitals",
+              "canonical_topic": "intermountain-idaho-hospitals",
+              "duplicate_group": "intermountain-idaho-hospitals",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/intermountain-surgery-partners-idaho-hospital-deal/826252/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-27T20:14:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/intermountain-health-acquiring-interests-2-idaho-hospitals-795m",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T11:10:17Z"
+                }
+              ],
+              "title": "Intermountain expands control of two Idaho hospitals in $795M transaction with Surgery Partners",
+              "summary": "Intermountain Health agreed to acquire Surgery Partners’ interests in two Idaho hospitals the organizations have co-owned since 2023. The deal, reported at roughly $795 million, aligns with Surgery Partners’ strategy to shift its portfolio toward outpatient assets.",
+              "strategic_implication": "Hospital-ASC and health system partnerships will keep evolving as operators rebalance capital toward outpatient growth while systems defend regional networks. Acquirers should plan early for governance and service-line rationalization to capture value post-close.",
+              "confidence": "medium",
+              "tags": [
+                "m-a",
+                "health-systems",
+                "outpatient",
+                "regional-markets",
+                "strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce headlines were more incremental than event-driven today, with continued attention on administrative productivity and cost actions.",
+          "items": [
+            {
+              "item_id": "2026-07-28-no-major-workforce-items",
+              "canonical_topic": "workforce-roundup",
+              "duplicate_group": "workforce-roundup",
+              "priority_score": 2,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/fierce-healthcare-layoff-tracker-2026-job-cuts-eliminations-health-systems-hospitals",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T11:10:17Z"
+                }
+              ],
+              "title": "Workforce watch: no single workforce development dominated today’s feed",
+              "summary": "Major outlets continued to track health system staffing actions, but no new workforce development emerged as a dominant standalone story in the past day. Ongoing role reductions remain concentrated in administrative and revenue-cycle functions rather than direct clinical staffing.",
+              "strategic_implication": "Leaders should continue pairing cost actions with change-management and clinical capacity protections, especially in revenue cycle and access operations. Expect continued benchmarking scrutiny of SG&A and automation investments.",
+              "confidence": "low",
+              "tags": [
+                "workforce",
+                "layoffs",
+                "revenue-cycle",
+                "operations",
+                "cost"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-27",
       "generated_at": "2026-07-27T11:13:12Z",
       "headline": "Today's Healthcare Insights",
@@ -16302,5 +16670,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-27T11:13:12Z"
+  "last_updated": "2026-07-28T11:10:17Z"
 }

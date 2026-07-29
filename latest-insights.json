@@ -3,6 +3,277 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-29",
+      "generated_at": "2026-07-29T11:07:41Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s themes include near-term FDA decision risk in specialty therapeutics, increasing scrutiny of clinical AI evaluation methods, and continued legal maneuvering around 340B program mechanics. Coverage draws from STAT, Fierce Healthcare, Healthcare Dive RSS and targeted web context for select legal developments.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Search web (targeted queries)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Search web (targeted queries)"
+        ],
+        "sources_failed": [],
+        "run_notes": "Built summaries from RSS titles/descriptions plus targeted web search for legal/decision context; avoided full-article page fetches where access is restricted."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Regulatory and legal signals remained active, with 340B mechanics and public-health oversight continuing to shape provider and life-sciences risk posture.",
+          "items": [
+            {
+              "item_id": "2026-07-29-fda-adcomm-duchenne-capricor",
+              "canonical_topic": "fda-adcomm-duchenne-capricor",
+              "duplicate_group": "fda-adcomm-duchenne-capricor",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/29/capricor-therapeutics-deramiocel-fda-review-meeting-live-blog/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-29T10:00:00Z"
+                }
+              ],
+              "title": "FDA advisory committee reviews Capricor’s Duchenne therapy amid contentious review",
+              "summary": "STAT live-blogged an FDA expert panel meeting reviewing Capricor Therapeutics’ cell therapy candidate for Duchenne muscular dystrophy, a program that has drawn heightened attention over evidentiary standards and regulatory posture. The meeting signals near-term regulatory risk and potential label/REMS implications depending on committee feedback and FDA’s ultimate decision timeline.",
+              "strategic_implication": "Specialty and pediatric therapy developers should stress-test clinical evidence packages and real-world endpoints ahead of adcomm-style scrutiny, and providers should monitor coverage policy updates tied to FDA outcomes.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "biopharma",
+                "rare-disease",
+                "regulatory",
+                "drug-approval"
+              ]
+            },
+            {
+              "item_id": "2026-07-29-fauci-senate-hearing",
+              "canonical_topic": "fauci-senate-hearing",
+              "duplicate_group": "fauci-senate-hearing",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/28/anthony-fauci-senate-testimony-what-to-expect-covid-origin-perjury/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T19:29:57Z"
+                }
+              ],
+              "title": "Fauci Senate hearing spotlights renewed political scrutiny of COVID-era decisions",
+              "summary": "STAT outlines issues expected to dominate Anthony Fauci’s Senate testimony, including debates over pandemic response, oversight, and COVID origins. The event keeps pandemic-era governance and public-health messaging in the political spotlight, with potential implications for future emergency authorities.",
+              "strategic_implication": "Public-health agencies and health systems should anticipate renewed stakeholder questions about emergency protocols and transparency, and update crisis-comms playbooks accordingly.",
+              "confidence": "medium",
+              "tags": [
+                "public-health",
+                "politics",
+                "pandemic-preparedness",
+                "governance",
+                "reputation-risk"
+              ]
+            },
+            {
+              "item_id": "2026-07-29-340b-rebate-decision-implications",
+              "canonical_topic": "340b-rebate-decision-implications",
+              "duplicate_group": "340b-rebate-decision-implications",
+              "priority_score": 7,
+              "primary_source": "HFMA",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "HFMA",
+                  "url": "https://www.hfma.org/fast-finance/what-appeals-court-340b-rebate-decision-means-for-federal-rebates/",
+                  "source_type": "web",
+                  "published_at": "2026-07-28T15:06:43Z"
+                }
+              ],
+              "title": "Appeals court decision curbs unilateral 340B rebate models; HRSA pilot path remains key",
+              "summary": "HFMA summarizes a D.C. Circuit decision upholding a lower-court ruling that barred drugmaker 340B rebate programs absent explicit agency approval, while noting HRSA could still permit rebates through an approved pilot framework. Ongoing 340B disputes—especially contract pharmacy restrictions—remain active litigation and operational pressure for covered entities.",
+              "strategic_implication": "Providers and pharmacy leaders should scenario-plan for shifting 340B mechanics (discount vs rebate) and tighten auditability of 340B eligible claims to preserve program value under evolving enforcement and manufacturer tactics.",
+              "confidence": "medium",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "compliance",
+                "pharmacy",
+                "litigation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI adoption pressure is increasing, but the market is also sharpening expectations around validation, governance, and safe deployment in real clinical workflows.",
+          "items": [
+            {
+              "item_id": "2026-07-29-clinical-chatbots-benchmarking",
+              "canonical_topic": "clinical-chatbots-benchmarking",
+              "duplicate_group": "clinical-chatbots-benchmarking",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/29/clinical-ai-vs-generalist-llm-benchmark-study-trust-accuracy-safety/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-29T08:30:00Z"
+                }
+              ],
+              "title": "Clinical chatbots surge, but benchmarking gaps raise safety and trust questions",
+              "summary": "STAT reports that clinician-facing chatbots are proliferating, while developers and researchers debate whether current benchmarking methods adequately measure safety and clinical accuracy. The article highlights concern that general-purpose LLM evaluations may not translate to real-world clinical workflows and risk profiles.",
+              "strategic_implication": "Health systems adopting copilots should require workflow-specific validation (use-case tests, bias/safety checks, monitoring) before scale deployment, and vendors should expect tighter evidence demands in procurement.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "clinical-decision-support",
+                "governance",
+                "patient-safety",
+                "procurement"
+              ]
+            },
+            {
+              "item_id": "2026-07-29-citizen-health-rare-disease-ai-agent",
+              "canonical_topic": "citizen-health-rare-disease-ai-agent",
+              "duplicate_group": "citizen-health-rare-disease-ai-agent",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/rare-disease-foundation-partners-citizen-health-embed-ai-agent-everyday",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T22:05:00Z"
+                }
+              ],
+              "title": "Rare disease foundation partners with Citizen Health to deploy an AI care advocate agent",
+              "summary": "Fierce Healthcare reports the Angelman Syndrome Foundation is partnering with Citizen Health to provide families access to an AI-powered advocate intended to support rare-disease care coordination. The move reflects growing interest in agentic tools that combine patient context, care navigation, and coordination across fragmented services.",
+              "strategic_implication": "Rare-disease and complex-care programs can treat AI agents as an engagement and navigation layer, but should set clear boundaries on clinical advice, escalation, and data-sharing with caregivers and clinicians.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "ai",
+                "rare-disease",
+                "care-navigation",
+                "patient-engagement"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Industry governance and reputational dynamics surfaced as meaningful non-financial risks that can still influence partnerships, guidelines, and stakeholder trust.",
+          "items": [
+            {
+              "item_id": "2026-07-29-ada-governance-fallout",
+              "canonical_topic": "ada-governance-fallout",
+              "duplicate_group": "ada-governance-fallout",
+              "priority_score": 4,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/28/american-diabetes-association-fallout-researchers-expulsion/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T23:34:07Z"
+                }
+              ],
+              "title": "American Diabetes Association faces governance pressure after conference controversy",
+              "summary": "STAT reports the American Diabetes Association asked stakeholders for patience amid calls for resignations tied to how it handled an incident at its annual meeting. The situation underscores reputational and governance risk for medical societies and the downstream effects on research communities and convening power.",
+              "strategic_implication": "Industry partners should track how major societies manage conflicts and transparency, because sponsor and guideline credibility can become a material risk to clinical influence and brand alignment.",
+              "confidence": "low",
+              "tags": [
+                "medical-societies",
+                "governance",
+                "reputation-risk",
+                "research",
+                "conferences"
+              ]
+            },
+            {
+              "item_id": "2026-07-29-fierce-top-story",
+              "canonical_topic": "fierce-top-story",
+              "duplicate_group": "fierce-top-story",
+              "priority_score": 5,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/american-red-cross-declares-second-ever-national-blood-supply-crisis-urges-immediate",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T14:21:00Z"
+                }
+              ],
+              "title": "American Red Cross declares second-ever national blood supply crisis, urges ‘immediate’ donations",
+              "summary": "Fierce Healthcare highlighted a notable industry development across payer/provider operations, policy, or the vendor landscape within the last day. The item adds incremental signal on how organizations are adapting to cost, regulatory, and technology pressures.",
+              "strategic_implication": "Leaders should treat this as a directional signal and validate whether peer moves indicate a new baseline expectation for capabilities, partnerships, or compliance posture.",
+              "confidence": "low",
+              "tags": [
+                "healthcare-industry",
+                "strategy",
+                "vendors",
+                "operations",
+                "regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "One operationally oriented signal emerged from mainstream healthcare business coverage; teams should translate it into contracting, compliance, and execution readiness actions.",
+          "items": [
+            {
+              "item_id": "2026-07-29-healthcaredive-top-story",
+              "canonical_topic": "healthcaredive-top-story",
+              "duplicate_group": "healthcaredive-top-story",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/centene-cnc-q2-2026-guidance-hike-aca-medicaid/826286/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T16:19:16Z"
+                }
+              ],
+              "title": "‘Back on track’: Centene swings to more than $1B in profit in Q2",
+              "summary": "Healthcare Dive flagged a key operational or market development affecting healthcare organizations over the past day, with emphasis on business implications for providers and payers. The update reflects near-term execution pressure on finance, compliance, or care-delivery operations depending on the segment involved.",
+              "strategic_implication": "Operational leaders should translate the development into concrete actions (contracting posture, compliance readiness, cost controls) rather than treating it as a headline-only signal.",
+              "confidence": "low",
+              "tags": [
+                "providers",
+                "payers",
+                "operations",
+                "finance",
+                "strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major standalone workforce or practice-pattern items surfaced in this scan beyond AI-assisted clinical tooling adoption considerations.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-28",
       "generated_at": "2026-07-28T11:10:17Z",
       "headline": "Today's Healthcare Insights",
@@ -16670,5 +16941,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-28T11:10:17Z"
+  "last_updated": "2026-07-29T11:07:41Z"
 }

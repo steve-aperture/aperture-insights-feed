@@ -3,6 +3,320 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-30",
+      "generated_at": "2026-07-30T11:03:32Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s signals cluster around policy-driven coverage and affordability churn (Medicaid work rules and Part D premiums), plus provider margin management and heightened digital health privacy enforcement, synthesized from STAT, Healthcare Dive, Fierce Healthcare, CMS, KFF, and the FTC.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "https://www.statnews.com/feed/",
+          "https://www.healthcaredive.com/feeds/news/",
+          "https://www.fiercehealthcare.com/rss/xml",
+          "search_web"
+        ],
+        "sources_successful": [
+          "https://www.statnews.com/feed/",
+          "https://www.healthcaredive.com/feeds/news/",
+          "https://www.fiercehealthcare.com/rss/xml",
+          "search_web"
+        ],
+        "sources_failed": [],
+        "run_notes": "Built from RSS titles/descriptions plus targeted web search results for official/primary sources (CMS, KFF, FTC) and context."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Payment and regulatory signals focused on Medicaid eligibility friction, Medicare Part D premium mechanics, and potential OPPS/340B redistribution effects.",
+          "items": [
+            {
+              "item_id": "2026-07-30-medicaid-work-requirements-medically-frail-exemp",
+              "canonical_topic": "medicaid-work-requirements-medically-frail-exemption",
+              "duplicate_group": "medicaid-work-requirements-medically-frail-exemption",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/30/medicaid-work-requirements-medical-frailty-exemption-coverage-loss/",
+                  "source_type": "web",
+                  "published_at": "2026-07-30T08:30:00Z"
+                }
+              ],
+              "title": "Medicaid work rules put medically frail exemption under scrutiny as coverage terminations near",
+              "summary": "STAT reports that states are preparing to enforce Medicaid work requirements, with some beginning verification soon and broader rollouts expected in early 2027. While certain groups are exempt, new definitions and documentation expectations for the ‘medically frail’ exemption are creating confusion for enrollees and advocates. The piece notes litigation from Democratic attorneys general challenging the rules and warns that administrative complexity could drive coverage losses among chronically ill people.",
+              "strategic_implication": "Health systems and MA/MCO partners should stress-test eligibility verification workflows and patient assistance capacity in markets where work requirements are imminent, since avoidable churn can quickly convert to bad debt and downstream acuity.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "eligibility",
+                "work-requirements",
+                "coverage-churn"
+              ]
+            },
+            {
+              "item_id": "2026-07-30-medicare-part-d-premium-stabilization-demo-ends",
+              "canonical_topic": "medicare-part-d-premium-stabilization-demo-ends",
+              "duplicate_group": "medicare-part-d-premium-stabilization-demo-ends",
+              "priority_score": 8,
+              "primary_source": "Centers for Medicare and Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information",
+                  "source_type": "web",
+                  "published_at": "2026-07-28T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cms-end-part-d-premium-stabilization-demonstration-subsidies-drugs/826490/",
+                  "source_type": "web",
+                  "published_at": "2026-07-29T16:15:31Z"
+                },
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/quick-insights/cmss-decision-to-end-temporary-subsidies-to-medicares-stand-alone-drug-plans-could-mean-larger-premium-increases-for-some-beneficiaries-next-year/",
+                  "source_type": "web",
+                  "published_at": "2026-07-29T00:00:00Z"
+                }
+              ],
+              "title": "CMS will end Part D premium stabilization demonstration after 2026; 2027 bids jump",
+              "summary": "CMS announced it will discontinue the Part D Premium Stabilization Demonstration at the end of 2026, arguing plan sponsors now have enough experience with the redesigned Part D benefit to bid without extra support. Healthcare Dive reports CMS released 2027 bid indicators, including a national average monthly bid of $296.05 and a statutory base beneficiary premium of $41.33. KFF warns that without the demonstration’s added subsidies and caps, some stand-alone Part D enrollees could face larger premium increases in 2027 than in recent years.",
+              "strategic_implication": "Payers, PBMs, and provider revenue-cycle teams should expect renewed member disruption and outreach needs ahead of 2027 open enrollment, with spillovers into medication adherence and avoidable utilization if premium shock increases mid-year switching or drop-off.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "part-d",
+                "drug-pricing",
+                "premium"
+              ]
+            },
+            {
+              "item_id": "2026-07-30-cms-opps-340b-reimbursement-proposed-cut-budget-",
+              "canonical_topic": "cms-opps-340b-reimbursement-proposed-cut-budget-neutrality",
+              "duplicate_group": "cms-opps-340b-reimbursement-proposed-cut-budget-neutrality",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/cms-proposed-340b-reimbursement-cuts-who-wins-and-who-loses",
+                  "source_type": "rss",
+                  "published_at": "2026-07-29T20:48:00Z"
+                }
+              ],
+              "title": "CMS proposes deeper 340B drug payment cuts with offsetting OPPS service increase; DSH hospitals hit hardest",
+              "summary": "Fierce Healthcare summarizes CMS’ proposed OPPS approach to cut 340B drug reimbursements (to a level well below average sales price) while increasing payment rates for non-drug outpatient services to maintain budget neutrality. The article cites KFF’s review of CMS projections showing disproportionate share hospitals could see a net 5.8% reduction in OPPS revenue, while for-profit hospitals could see a 7.4% net increase. Hospital groups have opposed the proposal, arguing the cut would weaken resources for safety-net care even if non-drug services receive an across-the-board bump.",
+              "strategic_implication": "Safety-net systems should model the combined drug-payment hit and service-rate offset by service-line mix now, since the margin impact will be highly organization-specific and could influence outpatient strategy, 340B contract pharmacy posture, and capital plans.",
+              "confidence": "medium",
+              "tags": [
+                "340b",
+                "cms",
+                "opps",
+                "hospital-finance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital health risk signals centered on heightened privacy enforcement and the operational implications for ad-tech and subscription workflows.",
+          "items": [
+            {
+              "item_id": "2026-07-30-ftc-hims-hers-privacy-billing-lawsuit",
+              "canonical_topic": "ftc-hims-hers-privacy-billing-lawsuit",
+              "duplicate_group": "ftc-hims-hers-privacy-billing-lawsuit",
+              "priority_score": 9,
+              "primary_source": "Federal Trade Commission",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FTC",
+                  "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-states-act-against-hims-hers-deceptive-unlawful-privacy-practices",
+                  "source_type": "web",
+                  "published_at": "2026-07-29T17:02:11Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/world/us-ftc-suing-hims-hers-sending-user-health-info-meta-snap-2026-07-29/",
+                  "source_type": "web",
+                  "published_at": "2026-07-29T22:02:11Z"
+                }
+              ],
+              "title": "FTC and state partners sue Hims & Hers over alleged health data sharing and subscription billing practices",
+              "summary": "The FTC announced a lawsuit (joined by Utah and California partners) alleging Hims & Hers shared sensitive consumer health data with third-party advertising platforms despite privacy promises. Reuters and the FTC press release describe allegations that the company charged many consumers for prescriptions soon after intake forms rather than after a provider consultation, and made subscription cancellation difficult. The case highlights enforcement risk tied to tracking technologies and marketing analytics in consumer telehealth workflows.",
+              "strategic_implication": "Digital health firms should immediately re-audit pixels/SDKs, consent flows, and subscription billing disclosures, since regulators are signaling they’ll treat ad-tech instrumentation around condition-specific journeys as a high-priority privacy and deception issue.",
+              "confidence": "high",
+              "tags": [
+                "privacy",
+                "telehealth",
+                "regulation",
+                "ad-tech"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Market activity emphasized employer-alternative plan consolidation and ongoing payer retrenchment in Medicare Advantage as margins remain pressured.",
+          "items": [
+            {
+              "item_id": "2026-07-30-included-health-acquires-firefly-health",
+              "canonical_topic": "included-health-acquires-firefly-health",
+              "duplicate_group": "included-health-acquires-firefly-health",
+              "priority_score": 7,
+              "primary_source": "Included Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Included Health",
+                  "url": "https://includedhealth.com/announcements/included-health-signs-agreement-to-acquire-firefly-health/",
+                  "source_type": "web",
+                  "published_at": "2026-07-28T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/included-firefly-health-acquisition/826373/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T16:06:33Z"
+                }
+              ],
+              "title": "Included Health agrees to acquire Firefly Health to scale alternative employer health plans",
+              "summary": "Included Health announced it signed a definitive agreement to acquire Firefly Health, positioning the combination as a scaled alternative health plan architecture anchored in primary care and near-/in-home care networks. The company said the deal is expected to close in Q3 2026 subject to customary regulatory review, and highlighted Firefly’s reported 15%+ total cost of care savings and 90% member satisfaction. Healthcare Dive notes the acquisition aims to differentiate Included in a crowded employee benefits and virtual care market as employers explore alternatives to traditional coverage.",
+              "strategic_implication": "Employers and consultants should expect renewed competitive pressure in the ‘virtual-first + plan-alternative’ segment; incumbents will need clearer proof of savings attribution, steerage, and network adequacy as these offerings converge into more integrated risk-bearing models.",
+              "confidence": "medium",
+              "tags": [
+                "m-a",
+                "employer-benefits",
+                "value-based-care",
+                "primary-care"
+              ]
+            },
+            {
+              "item_id": "2026-07-30-humana-medicare-advantage-2027-plan-exits",
+              "canonical_topic": "humana-medicare-advantage-2027-plan-exits",
+              "duplicate_group": "humana-medicare-advantage-2027-plan-exits",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/humana-2027-medicare-advantage-plan-exits-q2-2026/826441/",
+                  "source_type": "web",
+                  "published_at": "2026-07-29T11:11:37Z"
+                }
+              ],
+              "title": "Humana signals additional Medicare Advantage plan exits in 2027 as it pursues margin targets",
+              "summary": "Healthcare Dive reports Humana plans further Medicare Advantage plan exits for 2027, following footprint reductions for 2026. Executives said the goal is to improve profitability by exiting lower-return plans and keep the company on track for its 2028 margin commitments. The report estimates roughly 600,000 members could be impacted, with the insurer expecting to recapture a portion into other plans.",
+              "strategic_implication": "Providers should anticipate continued MA product churn and renegotiation leverage shifts in affected geographies, making proactive contracting, patient communication, and access planning essential ahead of the next AEP cycle.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "payer-strategy",
+                "stars",
+                "benefits"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operations updates highlighted renewed focus on non-labor cost inflation (especially IT) and administrative restructuring to protect margins.",
+          "items": [
+            {
+              "item_id": "2026-07-30-vizient-2027-hospital-nonlabor-supply-chain-infl",
+              "canonical_topic": "vizient-2027-hospital-nonlabor-supply-chain-inflation",
+              "duplicate_group": "vizient-2027-hospital-nonlabor-supply-chain-inflation",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/rising-inflation-projected-hospitals-non-labor-spending-2027-vizient",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T20:36:00Z"
+                }
+              ],
+              "title": "Vizient warns 2027 hospital supply chain inflation will be led by indirect spend (IT, construction, energy)",
+              "summary": "Fierce Healthcare reports Vizient’s latest forecast projects overall supply chain inflation of 3.39% for 2027, with indirect spend and purchased services rising faster at 4.73%. The article attributes part of the pressure to AI-driven technology demand and elevated logistics and energy costs, and cites projected inflation for IT hardware/software of 6.29% (including higher security and licensing costs). The outlook reinforces that non-labor expense management remains a key margin lever as wage inflation moderates unevenly.",
+              "strategic_implication": "Health systems should incorporate IT/security and infrastructure inflation into multi-year operating plans and capital prioritization, since AI enablement and cyber controls may force ‘must-spend’ upgrades that compete directly with clinical growth projects.",
+              "confidence": "medium",
+              "tags": [
+                "supply-chain",
+                "hospital-operations",
+                "it-spend",
+                "inflation"
+              ]
+            },
+            {
+              "item_id": "2026-07-30-wellstar-layoffs-corporate-administrative",
+              "canonical_topic": "wellstar-layoffs-corporate-administrative",
+              "duplicate_group": "wellstar-layoffs-corporate-administrative",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/wellstar-health-system-lays-761-corporate-administrative-staff",
+                  "source_type": "rss",
+                  "published_at": "2026-07-29T15:50:00Z"
+                }
+              ],
+              "title": "Wellstar lays off 761 corporate and administrative staff amid organizational restructuring",
+              "summary": "Fierce Healthcare reports Wellstar Health System eliminated 761 corporate, shared-services and administrative roles, about 2% of its headcount, while excluding frontline care positions. Wellstar said the move followed a comprehensive review and is intended to simplify structure, clarify roles, and push decision-making closer to patient care teams. The layoffs reflect continued cost and complexity pressure on regional nonprofit systems even as demand and reimbursement remain uneven.",
+              "strategic_implication": "Expect more ‘back office’ restructurings across nonprofits; vendors and partners should be ready for procurement slowdowns and reorganized decision rights, while systems need change-management discipline to avoid degrading throughput and revenue-cycle performance.",
+              "confidence": "medium",
+              "tags": [
+                "health-system",
+                "cost-reduction",
+                "restructuring",
+                "workforce"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical and product signals included an FDA advisory review that may influence accelerated-approval expectations in oncology.",
+          "items": [
+            {
+              "item_id": "2026-07-30-fda-adcom-replimune-rp1-melanoma",
+              "canonical_topic": "fda-adcom-replimune-rp1-melanoma",
+              "duplicate_group": "fda-adcom-replimune-rp1-melanoma",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/30/replimune-melanoma-drug-rp1-fda-expert-meeting-live-blog/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-30T10:00:00Z"
+                }
+              ],
+              "title": "FDA advisory committee reviews Replimune’s RP1 melanoma therapy in a closely watched accelerated-approval test",
+              "summary": "STAT is live-blogging an FDA Cellular, Tissue, and Gene Therapies Advisory Committee meeting evaluating whether Replimune has sufficient data to support accelerated approval of RP1, an engineered viral immunotherapy for melanoma. The story frames the vote as a signal for how FDA will weigh risk/benefit under current leadership and notes prior resistance centered on career staff views. While the agency is not bound by advisory votes, outcomes can shape investor expectations and broader regulatory posture toward single-arm oncology datasets.",
+              "strategic_implication": "Biopharma and oncology providers should treat this as a barometer for accelerated-approval evidence standards; a tougher stance would raise the value of confirmatory-trial readiness, while a more permissive outcome could increase pipeline volatility and payer scrutiny.",
+              "confidence": "low",
+              "tags": [
+                "fda",
+                "oncology",
+                "accelerated-approval",
+                "biopharma"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-29",
       "generated_at": "2026-07-29T11:07:41Z",
       "headline": "Today's Healthcare Insights",
@@ -16941,5 +17255,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-29T11:07:41Z"
+  "last_updated": "2026-07-30T11:03:32Z"
 }

@@ -3,6 +3,412 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-07-31",
+      "generated_at": "2026-07-31T11:02:41Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Policy signals dominated the past 24 hours, with CMS issuing multiple FY 2027 payment final rules and courts weighing in on Medicaid work requirements. We also tracked consumer-data enforcement risk in telehealth and payer/provider earnings disclosures from Healthcare Dive, Fierce Healthcare, CMS, FTC, Reuters, and STAT.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS Newsroom/Fact Sheets (web)",
+          "FTC Press Releases (web)",
+          "Reuters (web search context)"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS Newsroom/Fact Sheets (web)",
+          "FTC Press Releases (web)"
+        ],
+        "sources_failed": [
+          "(none)"
+        ],
+        "run_notes": "Built from RSS descriptions plus targeted web search for policy/earnings enforcement context; full-article access not required for this briefing."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS payment-policy updates and Medicare drug-benefit mechanics were the main regulatory signals, alongside continued legal uncertainty around Medicaid work-requirement implementation.",
+          "items": [
+            {
+              "item_id": "2026-07-31-cms-fy2027-snf-ipf-irf-final-rules",
+              "canonical_topic": "cms-fy2027-post-acute-and-behavioral-pps",
+              "duplicate_group": "cms-fy2027-post-acute-and-behavioral-pps",
+              "priority_score": 9,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/training-education/medicare-learning-network/newsletter/mln-connects-newsletter-july-30-2026",
+                  "source_type": "web",
+                  "published_at": "2026-07-30T23:01:17Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2027-inpatient-rehabilitation-facilities-irf-prospective-payment-system-pps-final-rule-cms-1845-f",
+                  "source_type": "web",
+                  "published_at": "2026-07-30T12:01:18Z"
+                }
+              ],
+              "title": "CMS finalizes multiple FY 2027 payment updates across SNFs, inpatient psych, and rehab",
+              "summary": "CMS issued FY 2027 final rules updating Medicare payment rates and policy requirements for skilled nursing facilities (SNF PPS), inpatient psychiatric facilities (IPF PPS), and inpatient rehabilitation facilities (IRF PPS). For SNFs, CMS finalized a 2.4% rate update; for IPFs and IRFs, CMS finalized 2.3% updates, plus program/policy changes (including quality reporting and operational requirements such as the IRF 36-hour therapy initiation clarification). These updates set near-term reimbursement expectations for post-acute, behavioral health, and rehab providers ahead of the Oct. 1 fiscal-year start.",
+              "strategic_implication": "Providers should immediately model FY 2027 rate and quality-program impacts and align operational workflows (e.g., therapy start times, assessment/IDT processes) to avoid compliance-driven revenue leakage.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "cms",
+                "payment-policy",
+                "post-acute",
+                "behavioral-health"
+              ]
+            },
+            {
+              "item_id": "2026-07-31-cms-ends-partd-premium-stabilization-demo",
+              "canonical_topic": "medicare-part-d-premium-stabilization",
+              "duplicate_group": "medicare-part-d-premium-stabilization",
+              "priority_score": 8,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information",
+                  "source_type": "web",
+                  "published_at": "2026-07-28T11:01:44Z"
+                },
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/quick-insights/cmss-decision-to-end-temporary-subsidies-to-medicares-stand-alone-drug-plans-could-mean-larger-premium-increases-for-some-beneficiaries-next-year/",
+                  "source_type": "web",
+                  "published_at": "2026-07-29T11:01:44Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cms-end-part-d-premium-stabilization-demonstration-subsidies-drugs/826490/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-29T16:15:31Z"
+                }
+              ],
+              "title": "CMS ends Part D premium stabilization demonstration after 2026 as 2027 bid signals rise",
+              "summary": "CMS announced it will conclude the voluntary Part D Premium Stabilization Demonstration at the end of 2026, citing plan sponsors' increased experience pricing under the redesigned Part D benefit. CMS also released preliminary technical bid information for 2027, including a national average monthly bid amount and a 2027 base beneficiary premium under the IRA cap structure. KFF and trade press flagged that ending the demonstration could translate into larger premium increases for some stand-alone PDP enrollees, even before plan-specific premiums are finalized.",
+              "strategic_implication": "Payers and PBMs should expect heightened member-shopping and retention pressure in fall 2026 open enrollment, while providers should prepare for potential downstream affordability effects on medication adherence among price-sensitive seniors.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "part-d",
+                "drug-pricing",
+                "premiums",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-07-31-judge-denies-injunction-medicaid-work-requirements",
+              "canonical_topic": "medicaid-work-requirements-litigation",
+              "duplicate_group": "medicaid-work-requirements-litigation",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/30/medicaid-work-requirements-judge-declines-states-request-injunction/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-30T13:45:55Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/30/medicaid-work-requirements-medical-frailty-exemption-coverage-loss/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-30T08:30:00Z"
+                }
+              ],
+              "title": "Federal judge declines to pause Medicaid work-requirement rollout; states still face Aug. 31 notice deadline",
+              "summary": "A federal judge denied a request by states to postpone implementation of new Medicaid work requirements while litigation continues. Reporting highlighted operational pressure points such as near-term beneficiary communications and the complexity of defining/documenting a 'medically frail' exemption. The decision keeps the implementation timeline in motion even as the case proceeds on the merits.",
+              "strategic_implication": "States and managed care plans should treat compliance operations (eligibility verification, exemption workflows, outreach) as a near-term execution risk that can meaningfully disrupt coverage continuity and utilization patterns in early 2027.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "policy",
+                "coverage",
+                "work-requirements",
+                "state-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Regulators and investors continued to pressure digital health models on privacy, billing transparency, and unit economics as payers shift demand toward insurance-covered services.",
+          "items": [
+            {
+              "item_id": "2026-07-31-ftc-sues-hims-hers-privacy-billing",
+              "canonical_topic": "telehealth-privacy-and-subscription-billing-enforcement",
+              "duplicate_group": "telehealth-privacy-and-subscription-billing-enforcement",
+              "priority_score": 9,
+              "primary_source": "Federal Trade Commission",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FTC",
+                  "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-states-act-against-hims-hers-deceptive-unlawful-privacy-practices",
+                  "source_type": "web",
+                  "published_at": "2026-07-29T11:01:44Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/world/us-ftc-suing-hims-hers-sending-user-health-info-meta-snap-2026-07-29/",
+                  "source_type": "web",
+                  "published_at": "2026-07-29T11:01:44Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ftc-sues-hims-hers-alleged-privacy-violations-deceptive-billing/826582/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-30T14:10:45Z"
+                }
+              ],
+              "title": "FTC and state partners sue Hims & Hers over alleged health-data sharing and subscription billing practices",
+              "summary": "The FTC (joined by Utah and California partners via Los Angeles County Counsel) filed suit alleging Hims & Hers shared sensitive health information with advertising platforms such as Meta and Snap while representing its services as private. The complaint also alleges deceptive subscription billing and cancellation practices, including charging consumers for prescriptions soon after intake forms and making cancellation difficult. Hims & Hers publicly disputed the allegations.",
+              "strategic_implication": "Digital health operators should reassess tracking/ads tooling, consent management, and negative-option billing flows now; enforcement risk is converging on both privacy controls and revenue-cycle tactics in DTC telehealth.",
+              "confidence": "high",
+              "tags": [
+                "telehealth",
+                "privacy",
+                "ftc",
+                "consumer-protection",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-07-31-teladoc-trims-revenue-outlook-betterhelp",
+              "canonical_topic": "virtual-behavioral-health-unit-economics",
+              "duplicate_group": "virtual-behavioral-health-unit-economics",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/teladoc-lowers-revenue-guide-betterhelp-insurance-capacity-demand-q2-2026/826604/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-30T15:25:41Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/teladoc-health-trims-2026-revenue-forecast-amid-challenges-betterhelp-insurance-shift",
+                  "source_type": "rss",
+                  "published_at": "2026-07-30T12:25:00Z"
+                }
+              ],
+              "title": "Teladoc trims 2026 revenue outlook as BetterHelp shifts toward insurance-covered demand",
+              "summary": "Teladoc lowered its revenue outlook, with coverage pointing to demand dynamics at BetterHelp where insurance offerings grew faster than expected and strained clinical capacity relative to the cash-pay business mix. Commentary framed the quarter as a setback for BetterHelp as it balances payer-driven utilization, provider capacity, and margin profile. The update underscores how reimbursement mix changes can quickly alter virtual behavioral health unit economics.",
+              "strategic_implication": "Employers and payers should anticipate tighter network/availability constraints (and potentially higher costs) as virtual behavioral health platforms pivot from DTC to insured populations.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "behavioral-health",
+                "telehealth",
+                "payers",
+                "capacity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Earnings and leadership moves signaled continued rebalancing across payer and tech-enabled services, while MA and exchange dynamics remain a core profitability determinant.",
+          "items": [
+            {
+              "item_id": "2026-07-31-cigna-raises-outlook-employer-plans",
+              "canonical_topic": "cigna-q2-2026-earnings",
+              "duplicate_group": "cigna-q2-2026-earnings",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cigna-profit-jump-q2-2026-outlook-raise-no-surprises-idr/826551/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-30T11:15:53Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cigna-boosts-outlook-it-posts-q2-beat-earnings-revenue",
+                  "source_type": "rss",
+                  "published_at": "2026-07-30T11:33:00Z"
+                }
+              ],
+              "title": "Cigna raises 2026 earnings outlook as employer-sponsored performance offsets dispute-resolution cost noise",
+              "summary": "Cigna reported stronger profitability and raised its 2026 earnings outlook, with coverage emphasizing strength in employer-sponsored plans. Reports also noted Cigna downplayed headwinds seen by peers tied to surprise-billing dispute resolutions. The results reinforce divergence in payer performance driven by business mix and exposure to regulatory/administrative cost drivers.",
+              "strategic_implication": "Provider contracting teams should expect continued payer firmness in rate negotiations as large insurers point to stable earnings, even as administrative-cost debates (e.g., IDR) remain unresolved.",
+              "confidence": "medium",
+              "tags": [
+                "payers",
+                "earnings",
+                "employer-sponsored",
+                "idr",
+                "insurance"
+              ]
+            },
+            {
+              "item_id": "2026-07-31-humana-2027-ma-exits",
+              "canonical_topic": "medicare-advantage-market-exits-2027",
+              "duplicate_group": "medicare-advantage-market-exits-2027",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/humana-2027-medicare-advantage-plan-exits-q2-2026/826441/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-29T11:11:37Z"
+                }
+              ],
+              "title": "Humana signals additional Medicare Advantage plan exits in 2027 to protect margins",
+              "summary": "Humana said it plans further Medicare Advantage plan exits in 2027 as it prioritizes margin targets, even at the expense of footprint breadth. The move follows ongoing MA profitability pressure and suggests continued volatility in beneficiary access to specific plan options by geography.",
+              "strategic_implication": "Health systems should proactively map 2027 MA coverage changes and target contracting and patient-navigation resources toward markets where plan exits could disrupt referral and authorization flows.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "payers",
+                "strategy",
+                "margins",
+                "network"
+              ]
+            },
+            {
+              "item_id": "2026-07-31-risant-health-ceo-steps-down",
+              "canonical_topic": "risant-health-leadership-transition",
+              "duplicate_group": "risant-health-leadership-transition",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/risant-health-ceo-step-down-jaewon-ryu/826527/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-30T14:05:00Z"
+                }
+              ],
+              "title": "Risant Health leadership transition as founding CEO steps down; interim named",
+              "summary": "Healthcare Dive reported that Risant Health's first CEO, Dr. Jaewon Ryu, is stepping down, with an interim leader appointed while a search proceeds. For providers and payers watching nonprofit-backed value-based platforms, leadership continuity is a near-term governance signal.",
+              "strategic_implication": "As risk-bearing care platforms scale, boards and sponsors should treat CEO succession planning as a core operational control, not a reputational afterthought, given the dependency on multi-year payer-provider partnerships.",
+              "confidence": "low",
+              "tags": [
+                "provider-strategy",
+                "value-based-care",
+                "leadership",
+                "care-delivery",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider financials are increasingly sensitive to coverage churn and uninsured volumes, reinforcing the need for stronger front-end eligibility and financial-navigation operations.",
+          "items": [
+            {
+              "item_id": "2026-07-31-uhs-rising-uninsured-volumes",
+              "canonical_topic": "hospital-uninsured-volume-trend",
+              "duplicate_group": "hospital-uninsured-volume-trend",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/uhs-flags-rising-uninsured-volumes-q2-earnings/826356/",
+                  "source_type": "rss",
+                  "published_at": "2026-07-29T14:40:20Z"
+                }
+              ],
+              "title": "Hospital operators flag rising uninsured volumes as ACA-related coverage losses surface in Q2 results",
+              "summary": "Universal Health Services (UHS) and other hospital operators are highlighting increased uninsured volumes and related financial headwinds in earnings commentary, linked to Affordable Care Act coverage losses. The dynamic is appearing as higher bad debt/charity care exposure and incremental margin pressure, even before broader Medicaid policy changes take effect.",
+              "strategic_implication": "Revenue-cycle leaders should prioritize real-time eligibility checks, charity-care presumptive screening, and payer enrollment assistance to blunt the working-capital shock from growing uninsured case mix.",
+              "confidence": "medium",
+              "tags": [
+                "hospitals",
+                "revenue-cycle",
+                "uninsured",
+                "aca",
+                "earnings"
+              ]
+            },
+            {
+              "item_id": "2026-07-31-wellstar-lays-off-corporate-staff",
+              "canonical_topic": "health-system-corporate-layoffs",
+              "duplicate_group": "health-system-corporate-layoffs",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/wellstar-health-system-lays-761-corporate-administrative-staff",
+                  "source_type": "rss",
+                  "published_at": "2026-07-29T15:50:00Z"
+                }
+              ],
+              "title": "Wellstar reduces corporate administrative workforce as systems continue cost-reset initiatives",
+              "summary": "Fierce Healthcare reported Wellstar Health System laid off 761 corporate administrative staff, framing the reduction as affecting a small share of total headcount and excluding frontline roles. The move reflects continued health-system cost discipline focused on nonclinical overhead.",
+              "strategic_implication": "Systems pursuing transformation should pair overhead reduction with measurable automation and service-line productivity metrics to ensure cuts translate into sustainable margin improvement rather than capacity constraints.",
+              "confidence": "medium",
+              "tags": [
+                "provider-operations",
+                "cost",
+                "workforce",
+                "health-systems",
+                "productivity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce and clinical capacity constraints remain visible through blood-supply and staffing signals, but no single practice-changing guideline update dominated the past day.",
+          "items": [
+            {
+              "item_id": "2026-07-31-red-cross-blood-supply-crisis",
+              "canonical_topic": "national-blood-supply-crisis",
+              "duplicate_group": "national-blood-supply-crisis",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/american-red-cross-declares-second-ever-national-blood-supply-crisis-urges-immediate",
+                  "source_type": "rss",
+                  "published_at": "2026-07-28T18:21:00Z"
+                }
+              ],
+              "title": "American Red Cross declares a national blood-supply crisis, citing summer donor shortfalls",
+              "summary": "Fierce Healthcare reported the American Red Cross declared its second-ever national blood-supply crisis, warning that summer donations are not keeping pace with hospital demand and citing factors like extreme heat and poor air quality. Blood availability can directly affect surgical scheduling, trauma capacity, and inpatient throughput.",
+              "strategic_implication": "Hospitals should stress-test perioperative schedules and transfusion protocols against supply volatility, and coordinate regionally on conservation strategies to protect high-acuity capacity.",
+              "confidence": "medium",
+              "tags": [
+                "workforce",
+                "clinical-operations",
+                "supply-chain",
+                "blood",
+                "capacity"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-07-30",
       "generated_at": "2026-07-30T11:03:32Z",
       "headline": "Today's Healthcare Insights",
@@ -17255,5 +17661,5 @@
       ]
     }
   ],
-  "last_updated": "2026-07-30T11:03:32Z"
+  "last_updated": "2026-07-31T11:02:41Z"
 }

@@ -3,6 +3,336 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-04",
+      "generated_at": "2026-08-04T11:10:32Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing centers on the operational consequences of Medicaid work requirements, a new Medicare hospital payment and joint-replacement model, and an ACA marketplace challenge. Market, digital, provider, and workforce signals include Sandoz's generic-drug settlement, Cleveland Clinic's drone pharmacy launch, record health-center reach, and virtual lactation support findings, using STAT, Healthcare Dive, Fierce Healthcare, CMS, Cleveland Clinic, and state-government sources.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HRSA/FDA web",
+          "Health-system and company web releases",
+          "Targeted web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS web",
+          "Cleveland Clinic web",
+          "North Carolina Department of Justice web",
+          "Reuters web",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "FDA search yielded no new Aug. 3–4 approval signal used in the edition",
+          "Supplementary email newsletters not used",
+          "HRSA direct page was not needed; health-center signal was carried from Fierce Healthcare RSS"
+        ],
+        "run_notes": "Built from RSS titles/descriptions plus targeted web-search context and official releases; full-article access was not required. Stories were screened against the prior edition to avoid repeating unchanged topics."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Coverage and market rules are moving from statute and rulemaking into implementation: Medicaid administrators face work-verification consequences, ACA marketplace litigation is reopening, and CMS is narrowing special payment pathways for breakthrough devices.",
+          "items": [
+            {
+              "item_id": "2026-08-04-medicaid-work-requirements-coverage-impact",
+              "canonical_topic": "medicaid-work-requirements-coverage-impact",
+              "duplicate_group": "medicaid-work-requirements-coverage-impact",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/04/rfk-medicaid-cuts-myth-analysis/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-04T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/03/health-news-new-york-assisted-dying-law-moves-forward/?",
+                  "source_type": "web",
+                  "published_at": "2026-08-03T12:58:15Z"
+                }
+              ],
+              "title": "Medicaid work requirements sharpen the gap between “no cuts” claims and coverage risk",
+              "summary": "HHS Secretary Robert F. Kennedy Jr. and CMS Administrator Mehmet Oz have said recent Medicaid policy changes do not amount to cuts. State Medicaid directors and coverage advocates say new work-verification and administrative requirements are nevertheless likely to cause some people to lose coverage; Nebraska’s early rollout has already produced an estimated 200 coverage losses, with the full effect still unclear.",
+              "strategic_implication": "Health systems and Medicaid plans should prepare for churn, uncompensated-care pressure, and higher eligibility-support demand rather than treating the policy as a purely budgetary change.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "coverage",
+                "work-requirements",
+                "eligibility",
+                "state-policy"
+              ]
+            },
+            {
+              "item_id": "2026-08-04-aca-marketplace-rule-challenge",
+              "canonical_topic": "aca-marketplace-rule-challenge",
+              "duplicate_group": "aca-marketplace-rule-challenge",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/democratic-ags-file-suit-challenging-2027-aca-rule",
+                  "source_type": "rss",
+                  "published_at": "2026-08-03T19:18:00Z"
+                }
+              ],
+              "title": "Democratic attorneys general challenge the latest 2027 ACA marketplace rule",
+              "summary": "Democratic attorneys general filed a renewed legal challenge to the regulation governing Affordable Care Act marketplaces for 2027. The case adds another layer of uncertainty around marketplace operating rules as insurers, states, and enrollment platforms plan for the next coverage year.",
+              "strategic_implication": "Payers and exchange-facing providers should keep compliance and enrollment workflows adaptable until the litigation clarifies which provisions will stand.",
+              "confidence": "medium",
+              "tags": [
+                "aca",
+                "marketplaces",
+                "litigation",
+                "payers",
+                "enrollment"
+              ]
+            },
+            {
+              "item_id": "2026-08-04-breakthrough-device-payment-pathways",
+              "canonical_topic": "breakthrough-device-payment-pathways",
+              "duplicate_group": "breakthrough-device-payment-pathways",
+              "priority_score": 8,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/03/cms-fda-breakthrough-devices-payment-pathways-eliminated/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-03T15:41:43Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2027-hospital-inpatient-prospective-payment-system-long-term-care-hospital-prospective-payment",
+                  "source_type": "web",
+                  "published_at": "2026-07-31T00:00:00Z"
+                }
+              ],
+              "title": "CMS removes special Medicare payment pathways for breakthrough devices starting in FY 2028",
+              "summary": "CMS finalized a repeal of payment flexibilities that had allowed certain FDA-designated breakthrough devices to qualify for additional Medicare payment treatment. The change applies to both inpatient and outpatient settings beginning in fiscal year 2028 and was included in the FY 2027 hospital payment rule.",
+              "strategic_implication": "Device developers and hospitals should revisit launch economics, coding, and evidence plans for breakthrough products that had relied on accelerated payment treatment.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "medical-devices",
+                "medicare",
+                "reimbursement",
+                "fda"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "The clearest digital signal is operational rather than experimental: a major health system is moving autonomous delivery from pilot concept into a patient-facing pharmacy workflow.",
+          "items": [
+            {
+              "item_id": "2026-08-04-cleveland-clinic-drone-pharmacy-delivery",
+              "canonical_topic": "cleveland-clinic-drone-pharmacy-delivery",
+              "duplicate_group": "cleveland-clinic-drone-pharmacy-delivery",
+              "priority_score": 8,
+              "primary_source": "Cleveland Clinic",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/cleveland-clinic-and-zipline-take-flight-through-prescription-drug-drone-delivery",
+                  "source_type": "rss",
+                  "published_at": "2026-08-03T18:39:00Z"
+                },
+                {
+                  "source": "Cleveland Clinic",
+                  "url": "https://newsroom.clevelandclinic.org/2026/08/03/cleveland-clinic-launches-drone-delivery-program-for-prescription-medications",
+                  "source_type": "web",
+                  "published_at": "2026-08-03T14:09:00Z"
+                }
+              ],
+              "title": "Cleveland Clinic launches long-term drone delivery for eligible prescriptions",
+              "summary": "Cleveland Clinic and Zipline began an optional prescription-drone service in and around Beachwood, Ohio, describing it as the first long-term deployment of this kind by a U.S. health system. The initial service covers certain medications within a five-mile radius, carries no extra patient charge, uses a tethered drop rather than landing in a yard, and can be tracked through MyChart; controlled substances are excluded for now.",
+              "strategic_implication": "Pharmacy access, last-mile cost, weather resilience, and neighborhood eligibility will determine whether drone logistics scale beyond a high-visibility demonstration.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "pharmacy",
+                "drones",
+                "last-mile",
+                "patient-access"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Generic-drug pricing remains a material legal and reputational exposure for manufacturers, with a large multi-state settlement putting a concrete cost on alleged anticompetitive conduct.",
+          "items": [
+            {
+              "item_id": "2026-08-04-sandoz-generic-drug-price-settlement",
+              "canonical_topic": "sandoz-generic-drug-price-settlement",
+              "duplicate_group": "sandoz-generic-drug-price-settlement",
+              "priority_score": 8,
+              "primary_source": "North Carolina Department of Justice",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/pharmalot/2026/08/03/sandoz-to-settle-price-fixing-allegations/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-03T12:12:51Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/legal/litigation/sandoz-agrees-450-mln-settlement-with-43-us-states-over-antitrust-claims-2026-08-03/",
+                  "source_type": "web",
+                  "published_at": "2026-08-03T00:00:00Z"
+                },
+                {
+                  "source": "North Carolina Department of Justice",
+                  "url": "https://ncdoj.gov/attorney-general-jeff-jackson-reaches-400-million-settlement-in-principle-with-sandoz-over-drug-price-fixing-conspiracy/",
+                  "source_type": "web",
+                  "published_at": "2026-08-03T00:00:00Z"
+                }
+              ],
+              "title": "Sandoz agrees to $478.5 million settlement over alleged generic-drug price fixing",
+              "summary": "Sandoz agreed to pay $478.5 million to resolve long-running U.S. litigation over alleged generic-drug price manipulation and reduced competition. The package includes $400 million to a coalition of 43 states and territories over seven years starting in 2027, additional payments to previously settling states, and $28.5 million for indirect resellers; Sandoz did not admit wrongdoing.",
+              "strategic_implication": "The settlement raises the cost of weak pricing controls and reinforces the need for auditable competition, contracting, and compliance practices across generic-drug portfolios.",
+              "confidence": "high",
+              "tags": [
+                "pharma",
+                "generic-drugs",
+                "antitrust",
+                "drug-pricing",
+                "settlement"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Hospital operators received a modest positive payment update but also a mandatory episode-accountability runway, while community health centers reported record utilization that underscores sustained access pressure.",
+          "items": [
+            {
+              "item_id": "2026-08-04-medicare-ipps-cjr-x-final-rule",
+              "canonical_topic": "medicare-ipps-cjr-x-final-rule",
+              "duplicate_group": "medicare-ipps-cjr-x-final-rule",
+              "priority_score": 9,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medicare-finalizes-hospital-inpatient-pay-raise-2027/826794/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-03T12:33:27Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2027-hospital-inpatient-prospective-payment-system-long-term-care-hospital-prospective-payment",
+                  "source_type": "web",
+                  "published_at": "2026-07-31T00:00:00Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-news-cms-announces-nationwide-expansion-proven-joint-replacement-program",
+                  "source_type": "web",
+                  "published_at": "2026-07-31T00:00:00Z"
+                }
+              ],
+              "title": "CMS finalizes a 2.3% FY 2027 inpatient update and mandatory CJR-X rollout for 2028",
+              "summary": "CMS finalized a 2.3% FY 2027 increase in Medicare inpatient hospital payment rates and expects the rule’s changes to raise IPPS payments by approximately $2.1 billion overall. The rule also creates CJR-X, a nationwide mandatory episode model for most hospitals handling hip, knee, and ankle replacements, beginning Jan. 1, 2028 and covering the hospitalization plus the first 90 days of recovery.",
+              "strategic_implication": "Hospitals should separate the near-term rate update from the longer-term operating challenge: episode-level cost, referral, rehabilitation, and post-acute data will become strategic capabilities before CJR-X begins.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "hospital-operations",
+                "ipps",
+                "bundled-payments",
+                "cjr-x"
+              ]
+            },
+            {
+              "item_id": "2026-08-04-hrsa-health-center-record-utilization",
+              "canonical_topic": "hrsa-health-center-record-utilization",
+              "duplicate_group": "hrsa-health-center-record-utilization",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/hrsa-funded-health-centers-saw-record-327m-patients-2025-hhs",
+                  "source_type": "rss",
+                  "published_at": "2026-08-03T15:56:00Z"
+                }
+              ],
+              "title": "HRSA-funded health centers report record reach of 32.7 million patients in 2025",
+              "summary": "HRSA-funded health centers served more than 32.7 million patients in 2025, which the agency described as the highest total in its history. The utilization signal highlights the scale of safety-net demand even as Medicaid eligibility and administrative rules are changing.",
+              "strategic_implication": "Community providers and health systems should treat safety-net capacity, referral coordination, and Medicaid churn support as operating priorities rather than temporary volume anomalies.",
+              "confidence": "medium",
+              "tags": [
+                "hrsa",
+                "community-health",
+                "safety-net",
+                "patient-access",
+                "utilization"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Virtual clinical support is showing a potentially meaningful workforce and outcomes signal: sustained lactation access correlated with longer breastfeeding duration and improved maternal mental-health measures.",
+          "items": [
+            {
+              "item_id": "2026-08-04-virtual-lactation-support-outcomes",
+              "canonical_topic": "virtual-lactation-support-outcomes",
+              "duplicate_group": "virtual-lactation-support-outcomes",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/digital-health/simplifed-umass-study-finds-virtual-lactation-support-improved-outcomes",
+                  "source_type": "rss",
+                  "published_at": "2026-08-03T15:25:00Z"
+                },
+                {
+                  "source": "WBOC",
+                  "url": "https://www.wboc.com/online_features/press_releases/interim-results-from-a-clinical-study-evaluating-the-impact-of-virtual-lactation-support-through-simplifed/article_9bca500e-6553-544a-a821-8e8fbf409b7a.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-03T00:00:00Z"
+                }
+              ],
+              "title": "Study links sustained virtual lactation support with nearly 16 additional breastfeeding weeks",
+              "summary": "Interim findings from a study of SimpliFed virtual lactation support reported a dose-response relationship between engagement and breastfeeding duration. Participants completing at least three telelactation visits breastfed for an average of 15.9 more weeks than those with no visits, while greater virtual support was also associated with larger reductions in anxiety and depression symptoms over time.",
+              "strategic_implication": "Health systems and maternal-care programs should evaluate virtual lactation as a capacity extender, while treating the interim, observational signal as a reason for careful measurement rather than a standalone causal claim.",
+              "confidence": "medium",
+              "tags": [
+                "workforce",
+                "maternal-health",
+                "telehealth",
+                "lactation",
+                "clinical-outcomes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-03",
       "generated_at": "2026-08-03T11:05:00Z",
       "headline": "Today's Healthcare Insights",
@@ -18041,5 +18371,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-03T11:05:00Z"
+  "last_updated": "2026-08-04T11:10:32Z"
 }

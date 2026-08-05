@@ -3,6 +3,420 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-05",
+      "generated_at": "2026-08-05T11:02:03Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing tracks a new bipartisan push to reform 340B, debate over rare-disease exemptions in Medicare drug-pricing pilots, and an enforcement signal in Medicare Advantage coding. Market and operating signals span Merck’s oral PCSK9 launch, Ardent’s softer hospital volumes, HCA’s urgent-care expansion, rural-health modernization funding, responsible-AI governance, infection surveillance, labor demand, and prostate MRI utilization.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Health-system and company web releases",
+          "Targeted web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Merck web",
+          "HHS/rural-health web coverage",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "FDA direct search yielded no additional approval signal used beyond Merck’s official release",
+          "Supplementary email newsletters not used"
+        ],
+        "run_notes": "Built from RSS titles/descriptions plus targeted web-search context and official/company releases. Stories were screened against the Aug. 4 edition to avoid repeating unchanged topics; full-article access was not required."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Drug-pricing policy is moving on two tracks: lawmakers are proposing 340B guardrails while researchers challenge carve-outs for rare-disease therapies in Medicare pricing pilots. A new Medicare Advantage coding settlement adds to the compliance pressure on risk-adjustment documentation.",
+          "items": [
+            {
+              "item_id": "2026-08-05-rare-disease-medicare-pricing-pilots",
+              "canonical_topic": "rare-disease-medicare-pricing-pilots",
+              "duplicate_group": "rare-disease-medicare-pricing-pilots",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/05/cms-drug-pricing-pilot-programs-rare-disease-drugs/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-05T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/05/cms-drug-pricing-pilot-programs-rare-disease-drugs/",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T09:00:46Z"
+                }
+              ],
+              "title": "Rare-disease carve-outs could erase much of the savings in Medicare drug-pricing pilots",
+              "summary": "A Harvard researcher estimates that excluding rare-disease therapies from the GLOBE and GUARD Medicare drug-pricing pilots would eliminate a large share of their potential retail-drug savings. Biotech companies are lobbying the administration for the exemption as the pilots pursue prices closer to those in other wealthy countries.",
+              "strategic_implication": "Manufacturers, plans, and providers should model both the budget effect of an orphan-drug carve-out and the access consequences of applying international-reference pricing broadly.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "drug-pricing",
+                "rare-disease",
+                "cms",
+                "policy"
+              ]
+            },
+            {
+              "item_id": "2026-08-05-bipartisan-340b-reform-bill",
+              "canonical_topic": "bipartisan-340b-reform-bill",
+              "duplicate_group": "bipartisan-340b-reform-bill",
+              "priority_score": 8,
+              "primary_source": "Punchbowl News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Punchbowl News",
+                  "url": "https://punchbowl.news/article/health-care/340b-reform/",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T00:00:00Z"
+                }
+              ],
+              "title": "Bipartisan senators propose new transparency and reporting guardrails for 340B",
+              "summary": "A bipartisan group of senators is unveiling legislation to reform the 340B drug-discount program while preserving its stated support for eligible providers and patients. The proposal would add transparency and reporting requirements, but faces competing reform efforts and strong lobbying from hospitals and drugmakers.",
+              "strategic_implication": "340B participants should prepare for tighter transaction visibility and documentation even if the bill changes before passage; manufacturers should track how guardrails interact with rebate-model pilots.",
+              "confidence": "medium",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "senate",
+                "transparency",
+                "hospitals"
+              ]
+            },
+            {
+              "item_id": "2026-08-05-complete-health-ma-coding-settlement",
+              "canonical_topic": "complete-health-ma-coding-settlement",
+              "duplicate_group": "complete-health-ma-coding-settlement",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/complete-health-pay-141m-medicare-advantage-coding-misuse-allegations-settlement",
+                  "source_type": "rss",
+                  "published_at": "2026-08-04T14:42:00Z"
+                },
+                {
+                  "source": "NewsBreak",
+                  "url": "https://www.newsbreak.com/the-financial-wire-382710013/4808555688958-medicare-advantage-provider-will-pay-14-1-million-over-unsupported-diagnoses",
+                  "source_type": "web",
+                  "published_at": "2026-08-04T00:00:00Z"
+                }
+              ],
+              "title": "Complete Health agrees to $14.1 million settlement over unsupported Medicare Advantage diagnoses",
+              "summary": "Complete Health Partners Holdings agreed to pay $14.1 million to resolve allegations that it submitted hierarchical condition categories that were not clinically valid or supported by medical records and treatment plans. The resolution covers alleged conduct from 2020 through 2023 and does not establish liability.",
+              "strategic_implication": "MA plans and provider groups should treat risk-adjustment evidence as an operating-control issue, with tighter chart validation, coder education, and audit trails before submission.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "risk-adjustment",
+                "coding",
+                "compliance",
+                "settlement"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Healthcare AI is shifting from pilots to governance and infrastructure: one system has earned a formal responsible-use certification, while new rural funding explicitly supports telehealth, remote monitoring, interoperability, and workflow tools.",
+          "items": [
+            {
+              "item_id": "2026-08-05-hackensack-responsible-ai-certification",
+              "canonical_topic": "hackensack-responsible-ai-certification",
+              "duplicate_group": "hackensack-responsible-ai-certification",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hackensack-meridian-health-first-earn-joint-commissions-responsible-ai/826955/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-04T15:46:00Z"
+                },
+                {
+                  "source": "Yahoo News",
+                  "url": "https://www.yahoo.com/news/science/articles/hackensack-meridian-health-first-earn-114600927.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-04T12:00:58Z"
+                }
+              ],
+              "title": "Hackensack Meridian becomes first health system with Joint Commission responsible-AI certification",
+              "summary": "Hackensack Meridian Health became the first organization to receive the Joint Commission’s new certification for responsible AI use in healthcare. The certification assesses governance, risk and bias reduction, data management, safety monitoring, and workforce education; HMH said its process took three weeks.",
+              "strategic_implication": "External assurance is becoming a differentiator for health systems deploying ambient documentation, predictive analytics, and clinical decision tools, raising the bar for governance evidence and staff training.",
+              "confidence": "high",
+              "tags": [
+                "artificial-intelligence",
+                "governance",
+                "health-systems",
+                "patient-safety",
+                "certification"
+              ]
+            },
+            {
+              "item_id": "2026-08-05-rural-health-transformation-funding",
+              "canonical_topic": "rural-health-transformation-funding",
+              "duplicate_group": "rural-health-transformation-funding",
+              "priority_score": 8,
+              "primary_source": "HTN",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "HTN",
+                  "url": "https://htn.co.uk/2026/08/05/50-billion-to-modernise-us-rural-health-with-tech-and-digital-tools-as-states-launch-ehr-opportunities/",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T08:00:59Z"
+                }
+              ],
+              "title": "$50 billion rural-health program puts telehealth, interoperability, and AI tools on state agendas",
+              "summary": "HHS is distributing $50 billion across all 50 states over five years to strengthen and modernize rural healthcare. The plans can support facilities and equipment, remote monitoring, telehealth, cybersecurity, interoperability, data-sharing platforms, and workflow tools such as AI scribes, with $10 billion available annually from 2026 through 2030.",
+              "strategic_implication": "Rural providers and technology vendors should align near-term proposals to state transformation plans, because funding access will depend on measurable improvements in access, infrastructure, and care coordination.",
+              "confidence": "medium",
+              "tags": [
+                "rural-health",
+                "telehealth",
+                "interoperability",
+                "ai-tools",
+                "hhs"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Pharma’s growth narrative is being reshaped by new cardiometabolic products and portfolio investment, while hospital operators face volume and margin pressure even when cash flow or guidance remains resilient.",
+          "items": [
+            {
+              "item_id": "2026-08-05-merck-lipfendra-q2-guidance",
+              "canonical_topic": "merck-lipfendra-q2-guidance",
+              "duplicate_group": "merck-lipfendra-q2-guidance",
+              "priority_score": 8,
+              "primary_source": "Merck & Co.",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Merck & Co.",
+                  "url": "https://www.merck.com/news/merck-highlights-key-regulatory-and-clinical-milestones-across-broad-diverse-pipeline/",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T08:00:46Z"
+                },
+                {
+                  "source": "Merck & Co.",
+                  "url": "https://www.merck.com/wp-content/uploads/sites/124/2026/08/MRK-USQ_Transcript_2026-08-04.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-08-04T21:00:59Z"
+                }
+              ],
+              "title": "Merck raises 2026 sales outlook as new oral PCSK9 drug broadens cardiometabolic platform",
+              "summary": "Merck reported second-quarter worldwide sales of $16.6 billion, up 5% year over year, and raised and narrowed its 2026 sales outlook to $66.3 billion–$67.3 billion. The company highlighted FDA approval of LIPFENDRA, which it describes as the first once-daily oral PCSK9 inhibitor, with phase 3 data showing roughly 56%–59% placebo-adjusted LDL-C reductions.",
+              "strategic_implication": "A convenient oral PCSK9 option could widen access to intensive lipid lowering, but payer coverage, outcomes evidence, and pricing will determine whether the new class changes treatment patterns at scale.",
+              "confidence": "high",
+              "tags": [
+                "pharma",
+                "cardiometabolic",
+                "lipids",
+                "fda",
+                "earnings"
+              ]
+            },
+            {
+              "item_id": "2026-08-05-ardent-health-q2-volume-pressure",
+              "canonical_topic": "ardent-health-q2-volume-pressure",
+              "duplicate_group": "ardent-health-q2-volume-pressure",
+              "priority_score": 7,
+              "primary_source": "Ardent Health",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Yahoo! Finance",
+                  "url": "https://finance.yahoo.com/healthcare/articles/ardent-health-reports-second-quarter-201500901.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-04T20:00:59Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/ardent-health-operating-margin-declines-to-2-7-in-q2-7-things-to-know/",
+                  "source_type": "web",
+                  "published_at": "2026-08-04T21:00:59Z"
+                }
+              ],
+              "title": "Ardent Health reports softer Q2 surgeries and admissions but reaffirms EBITDA guidance",
+              "summary": "Ardent Health’s second-quarter revenue fell 1.4% year over year to $1.622 billion, while admissions declined 1.0% and surgeries fell 2.9%; adjusted admissions grew 2.5%. Operating cash flow rose 67% to $197 million, and the company reaffirmed 2026 revenue guidance of $6.4 billion–$6.7 billion and adjusted EBITDA guidance of $485 million–$535 million.",
+              "strategic_implication": "The results show how payer mix, procedure volume, and state-directed payments can outweigh headline demand; operators should keep cost and contract levers ready even when full-year guidance holds.",
+              "confidence": "high",
+              "tags": [
+                "hospital-operations",
+                "earnings",
+                "patient-volume",
+                "payer-mix",
+                "margins"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Providers continue to expand convenient access while investing in earlier detection of operational and clinical risk. The common thread is infrastructure: more sites, better logistics, and more granular surveillance.",
+          "items": [
+            {
+              "item_id": "2026-08-05-hca-texas-urgent-care-expansion",
+              "canonical_topic": "hca-texas-urgent-care-expansion",
+              "duplicate_group": "hca-texas-urgent-care-expansion",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hca-texas-medclinic-acquisition-urgent-care/826917/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-04T13:01:14Z"
+                },
+                {
+                  "source": "Community Impact",
+                  "url": "https://communityimpact.com/new-braunfels/healthcare/methodist-healthcare-acquires-18-san-antonio-area-urgent-care-facilities/",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T00:00:00Z"
+                }
+              ],
+              "title": "HCA adds 40 Texas MedClinic sites as CareNow pushes deeper into urgent care",
+              "summary": "HCA Healthcare acquired Texas MedClinic’s 40 urgent-care facilities, with 18 moving to Methodist Healthcare, 14 to St. David’s HealthCare, and eight to HCA Houston Healthcare. The sites are being rebranded under HCA’s CareNow division, which now operates more than 430 clinics nationally and more than 190 in Texas.",
+              "strategic_implication": "The deal reinforces the strategic value of distributed, lower-acuity access points and gives HCA more referral, contracting, and consumer-entry leverage across fast-growing Texas markets.",
+              "confidence": "high",
+              "tags": [
+                "urgent-care",
+                "provider-strategy",
+                "hca",
+                "texas",
+                "market-expansion"
+              ]
+            },
+            {
+              "item_id": "2026-08-05-claryx-hospital-infection-surveillance",
+              "canonical_topic": "claryx-hospital-infection-surveillance",
+              "duplicate_group": "claryx-hospital-infection-surveillance",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/startup-claryx-launches-out-stealth-tackle-45b-challenge-hospital-acquired-infections",
+                  "source_type": "rss",
+                  "published_at": "2026-08-04T10:27:00Z"
+                },
+                {
+                  "source": "BetaKit",
+                  "url": "https://betakit.com/claryx-raises-3-5-million-usd-to-detect-hospital-outbreaks-before-they-start/",
+                  "source_type": "web",
+                  "published_at": "2026-08-04T13:00:59Z"
+                }
+              ],
+              "title": "Claryx exits stealth with genomic surveillance designed to catch hospital outbreaks earlier",
+              "summary": "Claryx launched a pathogen-detection platform that combines environmental sampling and genomic sequencing across hospital air, wastewater, sinks, and other locations. The startup raised $3.5 million in pre-seed funding and says its CloneLink system can compare patient pathogens with a hospital-wide metagenomic map to locate likely transmission sources.",
+              "strategic_implication": "If validated in live facilities, continuous environmental intelligence could move infection prevention from retrospective investigation toward earlier intervention, but adoption will depend on workflow fit, evidence, and cost.",
+              "confidence": "medium",
+              "tags": [
+                "infection-prevention",
+                "hospital-operations",
+                "genomics",
+                "pathogens",
+                "startups"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce demand is cooling unevenly, with healthcare openings down even as hiring remains active. In clinical practice, prostate-care evidence continues to favor pre-biopsy MRI, but U.S. adoption remains substantially below that standard.",
+          "items": [
+            {
+              "item_id": "2026-08-05-healthcare-job-openings-jolts",
+              "canonical_topic": "healthcare-job-openings-jolts",
+              "duplicate_group": "healthcare-job-openings-jolts",
+              "priority_score": 7,
+              "primary_source": "Reuters",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Reuters via WHBL",
+                  "url": "https://whbl.com/2026/08/04/us-job-openings-drop-in-june-hiring-increases/",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T06:00:59Z"
+                },
+                {
+                  "source": "Honolulu Star-Advertiser",
+                  "url": "https://www.staradvertiser.com/2026/08/04/breaking-news/u-s-job-openings-fall-as-healthcare-vacancies-post-largest-drop-in-11-months/",
+                  "source_type": "web",
+                  "published_at": "2026-08-04T00:00:00Z"
+                }
+              ],
+              "title": "Healthcare job openings fall by 147,000, but hiring and layoffs remain relatively steady",
+              "summary": "U.S. job openings fell by 178,000 to 7.359 million in June, with healthcare and social assistance openings down 147,000—the largest sector decline in nearly a year. Hiring increased by 96,000 and layoffs were little changed, suggesting a cooler but not collapsing labor market.",
+              "strategic_implication": "Health systems should distinguish slower requisition growth from an abrupt labor-market release: recruiting may get easier in some roles, while retention, skill mix, and productivity investments remain critical.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "hiring",
+                "labor-market",
+                "healthcare-employment",
+                "staffing"
+              ]
+            },
+            {
+              "item_id": "2026-08-05-prostate-mri-biopsy-utilization",
+              "canonical_topic": "prostate-mri-biopsy-utilization",
+              "duplicate_group": "prostate-mri-biopsy-utilization",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/05/prostate-cancer-screening-biopsy-vs-mri-debate/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-05T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/05/prostate-cancer-screening-biopsy-vs-mri-debate/",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T09:01:04Z"
+                }
+              ],
+              "title": "Pre-biopsy MRI remains underused in U.S. prostate cancer workups",
+              "summary": "Pre-biopsy MRI is standard in many Western countries, but the latest available U.S. data show it was used in only about one-third of prostate cancer cases in 2022. Studies indicate that MRI before biopsy can help find more clinically significant cancers while allowing 30%–50% of patients to avoid biopsy and its complications.",
+              "strategic_implication": "Urology groups and imaging leaders should assess capacity, referral pathways, and payer coverage if evidence-based MRI-first protocols continue to diffuse across prostate-care pathways.",
+              "confidence": "high",
+              "tags": [
+                "clinical-practice",
+                "prostate-cancer",
+                "mri",
+                "diagnostics",
+                "urology"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-04",
       "generated_at": "2026-08-04T11:10:32Z",
       "headline": "Today's Healthcare Insights",
@@ -18371,5 +18785,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-04T11:10:32Z"
+  "last_updated": "2026-08-05T11:02:03Z"
 }

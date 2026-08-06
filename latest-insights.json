@@ -3,6 +3,400 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-06",
+      "generated_at": "2026-08-06T11:11:26Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing tracks a new CDC director, an HHS patient-safety enforcement action, and fresh signals on clinical-AI policy and Medicaid behavioral-health credentialing. Market and operating coverage spans CVS’s GLP-1 strategy, Moderna’s first mRNA flu vaccine, Amwell’s Defense Health Agency opportunity, provider-payer contract risk, a prolonged cyberattack recovery, and a late-summer heart-failure trial catalyst.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Health-system and company web releases",
+          "Targeted web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "HHS web",
+          "CVS Health web",
+          "Sentara web",
+          "North Carolina Medicaid web",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Supplementary email newsletters not used"
+        ],
+        "run_notes": "Built from RSS titles/descriptions plus targeted web-search context and official/company releases. Stories were screened against the Aug. 5 edition to avoid repeating unchanged topics; full-article access was not required."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal health governance shifted today with a permanent CDC leader and an unusually direct patient-safety enforcement action against an organ-procurement organization. The moves point to continued scrutiny of public-health leadership, transplant oversight, and accountability in CMS-linked programs.",
+          "items": [
+            {
+              "item_id": "2026-08-06-cdc-director-confirmed",
+              "canonical_topic": "cdc-director-confirmed",
+              "duplicate_group": "cdc-director-confirmed",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/05/senate-confirms-dr-erica-schwartz-new-cdc-director/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-05T18:10:02Z"
+                },
+                {
+                  "source": "NPR",
+                  "url": "https://www.npr.org/2026/08/05/nx-s1-5920379/cdc-director-confirmed-erica-schwartz",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T20:10:13Z"
+                }
+              ],
+              "title": "Senate confirms Erica Schwartz as CDC director after nearly yearlong vacancy",
+              "summary": "The Senate confirmed Dr. Erica Schwartz 51-44 on Aug. 5, ending a nearly yearlong vacancy at the CDC’s top post. The vote puts a permanent leader in place as the agency manages vaccine-policy scrutiny and broader public-health priorities.",
+              "strategic_implication": "Health systems and public-health partners should watch for early shifts in CDC guidance, vaccine communications, and agency priorities.",
+              "confidence": "high",
+              "tags": [
+                "cdc",
+                "public-health",
+                "vaccines",
+                "senate",
+                "leadership"
+              ]
+            },
+            {
+              "item_id": "2026-08-06-network-for-hope-decertification",
+              "canonical_topic": "network-for-hope-decertification",
+              "duplicate_group": "network-for-hope-decertification",
+              "priority_score": 9,
+              "primary_source": "HHS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "HHS",
+                  "url": "https://www.hhs.gov/press-room/hhs-decertifies-kentucky-organ-procurement-organization.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T20:10:13Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/hhs-announces-decertification-kentucky-based-organ-procurement-organization-network-hope",
+                  "source_type": "rss",
+                  "published_at": "2026-08-05T20:22:00Z"
+                }
+              ],
+              "title": "HHS moves to decertify Network for Hope over alleged patient-safety failures",
+              "summary": "HHS announced decertification of Kentucky-based organ-procurement organization Network for Hope after CMS and HRSA reviews found persistent patient-safety failures, including donor-evaluation and oversight concerns. The organization disputes the action and plans to appeal; the network serves Kentucky and parts of three neighboring states.",
+              "strategic_implication": "Organ-procurement organizations and transplant centers should treat the action as a strong enforcement signal: documented clinical judgment, escalation, and oversight controls can become conditions of continued federal participation.",
+              "confidence": "high",
+              "tags": [
+                "hhs",
+                "cms",
+                "transplant",
+                "patient-safety",
+                "oversight"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Federal agencies are seeking direct exposure to clinical-AI products while digital-health vendors compete for durable institutional contracts. The common thread is a shift from experimentation toward evidence, governance, and measurable operating economics.",
+          "items": [
+            {
+              "item_id": "2026-08-06-clinical-ai-regulatory-demo-day",
+              "canonical_topic": "clinical-ai-regulatory-demo-day",
+              "duplicate_group": "clinical-ai-regulatory-demo-day",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-05T20:05:08Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai/",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T20:10:13Z"
+                }
+              ],
+              "title": "FDA and CMS use closed-door clinical-AI demo day to shape adoption rules",
+              "summary": "Federal health officials held a July 8 demo day with 10 health-AI companies, including Anthropic, Microsoft AI, Amazon One Medical, and Hippocratic AI, according to STAT. The sessions gave FDA and CMS firsthand exposure to current clinical-AI tools as agencies consider how to regulate and pay for them.",
+              "strategic_implication": "Vendors and providers should expect policy and reimbursement frameworks to be influenced by practical demonstrations, making validation evidence and implementation governance more important.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "fda",
+                "cms",
+                "governance",
+                "reimbursement"
+              ]
+            },
+            {
+              "item_id": "2026-08-06-amwell-dha-contract-outlook",
+              "canonical_topic": "amwell-dha-contract-outlook",
+              "duplicate_group": "amwell-dha-contract-outlook",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/amwell-boasts-dha-intent-sole-source-contract-q2-earnings-touts-increasing-subscription",
+                  "source_type": "rss",
+                  "published_at": "2026-08-05T15:26:00Z"
+                },
+                {
+                  "source": "Yahoo Finance",
+                  "url": "https://finance.yahoo.com/healthcare/articles/american-well-corp-amwl-q2-050115391.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T11:10:13Z"
+                }
+              ],
+              "title": "Amwell narrows losses and raises 2026 outlook while pursuing DHA contract",
+              "summary": "Amwell reported second-quarter revenue of $52.0 million, down 26.6% year over year, but narrowed its adjusted EBITDA loss to $1.15 million and improved its operating loss. It raised 2026 adjusted EBITDA guidance to a $7 million-$9 million loss range and cited the Defense Health Agency’s intent to award a direct sole-source contract as a strategic milestone.",
+              "strategic_implication": "Telehealth scale is being evaluated less on visit growth alone and more on contract durability and a credible path to cash-flow breakeven.",
+              "confidence": "high",
+              "tags": [
+                "telehealth",
+                "amwell",
+                "dha",
+                "digital-health",
+                "profitability"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "The market is rewarding integrated access models and new product platforms, but late-stage clinical catalysts still carry binary risk. CVS’s results and Moderna’s vaccine approval both reinforce the value of scale, distribution, and differentiated evidence.",
+          "items": [
+            {
+              "item_id": "2026-08-06-cvs-q2-glp1-expansion",
+              "canonical_topic": "cvs-q2-glp1-expansion",
+              "duplicate_group": "cvs-q2-glp1-expansion",
+              "priority_score": 9,
+              "primary_source": "CVS Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CVS Health",
+                  "url": "https://investors.cvshealth.com/news/news-details/2026/CVS-HEALTH-CORPORATION-REPORTS-STRONG-SECOND-QUARTER-2026-RESULTS-AND-RAISES-FULL-YEAR-2026-GUIDANCE/default.aspx",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T14:10:13Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cvs-triples-net-income-q2-2026-raises-outlook/827041/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-05T11:07:44Z"
+                }
+              ],
+              "title": "CVS nearly triples Q2 profit, raises guidance and expands GLP-1 access",
+              "summary": "CVS reported second-quarter revenue of $106.1 billion, GAAP EPS of $2.31, and adjusted EPS of $2.58, with net income near $3.0 billion. The company raised full-year 2026 adjusted EPS guidance to $7.90-$8.10 and announced an Eli Lilly GLP-1 access partnership alongside a $29 MinuteClinic virtual-visit option.",
+              "strategic_implication": "Integrated payers, PBMs, pharmacies, and clinics are competing for the GLP-1 access layer; provider and payer strategies should account for channel control and adherence support.",
+              "confidence": "high",
+              "tags": [
+                "cvs",
+                "payer",
+                "pharmacy",
+                "glp-1",
+                "earnings"
+              ]
+            },
+            {
+              "item_id": "2026-08-06-moderna-mrna-flu-vaccine-approval",
+              "canonical_topic": "moderna-mrna-flu-vaccine-approval",
+              "duplicate_group": "moderna-mrna-flu-vaccine-approval",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/05/fda-approves-moderna-mflusiva-first-mrna-flu-vaccine/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-05T02:18:37Z"
+                },
+                {
+                  "source": "The New York Times",
+                  "url": "https://www.nytimes.com/2026/08/05/health/mrna-flu-vaccine-moderna.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-06T02:10:13Z"
+                }
+              ],
+              "title": "FDA clears Moderna’s first mRNA flu vaccine for adults 50 and older",
+              "summary": "The FDA approved Moderna’s mFLUSIVA, the first licensed mRNA influenza vaccine, for adults 50-64 via standard approval and adults 65 and older via accelerated approval. Moderna will conduct post-approval work in older adults and expects availability for the 2026-27 flu season.",
+              "strategic_implication": "This creates a new seasonal-vaccine platform and may pressure manufacturers, health systems, and payers to plan around differentiated efficacy, supply, and coverage.",
+              "confidence": "high",
+              "tags": [
+                "moderna",
+                "mrna",
+                "influenza",
+                "fda",
+                "vaccines"
+              ]
+            },
+            {
+              "item_id": "2026-08-06-tenax-level-heart-failure-readout",
+              "canonical_topic": "tenax-level-heart-failure-readout",
+              "duplicate_group": "tenax-level-heart-failure-readout",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/06/tenax-study-heart-failure-preview/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T10:30:00Z"
+                },
+                {
+                  "source": "Tenax Therapeutics",
+                  "url": "https://investors.tenaxthera.com/news-events/news-releases",
+                  "source_type": "web",
+                  "published_at": "2026-07-31T00:00:00Z"
+                }
+              ],
+              "title": "Tenax’s Phase 3 heart-failure readout becomes a key late-summer biotech catalyst",
+              "summary": "Tenax expects later-August topline results from its Phase 3 LEVEL study of oral levosimendan in pulmonary hypertension associated with HFpEF. The trial’s primary endpoint is 12-week change in six-minute walk distance, with quality-of-life outcomes as a key secondary measure.",
+              "strategic_implication": "A positive readout could expand treatment options in a high-need HFpEF segment, while a miss would reinforce execution and evidence risk for small biotech developers.",
+              "confidence": "medium",
+              "tags": [
+                "biotech",
+                "heart-failure",
+                "hfpef",
+                "clinical-trials",
+                "pipeline"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operations remain exposed to both cyber downtime and payer-contract friction. AnMed shows how quickly a malware incident can outlast the initial response, while Sentara illustrates how network negotiations can become a patient-access issue across commercial and government lines of business.",
+          "items": [
+            {
+              "item_id": "2026-08-06-anmed-cyberattack-recovery",
+              "canonical_topic": "anmed-cyberattack-recovery",
+              "duplicate_group": "anmed-cyberattack-recovery",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/anmed-facilities-remain-closed-week-cyberattack/827160/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-05T20:23:56Z"
+                },
+                {
+                  "source": "Becker’s Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/cybersecurity/anmed-cyber-incident-10-facilities-still-closed-10-days-later/",
+                  "source_type": "web",
+                  "published_at": "2026-08-04T00:00:00Z"
+                }
+              ],
+              "title": "AnMed still has 10 facilities closed 10 days after malware attack",
+              "summary": "South Carolina health system AnMed continued operating in a limited capacity with 10 facilities closed after a July 26 malware-related cyberattack. The incident disrupted phone, internet, and computer systems; investigations continue into potential patient-data impact while emergency and urgent-care sites remain open.",
+              "strategic_implication": "Extended downtime is an operating-risk event, not just an IT incident; health systems need tested manual workflows, patient communications, and restoration playbooks.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "downtime",
+                "provider-operations",
+                "patient-access",
+                "resilience"
+              ]
+            },
+            {
+              "item_id": "2026-08-06-sentara-anthem-contract-risk",
+              "canonical_topic": "sentara-anthem-contract-risk",
+              "duplicate_group": "sentara-anthem-contract-risk",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/sentara-moves-end-anthem-contracts-virginia/827050/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-05T13:08:55Z"
+                },
+                {
+                  "source": "Sentara Health",
+                  "url": "https://www.sentara.com/aboutus/news/articles/sentara-and-anthem-contract-negotiations",
+                  "source_type": "web",
+                  "published_at": "2026-07-31T00:00:00Z"
+                }
+              ],
+              "title": "Sentara threatens to end Anthem contracts, putting 380,000 Virginia patients at risk of going out of network",
+              "summary": "Sentara said it issued termination notices covering certain commercial, Medicare, and Medicaid agreements if negotiations with Anthem fail. Nearly 380,000 Virginians could lose in-network access starting in 2027, although current contracts remain active while talks continue.",
+              "strategic_implication": "Provider-payer negotiations are becoming access-management events; employers, plans, and health systems should prepare continuity messaging and network alternatives well before contract dates.",
+              "confidence": "high",
+              "tags": [
+                "sentara",
+                "anthem",
+                "network-management",
+                "medicare",
+                "medicaid"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical-practice requirements are tightening at the frontline, with Medicaid clarifying credentialing and supervision expectations for behavioral-health services. The change is operationally material because workforce readiness now directly affects whether services can be billed and sustained.",
+          "items": [
+            {
+              "item_id": "2026-08-06-nc-medicaid-behavioral-health-certification",
+              "canonical_topic": "nc-medicaid-behavioral-health-certification",
+              "duplicate_group": "nc-medicaid-behavioral-health-certification",
+              "priority_score": 7,
+              "primary_source": "North Carolina Medicaid",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "North Carolina Medicaid",
+                  "url": "https://medicaid.ncdhhs.gov/blog/2026/08/05/updated-reminder-requirements-research-based-behavioral-health-treatment-service-delivery-aug-5-2026",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T12:10:22Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-unveils-toolkit-states-safeguard-autism-care-amid-aba-spending-growth",
+                  "source_type": "rss",
+                  "published_at": "2026-08-04T18:59:00Z"
+                }
+              ],
+              "title": "North Carolina Medicaid tightens certification rules for behavioral-health paraprofessionals",
+              "summary": "North Carolina Medicaid’s Aug. 5 bulletin clarified updated requirements for research-based behavioral-health treatment services effective Aug. 1. Existing and new paraprofessionals must obtain qualifying certifications, while a 120-day grace period and direct oversight apply during the transition.",
+              "strategic_implication": "Provider organizations serving Medicaid-covered children should audit credentialing, supervision, and billing workflows now; staffing gaps could translate into reimbursement friction or access constraints.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "behavioral-health",
+                "autism",
+                "credentialing",
+                "workforce"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-05",
       "generated_at": "2026-08-05T11:02:03Z",
       "headline": "Today's Healthcare Insights",
@@ -18785,5 +19179,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-05T11:02:03Z"
+  "last_updated": "2026-08-06T11:11:26Z"
 }

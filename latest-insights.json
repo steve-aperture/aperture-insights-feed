@@ -3,6 +3,403 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-07",
+      "generated_at": "2026-08-07T11:03:27Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s edition centers on a pair of regulatory and payment signals: FDA’s accelerated approval of Replimune’s melanoma therapy and a reported Medicare policy interpretation that could delay price negotiation for AbbVie’s Creon. Digital-health consolidation, payer profitability, health-system leadership turnover, integrated maternity care, CCBHC financing pressure, and the frontline implications of clinical AI round out the briefing, using STAT, Healthcare Dive, Fierce Healthcare, official company releases, and targeted web searches.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Health-system and company web releases",
+          "Targeted web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "FDA web",
+          "Public Citizen web",
+          "Hinge Health web",
+          "NYU Langone web",
+          "Oscar Health web",
+          "Omada Health web",
+          "Millie Clinic web",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Supplementary email newsletters not used"
+        ],
+        "run_notes": "Built from RSS titles and descriptions plus 1-2 targeted web-search checks per story and official/company releases. Stories were screened against the Aug. 6 edition to avoid unchanged repeats; full-article access was not required."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Regulatory and payment policy are again the clearest near-term strategic variables: FDA used an accelerated pathway for a high-need oncology therapy, while a Medicare interpretation could materially affect when a major drug enters price negotiation.",
+          "items": [
+            {
+              "item_id": "2026-08-07-replimune-melanoma-approval",
+              "canonical_topic": "replimune-melanoma-approval",
+              "duplicate_group": "replimune-melanoma-approval",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/06/replimune-melanoma-drug-rp1-fda-approves-phase-3-confirmatory-trial/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T19:59:28Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-approves-replimunes-skin-cancer-drug-2026-08-06/",
+                  "source_type": "web",
+                  "published_at": "2026-08-06T00:00:00Z"
+                }
+              ],
+              "title": "FDA grants accelerated approval to Replimune’s melanoma therapy after two prior rejections",
+              "summary": "The FDA approved Replimune’s RP1, to be marketed as Tudriqev, in combination with Opdivo for advanced melanoma after prior regulatory setbacks. The accelerated approval followed an advisory-panel vote supporting the treatment despite staff concerns about the single-arm trial design; a confirmatory Phase 3 study will be required.",
+              "strategic_implication": "The decision reinforces the value of clinically meaningful signals in high-need settings while preserving post-market evidence risk. Providers and payers should prepare for rapid formulary and pathway questions if uptake follows the approval.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "oncology",
+                "accelerated-approval",
+                "melanoma",
+                "drug-development"
+              ]
+            },
+            {
+              "item_id": "2026-08-07-medicare-creon-negotiation-delay",
+              "canonical_topic": "medicare-creon-negotiation-delay",
+              "duplicate_group": "medicare-creon-negotiation-delay",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/pharmalot/2026/08/06/medicare-gave-blockbuster-abbvie-drug-seven-extra-years-before-price-negotiations/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T19:00:00Z"
+                },
+                {
+                  "source": "Public Citizen",
+                  "url": "https://www.citizen.org/article/medicare-quietly-gifted-abbvies-blockbuster-drug-seven-extra-years-before-price-negotiations/",
+                  "source_type": "web",
+                  "published_at": "2026-08-06T14:02:32Z"
+                }
+              ],
+              "title": "Medicare interpretation could give AbbVie’s Creon seven extra years before price talks",
+              "summary": "An analysis cited by STAT and Public Citizen says a CMS interpretation of the licensure clock could delay Medicare price-negotiation eligibility for AbbVie’s Creon by about seven years. The issue turns on treating a later biologics-licensure date as controlling rather than the drug’s original small-molecule approval date; CMS’s interpretation is the central point at issue.",
+              "strategic_implication": "Drugmakers, payers, and health systems should model how pathway definitions—not only statutory deadlines—shift exposure to negotiated prices. The episode also signals continued litigation and policy risk around the Inflation Reduction Act’s implementation details.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "drug-pricing",
+                "cms",
+                "abbvie",
+                "inflation-reduction-act"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital-health economics are favoring platforms that can extend across conditions and convert internally built clinical workflows into products. The latest moves pair strategic adjacency with evidence that the tools can fit enterprise care delivery.",
+          "items": [
+            {
+              "item_id": "2026-08-07-hinge-cylinder-gi-expansion",
+              "canonical_topic": "hinge-cylinder-gi-expansion",
+              "duplicate_group": "hinge-cylinder-gi-expansion",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hinge-health-cylinder-acquisition-expands-gi-care/827184/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T13:02:47Z"
+                },
+                {
+                  "source": "Hinge Health",
+                  "url": "https://www.hingehealth.com/resources/press-releases/hinge-health-to-acquire-cylinder-health-expanding-into-gastrointestinal-care/",
+                  "source_type": "web",
+                  "published_at": "2026-08-04T00:00:00Z"
+                }
+              ],
+              "title": "Hinge Health buys Cylinder Health for $105 million to enter gastrointestinal care",
+              "summary": "Hinge Health agreed to acquire Cylinder Health, a virtual-first digestive-care company, for $105 million in cash. The transaction expands Hinge beyond musculoskeletal and migraine programs, with an integrated gastrointestinal care offering expected in 2027 and a target client base spanning about two million covered lives.",
+              "strategic_implication": "Digital-health winners are increasingly assembling multi-condition platforms rather than selling single-purpose point solutions. Health systems and employers should assess whether one vendor can support broader longitudinal care without sacrificing clinical specialization.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "acquisitions",
+                "gastrointestinal-care",
+                "virtual-care",
+                "platform-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-08-07-solavia-oncology-decision-support",
+              "canonical_topic": "solavia-oncology-decision-support",
+              "duplicate_group": "solavia-oncology-decision-support",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/when-to-build-software-instead-of-buy/827225/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T15:54:28Z"
+                },
+                {
+                  "source": "NYU Langone News",
+                  "url": "https://nyulangone.org/news/nyu-langone-health-and-dana-farber-cancer-institute-co-develop-solavia-next-generation-oncology-decision-support-suite",
+                  "source_type": "web",
+                  "published_at": "2026-07-30T00:00:00Z"
+                }
+              ],
+              "title": "NYU Langone and Dana-Farber commercialize an internally built oncology decision tool",
+              "summary": "NYU Langone Health and Dana-Farber Cancer Institute co-developed Solavia Decision Suite to guide oncology treatment decisions using standardized, evidence-based pathways. The platform launched internally at NYU Langone and is now being commercialized for other health systems through NYU Langone’s technology-venture arm.",
+              "strategic_implication": "Health systems with strong clinical and technical teams can turn workflow-specific software into a new strategic asset, but commercialization requires product governance, support, and evidence beyond the originating institution.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "oncology",
+                "decision-support",
+                "health-systems",
+                "software"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payer and digital-care earnings show that margin improvement and operating leverage are becoming as important as member or revenue growth. Leadership transitions at profitable challengers also show the market maturing from founder-led expansion toward scaled execution.",
+          "items": [
+            {
+              "item_id": "2026-08-07-oscar-health-record-profitability",
+              "canonical_topic": "oscar-health-record-profitability",
+              "duplicate_group": "oscar-health-record-profitability",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/oscar-health-boosts-2026-earnings-outlook-after-record-profitability-during-first-half-year",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T14:42:00Z"
+                },
+                {
+                  "source": "Oscar Health",
+                  "url": "https://ir.hioscar.com/news-events-presentations/news-press-releases/news-details/2026/Oscar-Health-Announces-Record-Financial-Results-for-First-Half-2026-and-Raises-Full-Year-2026-Outlook/default.aspx",
+                  "source_type": "web",
+                  "published_at": "2026-08-06T00:00:00Z"
+                }
+              ],
+              "title": "Oscar Health raises its 2026 outlook after record first-half profitability",
+              "summary": "Oscar Health reported about $1.04 billion in net income for the first half of 2026, including roughly $362 million in the second quarter, as membership growth and lower medical costs improved results. Management raised its full-year outlook and described the period as a record profitability milestone.",
+              "strategic_implication": "Individual-market insurers with strong technology and enrollment execution may be able to convert scale into meaningful operating leverage. Competitors should watch whether Oscar’s cost trend is durable as benefit and regulatory conditions evolve.",
+              "confidence": "high",
+              "tags": [
+                "oscar-health",
+                "payer",
+                "aca",
+                "profitability",
+                "medical-costs"
+              ]
+            },
+            {
+              "item_id": "2026-08-07-omada-ceo-transition",
+              "canonical_topic": "omada-ceo-transition",
+              "duplicate_group": "omada-ceo-transition",
+              "priority_score": 7,
+              "primary_source": "Omada Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Omada Health",
+                  "url": "https://www.globenewswire.com/news-release/2026/08/06/3340695/0/en/Omada-Health-Reports-Second-Quarter-2026-Results-and-Announces-CEO-Transition.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-06T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/digital-health/omada-health-ceo-appoints-wei-li-shao-new-ceo-company-ramps-glp-1-strategy",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T20:18:00Z"
+                }
+              ],
+              "title": "Omada names Wei-Li Shao CEO as virtual-care growth and GLP-1 strategy accelerate",
+              "summary": "Omada Health said President Wei-Li Shao will become CEO on Jan. 1, 2027, while co-founder Sean Duffy moves to founder and executive chair. The company also reported second-quarter revenue of $88 million, up 43% year over year, with $5 million in net income and raised full-year guidance.",
+              "strategic_implication": "The handoff suggests digital-care companies are moving into a scale-management phase where commercial execution, multi-condition penetration, and durable margins matter as much as product vision.",
+              "confidence": "high",
+              "tags": [
+                "omada-health",
+                "digital-care",
+                "leadership",
+                "glp-1",
+                "earnings"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operators are navigating a difficult combination of financial pressure and new partnership models. Tufts’ executive reset highlights turnaround strain, while the UCSF-Millie arrangement shows how integrated networks can extend capacity without requiring every service to be built inside the hospital system.",
+          "items": [
+            {
+              "item_id": "2026-08-07-tufts-medicine-leadership-reset",
+              "canonical_topic": "tufts-medicine-leadership-reset",
+              "duplicate_group": "tufts-medicine-leadership-reset",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/tufts-medicine-ceo-cfo-step-down/827248/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T18:00:30Z"
+                },
+                {
+                  "source": "The Boston Globe",
+                  "url": "https://www.bostonglobe.com/2026/08/05/business/tufts-medicine-ceo-departure/",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T00:00:00Z"
+                }
+              ],
+              "title": "Tufts Medicine CEO and CFO depart as the system pursues a financial turnaround",
+              "summary": "Tufts Medicine CEO Mike Dandorph will leave at the end of September and be replaced by COO Phil Okala; CFO Andrew DeVoe is also stepping down, with a strategic-operations executive serving temporarily. The four-hospital Massachusetts system has faced worker shortages, post-pandemic revenue pressure, and continuing operating losses.",
+              "strategic_implication": "Leadership changes at financially stressed systems can reset turnaround priorities, lender confidence, and labor negotiations. Boards should pair executive succession with a clear operating plan for workforce, access, and cash performance.",
+              "confidence": "high",
+              "tags": [
+                "tufts-medicine",
+                "health-systems",
+                "leadership",
+                "financial-turnaround",
+                "workforce"
+              ]
+            },
+            {
+              "item_id": "2026-08-07-millie-ucsf-maternity-network",
+              "canonical_topic": "millie-ucsf-maternity-network",
+              "duplicate_group": "millie-ucsf-maternity-network",
+              "priority_score": 7,
+              "primary_source": "Millie Clinic",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Millie Clinic",
+                  "url": "https://www.millieclinic.com/blog/millie-and-ucsf-health-expand-access-to-coordinated-technology-enabled-maternity-care-in-northern-california",
+                  "source_type": "web",
+                  "published_at": "2026-08-06T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/millie-joins-ucsf-healths-clinically-integrated-network-coordinate-maternity-care",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T15:52:00Z"
+                }
+              ],
+              "title": "Millie joins UCSF Health network to coordinate technology-enabled maternity care",
+              "summary": "Millie and UCSF Health are forming a clinically integrated care team for pregnancy, birth, postpartum, and ongoing gynecology services. The partnership uses shared protocols, EHR integration, and UCSF payer contracts, initially focusing on East Bay families with plans to expand across the Bay Area.",
+              "strategic_implication": "Health systems can use clinically integrated partnerships to add capacity and differentiated patient experience while retaining referral and network control. The model will depend on reliable handoffs, shared quality measures, and payer alignment.",
+              "confidence": "high",
+              "tags": [
+                "maternity-care",
+                "ucsf",
+                "clinically-integrated-network",
+                "care-coordination",
+                "digital-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Behavioral-health financing and AI-enabled clinical work are both testing how much frontline autonomy and capacity organizations can preserve. The near-term response is operational: protect funding pathways, document accountability, and keep clinicians meaningfully in the decision loop.",
+          "items": [
+            {
+              "item_id": "2026-08-07-ccbhc-funding-constraints",
+              "canonical_topic": "ccbhc-funding-constraints",
+              "duplicate_group": "ccbhc-funding-constraints",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/ccbhc-model-continues-expand-faces-some-funding-constraints",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T18:51:00Z"
+                },
+                {
+                  "source": "SAMHSA",
+                  "url": "https://www.samhsa.gov/sites/default/files/grants/pdf/fy-2026-ccbhc-planning-sm-26-016.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-08-01T00:00:00Z"
+                }
+              ],
+              "title": "CCBHC expansion continues, but Medicaid cuts threaten behavioral-health capacity",
+              "summary": "The Certified Community Behavioral Health Clinic model continues to expand, while coverage losses projected from Medicaid reductions could increase uncompensated care and strain clinic finances. SAMHSA’s FY2026 planning opportunity offers up to $1 million per award, but grant funding does not fully replace dependable Medicaid reimbursement.",
+              "strategic_implication": "Behavioral-health operators should stress-test staffing, access, and revenue plans against both enrollment churn and grant timing. Payers and states will need to preserve payment predictability if CCBHCs are expected to absorb rising demand.",
+              "confidence": "medium",
+              "tags": [
+                "ccbhc",
+                "behavioral-health",
+                "medicaid",
+                "workforce",
+                "uncompensated-care"
+              ]
+            },
+            {
+              "item_id": "2026-08-07-ai-physician-autonomy",
+              "canonical_topic": "ai-physician-autonomy",
+              "duplicate_group": "ai-physician-autonomy",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-07T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai/",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T11:02:36Z"
+                }
+              ],
+              "title": "Clinical AI debate shifts from capability to who retains decision authority",
+              "summary": "A STAT commentary argues that AI may further diminish physician autonomy if tools are deployed inside already constrained workflows. The concern arrives as FDA and CMS seek direct exposure to clinical-AI products and as federal policy gives clinicians a formal role in reviewing recommendations, making implementation choices as important as model performance.",
+              "strategic_implication": "Health systems should define override rights, documentation expectations, training, and accountability before expanding clinical AI. Adoption that improves throughput but erodes professional judgment or trust may create downstream quality and retention costs.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "physician-autonomy",
+                "workforce",
+                "governance",
+                "patient-safety"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-06",
       "generated_at": "2026-08-06T11:11:26Z",
       "headline": "Today's Healthcare Insights",
@@ -19179,5 +19576,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-06T11:11:26Z"
+  "last_updated": "2026-08-07T11:03:27Z"
 }

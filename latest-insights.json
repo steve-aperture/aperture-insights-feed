@@ -3,6 +3,376 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-10",
+      "generated_at": "2026-08-10T11:05:01Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing focuses on Medicaid implementation and coverage affordability, drug-supply fragility, and the governance burden that follows rapid AI adoption. The curation draws on fresh STAT reporting, Healthcare Dive and Fierce Healthcare RSS, official CMS/HHS/FDA and company materials, KFF analysis, and targeted web searches.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Health-system and company web releases",
+          "Targeted web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS web",
+          "HHS web",
+          "FDA web",
+          "KFF web",
+          "UPMC web",
+          "Omada Health web",
+          "Millie Clinic web",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Supplementary email newsletters not used"
+        ],
+        "run_notes": "Built from RSS titles and descriptions plus targeted web-search checks and official materials. Monday’s edition covers fresh Sunday/Monday signals and selected late-week developments that were not in the Aug. 7 edition; unchanged Aug. 7 stories were excluded. Full-article access was not required."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Coverage policy is moving from rulemaking into execution: states are preparing Medicaid outreach while employers face another round of premium pressure. The week’s regulatory signals also show how clinical-trial and organ-donation rules can reshape operational risk.",
+          "items": [
+            {
+              "item_id": "2026-08-10-medicaid-outreach-work-requirements",
+              "canonical_topic": "medicaid-outreach-work-requirements",
+              "duplicate_group": "medicaid-outreach-work-requirements",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/10/medicaid-work-requirement-changes-states-contact/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-10T08:30:00Z"
+                },
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/medicaid/medicaid-work-requirements-federal-outreach-requirements-and-state-plans/",
+                  "source_type": "web",
+                  "published_at": "2026-07-24T00:00:00Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms",
+                  "source_type": "web",
+                  "published_at": "2026-06-01T00:00:00Z"
+                }
+              ],
+              "title": "States face a September communications sprint as Medicaid work requirements approach",
+              "summary": "STAT highlights the challenge of reaching Medicaid enrollees affected by new work and community-engagement requirements. CMS says states generally must implement the 80-hour monthly requirement by Jan. 1, 2027, and KFF notes that states must conduct targeted outreach and explain exemptions, compliance, and consequences in clear notices.",
+              "strategic_implication": "Health plans, providers, and community organizations should treat outreach as an operational readiness program rather than a one-time notice. Enrollment churn and missed documentation could increase avoidable coverage loss, uncompensated care, and call-center demand.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "outreach",
+                "cms",
+                "coverage-loss"
+              ]
+            },
+            {
+              "item_id": "2026-08-10-small-group-premium-increases",
+              "canonical_topic": "small-group-premium-increases",
+              "duplicate_group": "small-group-premium-increases",
+              "priority_score": 8,
+              "primary_source": "KFF",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/small-business-health-insurance-premiums-2027-kff-rate-filings/827247/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-07T14:30:23Z"
+                },
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/health-costs/how-much-and-why-premiums-are-going-up-for-small-businesses-in-2027/",
+                  "source_type": "web",
+                  "published_at": "2026-08-06T00:00:00Z"
+                }
+              ],
+              "title": "Small-group insurers propose a median 14% premium increase for 2027",
+              "summary": "KFF’s analysis of preliminary filings from all 50 states and the District of Columbia found that nearly 300 small-group insurers proposed a median 14% premium increase for 2027. Insurers cited higher hospital, physician, and prescription-drug costs, increased utilization, and continued enrollment pressure in the small-group market.",
+              "strategic_implication": "Employers may respond by shifting plan design, moving toward alternative funding, or dropping coverage, increasing affordability and retention pressure. Payers and providers should model how small-group erosion changes risk mix and uncompensated-care exposure.",
+              "confidence": "high",
+              "tags": [
+                "small-group",
+                "premiums",
+                "employer-coverage",
+                "kff",
+                "affordability"
+              ]
+            },
+            {
+              "item_id": "2026-08-10-china-investigator-initiated-trials",
+              "canonical_topic": "china-investigator-initiated-trials",
+              "duplicate_group": "china-investigator-initiated-trials",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/10/china-biotech-new-scrutiny-investigator-initiated-trials/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-10T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/03/19/american-gene-therapy-leadership-challenged-speedy-china-trials/",
+                  "source_type": "web",
+                  "published_at": "2026-03-19T00:00:00Z"
+                }
+              ],
+              "title": "China tightens oversight of investigator-initiated trials as the U.S. studies its speed advantage",
+              "summary": "STAT reports that China has tightened regulations on investigator-initiated trials, with consequences for Chinese researchers and some Americans. The change comes as U.S. policymakers and developers examine China’s faster pathway for early clinical testing, particularly in cell and gene therapy.",
+              "strategic_implication": "Sponsors and research institutions should reassess cross-border trial governance, site diligence, and data-access assumptions. Faster experimentation remains strategically valuable, but tighter oversight and geopolitical scrutiny raise the cost of operating across jurisdictions.",
+              "confidence": "medium",
+              "tags": [
+                "china",
+                "clinical-trials",
+                "biotech",
+                "regulation",
+                "cell-and-gene-therapy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI adoption is broadening faster than many health systems’ ability to test, govern, and measure it. The practical differentiator is shifting from access to infrastructure, validation, and workflow accountability.",
+          "items": [
+            {
+              "item_id": "2026-08-10-health-system-ai-governance-gap",
+              "canonical_topic": "health-system-ai-governance-gap",
+              "duplicate_group": "health-system-ai-governance-gap",
+              "priority_score": 8,
+              "primary_source": "UPMC/KLAS Research",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/upmc-klas-research-study-examines-ai-adoption-trends-governance-barriers",
+                  "source_type": "rss",
+                  "published_at": "2026-08-07T14:28:00Z"
+                },
+                {
+                  "source": "UPMC Enterprises",
+                  "url": "https://enterprises.upmc.com/resources/insights/governance-of-ai-solutions-at-health-systems/",
+                  "source_type": "web",
+                  "published_at": "2026-08-07T00:00:00Z"
+                }
+              ],
+              "title": "Health systems are testing AI widely, but governance and measurement remain uneven",
+              "summary": "A UPMC Center for Connected Medicine and KLAS Research study found that 92% of respondents evaluate third-party AI tools before deployment, yet only 44% have a dedicated data environment for testing. The report also found that 63% describe their AI strategy as developing or ad hoc and that organizations lack a common set of success metrics.",
+              "strategic_implication": "AI portfolios need a governed test environment, explicit clinical owners, and outcome measures before pilots become enterprise infrastructure. Vendors that reduce integration and validation burden will have an advantage over tools that only demonstrate model performance.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "governance",
+                "health-systems",
+                "validation",
+                "interoperability"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "The market is rewarding operational leverage and resilience, but supply-chain and leadership signals remain material sources of risk. Digital-care companies are scaling multi-condition platforms while manufacturers confront fragile production systems.",
+          "items": [
+            {
+              "item_id": "2026-08-10-sanofi-pompe-drug-shortages",
+              "canonical_topic": "sanofi-pompe-drug-shortages",
+              "duplicate_group": "sanofi-pompe-drug-shortages",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/pharmalot/2026/08/09/sanofi-pompe-disease-drug-shortage-myozyme-nexviazyme/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-09T23:16:45Z"
+                },
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/drugs/drug-safety-and-availability/drug-shortages",
+                  "source_type": "web",
+                  "published_at": "2026-07-15T00:00:00Z"
+                }
+              ],
+              "title": "Sanofi’s Pompe therapies face shortages after manufacturing and quality-control problems",
+              "summary": "STAT reports that supplies of Sanofi’s Myozyme and Nexviazyme, both used to treat Pompe disease, are dwindling in the U.S. and Europe. The disruption follows FDA scrutiny of manufacturing issues at the company’s Waterford, Ireland facility, including a final-stage production bottleneck and quality-control concerns.",
+              "strategic_implication": "Rare-disease providers and payers should activate allocation, substitution, and patient-communication plans early because treatment continuity is clinically sensitive. Manufacturers should expect renewed scrutiny of site resilience and late-stage quality controls for complex biologics.",
+              "confidence": "medium",
+              "tags": [
+                "drug-shortages",
+                "pompe-disease",
+                "sanofi",
+                "manufacturing",
+                "quality-control"
+              ]
+            },
+            {
+              "item_id": "2026-08-10-omada-ceo-transition-profitability",
+              "canonical_topic": "omada-ceo-transition-profitability",
+              "duplicate_group": "omada-ceo-transition-profitability",
+              "priority_score": 7,
+              "primary_source": "Omada Health",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/digital-health/omada-health-ceo-appoints-wei-li-shao-new-ceo-company-ramps-glp-1-strategy",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T20:18:00Z"
+                },
+                {
+                  "source": "Omada Health",
+                  "url": "https://investors.omadahealth.com/news-releases/news-release-details/omada-health-reports-second-quarter-2026-results-and-announces/",
+                  "source_type": "web",
+                  "published_at": "2026-08-06T00:00:00Z"
+                }
+              ],
+              "title": "Omada pairs record Q2 profitability with a planned CEO transition and broader cardiometabolic strategy",
+              "summary": "Omada Health reported Q2 revenue of $88 million, 43% year-over-year growth, a 73% gross margin, and $5 million in net income. The company said co-founder Sean Duffy will become executive chair on Jan. 1, 2027, while President Wei-Li Shao becomes CEO as Omada expands its integrated cardiometabolic and GLP-1 offerings.",
+              "strategic_implication": "The transition tests whether digital-health companies can institutionalize growth beyond the founder while maintaining clinical and commercial momentum. Payers and employers should watch whether broader condition coverage and medication support translate into durable engagement and measurable outcomes.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "omada",
+                "glp-1",
+                "cardiometabolic",
+                "leadership"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operations are being reshaped by safety oversight and coordinated, technology-enabled care models. The strongest signals combine tighter accountability with practical integration across hospitals, clinicians, and community-based partners.",
+          "items": [
+            {
+              "item_id": "2026-08-10-network-for-hope-decertification",
+              "canonical_topic": "network-for-hope-decertification",
+              "duplicate_group": "network-for-hope-decertification",
+              "priority_score": 8,
+              "primary_source": "HHS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-decertify-organ-procurement-group-patient-safety-failures-network-for-hope/827334/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-07T14:53:19Z"
+                },
+                {
+                  "source": "HHS",
+                  "url": "https://www.hhs.gov/press-room/wtas-hhs-decertifies-kentucky-organ-procurement-organization-protect-patients-restore-trust.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-07T00:00:00Z"
+                }
+              ],
+              "title": "HHS decertifies Network for Hope after reviews find persistent organ-donation safety failures",
+              "summary": "HHS moved to decertify Network for Hope, the organ procurement organization serving Kentucky and parts of Indiana, Ohio, and West Virginia. Federal reviews examined 351 authorized-but-incomplete donation cases and identified recurring concerns involving donor evaluation, adverse-event oversight, coordination, and administration; Network for Hope said it plans to appeal.",
+              "strategic_implication": "Hospitals in the service area should confirm contingency plans, escalation pathways, and family-communication protocols while the appeal and transition proceed. The action also raises the bar for documenting safety pauses and independent clinical judgment across the national transplant system.",
+              "confidence": "high",
+              "tags": [
+                "organ-donation",
+                "patient-safety",
+                "hhs",
+                "transplantation",
+                "provider-operations"
+              ]
+            },
+            {
+              "item_id": "2026-08-10-millie-ucsf-maternity-network",
+              "canonical_topic": "millie-ucsf-maternity-network",
+              "duplicate_group": "millie-ucsf-maternity-network",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/millie-joins-ucsf-healths-clinically-integrated-network-coordinate-maternity-care",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T15:52:00Z"
+                },
+                {
+                  "source": "Millie Clinic",
+                  "url": "https://www.millieclinic.com/blog/millie-and-ucsf-health-expand-access-to-coordinated-technology-enabled-maternity-care-in-northern-california",
+                  "source_type": "web",
+                  "published_at": "2026-08-06T00:00:00Z"
+                }
+              ],
+              "title": "Millie joins UCSF’s clinically integrated network to coordinate technology-enabled maternity care",
+              "summary": "Millie joined UCSF Health’s clinically integrated network, pairing midwife-led, technology-enabled maternity care with UCSF’s specialty expertise. The partners said they will use shared protocols and connected technology, initially serving East Bay families and linking referrals, delivery, and postpartum care.",
+              "strategic_implication": "Integrated maternity models can extend health-system capacity while keeping low- and moderate-risk care closer to patients. The operating test will be whether shared protocols, records, payer contracts, and escalation pathways produce reliable handoffs and better outcomes at scale.",
+              "confidence": "high",
+              "tags": [
+                "maternity-care",
+                "midwifery",
+                "ucsf",
+                "care-integration",
+                "women-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical AI adoption is forcing a workforce design question: tools can reduce administrative load only when frontline clinicians help define the use case and retain meaningful judgment. Nurse participation and workflow fit are becoming implementation requirements, not soft change-management goals.",
+          "items": [
+            {
+              "item_id": "2026-08-10-ai-nurse-burnout-governance",
+              "canonical_topic": "ai-nurse-burnout-governance",
+              "duplicate_group": "ai-nurse-burnout-governance",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/industry-voices-ai-wont-fix-nurse-burnout-nurses-will",
+                  "source_type": "rss",
+                  "published_at": "2026-08-07T17:27:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/ai-in-the-healthcare-workforce-5-notes/",
+                  "source_type": "web",
+                  "published_at": "2026-07-14T00:00:00Z"
+                }
+              ],
+              "title": "Nurse leaders warn that AI can deepen burnout if it is designed around systems instead of care teams",
+              "summary": "A Fierce Healthcare industry commentary argues that AI will not solve nurse burnout if deployments are optimized for administrative systems rather than the people using them. Related workforce reporting found that 46% of nurses use generative AI at work, while only 22% reported that their organizations have published AI governance policies or require formal deployment training.",
+              "strategic_implication": "Health systems should involve nurses in procurement, validation, training, and post-deployment monitoring, with explicit protections for clinical judgment. Adoption metrics should include workload, safety, and retention—not just tool utilization or documentation volume.",
+              "confidence": "medium",
+              "tags": [
+                "nursing",
+                "burnout",
+                "clinical-workflow",
+                "ai-governance",
+                "workforce"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-07",
       "generated_at": "2026-08-07T11:03:27Z",
       "headline": "Today's Healthcare Insights",
@@ -19576,5 +19946,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-07T11:03:27Z"
+  "last_updated": "2026-08-10T11:05:01Z"
 }

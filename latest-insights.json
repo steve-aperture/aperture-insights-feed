@@ -3,6 +3,424 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-11",
+      "generated_at": "2026-08-11T11:06:44Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing tracks a widening execution gap: federal vaccine and Medicare GLP-1 policy changes are moving into frontline workflows, while payer losses, slower hospital hiring, and pharmacy labor tension raise operating pressure. The curation draws on STAT, Healthcare Dive, Fierce Healthcare, Reuters, BLS, ITM Radiopharma, Doximity, Cybersecurity Dive, Becker’s Payer Issues, and targeted web-search context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "BLS web",
+          "Health-system and company web releases",
+          "Targeted web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Reuters web",
+          "BLS web",
+          "ITM Radiopharma web",
+          "Doximity web",
+          "Cybersecurity Dive web",
+          "Becker's Payer Issues web",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Supplementary email newsletters not used"
+        ],
+        "run_notes": "Built from RSS titles and descriptions plus 1–2 targeted web-search checks per selected signal. Full-article access was not required. Fresh Aug. 10–11 developments were prioritized; prior-day stories were excluded unless there was a distinct new development or a different operational angle."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal policy is moving quickly from executive action and demonstration design into clinical and administrative workflows. The practical exposure is implementation friction: vaccination guidance, GLP-1 eligibility, and research oversight all require clear accountability at the point of care.",
+          "items": [
+            {
+              "item_id": "2026-08-11-vaccine-policy-overhaul",
+              "canonical_topic": "vaccine-policy-overhaul",
+              "duplicate_group": "vaccine-policy-overhaul",
+              "priority_score": 9,
+              "primary_source": "Reuters",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/trump-signs-executive-order-overhaul-pediatric-vaccine-recommendations",
+                  "source_type": "rss",
+                  "published_at": "2026-08-10T21:38:00Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/trump-sign-order-seeking-more-vaccine-flexibility-white-house-says-2026-08-10/",
+                  "source_type": "web",
+                  "published_at": "2026-08-10T18:05:40Z"
+                }
+              ],
+              "title": "Trump order seeks to narrow the pediatric vaccine schedule, escalating federal-state policy conflict",
+              "summary": "President Donald Trump signed an executive order calling for fewer routine childhood vaccinations and backing a revised schedule promoted by HHS. Reuters reported that the order also urges separating the measles, mumps, and rubella shots and directs the Justice Department to challenge state vaccination laws; existing Vaccines for Children coverage is expected to continue.",
+              "strategic_implication": "Health systems, pediatric practices, schools, and payers should prepare for guidance changes, parent confusion, and possible litigation while maintaining evidence-based counseling and reliable access to recommended immunizations.",
+              "confidence": "high",
+              "tags": [
+                "vaccines",
+                "public-health",
+                "hhs",
+                "pediatrics",
+                "federal-policy"
+              ]
+            },
+            {
+              "item_id": "2026-08-11-glp1-bridge-access",
+              "canonical_topic": "glp1-bridge-access",
+              "duplicate_group": "glp1-bridge-access",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/11/medicare-weight-loss-drugs-glp-1s-bridge-program-primary-care/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-11T08:30:00Z"
+                },
+                {
+                  "source": "Sheppard Mullin",
+                  "url": "https://www.sheppard.com/insights/blogs/medicares-50-per-month-glp1-bridge-what-you-need-to-know",
+                  "source_type": "web",
+                  "published_at": "2026-05-15T00:00:00Z"
+                }
+              ],
+              "title": "Medicare’s $50 GLP-1 Bridge program lowers price but raises primary-care execution risk",
+              "summary": "Medicare’s new Bridge program offers eligible beneficiaries access to select weight-loss GLP-1 medicines for $50 per month, but the program relies on clinical eligibility checks and prior authorization. STAT’s reporting and program guidance describe a temporary pathway involving Wegovy, Zepbound, and Foundayo while broader Medicare coverage is developed.",
+              "strategic_implication": "The access constraint may shift from list price to workflow capacity: practices and plans will need clear criteria, documentation, medication monitoring, and patient support to prevent administrative friction from undermining affordability.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "glp-1",
+                "obesity",
+                "prior-authorization",
+                "access"
+              ]
+            },
+            {
+              "item_id": "2026-08-11-irb-independent-oversight",
+              "canonical_topic": "irb-independent-oversight",
+              "duplicate_group": "irb-independent-oversight",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/11/north-star-review-founders-advocate-nonprofit-approach-institutional-oversight/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-11T08:30:00Z"
+                }
+              ],
+              "title": "A nonprofit IRB model tests whether independence can rebuild trust in human-research oversight",
+              "summary": "STAT examines North Star Review Board, a nonprofit institutional review board founded by research ethicists who argue that commercial incentives have weakened participant protections. The model is positioned as an alternative as companies and ethicists debate the independence and accountability of IRB oversight.",
+              "strategic_implication": "Sponsors and research institutions should treat IRB independence, conflict management, and participant trust as operating capabilities—not only compliance checkpoints—especially as trial networks diversify and speed pressures grow.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-trials",
+                "irb",
+                "research-ethics",
+                "biotech",
+                "patient-safety"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Enterprise AI adoption is accelerating, but the differentiator is increasingly governed integration rather than experimentation. Security, privacy, workflow fit, and frontline participation are becoming prerequisites for durable scale.",
+          "items": [
+            {
+              "item_id": "2026-08-11-doximity-enterprise-ai-expansion",
+              "canonical_topic": "doximity-enterprise-ai-expansion",
+              "duplicate_group": "doximity-enterprise-ai-expansion",
+              "priority_score": 8,
+              "primary_source": "Doximity",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/doximity-bets-big-hospital-enterprise-ai-platforms-it-ramps-tech-investment",
+                  "source_type": "rss",
+                  "published_at": "2026-08-10T12:05:00Z"
+                },
+                {
+                  "source": "Doximity",
+                  "url": "https://www.doximity.com/enterprise-solutions",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T00:00:00Z"
+                },
+                {
+                  "source": "Yahoo Finance",
+                  "url": "https://finance.yahoo.com/healthcare/articles/docs-q2-deep-dive-ai-082122737.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T00:00:00Z"
+                }
+              ],
+              "title": "Doximity expands enterprise clinical AI as hospital adoption pushes higher investment",
+              "summary": "Doximity is positioning its Ask, Scribe, and Dialer products as an integrated enterprise workflow for health systems. Recent results and reporting indicate 165 health-system AI clients, stronger-than-expected usage, and higher AI infrastructure and talent spending that is pressuring near-term margins.",
+              "strategic_implication": "The market is moving toward institutionally approved, privacy-conscious AI suites rather than isolated point tools. Health systems should evaluate total workflow fit, governance, and variable compute costs before scaling usage across care teams.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "doximity",
+                "health-systems",
+                "enterprise-software",
+                "ai-investment"
+              ]
+            },
+            {
+              "item_id": "2026-08-11-healthcare-cybersecurity-patient-safety",
+              "canonical_topic": "healthcare-cybersecurity-patient-safety",
+              "duplicate_group": "healthcare-cybersecurity-patient-safety",
+              "priority_score": 8,
+              "primary_source": "Cybersecurity Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-cybersecurity-crisis-def-con/827428/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-07T17:29:00Z"
+                },
+                {
+                  "source": "Cybersecurity Dive",
+                  "url": "https://www.cybersecuritydive.com/news/healthcare-cybersecurity-crisis-def-con/827378/",
+                  "source_type": "web",
+                  "published_at": "2026-08-07T00:00:00Z"
+                }
+              ],
+              "title": "Healthcare cyberattacks are increasingly patient-safety events, not only privacy incidents",
+              "summary": "Researchers speaking at DEF CON said healthcare cyberattacks can disrupt clinical operations, divert patients, and worsen outcomes when hospitals or vendors lose system availability. Coverage emphasized that regulation and funding still focus more on data privacy than on preserving access to medical services.",
+              "strategic_implication": "Provider boards should connect cyber resilience to clinical downtime, diversion, and continuity metrics. Investments in recovery testing, vendor controls, and emergency workflows should be prioritized alongside breach prevention.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "patient-safety",
+                "ransomware",
+                "health-systems",
+                "resilience"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payer economics remain strained even as digital-health platforms attract enterprise demand. In biopharma, manufacturing and quality systems continue to determine whether promising clinical programs can reach patients.",
+          "items": [
+            {
+              "item_id": "2026-08-11-health-plan-operating-losses",
+              "canonical_topic": "health-plan-operating-losses",
+              "duplicate_group": "health-plan-operating-losses",
+              "priority_score": 8,
+              "primary_source": "HealthScape Advisors",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/number-health-plans-reporting-operating-losses-growing-report",
+                  "source_type": "rss",
+                  "published_at": "2026-08-10T19:09:00Z"
+                },
+                {
+                  "source": "Becker's Payer Issues",
+                  "url": "https://www.beckerspayer.com/financial/volatility-they-now-expect-to-be-the-norm-insurers-financial-issues-are-getting-worse/",
+                  "source_type": "web",
+                  "published_at": "2026-08-06T00:00:00Z"
+                }
+              ],
+              "title": "Nearly three-quarters of health plans reported operating losses in 2025",
+              "summary": "HealthScape Advisors reported that 73% of health plans had an operating loss in 2025, up from 70% in 2024 and 54% in 2023. Premium revenue growth did not keep pace with medical-cost growth, with regional and Blue plans especially exposed and Medicaid facing additional enrollment uncertainty.",
+              "strategic_implication": "Payers should pair rate actions with medical-cost management, capital planning, and provider collaboration; providers should expect more aggressive contracting and utilization-management pressure as plans defend solvency.",
+              "confidence": "high",
+              "tags": [
+                "health-plans",
+                "operating-losses",
+                "medical-costs",
+                "medicaid",
+                "payer-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-08-11-itm11-fda-manufacturing-rejection",
+              "canonical_topic": "itm11-fda-manufacturing-rejection",
+              "duplicate_group": "itm11-fda-manufacturing-rejection",
+              "priority_score": 8,
+              "primary_source": "ITM Radiopharma",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/10/itm-radiopharma-fda-rejection/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-10T15:11:07Z"
+                },
+                {
+                  "source": "ITM Radiopharma",
+                  "url": "https://www.itm-radiopharma.com/news/press-releases/press-releases-detail/itm-receives-complete-response-letter-for-177lu-edotreotide-itm-11-763/",
+                  "source_type": "web",
+                  "published_at": "2026-08-10T15:05:45Z"
+                }
+              ],
+              "title": "FDA rejects ITM-11 radiopharmaceutical over manufacturing issues, not clinical data",
+              "summary": "The FDA issued a Complete Response Letter for ITM-11, an investigational radiopharmaceutical for gastroenteropancreatic neuroendocrine tumors. ITM said the agency cited chemistry, manufacturing, and controls issues and third-party facility inspection items, with no concerns identified in the clinical or nonclinical data package.",
+              "strategic_implication": "Radiopharmaceutical developers and oncology providers should treat manufacturing readiness and qualified-facility oversight as launch-critical. The decision reinforces that strong efficacy data cannot offset unresolved CMC and commercial-site compliance risk.",
+              "confidence": "high",
+              "tags": [
+                "radiopharma",
+                "fda",
+                "manufacturing",
+                "oncology",
+                "drug-development"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Providers are balancing selective technology investment with operating resilience. Commercializing internally built clinical tools can create leverage, but cyber downtime and workflow fragmentation make governance and continuity planning essential.",
+          "items": [
+            {
+              "item_id": "2026-08-11-build-buy-oncology-software",
+              "canonical_topic": "build-buy-oncology-software",
+              "duplicate_group": "build-buy-oncology-software",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/when-to-build-software-instead-of-buy/827225/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-06T15:54:28Z"
+                }
+              ],
+              "title": "NYU Langone and Dana-Farber turn an internally built oncology tool into a commercial product",
+              "summary": "NYU Langone Health and Dana-Farber Cancer Institute built an oncology decision-support tool to guide clinicians through treatment choices and are now commercializing it for other health systems. The example illustrates how providers are moving from build-versus-buy decisions toward selective productization of workflow software.",
+              "strategic_implication": "Health systems should identify differentiating clinical workflows worth owning while avoiding unsupported internal maintenance burdens. Vendor partnerships and shared governance can turn local innovation into scalable infrastructure without fragmenting care standards.",
+              "confidence": "medium",
+              "tags": [
+                "oncology",
+                "clinical-decision-support",
+                "health-it",
+                "build-vs-buy",
+                "provider-innovation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Healthcare remains a major source of job growth, but the mix is shifting toward ambulatory care while hospital hiring flattens. Pharmacy labor actions and nurse concerns about AI show that staffing, safety, and implementation trust are inseparable.",
+          "items": [
+            {
+              "item_id": "2026-08-11-healthcare-job-growth-cools",
+              "canonical_topic": "healthcare-job-growth-cools",
+              "duplicate_group": "healthcare-job-growth-cools",
+              "priority_score": 7,
+              "primary_source": "Bureau of Labor Statistics",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-job-growth-decelerated-in-july/827457/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-10T15:42:23Z"
+                },
+                {
+                  "source": "Bureau of Labor Statistics",
+                  "url": "https://www.bls.gov/news.release/pdf/empsit.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-08-07T11:05:40Z"
+                }
+              ],
+              "title": "Healthcare added 22,000 jobs in July, but growth slowed well below its prior-year pace",
+              "summary": "The healthcare sector added 22,000 jobs in July, down from 42,000 in June and below the prior 12-month average of 36,000, according to the Bureau of Labor Statistics. Ambulatory care led the increase with 18,000 jobs, while hospital employment was essentially flat.",
+              "strategic_implication": "The pattern suggests continued demand for outpatient and home-based capacity alongside tighter hospital labor planning. Operators should monitor whether reimbursement pressure and Medicaid changes are beginning to constrain hospital hiring while access needs remain high.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "employment",
+                "ambulatory-care",
+                "hospitals",
+                "labor-market"
+              ]
+            },
+            {
+              "item_id": "2026-08-11-cvs-pharmacist-strike-sanction",
+              "canonical_topic": "cvs-pharmacist-strike-sanction",
+              "duplicate_group": "cvs-pharmacist-strike-sanction",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cvs-pharmacists-approve-strike-sanction-staffing-burnout/827403/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-10T12:51:29Z"
+                },
+                {
+                  "source": "KJZZ",
+                  "url": "https://www.kjzz.org/business/2026-08-07/cvs-pharmacy-workers-in-arizona-take-a-step-toward-striking",
+                  "source_type": "web",
+                  "published_at": "2026-08-07T00:00:00Z"
+                }
+              ],
+              "title": "CVS pharmacists in three states authorize a strike step over staffing and burnout",
+              "summary": "Unionized CVS pharmacists in Rhode Island, California, and Arizona approved strike sanctions as they seek safer staffing levels, realistic workloads, and a formal voice in pharmacy decisions. Healthcare Dive reported vote margins above 90% in all three states; an authorization does not guarantee a walkout.",
+              "strategic_implication": "Retail pharmacy labor tension is an operational and patient-access risk, especially as prescription volume, vaccinations, and GLP-1 demand rise. Payers and health systems should maintain contingency plans for network capacity and medication access if negotiations deteriorate.",
+              "confidence": "high",
+              "tags": [
+                "pharmacists",
+                "staffing",
+                "burnout",
+                "labor-relations",
+                "medication-access"
+              ]
+            },
+            {
+              "item_id": "2026-08-11-nurses-clinical-ai-voice",
+              "canonical_topic": "nurses-clinical-ai-voice",
+              "duplicate_group": "nurses-clinical-ai-voice",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-11T08:30:00Z"
+                }
+              ],
+              "title": "Nurses demand a seat in clinical AI decisions as deployments reshape jobs and patient care",
+              "summary": "STAT reports that nurses are becoming more vocal about the risks of clinical AI as it moves deeper into care delivery and administrative work. Nurses at Montefiore and Kaiser Permanente have raised concerns about job displacement, surveillance, and the consequences of deploying tools without frontline input, while educators are building nurse participation into AI design and training.",
+              "strategic_implication": "Health systems should include nurses in procurement, validation, training, and monitoring of clinical AI. Workforce trust and patient safety will depend on preserving meaningful clinical judgment and measuring workload and retention—not just adoption rates.",
+              "confidence": "high",
+              "tags": [
+                "nursing",
+                "clinical-ai",
+                "workforce",
+                "patient-safety",
+                "change-management"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-10",
       "generated_at": "2026-08-10T11:05:01Z",
       "headline": "Today's Healthcare Insights",
@@ -19946,5 +20364,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-10T11:05:01Z"
+  "last_updated": "2026-08-11T11:06:44Z"
 }

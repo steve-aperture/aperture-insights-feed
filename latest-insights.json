@@ -3,6 +3,409 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-12",
+      "generated_at": "2026-08-12T11:07:47Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing highlights federal coverage and food-safety rulemaking, a move toward shared governance for diagnostic AI, and a split in healthcare economics between strong distribution and digital-health growth and rising administrative, cybersecurity, and workforce friction. The curation draws on STAT, Healthcare Dive, Fierce Healthcare, CMS/HHS/FDA, Reuters, company disclosures, University Hospitals, JAMA Health Forum coverage, and targeted web-search context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Hospital and company disclosures",
+          "JAMA Health Forum coverage",
+          "Targeted web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Reuters web",
+          "Cardinal Health disclosure",
+          "Hims & Hers disclosure",
+          "University Hospitals disclosure",
+          "JAMA Health Forum coverage",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Supplementary email newsletters not used"
+        ],
+        "run_notes": "Built from RSS titles and descriptions plus 1–2 targeted web-search checks per selected signal. Full-article access was not required. Fresh Aug. 11–12 developments were prioritized; older items were included only where the current-day update or operational consequence was new."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal agencies are converting the administration’s priorities into concrete coverage, food-safety, and disclosure requirements. The operational question for healthcare leaders is how quickly policy changes become payer rules, provider workflows, and compliance obligations.",
+          "items": [
+            {
+              "item_id": "2026-08-12-medicaid-chip-youth-care-rule",
+              "canonical_topic": "medicaid-chip-youth-care-rule",
+              "duplicate_group": "medicaid-chip-youth-care-rule",
+              "priority_score": 9,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-ends-medicaid-chip-funding-gender-affirming-care-minors",
+                  "source_type": "rss",
+                  "published_at": "2026-08-11T21:30:00Z"
+                },
+                {
+                  "source": "The Hill",
+                  "url": "https://thehill.com/policy/healthcare/6023489-cms-blocks-minor-gender-care/",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T22:07:04Z"
+                }
+              ],
+              "title": "CMS finalizes Medicaid and CHIP funding limits for gender-affirming care for minors",
+              "summary": "CMS finalized a rule that bars federal Medicaid and CHIP funding for specified gender-affirming care for minors. The rule is scheduled to take effect in October, allows a limited transition period for some current hormone-therapy patients, and does not bar mental-health services; states may continue coverage with state-only funds.",
+              "strategic_implication": "Plans, providers, and state agencies need a coordinated implementation plan for benefit changes, member communications, appeals, and continuity of care while litigation and state-level responses remain possible.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "chip",
+                "coverage-policy",
+                "pediatrics",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-08-12-fda-gras-notification-proposal",
+              "canonical_topic": "fda-gras-notification-proposal",
+              "duplicate_group": "fda-gras-notification-proposal",
+              "priority_score": 7,
+              "primary_source": "FDA/HHS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/food/food-ingredients-packaging/generally-recognized-safe-gras",
+                  "source_type": "web",
+                  "published_at": "2026-08-10T00:00:00Z"
+                },
+                {
+                  "source": "HHS",
+                  "url": "https://www.hhs.gov/press-room/fact-sheet-hhs-announces-proposed-gras-rule.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-10T00:00:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/10/rfk-jr-proposal-fda-gras-rule-generally-recognized-as-safe/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-10T13:19:47Z"
+                }
+              ],
+              "title": "FDA proposal would make GRAS notifications mandatory and public",
+              "summary": "HHS and FDA proposed requiring manufacturers to notify the agency when they conclude a substance added to human or animal food is generally recognized as safe. The proposal would expand a public inventory and create a streamlined path for some substances already on the market, with comments due in December.",
+              "strategic_implication": "Food, nutrition, and healthcare organizations should begin inventorying self-affirmed ingredients and documenting safety rationales; the near-term risk is disclosure and review exposure rather than an immediate product ban.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "food-safety",
+                "gras",
+                "transparency",
+                "regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital-health leaders are shifting from isolated pilots toward scaled infrastructure, shared evaluation, and governance. The winning models will pair measurable clinical value with stronger controls over referral incentives, workflow integration, and post-deployment monitoring.",
+          "items": [
+            {
+              "item_id": "2026-08-12-diagnostic-ai-consortium",
+              "canonical_topic": "diagnostic-ai-consortium",
+              "duplicate_group": "diagnostic-ai-consortium",
+              "priority_score": 8,
+              "primary_source": "University Hospitals",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "University Hospitals",
+                  "url": "https://news.uhhospitals.org/news-releases/articles/2026/08/twelve-us-health-systems-and-aidoc-unite",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T00:00:00Z"
+                },
+                {
+                  "source": "Imaging Technology News",
+                  "url": "https://www.itnonline.com/content/healthcare-systems-aidoc-create-diagnostic-ai-consortium",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T00:00:00Z"
+                }
+              ],
+              "title": "Twelve health systems form a consortium to validate diagnostic AI in live workflows",
+              "summary": "Twelve U.S. health systems have formed the Diagnostic AI Consortium with Aidoc, collectively representing nearly 20 million patients annually. The group plans to co-design diagnostic workflows, measure safety, quality, and speed to diagnosis, and share implementation and governance lessons; initial results are expected in 2027.",
+              "strategic_implication": "Shared evaluation can reduce duplicated experimentation and create a stronger evidence base for procurement, but participating systems will need clear IRB, safety, interoperability, and accountability rules before scaling investigational tools.",
+              "confidence": "high",
+              "tags": [
+                "diagnostic-ai",
+                "health-systems",
+                "ai-governance",
+                "clinical-workflow",
+                "interoperability"
+              ]
+            },
+            {
+              "item_id": "2026-08-12-commure-ai-sales-governance",
+              "canonical_topic": "commure-ai-sales-governance",
+              "duplicate_group": "commure-ai-sales-governance",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/12/inside-commure-athelas-mad-dash-automate-health-care/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/12/inside-commure-athelas-mad-dash-automate-health-care/",
+                  "source_type": "web",
+                  "published_at": "2026-08-12T08:07:03Z"
+                }
+              ],
+              "title": "Commure’s AI expansion puts healthcare automation claims and sales governance under scrutiny",
+              "summary": "A STAT investigation describes Commure’s effort to automate administrative healthcare work with AI, including referral compensation programs and customer reports of negative outcomes. The company says the programs are industry standard, that most customers are satisfied, and that its tools are used by more than 500 healthcare organizations.",
+              "strategic_implication": "Health-system buyers should treat vendor references, incentive structures, outcome evidence, and contract protections as part of AI diligence—not as separate procurement details—before expanding automation into revenue cycle or clinical workflows.",
+              "confidence": "medium",
+              "tags": [
+                "healthcare-ai",
+                "revenue-cycle",
+                "vendor-risk",
+                "governance",
+                "automation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "The latest market signals show growth is still available, but quality and durability of growth matter more than headline revenue. Distribution and specialty-pharma demand are supporting earnings, while digital-health expansion is bringing margin and regulatory trade-offs into sharper view.",
+          "items": [
+            {
+              "item_id": "2026-08-12-cardinal-health-fy27-outlook",
+              "canonical_topic": "cardinal-health-fy27-outlook",
+              "duplicate_group": "cardinal-health-fy27-outlook",
+              "priority_score": 8,
+              "primary_source": "Cardinal Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Cardinal Health",
+                  "url": "https://newsroom.cardinalhealth.com/2026-08-11-Cardinal-Health-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Results-and-Provides-Fiscal-Year-2027-Guidance",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T11:07:04Z"
+                },
+                {
+                  "source": "MarketBeat",
+                  "url": "https://www.marketbeat.com/earnings/reports/2026-8-11-cardinal-health-inc-stock/",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T00:00:00Z"
+                }
+              ],
+              "title": "Cardinal Health beats on adjusted EPS and guides to 13%–15% FY27 growth",
+              "summary": "Cardinal Health reported fiscal fourth-quarter revenue of $63.7 billion, up 6%, and non-GAAP diluted EPS of $2.91, up 40%; the EPS figure included a $0.31 benefit from a one-time tariff refund. Management guided fiscal 2027 non-GAAP EPS to $12.40–$12.60, or 13%–15% growth from an adjusted baseline, while fourth-quarter revenue came in below consensus.",
+              "strategic_implication": "The result reinforces the importance of specialty-pharma mix, operating leverage, and capital allocation in healthcare distribution, but leaders should separate recurring performance from one-time policy or tariff effects when benchmarking partners.",
+              "confidence": "high",
+              "tags": [
+                "cardinal-health",
+                "pharmaceutical-distribution",
+                "earnings",
+                "specialty-pharma",
+                "guidance"
+              ]
+            },
+            {
+              "item_id": "2026-08-12-hims-glp1-margin-tradeoff",
+              "canonical_topic": "hims-glp1-margin-tradeoff",
+              "duplicate_group": "hims-glp1-margin-tradeoff",
+              "priority_score": 7,
+              "primary_source": "Hims & Hers",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/hims-hers-posts-753m-q3-revenue-it-preps-push-peptide-market",
+                  "source_type": "rss",
+                  "published_at": "2026-08-11T19:39:00Z"
+                },
+                {
+                  "source": "Hims & Hers",
+                  "url": "https://investors.hims.com/financials/quarterly-results/default.aspx",
+                  "source_type": "web",
+                  "published_at": "2026-08-10T00:00:00Z"
+                }
+              ],
+              "title": "Hims & Hers raises its outlook as GLP-1 demand grows, but margin pressure intensifies",
+              "summary": "Hims & Hers reported second-quarter 2026 revenue of about $753 million, up 38% year over year, and raised full-year revenue guidance to $3.1 billion–$3.3 billion. The company also forecast third-quarter revenue of $880 million–$900 million, while reporting a wider loss and lower gross margins as it shifts toward branded GLP-1 products and prepares for a broader peptide opportunity if regulations allow.",
+              "strategic_implication": "Digital-health growth is increasingly tied to product mix, regulatory permissions, and unit economics; payers and providers should distinguish demand signals from sustainable margin and clinical-governance performance.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "glp-1",
+                "peptides",
+                "margin-pressure",
+                "earnings"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operating risk is showing up in two places: the cost of complying with complex payment models and the widening blast radius of third-party cyber incidents. Both trends argue for stronger enterprise ownership of administrative and vendor dependencies.",
+          "items": [
+            {
+              "item_id": "2026-08-12-mandatory-vbp-admin-costs",
+              "canonical_topic": "mandatory-vbp-admin-costs",
+              "duplicate_group": "mandatory-vbp-admin-costs",
+              "priority_score": 8,
+              "primary_source": "JAMA Health Forum",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/cms-mandatory-vbc-programs-brought-substantial-administrative-costs-hospitals-study",
+                  "source_type": "rss",
+                  "published_at": "2026-08-11T16:00:00Z"
+                },
+                {
+                  "source": "EurekAlert!",
+                  "url": "https://www.eurekalert.org/news-releases/1139042",
+                  "source_type": "web",
+                  "published_at": "2026-08-07T00:00:00Z"
+                }
+              ],
+              "title": "Study links mandatory value-based programs to more than $3 billion in hospital administrative costs",
+              "summary": "A cohort study published in JAMA Health Forum found that hospitals participating in four mandatory value-based payment programs incurred more than $3 billion in aggregated administrative costs relative to non-participating hospitals. The analysis highlights the operational work required for reporting, performance management, and compliance alongside the programs’ intended quality and cost goals.",
+              "strategic_implication": "Payment reform design should account for implementation cost, not only incentive dollars; hospitals should model reporting burden and data-platform requirements before committing scarce operating capacity to new mandates.",
+              "confidence": "medium",
+              "tags": [
+                "value-based-care",
+                "hospital-operations",
+                "administrative-costs",
+                "medicare",
+                "payment-reform"
+              ]
+            },
+            {
+              "item_id": "2026-08-12-dentaquest-breach-scale",
+              "canonical_topic": "dentaquest-breach-scale",
+              "duplicate_group": "dentaquest-breach-scale",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/Dental-benefits-administrator-discloses-breach/827533/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-11T13:05:03Z"
+                },
+                {
+                  "source": "Health-ISAC",
+                  "url": "https://health-isac.org/dentaquest-data-theft-hack-affects-15m-patients/",
+                  "source_type": "web",
+                  "published_at": "2026-08-04T00:00:00Z"
+                }
+              ],
+              "title": "DentaQuest breach expands to 15 million people, underscoring third-party exposure",
+              "summary": "DentaQuest said a May intrusion exposed personal, insurance, and dental or vision health information affecting about 15 million people, making it one of the largest healthcare breaches reported in 2026. The incident illustrates how benefits administrators and other business associates can create large-scale exposure across Medicaid, Medicare, and commercial populations.",
+              "strategic_implication": "Providers and plans should map business-associate dependencies, rehearse member and patient communications, and require evidence of containment and recovery—not just compliance attestations—when managing third-party data risk.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "data-breach",
+                "business-associate",
+                "medicaid",
+                "third-party-risk"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Frontline labor signals are converging around workload, staffing, and voice in technology decisions. Workforce adoption will depend on whether organizations can demonstrate that automation improves care and gives clinicians meaningful control over implementation.",
+          "items": [
+            {
+              "item_id": "2026-08-12-cvs-pharmacist-strike-sanction",
+              "canonical_topic": "cvs-pharmacist-strike-sanction",
+              "duplicate_group": "cvs-pharmacist-strike-sanction",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cvs-pharmacists-approve-strike-sanction-staffing-burnout/827403/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-10T15:42:23Z"
+                },
+                {
+                  "source": "Medicaid Monitor",
+                  "url": "https://medicaidmonitor.org/articles/a5d4db94-57fb-46db-be2a-48ea3668ad7b",
+                  "source_type": "web",
+                  "published_at": "2026-08-10T00:00:00Z"
+                }
+              ],
+              "title": "Unionized CVS pharmacists clear a first strike hurdle over staffing and workload",
+              "summary": "Unionized CVS pharmacists in Rhode Island, California, and Arizona overwhelmingly approved strike sanctions over staffing levels, workload, and a lack of input into pharmacy decisions. The vote is an initial authorization step rather than a guaranteed walkout, but it raises the risk of service disruption in communities that rely on CVS pharmacies.",
+              "strategic_implication": "Retail pharmacy operators and health plans should treat staffing ratios, prescription-review time, and escalation channels as patient-access and safety controls, especially as pharmacies absorb new clinical and weight-management services.",
+              "confidence": "high",
+              "tags": [
+                "pharmacy",
+                "workforce",
+                "staffing",
+                "burnout",
+                "patient-access"
+              ]
+            },
+            {
+              "item_id": "2026-08-12-nurses-clinical-ai-governance",
+              "canonical_topic": "nurses-clinical-ai-governance",
+              "duplicate_group": "nurses-clinical-ai-governance",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-11T12:00:00Z"
+                },
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/morning-breakout/first-edition-tuesday-aug-11-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T00:00:00Z"
+                }
+              ],
+              "title": "Nurses demand a formal role in clinical AI decisions as adoption expands",
+              "summary": "STAT reports that nurses and their unions are pressing for greater influence over clinical AI design, procurement, and deployment as tools move deeper into care delivery. The reporting cites concerns about job displacement, surveillance, and patient safety, alongside efforts to build training and more collaborative governance models.",
+              "strategic_implication": "Health systems should include nurses in AI selection and oversight, define override and accountability pathways, and measure whether tools reduce workload without eroding bedside judgment or staffing resilience.",
+              "confidence": "high",
+              "tags": [
+                "nursing",
+                "clinical-ai",
+                "workforce",
+                "patient-safety",
+                "governance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-11",
       "generated_at": "2026-08-11T11:06:44Z",
       "headline": "Today's Healthcare Insights",
@@ -20364,5 +20767,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-11T11:06:44Z"
+  "last_updated": "2026-08-12T11:07:47Z"
 }

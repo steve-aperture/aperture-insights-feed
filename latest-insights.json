@@ -3,6 +3,415 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-13",
+      "generated_at": "2026-08-13T11:12:25Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing focuses on payment and coverage rules moving from policy into operating workflows, a new wave of AI-enabled patient and revenue-cycle infrastructure, and rising pressure on access, margins, and workforce capacity. The curation draws on STAT, Healthcare Dive, Fierce Healthcare, CMS, Brookings, Deloitte, health-system and company disclosures, and targeted web-search context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Hospital, health-system, and company disclosures",
+          "Brookings and other policy research",
+          "Targeted web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS web",
+          "Brookings web",
+          "Deloitte disclosure",
+          "Cedar disclosure",
+          "West Health disclosure",
+          "TMA web",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Supplementary email newsletters not used"
+        ],
+        "run_notes": "Built from RSS titles and descriptions plus 1–2 targeted web-search checks per selected signal. Full-article access was not required. Fresh Aug. 12–13 developments were prioritized; older items were used only for context or primary documentation."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Coverage and payment rules are entering implementation mode, with Medicaid work requirements and No Surprises Act arbitration methodology both creating near-term administrative and financial consequences. Leaders should prepare for policy volatility by translating legal changes into eligibility, contracting, and revenue-cycle playbooks.",
+          "items": [
+            {
+              "item_id": "2026-08-13-medicaid-work-requirements-evidence-gap",
+              "canonical_topic": "medicaid-work-requirements-evidence-gap",
+              "duplicate_group": "medicaid-work-requirements-evidence-gap",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cms-medicaid-work-requirements-rule-slammed-brookings-analysis/827481/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T17:29:07Z"
+                },
+                {
+                  "source": "Brookings",
+                  "url": "https://www.brookings.edu/articles/medicaid-work-requirements-built-on-invented-evidence-will-harm-the-people-they-claim-to-help/",
+                  "source_type": "web",
+                  "published_at": "2026-08-07T11:11:18Z"
+                }
+              ],
+              "title": "Brookings challenges CMS assumptions behind the coming Medicaid work requirement",
+              "summary": "Brookings researchers say CMS relied on unsupported assumptions in its implementation analysis for the national Medicaid community-engagement requirement. The rule requires certain ACA expansion adults to document 80 hours per month of work, school, training, or community service beginning in 2027; CMS projects far fewer coverage losses and greater savings than the Congressional Budget Office.",
+              "strategic_implication": "States, plans, and providers should model both the nominal rule and documentation-driven churn, including exemption verification, outreach, eligibility-system changes, and likely increases in uncompensated or delayed care.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "coverage-loss",
+                "eligibility",
+                "policy-risk"
+              ]
+            },
+            {
+              "item_id": "2026-08-13-no-surprises-qpa-methodology-ruling",
+              "canonical_topic": "no-surprises-qpa-methodology-ruling",
+              "duplicate_group": "no-surprises-qpa-methodology-ruling",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/appeals-court-tosses-methodology-calculating-nsa-qualifying-payment-amounts",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T20:55:00Z"
+                },
+                {
+                  "source": "Texas Medical Association",
+                  "url": "https://www.texmed.org/Template.aspx?id=68379",
+                  "source_type": "web",
+                  "published_at": "2026-08-12T00:00:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/12/texas-medical-association-no-surprises-act-lawsuit-qpa/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T20:29:03Z"
+                }
+              ],
+              "title": "Appeals court tosses key No Surprises Act payment methodology",
+              "summary": "The U.S. Court of Appeals for the Fifth Circuit rejected key rules used to calculate the qualifying payment amount in federal No Surprises Act disputes. The challenged methodology included concerns about so-called ghost rates and the treatment of bonus and incentive payments, issues that can materially affect arbitration and out-of-network reimbursement.",
+              "strategic_implication": "Health plans, provider groups, and arbitration teams should assess how the ruling changes QPA calculations, negotiation posture, claims workflows, and pending disputes while regulators determine implementation steps.",
+              "confidence": "high",
+              "tags": [
+                "no-surprises-act",
+                "qpa",
+                "arbitration",
+                "reimbursement",
+                "payer-provider"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI is moving from pilots into patient-facing access, billing, and reimbursement infrastructure. The immediate test is not novelty but whether organizations can pair deployment speed with evidence, guardrails, and measurable workflow value.",
+          "items": [
+            {
+              "item_id": "2026-08-13-oracle-ai-patient-portal",
+              "canonical_topic": "oracle-ai-patient-portal",
+              "duplicate_group": "oracle-ai-patient-portal",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/Oracle-launches-AI-driven-patient-portal/827656/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T13:00:05Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/Oracle-launches-AI-driven-patient-portal/827656/",
+                  "source_type": "web",
+                  "published_at": "2026-08-12T21:11:17Z"
+                }
+              ],
+              "title": "Oracle makes its AI-powered patient portal generally available in the U.S.",
+              "summary": "Oracle Health launched its AI-powered patient portal broadly in the U.S. The portal is integrated with Oracle’s EHR and is designed to explain diagnoses, lab results, and treatment paths in plain language, support natural-language scheduling, and distinguish AI-generated text while preventing the system from giving diagnoses or treatment recommendations.",
+              "strategic_implication": "Patient-facing AI is becoming part of the EHR platform decision, so health systems should evaluate usability, source attribution, escalation, accessibility, and clinical-safety controls alongside the commercial cost of the portal.",
+              "confidence": "high",
+              "tags": [
+                "patient-portal",
+                "ehr",
+                "generative-ai",
+                "patient-access",
+                "clinical-safety"
+              ]
+            },
+            {
+              "item_id": "2026-08-13-cedar-kora-agentic-billing-platform",
+              "canonical_topic": "cedar-kora-agentic-billing-platform",
+              "duplicate_group": "cedar-kora-agentic-billing-platform",
+              "priority_score": 8,
+              "primary_source": "Cedar",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/cedar-launches-kora-platform-agentic-ai-billing",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T16:57:00Z"
+                },
+                {
+                  "source": "Cedar",
+                  "url": "https://finance.yahoo.com/healthcare/articles/cedar-launches-agentic-platform-help-100000059.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-13T00:00:00Z"
+                }
+              ],
+              "title": "Cedar expands Kora from a billing agent into an agentic patient-finance platform",
+              "summary": "Cedar introduced the Kora Platform, a suite of AI agents for inbound and outbound billing calls, two-way text, eligibility checks, payments, insurance capture, and collections workflows. The company says Kora has handled more than 600,000 patient conversations, achieved 40% inbound call containment, and reached a 20% outbound pickup rate, four times its stated industry average.",
+              "strategic_implication": "Revenue-cycle automation can scale faster than traditional call-center capacity, but providers need clear controls for financial assistance, consent, language access, human escalation, and independent validation of collection and patient-experience claims.",
+              "confidence": "medium",
+              "tags": [
+                "revenue-cycle",
+                "agentic-ai",
+                "patient-finance",
+                "automation",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-08-13-medicare-ai-device-payment-incentives",
+              "canonical_topic": "medicare-ai-device-payment-incentives",
+              "duplicate_group": "medicare-ai-device-payment-incentives",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-13T08:30:00Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps/new-medical-services-and-new-technologies",
+                  "source_type": "web",
+                  "published_at": "2026-08-10T00:00:00Z"
+                }
+              ],
+              "title": "Medicare’s AI-device incentives raise the stakes for evidence and utilization controls",
+              "summary": "STAT reports that Medicare payment incentives for newly authorized AI devices could encourage hospitals to adopt and use tools before their real-world value is fully established. CMS’s new-technology payment framework requires qualifying technologies to be new, costly relative to the standard payment, and shown to provide substantial clinical improvement.",
+              "strategic_implication": "Manufacturers and health systems should treat reimbursement as the beginning of evidence generation, not proof of value, and build utilization review, outcomes tracking, and post-deployment monitoring into AI adoption plans.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "medical-devices",
+                "clinical-ai",
+                "reimbursement",
+                "evidence"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Industry growth is increasingly constrained by execution readiness: leaders are being asked to improve margins and expand partnerships while their operating systems, data, and decision processes lag. The result is a market where disciplined integration matters as much as headline expansion.",
+          "items": [
+            {
+              "item_id": "2026-08-13-healthcare-cfo-decision-readiness-gap",
+              "canonical_topic": "healthcare-cfo-decision-readiness-gap",
+              "duplicate_group": "healthcare-cfo-decision-readiness-gap",
+              "priority_score": 7,
+              "primary_source": "Deloitte",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-cfos-face-decision-readiness-gap-deloitte/827740/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T18:08:47Z"
+                },
+                {
+                  "source": "Deloitte",
+                  "url": "https://www.deloitte.com/us/en/about/press-room/deloitte-2026-healthcare-cfo-survey.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-12T12:11:33Z"
+                },
+                {
+                  "source": "Deloitte",
+                  "url": "https://www.deloitte.com/us/en/insights/industry/health-care/healthcare-finance-leadership.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-12T11:11:33Z"
+                }
+              ],
+              "title": "Healthcare CFOs face a 24-point gap between enterprise expectations and readiness",
+              "summary": "Deloitte’s 2026 survey of 64 U.S. healthcare finance leaders found that 73% are expected to be regularly or heavily involved in enterprise decisions, while only 49% feel well equipped to contribute. The largest gap is in affordability, access, and patient experience, where 74% are expected to participate but only 41% feel prepared; nearly 60% are targeting at least two points of margin improvement over two years.",
+              "strategic_implication": "Margin programs and transformation portfolios need stronger finance-operating integration, data attribution, and decision rights; otherwise leaders may commit to growth or AI investments without the measurement capability to manage trade-offs.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-finance",
+                "cfo",
+                "margin",
+                "operating-model",
+                "decision-readiness"
+              ]
+            },
+            {
+              "item_id": "2026-08-13-cityblock-humana-north-carolina-partnership",
+              "canonical_topic": "cityblock-humana-north-carolina-partnership",
+              "duplicate_group": "cityblock-humana-north-carolina-partnership",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cityblock-unveils-partnership-humana-north-carolina",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T18:49:00Z"
+                }
+              ],
+              "title": "Cityblock expands its North Carolina footprint through a Humana partnership",
+              "summary": "Cityblock Health announced a new partnership with Humana in North Carolina, extending the organization’s payer-linked care model in the state. The move adds to a broader pattern of plans and care-delivery companies using local, multidisciplinary models to reach Medicaid, Medicare Advantage, and complex-needs populations.",
+              "strategic_implication": "Payer-provider partnerships will increasingly be judged on access, behavioral-health integration, and measurable total-cost outcomes, not simply on network breadth or geographic expansion.",
+              "confidence": "medium",
+              "tags": [
+                "payer-provider",
+                "north-carolina",
+                "medicaid",
+                "medicare-advantage",
+                "care-model"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider organizations are investing in coordination infrastructure to relieve capacity pressure and make care transitions more reliable. The operational advantage will come from embedding these capabilities into daily flow management rather than treating them as standalone innovation projects.",
+          "items": [
+            {
+              "item_id": "2026-08-13-ucsd-west-health-care-coordination-accelerator",
+              "canonical_topic": "ucsd-west-health-care-coordination-accelerator",
+              "duplicate_group": "ucsd-west-health-care-coordination-accelerator",
+              "priority_score": 8,
+              "primary_source": "West Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/uc-san-diego-health-west-health-launch-40m-accelerator-tech-forward-coordinated-care",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T20:17:00Z"
+                },
+                {
+                  "source": "West Health",
+                  "url": "https://westhealth.org/news/uc-san-diego-health-and-west-health-accelerate-future-of-patient-care/",
+                  "source_type": "web",
+                  "published_at": "2026-08-12T20:11:34Z"
+                }
+              ],
+              "title": "UC San Diego Health and West Health launch a six-year, $40 million care-coordination accelerator",
+              "summary": "UC San Diego Health and West Health launched a six-year, $40 million initiative to improve how patients navigate referrals, specialist transitions, recovery, and ongoing care across hospitals, clinics, and home settings. The program will build an around-the-clock coordination hub using data, advanced technology, and the health system’s EHR, with an explicit goal of sharing a scalable model with other systems.",
+              "strategic_implication": "Care coordination is becoming a capacity strategy: health systems should connect navigation, access, referral management, and flow analytics to measurable outcomes such as time to appointment, avoidable utilization, and patient experience.",
+              "confidence": "high",
+              "tags": [
+                "care-coordination",
+                "patient-flow",
+                "health-systems",
+                "access",
+                "digital-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce and access signals point to a compounding capacity problem: organizations are restructuring under cost pressure while patients face longer waits for time-sensitive care. Leaders need to connect staffing, throughput, equity, and clinical outcomes in one operating view.",
+          "items": [
+            {
+              "item_id": "2026-08-13-sharp-healthcare-workforce-reduction",
+              "canonical_topic": "sharp-healthcare-workforce-reduction",
+              "duplicate_group": "sharp-healthcare-workforce-reduction",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/sharp-healthcare-announces-another-reorganization-affecting-260-workers",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T16:14:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/sharp-healthcare-reduces-workforce-by-nearly-1-affecting-260-employees/",
+                  "source_type": "web",
+                  "published_at": "2026-08-12T14:11:17Z"
+                }
+              ],
+              "title": "Sharp HealthCare restructures operations, affecting about 260 workers",
+              "summary": "Sharp HealthCare announced a reorganization affecting about 260 employees, or just under 1% of its workforce, across behavioral health, outpatient services, and system and regional operations. The system cited labor and supply costs, stagnant government reimbursement, and federal and state policy changes; some affected workers were offered other roles within Sharp.",
+              "strategic_implication": "Even when workforce actions are designed to protect direct care, reductions across clinical support, access, and administrative functions can shift workload and lengthen queues; leaders should track service-line capacity and patient-safety effects after restructuring.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "hospital-operations",
+                "restructuring",
+                "behavioral-health",
+                "capacity"
+              ]
+            },
+            {
+              "item_id": "2026-08-13-cancer-treatment-wait-times",
+              "canonical_topic": "cancer-treatment-wait-times",
+              "duplicate_group": "cancer-treatment-wait-times",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/12/cancer-patients-face-longer-wait-times-for-treatment/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-12T15:00:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/12/cancer-patients-face-longer-wait-times-for-treatment/",
+                  "source_type": "web",
+                  "published_at": "2026-08-12T16:11:33Z"
+                },
+                {
+                  "source": "MedPage Today",
+                  "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/122578",
+                  "source_type": "web",
+                  "published_at": "2026-08-12T17:11:33Z"
+                }
+              ],
+              "title": "Cancer patients are waiting longer to start treatment across six major cancers",
+              "summary": "A study of more than 2.7 million patients in the National Cancer Database found that the time from diagnosis to first treatment increased across six cancers from 2012 through 2023. Reported delays were longer for patients with Medicaid or lower incomes, Black patients, people traveling farther, and those treated at academic or high-volume centers.",
+              "strategic_implication": "Cancer programs should treat time-to-treatment as a strategic access and quality metric, using referral triage, capacity planning, navigation, and equity monitoring to prevent staffing and workflow bottlenecks from becoming clinical delays.",
+              "confidence": "high",
+              "tags": [
+                "cancer-care",
+                "access",
+                "clinical-operations",
+                "health-equity",
+                "wait-times"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-12",
       "generated_at": "2026-08-12T11:07:47Z",
       "headline": "Today's Healthcare Insights",
@@ -20767,5 +21176,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-12T11:07:47Z"
+  "last_updated": "2026-08-13T11:12:25Z"
 }

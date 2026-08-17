@@ -3,6 +3,361 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-17",
+      "generated_at": "2026-08-17T11:11:56Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing centers on the operational consequences of tighter payment and transparency rules, accelerating AI deployment, and renewed scrutiny of payer and provider economics. Signals were gathered from STAT, Healthcare Dive, Fierce Healthcare, KFF, Axios, FDA, CDC, and targeted web checks, with fresh Monday developments prioritized over prior-edition stories.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA/CDC web",
+          "KFF web",
+          "Healthcare company and nonprofit disclosures",
+          "Targeted web search"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "FDA/CDC web",
+          "KFF web",
+          "Axios web",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "Built from Aug. 17 RSS and targeted web signals plus selected Aug. 11–14 developments that were not included in the Aug. 14 edition. RSS titles and descriptions were sufficient for several items; targeted search and first-party FDA, CDC, and KFF pages supplied additional context. Full-article access was not required."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Payment infrastructure and utilization controls are becoming more visible to patients, clinicians, and employers, while transparency disputes are moving from policy debate into litigation.",
+          "items": [
+            {
+              "item_id": "2026-08-17-cpt-codes-public-access-lawsuit",
+              "canonical_topic": "cpt-code-public-access-lawsuit",
+              "duplicate_group": "cpt-code-public-access-lawsuit",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/patient-rights-advocate-sues-ama-cpt-billing-codes-copyright/827830/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-14T14:00:47Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/patient-advocacy-group-sues-ama-open-access-cpt-system",
+                  "source_type": "rss",
+                  "published_at": "2026-08-14T16:16:00Z"
+                }
+              ],
+              "title": "Patient advocacy group sues AMA over public access to CPT billing codes",
+              "summary": "PatientRightsAdvocate.org sued the American Medical Association in Illinois federal court, arguing that the CPT billing-code system should be publicly accessible because federal and state law incorporate it by reference. The AMA currently charges licensing fees to retrieve and use the codes, which shape billions of dollars in healthcare payments. The suit seeks permission to publish the codebook in a searchable format.",
+              "strategic_implication": "A ruling could affect the cost and control of core billing infrastructure, with downstream implications for price-transparency tools, revenue-cycle vendors, and provider compliance workflows.",
+              "confidence": "medium",
+              "tags": [
+                "billing-transparency",
+                "cpt-codes",
+                "healthcare-law",
+                "revenue-cycle"
+              ]
+            },
+            {
+              "item_id": "2026-08-17-prior-authorization-denial-data",
+              "canonical_topic": "prior-authorization-denial-data",
+              "duplicate_group": "prior-authorization-denial-data",
+              "priority_score": 9,
+              "primary_source": "KFF",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/patient-consumer-protections/prior-authorization-metrics-provide-new-insights-into-insurer-practices-but-gaps-remain/",
+                  "source_type": "web",
+                  "published_at": "2026-08-13T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/prior-authorization-denials-vary-widely-among-insurers/827891/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-14T13:05:25Z"
+                }
+              ],
+              "title": "KFF finds prior-authorization denials range from 2% to 25% across insurers",
+              "summary": "KFF analyzed newly required 2025 prior-authorization metrics across Medicare Advantage, Medicaid managed care, and federally facilitated ACA Marketplace plans. Average standard-request denial rates were 12%, 14%, and 18%, respectively, while insurer-level rates varied substantially; some ACA Marketplace rates reached 25%. The data provide limited insight into the services or reasons behind individual denials, but many denials that were appealed were overturned.",
+              "strategic_implication": "The new reporting regime creates a benchmark for payer performance while highlighting the need for more granular data; providers should expect denial management and documentation quality to remain strategic operating capabilities.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "payer-transparency",
+                "medicare-advantage",
+                "medicaid",
+                "aca-marketplace"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI is moving from pilot programs into embedded workflow infrastructure, especially around payer rules and clinical decision support, raising the bar for integration, governance, and measurable outcomes.",
+          "items": [
+            {
+              "item_id": "2026-08-17-epic-prior-authorization-checker",
+              "canonical_topic": "epic-prior-authorization-checker",
+              "duplicate_group": "epic-prior-authorization-checker",
+              "priority_score": 9,
+              "primary_source": "Axios",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Axios",
+                  "url": "https://www.axios.com/2026/08/17/health-insurer-reviews-digital-fix",
+                  "source_type": "web",
+                  "published_at": "2026-08-17T00:00:00Z"
+                }
+              ],
+              "title": "Epic rolls out real-time prior-authorization checks ahead of federal deadline",
+              "summary": "Epic is deploying a tool that flags in the electronic health record when a procedure requires a health-plan check-off. It is going live ahead of the Jan. 1 deadline using data from UnitedHealthcare, Aetna, and Network Health, with 16 additional insurers testing the system. The tool stems from a 2024 CMS rule requiring insurers to make prior-authorization information usable in electronic workflows.",
+              "strategic_implication": "Embedding payer requirements at the point of ordering could reduce avoidable delays and administrative rework, but it also makes data freshness, payer participation, and exception handling central to access performance.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "ehr",
+                "interoperability",
+                "provider-workflow"
+              ]
+            },
+            {
+              "item_id": "2026-08-17-abridge-enterprise-ai-decision-support",
+              "canonical_topic": "abridge-enterprise-ai-decision-support",
+              "duplicate_group": "abridge-enterprise-ai-decision-support",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-expands-ai-decision-support-more-clinicians-bid-become-healthcares",
+                  "source_type": "rss",
+                  "published_at": "2026-08-17T01:05:00Z"
+                }
+              ],
+              "title": "Abridge expands AI decision support to every clinician at partner health systems",
+              "summary": "Abridge said more than 300 enterprise health systems have adopted its AI-based decision-support solution since April. The company is now making the tool available to every clinician at its partner health systems rather than limiting access to early users. The move extends Abridge beyond ambient documentation toward broader clinical workflow support.",
+              "strategic_implication": "Broad deployment shifts the management question from whether to pilot ambient AI to how to govern clinical use, monitor quality, and prove value across specialties and care settings.",
+              "confidence": "medium",
+              "tags": [
+                "ambient-ai",
+                "clinical-decision-support",
+                "health-systems",
+                "ai-governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Large-company oversight, specialty-pharma innovation, and tighter control of healthcare investment are reshaping risk and capital-allocation decisions across the sector.",
+          "items": [
+            {
+              "item_id": "2026-08-17-unitedhealth-irs-tax-probe",
+              "canonical_topic": "unitedhealth-irs-tax-probe",
+              "duplicate_group": "unitedhealth-irs-tax-probe",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/",
+                  "source_type": "web",
+                  "published_at": "2026-08-17T08:10:43Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-17T08:30:00Z"
+                }
+              ],
+              "title": "UnitedHealth discloses IRS probe that could increase taxes on foreign-subsidiary transfers",
+              "summary": "UnitedHealth Group disclosed that the Internal Revenue Service is seeking to increase the company's taxable income for 2017–2020 and potentially later years. The initial probe concerns money routed through a foreign subsidiary, according to the company's regulatory filing. The notices were received in March and had not previously been reported.",
+              "strategic_implication": "The matter adds tax and disclosure uncertainty to an already scrutinized payer conglomerate and could affect cash planning, investor confidence, and how vertically integrated health businesses structure internal transactions.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealth",
+                "irs",
+                "tax-risk",
+                "payer-economics"
+              ]
+            },
+            {
+              "item_id": "2026-08-17-private-equity-physician-deals",
+              "canonical_topic": "private-equity-physician-deals",
+              "duplicate_group": "private-equity-physician-deals",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/17/private-equity-50-percent-drop-physician-practice-management-deals-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-08-17T04:10:43Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/17/private-equity-50-percent-drop-physician-practice-management-deals-2026/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-17T04:30:00Z"
+                }
+              ],
+              "title": "Private-equity physician-practice deals track to fall by half as state oversight expands",
+              "summary": "PitchBook data reported by STAT show physician practice-management deal activity on pace for roughly half the 2025 total. Investments fell from a 2021 peak of 851 deals to 105 deals in the first half of 2026, as more than a dozen states added oversight laws and market conditions shifted.",
+              "strategic_implication": "Lower transaction volume may slow consolidation and raise the premium on compliant, operationally strong physician platforms; health systems should reassess partnership, acquisition, and physician-employment assumptions.",
+              "confidence": "medium",
+              "tags": [
+                "private-equity",
+                "physician-practices",
+                "healthcare-investment",
+                "state-regulation"
+              ]
+            },
+            {
+              "item_id": "2026-08-17-iberdomide-multiple-myeloma-approval",
+              "canonical_topic": "iberdomide-multiple-myeloma-approval",
+              "duplicate_group": "iberdomide-multiple-myeloma-approval",
+              "priority_score": 8,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-iberdomide-daratumumab-and-hyaluronidase-fihj-and-dexamethasone",
+                  "source_type": "web",
+                  "published_at": "2026-08-13T11:10:16Z"
+                }
+              ],
+              "title": "FDA grants accelerated approval to Bristol Myers Squibb's iberdomide combination for multiple myeloma",
+              "summary": "The FDA granted accelerated approval to iberdomide (Zenbexus) with daratumumab and hyaluronidase-fihj plus dexamethasone for adults with multiple myeloma after at least one prior line of therapy that included a proteasome inhibitor and an immunomodulatory agent. The approval introduces the first drug in a new CELMoD class, with continued evidence required under the accelerated pathway.",
+              "strategic_implication": "The launch expands competition in a high-cost specialty area and underscores the commercial importance of confirmatory evidence, sequencing, and access strategy for next-generation oncology therapies.",
+              "confidence": "high",
+              "tags": [
+                "multiple-myeloma",
+                "accelerated-approval",
+                "specialty-pharma",
+                "oncology"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Providers are balancing operational recovery with public-health execution: stronger system performance does not remove the need for disciplined workforce, safety, and contingency planning.",
+          "items": [
+            {
+              "item_id": "2026-08-17-salmonella-jalapeno-outbreak",
+              "canonical_topic": "salmonella-jalapeno-outbreak",
+              "duplicate_group": "salmonella-jalapeno-outbreak",
+              "priority_score": 8,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-jalapeno-august-2026",
+                  "source_type": "web",
+                  "published_at": "2026-08-14T00:00:00Z"
+                },
+                {
+                  "source": "CDC",
+                  "url": "https://www.cdc.gov/Salmonella/outbreaks/javiana-08-26/index.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-14T00:00:00Z"
+                }
+              ],
+              "title": "FDA and CDC link multistate Salmonella outbreak to recalled jalapeños",
+              "summary": "FDA and CDC linked a multistate Salmonella Javiana outbreak to jalapeño peppers from Sinaloa, Mexico, distributed by Coast Citrus Distributors. The FDA investigation reported 345 illnesses across 27 states and 36 hospitalizations, with no deaths, and coordinated recalls across restaurants, retailers, and food-service suppliers. Consumers and businesses were told not to eat, sell, or serve recalled products.",
+              "strategic_implication": "Health systems and food-service operators should treat supplier traceability, rapid recall execution, and patient-facing communication as operational resilience capabilities, particularly when outbreaks cross retail and restaurant channels.",
+              "confidence": "high",
+              "tags": [
+                "food-safety",
+                "salmonella",
+                "outbreak-response",
+                "hospital-operations"
+              ]
+            },
+            {
+              "item_id": "2026-08-17-providence-operating-improvement",
+              "canonical_topic": "providence-operating-improvement",
+              "duplicate_group": "providence-operating-improvement",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/providence-reports-400m-operating-improvement-halfway-through-2026",
+                  "source_type": "rss",
+                  "published_at": "2026-08-13T19:42:00Z"
+                }
+              ],
+              "title": "Providence reports $400 million operating improvement through mid-2026",
+              "summary": "Providence reported a $400 million operating improvement halfway through 2026, marking its fourth consecutive quarter of operating gains after years of losses. The nonprofit system framed the result as a milestone ahead of expected headwinds from the One Big Beautiful Bill Act. The improvement reflects the continuing impact of a multiyear turnaround effort.",
+              "strategic_implication": "The result shows that scale, cost discipline, and portfolio choices can improve nonprofit-system performance, but leaders still need scenarios for reimbursement and coverage pressure that could reverse gains.",
+              "confidence": "medium",
+              "tags": [
+                "hospital-finance",
+                "nonprofit-hospitals",
+                "turnaround",
+                "operating-margin"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Frontline labor negotiations are tying compensation and staffing levels more directly to patient-safety and retention concerns, keeping workforce design at the center of clinical execution.",
+          "items": [
+            {
+              "item_id": "2026-08-17-hca-workforce-bargaining",
+              "canonical_topic": "hca-workforce-bargaining",
+              "duplicate_group": "hca-workforce-bargaining",
+              "priority_score": 7,
+              "primary_source": "The Guardian",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "The Guardian",
+                  "url": "https://www.theguardian.com/us-news/2026/aug/11/union-hca-healthcare-workers-protest",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T00:00:00Z"
+                }
+              ],
+              "title": "HCA workers seek higher pay and staffing protections in contract campaign",
+              "summary": "Unionized HCA workers are holding pickets and seeking higher wages, stronger wage scales, and staffing protections in contract negotiations. About 22,000 HCA workers are represented by the Service Employees International Union, while the company employs more than 300,000 people in the U.S. and U.K. Workers say staffing shortages affect both employees and patients, while HCA said the outstanding issues center on compensation and negotiations.",
+              "strategic_implication": "The campaign highlights how labor costs, retention, and staffing adequacy are converging in hospital strategy; operators should model workforce investments against turnover, access, and safety outcomes rather than wage expense alone.",
+              "confidence": "medium",
+              "tags": [
+                "hospital-workforce",
+                "labor-relations",
+                "nurse-staffing",
+                "retention"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-14",
       "generated_at": "2026-08-14T11:09:07Z",
       "headline": "Today's Healthcare Insights",
@@ -21522,5 +21877,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-14T11:09:07Z"
+  "last_updated": "2026-08-17T11:11:56Z"
 }

@@ -3,6 +3,362 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-18",
+      "generated_at": "2026-08-18T11:03:47Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing highlights the affordability and governance pressures shaping payers and providers, alongside continued expansion of AI-enabled workflows and virtual behavioral care. Signals were gathered from STAT, Healthcare Dive, Fierce Healthcare, company and government disclosures, and targeted web checks, with Aug. 17–18 developments prioritized over prior-edition items.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA/CDC web",
+          "Company and government disclosures",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Company and government disclosures",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail newsletters not used",
+          "No additional CMS/HHS/FDA/CDC item was needed for today’s edition"
+        ],
+        "run_notes": "All three required RSS feeds returned successfully. RSS titles and descriptions were paired with one or more targeted web checks for context; official company and Massachusetts WARN disclosures supplied primary confirmation for selected items. Yesterday’s UnitedHealth IRS probe, Epic prior-authorization launch, Abridge expansion, CPT lawsuit, and KFF denial-rate analysis were not republished as standalone items."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Affordability concerns remain broad across coverage types, while shareholder litigation is turning failures in governance, Medicare oversight, and cybersecurity into a board-level risk signal.",
+          "items": [
+            {
+              "item_id": "2026-08-18-healthcare-affordability-survey",
+              "canonical_topic": "healthcare-affordability-survey",
+              "duplicate_group": "healthcare-affordability-survey",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/premiums-out-pocket-costs-dominate-americans-healthcare-survey/827893/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-17T13:13:08Z"
+                },
+                {
+                  "source": "Commonwealth Fund",
+                  "url": "https://www.commonwealthfund.org/series/affordability-tracking-surveys",
+                  "source_type": "web",
+                  "published_at": "2026-08-14T00:00:00Z"
+                }
+              ],
+              "title": "Affordability dominates healthcare concerns across party and coverage lines",
+              "summary": "Nearly four in five U.S. adults identified high insurance premiums or out-of-pocket spending as the most important problem in healthcare, according to a Commonwealth Fund survey reported by Healthcare Dive. Premiums were the top concern for 45% of Republicans, 44% of Democrats, and 42% of independents. The survey covered 25,873 adults fielded from May 4 through May 26, 2026.",
+              "strategic_implication": "Affordability is a cross-market pressure rather than a narrow constituency issue, increasing the value of transparent pricing, benefit design, and interventions that reduce avoidable utilization without shifting more cost to patients.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-affordability",
+                "premiums",
+                "out-of-pocket-costs",
+                "consumer-policy"
+              ]
+            },
+            {
+              "item_id": "2026-08-18-unitedhealth-governance-cyber-lawsuit",
+              "canonical_topic": "unitedhealth-governance-cyber-lawsuit",
+              "duplicate_group": "unitedhealth-governance-cyber-lawsuit",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-17T14:52:53Z"
+                },
+                {
+                  "source": "Claims Journal",
+                  "url": "https://www.claimsjournal.com/news/national/2026/08/13/339498.htm",
+                  "source_type": "web",
+                  "published_at": "2026-08-13T11:02:34Z"
+                }
+              ],
+              "title": "Shareholder suit links UnitedHealth governance failures to Medicare and cyber risk",
+              "summary": "Two institutional investors filed an amended lawsuit alleging that UnitedHealth misled shareholders, rushed its Change Healthcare integration, and ignored cybersecurity weaknesses. The complaint also alleges the company shut down an internal audit program that had identified unsupported Medicare diagnosis codes. UnitedHealth has not been adjudicated liable on these allegations, which remain claims in litigation.",
+              "strategic_implication": "The case raises the cost of weak board-level controls across payer, cyber, and Medicare compliance domains; integrated operators should treat audit findings, acquisition integration, and security exceptions as linked enterprise risks.",
+              "confidence": "medium",
+              "tags": [
+                "unitedhealth",
+                "corporate-governance",
+                "cybersecurity",
+                "medicare-compliance",
+                "shareholder-litigation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Healthcare AI expansion is increasingly tied to implementation capacity and connected operational data, not only model capability or pilot enthusiasm.",
+          "items": [
+            {
+              "item_id": "2026-08-18-innovaccer-mastek-ai-partnership",
+              "canonical_topic": "innovaccer-mastek-ai-partnership",
+              "duplicate_group": "innovaccer-mastek-ai-partnership",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/innovaccer-mastek-ink-strategic-partnership-accelerate-global-deployment-agentic",
+                  "source_type": "rss",
+                  "published_at": "2026-08-17T14:59:00Z"
+                },
+                {
+                  "source": "Innovaccer",
+                  "url": "https://innovaccer.com/partnerships/mastek",
+                  "source_type": "web",
+                  "published_at": "2026-08-13T00:00:00Z"
+                }
+              ],
+              "title": "Innovaccer and Mastek partner to scale agentic healthcare operations globally",
+              "summary": "Innovaccer is adding Mastek to its Platinum global systems-integrator program to expand deployment of its Gravity healthcare AI platform. The partnership targets North America, the U.K., Europe, and the Middle East, with use cases spanning revenue cycle, prior authorization, denials, population health, payer performance, scheduling, and referrals. Mastek brings implementation and regional delivery capabilities rather than a standalone clinical model.",
+              "strategic_implication": "The alliance reinforces that enterprise AI value will depend on data integration, workflow redesign, governance, and local implementation depth; buyers should evaluate delivery capacity and measurable operating outcomes alongside model performance.",
+              "confidence": "medium",
+              "tags": [
+                "agentic-ai",
+                "healthcare-operations",
+                "interoperability",
+                "revenue-cycle",
+                "systems-integration"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payer leadership succession and novel obesity therapeutics point to a market balancing financial discipline with continued investment in differentiated clinical platforms.",
+          "items": [
+            {
+              "item_id": "2026-08-18-centene-cfo-succession",
+              "canonical_topic": "centene-cfo-succession",
+              "duplicate_group": "centene-cfo-succession",
+              "priority_score": 8,
+              "primary_source": "Centene",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/centene-cfo-to-step-down-at-year-end/828030/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-17T15:58:25Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/centene-names-chris-neczypor-new-cfo-2026-08-17/",
+                  "source_type": "web",
+                  "published_at": "2026-08-17T15:02:34Z"
+                }
+              ],
+              "title": "Centene names Chris Neczypor to succeed CFO Drew Asher in 2027",
+              "summary": "Centene said CFO Drew Asher will step down on Dec. 31, 2026, retire at the end of 2027, and support a transition as a strategic adviser. Chris Neczypor, formerly CFO at Lincoln Financial, will join Centene in September and assume the CFO role on Jan. 1, 2027. Reuters reported that the change comes as Centene works to improve profitability amid pressure in its Medicaid and Obamacare businesses.",
+              "strategic_implication": "A planned handoff reduces near-term execution risk but puts the incoming CFO under pressure to demonstrate durable medical-cost control, Medicaid performance, and capital discipline across a complex payer portfolio.",
+              "confidence": "high",
+              "tags": [
+                "centene",
+                "payer-economics",
+                "cfo-transition",
+                "medicaid",
+                "aca-marketplace"
+              ]
+            },
+            {
+              "item_id": "2026-08-18-amylyx-avexitide-phase-three",
+              "canonical_topic": "amylyx-avexitide-phase-three",
+              "duplicate_group": "amylyx-avexitide-phase-three",
+              "priority_score": 8,
+              "primary_source": "Amylyx",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/18/amylyx-endocrine-drug-succeeds-in-pivotal-study-avexitide-bariatric-surgery-patients/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-18T11:01:00Z"
+                },
+                {
+                  "source": "Amylyx",
+                  "url": "https://www.amylyx.com/news/amylyx-pharmaceuticals-to-announce-topline-results-from-its-phase-3-lucidity-clinical-trial-of-avexitide-in-post-bariatric-hypoglycemia-on-august-18-2026",
+                  "source_type": "web",
+                  "published_at": "2026-08-17T00:00:00Z"
+                }
+              ],
+              "title": "Amylyx reports positive Phase 3 avexitide results for post-bariatric hypoglycemia",
+              "summary": "Amylyx reported that participants taking avexitide in the Phase 3 LUCIDITY trial experienced a 55% reduction in serious low-blood-sugar events compared with placebo. The trial studied adults with post-bariatric hypoglycemia, a complication that can follow weight-loss surgery. Avexitide remains investigational and would require regulatory review before commercialization.",
+              "strategic_implication": "If confirmed through regulatory review and longer-term evidence, a targeted therapy for post-bariatric hypoglycemia could create a new specialty market and add a treatment option for patients whose current management is limited.",
+              "confidence": "medium",
+              "tags": [
+                "avexitide",
+                "obesity-medicine",
+                "post-bariatric-hypoglycemia",
+                "clinical-trials"
+              ]
+            },
+            {
+              "item_id": "2026-08-18-enveda-env-308-phase-one",
+              "canonical_topic": "enveda-env-308-phase-one",
+              "duplicate_group": "enveda-env-308-phase-one",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/18/enveda-pill-mimics-exercise-phase-one-trial-leptin-weight-loss-maintenance/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-18T10:00:00Z"
+                },
+                {
+                  "source": "Enveda",
+                  "url": "https://enveda.com/pipeline/",
+                  "source_type": "web",
+                  "published_at": "2024-10-15T00:00:00Z"
+                }
+              ],
+              "title": "Enveda advances oral weight-loss-maintenance candidate designed to preserve lean mass",
+              "summary": "Enveda released early Phase 1 results for ENV-308, an oral candidate intended to support weight maintenance after initial loss and mimic part of exercise’s muscle-preserving effect. The molecule is a chemically engineered version of the lactate-phenylalanine metabolite known as lac-phe and is designed to act through leptin sensitization. The program is still in Phase 1, so efficacy and durability remain unproven.",
+              "strategic_implication": "The program reflects a commercial shift from maximizing initial weight loss toward maintenance, tolerability, and body-composition outcomes—dimensions that may shape the next wave of obesity-drug differentiation.",
+              "confidence": "low",
+              "tags": [
+                "obesity-medicine",
+                "weight-maintenance",
+                "lean-mass",
+                "phase-one",
+                "metabolic-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider performance is diverging: strong system-level results and behavioral-health expansion coexist with financing complexity and a continuing need to convert scale into operating improvement.",
+          "items": [
+            {
+              "item_id": "2026-08-18-kaiser-q2-2026-results",
+              "canonical_topic": "kaiser-q2-2026-results",
+              "duplicate_group": "kaiser-q2-2026-results",
+              "priority_score": 8,
+              "primary_source": "Kaiser Permanente",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/kaiser-permanente-notches-46-q2-operating-margin-53b-net-income",
+                  "source_type": "rss",
+                  "published_at": "2026-08-17T16:23:00Z"
+                },
+                {
+                  "source": "Kaiser Permanente",
+                  "url": "https://about.kaiserpermanente.org/news/kaiser-permanente-and-risant-health-q2-2026-financial-update",
+                  "source_type": "web",
+                  "published_at": "2026-08-14T00:00:00Z"
+                }
+              ],
+              "title": "Kaiser posts $1.7B operating income and $5.3B net income in Q2",
+              "summary": "Kaiser Permanente and Risant Health reported $35.6 billion in second-quarter operating revenue and $34.0 billion in operating expenses. Operating income was $1.7 billion, compared with $1.0 billion a year earlier, while net income reached $5.3 billion. Kaiser said investment and other income contributed $3.6 billion, or nearly 69% of total net income, reflecting strong financial-market returns.",
+              "strategic_implication": "The result shows meaningful operating improvement but also why leaders should separate recurring care-delivery performance from investment-driven earnings when planning capacity, pricing, and capital deployment.",
+              "confidence": "high",
+              "tags": [
+                "kaiser-permanente",
+                "hospital-operations",
+                "operating-margin",
+                "health-system-finance"
+              ]
+            },
+            {
+              "item_id": "2026-08-18-uhs-talkspace-acquisition",
+              "canonical_topic": "uhs-talkspace-acquisition",
+              "duplicate_group": "uhs-talkspace-acquisition",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/uhs-closes-talkspace-acquisition-mental-health-game-changer-ceo-marc-miller/827901/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-17T12:05:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/universal-health-services-closes-835m-talkspace-acquisition",
+                  "source_type": "rss",
+                  "published_at": "2026-08-16T03:23:00Z"
+                }
+              ],
+              "title": "UHS closes $835M Talkspace deal to expand its behavioral-health continuum",
+              "summary": "Universal Health Services completed its $835 million acquisition of online therapy company Talkspace after receiving regulatory approvals. UHS expects the combination to connect inpatient, intensive outpatient, partial hospitalization, therapy, and virtual-assessment services, while Talkspace retains its brand as a wholly owned subsidiary. UHS said Talkspace could generate about $280 million in revenue this year and be slightly accretive to adjusted earnings in its first year.",
+              "strategic_implication": "The deal gives UHS a digital front door and referral channel for behavioral care, but the value case depends on integrating virtual access with higher-acuity services, payer contracting, clinical quality, and workforce capacity.",
+              "confidence": "high",
+              "tags": [
+                "behavioral-health",
+                "telehealth",
+                "hospital-operations",
+                "vertical-integration"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce planning is becoming more tightly linked to post-acquisition integration and biotech portfolio decisions, with reductions arriving even in major life-sciences employment hubs.",
+          "items": [
+            {
+              "item_id": "2026-08-18-sanofi-blueprint-layoffs",
+              "canonical_topic": "sanofi-blueprint-layoffs",
+              "duplicate_group": "sanofi-blueprint-layoffs",
+              "priority_score": 7,
+              "primary_source": "Massachusetts WARN notice",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Massachusetts WARN report",
+                  "url": "https://www.mass.gov/files/csv/2026-08/WARN%20Report%20for%20the%20Week%20Ending%2008-14-2026_0.csv",
+                  "source_type": "web",
+                  "published_at": "2026-08-14T00:00:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/17/sanofi-layoffs-mass-blueprint-medicines/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-17T19:23:54Z"
+                }
+              ],
+              "title": "Sanofi to cut 229 Massachusetts jobs a year after acquiring Blueprint",
+              "summary": "A Massachusetts WARN filing lists 229 layoffs at Blueprint Medicines, identified as a Sanofi company, with cuts scheduled from Oct. 9, 2026 through June 25, 2027. STAT reported that the affected employees came from Blueprint, which Sanofi acquired for $9.1 billion in July 2025. The filing illustrates how post-deal integration can alter local staffing even when the acquired company remains strategically important.",
+              "strategic_implication": "Life-sciences employers and regional health ecosystems should model integration-related workforce changes explicitly, including retention risk, specialized talent displacement, and the operational impact of consolidating overlapping functions.",
+              "confidence": "high",
+              "tags": [
+                "sanofi",
+                "blueprint-medicines",
+                "workforce-restructuring",
+                "biopharma",
+                "massachusetts"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-17",
       "generated_at": "2026-08-17T11:11:56Z",
       "headline": "Today's Healthcare Insights",
@@ -21877,5 +22233,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-17T11:11:56Z"
+  "last_updated": "2026-08-18T11:03:47Z"
 }

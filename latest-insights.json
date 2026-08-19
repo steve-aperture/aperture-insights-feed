@@ -3,6 +3,396 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-19",
+      "generated_at": "2026-08-19T11:04:33Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing centers on regulatory leadership and prior-authorization transparency, the accelerating use of AI in revenue-cycle and life-sciences workflows, and persistent payer and hospital operating pressure. Signals were gathered from STAT, Healthcare Dive, Fierce Healthcare, CMS and company disclosures, J.D. Power, Vizient, and targeted web checks, with Aug. 18–19 developments prioritized and prior-edition stories excluded unless a distinct new development surfaced.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA/CDC web",
+          "Company and government disclosures",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS web",
+          "Company and government disclosures",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "All three required RSS feeds returned successfully. RSS titles and descriptions were paired with targeted web checks and official disclosures for context; today's FDA leadership, prior-authorization, AI, payer, hospital, and clinical-practice signals were selected over Aug. 17–18 items already represented in the prior edition."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Regulatory transition and prior-authorization transparency are moving from policy language into operational requirements, raising the importance of continuity, disclosure, and measurable payer-provider workflows.",
+          "items": [
+            {
+              "item_id": "2026-08-19-fda-heidi-overton-nomination",
+              "canonical_topic": "fda-heidi-overton-nomination",
+              "duplicate_group": "fda-heidi-overton-nomination",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/18/heidi-overton-fda-commissioner-nominee-white-house-adviser/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-19T01:18:25Z"
+                },
+                {
+                  "source": "Politico",
+                  "url": "https://www.politico.com/news/2026/08/18/heidi-overton-fda-food-and-drug-commissioner-01041348",
+                  "source_type": "web",
+                  "published_at": "2026-08-18T00:00:00Z"
+                }
+              ],
+              "title": "Trump selects White House adviser Heidi Overton as FDA commissioner nominee",
+              "summary": "President Trump selected White House domestic-policy official Heidi Overton as his nominee to lead the FDA, according to reporting cited by STAT and Politico. The nomination would require Senate confirmation, and the agency is operating after significant staff turnover and the departure of former commissioner Marty Makary. The appointment remains a transition signal rather than a completed change in leadership.",
+              "strategic_implication": "A new commissioner will influence regulatory predictability, review priorities, and the agency’s ability to rebuild internal capacity. Life-sciences and healthcare operators should plan for policy continuity where possible while monitoring confirmation and early staffing decisions.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "regulatory-leadership",
+                "drug-development",
+                "agency-capacity"
+              ]
+            },
+            {
+              "item_id": "2026-08-19-cms-prior-authorization-reporting",
+              "canonical_topic": "cms-prior-authorization-reporting",
+              "duplicate_group": "cms-prior-authorization-reporting",
+              "priority_score": 8,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/ama-backs-updated-cms-prior-authorization-reporting-guidance",
+                  "source_type": "rss",
+                  "published_at": "2026-08-18T17:18:00Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/prior-authorization-metrics-reporting-overview-template",
+                  "source_type": "web",
+                  "published_at": "2026-08-18T00:00:00Z"
+                }
+              ],
+              "title": "CMS prior-authorization reporting guidance puts public metrics into operational focus",
+              "summary": "CMS guidance for the 2026 prior-authorization reporting requirement calls on impacted payers to publicly post metrics from the prior calendar year on an accessible public website. The guidance covers Medicare Advantage, Medicaid and CHIP programs, and Qualified Health Plan issuers on federally facilitated exchanges, and recommends clear visual reporting with counts, percentages, and explicit time units. The AMA said CMS responded to concerns about implementation of the transparency provisions.",
+              "strategic_implication": "Payers now need data governance and publication workflows that can withstand provider, regulator, and consumer scrutiny. Providers can use comparable denial and turnaround data to target escalation, documentation, and payer-contracting priorities.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "cms",
+                "payer-transparency",
+                "medicare-advantage",
+                "medicaid"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "The latest AI signals emphasize integration into high-friction workflows and the emergence of multiscale biological simulation, but both require validation, governance, and implementation depth before broad value is realized.",
+          "items": [
+            {
+              "item_id": "2026-08-19-r1-humata-prior-auth",
+              "canonical_topic": "r1-humata-prior-auth",
+              "duplicate_group": "r1-humata-prior-auth",
+              "priority_score": 8,
+              "primary_source": "R1 RCM",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/r1-agrees-acquire-humata-health-enhance-os-ai-powered-prior-auths",
+                  "source_type": "rss",
+                  "published_at": "2026-08-18T14:53:00Z"
+                },
+                {
+                  "source": "R1 RCM",
+                  "url": "https://www.r1rcm.com/newsroom/r1-to-acquire-humata-health-enhancing-phare-os-with-ai-powered-prior-authorization-automation-and-payer-provider-collaboration",
+                  "source_type": "web",
+                  "published_at": "2026-08-18T13:03:03Z"
+                }
+              ],
+              "title": "R1 to acquire Humata Health and fold AI prior authorization into Phare OS",
+              "summary": "R1 RCM agreed to acquire Humata Health, an AI-powered prior-authorization company, and plans to integrate its technology into R1’s Phare Operating System. R1 said the combination will extend automation across authorization, utilization review, documentation, coding, and other pre-bill workflows, with closing expected by the end of the third quarter. Financial terms were not disclosed.",
+              "strategic_implication": "Revenue-cycle platforms are consolidating point solutions into broader operating systems, which may shift buying criteria from isolated automation claims to measurable end-to-end performance. Health systems should test interoperability, exception handling, auditability, and clinician burden before scaling agentic workflows.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-ai",
+                "prior-authorization",
+                "revenue-cycle",
+                "agentic-ai",
+                "health-tech"
+              ]
+            },
+            {
+              "item_id": "2026-08-19-genbio-aido-cell",
+              "canonical_topic": "genbio-aido-cell",
+              "duplicate_group": "genbio-aido-cell",
+              "priority_score": 7,
+              "primary_source": "GenBio AI",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/18/david-baker-genbio-ai-new-virtual-model-unveiled-aido-cell/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-18T13:00:00Z"
+                },
+                {
+                  "source": "GenBio AI",
+                  "url": "https://via.ritzau.dk/pressemeddelelse/15098070/genbio-ai-builds-first-world-model-of-the-human-cell?publisherId=90456",
+                  "source_type": "web",
+                  "published_at": "2026-08-19T00:00:00Z"
+                }
+              ],
+              "title": "GenBio AI unveils AIDO Cell virtual model spanning DNA to whole-cell behavior",
+              "summary": "GenBio AI introduced AIDO Cell, a virtual cell system intended to simulate human-cell behavior across DNA, RNA, protein, and whole-cell levels, including responses to drugs and other interventions. The preview supports K562 and HepG2 cell lines, with additional cell types in development and an early-access collaborator program planned for academia, biotech, and pharma. The company describes the release as an early functional demonstration rather than a finished high-fidelity model.",
+              "strategic_implication": "Multiscale models could change how drug mechanisms and perturbation sequences are explored, but near-term value will depend on reproducibility, external validation, and fit with experimental workflows. Research and biopharma leaders should treat such systems as hypothesis-generation infrastructure until prospective performance is established.",
+              "confidence": "medium",
+              "tags": [
+                "ai-for-science",
+                "virtual-cell",
+                "drug-discovery",
+                "biotech",
+                "computational-biology"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Market signals combine a potentially important oncology catalyst with worsening Medicare Advantage member sentiment, underscoring simultaneous innovation upside and pressure on payer value delivery.",
+          "items": [
+            {
+              "item_id": "2026-08-19-moderna-merck-melanoma-vaccine",
+              "canonical_topic": "moderna-merck-melanoma-vaccine",
+              "duplicate_group": "moderna-merck-melanoma-vaccine",
+              "priority_score": 9,
+              "primary_source": "Merck & Co.",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/19/mrna-cancer-vaccine-trial-melanoma-merck-moderna/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-19T10:45:00Z"
+                },
+                {
+                  "source": "Merck & Co.",
+                  "url": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+                  "source_type": "web",
+                  "published_at": "2026-08-19T10:45:00Z"
+                }
+              ],
+              "title": "Moderna and Merck report positive Phase 3 readout for personalized melanoma vaccine",
+              "summary": "Moderna and Merck reported that the Phase 3 INTerpath-001 trial of investigational personalized mRNA therapy intismeran plus Keytruda met its recurrence-free-survival primary endpoint and distant-metastasis-free-survival secondary endpoint in resected high-risk melanoma. The companies said the interim analysis showed statistically significant and clinically meaningful improvements versus Keytruda alone, with no new safety signals. Detailed data are expected at a future medical meeting and the product remains investigational pending regulatory review.",
+              "strategic_implication": "A positive late-stage readout could strengthen the case for individualized neoantigen therapies and create a new oncology-commercialization pathway if the full data hold up. Payers and providers should begin considering diagnostic, manufacturing, infusion, and reimbursement implications without treating the candidate as an approved standard of care.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "mrna-therapy",
+                "melanoma",
+                "clinical-trials",
+                "biopharma"
+              ]
+            },
+            {
+              "item_id": "2026-08-19-medicare-advantage-satisfaction-2026",
+              "canonical_topic": "medicare-advantage-satisfaction-2026",
+              "duplicate_group": "medicare-advantage-satisfaction-2026",
+              "priority_score": 8,
+              "primary_source": "J.D. Power",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/jd-power-member-satisfaction-medicare-advantage-plans-continues-slide",
+                  "source_type": "rss",
+                  "published_at": "2026-08-18T17:24:00Z"
+                },
+                {
+                  "source": "J.D. Power",
+                  "url": "https://www.jdpower.com/business/press-releases/2026-u-s-medicare-advantage-study/",
+                  "source_type": "web",
+                  "published_at": "2026-08-18T11:03:03Z"
+                }
+              ],
+              "title": "Medicare Advantage satisfaction falls again as trust and value perceptions erode",
+              "summary": "J.D. Power’s 2026 U.S. Medicare Advantage Study found overall member satisfaction fell 12 points to 611 on a 1,000-point scale, the second consecutive annual decline and 41 points below 2024. Only 43% of members strongly agreed that their plan is a trusted partner in health and wellness. The largest two-year drops were in helping members save time and money, level of trust, and coverage offerings meeting needs.",
+              "strategic_implication": "Trust and administrative friction are becoming commercial risks for MA plans, not just service metrics. Plans should prioritize onboarding, problem resolution, transparent benefit communication, and digital experiences that reduce the work members must do to access care.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "member-experience",
+                "payer-strategy",
+                "healthcare-affordability"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider organizations face a mixed operating picture: specialty-network integration offers a route to more predictable value, while hospital margins remain uneven under rising uncompensated care and expense pressure.",
+          "items": [
+            {
+              "item_id": "2026-08-19-hospital-performance-june-2026",
+              "canonical_topic": "hospital-performance-june-2026",
+              "duplicate_group": "hospital-performance-june-2026",
+              "priority_score": 8,
+              "primary_source": "Vizient",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/hospital-performance-improves-june-lags-2025",
+                  "source_type": "rss",
+                  "published_at": "2026-08-18T19:26:00Z"
+                },
+                {
+                  "source": "Vizient",
+                  "url": "https://www.vizient.com/insights/reports/national-hospital-flash-report/june-2026-data",
+                  "source_type": "web",
+                  "published_at": "2026-08-18T00:00:00Z"
+                }
+              ],
+              "title": "June hospital data show stable margins but widening pressure on vulnerable providers",
+              "summary": "Vizient’s June 2026 National Hospital Flash Report found median operating margins stable year to date, but performance varied widely across hospitals and smaller and rural facilities faced the greatest strain on thin cash reserves. Bad debt and charity care increased in dollar terms and as a share of gross revenue, while supply and drug expenses continued to rise above inflation. The operating picture remains uneven despite pockets of improvement.",
+              "strategic_implication": "System leaders should segment financial recovery plans by facility, payer mix, and service line rather than rely on aggregate margin stability. Cash preservation, uncompensated-care management, supply discipline, and rural access strategies remain linked operating priorities.",
+              "confidence": "high",
+              "tags": [
+                "hospital-finance",
+                "operating-margin",
+                "uncompensated-care",
+                "rural-health",
+                "provider-operations"
+              ]
+            },
+            {
+              "item_id": "2026-08-19-carrum-included-health-specialty-care",
+              "canonical_topic": "carrum-included-health-specialty-care",
+              "duplicate_group": "carrum-included-health-specialty-care",
+              "priority_score": 7,
+              "primary_source": "Carrum Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/carrum-included-health-integrate-specialty-care-health-plan-members",
+                  "source_type": "rss",
+                  "published_at": "2026-08-18T19:45:00Z"
+                },
+                {
+                  "source": "PR Newswire",
+                  "url": "https://www.prnewswire.com/news-releases/included-health-selects-carrum-health-as-preferred-partner-for-value-based-specialty-care-302852917.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-18T13:03:15Z"
+                }
+              ],
+              "title": "Included Health embeds Carrum’s specialty network into its alternative health plan",
+              "summary": "Included Health selected Carrum Health as a preferred Centers of Excellence partner and will embed specialty care into its Alternative Health Plan. Included Health can identify members needing services such as surgery, cancer care, or substance-use treatment through primary care, app interactions, and claims data, then refer them to Carrum and transition them back after treatment. The companies framed the arrangement around high-quality care and more predictable costs.",
+              "strategic_implication": "The model illustrates how plan design, navigation, and specialty centers are converging into a single employer value proposition. Execution will depend on referral leakage control, measurable outcomes, member adoption, and clean handoffs between virtual navigation and higher-acuity providers.",
+              "confidence": "high",
+              "tags": [
+                "value-based-care",
+                "specialty-care",
+                "employer-health",
+                "care-navigation",
+                "centers-of-excellence"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical and public-health practice are confronting both curriculum-level political pressure and the safety-governance demands of advanced gene-editing research.",
+          "items": [
+            {
+              "item_id": "2026-08-19-ceph-public-health-competencies",
+              "canonical_topic": "ceph-public-health-competencies",
+              "duplicate_group": "ceph-public-health-competencies",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/19/public-health-education-accrediting-body-ceph-walks-dei-tightrope/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-19T08:30:00Z"
+                },
+                {
+                  "source": "Council on Education for Public Health",
+                  "url": "https://ceph.org/about/org-info/criteria-procedures-documents/criteria-procedures/",
+                  "source_type": "web",
+                  "published_at": "2026-08-19T00:00:00Z"
+                }
+              ],
+              "title": "Public-health accreditor weighs revisions to competencies on bias and racism",
+              "summary": "The Council on Education for Public Health is considering revisions to competencies that currently ask students to discuss how structural bias, social inequities, and racism undermine health. STAT reported that proposed language would instead focus on systemic factors contributing to population-health challenges, while CEPH said the criteria remain under development and are expected to be finalized in 2027. The potential change has drawn concern from public-health educators about political pressure on accreditation standards.",
+              "strategic_implication": "Changes to accreditation language can shape the skills new public-health professionals bring into epidemiology, policy, and community practice. Health systems and schools should track the final criteria and preserve evidence-based training on disparities, bias, and population-level determinants regardless of wording changes.",
+              "confidence": "medium",
+              "tags": [
+                "public-health",
+                "health-equity",
+                "accreditation",
+                "workforce-development"
+              ]
+            },
+            {
+              "item_id": "2026-08-19-huidagene-gene-editing-safety",
+              "canonical_topic": "huidagene-gene-editing-safety",
+              "duplicate_group": "huidagene-gene-editing-safety",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/19/huidagene-clinical-trial-deaths-experts-dissect-study-design/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-19T08:30:00Z"
+                },
+                {
+                  "source": "HuidaGene Therapeutics",
+                  "url": "https://www.huidagene.com/new/news/82",
+                  "source_type": "web",
+                  "published_at": "2026-08-05T00:00:00Z"
+                }
+              ],
+              "title": "HuidaGene trial review intensifies scrutiny of gene-editing safety governance",
+              "summary": "Experts reviewing HuidaGene’s early presentation questioned the science and study-design choices surrounding an investigational CRISPR-based Duchenne muscular dystrophy therapy after a young participant died following high-dose treatment. HuidaGene attributed the death to acute respiratory distress syndrome amid severe complement and cytokine activation after systemic AAV-vector administration and said the other three participants did not develop the same syndrome. The case remains an investigational-trial safety and transparency issue, not evidence of an approved therapy’s performance.",
+              "strategic_implication": "Advanced genetic medicines require independent safety oversight, rapid adverse-event disclosure, and credible evidence packages alongside technical innovation. Sponsors, sites, and investors should treat governance quality and transparent reporting as determinants of clinical and regulatory viability.",
+              "confidence": "medium",
+              "tags": [
+                "gene-editing",
+                "clinical-trials",
+                "patient-safety",
+                "duchenne",
+                "research-governance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-18",
       "generated_at": "2026-08-18T11:03:47Z",
       "headline": "Today's Healthcare Insights",
@@ -22233,5 +22623,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-18T11:03:47Z"
+  "last_updated": "2026-08-19T11:04:33Z"
 }

@@ -3,6 +3,281 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-21",
+      "generated_at": "2026-08-21T11:04:25Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing follows the continued shift toward scaled, tech-enabled care delivery: payers are broadening behavioral-health access, revenue-cycle companies are automating prior authorization, and provider platforms are consolidating around underserved and specialty populations. Signals were gathered from STAT, Healthcare Dive, Fierce Healthcare, UnitedHealthcare, Humana, and Cityblock Health, with Aug. 20–21 developments prioritized and the prior edition's topics excluded.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA/CDC web",
+          "Company and government disclosures",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Company disclosures",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail newsletters not used",
+          "No additional same-day CMS/HHS/FDA/CDC item selected after review"
+        ],
+        "run_notes": "All three required RSS feeds returned successfully. RSS titles and descriptions were paired with targeted web checks and official company disclosures; Aug. 20–21 payer, prior-authorization, behavioral-health, rural-care, specialty-care, GLP-1, clinical-leadership, and clinical-practice signals were selected. Yesterday's FDA, ACA, health-system AI, Regeneron, Talkspace, Providence, Mayo, and behavioral-health grant topics were excluded to avoid duplication."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Payers continue to move behavioral health from a referral-only benefit toward more accessible, scaled coaching programs. The operating question is how expanded access will translate into engagement, clinical escalation, and measurable outcomes.",
+          "items": [
+            {
+              "item_id": "2026-08-21-unitedhealthcare-behavioral-coaching",
+              "canonical_topic": "unitedhealthcare-behavioral-coaching",
+              "duplicate_group": "unitedhealthcare-behavioral-coaching",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/unitedhealthcare-expands-behavioral-coaching-program-youths",
+                  "source_type": "rss",
+                  "published_at": "2026-08-20T20:42:00Z"
+                },
+                {
+                  "source": "UnitedHealthcare",
+                  "url": "https://www.uhc.com/news-articles/benefits-and-coverage/virtual-behavioral-coaching-mental-health",
+                  "source_type": "web",
+                  "published_at": "2025-06-09T00:00:00Z"
+                }
+              ],
+              "title": "UnitedHealthcare expands behavioral coaching access to 13 million commercial members",
+              "summary": "UnitedHealthcare is expanding access to its child and family behavioral coaching program to 13 million commercial members, according to Fierce Healthcare. The move adds scale to a digital and coaching-based behavioral-health model aimed at supporting children and families before needs escalate to higher-acuity care. UnitedHealthcare describes virtual behavioral coaching as structured, one-on-one support paired with digital tools and cognitive-behavioral techniques.",
+              "strategic_implication": "Large-payer distribution can make lower-acuity behavioral support a standard front door to care, but the value case will depend on utilization, referral completion, and evidence that coaching connects members to therapy or higher levels of care when needed.",
+              "confidence": "high",
+              "tags": [
+                "behavioral-health",
+                "payer-strategy",
+                "digital-care",
+                "commercial-insurance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI adoption is extending from clinical documentation into the administrative friction that delays care and payment. Prior authorization is becoming a competitive control point for revenue-cycle platforms, especially as electronic and faster decision requirements take hold.",
+          "items": [
+            {
+              "item_id": "2026-08-21-r1-humata-prior-authorization",
+              "canonical_topic": "r1-humata-prior-authorization",
+              "duplicate_group": "r1-humata-prior-authorization",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/r1-drills-down-on-ai-prior-authorizations-with-humata-buy/828382/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-20T14:39:46Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/r1-drills-down-on-ai-prior-authorizations-with-humata-buy/828382/",
+                  "source_type": "web",
+                  "published_at": "2026-08-20T00:00:00Z"
+                }
+              ],
+              "title": "R1 acquires Humata to extend AI-powered prior-authorization automation",
+              "summary": "Revenue-cycle company R1 agreed to acquire Humata Health, whose AI tools identify payer policies, assemble prior-authorization requests, and track them through approval. The transaction is expected to close in the third quarter, after which Humata’s technology will be integrated into R1’s platform. Humata says its tools are used by more than 225 hospitals and can achieve up to a 96% first-pass approval rate, although those figures are company-reported.",
+              "strategic_implication": "The deal positions prior authorization as a core revenue-cycle workflow rather than a point solution. Provider buyers should assess approval accuracy, audit trails, payer-specific logic, and the effect of automation on clinical review and denial appeals.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "healthcare-ai",
+                "revenue-cycle",
+                "provider-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital and consolidation are clustering around models that combine clinical delivery, technology, and risk-bearing or payer relationships. At the same time, GLP-1 adoption is forcing organizations to reconsider which services and revenue pools will grow as obesity-related complications change.",
+          "items": [
+            {
+              "item_id": "2026-08-21-cityblock-homeward-combination",
+              "canonical_topic": "cityblock-homeward-combination",
+              "duplicate_group": "cityblock-homeward-combination",
+              "priority_score": 8,
+              "primary_source": "Cityblock Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Cityblock Health",
+                  "url": "https://www.cityblock.com/homeward",
+                  "source_type": "web",
+                  "published_at": "2026-08-20T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/cityblock-acquires-homeward-health-move-rural-healthcare-lands-116m-funding-round",
+                  "source_type": "rss",
+                  "published_at": "2026-08-20T18:10:00Z"
+                }
+              ],
+              "title": "Cityblock to acquire Homeward Health alongside a $116 million financing",
+              "summary": "Cityblock Health announced a definitive agreement to acquire Homeward Health in an all-stock transaction alongside a $116 million Series E led by General Catalyst. The combined company says it will serve nearly 250,000 people and expand its reach across government-funded healthcare, including rural and underserved populations. The deal joins Cityblock’s community-based care model with Homeward’s rural-care footprint and technology.",
+              "strategic_implication": "The combination reflects investor preference for scaled, population-specific care platforms that can pair local clinical operations with data and payer relationships. Execution risk will center on integrating markets, contracting models, and care teams without diluting the community-level operating model.",
+              "confidence": "high",
+              "tags": [
+                "value-based-care",
+                "rural-health",
+                "medicaid",
+                "healthcare-m-and-a"
+              ]
+            },
+            {
+              "item_id": "2026-08-21-radial-tms-health-partners",
+              "canonical_topic": "radial-tms-health-partners",
+              "duplicate_group": "radial-tms-health-partners",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/radial-acquires-tms-health-partners-mso-behind-network-brain-medicine-clinics",
+                  "source_type": "rss",
+                  "published_at": "2026-08-20T15:43:00Z"
+                }
+              ],
+              "title": "Radial acquires the management platform behind 20 brain-medicine clinics",
+              "summary": "Radial is acquiring the non-clinical assets of TMS Health Partners, the management-services organization behind a network of 20 brain-medicine clinics. The clinics provide interventional psychiatry treatments including Spravato and transcranial magnetic stimulation. The transaction expands Radial’s specialty behavioral-health platform while leaving clinical services within the practice structure.",
+              "strategic_implication": "Specialty behavioral health is attracting platform consolidation as demand grows for higher-acuity interventions. The key operating test will be whether centralized infrastructure improves clinician capacity, access, and payer economics without compromising treatment quality.",
+              "confidence": "medium",
+              "tags": [
+                "behavioral-health",
+                "specialty-care",
+                "provider-consolidation",
+                "interventional-psychiatry"
+              ]
+            },
+            {
+              "item_id": "2026-08-21-glp1-healthcare-strategic-reset",
+              "canonical_topic": "glp1-healthcare-strategic-reset",
+              "duplicate_group": "glp1-healthcare-strategic-reset",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/glp-1s-forcing-strategic-reset-across-healthcare-well-fargo-report",
+                  "source_type": "rss",
+                  "published_at": "2026-08-20T11:53:00Z"
+                }
+              ],
+              "title": "GLP-1 adoption is forcing a strategic reset across healthcare",
+              "summary": "A Wells Fargo report says GLP-1 medicines are disrupting a healthcare system built around treating obesity-related complications. The report argues that providers, insurers, and investors must reconsider where future revenue and growth will come from as use of the medicines expands. The shift affects not only obesity care, but also downstream services and consumer behavior tied to cardiometabolic disease.",
+              "strategic_implication": "Organizations should model both the medical-cost impact and the potential erosion or reshaping of procedure, chronic-care, and complication-related revenue. Winners are likely to be those that pair medication access with longitudinal metabolic care and outcomes measurement.",
+              "confidence": "medium",
+              "tags": [
+                "glp-1",
+                "obesity-care",
+                "payer-strategy",
+                "healthcare-economics"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Payers are elevating clinical leadership with executives who can connect medical policy, product design, and technology strategy. That trend puts more emphasis on integrating clinical governance into enterprise transformation rather than treating it as a separate function.",
+          "items": [
+            {
+              "item_id": "2026-08-21-humana-shantanu-nundy-cmo",
+              "canonical_topic": "humana-shantanu-nundy-cmo",
+              "duplicate_group": "humana-shantanu-nundy-cmo",
+              "priority_score": 7,
+              "primary_source": "Humana",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/humana-new-chief-medical-officer-shantanu-nundy/828370/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-20T14:04:03Z"
+                },
+                {
+                  "source": "Humana",
+                  "url": "https://policy.humana.com/news-and-resources/news-press/2026/humana-names-dr--shantanu-nundy-as-chief-medical",
+                  "source_type": "web",
+                  "published_at": "2026-08-20T16:01:09Z"
+                }
+              ],
+              "title": "Humana names Shantanu Nundy chief medical officer as it expands its clinical technology agenda",
+              "summary": "Humana announced that Shantanu Nundy, M.D., will become chief medical officer on Aug. 31. Nundy joins from health-navigation company Accolade and has experience practicing medicine, teaching, advising the FDA on AI, and working with the World Bank. Humana said he will help shape the design of its products, platforms, and AI strategy while serving on the enterprise leadership team.",
+              "strategic_implication": "The appointment signals that clinical credibility and AI fluency are becoming intertwined leadership requirements for payer transformation. Providers and health-tech partners should expect more scrutiny of whether digital tools fit care pathways, clinical governance, and member outcomes—not only administrative efficiency.",
+              "confidence": "high",
+              "tags": [
+                "payer-leadership",
+                "clinical-governance",
+                "healthcare-ai",
+                "care-models"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "New clinical evidence is widening the conversation about less invasive cancer treatment while leaving important questions unresolved. Adoption will depend on long-term comparative outcomes, patient selection, and disciplined follow-up rather than short-term enthusiasm.",
+          "items": [
+            {
+              "item_id": "2026-08-21-focal-therapy-prostate-cancer-evidence",
+              "canonical_topic": "focal-therapy-prostate-cancer-evidence",
+              "duplicate_group": "focal-therapy-prostate-cancer-evidence",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/21/focal-therapy-prostate-cancer-still-experimental-or-viable-alternative/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-21T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/21/focal-therapy-prostate-cancer-still-experimental-or-viable-alternative/",
+                  "source_type": "web",
+                  "published_at": "2026-08-21T09:01:10Z"
+                }
+              ],
+              "title": "Focal therapy gains evidence in localized prostate cancer, but guidelines still call it experimental",
+              "summary": "Focal therapy targets MRI-visible prostate lesions with techniques such as cryotherapy, laser ablation, or high-intensity focused ultrasound, potentially reducing urinary and sexual side effects compared with whole-gland treatment. STAT reports that a recent U.K. study found comparable 10-year prostate-cancer survival with higher satisfaction and fewer side effects, but specialists continue to call for randomized comparisons and longer follow-up. The American Urological Association recommends that focal therapy be performed within studies or prospective registries, while recognizing it as an option for some intermediate-risk patients.",
+              "strategic_implication": "The signal supports continued evaluation of focal therapy, not broad substitution for surgery or radiation. Health systems should focus on patient-selection protocols, shared decision-making, registry participation, and follow-up capacity before expanding programs.",
+              "confidence": "medium",
+              "tags": [
+                "prostate-cancer",
+                "focal-therapy",
+                "clinical-evidence",
+                "urology"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-20",
       "generated_at": "2026-08-20T11:09:34Z",
       "headline": "Today's Healthcare Insights",
@@ -23034,5 +23309,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-20T11:09:34Z"
+  "last_updated": "2026-08-21T11:04:25Z"
 }

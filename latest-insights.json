@@ -3,6 +3,330 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-24",
+      "generated_at": "2026-08-24T11:12:19Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks a widening policy perimeter around Medicaid coverage, early evidence from nutrition-benefit restrictions, and the FDA's coming approach to generative AI devices. It also highlights oncology innovation, cyber-risk defenses, employer cost inflation, and the clinical-training bottleneck, using fresh STAT, Healthcare Dive, Fierce Healthcare, Becker's Hospital Review, and Aon reporting.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA/CDC web",
+          "Company and government disclosures",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search",
+          "Aon company disclosure"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "All three required RSS feeds returned successfully. Aug. 24 STAT items were prioritized; because the Monday Healthcare Dive feed had no substantive same-day news and Fierce Healthcare's latest substantive items were Aug. 21–22, those recent items were supplemented with targeted web checks. Prior-edition topics on behavioral coaching, Humata/R1, Cityblock/Homeward, Radial/TMS, GLP-1 strategy, Humana's CMO appointment, and focal prostate therapy were excluded."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Medicaid coverage rules and state-level nutrition restrictions are becoming active levers in healthcare policy, with implications that extend beyond the immediate populations or products named in each action.",
+          "items": [
+            {
+              "item_id": "2026-08-24-medicaid-gender-care-coverage-precedent",
+              "canonical_topic": "medicaid-gender-care-coverage-precedent",
+              "duplicate_group": "medicaid-gender-care-coverage-precedent",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/24/transgender-care-ban-precedent-could-be-broadly-applied-medicaid-states/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T08:30:00Z"
+                },
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/quick-insights/new-regulation-prohibits-federal-medicaid-funds-from-covering-gender-affirming-medical-care-for-young-people/",
+                  "source_type": "web",
+                  "published_at": "2026-08-13T00:00:00Z"
+                }
+              ],
+              "title": "New Medicaid rule blocks federal funding for gender-affirming care for minors and may widen coverage precedent",
+              "summary": "CMS issued a final rule barring federal Medicaid and CHIP funding for gender-affirming medications and surgery for minors, according to STAT and KFF. The rule is scheduled to take effect Oct. 13, and the policy theory could be cited in future disputes over whether particular drugs or services qualify for federal coverage. States may still use state-only funds for the care under the rule described by KFF.",
+              "strategic_implication": "Plans, states, and provider systems should map the rule’s effective-date, benefit-design, and litigation exposure now. The broader watchpoint is whether the coverage rationale becomes a template for narrowing federal Medicaid payment in other clinical categories.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "coverage-policy",
+                "cms",
+                "health-equity",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-08-24-snap-soda-restrictions-purchases",
+              "canonical_topic": "snap-soda-restrictions-purchases",
+              "duplicate_group": "snap-soda-restrictions-purchases",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/24/snap-restrictions-12-percent-drop-soda-purchases/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T05:00:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/24/snap-restrictions-12-percent-drop-soda-purchases/",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T05:11:19Z"
+                }
+              ],
+              "title": "New study finds SNAP soda restrictions cut purchases 12% across 10 states",
+              "summary": "An NBER study, not yet peer-reviewed, found soda purchases fell about 12% among SNAP households after restrictions took effect in 10 states. The analysis used the first six months of 2026 grocery data from 15,000 households, including 3,291 in affected states. Researchers estimated a potential 2.6% reduction in type 2 diabetes risk over 10 years, while noting that up to 39% of foregone soda spending shifted to other sugary drinks or juice.",
+              "strategic_implication": "Benefit-design changes can produce measurable purchasing shifts, but substitution limits the health impact and may complicate evaluation. Payers and public-health operators should distinguish purchase behavior from clinical outcomes before treating these restrictions as a durable prevention lever.",
+              "confidence": "high",
+              "tags": [
+                "snap",
+                "nutrition-policy",
+                "public-health",
+                "diabetes-prevention"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "The AI agenda is moving simultaneously toward formal device guidance and defensive infrastructure work. Organizations should plan for both regulatory clarity and a faster cyber-vulnerability discovery cycle.",
+          "items": [
+            {
+              "item_id": "2026-08-24-fda-generative-ai-device-guidance",
+              "canonical_topic": "fda-generative-ai-device-guidance",
+              "duplicate_group": "fda-generative-ai-device-guidance",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T08:11:19Z"
+                }
+              ],
+              "title": "FDA signals broad and specialty guidance for generative AI medical devices",
+              "summary": "Rick Abramson, director of the FDA Digital Health Center of Excellence, said the agency is developing formal policy guidance for medical devices that use generative AI. He told STAT the agency expects to issue broad guidance on the overall technology as well as narrower guidance for complex or high-interest use cases. The timing and final scope of the documents were not specified.",
+              "strategic_implication": "Developers and health systems should treat governance assumptions as provisional and maintain traceability for model updates, intended use, and human oversight. Clearer FDA expectations could accelerate adoption for well-scoped products while increasing scrutiny on open-ended clinical claims.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "generative-ai",
+                "digital-health",
+                "medical-devices",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-08-24-epic-anthropic-project-glasswing",
+              "canonical_topic": "epic-anthropic-project-glasswing",
+              "duplicate_group": "epic-anthropic-project-glasswing",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/more-tidbits-epic-ugm-anthropics-project-glasswing-and-deeper-partnership-uptodate",
+                  "source_type": "rss",
+                  "published_at": "2026-08-22T14:57:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/why-epic-joined-anthropics-project-glasswing/",
+                  "source_type": "web",
+                  "published_at": "2026-08-21T11:11:23Z"
+                }
+              ],
+              "title": "Epic says Anthropic’s Project Glasswing found vulnerabilities in its codebase",
+              "summary": "Epic disclosed that it is participating in Anthropic’s Project Glasswing, a restricted program using the Claude Mythos model to identify and help remediate vulnerabilities in critical software. Epic said the model surfaced issues in its codebase that expert developers had missed and could connect separate flaws into novel attack paths. Anthropic has limited public access to Mythos because of the model’s offensive cyber capabilities.",
+              "strategic_implication": "Health systems need to treat frontier AI as both a defensive control and a new source of operational risk. Participation in trusted security programs may shorten remediation cycles, but governance, disclosure, and patch-validation processes must keep pace with model capability.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-cybersecurity",
+                "epic",
+                "anthropic",
+                "ai-safety",
+                "risk-management"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital, innovation, and cost pressure are pulling the industry in different directions: oncology platforms are showing clinical upside while employers face another near-double-digit spending increase. Strategic plans will need to balance growth bets against affordability and utilization pressure.",
+          "items": [
+            {
+              "item_id": "2026-08-24-moderna-merck-mrna-cancer-vaccine",
+              "canonical_topic": "moderna-merck-mrna-cancer-vaccine",
+              "duplicate_group": "moderna-merck-mrna-cancer-vaccine",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/24/inside-moderna-and-merck-cancer-vaccine-triumph/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/19/mrna-cancer-vaccine-trial-melanoma-merck-moderna/",
+                  "source_type": "web",
+                  "published_at": "2026-08-19T00:00:00Z"
+                }
+              ],
+              "title": "Moderna-Merck personalized mRNA vaccine cuts melanoma recurrence risk in Phase 3 study",
+              "summary": "Moderna and Merck reported that a 1,137-volunteer study showed their personalized mRNA vaccine reduced the odds that surgically removed melanoma would return or spread. The vaccine, intismeran, was combined with Merck’s Keytruda in the adjuvant setting. The companies had not immediately released detailed data, so the magnitude and durability of benefit still require scrutiny.",
+              "strategic_implication": "A positive randomized Phase 3 signal could strengthen the case for individualized mRNA therapeutics and reshape oncology development, manufacturing, and diagnostic workflows. Payers and providers should wait for detailed efficacy, safety, and operational data before assuming near-term scale economics.",
+              "confidence": "medium",
+              "tags": [
+                "oncology",
+                "mrna",
+                "cancer-vaccine",
+                "clinical-trials",
+                "biotech"
+              ]
+            },
+            {
+              "item_id": "2026-08-24-employer-health-costs-2027",
+              "canonical_topic": "employer-health-costs-2027",
+              "duplicate_group": "employer-health-costs-2027",
+              "priority_score": 8,
+              "primary_source": "Aon",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/employers-brace-another-year-healthcare-cost-increases",
+                  "source_type": "rss",
+                  "published_at": "2026-08-21T15:59:00Z"
+                },
+                {
+                  "source": "Aon",
+                  "url": "https://www.aon.com/en/insights/articles/healthcare-cost-increases-show-no-signs-of-slowing-what-employers-can-do",
+                  "source_type": "web",
+                  "published_at": "2026-08-20T00:00:00Z"
+                }
+              ],
+              "title": "Aon projects U.S. employer healthcare costs will rise 9.5% in 2027",
+              "summary": "Aon projects U.S. employer healthcare costs will increase 9.5% in 2027 before cost-mitigation actions, the second consecutive year at that level. Its analysis says utilization and care mix are now driving more of the increase than price alone. The forecast covers a large employer database and points to continued pressure on benefit affordability and plan design.",
+              "strategic_implication": "Employers and payer partners will need more than premium shifting to manage the trend; utilization management, site-of-care steering, and high-cost-condition strategies become central. Persistent cost inflation also raises the value of transparent purchasing and measurable outcomes in provider and vendor contracts.",
+              "confidence": "high",
+              "tags": [
+                "employer-health",
+                "healthcare-costs",
+                "benefits",
+                "utilization-management"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Physician employment has created scale for provider organizations but is also exposing tensions between productivity targets, network control, and clinical autonomy. Operating models that cannot demonstrate patient-centered performance may face higher retention and reputational risk.",
+          "items": [
+            {
+              "item_id": "2026-08-24-physicians-corporate-pressure-care-quality",
+              "canonical_topic": "physicians-corporate-pressure-care-quality",
+              "duplicate_group": "physicians-corporate-pressure-care-quality",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/doctors-say-they-feel-pressured-to-prioritize-corporate-interests-over-pati/828503/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-21T15:31:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/doctors-say-they-feel-pressured-to-prioritize-corporate-interests-over-pati/828503/",
+                  "source_type": "web",
+                  "published_at": "2026-08-21T11:11:23Z"
+                }
+              ],
+              "title": "Survey finds physicians feel pressure to favor volume and network retention over care quality",
+              "summary": "A survey of 1,000 physicians commissioned by the Physicians Advocacy Institute found nearly half of corporate-employed doctors feel pressure to prioritize patient volume over care quality. Healthcare Dive reported that 63% said employer policies make outside-network referrals difficult and 59% felt pressure to keep patients within their health system. The same report said more than 80% of physicians were employed by corporations last year, up from 25% in 2012.",
+              "strategic_implication": "Provider leaders should monitor referral friction, staffing, administrative burden, and patient access as operating metrics—not only productivity and capture. Misalignment between financial incentives and clinical judgment can accelerate burnout, leakage, and compliance exposure.",
+              "confidence": "medium",
+              "tags": [
+                "physician-workforce",
+                "provider-operations",
+                "care-quality",
+                "burnout",
+                "referrals"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "The pipeline for advanced practice clinicians is constrained before graduation by a shortage of qualified clinical mentors. Expanding training capacity will require provider organizations and schools to treat precepting as infrastructure rather than an informal add-on.",
+          "items": [
+            {
+              "item_id": "2026-08-24-nurse-practitioner-preceptor-shortage",
+              "canonical_topic": "nurse-practitioner-preceptor-shortage",
+              "duplicate_group": "nurse-practitioner-preceptor-shortage",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/24/nurse-practitioner-preceptor-shortage-clinical-placement-challenges/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/24/nurse-practitioner-preceptor-shortage-clinical-placement-challenges/",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T08:11:18Z"
+                }
+              ],
+              "title": "Shortage of clinical preceptors threatens nurse practitioner training capacity",
+              "summary": "Nurse practitioner students must complete at least 500 supervised clinical hours, but many programs struggle to secure qualified preceptors. STAT reported that students can be left to arrange placements themselves and sometimes pay tens of thousands of dollars for supervision on top of tuition. The bottleneck is especially consequential as more states expand nurse practitioners’ role in primary care and independent practice.",
+              "strategic_implication": "Health systems seeking to expand primary-care capacity should consider structured, compensated preceptor programs with schools rather than relying on ad hoc placements. Solving the training bottleneck could improve workforce supply, but requires clear quality standards and protection against shifting educational costs onto students.",
+              "confidence": "high",
+              "tags": [
+                "nurse-practitioners",
+                "clinical-training",
+                "workforce-shortage",
+                "primary-care",
+                "education"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-21",
       "generated_at": "2026-08-21T11:04:25Z",
       "headline": "Today's Healthcare Insights",
@@ -23309,5 +23633,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-21T11:04:25Z"
+  "last_updated": "2026-08-24T11:12:19Z"
 }

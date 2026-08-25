@@ -3,6 +3,402 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-25",
+      "generated_at": "2026-08-25T11:07:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing focuses on the operating consequences of federal Medicaid reductions, a widening federal vaccine-policy review, and new state-level affordability enforcement. It also tracks hospital cyber and drug-diversion controls, payer performance, rural-health investment, and a fresh gene-therapy safety hold using STAT, Healthcare Dive, Fierce Healthcare, official government releases, KFF Health News, AHA News, and company disclosures.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA/CDC web",
+          "Company and government disclosures",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search",
+          "HHS official release",
+          "Alabama Governor official release",
+          "Highmark Health disclosure",
+          "KFF Health News",
+          "American Hospital Association",
+          "Reuters"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "All three required RSS feeds returned via curl. Fresh Aug. 25 STAT reporting was prioritized, while Aug. 24 Healthcare Dive and Fierce Healthcare items were cross-checked with targeted web results and official releases. Yesterday's FDA generative-AI, Epic/Anthropic, SNAP-soda, Medicaid gender-care, employer-cost, physician-pressure, and nurse-preceptor topics were not republished; the vaccine-policy item reflects a separate current HHS request for information and the rural-hospital item is new reporting on implementation impact."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal and state policymakers are turning coverage rules, vaccine recommendations, and affordability targets into active operating constraints. Rural providers face the most immediate exposure as Medicaid reductions meet subscale margins, while California is building an enforcement mechanism around spending growth.",
+          "items": [
+            {
+              "item_id": "2026-08-25-rural-hospitals-medicaid-cuts",
+              "canonical_topic": "rural-hospitals-medicaid-cuts",
+              "duplicate_group": "rural-hospitals-medicaid-cuts",
+              "priority_score": 10,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/25/rural-hospitals-response-medicaid-cuts-part-1-unraveled-series/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T08:30:00Z"
+                },
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/medicaid/how-might-federal-medicaid-cuts-in-the-enacted-reconciliation-package-affect-rural-areas/",
+                  "source_type": "web",
+                  "published_at": "2025-07-24T00:00:00Z"
+                }
+              ],
+              "title": "Rural hospitals confront Medicaid cuts as thin margins leave little room for revenue loss",
+              "summary": "STAT reports that the federal Medicaid reductions and expiring insurance subsidies are already reshaping planning in rural states such as Maine. A Third Way analysis cited by STAT estimates the cuts could reduce Maine hospital revenue by about 1%, enough to push facilities operating below 1% margins into losses; other states are expected to face larger revenue impacts.",
+              "strategic_implication": "Rural systems should stress-test liquidity, service-line viability, and payer mix before the reductions phase in. The strategic risk is not only lower reimbursement but a reinforcing cycle of closures, access loss, and higher-cost transfers.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "rural-health",
+                "hospital-finance",
+                "payment-policy",
+                "access"
+              ]
+            },
+            {
+              "item_id": "2026-08-25-hhs-vaccine-recommendation-review",
+              "canonical_topic": "hhs-vaccine-recommendation-review",
+              "duplicate_group": "hhs-vaccine-recommendation-review",
+              "priority_score": 8,
+              "primary_source": "HHS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/pharma/rfk-jr-seeks-public-input-how-us-formulates-childhood-vaccine-recommendations",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T15:00:00Z"
+                },
+                {
+                  "source": "HHS",
+                  "url": "https://www.hhs.gov/press-room/hhs-seeks-public-input-federal-vaccine-recommendations.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-21T11:05:44Z"
+                }
+              ],
+              "title": "HHS opens 30-day review of federal vaccine recommendation categories",
+              "summary": "HHS is seeking public input on federal vaccine recommendation categories and shared clinical decision-making. The request does not change recommendations immediately, but it asks whether the current framework should add categories and how vaccine classifications and evidence standards should be handled.",
+              "strategic_implication": "Health systems, pediatric practices, manufacturers, and public-health agencies should scenario-plan for changes in counseling, standing orders, coverage workflows, and public communication. The near-term task is to monitor the comment process without treating the request as a finalized clinical-policy change.",
+              "confidence": "high",
+              "tags": [
+                "vaccines",
+                "hhs",
+                "public-health",
+                "clinical-policy"
+              ]
+            },
+            {
+              "item_id": "2026-08-25-omb-research-rule-comments-removed",
+              "canonical_topic": "omb-research-rule-comments-removed",
+              "duplicate_group": "omb-research-rule-comments-removed",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/25/russell-vought-omb-funding-comments-daughter-benefited-nih-research/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/07/15/trump-omb-grant-funding-proposal-comments-95-percent-opposed/",
+                  "source_type": "web",
+                  "published_at": "2026-07-15T00:00:00Z"
+                }
+              ],
+              "title": "Removed comments add procedural risk to OMB’s proposed federal research-grant overhaul",
+              "summary": "STAT reports that comments on a proposed OMB research rule were removed from the public-facing regulations.gov page after being posted, without an explanation from the White House Office of Management and Budget. The broader proposal has drawn substantial opposition from scientists and grant-dependent institutions, which are watching whether the administration responds to substantive comments as required by the Administrative Procedure Act.",
+              "strategic_implication": "Research hospitals, universities, and life-science companies should preserve their submissions, model grant-compliance changes, and track the docket for procedural and litigation risk. Uncertainty around allowable advocacy, publication, and grant administration could affect both research operations and institutional communications.",
+              "confidence": "medium",
+              "tags": [
+                "nih",
+                "omb",
+                "research-policy",
+                "grants",
+                "compliance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital risk is becoming operational rather than theoretical: hospitals are confronting both patient-facing impersonation and insider drug-diversion signals. The common control lesson is that detection technology only creates value when escalation, investigation, and human accountability are reliable.",
+          "items": [
+            {
+              "item_id": "2026-08-25-ai-drug-diversion-human-oversight",
+              "canonical_topic": "ai-drug-diversion-human-oversight",
+              "duplicate_group": "ai-drug-diversion-human-oversight",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T08:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/25/ai-drug-diversion-software-human-oversight-controlcheck-sentri7/",
+                  "source_type": "web",
+                  "published_at": "2026-08-25T00:00:00Z"
+                }
+              ],
+              "title": "Hospital drug-diversion AI flags risk, but ignored alerts expose the human-control gap",
+              "summary": "STAT reports that machine-learning software identified signals associated with a travel nurse diverting controlled substances, but hospital managers did not act on the alerts before the incident was investigated. The case illustrates that diversion tools can connect suspicious dispensing and documentation patterns, yet they are not foolproof and still depend on timely human review.",
+              "strategic_implication": "Hospitals should treat diversion analytics as a monitored safety process with clear ownership, response-time standards, and audit trails—not as a replacement for pharmacy controls or supervision. Boards should ask whether alerts are being resolved and whether staffing, privacy, and addiction-support protocols are aligned.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "drug-diversion",
+                "patient-safety",
+                "hospital-operations",
+                "oversight"
+              ]
+            },
+            {
+              "item_id": "2026-08-25-mychart-phishing-scam",
+              "canonical_topic": "mychart-phishing-scam",
+              "duplicate_group": "mychart-phishing-scam",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/health-systems-warn-patients-of-mychart-phishing-scam/828597/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T14:44:43Z"
+                },
+                {
+                  "source": "AHA News",
+                  "url": "https://www.aha.org/news/headline/2026-08-24-mychart-warns-phishing-schemes-using-fraudulent-emails-other-messages",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T20:05:00Z"
+                }
+              ],
+              "title": "MyChart impersonation campaign puts patient trust and portal security under pressure",
+              "summary": "Healthcare Dive and the American Hospital Association report an uptick in phishing attempts using the MyChart name or logo. Examples include fake portal sites displaying erroneous medical records and messages advertising a supposed Medicare health kit, with Epic and AHA urging organizations and patients to verify links and communications.",
+              "strategic_implication": "Health systems should coordinate portal-security messaging, domain monitoring, identity controls, and patient-support scripts across the enterprise. The operational exposure includes credential theft and fraud, but also erosion of trust in digital access points that providers increasingly rely on for care delivery.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "mychart",
+                "phishing",
+                "patient-portal",
+                "identity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "The market is bifurcating between organizations demonstrating earnings recovery and highly innovative assets facing renewed safety scrutiny. Scale and disciplined execution remain differentiators, but regulatory and clinical risk can quickly overwhelm a growth narrative.",
+          "items": [
+            {
+              "item_id": "2026-08-25-highmark-h1-2026-turnaround",
+              "canonical_topic": "highmark-h1-2026-turnaround",
+              "duplicate_group": "highmark-h1-2026-turnaround",
+              "priority_score": 8,
+              "primary_source": "Highmark Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/highmark-touts-health-plan-turnaround-first-half-2026",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T19:12:00Z"
+                },
+                {
+                  "source": "Highmark Health",
+                  "url": "https://www.highmarkhealth.org/hmk/about/financials.shtml",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T16:05:37Z"
+                }
+              ],
+              "title": "Highmark reports first-half rebound as health-plan operating income improves $612 million",
+              "summary": "Highmark Health reported $17.5 billion in revenue, $805 million in operating income, and $2.0 billion in net income for the six months ended June 30, 2026. Its health-plan unit posted $672 million in operating income, a $612 million improvement from the same period in 2025; the consolidated result also included non-cash gains tied to recent affiliations.",
+              "strategic_implication": "The result reinforces the value of scale, integration, and cost discipline in a pressured payer market, but leaders should separate recurring underwriting improvement from affiliation-related accounting gains. Competitors and investors will focus on whether the health-plan performance persists as utilization and policy pressures evolve.",
+              "confidence": "high",
+              "tags": [
+                "payers",
+                "health-plans",
+                "earnings",
+                "scale",
+                "integration"
+              ]
+            },
+            {
+              "item_id": "2026-08-25-regenxbio-rgx121-clinical-hold",
+              "canonical_topic": "regenxbio-rgx121-clinical-hold",
+              "duplicate_group": "regenxbio-rgx121-clinical-hold",
+              "priority_score": 9,
+              "primary_source": "Reuters",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/24/fda-pauses-regenxbio-gene-therapy-trial-hunter-syndrome-safety-concerns/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T11:59:48Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/fda-places-clinical-hold-regenxbios-gene-therapy-hunter-syndrome-2026-08-24/",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T00:00:00Z"
+                }
+              ],
+              "title": "FDA places second 2026 hold on Regenxbio’s Hunter syndrome gene-therapy program",
+              "summary": "The FDA placed a clinical hold on Regenxbio’s RGX-121 gene-therapy program after spinal nodules or cystic masses were found in five participants who had received treatment three to six years earlier. Reuters reports that the patients were asymptomatic and clinically stable or improving, but Regenxbio does not expect to resubmit the application in the near term while it reviews imaging and awaits the agency’s full hold letter.",
+              "strategic_implication": "The episode shows how long-term monitoring and platform-level safety questions can reset the value and timing of rare-disease programs even when patients remain clinically stable. Developers and investors should model extended follow-up, regulatory documentation, and manufacturing capital needs rather than assuming accelerated approval timelines.",
+              "confidence": "high",
+              "tags": [
+                "gene-therapy",
+                "fda",
+                "rare-disease",
+                "clinical-safety",
+                "biotech"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider organizations are being asked to improve access and resilience while absorbing new affordability and cyber expectations. Capital is flowing to rural infrastructure, but California’s proposed enforcement model signals that cost growth will increasingly be treated as an operating-performance issue.",
+          "items": [
+            {
+              "item_id": "2026-08-25-california-provider-cost-penalties",
+              "canonical_topic": "california-provider-cost-penalties",
+              "duplicate_group": "california-provider-cost-penalties",
+              "priority_score": 9,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/california-weighs-penalties-healthcare-providers-dont-rein-costs",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T17:09:00Z"
+                },
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/health-industry/high-healthcare-costs-hospitals-state-spending-limits-california-fines/",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T00:00:00Z"
+                }
+              ],
+              "title": "California considers penalties of up to 125% of excess spending for healthcare entities",
+              "summary": "California’s Office of Health Care Affordability is considering penalties for hospitals, medical groups, insurers, and other entities that exceed state spending-growth targets. KFF Health News reports that the proposal could reach 125% of excess spending, with daily or flat fines under consideration; the board is scheduled to discuss and potentially vote on the framework Aug. 26, while enforcement would not begin before 2028.",
+              "strategic_implication": "Providers should build cost-growth governance into strategic planning now, including service-line economics, contract strategy, and documentation of performance-improvement actions. California may become a leading test of whether spending targets can change behavior without worsening access or pushing costs into less visible channels.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-costs",
+                "california",
+                "provider-finance",
+                "affordability",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-08-25-alabama-rural-health-grants",
+              "canonical_topic": "alabama-rural-health-grants",
+              "duplicate_group": "alabama-rural-health-grants",
+              "priority_score": 8,
+              "primary_source": "Governor of Alabama",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/alabama-awards-138-rhtp-grants-totaling-over-144m",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T17:47:00Z"
+                },
+                {
+                  "source": "Governor of Alabama",
+                  "url": "https://governor.alabama.gov/newsroom/2026/08/governor-ivey-announces-first-grants-in-major-new-rural-healthcare-program-totaling-more-than-144-million/",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T00:00:00Z"
+                }
+              ],
+              "title": "Alabama awards 138 rural-health grants totaling more than $144 million",
+              "summary": "Alabama awarded 138 grants totaling more than $144 million through its Rural Health Transformation Program, with projects spanning all 67 counties. The first round covers rural health, workforce, mental health, rural practice, collaborative EHR, IT, and cybersecurity initiatives; additional initiatives are still being processed.",
+              "strategic_implication": "The awards show how rural-health transformation funds are being translated into local operating capacity rather than remaining a policy headline. Health systems should pursue shared technology, workforce, referral, and cybersecurity models that can scale across small facilities and produce measurable access outcomes.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "grants",
+                "health-it",
+                "cybersecurity",
+                "workforce"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Large health systems are elevating nursing leadership as workforce relations, education, and retention become strategic capabilities. The move is notable because it links executive accountability for nurses to a period of labor tension and clinical-capacity pressure.",
+          "items": [
+            {
+              "item_id": "2026-08-25-mass-general-brigham-chief-nurse-executive",
+              "canonical_topic": "mass-general-brigham-chief-nurse-executive",
+              "duplicate_group": "mass-general-brigham-chief-nurse-executive",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/mass-general-brigham-appoints-vanderbilt-exec-inaugural-nurse-role-karen-keady/828564/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-24T12:39:05Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/mass-general-brigham-appoints-vanderbilt-exec-inaugural-nurse-role-karen-keady/828564/",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T16:05:50Z"
+                }
+              ],
+              "title": "Mass General Brigham creates first chief nurse executive role amid labor pressure",
+              "summary": "Mass General Brigham appointed Karen Keady, formerly Vanderbilt Health’s system chief nursing officer, as its first chief nurse executive. Keady starts Oct. 5 after overseeing more than 12,000 nurses and other employees at Vanderbilt; her remit includes working with clinical leaders on employee support, education, and leadership development, following a strike by about 4,500 Mass General Brigham clinicians.",
+              "strategic_implication": "Creating a system-level nursing role can improve workforce strategy only if it has authority over staffing, professional development, safety, and labor feedback loops. Other systems may view the appointment as a signal to formalize nursing leadership rather than treat retention and clinical education as decentralized HR programs.",
+              "confidence": "high",
+              "tags": [
+                "nursing",
+                "workforce",
+                "labor-relations",
+                "clinical-leadership",
+                "retention"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-24",
       "generated_at": "2026-08-24T11:12:19Z",
       "headline": "Today's Healthcare Insights",
@@ -23633,5 +24029,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-24T11:12:19Z"
+  "last_updated": "2026-08-25T11:07:00Z"
 }

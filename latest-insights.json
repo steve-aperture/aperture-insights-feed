@@ -3,6 +3,334 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-26",
+      "generated_at": "2026-08-26T11:09:48Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks rising administrative and employer healthcare costs, the return of measles deaths, and major digital-health consolidation. It also covers VA electronic-record deployment, the emerging Lp(a) drug market, and new evidence linking Shingrix with cardiovascular outcomes, using STAT, Healthcare Dive, Fierce Healthcare, official VA/company disclosures, Reuters, and targeted web context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA/CDC web",
+          "Official government and company disclosures",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search",
+          "VA News / DigitalVA",
+          "Switchboard Health disclosure",
+          "NAIC analysis"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "All three required RSS feeds returned via curl. Fresh Aug. 25-26 items were cross-checked with targeted search results and official VA/company or industry disclosures. Yesterday's rural-hospital, vaccine-review, OMB, drug-diversion AI, MyChart, Highmark, Regenxbio, California affordability, Alabama grants, and Mass General Brigham nursing topics were not republished."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Payment friction and infectious-disease control are producing immediate operational consequences for plans, providers, and public-health agencies. The No Surprises Act's dispute burden is now a material cost issue, while Pennsylvania's measles fatalities underscore the need for outbreak readiness and immunization outreach.",
+          "items": [
+            {
+              "item_id": "2026-08-26-no-surprises-idr-costs",
+              "canonical_topic": "no-surprises-idr-costs",
+              "duplicate_group": "no-surprises-idr-costs",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/costs-tied-no-surprises-acts-idr-process-hit-22b-2025-study-finds",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T20:54:00Z"
+                },
+                {
+                  "source": "NAIC",
+                  "url": "https://content.naic.org/sites/default/files/national_meeting/hcam-jones-slides-8.13.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-08-13T00:00:00Z"
+                }
+              ],
+              "title": "No Surprises Act dispute costs reach an estimated $22.4 billion",
+              "summary": "Fierce Healthcare reports that costs tied to the No Surprises Act's independent dispute-resolution process reached $22.4 billion at the end of 2025, according to a new analysis. An NAIC presentation cited roughly 2.2 million disputes in 2025, $12.6 billion in awards above qualifying payment amounts, and $1.3 billion in IDR-entity fees.",
+              "strategic_implication": "Payers and providers should treat arbitration volume as a structural cost and contracting problem, not a back-office exception. The burden can flow into premiums, administrative staffing, and negotiations over network adequacy and payment benchmarks.",
+              "confidence": "medium",
+              "tags": [
+                "no-surprises-act",
+                "idr",
+                "payment-policy",
+                "payer-provider",
+                "healthcare-costs"
+              ]
+            },
+            {
+              "item_id": "2026-08-26-pennsylvania-measles-deaths",
+              "canonical_topic": "pennsylvania-measles-deaths",
+              "duplicate_group": "pennsylvania-measles-deaths",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/pennsylvania-reports-first-measles-associated-deaths-2026",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T20:39:00Z"
+                },
+                {
+                  "source": "U.S. News / Reuters",
+                  "url": "https://www.usnews.com/news/top-news/articles/2026-08-25/pennsylvania-reports-two-deaths-from-measles-health-department-says",
+                  "source_type": "web",
+                  "published_at": "2026-08-25T23:08:27Z"
+                }
+              ],
+              "title": "Pennsylvania reports first measles deaths in 35 years as outbreak nears 400 cases",
+              "summary": "Pennsylvania reported two measles-associated deaths among unvaccinated Lancaster County residents, the first such deaths in the state in 35 years and the first reported in the United States in 2026. State officials said Pennsylvania had confirmed 393 cases across 28 counties as of Aug. 25, with no additional patient details released for privacy reasons.",
+              "strategic_implication": "Health systems and public-health agencies should reinforce vaccination access, exposure protocols, and surge communications before localized outbreaks create avoidable inpatient demand. The event also raises reputational and workforce risks for organizations that are not aligned on evidence-based patient messaging.",
+              "confidence": "high",
+              "tags": [
+                "measles",
+                "vaccination",
+                "public-health",
+                "outbreak-response",
+                "pennsylvania"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital-health growth is moving toward broader condition coverage and tighter integration of navigation, virtual care, and behavioral health. The latest deals suggest that distribution, referral workflows, and measurable outcomes matter as much as standalone software features.",
+          "items": [
+            {
+              "item_id": "2026-08-26-sword-headspace-acquisition",
+              "canonical_topic": "sword-headspace-acquisition",
+              "duplicate_group": "sword-headspace-acquisition",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/25/sword-health-to-acquire-headspace-per-regulatory-filing/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T20:46:14Z"
+                },
+                {
+                  "source": "Behavioral Health Business",
+                  "url": "https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/",
+                  "source_type": "web",
+                  "published_at": "2026-08-25T18:08:27Z"
+                }
+              ],
+              "title": "Sword Health plans cash acquisition of Headspace, expanding its virtual-care footprint",
+              "summary": "STAT reports that Sword Health plans to acquire mental-health provider Headspace for cash, according to regulatory filings. The transaction is expected to become effective Sept. 14, and the purchase price was not disclosed; Headspace's parent, OrangeDot, reported the proposed change of control to Massachusetts regulators.",
+              "strategic_implication": "The combination would give Sword a broader platform spanning physical and mental health, increasing its ability to sell integrated virtual-care programs to employers and health plans. Buyers should evaluate whether the enlarged offering improves engagement and outcomes or simply adds another layer of vendor and clinical-governance complexity.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "behavioral-health",
+                "virtual-care",
+                "m-and-a",
+                "employer-health"
+              ]
+            },
+            {
+              "item_id": "2026-08-26-switchboard-livara-acquisition",
+              "canonical_topic": "switchboard-livara-acquisition",
+              "duplicate_group": "switchboard-livara-acquisition",
+              "priority_score": 7,
+              "primary_source": "Switchboard Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/digital-health/switchboard-health-acquires-livara-health-value-based-msk-care-secures-5m-funding",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T15:25:00Z"
+                },
+                {
+                  "source": "Switchboard Health",
+                  "url": "https://www.switchboardhealth.com/post/switchboard-health-acquires-livara-health",
+                  "source_type": "web",
+                  "published_at": "2026-08-25T13:08:27Z"
+                }
+              ],
+              "title": "Switchboard acquires Livara and adds more than $5 million to fund value-based MSK care",
+              "summary": "Switchboard Health acquired Livara Health, bringing Livara's virtual musculoskeletal-care model into Switchboard's referral-management and specialty-care navigation platform. The company also announced more than $5 million in equity financing to support integration and growth, extending its model from navigation into direct, value-based care delivery.",
+              "strategic_implication": "The move points to continued vertical integration in specialty care, where navigation vendors are adding clinical capacity to capture more of the outcome and savings equation. Health plans and risk-bearing providers should assess whether integrated MSK programs can reduce leakage and surgery utilization without compromising choice or clinical oversight.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "musculoskeletal-care",
+                "care-navigation",
+                "value-based-care",
+                "funding"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Healthcare markets are balancing persistent cost inflation with a new wave of clinical and pharmaceutical opportunity. Employer cost forecasts raise near-term budget pressure, while Lp(a) therapies could create a large market if outcomes trials validate the biological target.",
+          "items": [
+            {
+              "item_id": "2026-08-26-employer-healthcare-costs-2027",
+              "canonical_topic": "employer-healthcare-costs-2027",
+              "duplicate_group": "employer-healthcare-costs-2027",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-costs-projected-to-rise-in-2027/828719/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T15:11:00Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/legal/litigation/us-employer-healthcare-costs-set-rise-95-2027-aon-says-2026-08-20/",
+                  "source_type": "web",
+                  "published_at": "2026-08-20T11:08:27Z"
+                }
+              ],
+              "title": "Employer healthcare costs could approach a 10% increase again in 2027",
+              "summary": "Aon projects that U.S. employer healthcare costs will rise 9.5% in 2027, with average spending moving above $19,000 per employee. Healthcare Dive reports that employers expect to absorb more than 80% of the burden, but employees will also face higher contributions and out-of-pocket costs; Aon attributes the pressure to medical utilization and high-priced drugs.",
+              "strategic_implication": "Employers, payers, and providers should expect benefit redesign, tighter utilization management, and stronger demand for measurable care-management savings. Providers that can demonstrate lower total cost of care may gain leverage, while organizations dependent on volume without affordability evidence face more scrutiny.",
+              "confidence": "high",
+              "tags": [
+                "employer-health",
+                "healthcare-costs",
+                "benefits",
+                "utilization",
+                "drug-spending"
+              ]
+            },
+            {
+              "item_id": "2026-08-26-lpa-drug-pipeline",
+              "canonical_topic": "lpa-drug-pipeline",
+              "duplicate_group": "lpa-drug-pipeline",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/26/lp-a-drugs-novartis-amgen-lilly-potential-heart-disease-blockbuster/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-26T08:30:00Z"
+                },
+                {
+                  "source": "CNBC",
+                  "url": "https://www.cnbc.com/2026/04/27/lpa-drugs-from-novartis-amgen-and-eli-lilly-aim-to-prevent-heart-attacks.html",
+                  "source_type": "web",
+                  "published_at": "2026-04-27T00:00:00Z"
+                }
+              ],
+              "title": "Late-stage Lp(a) medicines could open a multibillion-dollar cardiovascular market",
+              "summary": "STAT reports that drugmakers are advancing late-stage treatments for lipoprotein(a), a common cardiovascular risk factor that currently has no dedicated approved therapy. Novartis, Amgen, and Eli Lilly are among the companies testing Lp(a)-lowering medicines, but the commercial opportunity still depends on showing that lowering the biomarker reduces heart attacks and other events.",
+              "strategic_implication": "Payers and cardiovascular providers should watch outcomes data, testing practices, and potential pricing before assuming a new standard of prevention. If clinical benefit is confirmed, identifying high-risk patients and managing access could become a major population-health and budget issue.",
+              "confidence": "medium",
+              "tags": [
+                "lpa",
+                "cardiovascular",
+                "drug-pipeline",
+                "pharma",
+                "clinical-trials"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "The VA's Indiana rollout shows health-IT modernization moving from pilot recovery into a faster deployment cadence. Scale benefits will depend on adoption, workflow stability, and the ability to convert a go-live into safer, more connected care rather than merely a technical milestone.",
+          "items": [
+            {
+              "item_id": "2026-08-26-va-indiana-ehr-deployment",
+              "canonical_topic": "va-indiana-ehr-deployment",
+              "duplicate_group": "va-indiana-ehr-deployment",
+              "priority_score": 8,
+              "primary_source": "VA News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/va-deploys-oracle-ehr-to-3-medical-centers-in-indiana/828682/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T13:32:00Z"
+                },
+                {
+                  "source": "VA News",
+                  "url": "https://news.va.gov/press-room/va-names-nine-additional-facilities-that-will-deploy-federal-ehr-in-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T00:00:00Z"
+                }
+              ],
+              "title": "VA deploys Federal EHR to three Indiana hospitals and 16 associated clinics",
+              "summary": "The Department of Veterans Affairs deployed its Federal Electronic Health Record at medical centers in Indianapolis, Fort Wayne, and Marion, plus 16 associated Indiana clinics. The rollout adds access for about 102,000 veterans and 6,000 staff, and VA says the agency has now completed 11 hospital deployments in 2026 after earlier project delays.",
+              "strategic_implication": "The deployment creates a live test of whether accelerated EHR modernization can improve data portability and reduce duplicate work without reigniting usability and reliability problems. Health-system leaders should pair go-live milestones with adoption, service-desk, clinician-burnout, and patient-safety measures.",
+              "confidence": "high",
+              "tags": [
+                "ehr",
+                "va",
+                "health-it",
+                "interoperability",
+                "implementation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "New evidence is broadening the clinical conversation around adult immunization, while the observational design still argues for disciplined interpretation. The opportunity is to connect preventive care with cardiovascular risk management without converting an association into a premature treatment recommendation.",
+          "items": [
+            {
+              "item_id": "2026-08-26-shingrix-cardiovascular-risk",
+              "canonical_topic": "shingrix-cardiovascular-risk",
+              "duplicate_group": "shingrix-cardiovascular-risk",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/26/shingles-vaccine-shingrix-reduces-heart-disease-dementia-risk-oxford-study/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-26T09:00:00Z"
+                },
+                {
+                  "source": "The Guardian",
+                  "url": "https://www.theguardian.com/science/2026/aug/26/shingles-vaccine-lower-risk-heart-attack-stroke-study",
+                  "source_type": "web",
+                  "published_at": "2026-08-26T00:00:00Z"
+                }
+              ],
+              "title": "Shingrix linked to lower cardiovascular risk in a large natural experiment",
+              "summary": "An Oxford-led study of more than 70,000 older adults found that recipients of the recombinant Shingrix vaccine had lower cardiovascular risk than comparable people who received the older Zostavax vaccine. STAT reports a 9% lower overall cardiovascular burden over seven years, but the observational natural-experiment design means randomized studies are still needed to confirm causality.",
+              "strategic_implication": "Health systems and payers can use the finding to strengthen adult-immunization outreach and cardiovascular-prevention conversations, while keeping clinical guidance anchored to current evidence. If confirmed, a dual prevention benefit could improve the value proposition of shingles vaccination and increase demand for integrated primary-care workflows.",
+              "confidence": "medium",
+              "tags": [
+                "shingrix",
+                "vaccination",
+                "cardiovascular",
+                "preventive-care",
+                "clinical-research"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-25",
       "generated_at": "2026-08-25T11:07:00Z",
       "headline": "Today's Healthcare Insights",
@@ -24029,5 +24357,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-25T11:07:00Z"
+  "last_updated": "2026-08-26T11:09:48Z"
 }

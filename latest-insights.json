@@ -3,6 +3,403 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-27",
+      "generated_at": "2026-08-27T11:07:02Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks a new targeted therapy for metastatic pancreatic cancer, Medicare Advantage coding enforcement, and rural pharmacy-connectivity investment. It also covers patient expectations for healthcare AI, FDA's behavioral-health technology pilot, new employer-benefit and revenue-cycle models, and fresh oncology and cardiology market signals, using required trade RSS feeds, official FDA/CMS/HHS/company releases, Pew Research Center, Reuters, and targeted web context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA/CDC web",
+          "Official government and company disclosures",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search",
+          "FDA official release",
+          "CMS official release",
+          "HHS OIG official release",
+          "Cigna newsroom",
+          "Pew Research Center",
+          "Alnylam investor disclosure"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "All three required RSS feeds returned via curl. Fresh Aug. 26-27 items were cross-checked with targeted web results and official FDA, CMS, HHS OIG, company, and Pew disclosures. Yesterday's No Surprises, measles, Sword-Headspace, Switchboard-Livara, employer-cost, Lp(a), VA EHR, and Shingrix topics were not republished."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal action is translating quickly into both clinical access and payment-integrity consequences. A first-in-class pancreatic-cancer approval expands treatment options, while a Medicare Advantage settlement reinforces scrutiny of diagnosis coding and risk adjustment.",
+          "items": [
+            {
+              "item_id": "2026-08-27-rasonque-pancreatic-cancer-approval",
+              "canonical_topic": "rasonque-pancreatic-cancer-approval",
+              "duplicate_group": "rasonque-pancreatic-cancer-approval",
+              "priority_score": 10,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-class-targeted-therapy-metastatic-pancreatic-cancer",
+                  "source_type": "web",
+                  "published_at": "2026-08-26T15:05:52Z"
+                },
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma",
+                  "source_type": "web",
+                  "published_at": "2026-08-26T11:05:52Z"
+                }
+              ],
+              "title": "FDA approves Rasonque, a first-in-class targeted therapy for metastatic pancreatic cancer",
+              "summary": "The FDA approved Rasonque (daraxonrasib), an oral RAS inhibitor, for adults with metastatic pancreatic adenocarcinoma after at least one prior systemic therapy or when multiagent therapy is unsuitable. In a 500-person randomized trial, median overall survival was 13.2 months with daraxonrasib versus 6.7 months with standard chemotherapy; the approval carries Breakthrough Therapy and Orphan Drug designations.",
+              "strategic_implication": "Cancer centers and payers should prepare for biomarker-informed treatment pathways, pharmacy access, toxicity monitoring, and budget impact. The approval also raises the bar for competing targeted therapies in a disease with historically limited post-treatment options.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "pancreatic-cancer",
+                "oncology",
+                "targeted-therapy",
+                "drug-approval"
+              ]
+            },
+            {
+              "item_id": "2026-08-27-monogram-medicare-advantage-settlement",
+              "canonical_topic": "monogram-medicare-advantage-settlement",
+              "duplicate_group": "monogram-medicare-advantage-settlement",
+              "priority_score": 9,
+              "primary_source": "HHS OIG",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/monogram-health-pay-24-million-settle-medicare-advantage-upcoding/828808/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-26T13:12:13Z"
+                },
+                {
+                  "source": "HHS OIG",
+                  "url": "https://oig.hhs.gov/fraud/enforcement/medicare-advantage-provider-monogram-health-agrees-to-pay-24m-to-settle-false-claims-act-suit/",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T11:05:35Z"
+                }
+              ],
+              "title": "Monogram Health agrees to $2.4 million Medicare Advantage false-claims settlement",
+              "summary": "Monogram Health agreed to pay $2.4 million to resolve allegations that it caused inaccurate diagnosis codes to be submitted for Medicare Advantage patients. HHS OIG says the alleged codes were used to increase payments and were not clinically accurate, supported by records, or relevant to patient care; the settlement resolves a whistleblower case without an admission of liability.",
+              "strategic_implication": "Risk-bearing providers and health plans should tighten coding governance, record support, and audit trails across delegated and value-based contracts. The case illustrates how revenue-cycle growth strategies can become compliance exposure when clinical documentation and payment incentives diverge.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "coding",
+                "false-claims",
+                "compliance",
+                "risk-adjustment"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital-health adoption is moving toward embedded workflow tools and real-world regulatory testing. The commercial opportunity is meaningful, but outcomes, safety, and integration—not novelty alone—will determine whether AI earns durable trust.",
+          "items": [
+            {
+              "item_id": "2026-08-27-suki-ai-dictation-ehr-integration",
+              "canonical_topic": "suki-ai-dictation-ehr-integration",
+              "duplicate_group": "suki-ai-dictation-ehr-integration",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/suki-launches-ai-dictation-tool-with-ehr-integration-capabilities/828837/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-26T15:17:18Z"
+                },
+                {
+                  "source": "Suki AI",
+                  "url": "https://www.suki.ai/blog/evolving-the-cursor-how-suki-dictation-is-powering-the-next-era-of-in-ehr-workflows/",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T11:05:35Z"
+                }
+              ],
+              "title": "Suki launches standalone AI dictation embedded in Epic and MEDITECH workflows",
+              "summary": "Suki launched a word-for-word AI dictation product that can work independently or alongside its ambient documentation assistant. Healthcare Dive reports that the tool integrates with Epic and MEDITECH and is designed for complex medical terminology; Suki says its interfaces include SMART on FHIR for Epic and mSpeech for MEDITECH.",
+              "strategic_implication": "Health systems can evaluate documentation automation as a modular workflow capability rather than an all-or-nothing enterprise bundle. Procurement should still test accuracy, clinician edit burden, data governance, and measurable effects on time, coding, and burnout.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "ai-dictation",
+                "ehr",
+                "epic",
+                "meditech"
+              ]
+            },
+            {
+              "item_id": "2026-08-27-limbic-fda-tempo-medicare",
+              "canonical_topic": "limbic-fda-tempo-medicare",
+              "duplicate_group": "limbic-fda-tempo-medicare",
+              "priority_score": 8,
+              "primary_source": "FDA TEMPO / Limbic",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/digital-health/limbic-selected-fda-tempo-track-outcomes-ai-therapy-medicare",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T20:30:00Z"
+                },
+                {
+                  "source": "Business Wire",
+                  "url": "https://www.businesswire.com/news/home/20260819669769/en/Limbic-Becomes-First-AI-Led-Mental-Healthcare-Company-Selected-for-FDA-TEMPO",
+                  "source_type": "web",
+                  "published_at": "2026-08-19T00:00:00Z"
+                }
+              ],
+              "title": "Limbic begins FDA TEMPO pilot for clinician-supervised AI therapy in Medicare",
+              "summary": "Limbic was selected for the FDA TEMPO digital-health pilot and plans to deploy Unpacked, a clinician-supervised AI voice service delivering scheduled cognitive behavioral therapy for eligible Medicare beneficiaries with depression or anxiety. The pilot will collect real-world data on outcomes, safety, and use while the service rolls out Aug. 27, according to the company announcement.",
+              "strategic_implication": "This is an early test of whether supervised AI can expand behavioral-health capacity inside a Medicare-linked outcomes model. Providers and payers should watch safety escalation, clinician workload, patient engagement, and evidence standards before generalizing results to broader autonomous care.",
+              "confidence": "medium",
+              "tags": [
+                "behavioral-health",
+                "ai-therapy",
+                "fda",
+                "medicare",
+                "digital-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Commercial healthcare models are converging on financial predictability: employers want protection from high-cost episodes, health systems want cleaner revenue capture, and drug developers are competing for differentiated clinical value. The latest signals also show that trial setbacks can quickly reshape expectations for an entire therapeutic class.",
+          "items": [
+            {
+              "item_id": "2026-08-27-cigna-connected-benefits",
+              "canonical_topic": "cigna-connected-benefits",
+              "duplicate_group": "cigna-connected-benefits",
+              "priority_score": 8,
+              "primary_source": "Cigna Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cigna-unveils-new-plan-aims-bring-together-medical-supplemental-benefits",
+                  "source_type": "rss",
+                  "published_at": "2026-08-26T19:36:00Z"
+                },
+                {
+                  "source": "Cigna Healthcare",
+                  "url": "https://newsroom.cigna.com/cigna-healthcare-connects-medical-and-supplemental-benefits-to-help-people-better-manage-unexpected-health-costs",
+                  "source_type": "web",
+                  "published_at": "2026-08-26T00:00:00Z"
+                }
+              ],
+              "title": "Cigna links medical and supplemental benefits to limit unexpected cost exposure",
+              "summary": "Cigna introduced Medical with Smart Coverage, an employer benefit that links qualifying high-deductible medical plans with supplemental cash benefits of up to $7,000 for covered health events. Cigna says the product is planned for Jan. 1, 2027 availability to U.S. clients with 500 to 2,999 employees, alongside claims-matching functionality intended to reduce administrative steps.",
+              "strategic_implication": "The product reflects employers' search for affordability tools that protect workers without replacing core coverage. Benefits leaders should assess uptake, claims coordination, member comprehension, and whether cash supplements reduce financial stress or merely shift plan-design complexity.",
+              "confidence": "high",
+              "tags": [
+                "employer-health",
+                "benefits",
+                "high-deductible-plans",
+                "supplemental-coverage",
+                "payer-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-08-27-arintra-revenue-assurance-funding",
+              "canonical_topic": "arintra-revenue-assurance-funding",
+              "duplicate_group": "arintra-revenue-assurance-funding",
+              "priority_score": 8,
+              "primary_source": "Arintra",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/arintra-banks-25m-series-b-funding-round-ai-driven-revenue-assurance-platform",
+                  "source_type": "rss",
+                  "published_at": "2026-08-25T20:42:00Z"
+                },
+                {
+                  "source": "Arintra",
+                  "url": "https://www.arintra.com/resources/press-releases",
+                  "source_type": "web",
+                  "published_at": "2026-08-26T00:00:00Z"
+                }
+              ],
+              "title": "Arintra raises $25 million to expand AI-powered revenue assurance across health systems",
+              "summary": "Arintra raised a $25 million Series B led by Define Ventures, bringing total funding to $51 million, according to the company and Fierce Healthcare. The company plans to expand beyond autonomous coding into documentation intelligence, denial appeals, payer insights, and DRG validation across more enterprise health systems.",
+              "strategic_implication": "The funding signals continued investor belief that revenue-cycle AI can move from point automation to an integrated assurance layer. Provider executives should demand proof of net collections, denial reduction, compliance, and clinician-documentation quality rather than rewarding gross uplift alone.",
+              "confidence": "high",
+              "tags": [
+                "revenue-cycle",
+                "healthcare-ai",
+                "medical-coding",
+                "funding",
+                "health-systems"
+              ]
+            },
+            {
+              "item_id": "2026-08-27-transcarent-cancer-bundled-payments",
+              "canonical_topic": "transcarent-cancer-bundled-payments",
+              "duplicate_group": "transcarent-cancer-bundled-payments",
+              "priority_score": 8,
+              "primary_source": "Transcarent",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/transcarent-launches-bundled-payment-model-cancer-therapies",
+                  "source_type": "rss",
+                  "published_at": "2026-08-26T14:09:00Z"
+                },
+                {
+                  "source": "Business Wire",
+                  "url": "https://www.businesswire.com/news/home/20260825580047/en/Transcarent-Launches-Innovative-Bundled-Payment-Model-for-Breakthrough-Cancer-Therapies",
+                  "source_type": "web",
+                  "published_at": "2026-08-25T00:00:00Z"
+                }
+              ],
+              "title": "Transcarent launches bundled payments for community-delivered CAR-T and BiTE therapies",
+              "summary": "Transcarent launched a bundled-payment model for bispecific T-cell engager and CAR-T therapies delivered through community providers. The company says the model is intended to bring complex cancer care closer to patients while giving employers more predictable costs and potential savings of up to $150,000 based on internal 2026 data.",
+              "strategic_implication": "If execution is strong, bundled oncology payments could accelerate migration of selected complex therapies away from centralized centers while preserving navigation and clinical oversight. Buyers should validate provider quality, episode definitions, stop-loss protections, outcomes, and the evidentiary basis for claimed savings.",
+              "confidence": "medium",
+              "tags": [
+                "oncology",
+                "car-t",
+                "bundled-payments",
+                "employer-health",
+                "value-based-care"
+              ]
+            },
+            {
+              "item_id": "2026-08-27-alnylam-attr-cardiology-outlook",
+              "canonical_topic": "alnylam-attr-cardiology-outlook",
+              "duplicate_group": "alnylam-attr-cardiology-outlook",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/08/27/alnylam-amvuttra-nucresiran-heart-drugs-esc/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-27T10:30:00Z"
+                },
+                {
+                  "source": "Alnylam Pharmaceuticals",
+                  "url": "https://investors.alnylam.com/press-release?id=30001",
+                  "source_type": "web",
+                  "published_at": "2026-08-24T00:00:00Z"
+                }
+              ],
+              "title": "Alnylam faces a pivotal cardiology meeting after a rival ATTR-CM drug failed",
+              "summary": "STAT reports that the outlook for Alnylam's ATTR-CM medicines is under renewed scrutiny ahead of the European Society of Cardiology Congress after AstraZeneca and Ionis reported that rival eplontersen did not significantly reduce cardiovascular deaths or recurrent events versus placebo. Alnylam is scheduled to present new HELIOS-B analyses of vutrisiran and other ATTR data at the Aug. 28-31 meeting.",
+              "strategic_implication": "The rival failure raises the evidentiary stakes for a growing ATTR market and makes subgroup, endpoint, and mechanism interpretation especially important. Payers and specialty providers should distinguish a competitor's setback from proof of class-wide efficacy while preparing for sharper debates over sequencing and value.",
+              "confidence": "medium",
+              "tags": [
+                "attr-cm",
+                "cardiology",
+                "clinical-trials",
+                "biotech",
+                "drug-market"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Rural transformation funding is being directed into practical interoperability and medication-management infrastructure. The near-term value will depend on onboarding independent pharmacies and connecting fragmented data flows, not simply on the size of the award.",
+          "items": [
+            {
+              "item_id": "2026-08-27-rural-ohio-pharmacy-connectivity",
+              "canonical_topic": "rural-ohio-pharmacy-connectivity",
+              "duplicate_group": "rural-ohio-pharmacy-connectivity",
+              "priority_score": 8,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-3-15-million-expand-pharmacy-connectivity-throughout-rural-ohio",
+                  "source_type": "web",
+                  "published_at": "2026-08-26T00:00:00Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/files/document/rht-ohio-application-abstracts-01-05-2026.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-01-05T00:00:00Z"
+                }
+              ],
+              "title": "CMS directs $3.15 million to connect rural Ohio pharmacies and clinical records",
+              "summary": "CMS announced $3.15 million through the Rural Health Transformation Program to connect independent and retail pharmacies, federally qualified health centers, and outpatient hospital pharmacies across Ohio's 73 rural counties. The award includes $2 million for medication-management and care-coordination access and $1.15 million for integrated access to the Ohio Automated Rx Reporting System.",
+              "strategic_implication": "The project targets a concrete interoperability gap: better prescription information can reduce adverse drug events and support controlled-substance monitoring. Rural providers should prioritize workflow adoption, pharmacy onboarding, data quality, and measurable medication-safety outcomes alongside the technical integration.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "pharmacy",
+                "interoperability",
+                "medication-safety",
+                "cms"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Patient expectations are becoming a clinical-operating constraint for AI adoption. Transparency is necessary but may not be sufficient: organizations will need practical consent, communication, and accountability processes for tools that can influence care.",
+          "items": [
+            {
+              "item_id": "2026-08-27-patients-want-say-ai-care",
+              "canonical_topic": "patients-want-say-ai-care",
+              "duplicate_group": "patients-want-say-ai-care",
+              "priority_score": 8,
+              "primary_source": "Pew Research Center",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/53-us-adults-feel-they-dont-have-say-when-ai-used-their-healthcare-pew",
+                  "source_type": "rss",
+                  "published_at": "2026-08-26T18:20:00Z"
+                },
+                {
+                  "source": "Pew Research Center",
+                  "url": "https://www.pewresearch.org/short-reads/2026/08/25/americans-want-transparency-when-ai-is-used-in-their-healthcare/",
+                  "source_type": "web",
+                  "published_at": "2026-08-25T00:00:00Z"
+                }
+              ],
+              "title": "Pew finds patients want disclosure and more control when AI enters their care",
+              "summary": "A Pew Research Center survey found that 72% of U.S. adults say it is very or extremely important for providers to tell them when AI is used in their healthcare. Fifty-three percent say they have not too much or no say over whether AI is used, while 63% would like more say; 46% are unsure whether AI has been used in their care.",
+              "strategic_implication": "Health systems should treat AI transparency as a trust and clinical-workflow issue, not merely a privacy notice. Clear disclosure, escalation pathways, clinician accountability, and patient choice where feasible can improve adoption while exposing gaps in governance before they become safety or reputational events.",
+              "confidence": "high",
+              "tags": [
+                "ai-governance",
+                "patient-trust",
+                "clinical-practice",
+                "informed-consent",
+                "healthcare-technology"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-26",
       "generated_at": "2026-08-26T11:09:48Z",
       "headline": "Today's Healthcare Insights",
@@ -24357,5 +24754,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-26T11:09:48Z"
+  "last_updated": "2026-08-27T11:07:02Z"
 }

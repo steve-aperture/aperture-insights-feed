@@ -3,6 +3,437 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-08-31",
+      "generated_at": "2026-08-31T11:16:56Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks a dense run of late-August FDA and CMS actions, including a first-in-class polycythemia vera therapy, dual glucose-ketone monitoring, and a Medicare laboratory-fraud enforcement update. Market and operating signals span personalized mRNA oncology, radiopharmaceutical dosing, AI economics for physicians, quality-measure modernization, PBM litigation, and a Medicaid technology-system dispute.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Official government and company disclosures",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search",
+          "FDA official release/search result",
+          "CMS official release/search result",
+          "Takeda and Abbott company disclosures/search results",
+          "Komodo/NCQA disclosure/search result",
+          "Merck/Moderna disclosure/search result",
+          "Boston University/Mass General Brigham study coverage"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "All three required RSS feeds returned via curl. Fresh Aug. 25-31 items were cross-checked with targeted web results and available official FDA, CMS, company, study, and legal disclosures; the prior edition's dermatomyositis, Medicare negotiation litigation, G2211, autism strategy, ACCESS, Cytokinetics, Wainua, Zepbound, Villages Health, Corewell, Boston Scientific, and Maven topics were not republished. Several deep page fetches timed out, so RSS descriptions and search-result excerpts were used as permitted signal depth."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal agencies are pairing novel approvals with more aggressive program-integrity enforcement, while state litigation is putting PBM reimbursement practices under a sharper antitrust lens. The combined signals point to a healthcare environment where access, pricing, and compliance are moving together.",
+          "items": [
+            {
+              "item_id": "2026-08-31-mimrylo-polycythemia-vera-approval",
+              "canonical_topic": "mimrylo-polycythemia-vera-approval",
+              "duplicate_group": "mimrylo-polycythemia-vera-approval",
+              "priority_score": 9,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-its-kind-polycythemia-vera-rare-blood-disorder",
+                  "source_type": "web",
+                  "published_at": "2026-08-28T00:00:00Z"
+                },
+                {
+                  "source": "Takeda",
+                  "url": "https://www.takeda.com/newsroom/newsreleases/2026/fda-approval-mimrylo/",
+                  "source_type": "web",
+                  "published_at": "2026-08-28T00:00:00Z"
+                },
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/08/30/fda-approves-mimrylo-takeda-protagonist-treatment-for-polycythemia-vera/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-30T18:30:18Z"
+                }
+              ],
+              "title": "FDA approves first-in-class hepcidin-mimetic therapy for polycythemia vera",
+              "summary": "The FDA approved MIMRYLO (rusfertide) from Takeda and Protagonist Therapeutics for erythrocytosis in adults with polycythemia vera. The therapy mimics hepcidin to limit iron availability, with the companies positioning it as a first-in-class approach that can maintain hematocrit control and reduce phlebotomy burden.",
+              "strategic_implication": "Hematology practices and payers should prepare for new utilization-management criteria, safety monitoring, and infusion-or-injection workflow planning as treatment sequencing changes in a rare blood cancer.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "rare-disease",
+                "polycythemia-vera",
+                "hematology"
+              ]
+            },
+            {
+              "item_id": "2026-08-31-cms-medicare-lab-fraud-enforcement",
+              "canonical_topic": "cms-medicare-lab-fraud-enforcement",
+              "duplicate_group": "cms-medicare-lab-fraud-enforcement",
+              "priority_score": 9,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-prevents-1-6-billion-fraudulent-medicare-laboratory-payments",
+                  "source_type": "web",
+                  "published_at": "2026-08-28T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/regulatory/trump-admin-blocks-over-16b-potentially-fraudulent-medicare-lab-payments-cms",
+                  "source_type": "rss",
+                  "published_at": "2026-08-28T12:49:00Z"
+                }
+              ],
+              "title": "CMS says analytics and provider actions blocked more than $1.6B in potentially improper Medicare lab payments",
+              "summary": "CMS reported that enforcement actions have stopped more than $1.6 billion in potentially improper Medicare laboratory payments since the start of the administration. The agency attributed the total to actions including revoking 157 fraudulent lab providers, suspending payments, and using analytics to target suspicious billing.",
+              "strategic_implication": "Laboratories and referring providers should expect sustained pre-payment scrutiny, enrollment actions, and documentation demands; health systems should recheck ordering, referral, and vendor controls tied to high-risk testing.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "medicare",
+                "fraud-prevention",
+                "laboratories"
+              ]
+            },
+            {
+              "item_id": "2026-08-31-florida-pbm-price-fixing-lawsuit",
+              "canonical_topic": "florida-pbm-price-fixing-lawsuit",
+              "duplicate_group": "florida-pbm-price-fixing-lawsuit",
+              "priority_score": 8,
+              "primary_source": "Florida Attorney General",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/florida-ag-sues-prime-therapeutics-express-scripts-alleged-price-fixing",
+                  "source_type": "rss",
+                  "published_at": "2026-08-28T00:00:00Z"
+                },
+                {
+                  "source": "Florida Attorney General complaint",
+                  "url": "https://business.cch.com/ald/StateofFloridavPrimeTherapeuticsLLCComplaint082826.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-08-27T13:13:46Z"
+                }
+              ],
+              "title": "Florida sues Express Scripts and Prime Therapeutics over alleged pharmacy reimbursement price fixing",
+              "summary": "Florida Attorney General James Uthmeier filed an antitrust lawsuit against Express Scripts and Prime Therapeutics, alleging the PBMs coordinated reimbursement practices and underpaid retail pharmacies. The complaint argues the alleged arrangement harmed independent pharmacies and could constrain medication access; the allegations remain contested in court.",
+              "strategic_implication": "PBMs, plans, and pharmacy operators should model state-by-state litigation and reimbursement scrutiny as a growing contracting and network-adequacy risk, especially where independent pharmacies are already operating at thin margins.",
+              "confidence": "medium",
+              "tags": [
+                "pbm",
+                "antitrust",
+                "pharmacy",
+                "reimbursement"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital health is moving from pilots toward infrastructure and economic-accountability questions. Regulators are clearing richer physiologic data streams while clinicians and quality bodies debate who captures value and how measures should be built from longitudinal data.",
+          "items": [
+            {
+              "item_id": "2026-08-31-abbott-libre-duo-glucose-ketone-monitor",
+              "canonical_topic": "abbott-libre-duo-glucose-ketone-monitor",
+              "duplicate_group": "abbott-libre-duo-glucose-ketone-monitor",
+              "priority_score": 8,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
+                  "source_type": "web",
+                  "published_at": "2026-08-25T00:00:00Z"
+                },
+                {
+                  "source": "Abbott",
+                  "url": "https://abbott.mediaroom.com/2026-08-25-Abbott-receives-FDA-authorization-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
+                  "source_type": "web",
+                  "published_at": "2026-08-25T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/most-americans-want-providers-disclose-ai-use-survey-pew/828921/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-27T13:10:39Z"
+                }
+              ],
+              "title": "FDA authorizes Abbott wearable that continuously tracks glucose and ketones in one sensor",
+              "summary": "The FDA authorized Abbott's Libre Duo 10 Day system for people age two and older with diabetes. It is described as the first U.S. wearable to continuously monitor ketones and the first device globally to continuously track ketones and glucose together in a single sensor.",
+              "strategic_implication": "Combined glucose-ketone data could support earlier detection of metabolic deterioration, but providers and digital-health partners will need alert protocols, escalation pathways, and reimbursement models that turn the signal into safe action.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "wearables",
+                "diabetes",
+                "remote-monitoring"
+              ]
+            },
+            {
+              "item_id": "2026-08-31-physician-ai-productivity-compensation",
+              "canonical_topic": "physician-ai-productivity-compensation",
+              "duplicate_group": "physician-ai-productivity-compensation",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive / Doximity",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/physicians-say-they-should-benefit-financially-from-ais-time-savings-doximity/829046/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-28T12:47:50Z"
+                },
+                {
+                  "source": "Doximity",
+                  "url": "https://www.doximity.com/reports/physician-compensation-report/2026",
+                  "source_type": "web",
+                  "published_at": "2026-08-31T00:00:00Z"
+                }
+              ],
+              "title": "Physicians increasingly expect a share of the value created by clinical AI",
+              "summary": "Doximity's 2026 compensation report says 66% of surveyed physicians use AI daily or weekly for clinical or administrative work, while 23% expect the technology to increase their total compensation. The report draws on roughly 250,000 compensation responses over seven years, including nearly 23,000 physicians surveyed in 2025.",
+              "strategic_implication": "Health systems should treat AI adoption as a workforce-design and compensation issue, not only a software purchase: transparent productivity measurement, governance, and gain-sharing may determine adoption and retention.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "physician-workforce",
+                "compensation",
+                "productivity"
+              ]
+            },
+            {
+              "item_id": "2026-08-31-ncqa-komodo-hedis-modernization",
+              "canonical_topic": "ncqa-komodo-hedis-modernization",
+              "duplicate_group": "ncqa-komodo-hedis-modernization",
+              "priority_score": 7,
+              "primary_source": "Komodo Health / NCQA",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Komodo Health",
+                  "url": "https://www.komodohealth.com/press/ncqa-accelerating-the-future-of-healthcare-quality-measurement/",
+                  "source_type": "web",
+                  "published_at": "2026-08-26T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/health-tech/ncqa-use-komodo-platform-future-development-hedis-measures",
+                  "source_type": "rss",
+                  "published_at": "2026-08-28T10:58:00Z"
+                }
+              ],
+              "title": "NCQA and Komodo Health partner to modernize HEDIS measure development with longitudinal data and AI",
+              "summary": "NCQA will use Komodo Health's Healthcare Map and AI-powered analytics in a multi-year effort to explore complex questions in quality-measure development. The collaboration is intended to analyze care across insurance types, settings, and populations from a longitudinal, de-identified dataset; NCQA retains responsibility for developing HEDIS measures.",
+              "strategic_implication": "Plans and provider groups should anticipate more data-rich quality measurement and ensure their data lineage, coding, and interoperability can withstand faster measure iteration and cross-setting comparisons.",
+              "confidence": "medium",
+              "tags": [
+                "hedis",
+                "quality-measures",
+                "healthcare-data",
+                "ai"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Biopharma signals are tilting toward platform validation and sharper differentiation: personalized oncology has produced a late-stage proof point, while radiopharmaceutical developers are challenging conservative dosing assumptions. The pipeline upside is meaningful, but manufacturing, evidence, and delivery complexity remain material.",
+          "items": [
+            {
+              "item_id": "2026-08-31-personalized-mrna-melanoma-vaccine",
+              "canonical_topic": "personalized-mrna-melanoma-vaccine",
+              "duplicate_group": "personalized-mrna-melanoma-vaccine",
+              "priority_score": 8,
+              "primary_source": "STAT / Merck and Moderna",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/08/31/mrna-cancer-vaccine-intersects-politics-medicine/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-31T08:30:00Z"
+                },
+                {
+                  "source": "Merck and Moderna",
+                  "url": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+                  "source_type": "web",
+                  "published_at": "2026-08-19T10:45:00Z"
+                }
+              ],
+              "title": "Merck-Moderna personalized mRNA vaccine delivers Phase 3 melanoma win, reviving the platform's oncology outlook",
+              "summary": "Merck and Moderna said their Phase 3 INTerpath-001 trial of personalized mRNA vaccine intismeran autogene plus Keytruda met endpoints for recurrence-free and distant-metastasis-free survival in completely resected high-risk melanoma. The companies plan to present detailed data and engage regulators; STAT's latest analysis frames the result as a needed boost for mRNA after a difficult stretch.",
+              "strategic_implication": "A successful regulatory path would validate individualized neoantigen manufacturing and create new operating requirements for tumor sequencing, turnaround time, and coordination between oncology centers and specialty manufacturers.",
+              "confidence": "medium",
+              "tags": [
+                "mrna",
+                "oncology",
+                "melanoma",
+                "personalized-medicine"
+              ]
+            },
+            {
+              "item_id": "2026-08-31-radiopharmaceutical-dosing-innovation",
+              "canonical_topic": "radiopharmaceutical-dosing-innovation",
+              "duplicate_group": "radiopharmaceutical-dosing-innovation",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/08/31/radiopharmaceuticals-dosing-pushing-bounds-cancer-treatment/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-31T08:30:00Z"
+                },
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/oncology-therapeutic-radiopharmaceuticals-dosage-optimization-during-clinical-development",
+                  "source_type": "web",
+                  "published_at": "2025-08-18T00:00:00Z"
+                }
+              ],
+              "title": "Radiopharmaceutical experts push for more ambitious dosing strategies in cancer care",
+              "summary": "STAT reports that a group of radiopharmaceutical specialists believes some targeted radioactive cancer therapies may be dosed more frequently than current practice allows. The debate sits alongside FDA guidance encouraging sponsors to optimize administered activity and schedules while accounting for exposure to organs such as kidneys, liver, and bone marrow.",
+              "strategic_implication": "Developers and cancer centers should treat dosimetry, capacity, and toxicity monitoring as competitive capabilities; more intensive schedules could improve efficacy but also amplify production, radiation-safety, and care-coordination demands.",
+              "confidence": "medium",
+              "tags": [
+                "radiopharmaceuticals",
+                "oncology",
+                "dosimetry",
+                "clinical-trials"
+              ]
+            },
+            {
+              "item_id": "2026-08-31-rasonque-pancreatic-cancer-approval",
+              "canonical_topic": "rasonque-pancreatic-cancer-approval",
+              "duplicate_group": "rasonque-pancreatic-cancer-approval",
+              "priority_score": 8,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-class-targeted-therapy-metastatic-pancreatic-cancer",
+                  "source_type": "web",
+                  "published_at": "2026-08-26T00:00:00Z"
+                },
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/08/28/biotech-news-astrazeneca-ionis-detail-surprise-failure-of-heart-disease-drug/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-28T13:39:04Z"
+                }
+              ],
+              "title": "FDA clears Rasonque as the first in-class targeted therapy for metastatic pancreatic cancer",
+              "summary": "The FDA approved Rasonque (daraxonrasib), a RAS inhibitor for adults with previously treated metastatic pancreatic adenocarcinoma. FDA and trial coverage describe the decision as a first-in-class targeted option for a disease with limited effective therapies, based on Phase 3 evidence showing a survival advantage over standard chemotherapy.",
+              "strategic_implication": "Oncology systems should plan for molecular testing, pathway updates, and financial-counseling needs as RAS-directed treatment enters a setting where rapid adoption could pressure infusion capacity and specialty-pharmacy workflows.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "pancreatic-cancer",
+                "ras-inhibitor",
+                "oncology"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "A Medicaid technology failure is becoming a high-dollar governance case. The dispute underscores that public-sector health IT contracts carry clinical-continuity, taxpayer, and False Claims Act exposure when implementation controls fail.",
+          "items": [
+            {
+              "item_id": "2026-08-31-maryland-optum-medicaid-system-lawsuit",
+              "canonical_topic": "maryland-optum-medicaid-system-lawsuit",
+              "duplicate_group": "maryland-optum-medicaid-system-lawsuit",
+              "priority_score": 8,
+              "primary_source": "CBS Baltimore / Maryland Attorney General",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/maryland-sues-optum-over-defective-computer-system",
+                  "source_type": "rss",
+                  "published_at": "2026-08-28T00:00:00Z"
+                },
+                {
+                  "source": "CBS Baltimore",
+                  "url": "https://www.cbsnews.com/baltimore/news/maryland-sues-unitedhealth-and-optum-defective-medicaid-computer-system/",
+                  "source_type": "web",
+                  "published_at": "2026-08-27T00:00:00Z"
+                }
+              ],
+              "title": "Maryland seeks about $380M from UnitedHealth and Optum over failed Medicaid behavioral-health system",
+              "summary": "Maryland sued UnitedHealth Group and Optum over a computer system intended to administer the state's Medicaid behavioral-health services program. The state alleges the system crashed on its first day, remained offline for months, and caused tens of millions of dollars in harm; the complaint seeks approximately $380 million, or up to three times the initial contract price.",
+              "strategic_implication": "Health systems and state agencies should strengthen go-live readiness, fallback operations, vendor accountability, and clinical-service continuity requirements in Medicaid technology contracts; vendors face heightened scrutiny when failures affect behavioral-health access.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "health-it",
+                "behavioral-health",
+                "vendor-risk"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "New CTE evidence is renewing attention on cumulative head impacts, post-mortem evidence limits, and prevention. The clinical and operational response will require balancing better surveillance and counseling with the uncertainty inherent in brain-donation samples.",
+          "items": [
+            {
+              "item_id": "2026-08-31-nfl-cte-prevalence-study",
+              "canonical_topic": "nfl-cte-prevalence-study",
+              "duplicate_group": "nfl-cte-prevalence-study",
+              "priority_score": 7,
+              "primary_source": "STAT / Boston University CTE Center",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/08/31/cte-nfl-boston-university-study-football-concussion-history/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-31T08:30:00Z"
+                },
+                {
+                  "source": "Boston University CTE Center",
+                  "url": "https://www.bumc.bu.edu/camed/news-events/articles/2026/146205/",
+                  "source_type": "web",
+                  "published_at": "2026-08-25T00:00:00Z"
+                }
+              ],
+              "title": "Study finds CTE in at least one in four former NFL players whose brains were examined",
+              "summary": "A Boston University-led study of former NFL players who died between 2016 and 2021 found evidence of chronic traumatic encephalopathy in at least 25% of the donated brains examined, with a worst-case estimate much higher. Researchers caution that brain-bank samples cannot necessarily be generalized to all football players, while severity was associated with clinical dementia criteria in a substantial share of cases.",
+              "strategic_implication": "Sports-medicine and primary-care teams should use the findings to reinforce longitudinal concussion histories, cognitive and behavioral screening, and shared decision-making while communicating clearly about what post-mortem prevalence estimates can and cannot establish for living patients.",
+              "confidence": "medium",
+              "tags": [
+                "cte",
+                "concussion",
+                "sports-medicine",
+                "brain-health"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-28",
       "generated_at": "2026-08-28T11:12:08Z",
       "headline": "Today's Healthcare Insights",
@@ -25261,5 +25692,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-28T11:12:08Z"
+  "last_updated": "2026-08-31T11:16:56Z"
 }

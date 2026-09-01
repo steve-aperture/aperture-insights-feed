@@ -3,6 +3,388 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-01",
+      "generated_at": "2026-09-01T11:13:23Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing centers on the next phase of U.S. drug-pricing and Medicaid policy, including nine additional most-favored-nation deals and evidence that work-hour reporting could put nearly one in five expansion adults at risk. Operating signals span AI safety reporting, a major distributor cyber incident, payer and telehealth leadership changes, Advocate Health's margin pressure, updated migraine guidance, and the capacity constraints facing nutrition policy.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "NIH/AAN/ECRI/BU official web",
+          "Official company and disclosure pages",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search",
+          "NIH official feedback release",
+          "AAN/AHS official guideline release",
+          "ECRI patient-safety release",
+          "Boston University study release",
+          "Advocate Health financial coverage",
+          "McKesson incident coverage and disclosure reporting"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "All three required RSS feeds returned via curl. Fresh Sep. 1 and Aug. 31 items were cross-checked with targeted web results and official or primary disclosures where available; yesterday's topics including MIMRYLO, Medicare lab fraud, Florida PBM litigation, Abbott Libre Duo, physician AI compensation, NCQA/Komodo, personalized mRNA, radiopharmaceutical dosing, Rasonque, Maryland/Optum, and CTE were not republished. Where full article pages were unavailable, RSS descriptions and search-result excerpts were used as permitted signal depth."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal drug-pricing and Medicaid coverage rules are moving from headline policy into operational design. The signals raise near-term questions about benefit administration, state implementation capacity, and how much savings or coverage change will materialize in practice.",
+          "items": [
+            {
+              "item_id": "2026-09-01-nih-grant-cap-feedback",
+              "canonical_topic": "nih-grant-cap-feedback",
+              "duplicate_group": "nih-grant-cap-feedback",
+              "priority_score": 7,
+              "primary_source": "NIH / STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/01/nih-grant-cap-proposal-researcher-feedback/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T08:30:00Z"
+                },
+                {
+                  "source": "NIH",
+                  "url": "https://grants.nih.gov/news-events/nih-extramural-nexus-news/2026/08/what-we-heard-from-you-regarding-the-proposed-cap-on-simultaneous-nih-research-project-grant-support-and-our-next-steps",
+                  "source_type": "web",
+                  "published_at": "2026-08-19T00:00:00Z"
+                }
+              ],
+              "title": "NIH says proposed grant cap drew mixed response, with 40% opposing",
+              "summary": "The NIH released anonymized feedback on its proposal to cap the number of simultaneous research project grants a principal investigator can hold. Of 3,307 responses, 40% opposed the idea, 32% expressed mixed views, and 27% supported it. The proposal is intended to spread funding across more investigators, but the agency said the comments raised concerns about design and unintended consequences.",
+              "strategic_implication": "Research universities should scenario-plan for grant portfolio limits, transition rules, and leadership changes in multi-PI programs. The feedback makes a one-size-fits-all cap politically and operationally harder to implement.",
+              "confidence": "high",
+              "tags": [
+                "nih",
+                "research-funding",
+                "grant-policy",
+                "workforce"
+              ]
+            },
+            {
+              "item_id": "2026-09-01-mfn-drug-pricing-deals",
+              "canonical_topic": "mfn-drug-pricing-deals",
+              "duplicate_group": "mfn-drug-pricing-deals",
+              "priority_score": 9,
+              "primary_source": "STAT / White House",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/08/31/trump-most-favored-nation-drug-pricing-new-round-price-cuts-announced/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-31T19:48:44Z"
+                },
+                {
+                  "source": "CNBC",
+                  "url": "https://www.cnbc.com/2026/08/31/trump-drug-pricing-deals.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-31T17:20:00Z"
+                },
+                {
+                  "source": "Axios",
+                  "url": "https://www.axios.com/2026/08/31/trump-new-drug-price-deals",
+                  "source_type": "web",
+                  "published_at": "2026-08-31T00:00:00Z"
+                }
+              ],
+              "title": "White House adds nine drugmakers to most-favored-nation pricing push",
+              "summary": "The White House announced agreements with Alcon, Astellas, BeOne Medicines, BridgeBio, CSL, Kyowa Kirin, Sun Pharma, Teva, and UCB. The companies pledged foreign-price-linked access for state Medicaid programs and lower launch prices for future medicines; several also committed active pharmaceutical ingredients or domestic manufacturing. The administration said the group would invest at least $19.6 billion in near-term U.S. manufacturing, while deal-level pricing details remain undisclosed.",
+              "strategic_implication": "State Medicaid agencies, plans, and manufacturers should prepare for more selective pricing and contracting workflows while separating announced commitments from realized savings. The lack of public deal terms keeps the near-term budget and access impact uncertain.",
+              "confidence": "high",
+              "tags": [
+                "drug-pricing",
+                "medicaid",
+                "pharma-policy",
+                "manufacturing"
+              ]
+            },
+            {
+              "item_id": "2026-09-01-medicaid-work-hour-risk",
+              "canonical_topic": "medicaid-work-hour-risk",
+              "duplicate_group": "medicaid-work-hour-risk",
+              "priority_score": 9,
+              "primary_source": "Boston University",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/regulatory/20-medicaid-eligible-adults-risk-losing-coverage-due-inconsistent-work-hours",
+                  "source_type": "rss",
+                  "published_at": "2026-08-31T20:27:00Z"
+                },
+                {
+                  "source": "Boston University School of Public Health",
+                  "url": "https://www.bu.edu/sph/news/articles/2026/nearly-1-in-5-medicaid-eligible-adults-in-expansion-states-are-at-risk-of-losing-health-coverage-due-to-insufficient-or-inconsistent-work-hours/",
+                  "source_type": "web",
+                  "published_at": "2026-08-28T00:00:00Z"
+                }
+              ],
+              "title": "Study: nearly 1 in 5 expansion adults could miss new Medicaid work-hour threshold",
+              "summary": "A Boston University study estimated that 19.8% of Medicaid-eligible adults in expansion states may be at risk of failing incoming work requirements because their hours are insufficient or inconsistent. The rules are scheduled to begin nationwide on Jan. 1, 2027, and generally require 80 hours per month of work, education, training, or community engagement, subject to exemptions. The study found higher risk among women and unmarried adults, among other differences.",
+              "strategic_implication": "States, Medicaid plans, and safety-net providers should begin testing notice, data-matching, exemption, and renewal workflows well before 2027. Coverage churn would also affect provider bad-debt forecasts and demand for enrollment assistance.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "coverage",
+                "state-policy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Healthcare AI is shifting from adoption rhetoric toward safety reporting, accountability, and operating leadership. Organizations are building channels to learn from errors while payer and virtual-care companies put technology and financial discipline in the same executive frame.",
+          "items": [
+            {
+              "item_id": "2026-09-01-ecri-ai-safety-reporting",
+              "canonical_topic": "ecri-ai-safety-reporting",
+              "duplicate_group": "ecri-ai-safety-reporting",
+              "priority_score": 8,
+              "primary_source": "ECRI",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "ECRI via PR Newswire",
+                  "url": "https://www.prnewswire.com/news-releases/ecri-expands-problem-reporting-network-and-calls-for-more-data-on-ai-errors-in-patient-care-302859649.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-25T00:00:00Z"
+                },
+                {
+                  "source": "ECRI",
+                  "url": "https://home.ecri.org/pages/report-a-device-or-clinical-ai-problem",
+                  "source_type": "web",
+                  "published_at": "2024-08-27T00:00:00Z"
+                }
+              ],
+              "title": "ECRI opens a dedicated channel for suspected AI errors in patient care",
+              "summary": "ECRI expanded its Problem Reporting Network to capture errors, malfunctions, and near misses involving AI tools and AI-enabled devices used in patient care. The nonprofit describes the channel as free and confidential and will triage reports with clinical and engineering experts. In a survey of 124 quality, safety, risk, and compliance leaders, nearly one-third reported encountering an AI output they believed was incorrect or misleading, while 9% said an error reached a patient or affected a care decision.",
+              "strategic_implication": "Health systems should treat AI incidents and near misses as a reportable safety category linked to governance, vendor escalation, and corrective action. A stronger evidence trail will become a prerequisite for scaling clinical AI beyond pilot programs.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "patient-safety",
+                "risk-management",
+                "governance"
+              ]
+            },
+            {
+              "item_id": "2026-09-01-centene-new-cio",
+              "canonical_topic": "centene-new-cio",
+              "duplicate_group": "centene-new-cio",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/centene-new-cio-bradley-bolivar-fannie-mae/829146/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-31T15:28:00Z"
+                }
+              ],
+              "title": "Centene names Fannie Mae executive as CIO as payer AI strategy accelerates",
+              "summary": "Centene appointed Bradley Bolivar, formerly an executive at Fannie Mae, as chief information officer. Healthcare Dive framed the change against a payer technology environment in which artificial intelligence is reshaping operating models. The appointment adds a new technology leader as Centene works through modernization, data, and automation priorities.",
+              "strategic_implication": "Payers will increasingly need CIOs who can connect AI experimentation to core claims, service, and clinical workflows while preserving security and regulatory controls. The strategic test is measurable operating improvement, not the number of pilots launched.",
+              "confidence": "medium",
+              "tags": [
+                "payer-technology",
+                "leadership",
+                "artificial-intelligence",
+                "health-insurance"
+              ]
+            },
+            {
+              "item_id": "2026-09-01-teladoc-new-cfo",
+              "canonical_topic": "teladoc-new-cfo",
+              "duplicate_group": "teladoc-new-cfo",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/teladoc-names-michael-grasher-cfo/829175/",
+                  "source_type": "rss",
+                  "published_at": "2026-08-31T14:37:17Z"
+                }
+              ],
+              "title": "Teladoc fills CFO vacancy with insurance veteran Michael Grasher",
+              "summary": "Teladoc appointed Michael Grasher as chief financial officer, effective immediately, according to Healthcare Dive. Grasher fills the finance leadership gap left after Mala Murthy departed in November. The move comes as virtual-care companies continue to balance growth investments with payer economics and durable utilization.",
+              "strategic_implication": "Teladoc’s finance leadership will be judged on unit economics, payer relationships, and conversion of digital utilization into sustainable revenue. The appointment is a reminder that digital-health strategy now requires operating and capital discipline alongside product velocity.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "leadership",
+                "telehealth",
+                "payer-strategy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Advocate Health shows the sector’s central financial tension: revenue and patient-service growth can coexist with a lower operating margin. Scale is helping topline performance, but cost and reimbursement discipline remain the differentiator.",
+          "items": [
+            {
+              "item_id": "2026-09-01-advocate-health-h1-financials",
+              "canonical_topic": "advocate-health-h1-financials",
+              "duplicate_group": "advocate-health-h1-financials",
+              "priority_score": 8,
+              "primary_source": "Advocate Health / Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/revenues-grow-margins-slow-advocate-health-h1-2026",
+                  "source_type": "rss",
+                  "published_at": "2026-08-31T16:36:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/advocate-health-posts-3-8-margin-in-h1/",
+                  "source_type": "web",
+                  "published_at": "2026-08-31T00:00:00Z"
+                }
+              ],
+              "title": "Advocate Health grows H1 revenue 8.6% while operating margin narrows",
+              "summary": "Advocate Health reported $20.5 billion of revenue in the first half of 2026, up 8.6% year over year, while patient-service revenue rose 10.2% to $17.4 billion. Operating income was $775.3 million, down from $824.4 million a year earlier, and the operating margin declined to 3.8% from 4.4%. The results show stronger volume and topline growth alongside softer operating conversion.",
+              "strategic_implication": "Health-system leaders should not assume that scale or patient volume will automatically protect margins. Labor cost, acuity, payer mix, and service-line productivity will remain the operating levers that determine whether growth translates into reinvestment capacity.",
+              "confidence": "high",
+              "tags": [
+                "hospital-finance",
+                "provider-operations",
+                "margin-pressure",
+                "patient-volume"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Cyber risk is now an operating-continuity issue for healthcare distribution, not only an information-security concern. The McKesson incident underscores how third-party cloud access can affect data exposure and service reliability at the same time.",
+          "items": [
+            {
+              "item_id": "2026-09-01-mckesson-cyber-incident",
+              "canonical_topic": "mckesson-cyber-incident",
+              "duplicate_group": "mckesson-cyber-incident",
+              "priority_score": 9,
+              "primary_source": "McKesson / TechCrunch",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/health-tech/mckesson-confirms-cybersecurity-incident-hackers-claim-millions-patient-records-stolen",
+                  "source_type": "rss",
+                  "published_at": "2026-08-31T21:08:00Z"
+                },
+                {
+                  "source": "TechCrunch",
+                  "url": "https://techcrunch.com/2026/08/31/hackers-claim-millions-of-patient-records-stolen-during-data-breach-at-healthcare-giant-mckesson/",
+                  "source_type": "web",
+                  "published_at": "2026-08-31T00:00:00Z"
+                },
+                {
+                  "source": "McKesson 8-K reporting",
+                  "url": "https://www.stocktitan.net/sec-filings/MCK/8-k-mckesson-corp-reports-material-event-fcb03c61b0cf.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-28T00:00:00Z"
+                }
+              ],
+              "title": "McKesson investigates cyber incident as hackers claim millions of patient records",
+              "summary": "McKesson said it was investigating unauthorized access to third-party applications and data exfiltration, with the company warning of intermittent service degradation. Reporting tied the affected information to its oncology and multispecialty and medical-surgical businesses. An extortion group claimed millions of records were taken, but the number of affected people and the full scope of the data remain unconfirmed while the investigation continues.",
+              "strategic_implication": "Distributors, providers, and their technology partners should stress-test identity controls, cloud access, notification plans, and manual continuity procedures. Executive response should separate verified facts from attacker claims while planning for both privacy obligations and supply-chain disruption.",
+              "confidence": "medium",
+              "tags": [
+                "cybersecurity",
+                "health-data",
+                "third-party-risk",
+                "supply-chain"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical practice is gaining more evidence-based options, but workforce capacity determines whether new guidance and nutrition priorities translate into access. Today’s signals favor practical pathway design: clear thresholds, specialty capacity, and repeatable follow-up.",
+          "items": [
+            {
+              "item_id": "2026-09-01-migraine-prevention-guideline",
+              "canonical_topic": "migraine-prevention-guideline",
+              "duplicate_group": "migraine-prevention-guideline",
+              "priority_score": 7,
+              "primary_source": "AAN / AHS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "AAN/AHS",
+                  "url": "https://www.aan.com/PressRoom/Home/PressRelease/5361",
+                  "source_type": "web",
+                  "published_at": "2026-08-31T00:00:00Z"
+                },
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/08/31/migraine-prevention-medication-guidelines/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-08-31T20:00:00Z"
+                }
+              ],
+              "title": "AAN and AHS update migraine prevention guidance for broader treatment choice",
+              "summary": "The American Academy of Neurology and American Headache Society issued a joint update to their 2012 migraine-prevention guideline. The guidance recommends offering preventive treatment to adults with at least four migraine or moderate-to-severe headache days per month, or when migraine interferes with work or daily tasks. It highlights newer CGRP-targeting medicines alongside established options and calls for effectiveness assessment after the recommended trial period, including roughly 8 to 12 weeks for many treatments.",
+              "strategic_implication": "Health systems and payers should align referral pathways, prior-authorization criteria, and follow-up measures with the expanded treatment landscape. Consistent thresholds can reduce avoidable disability while supporting more deliberate medication selection and monitoring.",
+              "confidence": "high",
+              "tags": [
+                "migraine",
+                "clinical-guidelines",
+                "neurology",
+                "specialty-care"
+              ]
+            },
+            {
+              "item_id": "2026-09-01-dietitian-workforce-capacity",
+              "canonical_topic": "dietitian-workforce-capacity",
+              "duplicate_group": "dietitian-workforce-capacity",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/01/maha-nutrition-makeover-hampered-by-dietitian-workforce-crisis/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T08:30:00Z"
+                }
+              ],
+              "title": "Dietitian shortages could constrain a national nutrition agenda",
+              "summary": "STAT reported that the Make America Healthy Again nutrition agenda may be constrained by a shrinking and underpaid registered-dietitian workforce. The issue is operational as well as policy-oriented: nutrition counseling, population outreach, and clinical integration depend on enough trained professionals. The report highlights workforce capacity as a limiting factor for translating broad nutrition priorities into care delivery.",
+              "strategic_implication": "Health systems, employers, and public programs should quantify dietitian capacity before expanding nutrition benefits or counseling mandates. Flexible staffing models and clear role design will matter if nutrition becomes a larger part of prevention strategy.",
+              "confidence": "medium",
+              "tags": [
+                "nutrition",
+                "dietitians",
+                "workforce",
+                "prevention"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-08-31",
       "generated_at": "2026-08-31T11:16:56Z",
       "headline": "Today's Healthcare Insights",
@@ -25692,5 +26074,5 @@
       ]
     }
   ],
-  "last_updated": "2026-08-31T11:16:56Z"
+  "last_updated": "2026-09-01T11:13:23Z"
 }

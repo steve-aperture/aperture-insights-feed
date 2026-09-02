@@ -3,6 +3,328 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-02",
+      "generated_at": "2026-09-02T11:05:01Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks the operational consequences of payer and hospital policy changes, including prior-authorization reductions, proposed 340B and site-neutral payment rules, and new Medicaid evidence on patients paying cash. It also highlights healthcare AI moving closer to clinical data and patient workflows, alongside public-health funding, system consolidation, and professional governance signals.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Official company and disclosure pages",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "Targeted web search unavailable in this run",
+          "Supplementary Gmail newsletters not used",
+          "CMS/HHS/FDA web not separately consulted"
+        ],
+        "run_notes": "All three required RSS feeds returned current Sep. 1-2 headlines and descriptions via curl. The direct search_web interface was unavailable in this scheduled run, so the edition uses RSS signal depth only; full article pages were not required. Yesterday's edition topics were not republished, except that related Medicaid and AI themes are represented by distinct new developments."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Payment policy is shifting from broad debate toward concrete implementation choices for hospitals and insurers. The near-term management challenge is translating rule changes into authorization workflows, reimbursement models, and compliance plans.",
+          "items": [
+            {
+              "item_id": "2026-09-02-cms-340b-site-neutral-comments",
+              "canonical_topic": "cms-340b-site-neutral-comments",
+              "duplicate_group": "cms-340b-site-neutral-comments",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/hospital-groups-rail-against-cms-proposed-340b-changes-site-neutral-payments",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T18:08:00Z"
+                }
+              ],
+              "title": "Hospital groups threaten litigation over CMS' proposed 340B and site-neutral changes",
+              "summary": "Major hospital groups pushed back on CMS' proposed changes to 340B and site-neutral payments in comments on the latest OPPS proposed rule. The response included warnings that the groups could pursue a court challenge over the planned policy changes.",
+              "strategic_implication": "Hospitals should model the exposure of outpatient departments and 340B-dependent service lines before the rule is finalized. Legal risk and implementation timing could be as material as the payment-rate mechanics.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "340b",
+                "site-neutral-payments",
+                "hospital-finance"
+              ]
+            },
+            {
+              "item_id": "2026-09-02-uhc-prior-auth-reduction",
+              "canonical_topic": "uhc-prior-auth-reduction",
+              "duplicate_group": "uhc-prior-auth-reduction",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/unitedhealthcare-nix-prior-auth-1700-services-oct-1",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T17:09:00Z"
+                }
+              ],
+              "title": "UnitedHealthcare will remove prior authorization from 1,700 services on Oct. 1",
+              "summary": "UnitedHealthcare said it will eliminate prior authorization requirements for 1,700 services beginning Oct. 1. The move is part of the insurer's previously stated goal of removing 30% of prior authorization requirements by the end of 2026.",
+              "strategic_implication": "Providers should identify which services and contracts are affected and reset scheduling, documentation, and denial-management workflows. Payers will need to show that reduced friction does not shift utilization or medical-cost risk unexpectedly.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealthcare",
+                "prior-authorization",
+                "payer-operations",
+                "utilization-management"
+              ]
+            },
+            {
+              "item_id": "2026-09-02-hhs-substance-use-grants",
+              "canonical_topic": "hhs-substance-use-grants",
+              "duplicate_group": "hhs-substance-use-grants",
+              "priority_score": 6,
+              "primary_source": "HHS / Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/regulatory/hhs-announces-77m-grants-substance-use-prevention-treatment",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T16:21:00Z"
+                }
+              ],
+              "title": "HHS announces $77 million in grants for substance-use prevention and treatment",
+              "summary": "HHS announced $77 million in grants supporting substance-use prevention, treatment, recovery, and suicide prevention projects. The awards add federal funding to programs that often rely on fragmented state, local, and community delivery capacity.",
+              "strategic_implication": "Behavioral-health organizations should watch for award notices and partnership opportunities while mapping grant-funded work to measurable access and recovery outcomes. The funding is meaningful but will not remove the broader capacity and workforce constraints in addiction care.",
+              "confidence": "medium",
+              "tags": [
+                "hhs",
+                "substance-use",
+                "behavioral-health",
+                "grant-funding"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Healthcare AI is moving beyond standalone pilots into EHR-connected and patient-facing workflows. That expansion increases the value of integration, but also raises the bar for governance, data permissions, and human review.",
+          "items": [
+            {
+              "item_id": "2026-09-02-chatgpt-epic-public-health",
+              "canonical_topic": "chatgpt-epic-public-health",
+              "duplicate_group": "chatgpt-epic-public-health",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/chatgpt-healthcare-unveils-new-integrations-epic-ehr-public-health-data",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T21:19:00Z"
+                }
+              ],
+              "title": "ChatGPT for Healthcare adds Epic and public-health data integrations",
+              "summary": "OpenAI announced new ChatGPT for Healthcare integrations that connect more directly with Epic and public-health data sources. The expansion is positioned as a way to bring the assistant closer to clinical workflows and population-health information.",
+              "strategic_implication": "Health systems should evaluate integration architecture, access controls, auditability, and clinical accountability before scaling similar tools. The competitive question is shifting from whether to experiment with generative AI to which governed workflows can safely absorb it.",
+              "confidence": "medium",
+              "tags": [
+                "generative-ai",
+                "epic",
+                "clinical-workflows",
+                "public-health-data"
+              ]
+            },
+            {
+              "item_id": "2026-09-02-nourish-ai-patient-assistant",
+              "canonical_topic": "nourish-ai-patient-assistant",
+              "duplicate_group": "nourish-ai-patient-assistant",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/digital-health/nourish-embeds-generative-ai-assistant-patient-app-247-support",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T15:04:00Z"
+                }
+              ],
+              "title": "Nourish rolls out a generative-AI assistant for between-visit patient support",
+              "summary": "Nourish is broadly rolling out its Health Assistant after a beta period inside the patient app. The tool provides personalized guidance between visits, including meal planning, lab insights, and appointment-preparation support.",
+              "strategic_implication": "Patient-facing AI will be judged on escalation design, clinical boundaries, and whether it improves adherence rather than simply increasing engagement. Organizations adding similar capabilities should define which questions require a licensed professional and how handoffs are measured.",
+              "confidence": "medium",
+              "tags": [
+                "patient-engagement",
+                "generative-ai",
+                "digital-health",
+                "nutrition-care"
+              ]
+            },
+            {
+              "item_id": "2026-09-02-stryker-vision-pro-surgical-cockpit",
+              "canonical_topic": "stryker-vision-pro-surgical-cockpit",
+              "duplicate_group": "stryker-vision-pro-surgical-cockpit",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/01/fda-stryker-surgical-cockpit-apple-vr-headset-health-tech/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T13:10:20Z"
+                }
+              ],
+              "title": "FDA clears Stryker surgical cockpit built around Apple Vision Pro",
+              "summary": "STAT reported that the FDA cleared Stryker's surgical-cockpit product using Apple's Vision Pro headset. The announcement is an example of consumer-grade spatial-computing hardware moving into a regulated surgical use case.",
+              "strategic_implication": "Operating leaders should treat spatial-computing adoption as a workflow, training, and ergonomics decision—not only a device purchase. Evidence of usability, integration with existing imaging, and staff acceptance will determine whether these systems scale.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "surgical-technology",
+                "spatial-computing",
+                "medical-devices"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Industry activity is combining strategic consolidation with capital and technology bets. The strongest signal is that organizations are pairing growth moves with explicit commitments to integration, investment, and operating resilience.",
+          "items": [
+            {
+              "item_id": "2026-09-02-sanford-north-memorial-closes",
+              "canonical_topic": "sanford-north-memorial-closes",
+              "duplicate_group": "sanford-north-memorial-closes",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/sanford-north-memorial-closes-systems-ink-oversight-agreement/829287/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T14:09:20Z"
+                }
+              ],
+              "title": "Sanford-North Memorial deal closes with 10 years of oversight and $600 million in investment",
+              "summary": "Sanford Health and North Memorial Health completed their combination after agreeing to 10 years of state oversight. Sanford also committed $600 million in investments as it expands into the Twin Cities market.",
+              "strategic_implication": "The transaction shows how nonprofit consolidation is increasingly evaluated through a public-benefit and accountability lens, not just scale. Health systems pursuing market entry should expect detailed commitments on capital, access, governance, and community outcomes.",
+              "confidence": "high",
+              "tags": [
+                "health-system-consolidation",
+                "nonprofit-healthcare",
+                "capital-investment",
+                "market-expansion"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Coverage churn is showing up at the point of care, where patients and providers absorb the financial consequences of eligibility changes. Revenue-cycle and access teams will need tighter monitoring as payer policy and patient payment behavior continue to move together.",
+          "items": [
+            {
+              "item_id": "2026-09-02-epic-medicaid-cash-payments",
+              "canonical_topic": "epic-medicaid-cash-payments",
+              "duplicate_group": "epic-medicaid-cash-payments",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive / Epic Research",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/medicaid-losses-leave-patients-paying-cash-epic-research-redeterminations/829258/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T13:08:20Z"
+                }
+              ],
+              "title": "Epic analysis finds Medicaid losses are leaving more patients paying cash",
+              "summary": "Epic Research analyzed more than 550 million healthcare encounters and found that patients losing Medicaid coverage are more likely to pay cash for care. The finding illustrates how coverage restrictions can shift payment responsibility directly onto low-income patients at the point of service.",
+              "strategic_implication": "Providers should monitor self-pay volume, bad debt, charity-care demand, and delayed care alongside Medicaid eligibility changes. A coverage policy change can become a revenue-cycle and access problem even when clinical capacity is unchanged.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "coverage-churn",
+                "revenue-cycle",
+                "self-pay"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical practice is being reshaped by digital environments and institutional trust as much as by new therapies. Professional organizations will need clearer guidance for clinicians navigating algorithmic influence, public controversy, and patient communication.",
+          "items": [
+            {
+              "item_id": "2026-09-02-dsm-algorithm-eating-disorders",
+              "canonical_topic": "dsm-algorithm-eating-disorders",
+              "duplicate_group": "dsm-algorithm-eating-disorders",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/02/dsm-6-eating-disorders-algorithms-social-media-influence-screening/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T08:30:00Z"
+                }
+              ],
+              "title": "Experts urge the next DSM to address algorithms' role in eating disorders",
+              "summary": "Experts writing in STAT argued that the next edition of the DSM should address the digital environments surrounding eating-disorder patients. The recommendation reflects concern that algorithms and social-media exposure can influence symptoms, risk, and clinical context.",
+              "strategic_implication": "Clinicians and health systems may need screening and documentation practices that capture digitally mediated risk factors, not only individual behaviors. Training and clinical guidelines will have to keep pace with rapidly changing online environments.",
+              "confidence": "medium",
+              "tags": [
+                "eating-disorders",
+                "clinical-guidelines",
+                "social-media",
+                "behavioral-health"
+              ]
+            },
+            {
+              "item_id": "2026-09-02-ada-independent-review",
+              "canonical_topic": "ada-independent-review",
+              "duplicate_group": "ada-independent-review",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/01/ada-members-review-june-expulsion-denies-censoring-opinions-calling-new-orleans-police/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-01T23:06:00Z"
+                }
+              ],
+              "title": "ADA independent review disputes censorship claims but leaves conference controversy unresolved",
+              "summary": "STAT reported that a five-person committee reviewing member expulsions at the American Diabetes Association's June conference denied claims that the group censored opinions and called police. The findings are being sent to the ADA board, but the review may not end the controversy.",
+              "strategic_implication": "Professional associations should treat meeting governance and member communications as clinical-trust issues, not merely reputational events. Clear due-process standards and transparent communication are essential when disputes affect frontline clinicians and patient communities.",
+              "confidence": "medium",
+              "tags": [
+                "professional-associations",
+                "clinical-governance",
+                "diabetes",
+                "organizational-trust"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-01",
       "generated_at": "2026-09-01T11:13:23Z",
       "headline": "Today's Healthcare Insights",
@@ -26074,5 +26396,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-01T11:13:23Z"
+  "last_updated": "2026-09-02T11:05:01Z"
 }

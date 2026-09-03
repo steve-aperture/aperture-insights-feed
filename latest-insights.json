@@ -3,6 +3,329 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-03",
+      "generated_at": "2026-09-03T11:10:16Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing focuses on tighter oversight of Medicare spending, the next phase of healthcare cybersecurity exposure, and new payer, provider, and employer cost signals. It also tracks FDA experimentation with generative-AI medical devices, investment in imaging and oncology navigation, and clinician-led guidance where federal direction is lagging.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Official company and disclosure pages",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "Direct search_web interface unavailable in this scheduled run",
+          "Supplementary Gmail newsletters not used",
+          "CMS/HHS/FDA web not separately consulted",
+          "Official company and disclosure pages not separately consulted"
+        ],
+        "run_notes": "All three required RSS feeds returned current Sep. 2-3 headlines and descriptions via curl. The scheduled environment did not expose the direct search_web command, so the edition uses RSS signal depth only; full article pages were not required. Yesterday's edition topics were screened out and today's items use distinct developments."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Oversight and access policy are producing operational consequences for public programs and public health. Leaders should watch both the integrity of government payment controls and the evidence behind interventions that affect utilization and outcomes.",
+          "items": [
+            {
+              "item_id": "2026-09-03-medicare-ineligible-drugs-audit",
+              "canonical_topic": "medicare-ineligible-drugs-audit",
+              "duplicate_group": "medicare-ineligible-drugs-audit",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/medicare-spending-ineligible-otc-drugs-hhs-oig-audit/829454/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T16:30:35Z"
+                }
+              ],
+              "title": "HHS OIG audit finds Medicare spent hundreds of millions on ineligible drugs",
+              "summary": "An HHS Office of Inspector General audit found that Medicare spent hundreds of millions of dollars on drugs that were not eligible under the program rules. The audit attributed the problem to weak CMS oversight, and CMS concurred with the recommendation to improve controls.",
+              "strategic_implication": "Health plans, pharmacies, and providers should expect renewed scrutiny of eligibility, coding, and payment edits in government programs. For CMS, the episode reinforces that benefit expansion or flexibility without reliable controls can create material recoveries and trust risk.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "cms",
+                "program-integrity",
+                "drug-spending"
+              ]
+            },
+            {
+              "item_id": "2026-09-03-overdose-deaths-decline-harm-reduction",
+              "canonical_topic": "overdose-deaths-decline-harm-reduction",
+              "duplicate_group": "overdose-deaths-decline-harm-reduction",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/03/drug-overdose-deaths-down-sharply-commonwealth-fund-study/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-03T04:01:00Z"
+                }
+              ],
+              "title": "New report points to naloxone and harm reduction as overdose deaths decline",
+              "summary": "A new report highlighted by STAT says drug-overdose deaths are declining sharply. The analysis points to naloxone and harm-reduction measures as possible contributors, while the underlying drivers of the improvement remain important for policymakers and care organizations to understand.",
+              "strategic_implication": "Public-health leaders should protect the interventions associated with the decline and measure whether gains are reaching communities with the highest burden. Providers can use the signal to strengthen overdose-prevention pathways rather than treating the improvement as a reason to reduce capacity.",
+              "confidence": "medium",
+              "tags": [
+                "overdose-prevention",
+                "naloxone",
+                "harm-reduction",
+                "public-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "The market is moving from AI experimentation toward regulated, connected infrastructure. The differentiators will be evidence, authorization pathways, interoperability, and controls for deploying tools inside clinical workflows.",
+          "items": [
+            {
+              "item_id": "2026-09-03-fda-tempo-ai-medical-devices",
+              "canonical_topic": "fda-tempo-ai-medical-devices",
+              "duplicate_group": "fda-tempo-ai-medical-devices",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-03T08:30:00Z"
+                }
+              ],
+              "title": "FDA TEMPO pilot creates a preauthorization path for select generative-AI devices",
+              "summary": "The FDA accepted four devices, including products from Cadence and Limbic, into its TEMPO pilot for generative-AI medical devices. The pilot is designed to let participating digital-health companies release products before traditional marketing authorization, subject to the program framework.",
+              "strategic_implication": "Device companies should assess whether pilot participation changes evidence, monitoring, and post-market operating requirements—not just time to launch. Health systems will need procurement and governance processes that distinguish pilot access from full regulatory clearance.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "generative-ai",
+                "medical-devices",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-09-03-scan-com-imaging-network",
+              "canonical_topic": "scan-com-imaging-network",
+              "duplicate_group": "scan-com-imaging-network",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/finance/scancom-raises-220m-build-largest-medical-imaging-network-us",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T17:17:00Z"
+                }
+              ],
+              "title": "Scan.com raises $220 million to scale imaging network and agentic-AI infrastructure",
+              "summary": "Scan.com raised $220 million to expand its U.S. network of imaging providers. The company said it will also invest in its API and agentic-AI infrastructure as it builds a broader imaging platform.",
+              "strategic_implication": "Imaging leaders should track whether network scale and workflow APIs improve access, turnaround times, and utilization of scarce equipment. Capital is flowing toward platforms that can combine clinical capacity with software orchestration, increasing competitive pressure on fragmented provider networks.",
+              "confidence": "medium",
+              "tags": [
+                "medical-imaging",
+                "healthcare-investment",
+                "agentic-ai",
+                "interoperability"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital and leadership moves show continued investment in care navigation, insurer operations, and employer-sponsored coverage. The common thread is pressure to produce measurable value while healthcare costs continue to rise.",
+          "items": [
+            {
+              "item_id": "2026-09-03-thyme-care-series-e",
+              "canonical_topic": "thyme-care-series-e",
+              "duplicate_group": "thyme-care-series-e",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/health-tech/oncology-company-thyme-care-raises-125m-backed-morgan-health-humana-and-cvs-health",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T15:46:00Z"
+                }
+              ],
+              "title": "Thyme Care raises more than $125 million to expand beyond cancer navigation",
+              "summary": "Thyme Care raised more than $125 million in a Series E round backed by Morgan Health, Humana, and CVS Health Ventures. The oncology-navigation company plans to use the financing to expand beyond cancer care navigation.",
+              "strategic_implication": "Payer and employer investors are signaling continued demand for condition-specific navigation that can demonstrate clinical and financial outcomes. Expansion beyond oncology will test whether the model transfers to other complex populations without diluting its operational focus.",
+              "confidence": "medium",
+              "tags": [
+                "oncology",
+                "care-navigation",
+                "healthcare-investment",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-09-03-employer-health-benefit-costs-2027",
+              "canonical_topic": "employer-health-benefit-costs-2027",
+              "duplicate_group": "employer-health-benefit-costs-2027",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/employers-health-benefits-costs-could-rise-82-2027-marsh-survey",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T15:33:00Z"
+                }
+              ],
+              "title": "Marsh survey projects employer health-benefit costs could rise 8.2% in 2027",
+              "summary": "A Marsh survey projected an 8.2% increase in employer health-benefit costs in 2027. Analysts said the increase would be the highest since 2003 and the fifth consecutive year of rising costs.",
+              "strategic_implication": "Employers and health plans should treat benefit affordability as a strategic workforce issue, not a renewal-cycle negotiation alone. Provider organizations should expect continued demand for lower-cost sites of care, navigation, and evidence that new therapies improve total cost of care.",
+              "confidence": "medium",
+              "tags": [
+                "employer-benefits",
+                "healthcare-costs",
+                "health-plans",
+                "workforce-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-09-03-johns-hopkins-health-plans-interim-ceo",
+              "canonical_topic": "johns-hopkins-health-plans-interim-ceo",
+              "duplicate_group": "johns-hopkins-health-plans-interim-ceo",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/johns-hopkins-health-plans-taps-interim-ceo-searches-successor-daniel-chojnowski/829414/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T13:59:03Z"
+                }
+              ],
+              "title": "Johns Hopkins Health Plans names interim CEO while it searches for a successor",
+              "summary": "Johns Hopkins Health Plans named CFO Daniel Chojnowski as interim CEO while it searches for a permanent successor. The insurer said the appointment is intended to provide stability during the leadership transition.",
+              "strategic_implication": "Leadership continuity matters especially for plans managing regulatory, network, and affordability pressures at the same time. Boards should use the transition to clarify the operating mandate and succession criteria before the next phase of growth or restructuring.",
+              "confidence": "high",
+              "tags": [
+                "health-insurance",
+                "executive-leadership",
+                "succession",
+                "payer-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Cyber incidents are continuing to create direct financial and operational exposure for care organizations and their partners. The relevant response is broader than incident response: vendor controls, customer communications, claims continuity, and litigation readiness all matter.",
+          "items": [
+            {
+              "item_id": "2026-09-03-mckesson-third-party-cyberattack",
+              "canonical_topic": "mckesson-third-party-cyberattack",
+              "duplicate_group": "mckesson-third-party-cyberattack",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/mckesson-confirms-data-theft-cyberattack-involving-third-party-apps/829435/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T14:51:16Z"
+                }
+              ],
+              "title": "McKesson confirms data theft in cyberattack involving third-party applications",
+              "summary": "McKesson confirmed that a cyberattack involving third-party applications led to data theft. The company said the incident affected a subset of customers in its oncology and medical-surgical businesses.",
+              "strategic_implication": "Hospitals, oncology practices, and distributors should recheck third-party access, data-minimization, and business-continuity controls across supply-chain workflows. The incident also reinforces that partner risk can interrupt clinical operations even when a provider’s core environment is not directly breached.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "third-party-risk",
+                "healthcare-supply-chain",
+                "oncology"
+              ]
+            },
+            {
+              "item_id": "2026-09-03-davita-data-breach-settlement",
+              "canonical_topic": "davita-data-breach-settlement",
+              "duplicate_group": "davita-data-breach-settlement",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/davita-agrees-to-pay-15m-to-settle-claims-from-data-breach/829445/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T15:23:13Z"
+                }
+              ],
+              "title": "DaVita agrees to $15 million settlement over data-breach claims affecting 2.7 million people",
+              "summary": "DaVita agreed to pay $15 million to settle claims from a proposed class-action lawsuit tied to a data breach last year. Healthcare Dive reported that the incident affected 2.7 million people.",
+              "strategic_implication": "The settlement puts a concrete price on downstream exposure from patient-data incidents, including litigation and trust costs beyond technical remediation. Provider boards should link cyber investment to measurable controls, disclosure readiness, and patient support plans.",
+              "confidence": "high",
+              "tags": [
+                "data-breach",
+                "cybersecurity",
+                "dialysis",
+                "patient-privacy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical organizations are filling guidance gaps and rebuilding trust in a noisy information environment. The operating priority is consistent, evidence-based communication that helps clinicians and patients act before seasonal demand peaks.",
+          "items": [
+            {
+              "item_id": "2026-09-03-vaccine-recommendations-2026-27",
+              "canonical_topic": "vaccine-recommendations-2026-27",
+              "duplicate_group": "vaccine-recommendations-2026-27",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/leading-medical-groups-release-flu-covid-vaccine-recommendations-cdc-guidance-lags",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T15:11:00Z"
+                }
+              ],
+              "title": "Medical groups issue 2026-27 flu and COVID vaccine guidance as CDC recommendations lag",
+              "summary": "Several major medical organizations released recommendations for flu and COVID vaccination ahead of the 2026-27 respiratory-virus season. The groups acted to fill an immunization-guidance gap left by the federal government, according to Fierce Healthcare.",
+              "strategic_implication": "Health systems should align clinician messaging, patient outreach, supply planning, and standing orders before respiratory illness demand rises. Where federal guidance is unsettled, organizations will need a documented clinical-governance process for updating recommendations consistently.",
+              "confidence": "medium",
+              "tags": [
+                "vaccination",
+                "flu",
+                "covid-19",
+                "clinical-guidance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-02",
       "generated_at": "2026-09-02T11:05:01Z",
       "headline": "Today's Healthcare Insights",
@@ -26396,5 +26719,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-02T11:05:01Z"
+  "last_updated": "2026-09-03T11:10:16Z"
 }

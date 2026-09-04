@@ -3,6 +3,385 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-04",
+      "generated_at": "2026-09-04T11:12:57Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing tracks the operational consequences of data and payment oversight, the next governance challenge for clinical AI, and a stricter antitrust environment for providers. It also highlights care-coordination gaps in postpartum mental health, new specialty-drug access, transplant innovation, and workforce safety guidance, using current STAT, Healthcare Dive, and Fierce Healthcare reporting plus FDA, FTC, CDC, CBO, and ANA context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Official company and disclosure pages",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "FDA/FTC/CDC/CBO/ANA official web context",
+          "Targeted web search fallback via Perplexity index"
+        ],
+        "sources_failed": [
+          "Direct search_web interface unavailable in this scheduled run",
+          "Supplementary Gmail newsletters not used",
+          "CMS/HHS web not separately consulted beyond CDC/CBO context",
+          "Official company and disclosure pages not separately consulted"
+        ],
+        "run_notes": "All three required RSS feeds returned current Sep. 3-4 headlines and descriptions via curl. The scheduled environment did not expose the direct search_web command; targeted web context was obtained through the available Perplexity search fallback. Yesterday’s edition topics were screened out where possible; repeated RSS items were used only when they represented distinct operational developments not present in the prior edition."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Public programs and payment rules are under pressure to preserve data integrity, contain arbitration-driven costs, and support evidence-based access. Leaders should expect continued oversight of the operational mechanics behind coverage and payment decisions.",
+          "items": [
+            {
+              "item_id": "2026-09-04-cdc-data-standards",
+              "canonical_topic": "cdc-infectious-disease-data-standards",
+              "duplicate_group": "cdc-infectious-disease-data-standards",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/04/pennsylvania-measles-deaths-data-cdc-director-rfk-jr/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-04T08:30:00Z"
+                },
+                {
+                  "source": "CDC NNDSS",
+                  "url": "https://www.cdc.gov/nndss/infectious-disease/notice-to-data-users.html",
+                  "source_type": "web",
+                  "published_at": "2026-05-12T00:00:00Z"
+                }
+              ],
+              "title": "Consistent infectious-disease definitions are becoming a strategic public-health asset",
+              "summary": "STAT argues that standard case definitions and reporting processes are essential for comparable infectious-disease data across states. CDC guidance for 2026 also documents changes to nationally notifiable conditions and reinforces the role of consistent classification in weekly surveillance.",
+              "strategic_implication": "Health systems and public-health leaders should treat data provenance and case-definition governance as operational infrastructure, not communications detail. Any politicization or inconsistency in reporting can impair outbreak response, resource allocation, and trust in clinical guidance.",
+              "confidence": "high",
+              "tags": [
+                "public-health",
+                "cdc",
+                "disease-surveillance",
+                "data-governance"
+              ]
+            },
+            {
+              "item_id": "2026-09-04-no-surprises-idr",
+              "canonical_topic": "no-surprises-idr-arbitration-oversight",
+              "duplicate_group": "no-surprises-idr-arbitration-oversight",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/rep-pallone-probing-no-surprises-act-arbiters-amid-concern-about-idr-costs-volume",
+                  "source_type": "rss",
+                  "published_at": "2026-09-03T19:24:00Z"
+                },
+                {
+                  "source": "Congressional Budget Office",
+                  "url": "https://www.cbo.gov/publication/62491",
+                  "source_type": "web",
+                  "published_at": "2026-06-15T00:00:00Z"
+                }
+              ],
+              "title": "Congressional scrutiny rises as No Surprises arbitration volume strains the payment system",
+              "summary": "Fierce Healthcare reports that Rep. Frank Pallone is examining the behavior of No Surprises Act independent dispute resolution entities amid concerns about cost and case volume. CBO notes that the IDR process has received far more disputes than initially projected and that awards can materially exceed ordinary service prices.",
+              "strategic_implication": "Payers, provider groups, and revenue-cycle operators should plan for continued rulemaking and documentation scrutiny around IDR eligibility, arbitrator incentives, and payment methodology. High-volume arbitration is becoming a cost-of-care issue rather than a narrow billing back-office matter.",
+              "confidence": "medium",
+              "tags": [
+                "no-surprises-act",
+                "arbitration",
+                "payer-provider",
+                "healthcare-costs"
+              ]
+            },
+            {
+              "item_id": "2026-09-04-zanvastro-alexander-disease",
+              "canonical_topic": "zanvastro-alexander-disease-approval",
+              "duplicate_group": "zanvastro-alexander-disease-approval",
+              "priority_score": 8,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-treat-alexander-disease",
+                  "source_type": "web",
+                  "published_at": "2026-09-03T00:00:00Z"
+                },
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/03/ionis-fda-approval-zanvastro-alexander-disease/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-03T20:45:56Z"
+                }
+              ],
+              "title": "FDA approves first disease-modifying treatment for Alexander disease",
+              "summary": "The FDA approved Ionis Pharmaceuticals’ Zanvastro (zilganersen) for pediatric and adult patients with Alexander disease. FDA describes it as the first approved therapy to directly target the abnormal GFAP protein; the treatment is administered by intrathecal injection every three months.",
+              "strategic_implication": "The approval demonstrates how biomarker- and mechanism-directed therapies can create new treatment pathways in ultra-rare disease while adding delivery and monitoring demands for specialty providers. Payers and health systems should prepare for evidence, access, and care-coordination questions that accompany high-complexity orphan therapies.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "rare-disease",
+                "drug-approval",
+                "precision-medicine"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Healthcare AI is moving into higher-stakes documentation and specialty decision support. Adoption value will depend on provenance, human review, workflow integration, and clear accountability for errors.",
+          "items": [
+            {
+              "item_id": "2026-09-04-ai-scribes-malpractice-risk",
+              "canonical_topic": "ai-scribes-malpractice-risk",
+              "duplicate_group": "ai-scribes-malpractice-risk",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/why-ai-scribes-malpractice-risk/829541/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-03T13:15:37Z"
+                },
+                {
+                  "source": "Healthwatch England context",
+                  "url": "https://www.theguardian.com/society/2026/aug/31/doctors-ai-scribes-get-names-of-drugs-and-diagnoses-wrong-nhs-watchdog-warns",
+                  "source_type": "web",
+                  "published_at": "2026-08-31T00:00:00Z"
+                }
+              ],
+              "title": "AI scribes shift from productivity experiment to malpractice and patient-safety exposure",
+              "summary": "Healthcare Dive reports that experts see malpractice risk as AI scribes move from pilots into routine clinical use. Potential failures include omitted information, incorrect terminology, fabricated details, and errors that are difficult for clinicians to detect before notes enter the medical record; clinicians remain accountable for the resulting care.",
+              "strategic_implication": "Health systems need auditable deployment controls: clinician review standards, correction workflows, vendor accountability, and measurement of error rates by specialty. Productivity gains should not be booked as net value until organizations can show that documentation quality and patient-safety risk are controlled.",
+              "confidence": "high",
+              "tags": [
+                "ai-scribes",
+                "patient-safety",
+                "clinical-documentation",
+                "malpractice"
+              ]
+            },
+            {
+              "item_id": "2026-09-04-openevidence-oncology-ai",
+              "canonical_topic": "openevidence-oncology-ai-decision-support",
+              "duplicate_group": "openevidence-oncology-ai-decision-support",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/health-tech/openevidence-deepens-oncology-push-expands-ai-decision-support-cancer-care",
+                  "source_type": "rss",
+                  "published_at": "2026-09-03T12:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare web search",
+                  "url": "https://www.fiercehealthcare.com/health-tech/openevidence-deepens-oncology-push-expands-ai-decision-support-cancer-care",
+                  "source_type": "web",
+                  "published_at": "2026-09-03T12:00:00Z"
+                }
+              ],
+              "title": "OpenEvidence expands oncology decision support with genomic interpretation partnership",
+              "summary": "OpenEvidence is adding expert-curated genomic interpretation and patient-specific context through a partnership with a national cancer center, according to Fierce Healthcare. The move builds on integrations with NCCN and ASCO content and the company’s strategy of developing agentic, specialty-focused clinical AI.",
+              "strategic_implication": "The competitive frontier is moving from generic medical chat toward evidence-linked, specialty-specific workflow support. Cancer programs should evaluate provenance, update cadence, governance, and integration burden alongside model performance before embedding these tools in treatment decisions.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "oncology",
+                "genomics",
+                "decision-support"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payer simplification and tougher merger review are reshaping operating assumptions for insurers and providers. The market is rewarding clearer clinical value while regulators demand stronger evidence that consolidation and utilization controls serve patients.",
+          "items": [
+            {
+              "item_id": "2026-09-04-fairfield-adena-antitrust",
+              "canonical_topic": "fairfield-adena-hospital-antitrust",
+              "duplicate_group": "fairfield-adena-hospital-antitrust",
+              "priority_score": 8,
+              "primary_source": "FTC",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FTC",
+                  "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/statement-regarding-fairfield-medical-centers-sale-adena-health",
+                  "source_type": "web",
+                  "published_at": "2026-09-02T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/regulatory/ftc-claims-ohio-hospitals-acquisition-pivot-antitrust-victory",
+                  "source_type": "rss",
+                  "published_at": "2026-09-03T18:11:00Z"
+                }
+              ],
+              "title": "FTC intervention redirects Ohio hospital deal and raises the bar for local-market consolidation",
+              "summary": "The FTC said its concerns about OhioHealth’s proposed acquisition of Fairfield Medical Center led the hospital to pursue a broader buyer process. Fairfield ultimately partnered with Adena Health, which the FTC said avoided the competitive risks it identified in the earlier transaction.",
+              "strategic_implication": "Hospital boards should expect more scrutiny of local-market concentration, buyer-process quality, and “failing firm” arguments. A robust sale process is increasingly part of antitrust risk management, not merely a transaction-completion step.",
+              "confidence": "high",
+              "tags": [
+                "hospital-mergers",
+                "ftc",
+                "antitrust",
+                "provider-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-09-04-uhc-prior-authorization-cuts",
+              "canonical_topic": "unitedhealthcare-prior-authorization-reduction",
+              "duplicate_group": "unitedhealthcare-prior-authorization-reduction",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/unitedhealthcare-prior-authorization-codes-cut-1700/829406/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T13:24:25Z"
+                }
+              ],
+              "title": "UnitedHealthcare removes prior authorization from 1,700 codes as utilization controls face pressure",
+              "summary": "UnitedHealthcare said it will remove prior authorization requirements from 1,700 treatment and service codes beginning in October. Healthcare Dive reports the change is part of the insurer’s pledge to reduce roughly 30% of its utilization-management controls across a broad range of services.",
+              "strategic_implication": "Providers should update scheduling, documentation, and referral workflows before the October change while monitoring whether fewer front-end approvals shift utilization or downstream denials. Payers will need to show that simplification preserves clinical appropriateness and does not simply move friction to another part of the claims process.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "unitedhealthcare",
+                "utilization-management",
+                "payer-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Care delivery capacity and coordination remain decisive differentiators, from perinatal behavioral health to transplant pathways. Fragmented handoffs and scarce clinical resources continue to create avoidable operational risk.",
+          "items": [
+            {
+              "item_id": "2026-09-04-postpartum-mental-health-fragmentation",
+              "canonical_topic": "postpartum-mental-health-care-coordination",
+              "duplicate_group": "postpartum-mental-health-care-coordination",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/04/lindsay-clancy-health-care-silos-postpartum-care-failures/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-04T08:30:00Z"
+                },
+                {
+                  "source": "Becker’s Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/quality/patient-safety-outcomes/what-the-lindsay-clancy-case-reveals-about-maternal-mental-health-in-the-us/",
+                  "source_type": "web",
+                  "published_at": "2026-09-03T00:00:00Z"
+                }
+              ],
+              "title": "Postpartum mental-health case spotlights coordination failures across the care cascade",
+              "summary": "STAT’s coverage of the Lindsay Clancy case highlights how fragmented postpartum mental-health care can leave patients moving among specialists without a clear coordinator. Expert commentary cited in related reporting points to failures spanning screening, diagnosis, referral, treatment follow-up, and continuity through the first postpartum year.",
+              "strategic_implication": "Health systems should treat perinatal behavioral health as a longitudinal care pathway with accountable handoffs, shared medication visibility, and follow-up—not as a one-time screen. The operational gap is a patient-safety and access issue that can be addressed through integrated maternity, primary-care, and behavioral-health models.",
+              "confidence": "medium",
+              "tags": [
+                "maternal-health",
+                "behavioral-health",
+                "care-coordination",
+                "patient-safety"
+              ]
+            },
+            {
+              "item_id": "2026-09-04-pig-kidney-relay-transplant",
+              "canonical_topic": "gene-edited-pig-kidney-relay-transplant",
+              "duplicate_group": "gene-edited-pig-kidney-relay-transplant",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/03/recipients-of-gene-edited-pig-kidneys-receive-human-organs/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-03T22:30:00Z"
+                },
+                {
+                  "source": "The New York Times web search",
+                  "url": "https://www.nytimes.com/2026/09/03/well/pig-kidney-bridge-transplant.html",
+                  "source_type": "web",
+                  "published_at": "2026-09-04T00:00:00Z"
+                }
+              ],
+              "title": "Gene-edited pig kidneys show promise as a bridge to human transplantation",
+              "summary": "Two recipients of gene-edited pig kidneys later received human donor organs, a milestone in xenotransplantation reported by STAT. One patient lived without dialysis for roughly nine months before receiving a human kidney, providing evidence that a pig organ can temporarily bridge patients through the wait for a donor organ even when it is ultimately removed.",
+              "strategic_implication": "The result strengthens the case for xenografts as a bridge strategy while underscoring the need for rigorous trials, immunologic monitoring, and complex transition protocols. Transplant centers should track how this approach could change wait-list management and dialysis capacity if durability improves.",
+              "confidence": "medium",
+              "tags": [
+                "xenotransplantation",
+                "kidney-care",
+                "organ-shortage",
+                "transplant-medicine"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical practice guidance is placing greater emphasis on system conditions that shape safety. Nurse fatigue is being treated as a workforce-design issue with direct implications for patient outcomes.",
+          "items": [
+            {
+              "item_id": "2026-09-04-nurse-fatigue-safety",
+              "canonical_topic": "nurse-fatigue-organizational-safety",
+              "duplicate_group": "nurse-fatigue-organizational-safety",
+              "priority_score": 7,
+              "primary_source": "American Nurses Association",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/ana-individuals-employers-share-responsibility-tackling-nurse-fatigue",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T20:38:00Z"
+                },
+                {
+                  "source": "American Nurses Association",
+                  "url": "https://www.nursingworld.org/practice-policy/nursing-excellence/official-position-statements/id/addressing-nurse-fatigue-to-promote-safety-and-health/",
+                  "source_type": "web",
+                  "published_at": "2026-05-27T00:00:00Z"
+                }
+              ],
+              "title": "ANA reframes nurse fatigue as an organizational patient-safety responsibility",
+              "summary": "The American Nurses Association’s updated position statement says nurse fatigue is a predictable outcome of workplace conditions rather than an individual failing. The guidance calls for shared responsibility among nurses and employers, including evidence-based scheduling, staffing, rest, and safety practices.",
+              "strategic_implication": "Provider leaders should connect fatigue mitigation to staffing design, quality metrics, retention, and patient-safety governance rather than treating it as a resilience initiative. Policies that make safe work hours and escalation pathways measurable will be increasingly important in workforce planning.",
+              "confidence": "high",
+              "tags": [
+                "nursing",
+                "workforce",
+                "patient-safety",
+                "fatigue-management"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-03",
       "generated_at": "2026-09-03T11:10:16Z",
       "headline": "Today's Healthcare Insights",
@@ -26719,5 +27098,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-03T11:10:16Z"
+  "last_updated": "2026-09-04T11:12:57Z"
 }

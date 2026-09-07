@@ -3,6 +3,363 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-07",
+      "generated_at": "2026-09-07T11:17:07Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing focuses on the operational consequences of payment-integrity gaps, tighter scrutiny of large public-sector health IT programs, and a more selective path for cardiovascular drug development. It also tracks precision oncology access, consumer health technology’s public-markets test, respiratory-vaccine guidance, and Medicare Advantage network change using STAT, Healthcare Dive, Fierce Healthcare, FDA, CMS, HHS-OIG, CDC, and company sources.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Official company and disclosure pages",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "FDA/CMS/HHS-OIG/CDC official web context",
+          "Targeted web search fallback via Perplexity index"
+        ],
+        "sources_failed": [
+          "Direct search_web interface unavailable in this scheduled run",
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "The three required RSS feeds were read with curl. STAT had a current Sep. 7 item; Healthcare Dive and Fierce Healthcare supplied the latest Sep. 4 and Sep. 3-4 reporting available in their feeds after the weekend. Targeted web context was obtained through the available Perplexity search fallback because the direct search_web command was not exposed. Yesterday’s edition topics were screened out; the selected items represent distinct developments or official-source updates."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Payment integrity and drug-coverage rules remain active sources of financial and compliance exposure. Regulators are pairing access-oriented action with closer scrutiny of whether public dollars are reaching eligible products and patients.",
+          "items": [
+            {
+              "item_id": "2026-09-07-medicare-part-d-ineligible-otc-payments",
+              "canonical_topic": "medicare-part-d-ineligible-otc-payments",
+              "duplicate_group": "medicare-part-d-ineligible-otc-payments",
+              "priority_score": 9,
+              "primary_source": "HHS Office of Inspector General",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "HHS-OIG",
+                  "url": "https://oig.hhs.gov/reports/all/2026/cms-oversight-did-not-prevent-medicare-part-d-sponsors-from-making-5877-million-in-ineligible-payments-to-pharmacies-for-drugs-available-over-the-counter-but-labeled-as-prescription-only/",
+                  "source_type": "web",
+                  "published_at": "2026-09-02T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/medicare-spending-ineligible-otc-drugs-hhs-oig-audit/829454/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T16:30:35Z"
+                }
+              ],
+              "title": "HHS-OIG finds $587.7 million in Medicare Part D payments for ineligible OTC drugs",
+              "summary": "A HHS Office of Inspector General audit found that Medicare Part D sponsors made $587.7 million in payments from 2021 through 2023 for five drugs that were available over the counter but still carried prescription-only labeling. The report said CMS oversight did not prevent the payments and recommended stronger controls; CMS concurred with the findings.",
+              "strategic_implication": "Plans, pharmacies, and health systems should review product-status logic, claims edits, and sponsor oversight against the audit’s findings. The episode raises both recoverability risk and a broader question about whether public-program payment controls can keep pace with changes in drug labeling and market status.",
+              "confidence": "high",
+              "tags": [
+                "medicare-part-d",
+                "payment-integrity",
+                "cms",
+                "pharmacy-benefit"
+              ]
+            },
+            {
+              "item_id": "2026-09-07-fda-neonatal-parenteral-nutrition-access",
+              "canonical_topic": "fda-neonatal-parenteral-nutrition-access",
+              "duplicate_group": "fda-neonatal-parenteral-nutrition-access",
+              "priority_score": 8,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-takes-steps-maintain-newborn-access-life-saving-starter-nutrition-products",
+                  "source_type": "web",
+                  "published_at": "2026-09-04T00:00:00Z"
+                },
+                {
+                  "source": "FDA guidance",
+                  "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/temporary-policies-compounding-certain-starter-parenteral-nutrition-drug-products-neonates",
+                  "source_type": "web",
+                  "published_at": "2026-09-04T00:00:00Z"
+                }
+              ],
+              "title": "FDA uses temporary compounding policy to protect neonatal nutrition supply",
+              "summary": "The FDA announced steps to address a potential supply gap for neonatal starter parenteral nutrition, which provides essential intravenous nutrients to premature and critically ill newborns. Its temporary guidance describes regulatory and enforcement priorities for certain products compounded by outsourcing facilities and state-licensed pharmacies while supply concerns are addressed.",
+              "strategic_implication": "NICUs and pharmacy leaders should map supply continuity, qualified compounding capacity, and transition criteria before a shortage becomes an acute-care constraint. The action also illustrates how temporary regulatory flexibility can become a practical resilience tool for highly concentrated medical-product supply chains.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "neonatal-care",
+                "drug-supply",
+                "compounding"
+              ]
+            },
+            {
+              "item_id": "2026-09-07-camizestrant-accelerated-approval",
+              "canonical_topic": "camizestrant-accelerated-approval",
+              "duplicate_group": "camizestrant-accelerated-approval",
+              "priority_score": 8,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-breast-cancer-treatment",
+                  "source_type": "web",
+                  "published_at": "2026-09-04T00:00:00Z"
+                },
+                {
+                  "source": "FDA oncology approval notification",
+                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-camizestrant-cdk46-inhibitor-esr1-mutated-hr-positive-her2-negative",
+                  "source_type": "web",
+                  "published_at": "2026-09-04T00:00:00Z"
+                }
+              ],
+              "title": "FDA grants accelerated approval to camizestrant combination for ESR1-mutated breast cancer",
+              "summary": "The FDA granted accelerated approval to AstraZeneca’s camizestrant, branded Etcamah, in combination with a CDK4/6 inhibitor for adults with ESR1-mutated, hormone receptor-positive, HER2-negative locally advanced or metastatic breast cancer. The indication relies on mutation detection and carries the evidence and confirmatory-trial obligations associated with accelerated approval.",
+              "strategic_implication": "Cancer programs should align mutation testing, treatment pathways, and payer documentation before incorporating the therapy into routine care. The approval reinforces the operational importance of linking molecular diagnostics to fast, evidence-aware treatment access.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "oncology",
+                "precision-medicine",
+                "accelerated-approval"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital health’s next phase is being tested simultaneously in public markets and large public-sector deployments. Scale will depend less on the promise of AI than on credible economics, integration discipline, and accountable implementation.",
+          "items": [
+            {
+              "item_id": "2026-09-07-oracle-va-ehr-subpoena",
+              "canonical_topic": "oracle-va-ehr-contract-oversight",
+              "duplicate_group": "oracle-va-ehr-contract-oversight",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/lawmakers-to-subpoena-oracle-execs-as-ehr-project-costs-rise/829671/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-04T13:58:59Z"
+                },
+                {
+                  "source": "Federal News Network web search",
+                  "url": "https://federalnewsnetwork.com/veterans-affairs/2026/09/house-va-lawmakers-to-subpoena-oracle-over-ehr-contract/",
+                  "source_type": "web",
+                  "published_at": "2026-09-02T00:00:00Z"
+                }
+              ],
+              "title": "Congress subpoenas Oracle leaders over VA EHR cost escalation and timeline",
+              "summary": "House Veterans’ Affairs lawmakers voted to subpoena Oracle Executive Chairman Larry Ellison and CEO Mike Sicilia after Oracle declined a scheduled oversight appearance. Reporting says the VA’s EHR contract ceiling has risen to $27 billion and the program’s timeline now extends to 2031, prompting questions about cost growth, performance, and procurement accountability.",
+              "strategic_implication": "Health-system and government buyers should treat large EHR and AI programs as governance portfolios with explicit cost, milestone, interoperability, and benefits-realization checkpoints. The episode increases scrutiny for vendors and customers that cannot connect implementation spending to measurable clinical and operational outcomes.",
+              "confidence": "high",
+              "tags": [
+                "ehr",
+                "va-healthcare",
+                "health-it",
+                "public-sector"
+              ]
+            },
+            {
+              "item_id": "2026-09-07-oura-ipo-health-platform",
+              "canonical_topic": "oura-ipo-ai-preventive-health",
+              "duplicate_group": "oura-ipo-ai-preventive-health",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/digital-health/smart-ring-maker-oura-files-go-public-pitching-investors-ai-driven-preventive-health",
+                  "source_type": "rss",
+                  "published_at": "2026-09-04T11:29:00Z"
+                },
+                {
+                  "source": "Reuters web search",
+                  "url": "https://www.reuters.com/business/smart-wearable-oura-files-us-ipo-2026-09-03/",
+                  "source_type": "web",
+                  "published_at": "2026-09-03T20:19:00Z"
+                }
+              ],
+              "title": "Oura files for an IPO as wearable data company pitches an AI preventive-health platform",
+              "summary": "Oura filed for a U.S. initial public offering, positioning its smart-ring hardware, subscription business, and health-tracking data as the base for an AI-powered preventive-health platform. Reuters reporting on the filing described a sharp increase in revenue, while the company has not yet disclosed final offering size or pricing.",
+              "strategic_implication": "The filing will test whether public investors value consumer health platforms on recurring engagement and data utility rather than hardware novelty alone. Health-system and employer partners should watch how Oura frames clinical evidence, data governance, and the boundary between wellness insight and medical guidance.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "wearables",
+                "preventive-care",
+                "ipo"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Industry signals point to selective repricing of risk: clinical-development programs can be halted despite strong biological rationale, while payer-provider networks are being reshaped by Medicare Advantage economics. Investors and operators should distinguish durable capability from costly strategic ambition.",
+          "items": [
+            {
+              "item_id": "2026-09-07-novo-ziltivekimab-trial-stops",
+              "canonical_topic": "novo-ziltivekimab-cardiovascular-trial-stops",
+              "duplicate_group": "novo-ziltivekimab-cardiovascular-trial-stops",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/07/novo-nordisk-heart-studies-inflammation-ziltivekimab/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-07T11:13:52Z"
+                },
+                {
+                  "source": "Novo Nordisk trial update",
+                  "url": "https://www.globenewswire.com/news-release/2026/07/31/3336733/0/en/novo-nordisk-provides-update-on-the-zeus-phase-3-trial-in-people-with-ascvd-ckd-and-inflammation.html",
+                  "source_type": "web",
+                  "published_at": "2026-07-31T00:00:00Z"
+                }
+              ],
+              "title": "Novo Nordisk stops two ziltivekimab cardiovascular trials after inflammation strategy setback",
+              "summary": "Novo Nordisk stopped two trials of ziltivekimab, an anti-inflammatory drug being developed to improve cardiovascular outcomes, according to STAT. The decision follows the drug’s failure to reduce major adverse cardiovascular events in the ZEUS Phase 3 study, although the company plans to continue testing it in heart-failure and post-heart-attack populations.",
+              "strategic_implication": "The move is a reminder that target engagement and biomarker improvement do not guarantee outcome benefit in cardiovascular development. Biopharma portfolios and investors should value indication-specific evidence and trial-design learning rather than assuming that success in one inflammatory pathway will generalize across populations.",
+              "confidence": "high",
+              "tags": [
+                "biopharma",
+                "cardiology",
+                "clinical-trials",
+                "drug-development"
+              ]
+            },
+            {
+              "item_id": "2026-09-07-mgb-dana-farber-ma-network",
+              "canonical_topic": "mgb-dana-farber-medicare-advantage-network",
+              "duplicate_group": "mgb-dana-farber-medicare-advantage-network",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/04/mass-general-brigham-medicare-advantage-network-cancer-treatment-dana-farber/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-04T20:05:04Z"
+                },
+                {
+                  "source": "Mass General Brigham Health Plan",
+                  "url": "https://news.massgeneralbrighamhealthplan.org/broker-news/august-2026?hs_amp=true",
+                  "source_type": "web",
+                  "published_at": "2026-08-01T00:00:00Z"
+                }
+              ],
+              "title": "Mass General Brigham Medicare Advantage plan drops Dana-Farber from network",
+              "summary": "Mass General Brigham Health Plan’s Medicare Advantage network is set to exclude Dana-Farber Cancer Institute beginning Oct. 1, according to STAT and the plan’s broker update. The change affects the Medicare Advantage product rather than the plan’s commercial members and creates coverage and continuity decisions for patients receiving cancer care.",
+              "strategic_implication": "Specialty providers and payers should prepare for more network disputes to surface as access, reimbursement, and Medicare Advantage economics tighten. Clear transition-of-care protocols, patient communication, and oncology referral continuity are now strategic capabilities, not merely member-services tasks.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "payer-provider",
+                "oncology",
+                "network-management"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operating models are absorbing more external volatility, from costly technology programs to changing payer networks. The common requirement is disciplined transition management that protects patient continuity while financial and technical assumptions shift.",
+          "items": [
+            {
+              "item_id": "2026-09-07-davita-data-breach-settlement",
+              "canonical_topic": "davita-data-breach-settlement",
+              "duplicate_group": "davita-data-breach-settlement",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/davita-agrees-to-pay-15m-to-settle-claims-from-data-breach/829445/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T15:23:13Z"
+                },
+                {
+                  "source": "MedTech Dive web search",
+                  "url": "https://www.medtechdive.com/news/davita-agrees-to-pay-15m-to-settle-claims-from-data-breach/829452/",
+                  "source_type": "web",
+                  "published_at": "2026-09-02T00:00:00Z"
+                }
+              ],
+              "title": "DaVita agrees to $15 million settlement after breach affecting millions of patients",
+              "summary": "DaVita agreed to pay $15 million to settle proposed class-action claims tied to a 2025 data breach that affected approximately 2.7 million people, according to Healthcare Dive. The proposed settlement follows litigation over a ransomware incident involving protected health information and remains subject to final court approval.",
+              "strategic_implication": "Provider security programs should treat third-party access, incident response, and patient notification as operating controls with direct financial and trust consequences. Dialysis and other high-continuity providers have particular exposure because a cyber disruption can compound clinical vulnerability and care-coordination risk.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "data-breach",
+                "dialysis-care",
+                "patient-trust"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical organizations are navigating a fragmented policy environment by relying more heavily on professional guidance and local protocols. Vaccination, workforce planning, and specialty workflow decisions will require explicit evidence review and consistent communication.",
+          "items": [
+            {
+              "item_id": "2026-09-07-independent-respiratory-vaccine-guidance",
+              "canonical_topic": "independent-respiratory-vaccine-guidance",
+              "duplicate_group": "independent-respiratory-vaccine-guidance",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/leading-medical-groups-release-flu-covid-vaccine-recommendations-cdc-guidance-lags",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T15:11:00Z"
+                },
+                {
+                  "source": "CDC influenza guidance",
+                  "url": "https://www.cdc.gov/flu/hcp/vax-summary/acip-recommendations.html",
+                  "source_type": "web",
+                  "published_at": "2026-09-02T00:00:00Z"
+                },
+                {
+                  "source": "National medical group guidance summary",
+                  "url": "https://www.npr.org/2026/09/02/nx-s1-5947884/covid-flu-rsv-vaccine-recommendations",
+                  "source_type": "web",
+                  "published_at": "2026-09-02T00:00:00Z"
+                }
+              ],
+              "title": "Medical groups issue 2026–27 respiratory vaccine guidance amid federal uncertainty",
+              "summary": "The American Academy of Pediatrics, American Academy of Family Physicians, American College of Obstetricians and Gynecologists, and Infectious Diseases Society of America issued 2026–27 recommendations for COVID-19, influenza, and RSV vaccination. Their guidance is intended to support evidence-based clinical discussions while federal recommendations remain unsettled; CDC pages state that existing influenza recommendations remain in effect for the season.",
+              "strategic_implication": "Health systems should establish a single, documented vaccine policy with clear ownership for updates, patient messaging, and clinician escalation. The split between federal and professional-society guidance increases the value of local evidence governance and consistent frontline communication.",
+              "confidence": "high",
+              "tags": [
+                "vaccination",
+                "influenza",
+                "covid-19",
+                "clinical-guidance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-04",
       "generated_at": "2026-09-04T11:12:57Z",
       "headline": "Today's Healthcare Insights",
@@ -27098,5 +27455,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-04T11:12:57Z"
+  "last_updated": "2026-09-07T11:17:07Z"
 }

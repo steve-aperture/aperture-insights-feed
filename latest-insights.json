@@ -3,6 +3,388 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-08",
+      "generated_at": "2026-09-08T11:12:33Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s briefing tracks a widening gap between healthcare innovation and the operating controls needed to deploy it: unauthorized nicotine products, access friction for a newly approved cancer therapy, and cyber and liability exposure around digital workflows. It also covers rural and community-hospital consolidation, payer leadership continuity, and contrasting late-stage drug-development signals using STAT, Healthcare Dive, Fierce Healthcare, FDA, FTC, KFF, and targeted web context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA/FTC web",
+          "KFF and official company/disclosure pages",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "FDA/FTC/KFF official web context",
+          "Targeted web search fallback via Perplexity index"
+        ],
+        "sources_failed": [
+          "Direct search_web interface unavailable in this scheduled run",
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "The three required RSS feeds were read with curl. STAT supplied multiple Sep. 8 developments; Healthcare Dive and Fierce Healthcare supplied the latest available Sep. 2-4 trade reporting after the holiday weekend. Targeted web context was obtained through the available Perplexity search fallback because the direct search_web command was not exposed. Yesterday’s edition topics were screened out; no duplicate group from the Sep. 7 edition was republished."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Regulatory execution is becoming a front-line operating issue, from unauthorized nicotine products to the lag between a breakthrough approval and effective insurance access. For rural providers, the policy environment is also accelerating strategic partnership decisions.",
+          "items": [
+            {
+              "item_id": "2026-09-08-reynolds-unauthorized-fruity-vuse-products",
+              "canonical_topic": "reynolds-unauthorized-fruity-vuse-products",
+              "duplicate_group": "reynolds-unauthorized-fruity-vuse-products",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/08/fda-guidance-reynolds-selling-fruity-new-vapes-unauthorized/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T08:30:00Z"
+                },
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-denies-marketing-six-flavored-vuse-alto-e-cigarette-products-following-determination-they-do-not",
+                  "source_type": "web",
+                  "published_at": "2026-09-08T00:00:00Z"
+                }
+              ],
+              "title": "Reynolds sells fruity Vuse products without FDA authorization, testing enforcement boundaries",
+              "summary": "STAT reports that Reynolds American is selling new peach, berry, watermelon, and fresh-mint Vuse Pro products in Ohio and select other states even though the products have not received FDA authorization. The report links the move to uncertainty after the FDA softened enforcement guidance in May. FDA marketing-denial actions show that flavored Vuse products remain subject to enforcement risk.",
+              "strategic_implication": "Manufacturers, retailers, and health systems should treat the regulatory status of nicotine products as an active compliance issue rather than a settled product-label question. The episode also signals how ambiguous enforcement posture can invite market behavior that later requires costly remediation.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "tobacco-regulation",
+                "product-compliance",
+                "retail-health"
+              ]
+            },
+            {
+              "item_id": "2026-09-08-rasonque-pancreatic-cancer-access-gap",
+              "canonical_topic": "rasonque-pancreatic-cancer-access-gap",
+              "duplicate_group": "rasonque-pancreatic-cancer-access-gap",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/08/pancreatic-cancer-patients-caught-beween-fda-drug-approval-insurance-coverage/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T08:30:00Z"
+                },
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-class-targeted-therapy-metastatic-pancreatic-cancer",
+                  "source_type": "web",
+                  "published_at": "2026-08-26T00:00:00Z"
+                }
+              ],
+              "title": "Rasonque approval exposes the coverage lag between cancer innovation and patient access",
+              "summary": "After FDA approval of Rasonque (daraxonrasib) for previously treated metastatic pancreatic cancer, patients who had relied on early access programs faced a transition to commercial coverage. STAT reports that payer benefit setup and utilization-management decisions can take weeks or months, leaving a gap even after regulatory approval. The FDA approval creates a new treatment option but does not by itself resolve the operational steps required for dispensing.",
+              "strategic_implication": "Payers, oncology practices, and specialty pharmacies should design launch playbooks that connect approval timing, benefit configuration, prior authorization, and bridge support. For manufacturers, launch readiness now includes continuity for patients moving from expanded access into routine coverage.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "drug-access",
+                "payer-operations",
+                "specialty-pharmacy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital infrastructure is creating a two-sided risk profile: cyber incidents can reach clinical and distribution workflows, while AI documentation tools can shift liability without eliminating human accountability. Governance and incident response are becoming adoption prerequisites.",
+          "items": [
+            {
+              "item_id": "2026-09-08-mckesson-third-party-app-data-theft",
+              "canonical_topic": "mckesson-third-party-app-data-theft",
+              "duplicate_group": "mckesson-third-party-app-data-theft",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/mckesson-confirms-data-theft-cyberattack-involving-third-party-apps/829435/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T13:59:03Z"
+                },
+                {
+                  "source": "Malwarebytes",
+                  "url": "https://www.malwarebytes.com/blog/news/2026/08/mckesson-confirms-cyber-incident-after-shinyhunters-claims-patient-data-theft",
+                  "source_type": "web",
+                  "published_at": "2026-09-02T00:00:00Z"
+                }
+              ],
+              "title": "McKesson confirms data theft through third-party apps affecting specialty businesses",
+              "summary": "McKesson said an unauthorized party accessed third-party applications and exfiltrated data affecting a subset of customers in its oncology, multispecialty, and medical-surgical businesses. The company said its distribution network remained operational and that it had not determined the incident to be material. The investigation was still in its early stages, leaving the scope and downstream notification obligations subject to change.",
+              "strategic_implication": "Providers and suppliers should inventory third-party application pathways into oncology and medical-surgical operations, not just core EHR and claims systems. Vendor access reviews, segmentation, and notification playbooks are now supply-chain resilience measures as much as IT controls.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "data-breach",
+                "healthcare-supply-chain",
+                "third-party-risk"
+              ]
+            },
+            {
+              "item_id": "2026-09-08-ai-scribes-malpractice-exposure",
+              "canonical_topic": "ai-scribes-malpractice-exposure",
+              "duplicate_group": "ai-scribes-malpractice-exposure",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/why-ai-scribes-malpractice-risk/829541/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-03T13:15:37Z"
+                },
+                {
+                  "source": "Nature npj Digital Medicine",
+                  "url": "https://www.nature.com/articles/s41746-025-01895-6",
+                  "source_type": "web",
+                  "published_at": "2025-01-01T00:00:00Z"
+                }
+              ],
+              "title": "AI scribes are moving into routine use before liability and validation questions are settled",
+              "summary": "Healthcare Dive reports that experts see malpractice exposure as AI scribes move from pilots into routine exam-room use. Documentation errors can be difficult to detect and may contribute to medical errors, while clinicians remain accountable for the resulting record and care decisions. Independent clinical commentary also flags omissions, hallucinations, and contextual misinterpretation as distinct failure modes.",
+              "strategic_implication": "Health systems should pair deployment with clinician review standards, audit sampling, escalation pathways, and vendor-contract provisions for safety incidents. Efficiency gains will be hard to defend if organizations cannot show how generated notes are validated before they become part of the legal medical record.",
+              "confidence": "high",
+              "tags": [
+                "artificial-intelligence",
+                "clinical-documentation",
+                "malpractice",
+                "patient-safety"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "The market is separating clinical winners from capital-allocation narratives. Positive mid-stage data can strengthen a biotech’s platform, while late-stage failures and payer leadership transitions expose concentration, execution, and succession risk.",
+          "items": [
+            {
+              "item_id": "2026-09-08-roivant-mosliciguat-phase-2-success",
+              "canonical_topic": "roivant-mosliciguat-phase-2-success",
+              "duplicate_group": "roivant-mosliciguat-phase-2-success",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/08/roivant-mosliciguat-pulmonary-hypertension-interstitial-lung-disease-results/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T10:00:00Z"
+                },
+                {
+                  "source": "BioSpace/GlobeNewswire",
+                  "url": "https://www.biospace.com/press-releases/roivant-to-present-topline-results-from-the-phase-2-phocus-study-of-mosliciguat-in-patients-with-pulmonary-hypertension-associated-with-interstitial-lung-disease-ph-ild-at-the-ers-congress-2026-on-tuesday-september-8-2026-and-host-investor-call",
+                  "source_type": "web",
+                  "published_at": "2026-09-06T00:00:00Z"
+                }
+              ],
+              "title": "Roivant’s mosliciguat hits Phase 2 goals in pulmonary hypertension tied to interstitial lung disease",
+              "summary": "Roivant said its inhaled mosliciguat met the goals of a 16-week Phase 2 study in pulmonary hypertension associated with interstitial lung disease. STAT reports a statistically significant reduction in pulmonary vascular resistance versus placebo and positive key secondary endpoints. The result gives Roivant a potentially differentiated respiratory asset, although later-stage confirmation and regulatory execution remain ahead.",
+              "strategic_implication": "The readout improves the value of Roivant’s respiratory pipeline and may increase partnering or financing leverage, but health-system formulary planning should wait for confirmatory evidence and a clearer access profile. Investors and competitors will watch whether the signal translates into durable outcomes in a difficult rare-disease market.",
+              "confidence": "high",
+              "tags": [
+                "biopharma",
+                "pulmonary-hypertension",
+                "clinical-trials",
+                "respiratory-care"
+              ]
+            },
+            {
+              "item_id": "2026-09-08-novartis-del-desiran-harbor-failure",
+              "canonical_topic": "novartis-del-desiran-harbor-failure",
+              "duplicate_group": "novartis-del-desiran-harbor-failure",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/08/novartis-del-desiran-myotonic-dystrophy-harbor-trial-failure-neuromuscular/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T07:28:55Z"
+                },
+                {
+                  "source": "Swissinfo/Bloomberg",
+                  "url": "https://www.swissinfo.ch/eng/novartis-sees-avidity-drug-fail-in-third-trial-setback-in-a-week/92020158",
+                  "source_type": "web",
+                  "published_at": "2026-09-08T00:00:00Z"
+                }
+              ],
+              "title": "Novartis’ del-desiran misses its Phase 3 endpoint, raising pressure on the Avidity acquisition",
+              "summary": "Novartis said del-desiran failed to improve muscle function versus placebo in the Phase 3 HARBOR study of myotonic dystrophy type 1. The drug was one of the therapies acquired through Novartis’ roughly $12 billion purchase of Avidity Biosciences. The result adds to a series of recent trial setbacks and puts more weight on the remaining assets and integration thesis.",
+              "strategic_implication": "The setback is a reminder that large biotech acquisitions concentrate value in a small number of high-risk clinical programs. Provider and investor planning should distinguish near-term commercial supply from pipeline expectations while Novartis reassesses development priorities and capital allocation.",
+              "confidence": "high",
+              "tags": [
+                "biopharma",
+                "clinical-trials",
+                "neuromuscular-disease",
+                "capital-allocation"
+              ]
+            },
+            {
+              "item_id": "2026-09-08-johns-hopkins-health-plans-interim-ceo",
+              "canonical_topic": "johns-hopkins-health-plans-interim-ceo",
+              "duplicate_group": "johns-hopkins-health-plans-interim-ceo",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/johns-hopkins-health-plans-taps-interim-ceo-searches-successor-daniel-chojnowski/829414/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-02T13:59:03Z"
+                },
+                {
+                  "source": "Johns Hopkins Health Plans",
+                  "url": "https://www.hopkinsmedicine.org/johns-hopkins-health-plans/about-us/executives-bod",
+                  "source_type": "web",
+                  "published_at": "2026-09-02T00:00:00Z"
+                }
+              ],
+              "title": "Johns Hopkins Health Plans elevates CFO to interim CEO during leadership search",
+              "summary": "Johns Hopkins Health Plans named CFO Daniel Chojnowski interim CEO while it searches for a permanent successor to the prior chief executive. The insurer said the move is intended to provide stability during the transition. Chojnowski’s finance and managed-care operating background makes the appointment a continuity move rather than a strategic reset, based on the company’s public description.",
+              "strategic_implication": "Payer partners and providers should watch whether the interim period changes contracting priorities, network posture, or investment cadence. The move also underscores the importance of succession depth as regional plans navigate margin, regulatory, and care-delivery pressure.",
+              "confidence": "high",
+              "tags": [
+                "health-insurance",
+                "executive-leadership",
+                "payer-operations",
+                "succession"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider strategy is shifting from scale for its own sake toward survival, access preservation, and defensible regional positioning. Antitrust review and Medicaid exposure are shaping which transactions can close and what operating commitments buyers must make.",
+          "items": [
+            {
+              "item_id": "2026-09-08-rural-hospital-mergers-medicaid-cuts",
+              "canonical_topic": "rural-hospital-mergers-medicaid-cuts",
+              "duplicate_group": "rural-hospital-mergers-medicaid-cuts",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/08/rural-hospital-mergers-medicaid-cuts-part-3-unraveled-series/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T08:30:00Z"
+                },
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/medicaid/how-might-federal-medicaid-cuts-in-the-enacted-reconciliation-package-affect-rural-areas/",
+                  "source_type": "web",
+                  "published_at": "2026-01-01T00:00:00Z"
+                }
+              ],
+              "title": "Rural hospitals pursue partnerships as Medicaid cuts raise the cost of staying independent",
+              "summary": "STAT reports that rural hospitals are seeking larger-system partnerships as they prepare for sweeping Medicaid reductions and continued operating pressure. Recent examples include bankruptcy-driven partnership discussions and planned acquisitions across regional systems. KFF estimates that the enacted reconciliation package would reduce federal Medicaid spending in rural areas substantially, even with a separate rural health fund.",
+              "strategic_implication": "Health-system executives should model partnership options before liquidity pressure turns a strategic choice into a distressed sale. Boards and regulators will need to weigh access preservation against the risk that consolidation raises prices or reduces local competition.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "medicaid",
+                "hospital-strategy",
+                "consolidation"
+              ]
+            },
+            {
+              "item_id": "2026-09-08-adena-fairfield-antitrust-pivot",
+              "canonical_topic": "adena-fairfield-antitrust-pivot",
+              "duplicate_group": "adena-fairfield-antitrust-pivot",
+              "priority_score": 8,
+              "primary_source": "Federal Trade Commission",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/adena-health-acquires-fairfield-medical-center-after-antitrust-scrutiny/829659/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-04T13:58:59Z"
+                },
+                {
+                  "source": "FTC",
+                  "url": "https://www.ftc.gov/news-events/news/press-releases/2026/09/statement-regarding-fairfield-medical-centers-sale-adena-health",
+                  "source_type": "web",
+                  "published_at": "2026-09-02T00:00:00Z"
+                }
+              ],
+              "title": "Adena closes Fairfield Medical Center deal after FTC scrutiny redirected the buyer process",
+              "summary": "Adena Health acquired Fairfield Medical Center after Fairfield pivoted from a proposed sale to OhioHealth following FTC competitive concerns. The FTC said the earlier transaction could have raised costs and reduced care quality, and it noted concerns about the buyer-selection process. The completed Adena transaction illustrates that distressed-hospital M&A can be reshaped by antitrust review rather than simply blocked or approved as filed.",
+              "strategic_implication": "Health systems planning acquisitions should prepare credible alternatives, competitive remedies, and evidence that the process protects local access. Sellers may gain leverage from a broader buyer field, but the transaction path can lengthen and raise diligence costs when a dominant regional buyer is involved.",
+              "confidence": "high",
+              "tags": [
+                "hospital-mergers",
+                "antitrust",
+                "provider-strategy",
+                "healthcare-access"
+              ]
+            },
+            {
+              "item_id": "2026-09-08-amc-healthcare-deserts-strategic-ma",
+              "canonical_topic": "amc-healthcare-deserts-strategic-ma",
+              "duplicate_group": "amc-healthcare-deserts-strategic-ma",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/industry-voices-how-amcs-can-prevent-healthcare-deserts-through-strategic-ma",
+                  "source_type": "rss",
+                  "published_at": "2026-09-04T13:44:00Z"
+                },
+                {
+                  "source": "Chartis",
+                  "url": "https://www.chartis.com/insights/repositioning-not-scale-how-health-systems-are-leveraging-partnerships-differently-reshape",
+                  "source_type": "web",
+                  "published_at": "2026-01-01T00:00:00Z"
+                }
+              ],
+              "title": "Academic medical centers position strategic M&A as a tool against healthcare deserts",
+              "summary": "Fierce Healthcare’s analysis argues that academic medical centers can stabilize community and rural access by becoming disciplined buyers and integrators of distressed hospitals. The rationale combines capital capacity, clinical expertise, and referral connectivity, but it also requires credible stewardship of local facilities. Broader market analysis describes health-system transactions as increasingly focused on access, affordability, and sustainability rather than simple footprint expansion.",
+              "strategic_implication": "AMCs evaluating distressed-hospital partnerships should underwrite integration capability and community commitments as carefully as purchase price. For independent hospitals, an AMC may offer a mission-aligned option, but governance, service-line guarantees, and capital obligations need to be explicit.",
+              "confidence": "medium",
+              "tags": [
+                "academic-medical-centers",
+                "healthcare-deserts",
+                "hospital-m-and-a",
+                "care-access"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major standalone workforce or clinical-practice item surfaced in the current signal set; the AI-scribe liability story is covered under Digital Health and AI because its primary decision is technology governance.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-07",
       "generated_at": "2026-09-07T11:17:07Z",
       "headline": "Today's Healthcare Insights",
@@ -27455,5 +27837,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-07T11:17:07Z"
+  "last_updated": "2026-09-08T11:12:33Z"
 }

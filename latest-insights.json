@@ -3,6 +3,378 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-09",
+      "generated_at": "2026-09-09T11:03:26Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks regulatory execution, AI-enabled care infrastructure, and a biopharma pipeline full of differentiated but still unproven bets. The curation draws on fresh STAT, Healthcare Dive, and Fierce Healthcare RSS reporting, with the three required feeds read directly and yesterday's topics screened out.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "Direct search_web interface unavailable in this scheduled run",
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "The three required RSS feeds were read with curl. Fresh items were selected from Sep. 8-9 reporting within the roughly 24-hour window; yesterday's edition topics were screened out and no duplicate group from the Sep. 8 edition was republished. Targeted web context was not available because the direct search_web interface was not exposed in this scheduled run."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Regulatory capacity and enforcement remain operating variables: FDA leadership continuity, manufacturing quality, and anti-fraud pressure will shape how quickly organizations can launch, supply, and reimburse care. The common thread is a shift from policy announcements to execution risk.",
+          "items": [
+            {
+              "item_id": "2026-09-09-fda-cder-cber-leadership-stability",
+              "canonical_topic": "fda-cder-cber-leadership-stability",
+              "duplicate_group": "fda-cder-cber-leadership-stability",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/08/fda-names-leaders-cder-cber-michael-davis-karim-mikhail/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T21:15:40Z"
+                }
+              ],
+              "title": "FDA names permanent leaders for drug and vaccine centers after a period of upheaval",
+              "summary": "The FDA named acting leaders Michael Davis and Karim Mikhail to permanent roles at the Center for Drug Evaluation and Research and the Center for Biologics Evaluation and Research, respectively. STAT reports that the moves bring stability after a series of senior departures. The appointments matter across drug and vaccine review, where leadership continuity affects prioritization and execution.",
+              "strategic_implication": "Manufacturers and investors should treat the appointments as an early signal of operating continuity, while still watching for broader agency staffing and policy changes. More predictable center leadership can reduce launch uncertainty, but it does not remove review or post-market compliance risk.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "drug-regulation",
+                "vaccine-policy",
+                "agency-leadership"
+              ]
+            },
+            {
+              "item_id": "2026-09-09-cms-dme-anti-fraud-pressure",
+              "canonical_topic": "cms-dme-anti-fraud-pressure",
+              "duplicate_group": "cms-dme-anti-fraud-pressure",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/cms-puts-more-pressure-dme-suppliers-part-anti-fraud-push",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T20:11:00Z"
+                }
+              ],
+              "title": "CMS increases pressure on DME suppliers as the administration expands its anti-fraud push",
+              "summary": "Fierce Healthcare reports that the administration is applying additional pressure to durable medical equipment suppliers as part of a broader effort to root out fraud. The move adds scrutiny to a segment that depends on accurate eligibility, documentation, billing, and delivery controls. Supplier oversight is therefore becoming a more visible payment-integrity issue.",
+              "strategic_implication": "DME suppliers, Medicare Advantage plans, and providers should tighten documentation and vendor-monitoring controls before enforcement activity scales. Payers and operators may also see more prepayment review and friction around high-risk equipment categories.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "medicare",
+                "dme",
+                "fraud-prevention"
+              ]
+            },
+            {
+              "item_id": "2026-09-09-fda-api-supplier-quality-warning",
+              "canonical_topic": "fda-api-supplier-quality-warning",
+              "duplicate_group": "fda-api-supplier-quality-warning",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/08/fda-warns-api-supplier-residue-corroded-production-line-sandals/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T17:38:59Z"
+                }
+              ],
+              "title": "FDA warning highlights basic manufacturing-control failures at an API supplier",
+              "summary": "The FDA warned an active pharmaceutical ingredient supplier about residue on facility walls, a corroded production line, and employees wearing open-toed sandals. STAT reports that the agency included photographs in its warning. The findings point to visible, foundational controls rather than an edge-case technical deviation.",
+              "strategic_implication": "Drug manufacturers should recheck supplier qualification, facility-audit cadence, and corrective-action follow-through across the API network. Even seemingly basic observations can become a supply-continuity or regulatory-escalation risk when they signal weak quality culture.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "api-supply",
+                "manufacturing-quality",
+                "drug-shortages"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Capital is still flowing to platforms that promise to extend digital health beyond a single workflow, but scale claims are increasingly tied to specialty access, data infrastructure, and an explicit AI narrative. The strategic question is whether financing and partnerships translate into measurable clinical adoption.",
+          "items": [
+            {
+              "item_id": "2026-09-09-oura-ipo-ai-health-platform",
+              "canonical_topic": "oura-ipo-ai-health-platform",
+              "duplicate_group": "oura-ipo-ai-health-platform",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/08/health-tech-newsletter-oura-goes-public-reports-profitability/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T14:18:41Z"
+                }
+              ],
+              "title": "Oura files to go public as it pitches a profitable, AI-enabled preventive-health platform",
+              "summary": "Oura filed to go public and reported profitability and roughly $1.2 billion in earnings in the health-tech update covered by STAT. The smart-ring company is positioning its next phase around an AI-powered health platform rather than hardware alone. The filing places consumer-generated health data and preventive-health software under a more public-market lens.",
+              "strategic_implication": "Digital-health buyers should distinguish durable engagement and clinical utility from a broad AI narrative when assessing consumer platforms. If public investors reward the model, it could raise the bar for evidence, retention, and data-governance discipline across connected-health businesses.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "wearables",
+                "artificial-intelligence",
+                "ipo"
+              ]
+            },
+            {
+              "item_id": "2026-09-09-forus-ai-network-series-c",
+              "canonical_topic": "forus-ai-network-series-c",
+              "duplicate_group": "forus-ai-network-series-c",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/health-tech/forus-secures-150m-series-c-3b-valuation",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T16:08:00Z"
+                }
+              ],
+              "title": "Forus raises $150 million at a reported $3 billion valuation to expand its AI health network",
+              "summary": "Fierce Healthcare reports that Forus secured a $150 million Series C at a reported $3 billion valuation. The company plans to expand its artificial-intelligence-powered network into more medical specialties and care settings. The financing signals continued investor appetite for infrastructure that can connect digital capabilities to provider workflows.",
+              "strategic_implication": "Health systems evaluating partnerships should test whether network expansion improves access and outcomes, not only platform breadth. The valuation also raises execution expectations around specialty coverage, integration, and measurable utilization.",
+              "confidence": "medium",
+              "tags": [
+                "health-tech",
+                "artificial-intelligence",
+                "venture-capital",
+                "care-access"
+              ]
+            },
+            {
+              "item_id": "2026-09-09-parakeet-qualderm-agentic-ai",
+              "canonical_topic": "parakeet-qualderm-agentic-ai",
+              "duplicate_group": "parakeet-qualderm-agentic-ai",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/parakeet-health-lands-major-ai-partnership-national-dermatology-group",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T12:33:00Z"
+                }
+              ],
+              "title": "Parakeet Health partners with Qualderm to apply agentic AI to specialty-care access",
+              "summary": "Parakeet Health formed a partnership with Qualderm, one of the largest dermatology organizations in the country, to apply agentic AI to specialty-care access. Fierce Healthcare describes the deal as an effort to address a growing access problem in dermatology. The partnership provides a live test of whether AI agents can support specialty workflows at organizational scale.",
+              "strategic_implication": "Specialty groups should define clinical boundaries, escalation rules, and access metrics before expanding agentic tools beyond administrative support. Early enterprise partnerships will be judged on whether they shorten time to care without creating new triage or liability gaps.",
+              "confidence": "medium",
+              "tags": [
+                "agentic-ai",
+                "dermatology",
+                "specialty-care",
+                "care-access"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "The pipeline and payer market are sending mixed signals: differentiated clinical data can revive an asset class, while strategic affiliations reflect the continuing push toward scale and operating leverage. Across both areas, the value is conditional on follow-through beyond the headline event.",
+          "items": [
+            {
+              "item_id": "2026-09-09-astrazeneca-tozorakimab-copd",
+              "canonical_topic": "astrazeneca-tozorakimab-copd",
+              "duplicate_group": "astrazeneca-tozorakimab-copd",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/08/astrazeneca-tozorakimab-copd-exacerbations-titania-oberon/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T11:45:00Z"
+                }
+              ],
+              "title": "AstraZeneca’s tozorakimab posts strong late-stage COPD results and targets a crowded market",
+              "summary": "AstraZeneca reported positive late-stage results for experimental COPD treatment tozorakimab in the TILIA and OBERON studies. STAT reports that the drug could compete with existing treatments and potentially occupy a differentiated segment. The results still require regulatory review and a clearer view of comparative efficacy and access.",
+              "strategic_implication": "Pulmonary providers and payers should watch for how the data translate into exacerbation reduction, guideline positioning, and total-cost-of-care claims. AstraZeneca gains a meaningful pipeline option, but commercial differentiation will depend on evidence beyond statistical success.",
+              "confidence": "medium",
+              "tags": [
+                "biopharma",
+                "copd",
+                "clinical-trials",
+                "respiratory-care"
+              ]
+            },
+            {
+              "item_id": "2026-09-09-caspian-therapeutics-cardiometabolic-spinout",
+              "canonical_topic": "caspian-therapeutics-cardiometabolic-spinout",
+              "duplicate_group": "caspian-therapeutics-cardiometabolic-spinout",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/09/kura-oncology-spins-off-diabetes-focused-caspian-therapeutics/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-09T11:00:00Z"
+                }
+              ],
+              "title": "Caspian Therapeutics launches with $50 million to test menin inhibitors in diabetes",
+              "summary": "Caspian Therapeutics launched with $50 million in financing to develop menin inhibitors for diabetes and other cardiometabolic diseases. The company spun out of Kura Oncology around an idea suggested by leukemia-drug data. The strategy reflects a broader effort to repurpose validated biology across disease areas, while the cardiometabolic thesis remains early-stage.",
+              "strategic_implication": "The spinout creates an additional option in a high-value disease market, but clinical translation and differentiation from established metabolic therapies will determine whether the platform earns strategic relevance. Partnerships and financing should be read as validation of the hypothesis, not proof of clinical benefit.",
+              "confidence": "medium",
+              "tags": [
+                "biopharma",
+                "diabetes",
+                "cardiometabolic",
+                "drug-development"
+              ]
+            },
+            {
+              "item_id": "2026-09-09-cambia-arkansas-blue-affiliation",
+              "canonical_topic": "cambia-arkansas-blue-affiliation",
+              "duplicate_group": "cambia-arkansas-blue-affiliation",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/cambia-arkansas-bcbs-affiliation-moves-ahead/829761/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T13:16:17Z"
+                }
+              ],
+              "title": "Cambia and Arkansas Blue Cross move toward an affiliation without an asset sale",
+              "summary": "Healthcare Dive reports that the Cambia Health Solutions and Arkansas Blue Cross Blue Shield affiliation is moving ahead and is expected to close in October. No assets are changing hands; Cambia is expected to assume control of the Arkansas plan's operations. The structure emphasizes operating scale and governance rather than a conventional acquisition.",
+              "strategic_implication": "Payer leaders should watch affiliation models as a way to gain scale while preserving local brand and market presence. The value case will depend on execution, regulatory approvals, and whether shared capabilities improve affordability and member experience.",
+              "confidence": "high",
+              "tags": [
+                "health-insurance",
+                "payer-strategy",
+                "affiliation",
+                "operating-scale"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider organizations are using coverage decisions and shared-services structures to manage access, cost, and complexity. These moves show that operational resilience increasingly depends on tighter alignment between payers, specialty partners, and independent systems.",
+          "items": [
+            {
+              "item_id": "2026-09-09-mgb-health-plan-dana-farber-ma",
+              "canonical_topic": "mgb-health-plan-dana-farber-ma",
+              "duplicate_group": "mgb-health-plan-dana-farber-ma",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/mass-general-brigham-health-plan-drops-ma-coverage-for-dana-farber-patients/829790/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T14:37:47Z"
+                }
+              ],
+              "title": "Mass General Brigham health plan drops Medicare Advantage coverage for Dana-Farber patients",
+              "summary": "Mass General Brigham's health plan is dropping Medicare Advantage coverage for Dana-Farber patients as the health system and cancer institute wind down a decades-old partnership, Healthcare Dive reports. The contract lapse creates a direct access and continuity issue for Medicare beneficiaries receiving specialty cancer care. It also illustrates how provider-system realignment can surface at the patient-benefit level.",
+              "strategic_implication": "Plans and health systems should treat partnership changes as transition-of-care events, with clear notices, continuity pathways, and specialty-network alternatives. Oncology patients are particularly sensitive to network disruption, making contract governance an operational and reputational priority.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "oncology",
+                "network-management",
+                "care-continuity"
+              ]
+            },
+            {
+              "item_id": "2026-09-09-kansas-health-systems-shared-services",
+              "canonical_topic": "kansas-health-systems-shared-services",
+              "duplicate_group": "kansas-health-systems-shared-services",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/independent-kansas-health-systems-launch-shared-services-organization",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T19:44:00Z"
+                }
+              ],
+              "title": "Five independent Kansas health systems form shared-services organization to pursue scale",
+              "summary": "Five Kansas health systems that collectively serve more than half a million patients annually launched the Astra Health shared-services organization. Fierce Healthcare reports that the members aim to improve quality and trim costs while remaining independent. The model seeks operating leverage without immediate consolidation of ownership.",
+              "strategic_implication": "Shared-services structures offer community systems a middle path between stand-alone operations and full merger. Success will depend on measurable savings, interoperable governance, and the ability to preserve local decision-making while standardizing high-value functions.",
+              "confidence": "medium",
+              "tags": [
+                "health-systems",
+                "shared-services",
+                "rural-health",
+                "cost-management"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Hospitals are still building clinical capabilities around complex behavioral-health needs, with multidisciplinary models offering a practical path to better treatment and safer transitions. No major workforce headline surfaced beyond this clinical-practice signal in the current feed window.",
+          "items": [
+            {
+              "item_id": "2026-09-09-hospital-substance-use-disorder-consult-teams",
+              "canonical_topic": "hospital-substance-use-disorder-consult-teams",
+              "duplicate_group": "hospital-substance-use-disorder-consult-teams",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/hospitals/hospitals-need-better-sud-care-heres-how-few-are-leading-way",
+                  "source_type": "rss",
+                  "published_at": "2026-09-08T15:31:00Z"
+                }
+              ],
+              "title": "Multidisciplinary consult teams offer a hospital playbook for better substance-use care",
+              "summary": "Fierce Healthcare reports that new implementation guidelines from the American Society of Addiction Medicine emphasize better substance-use-disorder care in hospitals. Several leading programs use multidisciplinary addiction-medicine consult teams. The approach connects clinical expertise, workflow, and follow-up rather than leaving treatment to isolated referrals.",
+              "strategic_implication": "Hospitals should evaluate addiction-medicine consult teams as an operating model, not only a clinical service line. Staffing, escalation pathways, and post-discharge linkage will determine whether the model improves outcomes and reduces repeated acute-care use.",
+              "confidence": "medium",
+              "tags": [
+                "substance-use-disorder",
+                "addiction-medicine",
+                "hospital-operations",
+                "clinical-workforce"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-08",
       "generated_at": "2026-09-08T11:12:33Z",
       "headline": "Today's Healthcare Insights",
@@ -27837,5 +28209,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-08T11:12:33Z"
+  "last_updated": "2026-09-09T11:04:24Z"
 }

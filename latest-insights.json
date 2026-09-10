@@ -3,6 +3,352 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-10",
+      "generated_at": "2026-09-10T11:04:42Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing centers on Medicaid payment pressure, Medicare Advantage positioning, and the operational consequences of healthcare cost growth. It also tracks AI's move into heart-failure treatment and rural care, alongside fresh clinical-development and workforce signals from STAT, Healthcare Dive, and Fierce Healthcare RSS.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS/HHS/FDA web",
+          "Targeted web search",
+          "Supplementary Gmail newsletters"
+        ],
+        "sources_successful": [
+          "STAT RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "Direct search_web interface unavailable in this scheduled run",
+          "Supplementary Gmail newsletters not used"
+        ],
+        "run_notes": "The three required RSS feeds were read with curl and yielded fresh items in the Sep. 9-10 window. Targeted web context was not available because the direct search_web command was not exposed in this scheduled environment; the edition therefore relies on RSS titles and descriptions, with yesterday's edition topics screened out."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Payment integrity and regulatory governance are moving from abstract policy to near-term operating exposure. Medicaid directed-payment caps, No Surprises arbitration oversight, and emerging AI rules each create new requirements for financial controls, contracting, and technology governance.",
+          "items": [
+            {
+              "item_id": "2026-09-10-medicaid-state-directed-payment-caps",
+              "canonical_topic": "medicaid-state-directed-payment-caps",
+              "duplicate_group": "medicaid-state-directed-payment-caps",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/obbbas-state-directed-payment-caps-will-trim-some-states-medicaid-spend-quarter-study",
+                  "source_type": "rss",
+                  "published_at": "2026-09-09T18:45:00Z"
+                }
+              ],
+              "title": "New state-directed-payment caps could cut Medicaid spending sharply in hard-hit states",
+              "summary": "A study covered by Fierce Healthcare estimates that upcoming statutory limits on provider state-directed payments will reduce tens of billions of dollars in state Medicaid spending. In 17 particularly exposed states, the reduction could equal 10% to 25% of annual Medicaid spending. The change would put pressure on funding arrangements that many providers use to support Medicaid access.",
+              "strategic_implication": "Medicaid providers and state agencies should model the effect on service lines, supplemental payments, and access before the caps take effect. Health systems with high Medicaid exposure may need a faster mix of cost redesign, partnership planning, and advocacy.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "state-directed-payments",
+                "provider-finance",
+                "payment-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-10-no-surprises-arbiters-congressional-oversight",
+              "canonical_topic": "no-surprises-arbiters-congressional-oversight",
+              "duplicate_group": "no-surprises-arbiters-congressional-oversight",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/pallone-investigates-no-surprises-arbiters-idr-oversight-congress/829835/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-09T17:48:40Z"
+                }
+              ],
+              "title": "Congressional oversight targets how No Surprises arbiters make payment awards",
+              "summary": "Rep. Frank Pallone sent oversight letters to six No Surprises Act arbiters requesting information about award decisions, compensation, and related operations, Healthcare Dive reports. His office is also speaking with other arbiters. The inquiry puts the independent dispute-resolution process under a more visible governance lens.",
+              "strategic_implication": "Plans, providers, and arbitration vendors should expect continued scrutiny of documentation, incentives, and consistency in dispute outcomes. Organizations that rely on the process should preserve a clear audit trail and watch for rule or process changes.",
+              "confidence": "high",
+              "tags": [
+                "no-surprises-act",
+                "payment-disputes",
+                "congressional-oversight",
+                "healthcare-contracting"
+              ]
+            },
+            {
+              "item_id": "2026-09-10-uk-ai-medicine-regulation-recommendations",
+              "canonical_topic": "uk-ai-medicine-regulation-recommendations",
+              "duplicate_group": "uk-ai-medicine-regulation-recommendations",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/09/uk-unveils-recommendations-ai-regulation-medicine/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-09T23:01:00Z"
+                }
+              ],
+              "title": "U.K. commission recommends a clearer framework for regulating AI in medicine",
+              "summary": "A U.K. commission unveiled recommendations for regulating artificial intelligence in medicine, according to STAT. The recommendations add to the growing body of policy work aimed at governing clinical AI as it moves into real-world use. The signal is relevant beyond the U.K. because multinational developers and health systems increasingly need consistent controls across markets.",
+              "strategic_implication": "AI vendors should map product claims, evidence, monitoring, and accountability to emerging regulatory expectations rather than treating governance as a post-launch task. Health systems can use the recommendations as a benchmark for procurement and clinical-risk review.",
+              "confidence": "medium",
+              "tags": [
+                "artificial-intelligence",
+                "medical-regulation",
+                "uk-healthcare",
+                "clinical-governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI investment is concentrating on applications that can influence treatment decisions or extend capacity into underserved settings. The opportunity is significant, but adoption will depend on authorization, clinical validation, workflow integration, and trust.",
+          "items": [
+            {
+              "item_id": "2026-09-10-arpa-h-heart-failure-ai",
+              "canonical_topic": "arpa-h-heart-failure-ai",
+              "duplicate_group": "arpa-h-heart-failure-ai",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-09T16:01:00Z"
+                }
+              ],
+              "title": "ARPA-H plans $62.7 million program for FDA-authorized AI to guide heart-failure treatment",
+              "summary": "ARPA-H plans to commit $62.7 million to develop artificial-intelligence bots that direct heart-failure treatment, STAT reports. The program is aimed at FDA-authorized technology rather than purely experimental software. That focus links public research funding to the harder question of deploying AI inside regulated clinical decision-making.",
+              "strategic_implication": "Cardiology leaders and digital-health investors should watch for evidence that autonomous tools can improve treatment titration without increasing clinical risk. The FDA-authorization target also reinforces that successful health AI will need a credible regulatory and implementation pathway.",
+              "confidence": "high",
+              "tags": [
+                "arpa-h",
+                "heart-failure",
+                "clinical-ai",
+                "fda-authorization"
+              ]
+            },
+            {
+              "item_id": "2026-09-10-rural-health-ai-adoption-gap",
+              "canonical_topic": "rural-health-ai-adoption-gap",
+              "duplicate_group": "rural-health-ai-adoption-gap",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/10/rural-health-care-ai-adoption-challenges-part-4-unraveled-series/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T08:30:00Z"
+                }
+              ],
+              "title": "Rural providers question whether AI can offset the financial and workforce strain on care",
+              "summary": "STAT reports that rural health providers are confronting long-running challenges while facing nearly $1 trillion in Medicaid cuts over the coming decade. Federal officials are pointing to AI as a possible aid, but some rural leaders are skeptical that technology alone can solve the underlying capacity and financing problems. The gap between policy promise and local implementation is the central signal.",
+              "strategic_implication": "AI strategies for rural care should start with infrastructure, staffing, reimbursement, and workflow constraints rather than assume software can substitute for missing capacity. Vendors and policymakers will need measurable use cases tied to access and sustainability.",
+              "confidence": "medium",
+              "tags": [
+                "rural-health",
+                "artificial-intelligence",
+                "medicaid",
+                "care-access"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payers and life-science companies are positioning around a tougher cost environment and differentiated clinical upside. The signals favor organizations that can convert scale, transparency, or novel biology into measurable value rather than relying on headline growth alone.",
+          "items": [
+            {
+              "item_id": "2026-09-10-unitedhealthcare-2027-medicare-advantage-competitiveness",
+              "canonical_topic": "unitedhealthcare-2027-medicare-advantage-competitiveness",
+              "duplicate_group": "unitedhealthcare-2027-medicare-advantage-competitiveness",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/unitedhealthcare-medicare-advantage-2027-market-competitive/829889/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-09T12:55:59Z"
+                }
+              ],
+              "title": "UnitedHealthcare says it expects to remain competitive in 2027 Medicare Advantage",
+              "summary": "UnitedHealthcare expects to be “very competitive” in Medicare Advantage next year, CFO Wayne DeVeydt said, according to Healthcare Dive. The insurer is still working on strategies to keep its MA markets as profitable as possible ahead of 2027 open enrollment. The comment signals active portfolio and pricing management rather than a passive growth posture.",
+              "strategic_implication": "Providers and competing plans should prepare for continued benefit, network, and pricing adjustments as insurers balance enrollment with margins. MA operators will need market-specific discipline as competitive positioning meets tighter economics.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "unitedhealthcare",
+                "payer-strategy",
+                "health-insurance"
+              ]
+            },
+            {
+              "item_id": "2026-09-10-healthcare-spending-premium-growth",
+              "canonical_topic": "healthcare-spending-premium-growth",
+              "duplicate_group": "healthcare-spending-premium-growth",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/increases-healthcare-spending-largest-driver-behind-premium-growth-yale-study",
+                  "source_type": "rss",
+                  "published_at": "2026-09-09T16:06:00Z"
+                }
+              ],
+              "title": "Yale study identifies rising healthcare spending as the largest driver of premium growth",
+              "summary": "A Yale study covered by Fierce Healthcare finds that escalating healthcare spending is the leading factor behind rising insurance premiums. The finding shifts attention from premium mechanics to the underlying cost of care. It reinforces the pressure on plans, employers, providers, and policymakers to address utilization and unit-price growth together.",
+              "strategic_implication": "Cost strategies focused only on benefit design or consumer contribution are unlikely to be sufficient. Executives should connect premium planning to provider economics, site-of-care management, and high-cost condition interventions.",
+              "confidence": "medium",
+              "tags": [
+                "healthcare-costs",
+                "insurance-premiums",
+                "payer-strategy",
+                "employer-benefits"
+              ]
+            },
+            {
+              "item_id": "2026-09-10-starkrx-transparent-pbm-model",
+              "canonical_topic": "starkrx-transparent-pbm-model",
+              "duplicate_group": "starkrx-transparent-pbm-model",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/judi-health-employers-health-team-launch-new-pbm-model-starkrx",
+                  "source_type": "rss",
+                  "published_at": "2026-09-09T15:10:00Z"
+                }
+              ],
+              "title": "Employers Health and Judi Health launch StarkRx cost-plus PBM model",
+              "summary": "Employers Health and Judi Health are teaming up to launch StarkRx, a cost-plus pharmacy-benefit offering designed to increase transparency for employers, Fierce Healthcare reports. The model adds another alternative to conventional PBM arrangements. Its relevance will depend on whether transparent pricing produces measurable savings and usable employer oversight.",
+              "strategic_implication": "Employers should compare transparent PBM models on net cost, formulary governance, rebate treatment, and operational service—not only fee structure. Incumbent PBMs may face more pressure to explain where value is created across the pharmacy supply chain.",
+              "confidence": "medium",
+              "tags": [
+                "pbm",
+                "drug-pricing",
+                "employer-benefits",
+                "transparency"
+              ]
+            },
+            {
+              "item_id": "2026-09-10-uniqure-huntington-gene-therapy-readout",
+              "canonical_topic": "uniqure-huntington-gene-therapy-readout",
+              "duplicate_group": "uniqure-huntington-gene-therapy-readout",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/10/uniqure-huntingtons-gene-therapy-trial-readout/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T10:30:00Z"
+                }
+              ],
+              "title": "UniQure’s Huntington’s gene-therapy readout could test durability of a high-risk platform",
+              "summary": "UniQure is expected to report four-year results before the end of September from a closely watched clinical trial of its Huntington’s disease gene therapy, STAT reports. The timing puts long-term durability and safety in focus after earlier development milestones. The readout could materially shape expectations for gene therapy in a difficult neurodegenerative disease.",
+              "strategic_implication": "Investors and clinical leaders should evaluate the durability, functional outcomes, and safety profile rather than treat an upcoming readout as a binary catalyst. The result will also inform how developers design evidence and commercialization plans for one-time therapies.",
+              "confidence": "medium",
+              "tags": [
+                "gene-therapy",
+                "huntingtons-disease",
+                "clinical-trials",
+                "biopharma"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider organizations are responding to financial and technology pressure with workforce restructuring while reassessing whether AI can address capacity gaps. The operational priority is to align technology investment with sustainable staffing and service access.",
+          "items": [
+            {
+              "item_id": "2026-09-10-trinity-health-it-layoffs",
+              "canonical_topic": "trinity-health-it-layoffs",
+              "duplicate_group": "trinity-health-it-layoffs",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/trinity-health-to-lay-off-557-it-workers/829916/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-09T14:55:22Z"
+                }
+              ],
+              "title": "Trinity Health to lay off 557 IT workers as it outsources some technology roles",
+              "summary": "Trinity Health plans to lay off 557 IT workers, the second layoff wave at the nonprofit this year, Healthcare Dive reports. Trinity cited financial pressures and increasingly complex technology requirements as it moves to outsource some technology roles. The decision highlights the tension between rising digital demands and constrained provider budgets.",
+              "strategic_implication": "Health-system leaders should treat technology sourcing as a service-continuity and change-management decision, not only a labor-cost action. Outsourcing can create scale, but transition controls, cybersecurity, and retained internal expertise will determine whether savings persist.",
+              "confidence": "high",
+              "tags": [
+                "health-systems",
+                "it-workforce",
+                "outsourcing",
+                "provider-finance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical education is experimenting with new ways to build skills and engagement as care becomes more technology-enabled. The workforce signal is less about novelty than about whether training methods improve readiness without adding friction to already constrained teams.",
+          "items": [
+            {
+              "item_id": "2026-09-10-video-games-medical-education",
+              "canonical_topic": "video-games-medical-education",
+              "duplicate_group": "video-games-medical-education",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/how-video-games-are-changing-medical-education",
+                  "source_type": "rss",
+                  "published_at": "2026-09-09T13:12:00Z"
+                }
+              ],
+              "title": "Video-game design is being used to train doctors and build clinical skills",
+              "summary": "Fierce Healthcare reports that video-game design is being applied to medical education, including doctor training and clinical-skill development. The approach uses interactive mechanics to make practice and feedback more engaging. It adds to the broader shift toward simulation and digital learning in health-profession training.",
+              "strategic_implication": "Education leaders should evaluate game-based training against objective competency, retention, and transfer-to-practice measures. Used selectively, interactive simulation could help scale training while making complex clinical scenarios safer to rehearse.",
+              "confidence": "medium",
+              "tags": [
+                "medical-education",
+                "clinical-training",
+                "simulation",
+                "workforce-development"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-09",
       "generated_at": "2026-09-09T11:03:26Z",
       "headline": "Today's Healthcare Insights",
@@ -28209,5 +28555,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-09T11:04:24Z"
+  "last_updated": "2026-09-10T11:04:42Z"
 }

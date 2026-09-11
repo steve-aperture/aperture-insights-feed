@@ -3,6 +3,420 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-11",
+      "generated_at": "2026-09-11T11:11:15Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks a tighter Medicare Advantage scoring environment, a politically timed ACA refund proposal, and accelerating federal and provider investment in clinical AI. It also flags capital discipline in hospitals, maternity-access fragility, cardiovascular drug-development setbacks, and workforce consequences from revenue-cycle outsourcing, using current STAT, Healthcare Dive, and Fierce Healthcare reporting with targeted web corroboration.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "CMS newsroom and policy pages",
+          "Targeted web search: Reuters, Cardiovascular Business, Business Insider, Becker's Hospital Review"
+        ],
+        "sources_successful": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search corroboration"
+        ],
+        "sources_failed": [
+          "HealthcareBrew, Hospitalogy, and Modern Healthcare email/RSS sources were not available in this run",
+          "Some publisher article pages were paywalled or access-restricted; RSS descriptions and search excerpts were used instead"
+        ],
+        "run_notes": "Fresh clone completed. Signals were screened against prior editions to avoid repeating yesterday's topics; current RSS items from Sept. 10-11 were prioritized, with a small number of targeted web corroborations for key claims."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "The near-term policy signal is a more consequential Medicare Advantage operating environment, while the administration's proposed ACA refunds add a politically visible intervention ahead of open enrollment. Plans should model both scoring pressure and member-communication risk rather than treating either development as a one-off announcement.",
+          "items": [
+            {
+              "item_id": "2026-09-11-aca-500-refunds",
+              "canonical_topic": "aca-500-refunds",
+              "duplicate_group": "aca-500-refunds",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/10/trump-affordable-care-act-refund-checks-who-is-eligible/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T19:57:28Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/world/us-issue-500-obamacare-refunds-nearly-million-americans-2026-09-10",
+                  "source_type": "web",
+                  "published_at": "2026-09-10T00:00:00Z"
+                }
+              ],
+              "title": "White House proposes $500 refunds for nearly 1 million ACA enrollees",
+              "summary": "The administration says it plans to send $500 refunds to nearly 1 million people enrolled in Affordable Care Act plans, with checks expected to go out next month. STAT reports that the proposal is aimed at people who do not receive federal premium subsidies, leaving out tens of millions of other ACA enrollees. Reuters and STAT both describe the announcement as tied to higher premiums and the expiration of enhanced subsidies.",
+              "strategic_implication": "Issuers and enrollment organizations should prepare for member questions, eligibility confusion, and political messaging around the payments before open enrollment. The proposal could also create additional volatility in individual-market shopping behavior and communications costs.",
+              "confidence": "medium",
+              "tags": [
+                "aca",
+                "individual-market",
+                "health-insurance",
+                "enrollment"
+              ]
+            },
+            {
+              "item_id": "2026-09-11-ma-2027-star-cutpoints",
+              "canonical_topic": "ma-2027-star-cutpoints",
+              "duplicate_group": "ma-2027-star-cutpoints",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/medicare-advantage-stars-cutpoints-2027-cms/829963/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T16:18:29Z"
+                },
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-rate-announcement",
+                  "source_type": "web",
+                  "published_at": "2026-04-06T00:00:00Z"
+                }
+              ],
+              "title": "CMS makes 2027 Medicare Advantage Star thresholds harder for many plans to reach",
+              "summary": "CMS released draft 2027 Medicare Advantage Star Ratings cut points that are harder to reach for about half of the thresholds, Healthcare Dive reports. The change adds pressure to plans already managing tighter margins and quality-linked revenue. CMS's 2027 rate materials also show a small negative Star Ratings impact in the rate announcement framework.",
+              "strategic_implication": "Plans should treat quality operations, coding accuracy, member outreach, and care-transition execution as a single margin-protection program. Smaller threshold changes can have an outsized effect when they determine bonus payments and consumer-facing plan comparisons.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "star-ratings",
+                "cms",
+                "payer-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Clinical AI is moving toward regulated, workflow-specific use cases rather than broad experimentation. Federal ambition, FDA authorization, and a national telehealth modernization contract all point to adoption being won through evidence, integration, and governance.",
+          "items": [
+            {
+              "item_id": "2026-09-11-fda-queen-of-hearts-ekg-ai",
+              "canonical_topic": "fda-queen-of-hearts-ekg-ai",
+              "duplicate_group": "fda-queen-of-hearts-ekg-ai",
+              "priority_score": 9,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/11/fda-new-ekg-heart-attack-detection-algo-queen-of-hearts/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-11T08:30:00Z"
+                },
+                {
+                  "source": "Cardiovascular Business",
+                  "url": "https://cardiovascularbusiness.com/topics/cardiac-imaging/electrocardiography-ecg/fda-authorizes-queen-hearts-ai-model-detecting-heart-attacks-ecg-results",
+                  "source_type": "web",
+                  "published_at": "2026-09-07T00:00:00Z"
+                }
+              ],
+              "title": "FDA authorizes AI that flags severe heart attacks and harder-to-detect ECG patterns",
+              "summary": "The FDA granted a de novo classification to Powerful Medical's Queen of Hearts, an AI model intended to help triage acute coronary syndrome from electrocardiograms. STAT notes that de novo authorization is less common than 510(k) clearance and generally requires a stronger evidence case for a novel device category.",
+              "strategic_implication": "This is a meaningful test of whether regulated AI can shorten time to the right cardiac pathway without adding alert burden. Health systems should evaluate the model against cath-lab activation workflows, clinical liability controls, and measurable time-to-treatment outcomes.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "cardiology",
+                "fda",
+                "medical-devices"
+              ]
+            },
+            {
+              "item_id": "2026-09-11-federal-clinical-ai-ambitions",
+              "canonical_topic": "federal-clinical-ai-ambitions",
+              "duplicate_group": "federal-clinical-ai-ambitions",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/health-tech/ctas-dc-healthcare-event-federal-officials-outline-ai-ambitions-clinicians-debate-risks",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T15:07:00Z"
+                }
+              ],
+              "title": "Federal agencies are accelerating clinical AI plans as clinicians debate implementation risk",
+              "summary": "Fierce Healthcare reports that federal health officials are expanding artificial intelligence ambitions, with clinical AI emerging as a strategic priority for CMS. The same discussion is surfacing clinician concerns about safety, accountability, and the gap between model capability and real-world workflow reliability.",
+              "strategic_implication": "Health systems should move from generic AI enthusiasm to a portfolio approach that distinguishes low-risk productivity tools from clinical decision support. Procurement standards, monitoring, and clear human-override pathways will be differentiators as federal programs create more demand.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "cms",
+                "ai-governance",
+                "healthcare-technology"
+              ]
+            },
+            {
+              "item_id": "2026-09-11-va-amwell-telehealth-modernization",
+              "canonical_topic": "va-amwell-telehealth-modernization",
+              "duplicate_group": "va-amwell-telehealth-modernization",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/veterans-affairs-taps-amwell-telehealth-revamp/830032/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T14:11:59Z"
+                },
+                {
+                  "source": "Business Insider",
+                  "url": "https://markets.businessinsider.com/news/stocks/amwell-receives-letter-of-intent-from-department-of-veterans-affairs-to-help-power-its-digital-health-infrastructure-1036528175",
+                  "source_type": "web",
+                  "published_at": "2026-09-10T00:00:00Z"
+                }
+              ],
+              "title": "VA selects Amwell to support a national telehealth modernization effort",
+              "summary": "The Department of Veterans Affairs selected Amwell to facilitate telehealth delivery across the agency, Healthcare Dive reports. The platform is intended to connect veterans with VA providers or outside specialists, although the modernization program has experienced delays and setbacks in earlier phases.",
+              "strategic_implication": "The scale of the VA deployment makes interoperability, uptime, specialty routing, and clinician adoption more important than a simple virtual-visit count. Vendors and health systems should expect public-sector buyers to demand measurable access and continuity outcomes.",
+              "confidence": "medium",
+              "tags": [
+                "telehealth",
+                "veterans-affairs",
+                "digital-health",
+                "care-access"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Industry signals are mixed: cardiovascular innovation has taken a confidence hit, while large healthcare platforms are still repositioning around services, analytics, and AI. Capital remains available, but leadership credibility and a clear path to durable economics matter more than headline growth.",
+          "items": [
+            {
+              "item_id": "2026-09-11-cardiovascular-drug-trial-failures",
+              "canonical_topic": "cardiovascular-drug-trial-failures",
+              "duplicate_group": "cardiovascular-drug-trial-failures",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/11/novartis-novo-nordisk-cardiovascular-drug-trials-fallout/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-11T08:30:00Z"
+                }
+              ],
+              "title": "Back-to-back Novartis and Novo Nordisk failures could cool cardiovascular drug investment",
+              "summary": "STAT reports that recent failures of Novartis' pelacarsen and a Novo Nordisk cardiovascular program could have a chilling effect across drug development. Pelacarsen was designed to reduce cardiovascular events by lowering lipoprotein(a), a risk factor pursued by multiple companies after substantial investment.",
+              "strategic_implication": "Biopharma leaders and investors should reassess cardiovascular trial assumptions, endpoint strategy, and portfolio concentration rather than extrapolating from the size of the addressable market. For providers, the near-term implication is a more uncertain pipeline for new risk-reduction therapies.",
+              "confidence": "medium",
+              "tags": [
+                "biopharma",
+                "cardiology",
+                "clinical-trials",
+                "drug-development"
+              ]
+            },
+            {
+              "item_id": "2026-09-11-optum-health-turnaround",
+              "canonical_topic": "optum-health-turnaround",
+              "duplicate_group": "optum-health-turnaround",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/optum-health-ceo-pulls-back-curtain-turnaround",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T15:23:00Z"
+                }
+              ],
+              "title": "Optum Health outlines a turnaround as UnitedHealth resets its services strategy",
+              "summary": "Fierce Healthcare reports that Optum Health leadership is detailing a turnaround plan as UnitedHealth Group works through a difficult 2025. The effort centers on the economics and operating model of the healthcare-services unit rather than a single product change.",
+              "strategic_implication": "The reset is a market signal for provider enablement, value-based care, and vertically integrated platforms: scale alone will not offset weak unit economics. Competitors should watch for changes in risk appetite, contracting posture, and asset-level performance expectations.",
+              "confidence": "medium",
+              "tags": [
+                "optum",
+                "unitedhealth-group",
+                "healthcare-services",
+                "value-based-care"
+              ]
+            },
+            {
+              "item_id": "2026-09-11-health-catalyst-ceo-transition",
+              "canonical_topic": "health-catalyst-ceo-transition",
+              "duplicate_group": "health-catalyst-ceo-transition",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/health-catalyst-appoints-new-ceo/830040/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T15:03:00Z"
+                }
+              ],
+              "title": "Health Catalyst names another CEO as it tries to navigate an AI pivot and revenue pressure",
+              "summary": "Health Catalyst appointed a new CEO after cycling through three chief executives in eight months, Healthcare Dive reports. The company is positioning the new leader to navigate an AI pivot alongside revenue headwinds in healthcare analytics.",
+              "strategic_implication": "Frequent leadership changes can slow enterprise sales, product prioritization, and customer confidence precisely when analytics vendors need to prove AI-led value. Buyers should assess roadmap continuity, implementation capacity, and balance-sheet resilience alongside product claims.",
+              "confidence": "high",
+              "tags": [
+                "health-analytics",
+                "artificial-intelligence",
+                "leadership",
+                "healthcare-it"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operators are balancing access needs against capital and reimbursement pressure. Maternity-service scarcity and the cancellation of a major inpatient tower show how financial constraints are reshaping where systems place capacity, even when demand remains strong.",
+          "items": [
+            {
+              "item_id": "2026-09-11-hospital-maternity-access-gap",
+              "canonical_topic": "hospital-maternity-access-gap",
+              "duplicate_group": "hospital-maternity-access-gap",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/half-of-us-hospitals-lack-maternity-wards-as-medicaid-cuts-loom-report/830015/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T13:10:35Z"
+                }
+              ],
+              "title": "Nearly half of U.S. hospitals lack maternity services as Medicaid pressure builds",
+              "summary": "A new report covered by Healthcare Dive says nearly half of U.S. hospitals now operate without obstetric services. The report warns that closures could worsen as Medicaid cuts threaten hospital finances, increasing the distance many patients must travel for labor and delivery care.",
+              "strategic_implication": "Health systems and states should treat maternity capacity as a regional-network problem, not only a service-line P&L issue. Scenario planning should include transport, referral, workforce, and Medicaid-access effects before additional closures become irreversible.",
+              "confidence": "medium",
+              "tags": [
+                "maternity-care",
+                "hospital-operations",
+                "medicaid",
+                "rural-health"
+              ]
+            },
+            {
+              "item_id": "2026-09-11-ui-health-care-patient-tower-cancelled",
+              "canonical_topic": "ui-health-care-patient-tower-cancelled",
+              "duplicate_group": "ui-health-care-patient-tower-cancelled",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/university-iowa-health-care-calls-2b-patient-tower-build",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T15:53:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/capital/u-of-iowa-health-care-scraps-plans-for-2b-patient-tower/",
+                  "source_type": "web",
+                  "published_at": "2026-09-10T00:00:00Z"
+                }
+              ],
+              "title": "University of Iowa Health Care cancels $2B-plus patient tower and pivots to existing facilities",
+              "summary": "University of Iowa Health Care called off a planned $2 billion-plus patient tower, citing significant financial challenges across the industry. The system is instead proposing a roughly $380 million capital plan focused on updating and expanding existing facilities.",
+              "strategic_implication": "The decision illustrates a broader shift from transformative greenfield projects toward staged, faster-payback capacity investments. Boards should stress-test major builds against reimbursement, labor, interest-rate, and demand scenarios, while preserving near-term access improvements.",
+              "confidence": "high",
+              "tags": [
+                "hospital-capital",
+                "provider-finance",
+                "healthcare-construction",
+                "patient-access"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Today's workforce and clinical signals show both labor-model disruption and the long tail of treatment decisions. Outsourcing can rapidly change staffing needs, while new evidence on survivorship raises the bar for long-term monitoring and care planning.",
+          "items": [
+            {
+              "item_id": "2026-09-11-conifer-commonspirit-contract-layoffs",
+              "canonical_topic": "conifer-commonspirit-contract-layoffs",
+              "duplicate_group": "conifer-commonspirit-contract-layoffs",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/tenet-laying-1000-conifer-employees-amid-commonspirit-contract-breakup",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T18:30:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/revenue-cycle-management/conifer-to-lay-off-1000-as-commonspirit-contract-ends/",
+                  "source_type": "web",
+                  "published_at": "2026-09-10T00:00:00Z"
+                }
+              ],
+              "title": "Tenet plans to lay off more than 1,000 Conifer workers as CommonSpirit contract ends",
+              "summary": "Tenet Healthcare's Conifer revenue-cycle subsidiary plans to lay off more than 1,000 employees as a long-term CommonSpirit outsourcing contract ends, with layoffs beginning Nov. 2. The move is part of a broader pivot in the revenue-cycle business and reflects how contract changes can quickly reshape healthcare employment.",
+              "strategic_implication": "Revenue-cycle leaders should plan transition capacity, knowledge transfer, and service continuity well before contract termination. Health systems evaluating outsourcing should model workforce concentration and reversibility, not just the vendor's unit-cost promise.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-workforce",
+                "revenue-cycle",
+                "outsourcing",
+                "provider-operations"
+              ]
+            },
+            {
+              "item_id": "2026-09-11-childhood-platinum-chemo-liver-aging",
+              "canonical_topic": "childhood-platinum-chemo-liver-aging",
+              "duplicate_group": "childhood-platinum-chemo-liver-aging",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/10/childhood-chemotherapy-cisplatin-carboplatin-new-study-liver-impact/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-10T18:00:00Z"
+                },
+                {
+                  "source": "Science",
+                  "url": "http://www.science.org/doi/10.1126/science.ady0339",
+                  "source_type": "web",
+                  "published_at": "2026-09-10T00:00:00Z"
+                }
+              ],
+              "title": "Study links childhood platinum chemotherapy to liver-cell mutations and long-term risk",
+              "summary": "STAT reports on a Science study finding that cisplatin and carboplatin exposure in childhood can leave mutations in healthy liver cells and make them resemble older adult cells. The findings add detail to the long-term survivorship risks associated with platinum-based treatment, even as these drugs remain critical to curing several pediatric cancers.",
+              "strategic_implication": "Pediatric oncology programs should incorporate the evidence into survivorship counseling, risk-stratified monitoring, and longitudinal data collection. The signal reinforces the need to balance high acute treatment benefit with structured follow-up for late effects.",
+              "confidence": "medium",
+              "tags": [
+                "pediatric-oncology",
+                "survivorship",
+                "clinical-research",
+                "long-term-risk"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-10",
       "generated_at": "2026-09-10T12:55:00Z",
       "headline": "Today's Healthcare Insights",
@@ -11418,5 +11832,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-10T12:55:00Z"
+  "last_updated": "2026-09-11T11:11:15Z"
 }

@@ -3,6 +3,272 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-14",
+      "generated_at": "2026-09-14T11:15:50Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing centers on the implementation gap between federal healthcare policy and frontline operating realities: rural hospitals question how usable new funding will be, drug-pricing savings face transparency risk, and No Surprises arbitration remains contested. Market and operating signals include a second positive psychedelic-therapy trial, Novo's strategic rebrand, Abridge's expansion into revenue-cycle AI, and broader scrutiny of hospital mergers, using STAT News and Fierce Healthcare RSS with targeted web-search context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search: CMS/HHS/FDA, hospital operations, digital health/AI, drug pricing, Medicare/Medicaid"
+        ],
+        "sources_successful": [
+          "STAT News RSS",
+          "Fierce Healthcare RSS",
+          "Healthcare Dive RSS (feed reachable; no major non-sponsored editorial signal selected)",
+          "Targeted web search"
+        ],
+        "sources_failed": [
+          "Gmail supplementary labels not used in this run"
+        ],
+        "run_notes": "Built from current STAT and Fierce Healthcare RSS entries plus targeted web-search context. Healthcare Dive RSS was reachable but its current entries were sponsored items, so it was not used for a selected item; no email source was needed. Stories were screened against recent editions to avoid straightforward duplicates."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Today's policy signal is less about headline appropriations than about execution: rural providers question the usability of new funding, drug-pricing savings may depend on opaque deal terms, and No Surprises arbitration remains under pressure from employers and consumers.",
+          "items": [
+            {
+              "item_id": "2026-09-14-rural-health-fund-shortfall",
+              "canonical_topic": "rural-health-transformation-fund",
+              "duplicate_group": "rural-health-transformation-fund",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/14/rural-health-transformation-fund-skepticism-shortcomings-part-5-unraveled-series/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T08:30:00Z"
+                }
+              ],
+              "title": "Hospital leaders say the $50 billion rural health fund is falling short",
+              "summary": "STAT reports that hospital leaders who initially welcomed the Rural Health Transformation Fund became more skeptical after reviewing its requirements and limitations. The story frames the gap between the headline funding figure and what rural providers believe they can practically use.",
+              "strategic_implication": "Rural systems should model the fund as constrained, conditional capital rather than assume it will close operating or infrastructure gaps. State and federal implementation details may matter as much as the topline appropriation.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "hospital-finance",
+                "federal-policy",
+                "health-equity"
+              ]
+            },
+            {
+              "item_id": "2026-09-14-mfn-secretive-pharma-deals",
+              "canonical_topic": "most-favored-nation-drug-pricing",
+              "duplicate_group": "most-favored-nation-drug-pricing",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/13/trump-secretive-pharma-deals-undermine-most-favored-nation-pricing/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-13T22:30:00Z"
+                }
+              ],
+              "title": "Secretive pharma deals could weaken projected savings from most-favored-nation pricing",
+              "summary": "STAT reports that a new analysis finds confidential agreements with pharmaceutical companies could substantially reduce the savings projected from the administration’s most-favored-nation drug-pricing policy. The concern is that deal structures may obscure the effective prices used to estimate policy impact.",
+              "strategic_implication": "Plans, employers, and health systems should stress-test drug-spend forecasts against multiple net-price scenarios instead of relying on headline list-price reductions. Contract transparency and implementation mechanics will be central to determining who captures savings.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "pharma",
+                "policy-risk",
+                "health-economics"
+              ]
+            },
+            {
+              "item_id": "2026-09-14-no-surprises-idr-reform",
+              "canonical_topic": "no-surprises-act-idr-reform",
+              "duplicate_group": "no-surprises-act-idr-reform",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/employer-consumer-groups-urge-lawmakers-reform-no-surprises-acts-idr",
+                  "source_type": "rss",
+                  "published_at": "2026-09-11T11:59:00Z"
+                }
+              ],
+              "title": "Employers and consumer groups press lawmakers to close No Surprises arbitration loopholes",
+              "summary": "Fierce Healthcare reports that employer and consumer organizations are urging Congress to address loopholes in the No Surprises Act’s independent dispute resolution process. The groups argue that the current structure can create payment and affordability pressures.",
+              "strategic_implication": "Payers, providers, and self-funded employers should monitor any legislative changes that could alter arbitration leverage, administrative burden, or out-of-network payment exposure. Contracting strategies may need to adapt if policymakers tighten the process.",
+              "confidence": "high",
+              "tags": [
+                "no-surprises-act",
+                "payer-provider",
+                "employer-benefits",
+                "surprise-billing"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Revenue-cycle AI is moving beyond documentation into pre-bill review, shifting the evaluation question from note efficiency to measurable financial and clinical controls.",
+          "items": [
+            {
+              "item_id": "2026-09-14-abridge-revenue-cycle-ai",
+              "canonical_topic": "abridge-revenue-cycle-ai",
+              "duplicate_group": "abridge-revenue-cycle-ai",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-expands-revenue-cycle-ai-powered-pre-bill-claim-review",
+                  "source_type": "rss",
+                  "published_at": "2026-09-13T19:22:00Z"
+                }
+              ],
+              "title": "Abridge expands from clinical documentation into AI-powered pre-bill claim review",
+              "summary": "Fierce Healthcare reports that Abridge has launched a pre-bill review capability for clinical documentation integrity, coding, and revenue-cycle teams. The move extends the company’s clinical AI footprint into a mid-cycle workflow where documentation quality and claim accuracy directly affect cash collection.",
+              "strategic_implication": "Health systems should evaluate ambient and generative AI vendors on end-to-end revenue-cycle value, not only note-generation productivity. Governance, auditability, and denial-rate measurement will become differentiators as clinical AI moves closer to billing.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "revenue-cycle",
+                "coding",
+                "health-systems"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Biopharma signals are mixed: a second large psychedelic-therapy trial supports the sector's regulatory case, while Novo's rebrand signals a need to sharpen competitive positioning in obesity and diabetes.",
+          "items": [
+            {
+              "item_id": "2026-09-14-definium-lsd-anxiety-trial",
+              "canonical_topic": "definium-lsd-anxiety-therapy",
+              "duplicate_group": "definium-lsd-anxiety-therapy",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/14/definiums-lsd-therapy-eased-anxiety-large-trial-psychedelic/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T11:00:00Z"
+                }
+              ],
+              "title": "Definium’s LSD therapy eases anxiety in a second large trial",
+              "summary": "STAT reports that Definium’s LSD-based therapy eased anxiety in a second large trial. The result arrives as the first wave of psychedelic biotechs moves closer to potential regulatory approvals for treatments intended to deliver rapid benefits.",
+              "strategic_implication": "Behavioral-health organizations and investors should prepare for a more crowded evidence and commercialization landscape if psychedelic therapies continue to produce confirmatory trial results. Delivery infrastructure, clinician training, and reimbursement design may become bottlenecks alongside regulatory review.",
+              "confidence": "medium",
+              "tags": [
+                "psychedelics",
+                "mental-health",
+                "clinical-trials",
+                "biotech"
+              ]
+            },
+            {
+              "item_id": "2026-09-14-novo-rebrand-obesity-diabetes",
+              "canonical_topic": "novo-nordisk-rebrand",
+              "duplicate_group": "novo-nordisk-rebrand",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT RSS",
+                  "url": "https://www.statnews.com/2026/09/14/novo-nordisk-company-rebrand-obesity-diabetes/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T08:58:48Z"
+                }
+              ],
+              "title": "Novo Nordisk rebrands as Novo amid pressure to sharpen its competitive focus",
+              "summary": "STAT reports that Novo Nordisk is adopting the name Novo as part of a rebrand intended to signal a more focused and competitive future. The change comes as the company operates across obesity and diabetes markets with intensifying competition.",
+              "strategic_implication": "The rebrand is a market signal, not an operating turnaround by itself; partners should watch for accompanying portfolio, access, and commercial decisions. Competitors and payers should treat branding changes as an indicator to reassess Novo’s strategic positioning and negotiation posture.",
+              "confidence": "medium",
+              "tags": [
+                "obesity-care",
+                "diabetes",
+                "pharma",
+                "market-competition"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Hospital strategy is being tested on two fronts: access to rural capital and the broader community-impact case for mergers under antitrust review.",
+          "items": [
+            {
+              "item_id": "2026-09-14-aha-hospital-merger-antitrust",
+              "canonical_topic": "hospital-merger-antitrust",
+              "duplicate_group": "hospital-merger-antitrust",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/aha-regulators-look-beyond-commercial-prices-when-weighing-hospital-mergers",
+                  "source_type": "rss",
+                  "published_at": "2026-09-11T14:19:00Z"
+                }
+              ],
+              "title": "AHA urges regulators to look beyond commercial prices in hospital-merger reviews",
+              "summary": "Fierce Healthcare reports that the American Hospital Association is using a commissioned analysis to emphasize the stakes for vulnerable patients and facilities when hospital mergers face antitrust scrutiny. The argument asks regulators to consider more than commercial price effects when assessing a transaction.",
+              "strategic_implication": "Health systems pursuing affiliation or merger strategies should expect broader scrutiny of access, service continuity, and community impact. Boards should pair transaction economics with a defensible operating plan for vulnerable populations and essential services.",
+              "confidence": "medium",
+              "tags": [
+                "hospital-mergers",
+                "antitrust",
+                "provider-strategy",
+                "rural-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Leadership accountability and patient trust remain operating requirements as health systems manage affordability, access, and technology change.",
+          "items": [
+            {
+              "item_id": "2026-09-14-scan-ethical-healthcare-leadership",
+              "canonical_topic": "ethical-healthcare-leadership",
+              "duplicate_group": "ethical-healthcare-leadership",
+              "priority_score": 4,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/scan-ceo-sachin-jain-publishing-book-ethical-healthcare-leadership-heres-why",
+                  "source_type": "rss",
+                  "published_at": "2026-09-11T17:06:00Z"
+                }
+              ],
+              "title": "SCAN Health Plan CEO uses new book to challenge normalized leadership practices",
+              "summary": "Fierce Healthcare reports that SCAN CEO Sachin Jain is publishing a book that calls on healthcare leaders to acknowledge their role in normalizing practices that should be questioned. The project frames ethical leadership as an active responsibility rather than a compliance exercise.",
+              "strategic_implication": "Clinical and operational leaders should connect ethics to concrete decisions about access, incentives, workforce treatment, and patient trust. A stronger leadership narrative can support culture change only when paired with measurable accountability.",
+              "confidence": "low",
+              "tags": [
+                "healthcare-leadership",
+                "ethics",
+                "patient-trust",
+                "workforce-culture"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-11",
       "generated_at": "2026-09-11T12:55:00Z",
       "headline": "Today's Healthcare Insights",
@@ -11544,5 +11810,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-11T12:55:00Z"
+  "last_updated": "2026-09-14T11:15:50Z"
 }

@@ -4,34 +4,32 @@
   "editions": [
     {
       "edition_date": "2026-09-15",
-      "generated_at": "2026-09-15T11:07:28Z",
+      "generated_at": "2026-09-15T12:45:00Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing highlights the operational consequences of healthcare AI and reimbursement policy: documents point to problems in Medicare's AI prior-authorization pilot, while providers face new 340B reporting demands and uncertainty over remote-monitoring payment. Market and workforce signals include strong late-stage kidney-drug data, an FDA psychedelic-medicine hearing, a fresh Conifer layoff announcement, and a court pause on visa-duration limits, based on STAT News, Healthcare Dive, and Fierce Healthcare RSS.",
+      "summary_note": "Today's briefing tracks the gap between healthcare policy design and operating reality: documents show Medicare's WISeR AI prior-authorization pilot launched over vendor objections, J&J is conditioning 340B discounts on claims-data reporting, and NIH has opened research-infrastructure funding to businesses and local governments. Operating and market signals include Oracle's nurse-facing clinical AI agent, Conifer's 1,037-person layoff, strong final Phase 3 data for Vera's Trutakna, Abbott's $385 million formula settlement, a court pause on visa-duration limits, and a third measles death in Pennsylvania's 676-case outbreak. Built from STAT News and Healthcare Dive RSS with Fierce Healthcare items carried from the earlier run; the InsightsSources Gmail labels were unavailable in the connected mailbox.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
-          "STAT News RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "Targeted web search: CMS/HHS/FDA, hospital operations, digital health/AI, drug pricing, Medicare/Medicaid",
-          "Gmail supplementary labels: HealthcareBrew, Healthcare Dive, Hospitalogy, Modern Healthcare, STAT"
-        ],
-        "sources_successful": [
+          "Gmail labels: InsightsSources/Healthcare Brew, InsightsSources/Healthcare Dive, InsightsSources/Hospitalogy, InsightsSources/Modern Healthcare",
           "STAT News RSS",
           "Healthcare Dive RSS",
           "Fierce Healthcare RSS"
         ],
-        "sources_failed": [
-          "Targeted web search unavailable in this scheduled-run environment",
-          "Gmail supplementary labels not used in this run"
+        "sources_successful": [
+          "STAT News RSS",
+          "Healthcare Dive RSS"
         ],
-        "run_notes": "Built from current RSS titles and descriptions. The direct search_web utility and supplementary Gmail labels were unavailable, so no web or email signals were used; stories were screened against the latest editions to avoid straightforward duplicates. Healthcare Dive feed lastBuildDate was Sep 14, while its selected items were within the latest news window; older feed entries were excluded unless they represented a distinct operational development."
+        "sources_failed": [
+          "Gmail InsightsSources/* labels returned no messages — the connected mailbox does not hold these labels",
+          "Fierce Healthcare RSS blocked by bot protection on this run (items retained from the earlier same-day run)"
+        ],
+        "run_notes": "Same-day refresh of the 2026-09-15 edition per the one-edition-per-date rule. All four InsightsSources Gmail labels were queried and returned no messages, consistent with the connected mailbox being separate from the one holding those labels. STAT News and Healthcare Dive RSS were read directly and key figures were verified against the source articles (Abbott $385M; Pennsylvania 676 cases, 124 hospitalizations; Conifer 1,037 layoffs). Fierce Healthcare RSS was blocked by bot protection, so its three items from the earlier run were retained with their original links. New signals added in this refresh: NIH research-funding eligibility expansion and Pennsylvania's third measles death. Items were screened against the prior six editions to avoid duplicates."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "Today’s policy signal is implementation risk: Medicare AI prior authorization is under scrutiny, 340B reporting rules are tightening, and FDA is testing the policy perimeter for psychedelic medicines.",
+          "synthesis": "Today's policy signal is implementation risk on three fronts: Medicare's AI prior-authorization pilot is under scrutiny, manufacturers are tightening 340B data conditions, and NIH is redrawing who can compete for federal research infrastructure.",
           "items": [
             {
               "item_id": "2026-09-15-medicare-wiser-ai-pilot",
@@ -109,6 +107,32 @@
                 "psychedelics",
                 "drug-approval",
                 "patient-safety"
+              ]
+            },
+            {
+              "item_id": "2026-09-15-nih-grant-eligibility-expansion",
+              "canonical_topic": "nih-research-funding-eligibility",
+              "duplicate_group": "nih-research-funding-eligibility",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/15/health-news-businesses-can-now-apply-for-nih-funding/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T12:03:33Z"
+                }
+              ],
+              "title": "NIH opens research-infrastructure funding to businesses, local governments, and community organizations",
+              "summary": "STAT reports that NIH has expanded eligibility for research-facility and equipment funding beyond universities and nonprofits to include for-profit businesses, local governments, community-based organizations, and other federal agencies. NIH Director Jay Bhattacharya framed the change as breaking a catch-22 in which only institutions with existing infrastructure can attract talent and win grants. The National Science Foundation is pursuing a parallel shift through its X-Labs program favoring independent research organizations.",
+              "strategic_implication": "Health systems, rural providers, and community organizations that previously lacked academic partners now have a direct path to federal research-infrastructure capital and should assess grant-readiness, indirect-cost accounting, and compliance capacity. Academic medical centers should expect more competition for the same pool and may need to reposition around partnership and data assets rather than facilities alone.",
+              "confidence": "high",
+              "tags": [
+                "nih",
+                "research-funding",
+                "federal-policy",
+                "community-health"
               ]
             }
           ]
@@ -289,7 +313,7 @@
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "A federal court pause on visa-duration limits temporarily reduces uncertainty for international trainees, but workforce planning remains exposed to immigration-policy changes.",
+          "synthesis": "Workforce and clinical exposure are both tightening: a court has paused visa-duration limits on the research pipeline while Pennsylvania's measles outbreak keeps generating hospitalizations and adult deaths.",
           "items": [
             {
               "item_id": "2026-09-15-visa-duration-rule-blocked",
@@ -315,6 +339,32 @@
                 "international-medical-graduates",
                 "residency",
                 "immigration-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-15-pennsylvania-third-measles-death",
+              "canonical_topic": "pennsylvania-measles-outbreak",
+              "duplicate_group": "pennsylvania-measles-outbreak",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/14/third-measles-related-death-pennsylvania-outbreak/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T14:34:20Z"
+                }
+              ],
+              "title": "Pennsylvania reports a third measles death as the outbreak reaches 676 cases",
+              "summary": "STAT reports that a 40-year-old woman in Jefferson County died of measles complications, the state's third measles-related death this year. Pennsylvania had recorded 676 cases across 37 of its 67 counties as of Friday, including 124 hospitalizations. Four cases involved previously vaccinated people.",
+              "strategic_implication": "A 124-hospitalization case count signals sustained transmission and real inpatient and infection-control load, so hospitals in and near affected counties should confirm airborne-isolation capacity, staff immunity records, and ED triage screening. Public health and clinical leaders should also prepare messaging on adult susceptibility, since this death involved an adult rather than a young child.",
+              "confidence": "high",
+              "tags": [
+                "measles",
+                "outbreak-response",
+                "infection-control",
+                "vaccination"
               ]
             }
           ]
@@ -11417,717 +11467,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-08-04",
-      "generated_at": "2026-08-04T11:10:32Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing centers on the operational consequences of Medicaid work requirements, a new Medicare hospital payment and joint-replacement model, and an ACA marketplace challenge. Market, digital, provider, and workforce signals include Sandoz's generic-drug settlement, Cleveland Clinic's drone pharmacy launch, record health-center reach, and virtual lactation support findings, using STAT, Healthcare Dive, Fierce Healthcare, CMS, Cleveland Clinic, and state-government sources.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HRSA/FDA web",
-          "Health-system and company web releases",
-          "Targeted web search"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS web",
-          "Cleveland Clinic web",
-          "North Carolina Department of Justice web",
-          "Reuters web",
-          "Targeted web search"
-        ],
-        "sources_failed": [
-          "FDA search yielded no new Aug. 3–4 approval signal used in the edition",
-          "Supplementary email newsletters not used",
-          "HRSA direct page was not needed; health-center signal was carried from Fierce Healthcare RSS"
-        ],
-        "run_notes": "Built from RSS titles/descriptions plus targeted web-search context and official releases; full-article access was not required. Stories were screened against the prior edition to avoid repeating unchanged topics."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Coverage and market rules are moving from statute and rulemaking into implementation: Medicaid administrators face work-verification consequences, ACA marketplace litigation is reopening, and CMS is narrowing special payment pathways for breakthrough devices.",
-          "items": [
-            {
-              "item_id": "2026-08-04-medicaid-work-requirements-coverage-impact",
-              "canonical_topic": "medicaid-work-requirements-coverage-impact",
-              "duplicate_group": "medicaid-work-requirements-coverage-impact",
-              "priority_score": 9,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/04/rfk-medicaid-cuts-myth-analysis/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-04T08:30:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/03/health-news-new-york-assisted-dying-law-moves-forward/?",
-                  "source_type": "web",
-                  "published_at": "2026-08-03T12:58:15Z"
-                }
-              ],
-              "title": "Medicaid work requirements sharpen the gap between “no cuts” claims and coverage risk",
-              "summary": "HHS Secretary Robert F. Kennedy Jr. and CMS Administrator Mehmet Oz have said recent Medicaid policy changes do not amount to cuts. State Medicaid directors and coverage advocates say new work-verification and administrative requirements are nevertheless likely to cause some people to lose coverage; Nebraska’s early rollout has already produced an estimated 200 coverage losses, with the full effect still unclear.",
-              "strategic_implication": "Health systems and Medicaid plans should prepare for churn, uncompensated-care pressure, and higher eligibility-support demand rather than treating the policy as a purely budgetary change.",
-              "confidence": "high",
-              "tags": [
-                "medicaid",
-                "coverage",
-                "work-requirements",
-                "eligibility",
-                "state-policy"
-              ]
-            },
-            {
-              "item_id": "2026-08-04-aca-marketplace-rule-challenge",
-              "canonical_topic": "aca-marketplace-rule-challenge",
-              "duplicate_group": "aca-marketplace-rule-challenge",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/democratic-ags-file-suit-challenging-2027-aca-rule",
-                  "source_type": "rss",
-                  "published_at": "2026-08-03T19:18:00Z"
-                }
-              ],
-              "title": "Democratic attorneys general challenge the latest 2027 ACA marketplace rule",
-              "summary": "Democratic attorneys general filed a renewed legal challenge to the regulation governing Affordable Care Act marketplaces for 2027. The case adds another layer of uncertainty around marketplace operating rules as insurers, states, and enrollment platforms plan for the next coverage year.",
-              "strategic_implication": "Payers and exchange-facing providers should keep compliance and enrollment workflows adaptable until the litigation clarifies which provisions will stand.",
-              "confidence": "medium",
-              "tags": [
-                "aca",
-                "marketplaces",
-                "litigation",
-                "payers",
-                "enrollment"
-              ]
-            },
-            {
-              "item_id": "2026-08-04-breakthrough-device-payment-pathways",
-              "canonical_topic": "breakthrough-device-payment-pathways",
-              "duplicate_group": "breakthrough-device-payment-pathways",
-              "priority_score": 8,
-              "primary_source": "CMS",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/03/cms-fda-breakthrough-devices-payment-pathways-eliminated/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-03T15:41:43Z"
-                },
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2027-hospital-inpatient-prospective-payment-system-long-term-care-hospital-prospective-payment",
-                  "source_type": "web",
-                  "published_at": "2026-07-31T00:00:00Z"
-                }
-              ],
-              "title": "CMS removes special Medicare payment pathways for breakthrough devices starting in FY 2028",
-              "summary": "CMS finalized a repeal of payment flexibilities that had allowed certain FDA-designated breakthrough devices to qualify for additional Medicare payment treatment. The change applies to both inpatient and outpatient settings beginning in fiscal year 2028 and was included in the FY 2027 hospital payment rule.",
-              "strategic_implication": "Device developers and hospitals should revisit launch economics, coding, and evidence plans for breakthrough products that had relied on accelerated payment treatment.",
-              "confidence": "high",
-              "tags": [
-                "cms",
-                "medical-devices",
-                "medicare",
-                "reimbursement",
-                "fda"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "The clearest digital signal is operational rather than experimental: a major health system is moving autonomous delivery from pilot concept into a patient-facing pharmacy workflow.",
-          "items": [
-            {
-              "item_id": "2026-08-04-cleveland-clinic-drone-pharmacy-delivery",
-              "canonical_topic": "cleveland-clinic-drone-pharmacy-delivery",
-              "duplicate_group": "cleveland-clinic-drone-pharmacy-delivery",
-              "priority_score": 8,
-              "primary_source": "Cleveland Clinic",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/cleveland-clinic-and-zipline-take-flight-through-prescription-drug-drone-delivery",
-                  "source_type": "rss",
-                  "published_at": "2026-08-03T18:39:00Z"
-                },
-                {
-                  "source": "Cleveland Clinic",
-                  "url": "https://newsroom.clevelandclinic.org/2026/08/03/cleveland-clinic-launches-drone-delivery-program-for-prescription-medications",
-                  "source_type": "web",
-                  "published_at": "2026-08-03T14:09:00Z"
-                }
-              ],
-              "title": "Cleveland Clinic launches long-term drone delivery for eligible prescriptions",
-              "summary": "Cleveland Clinic and Zipline began an optional prescription-drone service in and around Beachwood, Ohio, describing it as the first long-term deployment of this kind by a U.S. health system. The initial service covers certain medications within a five-mile radius, carries no extra patient charge, uses a tethered drop rather than landing in a yard, and can be tracked through MyChart; controlled substances are excluded for now.",
-              "strategic_implication": "Pharmacy access, last-mile cost, weather resilience, and neighborhood eligibility will determine whether drone logistics scale beyond a high-visibility demonstration.",
-              "confidence": "high",
-              "tags": [
-                "digital-health",
-                "pharmacy",
-                "drones",
-                "last-mile",
-                "patient-access"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Generic-drug pricing remains a material legal and reputational exposure for manufacturers, with a large multi-state settlement putting a concrete cost on alleged anticompetitive conduct.",
-          "items": [
-            {
-              "item_id": "2026-08-04-sandoz-generic-drug-price-settlement",
-              "canonical_topic": "sandoz-generic-drug-price-settlement",
-              "duplicate_group": "sandoz-generic-drug-price-settlement",
-              "priority_score": 8,
-              "primary_source": "North Carolina Department of Justice",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/pharmalot/2026/08/03/sandoz-to-settle-price-fixing-allegations/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-03T12:12:51Z"
-                },
-                {
-                  "source": "Reuters",
-                  "url": "https://www.reuters.com/legal/litigation/sandoz-agrees-450-mln-settlement-with-43-us-states-over-antitrust-claims-2026-08-03/",
-                  "source_type": "web",
-                  "published_at": "2026-08-03T00:00:00Z"
-                },
-                {
-                  "source": "North Carolina Department of Justice",
-                  "url": "https://ncdoj.gov/attorney-general-jeff-jackson-reaches-400-million-settlement-in-principle-with-sandoz-over-drug-price-fixing-conspiracy/",
-                  "source_type": "web",
-                  "published_at": "2026-08-03T00:00:00Z"
-                }
-              ],
-              "title": "Sandoz agrees to $478.5 million settlement over alleged generic-drug price fixing",
-              "summary": "Sandoz agreed to pay $478.5 million to resolve long-running U.S. litigation over alleged generic-drug price manipulation and reduced competition. The package includes $400 million to a coalition of 43 states and territories over seven years starting in 2027, additional payments to previously settling states, and $28.5 million for indirect resellers; Sandoz did not admit wrongdoing.",
-              "strategic_implication": "The settlement raises the cost of weak pricing controls and reinforces the need for auditable competition, contracting, and compliance practices across generic-drug portfolios.",
-              "confidence": "high",
-              "tags": [
-                "pharma",
-                "generic-drugs",
-                "antitrust",
-                "drug-pricing",
-                "settlement"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Hospital operators received a modest positive payment update but also a mandatory episode-accountability runway, while community health centers reported record utilization that underscores sustained access pressure.",
-          "items": [
-            {
-              "item_id": "2026-08-04-medicare-ipps-cjr-x-final-rule",
-              "canonical_topic": "medicare-ipps-cjr-x-final-rule",
-              "duplicate_group": "medicare-ipps-cjr-x-final-rule",
-              "priority_score": 9,
-              "primary_source": "CMS",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/medicare-finalizes-hospital-inpatient-pay-raise-2027/826794/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-03T12:33:27Z"
-                },
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2027-hospital-inpatient-prospective-payment-system-long-term-care-hospital-prospective-payment",
-                  "source_type": "web",
-                  "published_at": "2026-07-31T00:00:00Z"
-                },
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/newsroom/press-releases/cms-news-cms-announces-nationwide-expansion-proven-joint-replacement-program",
-                  "source_type": "web",
-                  "published_at": "2026-07-31T00:00:00Z"
-                }
-              ],
-              "title": "CMS finalizes a 2.3% FY 2027 inpatient update and mandatory CJR-X rollout for 2028",
-              "summary": "CMS finalized a 2.3% FY 2027 increase in Medicare inpatient hospital payment rates and expects the rule’s changes to raise IPPS payments by approximately $2.1 billion overall. The rule also creates CJR-X, a nationwide mandatory episode model for most hospitals handling hip, knee, and ankle replacements, beginning Jan. 1, 2028 and covering the hospitalization plus the first 90 days of recovery.",
-              "strategic_implication": "Hospitals should separate the near-term rate update from the longer-term operating challenge: episode-level cost, referral, rehabilitation, and post-acute data will become strategic capabilities before CJR-X begins.",
-              "confidence": "high",
-              "tags": [
-                "medicare",
-                "hospital-operations",
-                "ipps",
-                "bundled-payments",
-                "cjr-x"
-              ]
-            },
-            {
-              "item_id": "2026-08-04-hrsa-health-center-record-utilization",
-              "canonical_topic": "hrsa-health-center-record-utilization",
-              "duplicate_group": "hrsa-health-center-record-utilization",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/hrsa-funded-health-centers-saw-record-327m-patients-2025-hhs",
-                  "source_type": "rss",
-                  "published_at": "2026-08-03T15:56:00Z"
-                }
-              ],
-              "title": "HRSA-funded health centers report record reach of 32.7 million patients in 2025",
-              "summary": "HRSA-funded health centers served more than 32.7 million patients in 2025, which the agency described as the highest total in its history. The utilization signal highlights the scale of safety-net demand even as Medicaid eligibility and administrative rules are changing.",
-              "strategic_implication": "Community providers and health systems should treat safety-net capacity, referral coordination, and Medicaid churn support as operating priorities rather than temporary volume anomalies.",
-              "confidence": "medium",
-              "tags": [
-                "hrsa",
-                "community-health",
-                "safety-net",
-                "patient-access",
-                "utilization"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Virtual clinical support is showing a potentially meaningful workforce and outcomes signal: sustained lactation access correlated with longer breastfeeding duration and improved maternal mental-health measures.",
-          "items": [
-            {
-              "item_id": "2026-08-04-virtual-lactation-support-outcomes",
-              "canonical_topic": "virtual-lactation-support-outcomes",
-              "duplicate_group": "virtual-lactation-support-outcomes",
-              "priority_score": 6,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/digital-health/simplifed-umass-study-finds-virtual-lactation-support-improved-outcomes",
-                  "source_type": "rss",
-                  "published_at": "2026-08-03T15:25:00Z"
-                },
-                {
-                  "source": "WBOC",
-                  "url": "https://www.wboc.com/online_features/press_releases/interim-results-from-a-clinical-study-evaluating-the-impact-of-virtual-lactation-support-through-simplifed/article_9bca500e-6553-544a-a821-8e8fbf409b7a.html",
-                  "source_type": "web",
-                  "published_at": "2026-08-03T00:00:00Z"
-                }
-              ],
-              "title": "Study links sustained virtual lactation support with nearly 16 additional breastfeeding weeks",
-              "summary": "Interim findings from a study of SimpliFed virtual lactation support reported a dose-response relationship between engagement and breastfeeding duration. Participants completing at least three telelactation visits breastfed for an average of 15.9 more weeks than those with no visits, while greater virtual support was also associated with larger reductions in anxiety and depression symptoms over time.",
-              "strategic_implication": "Health systems and maternal-care programs should evaluate virtual lactation as a capacity extender, while treating the interim, observational signal as a reason for careful measurement rather than a standalone causal claim.",
-              "confidence": "medium",
-              "tags": [
-                "workforce",
-                "maternal-health",
-                "telehealth",
-                "lactation",
-                "clinical-outcomes"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "edition_date": "2026-08-03",
-      "generated_at": "2026-08-03T11:05:00Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks a renewed 340B rebate pilot, fresh Medicare hospice payment and oversight requirements, and a Senate effort to protect federal research-grant governance. Market and operating signals include Vertex's Crinetics acquisition, provider-facing AI deployment, advanced-imaging partnerships, and care models aimed at preserving clinical capacity and workforce readiness.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HRSA/FDA web",
-          "Health-system and company web releases",
-          "Targeted web search"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS web",
-          "HRSA web",
-          "Cleveland Clinic web",
-          "WellSpan web",
-          "Waystar investor relations web",
-          "Targeted web search"
-        ],
-        "sources_failed": [
-          "FDA search yielded no new Aug. 3 approval signal used in the edition",
-          "Supplementary email newsletters not used"
-        ],
-        "run_notes": "Built from RSS titles/descriptions plus targeted web-search context and official releases; full-article access was not required. Stories were screened against the prior edition to avoid repeating unchanged topics."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Federal policy signals center on a revised 340B rebate model, new hospice payment and quality requirements, and an emerging congressional check on political control of research grants.",
-          "items": [
-            {
-              "item_id": "2026-08-03-hrsa-revised-340b-rebate-pilot",
-              "canonical_topic": "340b-rebate-pilot",
-              "duplicate_group": "340b-rebate-pilot",
-              "priority_score": 9,
-              "primary_source": "HRSA",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "HRSA",
-                  "url": "https://www.hrsa.gov/about/news/press-releases/revised-340b-program-2026",
-                  "source_type": "web",
-                  "published_at": "2026-07-31T15:00:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/pharmalot/2026/07/31/trump-administration-revises-rebate-pilot-drug-discount-program-hospitals/",
-                  "source_type": "rss",
-                  "published_at": "2026-07-31T17:02:27Z"
-                },
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/the-trump-administration-tries-again-340b-rebates/826719/",
-                  "source_type": "rss",
-                  "published_at": "2026-07-31T19:10:00Z"
-                }
-              ],
-              "title": "HRSA revives a 340B rebate pilot for 25 drugs, targeting a Jan. 1, 2027 start",
-              "summary": "HRSA announced a revised voluntary pilot that would let participating manufacturers provide 340B ceiling prices through claims-validated rebates rather than upfront discounts. The agency says the model will improve transaction-level visibility, prevent duplicate discounts, and support nonduplication with Medicare drug negotiation. Manufacturers must submit plans by Aug. 24, 2026, with selected products expected to begin the rebate process Jan. 1, 2027; hospitals and 340B groups argue the approach shifts administrative burden and may face renewed litigation.",
-              "strategic_implication": "Covered entities should model cash-flow, claims-validation, and data-sharing requirements now, while manufacturers and contract pharmacies should prepare for implementation and legal uncertainty around the pilot.",
-              "confidence": "high",
-              "tags": [
-                "340b",
-                "drug-pricing",
-                "hrsa",
-                "hospital-finance",
-                "medicare-negotiation"
-              ]
-            },
-            {
-              "item_id": "2026-08-03-cms-fy2027-hospice-final-rule",
-              "canonical_topic": "cms-fy2027-hospice-payment-and-quality",
-              "duplicate_group": "cms-fy2027-hospice-payment-and-quality",
-              "priority_score": 8,
-              "primary_source": "CMS",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/newsroom/fact-sheets/fiscal-year-2027-hospice-wage-index-payment-rate-update-hospice-quality-reporting-program",
-                  "source_type": "web",
-                  "published_at": "2026-07-30T12:00:00Z"
-                },
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/medicare/payment/fee-for-service-providers/hospice/hospice-regulations-and-notices/cms-1851-f",
-                  "source_type": "web",
-                  "published_at": "2026-07-30T12:00:00Z"
-                }
-              ],
-              "title": "CMS finalizes a 2.3% FY 2027 hospice update and tighter election-statement requirements",
-              "summary": "CMS finalized a 2.3% FY 2027 hospice payment update, estimated to raise aggregate payments by about $755 million, and increased the hospice aggregate cap to $36,174.75. The rule makes a non-hospice-services addendum mandatory for all Medicare beneficiaries electing hospice, expands physician discharge flexibility, and updates telehealth face-to-face rules. CMS also highlights a service-and-spending variation index and future Care Compare identification of hospices with deficient quality-data submission.",
-              "strategic_implication": "Hospice operators should incorporate the modest rate increase into FY 2027 plans while treating election-documentation, HOPE submission timeliness, and utilization oversight as operational priorities.",
-              "confidence": "high",
-              "tags": [
-                "hospice",
-                "medicare",
-                "quality-reporting",
-                "payment-policy",
-                "post-acute"
-              ]
-            },
-            {
-              "item_id": "2026-08-03-senate-research-grant-politicization-block",
-              "canonical_topic": "federal-research-grant-governance",
-              "duplicate_group": "federal-research-grant-governance",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/02/senate-would-block-white-house-control-over-research-grants/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-02T23:55:12Z"
-                }
-              ],
-              "title": "Senate funding measure would temporarily block White House control of federal research grants",
-              "summary": "Senate leaders released a bipartisan government-funding stopgap that would block, through Dec. 11, a White House proposal to give political appointees greater control over federal research grants. The measure is expected to receive Senate consideration before the August recess, but the House-passed bill does not include the same provision. The chambers would need to reconcile the difference before government funding expires at the end of September.",
-              "strategic_implication": "Academic medical centers, research hospitals, and life-sciences partners should plan for continued uncertainty in grant timing and review governance while tracking the appropriations negotiation closely.",
-              "confidence": "medium",
-              "tags": [
-                "nih",
-                "research-policy",
-                "appropriations",
-                "academic-medicine"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Health systems and vendors are moving AI from pilots into governed workflows spanning access, follow-up, clinical coordination, and revenue-cycle operations.",
-          "items": [
-            {
-              "item_id": "2026-08-03-wellspan-hippocratic-ai-platform-partnership",
-              "canonical_topic": "health-system-clinical-ai-deployment",
-              "duplicate_group": "health-system-clinical-ai-deployment",
-              "priority_score": 8,
-              "primary_source": "WellSpan Health",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "WellSpan Health",
-                  "url": "https://www.wellspan.org/articles/2026/07/30/13/05/web---hippocractic-ai-partnership-expansion",
-                  "source_type": "web",
-                  "published_at": "2026-07-30T17:05:00Z"
-                },
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/wellspan-health-hippocratic-ai-enter-expanded-multi-year-partnership-launch",
-                  "source_type": "rss",
-                  "published_at": "2026-07-30T19:34:00Z"
-                }
-              ],
-              "title": "WellSpan expands Hippocratic AI partnership from pilots to platform-wide patient and care-team workflows",
-              "summary": "WellSpan and Hippocratic AI expanded their relationship into a multi-year, platform-wide deployment covering inbound, outbound, ambulatory, and inpatient settings. WellSpan says its Ana agent already handles more than 160,000 patient calls per month and will expand into post-discharge follow-up, chronic-disease check-ins, missed-imaging outreach, triage support, and care-plan orchestration. The partners will co-develop new clinical AI use cases with an embedded Hippocratic AI team and formal safety and implementation governance.",
-              "strategic_implication": "The move is a leading indicator that health systems are shifting from isolated AI pilots to governed operating platforms; leaders should prioritize workflow ownership, measurable outcomes, and clinical accountability over model demos.",
-              "confidence": "high",
-              "tags": [
-                "clinical-ai",
-                "health-systems",
-                "care-coordination",
-                "patient-access",
-                "governance"
-              ]
-            },
-            {
-              "item_id": "2026-08-03-waystar-q2-2026-ai-rcm-growth",
-              "canonical_topic": "ai-revenue-cycle-management",
-              "duplicate_group": "ai-revenue-cycle-management",
-              "priority_score": 7,
-              "primary_source": "Waystar",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Waystar",
-                  "url": "https://investors.waystar.com/news-releases/news-release-details/waystar-reports-second-quarter-2026-results",
-                  "source_type": "web",
-                  "published_at": "2026-07-29T20:00:00Z"
-                },
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/finance/waystar-boosts-2026-outlook-after-solid-q2-performance",
-                  "source_type": "rss",
-                  "published_at": "2026-07-30T15:08:00Z"
-                }
-              ],
-              "title": "Waystar raises 2026 outlook as provider demand for AI-enabled revenue-cycle tools grows",
-              "summary": "Waystar reported second-quarter revenue of $319.7 million, up 18% year over year, with provider revenue up 23% and adjusted EBITDA of $136.7 million. The company raised its 2026 revenue guidance to $1.276 billion-$1.294 billion and adjusted EBITDA guidance to $535 million-$545 million. Management pointed to broader deployment of AI capabilities, including tools designed to recover revenue lost through payer payment adjustments.",
-              "strategic_implication": "Provider finance teams should treat AI-enabled revenue-cycle automation as an increasingly investable lever, but require proof of denial recovery, coding accuracy, integration cost, and net revenue retention before scaling.",
-              "confidence": "high",
-              "tags": [
-                "revenue-cycle",
-                "healthcare-it",
-                "ai",
-                "provider-finance",
-                "automation"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Capital is concentrating around differentiated specialty therapeutics and consumer preventive-health platforms, while AI-enabled healthcare infrastructure continues to attract growth investment.",
-          "items": [
-            {
-              "item_id": "2026-08-03-vertex-acquires-crinetics-endocrine-platform",
-              "canonical_topic": "vertex-crinetics-acquisition",
-              "duplicate_group": "vertex-crinetics-acquisition",
-              "priority_score": 9,
-              "primary_source": "Vertex Pharmaceuticals",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Business Wire",
-                  "url": "https://via.tt.se/pressmeddelande/4469995/vertex-to-acquire-crinetics-pharmaceuticals?publisherId=259167&lang=en",
-                  "source_type": "web",
-                  "published_at": "2026-08-03T10:00:00Z"
-                },
-                {
-                  "source": "Fierce Biotech",
-                  "url": "https://www.fiercebiotech.com/deals",
-                  "source_type": "web",
-                  "published_at": "2026-08-03T10:00:00Z"
-                }
-              ],
-              "title": "Vertex to acquire Crinetics for approximately $10 billion, extending its endocrine disease pipeline",
-              "summary": "Vertex and Crinetics announced a definitive agreement under which Vertex will acquire Crinetics for $85 per share in cash, an equity value of approximately $10 billion, or about $8.8 billion net of estimated cash. The transaction was unanimously approved by both boards and is expected to close in the third quarter of 2026, subject to customary conditions. The deal expands Vertex’s position in endocrine therapeutics and represents its largest announced transaction to date.",
-              "strategic_implication": "The transaction signals continued strategic value in differentiated endocrine assets and raises the bar for biotech dealmaking around late-stage, commercially scalable specialty medicines.",
-              "confidence": "medium",
-              "tags": [
-                "biopharma",
-                "m-and-a",
-                "endocrine",
-                "specialty-pharma"
-              ]
-            },
-            {
-              "item_id": "2026-08-03-function-health-growth-financing",
-              "canonical_topic": "preventive-health-platform-financing",
-              "duplicate_group": "preventive-health-platform-financing",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/function-health-lands-450m-growth-financing-scale-tech-enabled-preventive-health",
-                  "source_type": "rss",
-                  "published_at": "2026-07-31T16:16:00Z"
-                }
-              ],
-              "title": "Function Health secures $450 million to scale tech-enabled preventive health services",
-              "summary": "Function Health, which offers lab testing and body scans aimed at earlier disease detection, raised $450 million in growth financing. The company said the capital will support expansion of its technology-enabled personalized preventive-health model. The transaction adds to a broader funding pattern favoring consumer-facing platforms that combine diagnostics, data, and longitudinal health management.",
-              "strategic_implication": "Preventive-health businesses are attracting institutional capital when they can connect testing and data to repeatable care pathways; operators should distinguish clinical utility and retention from high-intensity diagnostic demand alone.",
-              "confidence": "medium",
-              "tags": [
-                "preventive-health",
-                "digital-health",
-                "funding",
-                "diagnostics"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Long-term technology alliances and inpatient rehabilitation models show providers building capability through integrated equipment, training, automation, and care redesign.",
-          "items": [
-            {
-              "item_id": "2026-08-03-cleveland-clinic-siemens-imaging-alliance",
-              "canonical_topic": "advanced-imaging-strategic-alliance",
-              "duplicate_group": "advanced-imaging-strategic-alliance",
-              "priority_score": 8,
-              "primary_source": "Cleveland Clinic",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Cleveland Clinic",
-                  "url": "https://newsroom.clevelandclinic.org/2026/07/30/siemens-healthineers-and-cleveland-clinic-launch-10-year-strategic-alliance-to-enhance-care-through-clinical-innovation-and-advanced-imaging",
-                  "source_type": "web",
-                  "published_at": "2026-07-30T16:00:00Z"
-                },
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/siemens-healthineers-cleveland-clinic-form-10-year-alliance/826706/",
-                  "source_type": "rss",
-                  "published_at": "2026-07-31T14:32:00Z"
-                }
-              ],
-              "title": "Cleveland Clinic and Siemens Healthineers sign 10-year alliance spanning imaging, theranostics, and workforce development",
-              "summary": "Cleveland Clinic and Siemens Healthineers expanded a 35-year relationship into a 10-year strategic alliance covering MRI, CT, radiation oncology, interventional radiology, and X-ray technologies. The partnership includes more than 30 on-site Siemens employees, support for a Cleveland Clinic theranostics program, MRI technologist education, protocol optimization, and exploration of intelligent software and automation in imaging workflows. The organizations also plan broader research, education, and biomedical-engineering workforce initiatives.",
-              "strategic_implication": "Long-term vendor-health-system alliances are becoming capability-building vehicles, not just equipment purchases; health systems should evaluate them against access, throughput, workforce, and clinical-innovation outcomes.",
-              "confidence": "high",
-              "tags": [
-                "imaging",
-                "health-systems",
-                "theranostics",
-                "workforce-development",
-                "automation"
-              ]
-            },
-            {
-              "item_id": "2026-08-03-heart-transplant-inpatient-prehabilitation",
-              "canonical_topic": "transplant-prehabilitation",
-              "duplicate_group": "transplant-prehabilitation",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/03/heart-transplant-prehabilitation-cardiologist-discusses-innovative-project/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-03T08:30:00Z"
-                }
-              ],
-              "title": "Inpatient prehabilitation helps more heart-transplant candidates regain listing eligibility",
-              "summary": "A hospital program is testing inpatient cardiac prehabilitation for transplant candidates who become too weak while waiting. STAT reports that 56% of participants in the first year and 62% in the second year met transplant listing criteria after improvement, with no reported adverse events. The program uses supervised cycling and exercise to improve frailty and cardiopulmonary measures during hospitalization.",
-              "strategic_implication": "Transplant and acute-care leaders should assess whether structured mobility and conditioning can convert preventable deconditioning into better candidacy, throughput, and outcomes without adding avoidable safety risk.",
-              "confidence": "medium",
-              "tags": [
-                "transplant",
-                "cardiac-care",
-                "frailty",
-                "rehabilitation"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "AI adoption in clinical training is creating a workforce-design challenge: preserve independent reasoning and documentation skills while teaching safe use of automation.",
-          "items": [
-            {
-              "item_id": "2026-08-03-ai-scribes-medical-education",
-              "canonical_topic": "ai-scribes-clinical-training",
-              "duplicate_group": "ai-scribes-clinical-training",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/03/ai-scribes-medical-education-learning-tool-cognitive-crutch/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-03T08:30:00Z"
-                },
-                {
-                  "source": "JMIR Medical Informatics",
-                  "url": "https://medinform.jmir.org/2026/1/e88734",
-                  "source_type": "web",
-                  "published_at": "2026-07-28T00:00:00Z"
-                }
-              ],
-              "title": "Medical educators debate whether AI scribes build literacy or erode clinical reasoning",
-              "summary": "STAT reports that educators want future physicians to understand AI scribes while worrying that off-loading clinical notes could weaken learning. Recent informatics research also found that ambient scribes propagated more than half of scripted interpreter errors into generated notes in simulated multilingual encounters. The combined signal supports supervised use, independent note-writing before AI review, and explicit training in error detection and clinical accountability.",
-              "strategic_implication": "Academic medical centers should define competency gates and audit workflows before permitting unrestricted trainee use; AI literacy must complement, not replace, foundational documentation and reasoning skills.",
-              "confidence": "medium",
-              "tags": [
-                "ai-scribes",
-                "medical-education",
-                "clinical-reasoning",
-                "patient-safety",
-                "workforce"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-09-15T11:07:28Z"
+  "last_updated": "2026-09-15T12:45:00Z"
 }

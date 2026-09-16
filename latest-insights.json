@@ -3,6 +3,325 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-16",
+      "generated_at": "2026-09-16T11:04:44Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing centers on implementation pressure: policymakers are preparing for sharper health-care oversight, federal agencies are tightening payment-integrity controls, and Medicaid churn risks remain concentrated among mobile young adults. Market and operating signals from Fierce Healthcare and Healthcare Dive include unsanctioned clinical AI use, Waystar sale speculation, a new women's-health funding round, and a major Providence capital gift; STAT adds a new measles-associated death and a physician-training perspective.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web search across CMS/HHS/FDA, Medicare/Medicaid, digital health/AI, drug pricing, payer/provider moves, and healthcare markets",
+          "Gmail labels: HealthcareBrew, Healthcare Dive, Hospitalogy, Modern Healthcare, STAT"
+        ],
+        "sources_successful": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "Direct search_web capability was unavailable in this environment; RSS titles and descriptions supplied the signal depth for this run",
+          "Gmail supplementary labels were not queried because no connected Gmail label tool was available in this environment"
+        ],
+        "run_notes": "Fresh repository clone completed. All three requested RSS feeds returned successfully via curl. The edition removes any pre-existing 2026-09-16 entry before append and is screened against recent editions to avoid duplicate topics; the Pennsylvania measles item is retained because it is a new fourth death, not yesterday's third-death report."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Policy signals point to a more contested operating environment: congressional oversight planning, tighter Medicare Advantage supplier controls, a growing No Surprises arbitration system, and Medicaid eligibility friction will all test administrative capacity.",
+          "items": [
+            {
+              "item_id": "2026-09-16-house-health-oversight-planning",
+              "canonical_topic": "house-healthcare-oversight-planning",
+              "duplicate_group": "house-healthcare-oversight-planning",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/16/healthcare-reform-house-democrats-oversight-targets-after-midterms/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T08:30:00Z"
+                }
+              ],
+              "title": "House Democrats map health-care oversight as a potential platform for post-election reform",
+              "summary": "STAT reports that House Democrats are planning to use committee oversight powers to examine health-care issues if they win control of a chamber in November. Potential targets include the administration's drug-pricing deals and other health policy actions; a flip would bring subpoena authority and the ability to compel testimony and documents.",
+              "strategic_implication": "Health plans, manufacturers, and providers should expect a more document-intensive policy environment if control of a chamber changes. Preserving decision records, vendor evidence, and policy rationale now can reduce response friction later.",
+              "confidence": "medium",
+              "tags": [
+                "congress",
+                "health-policy",
+                "drug-pricing",
+                "oversight"
+              ]
+            },
+            {
+              "item_id": "2026-09-16-no-surprises-idr-expansion",
+              "canonical_topic": "no-surprises-idr-capacity",
+              "duplicate_group": "no-surprises-idr-capacity",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-adds-new-idr-entity-surprise-billing-disputes-surge-physio-solutions-medlitix/830421/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T15:36:39Z"
+                }
+              ],
+              "title": "HHS adds a 17th No Surprises arbitration entity as payment disputes surge",
+              "summary": "Healthcare Dive reports that HHS certified Physio Solutions, doing business as Medlitix, as the 17th entity eligible to resolve out-of-network payment disputes under the No Surprises Act. The expansion comes as independent dispute-resolution entities face increasing scrutiny from researchers and lawmakers.",
+              "strategic_implication": "The growing arbitration footprint may improve throughput but also raises the stakes for payer and provider evidence quality, timelines, and consistency. Revenue-cycle teams should monitor award patterns and standardize the data packages used in disputes.",
+              "confidence": "high",
+              "tags": [
+                "no-surprises-act",
+                "payment-integrity",
+                "revenue-cycle",
+                "arbitration"
+              ]
+            },
+            {
+              "item_id": "2026-09-16-oig-medicare-advantage-dme-screening",
+              "canonical_topic": "medicare-advantage-dme-screening",
+              "duplicate_group": "medicare-advantage-dme-screening",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/oig-urges-crackdown-on-equipment-suppliers-in-medicare-advantage/830387/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T13:31:17Z"
+                }
+              ],
+              "title": "OIG urges stronger screening of durable-equipment suppliers in Medicare Advantage",
+              "summary": "Healthcare Dive reports that the HHS Office of Inspector General says CMS and Medicare Advantage organizations are not doing enough to vet durable medical equipment suppliers. The concern is especially acute for out-of-network companies that are not enrolled in Medicare.",
+              "strategic_implication": "MA organizations should treat supplier credentialing and network controls as an audit and fraud-exposure priority, not a back-office check. Providers relying on DME partners should also validate enrollment, ownership, and referral controls.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "dme",
+                "oig",
+                "fraud-prevention"
+              ]
+            },
+            {
+              "item_id": "2026-09-16-medicaid-young-adult-disruption",
+              "canonical_topic": "medicaid-young-adult-disruption",
+              "duplicate_group": "medicaid-young-adult-disruption",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/2-million-young-adults-lose-medicaid-big-beautiful-bill-urban-institute/830382/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T13:25:06Z"
+                }
+              ],
+              "title": "Study estimates 2.3 million young adults could lose Medicaid coverage",
+              "summary": "Healthcare Dive reports an Urban Institute estimate that 2.3 million young adults could lose Medicaid coverage under the Big Beautiful Bill's requirements. The scale of disenrollment will depend heavily on how states make it possible for people who move frequently or work in hard-to-track gig jobs to prove continuing eligibility.",
+              "strategic_implication": "Safety-net providers and managed-care organizations should model churn, uncompensated-care exposure, and outreach needs for mobile younger members. State implementation choices will materially determine whether the headline estimate becomes actual coverage loss.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "coverage-loss",
+                "young-adults",
+                "eligibility"
+              ]
+            },
+            {
+              "item_id": "2026-09-16-pennsylvania-measles-fourth-death",
+              "canonical_topic": "pennsylvania-measles-outbreak",
+              "duplicate_group": "pennsylvania-measles-outbreak",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/15/fourth-measles-death-pennsylvania-acute-disseminated-encephalomyelitis/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T18:43:59Z"
+                }
+              ],
+              "title": "Pennsylvania reports a fourth measles-associated death in the state outbreak",
+              "summary": "STAT reports that Pennsylvania officials recorded a fourth measles-associated death within the past month. The latest death involved an unvaccinated 18-year-old in Mifflin County; the coroner cited acute disseminated encephalomyelitis, a rare and severe neurologic complication of measles.",
+              "strategic_implication": "Health systems and public-health agencies should plan for continued demand on vaccination outreach, case investigation, and neurologic complication management. The new death reinforces that outbreak response is an operating and workforce issue as well as a communications challenge.",
+              "confidence": "high",
+              "tags": [
+                "measles",
+                "public-health",
+                "vaccination",
+                "infectious-disease"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI governance is becoming an enterprise-control problem: adoption is outpacing formal approval processes, and identity architecture is emerging as a prerequisite for safe deployment.",
+          "items": [
+            {
+              "item_id": "2026-09-16-unsanctioned-healthcare-ai-deployment",
+              "canonical_topic": "unsanctioned-healthcare-ai",
+              "duplicate_group": "unsanctioned-healthcare-ai",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/imprivata-survey-finds-most-health-systems-deploy-some-ai-tools-without-formal-it",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T19:11:00Z"
+                }
+              ],
+              "title": "Survey finds most health systems deploy some AI without formal IT approval",
+              "summary": "Fierce Healthcare reports survey findings that most health-care organizations deploy AI tools at least sometimes without formal IT approval. Only 17% of surveyed executives believe current identity approaches are sufficient without adaptation, according to the report.",
+              "strategic_implication": "Clinical AI programs need an inventory, identity controls, and a lightweight approval path that clinicians can actually use. Closing the gap between sanctioned and shadow deployments is now a patient-safety and cyber-risk priority.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "identity-governance",
+                "cybersecurity",
+                "health-systems"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital markets remain active around health-care infrastructure and precision diagnostics, while strategic-option speculation suggests payment technology remains a valuable consolidation target.",
+          "items": [
+            {
+              "item_id": "2026-09-16-waystar-strategic-options",
+              "canonical_topic": "waystar-strategic-options",
+              "duplicate_group": "waystar-strategic-options",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/waystar-weighs-strategic-options-according-media-reports-analysts-see-ma-appeal",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T15:40:00Z"
+                }
+              ],
+              "title": "Waystar reportedly weighs strategic alternatives as payment software attracts M&A interest",
+              "summary": "Fierce Healthcare reports that a Reuters story is fueling speculation that health-care payment software company Waystar is exploring strategic alternatives, including a potential sale. Analysts cited in the report see appeal in the company's position within a consolidating payment-technology market.",
+              "strategic_implication": "A transaction would put a spotlight on ownership, integration, and pricing power in revenue-cycle infrastructure. Health systems should keep vendor-concentration and roadmap-continuity scenarios current even when a report remains unconfirmed.",
+              "confidence": "medium",
+              "tags": [
+                "waystar",
+                "health-tech",
+                "revenue-cycle",
+                "mergers-acquisitions"
+              ]
+            },
+            {
+              "item_id": "2026-09-16-evvy-vaginal-health-funding",
+              "canonical_topic": "precision-vaginal-health-funding",
+              "duplicate_group": "precision-vaginal-health-funding",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/evvy-raises-40m-expand-precision-medicine-vaginal-health",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T12:44:00Z"
+                }
+              ],
+              "title": "Evvy raises $40 million to expand clinician-reviewed precision vaginal health testing",
+              "summary": "Fierce Healthcare reports that Evvy raised $40 million to expand an at-home vaginal-health test whose results are reviewed by clinicians and paired with personalized treatment plans. The company is also using the platform to build real-world data and research in women's health.",
+              "strategic_implication": "The financing reflects continued investor interest in condition-specific diagnostics that combine testing, clinical interpretation, and longitudinal data. Providers should watch whether these models prove additive to care pathways and reimbursement rather than simply shifting testing outside the system.",
+              "confidence": "medium",
+              "tags": [
+                "womens-health",
+                "diagnostics",
+                "precision-medicine",
+                "digital-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Large philanthropic commitments can reshape provider capacity and service mix, particularly when directed toward cardiovascular care and women's health infrastructure.",
+          "items": [
+            {
+              "item_id": "2026-09-16-providence-philanthropic-capital",
+              "canonical_topic": "providence-philanthropic-capital",
+              "duplicate_group": "providence-philanthropic-capital",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/providence-receives-11b-gift-toward-cardiac-care-oregons-first-womens-hospital",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T20:36:00Z"
+                }
+              ],
+              "title": "Providence receives $1.1 billion gift for cardiac care and Oregon's first women's hospital",
+              "summary": "Fierce Healthcare reports that Phil and Penny Knight committed a $1.1 billion gift to Providence for cardiac care and Oregon's first women's hospital. The donors have already contributed $200 million to the Providence Heart Institute over the past decade.",
+              "strategic_implication": "The gift creates a differentiated capital position for Providence in cardiovascular and women's services, with implications for recruitment, referral flows, and regional competition. Other systems should view philanthropy as a strategic asset that can change market capacity, not just a funding supplement.",
+              "confidence": "high",
+              "tags": [
+                "providers",
+                "philanthropy",
+                "cardiology",
+                "womens-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical education is increasingly grounded in lived experience, creating a stronger case for training that connects disease mechanisms with the patient and family experience.",
+          "items": [
+            {
+              "item_id": "2026-09-16-cancer-experience-physician-training",
+              "canonical_topic": "patient-experience-physician-training",
+              "duplicate_group": "patient-experience-physician-training",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/16/medical-school-cancer-structure-pathology-professor-personal-experience/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T08:30:00Z"
+                }
+              ],
+              "title": "Physician-educator uses his own cancer diagnosis to deepen how he trains future doctors",
+              "summary": "In a STAT opinion essay, pathology and medical-education professor David Elkowitz describes teaching first-year students through his own cancer experience. He connects pathology, genetics, scans, symptoms, treatment decisions, and emotional realities with patient and family encounters.",
+              "strategic_implication": "The example supports a broader shift toward clinical training that integrates biomedical knowledge with patient perspective and communication. Health systems can reinforce that model through patient-partnered education, reflective practice, and structured feedback on how care feels as well as how it performs.",
+              "confidence": "medium",
+              "tags": [
+                "medical-education",
+                "physician-training",
+                "patient-experience",
+                "oncology"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-15",
       "generated_at": "2026-09-15T12:45:00Z",
       "headline": "Today's Healthcare Insights",
@@ -11469,5 +11788,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-15T12:45:00Z"
+  "last_updated": "2026-09-16T11:04:44Z"
 }

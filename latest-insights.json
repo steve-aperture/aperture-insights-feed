@@ -3,6 +3,356 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-17",
+      "generated_at": "2026-09-17T11:13:46Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks execution risk across the healthcare system: FDA rebuilding is constrained by hiring capacity, Medicare Advantage payment methodology is entering a new congressional fight, and CMS is expanding outcome-based digital care. Market and operating signals include new payer-retail combinations, a PBM underpayment lawsuit, rising early-career attrition intent, and cautious progress in the DRC Ebola response, based on STAT News, Healthcare Dive, and Fierce Healthcare RSS reporting.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Direct search_web targeted queries for selected stories",
+          "Supplementary Gmail labels: HealthcareBrew, Healthcare Dive, Hospitalogy, Modern Healthcare, STAT"
+        ],
+        "sources_successful": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "Direct search_web tool was unavailable in this runtime; edition was synthesized from RSS titles and descriptions. Supplementary Gmail labels were not queried because RSS yielded sufficient current signals."
+        ],
+        "run_notes": "Fresh-clone run at 2026-09-17T11:13:46Z. RSS entries were filtered to approximately the prior 36 hours, screened against recent editions for duplicate canonical topics, and organized into the five required editorial buckets. No web-only claims were added beyond the RSS reporting."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Policy signals are increasingly about implementation capacity and the evidence base behind decisions: NIH grant screening faces litigation, Medicare Advantage payment analysis is being contested, and FDA rebuilding is slowed by administrative bottlenecks.",
+          "items": [
+            {
+              "item_id": "2026-09-17-nih-grant-screening-lawsuit",
+              "canonical_topic": "nih-grant-screening-lawsuit",
+              "duplicate_group": "nih-grant-screening-lawsuit",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/16/lawsuit-argues-nih-violated-researcher-first-amendment-rights-aclu/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-17T00:39:34Z"
+                }
+              ],
+              "title": "Researchers sue NIH over grant screening for politically disfavored terms",
+              "summary": "STAT reports that 13 named and four anonymous researchers sued NIH, alleging that screening grant applications and current awards for specified terms violates their First Amendment rights. The class-action complaint seeks to halt searches that have focused on topics including workforce diversity, health disparities, climate change, and vaccines; a ruling for plaintiffs could apply broadly to affected researchers.",
+              "strategic_implication": "Research hospitals and public-health organizations should inventory grants exposed to term-based review and preserve documentation supporting scientific scope and compliance. The case adds legal and reputational uncertainty to federal research planning and could alter how institutions phrase, review, and defend applications.",
+              "confidence": "high",
+              "tags": [
+                "nih",
+                "research-funding",
+                "first-amendment",
+                "grant-review"
+              ]
+            },
+            {
+              "item_id": "2026-09-17-medpac-ma-overpayment-methodology",
+              "canonical_topic": "medicare-advantage-overpayment-methodology",
+              "duplicate_group": "medicare-advantage-overpayment-methodology",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/16/medicare-advantage-overpayments-analysis-medpac-change-apples-to-apples-act/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T20:20:15Z"
+                }
+              ],
+              "title": "House Republicans advance bill to recast MedPAC analysis of Medicare Advantage overpayments",
+              "summary": "STAT reports that House Ways and Means Republicans advanced a bill directing MedPAC to study Medicare Advantage spending in a way critics say would be more favorable to insurers. MedPAC has estimated that Medicare pays 14% more per enrollee, or about $76 billion in total, than it would for comparable traditional Medicare coverage.",
+              "strategic_implication": "Changes to the analytical frame could influence the evidence base for future MA payment policy and plan economics. Payers, providers, and investors should stress-test scenarios in which benchmark, risk-adjustment, and overpayment debates become more politically contested.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "medpac",
+                "payment-policy",
+                "health-insurance"
+              ]
+            },
+            {
+              "item_id": "2026-09-17-fda-hiring-bottleneck",
+              "canonical_topic": "fda-hiring-execution-risk",
+              "duplicate_group": "fda-hiring-execution-risk",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/17/fda-doge-cuts-new-hires-slowed-centralized-hiring-center-short-staffed/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-17T08:30:00Z"
+                }
+              ],
+              "title": "FDA hiring push hits an internal bottleneck as the agency works to rebuild staff",
+              "summary": "STAT reports that FDA plans to add more than 2,000 workers, but the hiring effort is being slowed by an overwhelmed centralized human-resources center. The bottleneck is a consequence of the staffing cuts and administrative disruption the agency is trying to reverse.",
+              "strategic_implication": "Drug developers should treat FDA review and meeting timelines as an execution variable while the agency rebuilds, even as leadership signals active hiring. Workforce capacity, not only policy direction, will determine how quickly new review and development initiatives scale.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "workforce",
+                "drug-development",
+                "regulatory-capacity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital health is moving from back-office automation toward point-of-care AI and embedded access infrastructure, increasing the importance of clinical governance, outcomes, and integration.",
+          "items": [
+            {
+              "item_id": "2026-09-17-sentara-rhythmx-primary-care-ai",
+              "canonical_topic": "primary-care-precision-ai",
+              "duplicate_group": "primary-care-precision-ai",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/sentara-health-pilots-gw-rhythmxs-ai-platform-support-emerging-primary-care",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T21:31:00Z"
+                }
+              ],
+              "title": "Sentara pilots RhythmX AI in primary-care visits, moving beyond administrative automation",
+              "summary": "Fierce Healthcare reports that not-for-profit Sentara Health is piloting GW RhythmX's AI precision-care platform directly during primary-care visits. The deployment represents a move from back-office automation toward point-of-care decision support and emerging primary-care models.",
+              "strategic_implication": "Health systems should evaluate clinical AI pilots against workflow fit, evidence quality, clinician override, and patient-safety metrics rather than vendor novelty. Early primary-care deployments will reveal whether precision-care tools can improve throughput and outcomes without adding cognitive or documentation burden.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "primary-care",
+                "precision-medicine",
+                "health-systems"
+              ]
+            },
+            {
+              "item_id": "2026-09-17-zocdoc-care-access-network",
+              "canonical_topic": "payer-provider-booking-infrastructure",
+              "duplicate_group": "payer-provider-booking-infrastructure",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/zocdoc-power-bookings-payer-tech-platforms-enterprise-offering",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T17:22:00Z"
+                }
+              ],
+              "title": "Zocdoc launches enterprise booking network for payer and technology platforms",
+              "summary": "Fierce Healthcare reports that Zocdoc is launching Care Access Network, an enterprise offering that lets payers, technology companies, and consumer platforms place appointment booking directly on their sites. The announcement coincides with an Amazon Health AI partnership, linking scheduling infrastructure to broader consumer health navigation efforts.",
+              "strategic_implication": "Access orchestration is becoming a platform layer rather than a standalone provider website function. Payers and health systems should assess whether embedded booking improves conversion and network steerage while maintaining directory accuracy, consent, and continuity of care.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "care-access",
+                "scheduling",
+                "payer-provider"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Payer competition is converging with retail distribution and quality performance, with new Medicare Advantage combinations and a wider spread between top-rated nonprofit and for-profit plans.",
+          "items": [
+            {
+              "item_id": "2026-09-17-scan-walmart-ma-partnership",
+              "canonical_topic": "scan-walmart-medicare-advantage-partnership",
+              "duplicate_group": "scan-walmart-medicare-advantage-partnership",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/scan-health-plan-walmart-partner-medicare-advantage-plans",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T19:53:00Z"
+                }
+              ],
+              "title": "SCAN and Walmart plan Medicare Advantage partnership spanning pharmacy and supplemental benefits",
+              "summary": "Fierce Healthcare reports that SCAN Health Plan and Walmart are partnering on Medicare Advantage plans, subject to regulatory review and approvals. The proposed offering could combine pharmacy and vision services with food and over-the-counter benefits.",
+              "strategic_implication": "The deal would blend payer distribution with retail access and benefit design, raising competitive pressure on MA plans to make supplemental benefits operationally useful. Competitors should monitor approval timing, geographic scope, and whether the partnership improves enrollment and member engagement.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "retail-health",
+                "supplemental-benefits",
+                "payer-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-09-17-ncqa-five-star-plan-ratings",
+              "canonical_topic": "ncqa-2026-plan-ratings",
+              "duplicate_group": "ncqa-2026-plan-ratings",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ncqa-plan-ratings-2026-nonprofits-outperform/830521/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T13:58:21Z"
+                }
+              ],
+              "title": "NCQA ratings show more 5-star plans, with nonprofit insurers leading the top tier",
+              "summary": "Healthcare Dive reports that 18 health plans earned a perfect 5-star NCQA rating for 2026, up from 11 in the prior year, and that no for-profit plans made the top group. The results add a quality-performance signal to the competitive picture for plans and purchasers.",
+              "strategic_implication": "Plans should connect quality measurement to member retention, network strategy, and employer or government contracting rather than treating ratings as a communications metric alone. The nonprofit advantage may intensify scrutiny of for-profit operating models and care-management performance.",
+              "confidence": "high",
+              "tags": [
+                "health-plans",
+                "ncqa",
+                "quality",
+                "payer-performance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider economics are being reshaped by PBM reimbursement disputes and outcome-based payment models that require stronger documentation, attribution, and longitudinal care operations.",
+          "items": [
+            {
+              "item_id": "2026-09-17-arkansas-pharmacy-pbm-lawsuit",
+              "canonical_topic": "arkansas-pharmacy-pbm-underpayment",
+              "duplicate_group": "arkansas-pharmacy-pbm-underpayment",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/express-scripts-arkansas-pharmacy-lawsuit-underpayment-nadac/830458/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T14:23:40Z"
+                }
+              ],
+              "title": "Twelve Arkansas pharmacies bring first lawsuit under new PBM underpayment law",
+              "summary": "Healthcare Dive reports that 12 independent Arkansas pharmacies sued Express Scripts under a state law that gives pharmacies a private right of action over PBM underpayments. The case is described as the first use of the new enforcement mechanism and centers on reimbursement levels tied to pharmacy acquisition costs.",
+              "strategic_implication": "The lawsuit creates a test case for state-level PBM accountability and could change leverage in pharmacy-network contracting if the plaintiffs prevail. Pharmacies and payers should prepare for more granular reimbursement documentation, state litigation, and pressure to reconcile benchmark pricing with actual acquisition costs.",
+              "confidence": "high",
+              "tags": [
+                "pbm",
+                "pharmacies",
+                "reimbursement",
+                "state-regulation"
+              ]
+            },
+            {
+              "item_id": "2026-09-17-cms-access-chronic-condition-expansion",
+              "canonical_topic": "cms-access-model-expansion",
+              "duplicate_group": "cms-access-model-expansion",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cms-add-more-chronic-conditions-access-model-2027/830506/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T13:23:47Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-extends-access-model-more-chronic-conditions-cms-officials-eye-expansion-medicaid",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T19:23:00Z"
+                }
+              ],
+              "title": "CMS expands ACCESS technology-payment model to COPD, substance use disorder, and tobacco cessation",
+              "summary": "Healthcare Dive reports that CMS will add more chronic conditions to the ACCESS model in 2027, including COPD, substance use disorder, and tobacco cessation. The model reimburses technology-enabled care based on patient outcomes, and Fierce Healthcare reports that officials are also considering broader cross-payer alignment.",
+              "strategic_implication": "Digital-health vendors and provider partners need outcome measurement, attribution, and contracting capabilities that can scale across conditions and potentially across payers. Expansion increases the addressable market but shifts the operating burden toward longitudinal engagement and credible clinical results.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "value-based-care",
+                "digital-health",
+                "chronic-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce retention pressure and infectious-disease response both require sustained operating capacity even when near-term indicators appear to improve.",
+          "items": [
+            {
+              "item_id": "2026-09-17-gen-z-healthcare-worker-retention",
+              "canonical_topic": "gen-z-healthcare-worker-attrition",
+              "duplicate_group": "gen-z-healthcare-worker-attrition",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/70-percent-gen-z-healthcare-workers-say-theyre-going-to-quit-within-next-year/830508/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T13:33:23Z"
+                }
+              ],
+              "title": "Survey: 70% of Gen Z healthcare workers say they may quit within a year",
+              "summary": "Healthcare Dive reports that 70% of Gen Z healthcare workers surveyed say they plan to leave their jobs within the next year. The Harris Poll findings point to education benefits and other employment perks as potential retention levers for organizations already facing workforce shortages.",
+              "strategic_implication": "Health systems should treat early-career retention as an operating-capacity issue and quantify the cost of turnover against targeted education, flexibility, and development benefits. The signal is especially relevant for roles where vacancy time and onboarding burden constrain patient access.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-workforce",
+                "gen-z",
+                "retention",
+                "talent-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-09-17-drc-ebola-outbreak-control",
+              "canonical_topic": "drc-ebola-outbreak-control",
+              "duplicate_group": "drc-ebola-outbreak-control",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/16/ebola-outbreak-drc-who-cautious-optimism/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-16T16:29:10Z"
+                }
+              ],
+              "title": "WHO sees cautious progress in DRC Ebola response but warns months of work remain",
+              "summary": "STAT reports that WHO Director-General Tedros Adhanom Ghebreyesus sees reason for cautious optimism as Ebola transmission declines in most affected provinces of the Democratic Republic of the Congo. He warned that months of response work remain before the outbreak is under control.",
+              "strategic_implication": "The signal reinforces the need for sustained infection-control staffing, surveillance, and supply-chain readiness even when case trajectories improve. Health systems and public-health leaders should plan for the long tail of outbreak response rather than treating early declines as resolution.",
+              "confidence": "high",
+              "tags": [
+                "ebola",
+                "global-health",
+                "infectious-disease",
+                "public-health"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-16",
       "generated_at": "2026-09-16T12:39:54Z",
       "headline": "Today's Healthcare Insights",
@@ -11535,5 +11885,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-16T12:39:54Z"
+  "last_updated": "2026-09-17T11:13:46Z"
 }

@@ -4,32 +4,42 @@
   "editions": [
     {
       "edition_date": "2026-09-23",
-      "generated_at": "2026-09-23T11:05:00Z",
+      "generated_at": "2026-09-23T12:36:11Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing centers on federal payment and coverage changes, including Medicare's remote-monitoring proposal, CMS provider-tax rules, and a planned ACA enrollment purge. Capital, operating, and workforce signals round out the picture, from a $340 million clinical-AI financing to hospital leadership succession, a hospital payer dispute, and continued pressure on healthcare employers to retain Gen Z workers.",
+      "summary_note": "Federal payment and coverage actions dominate, from Medicare's remote-monitoring proposal and GLP-1 demonstration to CMS provider-tax rules, the ACA enrollment cancellations, and DOJ settlements ending youth gender-affirming care at major academic systems. AI is moving into utilization management and capacity operations, while capital, leadership, and workforce signals round out the picture.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
           "STAT News RSS (main)",
           "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Hospitalogy RSS",
           "Fierce Healthcare RSS",
-          "Targeted web verification for today's policy, market, digital health, and provider signals"
+          "Modern Healthcare RSS",
+          "Healthcare Brew RSS"
         ],
         "sources_successful": [
           "STAT News RSS (main)",
           "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS"
+          "MedCity News RSS",
+          "Hospitalogy RSS",
+          "Direct page verification of Fierce Healthcare items from the automated run"
         ],
         "sources_failed": [
-          "Direct search_web command was unavailable in this sandbox; RSS descriptions were used as the primary signal set"
+          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
+          "Fierce Healthcare RSS returned HTTP 403 on direct request (items verified via page fetch)",
+          "Modern Healthcare RSS returned HTTP 403",
+          "Healthcare Brew RSS returned HTTP 404"
         ],
-        "run_notes": "Fresh GitHub clone performed before drafting. RSS titles and descriptions were limited to the latest available items and screened against the prior edition to avoid repeating yesterday's Medicaid work-requirements and NIH grant-control stories."
+        "items_captured": 18,
+        "run_notes": "Same-day rebuild in place: the 11:05 UTC automated run had already written 2026-09-23 and left the feed at 31 editions. Retained and verified all 11 automated items, enriched three with verified figures, added 7 new items from the 9/21-9/23 window screened against the prior editions, and trimmed to 30 editions with overflow archived."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "Coverage and payment policy are moving on several fronts at once: Medicare remote patient monitoring, CMS provider-tax administration, and ACA enrollment integrity. Each change could create operational work before the final financial impact is clear.",
+          "synthesis": "Federal action is reshaping payment, coverage, and service lines at once: remote-monitoring billing, provider-tax implementation, ACA enrollment cancellations, Medicare GLP-1 coverage terms, DOJ enforcement on youth gender-affirming care, and an FDA leadership transition. Operational exposure is arriving ahead of final financial clarity.",
           "items": [
             {
               "item_id": "2026-09-23-medicare-remote-monitoring-billing",
@@ -59,33 +69,6 @@
               ]
             },
             {
-              "item_id": "2026-09-23-cms-provider-tax-administration",
-              "canonical_topic": "cms-provider-tax-administration",
-              "duplicate_group": "cms-provider-tax-administration",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/cms-overhauls-provider-tax-policy-hospitals-plead-minimal-administrative-burden",
-                  "source_type": "rss",
-                  "published_at": "2026-09-22T16:47:00-04:00"
-                }
-              ],
-              "title": "Hospitals ask CMS to limit administrative disruption in provider-tax overhaul",
-              "summary": "Hospital associations responding to CMS's provider-tax changes asked the agency to preserve the status quo wherever possible. Their comments warn that changes without clear benefit could trigger unnecessary refunds and recoupments, adding uncertainty to state and hospital financing arrangements.",
-              "strategic_implication": "Finance and Medicaid leaders should inventory provider-tax dependencies, potential recoupment exposure, and state implementation timelines before the administrative changes become cash-flow surprises.",
-              "confidence": "high",
-              "tags": [
-                "cms",
-                "provider-tax",
-                "medicaid",
-                "hospital-finance",
-                "administrative-burden"
-              ]
-            },
-            {
               "item_id": "2026-09-23-aca-enrollment-cancellations",
               "canonical_topic": "aca-enrollment-cancellations",
               "duplicate_group": "aca-enrollment-cancellations",
@@ -101,7 +84,7 @@
                 }
               ],
               "title": "Administration plans to cancel ACA coverage for more than 760,000 people",
-              "summary": "The administration plans to cancel enrollment in Affordable Care Act plans for more than 760,000 people as part of an anti-fraud, waste, and abuse push. The action places enrollment integrity controls directly on coverage continuity for a large population.",
+              "summary": "CMS plans to cancel 315,000 enrollments it deems unauthorized, covering more than 760,000 people, and says the action returns $2.2 billion in premium-subsidy funds. The agency is also terminating more than 200 agents and brokers that failed marketplace enrollment standards, tying enrollment-integrity enforcement directly to coverage continuity.",
               "strategic_implication": "Providers and plans should prepare for verification-driven churn, including call-center volume, disenrollment disputes, bad-debt risk, and changes in uncompensated-care demand.",
               "confidence": "high",
               "tags": [
@@ -111,12 +94,119 @@
                 "payer-operations",
                 "uncompensated-care"
               ]
+            },
+            {
+              "item_id": "2026-09-23-cms-provider-tax-administration",
+              "canonical_topic": "cms-provider-tax-administration",
+              "duplicate_group": "cms-provider-tax-administration",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-overhauls-provider-tax-policy-hospitals-plead-minimal-administrative-burden",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T16:47:00-04:00"
+                }
+              ],
+              "title": "Hospitals ask CMS to limit administrative disruption in provider-tax overhaul",
+              "summary": "Hospital groups asked CMS to implement the Medicaid provider-tax provisions with the least possible disruption, warning of added administrative burden, refunds, and recoupments. CMS estimates its proposed implementation would reduce federal spending by $246 billion over the coming decade, raising the stakes for state and hospital financing arrangements.",
+              "strategic_implication": "Finance and Medicaid leaders should inventory provider-tax dependencies, potential recoupment exposure, and state implementation timelines before the administrative changes become cash-flow surprises.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "provider-tax",
+                "medicaid",
+                "hospital-finance",
+                "administrative-burden"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-medicare-glp1-bridge-uptake",
+              "canonical_topic": "medicare-glp1-bridge-uptake",
+              "duplicate_group": "medicare-glp1-bridge-uptake",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/22/dc-diagnosis-did-trump-administration-cut-novo-huge-financial-win/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T16:23:00-04:00"
+                }
+              ],
+              "title": "Medicare's GLP-1 demonstration reaches 700,000 seniors as Novo's terms draw scrutiny",
+              "summary": "Eli Lilly CEO Dave Ricks said roughly 700,000 seniors have started GLP-1 drugs since July, when Medicare began covering them through an administration demonstration despite the program's general bar on weight-loss drugs. STAT reports that Novo may have secured an additional financial benefit in its deal, while Lilly's GLP-1s are exempt from the most-favored-nation agreements officials credit with lowering prices.",
+              "strategic_implication": "Medicare Advantage plans, risk-bearing providers, and employers should track demonstration uptake and pricing terms closely; rapid volume at negotiated prices will shape obesity-drug budgets, formulary strategy, and expectations for commercial coverage.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "glp-1",
+                "obesity-drugs",
+                "drug-pricing",
+                "demonstration-model"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-doj-gender-affirming-care-settlements",
+              "canonical_topic": "doj-gender-affirming-care-settlements",
+              "duplicate_group": "doj-gender-affirming-care-settlements",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/23/health-news-legal-saga-for-youth-gender-affirming-care-in-the-us/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T07:51:00-04:00"
+                }
+              ],
+              "title": "DOJ settlements push more academic systems to end gender-affirming care for minors",
+              "summary": "The Justice Department announced settlements requiring NYU Langone and UPMC to stop providing puberty blockers, hormones, and surgeries to minors. At least six institutions have reached similar agreements, and dozens of hospitals have stopped offering such care, making federal enforcement a de facto service-line policy lever.",
+              "strategic_implication": "Health system legal, compliance, and clinical leaders should assess federal enforcement exposure across sensitive service lines and plan for patient transitions, referral shifts, and state-law conflicts where care is discontinued.",
+              "confidence": "high",
+              "tags": [
+                "doj",
+                "enforcement",
+                "gender-affirming-care",
+                "academic-medicine",
+                "compliance"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-fda-commissioner-nominee-hearing",
+              "canonical_topic": "fda-commissioner-nominee-hearing",
+              "duplicate_group": "fda-commissioner-nominee-hearing",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/22/heidi-overton-fda-commissioner-confirmation-hearing/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T17:49:00-04:00"
+                }
+              ],
+              "title": "FDA commissioner nominee Heidi Overton faces a Senate hearing amid agency capacity concerns",
+              "summary": "Heidi Overton is scheduled to appear before the Senate health committee on Thursday. In a STAT opinion piece, former commissioners Scott Gottlieb and Mark McClellan point to the loss of roughly 3,500 FDA employees in the April 2025 layoffs plus voluntary departures, and note that more Phase 1 trials now start in China than in the United States.",
+              "strategic_implication": "Life sciences and provider organizations should watch the hearing for signals on review timelines, staffing, and AI and cell and gene therapy policy, because FDA capacity directly affects product launch and adoption planning.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "nomination",
+                "regulatory-capacity",
+                "life-sciences"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "Digital-health capital continues to favor products that move beyond documentation into workflow execution. The strategic test is whether agentic capabilities can deliver measurable clinical and administrative value without increasing governance risk.",
+          "synthesis": "Capital and product roadmaps are moving from documentation toward automated workflow and utilization decisions. Payer and provider automation are now escalating in parallel, so value depends on measurable denial, throughput, and time-saved outcomes under clear governance.",
           "items": [
             {
               "item_id": "2026-09-23-heidi-ai-care-partner",
@@ -134,7 +224,7 @@
                 }
               ],
               "title": "Heidi raises $340 million to expand from clinical documentation into AI workflow automation",
-              "summary": "Healthcare startup Heidi raised $340 million to extend its platform beyond clinical documentation into AI-powered workflow automation and agentic capabilities for clinicians. The financing is a notable signal that investors are rewarding broader clinical-workflow ambitions rather than point solutions alone.",
+              "summary": "Heidi raised $340 million, a $100 million Series C led by Blackbird at a $900 million valuation plus a $240 million growth investment led by General Catalyst, to extend beyond clinical documentation into agentic workflow automation. The company reports about 2.8 million patient interactions per week across 190 countries, signaling investor appetite for broader clinical-workflow platforms over point solutions.",
               "strategic_implication": "Provider organizations should evaluate AI vendors against end-to-end workflow outcomes, integration burden, oversight controls, and measurable time saved—not documentation volume by itself.",
               "confidence": "high",
               "tags": [
@@ -143,6 +233,33 @@
                 "agentic-ai",
                 "health-tech",
                 "venture-capital"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-r1-phare-utilization-management",
+              "canonical_topic": "r1-phare-utilization-management",
+              "duplicate_group": "r1-phare-utilization-management",
+              "priority_score": 8,
+              "primary_source": "Hospitalogy",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Hospitalogy",
+                  "url": "https://hospitalogy.com/articles/2026-09-21/the-bot-wars-3rd-chapter-is-here-r1-is-building-for-it/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T15:05:00Z"
+                }
+              ],
+              "title": "R1 extends its revenue platform into AI-driven utilization management",
+              "summary": "Hospitalogy reports that R1 is expanding its Phare operating system with Phare UM, which applies AI review to all cases, continuous chart analysis, and payer-specific denial-risk scoring, with The Guthrie Clinic among early adopters. The launch comes as initial denial rates rose to 11.8% in 2024 from 10.2% in 2020, with an average administrative cost of $57.23 per denied claim in 2023.",
+              "strategic_implication": "Revenue-cycle and case-management leaders should expect payer-versus-provider automation to escalate into utilization review; evaluate whether AI UM tools reduce avoidable denials or simply shift work, and tie adoption to measured overturn and write-off rates.",
+              "confidence": "medium",
+              "tags": [
+                "revenue-cycle",
+                "utilization-management",
+                "denials",
+                "ai-automation",
+                "payer-provider-friction"
               ]
             },
             {
@@ -175,35 +292,8 @@
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "Industry capital is concentrating around underdeveloped therapeutic categories and new research pathways, while a private-equity-owned hospital chain pursues nonprofit status. These signals point to both renewed investment appetite and continued pressure on healthcare ownership models.",
+          "synthesis": "Investor attention is rotating toward underserved therapeutic areas such as osteoporosis and Sjögren's disease, while Quorum's nonprofit conversion shows how distressed PE-backed hospital assets are being restructured.",
           "items": [
-            {
-              "item_id": "2026-09-23-osteoporosis-investment",
-              "canonical_topic": "osteoporosis-investment",
-              "duplicate_group": "osteoporosis-investment",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/23/biotech-vc-investors-new-opportunity-osteoporosis-treatments/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-23T08:30:00Z"
-                }
-              ],
-              "title": "Drugmakers and biotech investors renew interest in osteoporosis treatments",
-              "summary": "Medicines for osteoporosis are drawing renewed attention from pharmaceutical companies and biotech investors. A long-awaited regulatory change is helping make the category more attractive, potentially broadening development activity in a condition with substantial aging-population demand.",
-              "strategic_implication": "Life-science and provider strategy teams should watch osteoporosis pipelines and reimbursement evidence as a possible growth pocket, especially where fracture prevention can be tied to total-cost-of-care outcomes.",
-              "confidence": "high",
-              "tags": [
-                "osteoporosis",
-                "biopharma",
-                "drug-development",
-                "aging",
-                "investment"
-              ]
-            },
             {
               "item_id": "2026-09-23-quorum-nonprofit-conversion",
               "canonical_topic": "quorum-nonprofit-conversion",
@@ -232,6 +322,33 @@
               ]
             },
             {
+              "item_id": "2026-09-23-osteoporosis-investment",
+              "canonical_topic": "osteoporosis-investment",
+              "duplicate_group": "osteoporosis-investment",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/23/biotech-vc-investors-new-opportunity-osteoporosis-treatments/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T08:30:00Z"
+                }
+              ],
+              "title": "Drugmakers and biotech investors renew interest in osteoporosis treatments",
+              "summary": "Medicines for osteoporosis are drawing renewed attention from pharmaceutical companies and biotech investors. A long-awaited regulatory change is helping make the category more attractive, potentially broadening development activity in a condition with substantial aging-population demand.",
+              "strategic_implication": "Life-science and provider strategy teams should watch osteoporosis pipelines and reimbursement evidence as a possible growth pocket, especially where fracture prevention can be tied to total-cost-of-care outcomes.",
+              "confidence": "high",
+              "tags": [
+                "osteoporosis",
+                "biopharma",
+                "drug-development",
+                "aging",
+                "investment"
+              ]
+            },
+            {
               "item_id": "2026-09-23-hhs-animal-testing-reduction",
               "canonical_topic": "hhs-animal-testing-reduction",
               "duplicate_group": "hhs-animal-testing-reduction",
@@ -256,13 +373,66 @@
                 "preclinical",
                 "regulatory-science"
               ]
+            },
+            {
+              "item_id": "2026-09-23-amgen-dazodalibep-sjogrens",
+              "canonical_topic": "amgen-dazodalibep-sjogrens",
+              "duplicate_group": "amgen-dazodalibep-sjogrens",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/amgen-sjogren-autoimmune-chronic-disease-dazodalibep-cd40l-amgn/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T19:58:00Z"
+                }
+              ],
+              "title": "Amgen's dazodalibep meets Phase 3 goals in Sjögren's disease, which has no approved therapy",
+              "summary": "Amgen said dazodalibep produced statistically significant improvements in systemic disease activity at week 48 in moderate-to-severe Sjögren's disease, which affects up to 4 million Americans. Novartis's ianalumab is under FDA review, and a second Amgen Phase 3 study may complete in the fourth quarter of 2026.",
+              "strategic_implication": "Payers and rheumatology service lines should prepare for a first-in-class market in a large, underserved autoimmune population, with specialty-drug cost and site-of-care implications if approvals follow.",
+              "confidence": "high",
+              "tags": [
+                "biopharma",
+                "autoimmune",
+                "phase-3",
+                "specialty-drugs"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "Provider operations are facing both leadership transition and payer-friction risk. The common thread is the need for resilient execution while reimbursement and organizational structures continue to shift.",
+          "synthesis": "Operating pressure shows up in leadership succession, payer litigation over denials, and the search for scalable throughput gains, with OhioHealth offering a model for expanding AI from one proven use case.",
           "items": [
+            {
+              "item_id": "2026-09-23-texas-hospitals-blue-cross-claims",
+              "canonical_topic": "texas-hospitals-blue-cross-claims",
+              "duplicate_group": "texas-hospitals-blue-cross-claims",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/texas-hospitals-sue-independence-blue-cross-over-denied-claims/831010/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T10:31:32-04:00"
+                }
+              ],
+              "title": "Texas hospitals sue Independence Blue Cross over denied claims",
+              "summary": "Five HCA-affiliated Texas hospitals sued Independence Blue Cross over denied claims despite a $2.8 billion settlement involving disputes over the BlueCard program. The case indicates that administrative and payment friction can persist after a headline settlement.",
+              "strategic_implication": "Health systems should quantify denial and appeal leakage by payer, preserve contract and claims evidence, and treat payer-administration disputes as a material operating-risk category.",
+              "confidence": "high",
+              "tags": [
+                "payer-contracts",
+                "denials",
+                "claims",
+                "hospital-operations",
+                "litigation"
+              ]
+            },
             {
               "item_id": "2026-09-23-hackensack-meridian-ceo-transition",
               "canonical_topic": "hackensack-meridian-ceo-transition",
@@ -290,37 +460,36 @@
               ]
             },
             {
-              "item_id": "2026-09-23-texas-hospitals-blue-cross-claims",
-              "canonical_topic": "texas-hospitals-blue-cross-claims",
-              "duplicate_group": "texas-hospitals-blue-cross-claims",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
+              "item_id": "2026-09-23-ohiohealth-qventus-capacity-ai",
+              "canonical_topic": "ohiohealth-qventus-capacity-ai",
+              "duplicate_group": "ohiohealth-qventus-capacity-ai",
+              "priority_score": 7,
+              "primary_source": "Hospitalogy",
               "source_tier": "Tier 2",
               "source_refs": [
                 {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/texas-hospitals-sue-independence-blue-cross-over-denied-claims/831010/",
+                  "source": "Hospitalogy",
+                  "url": "https://hospitalogy.com/articles/2026-09-21/how-ohiohealth-turned-one-ai-win-into-an-enterprise-wide-bet/",
                   "source_type": "rss",
-                  "published_at": "2026-09-22T10:31:32-04:00"
+                  "published_at": "2026-09-21T14:36:00Z"
                 }
               ],
-              "title": "Texas hospitals sue Independence Blue Cross over denied claims",
-              "summary": "Five HCA-affiliated Texas hospitals sued Independence Blue Cross over denied claims despite a $2.8 billion settlement involving disputes over the BlueCard program. The case indicates that administrative and payment friction can persist after a headline settlement.",
-              "strategic_implication": "Health systems should quantify denial and appeal leakage by payer, preserve contract and claims evidence, and treat payer-administration disputes as a material operating-risk category.",
-              "confidence": "high",
+              "title": "OhioHealth scales capacity-management AI enterprise-wide after measurable inpatient gains",
+              "summary": "OhioHealth reports that Qventus's inpatient capacity tool saved more than 13,000 excess hospital days, nearly 2,900 administrative hours, and $5.1 million before expanding into surgical growth and perioperative coordination. A Qventus CIO survey found more than 70% of executives view such platforms as critical for 2026, but only 4% have scaled AI with measurable outcomes.",
+              "strategic_implication": "Operations leaders should sequence AI adoption from a single measurable throughput win to enterprise scale, using excess-day reduction and OR utilization as the business case rather than broad pilot portfolios.",
+              "confidence": "medium",
               "tags": [
-                "payer-contracts",
-                "denials",
-                "claims",
-                "hospital-operations",
-                "litigation"
+                "capacity-management",
+                "throughput",
+                "perioperative",
+                "ai-operations"
               ]
             }
           ]
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "Retention pressure remains visible among younger healthcare workers, with career growth and learning opportunities emerging as practical levers. Workforce strategy is therefore tied to operating capacity, not just employee experience.",
+          "synthesis": "Retention and care-model design are converging: Gen Z clinicians want visible career pathways, and behavioral health purchasers are moving toward integrated models built for co-occurring conditions.",
           "items": [
             {
               "item_id": "2026-09-23-gen-z-healthcare-retention",
@@ -347,6 +516,33 @@
                 "retention",
                 "career-development",
                 "clinical-operations"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-pelago-behavioral-health-platform",
+              "canonical_topic": "pelago-behavioral-health-platform",
+              "duplicate_group": "pelago-behavioral-health-platform",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/pelago-unveils-new-behavioral-health-platform-for-substance-use-mental-health-and-behavi",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T23:23:00Z"
+                }
+              ],
+              "title": "Pelago unifies substance use, mental health, and behavioral addiction care under one contract",
+              "summary": "Pelago launched a behavioral health platform that lets employers and payers manage substance use, mental health, and behavioral addiction care, including gambling and gaming, under a single contract and member record. The company says about half of its patients have co-occurring depression and anxiety and that its supervised AI tool, Sona, handles assessment and routing.",
+              "strategic_implication": "Behavioral health leaders and purchasers should design for co-occurring conditions rather than siloed programs, while setting clinical-oversight standards for AI-supported assessment and therapy.",
+              "confidence": "high",
+              "tags": [
+                "behavioral-health",
+                "substance-use",
+                "co-occurring-conditions",
+                "virtual-care",
+                "employer-benefits"
               ]
             }
           ]
@@ -11566,410 +11762,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-08-12",
-      "generated_at": "2026-08-12T11:07:47Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today’s briefing highlights federal coverage and food-safety rulemaking, a move toward shared governance for diagnostic AI, and a split in healthcare economics between strong distribution and digital-health growth and rising administrative, cybersecurity, and workforce friction. The curation draws on STAT, Healthcare Dive, Fierce Healthcare, CMS/HHS/FDA, Reuters, company disclosures, University Hospitals, JAMA Health Forum coverage, and targeted web-search context.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA web",
-          "Hospital and company disclosures",
-          "JAMA Health Forum coverage",
-          "Targeted web search"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA web",
-          "Reuters web",
-          "Cardinal Health disclosure",
-          "Hims & Hers disclosure",
-          "University Hospitals disclosure",
-          "JAMA Health Forum coverage",
-          "Targeted web search"
-        ],
-        "sources_failed": [
-          "Supplementary email newsletters not used"
-        ],
-        "run_notes": "Built from RSS titles and descriptions plus 1–2 targeted web-search checks per selected signal. Full-article access was not required. Fresh Aug. 11–12 developments were prioritized; older items were included only where the current-day update or operational consequence was new."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Federal agencies are converting the administration’s priorities into concrete coverage, food-safety, and disclosure requirements. The operational question for healthcare leaders is how quickly policy changes become payer rules, provider workflows, and compliance obligations.",
-          "items": [
-            {
-              "item_id": "2026-08-12-medicaid-chip-youth-care-rule",
-              "canonical_topic": "medicaid-chip-youth-care-rule",
-              "duplicate_group": "medicaid-chip-youth-care-rule",
-              "priority_score": 9,
-              "primary_source": "CMS",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/cms-ends-medicaid-chip-funding-gender-affirming-care-minors",
-                  "source_type": "rss",
-                  "published_at": "2026-08-11T21:30:00Z"
-                },
-                {
-                  "source": "The Hill",
-                  "url": "https://thehill.com/policy/healthcare/6023489-cms-blocks-minor-gender-care/",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T22:07:04Z"
-                }
-              ],
-              "title": "CMS finalizes Medicaid and CHIP funding limits for gender-affirming care for minors",
-              "summary": "CMS finalized a rule that bars federal Medicaid and CHIP funding for specified gender-affirming care for minors. The rule is scheduled to take effect in October, allows a limited transition period for some current hormone-therapy patients, and does not bar mental-health services; states may continue coverage with state-only funds.",
-              "strategic_implication": "Plans, providers, and state agencies need a coordinated implementation plan for benefit changes, member communications, appeals, and continuity of care while litigation and state-level responses remain possible.",
-              "confidence": "high",
-              "tags": [
-                "medicaid",
-                "chip",
-                "coverage-policy",
-                "pediatrics",
-                "regulation"
-              ]
-            },
-            {
-              "item_id": "2026-08-12-fda-gras-notification-proposal",
-              "canonical_topic": "fda-gras-notification-proposal",
-              "duplicate_group": "fda-gras-notification-proposal",
-              "priority_score": 7,
-              "primary_source": "FDA/HHS",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/food/food-ingredients-packaging/generally-recognized-safe-gras",
-                  "source_type": "web",
-                  "published_at": "2026-08-10T00:00:00Z"
-                },
-                {
-                  "source": "HHS",
-                  "url": "https://www.hhs.gov/press-room/fact-sheet-hhs-announces-proposed-gras-rule.html",
-                  "source_type": "web",
-                  "published_at": "2026-08-10T00:00:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/10/rfk-jr-proposal-fda-gras-rule-generally-recognized-as-safe/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-10T13:19:47Z"
-                }
-              ],
-              "title": "FDA proposal would make GRAS notifications mandatory and public",
-              "summary": "HHS and FDA proposed requiring manufacturers to notify the agency when they conclude a substance added to human or animal food is generally recognized as safe. The proposal would expand a public inventory and create a streamlined path for some substances already on the market, with comments due in December.",
-              "strategic_implication": "Food, nutrition, and healthcare organizations should begin inventorying self-affirmed ingredients and documenting safety rationales; the near-term risk is disclosure and review exposure rather than an immediate product ban.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "food-safety",
-                "gras",
-                "transparency",
-                "regulation"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Digital-health leaders are shifting from isolated pilots toward scaled infrastructure, shared evaluation, and governance. The winning models will pair measurable clinical value with stronger controls over referral incentives, workflow integration, and post-deployment monitoring.",
-          "items": [
-            {
-              "item_id": "2026-08-12-diagnostic-ai-consortium",
-              "canonical_topic": "diagnostic-ai-consortium",
-              "duplicate_group": "diagnostic-ai-consortium",
-              "priority_score": 8,
-              "primary_source": "University Hospitals",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "University Hospitals",
-                  "url": "https://news.uhhospitals.org/news-releases/articles/2026/08/twelve-us-health-systems-and-aidoc-unite",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T00:00:00Z"
-                },
-                {
-                  "source": "Imaging Technology News",
-                  "url": "https://www.itnonline.com/content/healthcare-systems-aidoc-create-diagnostic-ai-consortium",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T00:00:00Z"
-                }
-              ],
-              "title": "Twelve health systems form a consortium to validate diagnostic AI in live workflows",
-              "summary": "Twelve U.S. health systems have formed the Diagnostic AI Consortium with Aidoc, collectively representing nearly 20 million patients annually. The group plans to co-design diagnostic workflows, measure safety, quality, and speed to diagnosis, and share implementation and governance lessons; initial results are expected in 2027.",
-              "strategic_implication": "Shared evaluation can reduce duplicated experimentation and create a stronger evidence base for procurement, but participating systems will need clear IRB, safety, interoperability, and accountability rules before scaling investigational tools.",
-              "confidence": "high",
-              "tags": [
-                "diagnostic-ai",
-                "health-systems",
-                "ai-governance",
-                "clinical-workflow",
-                "interoperability"
-              ]
-            },
-            {
-              "item_id": "2026-08-12-commure-ai-sales-governance",
-              "canonical_topic": "commure-ai-sales-governance",
-              "duplicate_group": "commure-ai-sales-governance",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/12/inside-commure-athelas-mad-dash-automate-health-care/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T08:30:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/12/inside-commure-athelas-mad-dash-automate-health-care/",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T08:07:03Z"
-                }
-              ],
-              "title": "Commure’s AI expansion puts healthcare automation claims and sales governance under scrutiny",
-              "summary": "A STAT investigation describes Commure’s effort to automate administrative healthcare work with AI, including referral compensation programs and customer reports of negative outcomes. The company says the programs are industry standard, that most customers are satisfied, and that its tools are used by more than 500 healthcare organizations.",
-              "strategic_implication": "Health-system buyers should treat vendor references, incentive structures, outcome evidence, and contract protections as part of AI diligence—not as separate procurement details—before expanding automation into revenue cycle or clinical workflows.",
-              "confidence": "medium",
-              "tags": [
-                "healthcare-ai",
-                "revenue-cycle",
-                "vendor-risk",
-                "governance",
-                "automation"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "The latest market signals show growth is still available, but quality and durability of growth matter more than headline revenue. Distribution and specialty-pharma demand are supporting earnings, while digital-health expansion is bringing margin and regulatory trade-offs into sharper view.",
-          "items": [
-            {
-              "item_id": "2026-08-12-cardinal-health-fy27-outlook",
-              "canonical_topic": "cardinal-health-fy27-outlook",
-              "duplicate_group": "cardinal-health-fy27-outlook",
-              "priority_score": 8,
-              "primary_source": "Cardinal Health",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Cardinal Health",
-                  "url": "https://newsroom.cardinalhealth.com/2026-08-11-Cardinal-Health-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Results-and-Provides-Fiscal-Year-2027-Guidance",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T11:07:04Z"
-                },
-                {
-                  "source": "MarketBeat",
-                  "url": "https://www.marketbeat.com/earnings/reports/2026-8-11-cardinal-health-inc-stock/",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T00:00:00Z"
-                }
-              ],
-              "title": "Cardinal Health beats on adjusted EPS and guides to 13%–15% FY27 growth",
-              "summary": "Cardinal Health reported fiscal fourth-quarter revenue of $63.7 billion, up 6%, and non-GAAP diluted EPS of $2.91, up 40%; the EPS figure included a $0.31 benefit from a one-time tariff refund. Management guided fiscal 2027 non-GAAP EPS to $12.40–$12.60, or 13%–15% growth from an adjusted baseline, while fourth-quarter revenue came in below consensus.",
-              "strategic_implication": "The result reinforces the importance of specialty-pharma mix, operating leverage, and capital allocation in healthcare distribution, but leaders should separate recurring performance from one-time policy or tariff effects when benchmarking partners.",
-              "confidence": "high",
-              "tags": [
-                "cardinal-health",
-                "pharmaceutical-distribution",
-                "earnings",
-                "specialty-pharma",
-                "guidance"
-              ]
-            },
-            {
-              "item_id": "2026-08-12-hims-glp1-margin-tradeoff",
-              "canonical_topic": "hims-glp1-margin-tradeoff",
-              "duplicate_group": "hims-glp1-margin-tradeoff",
-              "priority_score": 7,
-              "primary_source": "Hims & Hers",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/hims-hers-posts-753m-q3-revenue-it-preps-push-peptide-market",
-                  "source_type": "rss",
-                  "published_at": "2026-08-11T19:39:00Z"
-                },
-                {
-                  "source": "Hims & Hers",
-                  "url": "https://investors.hims.com/financials/quarterly-results/default.aspx",
-                  "source_type": "web",
-                  "published_at": "2026-08-10T00:00:00Z"
-                }
-              ],
-              "title": "Hims & Hers raises its outlook as GLP-1 demand grows, but margin pressure intensifies",
-              "summary": "Hims & Hers reported second-quarter 2026 revenue of about $753 million, up 38% year over year, and raised full-year revenue guidance to $3.1 billion–$3.3 billion. The company also forecast third-quarter revenue of $880 million–$900 million, while reporting a wider loss and lower gross margins as it shifts toward branded GLP-1 products and prepares for a broader peptide opportunity if regulations allow.",
-              "strategic_implication": "Digital-health growth is increasingly tied to product mix, regulatory permissions, and unit economics; payers and providers should distinguish demand signals from sustainable margin and clinical-governance performance.",
-              "confidence": "high",
-              "tags": [
-                "digital-health",
-                "glp-1",
-                "peptides",
-                "margin-pressure",
-                "earnings"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Provider operating risk is showing up in two places: the cost of complying with complex payment models and the widening blast radius of third-party cyber incidents. Both trends argue for stronger enterprise ownership of administrative and vendor dependencies.",
-          "items": [
-            {
-              "item_id": "2026-08-12-mandatory-vbp-admin-costs",
-              "canonical_topic": "mandatory-vbp-admin-costs",
-              "duplicate_group": "mandatory-vbp-admin-costs",
-              "priority_score": 8,
-              "primary_source": "JAMA Health Forum",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/cms-mandatory-vbc-programs-brought-substantial-administrative-costs-hospitals-study",
-                  "source_type": "rss",
-                  "published_at": "2026-08-11T16:00:00Z"
-                },
-                {
-                  "source": "EurekAlert!",
-                  "url": "https://www.eurekalert.org/news-releases/1139042",
-                  "source_type": "web",
-                  "published_at": "2026-08-07T00:00:00Z"
-                }
-              ],
-              "title": "Study links mandatory value-based programs to more than $3 billion in hospital administrative costs",
-              "summary": "A cohort study published in JAMA Health Forum found that hospitals participating in four mandatory value-based payment programs incurred more than $3 billion in aggregated administrative costs relative to non-participating hospitals. The analysis highlights the operational work required for reporting, performance management, and compliance alongside the programs’ intended quality and cost goals.",
-              "strategic_implication": "Payment reform design should account for implementation cost, not only incentive dollars; hospitals should model reporting burden and data-platform requirements before committing scarce operating capacity to new mandates.",
-              "confidence": "medium",
-              "tags": [
-                "value-based-care",
-                "hospital-operations",
-                "administrative-costs",
-                "medicare",
-                "payment-reform"
-              ]
-            },
-            {
-              "item_id": "2026-08-12-dentaquest-breach-scale",
-              "canonical_topic": "dentaquest-breach-scale",
-              "duplicate_group": "dentaquest-breach-scale",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/Dental-benefits-administrator-discloses-breach/827533/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-11T13:05:03Z"
-                },
-                {
-                  "source": "Health-ISAC",
-                  "url": "https://health-isac.org/dentaquest-data-theft-hack-affects-15m-patients/",
-                  "source_type": "web",
-                  "published_at": "2026-08-04T00:00:00Z"
-                }
-              ],
-              "title": "DentaQuest breach expands to 15 million people, underscoring third-party exposure",
-              "summary": "DentaQuest said a May intrusion exposed personal, insurance, and dental or vision health information affecting about 15 million people, making it one of the largest healthcare breaches reported in 2026. The incident illustrates how benefits administrators and other business associates can create large-scale exposure across Medicaid, Medicare, and commercial populations.",
-              "strategic_implication": "Providers and plans should map business-associate dependencies, rehearse member and patient communications, and require evidence of containment and recovery—not just compliance attestations—when managing third-party data risk.",
-              "confidence": "high",
-              "tags": [
-                "cybersecurity",
-                "data-breach",
-                "business-associate",
-                "medicaid",
-                "third-party-risk"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Frontline labor signals are converging around workload, staffing, and voice in technology decisions. Workforce adoption will depend on whether organizations can demonstrate that automation improves care and gives clinicians meaningful control over implementation.",
-          "items": [
-            {
-              "item_id": "2026-08-12-cvs-pharmacist-strike-sanction",
-              "canonical_topic": "cvs-pharmacist-strike-sanction",
-              "duplicate_group": "cvs-pharmacist-strike-sanction",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/cvs-pharmacists-approve-strike-sanction-staffing-burnout/827403/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-10T15:42:23Z"
-                },
-                {
-                  "source": "Medicaid Monitor",
-                  "url": "https://medicaidmonitor.org/articles/a5d4db94-57fb-46db-be2a-48ea3668ad7b",
-                  "source_type": "web",
-                  "published_at": "2026-08-10T00:00:00Z"
-                }
-              ],
-              "title": "Unionized CVS pharmacists clear a first strike hurdle over staffing and workload",
-              "summary": "Unionized CVS pharmacists in Rhode Island, California, and Arizona overwhelmingly approved strike sanctions over staffing levels, workload, and a lack of input into pharmacy decisions. The vote is an initial authorization step rather than a guaranteed walkout, but it raises the risk of service disruption in communities that rely on CVS pharmacies.",
-              "strategic_implication": "Retail pharmacy operators and health plans should treat staffing ratios, prescription-review time, and escalation channels as patient-access and safety controls, especially as pharmacies absorb new clinical and weight-management services.",
-              "confidence": "high",
-              "tags": [
-                "pharmacy",
-                "workforce",
-                "staffing",
-                "burnout",
-                "patient-access"
-              ]
-            },
-            {
-              "item_id": "2026-08-12-nurses-clinical-ai-governance",
-              "canonical_topic": "nurses-clinical-ai-governance",
-              "duplicate_group": "nurses-clinical-ai-governance",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-11T12:00:00Z"
-                },
-                {
-                  "source": "KFF Health News",
-                  "url": "https://kffhealthnews.org/morning-breakout/first-edition-tuesday-aug-11-2026/",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T00:00:00Z"
-                }
-              ],
-              "title": "Nurses demand a formal role in clinical AI decisions as adoption expands",
-              "summary": "STAT reports that nurses and their unions are pressing for greater influence over clinical AI design, procurement, and deployment as tools move deeper into care delivery. The reporting cites concerns about job displacement, surveillance, and patient safety, alongside efforts to build training and more collaborative governance models.",
-              "strategic_implication": "Health systems should include nurses in AI selection and oversight, define override and accountability pathways, and measure whether tools reduce workload without eroding bedside judgment or staffing resilience.",
-              "confidence": "high",
-              "tags": [
-                "nursing",
-                "clinical-ai",
-                "workforce",
-                "patient-safety",
-                "governance"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-09-23T11:05:00Z"
+  "last_updated": "2026-09-23T12:36:11Z"
 }

@@ -3,6 +3,357 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-23",
+      "generated_at": "2026-09-23T11:05:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing centers on federal payment and coverage changes, including Medicare's remote-monitoring proposal, CMS provider-tax rules, and a planned ACA enrollment purge. Capital, operating, and workforce signals round out the picture, from a $340 million clinical-AI financing to hospital leadership succession, a hospital payer dispute, and continued pressure on healthcare employers to retain Gen Z workers.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted web verification for today's policy, market, digital health, and provider signals"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "Direct search_web command was unavailable in this sandbox; RSS descriptions were used as the primary signal set"
+        ],
+        "run_notes": "Fresh GitHub clone performed before drafting. RSS titles and descriptions were limited to the latest available items and screened against the prior edition to avoid repeating yesterday's Medicaid work-requirements and NIH grant-control stories."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Coverage and payment policy are moving on several fronts at once: Medicare remote patient monitoring, CMS provider-tax administration, and ACA enrollment integrity. Each change could create operational work before the final financial impact is clear.",
+          "items": [
+            {
+              "item_id": "2026-09-23-medicare-remote-monitoring-billing",
+              "canonical_topic": "medicare-remote-monitoring-billing",
+              "duplicate_group": "medicare-remote-monitoring-billing",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/23/unitedhealth-cvs-pushback-medicare-plan-rpm-abuse/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T08:30:00Z"
+                }
+              ],
+              "title": "UnitedHealth and CVS push back on Medicare plan to curb remote-monitoring billing",
+              "summary": "Some health insurers are objecting to a Medicare proposal that would change how doctors bill for remotely monitoring patients' health. The dispute highlights a pending shift in the rules governing a growing virtual-care reimbursement stream and the risk that utilization controls could affect legitimate chronic-care programs alongside questionable billing.",
+              "strategic_implication": "Health systems and digital-care operators should model revenue and workflow exposure under tighter remote-monitoring rules, separating clinically valuable programs from services that depend on ambiguous billing practices.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "remote-monitoring",
+                "virtual-care",
+                "reimbursement",
+                "payer-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-cms-provider-tax-administration",
+              "canonical_topic": "cms-provider-tax-administration",
+              "duplicate_group": "cms-provider-tax-administration",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-overhauls-provider-tax-policy-hospitals-plead-minimal-administrative-burden",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T16:47:00-04:00"
+                }
+              ],
+              "title": "Hospitals ask CMS to limit administrative disruption in provider-tax overhaul",
+              "summary": "Hospital associations responding to CMS's provider-tax changes asked the agency to preserve the status quo wherever possible. Their comments warn that changes without clear benefit could trigger unnecessary refunds and recoupments, adding uncertainty to state and hospital financing arrangements.",
+              "strategic_implication": "Finance and Medicaid leaders should inventory provider-tax dependencies, potential recoupment exposure, and state implementation timelines before the administrative changes become cash-flow surprises.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "provider-tax",
+                "medicaid",
+                "hospital-finance",
+                "administrative-burden"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-aca-enrollment-cancellations",
+              "canonical_topic": "aca-enrollment-cancellations",
+              "duplicate_group": "aca-enrollment-cancellations",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-cancel-aca-coverage-760k-crack-down-brokers-latest-anti-fraud-push",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T14:27:00-04:00"
+                }
+              ],
+              "title": "Administration plans to cancel ACA coverage for more than 760,000 people",
+              "summary": "The administration plans to cancel enrollment in Affordable Care Act plans for more than 760,000 people as part of an anti-fraud, waste, and abuse push. The action places enrollment integrity controls directly on coverage continuity for a large population.",
+              "strategic_implication": "Providers and plans should prepare for verification-driven churn, including call-center volume, disenrollment disputes, bad-debt risk, and changes in uncompensated-care demand.",
+              "confidence": "high",
+              "tags": [
+                "aca",
+                "coverage-loss",
+                "enrollment-integrity",
+                "payer-operations",
+                "uncompensated-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Digital-health capital continues to favor products that move beyond documentation into workflow execution. The strategic test is whether agentic capabilities can deliver measurable clinical and administrative value without increasing governance risk.",
+          "items": [
+            {
+              "item_id": "2026-09-23-heidi-ai-care-partner",
+              "canonical_topic": "heidi-ai-care-partner",
+              "duplicate_group": "heidi-ai-care-partner",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/heidi-lands-340m-build-ai-care-partner-clinicians",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T20:39:00-04:00"
+                }
+              ],
+              "title": "Heidi raises $340 million to expand from clinical documentation into AI workflow automation",
+              "summary": "Healthcare startup Heidi raised $340 million to extend its platform beyond clinical documentation into AI-powered workflow automation and agentic capabilities for clinicians. The financing is a notable signal that investors are rewarding broader clinical-workflow ambitions rather than point solutions alone.",
+              "strategic_implication": "Provider organizations should evaluate AI vendors against end-to-end workflow outcomes, integration burden, oversight controls, and measurable time saved—not documentation volume by itself.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "workflow-automation",
+                "agentic-ai",
+                "health-tech",
+                "venture-capital"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-cotiviti-payment-accuracy-platform",
+              "canonical_topic": "cotiviti-payment-accuracy-platform",
+              "duplicate_group": "cotiviti-payment-accuracy-platform",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cotiviti-builds-out-insurer-payment-accuracy-platform",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T12:37:00-04:00"
+                }
+              ],
+              "title": "Cotiviti expands payer payment-accuracy platform across inpatient claims",
+              "summary": "Cotiviti is adding capabilities to its payment-accuracy platform so insurers can view all inpatient claims in one place. The move reflects continued investment in analytics and automation aimed at finding payment errors across complex claim populations.",
+              "strategic_implication": "Payers and provider revenue-cycle teams should expect more automated pre- and post-payment scrutiny, making documentation quality, coding consistency, and dispute readiness increasingly important.",
+              "confidence": "high",
+              "tags": [
+                "payment-accuracy",
+                "claims-analytics",
+                "payer-technology",
+                "revenue-cycle"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Industry capital is concentrating around underdeveloped therapeutic categories and new research pathways, while a private-equity-owned hospital chain pursues nonprofit status. These signals point to both renewed investment appetite and continued pressure on healthcare ownership models.",
+          "items": [
+            {
+              "item_id": "2026-09-23-osteoporosis-investment",
+              "canonical_topic": "osteoporosis-investment",
+              "duplicate_group": "osteoporosis-investment",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/23/biotech-vc-investors-new-opportunity-osteoporosis-treatments/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T08:30:00Z"
+                }
+              ],
+              "title": "Drugmakers and biotech investors renew interest in osteoporosis treatments",
+              "summary": "Medicines for osteoporosis are drawing renewed attention from pharmaceutical companies and biotech investors. A long-awaited regulatory change is helping make the category more attractive, potentially broadening development activity in a condition with substantial aging-population demand.",
+              "strategic_implication": "Life-science and provider strategy teams should watch osteoporosis pipelines and reimbursement evidence as a possible growth pocket, especially where fracture prevention can be tied to total-cost-of-care outcomes.",
+              "confidence": "high",
+              "tags": [
+                "osteoporosis",
+                "biopharma",
+                "drug-development",
+                "aging",
+                "investment"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-quorum-nonprofit-conversion",
+              "canonical_topic": "quorum-nonprofit-conversion",
+              "duplicate_group": "quorum-nonprofit-conversion",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/23/quorum-hospitals-nonprofit-conversion-increases-debt-load/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T08:30:00Z"
+                }
+              ],
+              "title": "PE-owned hospital chain Quorum seeks nonprofit conversion amid debt concerns",
+              "summary": "Quorum, a private-equity-owned hospital chain, is becoming a nonprofit in a transaction that raises questions about whether the structure primarily stabilizes care delivery or provides a bailout for investors. The stakes are heightened by recent failures of other private-equity-owned hospital chains.",
+              "strategic_implication": "Boards and community stakeholders should scrutinize debt load, governance, capital commitments, and service-line protections in nonprofit conversions rather than treating tax status as a proxy for financial stability.",
+              "confidence": "high",
+              "tags": [
+                "hospital-ownership",
+                "private-equity",
+                "nonprofit",
+                "rural-health",
+                "debt"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-hhs-animal-testing-reduction",
+              "canonical_topic": "hhs-animal-testing-reduction",
+              "duplicate_group": "hhs-animal-testing-reduction",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/22/hhs-initiatives-reduce-animal-testing-in-drug-development/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T19:28:42Z"
+                }
+              ],
+              "title": "HHS unveils new initiatives to reduce animal testing in drug development",
+              "summary": "HHS announced additional strategies intended to move drug development away from animal testing and speed medical testing. The announcement is the department's second set of initiatives on the issue this year, signaling that alternative testing methods remain an active policy priority.",
+              "strategic_implication": "Pharma, CRO, and academic research leaders should track validation standards, FDA expectations, and investment needs for alternative models before changing preclinical development portfolios.",
+              "confidence": "high",
+              "tags": [
+                "hhs",
+                "drug-development",
+                "preclinical",
+                "regulatory-science"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operations are facing both leadership transition and payer-friction risk. The common thread is the need for resilient execution while reimbursement and organizational structures continue to shift.",
+          "items": [
+            {
+              "item_id": "2026-09-23-hackensack-meridian-ceo-transition",
+              "canonical_topic": "hackensack-meridian-ceo-transition",
+              "duplicate_group": "hackensack-meridian-ceo-transition",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hackensack-meridian-health-ceo-to-retire-next-year/831025/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T11:07:05-04:00"
+                }
+              ],
+              "title": "Hackensack Meridian Health CEO to retire next year",
+              "summary": "The board of New Jersey's largest health system will begin a national search for a successor to its CEO, with plans to name the next leader by the end of the first quarter of 2027. The transition will occur while health systems continue to manage labor, payer, and capital pressures.",
+              "strategic_implication": "The board should define continuity metrics and a disciplined search profile early, while executives preserve momentum on margin, access, and workforce priorities during the succession period.",
+              "confidence": "high",
+              "tags": [
+                "health-system",
+                "leadership",
+                "succession",
+                "provider-operations"
+              ]
+            },
+            {
+              "item_id": "2026-09-23-texas-hospitals-blue-cross-claims",
+              "canonical_topic": "texas-hospitals-blue-cross-claims",
+              "duplicate_group": "texas-hospitals-blue-cross-claims",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/texas-hospitals-sue-independence-blue-cross-over-denied-claims/831010/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T10:31:32-04:00"
+                }
+              ],
+              "title": "Texas hospitals sue Independence Blue Cross over denied claims",
+              "summary": "Five HCA-affiliated Texas hospitals sued Independence Blue Cross over denied claims despite a $2.8 billion settlement involving disputes over the BlueCard program. The case indicates that administrative and payment friction can persist after a headline settlement.",
+              "strategic_implication": "Health systems should quantify denial and appeal leakage by payer, preserve contract and claims evidence, and treat payer-administration disputes as a material operating-risk category.",
+              "confidence": "high",
+              "tags": [
+                "payer-contracts",
+                "denials",
+                "claims",
+                "hospital-operations",
+                "litigation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Retention pressure remains visible among younger healthcare workers, with career growth and learning opportunities emerging as practical levers. Workforce strategy is therefore tied to operating capacity, not just employee experience.",
+          "items": [
+            {
+              "item_id": "2026-09-23-gen-z-healthcare-retention",
+              "canonical_topic": "gen-z-healthcare-retention",
+              "duplicate_group": "gen-z-healthcare-retention",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/career-advancement-learning-opportunities-important-gen-z-healthcare-workers-harris-poll",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T10:48:00-04:00"
+                }
+              ],
+              "title": "Survey: 70% of Gen Z healthcare workers plan to seek a new job within a year",
+              "summary": "A survey found that 70% of Gen Z healthcare workers plan to look for a new job within the next year. The research drew responses from 1,514 healthcare employees and 304 employers across the United States, with career advancement and learning opportunities identified as important workforce considerations.",
+              "strategic_implication": "Health systems should connect retention plans to visible advancement pathways, manager capability, and funded learning opportunities, especially in roles where turnover directly constrains access and throughput.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "gen-z",
+                "retention",
+                "career-development",
+                "clinical-operations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-22",
       "generated_at": "2026-09-22T12:38:24Z",
       "headline": "Today's Healthcare Insights",
@@ -11620,5 +11971,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-22T12:38:24Z"
+  "last_updated": "2026-09-23T11:05:00Z"
 }

@@ -4,32 +4,42 @@
   "editions": [
     {
       "edition_date": "2026-09-24",
-      "generated_at": "2026-09-24T11:06:17Z",
+      "generated_at": "2026-09-24T12:42:25Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's signals center on Medicare payment reform, Medicaid drug-pricing implementation, and tighter oversight of Medicare Advantage. AI is moving deeper into clinical practice, payer analytics, and access models, while pharma strategy and clinical disparities add market and care-delivery context.",
+      "summary_note": "Today's edition centers on Medicare payment reform, with inflation-linked physician pay, lab fee cuts, and continued Medicare Advantage scrutiny, plus a reality check on drug-pricing savings. Measles has reached its worst U.S. year since 1991, AI is moving into clinical practice and consumer access, and outcome evidence is deciding winners in diagnostics and drug development.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
           "STAT News RSS (main)",
           "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Hospitalogy RSS",
           "Fierce Healthcare RSS",
-          "Targeted web search across CMS/HHS/FDA, hospital operations, digital health, drug pricing, and payer/provider moves"
+          "Modern Healthcare RSS",
+          "Healthcare Brew RSS"
         ],
         "sources_successful": [
           "STAT News RSS (main)",
           "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS"
+          "MedCity News RSS",
+          "Hospitalogy RSS (no new posts since 9/21)",
+          "Direct page verification of Fierce Healthcare items from the automated run"
         ],
         "sources_failed": [
-          "Direct search_web utility was unavailable in the execution environment; RSS titles and descriptions were used for same-day signal depth"
+          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
+          "Fierce Healthcare RSS returned HTTP 403 (items verified via page fetch)",
+          "Modern Healthcare RSS returned HTTP 403",
+          "Healthcare Brew RSS returned HTTP 404"
         ],
-        "run_notes": "Fresh-clone run for 2026-09-24. Selected 10 same-day or prior-24-hour items from the three successful RSS feeds, screened against the 2026-09-23 edition to avoid duplicating unchanged stories."
+        "items_captured": 19,
+        "run_notes": "Same-day rebuild in place: the 11:06 UTC automated run had already written 2026-09-24 and left the feed at 31 editions. Retained and verified all 10 automated items, enriched six with verified figures, added 9 new items from the 9/21-9/24 window screened against the prior editions, and trimmed to 30 editions with overflow archived."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "Payment policy is entering a more consequential phase: Congress is considering medical-inflation-linked physician updates, states are weighing a Medicaid drug-pricing model, and CMS is signaling continued pressure on Medicare Advantage oversight.",
+          "synthesis": "Payment policy is moving on several fronts at once: Congress is weighing inflation-linked physician updates, CMS is cutting lab rates and keeping pressure on Medicare Advantage, and Medicaid and Medicare drug-pricing savings look less certain than advertised. Bipartisan pushback appears to have stopped political control of NIH grants.",
           "items": [
             {
               "item_id": "2026-09-24-patients-first-act-doctor-pay",
@@ -96,10 +106,16 @@
                   "url": "https://www.healthcaredive.com/news/oz-medicare-advantage-garden-weeds-bma-cms/831062/",
                   "source_type": "rss",
                   "published_at": "2026-09-23T15:05:37Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medpac-medicare-advantage-overpayment-analysis-defense-bma/831126/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T13:41:00Z"
                 }
               ],
-              "title": "CMS administrator signals tougher Medicare Advantage oversight despite scaled-back reforms",
-              "summary": "CMS Administrator Mehmet Oz described Medicare Advantage as a garden vulnerable to weeds and overgrowth at an industry event. Healthcare Dive reported that the remarks point to continued interest in tighter program oversight even after some of the administration's largest proposed reforms were watered down or dropped.",
+              "title": "CMS and MedPAC leaders signal continued Medicare Advantage scrutiny ahead of open enrollment",
+              "summary": "CMS Administrator Mehmet Oz called Medicare Advantage a garden 'vulnerable to weeds and overgrowth' and signaled continued oversight, even after CMS scaled back some proposed reforms. More than 35 million beneficiaries, over half of Medicare, are in MA in 2026. At the same Better Medicare Alliance forum, MedPAC Chair Amol Navathe defended the commission's estimate that MA will cost 14% ($76 billion) more than traditional Medicare this year, while saying MedPAC is not calling for a 14% cut.",
               "strategic_implication": "MA plans should expect scrutiny to persist across coding, utilization, and payment accuracy, making audit readiness and defensible clinical documentation strategic operating capabilities.",
               "confidence": "medium",
               "tags": [
@@ -108,12 +124,116 @@
                 "risk-adjustment",
                 "payer-oversight"
               ]
+            },
+            {
+              "item_id": "2026-09-24-nih-grant-control-plan-stalls",
+              "canonical_topic": "nih-grant-control-plan-stalls",
+              "duplicate_group": "nih-grant-control-plan-stalls",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/23/nih-grants-political-control-executive-order-bipartisan-pushback/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T23:26:00Z"
+                }
+              ],
+              "title": "White House plan for political control of NIH grants appears dead after bipartisan pushback",
+              "summary": "A planned executive order that would have created a commission of political appointees with veto power over NIH awards appears 'dead,' according to Sen. Susan Collins and a person familiar with the decision. Collins, who chairs Senate Appropriations, and Vice Chair Patty Murray both opposed the plan, which followed an Oval Office meeting where OMB Director Russell Vought criticized NIH-funded projects.",
+              "strategic_implication": "Academic medical centers get near-term relief on grant governance, but should keep scenario plans for other levers, including apportionment, indirect-cost policy, and term-based screening.",
+              "confidence": "high",
+              "tags": [
+                "nih",
+                "research-funding",
+                "appropriations",
+                "academic-medicine"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-medicare-lab-fee-schedule-cuts",
+              "canonical_topic": "medicare-lab-fee-schedule-cuts",
+              "duplicate_group": "medicare-lab-fee-schedule-cuts",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/trump-administration-sets-preliminary-cuts-to-medicare-lab-reimbursement-ra/831154/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T15:23:00Z"
+                }
+              ],
+              "title": "CMS proposes preliminary 2027 lab fee cuts after finding Medicare pays 16% more than private insurers",
+              "summary": "CMS posted preliminary 2027 Clinical Laboratory Fee Schedule rates, estimating about $1 billion in annual savings. ACLA says nearly 1,200 tests face reductions, 775 of them at the statutory maximum 15% cut in 2027, with further cuts in 2028 and 2029. Final rates are expected in November; Quest and Labcorp shares fell after the release.",
+              "strategic_implication": "Hospital outreach labs and independent labs should model the three-year phase-in now and test whether outreach volume remains margin-positive under the new rates.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "clinical-lab-fee-schedule",
+                "reimbursement",
+                "diagnostics"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-fda-nominee-overton-go-fast",
+              "canonical_topic": "fda-nominee-overton-go-fast",
+              "duplicate_group": "fda-nominee-overton-go-fast",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/23/heidi-overton-fda-nominee-opening-statement-senate-hearing-clinical-trials/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T22:14:00Z"
+                }
+              ],
+              "title": "FDA nominee Heidi Overton frames her agenda around speed and competition with China",
+              "summary": "In her prepared opening statement for Thursday's Senate hearing, Overton says the president's direction is to 'go fast,' warning that slow FDA requirements are pushing investment toward China. She pledges to continue Operation Trialblazer to streamline clinical trials and drug development.",
+              "strategic_implication": "Sponsors and research sites should expect pressure for faster, more flexible trial pathways, alongside open questions about review capacity after recent FDA staff losses.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "clinical-trials",
+                "regulation",
+                "china"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-mfn-deals-erode-medicare-savings",
+              "canonical_topic": "mfn-deals-erode-medicare-savings",
+              "duplicate_group": "mfn-deals-erode-medicare-savings",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/trump-mfn-drug-deals-medicare-savings/830923/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T13:39:00Z"
+                }
+              ],
+              "title": "Company-level MFN deals could erase nearly 80% of projected savings from Medicare's GLOBE and GUARD models",
+              "summary": "The White House now has most-favored-nation pricing agreements with 26 drugmakers. An updated estimate from researcher Thomas Hwang suggests exemptions tied to those deals could cut projected savings from the proposed GLOBE (Part B) and GUARD (Part D) models, previously estimated at $11.6 billion a year, by nearly 80%.",
+              "strategic_implication": "Payers and budget analysts should not bank model-level Medicare drug savings until CMS finalizes the models and clarifies which manufacturers are exempt.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "mfn",
+                "medicare-part-b",
+                "medicare-part-d"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "AI adoption is shifting from back-office documentation to clinical identity, access, and cyber-resilience. The operating question is no longer whether to deploy models, but how to govern them inside care pathways and core infrastructure.",
+          "synthesis": "AI and home-based care are becoming front doors to clinical services, from radiology groups building their own models to chatbot-led telehealth and at-home cancer screening timed to a 2027 coverage requirement.",
           "items": [
             {
               "item_id": "2026-09-24-radiology-ai-native-practices",
@@ -157,7 +277,7 @@
                 }
               ],
               "title": "August AI launches U.S. telehealth services after reaching 9 million chatbot users",
-              "summary": "August AI, which operates a global health-question chatbot, is rolling out August Care telehealth services in the United States. Fierce Healthcare reported that the company says more than 9 million people use its chatbot and that the free global product will continue alongside the U.S. service.",
+              "summary": "August AI, whose free health chatbot reports more than 9 million users across 160 countries, is launching August Care U.S. telehealth at $39 per month, including one visit monthly, $19 additional consults, discounted labs, and follow-up messaging. The company says it has treated 100,000 U.S. patients.",
               "strategic_implication": "Consumer-facing AI is becoming a front door to paid clinical services, raising competitive and safety questions for health systems that still separate symptom guidance, triage, and telehealth access.",
               "confidence": "medium",
               "tags": [
@@ -166,12 +286,38 @@
                 "consumer-ai",
                 "care-access"
               ]
+            },
+            {
+              "item_id": "2026-09-24-teal-health-home-hpv-screening",
+              "canonical_topic": "teal-health-home-hpv-screening",
+              "duplicate_group": "teal-health-home-hpv-screening",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/teal-health-secures-22m-for-at-home-hpv-cervical-cancer-screening-device/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T20:19:00Z"
+                }
+              ],
+              "title": "Teal Health raises $22M to scale at-home cervical cancer screening ahead of 2027 coverage requirement",
+              "summary": "Teal Health raised a $22 million Series A led by .406 Ventures for its FDA-authorized Teal Wand, an at-home HPV self-collection kit paired with telehealth follow-up. Federal guidelines will require most health plans to cover cervical-cancer self-collection starting January 2027; about one in three U.S. women have never been screened.",
+              "strategic_implication": "Health systems and plans should decide whether to build, partner, or refer for self-collection before the 2027 coverage mandate turns home screening into a competitive access channel.",
+              "confidence": "medium",
+              "tags": [
+                "womens-health",
+                "cancer-screening",
+                "home-testing",
+                "funding"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "Pharma capital and strategy remain focused on differentiated science: Gilead is emphasizing immunology as a third growth pillar, while an FDA advisory endorsement could move multi-cancer blood testing closer to a pivotal commercial decision.",
+          "synthesis": "Biopharma is concentrating on differentiated science, but outcome evidence is the gate: Grail won a split panel endorsement, IgAN is getting crowded, and two Phase 3 misses are forcing a rethink of biomarker-driven cardiology.",
           "items": [
             {
               "item_id": "2026-09-24-gilead-immunology-growth-strategy",
@@ -215,7 +361,7 @@
                 }
               ],
               "title": "FDA advisory panel backs Grail's multi-cancer blood test",
-              "summary": "An FDA advisory panel endorsed Grail's Galleri blood test, concluding that its benefits outweigh its risks. The panel's recommendation concerns a test designed to screen for multiple cancers and sets up a consequential regulatory and evidence pathway for the emerging screening category.",
+              "summary": "An FDA advisory panel endorsed Grail's Galleri multi-cancer blood test, voting 10-0 on safety, 6-4 on effectiveness, and 7-2 with one abstention that benefits outweigh risks for the proposed indication. FDA is not bound by the panel but often follows its recommendations.",
               "strategic_implication": "Health systems and employers should track the evidence, coverage, and follow-up-workflow implications before assuming broad adoption of multi-cancer screening.",
               "confidence": "high",
               "tags": [
@@ -224,12 +370,64 @@
                 "diagnostics",
                 "fda"
               ]
+            },
+            {
+              "item_id": "2026-09-24-roche-sefaxersen-igan-phase3",
+              "canonical_topic": "roche-sefaxersen-igan-phase3",
+              "duplicate_group": "roche-sefaxersen-igan-phase3",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/roche-rare-kidney-disease-sefaxersen-nephropathy-igan-aso-rhhby/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T22:09:00Z"
+                }
+              ],
+              "title": "Roche's monthly sefaxersen hits interim Phase 3 goal in IgA nephropathy, crowding a fast-growing market",
+              "summary": "Roche said sefaxersen, an antisense drug licensed from Ionis, produced statistically significant reductions in urine protein in an interim Phase 3 analysis in IgA nephropathy. It would enter a field that already includes Novartis's Fabhalta, Otsuka's Voyxact, and Vera's Trutakna, with an FDA decision on Vertex's povetacicept expected by end of November. Detailed data were not disclosed.",
+              "strategic_implication": "Nephrology practices and specialty pharmacy leaders should prepare for a crowded IgAN formulary where dosing convenience and payer step-therapy rules drive uptake.",
+              "confidence": "medium",
+              "tags": [
+                "nephrology",
+                "roche",
+                "drug-development",
+                "specialty-pharmacy"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-preventive-cardiology-lpa-setback",
+              "canonical_topic": "preventive-cardiology-lpa-setback",
+              "duplicate_group": "preventive-cardiology-lpa-setback",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/24/lpa-horizon-zeus-results-pelacarsen-preventive-cardiology-precision-medicine-disappointment/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T08:30:00Z"
+                }
+              ],
+              "title": "Twin Phase 3 misses force a rethink of target-based preventive cardiology",
+              "summary": "A STAT opinion piece argues preventive cardiology faces a reckoning after Novartis's Lp(a) HORIZON trial of pelacarsen lowered lipoprotein(a) without reducing cardiovascular events, weeks after Novo Nordisk's ZEUS trial of ziltivekimab hit its IL-6 target without improving outcomes.",
+              "strategic_implication": "Health systems building Lp(a) testing or precision-prevention programs should tie them to outcome evidence rather than biomarker movement, and investors should discount biomarker-only cardiovascular theses.",
+              "confidence": "medium",
+              "tags": [
+                "cardiology",
+                "lpa",
+                "clinical-trials",
+                "precision-medicine"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "Payer-provider friction is increasingly tied to data and automation: one analysis alleges materially higher spending where AI coding tools are used, while major insurers are backing a standardized credentialing model to reduce administrative variation.",
+          "synthesis": "Payer-provider friction is increasingly about data and automation: BCBSA ties AI coding tools to $942 million in higher costs, while major insurers back a shared credentialing model to cut administrative waste.",
           "items": [
             {
               "item_id": "2026-09-24-ai-coding-upcoding-analysis",
@@ -247,7 +445,7 @@
                 }
               ],
               "title": "Analysis links hospital AI coding tools to $942 million in higher BCBSA plan costs",
-              "summary": "A Blue Cross Blue Shield Association analysis found that hospitals using AI coding tools generated $942 million more in costs for similar care, according to Fierce Healthcare. BCBSA's clinical-affairs leadership said the pattern could reflect appropriate coding in some cases but raised the possibility of technology-enabled upcoding.",
+              "summary": "A Blue Cross Blue Shield Association analysis found medically complex inpatient cases rose from 37% in early 2023 to 40% by end-2025 at hospitals using AI coding tools. About 70% of the increase came from 55,000+ additional cases where secondary diagnoses moved claims into higher-severity DRGs, adding an estimated $942 million in costs with no corresponding change in care. BCBSA acknowledged some of the shift may reflect more accurate coding.",
               "strategic_implication": "Health systems deploying coding automation should pair productivity metrics with payer-facing validation, audit trails, and controls that distinguish accurate documentation from unsupported intensity.",
               "confidence": "medium",
               "tags": [
@@ -273,7 +471,7 @@
                 }
               ],
               "title": "UnitedHealthcare, Cigna, and Centene back a national provider-credentialing model",
-              "summary": "CertifyOS is launching a national provider-credentialing model with UnitedHealthcare, Cigna, and Centene participating. Fierce Healthcare reported that the effort is intended to create a more consistent approach to a process that often generates repeated administrative work for providers and payers.",
+              "summary": "CertifyOS is launching a National Shared Credentialing Program this fall with UnitedHealthcare, Cigna, and Centene as initial participants, letting providers submit data once across participating payers. CertifyOS estimates 1.4 million to 2 million providers will use the platform next year; the U.S. spends more than $2 billion a year on credentialing, and providers file an average of 17 applications annually.",
               "strategic_implication": "A shared credentialing standard could shorten network onboarding and reduce administrative friction, but providers should monitor data ownership, implementation burden, and whether participation becomes a practical market requirement.",
               "confidence": "medium",
               "tags": [
@@ -287,7 +485,7 @@
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "Clinical practice signals continue to expose uneven outcomes, with a new focus on the mortality gap for Black women with breast cancer. The operational response is likely to require both earlier detection and more reliable access to high-quality follow-up care.",
+          "synthesis": "Clinical risk is rising on the public-health side, with measles at its worst level since 1991, while outcome gaps and employment-law rulings shape how organizations manage patients and clinicians.",
           "items": [
             {
               "item_id": "2026-09-24-breast-cancer-black-women-disparity",
@@ -300,12 +498,12 @@
                 {
                   "source": "Fierce Healthcare",
                   "url": "https://www.fiercehealthcare.com/providers/breast-cancer-and-black-women-investigating-disparities",
-                  "source_type": "rss",
+                  "source_type": "podcast",
                   "published_at": "2026-09-23T14:20:00Z"
                 }
               ],
               "title": "Breast-cancer mortality gap keeps Black women at the center of equity and care-delivery scrutiny",
-              "summary": "Fierce Healthcare highlighted that Black women face a substantially higher breast-cancer mortality rate than white women despite a slightly lower incidence rate. Its coverage examines drivers of the disparity and research aimed at closing it.",
+              "summary": "A Fierce Healthcare Podnosis episode examined why Black women, despite slightly lower breast-cancer incidence, face a mortality rate about 38% higher than white women, and profiled research in Georgia aimed at closing the gap.",
               "strategic_implication": "Provider organizations should connect equity goals to measurable screening, referral, treatment-completion, and survivorship workflows rather than treating disparity reduction as a standalone communications effort.",
               "confidence": "high",
               "tags": [
@@ -313,6 +511,64 @@
                 "health-equity",
                 "clinical-practice",
                 "care-delivery"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-measles-worst-year-since-1991",
+              "canonical_topic": "measles-worst-year-since-1991",
+              "duplicate_group": "measles-worst-year-since-1991",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/24/health-news-measles-contagious-outbreak-u-s-deaths-1991/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T11:52:00Z"
+                },
+                {
+                  "source": "STAT News (opinion)",
+                  "url": "https://www.statnews.com/2026/09/24/measles-outbreak-experience-child-doctor-1961/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T08:30:00Z"
+                }
+              ],
+              "title": "U.S. measles reaches its worst year since 1991 as elimination status decision nears",
+              "summary": "STAT reports the U.S. is having its worst measles year since 1991, with CDC adding another death to its counter. Pennsylvania has reported four deaths among unvaccinated people in recent weeks, and international health officials are expected to decide in the coming weeks whether the U.S. loses measles-elimination status.",
+              "strategic_implication": "Hospitals and clinics should confirm staff immunity documentation, airborne-isolation capacity, and ED triage screening now, and prepare patient communication for a possible loss of elimination status.",
+              "confidence": "high",
+              "tags": [
+                "measles",
+                "infection-prevention",
+                "public-health",
+                "vaccination"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-physician-burnout-ada-ruling",
+              "canonical_topic": "physician-burnout-ada-ruling",
+              "duplicate_group": "physician-burnout-ada-ruling",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/doctors-burnout-didnt-count-as-disability-colorado-judge/831157/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T19:58:00Z"
+                }
+              ],
+              "title": "Federal judge rules an oncologist's burnout was not an ADA disability, on narrow facts",
+              "summary": "In Peddada v. Catholic Health Initiatives Colorado, a federal judge ruled on Sept. 16 that a former oncologist's burnout did not substantially limit a major life activity and was transitory, so it did not qualify under the ADA or Section 504. The court said the ruling rests on the specific record and does not mean burnout can never be a disability.",
+              "strategic_implication": "Employers should not read the ruling as a blanket defense; accommodation processes for clinician burnout still require individualized assessment and documentation.",
+              "confidence": "medium",
+              "tags": [
+                "physician-burnout",
+                "employment-law",
+                "ada",
+                "workforce"
               ]
             }
           ]
@@ -11670,416 +11926,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-08-13",
-      "generated_at": "2026-08-13T11:12:25Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today’s briefing focuses on payment and coverage rules moving from policy into operating workflows, a new wave of AI-enabled patient and revenue-cycle infrastructure, and rising pressure on access, margins, and workforce capacity. The curation draws on STAT, Healthcare Dive, Fierce Healthcare, CMS, Brookings, Deloitte, health-system and company disclosures, and targeted web-search context.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA web",
-          "Hospital, health-system, and company disclosures",
-          "Brookings and other policy research",
-          "Targeted web search"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS web",
-          "Brookings web",
-          "Deloitte disclosure",
-          "Cedar disclosure",
-          "West Health disclosure",
-          "TMA web",
-          "Targeted web search"
-        ],
-        "sources_failed": [
-          "Supplementary email newsletters not used"
-        ],
-        "run_notes": "Built from RSS titles and descriptions plus 1–2 targeted web-search checks per selected signal. Full-article access was not required. Fresh Aug. 12–13 developments were prioritized; older items were used only for context or primary documentation."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Coverage and payment rules are entering implementation mode, with Medicaid work requirements and No Surprises Act arbitration methodology both creating near-term administrative and financial consequences. Leaders should prepare for policy volatility by translating legal changes into eligibility, contracting, and revenue-cycle playbooks.",
-          "items": [
-            {
-              "item_id": "2026-08-13-medicaid-work-requirements-evidence-gap",
-              "canonical_topic": "medicaid-work-requirements-evidence-gap",
-              "duplicate_group": "medicaid-work-requirements-evidence-gap",
-              "priority_score": 9,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/cms-medicaid-work-requirements-rule-slammed-brookings-analysis/827481/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T17:29:07Z"
-                },
-                {
-                  "source": "Brookings",
-                  "url": "https://www.brookings.edu/articles/medicaid-work-requirements-built-on-invented-evidence-will-harm-the-people-they-claim-to-help/",
-                  "source_type": "web",
-                  "published_at": "2026-08-07T11:11:18Z"
-                }
-              ],
-              "title": "Brookings challenges CMS assumptions behind the coming Medicaid work requirement",
-              "summary": "Brookings researchers say CMS relied on unsupported assumptions in its implementation analysis for the national Medicaid community-engagement requirement. The rule requires certain ACA expansion adults to document 80 hours per month of work, school, training, or community service beginning in 2027; CMS projects far fewer coverage losses and greater savings than the Congressional Budget Office.",
-              "strategic_implication": "States, plans, and providers should model both the nominal rule and documentation-driven churn, including exemption verification, outreach, eligibility-system changes, and likely increases in uncompensated or delayed care.",
-              "confidence": "high",
-              "tags": [
-                "medicaid",
-                "work-requirements",
-                "coverage-loss",
-                "eligibility",
-                "policy-risk"
-              ]
-            },
-            {
-              "item_id": "2026-08-13-no-surprises-qpa-methodology-ruling",
-              "canonical_topic": "no-surprises-qpa-methodology-ruling",
-              "duplicate_group": "no-surprises-qpa-methodology-ruling",
-              "priority_score": 9,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/appeals-court-tosses-methodology-calculating-nsa-qualifying-payment-amounts",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T20:55:00Z"
-                },
-                {
-                  "source": "Texas Medical Association",
-                  "url": "https://www.texmed.org/Template.aspx?id=68379",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T00:00:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/12/texas-medical-association-no-surprises-act-lawsuit-qpa/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T20:29:03Z"
-                }
-              ],
-              "title": "Appeals court tosses key No Surprises Act payment methodology",
-              "summary": "The U.S. Court of Appeals for the Fifth Circuit rejected key rules used to calculate the qualifying payment amount in federal No Surprises Act disputes. The challenged methodology included concerns about so-called ghost rates and the treatment of bonus and incentive payments, issues that can materially affect arbitration and out-of-network reimbursement.",
-              "strategic_implication": "Health plans, provider groups, and arbitration teams should assess how the ruling changes QPA calculations, negotiation posture, claims workflows, and pending disputes while regulators determine implementation steps.",
-              "confidence": "high",
-              "tags": [
-                "no-surprises-act",
-                "qpa",
-                "arbitration",
-                "reimbursement",
-                "payer-provider"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "AI is moving from pilots into patient-facing access, billing, and reimbursement infrastructure. The immediate test is not novelty but whether organizations can pair deployment speed with evidence, guardrails, and measurable workflow value.",
-          "items": [
-            {
-              "item_id": "2026-08-13-oracle-ai-patient-portal",
-              "canonical_topic": "oracle-ai-patient-portal",
-              "duplicate_group": "oracle-ai-patient-portal",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/Oracle-launches-AI-driven-patient-portal/827656/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T13:00:05Z"
-                },
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/Oracle-launches-AI-driven-patient-portal/827656/",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T21:11:17Z"
-                }
-              ],
-              "title": "Oracle makes its AI-powered patient portal generally available in the U.S.",
-              "summary": "Oracle Health launched its AI-powered patient portal broadly in the U.S. The portal is integrated with Oracle’s EHR and is designed to explain diagnoses, lab results, and treatment paths in plain language, support natural-language scheduling, and distinguish AI-generated text while preventing the system from giving diagnoses or treatment recommendations.",
-              "strategic_implication": "Patient-facing AI is becoming part of the EHR platform decision, so health systems should evaluate usability, source attribution, escalation, accessibility, and clinical-safety controls alongside the commercial cost of the portal.",
-              "confidence": "high",
-              "tags": [
-                "patient-portal",
-                "ehr",
-                "generative-ai",
-                "patient-access",
-                "clinical-safety"
-              ]
-            },
-            {
-              "item_id": "2026-08-13-cedar-kora-agentic-billing-platform",
-              "canonical_topic": "cedar-kora-agentic-billing-platform",
-              "duplicate_group": "cedar-kora-agentic-billing-platform",
-              "priority_score": 8,
-              "primary_source": "Cedar",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/cedar-launches-kora-platform-agentic-ai-billing",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T16:57:00Z"
-                },
-                {
-                  "source": "Cedar",
-                  "url": "https://finance.yahoo.com/healthcare/articles/cedar-launches-agentic-platform-help-100000059.html",
-                  "source_type": "web",
-                  "published_at": "2026-08-13T00:00:00Z"
-                }
-              ],
-              "title": "Cedar expands Kora from a billing agent into an agentic patient-finance platform",
-              "summary": "Cedar introduced the Kora Platform, a suite of AI agents for inbound and outbound billing calls, two-way text, eligibility checks, payments, insurance capture, and collections workflows. The company says Kora has handled more than 600,000 patient conversations, achieved 40% inbound call containment, and reached a 20% outbound pickup rate, four times its stated industry average.",
-              "strategic_implication": "Revenue-cycle automation can scale faster than traditional call-center capacity, but providers need clear controls for financial assistance, consent, language access, human escalation, and independent validation of collection and patient-experience claims.",
-              "confidence": "medium",
-              "tags": [
-                "revenue-cycle",
-                "agentic-ai",
-                "patient-finance",
-                "automation",
-                "digital-health"
-              ]
-            },
-            {
-              "item_id": "2026-08-13-medicare-ai-device-payment-incentives",
-              "canonical_topic": "medicare-ai-device-payment-incentives",
-              "duplicate_group": "medicare-ai-device-payment-incentives",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/13/how-medicare-cms-pays-ntap-for-new-ai-medical-devices/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-13T08:30:00Z"
-                },
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/medicare/payment/prospective-payment-systems/acute-inpatient-pps/new-medical-services-and-new-technologies",
-                  "source_type": "web",
-                  "published_at": "2026-08-10T00:00:00Z"
-                }
-              ],
-              "title": "Medicare’s AI-device incentives raise the stakes for evidence and utilization controls",
-              "summary": "STAT reports that Medicare payment incentives for newly authorized AI devices could encourage hospitals to adopt and use tools before their real-world value is fully established. CMS’s new-technology payment framework requires qualifying technologies to be new, costly relative to the standard payment, and shown to provide substantial clinical improvement.",
-              "strategic_implication": "Manufacturers and health systems should treat reimbursement as the beginning of evidence generation, not proof of value, and build utilization review, outcomes tracking, and post-deployment monitoring into AI adoption plans.",
-              "confidence": "medium",
-              "tags": [
-                "medicare",
-                "medical-devices",
-                "clinical-ai",
-                "reimbursement",
-                "evidence"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Industry growth is increasingly constrained by execution readiness: leaders are being asked to improve margins and expand partnerships while their operating systems, data, and decision processes lag. The result is a market where disciplined integration matters as much as headline expansion.",
-          "items": [
-            {
-              "item_id": "2026-08-13-healthcare-cfo-decision-readiness-gap",
-              "canonical_topic": "healthcare-cfo-decision-readiness-gap",
-              "duplicate_group": "healthcare-cfo-decision-readiness-gap",
-              "priority_score": 7,
-              "primary_source": "Deloitte",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/healthcare-cfos-face-decision-readiness-gap-deloitte/827740/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T18:08:47Z"
-                },
-                {
-                  "source": "Deloitte",
-                  "url": "https://www.deloitte.com/us/en/about/press-room/deloitte-2026-healthcare-cfo-survey.html",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T12:11:33Z"
-                },
-                {
-                  "source": "Deloitte",
-                  "url": "https://www.deloitte.com/us/en/insights/industry/health-care/healthcare-finance-leadership.html",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T11:11:33Z"
-                }
-              ],
-              "title": "Healthcare CFOs face a 24-point gap between enterprise expectations and readiness",
-              "summary": "Deloitte’s 2026 survey of 64 U.S. healthcare finance leaders found that 73% are expected to be regularly or heavily involved in enterprise decisions, while only 49% feel well equipped to contribute. The largest gap is in affordability, access, and patient experience, where 74% are expected to participate but only 41% feel prepared; nearly 60% are targeting at least two points of margin improvement over two years.",
-              "strategic_implication": "Margin programs and transformation portfolios need stronger finance-operating integration, data attribution, and decision rights; otherwise leaders may commit to growth or AI investments without the measurement capability to manage trade-offs.",
-              "confidence": "high",
-              "tags": [
-                "healthcare-finance",
-                "cfo",
-                "margin",
-                "operating-model",
-                "decision-readiness"
-              ]
-            },
-            {
-              "item_id": "2026-08-13-cityblock-humana-north-carolina-partnership",
-              "canonical_topic": "cityblock-humana-north-carolina-partnership",
-              "duplicate_group": "cityblock-humana-north-carolina-partnership",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/cityblock-unveils-partnership-humana-north-carolina",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T18:49:00Z"
-                }
-              ],
-              "title": "Cityblock expands its North Carolina footprint through a Humana partnership",
-              "summary": "Cityblock Health announced a new partnership with Humana in North Carolina, extending the organization’s payer-linked care model in the state. The move adds to a broader pattern of plans and care-delivery companies using local, multidisciplinary models to reach Medicaid, Medicare Advantage, and complex-needs populations.",
-              "strategic_implication": "Payer-provider partnerships will increasingly be judged on access, behavioral-health integration, and measurable total-cost outcomes, not simply on network breadth or geographic expansion.",
-              "confidence": "medium",
-              "tags": [
-                "payer-provider",
-                "north-carolina",
-                "medicaid",
-                "medicare-advantage",
-                "care-model"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Provider organizations are investing in coordination infrastructure to relieve capacity pressure and make care transitions more reliable. The operational advantage will come from embedding these capabilities into daily flow management rather than treating them as standalone innovation projects.",
-          "items": [
-            {
-              "item_id": "2026-08-13-ucsd-west-health-care-coordination-accelerator",
-              "canonical_topic": "ucsd-west-health-care-coordination-accelerator",
-              "duplicate_group": "ucsd-west-health-care-coordination-accelerator",
-              "priority_score": 8,
-              "primary_source": "West Health",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/uc-san-diego-health-west-health-launch-40m-accelerator-tech-forward-coordinated-care",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T20:17:00Z"
-                },
-                {
-                  "source": "West Health",
-                  "url": "https://westhealth.org/news/uc-san-diego-health-and-west-health-accelerate-future-of-patient-care/",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T20:11:34Z"
-                }
-              ],
-              "title": "UC San Diego Health and West Health launch a six-year, $40 million care-coordination accelerator",
-              "summary": "UC San Diego Health and West Health launched a six-year, $40 million initiative to improve how patients navigate referrals, specialist transitions, recovery, and ongoing care across hospitals, clinics, and home settings. The program will build an around-the-clock coordination hub using data, advanced technology, and the health system’s EHR, with an explicit goal of sharing a scalable model with other systems.",
-              "strategic_implication": "Care coordination is becoming a capacity strategy: health systems should connect navigation, access, referral management, and flow analytics to measurable outcomes such as time to appointment, avoidable utilization, and patient experience.",
-              "confidence": "high",
-              "tags": [
-                "care-coordination",
-                "patient-flow",
-                "health-systems",
-                "access",
-                "digital-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Workforce and access signals point to a compounding capacity problem: organizations are restructuring under cost pressure while patients face longer waits for time-sensitive care. Leaders need to connect staffing, throughput, equity, and clinical outcomes in one operating view.",
-          "items": [
-            {
-              "item_id": "2026-08-13-sharp-healthcare-workforce-reduction",
-              "canonical_topic": "sharp-healthcare-workforce-reduction",
-              "duplicate_group": "sharp-healthcare-workforce-reduction",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/sharp-healthcare-announces-another-reorganization-affecting-260-workers",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T16:14:00Z"
-                },
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/finance/sharp-healthcare-reduces-workforce-by-nearly-1-affecting-260-employees/",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T14:11:17Z"
-                }
-              ],
-              "title": "Sharp HealthCare restructures operations, affecting about 260 workers",
-              "summary": "Sharp HealthCare announced a reorganization affecting about 260 employees, or just under 1% of its workforce, across behavioral health, outpatient services, and system and regional operations. The system cited labor and supply costs, stagnant government reimbursement, and federal and state policy changes; some affected workers were offered other roles within Sharp.",
-              "strategic_implication": "Even when workforce actions are designed to protect direct care, reductions across clinical support, access, and administrative functions can shift workload and lengthen queues; leaders should track service-line capacity and patient-safety effects after restructuring.",
-              "confidence": "high",
-              "tags": [
-                "workforce",
-                "hospital-operations",
-                "restructuring",
-                "behavioral-health",
-                "capacity"
-              ]
-            },
-            {
-              "item_id": "2026-08-13-cancer-treatment-wait-times",
-              "canonical_topic": "cancer-treatment-wait-times",
-              "duplicate_group": "cancer-treatment-wait-times",
-              "priority_score": 9,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/12/cancer-patients-face-longer-wait-times-for-treatment/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-12T15:00:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/12/cancer-patients-face-longer-wait-times-for-treatment/",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T16:11:33Z"
-                },
-                {
-                  "source": "MedPage Today",
-                  "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/122578",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T17:11:33Z"
-                }
-              ],
-              "title": "Cancer patients are waiting longer to start treatment across six major cancers",
-              "summary": "A study of more than 2.7 million patients in the National Cancer Database found that the time from diagnosis to first treatment increased across six cancers from 2012 through 2023. Reported delays were longer for patients with Medicaid or lower incomes, Black patients, people traveling farther, and those treated at academic or high-volume centers.",
-              "strategic_implication": "Cancer programs should treat time-to-treatment as a strategic access and quality metric, using referral triage, capacity planning, navigation, and equity monitoring to prevent staffing and workflow bottlenecks from becoming clinical delays.",
-              "confidence": "high",
-              "tags": [
-                "cancer-care",
-                "access",
-                "clinical-operations",
-                "health-equity",
-                "wait-times"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-09-24T11:06:17Z"
+  "last_updated": "2026-09-24T12:42:25Z"
 }

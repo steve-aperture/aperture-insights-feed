@@ -3,6 +3,323 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-24",
+      "generated_at": "2026-09-24T11:06:17Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's signals center on Medicare payment reform, Medicaid drug-pricing implementation, and tighter oversight of Medicare Advantage. AI is moving deeper into clinical practice, payer analytics, and access models, while pharma strategy and clinical disparities add market and care-delivery context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted web search across CMS/HHS/FDA, hospital operations, digital health, drug pricing, and payer/provider moves"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "Direct search_web utility was unavailable in the execution environment; RSS titles and descriptions were used for same-day signal depth"
+        ],
+        "run_notes": "Fresh-clone run for 2026-09-24. Selected 10 same-day or prior-24-hour items from the three successful RSS feeds, screened against the 2026-09-23 edition to avoid duplicating unchanged stories."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Payment policy is entering a more consequential phase: Congress is considering medical-inflation-linked physician updates, states are weighing a Medicaid drug-pricing model, and CMS is signaling continued pressure on Medicare Advantage oversight.",
+          "items": [
+            {
+              "item_id": "2026-09-24-patients-first-act-doctor-pay",
+              "canonical_topic": "patients-first-act-doctor-pay",
+              "duplicate_group": "patients-first-act-doctor-pay",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/24/patients-first-act-congress-moves-on-doctor-pay-medicare-reform/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T08:30:00Z"
+                }
+              ],
+              "title": "Bipartisan Patients First Act could tie Medicare physician updates to medical inflation",
+              "summary": "Congress is considering the first major overhaul of Medicare physician payment in more than a decade. The proposed Patients First Act would link doctor payment updates to a medical-inflation measure, giving clinicians guaranteed increases while reducing the system's emphasis on controlling service volume through the current payment framework.",
+              "strategic_implication": "Provider groups should model the effect of an inflation-linked update alongside the possible tradeoff of slower movement toward value-based reimbursement and utilization discipline.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "physician-payment",
+                "medical-inflation",
+                "value-based-care"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-medicaid-drug-pricing-state-interest",
+              "canonical_topic": "medicaid-drug-pricing-state-interest",
+              "duplicate_group": "medicaid-drug-pricing-state-interest",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/24/trump-medicaid-generous-model-state-interest/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T08:30:00Z"
+                }
+              ],
+              "title": "States are not uniformly committed to the administration's Medicaid drug-pricing model",
+              "summary": "The administration has said every state wants to participate in a Medicaid drug-pricing initiative, but several states told STAT they are not yet sure. The gap between federal messaging and state-level commitment leaves the program's eventual reach and implementation timetable unsettled.",
+              "strategic_implication": "Plans, manufacturers, and state Medicaid leaders should avoid treating national participation as a settled assumption and prepare scenarios for uneven adoption, reporting, and formulary effects.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "drug-pricing",
+                "states",
+                "pharmacy-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-medicare-advantage-oversight",
+              "canonical_topic": "medicare-advantage-oversight",
+              "duplicate_group": "medicare-advantage-oversight",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/oz-medicare-advantage-garden-weeds-bma-cms/831062/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T15:05:37Z"
+                }
+              ],
+              "title": "CMS administrator signals tougher Medicare Advantage oversight despite scaled-back reforms",
+              "summary": "CMS Administrator Mehmet Oz described Medicare Advantage as a garden vulnerable to weeds and overgrowth at an industry event. Healthcare Dive reported that the remarks point to continued interest in tighter program oversight even after some of the administration's largest proposed reforms were watered down or dropped.",
+              "strategic_implication": "MA plans should expect scrutiny to persist across coding, utilization, and payment accuracy, making audit readiness and defensible clinical documentation strategic operating capabilities.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "cms",
+                "risk-adjustment",
+                "payer-oversight"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI adoption is shifting from back-office documentation to clinical identity, access, and cyber-resilience. The operating question is no longer whether to deploy models, but how to govern them inside care pathways and core infrastructure.",
+          "items": [
+            {
+              "item_id": "2026-09-24-radiology-ai-native-practices",
+              "canonical_topic": "radiology-ai-native-practices",
+              "duplicate_group": "radiology-ai-native-practices",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/24/radiology-ai-blurred-line-between-tech-development-clinical-practice/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T08:30:00Z"
+                }
+              ],
+              "title": "Radiology groups are becoming AI-native developers, not just software buyers",
+              "summary": "STAT reports that a growing number of outpatient and teleradiology practices are developing or acquiring their own AI tools and deploying them in-house. These groups are also marketing their AI capabilities to radiologist recruits and hospital customers, blurring the line between technology development and clinical practice.",
+              "strategic_implication": "Imaging leaders should treat AI capability as a clinical operating model and talent differentiator, with governance, validation, and workflow ownership designed in from the start.",
+              "confidence": "medium",
+              "tags": [
+                "radiology",
+                "clinical-ai",
+                "teleradiology",
+                "healthcare-technology"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-august-ai-telehealth",
+              "canonical_topic": "august-ai-telehealth",
+              "duplicate_group": "august-ai-telehealth",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/digital-health/august-ai-chatbot-answering-health-questions-rolls-out-us-telehealth-services",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T19:31:00Z"
+                }
+              ],
+              "title": "August AI launches U.S. telehealth services after reaching 9 million chatbot users",
+              "summary": "August AI, which operates a global health-question chatbot, is rolling out August Care telehealth services in the United States. Fierce Healthcare reported that the company says more than 9 million people use its chatbot and that the free global product will continue alongside the U.S. service.",
+              "strategic_implication": "Consumer-facing AI is becoming a front door to paid clinical services, raising competitive and safety questions for health systems that still separate symptom guidance, triage, and telehealth access.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "telehealth",
+                "consumer-ai",
+                "care-access"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Pharma capital and strategy remain focused on differentiated science: Gilead is emphasizing immunology as a third growth pillar, while an FDA advisory endorsement could move multi-cancer blood testing closer to a pivotal commercial decision.",
+          "items": [
+            {
+              "item_id": "2026-09-24-gilead-immunology-growth-strategy",
+              "canonical_topic": "gilead-immunology-growth-strategy",
+              "duplicate_group": "gilead-immunology-growth-strategy",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/24/gilead-immunology-inflammation-biotech-moderna-merck/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T10:30:00Z"
+                }
+              ],
+              "title": "Gilead positions inflammation and immunology as its next major growth pillar",
+              "summary": "Gilead executives have been emphasizing the company's long-running push into inflammatory and autoimmune disease medicines. STAT describes immunology as the third leg of a strategy that already includes Gilead's established virology business and a growing oncology portfolio.",
+              "strategic_implication": "The positioning signals that large biopharma companies are still willing to build new therapeutic pillars, increasing partnership and licensing competition for differentiated immunology assets.",
+              "confidence": "medium",
+              "tags": [
+                "gilead",
+                "immunology",
+                "biopharma",
+                "drug-development"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-grail-galleri-advisory-panel",
+              "canonical_topic": "grail-galleri-advisory-panel",
+              "duplicate_group": "grail-galleri-advisory-panel",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/23/fda-advisory-panel-recommends-approval-grail-galleri-multi-cancer-blood-test/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T21:47:58Z"
+                }
+              ],
+              "title": "FDA advisory panel backs Grail's multi-cancer blood test",
+              "summary": "An FDA advisory panel endorsed Grail's Galleri blood test, concluding that its benefits outweigh its risks. The panel's recommendation concerns a test designed to screen for multiple cancers and sets up a consequential regulatory and evidence pathway for the emerging screening category.",
+              "strategic_implication": "Health systems and employers should track the evidence, coverage, and follow-up-workflow implications before assuming broad adoption of multi-cancer screening.",
+              "confidence": "high",
+              "tags": [
+                "grail",
+                "cancer-screening",
+                "diagnostics",
+                "fda"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Payer-provider friction is increasingly tied to data and automation: one analysis alleges materially higher spending where AI coding tools are used, while major insurers are backing a standardized credentialing model to reduce administrative variation.",
+          "items": [
+            {
+              "item_id": "2026-09-24-ai-coding-upcoding-analysis",
+              "canonical_topic": "ai-coding-upcoding-analysis",
+              "duplicate_group": "ai-coding-upcoding-analysis",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/hospitals-use-ai-coding-tools-cost-bcbsa-plans-942m-more-similar-care-analysis",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T18:34:00Z"
+                }
+              ],
+              "title": "Analysis links hospital AI coding tools to $942 million in higher BCBSA plan costs",
+              "summary": "A Blue Cross Blue Shield Association analysis found that hospitals using AI coding tools generated $942 million more in costs for similar care, according to Fierce Healthcare. BCBSA's clinical-affairs leadership said the pattern could reflect appropriate coding in some cases but raised the possibility of technology-enabled upcoding.",
+              "strategic_implication": "Health systems deploying coding automation should pair productivity metrics with payer-facing validation, audit trails, and controls that distinguish accurate documentation from unsupported intensity.",
+              "confidence": "medium",
+              "tags": [
+                "medical-coding",
+                "ai",
+                "payer-provider",
+                "revenue-cycle"
+              ]
+            },
+            {
+              "item_id": "2026-09-24-provider-credentialing-standard",
+              "canonical_topic": "provider-credentialing-standard",
+              "duplicate_group": "provider-credentialing-standard",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/unitedhealthcare-cigna-centene-sign-certifyos-new-provider-credentialing-model",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T19:13:00Z"
+                }
+              ],
+              "title": "UnitedHealthcare, Cigna, and Centene back a national provider-credentialing model",
+              "summary": "CertifyOS is launching a national provider-credentialing model with UnitedHealthcare, Cigna, and Centene participating. Fierce Healthcare reported that the effort is intended to create a more consistent approach to a process that often generates repeated administrative work for providers and payers.",
+              "strategic_implication": "A shared credentialing standard could shorten network onboarding and reduce administrative friction, but providers should monitor data ownership, implementation burden, and whether participation becomes a practical market requirement.",
+              "confidence": "medium",
+              "tags": [
+                "credentialing",
+                "payer-operations",
+                "provider-networks",
+                "administrative-burden"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical practice signals continue to expose uneven outcomes, with a new focus on the mortality gap for Black women with breast cancer. The operational response is likely to require both earlier detection and more reliable access to high-quality follow-up care.",
+          "items": [
+            {
+              "item_id": "2026-09-24-breast-cancer-black-women-disparity",
+              "canonical_topic": "breast-cancer-black-women-disparity",
+              "duplicate_group": "breast-cancer-black-women-disparity",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/breast-cancer-and-black-women-investigating-disparities",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T14:20:00Z"
+                }
+              ],
+              "title": "Breast-cancer mortality gap keeps Black women at the center of equity and care-delivery scrutiny",
+              "summary": "Fierce Healthcare highlighted that Black women face a substantially higher breast-cancer mortality rate than white women despite a slightly lower incidence rate. Its coverage examines drivers of the disparity and research aimed at closing it.",
+              "strategic_implication": "Provider organizations should connect equity goals to measurable screening, referral, treatment-completion, and survivorship workflows rather than treating disparity reduction as a standalone communications effort.",
+              "confidence": "high",
+              "tags": [
+                "breast-cancer",
+                "health-equity",
+                "clinical-practice",
+                "care-delivery"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-23",
       "generated_at": "2026-09-23T12:36:11Z",
       "headline": "Today's Healthcare Insights",
@@ -11764,5 +12081,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-23T12:36:11Z"
+  "last_updated": "2026-09-24T11:06:17Z"
 }

@@ -4,35 +4,44 @@
   "editions": [
     {
       "edition_date": "2026-09-25",
-      "generated_at": "2026-09-25T11:03:21Z",
+      "generated_at": "2026-09-25T12:38:44Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's signals point to a more contested operating environment: FDA leadership and HHS appointments are advancing, while AI economics, payer-provider administration, and labor relations remain unsettled. Coverage draws on same-day STAT News, Healthcare Dive, and Fierce Healthcare reporting, with no supplementary Gmail items available.",
+      "summary_note": "Today's signals point to a more contested operating environment: FDA and HHS leadership is advancing, Medicare Advantage contract exits are growing ahead of open enrollment, and questions about AI economics, Medicaid financing, and public-health data remain unsettled. Coverage draws on STAT News, Healthcare Dive, MedCity News, Fierce Healthcare, Becker's, and the AMA.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
           "STAT News RSS (main)",
           "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Hospitalogy RSS",
           "Fierce Healthcare RSS",
-          "Search_web targeted queries (policy, payment, AI, market, workforce)",
-          "Gmail labels HealthcareBrew, Healthcare Dive, Hospitalogy, Modern Healthcare, STAT"
+          "Modern Healthcare RSS",
+          "Healthcare Brew RSS",
+          "Targeted web verification (Becker's, AMA)"
         ],
         "sources_successful": [
           "STAT News RSS (main)",
           "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS",
-          "Google News RSS topic queries (supplementary screening)"
+          "MedCity News RSS",
+          "Direct page verification of Fierce Healthcare items from the automated run",
+          "Becker's Hospital Review and AMA pages via direct fetch"
         ],
         "sources_failed": [
-          "Search_web direct tool was unavailable in the scheduled runtime; RSS-only synthesis used",
-          "Gmail supplementary labels returned no messages"
+          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
+          "Hospitalogy RSS returned HTTP 403 (newly failing)",
+          "Fierce Healthcare RSS returned HTTP 403 (items verified via page fetch)",
+          "Modern Healthcare RSS returned HTTP 403",
+          "Healthcare Brew RSS returned HTTP 404"
         ],
-        "run_notes": "Signals were screened against the 2026-09-24 edition to avoid repeating unchanged stories. RSS titles and descriptions supplied the factual base; items emphasize same-day developments and are marked medium confidence where reporting details were limited."
+        "items_captured": 16,
+        "run_notes": "Same-day rebuild in place: the 11:03 UTC automated run had already written 2026-09-25 and left the feed at 31 editions. Retained and verified all 9 automated items, enriched three with verified figures, added 7 new items from the 9/23-9/25 window screened against the prior 12 editions, and trimmed to 30 editions with overflow archived."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "Federal health governance is moving through confirmation and appointment channels while the FDA nominee's hearing leaves major policy questions open. A new study of the menthol-ban comment record also underscores how organized interests can shape regulatory process inputs.",
+          "synthesis": "Federal health leadership is taking shape through the Overton hearing and the Klomp vote, while fights over process (menthol comments, the scope of provider-tax rules) and a WHO leadership race under financial strain show how governance is shaping the operating environment.",
           "items": [
             {
               "item_id": "2026-09-25-fda-nominee-overton-confirmation-hearing",
@@ -123,12 +132,65 @@
                 "public-comments",
                 "regulatory-process"
               ]
+            },
+            {
+              "item_id": "2026-09-25-who-director-general-race",
+              "canonical_topic": "who-director-general-race",
+              "duplicate_group": "who-director-general-race",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/world-health-organization-candidates-for-next-director-general/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T12:30:00Z"
+                }
+              ],
+              "title": "Five candidates vie to lead a financially strained WHO after the U.S. exit",
+              "summary": "Nominations closed with at least five candidates for WHO director-general, including Europe regional director Hans Kluge, Eastern Mediterranean regional director Hanan Balkhy, and Indonesian health minister Budi Gunadi Sadikin. The U.S. left nearly $278 million in unpaid fees; Tedros's successor takes office Aug. 16, 2027, with an official shortlist expected after regional meetings in early November.",
+              "strategic_implication": "Global health, biosecurity, and surveillance partners should plan for a WHO with thinner financing and an unsettled U.S. relationship, and track whether the next leader moves to restore collaboration with Washington.",
+              "confidence": "high",
+              "tags": [
+                "who",
+                "global-health",
+                "health-security",
+                "governance"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-ama-opposes-cms-provider-tax-rule",
+              "canonical_topic": "ama-opposes-cms-provider-tax-rule",
+              "duplicate_group": "ama-opposes-cms-provider-tax-rule",
+              "priority_score": 7,
+              "primary_source": "American Medical Association",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "American Medical Association",
+                  "url": "https://www.ama-assn.org/health-care-advocacy/advocacy-update/sept-25-2026-national-advocacy-update",
+                  "source_type": "web",
+                  "published_at": "2026-09-25T12:00:00Z"
+                }
+              ],
+              "title": "AMA urges CMS not to stretch Medicaid provider-tax limits beyond H.R. 1",
+              "summary": "In Sept. 17 comments, the AMA said CMS's proposed rule goes beyond what H.R. 1 requires by extending provider-tax restrictions to all state taxes and fees on insurer services and removing a pathway for states to show compliance. The AMA warned the change could also hit user fees that fund state-based ACA marketplaces. H.R. 1 already freezes existing provider-tax rates and phases down expansion-state rates starting October 2027.",
+              "strategic_implication": "Physicians are joining hospitals in opposing the rule, which raises the odds CMS narrows it. States and health systems should still model Medicaid financing under the broader version, including the effect on marketplace funding.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "provider-tax",
+                "cms",
+                "state-financing",
+                "aca"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "AI is moving beyond pilot projects into patient support and cost-management debates. The near-term question is less whether adoption will occur than who captures the savings and how organizations govern the resulting clinical and financial tradeoffs.",
+          "synthesis": "AI and remote-care technology are shifting from pilots to operating decisions: Cigna is embedding frontier models in case management, Oz warns of near-term cost inflation, and telesurgery is advancing abroad ahead of U.S. regulators.",
           "items": [
             {
               "item_id": "2026-09-25-cigna-openai-complex-care-support",
@@ -146,7 +208,7 @@
                 }
               ],
               "title": "Cigna and OpenAI target personalized support for patients with complex conditions",
-              "summary": "Cigna is partnering with OpenAI to build more personalized support for people with complex conditions, beginning with a focus on cancer patients. The initiative positions a major insurer and a frontier-model company around navigation and support rather than a standalone consumer chatbot.",
+              "summary": "Cigna is embedding OpenAI's reasoning models into its clinical workflows and consumer experiences, starting with cancer and other complex conditions. The first tools go to oncology nurses and case managers at Cigna Healthcare and Accredo Specialty Pharmacy, combining clinical, pharmacy, behavioral, benefits, and patient-reported information to flag needs earlier between physician visits.",
               "strategic_implication": "Payers and providers should define clinical boundaries, escalation paths, privacy controls, and measurable outcomes before similar AI support tools become embedded in oncology and other complex-care journeys.",
               "confidence": "medium",
               "tags": [
@@ -181,12 +243,39 @@
                 "medical-billing",
                 "healthcare-costs"
               ]
+            },
+            {
+              "item_id": "2026-09-25-telerobotic-surgery-us-gap",
+              "canonical_topic": "telerobotic-surgery-us-gap",
+              "duplicate_group": "telerobotic-surgery-us-gap",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/telerobotic-surgery-is-advancing-around-the-world-will-the-us-embrace-it/831238/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T13:00:00Z"
+                }
+              ],
+              "title": "Telerobotic surgery is scaling abroad while no U.S. system is cleared for remote use",
+              "summary": "Roughly 5,000 remote surgeries have been performed worldwide, including a transatlantic prostatectomy from Florida and the first telerobotic neurosurgery this year, but no surgical robot is authorized for remote procedures in the U.S. ARPA-H has committed up to $175.3 million to long-distance thrombectomy robots, citing that more than half of Americans live over an hour from a thrombectomy-capable stroke center.",
+              "strategic_implication": "Rural and regional systems should watch telesurgery as a future access model for stroke and specialty care, and start tracking the FDA, credentialing, licensure, and network-latency questions that will decide adoption.",
+              "confidence": "high",
+              "tags": [
+                "telesurgery",
+                "robotics",
+                "rural-health",
+                "stroke",
+                "arpa-h"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "Large healthcare organizations are formalizing enterprise operating roles as complexity rises across payer, provider, and technology businesses. Leadership design is becoming a visible lever for integration and execution, not merely an internal staffing decision.",
+          "synthesis": "Pharma keeps licensing early pipeline from China, while an Indonesian patent ruling and UnitedHealth's new administrative chief point to pressure on pricing leverage and operating efficiency.",
           "items": [
             {
               "item_id": "2026-09-25-unitedhealth-chief-administrative-officer",
@@ -210,7 +299,7 @@
                 }
               ],
               "title": "UnitedHealth creates its first chief administrative officer role",
-              "summary": "UnitedHealth Group named Jodee Kozlak to a newly created chief administrative officer role. The company said the position is intended to modernize and align operations across its businesses.",
+              "summary": "UnitedHealth Group named Jodee Kozlak to a newly created chief administrative officer role, effective September 28. She will lead enterprise modernization, initially overseeing people, real estate, procurement, and corporate security.",
               "strategic_implication": "The move suggests enterprise coordination and operating-model simplification are strategic priorities for diversified healthcare companies, creating a benchmark for peers managing scale and complexity.",
               "confidence": "high",
               "tags": [
@@ -219,12 +308,70 @@
                 "operations",
                 "healthcare-industry"
               ]
+            },
+            {
+              "item_id": "2026-09-25-lilly-innocare-china-rd-pact",
+              "canonical_topic": "lilly-innocare-china-rd-pact",
+              "duplicate_group": "lilly-innocare-china-rd-pact",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/eli-lilly-innocare-pharma-china-drug-discovery-research-development-lly/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T22:31:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/24/fda-commissioner-nominee-heidi-overton-lilly-china-partnership/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T17:21:00Z"
+                }
+              ],
+              "title": "Lilly pays InnoCare $100M upfront in its third China R&D pact this year",
+              "summary": "Eli Lilly will pay Beijing-based InnoCare $100 million upfront and near term, plus up to $3.25 billion in milestones, to discover drugs against up to five undisclosed targets using InnoCare's antibody-drug conjugate platform. The deal follows Lilly's 2026 pacts with Innovent ($350 million upfront) and Insilico Medicine ($115 million).",
+              "strategic_implication": "Big pharma keeps sourcing early pipeline from China despite political pressure, so investors and policymakers should expect the U.S.-China biotech competition debate, already raised at the FDA nominee's hearing, to intensify.",
+              "confidence": "high",
+              "tags": [
+                "pharma",
+                "china",
+                "dealmaking",
+                "drug-discovery"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-indonesia-patent-evergreening-ruling",
+              "canonical_topic": "indonesia-patent-evergreening-ruling",
+              "duplicate_group": "indonesia-patent-evergreening-ruling",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/24/indonesian-court-rules-against-patent-evergreening-boosting-access-medicines/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T18:57:00Z"
+                }
+              ],
+              "title": "Indonesia's top court restores a ban on pharmaceutical patent evergreening",
+              "summary": "Indonesia's Constitutional Court struck down a two-year-old amendment that had removed the country's prohibition on patent evergreening, reinstating the restriction to balance patent rights against public health. Patients and advocacy groups brought the case and say it signals other countries to challenge secondary patents on minor drug tweaks.",
+              "strategic_implication": "Drugmakers relying on secondary patents in emerging markets face rising legal risk, and the ruling adds global momentum to U.S. patent-thicket and drug-pricing debates.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "patents",
+                "global-health",
+                "access"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "Provider technology spending is being judged more explicitly on return, especially in revenue cycle and utilization-management workflows. That raises the bar for business cases, adoption measurement, and proof that digital investments improve cash flow without adding downstream administrative work.",
+          "synthesis": "Payer-provider friction is hitting operations: Medicare Advantage contract exits are multiplying before open enrollment, and executives are demanding measurable returns from revenue-cycle and utilization technology.",
           "items": [
             {
               "item_id": "2026-09-25-health-it-investment-returns",
@@ -251,12 +398,39 @@
                 "utilization-management",
                 "provider-operations"
               ]
+            },
+            {
+              "item_id": "2026-09-25-health-systems-dropping-medicare-advantage",
+              "canonical_topic": "health-systems-dropping-medicare-advantage",
+              "duplicate_group": "health-systems-dropping-medicare-advantage",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/16-health-systems-dropping-medicare-advantage-plans-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-09-24T12:00:00Z"
+                }
+              ],
+              "title": "Becker's list of health systems leaving Medicare Advantage contracts grows to 34",
+              "summary": "Becker's tally reached 34 health systems ending contracts with some Medicare Advantage plans, citing prior-authorization denials and slow payment. Examples include OHSU leaving Regence, Endeavor Health leaving Aetna, and Florida's Lee Health going out of network with UnitedHealthcare after 2026. NKC Health and Valley Health leave UnitedHealthcare on Oct. 1, ahead of the Oct. 15 open-enrollment window.",
+              "strategic_implication": "Before Oct. 15, systems should prepare patient communications, continuity-of-care plans, and payer-mix scenarios for 2027. Payers should expect network adequacy and member churn to face closer scrutiny.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "payer-provider",
+                "networks",
+                "open-enrollment",
+                "florida"
+              ]
             }
           ]
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "Workforce relations remain an immediate operating risk, while a new autism research initiative points to a longer-horizon push for lifespan-oriented clinical evidence. Both developments favor organizations that connect workforce strategy and research strategy to concrete care-delivery capabilities.",
+          "synthesis": "Labor conflict at Prime's Maine hospital, a new ARPA-H autism initiative, and disputes over how measles deaths are counted all show that workforce, research, and public-health data decisions are becoming more contested.",
           "items": [
             {
               "item_id": "2026-09-25-maine-nurses-prime-healthcare-dispute",
@@ -274,7 +448,7 @@
                 }
               ],
               "title": "Maine governor urges Prime Healthcare to reinstate nurses amid union conflict",
-              "summary": "Maine's governor urged Prime Healthcare to reinstate nurses fired or suspended at Central Maine Medical Center ahead of a heated union dispute. The conflict has drawn accusations of retaliation and claims of an increasingly aggressive national campaign around the hospital.",
+              "summary": "Gov. Janet Mills called the firing or suspension of 20 nurses at Prime Healthcare's 250-bed Central Maine Medical Center \"unconscionable\" ahead of a union election. The Maine AFL-CIO counts 14 firings and six suspensions; Prime reports 15 and five and says the actions were for documented policy violations, not union activity. Prime acquired the hospital in February with a $150 million, five-year investment commitment.",
               "strategic_implication": "Health systems facing labor disputes should treat staffing actions as a public operating issue, with escalation protocols that integrate patient safety, workforce communication, legal review, and community trust.",
               "confidence": "medium",
               "tags": [
@@ -308,6 +482,32 @@
                 "arpa-h",
                 "clinical-research",
                 "lifespan-care"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-measles-death-count-definition",
+              "canonical_topic": "measles-death-count-definition",
+              "duplicate_group": "measles-death-count-definition",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/measles-deaths-statistics-pennsylvania-outbreak-cdc-nchs/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T12:30:00Z"
+                }
+              ],
+              "title": "Federal switch to NCHS death records is undercounting measles deaths versus states",
+              "summary": "Pennsylvania has reported four measles-associated deaths among more than 800 cases, while the CDC dashboard shows one. That's because HHS now counts only deaths where NCHS lists measles as the underlying cause, not a contributing one. The authors of the STAT opinion piece note that NCHS suppresses counts from one to nine and that adjudication can take months, which they warn could breed confusion and slow federal response.",
+              "strategic_implication": "Health departments and hospital infection-prevention teams should rely on state and local counts for real-time situational awareness, and clearly explain the definitional gap in public communications.",
+              "confidence": "medium",
+              "tags": [
+                "measles",
+                "surveillance",
+                "public-health-data",
+                "cdc"
               ]
             }
           ]
@@ -11892,353 +12092,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-08-14",
-      "generated_at": "2026-08-14T11:09:07Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks a new federal coverage restriction moving toward implementation, drug-pricing transparency pressure on pharmacy benefit managers, and a growing emphasis on AI governance and workforce resilience. The curation draws on STAT, Healthcare Dive, Fierce Healthcare, HHS/CMS, CHAI, Aetna, March of Dimes, AMN Healthcare, and targeted web-search context.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS web",
-          "Healthcare company and nonprofit disclosures",
-          "Targeted web search"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "HHS/CMS web",
-          "CHAI web",
-          "Aetna web",
-          "March of Dimes web",
-          "Targeted web search"
-        ],
-        "sources_failed": [
-          "Supplementary email newsletters not used"
-        ],
-        "run_notes": "Built from Aug. 14 and Aug. 13 RSS titles and descriptions plus targeted web-search checks and first-party documentation. Fresh developments were prioritized; prior-edition items were excluded unless there was a distinct new development. Full-article access was not required."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Coverage and pricing rules are moving from announcement to operating consequence. Leaders should translate federal funding restrictions and cash-price transparency initiatives into state, payer, provider, and patient-communication playbooks while litigation and implementation details evolve.",
-          "items": [
-            {
-              "item_id": "2026-08-14-cms-medicaid-chip-gender-affirming-rule",
-              "canonical_topic": "cms-medicaid-chip-gender-affirming-rule",
-              "duplicate_group": "cms-medicaid-chip-gender-affirming-rule",
-              "priority_score": 9,
-              "primary_source": "HHS/CMS",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/14/cms-transgender-care-rule-how-will-legal-challenges-fare/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-14T08:30:00Z"
-                },
-                {
-                  "source": "HHS/CMS",
-                  "url": "https://www.hhs.gov/guidance/document/final-rule-prohibition-federal-medicaid-and-chip-funding-sex-rejecting-procedures",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T00:00:00Z"
-                },
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/newsroom/press-releases/cms-ends-federal-medicaid-chip-funding-sex-rejecting-procedures-children-youth",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T00:00:00Z"
-                }
-              ],
-              "title": "CMS rule on pediatric gender-affirming care heads toward court and implementation fights",
-              "summary": "CMS finalized a rule barring federal Medicaid funding for gender-affirming medications and surgery for people under 18, and federal CHIP funding for people under 19. The rule is scheduled to take effect October 13, 2026; mental-health services remain eligible, states may use their own funds, and a tapering period applies to some children already receiving hormone therapy. Legal challenges are expected, including from state attorneys general.",
-              "strategic_implication": "States, plans, and providers should map the rule to benefit design, claims edits, clinical referrals, patient communications, and continuity-of-care protocols while tracking litigation and state-funding choices.",
-              "confidence": "high",
-              "tags": [
-                "medicaid",
-                "chip",
-                "coverage-policy",
-                "gender-affirming-care",
-                "litigation"
-              ]
-            },
-            {
-              "item_id": "2026-08-14-pbms-trumprx-price-information",
-              "canonical_topic": "pbms-trumprx-price-information",
-              "duplicate_group": "pbms-trumprx-price-information",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/major-pbms-agree-offer-trumprx-pricing-information-members",
-                  "source_type": "rss",
-                  "published_at": "2026-08-13T20:02:00Z"
-                }
-              ],
-              "title": "Major PBMs agree to give members information on TrumpRx cash prices",
-              "summary": "The Pharmaceutical Care Management Association said its members reached an agreement with the federal government to offer members information on cash prices available through TrumpRx. The move adds a direct-to-consumer cash-price reference point to the existing insurance-benefit conversation and comes amid continued pressure for greater drug-pricing transparency.",
-              "strategic_implication": "Plans and employers should clarify how cash-price information will be displayed alongside formulary coverage, deductibles, and out-of-pocket limits so members can make informed comparisons without confusing a nominal cash price with their lowest all-in cost.",
-              "confidence": "medium",
-              "tags": [
-                "pharmacy-benefits",
-                "drug-pricing",
-                "trumprx",
-                "transparency",
-                "member-experience"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "AI strategy is shifting toward resilience and trust infrastructure, not just workflow automation. Governance leaders are being asked to prepare for stronger cyber capabilities and to scrutinize commercial incentives that can distort how clinical technology is adopted.",
-          "items": [
-            {
-              "item_id": "2026-08-14-chai-frontier-ai-cybersecurity-workgroup",
-              "canonical_topic": "chai-frontier-ai-cybersecurity-workgroup",
-              "duplicate_group": "chai-frontier-ai-cybersecurity-workgroup",
-              "priority_score": 8,
-              "primary_source": "Coalition for Health AI",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/chai-creates-work-group-to-counter-frontier-ai-model-cybersecurity-risks/827769/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-13T12:10:07Z"
-                },
-                {
-                  "source": "Coalition for Health AI",
-                  "url": "https://www.chai.org/news",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T00:00:00Z"
-                }
-              ],
-              "title": "CHAI convenes nearly 100 leaders to address frontier AI cybersecurity risks",
-              "summary": "The Coalition for Health AI formed a work group of nearly 100 health-system, payer, and industry leaders to address cyber risks from frontier AI models. The group plans biweekly meetings and aims to publish guidance by the end of 2026, including an AI cyber-risk assessment tool and playbooks for defensive and offensive security scenarios.",
-              "strategic_implication": "Health systems should treat frontier-model security as an enterprise risk issue spanning clinical safety, identity, data protection, and incident response, and should evaluate vendors against emerging controls rather than waiting for a finalized framework.",
-              "confidence": "high",
-              "tags": [
-                "health-ai",
-                "cybersecurity",
-                "ai-governance",
-                "risk-management",
-                "health-systems"
-              ]
-            },
-            {
-              "item_id": "2026-08-14-commure-referral-program-payments-ended",
-              "canonical_topic": "commure-referral-program-payments-ended",
-              "duplicate_group": "commure-referral-program-payments-ended",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/13/commure-terminates-payments-under-customer-referral-programs/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-13T21:49:09Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/13/commure-terminates-payments-under-customer-referral-programs/",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T11:08:23Z"
-                }
-              ],
-              "title": "Commure ends customer referral payments tied to its AI products",
-              "summary": "Commure, a health-software company valued by STAT at about $7 billion, told members of a customer-partnership program that referral-payment agreements would terminate 30 days after notice. The company said amounts owed through the termination date would be paid, following a STAT investigation into payments offered for referrals to new prospects.",
-              "strategic_implication": "Provider technology procurement should require transparent disclosure of referral economics, independent validation of product claims, and safeguards against incentives that could bias clinical or operational recommendations.",
-              "confidence": "high",
-              "tags": [
-                "healthcare-ai",
-                "vendor-governance",
-                "referral-economics",
-                "procurement",
-                "clinical-technology"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Payer-provider economics continue to favor models that can show measurable outcomes, but much of the evidence remains company-reported. Executives should distinguish demonstrated performance from attribution, selection effects, and the operational capabilities required to reproduce results.",
-          "items": [
-            {
-              "item_id": "2026-08-14-aetna-ma-value-based-care-outcomes",
-              "canonical_topic": "aetna-ma-value-based-care-outcomes",
-              "duplicate_group": "aetna-ma-value-based-care-outcomes",
-              "priority_score": 7,
-              "primary_source": "Aetna",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/look-where-aetna-seeing-value-based-care-success-medicare-advantage",
-                  "source_type": "rss",
-                  "published_at": "2026-08-13T19:16:00Z"
-                },
-                {
-                  "source": "Aetna",
-                  "url": "https://www.aetna.com/insights/medicare-advantage-value-based-care.html",
-                  "source_type": "web",
-                  "published_at": "2026-08-06T00:00:00Z"
-                },
-                {
-                  "source": "Aetna",
-                  "url": "https://www.aetna.com/content/dam/aetna/pdfs/aetnacom/insights/aetna-medicare-vbc-whitepaper.pdf",
-                  "source_type": "web",
-                  "published_at": "2026-08-06T00:00:00Z"
-                }
-              ],
-              "title": "Aetna reports stronger Medicare Advantage outcomes in value-based arrangements",
-              "summary": "Aetna reported that Medicare Advantage members attributed to value-based-care providers had better outcomes on several measures than members in traditional fee-for-service arrangements. Its 2023 comparison cited 24.1% better HbA1c control, 17.3% better blood-pressure control, and fewer repeat hospital stays; Aetna says more than 80% of its MA health-care spending was in value-based agreements as of October 2025.",
-              "strategic_implication": "The signal reinforces the need for payer-provider contracts to align incentives with measurable quality and utilization outcomes, while buyers should test attribution, baseline comparability, and reproducibility before scaling a model.",
-              "confidence": "medium",
-              "tags": [
-                "value-based-care",
-                "medicare-advantage",
-                "payer-provider",
-                "quality-measures",
-                "health-outcomes"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Access constraints are becoming a core operating problem as maternity units close and travel burdens rise. Providers should connect service-line viability, referral routing, telehealth, workforce planning, and Medicaid economics rather than manage access as a series of isolated initiatives.",
-          "items": [
-            {
-              "item_id": "2026-08-14-maternity-care-deserts-2026-report",
-              "canonical_topic": "maternity-care-deserts-2026-report",
-              "duplicate_group": "maternity-care-deserts-2026-report",
-              "priority_score": 9,
-              "primary_source": "March of Dimes",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/march-dimes-report-maternity-care-deserts-medicaid-cuts",
-                  "source_type": "rss",
-                  "published_at": "2026-08-13T17:41:00Z"
-                },
-                {
-                  "source": "March of Dimes",
-                  "url": "https://www.marchofdimes.org/about/news/march-dimes-report-reveals-persistent-gaps-maternity-care-access",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T11:08:23Z"
-                },
-                {
-                  "source": "March of Dimes",
-                  "url": "https://www.marchofdimes.org/peristats/reports/united-states/maternity-care-deserts/maternity-care-access",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T00:00:00Z"
-                }
-              ],
-              "title": "One in three U.S. counties remains a maternity care desert as closures increase travel burden",
-              "summary": "March of Dimes reported that 34.6% of U.S. counties remain maternity care deserts, affecting 2.4 million women of reproductive age and nearly 149,000 births each year. The report identified at least 96 labor-and-delivery unit closures across 35 states from January 2024 through May 2026; in affected communities, travel time increased by an average of 25 minutes, and rural counties were much more likely than urban counties to lack obstetric clinicians.",
-              "strategic_implication": "Health systems and policymakers should treat maternity access as a network and financial-resilience metric, pairing service-line decisions with regional referral plans, transportation support, telehealth, workforce recruitment, and Medicaid coverage strategy.",
-              "confidence": "high",
-              "tags": [
-                "maternity-care",
-                "rural-health",
-                "hospital-closures",
-                "access",
-                "medicaid"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Workforce scarcity and clinical-practice reform are moving in opposite directions: staffing gaps are widening while addiction-treatment providers gain flexibility to make care more accessible. Leaders should measure whether new practice rules translate into retention, reach, and better continuity for underserved patients.",
-          "items": [
-            {
-              "item_id": "2026-08-14-rural-healthcare-workforce-shortage",
-              "canonical_topic": "rural-healthcare-workforce-shortage",
-              "duplicate_group": "rural-healthcare-workforce-shortage",
-              "priority_score": 8,
-              "primary_source": "AMN Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/rural-communities-bear-brunt-of-workforce-shortage/827746/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-13T13:47:08Z"
-                },
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/rural-communities-bear-brunt-of-workforce-shortage/827746/",
-                  "source_type": "web",
-                  "published_at": "2026-08-13T14:08:15Z"
-                },
-                {
-                  "source": "AMN Healthcare",
-                  "url": "https://www.amnhealthcare.com/amn-insights/news/healthcare-staffing-projections-2030/",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T00:00:00Z"
-                }
-              ],
-              "title": "Rural communities face the sharpest edge of the projected clinician shortage",
-              "summary": "An AMN Healthcare report projects a physician shortage of up to 86,000 by 2036 and a registered-nurse deficit exceeding 63,000 by 2030. Rural communities are under particular pressure: rural areas filled registered-nurse positions at roughly one-third the urban rate in 2025, and more than 7,700 federally designated primary-care shortage areas were identified in rural settings.",
-              "strategic_implication": "Rural providers should combine retention, training pipelines, advanced-practice deployment, virtual specialty coverage, and flexible staffing models with scenario planning for reimbursement and facility closures.",
-              "confidence": "medium",
-              "tags": [
-                "healthcare-workforce",
-                "rural-health",
-                "physician-shortage",
-                "nursing",
-                "staffing"
-              ]
-            },
-            {
-              "item_id": "2026-08-14-methadone-clinic-rule-implementation",
-              "canonical_topic": "methadone-clinic-rule-implementation",
-              "duplicate_group": "methadone-clinic-rule-implementation",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/14/methadone-clinics-opioid-addiction-new-rules-culture-shift/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-14T08:30:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/14/methadone-clinics-opioid-addiction-new-rules-culture-shift/",
-                  "source_type": "web",
-                  "published_at": "2026-08-14T00:00:00Z"
-                }
-              ],
-              "title": "Methadone clinics are adopting more flexible treatment practices, but implementation remains uneven",
-              "summary": "A STAT review two years after the federal opioid-treatment-program overhaul found that many clinics have expanded take-home medication and shifted counseling toward an offered rather than mandatory service. More than 70% of responding clinics had adopted at least half of the recommended practice changes, while about two-thirds of state opioid-treatment authorities had adopted the counseling approach.",
-              "strategic_implication": "Organizations should pair regulatory flexibility with patient-level monitoring, reliable medication access, and retention metrics so that less punitive operating models improve continuity without weakening clinical oversight.",
-              "confidence": "medium",
-              "tags": [
-                "opioid-treatment",
-                "methadone",
-                "clinical-practice",
-                "behavioral-health",
-                "access"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-09-25T11:03:21Z"
+  "last_updated": "2026-09-25T12:38:44Z"
 }

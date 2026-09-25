@@ -3,6 +3,318 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-25",
+      "generated_at": "2026-09-25T11:03:21Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's signals point to a more contested operating environment: FDA leadership and HHS appointments are advancing, while AI economics, payer-provider administration, and labor relations remain unsettled. Coverage draws on same-day STAT News, Healthcare Dive, and Fierce Healthcare reporting, with no supplementary Gmail items available.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Search_web targeted queries (policy, payment, AI, market, workforce)",
+          "Gmail labels HealthcareBrew, Healthcare Dive, Hospitalogy, Modern Healthcare, STAT"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Google News RSS topic queries (supplementary screening)"
+        ],
+        "sources_failed": [
+          "Search_web direct tool was unavailable in the scheduled runtime; RSS-only synthesis used",
+          "Gmail supplementary labels returned no messages"
+        ],
+        "run_notes": "Signals were screened against the 2026-09-24 edition to avoid repeating unchanged stories. RSS titles and descriptions supplied the factual base; items emphasize same-day developments and are marked medium confidence where reporting details were limited."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal health governance is moving through confirmation and appointment channels while the FDA nominee's hearing leaves major policy questions open. A new study of the menthol-ban comment record also underscores how organized interests can shape regulatory process inputs.",
+          "items": [
+            {
+              "item_id": "2026-09-25-fda-nominee-overton-confirmation-hearing",
+              "canonical_topic": "fda-nominee-overton-confirmation-hearing",
+              "duplicate_group": "fda-nominee-overton-confirmation-hearing",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/24/fda-commissioner-nominee-heidi-overton-senate-hearing-dodges-questions/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T20:21:32Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/biotech/fda-nominee-overton-calls-vaccines-mifepristone-safe-and-effective-confirmation-hearing",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T18:10:00Z"
+                }
+              ],
+              "title": "FDA nominee Overton advances through a contentious confirmation hearing",
+              "summary": "Senators pressed Heidi Overton on vaccines, abortion medication, flavored vapes, and the independence of the FDA during her confirmation hearing. Reporting described a hearing in which she offered limited positions on several politically charged questions while emphasizing a need for speed and efficiency.",
+              "strategic_implication": "Life-science companies and health systems should plan for regulatory continuity with potentially faster review priorities, but keep scenarios open for changes in evidence standards, communications, and agency independence.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "confirmation",
+                "regulation",
+                "drug-development"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-hhs-deputy-secretary-klomp-advances",
+              "canonical_topic": "hhs-deputy-secretary-klomp-advances",
+              "duplicate_group": "hhs-deputy-secretary-klomp-advances",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/24/chris-klomp-vote-senate-finance-committee-hhs-deputy-secretary/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T16:38:12Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/senate-finance-committee-advances-klomps-nomination-hhs-deputy-secretary",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T17:12:00Z"
+                }
+              ],
+              "title": "Senate Finance advances Chris Klomp for HHS deputy secretary",
+              "summary": "The Senate Finance Committee advanced Chris Klomp's nomination for HHS deputy secretary, moving the behind-the-scenes HHS power player closer to a full Senate vote. The committee also advanced another key HHS nominee, according to reporting from STAT and Fierce Healthcare.",
+              "strategic_implication": "Organizations that depend on CMS, FDA, or public-health policy should map likely decision rights and implementation timelines as the department fills senior operating roles.",
+              "confidence": "high",
+              "tags": [
+                "hhs",
+                "senate",
+                "leadership",
+                "health-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-menthol-ban-public-comments",
+              "canonical_topic": "menthol-ban-public-comments",
+              "duplicate_group": "menthol-ban-public-comments",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/fake-grassroots-campaign-jama-study-rutgers-researchers-fda-menthol-ban/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T08:30:00Z"
+                }
+              ],
+              "title": "Study finds tobacco-linked form letters dominated comments on FDA menthol proposal",
+              "summary": "A study of the 175,000 public comments submitted on the FDA's 2022 proposal to ban menthol cigarettes found that virtually all were form letters. The comments largely echoed tobacco-industry talking points, according to STAT's summary of the research.",
+              "strategic_implication": "Regulated-health stakeholders should treat volume-based public-comment signals cautiously and invest in transparent, evidence-linked engagement when major rules are under review.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "tobacco",
+                "public-comments",
+                "regulatory-process"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI is moving beyond pilot projects into patient support and cost-management debates. The near-term question is less whether adoption will occur than who captures the savings and how organizations govern the resulting clinical and financial tradeoffs.",
+          "items": [
+            {
+              "item_id": "2026-09-25-cigna-openai-complex-care-support",
+              "canonical_topic": "cigna-openai-complex-care-support",
+              "duplicate_group": "cigna-openai-complex-care-support",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cigna-group-openai-team-support-patients-complex-conditions",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T20:57:00Z"
+                }
+              ],
+              "title": "Cigna and OpenAI target personalized support for patients with complex conditions",
+              "summary": "Cigna is partnering with OpenAI to build more personalized support for people with complex conditions, beginning with a focus on cancer patients. The initiative positions a major insurer and a frontier-model company around navigation and support rather than a standalone consumer chatbot.",
+              "strategic_implication": "Payers and providers should define clinical boundaries, escalation paths, privacy controls, and measurable outcomes before similar AI support tools become embedded in oncology and other complex-care journeys.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "cigna",
+                "oncology",
+                "care-navigation"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-cms-ai-healthcare-costs-warning",
+              "canonical_topic": "cms-ai-healthcare-costs-warning",
+              "duplicate_group": "cms-ai-healthcare-costs-warning",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ai-will-inflate-healthcare-costs-before-lowering-them-oz-says/831277/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T16:00:27Z"
+                }
+              ],
+              "title": "CMS Administrator Oz warns AI may raise healthcare costs before delivering savings",
+              "summary": "CMS Administrator Mehmet Oz said AI could 'turbocharge' medical billing and increase healthcare costs in the short term. He argued that the near-term disruption could be worthwhile if the technology ultimately produces longer-term savings.",
+              "strategic_implication": "Executives should evaluate AI investments against total-cost and utilization outcomes, not just labor productivity, and build transition budgets for a period in which automation may increase payment friction.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "cms",
+                "medical-billing",
+                "healthcare-costs"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Large healthcare organizations are formalizing enterprise operating roles as complexity rises across payer, provider, and technology businesses. Leadership design is becoming a visible lever for integration and execution, not merely an internal staffing decision.",
+          "items": [
+            {
+              "item_id": "2026-09-25-unitedhealth-chief-administrative-officer",
+              "canonical_topic": "unitedhealth-chief-administrative-officer",
+              "duplicate_group": "unitedhealth-chief-administrative-officer",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/unitedhealth-first-chief-administrative-officer-jodee-kozlak/831247/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T13:22:58Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/unitedhealth-group-creates-new-chief-administrative-officer-position",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T18:12:00Z"
+                }
+              ],
+              "title": "UnitedHealth creates its first chief administrative officer role",
+              "summary": "UnitedHealth Group named Jodee Kozlak to a newly created chief administrative officer role. The company said the position is intended to modernize and align operations across its businesses.",
+              "strategic_implication": "The move suggests enterprise coordination and operating-model simplification are strategic priorities for diversified healthcare companies, creating a benchmark for peers managing scale and complexity.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealth",
+                "leadership",
+                "operations",
+                "healthcare-industry"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider technology spending is being judged more explicitly on return, especially in revenue cycle and utilization-management workflows. That raises the bar for business cases, adoption measurement, and proof that digital investments improve cash flow without adding downstream administrative work.",
+          "items": [
+            {
+              "item_id": "2026-09-25-health-it-investment-returns",
+              "canonical_topic": "health-it-investment-returns",
+              "duplicate_group": "health-it-investment-returns",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/health-execs-want-strong-returns-on-it-investments/831298/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T18:18:55Z"
+                }
+              ],
+              "title": "Health executives demand clearer returns from revenue-cycle and utilization technology",
+              "summary": "A new survey found providers are particularly interested in tools aimed at revenue-cycle management, while payers are buying technology focused on utilization management. The findings reflect stronger pressure on health IT investments to demonstrate operational and financial returns.",
+              "strategic_implication": "Provider leaders should stage technology portfolios around measurable throughput, denial, and cash metrics, while avoiding tools that shift work to clinical teams or trading partners without a verified net benefit.",
+              "confidence": "medium",
+              "tags": [
+                "health-it",
+                "revenue-cycle",
+                "utilization-management",
+                "provider-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce relations remain an immediate operating risk, while a new autism research initiative points to a longer-horizon push for lifespan-oriented clinical evidence. Both developments favor organizations that connect workforce strategy and research strategy to concrete care-delivery capabilities.",
+          "items": [
+            {
+              "item_id": "2026-09-25-maine-nurses-prime-healthcare-dispute",
+              "canonical_topic": "maine-nurses-prime-healthcare-dispute",
+              "duplicate_group": "maine-nurses-prime-healthcare-dispute",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/maine-governor-urges-prime-healthcare-hospital-reinstate-fired-nurses-ahead-heated-union",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T20:31:00Z"
+                }
+              ],
+              "title": "Maine governor urges Prime Healthcare to reinstate nurses amid union conflict",
+              "summary": "Maine's governor urged Prime Healthcare to reinstate nurses fired or suspended at Central Maine Medical Center ahead of a heated union dispute. The conflict has drawn accusations of retaliation and claims of an increasingly aggressive national campaign around the hospital.",
+              "strategic_implication": "Health systems facing labor disputes should treat staffing actions as a public operating issue, with escalation protocols that integrate patient safety, workforce communication, legal review, and community trust.",
+              "confidence": "medium",
+              "tags": [
+                "nurses",
+                "labor-relations",
+                "hospital-operations",
+                "workforce"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-arpa-h-autism-lifespan-research",
+              "canonical_topic": "arpa-h-autism-lifespan-research",
+              "duplicate_group": "arpa-h-autism-lifespan-research",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/russell-shilling-leads-arpa-h-spectra-initiative-autism-care/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T08:30:00Z"
+                }
+              ],
+              "title": "ARPA-H plans a lifespan-oriented autism research initiative",
+              "summary": "ARPA-H is planning a total-lifespan research project focused on autism care, led by Russell Shilling, according to STAT. The initiative reflects a shift toward research agendas that span development, adulthood, and care delivery rather than focusing only on early diagnosis.",
+              "strategic_implication": "Academic medical centers and autism-care providers should watch for partnership and evidence-building opportunities while assessing whether their services can support longitudinal outcomes across the lifespan.",
+              "confidence": "medium",
+              "tags": [
+                "autism",
+                "arpa-h",
+                "clinical-research",
+                "lifespan-care"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-24",
       "generated_at": "2026-09-24T12:42:25Z",
       "headline": "Today's Healthcare Insights",
@@ -11928,5 +12240,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-24T12:42:25Z"
+  "last_updated": "2026-09-25T11:03:21Z"
 }

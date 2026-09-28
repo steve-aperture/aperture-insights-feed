@@ -3,6 +3,277 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-28",
+      "generated_at": "2026-09-28T11:04:53Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's signals span a new federal-state push to rethink Medicaid quality measurement, a proposed rollback of nearly $1 billion in HHS spending, and fresh pressure on access, labor, and hospital economics. Coverage draws on STAT News, Healthcare Dive, and Fierce Healthcare RSS, with emphasis on developments published over the weekend and this morning.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS (xml)",
+          "Targeted web searches across CMS/HHS, hospital operations, digital health, and drug pricing"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS (xml)"
+        ],
+        "sources_failed": [
+          "Targeted web searches were unavailable in this runtime; RSS descriptions and titles supplied sufficient same-day signal depth"
+        ],
+        "run_notes": "Fresh rebuild from the GitHub repository. Selected eight non-duplicate items from the Sep. 25-28 RSS window and avoided repeating the prior Sep. 25 edition's topics where possible."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal and state policymakers are testing new approaches to Medicaid measurement while the administration uses an unusual rescission authority to revisit already-approved HHS spending. The 340B debate is also sharpening around whether program savings translate into measurable community benefit.",
+          "items": [
+            {
+              "item_id": "2026-09-28-medicaid-quality-measures-37-state-partnership",
+              "canonical_topic": "medicaid-quality-measures-37-state-partnership",
+              "duplicate_group": "medicaid-quality-measures-37-state-partnership",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/37-states-partner-cms-initiative-rethink-medicaid-quality-measures",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T17:33:00-04:00"
+                }
+              ],
+              "title": "CMS and 37 states launch partnership to rethink Medicaid and CHIP quality measures",
+              "summary": "The administration announced a partnership with 37 states aimed at rethinking how quality is measured in Medicaid and CHIP. The initiative could shift attention from a large reporting burden toward a smaller set of measures tied more directly to outcomes and program performance.",
+              "strategic_implication": "Health plans, state agencies, and safety-net providers should prepare for measure-set changes, new benchmarking expectations, and possible rework of quality-improvement investments. Organizations that can link clinical operations to outcomes data will be better positioned as the framework evolves.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "chip",
+                "quality-measures",
+                "cms",
+                "state-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-28-hhs-nearly-1b-spending-rescission",
+              "canonical_topic": "hhs-nearly-1b-spending-rescission",
+              "duplicate_group": "hhs-nearly-1b-spending-rescission",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/trump-administration-cancel-spending-hhs-programs/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-26T01:03:38Z"
+                }
+              ],
+              "title": "Trump administration moves to claw back nearly $1 billion in approved HHS spending",
+              "summary": "The administration is using a rare authority to cancel nearly $1 billion in spending that Congress had approved, with most of the cuts focused on HHS programs serving refugees and unaccompanied minors. The move adds uncertainty for organizations and communities that rely on federal program commitments already embedded in operating plans.",
+              "strategic_implication": "Public-health and community-care organizations should stress-test grant-dependent services and avoid treating enacted federal appropriations as fully secure until funds are obligated and available. Boards and finance teams may need contingency plans for delayed or rescinded awards.",
+              "confidence": "high",
+              "tags": [
+                "hhs",
+                "federal-spending",
+                "public-health",
+                "grants",
+                "policy-risk"
+              ]
+            },
+            {
+              "item_id": "2026-09-28-340b-charity-care-spending-gap",
+              "canonical_topic": "340b-charity-care-spending-gap",
+              "duplicate_group": "340b-charity-care-spending-gap",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/340b-hospitals-lag-behind-peers-in-charity-care-spending-report/831394/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T11:46:03-04:00"
+                }
+              ],
+              "title": "Report says 340B hospitals lag peers in charity-care spending",
+              "summary": "A new report argues that hospitals participating in the 340B drug-discount program spend less on charity care than comparable hospitals. A hospital group disputed the findings, calling the analysis another misleading study in a long-running debate over how 340B savings benefit patients.",
+              "strategic_implication": "340B hospitals should expect continued scrutiny of community-benefit documentation and should be ready to connect discounted drug purchasing to access, services, and patient outcomes. Policymakers may use the dispute to justify tighter reporting or eligibility rules.",
+              "confidence": "medium",
+              "tags": [
+                "340b",
+                "charity-care",
+                "hospital-finance",
+                "drug-discounts"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI is becoming a strategic health-security issue, not only a productivity tool. The latest warning is that generative systems may lower barriers to biological weapons faster than defensive capabilities can mature.",
+          "items": [
+            {
+              "item_id": "2026-09-28-ai-bioweapons-barriers-warning",
+              "canonical_topic": "ai-bioweapons-barriers-warning",
+              "duplicate_group": "ai-bioweapons-barriers-warning",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/28/ai-bioweapons-pathogens-guardrails-policy-warning/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T08:30:00Z"
+                }
+              ],
+              "title": "AI is eroding barriers that have kept biological weapons rare, researcher warns",
+              "summary": "An opinion essay argues that AI could make it easier to design or operationalize biological threats while defensive safeguards remain years from completion. The warning comes as public-health readiness and biosecurity capacity are already under pressure from resource and governance gaps.",
+              "strategic_implication": "Health systems, life-science companies, and public agencies should treat AI governance as part of biosecurity and business continuity, with clear escalation paths for suspicious requests, model access, and laboratory risk. Investments in detection and response may need to move ahead of mature regulatory standards.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "biosecurity",
+                "biothreats",
+                "public-health",
+                "risk-management"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Pharma's growth narrative is increasingly shaped by how products are positioned and administered, from GLP-1s moving toward consumer lifestyle branding to a newly approved weekly basal insulin. These shifts could widen demand while intensifying affordability and adherence debates.",
+          "items": [
+            {
+              "item_id": "2026-09-28-glp1-lifestyle-drug-marketing-shift",
+              "canonical_topic": "glp1-lifestyle-drug-marketing-shift",
+              "duplicate_group": "glp1-lifestyle-drug-marketing-shift",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/28/glp1-marketing-shift-obesity-medicine-weight-loss-drug/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T08:30:00Z"
+                }
+              ],
+              "title": "GLP-1 makers shift obesity medicines from patient framing toward lifestyle consumers",
+              "summary": "STAT reports that blockbuster GLP-1 medicines are undergoing a marketing shift as manufacturers increasingly frame them for consumers pursuing weight loss and lifestyle goals. The repositioning reflects the scale of demand beyond narrowly defined treatment populations and the pressure to build durable consumer categories.",
+              "strategic_implication": "Payers, providers, and employers should expect broader utilization and stronger demand for coverage decisions as obesity medicines move further into consumer channels. Commercial strategy will need to balance access, clinical appropriateness, adherence support, and long-term cost exposure.",
+              "confidence": "medium",
+              "tags": [
+                "glp-1",
+                "obesity",
+                "pharma",
+                "consumer-health",
+                "drug-pricing"
+              ]
+            },
+            {
+              "item_id": "2026-09-28-weekly-basal-insulin-approval",
+              "canonical_topic": "weekly-basal-insulin-approval",
+              "duplicate_group": "weekly-basal-insulin-approval",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/biotech-news-lilly-wins-approval-for-weekly-insulin-shot/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T15:25:10Z"
+                }
+              ],
+              "title": "FDA approves Lilly's once-weekly basal insulin for adults with type 2 diabetes",
+              "summary": "The FDA approved Eli Lilly's Onswik, a once-weekly basal insulin for adults with type 2 diabetes. The product offers an alternative to daily long-acting insulin injections and adds another convenience-focused option to an increasingly competitive diabetes market.",
+              "strategic_implication": "Payers and diabetes-care teams should assess whether weekly dosing improves adherence enough to offset acquisition and training costs. Manufacturers will compete not only on efficacy but also on access, delivery logistics, and the patient experience of chronic therapy.",
+              "confidence": "high",
+              "tags": [
+                "insulin",
+                "diabetes",
+                "fda",
+                "lilly",
+                "drug-approval"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Access constraints remain structural: millions of Americans live in counties without a general or specialty surgeon, while 340B hospitals face pressure to prove that financial advantages translate into community care. Both stories point to a widening gap between capacity and expectations.",
+          "items": [
+            {
+              "item_id": "2026-09-28-surgeon-access-county-gap",
+              "canonical_topic": "surgeon-access-county-gap",
+              "duplicate_group": "surgeon-access-county-gap",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/millions-americans-dont-have-surgeon-their-home-county-study",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T16:53:00-04:00"
+                }
+              ],
+              "title": "More than 15 million Americans live in counties without a general surgeon",
+              "summary": "An analysis from the American College of Surgeons and the University of North Carolina found that just over 15 million people live in counties with no general surgeons and nearly 10 million live in counties with no specialty surgeons. The distribution highlights persistent geographic gaps in surgical access and referral capacity.",
+              "strategic_implication": "Health systems should treat surgical coverage as a network-design and workforce problem, not only a recruitment problem, using regional partnerships, teleconsultation, transportation, and targeted training to extend scarce capacity. Payers and policymakers may face pressure to fund access models that cross county and system boundaries.",
+              "confidence": "high",
+              "tags": [
+                "surgical-access",
+                "workforce",
+                "rural-health",
+                "health-equity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "A potential 4,000-nurse strike at Mass General Brigham signals that labor pressure remains acute even at major academic systems. Workforce disputes are increasingly tied to operating resilience, patient throughput, and community reputation.",
+          "items": [
+            {
+              "item_id": "2026-09-28-brigham-nurses-strike-authorization",
+              "canonical_topic": "brigham-nurses-strike-authorization",
+              "duplicate_group": "brigham-nurses-strike-authorization",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/brigham-and-womens-nurses-authorize-open-ended-strike",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T11:53:00-04:00"
+                }
+              ],
+              "title": "Brigham and Women's nurses authorize open-ended strike",
+              "summary": "Unionized employees at Mass General Brigham voted 93% in favor of an open-ended strike after contract talks stalled in August. The proposed action could involve roughly 4,000 nurses and become the largest nurse demonstration in Massachusetts history.",
+              "strategic_implication": "Large systems should model strike contingencies as patient-flow and capacity events, including staffing agency availability, elective-case triage, and communication with payers and communities. Leaders should also treat bargaining outcomes as a benchmark for retention and labor-cost assumptions across regional markets.",
+              "confidence": "high",
+              "tags": [
+                "nurses",
+                "labor-relations",
+                "hospital-operations",
+                "staffing",
+                "massachusetts"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-25",
       "generated_at": "2026-09-25T12:38:44Z",
       "headline": "Today's Healthcare Insights",
@@ -12094,5 +12365,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-25T12:38:44Z"
+  "last_updated": "2026-09-28T11:04:53Z"
 }

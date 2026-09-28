@@ -4,32 +4,44 @@
   "editions": [
     {
       "edition_date": "2026-09-28",
-      "generated_at": "2026-09-28T11:04:53Z",
+      "generated_at": "2026-09-28T12:42:48Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's signals span a new federal-state push to rethink Medicaid quality measurement, a proposed rollback of nearly $1 billion in HHS spending, and fresh pressure on access, labor, and hospital economics. Coverage draws on STAT News, Healthcare Dive, and Fierce Healthcare RSS, with emphasis on developments published over the weekend and this morning.",
+      "summary_note": "Today's signals include a pocket rescission of nearly $1 billion in HHS spending, a court order narrowing Section 504 disability protections, a CMS-state push on Medicaid quality measurement, and continued pressure on surgical access, nurse labor, and drug costs. Coverage draws on STAT News, Healthcare Dive, MedCity News, and Fierce Healthcare, focused on developments from Sept. 25-28.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
           "STAT News RSS (main)",
           "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS (xml)",
-          "Targeted web searches across CMS/HHS, hospital operations, digital health, and drug pricing"
+          "MedCity News RSS",
+          "Hospitalogy RSS",
+          "Fierce Healthcare RSS",
+          "Modern Healthcare RSS",
+          "Healthcare Brew RSS",
+          "Targeted web verification (FDA, Lilly)"
         ],
         "sources_successful": [
           "STAT News RSS (main)",
           "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS (xml)"
+          "MedCity News RSS",
+          "Hospitalogy RSS (reachable; no new items since 9/21)",
+          "Direct page verification of Fierce Healthcare items from the automated run",
+          "FDA page via web search"
         ],
         "sources_failed": [
-          "Targeted web searches were unavailable in this runtime; RSS descriptions and titles supplied sufficient same-day signal depth"
+          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
+          "Fierce Healthcare RSS returned HTTP 403 (items verified via page fetch)",
+          "Modern Healthcare RSS returned HTTP 403",
+          "Healthcare Brew RSS returned HTTP 404"
         ],
-        "run_notes": "Fresh rebuild from the GitHub repository. Selected eight non-duplicate items from the Sep. 25-28 RSS window and avoided repeating the prior Sep. 25 edition's topics where possible."
+        "run_notes": "Same-day rebuild in place: the automated run (generated 11:04 UTC) had already written 2026-09-28 and left the feed at 31 editions. Retained and verified all 8 automated items, enriched all 8 with verified figures (corrected Brigham strike details; added STAT 9/28 and FDA source refs), added 5 new items from the 9/25-9/28 window screened against the prior 12 editions, and trimmed to 30 editions with overflow archived.",
+        "items_captured": 13
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "Federal and state policymakers are testing new approaches to Medicaid measurement while the administration uses an unusual rescission authority to revisit already-approved HHS spending. The 340B debate is also sharpening around whether program savings translate into measurable community benefit.",
+          "synthesis": "Washington is changing health policy through executive and court action more than legislation: a pocket rescission of nearly $1 billion in approved spending, a court order narrowing Section 504 disability protections, and a CMS-state pact to overhaul Medicaid quality measurement. The 340B fight over community benefit is also getting sharper.",
           "items": [
             {
               "item_id": "2026-09-28-medicaid-quality-measures-37-state-partnership",
@@ -47,7 +59,7 @@
                 }
               ],
               "title": "CMS and 37 states launch partnership to rethink Medicaid and CHIP quality measures",
-              "summary": "The administration announced a partnership with 37 states aimed at rethinking how quality is measured in Medicaid and CHIP. The initiative could shift attention from a large reporting burden toward a smaller set of measures tied more directly to outcomes and program performance.",
+              "summary": "CMS announced a partnership with 37 states under a new Investing in Health Outcomes program to rethink Medicaid and CHIP quality measurement. CMS's May 2026 review of 42 states found 450 reporting requirements tied to roughly 260 unique measures; participating states pledge to prioritize outcomes over process, streamline measures, move toward digital measurement, and align financial results with outcomes.",
               "strategic_implication": "Health plans, state agencies, and safety-net providers should prepare for measure-set changes, new benchmarking expectations, and possible rework of quality-improvement investments. Organizations that can link clinical operations to outcomes data will be better positioned as the framework evolves.",
               "confidence": "medium",
               "tags": [
@@ -71,10 +83,16 @@
                   "url": "https://www.statnews.com/2026/09/25/trump-administration-cancel-spending-hhs-programs/?utm_campaign=rss",
                   "source_type": "rss",
                   "published_at": "2026-09-26T01:03:38Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/28/health-news-trump-uses-contested-power-to-cut-more-funding-to-hhs/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T12:22:00Z"
                 }
               ],
               "title": "Trump administration moves to claw back nearly $1 billion in approved HHS spending",
-              "summary": "The administration is using a rare authority to cancel nearly $1 billion in spending that Congress had approved, with most of the cuts focused on HHS programs serving refugees and unaccompanied minors. The move adds uncertainty for organizations and communities that rely on federal program commitments already embedded in operating plans.",
+              "summary": "The administration used a contested \"pocket rescission\" to cancel nearly $1 billion in congressionally approved spending, announced with only five days left in the fiscal year. Most cuts hit HHS programs serving refugees and unaccompanied minors, plus $28 million in HHS research grants, including studies on primary-care access and racism in emergency medicine. Senate Appropriations Chair Susan Collins condemned the move, and GAO considers the maneuver illegal.",
               "strategic_implication": "Public-health and community-care organizations should stress-test grant-dependent services and avoid treating enacted federal appropriations as fully secure until funds are obligated and available. Boards and finance teams may need contingency plans for delayed or rescinded awards.",
               "confidence": "high",
               "tags": [
@@ -83,6 +101,33 @@
                 "public-health",
                 "grants",
                 "policy-risk"
+              ]
+            },
+            {
+              "item_id": "2026-09-28-texas-v-kennedy-section-504-community-integration",
+              "canonical_topic": "texas-v-kennedy-section-504-community-integration",
+              "duplicate_group": "texas-v-kennedy-section-504-community-integration",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/health-news-federal-judge-rolls-back-landmark-disability-protections/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T12:53:00Z"
+                }
+              ],
+              "title": "Federal judge orders HHS to strip community-integration language from Section 504 disability rule",
+              "summary": "In Texas v. Kennedy, a federal judge in Texas ruled that HHS must remove every reference to community integration from its updated Section 504 rule under the Rehabilitation Act. The case began in 2024 when 17 states challenged the Biden-era update. The Justice Department said in June it would no longer enforce laws prioritizing community-based services over institutional care, although the ADA's protections are unchanged.",
+              "strategic_implication": "Medicaid agencies, home- and community-based services providers, and long-term care operators should watch for weaker federal pressure to shift care out of institutions. Olmstead obligations under the ADA remain, so providers should not assume compliance exposure has disappeared.",
+              "confidence": "high",
+              "tags": [
+                "section-504",
+                "disability",
+                "hcbs",
+                "litigation",
+                "hhs"
               ]
             },
             {
@@ -101,7 +146,7 @@
                 }
               ],
               "title": "Report says 340B hospitals lag peers in charity-care spending",
-              "summary": "A new report argues that hospitals participating in the 340B drug-discount program spend less on charity care than comparable hospitals. A hospital group disputed the findings, calling the analysis another misleading study in a long-running debate over how 340B savings benefit patients.",
+              "summary": "A Pioneer Institute and CancerCare report found 340B hospitals spent 2.16% of operating expenses on charity care versus 2.82% at non-340B hospitals, using CMS cost data from Q1 2025. The AHA disputed the analysis, saying it wrongly treats charity care as the only measure of community benefit. 340B drug purchases reached $100 billion in 2025, up nearly 23%.",
               "strategic_implication": "340B hospitals should expect continued scrutiny of community-benefit documentation and should be ready to connect discounted drug purchasing to access, services, and patient outcomes. Policymakers may use the dispute to justify tighter reporting or eligibility rules.",
               "confidence": "medium",
               "tags": [
@@ -133,7 +178,7 @@
                 }
               ],
               "title": "AI is eroding barriers that have kept biological weapons rare, researcher warns",
-              "summary": "An opinion essay argues that AI could make it easier to design or operationalize biological threats while defensive safeguards remain years from completion. The warning comes as public-health readiness and biosecurity capacity are already under pressure from resource and governance gaps.",
+              "summary": "A STAT opinion essay argues AI is lowering the barriers that have kept biological weapons rare. It cites Anthropic's September report of five cases in which its models were used for work that could support bioweapons development, and a 2026 study in which 36 of 38 DNA synthesis companies shipped fragments of the 1918 influenza virus. Harvard and RAND reports this year reached similar conclusions.",
               "strategic_implication": "Health systems, life-science companies, and public agencies should treat AI governance as part of biosecurity and business continuity, with clear escalation paths for suspicious requests, model access, and laboratory risk. Investments in detection and response may need to move ahead of mature regulatory standards.",
               "confidence": "medium",
               "tags": [
@@ -148,7 +193,7 @@
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "Pharma's growth narrative is increasingly shaped by how products are positioned and administered, from GLP-1s moving toward consumer lifestyle branding to a newly approved weekly basal insulin. These shifts could widen demand while intensifying affordability and adherence debates.",
+          "synthesis": "Drug markets are being reshaped by how products are sold, delivered, and funded: GLP-1s marketed as lifestyle products, weekly insulin, an upsized biotech IPO, another ultra-rare disease approval, and generic flu-antiviral licensing for pandemic preparedness.",
           "items": [
             {
               "item_id": "2026-09-28-glp1-lifestyle-drug-marketing-shift",
@@ -166,7 +211,7 @@
                 }
               ],
               "title": "GLP-1 makers shift obesity medicines from patient framing toward lifestyle consumers",
-              "summary": "STAT reports that blockbuster GLP-1 medicines are undergoing a marketing shift as manufacturers increasingly frame them for consumers pursuing weight loss and lifestyle goals. The repositioning reflects the scale of demand beyond narrowly defined treatment populations and the pressure to build durable consumer categories.",
+              "summary": "STAT reports that GLP-1 makers, led by Novo Nordisk, are repositioning obesity medicines as lifestyle products. Novo has run \"Live lighter\" and \"Summer Glow Up\" campaigns, now describes Wegovy as a \"weight loss\" drug rather than an anti-obesity medicine, and increasingly refers to \"customers\" rather than \"patients.\"",
               "strategic_implication": "Payers, providers, and employers should expect broader utilization and stronger demand for coverage decisions as obesity medicines move further into consumer channels. Commercial strategy will need to balance access, clinical appropriateness, adherence support, and long-term cost exposure.",
               "confidence": "medium",
               "tags": [
@@ -190,10 +235,16 @@
                   "url": "https://www.statnews.com/2026/09/25/biotech-news-lilly-wins-approval-for-weekly-insulin-shot/?utm_campaign=rss",
                   "source_type": "rss",
                   "published_at": "2026-09-25T15:25:10Z"
+                },
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-once-weekly-insulin-type-2-diabetes-mellitus",
+                  "source_type": "web",
+                  "published_at": "2026-09-23"
                 }
               ],
               "title": "FDA approves Lilly's once-weekly basal insulin for adults with type 2 diabetes",
-              "summary": "The FDA approved Eli Lilly's Onswik, a once-weekly basal insulin for adults with type 2 diabetes. The product offers an alternative to daily long-acting insulin injections and adds another convenience-focused option to an increasingly competitive diabetes market.",
+              "summary": "The FDA approved Eli Lilly's Onswik (insulin efsitora alfa), a once-weekly basal insulin for adults with type 2 diabetes, based on the Phase 3 QWINT program. It offers an alternative to daily long-acting insulin injections in an increasingly competitive diabetes market.",
               "strategic_implication": "Payers and diabetes-care teams should assess whether weekly dosing improves adherence enough to offset acquisition and training costs. Manufacturers will compete not only on efficacy but also on access, delivery logistics, and the patient experience of chronic therapy.",
               "confidence": "high",
               "tags": [
@@ -203,12 +254,92 @@
                 "lilly",
                 "drug-approval"
               ]
+            },
+            {
+              "item_id": "2026-09-28-mpp-xofluza-generic-sublicenses-pandemic",
+              "canonical_topic": "mpp-xofluza-generic-sublicenses-pandemic",
+              "duplicate_group": "mpp-xofluza-generic-sublicenses-pandemic",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/25/roche-xofluza-influenza-treatment-agreements/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T17:50:00Z"
+                }
+              ],
+              "title": "Medicines Patent Pool licenses 11 manufacturers to make generic Roche flu drug for 129 countries",
+              "summary": "The U.N.-backed Medicines Patent Pool signed sublicenses with 11 manufacturers to develop, make, and supply generic versions of Roche's influenza antiviral Xofluza in 129 countries, covering nearly all low- and middle-income nations. Manufacturers will receive technical data and reference products to support regulatory approval.",
+              "strategic_implication": "This builds global antiviral manufacturing capacity ahead of a potential flu pandemic. U.S. preparedness planners and manufacturers should watch whether it changes supply competition or stockpiling strategy.",
+              "confidence": "high",
+              "tags": [
+                "pandemic-preparedness",
+                "influenza",
+                "generics",
+                "global-health",
+                "roche"
+              ]
+            },
+            {
+              "item_id": "2026-09-28-adarx-535m-ipo-sirna",
+              "canonical_topic": "adarx-535m-ipo-sirna",
+              "duplicate_group": "adarx-535m-ipo-sirna",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/adarx-ipo-small-interfering-rna-gene-silencing-sirna-hae-adrx/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T19:29:00Z"
+                }
+              ],
+              "title": "ADARx raises $535M in upsized IPO, a sign the biotech market is reopening",
+              "summary": "Gene-silencing biotech ADARx priced an upsized IPO at $17 a share, raising $446.3 million, plus an $89 million private placement from partner AbbVie, for $535.3 million total. Its lead siRNA drug, onvuzosiran, is in a 90-patient Phase 3 trial for hereditary angioedema, with data expected by the end of 2027.",
+              "strategic_implication": "Large, upsized biotech IPOs suggest investors are paying again for late-stage RNA medicines. Payers should expect more competition in high-cost rare-disease categories such as hereditary angioedema later this decade.",
+              "confidence": "high",
+              "tags": [
+                "biotech",
+                "ipo",
+                "sirna",
+                "rare-disease",
+                "capital-markets"
+              ]
+            },
+            {
+              "item_id": "2026-09-28-mirum-atebrioz-fop-approval",
+              "canonical_topic": "mirum-atebrioz-fop-approval",
+              "duplicate_group": "mirum-atebrioz-fop-approval",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/mirum-pharmaceuticals-incyte-fda-approval-zilurgisertib-atebrioz-ultra-rare-disease-mirm-incy/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-27T17:54:00Z"
+                }
+              ],
+              "title": "FDA approves Mirum's oral Atebrioz, the third drug for ultra-rare FOP",
+              "summary": "The FDA approved Mirum Pharmaceuticals' Atebrioz (zilurgisertib), a once-daily oral pill for fibrodysplasia ossificans progressiva in patients 12 and older, even though the pivotal Phase 2 trial missed its primary endpoint. It is the second FOP approval in two months after Regeneron's Pasatru. Leerink estimates about 300 U.S. patients and $200 million in peak sales.",
+              "strategic_implication": "Approval on secondary endpoints shows the FDA remains flexible for ultra-rare diseases. Payers should expect three competing high-cost FOP therapies and tighter coverage criteria as a result.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "rare-disease",
+                "approvals",
+                "drug-pricing"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "Access constraints remain structural: millions of Americans live in counties without a general or specialty surgeon, while 340B hospitals face pressure to prove that financial advantages translate into community care. Both stories point to a widening gap between capacity and expectations.",
+          "synthesis": "Access and administrative strain remain structural. Millions of Americans lack a local surgeon, and physician practices report hours each week handling drug-cost callbacks and prior authorization.",
           "items": [
             {
               "item_id": "2026-09-28-surgeon-access-county-gap",
@@ -226,7 +357,7 @@
                 }
               ],
               "title": "More than 15 million Americans live in counties without a general surgeon",
-              "summary": "An analysis from the American College of Surgeons and the University of North Carolina found that just over 15 million people live in counties with no general surgeons and nearly 10 million live in counties with no specialty surgeons. The distribution highlights persistent geographic gaps in surgical access and referral capacity.",
+              "summary": "An American College of Surgeons and UNC analysis found just over 15 million people live in counties with no general surgeon and nearly 10 million in counties with no specialty surgeon. General surgeons were absent from 38% of counties, and 434 critical access hospitals sit in rural counties with no recorded full-time surgeon. National supply is 59.2 surgeons per 100,000 people.",
               "strategic_implication": "Health systems should treat surgical coverage as a network-design and workforce problem, not only a recruitment problem, using regional partnerships, teleconsultation, transportation, and targeted training to extend scarce capacity. Payers and policymakers may face pressure to fund access models that cross county and system boundaries.",
               "confidence": "high",
               "tags": [
@@ -234,6 +365,32 @@
                 "workforce",
                 "rural-health",
                 "health-equity"
+              ]
+            },
+            {
+              "item_id": "2026-09-28-physician-drug-cost-burden-survey",
+              "canonical_topic": "physician-drug-cost-burden-survey",
+              "duplicate_group": "physician-drug-cost-burden-survey",
+              "priority_score": 7,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/report-high-drug-costs-are-creating-hidden-burden-for-physicians/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T22:11:00Z"
+                }
+              ],
+              "title": "Survey finds drug costs create hours of weekly administrative work for practices",
+              "summary": "RazorMetrics' 2026 Physician Drug Cost Survey of 104 physicians found 96% have had a patient quietly stop a medication because of cost, and 84% of practices field at least five patient calls a week about prescription prices. Seventy-two percent spend five or more hours a week on prior authorization, and 42% manage more than 30 requests weekly.",
+              "strategic_implication": "Practices and health systems should count prescription-cost friction as a staffing and adherence cost, not just a patient issue. Point-of-prescribing price tools and lower-cost substitution workflows can cut callbacks and prior-authorization work.",
+              "confidence": "medium",
+              "tags": [
+                "prior-authorization",
+                "drug-costs",
+                "physician-practices",
+                "adherence"
               ]
             }
           ]
@@ -258,7 +415,7 @@
                 }
               ],
               "title": "Brigham and Women's nurses authorize open-ended strike",
-              "summary": "Unionized employees at Mass General Brigham voted 93% in favor of an open-ended strike after contract talks stalled in August. The proposed action could involve roughly 4,000 nurses and become the largest nurse demonstration in Massachusetts history.",
+              "summary": "Nurses at Brigham and Women's Hospital voted 93% to authorize an open-ended strike involving about 4,000 members, which would be the largest nurses' strike in Massachusetts history. No date is set, and the union must give 10 days' notice. Talks have run since November after the contract expired March 31, while Mass General Brigham reports a 0.1% operating margin through nine months of its fiscal year.",
               "strategic_implication": "Large systems should model strike contingencies as patient-flow and capacity events, including staffing agency availability, elective-case triage, and communication with payers and communities. Leaders should also treat bargaining outcomes as a benchmark for retention and labor-cost assumptions across regional markets.",
               "confidence": "high",
               "tags": [
@@ -12008,362 +12165,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-08-17",
-      "generated_at": "2026-08-17T11:11:56Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing centers on the operational consequences of tighter payment and transparency rules, accelerating AI deployment, and renewed scrutiny of payer and provider economics. Signals were gathered from STAT, Healthcare Dive, Fierce Healthcare, KFF, Axios, FDA, CDC, and targeted web checks, with fresh Monday developments prioritized over prior-edition stories.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA/CDC web",
-          "KFF web",
-          "Healthcare company and nonprofit disclosures",
-          "Targeted web search"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "FDA/CDC web",
-          "KFF web",
-          "Axios web",
-          "Targeted web search"
-        ],
-        "sources_failed": [
-          "Supplementary Gmail newsletters not used"
-        ],
-        "run_notes": "Built from Aug. 17 RSS and targeted web signals plus selected Aug. 11–14 developments that were not included in the Aug. 14 edition. RSS titles and descriptions were sufficient for several items; targeted search and first-party FDA, CDC, and KFF pages supplied additional context. Full-article access was not required."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Payment infrastructure and utilization controls are becoming more visible to patients, clinicians, and employers, while transparency disputes are moving from policy debate into litigation.",
-          "items": [
-            {
-              "item_id": "2026-08-17-cpt-codes-public-access-lawsuit",
-              "canonical_topic": "cpt-code-public-access-lawsuit",
-              "duplicate_group": "cpt-code-public-access-lawsuit",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/patient-rights-advocate-sues-ama-cpt-billing-codes-copyright/827830/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-14T14:00:47Z"
-                },
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/patient-advocacy-group-sues-ama-open-access-cpt-system",
-                  "source_type": "rss",
-                  "published_at": "2026-08-14T16:16:00Z"
-                }
-              ],
-              "title": "Patient advocacy group sues AMA over public access to CPT billing codes",
-              "summary": "PatientRightsAdvocate.org sued the American Medical Association in Illinois federal court, arguing that the CPT billing-code system should be publicly accessible because federal and state law incorporate it by reference. The AMA currently charges licensing fees to retrieve and use the codes, which shape billions of dollars in healthcare payments. The suit seeks permission to publish the codebook in a searchable format.",
-              "strategic_implication": "A ruling could affect the cost and control of core billing infrastructure, with downstream implications for price-transparency tools, revenue-cycle vendors, and provider compliance workflows.",
-              "confidence": "medium",
-              "tags": [
-                "billing-transparency",
-                "cpt-codes",
-                "healthcare-law",
-                "revenue-cycle"
-              ]
-            },
-            {
-              "item_id": "2026-08-17-prior-authorization-denial-data",
-              "canonical_topic": "prior-authorization-denial-data",
-              "duplicate_group": "prior-authorization-denial-data",
-              "priority_score": 9,
-              "primary_source": "KFF",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "KFF",
-                  "url": "https://www.kff.org/patient-consumer-protections/prior-authorization-metrics-provide-new-insights-into-insurer-practices-but-gaps-remain/",
-                  "source_type": "web",
-                  "published_at": "2026-08-13T00:00:00Z"
-                },
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/prior-authorization-denials-vary-widely-among-insurers/827891/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-14T13:05:25Z"
-                }
-              ],
-              "title": "KFF finds prior-authorization denials range from 2% to 25% across insurers",
-              "summary": "KFF analyzed newly required 2025 prior-authorization metrics across Medicare Advantage, Medicaid managed care, and federally facilitated ACA Marketplace plans. Average standard-request denial rates were 12%, 14%, and 18%, respectively, while insurer-level rates varied substantially; some ACA Marketplace rates reached 25%. The data provide limited insight into the services or reasons behind individual denials, but many denials that were appealed were overturned.",
-              "strategic_implication": "The new reporting regime creates a benchmark for payer performance while highlighting the need for more granular data; providers should expect denial management and documentation quality to remain strategic operating capabilities.",
-              "confidence": "high",
-              "tags": [
-                "prior-authorization",
-                "payer-transparency",
-                "medicare-advantage",
-                "medicaid",
-                "aca-marketplace"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "AI is moving from pilot programs into embedded workflow infrastructure, especially around payer rules and clinical decision support, raising the bar for integration, governance, and measurable outcomes.",
-          "items": [
-            {
-              "item_id": "2026-08-17-epic-prior-authorization-checker",
-              "canonical_topic": "epic-prior-authorization-checker",
-              "duplicate_group": "epic-prior-authorization-checker",
-              "priority_score": 9,
-              "primary_source": "Axios",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Axios",
-                  "url": "https://www.axios.com/2026/08/17/health-insurer-reviews-digital-fix",
-                  "source_type": "web",
-                  "published_at": "2026-08-17T00:00:00Z"
-                }
-              ],
-              "title": "Epic rolls out real-time prior-authorization checks ahead of federal deadline",
-              "summary": "Epic is deploying a tool that flags in the electronic health record when a procedure requires a health-plan check-off. It is going live ahead of the Jan. 1 deadline using data from UnitedHealthcare, Aetna, and Network Health, with 16 additional insurers testing the system. The tool stems from a 2024 CMS rule requiring insurers to make prior-authorization information usable in electronic workflows.",
-              "strategic_implication": "Embedding payer requirements at the point of ordering could reduce avoidable delays and administrative rework, but it also makes data freshness, payer participation, and exception handling central to access performance.",
-              "confidence": "high",
-              "tags": [
-                "prior-authorization",
-                "ehr",
-                "interoperability",
-                "provider-workflow"
-              ]
-            },
-            {
-              "item_id": "2026-08-17-abridge-enterprise-ai-decision-support",
-              "canonical_topic": "abridge-enterprise-ai-decision-support",
-              "duplicate_group": "abridge-enterprise-ai-decision-support",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-expands-ai-decision-support-more-clinicians-bid-become-healthcares",
-                  "source_type": "rss",
-                  "published_at": "2026-08-17T01:05:00Z"
-                }
-              ],
-              "title": "Abridge expands AI decision support to every clinician at partner health systems",
-              "summary": "Abridge said more than 300 enterprise health systems have adopted its AI-based decision-support solution since April. The company is now making the tool available to every clinician at its partner health systems rather than limiting access to early users. The move extends Abridge beyond ambient documentation toward broader clinical workflow support.",
-              "strategic_implication": "Broad deployment shifts the management question from whether to pilot ambient AI to how to govern clinical use, monitor quality, and prove value across specialties and care settings.",
-              "confidence": "medium",
-              "tags": [
-                "ambient-ai",
-                "clinical-decision-support",
-                "health-systems",
-                "ai-governance"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Large-company oversight, specialty-pharma innovation, and tighter control of healthcare investment are reshaping risk and capital-allocation decisions across the sector.",
-          "items": [
-            {
-              "item_id": "2026-08-17-unitedhealth-irs-tax-probe",
-              "canonical_topic": "unitedhealth-irs-tax-probe",
-              "duplicate_group": "unitedhealth-irs-tax-probe",
-              "priority_score": 9,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/",
-                  "source_type": "web",
-                  "published_at": "2026-08-17T08:10:43Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-17T08:30:00Z"
-                }
-              ],
-              "title": "UnitedHealth discloses IRS probe that could increase taxes on foreign-subsidiary transfers",
-              "summary": "UnitedHealth Group disclosed that the Internal Revenue Service is seeking to increase the company's taxable income for 2017–2020 and potentially later years. The initial probe concerns money routed through a foreign subsidiary, according to the company's regulatory filing. The notices were received in March and had not previously been reported.",
-              "strategic_implication": "The matter adds tax and disclosure uncertainty to an already scrutinized payer conglomerate and could affect cash planning, investor confidence, and how vertically integrated health businesses structure internal transactions.",
-              "confidence": "high",
-              "tags": [
-                "unitedhealth",
-                "irs",
-                "tax-risk",
-                "payer-economics"
-              ]
-            },
-            {
-              "item_id": "2026-08-17-private-equity-physician-deals",
-              "canonical_topic": "private-equity-physician-deals",
-              "duplicate_group": "private-equity-physician-deals",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/17/private-equity-50-percent-drop-physician-practice-management-deals-2026/",
-                  "source_type": "web",
-                  "published_at": "2026-08-17T04:10:43Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/17/private-equity-50-percent-drop-physician-practice-management-deals-2026/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-17T04:30:00Z"
-                }
-              ],
-              "title": "Private-equity physician-practice deals track to fall by half as state oversight expands",
-              "summary": "PitchBook data reported by STAT show physician practice-management deal activity on pace for roughly half the 2025 total. Investments fell from a 2021 peak of 851 deals to 105 deals in the first half of 2026, as more than a dozen states added oversight laws and market conditions shifted.",
-              "strategic_implication": "Lower transaction volume may slow consolidation and raise the premium on compliant, operationally strong physician platforms; health systems should reassess partnership, acquisition, and physician-employment assumptions.",
-              "confidence": "medium",
-              "tags": [
-                "private-equity",
-                "physician-practices",
-                "healthcare-investment",
-                "state-regulation"
-              ]
-            },
-            {
-              "item_id": "2026-08-17-iberdomide-multiple-myeloma-approval",
-              "canonical_topic": "iberdomide-multiple-myeloma-approval",
-              "duplicate_group": "iberdomide-multiple-myeloma-approval",
-              "priority_score": 8,
-              "primary_source": "FDA",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-iberdomide-daratumumab-and-hyaluronidase-fihj-and-dexamethasone",
-                  "source_type": "web",
-                  "published_at": "2026-08-13T11:10:16Z"
-                }
-              ],
-              "title": "FDA grants accelerated approval to Bristol Myers Squibb's iberdomide combination for multiple myeloma",
-              "summary": "The FDA granted accelerated approval to iberdomide (Zenbexus) with daratumumab and hyaluronidase-fihj plus dexamethasone for adults with multiple myeloma after at least one prior line of therapy that included a proteasome inhibitor and an immunomodulatory agent. The approval introduces the first drug in a new CELMoD class, with continued evidence required under the accelerated pathway.",
-              "strategic_implication": "The launch expands competition in a high-cost specialty area and underscores the commercial importance of confirmatory evidence, sequencing, and access strategy for next-generation oncology therapies.",
-              "confidence": "high",
-              "tags": [
-                "multiple-myeloma",
-                "accelerated-approval",
-                "specialty-pharma",
-                "oncology"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Providers are balancing operational recovery with public-health execution: stronger system performance does not remove the need for disciplined workforce, safety, and contingency planning.",
-          "items": [
-            {
-              "item_id": "2026-08-17-salmonella-jalapeno-outbreak",
-              "canonical_topic": "salmonella-jalapeno-outbreak",
-              "duplicate_group": "salmonella-jalapeno-outbreak",
-              "priority_score": 8,
-              "primary_source": "FDA",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-salmonella-jalapeno-august-2026",
-                  "source_type": "web",
-                  "published_at": "2026-08-14T00:00:00Z"
-                },
-                {
-                  "source": "CDC",
-                  "url": "https://www.cdc.gov/Salmonella/outbreaks/javiana-08-26/index.html",
-                  "source_type": "web",
-                  "published_at": "2026-08-14T00:00:00Z"
-                }
-              ],
-              "title": "FDA and CDC link multistate Salmonella outbreak to recalled jalapeños",
-              "summary": "FDA and CDC linked a multistate Salmonella Javiana outbreak to jalapeño peppers from Sinaloa, Mexico, distributed by Coast Citrus Distributors. The FDA investigation reported 345 illnesses across 27 states and 36 hospitalizations, with no deaths, and coordinated recalls across restaurants, retailers, and food-service suppliers. Consumers and businesses were told not to eat, sell, or serve recalled products.",
-              "strategic_implication": "Health systems and food-service operators should treat supplier traceability, rapid recall execution, and patient-facing communication as operational resilience capabilities, particularly when outbreaks cross retail and restaurant channels.",
-              "confidence": "high",
-              "tags": [
-                "food-safety",
-                "salmonella",
-                "outbreak-response",
-                "hospital-operations"
-              ]
-            },
-            {
-              "item_id": "2026-08-17-providence-operating-improvement",
-              "canonical_topic": "providence-operating-improvement",
-              "duplicate_group": "providence-operating-improvement",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/providence-reports-400m-operating-improvement-halfway-through-2026",
-                  "source_type": "rss",
-                  "published_at": "2026-08-13T19:42:00Z"
-                }
-              ],
-              "title": "Providence reports $400 million operating improvement through mid-2026",
-              "summary": "Providence reported a $400 million operating improvement halfway through 2026, marking its fourth consecutive quarter of operating gains after years of losses. The nonprofit system framed the result as a milestone ahead of expected headwinds from the One Big Beautiful Bill Act. The improvement reflects the continuing impact of a multiyear turnaround effort.",
-              "strategic_implication": "The result shows that scale, cost discipline, and portfolio choices can improve nonprofit-system performance, but leaders still need scenarios for reimbursement and coverage pressure that could reverse gains.",
-              "confidence": "medium",
-              "tags": [
-                "hospital-finance",
-                "nonprofit-hospitals",
-                "turnaround",
-                "operating-margin"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Frontline labor negotiations are tying compensation and staffing levels more directly to patient-safety and retention concerns, keeping workforce design at the center of clinical execution.",
-          "items": [
-            {
-              "item_id": "2026-08-17-hca-workforce-bargaining",
-              "canonical_topic": "hca-workforce-bargaining",
-              "duplicate_group": "hca-workforce-bargaining",
-              "priority_score": 7,
-              "primary_source": "The Guardian",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "The Guardian",
-                  "url": "https://www.theguardian.com/us-news/2026/aug/11/union-hca-healthcare-workers-protest",
-                  "source_type": "web",
-                  "published_at": "2026-08-11T00:00:00Z"
-                }
-              ],
-              "title": "HCA workers seek higher pay and staffing protections in contract campaign",
-              "summary": "Unionized HCA workers are holding pickets and seeking higher wages, stronger wage scales, and staffing protections in contract negotiations. About 22,000 HCA workers are represented by the Service Employees International Union, while the company employs more than 300,000 people in the U.S. and U.K. Workers say staffing shortages affect both employees and patients, while HCA said the outstanding issues center on compensation and negotiations.",
-              "strategic_implication": "The campaign highlights how labor costs, retention, and staffing adequacy are converging in hospital strategy; operators should model workforce investments against turnover, access, and safety outcomes rather than wage expense alone.",
-              "confidence": "medium",
-              "tags": [
-                "hospital-workforce",
-                "labor-relations",
-                "nurse-staffing",
-                "retention"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-09-28T11:04:53Z"
+  "last_updated": "2026-09-28T12:42:48Z"
 }

@@ -4,28 +4,39 @@
   "editions": [
     {
       "edition_date": "2026-09-29",
-      "generated_at": "2026-09-29T11:05:23Z",
+      "generated_at": "2026-09-29T12:34:08Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's edition tracks Medicare Advantage premium projections and device reimbursement, health-data access and clinical AI partnerships, and a mix of drug, payer, and provider developments. It draws on STAT News, Healthcare Dive, Fierce Healthcare, and a targeted Google search used to cross-check the Medicare Advantage premium figures.",
+      "summary_note": "Today's edition tracks a projected drop in 2027 Medicare Advantage premiums, the end of automatic Medicare add-on payments for breakthrough devices, a payer-vendor dispute over AI coding costs, and a rise in social-engineering attacks, plus drug approvals, dealmaking, and leadership moves. It draws on STAT News, Healthcare Dive, MedCity News, and Fierce Healthcare, with verification from AbbVie and BioSpace.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
           "STAT News RSS (main)",
           "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Hospitalogy RSS",
           "Fierce Healthcare RSS",
-          "Targeted web search for Medicare Advantage 2027 premium projections"
+          "Modern Healthcare RSS",
+          "Healthcare Brew RSS",
+          "Targeted web verification (AbbVie, BioSpace)"
         ],
         "sources_successful": [
           "STAT News RSS (main)",
           "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS",
-          "Google search results for 2027 Medicare Advantage premium projections"
+          "MedCity News RSS",
+          "Direct page verification of Fierce Healthcare items from the automated run",
+          "AbbVie press release and BioSpace via web search"
         ],
         "sources_failed": [
-          "search_web tool was not exposed in this runtime; Google browser search was used for targeted cross-checking"
+          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
+          "Hospitalogy RSS returned HTTP 403",
+          "Fierce Healthcare RSS returned HTTP 403 (items verified via page fetch)",
+          "Modern Healthcare RSS returned HTTP 403",
+          "Healthcare Brew RSS returned HTTP 404"
         ],
-        "run_notes": "Cloned the repository fresh and screened the previous edition to avoid republishing its stories. RSS titles and descriptions supplied the reporting signals; one targeted browser search added context for the CMS Medicare Advantage premium projection. Gmail labels were supplementary and were not needed."
+        "run_notes": "Same-day rebuild in place: the automated run (generated 11:05 UTC) had already written 2026-09-29 and left the feed at 31 editions. Retained and verified all 10 automated items, enriched all 10 with verified figures (named AbbVie's Juvmo/tavapadon with AbbVie and BioSpace refs; corrected Memorial Hermann item to reflect named successor Alec King), added 6 new items from the 9/25-9/29 window screened against the prior 12 editions, and trimmed to 30 editions with overflow archived.",
+        "items_captured": 16
       },
       "editorial_buckets": [
         {
@@ -47,10 +58,10 @@
                   "published_at": "2026-09-28T21:39:00Z"
                 }
               ],
-              "title": "CMS projects Medicare Advantage premiums will fall 16% in 2027",
-              "summary": "CMS projects average Medicare Advantage premiums to decline 16% in 2027. For Medicare Advantage prescription-drug plans, the average monthly premium after rebates is projected at $7, down 38% from $11.32 in 2026.",
-              "strategic_implication": "Plans should test how lower premiums interact with benefit design, supplemental benefits, and member retention as 2027 bids and competitive positioning take shape.",
-              "confidence": "medium",
+              "title": "CMS projects Medicare Advantage premiums will fall more than 16% in 2027",
+              "summary": "CMS projects the weighted average monthly Medicare Advantage premium will fall from $14.37 in 2026 to $12 in 2027, a decline of more than 16%. Average MA prescription-drug plan premiums after rebates are projected to drop 38%, from $11.32 to $7, while average Part D premiums rise from $35.09 to $36. CMS expects about 34 million MA enrollees (47.4% of eligibles) and says supplemental benefits will remain stable. Open enrollment runs Oct. 15-Dec. 7.",
+              "strategic_implication": "Lower headline premiums will sharpen price competition during open enrollment; plans should pressure-test benefit design, supplemental benefits, and retention strategy, while standalone Part D sponsors face a widening premium gap versus MA-PD offerings.",
+              "confidence": "high",
               "tags": [
                 "medicare-advantage",
                 "cms",
@@ -74,10 +85,10 @@
                   "published_at": "2026-09-29T08:30:00Z"
                 }
               ],
-              "title": "FDA breakthrough designation no longer guarantees special Medicare payment treatment",
-              "summary": "STAT reports that medical devices designated as breakthrough by the FDA are no longer automatically eligible for extra Medicare payments. The change separates a device's breakthrough designation from automatic additional Medicare payment treatment.",
-              "strategic_implication": "Medtech companies should reassess launch economics and reimbursement planning rather than treating FDA breakthrough status as a proxy for incremental Medicare payment.",
-              "confidence": "medium",
+              "title": "Newly designated FDA breakthrough devices lose automatic Medicare add-on payment eligibility in October",
+              "summary": "Starting in October, devices newly designated as FDA breakthroughs will no longer qualify for special treatment for extra Medicare payments. In August, CMS finalized removal of the alternative pathways that since 2020 let breakthrough devices qualify for new technology add-on payments and transitional pass-through payments without showing substantial clinical improvement. STAT's tracker has logged nearly 800 devices reported to have breakthrough status since 2022.",
+              "strategic_implication": "Medtech companies should rebuild launch and reimbursement plans around demonstrating substantial clinical improvement, and hospitals should expect fewer add-on payments to offset the cost of new devices.",
+              "confidence": "high",
               "tags": [
                 "medicare",
                 "fda",
@@ -107,8 +118,8 @@
                 }
               ],
               "title": "MAHA leaders call for broader health-data access for research",
-              "summary": "At a MAHA Institute event, HHS Secretary Robert F. Kennedy Jr. and others argued that health data should be more accessible to researchers. They cited research into vaccines, chronic disease, and autism as areas that could benefit.",
-              "strategic_implication": "Health systems and data holders should anticipate renewed policy pressure to expand research access while strengthening privacy, consent, security, and data-quality safeguards.",
+              "summary": "At a MAHA Institute event, HHS Secretary Robert F. Kennedy Jr. proposed combining immunization, clinical, lab, pharmacy, and claims data from state health information exchanges, EHRs, Medicare, Medicaid, and commercial platforms to study autism and chronic disease, and criticized data 'gatekeepers.' MAHA Institute President Mark Gorton cited Nebraska's CyncHealth partnership with the federal government as a state-federal model. Experts flagged unresolved privacy, consent, and governance issues.",
+              "strategic_implication": "HIEs, health systems, and data vendors should expect federal requests for broader research access and should review consent terms, data-use agreements, and governance policies before they are tested.",
               "confidence": "medium",
               "tags": [
                 "health-data",
@@ -134,14 +145,67 @@
                 }
               ],
               "title": "OpenEvidence, Anthropic, and Penn Medicine target broader physician access to AI",
-              "summary": "OpenEvidence is partnering with Anthropic and Penn Medicine to expand access to its AI-powered clinical decision-support technology. The initiative is aimed at physicians in low- and middle-income countries across Africa and Asia.",
-              "strategic_implication": "The partnership highlights a route to scale clinical AI through institutional and technology alliances; deployment will depend on local validation, clinical governance, and fit with care settings.",
+              "summary": "OpenEvidence is partnering with Anthropic to offer a free version of its clinical decision-support platform to physicians in 100 lower-resourced countries, including Uganda, Angola, Sudan, Haiti, and Mongolia; Anthropic is contributing Claude credits, engineers, and funding. Through a separate Penn Medicine partnership tied to the Botswana-UPenn Partnership, OpenEvidence will build region-specific tools, and Penn is making the platform available to 10,000 clinicians across its seven hospitals. OpenEvidence reports 1.12 million verified U.S. clinician users.",
+              "strategic_implication": "Clinical AI tools are spreading through free physician access and academic partnerships, so health systems should formalize governance, validation, and acceptable-use policies for tools clinicians may already be using.",
               "confidence": "high",
               "tags": [
                 "clinical-ai",
                 "openevidence",
                 "global-health",
                 "clinical-decision-support"
+              ]
+            },
+            {
+              "item_id": "2026-09-29-ai-coding-tools-cost-dispute",
+              "canonical_topic": "ai-coding-tools-cost-dispute",
+              "duplicate_group": "ai-coding-tools-cost-dispute",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/insurers-say-ai-could-add-billions-in-health-costs-billing-companies-disag/831497/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T11:11:00-04:00"
+                }
+              ],
+              "title": "Insurers say AI coding tools are inflating costs; billing vendors say they capture valid care",
+              "summary": "The Blue Cross Blue Shield Association says AI coding, documentation, and ambient-listening tools added about $942 million in costs over two years without more treatment, citing more complex inpatient billing and more anemia diagnoses without transfusions. PwC analysts attribute part of a projected 9% rise in insurers' medical costs next year to AI billing tools. Solventum, whose platform serves more than 80% of U.S. hospitals, and Codametrix say their tools document valid, previously missed conditions within coding-compliance guardrails.",
+              "strategic_implication": "Providers using AI coding should expect more payer audits, downcoding, and contract language on AI-assisted documentation, and should keep audit trails that tie coded conditions to clinical evidence.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "coding",
+                "upcoding",
+                "payers",
+                "revenue-cycle"
+              ]
+            },
+            {
+              "item_id": "2026-09-29-dreamed-modi-fda-clearance",
+              "canonical_topic": "dreamed-modi-fda-clearance",
+              "duplicate_group": "dreamed-modi-fda-clearance",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/dreamed-wins-fda-clearance-for-cgm-driven-insulin-automation-tool-for-both-type-2-injection-regimens/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T23:12:00Z"
+                }
+              ],
+              "title": "FDA clears DreaMed app that adjusts insulin doses from CGM data for type 2 diabetes",
+              "summary": "DreaMed Diabetes received FDA 510(k) clearance for MODI, a prescription mobile app that analyzes continuous glucose monitor data and insulin use to recommend dose changes for people with type 2 diabetes on basal-only or multiple-daily-injection regimens. DreaMed says it is the first cleared app to optimize both regimens, and individual adjustments do not need clinician sign-off. Pricing and reimbursement have not been disclosed.",
+              "strategic_implication": "Autonomous dosing software could shift routine insulin titration away from office visits; payers and primary care practices will need to decide how to cover, prescribe, and monitor it.",
+              "confidence": "high",
+              "tags": [
+                "diabetes",
+                "cgm",
+                "fda",
+                "digital-therapeutics"
               ]
             }
           ]
@@ -163,11 +227,23 @@
                   "url": "https://www.statnews.com/2026/09/28/biotech-news-abbvie-wins-fda-nod-for-parkinsons-pill/",
                   "source_type": "rss",
                   "published_at": "2026-09-28T13:40:32Z"
+                },
+                {
+                  "source": "AbbVie",
+                  "url": "https://news.abbvie.com/2026-09-28-U-S-FDA-Approves-AbbVies-JUVMO-TM-tavapadon-for-Parkinsons-Disease",
+                  "source_type": "press_release",
+                  "published_at": "2026-09-28T12:00:00Z"
+                },
+                {
+                  "source": "BioSpace",
+                  "url": "https://www.biospace.com/fda/abbvie-wins-fda-approval-for-parkinsons-drug-from-8-7b-cerevel-takeover",
+                  "source_type": "web",
+                  "published_at": "2026-09-28T00:00:00Z"
                 }
               ],
-              "title": "FDA approves AbbVie's once-daily Parkinson's pill",
-              "summary": "The FDA approved AbbVie's once-daily pill for Parkinson's disease, according to STAT. The approval was based on a late-stage study that showed the drug improved symptoms.",
-              "strategic_implication": "The approval adds a new branded treatment option in Parkinson's care, making access, prescribing protocols, and comparative evidence relevant for neurology practices and payers.",
+              "title": "FDA approves AbbVie's once-daily Parkinson's pill Juvmo (tavapadon)",
+              "summary": "The FDA approved AbbVie's Juvmo (tavapadon), the first selective D1/D5 receptor agonist for adults with Parkinson's disease, taken once daily with or without levodopa. In the Phase 3 TEMPO program, the drug improved daily-living and motor scores at 26 weeks in early disease and added 1.7 hours of daily 'on' time without troublesome dyskinesia as adjunctive therapy, versus 0.6 hours for placebo. AbbVie announced the approval Sept. 28 and expects U.S. availability in October 2026.",
+              "strategic_implication": "Neurology practices and payers should prepare formulary, prior-authorization, and titration protocols for a new branded option that AbbVie acquired through its $8.7 billion Cerevel deal.",
               "confidence": "high",
               "tags": [
                 "parkinsons",
@@ -192,8 +268,8 @@
                 }
               ],
               "title": "Merck discontinues Recarbrio in the U.S. amid concern about drug-resistant infections",
-              "summary": "Merck has discontinued Recarbrio in the United States, STAT reports, despite concerns about antibiotic resistance. The report describes Recarbrio as an important antibiotic in the U.S. market.",
-              "strategic_implication": "Hospital pharmacies and infectious-disease teams should review availability and substitution pathways for affected patients while reinforcing antimicrobial stewardship.",
+              "summary": "Merck stopped supplying Recarbrio in the U.S. earlier this month without explaining why. The three-drug injectable antibiotic, approved seven years ago, treats hospital- and ventilator-associated pneumonia and complicated urinary-tract and abdominal infections in patients with few or no alternatives. Its designation as a last-resort treatment to slow resistance also limited sales, which Merck did not disclose.",
+              "strategic_implication": "Hospital pharmacies and infectious-disease teams should confirm substitution pathways for resistant infections, and policymakers will likely cite the exit as further evidence that antibiotic development needs new payment incentives.",
               "confidence": "medium",
               "tags": [
                 "antibiotics",
@@ -218,7 +294,7 @@
                 }
               ],
               "title": "SCAN expands into Oregon through senior-living partnership",
-              "summary": "SCAN Health Plan is partnering with senior-living organization The Springs Living to launch co-branded products in Oregon. The offering is intended to create a more connected experience for residents.",
+              "summary": "SCAN Health Plan is partnering with The Springs Living to launch co-branded products for seniors in Clackamas and Washington counties, marking SCAN's entry into Oregon. Available Jan. 1, the offering pairs SCAN's experience with institutional special needs plans with senior-housing operations, bringing services such as in-home podiatry to residents to avoid ER visits and hospital-acquired complications.",
               "strategic_implication": "The arrangement is another example of plans using senior-living partnerships to reach older adults and coordinate services; execution will depend on enrollment, care integration, and member experience.",
               "confidence": "high",
               "tags": [
@@ -227,12 +303,96 @@
                 "oregon",
                 "payer-provider"
               ]
+            },
+            {
+              "item_id": "2026-09-29-merck-scibrunch-kras-g12d-license",
+              "canonical_topic": "merck-scibrunch-kras-g12d-license",
+              "duplicate_group": "merck-scibrunch-kras-g12d-license",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/merck-cancer-drug-scibrunch-china-ras-inhibitor-kras-g12d-mrk/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T20:32:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/28/biotech-news-abbvie-wins-fda-nod-for-parkinsons-pill/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T13:40:32Z"
+                }
+              ],
+              "title": "Merck pays $400M upfront for China-based SciBrunch's preclinical KRAS G12D cancer drug",
+              "summary": "Merck paid Shanghai-based SciBrunch Therapeutics $400 million upfront for global rights to SPR2015, a preclinical small molecule targeting KRAS G12D, the most common RAS mutation; milestones could bring the deal to $2.13 billion. SciBrunch was founded in 2024 and had raised $65 million. Separately, Merck and Daiichi Sankyo withdrew their accelerated-approval application for I-DXd after FDA concerns about Phase 2 data.",
+              "strategic_implication": "Big Pharma keeps paying large upfront sums for early-stage Chinese assets, raising the stakes of any U.S. policy restricting China-origin biotech licensing.",
+              "confidence": "high",
+              "tags": [
+                "merck",
+                "china-biotech",
+                "oncology",
+                "licensing"
+              ]
+            },
+            {
+              "item_id": "2026-09-29-uniqure-amt130-four-year-data",
+              "canonical_topic": "uniqure-amt130-four-year-data",
+              "duplicate_group": "uniqure-amt130-four-year-data",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/29/uniqure-huntingtons-gene-therapy-slows-disease-progression-four-years/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T11:05:00Z"
+                }
+              ],
+              "title": "uniQure's Huntington's gene therapy shows slowing at four years, but the benefit narrows",
+              "summary": "uniQure said the high dose of its one-time gene therapy AMT-130 slowed Huntington's disease progression by 44% at four years versus an external natural-history control group. The difference was not statistically significant, and the benefit had narrowed compared with the analysis a year earlier, raising durability questions while the FDA reviews the company's marketing application.",
+              "strategic_implication": "The FDA's decision will test how far regulators will accept external-control data for rare-disease gene therapies, which matters for payers weighing one-time, high-cost treatments.",
+              "confidence": "medium",
+              "tags": [
+                "gene-therapy",
+                "huntingtons",
+                "fda",
+                "rare-disease"
+              ]
+            },
+            {
+              "item_id": "2026-09-29-association-for-direct-care-launch",
+              "canonical_topic": "association-for-direct-care-launch",
+              "duplicate_group": "association-for-direct-care-launch",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/new-coalition-launches-to-expand-direct-contracting/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T22:59:00Z"
+                }
+              ],
+              "title": "New employer-clinician coalition launches to expand direct contracting",
+              "summary": "The Association for Direct Care, a coalition of employers, clinicians, and health-tech companies, launched to promote direct contracts between purchasers and providers. Its six priorities include a federal contracting framework, joint employer purchasing, removing patient-steering restrictions, employer access to claims and pricing data, multistate regulatory clarity, and Department of Labor support. Business Group on Health projects employer health costs will rise 9.2% in 2027.",
+              "strategic_implication": "With employer costs climbing, direct-to-employer contracting is becoming a growth channel for provider groups and centers of excellence that can show transparent prices and outcomes, and a competitive threat to traditional network models.",
+              "confidence": "medium",
+              "tags": [
+                "employers",
+                "direct-contracting",
+                "price-transparency",
+                "benefits"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "A major payer-provider legal settlement and a large health-system CEO transition put contracts, governance, and leadership continuity in focus.",
+          "synthesis": "A major payer-provider settlement, a planned CEO succession, and a surge in social-engineering attacks put contracting, leadership continuity, and security in focus.",
           "items": [
             {
               "item_id": "2026-09-29-unitedhealthcare-teamhealth-settlement",
@@ -250,7 +410,7 @@
                 }
               ],
               "title": "UnitedHealthcare and TeamHealth settle $100 million Tennessee fraud suit",
-              "summary": "UnitedHealthcare and TeamHealth settled a $100 million fraud suit in Tennessee, according to Fierce Healthcare. The legal battle began in 2021 and was dismissed after the parties reached a settlement, per court documents.",
+              "summary": "UnitedHealthcare and TeamHealth settled and dismissed UHC's October 2021 Tennessee lawsuit, which accused the physician-staffing firm of upcoding and submitting about $100 million in fraudulent claims. Terms are confidential, and each side pays its own legal costs. Separately, a Nevada jury had ordered UHC to pay $60 million for underpaying emergency physicians tied to a TeamHealth affiliate.",
               "strategic_implication": "The resolution closes a high-profile dispute but underscores the financial and operational exposure embedded in payer-provider billing and contracting conflicts.",
               "confidence": "high",
               "tags": [
@@ -276,15 +436,41 @@
                   "published_at": "2026-09-28T21:04:00Z"
                 }
               ],
-              "title": "Memorial Hermann CEO David Callender plans to retire at year-end",
-              "summary": "Memorial Hermann Health System announced that CEO David Callender will retire at the end of 2026. The system disclosed the planned departure on Monday.",
-              "strategic_implication": "The organization will need a deliberate succession and transition plan to preserve execution continuity across clinical, financial, and strategic priorities.",
+              "title": "Memorial Hermann CEO David Callender to retire; CFO Alec King to succeed him Jan. 1",
+              "summary": "Memorial Hermann Health System CEO David Callender, M.D., who has led the Houston system since 2019, will retire at year-end. CFO Alec King, who joined in 2020 and oversees payer relationships, revenue cycle, supply chain, and cybersecurity, will become CEO on Jan. 1 under what the system called a multi-year succession plan.",
+              "strategic_implication": "Elevating a CFO with payer and revenue-cycle responsibility signals a financially focused agenda; payers and partners should expect continuity in contracting posture and a sharper focus on margin and growth in the Houston market.",
               "confidence": "high",
               "tags": [
                 "hospital-leadership",
                 "memorial-hermann",
                 "succession",
                 "health-system"
+              ]
+            },
+            {
+              "item_id": "2026-09-29-healthcare-social-engineering-attacks",
+              "canonical_topic": "healthcare-social-engineering-attacks",
+              "duplicate_group": "healthcare-social-engineering-attacks",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/threat-groups-social-engineering-attacks-healthcare/831466/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T11:10:00-04:00"
+                }
+              ],
+              "title": "Threat groups step up voice-phishing and impersonation attacks on healthcare organizations",
+              "summary": "Health-ISAC warned that ShinyHunters has used voice phishing and medical-themed impersonation domains to steal healthcare employees' credentials, hitting more than a dozen member organizations in recent months by pressuring staff to click password- or MFA-reset links. Palo Alto Networks' Unit 42 and ReliaQuest report related phishing infrastructure targeting healthcare and pharma, with new domain registrations continuing into late September.",
+              "strategic_implication": "Help desks and identity-reset processes are now a main attack surface; organizations should require call-back verification for reset requests, move toward phishing-resistant MFA, and train staff on vishing.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "social-engineering",
+                "health-isac",
+                "identity"
               ]
             }
           ]
@@ -309,9 +495,9 @@
                 }
               ],
               "title": "Study highlights persistent long COVID among healthcare workers",
-              "summary": "A new study published in the American Journal of Industrial Medicine examined persistent long COVID among healthcare workers. The report frames the condition as an additional strain on a workforce already facing burnout and staffing shortages.",
-              "strategic_implication": "Employers should factor persistent post-COVID illness into occupational-health support, workforce accommodations, and retention planning.",
-              "confidence": "medium",
+              "summary": "A University of Iowa-led study of about 1,600 healthcare workers infected between August 2022 and May 2024 found 20% reported moderate or severe symptoms at three months and 27.6% at six months; 11.3% had persistent symptoms at both points. Older, female, and chronically ill workers were at higher risk, and recent vaccination was not significantly associated with persistent symptoms. The study appeared in the American Journal of Industrial Medicine.",
+              "strategic_implication": "Employers should plan for roughly one in ten infected staff needing accommodations, reduced hours, or role changes, and build that into occupational-health, scheduling, and retention planning.",
+              "confidence": "high",
               "tags": [
                 "long-covid",
                 "healthcare-workforce",
@@ -12130,363 +12316,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-08-18",
-      "generated_at": "2026-08-18T11:03:47Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today’s briefing highlights the affordability and governance pressures shaping payers and providers, alongside continued expansion of AI-enabled workflows and virtual behavioral care. Signals were gathered from STAT, Healthcare Dive, Fierce Healthcare, company and government disclosures, and targeted web checks, with Aug. 17–18 developments prioritized over prior-edition items.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA/CDC web",
-          "Company and government disclosures",
-          "Targeted web search",
-          "Supplementary Gmail newsletters"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "Company and government disclosures",
-          "Targeted web search"
-        ],
-        "sources_failed": [
-          "Supplementary Gmail newsletters not used",
-          "No additional CMS/HHS/FDA/CDC item was needed for today’s edition"
-        ],
-        "run_notes": "All three required RSS feeds returned successfully. RSS titles and descriptions were paired with one or more targeted web checks for context; official company and Massachusetts WARN disclosures supplied primary confirmation for selected items. Yesterday’s UnitedHealth IRS probe, Epic prior-authorization launch, Abridge expansion, CPT lawsuit, and KFF denial-rate analysis were not republished as standalone items."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Affordability concerns remain broad across coverage types, while shareholder litigation is turning failures in governance, Medicare oversight, and cybersecurity into a board-level risk signal.",
-          "items": [
-            {
-              "item_id": "2026-08-18-healthcare-affordability-survey",
-              "canonical_topic": "healthcare-affordability-survey",
-              "duplicate_group": "healthcare-affordability-survey",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/premiums-out-pocket-costs-dominate-americans-healthcare-survey/827893/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-17T13:13:08Z"
-                },
-                {
-                  "source": "Commonwealth Fund",
-                  "url": "https://www.commonwealthfund.org/series/affordability-tracking-surveys",
-                  "source_type": "web",
-                  "published_at": "2026-08-14T00:00:00Z"
-                }
-              ],
-              "title": "Affordability dominates healthcare concerns across party and coverage lines",
-              "summary": "Nearly four in five U.S. adults identified high insurance premiums or out-of-pocket spending as the most important problem in healthcare, according to a Commonwealth Fund survey reported by Healthcare Dive. Premiums were the top concern for 45% of Republicans, 44% of Democrats, and 42% of independents. The survey covered 25,873 adults fielded from May 4 through May 26, 2026.",
-              "strategic_implication": "Affordability is a cross-market pressure rather than a narrow constituency issue, increasing the value of transparent pricing, benefit design, and interventions that reduce avoidable utilization without shifting more cost to patients.",
-              "confidence": "high",
-              "tags": [
-                "healthcare-affordability",
-                "premiums",
-                "out-of-pocket-costs",
-                "consumer-policy"
-              ]
-            },
-            {
-              "item_id": "2026-08-18-unitedhealth-governance-cyber-lawsuit",
-              "canonical_topic": "unitedhealth-governance-cyber-lawsuit",
-              "duplicate_group": "unitedhealth-governance-cyber-lawsuit",
-              "priority_score": 9,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-17T14:52:53Z"
-                },
-                {
-                  "source": "Claims Journal",
-                  "url": "https://www.claimsjournal.com/news/national/2026/08/13/339498.htm",
-                  "source_type": "web",
-                  "published_at": "2026-08-13T11:02:34Z"
-                }
-              ],
-              "title": "Shareholder suit links UnitedHealth governance failures to Medicare and cyber risk",
-              "summary": "Two institutional investors filed an amended lawsuit alleging that UnitedHealth misled shareholders, rushed its Change Healthcare integration, and ignored cybersecurity weaknesses. The complaint also alleges the company shut down an internal audit program that had identified unsupported Medicare diagnosis codes. UnitedHealth has not been adjudicated liable on these allegations, which remain claims in litigation.",
-              "strategic_implication": "The case raises the cost of weak board-level controls across payer, cyber, and Medicare compliance domains; integrated operators should treat audit findings, acquisition integration, and security exceptions as linked enterprise risks.",
-              "confidence": "medium",
-              "tags": [
-                "unitedhealth",
-                "corporate-governance",
-                "cybersecurity",
-                "medicare-compliance",
-                "shareholder-litigation"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Healthcare AI expansion is increasingly tied to implementation capacity and connected operational data, not only model capability or pilot enthusiasm.",
-          "items": [
-            {
-              "item_id": "2026-08-18-innovaccer-mastek-ai-partnership",
-              "canonical_topic": "innovaccer-mastek-ai-partnership",
-              "duplicate_group": "innovaccer-mastek-ai-partnership",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/innovaccer-mastek-ink-strategic-partnership-accelerate-global-deployment-agentic",
-                  "source_type": "rss",
-                  "published_at": "2026-08-17T14:59:00Z"
-                },
-                {
-                  "source": "Innovaccer",
-                  "url": "https://innovaccer.com/partnerships/mastek",
-                  "source_type": "web",
-                  "published_at": "2026-08-13T00:00:00Z"
-                }
-              ],
-              "title": "Innovaccer and Mastek partner to scale agentic healthcare operations globally",
-              "summary": "Innovaccer is adding Mastek to its Platinum global systems-integrator program to expand deployment of its Gravity healthcare AI platform. The partnership targets North America, the U.K., Europe, and the Middle East, with use cases spanning revenue cycle, prior authorization, denials, population health, payer performance, scheduling, and referrals. Mastek brings implementation and regional delivery capabilities rather than a standalone clinical model.",
-              "strategic_implication": "The alliance reinforces that enterprise AI value will depend on data integration, workflow redesign, governance, and local implementation depth; buyers should evaluate delivery capacity and measurable operating outcomes alongside model performance.",
-              "confidence": "medium",
-              "tags": [
-                "agentic-ai",
-                "healthcare-operations",
-                "interoperability",
-                "revenue-cycle",
-                "systems-integration"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Payer leadership succession and novel obesity therapeutics point to a market balancing financial discipline with continued investment in differentiated clinical platforms.",
-          "items": [
-            {
-              "item_id": "2026-08-18-centene-cfo-succession",
-              "canonical_topic": "centene-cfo-succession",
-              "duplicate_group": "centene-cfo-succession",
-              "priority_score": 8,
-              "primary_source": "Centene",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/centene-cfo-to-step-down-at-year-end/828030/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-17T15:58:25Z"
-                },
-                {
-                  "source": "Reuters",
-                  "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/centene-names-chris-neczypor-new-cfo-2026-08-17/",
-                  "source_type": "web",
-                  "published_at": "2026-08-17T15:02:34Z"
-                }
-              ],
-              "title": "Centene names Chris Neczypor to succeed CFO Drew Asher in 2027",
-              "summary": "Centene said CFO Drew Asher will step down on Dec. 31, 2026, retire at the end of 2027, and support a transition as a strategic adviser. Chris Neczypor, formerly CFO at Lincoln Financial, will join Centene in September and assume the CFO role on Jan. 1, 2027. Reuters reported that the change comes as Centene works to improve profitability amid pressure in its Medicaid and Obamacare businesses.",
-              "strategic_implication": "A planned handoff reduces near-term execution risk but puts the incoming CFO under pressure to demonstrate durable medical-cost control, Medicaid performance, and capital discipline across a complex payer portfolio.",
-              "confidence": "high",
-              "tags": [
-                "centene",
-                "payer-economics",
-                "cfo-transition",
-                "medicaid",
-                "aca-marketplace"
-              ]
-            },
-            {
-              "item_id": "2026-08-18-amylyx-avexitide-phase-three",
-              "canonical_topic": "amylyx-avexitide-phase-three",
-              "duplicate_group": "amylyx-avexitide-phase-three",
-              "priority_score": 8,
-              "primary_source": "Amylyx",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/18/amylyx-endocrine-drug-succeeds-in-pivotal-study-avexitide-bariatric-surgery-patients/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-18T11:01:00Z"
-                },
-                {
-                  "source": "Amylyx",
-                  "url": "https://www.amylyx.com/news/amylyx-pharmaceuticals-to-announce-topline-results-from-its-phase-3-lucidity-clinical-trial-of-avexitide-in-post-bariatric-hypoglycemia-on-august-18-2026",
-                  "source_type": "web",
-                  "published_at": "2026-08-17T00:00:00Z"
-                }
-              ],
-              "title": "Amylyx reports positive Phase 3 avexitide results for post-bariatric hypoglycemia",
-              "summary": "Amylyx reported that participants taking avexitide in the Phase 3 LUCIDITY trial experienced a 55% reduction in serious low-blood-sugar events compared with placebo. The trial studied adults with post-bariatric hypoglycemia, a complication that can follow weight-loss surgery. Avexitide remains investigational and would require regulatory review before commercialization.",
-              "strategic_implication": "If confirmed through regulatory review and longer-term evidence, a targeted therapy for post-bariatric hypoglycemia could create a new specialty market and add a treatment option for patients whose current management is limited.",
-              "confidence": "medium",
-              "tags": [
-                "avexitide",
-                "obesity-medicine",
-                "post-bariatric-hypoglycemia",
-                "clinical-trials"
-              ]
-            },
-            {
-              "item_id": "2026-08-18-enveda-env-308-phase-one",
-              "canonical_topic": "enveda-env-308-phase-one",
-              "duplicate_group": "enveda-env-308-phase-one",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/18/enveda-pill-mimics-exercise-phase-one-trial-leptin-weight-loss-maintenance/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-18T10:00:00Z"
-                },
-                {
-                  "source": "Enveda",
-                  "url": "https://enveda.com/pipeline/",
-                  "source_type": "web",
-                  "published_at": "2024-10-15T00:00:00Z"
-                }
-              ],
-              "title": "Enveda advances oral weight-loss-maintenance candidate designed to preserve lean mass",
-              "summary": "Enveda released early Phase 1 results for ENV-308, an oral candidate intended to support weight maintenance after initial loss and mimic part of exercise’s muscle-preserving effect. The molecule is a chemically engineered version of the lactate-phenylalanine metabolite known as lac-phe and is designed to act through leptin sensitization. The program is still in Phase 1, so efficacy and durability remain unproven.",
-              "strategic_implication": "The program reflects a commercial shift from maximizing initial weight loss toward maintenance, tolerability, and body-composition outcomes—dimensions that may shape the next wave of obesity-drug differentiation.",
-              "confidence": "low",
-              "tags": [
-                "obesity-medicine",
-                "weight-maintenance",
-                "lean-mass",
-                "phase-one",
-                "metabolic-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Provider performance is diverging: strong system-level results and behavioral-health expansion coexist with financing complexity and a continuing need to convert scale into operating improvement.",
-          "items": [
-            {
-              "item_id": "2026-08-18-kaiser-q2-2026-results",
-              "canonical_topic": "kaiser-q2-2026-results",
-              "duplicate_group": "kaiser-q2-2026-results",
-              "priority_score": 8,
-              "primary_source": "Kaiser Permanente",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/kaiser-permanente-notches-46-q2-operating-margin-53b-net-income",
-                  "source_type": "rss",
-                  "published_at": "2026-08-17T16:23:00Z"
-                },
-                {
-                  "source": "Kaiser Permanente",
-                  "url": "https://about.kaiserpermanente.org/news/kaiser-permanente-and-risant-health-q2-2026-financial-update",
-                  "source_type": "web",
-                  "published_at": "2026-08-14T00:00:00Z"
-                }
-              ],
-              "title": "Kaiser posts $1.7B operating income and $5.3B net income in Q2",
-              "summary": "Kaiser Permanente and Risant Health reported $35.6 billion in second-quarter operating revenue and $34.0 billion in operating expenses. Operating income was $1.7 billion, compared with $1.0 billion a year earlier, while net income reached $5.3 billion. Kaiser said investment and other income contributed $3.6 billion, or nearly 69% of total net income, reflecting strong financial-market returns.",
-              "strategic_implication": "The result shows meaningful operating improvement but also why leaders should separate recurring care-delivery performance from investment-driven earnings when planning capacity, pricing, and capital deployment.",
-              "confidence": "high",
-              "tags": [
-                "kaiser-permanente",
-                "hospital-operations",
-                "operating-margin",
-                "health-system-finance"
-              ]
-            },
-            {
-              "item_id": "2026-08-18-uhs-talkspace-acquisition",
-              "canonical_topic": "uhs-talkspace-acquisition",
-              "duplicate_group": "uhs-talkspace-acquisition",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/uhs-closes-talkspace-acquisition-mental-health-game-changer-ceo-marc-miller/827901/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-17T12:05:00Z"
-                },
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/finance/universal-health-services-closes-835m-talkspace-acquisition",
-                  "source_type": "rss",
-                  "published_at": "2026-08-16T03:23:00Z"
-                }
-              ],
-              "title": "UHS closes $835M Talkspace deal to expand its behavioral-health continuum",
-              "summary": "Universal Health Services completed its $835 million acquisition of online therapy company Talkspace after receiving regulatory approvals. UHS expects the combination to connect inpatient, intensive outpatient, partial hospitalization, therapy, and virtual-assessment services, while Talkspace retains its brand as a wholly owned subsidiary. UHS said Talkspace could generate about $280 million in revenue this year and be slightly accretive to adjusted earnings in its first year.",
-              "strategic_implication": "The deal gives UHS a digital front door and referral channel for behavioral care, but the value case depends on integrating virtual access with higher-acuity services, payer contracting, clinical quality, and workforce capacity.",
-              "confidence": "high",
-              "tags": [
-                "behavioral-health",
-                "telehealth",
-                "hospital-operations",
-                "vertical-integration"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Workforce planning is becoming more tightly linked to post-acquisition integration and biotech portfolio decisions, with reductions arriving even in major life-sciences employment hubs.",
-          "items": [
-            {
-              "item_id": "2026-08-18-sanofi-blueprint-layoffs",
-              "canonical_topic": "sanofi-blueprint-layoffs",
-              "duplicate_group": "sanofi-blueprint-layoffs",
-              "priority_score": 7,
-              "primary_source": "Massachusetts WARN notice",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Massachusetts WARN report",
-                  "url": "https://www.mass.gov/files/csv/2026-08/WARN%20Report%20for%20the%20Week%20Ending%2008-14-2026_0.csv",
-                  "source_type": "web",
-                  "published_at": "2026-08-14T00:00:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/17/sanofi-layoffs-mass-blueprint-medicines/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-17T19:23:54Z"
-                }
-              ],
-              "title": "Sanofi to cut 229 Massachusetts jobs a year after acquiring Blueprint",
-              "summary": "A Massachusetts WARN filing lists 229 layoffs at Blueprint Medicines, identified as a Sanofi company, with cuts scheduled from Oct. 9, 2026 through June 25, 2027. STAT reported that the affected employees came from Blueprint, which Sanofi acquired for $9.1 billion in July 2025. The filing illustrates how post-deal integration can alter local staffing even when the acquired company remains strategically important.",
-              "strategic_implication": "Life-sciences employers and regional health ecosystems should model integration-related workforce changes explicitly, including retention risk, specialized talent displacement, and the operational impact of consolidating overlapping functions.",
-              "confidence": "high",
-              "tags": [
-                "sanofi",
-                "blueprint-medicines",
-                "workforce-restructuring",
-                "biopharma",
-                "massachusetts"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-09-29T11:05:23Z"
+  "last_updated": "2026-09-29T12:34:08Z"
 }

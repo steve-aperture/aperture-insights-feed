@@ -3,6 +3,327 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-29",
+      "generated_at": "2026-09-29T11:05:23Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition tracks Medicare Advantage premium projections and device reimbursement, health-data access and clinical AI partnerships, and a mix of drug, payer, and provider developments. It draws on STAT News, Healthcare Dive, Fierce Healthcare, and a targeted Google search used to cross-check the Medicare Advantage premium figures.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted web search for Medicare Advantage 2027 premium projections"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Google search results for 2027 Medicare Advantage premium projections"
+        ],
+        "sources_failed": [
+          "search_web tool was not exposed in this runtime; Google browser search was used for targeted cross-checking"
+        ],
+        "run_notes": "Cloned the repository fresh and screened the previous edition to avoid republishing its stories. RSS titles and descriptions supplied the reporting signals; one targeted browser search added context for the CMS Medicare Advantage premium projection. Gmail labels were supplementary and were not needed."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS premium projections and Medicare's treatment of breakthrough devices create two different payment signals for plans, providers, and innovators.",
+          "items": [
+            {
+              "item_id": "2026-09-29-cms-medicare-advantage-premium-projection",
+              "canonical_topic": "cms-medicare-advantage-premium-projection",
+              "duplicate_group": "cms-medicare-advantage-premium-projection",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cms-projects-medicare-advantage-premiums-decline-16-2027",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T21:39:00Z"
+                }
+              ],
+              "title": "CMS projects Medicare Advantage premiums will fall 16% in 2027",
+              "summary": "CMS projects average Medicare Advantage premiums to decline 16% in 2027. For Medicare Advantage prescription-drug plans, the average monthly premium after rebates is projected at $7, down 38% from $11.32 in 2026.",
+              "strategic_implication": "Plans should test how lower premiums interact with benefit design, supplemental benefits, and member retention as 2027 bids and competitive positioning take shape.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "cms",
+                "premiums",
+                "2027",
+                "health-plans"
+              ]
+            },
+            {
+              "item_id": "2026-09-29-medicare-breakthrough-device-payment",
+              "canonical_topic": "medicare-breakthrough-device-payment",
+              "duplicate_group": "medicare-breakthrough-device-payment",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/29/fda-breakthrough-medical-devices-special-treatment-medicare/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T08:30:00Z"
+                }
+              ],
+              "title": "FDA breakthrough designation no longer guarantees special Medicare payment treatment",
+              "summary": "STAT reports that medical devices designated as breakthrough by the FDA are no longer automatically eligible for extra Medicare payments. The change separates a device's breakthrough designation from automatic additional Medicare payment treatment.",
+              "strategic_implication": "Medtech companies should reassess launch economics and reimbursement planning rather than treating FDA breakthrough status as a proxy for incremental Medicare payment.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "fda",
+                "breakthrough-devices",
+                "reimbursement"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Debates over data access and cross-border clinical AI deployment put governance, evidence, and responsible scaling at the center of digital-health strategy.",
+          "items": [
+            {
+              "item_id": "2026-09-29-maha-health-data-access",
+              "canonical_topic": "maha-health-data-access",
+              "duplicate_group": "maha-health-data-access",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/29/why-maha-wants-to-make-health-data-much-more-accessible/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T08:30:00Z"
+                }
+              ],
+              "title": "MAHA leaders call for broader health-data access for research",
+              "summary": "At a MAHA Institute event, HHS Secretary Robert F. Kennedy Jr. and others argued that health data should be more accessible to researchers. They cited research into vaccines, chronic disease, and autism as areas that could benefit.",
+              "strategic_implication": "Health systems and data holders should anticipate renewed policy pressure to expand research access while strengthening privacy, consent, security, and data-quality safeguards.",
+              "confidence": "medium",
+              "tags": [
+                "health-data",
+                "research",
+                "maha",
+                "hhs",
+                "privacy"
+              ]
+            },
+            {
+              "item_id": "2026-09-29-openevidence-ai-global-clinical-support",
+              "canonical_topic": "openevidence-ai-global-clinical-support",
+              "duplicate_group": "openevidence-ai-global-clinical-support",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-partners-anthropic-and-penn-medicine-expand-medical-ai",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T16:55:00Z"
+                }
+              ],
+              "title": "OpenEvidence, Anthropic, and Penn Medicine target broader physician access to AI",
+              "summary": "OpenEvidence is partnering with Anthropic and Penn Medicine to expand access to its AI-powered clinical decision-support technology. The initiative is aimed at physicians in low- and middle-income countries across Africa and Asia.",
+              "strategic_implication": "The partnership highlights a route to scale clinical AI through institutional and technology alliances; deployment will depend on local validation, clinical governance, and fit with care settings.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "openevidence",
+                "global-health",
+                "clinical-decision-support"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "A new Parkinson's approval, withdrawal of an important antibiotic, and a regional Medicare Advantage expansion illustrate divergent growth and supply pressures across the health market.",
+          "items": [
+            {
+              "item_id": "2026-09-29-abbvie-parkinsons-pill-approval",
+              "canonical_topic": "abbvie-parkinsons-pill-approval",
+              "duplicate_group": "abbvie-parkinsons-pill-approval",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/28/biotech-news-abbvie-wins-fda-nod-for-parkinsons-pill/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T13:40:32Z"
+                }
+              ],
+              "title": "FDA approves AbbVie's once-daily Parkinson's pill",
+              "summary": "The FDA approved AbbVie's once-daily pill for Parkinson's disease, according to STAT. The approval was based on a late-stage study that showed the drug improved symptoms.",
+              "strategic_implication": "The approval adds a new branded treatment option in Parkinson's care, making access, prescribing protocols, and comparative evidence relevant for neurology practices and payers.",
+              "confidence": "high",
+              "tags": [
+                "parkinsons",
+                "abbvie",
+                "fda",
+                "drug-approval"
+              ]
+            },
+            {
+              "item_id": "2026-09-29-merck-recarbrio-discontinuation",
+              "canonical_topic": "merck-recarbrio-discontinuation",
+              "duplicate_group": "merck-recarbrio-discontinuation",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/28/merck-discontinues-antibiotic-recarbrio-in-u-s-despite-superbug-concerns/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T20:45:43Z"
+                }
+              ],
+              "title": "Merck discontinues Recarbrio in the U.S. amid concern about drug-resistant infections",
+              "summary": "Merck has discontinued Recarbrio in the United States, STAT reports, despite concerns about antibiotic resistance. The report describes Recarbrio as an important antibiotic in the U.S. market.",
+              "strategic_implication": "Hospital pharmacies and infectious-disease teams should review availability and substitution pathways for affected patients while reinforcing antimicrobial stewardship.",
+              "confidence": "medium",
+              "tags": [
+                "antibiotics",
+                "antimicrobial-resistance",
+                "merck",
+                "drug-supply"
+              ]
+            },
+            {
+              "item_id": "2026-09-29-scan-oregon-senior-living-partnership",
+              "canonical_topic": "scan-oregon-senior-living-partnership",
+              "duplicate_group": "scan-oregon-senior-living-partnership",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/scan-expands-reach-oregon-partnership-springs-living",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T20:36:00Z"
+                }
+              ],
+              "title": "SCAN expands into Oregon through senior-living partnership",
+              "summary": "SCAN Health Plan is partnering with senior-living organization The Springs Living to launch co-branded products in Oregon. The offering is intended to create a more connected experience for residents.",
+              "strategic_implication": "The arrangement is another example of plans using senior-living partnerships to reach older adults and coordinate services; execution will depend on enrollment, care integration, and member experience.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "senior-living",
+                "oregon",
+                "payer-provider"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "A major payer-provider legal settlement and a large health-system CEO transition put contracts, governance, and leadership continuity in focus.",
+          "items": [
+            {
+              "item_id": "2026-09-29-unitedhealthcare-teamhealth-settlement",
+              "canonical_topic": "unitedhealthcare-teamhealth-settlement",
+              "duplicate_group": "unitedhealthcare-teamhealth-settlement",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/unitedhealthcare-team-health-settle-100m-fraud-suit-tennessee",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T17:17:00Z"
+                }
+              ],
+              "title": "UnitedHealthcare and TeamHealth settle $100 million Tennessee fraud suit",
+              "summary": "UnitedHealthcare and TeamHealth settled a $100 million fraud suit in Tennessee, according to Fierce Healthcare. The legal battle began in 2021 and was dismissed after the parties reached a settlement, per court documents.",
+              "strategic_implication": "The resolution closes a high-profile dispute but underscores the financial and operational exposure embedded in payer-provider billing and contracting conflicts.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealthcare",
+                "teamhealth",
+                "litigation",
+                "payer-provider",
+                "billing"
+              ]
+            },
+            {
+              "item_id": "2026-09-29-memorial-hermann-ceo-retirement",
+              "canonical_topic": "memorial-hermann-ceo-retirement",
+              "duplicate_group": "memorial-hermann-ceo-retirement",
+              "priority_score": 5,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/hospitals/memorial-hermann-ceo-set-retire-end-year",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T21:04:00Z"
+                }
+              ],
+              "title": "Memorial Hermann CEO David Callender plans to retire at year-end",
+              "summary": "Memorial Hermann Health System announced that CEO David Callender will retire at the end of 2026. The system disclosed the planned departure on Monday.",
+              "strategic_implication": "The organization will need a deliberate succession and transition plan to preserve execution continuity across clinical, financial, and strategic priorities.",
+              "confidence": "high",
+              "tags": [
+                "hospital-leadership",
+                "memorial-hermann",
+                "succession",
+                "health-system"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "New evidence on persistent long COVID among healthcare workers reinforces the need to account for post-infectious illness in workforce planning.",
+          "items": [
+            {
+              "item_id": "2026-09-29-healthcare-workers-persistent-long-covid",
+              "canonical_topic": "healthcare-workers-persistent-long-covid",
+              "duplicate_group": "healthcare-workers-persistent-long-covid",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-workers-battle-persistent-long-covid/831493/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-28T14:47:17Z"
+                }
+              ],
+              "title": "Study highlights persistent long COVID among healthcare workers",
+              "summary": "A new study published in the American Journal of Industrial Medicine examined persistent long COVID among healthcare workers. The report frames the condition as an additional strain on a workforce already facing burnout and staffing shortages.",
+              "strategic_implication": "Employers should factor persistent post-COVID illness into occupational-health support, workforce accommodations, and retention planning.",
+              "confidence": "medium",
+              "tags": [
+                "long-covid",
+                "healthcare-workforce",
+                "occupational-health",
+                "staffing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-28",
       "generated_at": "2026-09-28T12:42:48Z",
       "headline": "Today's Healthcare Insights",
@@ -12167,5 +12488,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-28T12:42:48Z"
+  "last_updated": "2026-09-29T11:05:23Z"
 }

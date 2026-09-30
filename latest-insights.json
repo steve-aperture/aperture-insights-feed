@@ -3,6 +3,359 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-09-30",
+      "generated_at": "2026-09-30T11:11:32Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition covers drug-safety and import-policy debates, 2027 Medicare Advantage plan reductions, accelerating clinical AI investment, a proposed Midwest health-system merger, and clinician supply risk. It draws on STAT News, Healthcare Dive, and Fierce Healthcare RSS, supplemented by targeted Google News RSS searches for corroborating context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Direct search_web queries for CMS/HHS/FDA, Medicare, hospital/market activity, digital health/AI, and workforce",
+          "Targeted Google News RSS searches for corroborating context"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted Google News RSS searches (supplementary)"
+        ],
+        "sources_failed": [
+          "Direct search_web tool was not available in the callable tool interface; Google News RSS searches were used as a supplementary fallback."
+        ],
+        "run_notes": "All three requested publisher RSS feeds returned current items. The feed descriptions and targeted news-search results provided sufficient signal for today's 11-item edition; Gmail labels were not queried because they are supplementary."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS's 2027 Medicare Advantage landscape and emerging federal drug-access rules signal pressure on choice and affordability, while the 7-OH debate highlights the balance between safety controls and access.",
+          "items": [
+            {
+              "item_id": "2026-09-30-kratom-7oh-regulatory-debate",
+              "canonical_topic": "kratom-7oh-regulatory-debate",
+              "duplicate_group": "kratom-7oh-regulatory-debate",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/30/dea-proposal-7-oh-kratom-schedule-1-drug/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T08:30:00Z"
+                }
+              ],
+              "title": "Experts agree concentrated 7-OH products need safeguards, but differ on how to regulate them",
+              "summary": "STAT reports that clinicians and recovery advocates warn highly concentrated 7-hydroxymitragynine (7-OH) products may carry greater dependence risks than kratom leaf products, although research remains limited. Experts broadly agree safeguards are needed but disagree on the appropriate regulatory approach.",
+              "strategic_implication": "Regulators, addiction-care teams, and retailers should monitor emerging rules and prepare for changes to product access and safety controls, while evidence on concentrated 7-OH remains limited.",
+              "confidence": "medium",
+              "tags": [
+                "kratom",
+                "7-oh",
+                "dea",
+                "drug-safety",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-prescription-import-rule-costs",
+              "canonical_topic": "prescription-import-rule-costs",
+              "duplicate_group": "prescription-import-rule-costs",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/29/lawmakers-urge-trump-rethink-new-rule-that-could-restrict-imported-medicines/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T20:41:40Z"
+                }
+              ],
+              "title": "Lawmakers urge reconsideration of a rule that could raise costs for imported prescription medicines",
+              "summary": "A pending federal rule would require medicines mailed from abroad to pass through a customs process involving a licensed broker and an entry bond, adding cost and administrative burden for Americans using licensed international pharmacies. STAT reports that lawmakers are urging the administration to reconsider the change, which is due to take effect next month.",
+              "strategic_implication": "If the rule restricts a lower-cost supply route, patients who rely on international pharmacies may face affordability pressure; health plans and policymakers should track the impact on medication access.",
+              "confidence": "high",
+              "tags": [
+                "drug-pricing",
+                "prescription-imports",
+                "customs",
+                "access",
+                "policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-medicare-advantage-plan-cuts-2027",
+              "canonical_topic": "medicare-advantage-plan-cuts-2027",
+              "duplicate_group": "medicare-advantage-plan-cuts-2027",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medicare-advantage-cuts-2027-cms-landscape/831563/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T12:04:05-04:00"
+                }
+              ],
+              "title": "Insurers continue trimming Medicare Advantage plan options for 2027",
+              "summary": "New CMS data show insurers are reducing the number of Medicare Advantage plans they will offer for 2027 as they adjust to pressure in the privatized Medicare program. Healthcare Dive reports that the administration's release emphasized program stability, but the updated landscape reflects continued plan culling.",
+              "strategic_implication": "Plan reductions may limit member choice and create local market disruption during the 2027 enrollment cycle; health systems should refresh payer-mix, network, and outreach plans in affected markets.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "cms",
+                "2027",
+                "health-plans",
+                "enrollment"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Federal clinical-AI initiatives and substantial private investment are accelerating health technology development, increasing the need for evidence, governance, and operational accountability.",
+          "items": [
+            {
+              "item_id": "2026-09-30-anthropic-arpa-h-clinical-ai",
+              "canonical_topic": "anthropic-arpa-h-clinical-ai",
+              "duplicate_group": "anthropic-arpa-h-clinical-ai",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/29/anthropic-joins-arpa-h-clinical-ai-moonshot-health-tech/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T14:32:24Z"
+                }
+              ],
+              "title": "Anthropic joins ARPA-H clinical AI initiative as health-sector engagement expands",
+              "summary": "STAT reports that Anthropic has joined ARPA-H's clinical AI \"moonshot\" and plans to hold a closed-door healthcare event. The development adds a major AI company to a federal clinical-AI effort as healthcare regulation of the technology remains unsettled.",
+              "strategic_implication": "Health systems and federal partners should establish clear clinical validation, oversight, and procurement criteria as external AI developers deepen their healthcare presence.",
+              "confidence": "medium",
+              "tags": [
+                "anthropic",
+                "arpa-h",
+                "clinical-ai",
+                "federal-research"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-eliseai-funding-valuation",
+              "canonical_topic": "eliseai-funding-valuation",
+              "duplicate_group": "eliseai-funding-valuation",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/eliseai-banks-350m-hits-4b-valuation-accelerated-new-product-development",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T11:01:00-04:00"
+                }
+              ],
+              "title": "EliseAI raises $350M at a $4B valuation to accelerate product development",
+              "summary": "EliseAI raised $350 million at a $4 billion valuation to accelerate product development across healthcare and housing operations. Company executives said it exceeded $200 million in annual recurring revenue in June and had doubled revenue year over year for five consecutive years.",
+              "strategic_implication": "The financing could accelerate AI vendor expansion and product competition; health systems should evaluate automation partners on measurable workflow and patient-service outcomes, not funding momentum alone.",
+              "confidence": "high",
+              "tags": [
+                "eliseai",
+                "healthcare-ai",
+                "funding",
+                "automation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "A proposed Midwest health-system combination, new biosimilar contracting, and a delayed wearable IPO show operators and investors pursuing scale while navigating affordability and financing constraints.",
+          "items": [
+            {
+              "item_id": "2026-09-30-healthpartners-essentia-merger",
+              "canonical_topic": "healthpartners-essentia-merger",
+              "duplicate_group": "healthpartners-essentia-merger",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/healthpartners-essentia-health-announce-merger-plans",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T12:58:00-04:00"
+                }
+              ],
+              "title": "HealthPartners and Essentia Health announce plans to combine in a $12.5B nonprofit system",
+              "summary": "HealthPartners and Essentia Health announced merger plans that would create a multi-state integrated nonprofit with roughly $12.5 billion in scale, 22 hospitals, and a 1.6 million-member insurance business. The proposed combination would bring together provider operations and a substantial regional health-plan footprint.",
+              "strategic_implication": "The combination could reshape contracting leverage, provider competition, and payer relationships across the region; counterparties should assess integration milestones and the resulting market footprint.",
+              "confidence": "high",
+              "tags": [
+                "health-systems",
+                "merger",
+                "minnesota",
+                "nonprofit",
+                "market-consolidation"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-waltz-fresenius-biosimilar-program",
+              "canonical_topic": "waltz-fresenius-biosimilar-program",
+              "duplicate_group": "waltz-fresenius-biosimilar-program",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/waltz-health-fresenius-kabi-partner-direct-payer-biosimilar-program",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T16:56:00-04:00"
+                }
+              ],
+              "title": "Waltz Health and Fresenius Kabi launch a direct-to-payer biosimilar program",
+              "summary": "Waltz Health and Fresenius Kabi are partnering on a direct-to-payer biosimilar program to support direct-to-employer efforts for key biosimilar medicines. The arrangement is intended to expand access through an alternative contracting channel.",
+              "strategic_implication": "Employers and payers should compare direct biosimilar programs with existing pharmacy and medical-benefit channels on net cost, access, and administrative burden.",
+              "confidence": "medium",
+              "tags": [
+                "biosimilars",
+                "fresenius-kabi",
+                "waltz-health",
+                "direct-contracting",
+                "employers"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-oura-ipo-delay",
+              "canonical_topic": "oura-ipo-delay",
+              "duplicate_group": "oura-ipo-delay",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/oura-delays-ipo/831655/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T11:42:41-04:00"
+                }
+              ],
+              "title": "Oura delays its planned IPO, citing uncertainty in public markets",
+              "summary": "Smart-ring maker Oura postponed a previously expected initial public offering, citing market uncertainty. Healthcare Dive reported that the planned offering had been expected to raise up to $2.2 billion.",
+              "strategic_implication": "The delay underscores public-market timing risk for digital-health companies; peers may need to extend private financing runways or adjust growth and liquidity plans.",
+              "confidence": "high",
+              "tags": [
+                "oura",
+                "wearables",
+                "ipo",
+                "digital-health",
+                "financing"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Payer billing policies are sharpening the focus on care setting and reimbursement, while executive changes at a major insurer add a new layer to operational modernization efforts.",
+          "items": [
+            {
+              "item_id": "2026-09-30-elevance-site-of-care-billing",
+              "canonical_topic": "elevance-site-of-care-billing",
+              "duplicate_group": "elevance-site-of-care-billing",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/elevance-health-rolls-out-new-site-care-billing-policies",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T15:13:00-04:00"
+                }
+              ],
+              "title": "Elevance introduces new site-of-care billing policies",
+              "summary": "Elevance Health is rolling out billing policies intended to ensure services are paid at the appropriate level and increase transparency about where patients receive care. The move puts site-of-care practices and reimbursement settings in focus for providers.",
+              "strategic_implication": "Providers should review contract terms, site-specific payment rules, and patient-routing workflows to anticipate reimbursement exposure and possible shifts toward lower-cost settings.",
+              "confidence": "high",
+              "tags": [
+                "elevance",
+                "site-of-care",
+                "billing",
+                "payer-policy",
+                "provider-operations"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-unitedhealthcare-president-appointment",
+              "canonical_topic": "unitedhealthcare-president-appointment",
+              "duplicate_group": "unitedhealthcare-president-appointment",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/unitedhealthcare-names-new-president-in-latest-leadership-shuffle/831643/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T11:38:00-04:00"
+                }
+              ],
+              "title": "UnitedHealthcare names Robert Hunter president amid broader leadership changes",
+              "summary": "UnitedHealthcare named Robert Hunter president, with a focus on the insurer's modernization agenda. Healthcare Dive described the appointment as part of a series of leadership changes at UnitedHealth as the company works to restore its image.",
+              "strategic_implication": "Providers and vendors should monitor whether the leadership shift changes UnitedHealthcare's modernization priorities, operating practices, or engagement with external partners.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealthcare",
+                "leadership",
+                "modernization",
+                "payer-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "The projected rise in clinician shortages reinforces the need for long-horizon workforce planning that combines recruitment with retention, training, and workflow redesign.",
+          "items": [
+            {
+              "item_id": "2026-09-30-clinician-shortage-projection-2040",
+              "canonical_topic": "clinician-shortage-projection-2040",
+              "duplicate_group": "clinician-shortage-projection-2040",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/clinician-shortage-to-double-by-2040/831630/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T10:37:13-04:00"
+                }
+              ],
+              "title": "A new report projects the U.S. clinician shortage will nearly double by 2040",
+              "summary": "A report from healthcare education company Covista projects that the U.S. clinician shortage will nearly double by 2040. Healthcare Dive characterizes the forecast as a looming workforce crisis but notes that mitigation remains possible.",
+              "strategic_implication": "Health systems and workforce planners should prioritize multi-year recruitment, retention, training, and role redesign to preserve access as supply constraints deepen.",
+              "confidence": "medium",
+              "tags": [
+                "clinician-workforce",
+                "staffing",
+                "shortage",
+                "2040",
+                "workforce-planning"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-29",
       "generated_at": "2026-09-29T12:34:08Z",
       "headline": "Today's Healthcare Insights",
@@ -12318,5 +12671,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-29T12:34:08Z"
+  "last_updated": "2026-09-30T11:11:32Z"
 }

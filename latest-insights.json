@@ -3,6 +3,340 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-01",
+      "generated_at": "2026-10-01T11:07:10Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s edition focuses on a new Medicare drug-pricing model, Medicaid eligibility changes, federal AI research initiatives, and evolving purchaser expectations for digital health and pharmacy benefits. It draws on STAT News and Fierce Healthcare RSS coverage, with Google News RSS queries used to cross-check selected developments.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Google News RSS searches for selected policy, payer, provider, and digital-health developments"
+        ],
+        "sources_successful": [
+          "STAT News RSS (current feed retrieved)",
+          "Healthcare Dive RSS (current feed retrieved; screened for recent distinct developments)",
+          "Fierce Healthcare RSS (current feed retrieved)",
+          "Google News RSS targeted queries (selected stories cross-checked)"
+        ],
+        "sources_failed": [
+          "search_web tool was not exposed in this scheduled-run environment; Google News RSS query feeds were used as the search fallback",
+          "Gmail supplementary labels were not queried"
+        ],
+        "run_notes": "Built from current RSS coverage and targeted Google News RSS queries, screening against the prior edition to avoid repeating the Medicare Advantage, Elevance site-of-care, and HealthPartners-Essentia merger stories. Ten items were retained across policy, digital health, market, and provider operations; no distinct workforce item was surfaced."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "A new Medicare Part B pricing model and an Oct. 1 Medicaid eligibility shift put drug affordability and coverage continuity in focus. Both changes warrant close monitoring for effects on manufacturers, providers, states, and safety-net organizations.",
+          "items": [
+            {
+              "item_id": "2026-10-01-cms-globe-part-b-pricing-model",
+              "canonical_topic": "cms-globe-part-b-pricing-model",
+              "duplicate_group": "cms-globe-part-b-pricing-model",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cms-finalizes-model-aims-bring-most-favored-nation-pricing-part-b",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T21:40:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/30/trump-final-globe-rule-will-save-medicare-much-less-money-on-drugs/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T23:15:09Z"
+                }
+              ],
+              "title": "CMS finalizes a narrower most-favored-nation model for Medicare Part B",
+              "summary": "The administration finalized the GLOBE model, which aims to apply most-favored-nation pricing to drugs administered under Medicare Part B. STAT reports the final rule covers four companies and is projected to save substantially less than the initial proposal.",
+              "strategic_implication": "Manufacturers and providers exposed to the selected drugs should assess the model’s pricing and reimbursement effects as implementation details emerge; the narrower scope may limit system-wide savings while still creating product-level disruption.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "medicare-part-b",
+                "drug-pricing",
+                "globe-model",
+                "reimbursement"
+              ]
+            },
+            {
+              "item_id": "2026-10-01-legal-immigrants-medicaid-coverage-cutoff",
+              "canonical_topic": "legal-immigrants-medicaid-coverage-cutoff",
+              "duplicate_group": "legal-immigrants-medicaid-coverage-cutoff",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/30/legal-immigrants-risk-losing-medicaid-coverage-trump/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T15:50:06Z"
+                }
+              ],
+              "title": "Federal eligibility changes put some lawfully present immigrants at risk of losing Medicaid",
+              "summary": "As of Oct. 1, hundreds of thousands of people with legal status—including refugees and survivors of sex trafficking—are at risk of losing government health coverage, according to STAT. The change follows federal legislation narrowing eligibility for some immigrant groups.",
+              "strategic_implication": "States, health systems, and safety-net providers should prepare for eligibility churn, increased uncompensated care, and urgent patient communications while tracking implementation and litigation.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "immigrant-health",
+                "coverage",
+                "eligibility",
+                "safety-net"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Federal AI-enabled clinical-trial efforts and outcome-linked digital-health purchasing both signal a stronger push for demonstrable performance. Research sponsors and vendors will need to pair innovation with credible evidence and operational safeguards.",
+          "items": [
+            {
+              "item_id": "2026-10-01-hhs-ai-clinical-trials-initiative",
+              "canonical_topic": "hhs-ai-clinical-trials-initiative",
+              "duplicate_group": "hhs-ai-clinical-trials-initiative",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/30/hhs-arpa-h-clinical-trials-artificial-intelligence-surpass-program/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T20:09:15Z"
+                }
+              ],
+              "title": "HHS turns to AI to accelerate and expand clinical trials",
+              "summary": "HHS announced new efforts to use artificial intelligence to speed up and broaden clinical research, framing the work as part of the effort to compete with countries such as China. The initiative centers on federal support for applying AI to clinical-trial processes.",
+              "strategic_implication": "Sponsors and research institutions should watch for program details and partnership opportunities, while ensuring that AI-enabled recruitment and trial operations preserve evidence quality, privacy, and equitable enrollment.",
+              "confidence": "medium",
+              "tags": [
+                "hhs",
+                "arpa-h",
+                "clinical-trials",
+                "artificial-intelligence",
+                "research"
+              ]
+            },
+            {
+              "item_id": "2026-10-01-performance-based-digital-health-contracts",
+              "canonical_topic": "performance-based-digital-health-contracts",
+              "duplicate_group": "performance-based-digital-health-contracts",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/digital-health/most-employers-health-plans-use-performance-based-digital-health-contracts-phti",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T19:57:00Z"
+                }
+              ],
+              "title": "Employers increasingly tie digital-health payments to outcomes",
+              "summary": "A PHTI survey of 321 digital-health purchasing professionals across employers, health plans, and health systems found growing use of performance-based payment arrangements. The findings point to buyers placing more emphasis on demonstrable results when structuring digital-health contracts.",
+              "strategic_implication": "Digital-health vendors should expect stronger demands for measurable outcomes and clearer attribution; purchasers can use contract design to align payment with clinical and financial value.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "employers",
+                "value-based-care",
+                "outcomes",
+                "health-plans"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Investor litigation adds pressure on a major payer, while renewed biopharma collaboration and a potential COVID-19 antibody program highlight continued portfolio and pipeline activity. PBM sentiment remains mixed across plan sponsors.",
+          "items": [
+            {
+              "item_id": "2026-10-01-unitedhealth-investor-lawsuit-advances",
+              "canonical_topic": "unitedhealth-investor-lawsuit-advances",
+              "duplicate_group": "unitedhealth-investor-lawsuit-advances",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/30/unitedhealth-investor-lawsuit-moves-forward-allegations-of-manufactured-earnings-to-hide-declining-profits/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T22:40:54Z"
+                }
+              ],
+              "title": "Investor lawsuit against UnitedHealth advances after judge rejects dismissal bid",
+              "summary": "A federal judge declined UnitedHealth Group’s motion to dismiss an investor lawsuit alleging that the company manufactured earnings to conceal declining profits. The allegations remain claims in litigation, not established findings.",
+              "strategic_implication": "The case adds to scrutiny of UnitedHealth’s financial reporting and governance; health-sector leaders should monitor the discovery and any implications for investor confidence or regulatory attention.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealth",
+                "litigation",
+                "investor-relations",
+                "governance",
+                "payer"
+              ]
+            },
+            {
+              "item_id": "2026-10-01-sanofi-regeneron-extend-dupixent-partnership",
+              "canonical_topic": "sanofi-regeneron-extend-dupixent-partnership",
+              "duplicate_group": "sanofi-regeneron-extend-dupixent-partnership",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/01/sanofi-regeneron-agreement-dupixent-antibodies-immunology/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-01T06:16:27Z"
+                }
+              ],
+              "title": "Sanofi and Regeneron renew their antibody partnership after Dupixent success",
+              "summary": "Sanofi and Regeneron have renewed their collaboration, aiming to build on the commercial and development success of Dupixent. The companies are extending a long-running alliance focused on antibody medicines and immunology.",
+              "strategic_implication": "The renewed partnership reinforces the strategic value of shared development and commercialization for blockbuster biologics; competitors should watch for pipeline expansion and shifts in immunology market positioning.",
+              "confidence": "medium",
+              "tags": [
+                "sanofi",
+                "regeneron",
+                "dupixent",
+                "biopharma",
+                "immunology"
+              ]
+            },
+            {
+              "item_id": "2026-10-01-invivyd-covid-antibody-development",
+              "canonical_topic": "invivyd-covid-antibody-development",
+              "duplicate_group": "invivyd-covid-antibody-development",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/01/invivyds-covid-antibody-development/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-01T10:30:00Z"
+                }
+              ],
+              "title": "Invivyd advances an injectable antibody as a potential COVID-19 protection option",
+              "summary": "Invivyd is developing an injectable, low-dose monoclonal antibody intended to protect against COVID-19. STAT reports that the program has received a lift but still faces a potential FDA hurdle.",
+              "strategic_implication": "A viable preventive antibody could add an option for people poorly served by vaccines, but investors and care organizations should treat the opportunity as contingent on regulatory review and clinical evidence.",
+              "confidence": "medium",
+              "tags": [
+                "covid-19",
+                "monoclonal-antibody",
+                "biotechnology",
+                "fda",
+                "prevention"
+              ]
+            },
+            {
+              "item_id": "2026-10-01-pbm-satisfaction-2026-survey",
+              "canonical_topic": "pbm-satisfaction-2026-survey",
+              "duplicate_group": "pbm-satisfaction-2026-survey",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/plan-sponsors-pbm-satisfaction-stable-2026-psg-survey",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T16:50:00Z"
+                }
+              ],
+              "title": "Plan-sponsor satisfaction with PBMs holds near even as ratings diverge",
+              "summary": "A 2026 survey of 250 plan leaders found overall satisfaction with pharmacy benefit managers near an even split. Scores improved for the three largest PBMs while declining for other providers, according to Fierce Healthcare.",
+              "strategic_implication": "PBMs face a more segmented buyer landscape rather than a uniform shift in sentiment; plan sponsors should compare service, transparency, and outcomes rather than rely on category-wide assumptions.",
+              "confidence": "medium",
+              "tags": [
+                "pbm",
+                "pharmacy-benefits",
+                "employers",
+                "health-plans",
+                "survey"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Providers face policy-driven behavioral-health delivery constraints while nutrition gains visibility as a health-system program area. Operational planning should connect community services, food support, and evolving reimbursement or coverage rules.",
+          "items": [
+            {
+              "item_id": "2026-10-01-joint-commission-healthy-food-recognition",
+              "canonical_topic": "joint-commission-healthy-food-recognition",
+              "duplicate_group": "joint-commission-healthy-food-recognition",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/joint-commission-launches-voluntary-healthy-food-recognition-program",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T16:17:00Z"
+                }
+              ],
+              "title": "Joint Commission adds voluntary recognition for healthy-food programs",
+              "summary": "The Joint Commission launched a voluntary recognition program encouraging hospitals and other healthcare organizations to strengthen healthy-food delivery and nutrition education. The initiative aligns accreditation activity with a broader federal and industry focus on nutrition.",
+              "strategic_implication": "Provider leaders can assess whether nutrition services and food-access initiatives merit investment or formal recognition, while incorporating dietary support into population-health and community-benefit strategies.",
+              "confidence": "medium",
+              "tags": [
+                "joint-commission",
+                "nutrition",
+                "hospitals",
+                "population-health",
+                "recognition"
+              ]
+            },
+            {
+              "item_id": "2026-10-01-state-behavioral-health-delivery-pressures",
+              "canonical_topic": "state-behavioral-health-delivery-pressures",
+              "duplicate_group": "state-behavioral-health-delivery-pressures",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/state-officials-weigh-behavioral-health-policy-issues-bht-2026",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T18:20:00Z"
+                }
+              ],
+              "title": "States weigh behavioral-health delivery pressures as H.R. 1 effects loom",
+              "summary": "State officials described challenges in delivering equitable mental healthcare, including crisis-response pressures and the anticipated effects of H.R. 1, during policy sessions at the Behavioral Health Tech conference. The discussion underscored the operational strain on state behavioral-health systems.",
+              "strategic_implication": "Providers and state partners should revisit crisis capacity, community-service coordination, and funding assumptions as policy changes alter the environment for behavioral-health delivery.",
+              "confidence": "medium",
+              "tags": [
+                "behavioral-health",
+                "states",
+                "crisis-response",
+                "hr-1",
+                "mental-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "No major new workforce or clinical-practice items surfaced in today’s reviewed RSS coverage.",
+          "items": []
+        }
+      ]
+    },
+    {
       "edition_date": "2026-09-30",
       "generated_at": "2026-09-30T12:40:17Z",
       "headline": "Today's Healthcare Insights",
@@ -12506,5 +12840,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-30T12:40:17Z"
+  "last_updated": "2026-10-01T11:07:10Z"
 }

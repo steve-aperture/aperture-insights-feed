@@ -3,6 +3,306 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-02",
+      "generated_at": "2026-10-02T11:11:59Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition tracks federal research and 340B policy shifts, Medicare Advantage benefit redesign, health-system operating results, community behavioral-health investment, and patient trust in AI. It draws on recent STAT News, Healthcare Dive, and Fierce Healthcare RSS reporting; direct web-search results were not available for corroboration in this run.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS (xml)",
+          "Targeted web search for current CMS/HHS/FDA, payer/provider, digital-health, and market signals"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS (xml)"
+        ],
+        "sources_failed": [
+          "Direct search_web tool unavailable in this run; Google Search fallback returned stale/non-current results and was not used for story selection"
+        ],
+        "run_notes": "All three RSS feeds were fetched with curl; recent entries and STAT expanded RSS text were used, then screened against recent editions. The Medicare Advantage item is a specific new analysis of 2027 cost sharing and benefit changes, distinct from the earlier plan-exit signal. Fierce Healthcare feed timestamps omit timezone; they are recorded as source-local EDT (UTC-04:00)."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "NIH award timing and portfolio mix, a broader 340B rebate pilot, and proposed disability-measure changes in a federal survey highlight how policy implementation can affect research capacity, drug-discount operations, and the quality of public-health data.",
+          "items": [
+            {
+              "item_id": "2026-10-02-nih-fy2026-grant-allocation-delays",
+              "canonical_topic": "nih-fy2026-grant-allocation-delays",
+              "duplicate_group": "nih-fy2026-grant-allocation-delays",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/02/nih-grant-funding-fy2026-analysis/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-02T08:30:00Z"
+                }
+              ],
+              "title": "NIH spends its FY2026 grant budget as delayed, opaque awards unsettle researchers",
+              "summary": "A STAT analysis says NIH spent its roughly $34 billion external grants budget in fiscal 2026, but awarded about 58,000 projects, down from 61,000 in FY2025 and roughly 63,700 in the years before the current administration. Researchers described delayed, opaque review decisions that slowed work, while awards involving health disparities, race, and ethnicity continued to fall. NIH made little progress toward other administration priorities, including more even geographic distribution and expanded early-career support.",
+              "strategic_implication": "Research institutions should plan for longer award timelines and scrutinize changes in portfolio mix, since award timing and multiyear funding choices affect hiring, study continuity, and the pipeline for early-career investigators.",
+              "confidence": "high",
+              "tags": [
+                "nih",
+                "research-funding",
+                "grant-awards",
+                "clinical-research",
+                "early-career-scientists"
+              ]
+            },
+            {
+              "item_id": "2026-10-02-hrsa-expands-340b-rebate-pilot",
+              "canonical_topic": "hrsa-expands-340b-rebate-pilot",
+              "duplicate_group": "hrsa-expands-340b-rebate-pilot",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/340b-rebate-program-approved-drugs-hrsa/831913/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-01T12:08:42-04:00"
+                }
+              ],
+              "title": "HRSA names 10 manufacturers and 21 drugs for an expanded 340B rebate pilot",
+              "summary": "HRSA disclosed that 10 drugmakers and 21 of their drugs will move from upfront discounts to after-the-fact payments under a revised 340B rebate pilot beginning next year. The change expands on the administration’s first attempt to launch the rebate approach.",
+              "strategic_implication": "Covered entities and pharmacy operators should assess cash-flow, reconciliation, and compliance workflows before implementation; shifting the timing of discounts can create operational strain even when nominal discount levels are unchanged.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "hrsa",
+                "drug-pricing",
+                "rebate-pilot",
+                "covered-entities"
+              ]
+            },
+            {
+              "item_id": "2026-10-02-cdc-survey-disability-measures-redesign",
+              "canonical_topic": "cdc-survey-disability-measures-redesign",
+              "duplicate_group": "cdc-survey-disability-measures-redesign",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/01/cdc-health-survey-redesign-removes-questions-about-disabilities/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-01T16:15:16Z"
+                }
+              ],
+              "title": "Proposed CDC survey redesign removes disability questions, advocates warn",
+              "summary": "A proposed redesign of the National Health Interview Survey would remove questions used to identify people with disabilities, according to STAT. Disability advocates warn that the changes could further undercount people with intellectual and developmental disabilities in a survey that has historically missed parts of this population.",
+              "strategic_implication": "Health agencies, researchers, and providers rely on population data to plan services and evaluate disparities; stakeholders should review the proposed instrument changes and preserve measures needed for disability-inclusive planning.",
+              "confidence": "medium",
+              "tags": [
+                "cdc",
+                "health-survey",
+                "disability",
+                "health-equity",
+                "public-health-data"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Patient concerns about health-data privacy accompany a new AI tool for payer-rate analysis, underscoring that adoption depends on both trusted governance and validated analytics.",
+          "items": [
+            {
+              "item_id": "2026-10-02-patient-health-data-ai-privacy-concerns",
+              "canonical_topic": "patient-health-data-ai-privacy-concerns",
+              "duplicate_group": "patient-health-data-ai-privacy-concerns",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/data-privacy-concerns-could-hold-patients-back-from-using-ai/831902/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-01T11:27:21-04:00"
+                }
+              ],
+              "title": "Patient concern about health-data privacy may slow adoption of AI tools",
+              "summary": "A new survey cited by Healthcare Dive found that Americans are increasingly concerned about their health data as artificial intelligence becomes more integrated into everyday life. The report frames privacy concerns as a potential barrier to patient use of AI-enabled services.",
+              "strategic_implication": "Health systems and vendors should treat privacy, clear consent, and transparent data-use practices as adoption requirements, not merely compliance work, and test patient trust alongside technical performance.",
+              "confidence": "medium",
+              "tags": [
+                "artificial-intelligence",
+                "health-data",
+                "privacy",
+                "patient-trust",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-02-payerset-ai-payer-rate-benchmarking",
+              "canonical_topic": "payerset-ai-payer-rate-benchmarking",
+              "duplicate_group": "payerset-ai-payer-rate-benchmarking",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/payerset-launches-ai-powered-research-assistant-turn-price-transparency",
+                  "source_type": "rss",
+                  "published_at": "2026-10-01T11:54:00-04:00"
+                }
+              ],
+              "title": "Payerset launches AI assistant to benchmark payer rates for health systems",
+              "summary": "Payerset introduced an AI-powered research assistant that brings together negotiated-rate data, claims, policy information, and market benchmarks. The product is positioned to help health systems analyze payer rates using multiple data sources in one platform.",
+              "strategic_implication": "Hospitals may gain a faster way to inform contract strategy, but should validate source data, comparison methods, and model outputs before using automated benchmarks in negotiations or financial forecasts.",
+              "confidence": "medium",
+              "tags": [
+                "artificial-intelligence",
+                "price-transparency",
+                "payer-contracting",
+                "health-systems",
+                "analytics"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "New 2027 Medicare Advantage cost-sharing details and CommonSpirit’s FY2026 results show pressure to manage margins alongside benefit design and provider-sector financial recovery.",
+          "items": [
+            {
+              "item_id": "2026-10-02-medicare-advantage-2027-cost-sharing-shifts",
+              "canonical_topic": "medicare-advantage-2027-cost-sharing-shifts",
+              "duplicate_group": "medicare-advantage-2027-cost-sharing-shifts",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/01/medicare-advantage-plans-have-higher-deductibles-fewer-benefits-in-2027/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-01T21:14:01Z"
+                }
+              ],
+              "title": "Medicare Advantage plans shift more costs to seniors for 2027 despite stable premiums",
+              "summary": "STAT’s analysis of federal data and plan offerings finds Medicare Advantage insurers are raising out-of-pocket costs, cutting dental and other supplemental benefits, and eliminating some broad-network options for 2027. The changes come as carriers seek to restore margins, even after receiving a payment increase and delayed reforms earlier this year.",
+              "strategic_implication": "Providers and enrollment counselors should prepare for questions about network access, higher cost sharing, and benefit reductions before annual enrollment begins, while monitoring how plan changes affect patient access and payer mix.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "health-insurance",
+                "benefit-design",
+                "cost-sharing",
+                "network-access"
+              ]
+            },
+            {
+              "item_id": "2026-10-02-commonspirit-fy2026-revenue-and-losses",
+              "canonical_topic": "commonspirit-fy2026-revenue-and-losses",
+              "duplicate_group": "commonspirit-fy2026-revenue-and-losses",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/commonspirit-health-grows-revenue-85-424b-fy2026",
+                  "source_type": "rss",
+                  "published_at": "2026-10-01T14:35:00-04:00"
+                }
+              ],
+              "title": "CommonSpirit reports 8.5% FY2026 revenue growth and narrower operating losses",
+              "summary": "The 156-hospital nonprofit reported $42.4 billion in operating revenue for fiscal 2026, up 8.5% year over year. Its operating losses narrowed by $257 million despite a multibillion-dollar impact associated with its revenue-cycle-management separation from Tenet Health.",
+              "strategic_implication": "The results suggest improved operating performance but should be read alongside the unusual revenue-cycle transition; health-system leaders can benchmark growth and loss reduction while separating recurring performance from one-time disruption.",
+              "confidence": "high",
+              "tags": [
+                "commonspirit",
+                "hospital-finance",
+                "operating-revenue",
+                "nonprofit-health-systems",
+                "revenue-cycle"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Federal grant funding is directed toward addiction treatment, overdose prevention, school mental-health support, and trauma services, creating near-term planning signals for community providers.",
+          "items": [
+            {
+              "item_id": "2026-10-02-hhs-addiction-overdose-grants",
+              "canonical_topic": "hhs-addiction-overdose-grants",
+              "duplicate_group": "hhs-addiction-overdose-grants",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/hhs-awards-nearly-250m-addiction-treatment-overdose-prevention-grants",
+                  "source_type": "rss",
+                  "published_at": "2026-10-01T11:26:00-04:00"
+                }
+              ],
+              "title": "HHS awards nearly $250 million for addiction treatment and overdose prevention",
+              "summary": "HHS announced nearly $250 million in grants for addiction treatment and overdose-prevention initiatives. Supported projects include stronger mental-health support in schools and expanded trauma treatment for families and children.",
+              "strategic_implication": "Community providers and local partners should track award details and align behavioral-health, school, and family-service capacity with the funded priorities; the grants reinforce demand for coordinated community-based care.",
+              "confidence": "high",
+              "tags": [
+                "hhs",
+                "behavioral-health",
+                "addiction-treatment",
+                "overdose-prevention",
+                "community-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Women’s health research continues to surface evidence gaps in menopause and chronic pain, with implications for trial representation and clinical practice.",
+          "items": [
+            {
+              "item_id": "2026-10-02-womens-health-menopause-pain-research",
+              "canonical_topic": "womens-health-menopause-pain-research",
+              "duplicate_group": "womens-health-menopause-pain-research",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/01/womens-health-issues-academic-journal-science-special-edition/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-01T18:00:00Z"
+                }
+              ],
+              "title": "Journal special issue spotlights open questions in menopause and chronic pain research",
+              "summary": "STAT reports that a special issue at a leading journal examines new findings and persistent questions in women’s health, including menopause and chronic pain. The coverage notes that women remain underrepresented in clinical trials and that female health is still less well understood than male health.",
+              "strategic_implication": "Clinical and research leaders should consider whether study agendas, trial recruitment, and care pathways adequately address menopause and chronic pain, where evidence gaps can translate into inconsistent practice.",
+              "confidence": "medium",
+              "tags": [
+                "womens-health",
+                "menopause",
+                "chronic-pain",
+                "clinical-research",
+                "trial-representation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-01",
       "generated_at": "2026-10-01T12:32:55Z",
       "headline": "Today's Healthcare Insights",
@@ -12677,5 +12977,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-01T12:32:55Z"
+  "last_updated": "2026-10-02T11:11:59Z"
 }

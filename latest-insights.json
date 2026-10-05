@@ -4,61 +4,40 @@
   "editions": [
     {
       "edition_date": "2026-10-05",
-      "generated_at": "2026-10-05T11:15:34Z",
+      "generated_at": "2026-10-05T12:33:06Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's mix pairs new research and FDA policy signals with a Medicaid implementation deadline and payer risk-adjustment settlement, while operational reporting tracks employer cost pressure, virtual nursing, and provider-sponsored Medicare plan design. Curation draws on STAT News, Healthcare Dive, Fierce Healthcare RSS, and targeted Google Search/news results; Gmail labels were not queried.",
+      "summary_note": "Today's edition covers pre-election Medicare Part B payments, a 760,000-person ACA Marketplace disenrollment, and Medicaid work-requirement delay requests alongside a Medicare Advantage settlement. It also tracks agentic AI for patient access, AI privacy monitoring, Vaxcyte's Phase 3 vaccine results, Lilly's direct-to-consumer expansion, virtual nursing, Congo's record Ebola outbreak, and gaps in youth opioid treatment retention. Sources include STAT News, Healthcare Dive, Fierce Healthcare, and MedCity News.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
-          "STAT News RSS",
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
+          "STAT News RSS (main, health-tech, pharma, business)",
           "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
           "Fierce Healthcare RSS",
-          "Targeted Google Search/news results for Medicaid, Medicare Advantage, virtual nursing, and clinical AI",
-          "Supplementary Gmail InsightsSources labels"
+          "Targeted web reading of selected articles"
         ],
         "sources_successful": [
-          "STAT News RSS",
-          "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS",
-          "Targeted Google Search/news results"
+          "STAT News RSS (main, health-tech, pharma, business)",
+          "Healthcare Dive RSS (news; only sponsored content beyond the automated run)",
+          "MedCity News RSS",
+          "Fierce Healthcare items retained from the automated run",
+          "Targeted article reads for STAT and MedCity items"
         ],
         "sources_failed": [
-          "Supplementary Gmail InsightsSources labels were not queried"
+          "Gmail InsightsSources/* labels returned no messages in the connected mailbox since 2026-10-02",
+          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch",
+          "STAT+ Lilly Australia article body paywalled; item drafted from RSS description"
         ],
-        "run_notes": "RSS descriptions and embedded content provided sufficient signal for item summaries; targeted Google Search/news results were used to corroborate key developments. The direct search_web tool was not exposed in this run, so browser-based Google Search/news results were used instead. Items dated Oct. 2 were published after the prior edition's Oct. 2 12:37 UTC generation time and were not included there."
+        "run_notes": "Same-day rebuild in place: the automated run (generated 11:15 UTC) had already written 2026-10-05 and left the feed at 31 editions. Retained all 8 automated items, added 9 new items from the 10/2-10/5 window screened against the prior 10 editions, refreshed bucket syntheses, and trimmed to 30 editions with the 2026-08-24 overflow archived.",
+        "items_captured": 17
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "Industry advocates are pressing FDA for a pathway for stem-cell therapies, while five governors say the approaching Medicaid work-requirements deadline risks implementation failures and coverage disruption; a $22.5 million payer settlement reinforces Medicare Advantage risk-adjustment scrutiny.",
+          "synthesis": "Industry advocates are pressing FDA for a stem-cell pathway, and five governors warn the Medicaid work-requirements deadline risks coverage disruption. Pre-election Medicare Part B payments and a 760,000-person ACA Marketplace disenrollment show federal policy shifting coverage and cash flows at the same time, while a $22.5 million settlement keeps Medicare Advantage risk adjustment under scrutiny.",
           "items": [
-            {
-              "item_id": "2026-10-05-stem-cell-industry-seeks-fda-pathway",
-              "canonical_topic": "stem-cell-industry-seeks-fda-pathway",
-              "duplicate_group": "stem-cell-industry-seeks-fda-pathway",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/05/stem-cell-industry-seeks-fda-regulation-like-peptides/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T08:30:00Z"
-                }
-              ],
-              "title": "Stem-cell advocates look to FDA’s peptide posture as a model for regulatory access",
-              "summary": "Stem-cell entrepreneurs told STAT they hope the FDA will engage with the industry through roundtables, drawing a comparison to the agency’s recent attention to compounded peptides. The article notes that commercially available, unapproved stem-cell treatments remain outside FDA approval, and the agency declined to say whether roundtables were imminent.",
-              "strategic_implication": "Health systems, clinicians, and investors should distinguish advocacy for a regulatory pathway from evidence of FDA approval, and monitor whether agency engagement produces concrete safety and evidence requirements.",
-              "confidence": "medium",
-              "tags": [
-                "fda",
-                "stem-cell-therapy",
-                "regenerative-medicine",
-                "drug-regulation"
-              ]
-            },
             {
               "item_id": "2026-10-05-governors-seek-medicaid-work-requirement-delay",
               "canonical_topic": "governors-seek-medicaid-work-requirement-delay",
@@ -110,12 +89,90 @@
                 "false-claims",
                 "payer-compliance"
               ]
+            },
+            {
+              "item_id": "2026-10-05-trump-90-dollar-medicare-part-b-payments",
+              "canonical_topic": "trump-90-dollar-medicare-part-b-payments",
+              "duplicate_group": "trump-90-dollar-medicare-part-b-payments",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/04/trump-announces-90-dollar-payments-for-medicare-premiums/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-04T16:58:00Z"
+                }
+              ],
+              "title": "White House promises one-time $90 Part B premium payments to 20 million-plus Medicare enrollees",
+              "summary": "President Trump said more than 20 million Medicare Part B enrollees will receive a one-time $90 payment in October, funded from the Medicare Improvement Fund Congress created in 2008. Enrollees receiving Medicaid premium assistance, paying income-adjusted premiums, or enrolled in Medicare Advantage are excluded. The announcement, weeks before the Nov. 3 midterms, follows other pre-election payment pledges.",
+              "strategic_implication": "Medicare plans, beneficiary-facing providers, and advocates should prepare for member questions about eligibility and payment timing, and watch for legal or congressional scrutiny of using the Medicare Improvement Fund this way.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "part-b",
+                "premiums",
+                "midterm-elections"
+              ]
+            },
+            {
+              "item_id": "2026-10-05-aca-marketplace-fraud-disenrollment",
+              "canonical_topic": "aca-marketplace-fraud-disenrollment",
+              "duplicate_group": "aca-marketplace-fraud-disenrollment",
+              "priority_score": 8,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/10/trumps-aca-fraud-crackdown-experts-urge-going-after-bad-actors-not-patients/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-04T23:28:00Z"
+                }
+              ],
+              "title": "ACA fraud crackdown to cancel coverage for 760,000 Marketplace enrollees",
+              "summary": "The White House Task Force to Eliminate Fraud plans to cancel 315,000 unauthorized ACA Marketplace enrollments covering more than 760,000 people. The administration estimates $2.2 billion in subsidy recovery and says CMS will hold agents and brokers accountable. Critics, including Families USA, want a formal reinstatement process for people wrongly disenrolled; one researcher estimates about 250,000 could end up uninsured.",
+              "strategic_implication": "Marketplace insurers, navigators, and safety-net providers should expect coverage churn and eligibility disputes, and should build verification and re-enrollment support as federal enforcement shifts toward broker fraud.",
+              "confidence": "medium",
+              "tags": [
+                "aca",
+                "marketplace",
+                "program-integrity",
+                "coverage"
+              ]
+            },
+            {
+              "item_id": "2026-10-05-stem-cell-industry-seeks-fda-pathway",
+              "canonical_topic": "stem-cell-industry-seeks-fda-pathway",
+              "duplicate_group": "stem-cell-industry-seeks-fda-pathway",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/05/stem-cell-industry-seeks-fda-regulation-like-peptides/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T08:30:00Z"
+                }
+              ],
+              "title": "Stem-cell advocates look to FDA’s peptide posture as a model for regulatory access",
+              "summary": "Stem-cell entrepreneurs told STAT they hope the FDA will engage with the industry through roundtables, drawing a comparison to the agency’s recent attention to compounded peptides. The article notes that commercially available, unapproved stem-cell treatments remain outside FDA approval, and the agency declined to say whether roundtables were imminent.",
+              "strategic_implication": "Health systems, clinicians, and investors should distinguish advocacy for a regulatory pathway from evidence of FDA approval, and monitor whether agency engagement produces concrete safety and evidence requirements.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "stem-cell-therapy",
+                "regenerative-medicine",
+                "drug-regulation"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "HHS Secretary Robert F. Kennedy Jr.’s public claim that AI can offer a better-informed second opinion than physicians drew pushback from medical organizations, sharpening the need for evidence-based deployment and trust.",
+          "synthesis": "Debate over AI's clinical role intensified after HHS Secretary Kennedy's second-opinion claims. Operational AI keeps advancing, though: agentic patient-access funding and AI-driven privacy monitoring point to front-door and compliance workflows as the near-term value zones, provided governance keeps pace.",
           "items": [
             {
               "item_id": "2026-10-05-rfk-ai-physician-second-opinion-claims",
@@ -142,12 +199,64 @@
                 "patient-trust",
                 "physician-expertise"
               ]
+            },
+            {
+              "item_id": "2026-10-05-parakeet-health-series-a-agentic-access",
+              "canonical_topic": "parakeet-health-series-a-agentic-access",
+              "duplicate_group": "parakeet-health-series-a-agentic-access",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/10/parakeet-health-secures-10m-for-conversational-agentic-platform/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-02T20:43:00Z"
+                }
+              ],
+              "title": "Parakeet Health raises $10 million for agentic AI patient-access automation",
+              "summary": "Parakeet Health closed a $10 million Series A led by Canvas Ventures, bringing total funding to $13 million. Its conversational agent platform automates inbound calls, outreach, fax processing, referrals, and scheduling inside existing EHR and practice-management systems. It serves more than 2,800 providers, including six of the 10 largest U.S. dermatology groups, and plans to expand into primary care, behavioral health, and other specialties.",
+              "strategic_implication": "Specialty groups and ambulatory operators should evaluate agentic front-door tools on measurable gains in booked capacity, referral conversion, and wait times, not on call deflection alone.",
+              "confidence": "high",
+              "tags": [
+                "agentic-ai",
+                "patient-access",
+                "scheduling",
+                "venture-funding"
+              ]
+            },
+            {
+              "item_id": "2026-10-05-ai-privacy-monitoring-breach-investigations",
+              "canonical_topic": "ai-privacy-monitoring-breach-investigations",
+              "duplicate_group": "ai-privacy-monitoring-breach-investigations",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/10/healthcare-privacy-leaders-look-to-ai-to-improve-monitoring-and-data-breach-investigations/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-04T13:00:00Z"
+                }
+              ],
+              "title": "Privacy leaders turn to AI for proactive EHR access monitoring",
+              "summary": "At a Bluesight privacy symposium, healthcare privacy leaders described using AI to find, prioritize, and investigate potential privacy violations instead of relying on reactive audits. City of Hope's privacy chief said monitoring has caught employees accessing or altering their own or relatives' records. Speakers cited more than 300 million patient records compromised in 2024 and stressed human oversight and clear agent guardrails.",
+              "strategic_implication": "Compliance and IT leaders should pair AI-driven access monitoring with documented human review, agent identity controls, and accountability processes so automated detection holds up in investigations.",
+              "confidence": "medium",
+              "tags": [
+                "privacy",
+                "cybersecurity",
+                "ehr-monitoring",
+                "ai-governance"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "Hospital and pharmaceutical prices remain a central driver of employer health-cost pressure, while MultiCare’s planned Medicare-focused health plan illustrates providers’ continued interest in direct payer strategies.",
+          "synthesis": "Hospital and drug prices remain the main driver of employer cost pressure. Provider-sponsored Medicare plans, Lilly's international direct-to-consumer expansion, and Vaxcyte's Phase 3 challenge to Pfizer and Merck show distribution and competition shifting across payer, pharma, and vaccine markets.",
           "items": [
             {
               "item_id": "2026-10-05-healthcare-prices-employer-premiums",
@@ -176,6 +285,32 @@
               ]
             },
             {
+              "item_id": "2026-10-05-vaxcyte-vax-31-phase-3",
+              "canonical_topic": "vaxcyte-vax-31-phase-3",
+              "duplicate_group": "vaxcyte-vax-31-phase-3",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/05/vaxcyte-pneumococcal-vaccine-study-pfizer-merck/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T12:19:00Z"
+                }
+              ],
+              "title": "Vaxcyte's 31-valent pneumococcal vaccine meets Phase 3 goals against Pfizer and Merck shots",
+              "summary": "Vaxcyte said VAX-31 met its primary endpoints in a Phase 3 trial of just over 3,500 adults 50 and older, measured by antibody response against Pfizer's Prevnar 20 and Merck's Capvaxive. VAX-31 targets 31 serotypes, compared with 20 and 21 for the incumbent vaccines. The results position the biotech to compete in a lucrative adult vaccine market.",
+              "strategic_implication": "Health systems, pharmacy benefit teams, and immunization programs should watch the regulatory timeline and ACIP recommendations, since broader serotype coverage could change adult vaccine formularies and contracting.",
+              "confidence": "medium",
+              "tags": [
+                "vaccines",
+                "pneumococcal",
+                "biotech",
+                "clinical-trials"
+              ]
+            },
+            {
               "item_id": "2026-10-05-multicare-launches-medicare-health-plan",
               "canonical_topic": "multicare-launches-medicare-health-plan",
               "duplicate_group": "multicare-launches-medicare-health-plan",
@@ -200,12 +335,38 @@
                 "health-plan",
                 "washington-state"
               ]
+            },
+            {
+              "item_id": "2026-10-05-lilly-direct-australia-dtc",
+              "canonical_topic": "lilly-direct-australia-dtc",
+              "duplicate_group": "lilly-direct-australia-dtc",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/02/biotech-news-lilly-bypasses-australian-phramacies-with-dtc-model/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-02T13:58:00Z"
+                }
+              ],
+              "title": "Lilly takes its direct-to-consumer Mounjaro model to Australia",
+              "summary": "Eli Lilly is launching LillyDirect in Australia to deliver Mounjaro directly to patients' homes, bypassing local pharmacies. Australian doctors and pharmacists have pushed back on the move. The launch extends Lilly's U.S. direct-to-consumer playbook for obesity drugs into an international market.",
+              "strategic_implication": "Pharmacies, PBMs, and health systems should treat manufacturer direct channels as a growing structural trend in GLP-1 distribution that may reshape dispensing margins and care coordination.",
+              "confidence": "medium",
+              "tags": [
+                "glp-1",
+                "direct-to-consumer",
+                "pharma",
+                "eli-lilly"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "Owensboro Health’s virtual-nursing partnership with Optum pairs remote and bedside nurses to free frontline clinicians for direct care; execution will depend on workflow design and measurable staff and patient outcomes.",
+          "synthesis": "Virtual nursing at Owensboro Health and proposed primary-care and tele-allergy pathways share one theme: redesigning workflows to stretch scarce clinical capacity. Success depends on measurable access and staffing outcomes.",
           "items": [
             {
               "item_id": "2026-10-05-optum-owensboro-virtual-nursing",
@@ -232,12 +393,38 @@
                 "workflow",
                 "patient-care"
               ]
+            },
+            {
+              "item_id": "2026-10-05-allergy-care-access-gap",
+              "canonical_topic": "allergy-care-access-gap",
+              "duplicate_group": "allergy-care-access-gap",
+              "priority_score": 5,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/10/closing-the-diagnostic-gap-why-access-to-allergy-care-isnt-equal/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-04T13:48:00Z"
+                }
+              ],
+              "title": "Allergy care access gaps fall hardest on rural and Medicaid patients",
+              "summary": "A MedCity Influencers commentary reports a median 178-day wait for allergy consultations and says only 55.5% of U.S. allergists accept Medicaid. Projected allergist coverage by 2035 is 48% of demand in nonmetropolitan areas versus 99% in metropolitan areas. The author proposes broader primary-care use of specific IgE blood testing, tele-allergy consultations, and community outreach.",
+              "strategic_implication": "Rural systems and Medicaid plans can reduce avoidable emergency use by building primary-care diagnostic pathways and tele-specialty referral models for allergy and asthma.",
+              "confidence": "medium",
+              "tags": [
+                "rural-health",
+                "medicaid",
+                "specialty-access",
+                "telehealth"
+              ]
             }
           ]
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "The 2026 Nobel Prize in Physiology or Medicine recognizes optogenetics, a research method that uses light-sensitive ion channels to control neural activity and deepen understanding of brain function.",
+          "synthesis": "The optogenetics Nobel highlights foundational neuroscience. On the front lines, Congo's record Ebola outbreak and poor medication retention among young people with opioid use disorder highlight ongoing risks to health workers and gaps in continuity of care.",
           "items": [
             {
               "item_id": "2026-10-05-nobel-optogenetics-neuroscience",
@@ -263,6 +450,58 @@
                 "optogenetics",
                 "neuroscience",
                 "brain-research"
+              ]
+            },
+            {
+              "item_id": "2026-10-05-congo-ebola-outbreak-4000-deaths",
+              "canonical_topic": "congo-ebola-outbreak-4000-deaths",
+              "duplicate_group": "congo-ebola-outbreak-4000-deaths",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/02/ebola-outbreak-congo-4000-deaths/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-02T14:25:00Z"
+                }
+              ],
+              "title": "Congo's Ebola outbreak passes 4,000 deaths as violence hits treatment capacity",
+              "summary": "Congo's Ebola outbreak, declared May 15, had reached 8,300 cases and 4,018 deaths, making it the fastest-growing Ebola outbreak on record. Soldiers burned an Ebola-affected displacement camp near Bunia, forcing 19,000 people to flee. At least 50 health workers have died, and an infected MSF worker was evacuated to the Netherlands. Weekly cases have fallen since July, but Africa CDC warns that insecurity may be suppressing case detection.",
+              "strategic_implication": "U.S. health systems and public health agencies should maintain travel screening, special pathogen readiness, and health worker protection protocols, and should read declining counts cautiously while access remains disrupted.",
+              "confidence": "high",
+              "tags": [
+                "ebola",
+                "global-health-security",
+                "outbreak",
+                "health-workers"
+              ]
+            },
+            {
+              "item_id": "2026-10-05-youth-oud-medication-retention",
+              "canonical_topic": "youth-oud-medication-retention",
+              "duplicate_group": "youth-oud-medication-retention",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/02/youth-opioid-treatment-retention-study-barriers-to-care/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-02T15:00:00Z"
+                }
+              ],
+              "title": "Few young people with opioid use disorder stay on medication, Medicaid claims study finds",
+              "summary": "A JAMA Network Open analysis of nearly 230,000 Medicaid enrollees ages 13 to 25 with opioid use disorder found that only one in 32 continued medication for six months. Initiation of buprenorphine or methadone rose slightly from 2016 to 2023, but retention stayed low and may have declined, with greater attrition among Black and other minoritized youth. Barriers include methadone rules for minors and clinics that will not treat adolescents.",
+              "strategic_implication": "Medicaid plans and pediatric and primary-care networks should invest in adolescent-capable buprenorphine prescribing and retention supports, and track continuity as a core quality measure.",
+              "confidence": "high",
+              "tags": [
+                "opioid-use-disorder",
+                "adolescent-health",
+                "medicaid",
+                "behavioral-health"
               ]
             }
           ]
@@ -12911,331 +13150,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-08-24",
-      "generated_at": "2026-08-24T11:12:19Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks a widening policy perimeter around Medicaid coverage, early evidence from nutrition-benefit restrictions, and the FDA's coming approach to generative AI devices. It also highlights oncology innovation, cyber-risk defenses, employer cost inflation, and the clinical-training bottleneck, using fresh STAT, Healthcare Dive, Fierce Healthcare, Becker's Hospital Review, and Aon reporting.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA/CDC web",
-          "Company and government disclosures",
-          "Targeted web search",
-          "Supplementary Gmail newsletters"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "Targeted web search",
-          "Aon company disclosure"
-        ],
-        "sources_failed": [
-          "Supplementary Gmail newsletters not used"
-        ],
-        "run_notes": "All three required RSS feeds returned successfully. Aug. 24 STAT items were prioritized; because the Monday Healthcare Dive feed had no substantive same-day news and Fierce Healthcare's latest substantive items were Aug. 21–22, those recent items were supplemented with targeted web checks. Prior-edition topics on behavioral coaching, Humata/R1, Cityblock/Homeward, Radial/TMS, GLP-1 strategy, Humana's CMO appointment, and focal prostate therapy were excluded."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Medicaid coverage rules and state-level nutrition restrictions are becoming active levers in healthcare policy, with implications that extend beyond the immediate populations or products named in each action.",
-          "items": [
-            {
-              "item_id": "2026-08-24-medicaid-gender-care-coverage-precedent",
-              "canonical_topic": "medicaid-gender-care-coverage-precedent",
-              "duplicate_group": "medicaid-gender-care-coverage-precedent",
-              "priority_score": 9,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/24/transgender-care-ban-precedent-could-be-broadly-applied-medicaid-states/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-24T08:30:00Z"
-                },
-                {
-                  "source": "KFF",
-                  "url": "https://www.kff.org/quick-insights/new-regulation-prohibits-federal-medicaid-funds-from-covering-gender-affirming-medical-care-for-young-people/",
-                  "source_type": "web",
-                  "published_at": "2026-08-13T00:00:00Z"
-                }
-              ],
-              "title": "New Medicaid rule blocks federal funding for gender-affirming care for minors and may widen coverage precedent",
-              "summary": "CMS issued a final rule barring federal Medicaid and CHIP funding for gender-affirming medications and surgery for minors, according to STAT and KFF. The rule is scheduled to take effect Oct. 13, and the policy theory could be cited in future disputes over whether particular drugs or services qualify for federal coverage. States may still use state-only funds for the care under the rule described by KFF.",
-              "strategic_implication": "Plans, states, and provider systems should map the rule’s effective-date, benefit-design, and litigation exposure now. The broader watchpoint is whether the coverage rationale becomes a template for narrowing federal Medicaid payment in other clinical categories.",
-              "confidence": "high",
-              "tags": [
-                "medicaid",
-                "coverage-policy",
-                "cms",
-                "health-equity",
-                "regulation"
-              ]
-            },
-            {
-              "item_id": "2026-08-24-snap-soda-restrictions-purchases",
-              "canonical_topic": "snap-soda-restrictions-purchases",
-              "duplicate_group": "snap-soda-restrictions-purchases",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/24/snap-restrictions-12-percent-drop-soda-purchases/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-24T05:00:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/24/snap-restrictions-12-percent-drop-soda-purchases/",
-                  "source_type": "web",
-                  "published_at": "2026-08-24T05:11:19Z"
-                }
-              ],
-              "title": "New study finds SNAP soda restrictions cut purchases 12% across 10 states",
-              "summary": "An NBER study, not yet peer-reviewed, found soda purchases fell about 12% among SNAP households after restrictions took effect in 10 states. The analysis used the first six months of 2026 grocery data from 15,000 households, including 3,291 in affected states. Researchers estimated a potential 2.6% reduction in type 2 diabetes risk over 10 years, while noting that up to 39% of foregone soda spending shifted to other sugary drinks or juice.",
-              "strategic_implication": "Benefit-design changes can produce measurable purchasing shifts, but substitution limits the health impact and may complicate evaluation. Payers and public-health operators should distinguish purchase behavior from clinical outcomes before treating these restrictions as a durable prevention lever.",
-              "confidence": "high",
-              "tags": [
-                "snap",
-                "nutrition-policy",
-                "public-health",
-                "diabetes-prevention"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "The AI agenda is moving simultaneously toward formal device guidance and defensive infrastructure work. Organizations should plan for both regulatory clarity and a faster cyber-vulnerability discovery cycle.",
-          "items": [
-            {
-              "item_id": "2026-08-24-fda-generative-ai-device-guidance",
-              "canonical_topic": "fda-generative-ai-device-guidance",
-              "duplicate_group": "fda-generative-ai-device-guidance",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-24T08:30:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/",
-                  "source_type": "web",
-                  "published_at": "2026-08-24T08:11:19Z"
-                }
-              ],
-              "title": "FDA signals broad and specialty guidance for generative AI medical devices",
-              "summary": "Rick Abramson, director of the FDA Digital Health Center of Excellence, said the agency is developing formal policy guidance for medical devices that use generative AI. He told STAT the agency expects to issue broad guidance on the overall technology as well as narrower guidance for complex or high-interest use cases. The timing and final scope of the documents were not specified.",
-              "strategic_implication": "Developers and health systems should treat governance assumptions as provisional and maintain traceability for model updates, intended use, and human oversight. Clearer FDA expectations could accelerate adoption for well-scoped products while increasing scrutiny on open-ended clinical claims.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "generative-ai",
-                "digital-health",
-                "medical-devices",
-                "regulation"
-              ]
-            },
-            {
-              "item_id": "2026-08-24-epic-anthropic-project-glasswing",
-              "canonical_topic": "epic-anthropic-project-glasswing",
-              "duplicate_group": "epic-anthropic-project-glasswing",
-              "priority_score": 8,
-              "primary_source": "Becker's Hospital Review",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/more-tidbits-epic-ugm-anthropics-project-glasswing-and-deeper-partnership-uptodate",
-                  "source_type": "rss",
-                  "published_at": "2026-08-22T14:57:00Z"
-                },
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/why-epic-joined-anthropics-project-glasswing/",
-                  "source_type": "web",
-                  "published_at": "2026-08-21T11:11:23Z"
-                }
-              ],
-              "title": "Epic says Anthropic’s Project Glasswing found vulnerabilities in its codebase",
-              "summary": "Epic disclosed that it is participating in Anthropic’s Project Glasswing, a restricted program using the Claude Mythos model to identify and help remediate vulnerabilities in critical software. Epic said the model surfaced issues in its codebase that expert developers had missed and could connect separate flaws into novel attack paths. Anthropic has limited public access to Mythos because of the model’s offensive cyber capabilities.",
-              "strategic_implication": "Health systems need to treat frontier AI as both a defensive control and a new source of operational risk. Participation in trusted security programs may shorten remediation cycles, but governance, disclosure, and patch-validation processes must keep pace with model capability.",
-              "confidence": "high",
-              "tags": [
-                "healthcare-cybersecurity",
-                "epic",
-                "anthropic",
-                "ai-safety",
-                "risk-management"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Capital, innovation, and cost pressure are pulling the industry in different directions: oncology platforms are showing clinical upside while employers face another near-double-digit spending increase. Strategic plans will need to balance growth bets against affordability and utilization pressure.",
-          "items": [
-            {
-              "item_id": "2026-08-24-moderna-merck-mrna-cancer-vaccine",
-              "canonical_topic": "moderna-merck-mrna-cancer-vaccine",
-              "duplicate_group": "moderna-merck-mrna-cancer-vaccine",
-              "priority_score": 9,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/24/inside-moderna-and-merck-cancer-vaccine-triumph/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-24T08:30:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/19/mrna-cancer-vaccine-trial-melanoma-merck-moderna/",
-                  "source_type": "web",
-                  "published_at": "2026-08-19T00:00:00Z"
-                }
-              ],
-              "title": "Moderna-Merck personalized mRNA vaccine cuts melanoma recurrence risk in Phase 3 study",
-              "summary": "Moderna and Merck reported that a 1,137-volunteer study showed their personalized mRNA vaccine reduced the odds that surgically removed melanoma would return or spread. The vaccine, intismeran, was combined with Merck’s Keytruda in the adjuvant setting. The companies had not immediately released detailed data, so the magnitude and durability of benefit still require scrutiny.",
-              "strategic_implication": "A positive randomized Phase 3 signal could strengthen the case for individualized mRNA therapeutics and reshape oncology development, manufacturing, and diagnostic workflows. Payers and providers should wait for detailed efficacy, safety, and operational data before assuming near-term scale economics.",
-              "confidence": "medium",
-              "tags": [
-                "oncology",
-                "mrna",
-                "cancer-vaccine",
-                "clinical-trials",
-                "biotech"
-              ]
-            },
-            {
-              "item_id": "2026-08-24-employer-health-costs-2027",
-              "canonical_topic": "employer-health-costs-2027",
-              "duplicate_group": "employer-health-costs-2027",
-              "priority_score": 8,
-              "primary_source": "Aon",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/employers-brace-another-year-healthcare-cost-increases",
-                  "source_type": "rss",
-                  "published_at": "2026-08-21T15:59:00Z"
-                },
-                {
-                  "source": "Aon",
-                  "url": "https://www.aon.com/en/insights/articles/healthcare-cost-increases-show-no-signs-of-slowing-what-employers-can-do",
-                  "source_type": "web",
-                  "published_at": "2026-08-20T00:00:00Z"
-                }
-              ],
-              "title": "Aon projects U.S. employer healthcare costs will rise 9.5% in 2027",
-              "summary": "Aon projects U.S. employer healthcare costs will increase 9.5% in 2027 before cost-mitigation actions, the second consecutive year at that level. Its analysis says utilization and care mix are now driving more of the increase than price alone. The forecast covers a large employer database and points to continued pressure on benefit affordability and plan design.",
-              "strategic_implication": "Employers and payer partners will need more than premium shifting to manage the trend; utilization management, site-of-care steering, and high-cost-condition strategies become central. Persistent cost inflation also raises the value of transparent purchasing and measurable outcomes in provider and vendor contracts.",
-              "confidence": "high",
-              "tags": [
-                "employer-health",
-                "healthcare-costs",
-                "benefits",
-                "utilization-management"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Physician employment has created scale for provider organizations but is also exposing tensions between productivity targets, network control, and clinical autonomy. Operating models that cannot demonstrate patient-centered performance may face higher retention and reputational risk.",
-          "items": [
-            {
-              "item_id": "2026-08-24-physicians-corporate-pressure-care-quality",
-              "canonical_topic": "physicians-corporate-pressure-care-quality",
-              "duplicate_group": "physicians-corporate-pressure-care-quality",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/doctors-say-they-feel-pressured-to-prioritize-corporate-interests-over-pati/828503/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-21T15:31:00Z"
-                },
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/doctors-say-they-feel-pressured-to-prioritize-corporate-interests-over-pati/828503/",
-                  "source_type": "web",
-                  "published_at": "2026-08-21T11:11:23Z"
-                }
-              ],
-              "title": "Survey finds physicians feel pressure to favor volume and network retention over care quality",
-              "summary": "A survey of 1,000 physicians commissioned by the Physicians Advocacy Institute found nearly half of corporate-employed doctors feel pressure to prioritize patient volume over care quality. Healthcare Dive reported that 63% said employer policies make outside-network referrals difficult and 59% felt pressure to keep patients within their health system. The same report said more than 80% of physicians were employed by corporations last year, up from 25% in 2012.",
-              "strategic_implication": "Provider leaders should monitor referral friction, staffing, administrative burden, and patient access as operating metrics—not only productivity and capture. Misalignment between financial incentives and clinical judgment can accelerate burnout, leakage, and compliance exposure.",
-              "confidence": "medium",
-              "tags": [
-                "physician-workforce",
-                "provider-operations",
-                "care-quality",
-                "burnout",
-                "referrals"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "The pipeline for advanced practice clinicians is constrained before graduation by a shortage of qualified clinical mentors. Expanding training capacity will require provider organizations and schools to treat precepting as infrastructure rather than an informal add-on.",
-          "items": [
-            {
-              "item_id": "2026-08-24-nurse-practitioner-preceptor-shortage",
-              "canonical_topic": "nurse-practitioner-preceptor-shortage",
-              "duplicate_group": "nurse-practitioner-preceptor-shortage",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/24/nurse-practitioner-preceptor-shortage-clinical-placement-challenges/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-24T08:30:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/24/nurse-practitioner-preceptor-shortage-clinical-placement-challenges/",
-                  "source_type": "web",
-                  "published_at": "2026-08-24T08:11:18Z"
-                }
-              ],
-              "title": "Shortage of clinical preceptors threatens nurse practitioner training capacity",
-              "summary": "Nurse practitioner students must complete at least 500 supervised clinical hours, but many programs struggle to secure qualified preceptors. STAT reported that students can be left to arrange placements themselves and sometimes pay tens of thousands of dollars for supervision on top of tuition. The bottleneck is especially consequential as more states expand nurse practitioners’ role in primary care and independent practice.",
-              "strategic_implication": "Health systems seeking to expand primary-care capacity should consider structured, compensated preceptor programs with schools rather than relying on ad hoc placements. Solving the training bottleneck could improve workforce supply, but requires clear quality standards and protection against shifting educational costs onto students.",
-              "confidence": "high",
-              "tags": [
-                "nurse-practitioners",
-                "clinical-training",
-                "workforce-shortage",
-                "primary-care",
-                "education"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-05T11:15:34Z"
+  "last_updated": "2026-10-05T12:33:06Z"
 }

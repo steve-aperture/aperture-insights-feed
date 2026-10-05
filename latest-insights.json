@@ -3,6 +3,273 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-05",
+      "generated_at": "2026-10-05T11:15:34Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's mix pairs new research and FDA policy signals with a Medicaid implementation deadline and payer risk-adjustment settlement, while operational reporting tracks employer cost pressure, virtual nursing, and provider-sponsored Medicare plan design. Curation draws on STAT News, Healthcare Dive, Fierce Healthcare RSS, and targeted Google Search/news results; Gmail labels were not queried.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted Google Search/news results for Medicaid, Medicare Advantage, virtual nursing, and clinical AI",
+          "Supplementary Gmail InsightsSources labels"
+        ],
+        "sources_successful": [
+          "STAT News RSS",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted Google Search/news results"
+        ],
+        "sources_failed": [
+          "Supplementary Gmail InsightsSources labels were not queried"
+        ],
+        "run_notes": "RSS descriptions and embedded content provided sufficient signal for item summaries; targeted Google Search/news results were used to corroborate key developments. The direct search_web tool was not exposed in this run, so browser-based Google Search/news results were used instead. Items dated Oct. 2 were published after the prior edition's Oct. 2 12:37 UTC generation time and were not included there."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Industry advocates are pressing FDA for a pathway for stem-cell therapies, while five governors say the approaching Medicaid work-requirements deadline risks implementation failures and coverage disruption; a $22.5 million payer settlement reinforces Medicare Advantage risk-adjustment scrutiny.",
+          "items": [
+            {
+              "item_id": "2026-10-05-stem-cell-industry-seeks-fda-pathway",
+              "canonical_topic": "stem-cell-industry-seeks-fda-pathway",
+              "duplicate_group": "stem-cell-industry-seeks-fda-pathway",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/05/stem-cell-industry-seeks-fda-regulation-like-peptides/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T08:30:00Z"
+                }
+              ],
+              "title": "Stem-cell advocates look to FDA’s peptide posture as a model for regulatory access",
+              "summary": "Stem-cell entrepreneurs told STAT they hope the FDA will engage with the industry through roundtables, drawing a comparison to the agency’s recent attention to compounded peptides. The article notes that commercially available, unapproved stem-cell treatments remain outside FDA approval, and the agency declined to say whether roundtables were imminent.",
+              "strategic_implication": "Health systems, clinicians, and investors should distinguish advocacy for a regulatory pathway from evidence of FDA approval, and monitor whether agency engagement produces concrete safety and evidence requirements.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "stem-cell-therapy",
+                "regenerative-medicine",
+                "drug-regulation"
+              ]
+            },
+            {
+              "item_id": "2026-10-05-governors-seek-medicaid-work-requirement-delay",
+              "canonical_topic": "governors-seek-medicaid-work-requirement-delay",
+              "duplicate_group": "governors-seek-medicaid-work-requirement-delay",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medicaid-work-requirements-governors-ask-hhs-delay-letter/831992/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-02T09:15:31-04:00"
+                }
+              ],
+              "title": "Five governors ask HHS for more time to implement Medicaid work requirements",
+              "summary": "The governors of five states say they cannot meet the Jan. 1 deadline to establish Medicaid work requirements while protecting beneficiaries. They asked HHS for additional time to build the required systems and implementation processes.",
+              "strategic_implication": "State agencies, Medicaid plans, and safety-net providers should plan for eligibility-system changes and potential coverage churn, while tracking whether HHS adjusts timelines or operational guidance.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "state-policy",
+                "coverage"
+              ]
+            },
+            {
+              "item_id": "2026-10-05-independence-blue-cross-ma-settlement",
+              "canonical_topic": "independence-blue-cross-ma-settlement",
+              "duplicate_group": "independence-blue-cross-ma-settlement",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/independence-blue-cross-to-pay-to-resolve-ma-fraud-allegations/831998/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-02T09:51:27-04:00"
+                }
+              ],
+              "title": "Independence Blue Cross to pay $22.5 million to resolve Medicare Advantage allegations",
+              "summary": "Independence Blue Cross agreed to pay $22.5 million to resolve allegations that it inflated diagnosis codes for Medicare Advantage beneficiaries. The payer cited industry-wide challenges in applying risk-adjustment standards.",
+              "strategic_implication": "Medicare Advantage organizations should reinforce coding, documentation, and audit controls as risk-adjustment scrutiny continues; provider partners may also face greater documentation and validation demands.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "risk-adjustment",
+                "false-claims",
+                "payer-compliance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "HHS Secretary Robert F. Kennedy Jr.’s public claim that AI can offer a better-informed second opinion than physicians drew pushback from medical organizations, sharpening the need for evidence-based deployment and trust.",
+          "items": [
+            {
+              "item_id": "2026-10-05-rfk-ai-physician-second-opinion-claims",
+              "canonical_topic": "rfk-ai-physician-second-opinion-claims",
+              "duplicate_group": "rfk-ai-physician-second-opinion-claims",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/doctors-push-back-after-rfk-jr-turns-heat-debate-over-ais-role-medicine",
+                  "source_type": "rss",
+                  "published_at": "2026-10-02T09:53:00-04:00"
+                }
+              ],
+              "title": "RFK Jr.’s AI claims intensify debate over physician expertise and patient trust",
+              "summary": "At a public event, HHS Secretary Robert F. Kennedy Jr. said AI could provide patients a second opinion that is much better informed than any doctor in the country. Physician groups pushed back, warning that claims of AI superiority risk diminishing clinical expertise and undermining trust.",
+              "strategic_implication": "Health systems and digital-health vendors should ground AI messaging in validated use cases, disclose limitations, and preserve clinician accountability; overstated claims can erode patient confidence and complicate adoption.",
+              "confidence": "medium",
+              "tags": [
+                "artificial-intelligence",
+                "clinical-decision-support",
+                "patient-trust",
+                "physician-expertise"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Hospital and pharmaceutical prices remain a central driver of employer health-cost pressure, while MultiCare’s planned Medicare-focused health plan illustrates providers’ continued interest in direct payer strategies.",
+          "items": [
+            {
+              "item_id": "2026-10-05-healthcare-prices-employer-premiums",
+              "canonical_topic": "healthcare-prices-employer-premiums",
+              "duplicate_group": "healthcare-prices-employer-premiums",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/05/hospital-bills-drug-prices-insurance-premiums-spiral-part-5-out-of-pocket-series/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T08:30:00Z"
+                }
+              ],
+              "title": "Hospital and drug prices deepen pressure on employers and workers",
+              "summary": "STAT’s analysis argues that high, opaque prices across hospitals and the pharmaceutical sector are a major force behind rising health-insurance premiums for workers and employers. The report emphasizes prices, rather than simply the volume of visits, as a key driver of U.S. health spending.",
+              "strategic_implication": "Employers and purchasers should prioritize price and contract analysis alongside utilization management, while health systems and drug companies face continued pressure to explain pricing and demonstrate value.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-costs",
+                "hospital-pricing",
+                "drug-pricing",
+                "employer-benefits"
+              ]
+            },
+            {
+              "item_id": "2026-10-05-multicare-launches-medicare-health-plan",
+              "canonical_topic": "multicare-launches-medicare-health-plan",
+              "duplicate_group": "multicare-launches-medicare-health-plan",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/multicare-health-system-launch-new-health-plan",
+                  "source_type": "rss",
+                  "published_at": "2026-10-02T12:30:00-04:00"
+                }
+              ],
+              "title": "MultiCare plans a new health plan for Medicare-eligible patients in Washington",
+              "summary": "MultiCare Health System plans to offer a health plan to Medicare-eligible patients in Pierce, Thurston, and Spokane counties. The announcement adds a provider-sponsored option to the region’s Medicare coverage landscape.",
+              "strategic_implication": "Provider organizations considering payer expansion should assess enrollment scale, network access, and administrative capabilities; existing plans may need to respond to a locally anchored competitor.",
+              "confidence": "medium",
+              "tags": [
+                "provider-sponsored-plan",
+                "medicare",
+                "health-plan",
+                "washington-state"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Owensboro Health’s virtual-nursing partnership with Optum pairs remote and bedside nurses to free frontline clinicians for direct care; execution will depend on workflow design and measurable staff and patient outcomes.",
+          "items": [
+            {
+              "item_id": "2026-10-05-optum-owensboro-virtual-nursing",
+              "canonical_topic": "optum-owensboro-virtual-nursing",
+              "duplicate_group": "optum-owensboro-virtual-nursing",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/how-optum-owensboro-health-teamed-build-virtual-nursing-program",
+                  "source_type": "rss",
+                  "published_at": "2026-10-02T14:37:00-04:00"
+                }
+              ],
+              "title": "Owensboro Health and Optum pair virtual nurses with bedside teams",
+              "summary": "Owensboro Health is working with Optum Insight to pair bedside nurses with virtual nurses. The model is intended to shift some work away from frontline clinicians so they can spend more time on direct patient care.",
+              "strategic_implication": "Health systems evaluating virtual nursing should define which tasks move to remote teams, measure time returned to bedside staff, and monitor patient experience and escalation safety.",
+              "confidence": "high",
+              "tags": [
+                "virtual-nursing",
+                "nursing-workforce",
+                "workflow",
+                "patient-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "The 2026 Nobel Prize in Physiology or Medicine recognizes optogenetics, a research method that uses light-sensitive ion channels to control neural activity and deepen understanding of brain function.",
+          "items": [
+            {
+              "item_id": "2026-10-05-nobel-optogenetics-neuroscience",
+              "canonical_topic": "nobel-optogenetics-neuroscience",
+              "duplicate_group": "nobel-optogenetics-neuroscience",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/05/nobel-prize-medicine-2026-winner-deisseroth-hegemann-nagel/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T10:00:11Z"
+                }
+              ],
+              "title": "Nobel Prize honors optogenetics discoveries that transformed brain research",
+              "summary": "Karl Deisseroth, Peter Hegemann, and Georg Nagel received the 2026 Nobel Prize in Physiology or Medicine for discoveries concerning light-gated ion channels and optogenetics. The method combines light with genetic modifications to switch individual neurons on or off in a living brain, enabling research into how neural circuits shape memory, emotion, and behavior.",
+              "strategic_implication": "The award highlights a research platform with continuing potential to inform neuroscience and disease-treatment development; translational teams should track where precise neural control yields clinically testable applications.",
+              "confidence": "high",
+              "tags": [
+                "nobel-prize",
+                "optogenetics",
+                "neuroscience",
+                "brain-research"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-02",
       "generated_at": "2026-10-02T12:37:30Z",
       "headline": "Today's Healthcare Insights",
@@ -12970,5 +13237,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-02T12:37:30Z"
+  "last_updated": "2026-10-05T11:15:34Z"
 }

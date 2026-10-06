@@ -3,6 +3,324 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-06",
+      "generated_at": "2026-10-06T11:07:53Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today’s coverage centers on a federal push to make insurer price files more usable, new scrutiny of payer and hospital conduct, and Utah’s expansion of clinical AI pilots. Provider margin and acquisition signals sit alongside new evidence on pulse-oximeter reliability and Lilly’s first-line CLL approval; reporting was drawn from STAT News, Healthcare Dive, and Fierce Healthcare, with targeted web searches for context.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted web search for selected story details"
+        ],
+        "sources_successful": [
+          "STAT News RSS",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted Google Search queries via browser"
+        ],
+        "sources_failed": [
+          "Direct search_web tool was not exposed in this run; targeted Google Search was used as a fallback."
+        ],
+        "run_notes": "RSS feeds from all three targeted outlets returned usable items. Targeted web queries corroborated details on price transparency, Utah's AI sandbox, pulse-oximeter accuracy, Trinity Health's operating margin, iRhythm's completed acquisition, FTC warning letters, and Datavant/ID.me; some story summaries rely on RSS descriptions because full article text was not needed or available. No item from the prior 2026-10-05 edition was republished."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal regulators are tightening the usability and accountability of insurer price disclosures while lowering some reporting burdens. Texas’ investigations add a separate signal that payer conduct and access-to-care claims remain under active state scrutiny.",
+          "items": [
+            {
+              "item_id": "2026-10-06-insurer-price-transparency-final-rule",
+              "canonical_topic": "insurer-price-transparency-final-rule",
+              "duplicate_group": "insurer-price-transparency-final-rule",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-health-insurer-price-transparency-overhaul-final-rule/832105/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T09:43:38-04:00"
+                }
+              ],
+              "title": "HHS, Labor and Treasury finalize a more usable insurer price-transparency rule",
+              "summary": "HHS, Labor and Treasury finalized changes to the Transparency in Coverage rules, aiming to remove irrelevant price data, standardize disclosures, and strengthen accountability for accuracy. Insurers may move to quarterly reporting and exclude certain “ghost” rates, while the rule also expands reporting of out-of-network prices and requires in-network rates to be expressed as dollar figures.",
+              "strategic_implication": "Payers and employer-plan fiduciaries should prepare to adapt reporting systems and executive certifications while using more structured rate data to identify price variation. The shift may improve purchaser leverage even as quarterly reporting reduces the frequency of file updates.",
+              "confidence": "high",
+              "tags": [
+                "price-transparency",
+                "insurers",
+                "employer-benefits",
+                "healthcare-costs"
+              ]
+            },
+            {
+              "item_id": "2026-10-06-texas-investigates-unitedhealth-bcbstx",
+              "canonical_topic": "texas-investigates-unitedhealth-bcbstx",
+              "duplicate_group": "texas-investigates-unitedhealth-bcbstx",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/texas-ag-ken-paxton-launches-investigations-unitedhealth-group-bcbstx",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T15:48:00-04:00"
+                }
+              ],
+              "title": "Texas AG opens investigations into UnitedHealth and Blue Cross Blue Shield of Texas",
+              "summary": "Texas Attorney General Ken Paxton announced investigations into UnitedHealth Group and Blue Cross Blue Shield of Texas, citing alleged deceptive and unlawful practices that may have denied care to Texans. The report describes investigative activity, not findings or a completed enforcement action.",
+              "strategic_implication": "Payers operating in Texas should monitor the scope of the inquiries, preserve relevant records, and assess whether access, utilization-management, or member-communications practices could attract similar scrutiny.",
+              "confidence": "medium",
+              "tags": [
+                "payer-oversight",
+                "texas",
+                "access-to-care",
+                "managed-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Utah is moving clinical AI beyond administrative support into testing and prescription workflows, raising the importance of governance and accountability. A separate identity-verification partnership targets friction in patient access to medical records.",
+          "items": [
+            {
+              "item_id": "2026-10-06-utah-expands-health-ai-sandbox",
+              "canonical_topic": "utah-health-ai-sandbox-expansion",
+              "duplicate_group": "utah-health-ai-sandbox-expansion",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T16:00:14Z"
+                }
+              ],
+              "title": "Utah expands health AI sandbox to test prescription and women’s-health pilots",
+              "summary": "Utah regulators announced an expansion of the state’s health AI sandbox, including pilots in prescription workflows and women’s health. One planned use would allow an AI product to evaluate patients and write new prescriptions without prior human review.",
+              "strategic_implication": "Health systems and regulators should clarify clinical accountability, escalation pathways, monitoring, and patient disclosure before similar autonomous tools move into routine care. The pilots could establish a practical test of how state-level oversight handles AI acting directly on treatment decisions.",
+              "confidence": "medium",
+              "tags": [
+                "health-ai",
+                "regulatory-sandbox",
+                "prescribing",
+                "womens-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-06-datavant-idme-records-access",
+              "canonical_topic": "datavant-idme-medical-records-access",
+              "duplicate_group": "datavant-idme-medical-records-access",
+              "priority_score": 6,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/datavant-idme-partner-digital-identity-verification-medical-records",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T08:25:00-04:00"
+                }
+              ],
+              "title": "Datavant and ID.me partner to simplify digital verification for medical-record requests",
+              "summary": "Datavant and ID.me announced a partnership to let patients verify their identities digitally when requesting medical records. The companies say the process is intended to make records retrieval faster.",
+              "strategic_implication": "Providers and health-data intermediaries should assess whether identity verification can reduce request handling time without creating new access barriers for patients who cannot or do not use digital identity tools.",
+              "confidence": "high",
+              "tags": [
+                "patient-access",
+                "identity-verification",
+                "medical-records",
+                "interoperability"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Trinity Health’s improved but still modest operating margin underscores how revenue gains and expense discipline are central to nonprofit-system recovery. iRhythm’s completed acquisition expands its monitoring portfolio, while premium longevity clinics show hospitals testing new self-pay revenue models.",
+          "items": [
+            {
+              "item_id": "2026-10-06-trinity-health-fy2026-margin",
+              "canonical_topic": "trinity-health-fy2026-operating-margin",
+              "duplicate_group": "trinity-health-fy2026-operating-margin",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/trinity-health-improves-11-operating-margin-fy2026",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T16:10:00-04:00"
+                }
+              ],
+              "title": "Trinity Health improves to a 1.1% operating margin in fiscal 2026",
+              "summary": "Trinity Health improved its fiscal 2026 operating margin to 1.1%, while operating revenue grew 5.2%. The 91-hospital system cited volume gains and higher rates alongside expense management, including a reduction in full-time equivalents and cost growth below medical inflation.",
+              "strategic_implication": "The result signals ongoing recovery but leaves limited room for shocks, making labor productivity, payer-rate realization, and disciplined expense growth central priorities for large nonprofit systems.",
+              "confidence": "high",
+              "tags": [
+                "hospital-finances",
+                "operating-margin",
+                "cost-management",
+                "nonprofit-health-systems"
+              ]
+            },
+            {
+              "item_id": "2026-10-06-irhythm-vitalconnect-acquisition",
+              "canonical_topic": "irhythm-vitalconnect-acquisition",
+              "duplicate_group": "irhythm-vitalconnect-acquisition",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/irhythm-acquires-vitalconnect-2375m-all-cash-deal",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T12:08:00-04:00"
+                }
+              ],
+              "title": "iRhythm completes its $237.5 million acquisition of VitalConnect",
+              "summary": "iRhythm completed its acquisition of remote patient-monitoring company VitalConnect for $237.5 million. iRhythm provides end-to-end cardiac monitoring services, while VitalConnect adds a monitoring platform that supports multiple modalities.",
+              "strategic_implication": "The deal broadens iRhythm’s remote-monitoring portfolio and may intensify competition around integrated cardiac monitoring. Execution will depend on combining platforms and clinical workflows without disrupting existing provider relationships.",
+              "confidence": "medium",
+              "tags": [
+                "remote-patient-monitoring",
+                "cardiac-care",
+                "medtech",
+                "mergers-acquisitions"
+              ]
+            },
+            {
+              "item_id": "2026-10-06-hospital-longevity-clinics",
+              "canonical_topic": "nonprofit-hospital-longevity-clinics",
+              "duplicate_group": "nonprofit-hospital-longevity-clinics",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/hospitals-longevity-clinics-healthy-aging-wellness-trend/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T08:30:00Z"
+                }
+              ],
+              "title": "Nonprofit hospitals enter the longevity-clinic market with premium self-pay services",
+              "summary": "STAT reports that major hospitals are entering the longevity-clinic market with personalized health advice and advanced testing. Some programs cost as much as $45,000 annually, placing them well beyond conventional covered care.",
+              "strategic_implication": "Health systems should test demand and clinical value before expanding premium wellness offerings, while making evidence, limitations, and the self-pay nature of services clear to consumers.",
+              "confidence": "medium",
+              "tags": [
+                "longevity",
+                "hospital-strategy",
+                "self-pay",
+                "preventive-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Federal scrutiny of hospital price disclosures is broadening beyond CMS reporting rules to include potential exposure under the FTC Act. Providers should treat public-facing price data as both an operational requirement and a consumer-protection issue.",
+          "items": [
+            {
+              "item_id": "2026-10-06-ftc-hospital-price-transparency-letters",
+              "canonical_topic": "ftc-hospital-price-transparency-warning-letters",
+              "duplicate_group": "ftc-hospital-price-transparency-warning-letters",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/ftc-sends-price-transparency-warning-letters-24-large-hospital-systems-price",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T14:22:00-04:00"
+                }
+              ],
+              "title": "FTC warns 24 hospital systems that incomplete price disclosures may violate federal law",
+              "summary": "The FTC sent warning letters to 24 large hospital systems, saying CMS price-transparency guidance is a regulatory floor. The agency said incomplete or inaccurate pricing information could also implicate the FTC Act’s prohibitions on unfair or deceptive practices.",
+              "strategic_implication": "Hospitals should audit machine-readable files and consumer-facing estimates for completeness, accuracy, and consistency, with clear ownership across finance, compliance, and patient-access teams.",
+              "confidence": "high",
+              "tags": [
+                "hospital-operations",
+                "price-transparency",
+                "ftc",
+                "compliance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "New findings point to a persistent clinical-safety challenge: pulse-oximeter performance can shift over time and remain less reliable for patients of color. Lilly’s new first-line CLL indication will also require oncology teams and payers to reassess treatment pathways.",
+          "items": [
+            {
+              "item_id": "2026-10-06-pulse-oximeter-performance-shifts",
+              "canonical_topic": "pulse-oximeter-performance-shifts",
+              "duplicate_group": "pulse-oximeter-performance-shifts",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/pulse-oximeters-overestimate-and-underestimate-blood-oxygen-study/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T08:30:00Z"
+                }
+              ],
+              "title": "Study finds pulse-oximeter readings shifted from overestimating to underestimating oxygen",
+              "summary": "Researchers found that pulse oximeters in a hospital shifted from overestimating blood oxygen levels to underestimating them. Inaccuracies were worse in patients of color, adding to longstanding concerns about how device performance varies across patient groups.",
+              "strategic_implication": "Clinical leaders should treat pulse-oximeter results as one input alongside symptoms and other measures, especially when readings conflict with a patient’s condition. Procurement and quality teams should also examine device performance across patient populations and over time.",
+              "confidence": "high",
+              "tags": [
+                "pulse-oximetry",
+                "patient-safety",
+                "clinical-equity",
+                "medical-devices"
+              ]
+            },
+            {
+              "item_id": "2026-10-06-lilly-jaypirca-first-line-cll-approval",
+              "canonical_topic": "lilly-jaypirca-first-line-cll-approval",
+              "duplicate_group": "lilly-jaypirca-first-line-cll-approval",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/05/biotech-news-lilly-jaypirca-approved-as-first-line-cll-therapy/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-05T13:55:41Z"
+                }
+              ],
+              "title": "FDA approves Lilly’s Jaypirca as a first-line CLL and SLL therapy",
+              "summary": "The FDA approved Eli Lilly’s Jaypirca for previously untreated chronic lymphocytic leukemia and small lymphocytic lymphoma. The decision brings the drug into first-line treatment for these blood cancers.",
+              "strategic_implication": "Oncology service lines and payers should review treatment pathways, formulary positioning, and budget forecasts as clinicians assess the drug’s role in first-line care.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "fda-approval",
+                "cll",
+                "drug-therapy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-05",
       "generated_at": "2026-10-05T12:33:06Z",
       "headline": "Today's Healthcare Insights",
@@ -13152,5 +13470,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-05T12:33:06Z"
+  "last_updated": "2026-10-06T11:07:53Z"
 }

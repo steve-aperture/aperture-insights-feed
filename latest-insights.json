@@ -4,32 +4,37 @@
   "editions": [
     {
       "edition_date": "2026-10-07",
-      "generated_at": "2026-10-07T11:08:40Z",
+      "generated_at": "2026-10-07T12:37:12Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's coverage centers on reimbursement design, technology-enabled virtual and hospital care, and capital allocation, from CMS remote-monitoring advocacy and Teladoc's AI rollouts to McKesson-CD&R's $5.8B Option Care deal and a biotech shutdown. Signals were selected from STAT News, Healthcare Dive, and Fierce Healthcare RSS feeds; a broad Google fallback search yielded no additional timely item retained.",
+      "summary_note": "Today's edition leads with widening federal oversight: House pressure on CMS over remote-monitoring limits, a DOJ fraud directive that reaches drug and device makers, and a pending Grail decision that would trigger mandatory Medicare coverage. It also covers FDA's FY 2027 AI guidance agenda, Teladoc's AI rollouts, McKesson-CD&R's $5.8B Option Care deal, Caribou's shutdown, and new evidence that immigration enforcement is delaying emergency care in Los Angeles. Sources include STAT News, Healthcare Dive, Fierce Healthcare, and primary government and legal analyses.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
-          "STAT News RSS (main feed)",
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
+          "STAT News RSS (main, health, health-tech, pharma, politics)",
           "Healthcare Dive RSS (news)",
           "Fierce Healthcare RSS",
-          "Web search for current CMS/HHS/FDA, market, digital health, and provider developments"
+          "Primary-source verification (FDA CDRH, DOJ directive analyses, study coverage)"
         ],
         "sources_successful": [
-          "STAT News RSS (main feed)",
+          "STAT News RSS (main, health, health-tech, pharma, politics)",
           "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS"
+          "Fierce Healthcare items retained from the automated run",
+          "Primary-source verification (FDA CDRH FY 2027 guidance lists, Debevoise analysis of DOJ Directive 26-12, Medical Xpress study coverage)"
         ],
         "sources_failed": [
-          "The named search_web tool was not available in this environment; one broad Google fallback query did not produce additional timely items suitable for inclusion."
+          "Gmail InsightsSources/* labels and newsletter senders returned no messages in the connected mailbox since 2026-10-05",
+          "Fierce Healthcare RSS returned a Cloudflare bot challenge on the rebuild fetch; automated-run Fierce items retained",
+          "STAT+ articles (DOJ directive, FDA AI guidance, AstraZeneca site, MAHA) paywalled; drafted from previews plus primary or secondary sources"
         ],
-        "run_notes": "Cloned the repository fresh and screened October 6-7 feed items against the October 6 edition to avoid republishing yesterday's stories. Used RSS headlines, descriptions, and available STAT feed excerpts; no full-page fetch was required. Gmail labels were not checked because they are supplementary."
+        "run_notes": "Same-day rebuild in place: the automated run (generated 2026-10-07T11:08:40Z) had already written 2026-10-07 and trimmed the feed to 30 editions, but dropped 2026-08-26 without archiving it; that edition is now preserved in archive/editions-archive-2026-10-07.json. Retained 8 of 9 automated items; removed the Intermountain-UCHealth CIN exit item (2026-10-07-intermountain-exits-trinsic) because the same story ran in the 2026-10-06 edition. Added 9 new items from the 10/6-10/7 window screened against the prior 12 editions, and refreshed bucket syntheses.",
+        "items_captured": 17
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "A bipartisan House group is pressing CMS to preserve flexibility in how Medicare remote patient monitoring is staffed and delivered as the agency considers payment-rule changes.",
+          "synthesis": "Federal oversight is widening on several fronts: Congress is pressing CMS on remote-monitoring limits, DOJ is extending fraud enforcement to drug and device makers, and a pending Grail decision would trigger mandatory Medicare coverage. Critics are also warning that AI documentation may be raising inpatient coding intensity.",
           "items": [
             {
               "item_id": "2026-10-07-lawmakers-urge-cms-rpm-flexibility",
@@ -56,13 +61,159 @@
                 "cms",
                 "reimbursement"
               ]
+            },
+            {
+              "item_id": "2026-10-07-doj-fraud-directive-fdca-drugmakers",
+              "canonical_topic": "doj-fraud-directive-fdca-drugmakers",
+              "duplicate_group": "doj-fraud-directive-fdca-drugmakers",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/07/trump-administration-adds-pharma-to-list-priorities-combating-white-collar-fraud/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T12:10:00Z"
+                },
+                {
+                  "source": "Debevoise & Plimpton",
+                  "url": "https://www.debevoise.com/insights/publications/2026/10/new-doj-directive-details-fraud-divisions-corporat",
+                  "source_type": "web",
+                  "published_at": "2026-10-05T00:00:00Z"
+                }
+              ],
+              "title": "DOJ fraud directive puts drug and device makers in scope under the Food, Drug, and Cosmetic Act",
+              "summary": "Directive 26-12, issued Oct. 1 by DOJ's National Fraud Enforcement Division, sets corporate enforcement priorities that include healthcare fraud and explicitly cites the Food, Drug, and Cosmetic Act. STAT reports the reference signals closer scrutiny of pharmaceutical and medical-device manufacturers, a shift from the division's usual focus on providers, clinics, home health agencies, and hospices. A former DOJ official called it a subtle but significant expansion of the division's jurisdiction.",
+              "strategic_implication": "Life-sciences companies should revisit compliance programs covering promotion, manufacturing quality, and data integrity, along with self-disclosure readiness. The directive's cooperation factors give companies an incentive to find and report issues before prosecutors do.",
+              "confidence": "medium",
+              "tags": [
+                "doj",
+                "fraud-enforcement",
+                "pharma",
+                "medical-devices",
+                "compliance"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-ai-documentation-bump-codes-hospital-bills",
+              "canonical_topic": "ai-documentation-bump-codes-hospital-bills",
+              "duplicate_group": "ai-documentation-bump-codes-hospital-bills",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T08:30:00Z"
+                }
+              ],
+              "title": "Physician warns that AI documentation tools may inflate hospital bills through secondary-diagnosis bump codes",
+              "summary": "In a STAT opinion piece, resident physician Leah Pierson argues that AI-assisted documentation can raise DRG payments when secondary diagnoses such as anemia or low sodium are coded even when they do not meaningfully change care. Blue Cross Blue Shield says these codes have cost it hundreds of millions of dollars over two years. CMS last substantially revised the qualifying code list in 2007, and a 2019 proposal to prune it stalled after hospital pushback.",
+              "strategic_implication": "Expect payer audits and CMS policy attention on AI-driven coding intensity in inpatient settings. Revenue-cycle and compliance leaders should check whether ambient or CDI tools let clinicians flag a secondary diagnosis as not clinically significant.",
+              "confidence": "medium",
+              "tags": [
+                "coding-intensity",
+                "drg",
+                "ambient-ai",
+                "revenue-cycle",
+                "payer-audits"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-grail-mced-medicare-coverage-cost",
+              "canonical_topic": "grail-mced-medicare-coverage-cost",
+              "duplicate_group": "grail-mced-medicare-coverage-cost",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/grail-multi-cancer-screening-test-criticism/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T08:30:00Z"
+                }
+              ],
+              "title": "Ahead of an FDA decision on Grail's test, a critic flags Medicare's automatic coverage and a $60 billion to $100 billion annual cost",
+              "summary": "Writing in STAT, H. Gilbert Welch argues FDA should not approve Grail's multicancer blood test because its 140,000-person trial in England showed no reduction in late-stage cancers and did not show fewer cancer deaths. A 2026 law requires Medicare to cover multicancer screening tests once FDA approves them, bypassing the usual U.S. Preventive Services Task Force role. Welch estimates annual screening of Americans 50 and older could cost $60 billion to $100 billion.",
+              "strategic_implication": "An approval would create an immediate Medicare benefit with significant spending and downstream-workup implications. Health systems and payers should plan for follow-up diagnostic capacity, false-positive management, and patient counseling.",
+              "confidence": "medium",
+              "tags": [
+                "cancer-screening",
+                "medicare-coverage",
+                "fda",
+                "grail",
+                "diagnostics"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-democrats-court-maha-voters",
+              "canonical_topic": "democrats-court-maha-voters",
+              "duplicate_group": "democrats-court-maha-voters",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/democrats-focus-on-food-toxins-win-maha-voters-midterm-elections/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T08:30:00Z"
+                }
+              ],
+              "title": "Democrats court MAHA voters with food and environmental platforms ahead of the midterms",
+              "summary": "Key Democrats are meeting with Make America Healthy Again activists and rolling out food and environmental agendas to appeal to MAHA voters before the midterms. They are emphasizing food and toxins while setting aside HHS Secretary Robert F. Kennedy Jr.'s focus on vaccine injuries, which pollsters describe as a relatively fringe issue.",
+              "strategic_implication": "Food additives, chemical exposure, and nutrition policy look increasingly bipartisan. Food, ag, and consumer-health companies should expect regulatory pressure to continue whatever the election outcome.",
+              "confidence": "medium",
+              "tags": [
+                "maha",
+                "food-policy",
+                "midterms",
+                "environmental-health"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "Teladoc is adding AI documentation and camera-based monitoring across virtual-care and hospital-facing products. The releases point to a broader push to bundle workflow automation with more timely patient signals.",
+          "synthesis": "Vendors are packaging ambient documentation and remote monitoring into virtual and hospital care platforms while FDA's device center makes AI lifecycle and change-control guidance its top priority for fiscal 2027.",
           "items": [
+            {
+              "item_id": "2026-10-07-fda-cdrh-fy2027-ai-guidance-agenda",
+              "canonical_topic": "fda-cdrh-fy2027-ai-guidance-agenda",
+              "duplicate_group": "fda-cdrh-fy2027-ai-guidance-agenda",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/fda-spells-out-2027-ai-guidance-plans-health-tech/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T13:59:00Z"
+                },
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/medical-devices/guidance-documents-medical-devices-and-radiation-emitting-products/cdrh-proposed-guidances-fiscal-year-2027-fy-2027",
+                  "source_type": "web",
+                  "published_at": "2026-09-30T00:00:00Z"
+                }
+              ],
+              "title": "FDA's device center puts AI lifecycle and change-control guidance at the top of its FY 2027 agenda",
+              "summary": "CDRH published its fiscal 2027 proposed guidance lists, and STAT Health Tech highlighted new AI guidances expected next year. Finalizing guidance on AI-enabled devices across the product lifecycle and on predetermined change control plans (PCCPs) leads the priority A-list, according to regulatory trade coverage.",
+              "strategic_implication": "AI device developers and health-system buyers should plan for firmer FDA expectations on postmarket monitoring and how model updates are managed. Final PCCP guidance would make it easier to plan iterative model updates without new submissions.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "ai-regulation",
+                "medical-devices",
+                "pccp",
+                "guidance"
+              ]
+            },
             {
               "item_id": "2026-10-07-teladoc-remote-monitoring-ambient-ai",
               "canonical_topic": "teladoc-remote-monitoring-ambient-ai",
@@ -119,7 +270,7 @@
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "A multibillion-dollar infusion-care acquisition contrasts with a late-stage cell-therapy shutdown after financing fell short. Highmark's planned CEO transition adds a leadership signal across the payer sector.",
+          "synthesis": "Capital is shifting toward scale players: McKesson and CD&R's $5.8 billion Option Care deal and AstraZeneca's Boston expansion contrast with Caribou's shutdown after it failed to finance a pivotal trial, alongside a CEO transition at Highmark.",
           "items": [
             {
               "item_id": "2026-10-07-mckesson-cdr-option-care-acquisition",
@@ -198,44 +349,82 @@
                 "payer-leadership",
                 "highmark"
               ]
+            },
+            {
+              "item_id": "2026-10-07-astrazeneca-kendall-square-rd-center",
+              "canonical_topic": "astrazeneca-kendall-square-rd-center",
+              "duplicate_group": "astrazeneca-kendall-square-rd-center",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/biotech-news-astrazeneca-opens-new-boston-site/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T14:41:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/06/us-funded-psychedelic-trials-astrazeneca-research-center/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T13:36:00Z"
+                }
+              ],
+              "title": "AstraZeneca opens an 18-story Kendall Square R&D center, the centerpiece of its $1 billion Massachusetts investment",
+              "summary": "AstraZeneca opened a 570,000-square-foot, 18-story R&D site in Kendall Square in Cambridge, Massachusetts, as the centerpiece of a $1 billion state investment program. STAT framed the opening against an unsettled Boston biotech market following a run of Chinese licensing deals.",
+              "strategic_implication": "Large pharma is still committing to U.S. research hubs even as early-stage assets are increasingly sourced from China. Biotech employers and local health systems in Boston should expect continued competition for research talent.",
+              "confidence": "high",
+              "tags": [
+                "astrazeneca",
+                "biotech",
+                "r-and-d",
+                "boston"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "Intermountain will leave the clinically integrated network it co-owned with UCHealth, with UCHealth assuming sole ownership and operation in December.",
+          "synthesis": "New evidence from Los Angeles shows immigration enforcement can push safety-net patients to delay emergency care until they need admission, raising acuity and cost pressure for providers.",
           "items": [
             {
-              "item_id": "2026-10-07-intermountain-exits-trinsic",
-              "canonical_topic": "intermountain-exits-trinsic",
-              "duplicate_group": "intermountain-exits-trinsic",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
+              "item_id": "2026-10-07-la-er-visits-foreign-born-ice-enforcement",
+              "canonical_topic": "la-er-visits-foreign-born-ice-enforcement",
+              "duplicate_group": "la-er-visits-foreign-born-ice-enforcement",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
               "source_refs": [
                 {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/intermountain-stepping-back-clinically-integrated-network-jointly-run-owned-uchealth",
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/health-news-er-visits-from-people-born-outside-the-u-s-dropped-after-ice-raids/",
                   "source_type": "rss",
-                  "published_at": "2026-10-06T14:02:00-04:00"
+                  "published_at": "2026-10-07T11:50:00Z"
+                },
+                {
+                  "source": "Medical Xpress",
+                  "url": "https://medicalxpress.com/news/2026-10-immigration-la-foreign-born-patients.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-05T00:00:00Z"
                 }
               ],
-              "title": "Intermountain exits its jointly owned clinically integrated network with UCHealth",
-              "summary": "Intermountain Health is stepping back from Trinsic, the clinically integrated network it jointly launched and owned with UCHealth in 2023 to advance value-based care and care coordination. UCHealth is expected to become Trinsic's sole owner and operator in December.",
-              "strategic_implication": "The ownership change may reshape how the partners coordinate care and pursue value-based arrangements across the network. Regional providers should clarify which contracts, operations, and referral pathways will continue under UCHealth's sole control.",
+              "title": "ER visits by foreign-born patients fell sharply at LA safety-net hospitals after immigration enforcement intensified",
+              "summary": "A USC study in JAMA Network Open found emergency department visits by people born outside the U.S. dropped sharply at three Los Angeles County safety-net hospitals after ICE operations increased last year. Visits were more than 20% lower than among U.S.-born patients in the first four weeks, while admissions in this population rose, suggesting patients delayed care until they were sicker.",
+              "strategic_implication": "Safety-net systems in enforcement-heavy markets should prepare for higher-acuity presentations and uncompensated-care pressure from delayed care. Outreach, community clinics, and clear privacy messaging may help keep patients from avoiding care.",
               "confidence": "high",
               "tags": [
-                "value-based-care",
-                "clinically-integrated-network",
-                "health-system",
-                "care-coordination"
+                "safety-net",
+                "emergency-department",
+                "immigration",
+                "access-to-care"
               ]
             }
           ]
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "New investment in AI-enabled staffing highlights hospitals' search for more flexible capacity management, while a rare-disease feature underscores how mutation-specific therapies can sharply limit access even when a treatment advances.",
+          "synthesis": "Staffing technology continues to attract capital, and clinical leaders face access and safety questions on precision rare-disease therapies, federally funded psychedelic trials, and an unconfirmed plague report in Russia.",
           "items": [
             {
               "item_id": "2026-10-07-vitalize-hospital-staffing-ai",
@@ -288,6 +477,59 @@
                 "exon-skipping",
                 "drug-development",
                 "access-to-therapy"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-federal-ibogaine-trials-fda-docket",
+              "canonical_topic": "federal-ibogaine-trials-fda-docket",
+              "duplicate_group": "federal-ibogaine-trials-fda-docket",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/06/us-funded-psychedelic-trials-astrazeneca-research-center/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T13:36:00Z"
+                }
+              ],
+              "title": "FDA seeks input on the first federally funded ibogaine trials for opioid addiction and PTSD",
+              "summary": "The administration is advancing the first U.S. government-funded clinical trials of ibogaine for opioid use disorder and PTSD, backed by $50 million in research funding under an April executive order. FDA opened a public docket for feedback on trial design, dosing, eligibility, safety monitoring, and stopping rules, with comments due Nov. 20.",
+              "strategic_implication": "Addiction-medicine and behavioral-health leaders have a near-term chance to shape safety requirements, particularly cardiac monitoring, for a drug with known cardiotoxicity risks. Any eventual programs would need specialized clinical oversight.",
+              "confidence": "medium",
+              "tags": [
+                "psychedelics",
+                "opioid-use-disorder",
+                "ptsd",
+                "fda",
+                "clinical-trials"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-irkutsk-pneumonia-plague-reports",
+              "canonical_topic": "irkutsk-pneumonia-plague-reports",
+              "duplicate_group": "irkutsk-pneumonia-plague-reports",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/russia-plague-reports-pneuomonia-siberia-expert-calm/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T23:41:00Z"
+                }
+              ],
+              "title": "Fatal pneumonia at a Siberian anti-plague institute draws scrutiny, but plague is unconfirmed and no spread is evident",
+              "summary": "A 28-year-old worker at Russia's Irkutsk Anti-Plague Research Institute was hospitalized with severe pneumonia on Sept. 29 and died about two days later; Russian authorities called it pneumonia of unknown cause. WHO reported no confirmed plague cases or further infections among contacts. Infectious disease physician Krutika Kuppalli writes that the event warrants attention, not panic.",
+              "strategic_implication": "Health-security teams should keep monitoring official WHO updates on this possible laboratory-associated event and not act on unverified reports. Clinicians should continue routine travel and exposure history-taking for severe pneumonia.",
+              "confidence": "medium",
+              "tags": [
+                "health-security",
+                "plague",
+                "laboratory-biosafety",
+                "outbreak-monitoring"
               ]
             }
           ]
@@ -13306,5 +13548,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-07T11:08:40Z"
+  "last_updated": "2026-10-07T12:37:12Z"
 }

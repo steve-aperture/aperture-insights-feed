@@ -3,6 +3,298 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-07",
+      "generated_at": "2026-10-07T11:08:40Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's coverage centers on reimbursement design, technology-enabled virtual and hospital care, and capital allocation, from CMS remote-monitoring advocacy and Teladoc's AI rollouts to McKesson-CD&R's $5.8B Option Care deal and a biotech shutdown. Signals were selected from STAT News, Healthcare Dive, and Fierce Healthcare RSS feeds; a broad Google fallback search yielded no additional timely item retained.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS (main feed)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Web search for current CMS/HHS/FDA, market, digital health, and provider developments"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main feed)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_failed": [
+          "The named search_web tool was not available in this environment; one broad Google fallback query did not produce additional timely items suitable for inclusion."
+        ],
+        "run_notes": "Cloned the repository fresh and screened October 6-7 feed items against the October 6 edition to avoid republishing yesterday's stories. Used RSS headlines, descriptions, and available STAT feed excerpts; no full-page fetch was required. Gmail labels were not checked because they are supplementary."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "A bipartisan House group is pressing CMS to preserve flexibility in how Medicare remote patient monitoring is staffed and delivered as the agency considers payment-rule changes.",
+          "items": [
+            {
+              "item_id": "2026-10-07-lawmakers-urge-cms-rpm-flexibility",
+              "canonical_topic": "lawmakers-urge-cms-rpm-flexibility",
+              "duplicate_group": "lawmakers-urge-cms-rpm-flexibility",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/lawmakers-press-cms-roll-back-proposed-restrictions-remote-patient-monitoring",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T14:07:00-04:00"
+                }
+              ],
+              "title": "32 House lawmakers ask CMS to reconsider proposed limits on remote patient monitoring",
+              "summary": "A bipartisan group of 32 House lawmakers urged CMS Administrator Mehmet Oz to reconsider proposed Medicare payment-rule changes affecting how remote patient monitoring services are staffed and delivered. The letter puts provider and patient access concerns into the debate over Medicare's RPM payment policy.",
+              "strategic_implication": "RPM operators should track the final rule closely and assess how staffing and delivery requirements could affect their care models. Congressional pushback signals that implementation details may remain contested.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "remote-patient-monitoring",
+                "cms",
+                "reimbursement"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Teladoc is adding AI documentation and camera-based monitoring across virtual-care and hospital-facing products. The releases point to a broader push to bundle workflow automation with more timely patient signals.",
+          "items": [
+            {
+              "item_id": "2026-10-07-teladoc-remote-monitoring-ambient-ai",
+              "canonical_topic": "teladoc-remote-monitoring-ambient-ai",
+              "duplicate_group": "teladoc-remote-monitoring-ambient-ai",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/teladoc-unveils-remote-monitoring-ambient-ai-features/832328/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T06:02:00-04:00"
+                }
+              ],
+              "title": "Teladoc adds AI scribing and camera-based vital-sign monitoring to its virtual-care platform",
+              "summary": "Teladoc integrated artificial-intelligence scribing and camera-based vital-sign monitoring into its virtual-care platform, Healthcare Dive reported. The company is introducing the features as it works to recover from significant financial setbacks.",
+              "strategic_implication": "Health systems evaluating virtual-care platforms may increasingly expect documentation automation and remote monitoring to work together. Adoption will depend on workflow fit and evidence that the features improve care delivery at sustainable cost.",
+              "confidence": "high",
+              "tags": [
+                "virtual-care",
+                "ambient-ai",
+                "remote-monitoring",
+                "teladoc"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-teladoc-solo-hospital-ai",
+              "canonical_topic": "teladoc-solo-hospital-ai",
+              "duplicate_group": "teladoc-solo-hospital-ai",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/teladoc-health-unveils-2-new-ai-capabilities-within-solo-platform",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T15:28:00-04:00"
+                }
+              ],
+              "title": "Teladoc adds two AI capabilities to its Solo platform for hospitals",
+              "summary": "Teladoc unveiled two new AI capabilities within its Solo platform for hospitals. The tools are intended to surface timely patient insights in care environments and reduce technology fragmentation, according to the company.",
+              "strategic_implication": "Hospitals may favor AI features that plug into existing care environments rather than add another standalone system. Buyers should test whether the promised insight and consolidation translate into measurable workflow improvements.",
+              "confidence": "medium",
+              "tags": [
+                "hospital-ai",
+                "teladoc",
+                "clinical-workflow",
+                "technology-integration"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "A multibillion-dollar infusion-care acquisition contrasts with a late-stage cell-therapy shutdown after financing fell short. Highmark's planned CEO transition adds a leadership signal across the payer sector.",
+          "items": [
+            {
+              "item_id": "2026-10-07-mckesson-cdr-option-care-acquisition",
+              "canonical_topic": "mckesson-cdr-option-care-acquisition",
+              "duplicate_group": "mckesson-cdr-option-care-acquisition",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/cdr-mckesson-acquiring-infusion-therapy-provider-option-care-health-58b",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T11:08:00-04:00"
+                }
+              ],
+              "title": "McKesson and CD&R agree to acquire Option Care Health in a $5.8B deal",
+              "summary": "McKesson and private-equity firm Clayton, Dubilier & Rice agreed to acquire Option Care Health in a transaction valued at $5.8 billion. Option Care is the largest independent provider of home and alternate-site infusion services, and the deal is expected to close in the first half of 2027.",
+              "strategic_implication": "The deal puts a large infusion-care platform at the center of a major distribution and investment transaction. Health systems, manufacturers, and competing infusion providers should watch for post-close changes to network strategy and service capacity.",
+              "confidence": "high",
+              "tags": [
+                "infusion-therapy",
+                "mergers-acquisitions",
+                "home-care",
+                "healthcare-investment"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-caribou-biosciences-shutdown",
+              "canonical_topic": "caribou-biosciences-shutdown",
+              "duplicate_group": "caribou-biosciences-shutdown",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/caribou-biosciences-shutting-down-lymphoma-car-t-therapy/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T08:30:00Z"
+                }
+              ],
+              "title": "Caribou Biosciences to shut down after failing to finance a late-stage CAR-T trial",
+              "summary": "Caribou Biosciences said it is shutting down after failing to raise the capital needed for a late-stage clinical trial of its off-the-shelf CAR-T therapy for lymphoma. The company will discontinue development of its two CRISPR-based CAR-T candidates, including a program for advanced B-cell non-Hodgkin lymphoma, despite having worked with FDA to finalize a Phase 3 trial design.",
+              "strategic_implication": "The closure highlights financing risk even for advanced cell-therapy programs with regulatory alignment and a defined pivotal-trial path. Biotechs approaching late-stage trials may need earlier partnering or alternative financing plans to protect programs from capital-market constraints.",
+              "confidence": "high",
+              "tags": [
+                "biotechnology",
+                "car-t",
+                "clinical-trials",
+                "venture-funding"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-highmark-ceo-transition",
+              "canonical_topic": "highmark-ceo-transition",
+              "duplicate_group": "highmark-ceo-transition",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/highmark-taps-karen-hanlon-ceo-david-holmberg-transition-executive-chairman",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T14:18:00-04:00"
+                }
+              ],
+              "title": "Highmark names Karen Hanlon CEO as David Holmberg moves to executive chair",
+              "summary": "Highmark named Karen Hanlon as its next CEO, with the transition set for Jan. 1. Current CEO David Holmberg will become executive chairperson.",
+              "strategic_implication": "The transition creates a leadership inflection point for a major integrated payer-provider organization. Partners should monitor whether the new leadership team changes strategic priorities or operating plans.",
+              "confidence": "high",
+              "tags": [
+                "health-insurance",
+                "executive-transition",
+                "payer-leadership",
+                "highmark"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Intermountain will leave the clinically integrated network it co-owned with UCHealth, with UCHealth assuming sole ownership and operation in December.",
+          "items": [
+            {
+              "item_id": "2026-10-07-intermountain-exits-trinsic",
+              "canonical_topic": "intermountain-exits-trinsic",
+              "duplicate_group": "intermountain-exits-trinsic",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/intermountain-stepping-back-clinically-integrated-network-jointly-run-owned-uchealth",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T14:02:00-04:00"
+                }
+              ],
+              "title": "Intermountain exits its jointly owned clinically integrated network with UCHealth",
+              "summary": "Intermountain Health is stepping back from Trinsic, the clinically integrated network it jointly launched and owned with UCHealth in 2023 to advance value-based care and care coordination. UCHealth is expected to become Trinsic's sole owner and operator in December.",
+              "strategic_implication": "The ownership change may reshape how the partners coordinate care and pursue value-based arrangements across the network. Regional providers should clarify which contracts, operations, and referral pathways will continue under UCHealth's sole control.",
+              "confidence": "high",
+              "tags": [
+                "value-based-care",
+                "clinically-integrated-network",
+                "health-system",
+                "care-coordination"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "New investment in AI-enabled staffing highlights hospitals' search for more flexible capacity management, while a rare-disease feature underscores how mutation-specific therapies can sharply limit access even when a treatment advances.",
+          "items": [
+            {
+              "item_id": "2026-10-07-vitalize-hospital-staffing-ai",
+              "canonical_topic": "vitalize-hospital-staffing-ai",
+              "duplicate_group": "vitalize-hospital-staffing-ai",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/vitalize-secures-31m-scale-ai-powered-operating-system-hospital-staffing-and-scheduling",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T11:21:00-04:00"
+                }
+              ],
+              "title": "Vitalize raises $31M to scale AI-powered hospital staffing and scheduling software",
+              "summary": "Vitalize raised $31 million to scale software designed to automate hospital staffing, forecast demand, and manage capacity. The company says its platform aims to reduce reliance on overtime and agency labor.",
+              "strategic_implication": "Labor-constrained hospitals are continuing to invest in tools that connect demand forecasting with staffing decisions. Buyers should evaluate whether automation improves coverage and lowers contingent-labor costs without compromising clinical judgment or staff experience.",
+              "confidence": "high",
+              "tags": [
+                "workforce-management",
+                "hospital-operations",
+                "artificial-intelligence",
+                "staffing"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-duchenne-exon-skipping-access",
+              "canonical_topic": "duchenne-exon-skipping-access",
+              "duplicate_group": "duchenne-exon-skipping-access",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/muscular-dystrophy-exon-skipping-drugs-novartis-dyne/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T08:30:00Z"
+                }
+              ],
+              "title": "Mutation-specific exon-skipping therapies leave most people with Duchenne ineligible",
+              "summary": "STAT reports that Avidity Biosciences' exon-skipping drug Del-zota, now under FDA review, is designed for a specific genetic mutation and may be suitable for about 7% of people with Duchenne muscular dystrophy in the United States. The broader exon-skipping approach could theoretically apply to a much larger share of patients, but each drug must match a patient's mutation.",
+              "strategic_implication": "Rare-disease developers and care teams must plan around genetically narrow populations, including diagnostic identification, trial recruitment, and access pathways. The case also illustrates the gap between a platform's theoretical reach and the number of patients eligible for an individual medicine.",
+              "confidence": "medium",
+              "tags": [
+                "duchenne",
+                "rare-disease",
+                "exon-skipping",
+                "drug-development",
+                "access-to-therapy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-06",
       "generated_at": "2026-10-06T12:39:02Z",
       "headline": "Today's Healthcare Insights",
@@ -13012,335 +13304,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-08-26",
-      "generated_at": "2026-08-26T11:09:48Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks rising administrative and employer healthcare costs, the return of measles deaths, and major digital-health consolidation. It also covers VA electronic-record deployment, the emerging Lp(a) drug market, and new evidence linking Shingrix with cardiovascular outcomes, using STAT, Healthcare Dive, Fierce Healthcare, official VA/company disclosures, Reuters, and targeted web context.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA/CDC web",
-          "Official government and company disclosures",
-          "Targeted web search",
-          "Supplementary Gmail newsletters"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "Targeted web search",
-          "VA News / DigitalVA",
-          "Switchboard Health disclosure",
-          "NAIC analysis"
-        ],
-        "sources_failed": [
-          "Supplementary Gmail newsletters not used"
-        ],
-        "run_notes": "All three required RSS feeds returned via curl. Fresh Aug. 25-26 items were cross-checked with targeted search results and official VA/company or industry disclosures. Yesterday's rural-hospital, vaccine-review, OMB, drug-diversion AI, MyChart, Highmark, Regenxbio, California affordability, Alabama grants, and Mass General Brigham nursing topics were not republished."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Payment friction and infectious-disease control are producing immediate operational consequences for plans, providers, and public-health agencies. The No Surprises Act's dispute burden is now a material cost issue, while Pennsylvania's measles fatalities underscore the need for outbreak readiness and immunization outreach.",
-          "items": [
-            {
-              "item_id": "2026-08-26-no-surprises-idr-costs",
-              "canonical_topic": "no-surprises-idr-costs",
-              "duplicate_group": "no-surprises-idr-costs",
-              "priority_score": 9,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/costs-tied-no-surprises-acts-idr-process-hit-22b-2025-study-finds",
-                  "source_type": "rss",
-                  "published_at": "2026-08-25T20:54:00Z"
-                },
-                {
-                  "source": "NAIC",
-                  "url": "https://content.naic.org/sites/default/files/national_meeting/hcam-jones-slides-8.13.pdf",
-                  "source_type": "web",
-                  "published_at": "2026-08-13T00:00:00Z"
-                }
-              ],
-              "title": "No Surprises Act dispute costs reach an estimated $22.4 billion",
-              "summary": "Fierce Healthcare reports that costs tied to the No Surprises Act's independent dispute-resolution process reached $22.4 billion at the end of 2025, according to a new analysis. An NAIC presentation cited roughly 2.2 million disputes in 2025, $12.6 billion in awards above qualifying payment amounts, and $1.3 billion in IDR-entity fees.",
-              "strategic_implication": "Payers and providers should treat arbitration volume as a structural cost and contracting problem, not a back-office exception. The burden can flow into premiums, administrative staffing, and negotiations over network adequacy and payment benchmarks.",
-              "confidence": "medium",
-              "tags": [
-                "no-surprises-act",
-                "idr",
-                "payment-policy",
-                "payer-provider",
-                "healthcare-costs"
-              ]
-            },
-            {
-              "item_id": "2026-08-26-pennsylvania-measles-deaths",
-              "canonical_topic": "pennsylvania-measles-deaths",
-              "duplicate_group": "pennsylvania-measles-deaths",
-              "priority_score": 9,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/pennsylvania-reports-first-measles-associated-deaths-2026",
-                  "source_type": "rss",
-                  "published_at": "2026-08-25T20:39:00Z"
-                },
-                {
-                  "source": "U.S. News / Reuters",
-                  "url": "https://www.usnews.com/news/top-news/articles/2026-08-25/pennsylvania-reports-two-deaths-from-measles-health-department-says",
-                  "source_type": "web",
-                  "published_at": "2026-08-25T23:08:27Z"
-                }
-              ],
-              "title": "Pennsylvania reports first measles deaths in 35 years as outbreak nears 400 cases",
-              "summary": "Pennsylvania reported two measles-associated deaths among unvaccinated Lancaster County residents, the first such deaths in the state in 35 years and the first reported in the United States in 2026. State officials said Pennsylvania had confirmed 393 cases across 28 counties as of Aug. 25, with no additional patient details released for privacy reasons.",
-              "strategic_implication": "Health systems and public-health agencies should reinforce vaccination access, exposure protocols, and surge communications before localized outbreaks create avoidable inpatient demand. The event also raises reputational and workforce risks for organizations that are not aligned on evidence-based patient messaging.",
-              "confidence": "high",
-              "tags": [
-                "measles",
-                "vaccination",
-                "public-health",
-                "outbreak-response",
-                "pennsylvania"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Digital-health growth is moving toward broader condition coverage and tighter integration of navigation, virtual care, and behavioral health. The latest deals suggest that distribution, referral workflows, and measurable outcomes matter as much as standalone software features.",
-          "items": [
-            {
-              "item_id": "2026-08-26-sword-headspace-acquisition",
-              "canonical_topic": "sword-headspace-acquisition",
-              "duplicate_group": "sword-headspace-acquisition",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/25/sword-health-to-acquire-headspace-per-regulatory-filing/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-25T20:46:14Z"
-                },
-                {
-                  "source": "Behavioral Health Business",
-                  "url": "https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/",
-                  "source_type": "web",
-                  "published_at": "2026-08-25T18:08:27Z"
-                }
-              ],
-              "title": "Sword Health plans cash acquisition of Headspace, expanding its virtual-care footprint",
-              "summary": "STAT reports that Sword Health plans to acquire mental-health provider Headspace for cash, according to regulatory filings. The transaction is expected to become effective Sept. 14, and the purchase price was not disclosed; Headspace's parent, OrangeDot, reported the proposed change of control to Massachusetts regulators.",
-              "strategic_implication": "The combination would give Sword a broader platform spanning physical and mental health, increasing its ability to sell integrated virtual-care programs to employers and health plans. Buyers should evaluate whether the enlarged offering improves engagement and outcomes or simply adds another layer of vendor and clinical-governance complexity.",
-              "confidence": "high",
-              "tags": [
-                "digital-health",
-                "behavioral-health",
-                "virtual-care",
-                "m-and-a",
-                "employer-health"
-              ]
-            },
-            {
-              "item_id": "2026-08-26-switchboard-livara-acquisition",
-              "canonical_topic": "switchboard-livara-acquisition",
-              "duplicate_group": "switchboard-livara-acquisition",
-              "priority_score": 7,
-              "primary_source": "Switchboard Health",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/digital-health/switchboard-health-acquires-livara-health-value-based-msk-care-secures-5m-funding",
-                  "source_type": "rss",
-                  "published_at": "2026-08-25T15:25:00Z"
-                },
-                {
-                  "source": "Switchboard Health",
-                  "url": "https://www.switchboardhealth.com/post/switchboard-health-acquires-livara-health",
-                  "source_type": "web",
-                  "published_at": "2026-08-25T13:08:27Z"
-                }
-              ],
-              "title": "Switchboard acquires Livara and adds more than $5 million to fund value-based MSK care",
-              "summary": "Switchboard Health acquired Livara Health, bringing Livara's virtual musculoskeletal-care model into Switchboard's referral-management and specialty-care navigation platform. The company also announced more than $5 million in equity financing to support integration and growth, extending its model from navigation into direct, value-based care delivery.",
-              "strategic_implication": "The move points to continued vertical integration in specialty care, where navigation vendors are adding clinical capacity to capture more of the outcome and savings equation. Health plans and risk-bearing providers should assess whether integrated MSK programs can reduce leakage and surgery utilization without compromising choice or clinical oversight.",
-              "confidence": "high",
-              "tags": [
-                "digital-health",
-                "musculoskeletal-care",
-                "care-navigation",
-                "value-based-care",
-                "funding"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Healthcare markets are balancing persistent cost inflation with a new wave of clinical and pharmaceutical opportunity. Employer cost forecasts raise near-term budget pressure, while Lp(a) therapies could create a large market if outcomes trials validate the biological target.",
-          "items": [
-            {
-              "item_id": "2026-08-26-employer-healthcare-costs-2027",
-              "canonical_topic": "employer-healthcare-costs-2027",
-              "duplicate_group": "employer-healthcare-costs-2027",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/healthcare-costs-projected-to-rise-in-2027/828719/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-25T15:11:00Z"
-                },
-                {
-                  "source": "Reuters",
-                  "url": "https://www.reuters.com/legal/litigation/us-employer-healthcare-costs-set-rise-95-2027-aon-says-2026-08-20/",
-                  "source_type": "web",
-                  "published_at": "2026-08-20T11:08:27Z"
-                }
-              ],
-              "title": "Employer healthcare costs could approach a 10% increase again in 2027",
-              "summary": "Aon projects that U.S. employer healthcare costs will rise 9.5% in 2027, with average spending moving above $19,000 per employee. Healthcare Dive reports that employers expect to absorb more than 80% of the burden, but employees will also face higher contributions and out-of-pocket costs; Aon attributes the pressure to medical utilization and high-priced drugs.",
-              "strategic_implication": "Employers, payers, and providers should expect benefit redesign, tighter utilization management, and stronger demand for measurable care-management savings. Providers that can demonstrate lower total cost of care may gain leverage, while organizations dependent on volume without affordability evidence face more scrutiny.",
-              "confidence": "high",
-              "tags": [
-                "employer-health",
-                "healthcare-costs",
-                "benefits",
-                "utilization",
-                "drug-spending"
-              ]
-            },
-            {
-              "item_id": "2026-08-26-lpa-drug-pipeline",
-              "canonical_topic": "lpa-drug-pipeline",
-              "duplicate_group": "lpa-drug-pipeline",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/26/lp-a-drugs-novartis-amgen-lilly-potential-heart-disease-blockbuster/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-26T08:30:00Z"
-                },
-                {
-                  "source": "CNBC",
-                  "url": "https://www.cnbc.com/2026/04/27/lpa-drugs-from-novartis-amgen-and-eli-lilly-aim-to-prevent-heart-attacks.html",
-                  "source_type": "web",
-                  "published_at": "2026-04-27T00:00:00Z"
-                }
-              ],
-              "title": "Late-stage Lp(a) medicines could open a multibillion-dollar cardiovascular market",
-              "summary": "STAT reports that drugmakers are advancing late-stage treatments for lipoprotein(a), a common cardiovascular risk factor that currently has no dedicated approved therapy. Novartis, Amgen, and Eli Lilly are among the companies testing Lp(a)-lowering medicines, but the commercial opportunity still depends on showing that lowering the biomarker reduces heart attacks and other events.",
-              "strategic_implication": "Payers and cardiovascular providers should watch outcomes data, testing practices, and potential pricing before assuming a new standard of prevention. If clinical benefit is confirmed, identifying high-risk patients and managing access could become a major population-health and budget issue.",
-              "confidence": "medium",
-              "tags": [
-                "lpa",
-                "cardiovascular",
-                "drug-pipeline",
-                "pharma",
-                "clinical-trials"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "The VA's Indiana rollout shows health-IT modernization moving from pilot recovery into a faster deployment cadence. Scale benefits will depend on adoption, workflow stability, and the ability to convert a go-live into safer, more connected care rather than merely a technical milestone.",
-          "items": [
-            {
-              "item_id": "2026-08-26-va-indiana-ehr-deployment",
-              "canonical_topic": "va-indiana-ehr-deployment",
-              "duplicate_group": "va-indiana-ehr-deployment",
-              "priority_score": 8,
-              "primary_source": "VA News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/va-deploys-oracle-ehr-to-3-medical-centers-in-indiana/828682/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-25T13:32:00Z"
-                },
-                {
-                  "source": "VA News",
-                  "url": "https://news.va.gov/press-room/va-names-nine-additional-facilities-that-will-deploy-federal-ehr-in-2026/",
-                  "source_type": "web",
-                  "published_at": "2026-08-24T00:00:00Z"
-                }
-              ],
-              "title": "VA deploys Federal EHR to three Indiana hospitals and 16 associated clinics",
-              "summary": "The Department of Veterans Affairs deployed its Federal Electronic Health Record at medical centers in Indianapolis, Fort Wayne, and Marion, plus 16 associated Indiana clinics. The rollout adds access for about 102,000 veterans and 6,000 staff, and VA says the agency has now completed 11 hospital deployments in 2026 after earlier project delays.",
-              "strategic_implication": "The deployment creates a live test of whether accelerated EHR modernization can improve data portability and reduce duplicate work without reigniting usability and reliability problems. Health-system leaders should pair go-live milestones with adoption, service-desk, clinician-burnout, and patient-safety measures.",
-              "confidence": "high",
-              "tags": [
-                "ehr",
-                "va",
-                "health-it",
-                "interoperability",
-                "implementation"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "New evidence is broadening the clinical conversation around adult immunization, while the observational design still argues for disciplined interpretation. The opportunity is to connect preventive care with cardiovascular risk management without converting an association into a premature treatment recommendation.",
-          "items": [
-            {
-              "item_id": "2026-08-26-shingrix-cardiovascular-risk",
-              "canonical_topic": "shingrix-cardiovascular-risk",
-              "duplicate_group": "shingrix-cardiovascular-risk",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/26/shingles-vaccine-shingrix-reduces-heart-disease-dementia-risk-oxford-study/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-26T09:00:00Z"
-                },
-                {
-                  "source": "The Guardian",
-                  "url": "https://www.theguardian.com/science/2026/aug/26/shingles-vaccine-lower-risk-heart-attack-stroke-study",
-                  "source_type": "web",
-                  "published_at": "2026-08-26T00:00:00Z"
-                }
-              ],
-              "title": "Shingrix linked to lower cardiovascular risk in a large natural experiment",
-              "summary": "An Oxford-led study of more than 70,000 older adults found that recipients of the recombinant Shingrix vaccine had lower cardiovascular risk than comparable people who received the older Zostavax vaccine. STAT reports a 9% lower overall cardiovascular burden over seven years, but the observational natural-experiment design means randomized studies are still needed to confirm causality.",
-              "strategic_implication": "Health systems and payers can use the finding to strengthen adult-immunization outreach and cardiovascular-prevention conversations, while keeping clinical guidance anchored to current evidence. If confirmed, a dual prevention benefit could improve the value proposition of shingles vaccination and increase demand for integrated primary-care workflows.",
-              "confidence": "medium",
-              "tags": [
-                "shingrix",
-                "vaccination",
-                "cardiovascular",
-                "preventive-care",
-                "clinical-research"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-06T12:39:02Z"
+  "last_updated": "2026-10-07T11:08:40Z"
 }

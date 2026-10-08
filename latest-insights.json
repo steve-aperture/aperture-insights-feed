@@ -3,6 +3,306 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-08",
+      "generated_at": "2026-10-08T11:06:25Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition focuses on pharmaceutical trade and pricing policy, shifting 340B debate, patient-facing breast-cancer AI, and major biotech funding and product-IP signals. Sources include STAT News, the World Health Organization, targeted web/news searches, and Healthcare Dive RSS, with prior-edition overlaps excluded.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web/news searches on pharmaceutical tariffs, Medicare drug pricing, 340B, AI, biotech investment, Keytruda, and childhood obesity",
+          "Gmail labels: HealthcareBrew, Healthcare Dive, Hospitalogy, Modern Healthcare, STAT"
+        ],
+        "sources_successful": [
+          "STAT News RSS (current-window items reviewed)",
+          "Healthcare Dive RSS (feed reviewed; available items overlapped with recent coverage)",
+          "Google web/news search results for targeted story checks",
+          "WHO official guideline-launch page"
+        ],
+        "sources_failed": [
+          "Fierce Healthcare RSS returned no usable current-window items",
+          "Gmail source labels returned no messages for October 7–8, 2026 (America/New_York)"
+        ],
+        "run_notes": "Reviewed the 24-hour window and compared candidates with the October 7 edition; omitted the repeated UnitedHealth investigation, Highmark leadership transition, immigration-ER study, DOJ directive, and Utah AI-sandbox coverage. The dedicated search_web tool was not exposed in this run, so targeted web/news searches were performed in the browser; RSS titles and descriptions supplied the story-level summaries. Nine distinct items retained."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Drug pricing and trade rules are creating immediate legal and supply-chain uncertainty, while an HHS perspective signals continuing debate over 340B program design. Congressional committee turnover could also influence the next cycle of health-policy oversight.",
+          "items": [
+            {
+              "item_id": "2026-10-08-biotech-drug-tariff-exemptions",
+              "canonical_topic": "biotech-drug-tariff-exemptions",
+              "duplicate_group": "biotech-drug-tariff-exemptions",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/trump-tariffs-section-232-imported-prescription-drugs-challenge-biotech-companies/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T08:30:00Z"
+                }
+              ],
+              "title": "Smaller biotech firms struggle to secure exemptions from new U.S. drug tariffs",
+              "summary": "Smaller biotechnology companies are trying to determine how to qualify for exemptions from new U.S. import tariffs on prescription drugs. Search results report that some medicines face a 100% tariff while larger pharmaceutical companies are largely exempt, leaving smaller firms with a more difficult compliance and supply-chain task.",
+              "strategic_implication": "Smaller manufacturers should map tariff exposure across finished products and inputs and assess eligibility for exemptions. Uncertainty may strengthen the economics of domestic production or alternative sourcing.",
+              "confidence": "medium",
+              "tags": [
+                "drug-tariffs",
+                "biotech",
+                "supply-chain",
+                "trade-policy"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-phrma-challenges-globe-model",
+              "canonical_topic": "phrma-challenges-globe-model",
+              "duplicate_group": "phrma-challenges-globe-model",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/phrma-sues-over-drug-pricing-model-globe/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T14:06:29Z"
+                }
+              ],
+              "title": "PhRMA sues to block Medicare drug-pricing pilot tied to prices in other countries",
+              "summary": "PhRMA sued the Trump administration over the GLOBE pilot, which tests a most-favored-nation approach to Medicare drug pricing. The trade group is seeking to invalidate the model, arguing that the administration lacks authority for the program.",
+              "strategic_implication": "The suit adds legal risk to the timing and design of Medicare drug-pricing demonstrations. Manufacturers and health systems should track court developments before assuming the model will proceed as written.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "drug-pricing",
+                "phrma",
+                "litigation"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-340b-program-reform-debate",
+              "canonical_topic": "340b-program-reform-debate",
+              "duplicate_group": "340b-program-reform-debate",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/340b-drug-discount-program-cms-reform-proposal/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T08:30:00Z"
+                }
+              ],
+              "title": "HHS official argues CMS should correct unintended effects of the 340B discount program",
+              "summary": "In a STAT opinion piece, an HHS leader argues that the 340B discount program has grown beyond its original safety-net purpose and become a costly institutional subsidy. The article frames CMS as planning a response, but the RSS excerpt does not specify a final policy, mechanism, or timeline.",
+              "strategic_implication": "Hospitals, clinics, and manufacturers with material 340B exposure should watch for concrete CMS proposals rather than treat the opinion as a finalized rule. Any changes could affect drug purchasing economics and safety-net resources.",
+              "confidence": "medium",
+              "tags": [
+                "340b",
+                "cms",
+                "drug-discounts",
+                "safety-net"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-house-health-committee-contests",
+              "canonical_topic": "house-health-committee-contests",
+              "duplicate_group": "house-health-committee-contests",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/midterm-election-democrats-vie-for-roles-house-health-care-committees/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T08:30:00Z"
+                }
+              ],
+              "title": "Dozens of Democrats compete for seats on influential House health committees",
+              "summary": "Dozens of Democratic lawmakers are seeking positions on key House health committees ahead of the midterms. Committee membership could change materially after the election, creating uncertainty around future legislative and oversight priorities.",
+              "strategic_implication": "Healthcare organizations should monitor committee assignments alongside election results because chair and member turnover can reset oversight attention and policy agendas. The immediate signal is political positioning, not a specific bill or regulatory change.",
+              "confidence": "medium",
+              "tags": [
+                "congress",
+                "midterms",
+                "health-policy",
+                "oversight"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "An AI breast-risk startup is choosing a direct-to-patient channel rather than waiting for clinician and payer adoption, putting consumer trust and integration at the center of commercialization.",
+          "items": [
+            {
+              "item_id": "2026-10-08-clairity-direct-to-patient-ai",
+              "canonical_topic": "clairity-direct-to-patient-ai",
+              "duplicate_group": "clairity-direct-to-patient-ai",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/why-clairity-took-breast-cancer-risk-prediction-ai-directly-to-patients/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T08:30:00Z"
+                }
+              ],
+              "title": "Clairity takes its AI breast-cancer risk tool directly to patients",
+              "summary": "Clairity is bringing its breast-cancer risk-prediction AI directly to patients instead of waiting for broad adoption by physicians and insurers. The strategy creates a consumer-facing route for a technology that search results describe as using mammogram images to estimate five-year risk.",
+              "strategic_implication": "Direct distribution may accelerate patient access but raises the importance of clear risk communication, clinical follow-up pathways, and evidence that supports use outside clinician-led workflows. Providers and payers should watch for effects on screening demand and downstream referrals.",
+              "confidence": "medium",
+              "tags": [
+                "health-ai",
+                "breast-cancer",
+                "risk-prediction",
+                "direct-to-consumer"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Biotech capital formation remains possible at scale for established investors, while a European patent injunction threatens Merck’s planned subcutaneous Keytruda rollout in several markets.",
+          "items": [
+            {
+              "item_id": "2026-10-08-forbion-raises-2-6b",
+              "canonical_topic": "forbion-raises-2-6b",
+              "duplicate_group": "forbion-raises-2-6b",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/biotech-news-forbion-raises-2-6-billion-largest-fundraise/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T13:38:52Z"
+                }
+              ],
+              "title": "Forbion raises $2.6 billion in its largest-ever fundraising",
+              "summary": "European biotech investor Forbion said it raised $2.6 billion, its largest fundraise to date. Search results identify the capital as spanning two venture funds and describe it as a substantial lift for European biotech financing.",
+              "strategic_implication": "The raise signals that large specialist funds can still attract substantial commitments despite uneven biotech financing conditions. Emerging companies should track deployment toward clinical-stage assets and regional investment priorities.",
+              "confidence": "medium",
+              "tags": [
+                "biotech",
+                "venture-capital",
+                "fundraising",
+                "europe"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-merck-keytruda-patent-injunction",
+              "canonical_topic": "merck-keytruda-patent-injunction",
+              "duplicate_group": "merck-keytruda-patent-injunction",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/07/merck-suffers-setback-in-europe-over-new-keytruda-formulation/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T13:42:22Z"
+                }
+              ],
+              "title": "Dutch court blocks Merck’s subcutaneous Keytruda in several European markets",
+              "summary": "A Dutch court ruled that Merck infringed a patent related to the subcutaneous formulation of Keytruda and ordered a halt to manufacturing and marketing in several European countries. The ruling is a setback to Merck’s effort to broaden delivery options for the cancer drug.",
+              "strategic_implication": "The injunction may delay or constrain a formulation strategy with potential implications for convenience, capacity, and product lifecycle management. Merck and competitors will need to assess the ruling’s scope and the prospect of further litigation or appeal.",
+              "confidence": "medium",
+              "tags": [
+                "merck",
+                "keytruda",
+                "patent-litigation",
+                "oncology",
+                "europe"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "No distinct provider-operations item surfaced today beyond stories already covered in the October 7 edition.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "WHO has issued its first integrated-care guidance for pediatric and adolescent obesity, while early optogenetic results point to a potential vision-restoration path for some people with retinitis pigmentosa.",
+          "items": [
+            {
+              "item_id": "2026-10-08-who-child-adolescent-obesity-guidelines",
+              "canonical_topic": "who-child-adolescent-obesity-guidelines",
+              "duplicate_group": "who-child-adolescent-obesity-guidelines",
+              "priority_score": 7,
+              "primary_source": "World Health Organization",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "World Health Organization",
+                  "url": "https://www.who.int/news-room/events/detail/2026/10/07/default-calendar/launch-of-who-guidelines--integrated-management-of-obesity-in-children-and-adolescents",
+                  "source_type": "web",
+                  "published_at": "2026-10-07T11:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/07/who-obesity-guidelines-for-kids-doj-targets-pharma/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T12:56:49Z"
+                }
+              ],
+              "title": "WHO publishes its first integrated-care guidance for obesity in children and adolescents",
+              "summary": "WHO launched two guidelines describing how health systems and health workers can deliver timely, evidence-based, people-centered obesity care for children and adolescents. The guidance fills a global gap and arrives as the organization estimates that 400 million people aged 5–19 were overweight in 2024, including 170 million with obesity.",
+              "strategic_implication": "Pediatric providers and health systems should review the recommendations for implications to multidisciplinary services, workforce training, and family-centered care. The guidance may shape national policy and clinical pathways as countries respond to rising childhood obesity.",
+              "confidence": "high",
+              "tags": [
+                "who",
+                "pediatric-obesity",
+                "clinical-guidelines",
+                "public-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-optogenetics-retinitis-pigmentosa-trial",
+              "canonical_topic": "optogenetics-retinitis-pigmentosa-trial",
+              "duplicate_group": "optogenetics-retinitis-pigmentosa-trial",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/optogenetics-restores-some-vision-retinitis-pigmentosa/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T21:00:00Z"
+                }
+              ],
+              "title": "Small optogenetics trial restores some light sensitivity in retinitis pigmentosa",
+              "summary": "A small trial of an optogenetic approach reported that about half of participants regained photosensitivity after treatment for retinitis pigmentosa. The early result points to potential recovery of some visual function, but the available summary does not establish durability or the extent of real-world benefit.",
+              "strategic_implication": "The finding supports continued investment in mutation-agnostic therapies for advanced retinal disease, while underscoring the need for larger studies and functional outcome data. Providers should treat the result as investigational rather than a near-term change in standard care.",
+              "confidence": "medium",
+              "tags": [
+                "retinitis-pigmentosa",
+                "optogenetics",
+                "clinical-trial",
+                "vision-restoration"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-07",
       "generated_at": "2026-10-07T12:37:12Z",
       "headline": "Today's Healthcare Insights",
@@ -13548,5 +13848,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-07T12:37:12Z"
+  "last_updated": "2026-10-08T11:06:25Z"
 }

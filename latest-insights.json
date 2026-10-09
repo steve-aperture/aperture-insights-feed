@@ -3,6 +3,245 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-09",
+      "generated_at": "2026-10-09T11:04:25Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's signals center on Medicare quality and surprise-billing policy, hospital payment and site-of-care economics, payer antitrust scrutiny, cybersecurity readiness, and research-workforce compliance. Curation uses current STAT News, Healthcare Dive, and Fierce Healthcare RSS items; the direct search_web tool was unavailable, so a Google Search fallback was not used to add items.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS (main feed)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted search_web queries for same-day healthcare news"
+        ],
+        "sources_successful": [
+          "STAT News RSS (current Oct. 8-9 items and article excerpts)",
+          "Healthcare Dive RSS (current hospital and cybersecurity items)",
+          "Fierce Healthcare RSS (current Medicare Advantage and payer items)"
+        ],
+        "sources_failed": [
+          "search_web was not available in this scheduled-run tool environment; one Google Search fallback returned no sufficiently relevant same-day results to add"
+        ],
+        "run_notes": "RSS titles, descriptions, publication times, and available STAT article excerpts were used to draft the summaries. No Gmail supplement was used. Items were screened against the recent editions; repeated 340B and MAHA coverage was omitted."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Congressional proposals could reshape surprise-billing dispute resolution, while CMS's 2027 Medicare Advantage star ratings establish a fresh quality signal for plan competition.",
+          "items": [
+            {
+              "item_id": "2026-10-09-no-surprises-arbitration-overhaul",
+              "canonical_topic": "no-surprises-arbitration-overhaul",
+              "duplicate_group": "no-surprises-arbitration-overhaul",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/house-democrat-proposes-change-to-no-surprises-act-arbitration-process/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T21:44:05Z"
+                }
+              ],
+              "title": "New bill would replace the No Surprises Act’s disputed arbitration system",
+              "summary": "Rep. Frank Pallone introduced the Lower Premiums, Faster Payments Act, which would replace the No Surprises Act’s independent dispute process with payments based on median in-network rates. Consumer advocates and academics praised the proposal, while provider groups opposed it; the bill is a proposal, not enacted policy.",
+              "strategic_implication": "A shift in the payment benchmark could alter out-of-network negotiation leverage, provider revenue expectations, and payer exposure if Congress advances the bill.",
+              "confidence": "high",
+              "tags": [
+                "surprise-billing",
+                "payment-policy",
+                "congress",
+                "provider-payer-disputes"
+              ]
+            },
+            {
+              "item_id": "2026-10-09-2027-medicare-advantage-star-ratings",
+              "canonical_topic": "2027-medicare-advantage-star-ratings",
+              "duplicate_group": "2027-medicare-advantage-star-ratings",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cms-about-71-mapd-plan-enrollees-coverage-four-or-more-stars-2027",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T17:05:00-04:00"
+                }
+              ],
+              "title": "CMS: 71% of Medicare Advantage drug-plan enrollees are in 4-star-or-better plans",
+              "summary": "CMS released the 2027 Medicare Advantage star ratings, reporting that about 71% of enrollees in Medicare Advantage prescription drug plans are in plans rated four stars or higher. The aggregate figure does not describe performance variation across individual contracts.",
+              "strategic_implication": "Plans should assess contract-level ratings and quality gaps as they refine competitive positioning and enrollment communications for the coming year.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "star-ratings",
+                "cms",
+                "quality-measures"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Healthcare cybersecurity planning is beginning to account for a future quantum-computing threat to the encryption protecting patient and operational data.",
+          "items": [
+            {
+              "item_id": "2026-10-09-quantum-cybersecurity-readiness",
+              "canonical_topic": "quantum-cybersecurity-readiness",
+              "duplicate_group": "quantum-cybersecurity-readiness",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-organizations-are-underprepared-for-quantum-computing-threats/832516/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T13:24:00-04:00"
+                }
+              ],
+              "title": "Healthcare organizations urged to prepare for quantum-era encryption risks",
+              "summary": "Experts told Healthcare Dive that practical quantum computers could eventually break encryption methods now used to protect patient data. The article argues that healthcare organizations should begin preparing before the technology becomes practical.",
+              "strategic_implication": "Security leaders can reduce future migration risk by inventorying cryptographic dependencies, checking vendor road maps, and incorporating post-quantum readiness into long-range security planning.",
+              "confidence": "medium",
+              "tags": [
+                "cybersecurity",
+                "quantum-computing",
+                "patient-data",
+                "encryption"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "A new Michigan antitrust lawsuit adds state-level legal scrutiny of payer market conduct, with potential consequences for the region’s insurance landscape.",
+          "items": [
+            {
+              "item_id": "2026-10-09-michigan-bcbsm-antitrust-suit",
+              "canonical_topic": "michigan-bcbsm-antitrust-suit",
+              "duplicate_group": "michigan-bcbsm-antitrust-suit",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/michigan-ag-hits-bcbsm-antitrust-suit",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T14:54:00-04:00"
+                }
+              ],
+              "title": "Michigan attorney general sues Blue Cross Blue Shield of Michigan over alleged monopoly",
+              "summary": "Michigan Attorney General Dana Nessel filed an antitrust suit against Blue Cross Blue Shield of Michigan, alleging that the insurer operated as a monopoly in the state. The allegations have not been adjudicated.",
+              "strategic_implication": "Payers, providers, and employers with Michigan exposure should monitor the case for potential remedies and broader implications for contracting and competition.",
+              "confidence": "high",
+              "tags": [
+                "antitrust",
+                "health-insurance",
+                "michigan",
+                "competition"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Hospitals face continuing Medicare readmission-payment exposure even as patient demand and payer pressure accelerate movement of procedures into outpatient settings.",
+          "items": [
+            {
+              "item_id": "2026-10-09-medicare-readmission-penalties",
+              "canonical_topic": "medicare-readmission-penalties",
+              "duplicate_group": "medicare-readmission-penalties",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hospital-readmission-reduction-program-penalties-rise-2027-cms/832473/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T09:14:37-04:00"
+                }
+              ],
+              "title": "CMS data show Medicare readmission penalties reach about 80% of hospitals",
+              "summary": "About 80% of hospitals will have Medicare payments reduced for high readmission rates this fiscal year, up from 78% the year before, according to CMS data reported by Healthcare Dive. The increase extends a trend in the Hospital Readmissions Reduction Program.",
+              "strategic_implication": "The breadth of payment exposure reinforces readmission prevention and discharge coordination as near-term operating priorities, particularly for hospitals with persistent performance gaps.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "readmissions",
+                "hospital-payment",
+                "care-transitions"
+              ]
+            },
+            {
+              "item_id": "2026-10-09-outpatient-shift-hospital-margins",
+              "canonical_topic": "outpatient-shift-hospital-margins",
+              "duplicate_group": "outpatient-shift-hospital-margins",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/outpatient-shift-accelerates-hospital-margins-rebound-strata/832490/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T10:10:53-04:00"
+                }
+              ],
+              "title": "Outpatient migration accelerates as hospital margins rebound",
+              "summary": "A new report cited by Healthcare Dive says patient demand and payer pressures are moving more procedures out of expensive inpatient settings. The report describes the outpatient shift as accelerating alongside a rebound in hospital margins.",
+              "strategic_implication": "Health systems should test whether outpatient volume, site-of-care economics, and capacity plans remain aligned as payer incentives and patient preferences continue to shift.",
+              "confidence": "medium",
+              "tags": [
+                "outpatient-care",
+                "hospital-margins",
+                "site-of-care",
+                "payer-pressure"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Federal investigations into alleged visa fraud at nine universities add compliance uncertainty for institutions that rely on international postdoctoral researchers.",
+          "items": [
+            {
+              "item_id": "2026-10-09-university-j1-visa-investigations",
+              "canonical_topic": "university-j1-visa-investigations",
+              "duplicate_group": "university-j1-visa-investigations",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/trump-administration-investigates-universities-j1-visa-fraud/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T23:09:27Z"
+                }
+              ],
+              "title": "U.S. investigates nine universities over alleged J-1 visa fraud",
+              "summary": "The administration announced investigations of nine universities for alleged fraud related to visas commonly used by postdoctoral researchers, according to STAT News. The inquiry concerns a visa channel used by a core part of the biomedical research workforce; the allegations remain under investigation.",
+              "strategic_implication": "Research institutions should review visa-program compliance and contingency planning while avoiding assumptions about findings that have not yet been established.",
+              "confidence": "high",
+              "tags": [
+                "research-workforce",
+                "j1-visas",
+                "university-compliance",
+                "biomedical-research"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-08",
       "generated_at": "2026-10-08T12:37:03Z",
       "headline": "Today's Healthcare Insights",
@@ -13662,5 +13901,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-08T12:37:03Z"
+  "last_updated": "2026-10-09T11:04:25Z"
 }

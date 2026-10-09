@@ -4,32 +4,38 @@
   "editions": [
     {
       "edition_date": "2026-10-09",
-      "generated_at": "2026-10-09T11:04:25Z",
+      "generated_at": "2026-10-09T12:40:00Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's signals center on Medicare quality and surprise-billing policy, hospital payment and site-of-care economics, payer antitrust scrutiny, cybersecurity readiness, and research-workforce compliance. Curation uses current STAT News, Healthcare Dive, and Fierce Healthcare RSS items; the direct search_web tool was unavailable, so a Google Search fallback was not used to add items.",
+      "summary_note": "Today's edition covers a proposed overhaul of surprise-billing arbitration, 2027 Medicare Advantage star ratings, Medicaid program-integrity and work-requirement developments, and the FDA's extended mifepristone review. It also covers AI-industry influence on CMS app policy, payer antitrust and retail Medicare Advantage competition, hospital payment litigation, and early flu-season signals. Sources include STAT News, Healthcare Dive, Fierce Healthcare, KFF Health News, Becker's, and ABC News.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
-          "STAT News RSS (main feed)",
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
           "Healthcare Dive RSS (news)",
           "Fierce Healthcare RSS",
-          "Targeted search_web queries for same-day healthcare news"
+          "Targeted web/news searches and primary-source verification (KFF Health News, Becker's, Crain's New York, Walmart, ABC News)"
         ],
         "sources_successful": [
-          "STAT News RSS (current Oct. 8-9 items and article excerpts)",
-          "Healthcare Dive RSS (current hospital and cybersecurity items)",
-          "Fierce Healthcare RSS (current Medicare Advantage and payer items)"
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS (reviewed; current items already in the automated run)",
+          "Fierce Healthcare RSS (automated run only)",
+          "Targeted web/news searches (KFF Health News, Becker's Hospital Review, Becker's Payer Issues, Crain's New York, ABC News)",
+          "Walmart and SCAN press materials"
         ],
         "sources_failed": [
-          "search_web was not available in this scheduled-run tool environment; one Google Search fallback returned no sufficiently relevant same-day results to add"
+          "Gmail InsightsSources/* labels and newsletter-name searches returned no messages in the connected mailbox since 2026-10-07",
+          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch; the SCAN-Walmart item cites the press release, with Fierce's Oct. 8 analysis noted",
+          "STAT+ articles paywalled; drafted from RSS previews plus accessible article text"
         ],
-        "run_notes": "RSS titles, descriptions, publication times, and available STAT article excerpts were used to draft the summaries. No Gmail supplement was used. Items were screened against the recent editions; repeated 340B and MAHA coverage was omitted."
+        "run_notes": "Same-day rebuild in place: the automated run (generated 2026-10-09T11:04:25Z) appended 2026-10-09 and left the feed at 31 editions. Trimmed to 30; the displaced 2026-08-28 edition is preserved in archive/editions-archive-2026-10-09.json. Retained all 7 automated items, added 9 new items from the Oct. 7-9 window screened against the prior 15 editions (skipped MAHA midterm coverage and the Utah AI sandbox as recently covered), and refreshed bucket syntheses.",
+        "items_captured": 16
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "Congressional proposals could reshape surprise-billing dispute resolution, while CMS's 2027 Medicare Advantage star ratings establish a fresh quality signal for plan competition.",
+          "synthesis": "Congress is weighing a reset of surprise-billing arbitration as CMS's 2027 star ratings land, while Medicaid policy shifts toward documentation integrity and county-level work-requirement exemptions, and the FDA extends its mifepristone review into 2027.",
           "items": [
             {
               "item_id": "2026-10-09-no-surprises-arbitration-overhaul",
@@ -82,13 +88,124 @@
                 "cms",
                 "quality-measures"
               ]
+            },
+            {
+              "item_id": "2026-10-09-fda-mifepristone-review-2027",
+              "canonical_topic": "fda-mifepristone-review-2027",
+              "duplicate_group": "fda-mifepristone-review-2027",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/fda-mifepristone-abortion-pill-safety-review-continue-into-2027/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T15:02:53Z"
+                }
+              ],
+              "title": "FDA extends its mifepristone safety review into 2027",
+              "summary": "In a court-ordered update in Louisiana's lawsuit over mail delivery, the FDA said it expects to complete a mifepristone safety study by mid-December and publish findings no later than March 2027, before deciding whether to change prescribing or distribution. The agency is also weighing citizen petitions; no new restrictions have been announced.",
+              "strategic_implication": "Reproductive-health providers, telehealth prescribers, and pharmacies face months of regulatory uncertainty and should plan for multiple outcomes rather than an imminent change.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "mifepristone",
+                "reproductive-health",
+                "telehealth-prescribing"
+              ]
+            },
+            {
+              "item_id": "2026-10-09-medicaid-improper-payments-documentation",
+              "canonical_topic": "medicaid-improper-payments-documentation",
+              "duplicate_group": "medicaid-improper-payments-documentation",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/77-of-medicaid-improper-payments-tied-to-paperwork-not-fraud-report/",
+                  "source_type": "web",
+                  "published_at": "2026-10-08"
+                }
+              ],
+              "title": "CRS: 77% of Medicaid improper payments trace to documentation gaps, not fraud",
+              "summary": "An Oct. 7 Congressional Research Service report notes that CMS attributes 77% of fiscal 2025 Medicaid improper payments to insufficient documentation rather than fraud or abuse. Total Medicaid fraud is unknown; state fraud control units reported $2 billion in fiscal 2025 recoveries.",
+              "strategic_implication": "As program-integrity rhetoric intensifies, states, plans, and providers can reduce audit and recoupment exposure by tightening documentation and eligibility-verification processes.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "program-integrity",
+                "improper-payments",
+                "crs"
+              ]
+            },
+            {
+              "item_id": "2026-10-09-new-york-bronx-medicaid-work-exemption",
+              "canonical_topic": "new-york-bronx-medicaid-work-exemption",
+              "duplicate_group": "new-york-bronx-medicaid-work-exemption",
+              "priority_score": 7,
+              "primary_source": "Becker's Payer Issues",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Payer Issues",
+                  "url": "https://www.beckerspayer.com/payer/medicaid/new-york-moves-to-exempt-bronx-from-medicaid-work-rules/",
+                  "source_type": "web",
+                  "published_at": "2026-10-08"
+                },
+                {
+                  "source": "Crain's New York Business",
+                  "url": "https://www.crainsnewyork.com/health-care/cny-medicaid-work-requirements-bronx-20261007/",
+                  "source_type": "web",
+                  "published_at": "2026-10-07"
+                }
+              ],
+              "title": "New York moves to exempt the Bronx from Medicaid work requirements",
+              "summary": "New York notified CMS that it plans to use the H.R. 1 high-unemployment exception for the Bronx, the only state county meeting the threshold of 8% or 1.5 times the national rate. About 200,000 Bronx residents would otherwise be subject to rules that begin Jan. 1; the exemption is a stated plan, not yet a final determination.",
+              "strategic_implication": "County-level unemployment exceptions could create uneven coverage-loss risk within states, so safety-net providers and plans should model enrollment by geography rather than statewide averages.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "hr-1",
+                "new-york"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "Healthcare cybersecurity planning is beginning to account for a future quantum-computing threat to the encryption protecting patient and operational data.",
+          "synthesis": "Federal AI policy is being shaped in close quarters with technology firms, while regulators' insistence on human review limits how far payers can automate prior-authorization denials; quantum-era encryption risk adds a longer-range security agenda.",
           "items": [
+            {
+              "item_id": "2026-10-09-cms-slack-ai-industry-lobbying",
+              "canonical_topic": "cms-slack-ai-industry-lobbying",
+              "duplicate_group": "cms-slack-ai-industry-lobbying",
+              "priority_score": 8,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/health-industry/ai-tech-lobbying-medicare-medical-records-apps-trump-cms-slack-fda/",
+                  "source_type": "web",
+                  "published_at": "2026-10-09"
+                }
+              ],
+              "title": "KFF Health News: AI and tech leaders shaped CMS app policy through a government-run Slack",
+              "summary": "A KFF Health News investigation found that a CMS-managed Health Technology Ecosystem Slack workspace grew to about 1,700 members, with relatively few patient advocates, physicians, or hospitals, and served as a channel for companies to influence policy on apps, records access, and Medicare reimbursement for AI services. CMS has not disclosed all Medicare App Library listing criteria.",
+              "strategic_implication": "Health systems and patient groups should engage directly in CMS app-ecosystem policy, since reimbursement and records-access rules for consumer AI are being shaped largely by technology firms.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "health-tech-ecosystem",
+                "ai-policy",
+                "interoperability",
+                "lobbying"
+              ]
+            },
             {
               "item_id": "2026-10-09-quantum-cybersecurity-readiness",
               "canonical_topic": "quantum-cybersecurity-readiness",
@@ -114,12 +231,38 @@
                 "patient-data",
                 "encryption"
               ]
+            },
+            {
+              "item_id": "2026-10-09-fitch-ai-prior-auth-human-review",
+              "canonical_topic": "fitch-ai-prior-auth-human-review",
+              "duplicate_group": "fitch-ai-prior-auth-human-review",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/revenue-cycle-management/fitch-human-review-in-ai-prior-authorization-denials-likely-here-to-stay/",
+                  "source_type": "web",
+                  "published_at": "2026-10-07"
+                }
+              ],
+              "title": "Fitch expects human review of AI prior-authorization denials to persist",
+              "summary": "Fitch Ratings' AI stress test scored health insurers 20 on a scale where 40 or higher signals possible negative rating action, indicating limited near-term disruption risk. Fitch expects regulators to keep requiring human involvement in care denials, which would limit the efficiency payers can capture from AI in prior authorization.",
+              "strategic_implication": "Providers should not expect fully automated denials, but should anticipate faster AI-assisted approvals and prepare appeal workflows that target the human-review step.",
+              "confidence": "medium",
+              "tags": [
+                "prior-authorization",
+                "ai",
+                "payers",
+                "credit-ratings"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "A new Michigan antitrust lawsuit adds state-level legal scrutiny of payer market conduct, with potential consequences for the region’s insurance landscape.",
+          "synthesis": "Payer markets face antitrust scrutiny in Michigan and new retail-branded Medicare Advantage competition in Texas and Arizona, while Argenx's trial miss shows the risk in autoimmune label expansion.",
           "items": [
             {
               "item_id": "2026-10-09-michigan-bcbsm-antitrust-suit",
@@ -146,12 +289,70 @@
                 "michigan",
                 "competition"
               ]
+            },
+            {
+              "item_id": "2026-10-09-scan-walmart-co-branded-ma-plans",
+              "canonical_topic": "scan-walmart-co-branded-ma-plans",
+              "duplicate_group": "scan-walmart-co-branded-ma-plans",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.cincinnati.com/press-release/story/133864/walmart-and-scan-launch-co-branded-medicare-advantage-plans-designed-to-deliver-more-personalized-health-support-for-older-adults/",
+                  "source_type": "web",
+                  "published_at": "2026-10-07"
+                },
+                {
+                  "source": "Walmart",
+                  "url": "https://corporate.walmart.com/news/2026/09/walmart-scan-launch-co-branded-medicare-plan",
+                  "source_type": "web",
+                  "published_at": "2026-09-16"
+                }
+              ],
+              "title": "SCAN and Walmart launch two co-branded Medicare Advantage plans for 2027",
+              "summary": "SCAN Health Plan and Walmart will offer SCAN Walmart Health Advantage (HMO) and a chronic-condition special needs plan beginning Jan. 1, 2027, in six Texas and three Arizona counties, reaching more than 2 million eligible enrollees. The HMO has a $0 premium and $0 primary-care copays; Fierce Healthcare examined the strategy behind the partnership on Oct. 8.",
+              "strategic_implication": "Retail-branded Medicare Advantage products add consumer-facing competition in Houston, San Antonio, and Phoenix-area markets, where incumbent plans and provider networks should watch enrollment shifts during open enrollment.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "retail-health",
+                "walmart",
+                "scan"
+              ]
+            },
+            {
+              "item_id": "2026-10-09-argenx-vyvgart-sjogrens-phase3-miss",
+              "canonical_topic": "argenx-vyvgart-sjogrens-phase3-miss",
+              "duplicate_group": "argenx-vyvgart-sjogrens-phase3-miss",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/argenx-autoimmune-disease-study-sjogrens/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T14:02:29Z"
+                }
+              ],
+              "title": "Argenx's Vyvgart fails a Phase 3 trial in Sjögren's disease",
+              "summary": "Argenx said Vyvgart did not outperform placebo in a Phase 3 study of patients with Sjögren's disease, an unusual setback after a run of autoimmune wins. The company's shares fell about 13% on Thursday morning.",
+              "strategic_implication": "The miss is a reminder that label-expansion strategies for FcRn-class drugs carry real risk, which could affect payer formulary planning and competitor positioning in autoimmune disease.",
+              "confidence": "high",
+              "tags": [
+                "biopharma",
+                "autoimmune",
+                "clinical-trials",
+                "argenx"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "Hospitals face continuing Medicare readmission-payment exposure even as patient demand and payer pressure accelerate movement of procedures into outpatient settings.",
+          "synthesis": "Hospitals face continuing readmission-penalty exposure and accelerating outpatient migration, while HCA's escalating lawsuits show providers increasingly litigating denial and underpayment disputes.",
           "items": [
             {
               "item_id": "2026-10-09-medicare-readmission-penalties",
@@ -177,6 +378,32 @@
                 "readmissions",
                 "hospital-payment",
                 "care-transitions"
+              ]
+            },
+            {
+              "item_id": "2026-10-09-hca-hospitals-insurer-payment-suits",
+              "canonical_topic": "hca-hospitals-insurer-payment-suits",
+              "duplicate_group": "hca-hospitals-insurer-payment-suits",
+              "priority_score": 7,
+              "primary_source": "Becker's Payer Issues",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Payer Issues",
+                  "url": "https://www.beckerspayer.com/legal/hca-hospitals-escalate-payment-fight-with-insurers/",
+                  "source_type": "web",
+                  "published_at": "2026-10-07"
+                }
+              ],
+              "title": "HCA-affiliated hospitals escalate reimbursement lawsuits against insurers",
+              "summary": "Seven HCA-affiliated hospitals sued Anthem Blue Cross and Blue Shield Georgia on Oct. 5, alleging more than $501,000 in denied or underpaid claims, following a September suit against Independence Blue Cross. The breach-of-contract claims are unresolved; an earlier $145 million Florida suit against UnitedHealthcare was dismissed without prejudice.",
+              "strategic_implication": "Litigation is becoming a routine tool in denial disputes; revenue-cycle leaders should track claim-level evidence that can support contract enforcement, including against out-of-state Blue plans.",
+              "confidence": "high",
+              "tags": [
+                "claim-denials",
+                "payer-provider-disputes",
+                "hca",
+                "revenue-cycle"
               ]
             },
             {
@@ -209,7 +436,7 @@
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "Federal investigations into alleged visa fraud at nine universities add compliance uncertainty for institutions that rely on international postdoctoral researchers.",
+          "synthesis": "Visa-fraud investigations add compliance uncertainty for the research workforce, and early flu signals argue for moving respiratory-season staffing and vaccination plans forward.",
           "items": [
             {
               "item_id": "2026-10-09-university-j1-visa-investigations",
@@ -235,6 +462,32 @@
                 "j1-visas",
                 "university-compliance",
                 "biomedical-research"
+              ]
+            },
+            {
+              "item_id": "2026-10-09-early-flu-season-signals",
+              "canonical_topic": "early-flu-season-signals",
+              "duplicate_group": "early-flu-season-signals",
+              "priority_score": 7,
+              "primary_source": "ABC News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "ABC News",
+                  "url": "https://abcnews.com/Health/cold-flu-medicine-purchases-22-year-walgreens-data/story?id=137091568",
+                  "source_type": "web",
+                  "published_at": "2026-10-08"
+                }
+              ],
+              "title": "Retail and EHR data point to an early start to the flu season",
+              "summary": "Walgreens reported cold and flu medicine purchases up 21.7% and cough-drop purchases up 16.6% from last year. Epic Research said flu diagnoses or positive tests reached 140 per 100,000 patients in the week of Sept. 13, the earliest start in five years.",
+              "strategic_implication": "Hospitals and clinics should move up respiratory-season staffing, vaccination outreach, and surge planning rather than relying on typical December peak timing.",
+              "confidence": "medium",
+              "tags": [
+                "influenza",
+                "respiratory-season",
+                "surge-planning",
+                "vaccination"
               ]
             }
           ]
@@ -13392,514 +13645,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-08-28",
-      "generated_at": "2026-08-28T11:12:08Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing spans new federal-policy and payment signals, including an FDA rare-disease approval, a Medicare drug-negotiation court win, and scrutiny of primary-care billing and autism research priorities. Market and operating signals include fresh cardiology trial data, GLP-1 real-world evidence, a major Medicare Advantage settlement, hospital expansion, medical-device cyber disruption, CMS's ACCESS chronic-care model, and new maternal-health outcomes data.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA/CDC web",
-          "Official government and company disclosures",
-          "Targeted web search",
-          "Supplementary Gmail newsletters"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "Targeted web search",
-          "FDA official release",
-          "CMS official release",
-          "DOJ/HHS enforcement disclosure",
-          "Cytokinetics investor disclosure",
-          "AstraZeneca investor disclosure",
-          "Eli Lilly investor disclosure",
-          "Boston Scientific company disclosure",
-          "Maven clinical research disclosure"
-        ],
-        "sources_failed": [
-          "Supplementary Gmail newsletters not used"
-        ],
-        "run_notes": "All three required RSS feeds returned via curl. Fresh Aug. 27-28 items were cross-checked with targeted web results and official FDA, CMS, DOJ, company, and clinical-research disclosures; yesterday's Rasonque, Monogram, Suki, Limbic, Cigna, Arintra, Transcarent, Alnylam, rural-pharmacy, and AI-disclosure topics were not republished."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Federal policy is simultaneously expanding access to select therapies and tightening scrutiny of payment and research priorities. The latest signals span rare-disease treatment, Medicare drug-price litigation, primary-care payment design, and a contentious federal autism agenda.",
-          "items": [
-            {
-              "item_id": "2026-08-28-lisraya-dermatomyositis-approval",
-              "canonical_topic": "lisraya-dermatomyositis-approval",
-              "duplicate_group": "lisraya-dermatomyositis-approval",
-              "priority_score": 9,
-              "primary_source": "FDA",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-drug-indicated-treat-dermatomyositis-adults",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T15:00:00Z"
-                },
-                {
-                  "source": "Priovant Therapeutics",
-                  "url": "https://priovant.com/news",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T11:00:00Z"
-                },
-                {
-                  "source": "Reuters",
-                  "url": "https://www.reuters.com/legal/litigation/us-fda-approves-roivant-priovants-skin-muscle-disease-drug-2026-08-27/",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T15:00:00Z"
-                }
-              ],
-              "title": "FDA approves first oral targeted therapy for adult dermatomyositis",
-              "summary": "The FDA approved LISRAYA (brepocitinib) for adults with dermatomyositis, a rare autoimmune disease that can cause painful skin rashes and progressive muscle weakness. Priovant describes the once-daily therapy as the first targeted oral treatment specifically indicated for the condition, based on Phase 3 VALOR data.",
-              "strategic_implication": "Specialty providers and payers should prepare for biomarker- and severity-informed access pathways, safety monitoring, and budget impact. The approval creates a new standard for treatment sequencing in a disease with limited targeted options.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "dermatomyositis",
-                "rare-disease",
-                "autoimmune",
-                "drug-approval"
-              ]
-            },
-            {
-              "item_id": "2026-08-28-phrma-medicare-negotiation-appeal",
-              "canonical_topic": "phrma-medicare-drug-negotiation-litigation",
-              "duplicate_group": "phrma-medicare-drug-negotiation-litigation",
-              "priority_score": 9,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/pharma/phrmas-medicare-price-negotiation-suit-rebuffed-latest-blow-industry-ira-challenge",
-                  "source_type": "rss",
-                  "published_at": "2026-08-27T14:45:00Z"
-                },
-                {
-                  "source": "The Hill",
-                  "url": "https://thehill.com/policy/healthcare/6055400-fifth-circuit-rejects-phrma-lawsuit/",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T15:00:00Z"
-                },
-                {
-                  "source": "Bloomberg Law",
-                  "url": "https://news.bloomberglaw.com/health-law-and-business/fifth-circuit-rejects-phrmas-suit-over-medicare-drug-price-cuts",
-                  "source_type": "web",
-                  "published_at": "2026-08-26T20:00:00Z"
-                }
-              ],
-              "title": "Fifth Circuit rejects PhRMA challenge to Medicare drug-price negotiations",
-              "summary": "The U.S. Court of Appeals for the Fifth Circuit rejected PhRMA's challenge to the Medicare drug-price negotiation program, affirming a lower-court ruling. The decision held that manufacturers do not have a protected right to sell to Medicare at a preferred price and adds to a string of court setbacks for industry challenges to the Inflation Reduction Act program.",
-              "strategic_implication": "Drugmakers should treat negotiated-price exposure as an operating assumption rather than a litigation contingency. Plans, providers, and investors should model downstream changes in formulary strategy, launch economics, and patient affordability as the program advances.",
-              "confidence": "high",
-              "tags": [
-                "medicare",
-                "drug-pricing",
-                "ira",
-                "pharma",
-                "litigation"
-              ]
-            },
-            {
-              "item_id": "2026-08-28-g2211-primary-care-billing",
-              "canonical_topic": "g2211-primary-care-billing",
-              "duplicate_group": "g2211-primary-care-billing",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/28/medicare-g2211-code-billing-research-primary-care/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-28T08:30:00Z"
-                },
-                {
-                  "source": "JAMA / PubMed",
-                  "url": "https://pubmed.ncbi.nlm.nih.gov/41712205/",
-                  "source_type": "web",
-                  "published_at": "2026-03-17T00:00:00Z"
-                },
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/files/document/hcpcs-g2211-faq.pdf",
-                  "source_type": "web",
-                  "published_at": "2024-01-01T00:00:00Z"
-                }
-              ],
-              "title": "Medicare’s G2211 add-on shows rapid uptake but may miss its primary-care target",
-              "summary": "Medicare introduced G2211 to pay an additional amount for complex, longitudinal care that makes a clinician the continuing focal point for a patient's needs. STAT reports that clinicians billed the code 26 million times in its first year, but the distribution of payments raises questions about whether it is reaching primary care as intended.",
-              "strategic_implication": "Health systems should audit specialty mix, documentation, and code governance rather than equating utilization with primary-care investment. CMS and physician groups may need better targeting or evaluation metrics if the incentive is to strengthen longitudinal care capacity.",
-              "confidence": "medium",
-              "tags": [
-                "medicare",
-                "primary-care",
-                "billing",
-                "reimbursement",
-                "care-model"
-              ]
-            },
-            {
-              "item_id": "2026-08-28-autism-advisory-vaccine-focus",
-              "canonical_topic": "federal-autism-advisory-strategy",
-              "duplicate_group": "federal-autism-advisory-strategy",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/28/vaccines-autism-advisory-committee-strategic-plan-boost-research-funding/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-28T08:30:00Z"
-                },
-                {
-                  "source": "Reuters",
-                  "url": "https://www.reuters.com/legal/government/kennedy-advisers-propose-doubling-us-autism-spending-care-family-support-2026-08-27/",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T15:00:00Z"
-                }
-              ],
-              "title": "Federal autism committee recommends nearly doubling research and care investment",
-              "summary": "The Interagency Autism Coordinating Committee adopted a strategic plan calling for a substantial increase in federal autism research and initiatives covering medical care, housing, aging, and family support. The meeting also drew attention because members discussed vaccines as a possible trigger despite the vaccine-autism link having been repeatedly debunked by scientific evidence.",
-              "strategic_implication": "Health organizations should monitor how research priorities and public messaging affect vaccine confidence, study design, and clinical communication. The proposed investment could expand autism-service demand, but governance and evidence standards will be central to credibility.",
-              "confidence": "medium",
-              "tags": [
-                "autism",
-                "vaccines",
-                "public-health",
-                "research",
-                "hhs"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "CMS is testing whether technology-supported chronic-care services can be paid for on outcomes rather than encounters. The model could become an important bridge between digital-health adoption and durable Medicare economics.",
-          "items": [
-            {
-              "item_id": "2026-08-28-cms-access-chronic-care-model",
-              "canonical_topic": "cms-access-chronic-care-model",
-              "duplicate_group": "cms-access-chronic-care-model",
-              "priority_score": 9,
-              "primary_source": "CMS",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
-                  "source_type": "web",
-                  "published_at": "2026-08-12T12:00:00Z"
-                },
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/priorities/innovation/access-model-accepted-applicants",
-                  "source_type": "web",
-                  "published_at": "2026-08-17T12:00:00Z"
-                },
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/27/cms-plans-launch-event-access-medicare-pilot-health-tech/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-27T17:21:14Z"
-                }
-              ],
-              "title": "CMS’s 10-year ACCESS model puts outcome-aligned payment behind technology-supported chronic care",
-              "summary": "CMS's ACCESS model is a voluntary 10-year test in Original Medicare for technology-supported chronic-care services such as remote monitoring, wearables, coaching, and medication management. CMS says more than 150 organizations were accepted for the launch, with participants primarily paid according to whether patients' health improves rather than simply by service volume.",
-              "strategic_implication": "Digital-health vendors and provider organizations should prioritize measurable outcomes, Medicare enrollment, integration, and patient engagement over standalone feature expansion. ACCESS offers an early template for moving virtual care from pilot budgets into accountable payment arrangements.",
-              "confidence": "high",
-              "tags": [
-                "cms",
-                "digital-health",
-                "chronic-care",
-                "remote-monitoring",
-                "value-based-care"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Cardiology and obesity therapeutics are producing sharply different market signals: one late-stage program delivered a potential expansion catalyst while another exposed the limits of combination therapy. Real-world GLP-1 evidence continues to strengthen the case for broader payer and Medicare coverage.",
-          "items": [
-            {
-              "item_id": "2026-08-28-cytokinetics-acacia-hcm-win",
-              "canonical_topic": "cytokinetics-aficamten-acacia-hcm",
-              "duplicate_group": "cytokinetics-aficamten-acacia-hcm",
-              "priority_score": 9,
-              "primary_source": "Cytokinetics",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/28/cytokinetics-myqorzo-aficamten-nhcm-acacia-trial-success/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-28T10:15:29Z"
-                },
-                {
-                  "source": "Cytokinetics",
-                  "url": "https://ir.cytokinetics.com/press-releases/press-release-details/2026/Cytokinetics-Announces-Positive-Results-from-ACACIA-HCM-Presented-in-Hot-Line-Session-at-the-European-Society-of-Cardiology-ESC-Congress-2026-and-Published-in-The-New-England-Journal-of-Medicine/default.aspx",
-                  "source_type": "web",
-                  "published_at": "2026-08-28T00:00:00Z"
-                }
-              ],
-              "title": "Cytokinetics reports positive Phase 3 ACACIA-HCM results, setting up a potential next approval",
-              "summary": "Cytokinetics reported that its Phase 3 ACACIA-HCM trial of aficamten in symptomatic non-obstructive hypertrophic cardiomyopathy produced statistically significant improvement across patient-reported and physician-assessed endpoints. The company plans to submit a supplemental New Drug Application to the FDA in the fourth quarter.",
-              "strategic_implication": "A successful filing could expand the commercial opportunity for cardiac myosin inhibition beyond obstructive disease. Cardiology practices, payers, and competitors should watch durability, safety, and the evidence needed to support adoption in a population with substantial unmet need.",
-              "confidence": "high",
-              "tags": [
-                "cytokinetics",
-                "aficamten",
-                "cardiology",
-                "clinical-trials",
-                "hypertrophic-cardiomyopathy"
-              ]
-            },
-            {
-              "item_id": "2026-08-28-astrazeneca-wainua-trial-autopsy",
-              "canonical_topic": "astrazeneca-wainua-attr-cm-trial",
-              "duplicate_group": "astrazeneca-wainua-attr-cm-trial",
-              "priority_score": 9,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/08/28/astrazeneca-ionis-wainua-eplontersen-attr-cm-study-failure-bridgebio-alnylam/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-28T09:23:13Z"
-                },
-                {
-                  "source": "AstraZeneca",
-                  "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/update-cardio-ttransform-phase-iii-trial.html",
-                  "source_type": "web",
-                  "published_at": "2026-07-09T06:00:00Z"
-                }
-              ],
-              "title": "AstraZeneca details why Wainua missed in a pivotal ATTR-CM trial",
-              "summary": "AstraZeneca's detailed readout of the CARDIO-TTRansform Phase 3 study found that Wainua (eplontersen) did not improve the composite of cardiovascular death and recurrent cardiovascular events through 140 weeks versus placebo. Most participants were already receiving a stabilizer, and the added silencer therapy did not deliver a statistically significant benefit in that contemporary treatment setting.",
-              "strategic_implication": "The result raises design and sequencing questions for the competitive ATTR-CM market, including whether combination therapy can justify its cost when background treatment is effective. Developers and investors should reassess trial populations, endpoints, and the commercial ceiling for next-generation silencers.",
-              "confidence": "high",
-              "tags": [
-                "astrazeneca",
-                "wainua",
-                "attr-cm",
-                "cardiology",
-                "clinical-trials"
-              ]
-            },
-            {
-              "item_id": "2026-08-28-lilly-zepbound-older-adults-costs",
-              "canonical_topic": "zepbound-older-adults-healthcare-costs",
-              "duplicate_group": "zepbound-older-adults-healthcare-costs",
-              "priority_score": 8,
-              "primary_source": "Eli Lilly",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/eli-lilly-study-aims-bolster-case-long-term-zepbound-benefits",
-                  "source_type": "rss",
-                  "published_at": "2026-08-27T18:49:00Z"
-                },
-                {
-                  "source": "Eli Lilly",
-                  "url": "https://investor.lilly.com/news-releases/news-release-details/zepbound-linked-lower-healthcare-costs-adults-over-age-55",
-                  "source_type": "web",
-                  "published_at": "2026-08-26T12:00:00Z"
-                }
-              ],
-              "title": "Real-world Zepbound study links sustained use in older adults to lower healthcare costs",
-              "summary": "Eli Lilly reported a real-world study of more than 15,000 adults over age 55 with overweight or obesity in which sustained Zepbound use was associated with lower healthcare costs over time. The treated group also showed lower rates of hospital admissions and emergency-department visits, according to the company disclosure.",
-              "strategic_implication": "The findings add payer-relevant evidence as Medicare's GLP-1 Bridge program moves forward, but observational design and long-term safety remain important caveats. Health plans should prepare for utilization, prior-authorization, and care-management decisions that distinguish durable outcomes from short-term demand.",
-              "confidence": "medium",
-              "tags": [
-                "zepbound",
-                "glp-1",
-                "obesity",
-                "medicare",
-                "health-economics"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Provider and supplier operations are absorbing both compliance shocks and capital demands. The latest examples show how coding controls, cyber resilience, and physical capacity planning are becoming linked strategic priorities.",
-          "items": [
-            {
-              "item_id": "2026-08-28-villages-health-medicare-settlement",
-              "canonical_topic": "villages-health-medicare-overbilling-settlement",
-              "duplicate_group": "villages-health-medicare-overbilling-settlement",
-              "priority_score": 10,
-              "primary_source": "U.S. Department of Justice",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/the-villages-health-medicare-overbilling-settlement-doj-humana/828915/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-27T14:30:00Z"
-                },
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/hospitals/villages-health-reaches-541m-false-claims-act-settlement-doj",
-                  "source_type": "rss",
-                  "published_at": "2026-08-27T17:26:00Z"
-                },
-                {
-                  "source": "Insurance Journal",
-                  "url": "https://www.insurancejournal.com/news/southeast/2026/08/27/883123.htm",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T15:00:00Z"
-                }
-              ],
-              "title": "Villages Health agrees to $541.5 million settlement over Medicare Advantage diagnosis codes",
-              "summary": "The Villages Health System agreed to pay $541.5 million to resolve allegations that it submitted false diagnosis codes from 2020 through 2024 to increase Medicare Advantage reimbursement. The provider disclosed the issue to the government in late 2024 and later filed for bankruptcy; Humana acquired the organization last year.",
-              "strategic_implication": "Delegated-risk providers and plans should strengthen code validation, documentation, repayment, and audit controls across value-based arrangements. The size of the settlement demonstrates that self-disclosure does not eliminate financial or operational consequences when risk-adjustment practices are not clinically supportable.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "coding",
-                "false-claims",
-                "compliance",
-                "risk-adjustment"
-              ]
-            },
-            {
-              "item_id": "2026-08-28-corewell-hospital-expansion",
-              "canonical_topic": "corewell-health-hospital-expansion",
-              "duplicate_group": "corewell-health-hospital-expansion",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/corewell-health-unveils-17b-plan-build-2-new-hospital-towers",
-                  "source_type": "rss",
-                  "published_at": "2026-08-27T18:57:00Z"
-                },
-                {
-                  "source": "ClickOnDetroit",
-                  "url": "https://www.clickondetroit.com/news/local/2026/08/27/corewell-health-announces-17b-expansions-in-troy-grand-rapids/",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T18:00:00Z"
-                }
-              ],
-              "title": "Corewell Health plans $1.7 billion expansion with new towers in Grand Rapids and Troy",
-              "summary": "Michigan nonprofit Corewell Health announced plans to invest approximately $1.7 billion in two hospital expansions, including new towers at its Grand Rapids and Troy campuses. The projects would add about 360 private rooms and are targeted for completion around 2030, subject to approvals.",
-              "strategic_implication": "Large systems are still committing capital to inpatient capacity where demand, acuity, and care experience justify long-cycle investment. The scale of the projects makes workforce pipeline, service-line mix, and construction financing as important as the beds themselves.",
-              "confidence": "high",
-              "tags": [
-                "corewell-health",
-                "hospital-expansion",
-                "capital-planning",
-                "inpatient-care",
-                "michigan"
-              ]
-            },
-            {
-              "item_id": "2026-08-28-boston-scientific-cyberattack",
-              "canonical_topic": "boston-scientific-cyberattack",
-              "duplicate_group": "boston-scientific-cyberattack",
-              "priority_score": 8,
-              "primary_source": "Boston Scientific",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/boston-scientifics-ordering-shipping-disrupted-in-cyberattack/828923/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-26T15:09:00Z"
-                },
-                {
-                  "source": "Boston Scientific",
-                  "url": "https://news.bostonscientific.com/update-on-recent-cybersecurity-incident",
-                  "source_type": "web",
-                  "published_at": "2026-08-26T12:00:00Z"
-                },
-                {
-                  "source": "Reuters",
-                  "url": "https://www.reuters.com/legal/government/boston-scientific-hit-by-cyberattack-global-operations-affected-2026-08-26/",
-                  "source_type": "web",
-                  "published_at": "2026-08-26T14:48:00Z"
-                }
-              ],
-              "title": "Boston Scientific cyber incident disrupts manufacturing, order processing, and shipments",
-              "summary": "Boston Scientific said a cybersecurity incident detected August 25 continues to affect certain information systems and business applications. The outage has disrupted parts of manufacturing and the ability to process and ship customer orders while the company investigates with outside cybersecurity specialists.",
-              "strategic_implication": "Hospitals should treat device-supplier cyber incidents as potential continuity-of-care events, not only IT problems. Manufacturers and providers need tested inventory buffers, alternate fulfillment paths, and communication protocols for procedure-critical products.",
-              "confidence": "high",
-              "tags": [
-                "cybersecurity",
-                "medical-devices",
-                "supply-chain",
-                "hospital-operations",
-                "business-continuity"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "New maternal-health evidence suggests digitally enabled, high-risk pregnancy support may influence costly clinical outcomes. The practical question is whether these results can be reproduced across populations and integrated into clinical workflows without adding burden to already stretched teams.",
-          "items": [
-            {
-              "item_id": "2026-08-28-maven-high-risk-pregnancy-outcomes",
-              "canonical_topic": "maven-high-risk-pregnancy-outcomes",
-              "duplicate_group": "maven-high-risk-pregnancy-outcomes",
-              "priority_score": 7,
-              "primary_source": "Maven Clinic",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/digital-health/maven-finds-its-high-risk-pregnancies-had-lower-nicu-c-section-rates-national",
-                  "source_type": "rss",
-                  "published_at": "2026-08-27T14:28:00Z"
-                },
-                {
-                  "source": "Maven Clinic / Yahoo Finance",
-                  "url": "https://finance.yahoo.com/healthcare/articles/maven-members-high-risk-pregnancies-130000920.html",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T13:00:00Z"
-                },
-                {
-                  "source": "Maven Clinic",
-                  "url": "https://www.mavenclinic.com/clinical-research-institute",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T12:00:00Z"
-                }
-              ],
-              "title": "Maven study reports fewer NICU admissions and C-sections among high-risk pregnancy members",
-              "summary": "Maven reported that its high-risk pregnancy members had 32% fewer NICU admissions and 10% fewer C-sections than a national benchmark in a cross-sectional analysis. The study compared 9,328 Maven members with high-risk pregnancies against 5,872 privately insured respondents from CDC pregnancy-survey data; the company also points to virtual birth-planning and care-navigation support as potential contributors.",
-              "strategic_implication": "Employers, plans, and provider partners should examine whether coordinated virtual maternity support can lower avoidable complications and total cost. Because the evidence is observational and benchmark-based, buyers should request transparent methods, subgroup results, and prospective validation before scaling broadly.",
-              "confidence": "medium",
-              "tags": [
-                "maternal-health",
-                "high-risk-pregnancy",
-                "nicu",
-                "c-section",
-                "virtual-care"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-09T11:04:25Z"
+  "last_updated": "2026-10-09T12:40:00Z"
 }

@@ -4,35 +4,39 @@
   "editions": [
     {
       "edition_date": "2026-10-12",
-      "generated_at": "2026-10-12T11:12:52Z",
+      "generated_at": "2026-10-12T13:05:00Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing focuses on renewed 340B litigation and federal vaccine-injury reporting initiatives, alongside an Oracle Health breach update and enterprise expansion of ambient AI. It also draws on a new review of pharmaceutical-industry payments to clinicians, survey findings on trust in science and hospitals, and a multi-year hospital-closure study, using STAT, Fierce Healthcare, HHS, Abridge, and targeted web checks.",
+      "summary_note": "Today's briefing covers renewed 340B litigation, federal vaccine-injury initiatives, the start of Medicaid eligibility limits for lawfully present immigrants, CMS's CJR-X participant list, and proposed census changes that would reshape public-health denominators. It also covers FDA clearance of Epic's Deterioration Index, the Oracle Health breach, rural hospital divestitures, Northwell layoffs, and the postponed Brigham nurses' strike. Sources include STAT, Becker's, the Associated Press, The Boston Globe, Fierce Healthcare, and FDA records.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
-          "STAT News RSS",
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
           "Healthcare Dive RSS (news)",
           "Fierce Healthcare RSS",
-          "Targeted web searches for CMS/HHS policy, hospital operations, digital health and AI, and drug-pricing developments",
-          "Gmail labels: HealthcareBrew, Healthcare Dive, Hospitalogy, Modern Healthcare, and STAT"
+          "Targeted web/news searches and primary-source verification (Becker's, AP, Boston Globe, FDA 510(k) database, Federal Register notice via STAT)"
         ],
         "sources_successful": [
-          "STAT News RSS (HTTP 200; latest substantive item dated Oct. 10)",
-          "Healthcare Dive RSS (HTTP 200; latest substantive item dated Oct. 9)",
-          "Fierce Healthcare RSS (HTTP 200; latest substantive items dated Oct. 9)",
-          "Targeted browser-based Bing searches: 340B rebate litigation, Oracle Health breach, Abridge–UT System expansion, and HHS vaccine-injury initiatives"
+          "STAT News RSS (all six feeds HTTP 200; latest substantive item Oct. 10)",
+          "Healthcare Dive RSS (HTTP 200; only sponsored posts since Oct. 9)",
+          "Fierce Healthcare RSS (automated run only)",
+          "Targeted web/news searches (Becker's Hospital Review, Becker's Spine Review, AP via WKMG, Boston Globe, WWLP/State House News Service, CBS Boston, Newsday)",
+          "FDA 510(k) record K260008"
         ],
         "sources_failed": [
-          "Direct search_web tool was not exposed in this runtime; targeted Bing browser searches were used instead, while Google News triggered a reCAPTCHA challenge.",
-          "Supplementary Gmail label searches returned no messages for Oct. 11–12."
+          "Gmail InsightsSources/* labels and newsletter-name searches returned no messages in the connected mailbox since 2026-10-08",
+          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch",
+          "KFF Health News morning briefing page could not be fetched",
+          "STAT+ articles paywalled; drafted from RSS previews plus accessible article text"
         ],
-        "run_notes": "Substantive RSS publication was sparse across the weekend; this edition uses distinct reporting from Oct. 8–10 rather than treating sponsored posts as news. Previously covered No Surprises Act legislation, Medicare Advantage star ratings, mifepristone review, and outpatient migration were excluded; the 340B item is a new lawsuit, distinct from the prior edition's policy debate."
+        "run_notes": "Same-day rebuild in place: the automated run (generated 2026-10-12T11:12:52Z) appended 2026-10-12 and left the feed at 31 editions. Trimmed to 30; the displaced 2026-08-31 edition is preserved in archive/editions-archive-2026-10-12.json. Retained all 8 automated items, added 8 new items from the Oct. 5-11 holiday-weekend window, screened against the prior 12 editions (skipped MA star ratings, MAHA midterm coverage, and HealthPartners-Essentia as already covered), and refreshed bucket syntheses.",
+        "items_captured": 16
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "Hospital groups have opened a new legal challenge to the 340B rebate pilot, while HHS announced vaccine-injury research and reporting initiatives and a potential NIAID leadership change receded.",
+          "synthesis": "Hospital groups have sued again over the 340B rebate pilot, and HHS has launched vaccine-injury initiatives. Medicaid limits for lawfully present immigrants are now in effect, CMS has named 2,217 hospitals for mandatory CJR-X bundles, and proposed census changes threaten the population baselines behind public-health data.",
           "items": [
             {
               "item_id": "2026-10-12-340b-rebate-pilot-lawsuit",
@@ -99,6 +103,90 @@
               ]
             },
             {
+              "item_id": "2026-10-12-census-2030-changes-public-health-data",
+              "canonical_topic": "census-2030-changes-public-health-data",
+              "duplicate_group": "census-2030-changes-public-health-data",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/09/2030-census-public-health-data-equity-morbidity-mortality/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-09T08:30:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/09/health-news-census-changes-threaten-public-data-collection/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-09T13:23:29Z"
+                }
+              ],
+              "title": "Proposed 2030 census changes would reshape the denominators behind public-health data",
+              "summary": "A Sept. 10 Federal Register notice proposes counting only citizens and lawful permanent residents, assigning residence by tax-record address rather than Census Day location, and dropping race, ethnicity, and sexual-orientation questions. The comment deadline was extended from Oct. 13 to Nov. 2. A STAT opinion by epidemiologist Nancy Krieger argues the changes would distort morbidity, mortality, and equity measures; the proposals are untested and their legal status is contested.",
+              "strategic_implication": "Health departments, hospitals preparing community health needs assessments, and grant-dependent programs should assess how altered population counts would shift rates and funding formulas, and consider filing comments before Nov. 2.",
+              "confidence": "medium",
+              "tags": [
+                "census",
+                "public-health-data",
+                "health-equity",
+                "federal-policy"
+              ]
+            },
+            {
+              "item_id": "2026-10-12-medicaid-immigrant-eligibility-losses",
+              "canonical_topic": "medicaid-immigrant-eligibility-losses",
+              "duplicate_group": "medicaid-immigrant-eligibility-losses",
+              "priority_score": 8,
+              "primary_source": "Associated Press",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Associated Press via WKMG News 6",
+                  "url": "https://www.clickorlando.com/news/politics/2026/10/10/trumps-medicaid-cuts-strip-refugees-and-other-legal-immigrants-of-their-health-coverage/",
+                  "source_type": "web",
+                  "published_at": "2026-10-10T13:07:00Z"
+                }
+              ],
+              "title": "Medicaid eligibility limits take effect for refugees and other lawfully present immigrants",
+              "summary": "Oct. 1 restrictions under the 2025 budget law removed Medicaid coverage for certain lawfully present immigrants, including refugees, asylees, and trafficking and domestic-violence survivors; green-card holders are not affected by this change. KFF estimates more than 281,000 people across nine states and D.C. will lose coverage. Arizona reported 29,000 removals on Oct. 1, and Florida estimates are near 177,000.",
+              "strategic_implication": "Safety-net hospitals and FQHCs in affected states, especially Florida, should expect higher uncompensated care and emergency-department use, and should route affected patients to marketplace, charity-care, or emergency Medicaid options.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "immigration",
+                "coverage",
+                "uncompensated-care"
+              ]
+            },
+            {
+              "item_id": "2026-10-12-cjr-x-participant-list",
+              "canonical_topic": "cjr-x-participant-list",
+              "duplicate_group": "cjr-x-participant-list",
+              "priority_score": 7,
+              "primary_source": "Becker's",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Spine Review",
+                  "url": "https://www.beckersspine.com/orthopedic/whos-on-the-final-cjr-x-list/",
+                  "source_type": "web",
+                  "published_at": "2026-10-06T00:00:00Z"
+                }
+              ],
+              "title": "CMS lists 2,217 hospitals for mandatory CJR-X joint-replacement bundles",
+              "summary": "CMS published the participant list for the Comprehensive Care for Joint Replacement Expanded Model, finalized in the FY 2027 IPPS rule: 2,217 acute care hospitals as of Sept. 30. Beginning Jan. 1, 2028, participants will be accountable for hip, knee, and ankle replacement episodes through 90 days of recovery. TEAM participants and Maryland hospitals are exempt, and CMS will update the list for openings, mergers, and closures.",
+              "strategic_implication": "Listed hospitals have roughly 14 months to build post-acute networks, episode cost baselines, and orthopedic care pathways before downside risk begins.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "value-based-care",
+                "bundled-payments",
+                "orthopedics"
+              ]
+            },
+            {
               "item_id": "2026-10-12-niaid-director-search",
               "canonical_topic": "niaid-director-search",
               "duplicate_group": "niaid-director-search",
@@ -128,7 +216,7 @@
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "A newly reported Oracle Health breach scale underscores the persistence of legacy-system exposure, as a large academic health network moves ambient AI from pilot to enterprise-wide access.",
+          "synthesis": "FDA clearance of Epic's Deterioration Index raises governance expectations for EHR-embedded AI. Meanwhile, the scale of the Oracle Health breach and an enterprise-wide Abridge deal show both the risk and the momentum in health-system technology.",
           "items": [
             {
               "item_id": "2026-10-12-oracle-health-breach-reported-scale",
@@ -187,12 +275,44 @@
                 "health-systems",
                 "enterprise-adoption"
               ]
+            },
+            {
+              "item_id": "2026-10-12-epic-deterioration-index-fda-clearance",
+              "canonical_topic": "epic-deterioration-index-fda-clearance",
+              "duplicate_group": "epic-deterioration-index-fda-clearance",
+              "priority_score": 8,
+              "primary_source": "Becker's",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/epics-deterioration-index-wins-fda-clearance-after-years-of-use/",
+                  "source_type": "web",
+                  "published_at": "2026-10-11T00:00:00Z"
+                },
+                {
+                  "source": "FDA 510(k) database",
+                  "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K260008",
+                  "source_type": "primary",
+                  "published_at": "2026-09-18T00:00:00Z"
+                }
+              ],
+              "title": "Epic's Deterioration Index receives FDA 510(k) clearance after years of unregulated use",
+              "summary": "FDA cleared Epic's Deterioration Index Version 2 (K260008) on Sept. 18, using AgileMD's eCART as the predicate. The EHR-embedded model scores 195 chart inputs to predict escalation of care within 24 hours or death within 72 hours for adult inpatients and observation patients. It is Epic's first AI/ML clearance through FDA's device center, and the clearance does not include a predetermined change control plan.",
+              "strategic_implication": "Health systems using the earlier, uncleared version should review their AI governance, validation, and labeling, since clearance raises expectations for model updates, intended-use limits, and local performance monitoring.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "fda",
+                "clinical-decision-support",
+                "epic"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "A 15-year national review points to a continuing contraction in acute-care supply, with closures accelerating as openings slow.",
+          "synthesis": "Acute-care supply continues to contract as closures outpace openings, while divestitures in rural Louisiana and HCA's exit from home health and hospice point to portfolio pruning.",
           "items": [
             {
               "item_id": "2026-10-12-us-hospital-closures-study",
@@ -219,18 +339,139 @@
                 "rural-health",
                 "market-supply"
               ]
+            },
+            {
+              "item_id": "2026-10-12-allegiance-louisiana-hospital-divestitures",
+              "canonical_topic": "allegiance-louisiana-hospital-divestitures",
+              "duplicate_group": "allegiance-louisiana-hospital-divestitures",
+              "priority_score": 6,
+              "primary_source": "Becker's",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hospital-transactions-and-valuation/the-week-in-hospital-ma-32/",
+                  "source_type": "web",
+                  "published_at": "2026-10-09T00:00:00Z"
+                }
+              ],
+              "title": "Allegiance Health Management plans to divest four rural Louisiana hospitals",
+              "summary": "Bossier City-based Allegiance plans to divest Minden Medical Center, Northern Louisiana Medical Center, Acadian Medical Center, and Mercy Regional Medical Center, citing long-term sustainability. Buyers and timing have not been disclosed. In the same week, Quorum Health's planned acquisition of Banner Lassen Medical Center slipped to an expected March 31, 2027 close.",
+              "strategic_implication": "Regional systems may find acquisition opportunities in rural Louisiana, while state officials and communities should watch for service-line reductions if buyers are not found.",
+              "confidence": "medium",
+              "tags": [
+                "m-and-a",
+                "rural-hospitals",
+                "divestiture"
+              ]
+            },
+            {
+              "item_id": "2026-10-12-hca-home-health-hospice-sale-deaconess",
+              "canonical_topic": "hca-home-health-hospice-sale-deaconess",
+              "duplicate_group": "hca-home-health-hospice-sale-deaconess",
+              "priority_score": 6,
+              "primary_source": "Becker's",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hospital-transactions-and-valuation/the-week-in-hospital-ma-32/",
+                  "source_type": "web",
+                  "published_at": "2026-10-09T00:00:00Z"
+                }
+              ],
+              "title": "HCA sells 31 home health and hospice agencies to Deaconess Associations",
+              "summary": "HCA Healthcare closed the sale of 31 home health and hospice agencies across eight states to Cincinnati-based Deaconess Associations. The agencies will join Deaconess subsidiary Central Pyramid. The closing date and price were not disclosed.",
+              "strategic_implication": "The deal signals that large hospital operators are narrowing their focus to acute care. Referral partners should confirm continuity of post-acute pathways as the agencies change ownership.",
+              "confidence": "medium",
+              "tags": [
+                "m-and-a",
+                "home-health",
+                "hospice",
+                "post-acute"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "No distinct provider-operations development surfaced in the latest reporting window beyond the hospital-supply trends covered in Market and Industry Signals.",
-          "items": []
+          "synthesis": "Northwell's third undisclosed layoff round shows margin pressure persisting at large systems heading into FY 2027 budgets.",
+          "items": [
+            {
+              "item_id": "2026-10-12-northwell-third-layoff-round",
+              "canonical_topic": "northwell-third-layoff-round",
+              "duplicate_group": "northwell-third-layoff-round",
+              "priority_score": 6,
+              "primary_source": "Becker's",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/northwell-plans-3rd-round-of-layoffs-in-under-1-year/",
+                  "source_type": "web",
+                  "published_at": "2026-10-05T00:00:00Z"
+                },
+                {
+                  "source": "Newsday",
+                  "url": "https://www.newsday.com/business/northwell-health-hospital-layoff-jobs-m773ihu6",
+                  "source_type": "web",
+                  "published_at": "2026-10-06T00:00:00Z"
+                }
+              ],
+              "title": "Northwell begins its third round of layoffs in under a year",
+              "summary": "Northwell Health, New York's largest private employer, confirmed Oct. 5 that it is eliminating a limited number of positions to manage financial pressures. It did not disclose the headcount or affected roles. The cuts follow rounds in November 2025 and February 2026, and Becker's ongoing tracker lists additional October cuts at systems including City of Hope.",
+              "strategic_implication": "Repeated, undisclosed cuts at a large system suggest margin pressure is persisting into FY 2027 budgeting. Peer systems should benchmark administrative cost structures ahead of Medicaid revenue declines.",
+              "confidence": "medium",
+              "tags": [
+                "layoffs",
+                "hospital-finance",
+                "workforce"
+              ]
+            }
+          ]
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "New evidence links pharmaceutical payments to prescribing behavior, while a global survey finds U.S. confidence in science exceeds confidence in hospitals and clinics.",
+          "synthesis": "Brigham nurses postponed an open-ended strike to vote on a final offer that leaves wage disputes unresolved. New evidence also links drugmaker payments to prescribing, and a survey finds U.S. trust in science outpaces confidence in hospitals.",
           "items": [
+            {
+              "item_id": "2026-10-12-brigham-nurses-postpone-strike",
+              "canonical_topic": "brigham-nurses-postpone-strike",
+              "duplicate_group": "brigham-nurses-postpone-strike",
+              "priority_score": 8,
+              "primary_source": "The Boston Globe",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "The Boston Globe",
+                  "url": "https://www.bostonglobe.com/2026/10/11/business/brigham-nurses-strike-postponed/",
+                  "source_type": "web",
+                  "published_at": "2026-10-11T00:00:00Z"
+                },
+                {
+                  "source": "State House News Service via WWLP",
+                  "url": "https://www.wwlp.com/news/massachusetts/nurses-postpone-major-strike-plan-vote-on-hospitals-final-offer/",
+                  "source_type": "web",
+                  "published_at": "2026-10-11T00:00:00Z"
+                },
+                {
+                  "source": "CBS News Boston",
+                  "url": "https://www.cbsnews.com/boston/news/brigham-nurses-strike-postponed/",
+                  "source_type": "web",
+                  "published_at": "2026-10-11T00:00:00Z"
+                }
+              ],
+              "title": "Brigham nurses postpone the planned Oct. 14 open-ended strike to vote on a final offer",
+              "summary": "After a 13-hour bargaining session on Oct. 10, Mass General Brigham presented a final offer, and the Massachusetts Nurses Association postponed the indefinite strike by about 4,000 Brigham and Women's nurses. A ratification vote is expected in about two weeks. The offer runs through Sept. 30, 2028 but omits across-the-board raises, and the union's bargaining chair expects members to reject it. A new strike would require another 10-day notice.",
+              "strategic_implication": "The immediate disruption is averted, but unresolved wage terms keep the risk of a strike alive. Academic medical centers facing similar contract cycles should expect cost-of-living raises and travel-nurse limits to stay central to bargaining.",
+              "confidence": "high",
+              "tags": [
+                "labor",
+                "nursing",
+                "strikes",
+                "academic-medical-centers"
+              ]
+            },
             {
               "item_id": "2026-10-12-pharma-payments-prescribing-review",
               "canonical_topic": "pharma-payments-prescribing-review",
@@ -13499,438 +13740,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-08-31",
-      "generated_at": "2026-08-31T11:16:56Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks a dense run of late-August FDA and CMS actions, including a first-in-class polycythemia vera therapy, dual glucose-ketone monitoring, and a Medicare laboratory-fraud enforcement update. Market and operating signals span personalized mRNA oncology, radiopharmaceutical dosing, AI economics for physicians, quality-measure modernization, PBM litigation, and a Medicaid technology-system dispute.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA web",
-          "Official government and company disclosures",
-          "Targeted web search",
-          "Supplementary Gmail newsletters"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "Targeted web search",
-          "FDA official release/search result",
-          "CMS official release/search result",
-          "Takeda and Abbott company disclosures/search results",
-          "Komodo/NCQA disclosure/search result",
-          "Merck/Moderna disclosure/search result",
-          "Boston University/Mass General Brigham study coverage"
-        ],
-        "sources_failed": [
-          "Supplementary Gmail newsletters not used"
-        ],
-        "run_notes": "All three required RSS feeds returned via curl. Fresh Aug. 25-31 items were cross-checked with targeted web results and available official FDA, CMS, company, study, and legal disclosures; the prior edition's dermatomyositis, Medicare negotiation litigation, G2211, autism strategy, ACCESS, Cytokinetics, Wainua, Zepbound, Villages Health, Corewell, Boston Scientific, and Maven topics were not republished. Several deep page fetches timed out, so RSS descriptions and search-result excerpts were used as permitted signal depth."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Federal agencies are pairing novel approvals with more aggressive program-integrity enforcement, while state litigation is putting PBM reimbursement practices under a sharper antitrust lens. The combined signals point to a healthcare environment where access, pricing, and compliance are moving together.",
-          "items": [
-            {
-              "item_id": "2026-08-31-mimrylo-polycythemia-vera-approval",
-              "canonical_topic": "mimrylo-polycythemia-vera-approval",
-              "duplicate_group": "mimrylo-polycythemia-vera-approval",
-              "priority_score": 9,
-              "primary_source": "FDA",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-drug-its-kind-polycythemia-vera-rare-blood-disorder",
-                  "source_type": "web",
-                  "published_at": "2026-08-28T00:00:00Z"
-                },
-                {
-                  "source": "Takeda",
-                  "url": "https://www.takeda.com/newsroom/newsreleases/2026/fda-approval-mimrylo/",
-                  "source_type": "web",
-                  "published_at": "2026-08-28T00:00:00Z"
-                },
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/08/30/fda-approves-mimrylo-takeda-protagonist-treatment-for-polycythemia-vera/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-30T18:30:18Z"
-                }
-              ],
-              "title": "FDA approves first-in-class hepcidin-mimetic therapy for polycythemia vera",
-              "summary": "The FDA approved MIMRYLO (rusfertide) from Takeda and Protagonist Therapeutics for erythrocytosis in adults with polycythemia vera. The therapy mimics hepcidin to limit iron availability, with the companies positioning it as a first-in-class approach that can maintain hematocrit control and reduce phlebotomy burden.",
-              "strategic_implication": "Hematology practices and payers should prepare for new utilization-management criteria, safety monitoring, and infusion-or-injection workflow planning as treatment sequencing changes in a rare blood cancer.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "rare-disease",
-                "polycythemia-vera",
-                "hematology"
-              ]
-            },
-            {
-              "item_id": "2026-08-31-cms-medicare-lab-fraud-enforcement",
-              "canonical_topic": "cms-medicare-lab-fraud-enforcement",
-              "duplicate_group": "cms-medicare-lab-fraud-enforcement",
-              "priority_score": 9,
-              "primary_source": "CMS",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/newsroom/press-releases/cms-prevents-1-6-billion-fraudulent-medicare-laboratory-payments",
-                  "source_type": "web",
-                  "published_at": "2026-08-28T00:00:00Z"
-                },
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/regulatory/trump-admin-blocks-over-16b-potentially-fraudulent-medicare-lab-payments-cms",
-                  "source_type": "rss",
-                  "published_at": "2026-08-28T12:49:00Z"
-                }
-              ],
-              "title": "CMS says analytics and provider actions blocked more than $1.6B in potentially improper Medicare lab payments",
-              "summary": "CMS reported that enforcement actions have stopped more than $1.6 billion in potentially improper Medicare laboratory payments since the start of the administration. The agency attributed the total to actions including revoking 157 fraudulent lab providers, suspending payments, and using analytics to target suspicious billing.",
-              "strategic_implication": "Laboratories and referring providers should expect sustained pre-payment scrutiny, enrollment actions, and documentation demands; health systems should recheck ordering, referral, and vendor controls tied to high-risk testing.",
-              "confidence": "high",
-              "tags": [
-                "cms",
-                "medicare",
-                "fraud-prevention",
-                "laboratories"
-              ]
-            },
-            {
-              "item_id": "2026-08-31-florida-pbm-price-fixing-lawsuit",
-              "canonical_topic": "florida-pbm-price-fixing-lawsuit",
-              "duplicate_group": "florida-pbm-price-fixing-lawsuit",
-              "priority_score": 8,
-              "primary_source": "Florida Attorney General",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/payers/florida-ag-sues-prime-therapeutics-express-scripts-alleged-price-fixing",
-                  "source_type": "rss",
-                  "published_at": "2026-08-28T00:00:00Z"
-                },
-                {
-                  "source": "Florida Attorney General complaint",
-                  "url": "https://business.cch.com/ald/StateofFloridavPrimeTherapeuticsLLCComplaint082826.pdf",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T13:13:46Z"
-                }
-              ],
-              "title": "Florida sues Express Scripts and Prime Therapeutics over alleged pharmacy reimbursement price fixing",
-              "summary": "Florida Attorney General James Uthmeier filed an antitrust lawsuit against Express Scripts and Prime Therapeutics, alleging the PBMs coordinated reimbursement practices and underpaid retail pharmacies. The complaint argues the alleged arrangement harmed independent pharmacies and could constrain medication access; the allegations remain contested in court.",
-              "strategic_implication": "PBMs, plans, and pharmacy operators should model state-by-state litigation and reimbursement scrutiny as a growing contracting and network-adequacy risk, especially where independent pharmacies are already operating at thin margins.",
-              "confidence": "medium",
-              "tags": [
-                "pbm",
-                "antitrust",
-                "pharmacy",
-                "reimbursement"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Digital health is moving from pilots toward infrastructure and economic-accountability questions. Regulators are clearing richer physiologic data streams while clinicians and quality bodies debate who captures value and how measures should be built from longitudinal data.",
-          "items": [
-            {
-              "item_id": "2026-08-31-abbott-libre-duo-glucose-ketone-monitor",
-              "canonical_topic": "abbott-libre-duo-glucose-ketone-monitor",
-              "duplicate_group": "abbott-libre-duo-glucose-ketone-monitor",
-              "priority_score": 8,
-              "primary_source": "FDA",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
-                  "source_type": "web",
-                  "published_at": "2026-08-25T00:00:00Z"
-                },
-                {
-                  "source": "Abbott",
-                  "url": "https://abbott.mediaroom.com/2026-08-25-Abbott-receives-FDA-authorization-for-worlds-first-dual-glucose-ketone-sensing-technology-for-people-with-diabetes",
-                  "source_type": "web",
-                  "published_at": "2026-08-25T00:00:00Z"
-                },
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/most-americans-want-providers-disclose-ai-use-survey-pew/828921/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-27T13:10:39Z"
-                }
-              ],
-              "title": "FDA authorizes Abbott wearable that continuously tracks glucose and ketones in one sensor",
-              "summary": "The FDA authorized Abbott's Libre Duo 10 Day system for people age two and older with diabetes. It is described as the first U.S. wearable to continuously monitor ketones and the first device globally to continuously track ketones and glucose together in a single sensor.",
-              "strategic_implication": "Combined glucose-ketone data could support earlier detection of metabolic deterioration, but providers and digital-health partners will need alert protocols, escalation pathways, and reimbursement models that turn the signal into safe action.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "wearables",
-                "diabetes",
-                "remote-monitoring"
-              ]
-            },
-            {
-              "item_id": "2026-08-31-physician-ai-productivity-compensation",
-              "canonical_topic": "physician-ai-productivity-compensation",
-              "duplicate_group": "physician-ai-productivity-compensation",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive / Doximity",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/physicians-say-they-should-benefit-financially-from-ais-time-savings-doximity/829046/",
-                  "source_type": "rss",
-                  "published_at": "2026-08-28T12:47:50Z"
-                },
-                {
-                  "source": "Doximity",
-                  "url": "https://www.doximity.com/reports/physician-compensation-report/2026",
-                  "source_type": "web",
-                  "published_at": "2026-08-31T00:00:00Z"
-                }
-              ],
-              "title": "Physicians increasingly expect a share of the value created by clinical AI",
-              "summary": "Doximity's 2026 compensation report says 66% of surveyed physicians use AI daily or weekly for clinical or administrative work, while 23% expect the technology to increase their total compensation. The report draws on roughly 250,000 compensation responses over seven years, including nearly 23,000 physicians surveyed in 2025.",
-              "strategic_implication": "Health systems should treat AI adoption as a workforce-design and compensation issue, not only a software purchase: transparent productivity measurement, governance, and gain-sharing may determine adoption and retention.",
-              "confidence": "medium",
-              "tags": [
-                "clinical-ai",
-                "physician-workforce",
-                "compensation",
-                "productivity"
-              ]
-            },
-            {
-              "item_id": "2026-08-31-ncqa-komodo-hedis-modernization",
-              "canonical_topic": "ncqa-komodo-hedis-modernization",
-              "duplicate_group": "ncqa-komodo-hedis-modernization",
-              "priority_score": 7,
-              "primary_source": "Komodo Health / NCQA",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Komodo Health",
-                  "url": "https://www.komodohealth.com/press/ncqa-accelerating-the-future-of-healthcare-quality-measurement/",
-                  "source_type": "web",
-                  "published_at": "2026-08-26T00:00:00Z"
-                },
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/health-tech/ncqa-use-komodo-platform-future-development-hedis-measures",
-                  "source_type": "rss",
-                  "published_at": "2026-08-28T10:58:00Z"
-                }
-              ],
-              "title": "NCQA and Komodo Health partner to modernize HEDIS measure development with longitudinal data and AI",
-              "summary": "NCQA will use Komodo Health's Healthcare Map and AI-powered analytics in a multi-year effort to explore complex questions in quality-measure development. The collaboration is intended to analyze care across insurance types, settings, and populations from a longitudinal, de-identified dataset; NCQA retains responsibility for developing HEDIS measures.",
-              "strategic_implication": "Plans and provider groups should anticipate more data-rich quality measurement and ensure their data lineage, coding, and interoperability can withstand faster measure iteration and cross-setting comparisons.",
-              "confidence": "medium",
-              "tags": [
-                "hedis",
-                "quality-measures",
-                "healthcare-data",
-                "ai"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Biopharma signals are tilting toward platform validation and sharper differentiation: personalized oncology has produced a late-stage proof point, while radiopharmaceutical developers are challenging conservative dosing assumptions. The pipeline upside is meaningful, but manufacturing, evidence, and delivery complexity remain material.",
-          "items": [
-            {
-              "item_id": "2026-08-31-personalized-mrna-melanoma-vaccine",
-              "canonical_topic": "personalized-mrna-melanoma-vaccine",
-              "duplicate_group": "personalized-mrna-melanoma-vaccine",
-              "priority_score": 8,
-              "primary_source": "STAT / Merck and Moderna",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/08/31/mrna-cancer-vaccine-intersects-politics-medicine/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-31T08:30:00Z"
-                },
-                {
-                  "source": "Merck and Moderna",
-                  "url": "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
-                  "source_type": "web",
-                  "published_at": "2026-08-19T10:45:00Z"
-                }
-              ],
-              "title": "Merck-Moderna personalized mRNA vaccine delivers Phase 3 melanoma win, reviving the platform's oncology outlook",
-              "summary": "Merck and Moderna said their Phase 3 INTerpath-001 trial of personalized mRNA vaccine intismeran autogene plus Keytruda met endpoints for recurrence-free and distant-metastasis-free survival in completely resected high-risk melanoma. The companies plan to present detailed data and engage regulators; STAT's latest analysis frames the result as a needed boost for mRNA after a difficult stretch.",
-              "strategic_implication": "A successful regulatory path would validate individualized neoantigen manufacturing and create new operating requirements for tumor sequencing, turnaround time, and coordination between oncology centers and specialty manufacturers.",
-              "confidence": "medium",
-              "tags": [
-                "mrna",
-                "oncology",
-                "melanoma",
-                "personalized-medicine"
-              ]
-            },
-            {
-              "item_id": "2026-08-31-radiopharmaceutical-dosing-innovation",
-              "canonical_topic": "radiopharmaceutical-dosing-innovation",
-              "duplicate_group": "radiopharmaceutical-dosing-innovation",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/08/31/radiopharmaceuticals-dosing-pushing-bounds-cancer-treatment/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-31T08:30:00Z"
-                },
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/oncology-therapeutic-radiopharmaceuticals-dosage-optimization-during-clinical-development",
-                  "source_type": "web",
-                  "published_at": "2025-08-18T00:00:00Z"
-                }
-              ],
-              "title": "Radiopharmaceutical experts push for more ambitious dosing strategies in cancer care",
-              "summary": "STAT reports that a group of radiopharmaceutical specialists believes some targeted radioactive cancer therapies may be dosed more frequently than current practice allows. The debate sits alongside FDA guidance encouraging sponsors to optimize administered activity and schedules while accounting for exposure to organs such as kidneys, liver, and bone marrow.",
-              "strategic_implication": "Developers and cancer centers should treat dosimetry, capacity, and toxicity monitoring as competitive capabilities; more intensive schedules could improve efficacy but also amplify production, radiation-safety, and care-coordination demands.",
-              "confidence": "medium",
-              "tags": [
-                "radiopharmaceuticals",
-                "oncology",
-                "dosimetry",
-                "clinical-trials"
-              ]
-            },
-            {
-              "item_id": "2026-08-31-rasonque-pancreatic-cancer-approval",
-              "canonical_topic": "rasonque-pancreatic-cancer-approval",
-              "duplicate_group": "rasonque-pancreatic-cancer-approval",
-              "priority_score": 8,
-              "primary_source": "FDA",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-class-targeted-therapy-metastatic-pancreatic-cancer",
-                  "source_type": "web",
-                  "published_at": "2026-08-26T00:00:00Z"
-                },
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/08/28/biotech-news-astrazeneca-ionis-detail-surprise-failure-of-heart-disease-drug/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-28T13:39:04Z"
-                }
-              ],
-              "title": "FDA clears Rasonque as the first in-class targeted therapy for metastatic pancreatic cancer",
-              "summary": "The FDA approved Rasonque (daraxonrasib), a RAS inhibitor for adults with previously treated metastatic pancreatic adenocarcinoma. FDA and trial coverage describe the decision as a first-in-class targeted option for a disease with limited effective therapies, based on Phase 3 evidence showing a survival advantage over standard chemotherapy.",
-              "strategic_implication": "Oncology systems should plan for molecular testing, pathway updates, and financial-counseling needs as RAS-directed treatment enters a setting where rapid adoption could pressure infusion capacity and specialty-pharmacy workflows.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "pancreatic-cancer",
-                "ras-inhibitor",
-                "oncology"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "A Medicaid technology failure is becoming a high-dollar governance case. The dispute underscores that public-sector health IT contracts carry clinical-continuity, taxpayer, and False Claims Act exposure when implementation controls fail.",
-          "items": [
-            {
-              "item_id": "2026-08-31-maryland-optum-medicaid-system-lawsuit",
-              "canonical_topic": "maryland-optum-medicaid-system-lawsuit",
-              "duplicate_group": "maryland-optum-medicaid-system-lawsuit",
-              "priority_score": 8,
-              "primary_source": "CBS Baltimore / Maryland Attorney General",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/payers/maryland-sues-optum-over-defective-computer-system",
-                  "source_type": "rss",
-                  "published_at": "2026-08-28T00:00:00Z"
-                },
-                {
-                  "source": "CBS Baltimore",
-                  "url": "https://www.cbsnews.com/baltimore/news/maryland-sues-unitedhealth-and-optum-defective-medicaid-computer-system/",
-                  "source_type": "web",
-                  "published_at": "2026-08-27T00:00:00Z"
-                }
-              ],
-              "title": "Maryland seeks about $380M from UnitedHealth and Optum over failed Medicaid behavioral-health system",
-              "summary": "Maryland sued UnitedHealth Group and Optum over a computer system intended to administer the state's Medicaid behavioral-health services program. The state alleges the system crashed on its first day, remained offline for months, and caused tens of millions of dollars in harm; the complaint seeks approximately $380 million, or up to three times the initial contract price.",
-              "strategic_implication": "Health systems and state agencies should strengthen go-live readiness, fallback operations, vendor accountability, and clinical-service continuity requirements in Medicaid technology contracts; vendors face heightened scrutiny when failures affect behavioral-health access.",
-              "confidence": "medium",
-              "tags": [
-                "medicaid",
-                "health-it",
-                "behavioral-health",
-                "vendor-risk"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "New CTE evidence is renewing attention on cumulative head impacts, post-mortem evidence limits, and prevention. The clinical and operational response will require balancing better surveillance and counseling with the uncertainty inherent in brain-donation samples.",
-          "items": [
-            {
-              "item_id": "2026-08-31-nfl-cte-prevalence-study",
-              "canonical_topic": "nfl-cte-prevalence-study",
-              "duplicate_group": "nfl-cte-prevalence-study",
-              "priority_score": 7,
-              "primary_source": "STAT / Boston University CTE Center",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/08/31/cte-nfl-boston-university-study-football-concussion-history/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-08-31T08:30:00Z"
-                },
-                {
-                  "source": "Boston University CTE Center",
-                  "url": "https://www.bumc.bu.edu/camed/news-events/articles/2026/146205/",
-                  "source_type": "web",
-                  "published_at": "2026-08-25T00:00:00Z"
-                }
-              ],
-              "title": "Study finds CTE in at least one in four former NFL players whose brains were examined",
-              "summary": "A Boston University-led study of former NFL players who died between 2016 and 2021 found evidence of chronic traumatic encephalopathy in at least 25% of the donated brains examined, with a worst-case estimate much higher. Researchers caution that brain-bank samples cannot necessarily be generalized to all football players, while severity was associated with clinical dementia criteria in a substantial share of cases.",
-              "strategic_implication": "Sports-medicine and primary-care teams should use the findings to reinforce longitudinal concussion histories, cognitive and behavioral screening, and shared decision-making while communicating clearly about what post-mortem prevalence estimates can and cannot establish for living patients.",
-              "confidence": "medium",
-              "tags": [
-                "cte",
-                "concussion",
-                "sports-medicine",
-                "brain-health"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-12T11:14:00Z"
+  "last_updated": "2026-10-12T13:05:00Z"
 }

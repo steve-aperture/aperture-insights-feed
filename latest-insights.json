@@ -3,6 +3,291 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-12",
+      "generated_at": "2026-10-12T11:12:52Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing focuses on renewed 340B litigation and federal vaccine-injury reporting initiatives, alongside an Oracle Health breach update and enterprise expansion of ambient AI. It also draws on a new review of pharmaceutical-industry payments to clinicians, survey findings on trust in science and hospitals, and a multi-year hospital-closure study, using STAT, Fierce Healthcare, HHS, Abridge, and targeted web checks.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted web searches for CMS/HHS policy, hospital operations, digital health and AI, and drug-pricing developments",
+          "Gmail labels: HealthcareBrew, Healthcare Dive, Hospitalogy, Modern Healthcare, and STAT"
+        ],
+        "sources_successful": [
+          "STAT News RSS (HTTP 200; latest substantive item dated Oct. 10)",
+          "Healthcare Dive RSS (HTTP 200; latest substantive item dated Oct. 9)",
+          "Fierce Healthcare RSS (HTTP 200; latest substantive items dated Oct. 9)",
+          "Targeted browser-based Bing searches: 340B rebate litigation, Oracle Health breach, Abridge–UT System expansion, and HHS vaccine-injury initiatives"
+        ],
+        "sources_failed": [
+          "Direct search_web tool was not exposed in this runtime; targeted Bing browser searches were used instead, while Google News triggered a reCAPTCHA challenge.",
+          "Supplementary Gmail label searches returned no messages for Oct. 11–12."
+        ],
+        "run_notes": "Substantive RSS publication was sparse across the weekend; this edition uses distinct reporting from Oct. 8–10 rather than treating sponsored posts as news. Previously covered No Surprises Act legislation, Medicare Advantage star ratings, mifepristone review, and outpatient migration were excluded; the 340B item is a new lawsuit, distinct from the prior edition's policy debate."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Hospital groups have opened a new legal challenge to the 340B rebate pilot, while HHS announced vaccine-injury research and reporting initiatives and a potential NIAID leadership change receded.",
+          "items": [
+            {
+              "item_id": "2026-10-12-340b-rebate-pilot-lawsuit",
+              "canonical_topic": "340b-rebate-pilot-lawsuit",
+              "duplicate_group": "340b-rebate-pilot-lawsuit",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/09/hospitals-sue-to-halt-340b-rebate-pilot-trump/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-09T20:27:27Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/hospital-industry-files-lawsuit-block-hhs-340b-rebate-pilot-again",
+                  "source_type": "rss",
+                  "published_at": "2026-10-09T11:01:00-04:00"
+                }
+              ],
+              "title": "Hospital groups sue to block HHS’s revised 340B rebate pilot",
+              "summary": "The American Hospital Association and other hospital plaintiffs filed a new suit challenging HHS’s revised 340B rebate model, which would replace upfront discounts with after-the-fact rebates for selected drugs. They seek to stop the pilot before its planned 2027 launch, arguing the model underestimates administrative and cash-flow burdens; the claims remain unresolved.",
+              "strategic_implication": "Safety-net hospitals and drug manufacturers should plan for continued legal and operational uncertainty around 340B purchasing, including potential working-capital needs if the pilot proceeds.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "hospital-finance",
+                "litigation"
+              ]
+            },
+            {
+              "item_id": "2026-10-12-hhs-vaccine-injury-initiatives",
+              "canonical_topic": "hhs-vaccine-injury-initiatives",
+              "duplicate_group": "hhs-vaccine-injury-initiatives",
+              "priority_score": 8,
+              "primary_source": "U.S. Department of Health and Human Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "U.S. Department of Health and Human Services",
+                  "url": "https://www.hhs.gov/press-room/hhs-strengthens-vaccine-injury-research-reporting-patient-care.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-08"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/hhs-launches-4-new-vaccine-injury-research-reporting-initiatives",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T15:36:00-04:00"
+                }
+              ],
+              "title": "HHS launches new vaccine-injury research and reporting initiatives",
+              "summary": "HHS announced a package of actions that includes a new NIH clinic, an updated monitoring system, and reimbursements for clinicians who report suspected vaccine side effects. The initiatives change federal research and reporting infrastructure; they do not, by themselves, establish that a reported event was caused by vaccination.",
+              "strategic_implication": "Health systems and public-health leaders should monitor the program’s evidence standards, referral pathways, and reporting requirements as federal vaccine-safety policy evolves.",
+              "confidence": "high",
+              "tags": [
+                "hhs",
+                "nih",
+                "vaccine-safety",
+                "adverse-event-reporting"
+              ]
+            },
+            {
+              "item_id": "2026-10-12-niaid-director-search",
+              "canonical_topic": "niaid-director-search",
+              "duplicate_group": "niaid-director-search",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/09/steven-quay-no-longer-in-consideration-for-top-infectious-disease-role/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-09T21:03:52Z"
+                }
+              ],
+              "title": "Steven Quay is no longer under consideration to lead NIAID",
+              "summary": "Steven Quay, a biopharmaceutical executive who had been considered for director of the National Institute of Allergy and Infectious Diseases, is no longer being considered for the role, STAT reported. A source told the outlet he is instead expected to serve in a consulting capacity; the White House and HHS did not comment.",
+              "strategic_implication": "The leadership decision leaves uncertainty about the institute’s near-term direction and reinforces the importance of tracking how HHS fills senior infectious-disease research roles.",
+              "confidence": "medium",
+              "tags": [
+                "niaid",
+                "nih",
+                "hhs",
+                "research-leadership"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "A newly reported Oracle Health breach scale underscores the persistence of legacy-system exposure, as a large academic health network moves ambient AI from pilot to enterprise-wide access.",
+          "items": [
+            {
+              "item_id": "2026-10-12-oracle-health-breach-reported-scale",
+              "canonical_topic": "oracle-health-breach-reported-scale",
+              "duplicate_group": "oracle-health-breach-reported-scale",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/oracle-health-data-breach-2025-compromised-data-20m-people-report",
+                  "source_type": "rss",
+                  "published_at": "2026-10-09T15:15:00-04:00"
+                }
+              ],
+              "title": "Report puts Oracle Health breach at nearly 20 million affected people",
+              "summary": "Fierce Healthcare reported that a 2025 breach involving Oracle Health’s legacy Cerner systems compromised personal and medical information belonging to nearly 20 million people, citing updated state reporting. The latest figure reflects the reported scope of an earlier incident, not a newly detected intrusion.",
+              "strategic_implication": "Health systems should inventory legacy EHR environments and third-party data flows, validate breach-notification coverage, and ensure that migration plans do not leave older systems outside current security controls.",
+              "confidence": "medium",
+              "tags": [
+                "cybersecurity",
+                "oracle-health",
+                "ehr",
+                "patient-privacy"
+              ]
+            },
+            {
+              "item_id": "2026-10-12-abridge-ut-system-expansion",
+              "canonical_topic": "abridge-ut-system-expansion",
+              "duplicate_group": "abridge-ut-system-expansion",
+              "priority_score": 8,
+              "primary_source": "Abridge",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Abridge",
+                  "url": "https://www.abridge.com/press-release/ut-health-enterprise-wide",
+                  "source_type": "web",
+                  "published_at": "2026-10-08"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-university-texas-system-enter-enterprise-wide-agreement-expanded-ai",
+                  "source_type": "rss",
+                  "published_at": "2026-10-09T11:15:00-04:00"
+                }
+              ],
+              "title": "Abridge secures enterprise-wide ambient AI agreement across UT System",
+              "summary": "The University of Texas System and Abridge established a systemwide framework to expand access to the company’s ambient AI tools across eight health institutions, following a pilot at five locations. The agreement is designed to preserve local implementation choices while supporting broader clinical documentation and workflow use.",
+              "strategic_implication": "The move illustrates how health systems are shifting from isolated scribe pilots to enterprise procurement; buyers should evaluate clinician adoption, note quality, governance, and measurable time savings before scaling.",
+              "confidence": "high",
+              "tags": [
+                "ambient-ai",
+                "clinical-documentation",
+                "health-systems",
+                "enterprise-adoption"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "A 15-year national review points to a continuing contraction in acute-care supply, with closures accelerating as openings slow.",
+          "items": [
+            {
+              "item_id": "2026-10-12-us-hospital-closures-study",
+              "canonical_topic": "us-hospital-closures-study",
+              "duplicate_group": "us-hospital-closures-study",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/hospital-closures-accelerated-2010-rates-similar-among-rural-urban-facilities",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T15:46:00-04:00"
+                }
+              ],
+              "title": "U.S. recorded 432 acute hospital closures and 216 openings from 2010–2025",
+              "summary": "A new study counted 432 acute-care hospital closures and 216 openings in the United States from 2010 through 2025. Closures accelerated and openings slowed over the period, while closure rates were statistically similar for rural and urban facilities.",
+              "strategic_implication": "The supply trend strengthens the case for market-by-market access planning, partnership strategies, and early monitoring of hospitals with persistent financial or service-line strain.",
+              "confidence": "high",
+              "tags": [
+                "hospital-closures",
+                "acute-care",
+                "rural-health",
+                "market-supply"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "No distinct provider-operations development surfaced in the latest reporting window beyond the hospital-supply trends covered in Market and Industry Signals.",
+          "items": []
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "New evidence links pharmaceutical payments to prescribing behavior, while a global survey finds U.S. confidence in science exceeds confidence in hospitals and clinics.",
+          "items": [
+            {
+              "item_id": "2026-10-12-pharma-payments-prescribing-review",
+              "canonical_topic": "pharma-payments-prescribing-review",
+              "duplicate_group": "pharma-payments-prescribing-review",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/09/pharma-free-lunches-to-doctors-boost-inappropriate-prescribing/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-09T16:33:55Z"
+                }
+              ],
+              "title": "Review links drugmaker payments to more inappropriate physician prescribing",
+              "summary": "A Cochrane review of prior studies found that gifts and payments from pharmaceutical companies to physicians were associated with more inappropriate prescribing and a higher number of prescriptions. The review also found that policies restricting or managing industry interactions probably improved prescribing practices, while evidence was insufficient on effects on hospital formulary decisions.",
+              "strategic_implication": "Health systems and medical groups should review conflict-of-interest safeguards and clinician education practices, while treating the findings as evidence about aggregate associations rather than proof about any individual prescribing decision.",
+              "confidence": "high",
+              "tags": [
+                "prescribing",
+                "pharma-payments",
+                "clinical-practice",
+                "conflicts-of-interest"
+              ]
+            },
+            {
+              "item_id": "2026-10-12-us-trust-science-and-healthcare",
+              "canonical_topic": "us-trust-science-and-healthcare",
+              "duplicate_group": "us-trust-science-and-healthcare",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/10/u-s-trust-science-higher-than-other-nations-wellcome-survey/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-10T23:01:00Z"
+                }
+              ],
+              "title": "U.S. respondents report more trust in science than peers, but lower hospital confidence",
+              "summary": "The Wellcome Global Monitor survey, covering 140 countries, found that 52% of U.S. respondents had a lot of trust in science, compared with 26% globally. Only 40% reported a lot of confidence in U.S. hospitals and clinics, the same share reported in Portugal and Uruguay.",
+              "strategic_implication": "The gap between general trust in science and confidence in care institutions suggests that health systems should treat transparency, patient experience, and visible evidence-based practice as distinct trust-building priorities.",
+              "confidence": "high",
+              "tags": [
+                "trust-in-science",
+                "public-health",
+                "patient-confidence",
+                "wellcome-survey"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-09",
       "generated_at": "2026-10-09T12:40:00Z",
       "headline": "Today's Healthcare Insights",
@@ -13647,5 +13932,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-09T12:40:00Z"
+  "last_updated": "2026-10-12T11:14:00Z"
 }

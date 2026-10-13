@@ -3,6 +3,375 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-13",
+      "generated_at": "2026-10-13T11:04:50Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks a same-day Medicare device-comment deadline, new insurer price-disclosure and surprise-billing proposals, and the rapid integration of AI and health-data tools into care workflows. Sources include STAT, Healthcare Dive, Fierce Healthcare, CMS and the Federal Register, KFF Health News, company and health-system announcements, and workforce and capital-allocation research.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web/news searches across CMS/HHS/FDA, Medicare payment, AI/digital health, workforce, drug safety, provider operations, and earnings",
+          "Primary-source checks: CMS, Federal Register, HHS, UnitedHealth Group, Northwestern Medicine, and published industry survey materials",
+          "Structured finance data check for UnitedHealth Group Q3 2026"
+        ],
+        "sources_successful": [
+          "STAT News RSS (HTTP 200; current Oct. 13 drug-safety story)",
+          "Healthcare Dive RSS (HTTP 200; latest Oct. 12 policy coverage)",
+          "Fierce Healthcare RSS (HTTP 200; latest Oct. 12 capital-allocation coverage)",
+          "Targeted web/news searches (CMS, Federal Register, HHS, KFF Health News, Northwestern Medicine, Google, UnitedHealth Group, and workforce reporting)",
+          "UnitedHealth Group Q3 2026 structured financial data check"
+        ],
+        "sources_failed": [],
+        "run_notes": "Built 11 items, prioritizing policy deadlines and developments, current clinical/technology deployments, workforce retention, and patient-safety signals. Avoided repeating the prior edition's 340B litigation and broad Medicare Advantage star-rating coverage."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Today brings a final insurer-transparency framework, a House proposal to replace No Surprises Act arbitration, and the closing day for comments on CMS's RAPID breakthrough-device pathway. Each could materially change the data, payment, or coverage rules that plans, providers, and device makers must navigate.",
+          "items": [
+            {
+              "item_id": "2026-10-13-rapid-medicare-device-comment-deadline",
+              "canonical_topic": "rapid-medicare-device-comment-deadline",
+              "duplicate_group": "rapid-medicare-device-comment-deadline",
+              "priority_score": 8,
+              "primary_source": "Federal Register",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Federal Register",
+                  "url": "https://www.federalregister.gov/documents/full_text/html/2026/08/11/2026-16368.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T00:00:00Z"
+                }
+              ],
+              "title": "CMS RAPID device-coverage comment deadline is today",
+              "summary": "CMS is seeking comment on the proposed RAPID pathway, which would coordinate an accelerated Medicare national coverage process for certain FDA breakthrough devices. Eligible categories include specified Class II devices in FDA's TAP program and Class III devices, with an IDE study involving Medicare beneficiaries and agreed clinical outcomes. Comments must be received by October 13.",
+              "strategic_implication": "Device manufacturers, health systems, and patient groups have a final opportunity today to shape eligibility and evidence expectations. Companies with near-term breakthrough-device programs should align Medicare access planning with the proposed FDA-CMS process.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "medicare-coverage",
+                "breakthrough-devices",
+                "regulatory-deadline"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-insurer-price-transparency-final-rule",
+              "canonical_topic": "insurer-price-transparency-final-rule",
+              "duplicate_group": "insurer-price-transparency-final-rule",
+              "priority_score": 8,
+              "primary_source": "U.S. Department of Health and Human Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "U.S. Department of Health and Human Services",
+                  "url": "https://www.hhs.gov/press-room/fact-sheet-cms-finalizes-healthcare-price-transparency-rules.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-05T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-health-insurer-price-transparency-overhaul-final-rule/832105/",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "Final rule resets insurer price-transparency reporting and accountability",
+              "summary": "HHS, Labor, and Treasury finalized changes to Transparency in Coverage reporting, including one in-network rate file per provider network, quarterly updates, and removal of implausible provider-service rates. Plans must add contextual files, expand out-of-network reporting, attest to data accuracy, and make personalized cost-sharing information available by phone on request. Several file requirements phase in relative to Federal Register publication, while the consumer-tool amendments apply for plan years beginning in 2027.",
+              "strategic_implication": "Payers and self-funded plan administrators should assign accountable executives and map data, taxonomy, and file-publication changes to the phased implementation dates. Providers may gain more comparable negotiated-rate data, but should prepare for continued scrutiny of network-level pricing.",
+              "confidence": "high",
+              "tags": [
+                "price-transparency",
+                "payer-compliance",
+                "health-plan-data",
+                "consumer-costs"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-no-surprises-arbitration-overhaul-bill",
+              "canonical_topic": "no-surprises-arbitration-overhaul-bill",
+              "duplicate_group": "no-surprises-arbitration-overhaul-bill",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/new-bill-would-overhaul-no-surprises-acts-arbitration-process-frank-pallone/832713/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-12T09:56:04-04:00"
+                },
+                {
+                  "source": "House Energy and Commerce Committee Democrats",
+                  "url": "https://democrats-energycommerce.house.gov/media/press-releases/pallone-introduces-lower-premiums-faster-payments-act",
+                  "source_type": "web",
+                  "published_at": "2026-10-08T00:00:00Z"
+                }
+              ],
+              "title": "Pallone bill would replace No Surprises Act arbitration with a rate benchmark",
+              "summary": "Rep. Frank Pallone introduced the Lower Premiums, Faster Payments Act, which would end the No Surprises Act's independent dispute-resolution process for services beginning in 2028. The proposal would instead use a qualifying payment amount based on median contracted rates, adjusted for inflation, require payment within 30 days, and direct annual audits. The measure is a legislative proposal, not enacted law; existing patient protections would remain.",
+              "strategic_implication": "If enacted, the change could redistribute leverage and reimbursement in out-of-network disputes, particularly for specialties that rely heavily on arbitration. Payers and provider groups should model the benchmark's effects while tracking committee support and competing reform proposals.",
+              "confidence": "high",
+              "tags": [
+                "no-surprises-act",
+                "out-of-network",
+                "payment-policy",
+                "legislation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Google is extending AI-supported consumer health coaching through a new wearable, while Northwestern Medicine and OpenEvidence are embedding clinical evidence retrieval into Epic. A KFF investigation also raises governance and transparency questions about how federal health-tech policy is being shaped.",
+          "items": [
+            {
+              "item_id": "2026-10-13-google-fitbit-edge-health-tracking",
+              "canonical_topic": "google-fitbit-edge-health-tracking",
+              "duplicate_group": "google-fitbit-edge-health-tracking",
+              "priority_score": 6,
+              "primary_source": "Google",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Google",
+                  "url": "https://blog.google/products-and-platforms/devices/fitbit/google-fitbit-edge/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                }
+              ],
+              "title": "Google unveils Fitbit Edge with AI coaching and expanded health trends",
+              "summary": "Google introduced Fitbit Edge, a new tracker with heart-rate, sleep, recovery, ECG, and activity features, alongside its Google Health app. The company says paid Health Premium subscribers will receive Health Guardian trend reports, including blood-pressure and insulin-resistance trends, and AI-generated coaching; retail availability is scheduled for October 27.",
+              "strategic_implication": "Consumer devices are packaging more health-adjacent measurements with personalized AI guidance, increasing the chance that patients bring wearable-generated questions into care. Health systems should set clear expectations about provenance, limitations, and how consumer data is handled in clinical workflows.",
+              "confidence": "high",
+              "tags": [
+                "wearables",
+                "consumer-health",
+                "ai-coaching",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-openevidence-northwestern-epic-integration",
+              "canonical_topic": "openevidence-northwestern-epic-integration",
+              "duplicate_group": "openevidence-northwestern-epic-integration",
+              "priority_score": 7,
+              "primary_source": "Northwestern Medicine",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Northwestern Medicine",
+                  "url": "https://news.nm.org/openevidence-and-northwestern-medicine-launch-collaboration-to-integrate-clinical-evidence-into-the-ehr/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T17:00:00Z"
+                }
+              ],
+              "title": "Northwestern Medicine embeds OpenEvidence clinical search inside Epic",
+              "summary": "Northwestern Medicine and OpenEvidence announced an enterprise-wide collaboration to make the clinical evidence platform accessible directly from Epic. The health system says physicians, nurses, pharmacists, and other staff can use existing credentials to review drug information, guidelines, and cited answers grounded in peer-reviewed literature. The workflow went live on October 8.",
+              "strategic_implication": "Point-of-care integration may lower adoption friction and extend evidence-search tools beyond physicians, but it also raises the bar for local review of answer quality, citations, and safe-use workflows. Health systems evaluating similar tools should define monitoring and escalation processes before broad deployment.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "ehr-integration",
+                "clinical-decision-support",
+                "evidence"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-cms-health-technology-slack-governance",
+              "canonical_topic": "cms-health-technology-slack-governance",
+              "duplicate_group": "cms-health-technology-slack-governance",
+              "priority_score": 8,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/health-industry/ai-tech-lobbying-medicare-medical-records-apps-trump-cms-slack/",
+                  "source_type": "web",
+                  "published_at": "2026-10-09T00:00:00Z"
+                }
+              ],
+              "title": "KFF investigation details technology firms' access to a CMS health-tech forum",
+              "summary": "KFF Health News reviewed messages, meeting records, and recordings from a CMS-run Health Technology Ecosystem Slack workspace that grew to about 1,700 members. The investigation reports that technology companies and investors discussed health apps, access to medical records, and potential federal promotion or reimbursement pathways with agency officials. CMS described the workspace as a voluntary technical collaboration; the reporting does not establish that the forum violated a law.",
+              "strategic_implication": "The report puts process transparency and stakeholder representation in focus as CMS develops health-data and AI initiatives with commercial implications. Organizations should track formal agency notices and public comment opportunities alongside informal technical forums.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "health-ai",
+                "digital-health-policy",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "UnitedHealth's quarterly release signals improved profitability and a higher full-year outlook, while a hospital investment survey points to continued liquidity dependence on reserves. Together, the developments underscore how margins and capital markets remain central to near-term health-sector strategy.",
+          "items": [
+            {
+              "item_id": "2026-10-13-unitedhealth-q3-2026-results",
+              "canonical_topic": "unitedhealth-q3-2026-results",
+              "duplicate_group": "unitedhealth-q3-2026-results",
+              "priority_score": 8,
+              "primary_source": "UnitedHealth Group",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "UnitedHealth Group Investor Relations",
+                  "url": "https://www.unitedhealthgroup.com/content/dam/UHG/PDF/investors/2026/unh-reports-third-quarter-2026-results.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "UnitedHealth raises 2026 outlook as Q3 operating performance improves",
+              "summary": "UnitedHealth Group reported third-quarter results and raised its full-year adjusted earnings outlook. The company's release described stronger operating income and improved medical-cost performance even as year-over-year revenue was lower. The update centers on margin recovery, medical-cost management, and performance across UnitedHealthcare and Optum.",
+              "strategic_implication": "The results sharpen the distinction between revenue growth and margin repair at a large payer-provider conglomerate. Health systems and suppliers should monitor whether cost controls and care-delivery changes persist as UnitedHealth enters the final quarter.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealth",
+                "earnings",
+                "medical-costs",
+                "payer-provider"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-hospital-reserves-liquidity-survey",
+              "canonical_topic": "hospital-reserves-liquidity-survey",
+              "duplicate_group": "hospital-reserves-liquidity-survey",
+              "priority_score": 7,
+              "primary_source": "Marsh",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/marsh-survey-examines-how-health-orgs-are-managing-capital-investment-strategies",
+                  "source_type": "rss",
+                  "published_at": "2026-10-12T10:45:00-04:00"
+                },
+                {
+                  "source": "Mercer",
+                  "url": "https://www.mercer.com/en-us/insights/investments/2026-healthcare-asset-owner-survey-key-investment-trends/",
+                  "source_type": "web",
+                  "published_at": "2026-10-05T00:00:00Z"
+                }
+              ],
+              "title": "Marsh survey finds many health systems expect to tap reserves again",
+              "summary": "Marsh's 2026 Healthcare Asset Owner Survey, based on responses from 77 hospitals and health systems, found that 43% expect to draw on investment reserves in 2026. The survey describes liquidity as a persistent issue amid uneven operating-margin recovery and continuing capital needs. The results are a limited-sample indicator, not a census of the sector.",
+              "strategic_implication": "Boards and finance leaders should stress-test liquidity plans against operating volatility, debt access, and investment-market swings rather than treating reserve draws as a one-off bridge. The survey also highlights the need to protect strategically important capital projects while preserving cash flexibility.",
+              "confidence": "high",
+              "tags": [
+                "hospital-finance",
+                "liquidity",
+                "investment-reserves",
+                "capital-planning"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "UnityPoint Health is scaling a clinical-data intelligence platform across its regional hospitals after an evaluation it says surfaced overlooked patient complexity. The deployment illustrates how documentation, quality, and revenue-cycle aims are increasingly bundled into enterprise clinical AI decisions.",
+          "items": [
+            {
+              "item_id": "2026-10-13-unitypoint-clinical-data-platform-rollout",
+              "canonical_topic": "unitypoint-clinical-data-platform-rollout",
+              "duplicate_group": "unitypoint-clinical-data-platform-rollout",
+              "priority_score": 6,
+              "primary_source": "Evidently via Business Wire",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Evidently via Business Wire",
+                  "url": "https://lasvegassun.com/news/2026/oct/13/unitypoint-health-expands-evidentlys-clinical-data/",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "UnityPoint expands longitudinal-chart intelligence across 18 regional hospitals",
+              "summary": "UnityPoint Health selected Evidently's clinical-data intelligence platform for deployment across its 18 regional hospitals, beginning with emergency physicians and hospitalists. The vendor reports that an evaluation surfaced an average of four to five additional quality-impacting conditions per admission note for clinician review, and that surveyed clinicians reported satisfaction and time savings. Those evaluation figures are company-reported and should be distinguished from independently validated outcomes.",
+              "strategic_implication": "Enterprise rollouts are extending AI beyond note generation into chart review, documentation integrity, and quality workflows. Provider leaders should independently validate clinical accuracy, clinician burden, coding effects, and patient-safety outcomes before using pilot metrics to justify broader scaling.",
+              "confidence": "medium",
+              "tags": [
+                "health-systems",
+                "clinical-data",
+                "documentation",
+                "ai-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "New coverage of a national workforce survey highlights a gap between employee-reported job-change intent and employer estimates, while STAT reports renewed scrutiny of a rare-disease therapy's post-market safety. Both signals call for closer listening and monitoring rather than relying on assumptions.",
+          "items": [
+            {
+              "item_id": "2026-10-13-healthcare-workforce-turnover-intent",
+              "canonical_topic": "healthcare-workforce-turnover-intent",
+              "duplicate_group": "healthcare-workforce-turnover-intent",
+              "priority_score": 7,
+              "primary_source": "The Harris Poll",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/workforce/70-of-gen-z-healthcare-workers-eye-the-exit/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                },
+                {
+                  "source": "Workforce Edge / The Harris Poll",
+                  "url": "https://www.businesswire.com/news/home/20260916296354/en/",
+                  "source_type": "web",
+                  "published_at": "2026-09-16T00:00:00Z"
+                }
+              ],
+              "title": "Survey finds worker-reported healthcare job-change intent exceeds employer estimates",
+              "summary": "The 2026 Healthcare Workforce Barometer found that 59% of surveyed direct-care healthcare employees were likely to look for a new role within a year, compared with employers' estimate of 39%; the reported share among Gen Z workers was 70%. The Harris Poll surveyed 1,514 healthcare employees and 304 healthcare employers in June and July. These are stated intentions, not observed turnover, and the survey was commissioned by Workforce Edge's parent company.",
+              "strategic_implication": "The worker-employer perception gap suggests leaders may be underestimating retention risk if they rely only on managerial estimates. Use local pulse data, stay interviews, and visible development pathways to identify preventable exits before they become vacancies.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-workforce",
+                "retention",
+                "gen-z",
+                "career-development"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-vykat-xr-post-market-safety-scrutiny",
+              "canonical_topic": "vykat-xr-post-market-safety-scrutiny",
+              "duplicate_group": "vykat-xr-post-market-safety-scrutiny",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/13/neurocrine-biosciences-prader-willi-vykat-xr/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-13T08:30:00Z"
+                }
+              ],
+              "title": "STAT reports renewed safety concerns around Prader-Willi drug Vykat XR",
+              "summary": "STAT reports that patient advocates and some experts are pressing for closer scrutiny of Neurocrine Biosciences' Vykat XR, citing FDA post-market reports involving seven deaths and nearly 100 hospitalizations since approval. The reports do not establish that the drug caused the events; many cases involved complex medical conditions and multiple medications. The latest coverage describes disagreement among experts about whether the signal warrants stronger regulatory action.",
+              "strategic_implication": "Prescribers and care teams should review current labeling and safety communications, assess individual risk factors, and discuss emerging evidence with patients and families. Adverse-event reports are an important signal for monitoring, but should not be presented as proof of causation.",
+              "confidence": "medium",
+              "tags": [
+                "drug-safety",
+                "prader-willi-syndrome",
+                "fda",
+                "post-market-surveillance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-12",
       "generated_at": "2026-10-12T13:05:00Z",
       "headline": "Today's Healthcare Insights",
@@ -13742,5 +14111,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-12T13:05:00Z"
+  "last_updated": "2026-10-13T11:04:50Z"
 }

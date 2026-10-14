@@ -3,6 +3,393 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-14",
+      "generated_at": "2026-10-14T11:03:22Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition centers on payment and enforcement shifts, clinical AI governance, payer-provider investment, rural service capacity, and operational pressure from the measles resurgence. It draws on STAT, Healthcare Dive and Fierce Healthcare RSS, targeted web searches, and primary releases from CMS, CDC, DOJ, UNMC, and company announcements.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web/news searches across CMS/HHS/FDA, Medicare/Medicaid, digital health/AI, payer/provider moves, workforce, public health, and hospital capital",
+          "Primary-source checks: CMS, CDC, U.S. Department of Justice, UNMC, and company announcements"
+        ],
+        "sources_successful": [
+          "STAT News RSS (HTTP 200; new Oct. 14 medical-AI regulation coverage)",
+          "Healthcare Dive RSS (HTTP 200; Oct. 13 Humana and Suki coverage)",
+          "Fierce Healthcare RSS (HTTP 200; Oct. 13 enforcement, public-health, provider, and capital items)",
+          "Targeted web/news searches corroborated the selected stories and added primary-source detail from CMS, CDC, DOJ, UNMC, and company announcements"
+        ],
+        "sources_failed": [],
+        "run_notes": "Built 10 items and screened against the newest edition and recent editions to avoid duplicating prior coverage. RSS descriptions plus targeted searches provided sufficient signal; Gmail was not used because it was supplementary."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal policy is extending outcome-linked Medicare care models while enforcement scrutiny of pharmacy dispensing is paired with new operational controls. A North Carolina court ruling leaves a high-stakes dispute over provider-designed cost sharing open as litigation continues.",
+          "items": [
+            {
+              "item_id": "2026-10-14-cms-access-chronic-condition-tracks",
+              "canonical_topic": "cms-access-chronic-condition-tracks",
+              "duplicate_group": "cms-access-chronic-condition-tracks",
+              "priority_score": 8,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Centers for Medicare & Medicaid Services",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-adds-medicare-options-help-people-manage-substance-use-disorder-heart-failure-other-common",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "CMS expands its Original Medicare ACCESS model to four chronic-condition tracks",
+              "summary": "CMS said the ACCESS Model will add tracks for heart failure, COPD, substance use disorders, and nicotine dependence beginning in spring 2027. The voluntary 10-year model links participating organizations’ payments to measurable health outcomes and allows technology-supported care such as virtual support, coaching, and remote monitoring for people with Original Medicare.",
+              "strategic_implication": "The expansion creates a larger test bed for outcome-based reimbursement of digitally supported chronic care. Providers and technology companies should assess eligibility, clinical oversight, referral workflows, and outcome-measure requirements before building participation plans.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "original-medicare",
+                "value-based-care",
+                "chronic-care",
+                "remote-monitoring"
+              ]
+            },
+            {
+              "item_id": "2026-10-14-cvs-doj-opioid-settlement-controls",
+              "canonical_topic": "cvs-doj-opioid-settlement-controls",
+              "duplicate_group": "cvs-doj-opioid-settlement-controls",
+              "priority_score": 9,
+              "primary_source": "U.S. Department of Justice",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "U.S. Department of Justice",
+                  "url": "https://www.justice.gov/opa/pr/cvs-agrees-pay-315m-illegally-filling-unlawful-opioid-prescriptions-and-submitting-false",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/world/cvs-pay-315-million-settle-unlawful-opioid-prescription-claims-justice-2026-10-13/",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cvs-doj-reach-315m-settlement-opioid-prescription-case",
+                  "source_type": "rss",
+                  "published_at": "2026-10-13T16:36:00-04:00"
+                }
+              ],
+              "title": "CVS agrees to $315 million DOJ settlement and added opioid-dispensing safeguards",
+              "summary": "CVS agreed to pay $315 million to resolve DOJ allegations that it unlawfully filled opioid and other controlled-substance prescriptions and sought reimbursement from federal programs. A separate agreement with the DEA requires a reporting hotline, proactive monitoring of pharmacy dispensing patterns, and a process to evaluate prescribers suspected of illegal prescribing. The settlement resolves allegations without a determination of liability, and CVS said it did not admit wrongdoing.",
+              "strategic_implication": "The resolution pairs a substantial payment with ongoing controls, underscoring that controlled-substance compliance extends beyond individual pharmacist decisions to enterprise monitoring and escalation systems. Pharmacy operators serving federal programs should review dispensing analytics, staffing, and prescriber-review protocols.",
+              "confidence": "high",
+              "tags": [
+                "doj",
+                "opioids",
+                "pharmacy-compliance",
+                "medicare",
+                "enforcement"
+              ]
+            },
+            {
+              "item_id": "2026-10-14-atrium-nc-health-plan-injunction-denied",
+              "canonical_topic": "atrium-nc-health-plan-injunction-denied",
+              "duplicate_group": "atrium-nc-health-plan-injunction-denied",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/judge-rejects-nc-state-health-plans-request-block-atrium-affordability-program",
+                  "source_type": "rss",
+                  "published_at": "2026-10-13T17:32:00-04:00"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/legal-regulatory-issues/court-denies-north-carolina-state-health-plans-injunction-bid-against-atrium/",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "Judge rejects North Carolina plan’s bid to block Atrium’s affordability program",
+              "summary": "A North Carolina judge denied the State Health Plan’s request for a temporary injunction against Atrium Health’s affordability program, allowing the plan to proceed while the lawsuit continues. Atrium says the program will reduce participating members’ out-of-pocket costs for care at its facilities; the State Health Plan argues it could undermine the plan’s finances and legal authority over member cost sharing.",
+              "strategic_implication": "The ruling leaves unresolved whether a health system can use its own cost-sharing support to counter a public plan’s network-tier design. Other providers and public purchasers should monitor the merits case for implications to benefit design, contracting leverage, and plan solvency.",
+              "confidence": "high",
+              "tags": [
+                "provider-payer-relations",
+                "state-health-plan",
+                "cost-sharing",
+                "litigation",
+                "north-carolina"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "State medical boards are moving toward guidance for clinical AI, especially tools with limited physician supervision, while health-tech investment is backing a shift from documentation toward task-executing agents. Both developments make governance, integration, and human oversight central to deployment decisions.",
+          "items": [
+            {
+              "item_id": "2026-10-14-state-medical-ai-regulation-workgroup",
+              "canonical_topic": "state-medical-ai-regulation-workgroup",
+              "duplicate_group": "state-medical-ai-regulation-workgroup",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/14/lobbyists-trade-groups-ama-push-autonomous-clinical-ai-regulations/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-14T08:30:00Z"
+                },
+                {
+                  "source": "Federation of State Medical Boards",
+                  "url": "https://www.op.nysed.gov/sites/op/files/2026-05/FSMB%20AI%20Workgroup.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-05-21T00:00:00Z"
+                }
+              ],
+              "title": "FSMB workgroup weighs state guidance for autonomous clinical AI",
+              "summary": "STAT reports that a 22-member Federation of State Medical Boards workgroup—including representatives from medical, hospital, technology, insurer, and state-government interests—is drafting guidance for state medical boards. Its focus includes AI tools performing clinical functions with limited or no direct physician supervision, and a draft may be released for feedback in the coming weeks or months.",
+              "strategic_implication": "Although FSMB recommendations would not themselves be binding, they could shape state-board oversight and future legislation around AI-enabled clinical services. Developers and health systems should plan for clearer expectations on supervision, accountability, and patient safety as state-level frameworks evolve.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "state-regulation",
+                "medical-boards",
+                "patient-safety",
+                "governance"
+              ]
+            },
+            {
+              "item_id": "2026-10-14-suki-series-e-ai-agents",
+              "canonical_topic": "suki-series-e-ai-agents",
+              "duplicate_group": "suki-series-e-ai-agents",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-13T11:17:39-04:00"
+                },
+                {
+                  "source": "Suki",
+                  "url": "https://www.suki.ai/press-releases/suki-secures-90-million-to-build-and-scale-ai-agents-for-health-systems-and-health-tech-companies/",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "Suki raises $90 million to move healthcare AI beyond documentation",
+              "summary": "Suki announced a $90 million Series E round to expand its healthcare AI platform and develop agents for post-visit tasks such as referrals, orders, and follow-up scheduling. The company also plans to deepen integrations with more than 30 health-technology partners, including firms that embed its tools in their products.",
+              "strategic_implication": "Funding is flowing toward AI that executes administrative work rather than only generating notes, potentially extending automation across clinical and revenue-cycle workflows. Health systems should define approval boundaries, audit trails, and exception handling before introducing agents into patient-care operations.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-ai",
+                "clinical-workflow",
+                "ai-agents",
+                "series-e",
+                "health-it"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital is being restructured around senior-focused primary care, while safety-net value-based-care platforms are consolidating to broaden reach. Both moves point to continued investor and operator interest in scalable care models that combine provider networks with risk-management and community-based infrastructure.",
+          "items": [
+            {
+              "item_id": "2026-10-14-humana-blackrock-centerwell-jv",
+              "canonical_topic": "humana-blackrock-centerwell-jv",
+              "duplicate_group": "humana-blackrock-centerwell-jv",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/humana-enters-28b-primary-care-joint-venture-with-blackrock/832872/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-13T12:09:07-04:00"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/legal/transactional/humana-strikes-28-billion-blackrock-clinic-venture-deal-2026-10-13/",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "BlackRock takes majority stake in Humana’s CenterWell clinic venture",
+              "summary": "Humana entered a new joint venture with BlackRock for nearly 150 CenterWell Senior Primary Care clinics, replacing the existing partnership with Welsh, Carson, Anderson & Stowe. BlackRock will acquire the prior partner’s equity stake, valued at about $2.8 billion, while CenterWell retains a minority interest and continues operating the clinics; the deal is expected to close in the fourth quarter, subject to approvals.",
+              "strategic_implication": "The structure brings a new capital partner into a large payer-linked primary-care platform while preserving Humana’s operational role. The transaction highlights how insurers may use external capital to fund clinic growth and manage balance-sheet exposure without relinquishing day-to-day care delivery.",
+              "confidence": "high",
+              "tags": [
+                "humana",
+                "centerwell",
+                "primary-care",
+                "joint-venture",
+                "investment"
+              ]
+            },
+            {
+              "item_id": "2026-10-14-diverge-medical-home-network-merger",
+              "canonical_topic": "diverge-medical-home-network-merger",
+              "duplicate_group": "diverge-medical-home-network-merger",
+              "priority_score": 7,
+              "primary_source": "Diverge Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Diverge Health / Medical Home Network",
+                  "url": "https://www.globenewswire.com/news-release/2026/10/13/3379632/0/en/diverge-health-merges-with-medical-home-network-to-strengthen-value-based-care-for-safety-net-providers-and-patients.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/vbc-accelerator-diverge-merges-medical-home-network-support-pcps-fqhcs",
+                  "source_type": "rss",
+                  "published_at": "2026-10-13T14:12:00-04:00"
+                }
+              ],
+              "title": "Diverge Health and Medical Home Network combine safety-net value-based-care platforms",
+              "summary": "Diverge Health and Medical Home Network announced a merger to expand value-based-care support for underserved populations. The companies say the combined organization expects to work with nearly 100 FQHCs, more than 300 independent practices, and over 20 Medicaid and Medicare payer partners across nine states in 2027, supporting roughly 500,000 members and $3 billion in medical spend.",
+              "strategic_implication": "The combination could give safety-net practices greater access to community health teams, technology, and payer-risk infrastructure needed to participate in value-based contracts. Execution will depend on integrating the organizations’ networks and demonstrating savings and quality performance across diverse local markets.",
+              "confidence": "high",
+              "tags": [
+                "value-based-care",
+                "safety-net",
+                "fqhc",
+                "merger",
+                "medicaid"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "A severe measles resurgence is raising preparedness and surveillance demands, while an academic medical center is expanding a major hospital project to address capacity and aging infrastructure. Both developments put pressure on providers to balance near-term operating resilience with long-horizon investment.",
+          "items": [
+            {
+              "item_id": "2026-10-14-pennsylvania-measles-sixth-death",
+              "canonical_topic": "pennsylvania-measles-sixth-death",
+              "duplicate_group": "pennsylvania-measles-sixth-death",
+              "priority_score": 8,
+              "primary_source": "Centers for Disease Control and Prevention",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Centers for Disease Control and Prevention",
+                  "url": "https://www.cdc.gov/measles/data-research/index.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-10T00:00:00Z"
+                },
+                {
+                  "source": "CIDRAP",
+                  "url": "https://www.cidrap.umn.edu/measles/pennsylvania-reports-its-6th-measles-death-franklin-county-resident",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/measles-update-us-passes-4000-cases-pennsylvania-reports-sixth-death",
+                  "source_type": "rss",
+                  "published_at": "2026-10-13T15:23:00-04:00"
+                }
+              ],
+              "title": "Pennsylvania reports a sixth measles-associated death as U.S. cases exceed 4,000",
+              "summary": "The CDC’s latest posted update counted 4,080 U.S. measles cases in 2026 as of October 9, the highest annual count since 1991. Pennsylvania officials separately reported a sixth measles-associated death in the state’s ongoing outbreak, while the CDC’s national dashboard listed two deaths, highlighting a gap in official fatality tallies.",
+              "strategic_implication": "Hospitals and local health agencies should sustain vaccination outreach, isolation readiness, and capacity planning as cases spread across jurisdictions. The differing fatality counts also underscore the operational importance of consistent case and death definitions in public-health reporting.",
+              "confidence": "high",
+              "tags": [
+                "measles",
+                "public-health",
+                "vaccination",
+                "hospital-preparedness",
+                "surveillance"
+              ]
+            },
+            {
+              "item_id": "2026-10-14-unmc-project-health-expansion",
+              "canonical_topic": "unmc-project-health-expansion",
+              "duplicate_group": "unmc-project-health-expansion",
+              "priority_score": 6,
+              "primary_source": "University of Nebraska Medical Center",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "University of Nebraska Medical Center",
+                  "url": "https://www.unmc.edu/newsroom/2026/10/12/regents-approve-expansion-of-project-health/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/hospitals/unmc-nebraska-medicine-teaching-hospital-project-upgrades-275b-planned-investment",
+                  "source_type": "rss",
+                  "published_at": "2026-10-13T11:04:00-04:00"
+                }
+              ],
+              "title": "UNMC and Nebraska Medicine expand teaching-hospital project to $2.75 billion",
+              "summary": "The University of Nebraska Board of Regents approved an expanded scope for Project Health, the future primary teaching hospital for UNMC and Nebraska Medicine. The plan grows the facility from 1.25 million to 1.5 million square feet and raises the anticipated investment to $2.75 billion, about $500 million above the original estimate, to accommodate patient volumes, beds, specialized care, education, and research.",
+              "strategic_implication": "The project illustrates the capital and construction-cost pressures facing academic medical centers as they expand clinical and training capacity. Leaders should closely manage scope, phasing, and financing as they modernize aging facilities while planning for future demand.",
+              "confidence": "high",
+              "tags": [
+                "hospital-capital",
+                "academic-medicine",
+                "capacity-planning",
+                "construction-costs",
+                "nebraska"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Federal rural-health funding is pairing provider recruitment and retention with community-health-worker roles and remote-care technology. The model offers a practical signal for organizations seeking to extend access while strengthening local workforce capacity.",
+          "items": [
+            {
+              "item_id": "2026-10-14-cms-nebraska-rural-health-workforce-funding",
+              "canonical_topic": "cms-nebraska-rural-health-workforce-funding",
+              "duplicate_group": "cms-nebraska-rural-health-workforce-funding",
+              "priority_score": 7,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Centers for Medicare & Medicaid Services",
+                  "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-more-177-million-recruit-rural-healthcare-workers-expand-mobile-care",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "CMS directs more than $177 million to Nebraska rural workforce and mobile-care expansion",
+              "summary": "CMS announced more than $177 million in Rural Health Transformation Program funding for Nebraska to support recruitment, retention, mobile care, and technology modernization. The agency said recruitment awards have produced provider contracts across 51 counties, 45 facilities have gained remote-monitoring access, and more than 200 community-health-worker and supervisor positions have been created.",
+              "strategic_implication": "The investment links workforce development with remote monitoring and community-based navigation rather than treating recruitment as a standalone fix. Rural providers should track how these roles and technologies affect access, chronic-care continuity, and workforce retention as the program scales.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "workforce",
+                "community-health-workers",
+                "remote-monitoring",
+                "cms"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-13",
       "generated_at": "2026-10-13T11:04:50Z",
       "headline": "Today's Healthcare Insights",
@@ -14003,5 +14390,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-13T12:40:09Z"
+  "last_updated": "2026-10-14T11:03:22Z"
 }

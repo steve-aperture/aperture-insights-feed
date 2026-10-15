@@ -4,10 +4,10 @@
   "editions": [
     {
       "edition_date": "2026-10-15",
-      "generated_at": "2026-10-15T11:04:21Z",
+      "generated_at": "2026-10-15T12:33:32Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks the opening of Medicare enrollment, new federal program-integrity actions, a proposed Chicago-area health system combination, and new signals on clinical AI, prior authorization, and FDA capacity. Reporting from CMS, STAT, Healthcare Dive, Becker's, Kaufman Hall, PHTI, and Rush was cross-checked against primary releases where available.",
+      "summary_note": "Today's briefing tracks the opening of Medicare enrollment, expanding federal program-integrity actions and reported wrongful ACA terminations, a 90-day delay to customs rules affecting imported prescriptions, and FDA's new rare-disease framework. It also covers outcomes-based payment for consumer wearables, health system combinations in Chicago and the Pacific Northwest, Kenya's second Ebola case, a CDC survey on adolescent binge eating, and new nurse contracts. Sources include STAT and Healthcare Dive RSS, Fierce Healthcare from the automated run, and primary releases from CMS, FDA, CDC, PHTI, Kaufman Hall, and the health systems involved.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
@@ -15,24 +15,35 @@
           "Healthcare Dive RSS",
           "Fierce Healthcare RSS",
           "Targeted web searches across CMS, Medicare/Medicaid, digital health and AI, payer/provider operations, hospital M&A, and workforce",
-          "Primary-source checks: CMS, Peterson Health Technology Institute, Kaufman Hall, and Rush University System for Health"
+          "Primary-source checks: CMS, Peterson Health Technology Institute, Kaufman Hall, and Rush University System for Health",
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare (rebuild)",
+          "STAT News RSS category feeds (main, health, health-tech, politics, pharma) on rebuild",
+          "Healthcare Dive RSS on rebuild",
+          "Fierce Healthcare RSS on rebuild",
+          "Primary-source checks on rebuild: FDA, CDC MMWR, Samaritan Health Services"
         ],
         "sources_successful": [
           "STAT News RSS (HTTP 200; Oct. 14-15 reporting)",
           "Healthcare Dive RSS (HTTP 200; Oct. 14 reporting)",
           "Fierce Healthcare RSS (HTTP 200; Oct. 14 reporting)",
           "Targeted web searches corroborated selected stories and added context from CMS, STAT, Healthcare Dive, Becker's, and local reporting",
-          "Primary-source checks: CMS, Peterson Health Technology Institute, Kaufman Hall, and Rush University System for Health"
+          "Primary-source checks: CMS, Peterson Health Technology Institute, Kaufman Hall, and Rush University System for Health",
+          "STAT News RSS rebuild fetch (5 feeds HTTP 200; Oct. 14-15 Ebola, CDC survey, Whoop, import-rule items)",
+          "Healthcare Dive RSS rebuild fetch (HTTP 200; Oct. 14 MultiCare-Samaritan)",
+          "Targeted web/news searches on rebuild (FDA, CDC MMWR, BBC, AP, KFF Health News, Samaritan, Becker's, Wichita Business Journal, Tech Funding News)"
         ],
         "sources_failed": [
-          "Fierce Healthcare full article page for the Q3 hospital M&A story was blocked by robots policy; the market item instead uses Kaufman Hall's primary report and Becker's coverage"
+          "Fierce Healthcare full article page for the Q3 hospital M&A story was blocked by robots policy; the market item instead uses Kaufman Hall's primary report and Becker's coverage",
+          "Gmail InsightsSources/* labels and newsletter-name searches returned no messages in the connected mailbox since 2026-10-13",
+          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch (automated-run items retained)",
+          "STAT+ import-rule and biotech-market stories paywalled; import-rule item drafted from the STAT headline/description plus AP and other reporting"
         ],
-        "run_notes": "Built 8 distinct items from Oct. 13-15 reporting and primary releases, screened against the Oct. 14 edition to avoid repeating its stories. RSS descriptions plus targeted search results provided sufficient evidence; Gmail labels were not queried because they are supplementary."
+        "run_notes": "Built 8 distinct items from Oct. 13-15 reporting and primary releases, screened against the Oct. 14 edition to avoid repeating its stories. RSS descriptions plus targeted search results provided sufficient evidence; Gmail labels were not queried because they are supplementary. Same-day rebuild in place: the automated run (generated 2026-10-15T11:04:21Z) appended 2026-10-15 and left the feed at 31 editions. Trimmed to 30; the displaced 2026-09-03 edition is preserved in archive/editions-archive-2026-10-15.json. Retained all 8 automated items, added 10 new items (18 total), and enriched the ACA eligibility item with KFF Health News reporting on reinstatements and the 419,000-enrollee second phase. Screened against the full 30-edition feed (skipped the CVS opioid settlement, Sanofi EU probe, FDA advisory-committee ties, GLP-1 criminal-justice study, health system administrative job cuts, Medicaid work-requirement explainers, and the postponed Brigham strike as already covered) and refreshed bucket syntheses."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "Medicare's 2027 enrollment window opens amid lower projected average Medicare Advantage premiums, while CMS is escalating improper-payment screening across both DME suppliers and subsidized marketplace coverage.",
+          "synthesis": "Medicare's 2027 enrollment window opens with lower projected Medicare Advantage premiums while CMS steps up program-integrity actions across DME suppliers and ACA subsidies. Reports of wrongful ACA terminations, a 90-day delay to customs rules affecting imported prescriptions, and FDA's new rare-disease framework show how quickly enforcement and regulatory design are being recalibrated.",
           "items": [
             {
               "item_id": "2026-10-15-medicare-open-enrollment-2027-premiums",
@@ -105,11 +116,17 @@
                   "url": "https://www.healthcaredive.com/news/trump-administration-boots-189000-deceased-duplicate-enrollees-off-aca-subsi/833037/",
                   "source_type": "web",
                   "published_at": "2026-10-14T00:00:00Z"
+                },
+                {
+                  "source": "KFF Health News (via NPR Illinois)",
+                  "url": "https://www.nprillinois.org/2026-10-15/after-booting-760k-off-aca-health-plans-the-trump-administration-adds-some-people-back",
+                  "source_type": "web",
+                  "published_at": "2026-10-15T11:06:00Z"
                 }
               ],
               "title": "CMS identifies 189,000 duplicate or deceased ACA subsidy enrollees",
-              "summary": "CMS said it identified 189,000 people who had subsidized Affordable Care Act marketplace coverage while also having duplicate Medicare, Medicaid, or CHIP coverage, or who were deceased. The agency said the review could save taxpayers approximately $1.5 billion over the next year as it continues periodic eligibility matching.",
-              "strategic_implication": "Marketplace plans and state agencies should expect closer eligibility reconciliation and ensure that notices, appeals, and subsidy adjustments are handled accurately as federal program-integrity reviews expand.",
+              "summary": "CMS said it identified 189,000 people who had subsidized Affordable Care Act marketplace coverage while also having duplicate Medicare, Medicaid, or CHIP coverage, or who were deceased. The agency said the review could save taxpayers approximately $1.5 billion over the next year as it continues periodic eligibility matching. Separately, KFF Health News reported that CMS has reinstated a small number of people whose coverage was wrongly canceled in the earlier 760,000-enrollee removal, while another 419,000 sign-ups remain under review with insurer responses due around mid-to-late November.",
+              "strategic_implication": "Marketplace plans and state agencies should expect closer eligibility reconciliation and should prepare expedited-review and reinstatement workflows, since reported wrongful terminations show that coverage gaps may surface only at the point of care.",
               "confidence": "high",
               "tags": [
                 "aca-marketplace",
@@ -117,12 +134,77 @@
                 "subsidies",
                 "program-integrity"
               ]
+            },
+            {
+              "item_id": "2026-10-15-cbp-mail-rule-imported-prescriptions-delay",
+              "canonical_topic": "cbp-mail-rule-imported-prescriptions-delay",
+              "duplicate_group": "cbp-mail-rule-imported-prescriptions-delay",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/14/trump-administration-delays-new-rule-that-could-restrict-imported-meds-from-canad-and-overseas/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-14T20:16:00Z"
+                },
+                {
+                  "source": "Associated Press",
+                  "url": "https://apnews.com/article/drug-prices-trump-customs-canada-healthcare-f3986c8d9214f57c3a5233b6c0a2a2fa",
+                  "source_type": "web",
+                  "published_at": "2026-10-14T00:00:00Z"
+                }
+              ],
+              "title": "Administration delays the customs rule that threatened imported prescriptions by 90 days",
+              "summary": "STAT reported that the Trump administration is delaying by 90 days a U.S. Customs and Border Protection requirement that was set to take effect Oct. 22 and could have prevented Americans from receiving prescription drugs from licensed international pharmacies. The rule ends de minimis treatment for international mail and would require FDA-regulated shipments to clear through formal entry or a new Entry Type 13 filing with a qualified filer and customs bond. More than 70 lawmakers had urged a pause.",
+              "strategic_implication": "The delay buys time but does not resolve the policy conflict between border enforcement and patient affordability. Employers, self-funded plans, and state importation programs that rely on international mail-order pharmacies should use the window to model alternatives and member communications.",
+              "confidence": "medium",
+              "tags": [
+                "drug-importation",
+                "customs",
+                "drug-prices",
+                "fda",
+                "de-minimis"
+              ]
+            },
+            {
+              "item_id": "2026-10-15-fda-rare-disease-framework-initiative",
+              "canonical_topic": "fda-rare-disease-framework-initiative",
+              "duplicate_group": "fda-rare-disease-framework-initiative",
+              "priority_score": 8,
+              "primary_source": "U.S. Food and Drug Administration",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "U.S. Food and Drug Administration",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-launches-rare-disease-framework-initiative-develop-holistic-fit-purpose-framework-rare-disease",
+                  "source_type": "web",
+                  "published_at": "2026-10-14T00:00:00Z"
+                },
+                {
+                  "source": "FDA Rare Disease Innovation Hub",
+                  "url": "https://www.fda.gov/industry/fda-rare-disease-innovation-hub/rare-disease-framework",
+                  "source_type": "web",
+                  "published_at": "2026-10-14T00:00:00Z"
+                }
+              ],
+              "title": "FDA launches a Rare Disease Framework Initiative built on fit-for-purpose evidence",
+              "summary": "FDA announced an initiative, outlined in a new white paper, to develop a rare-disease drug development framework tailored to each disease, patient needs, product type, and the evidence realistically attainable in small populations. The Rare Disease Innovation Hub leads the effort with CDER, CBER, and the Office of the Commissioner. A hybrid public meeting with the Reagan-Udall Foundation is set for Oct. 28, followed by roundtables and requests for information that could lead to new guidance, regulatory revisions, and organizational changes.",
+              "strategic_implication": "This is the start of a policy process rather than a finished standard, so sponsors and patient groups have an early opportunity to shape evidentiary expectations. Health systems running rare-disease programs should watch for changes that affect trial design, natural-history data, and real-world evidence demands.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "rare-disease",
+                "drug-development",
+                "regulatory-science"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "A new PHTI roadmap argues that evidence, coverage rules, payment incentives, and care-model redesign will determine whether clinical AI improves outcomes rather than simply automating existing activity.",
+          "synthesis": "Clinical AI is moving toward evidence and outcomes tests: PHTI calls for outcomes-based pathways, Whoop must hit blood pressure, A1C, and LDL targets to earn full ACCESS payments, and an AI-operated physiotherapy clinic is scaling inside the NHS.",
           "items": [
             {
               "item_id": "2026-10-15-phti-high-value-clinical-ai-roadmap",
@@ -149,13 +231,99 @@
                 "value-based-care",
                 "care-delivery"
               ]
+            },
+            {
+              "item_id": "2026-10-15-whoop-medicare-access-model",
+              "canonical_topic": "whoop-medicare-access-model",
+              "duplicate_group": "whoop-medicare-access-model",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/14/whoop-ami-bhatt-population-health-stat-summit-boston-2026/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-14T18:16:00Z"
+                }
+              ],
+              "title": "Whoop enters Medicare's ACCESS model with outcomes-based payment for chronic conditions",
+              "summary": "Whoop is one of the first consumer wearable companies accepted into Medicare's 10-year ACCESS model, offering eligible traditional Medicare beneficiaries a wearable, a 12-month app subscription, and clinician support at little or no cost for high blood pressure, high cholesterol, obesity, and prediabetes. To receive full payment, Whoop must show improvement or control of blood pressure, hemoglobin A1C, and LDL cholesterol. Its new chief medical officer told the STAT Summit the company is working with the National Council on Aging and AARP to adapt the product for older adults.",
+              "strategic_implication": "ACCESS turns consumer engagement into a payment test for clinical outcomes. Primary care groups and health systems should expect more beneficiaries to arrive with vendor-generated data and should decide how that data will be reviewed, integrated, and acted on.",
+              "confidence": "high",
+              "tags": [
+                "wearables",
+                "medicare",
+                "access-model",
+                "outcomes-based-payment",
+                "chronic-disease"
+              ]
+            },
+            {
+              "item_id": "2026-10-15-flok-health-ai-physiotherapy-series-a",
+              "canonical_topic": "flok-health-ai-physiotherapy-series-a",
+              "duplicate_group": "flok-health-ai-physiotherapy-series-a",
+              "priority_score": 5,
+              "primary_source": "Tech Funding News",
+              "source_tier": "Tier 3",
+              "source_refs": [
+                {
+                  "source": "Tech Funding News",
+                  "url": "https://techfundingnews.com/cambridge-based-flok-health-raises-12-5m-to-scale-the-worlds-first-ai-physiotherapy-clinic-across-the-nhs/",
+                  "source_type": "web",
+                  "published_at": "2026-10-15T00:00:00Z"
+                }
+              ],
+              "title": "Flok Health raises $12.5 million to scale its AI-operated physiotherapy clinic in the NHS",
+              "summary": "Cambridge, U.K.-based Flok Health raised a $12.5 million Series A led by Albion VC, with Eka Ventures, Form Ventures, and new investor Mercia Ventures. The company said it will expand its AI-operated physiotherapy clinic across the U.K., extend clinical scope beyond back pain, and accelerate international growth.",
+              "strategic_implication": "Autonomous musculoskeletal care is moving from pilot to scale inside a national health system. U.S. providers and payers should watch the NHS evidence on access, safety, and outcomes as a reference point for state-level debates over autonomous clinical AI.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "physical-therapy",
+                "msk",
+                "nhs",
+                "venture-funding"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "Hospital consolidation is accelerating into larger strategic combinations even as recent operating data point to thin margins and continued cost pressure.",
+          "synthesis": "Consolidation and capital commitments continue despite margin strain, with Rush-Endeavor and MultiCare-Samaritan combinations, accelerating hospital M&A, and AdventHealth's $475 million Colorado replacement hospital.",
           "items": [
+            {
+              "item_id": "2026-10-15-rush-endeavor-proposed-merger",
+              "canonical_topic": "rush-endeavor-proposed-merger",
+              "duplicate_group": "rush-endeavor-proposed-merger",
+              "priority_score": 9,
+              "primary_source": "Rush University System for Health and Endeavor Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Rush University System for Health",
+                  "url": "https://www.rush.edu/news/rush-university-system-health-and-endeavor-health-announce-plans-merge",
+                  "source_type": "web",
+                  "published_at": "2026-10-14T00:00:00Z"
+                },
+                {
+                  "source": "WTTW News",
+                  "url": "https://news.wttw.com/2026/10/14/rush-and-endeavor-health-announce-plans-merge-hospital-systems",
+                  "source_type": "web",
+                  "published_at": "2026-10-14T00:00:00Z"
+                }
+              ],
+              "title": "Rush and Endeavor plan a 12-hospital combination with $1 billion in new investment",
+              "summary": "Rush University System for Health and Endeavor Health announced plans to combine under the Rush name, subject to regulatory review and targeted for completion in early 2027. The proposed system would include 12 hospitals and more than 400 care sites, serve over 2 million patients annually, employ more than 46,000 people and clinicians, and receive an incremental $1 billion investment from Endeavor.",
+              "strategic_implication": "The proposed combination illustrates regional scale-building through academic and community-network integration; regulatory review, service continuity, governance, and execution of the investment commitments will determine whether scale translates into durable community value.",
+              "confidence": "high",
+              "tags": [
+                "hospital-merger",
+                "academic-health-system",
+                "chicago",
+                "capital-investment"
+              ]
+            },
             {
               "item_id": "2026-10-15-hospital-ma-record-pace-margin-pressure",
               "canonical_topic": "hospital-ma-record-pace-margin-pressure",
@@ -189,43 +357,103 @@
               ]
             },
             {
-              "item_id": "2026-10-15-rush-endeavor-proposed-merger",
-              "canonical_topic": "rush-endeavor-proposed-merger",
-              "duplicate_group": "rush-endeavor-proposed-merger",
-              "priority_score": 9,
-              "primary_source": "Rush University System for Health and Endeavor Health",
+              "item_id": "2026-10-15-multicare-samaritan-affiliation-close",
+              "canonical_topic": "multicare-samaritan-affiliation-close",
+              "duplicate_group": "multicare-samaritan-affiliation-close",
+              "priority_score": 7,
+              "primary_source": "Samaritan Health Services",
               "source_tier": "Tier 1",
               "source_refs": [
                 {
-                  "source": "Rush University System for Health",
-                  "url": "https://www.rush.edu/news/rush-university-system-health-and-endeavor-health-announce-plans-merge",
+                  "source": "Samaritan Health Services",
+                  "url": "https://samhealth.org/news/samaritan-multicare-announce-official-date-for-affiliation/",
                   "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
+                  "published_at": "2026-10-12T00:00:00Z"
                 },
                 {
-                  "source": "WTTW News",
-                  "url": "https://news.wttw.com/2026/10/14/rush-and-endeavor-health-announce-plans-merge-hospital-systems",
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/multicare-samaritan-combination-close-november/832973/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-14T10:49:00Z"
+                }
+              ],
+              "title": "MultiCare and Samaritan set a Nov. 1 close with a $700 million, 10-year investment pledge",
+              "summary": "Tacoma-based MultiCare, which operates 13 hospitals, will begin its affiliation with Oregon-based Samaritan Health Services and its five hospitals on Nov. 1 after all reviewing public agencies approved the deal or signaled intent to do so. MultiCare will invest $700 million in Samaritan over 10 years. Samaritan keeps its name and local governance, and its health plan and coordinated care organization members will see no interruption in care.",
+              "strategic_implication": "The deal shows regional systems using capital commitments and local-brand retention to secure approval for cross-state combinations under Oregon's transaction review law. Rural and mid-sized systems weighing partners should expect regulators to scrutinize investment and access commitments.",
+              "confidence": "high",
+              "tags": [
+                "mergers-acquisitions",
+                "health-systems",
+                "oregon",
+                "washington",
+                "rural-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-15-adventhealth-louisville-colorado-hospital",
+              "canonical_topic": "adventhealth-louisville-colorado-hospital",
+              "duplicate_group": "adventhealth-louisville-colorado-hospital",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/capital/adventhealth-breaks-ground-on-475m-colorado-hospital/",
                   "source_type": "web",
                   "published_at": "2026-10-14T00:00:00Z"
                 }
               ],
-              "title": "Rush and Endeavor plan a 12-hospital combination with $1 billion in new investment",
-              "summary": "Rush University System for Health and Endeavor Health announced plans to combine under the Rush name, subject to regulatory review and targeted for completion in early 2027. The proposed system would include 12 hospitals and more than 400 care sites, serve over 2 million patients annually, employ more than 46,000 people and clinicians, and receive an incremental $1 billion investment from Endeavor.",
-              "strategic_implication": "The proposed combination illustrates regional scale-building through academic and community-network integration; regulatory review, service continuity, governance, and execution of the investment commitments will determine whether scale translates into durable community value.",
+              "title": "AdventHealth breaks ground on a $475 million replacement hospital in Louisville, Colo.",
+              "summary": "AdventHealth broke ground Oct. 14 on AdventHealth Louisville, a 375,000-square-foot hospital with up to 150 beds on a 40-acre site that will replace AdventHealth Avista and significantly expand emergency care. The hospital is expected to open in the first quarter of 2029.",
+              "strategic_implication": "Large nonprofit systems continue to commit capital to growth markets despite margin pressure elsewhere in the sector. Competing Front Range providers should expect a stronger emergency and inpatient presence in Boulder County within the next planning cycle.",
               "confidence": "high",
               "tags": [
-                "hospital-merger",
-                "academic-health-system",
-                "chicago",
-                "capital-investment"
+                "capital-projects",
+                "hospital-construction",
+                "colorado",
+                "adventhealth"
               ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "Centene's provider gold-card program extends insurer-led prior-authorization relief while retaining advance notification and service-level eligibility controls.",
+          "synthesis": "Payer prior-authorization exemptions are spreading, while Kenya's second Ebola case, tied to an undetected imported infection, underscores the need for travel-history screening and special-pathogen readiness.",
           "items": [
+            {
+              "item_id": "2026-10-15-kenya-second-ebola-case",
+              "canonical_topic": "kenya-second-ebola-case",
+              "duplicate_group": "kenya-second-ebola-case",
+              "priority_score": 8,
+              "primary_source": "BBC News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BBC News",
+                  "url": "https://www.bbc.com/news/articles/cw5yn8rn04ljo",
+                  "source_type": "web",
+                  "published_at": "2026-10-15T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/15/health-news-kenya-reports-second-ebola-case/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-15T11:55:00Z"
+                }
+              ],
+              "title": "Kenya confirms a second Ebola case linked to an imported infection from Congo",
+              "summary": "Kenya's health ministry confirmed a second Ebola case in a 39-year-old close relative of the country's first case, who was already in quarantine when he became ill. The first patient died Oct. 5 after traveling from the Democratic Republic of Congo through Uganda to Nairobi without being detected at airport screenings. Officials have identified 128 contacts, 113 of whom have been found, and say there is no evidence of wider community spread.",
+              "strategic_implication": "The undetected multi-country journey highlights the limits of exit and entry screening. U.S. emergency departments and health systems should reinforce travel-history screening and special pathogen readiness, particularly at facilities serving international travelers.",
+              "confidence": "high",
+              "tags": [
+                "ebola",
+                "global-health",
+                "special-pathogens",
+                "emergency-preparedness",
+                "travel-screening"
+              ]
+            },
             {
               "item_id": "2026-10-15-centene-national-provider-gold-card",
               "canonical_topic": "centene-national-provider-gold-card",
@@ -262,7 +490,7 @@
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "Former FDA leaders say recent staffing losses weakened institutional memory, underscoring that regulatory capacity and experienced review teams may take time to restore.",
+          "synthesis": "Workforce signals span FDA staffing losses and new nurse contracts with double-digit raises; clinical signals include a CDC finding that 40% of high school students reported binge eating and an expanded bladder-sparing option for BCG-unresponsive bladder cancer.",
           "items": [
             {
               "item_id": "2026-10-15-former-fda-leaders-warn-workforce-losses",
@@ -288,6 +516,99 @@
                 "regulatory-capacity",
                 "workforce",
                 "drug-and-device-review"
+              ]
+            },
+            {
+              "item_id": "2026-10-15-cdc-yrbs-adolescent-binge-eating",
+              "canonical_topic": "cdc-yrbs-adolescent-binge-eating",
+              "duplicate_group": "cdc-yrbs-adolescent-binge-eating",
+              "priority_score": 7,
+              "primary_source": "Centers for Disease Control and Prevention",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CDC Morbidity and Mortality Weekly Report",
+                  "url": "https://www.cdc.gov/mmwr/volumes/75/su/su7501a5.htm",
+                  "source_type": "web",
+                  "published_at": "2026-10-15T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/15/teenage-binge-eating-cdc-survey-finds-alarming-rate/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-15T08:30:00Z"
+                }
+              ],
+              "title": "CDC survey finds 40% of high school students reported binge eating in the past month",
+              "summary": "In the first Youth Risk Behavior Survey to measure binge eating, 40.5% of U.S. high school students reported at least one binge-eating day in the past 30 days and 17.2% reported three or more. Frequent binge eating was more common among female, Hispanic, Black, and multiracial students, and among students who used social media hourly or more, reported poor mental health or persistent sadness, or had seriously considered suicide.",
+              "strategic_implication": "The overlap with social media use and suicide risk supports adding eating-behavior questions to adolescent behavioral health screening. Pediatric practices, school-based clinics, and payers should review referral capacity for eating-disorder care, which is already limited in many markets.",
+              "confidence": "high",
+              "tags": [
+                "adolescent-health",
+                "eating-disorders",
+                "behavioral-health",
+                "cdc",
+                "yrbs"
+              ]
+            },
+            {
+              "item_id": "2026-10-15-fda-anktiva-papillary-bladder-cancer",
+              "canonical_topic": "fda-anktiva-papillary-bladder-cancer",
+              "duplicate_group": "fda-anktiva-papillary-bladder-cancer",
+              "priority_score": 6,
+              "primary_source": "U.S. Food and Drug Administration",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "U.S. Food and Drug Administration",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-certain-people-bcg-unresponsive-bladder-cancer",
+                  "source_type": "web",
+                  "published_at": "2026-10-14T00:00:00Z"
+                },
+                {
+                  "source": "U.S. Food and Drug Administration oncology approvals",
+                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications",
+                  "source_type": "web",
+                  "published_at": "2026-10-14T00:00:00Z"
+                }
+              ],
+              "title": "FDA expands Anktiva to papillary-only BCG-unresponsive bladder cancer",
+              "summary": "FDA expanded the approval of ImmunityBio's Anktiva (nogapendekin alfa inbakicept-pmln) with BCG to adults with high-grade, papillary-only non-muscle-invasive bladder cancer that has not responded to BCG, making it the first treatment approved specifically for that group. The prior indication covered carcinoma in situ with or without papillary tumors. FDA said the approval reflects a new approach to evaluating treatments for BCG-unresponsive disease; therapy is given into the bladder weekly for six weeks, with maintenance for up to 37 months.",
+              "strategic_implication": "A bladder-sparing option for a broader group may shift some patients away from cystectomy. Urology practices and cancer centers should plan for intravesical treatment capacity, BCG supply, and long maintenance schedules.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "oncology",
+                "bladder-cancer",
+                "drug-approval",
+                "urology"
+              ]
+            },
+            {
+              "item_id": "2026-10-15-ascension-via-christi-nurses-contract",
+              "canonical_topic": "ascension-via-christi-nurses-contract",
+              "duplicate_group": "ascension-via-christi-nurses-contract",
+              "priority_score": 5,
+              "primary_source": "Wichita Business Journal",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Wichita Business Journal",
+                  "url": "https://www.bizjournals.com/wichita/news/2026/10/14/via-christi-nurses-union-labor-contract-approved.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-14T00:00:00Z"
+                }
+              ],
+              "title": "Wichita nurses ratify a three-year Ascension Via Christi contract after a July strike",
+              "summary": "About 1,100 union nurses at Ascension Via Christi's St. Francis and St. Joseph hospitals in Wichita ratified a three-year contract through 2029 that includes 17% to 24% wage increases and staffing protections. The agreement follows a one-day strike in July.",
+              "strategic_implication": "The settlement adds to a pattern of nurse contracts pairing double-digit raises with enforceable staffing language. Systems with upcoming negotiations should expect these terms to serve as reference points, as talks continue at Brigham and Women's and Allegheny General.",
+              "confidence": "medium",
+              "tags": [
+                "nursing",
+                "labor",
+                "union-contracts",
+                "staffing",
+                "ascension"
               ]
             }
           ]
@@ -14350,330 +14671,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-03",
-      "generated_at": "2026-09-03T11:10:16Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing focuses on tighter oversight of Medicare spending, the next phase of healthcare cybersecurity exposure, and new payer, provider, and employer cost signals. It also tracks FDA experimentation with generative-AI medical devices, investment in imaging and oncology navigation, and clinician-led guidance where federal direction is lagging.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA web",
-          "Official company and disclosure pages",
-          "Targeted web search",
-          "Supplementary Gmail newsletters"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS"
-        ],
-        "sources_failed": [
-          "Direct search_web interface unavailable in this scheduled run",
-          "Supplementary Gmail newsletters not used",
-          "CMS/HHS/FDA web not separately consulted",
-          "Official company and disclosure pages not separately consulted"
-        ],
-        "run_notes": "All three required RSS feeds returned current Sep. 2-3 headlines and descriptions via curl. The scheduled environment did not expose the direct search_web command, so the edition uses RSS signal depth only; full article pages were not required. Yesterday's edition topics were screened out and today's items use distinct developments."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Oversight and access policy are producing operational consequences for public programs and public health. Leaders should watch both the integrity of government payment controls and the evidence behind interventions that affect utilization and outcomes.",
-          "items": [
-            {
-              "item_id": "2026-09-03-medicare-ineligible-drugs-audit",
-              "canonical_topic": "medicare-ineligible-drugs-audit",
-              "duplicate_group": "medicare-ineligible-drugs-audit",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/medicare-spending-ineligible-otc-drugs-hhs-oig-audit/829454/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-02T16:30:35Z"
-                }
-              ],
-              "title": "HHS OIG audit finds Medicare spent hundreds of millions on ineligible drugs",
-              "summary": "An HHS Office of Inspector General audit found that Medicare spent hundreds of millions of dollars on drugs that were not eligible under the program rules. The audit attributed the problem to weak CMS oversight, and CMS concurred with the recommendation to improve controls.",
-              "strategic_implication": "Health plans, pharmacies, and providers should expect renewed scrutiny of eligibility, coding, and payment edits in government programs. For CMS, the episode reinforces that benefit expansion or flexibility without reliable controls can create material recoveries and trust risk.",
-              "confidence": "high",
-              "tags": [
-                "medicare",
-                "cms",
-                "program-integrity",
-                "drug-spending"
-              ]
-            },
-            {
-              "item_id": "2026-09-03-overdose-deaths-decline-harm-reduction",
-              "canonical_topic": "overdose-deaths-decline-harm-reduction",
-              "duplicate_group": "overdose-deaths-decline-harm-reduction",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/03/drug-overdose-deaths-down-sharply-commonwealth-fund-study/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-03T04:01:00Z"
-                }
-              ],
-              "title": "New report points to naloxone and harm reduction as overdose deaths decline",
-              "summary": "A new report highlighted by STAT says drug-overdose deaths are declining sharply. The analysis points to naloxone and harm-reduction measures as possible contributors, while the underlying drivers of the improvement remain important for policymakers and care organizations to understand.",
-              "strategic_implication": "Public-health leaders should protect the interventions associated with the decline and measure whether gains are reaching communities with the highest burden. Providers can use the signal to strengthen overdose-prevention pathways rather than treating the improvement as a reason to reduce capacity.",
-              "confidence": "medium",
-              "tags": [
-                "overdose-prevention",
-                "naloxone",
-                "harm-reduction",
-                "public-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "The market is moving from AI experimentation toward regulated, connected infrastructure. The differentiators will be evidence, authorization pathways, interoperability, and controls for deploying tools inside clinical workflows.",
-          "items": [
-            {
-              "item_id": "2026-09-03-fda-tempo-ai-medical-devices",
-              "canonical_topic": "fda-tempo-ai-medical-devices",
-              "duplicate_group": "fda-tempo-ai-medical-devices",
-              "priority_score": 9,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-03T08:30:00Z"
-                }
-              ],
-              "title": "FDA TEMPO pilot creates a preauthorization path for select generative-AI devices",
-              "summary": "The FDA accepted four devices, including products from Cadence and Limbic, into its TEMPO pilot for generative-AI medical devices. The pilot is designed to let participating digital-health companies release products before traditional marketing authorization, subject to the program framework.",
-              "strategic_implication": "Device companies should assess whether pilot participation changes evidence, monitoring, and post-market operating requirements—not just time to launch. Health systems will need procurement and governance processes that distinguish pilot access from full regulatory clearance.",
-              "confidence": "medium",
-              "tags": [
-                "fda",
-                "generative-ai",
-                "medical-devices",
-                "digital-health"
-              ]
-            },
-            {
-              "item_id": "2026-09-03-scan-com-imaging-network",
-              "canonical_topic": "scan-com-imaging-network",
-              "duplicate_group": "scan-com-imaging-network",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/finance/scancom-raises-220m-build-largest-medical-imaging-network-us",
-                  "source_type": "rss",
-                  "published_at": "2026-09-02T17:17:00Z"
-                }
-              ],
-              "title": "Scan.com raises $220 million to scale imaging network and agentic-AI infrastructure",
-              "summary": "Scan.com raised $220 million to expand its U.S. network of imaging providers. The company said it will also invest in its API and agentic-AI infrastructure as it builds a broader imaging platform.",
-              "strategic_implication": "Imaging leaders should track whether network scale and workflow APIs improve access, turnaround times, and utilization of scarce equipment. Capital is flowing toward platforms that can combine clinical capacity with software orchestration, increasing competitive pressure on fragmented provider networks.",
-              "confidence": "medium",
-              "tags": [
-                "medical-imaging",
-                "healthcare-investment",
-                "agentic-ai",
-                "interoperability"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Capital and leadership moves show continued investment in care navigation, insurer operations, and employer-sponsored coverage. The common thread is pressure to produce measurable value while healthcare costs continue to rise.",
-          "items": [
-            {
-              "item_id": "2026-09-03-thyme-care-series-e",
-              "canonical_topic": "thyme-care-series-e",
-              "duplicate_group": "thyme-care-series-e",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/health-tech/oncology-company-thyme-care-raises-125m-backed-morgan-health-humana-and-cvs-health",
-                  "source_type": "rss",
-                  "published_at": "2026-09-02T15:46:00Z"
-                }
-              ],
-              "title": "Thyme Care raises more than $125 million to expand beyond cancer navigation",
-              "summary": "Thyme Care raised more than $125 million in a Series E round backed by Morgan Health, Humana, and CVS Health Ventures. The oncology-navigation company plans to use the financing to expand beyond cancer care navigation.",
-              "strategic_implication": "Payer and employer investors are signaling continued demand for condition-specific navigation that can demonstrate clinical and financial outcomes. Expansion beyond oncology will test whether the model transfers to other complex populations without diluting its operational focus.",
-              "confidence": "medium",
-              "tags": [
-                "oncology",
-                "care-navigation",
-                "healthcare-investment",
-                "payers"
-              ]
-            },
-            {
-              "item_id": "2026-09-03-employer-health-benefit-costs-2027",
-              "canonical_topic": "employer-health-benefit-costs-2027",
-              "duplicate_group": "employer-health-benefit-costs-2027",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/payers/employers-health-benefits-costs-could-rise-82-2027-marsh-survey",
-                  "source_type": "rss",
-                  "published_at": "2026-09-02T15:33:00Z"
-                }
-              ],
-              "title": "Marsh survey projects employer health-benefit costs could rise 8.2% in 2027",
-              "summary": "A Marsh survey projected an 8.2% increase in employer health-benefit costs in 2027. Analysts said the increase would be the highest since 2003 and the fifth consecutive year of rising costs.",
-              "strategic_implication": "Employers and health plans should treat benefit affordability as a strategic workforce issue, not a renewal-cycle negotiation alone. Provider organizations should expect continued demand for lower-cost sites of care, navigation, and evidence that new therapies improve total cost of care.",
-              "confidence": "medium",
-              "tags": [
-                "employer-benefits",
-                "healthcare-costs",
-                "health-plans",
-                "workforce-strategy"
-              ]
-            },
-            {
-              "item_id": "2026-09-03-johns-hopkins-health-plans-interim-ceo",
-              "canonical_topic": "johns-hopkins-health-plans-interim-ceo",
-              "duplicate_group": "johns-hopkins-health-plans-interim-ceo",
-              "priority_score": 6,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/johns-hopkins-health-plans-taps-interim-ceo-searches-successor-daniel-chojnowski/829414/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-02T13:59:03Z"
-                }
-              ],
-              "title": "Johns Hopkins Health Plans names interim CEO while it searches for a successor",
-              "summary": "Johns Hopkins Health Plans named CFO Daniel Chojnowski as interim CEO while it searches for a permanent successor. The insurer said the appointment is intended to provide stability during the leadership transition.",
-              "strategic_implication": "Leadership continuity matters especially for plans managing regulatory, network, and affordability pressures at the same time. Boards should use the transition to clarify the operating mandate and succession criteria before the next phase of growth or restructuring.",
-              "confidence": "high",
-              "tags": [
-                "health-insurance",
-                "executive-leadership",
-                "succession",
-                "payer-operations"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Cyber incidents are continuing to create direct financial and operational exposure for care organizations and their partners. The relevant response is broader than incident response: vendor controls, customer communications, claims continuity, and litigation readiness all matter.",
-          "items": [
-            {
-              "item_id": "2026-09-03-mckesson-third-party-cyberattack",
-              "canonical_topic": "mckesson-third-party-cyberattack",
-              "duplicate_group": "mckesson-third-party-cyberattack",
-              "priority_score": 9,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/mckesson-confirms-data-theft-cyberattack-involving-third-party-apps/829435/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-02T14:51:16Z"
-                }
-              ],
-              "title": "McKesson confirms data theft in cyberattack involving third-party applications",
-              "summary": "McKesson confirmed that a cyberattack involving third-party applications led to data theft. The company said the incident affected a subset of customers in its oncology and medical-surgical businesses.",
-              "strategic_implication": "Hospitals, oncology practices, and distributors should recheck third-party access, data-minimization, and business-continuity controls across supply-chain workflows. The incident also reinforces that partner risk can interrupt clinical operations even when a provider’s core environment is not directly breached.",
-              "confidence": "high",
-              "tags": [
-                "cybersecurity",
-                "third-party-risk",
-                "healthcare-supply-chain",
-                "oncology"
-              ]
-            },
-            {
-              "item_id": "2026-09-03-davita-data-breach-settlement",
-              "canonical_topic": "davita-data-breach-settlement",
-              "duplicate_group": "davita-data-breach-settlement",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/davita-agrees-to-pay-15m-to-settle-claims-from-data-breach/829445/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-02T15:23:13Z"
-                }
-              ],
-              "title": "DaVita agrees to $15 million settlement over data-breach claims affecting 2.7 million people",
-              "summary": "DaVita agreed to pay $15 million to settle claims from a proposed class-action lawsuit tied to a data breach last year. Healthcare Dive reported that the incident affected 2.7 million people.",
-              "strategic_implication": "The settlement puts a concrete price on downstream exposure from patient-data incidents, including litigation and trust costs beyond technical remediation. Provider boards should link cyber investment to measurable controls, disclosure readiness, and patient support plans.",
-              "confidence": "high",
-              "tags": [
-                "data-breach",
-                "cybersecurity",
-                "dialysis",
-                "patient-privacy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Clinical organizations are filling guidance gaps and rebuilding trust in a noisy information environment. The operating priority is consistent, evidence-based communication that helps clinicians and patients act before seasonal demand peaks.",
-          "items": [
-            {
-              "item_id": "2026-09-03-vaccine-recommendations-2026-27",
-              "canonical_topic": "vaccine-recommendations-2026-27",
-              "duplicate_group": "vaccine-recommendations-2026-27",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/providers/leading-medical-groups-release-flu-covid-vaccine-recommendations-cdc-guidance-lags",
-                  "source_type": "rss",
-                  "published_at": "2026-09-02T15:11:00Z"
-                }
-              ],
-              "title": "Medical groups issue 2026-27 flu and COVID vaccine guidance as CDC recommendations lag",
-              "summary": "Several major medical organizations released recommendations for flu and COVID vaccination ahead of the 2026-27 respiratory-virus season. The groups acted to fill an immunization-guidance gap left by the federal government, according to Fierce Healthcare.",
-              "strategic_implication": "Health systems should align clinician messaging, patient outreach, supply planning, and standing orders before respiratory illness demand rises. Where federal guidance is unsettled, organizations will need a documented clinical-governance process for updating recommendations consistently.",
-              "confidence": "medium",
-              "tags": [
-                "vaccination",
-                "flu",
-                "covid-19",
-                "clinical-guidance"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-15T11:04:21Z"
+  "last_updated": "2026-10-15T12:33:32Z"
 }

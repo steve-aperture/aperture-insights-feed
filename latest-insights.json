@@ -3,6 +3,348 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-16",
+      "generated_at": "2026-10-16T11:04:06Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition examines CMS coverage and rural investment, a pending federal peptide-compounding policy, and the Justice Department's intensified health-care fraud posture. It also tracks clinical AI governance and prescription-price transparency, access-technology consolidation, a regional hospital-capacity proposal, and federal health workforce concerns, drawing on STAT, Healthcare Dive, Fierce Healthcare, company announcements, and CMS/AMA releases.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web searches across CMS/Medicare, FDA and drug policy, digital health and AI, provider operations, and workforce",
+          "Primary-source checks: CMS, AMA, Epic, Zocdoc, CaroMont Health, and Genentech"
+        ],
+        "sources_successful": [
+          "STAT News RSS parsed; Oct. 15-16 reporting used for federal workforce, peptide-compounding, and DOJ enforcement items",
+          "Healthcare Dive RSS parsed; Oct. 15-16 reporting used for the AMA framework, Zocdoc acquisition, and hospital development item",
+          "Fierce Healthcare RSS parsed; Oct. 15 reporting used to identify current digital-health signals",
+          "Targeted web searches returned corroborating coverage and primary-source material for the selected CMS, AMA, Epic, Zocdoc, CaroMont, and Genentech items"
+        ],
+        "sources_failed": [],
+        "run_notes": "Built 10 distinct items from Oct. 15-16 reporting and primary announcements. Screened against recent editions (Oct. 12-15) and excluded repeat items already covered, including Medicare Advantage open-enrollment premiums, the Rush-Endeavor merger, CMS prior-authorization gold cards, and other repeated stories; the Zocdoc-Sohar transaction was included only after confirming it was not in the recent editions. Gmail was not queried because it is supplementary."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS is pairing a $50 monthly GLP-1 access pathway for qualifying Part D members with new rural-health investments, while FDA policy on compounding certain unapproved peptides remains in interagency review. DOJ is also signaling a more coordinated approach to health-care fraud, including corporate self-disclosure and data-driven investigations.",
+          "items": [
+            {
+              "item_id": "2026-10-16-medicare-glp1-bridge-access",
+              "canonical_topic": "medicare-glp1-bridge-access",
+              "duplicate_group": "medicare-glp1-bridge-access",
+              "priority_score": 9,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Centers for Medicare & Medicaid Services",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-launches-medicare-glp-1-bridge-expanding-access-glp-1-medications",
+                  "source_type": "web",
+                  "published_at": "2026-10-15T00:00:00Z"
+                }
+              ],
+              "title": "CMS highlights $50 monthly GLP-1 access through Medicare Bridge for eligible beneficiaries",
+              "summary": "CMS announced that eligible Medicare Part D beneficiaries may obtain certain GLP-1 medicines for weight management for $50 per month through the Medicare GLP-1 Bridge. The temporary demonstration is scheduled to run through Dec. 31, 2027, and eligibility depends on plan type and clinical criteria; it does not apply to every Medicare beneficiary or to people whose prescriptions are already covered through Part D.",
+              "strategic_implication": "Plans, prescribers, and pharmacies should make eligibility and prior-authorization workflows explicit so the new access channel is not mistaken for a universal Part D benefit. The demonstration may also increase near-term demand for obesity-care assessment and longitudinal support.",
+              "confidence": "high",
+              "tags": [
+                "medicare-part-d",
+                "glp-1",
+                "drug-access",
+                "weight-management"
+              ]
+            },
+            {
+              "item_id": "2026-10-16-fda-peptide-compounding-policy-review",
+              "canonical_topic": "fda-peptide-compounding-policy-review",
+              "duplicate_group": "fda-peptide-compounding-policy-review",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/15/trump-administration-advances-plan-peptides-rfk-jr/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-15T20:46:09Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KBN3VV2V8?channel=gZa457",
+                  "source_type": "web",
+                  "published_at": "2026-10-15T00:00:00Z"
+                }
+              ],
+              "title": "FDA peptide-compounding policy moves to White House review, with scope still undisclosed",
+              "summary": "HHS and FDA submitted an interim access policy on certain peptides to the White House for review, advancing a possible change to compounding enforcement. The filing does not disclose which products or conditions would be covered; reporting says the compounds remain unapproved and that FDA staff have raised safety and evidence concerns.",
+              "strategic_implication": "Compounding pharmacies, telehealth firms, and health systems should treat the policy as pending rather than settled and monitor for the eventual scope, safeguards, and enforcement terms. Any change could quickly affect demand, prescribing protocols, and patient-safety oversight in a market where clinical evidence remains limited.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "drug-compounding",
+                "peptides",
+                "patient-safety",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-10-16-cms-rural-texas-provider-funding",
+              "canonical_topic": "cms-rural-texas-provider-funding",
+              "duplicate_group": "cms-rural-texas-provider-funding",
+              "priority_score": 7,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Centers for Medicare & Medicaid Services",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-news-trump-administration-announces-78-million-rural-healthcare-workforce-chronic-disease",
+                  "source_type": "web",
+                  "published_at": "2026-10-15T00:00:00Z"
+                }
+              ],
+              "title": "CMS directs $78 million to 216 rural Texas providers for workforce, prevention, and upgrades",
+              "summary": "CMS announced $78 million in Rural Health Transformation Program funding for 216 rural Texas providers through the Rural Texas Strong initiative. The state-level investments are intended to support workforce recruitment and retention, chronic-disease prevention, and medical equipment and facility upgrades.",
+              "strategic_implication": "Rural provider leaders should map their local awards and planned uses to workforce, facility, and prevention priorities, while state and regional partners assess whether funded projects can sustain access beyond the grant period. The announcement is a discrete Texas allocation within the broader transformation program, not a general increase in recurring reimbursement.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "cms",
+                "workforce",
+                "healthcare-funding"
+              ]
+            },
+            {
+              "item_id": "2026-10-16-doj-healthcare-fraud-enforcement-shift",
+              "canonical_topic": "doj-healthcare-fraud-enforcement-shift",
+              "duplicate_group": "doj-healthcare-fraud-enforcement-shift",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/15/healthcare-fraud-new-doj-policy-rewards-self-disclosure/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-15T18:09:18Z"
+                }
+              ],
+              "title": "DOJ consolidates health-care fraud self-disclosure and expands data-driven investigations",
+              "summary": "A DOJ official said health-care companies will have a single DOJ channel for voluntary self-disclosure of potential criminal conduct, consolidating a process that previously involved a separate HHS pathway. The department also plans to use data analytics and AI to identify suspected schemes and is emphasizing whistleblower incentives and executive knowledge or concealment in enforcement decisions.",
+              "strategic_implication": "Providers, plans, and health technology companies should review compliance escalation, documentation, and disclosure decision-making for potential fraud exposure. A centralized channel and broader use of analytics increase the value of prompt internal investigation and defensible audit trails.",
+              "confidence": "medium",
+              "tags": [
+                "doj",
+                "program-integrity",
+                "healthcare-fraud",
+                "compliance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Epic is bringing cash-price comparisons into the prescribing workflow, while the AMA has framed evidence, authority, oversight, and accountability as core tests for clinical AI agents. Together, the developments point to a shift from standalone digital tools toward decisions embedded in care workflows, with governance and patient-facing value under greater scrutiny.",
+          "items": [
+            {
+              "item_id": "2026-10-16-epic-prescription-marketplace",
+              "canonical_topic": "epic-prescription-marketplace",
+              "duplicate_group": "epic-prescription-marketplace",
+              "priority_score": 8,
+              "primary_source": "Epic",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Epic",
+                  "url": "https://www.epic.com/epic/post/prescription-marketplace-will-let-patients-compare-pharmacy-cash-prices-before-leaving-the-doctors-office/",
+                  "source_type": "web",
+                  "published_at": "2026-10-15T00:00:00Z"
+                }
+              ],
+              "title": "Epic plans point-of-prescribing tool to compare pharmacy cash and insurance prices",
+              "summary": "Epic announced Prescription Marketplace, a planned feature that will let clinicians and patients compare pharmacy cash prices with the patient’s insurance cost before a prescription is sent. Amazon Pharmacy, Costco, and Mark Cuban Cost Plus Drugs are among the participants shaping the feature, which Epic says it expects to release in summer 2027.",
+              "strategic_implication": "The tool could make price comparison a routine prescribing conversation and intensify competition across retail, mail-order, and discount channels. Health systems and pharmacies should evaluate data participation, workflow integration, and how price choice will be explained without undermining appropriate coverage or adherence.",
+              "confidence": "high",
+              "tags": [
+                "prescription-pricing",
+                "epic",
+                "pharmacy",
+                "patient-access"
+              ]
+            },
+            {
+              "item_id": "2026-10-16-ama-agentic-ai-governance-framework",
+              "canonical_topic": "ama-agentic-ai-governance-framework",
+              "duplicate_group": "ama-agentic-ai-governance-framework",
+              "priority_score": 8,
+              "primary_source": "American Medical Association",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "American Medical Association",
+                  "url": "https://www.ama-assn.org/practice-management/digital-health/governance-framework-agentic-ai-assuming-clinical-functions",
+                  "source_type": "web",
+                  "published_at": "2026-10-15T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ama-releases-governance-framework-for-agentic-ai-in-healthcare/833120/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-15T15:33:18Z"
+                }
+              ],
+              "title": "AMA sets four governance tests for AI agents taking on clinical functions",
+              "summary": "The AMA released a framework organized around the function an AI agent performs, evidence and risk, the authority and oversight it should receive, and accountability for outcomes. The association says clinical authority should be earned through evidence and maintained through demonstrated performance, and will use the framework to guide work on liability, licensure, and regulation.",
+              "strategic_implication": "Health systems deploying agentic tools can use the four questions to set risk-tiered permissions, validation requirements, human escalation, and ownership before moving pilots into clinical workflows. Vendors should expect closer review of continuing performance and who is responsible when an agent acts.",
+              "confidence": "high",
+              "tags": [
+                "agentic-ai",
+                "clinical-governance",
+                "ama",
+                "patient-safety"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Digital access infrastructure is consolidating around insurance discovery and eligibility verification, while a newly approved at-home therapy expands treatment options in thyroid eye disease. The two developments illustrate how market differentiation is increasingly tied to both frictionless access and patient-centered care delivery.",
+          "items": [
+            {
+              "item_id": "2026-10-16-zocdoc-sohar-health-acquisition",
+              "canonical_topic": "zocdoc-sohar-health-acquisition",
+              "duplicate_group": "zocdoc-sohar-health-acquisition",
+              "priority_score": 7,
+              "primary_source": "Zocdoc",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Sohar Health",
+                  "url": "https://www.soharhealth.com/resources/zocdoc-acquires-sohar-health",
+                  "source_type": "web",
+                  "published_at": "2026-10-14T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/zocdoc-acquires-sohar-health-in-latest-push-to-scale-tech-infrastructure/833129/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-15T00:00:00Z"
+                }
+              ],
+              "title": "Zocdoc acquires Sohar Health to extend insurance verification across care access",
+              "summary": "Zocdoc acquired Sohar Health, whose technology automates insurance discovery, eligibility checks, benefit verification, and network status. The transaction closed Oct. 2 and was announced Oct. 14; the companies said Sohar will retain its name, products, and customer relationships, with financial terms undisclosed.",
+              "strategic_implication": "The deal strengthens Zocdoc’s effort to expand from appointment search into access infrastructure and could reduce coverage friction before a visit is booked. Providers should watch whether automated verification improves patient conversion and reduces intake rework, while preserving accuracy and clear handling of coverage data.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "patient-access",
+                "insurance-eligibility",
+                "acquisition"
+              ]
+            },
+            {
+              "item_id": "2026-10-16-enspryng-thyroid-eye-disease-approval",
+              "canonical_topic": "enspryng-thyroid-eye-disease-approval",
+              "duplicate_group": "enspryng-thyroid-eye-disease-approval",
+              "priority_score": 7,
+              "primary_source": "Genentech",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Genentech",
+                  "url": "https://www.gene.com/media/press-releases/15137/2026-10-15/fda-approves-genentechs-enspryng-a-first",
+                  "source_type": "web",
+                  "published_at": "2026-10-15T00:00:00Z"
+                }
+              ],
+              "title": "FDA approves at-home subcutaneous Enspryng for adults with thyroid eye disease",
+              "summary": "Genentech announced FDA approval of Enspryng (satralizumab-mwge) for adults with thyroid eye disease, adding a subcutaneous treatment option that can be administered at home after training. The company said maintenance dosing is every four weeks and based the approval on the Phase III SatraGO studies.",
+              "strategic_implication": "The approval adds a new treatment and delivery option for specialty practices, with likely operational needs around patient training, benefit verification, and monitoring. Payers and clinicians will assess its place alongside existing therapies as real-world uptake and coverage policies emerge.",
+              "confidence": "medium",
+              "tags": [
+                "fda-approval",
+                "thyroid-eye-disease",
+                "biopharma",
+                "at-home-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Duke Health and CaroMont are seeking approval for two new hospitals that would add 200 beds in growing Mecklenburg County, although capacity would arrive only after a lengthy review and development period. The proposal underscores how regional providers are using joint ventures to address projected demand while sharing investment and execution risk.",
+          "items": [
+            {
+              "item_id": "2026-10-16-duke-caromont-mecklenburg-hospitals",
+              "canonical_topic": "duke-caromont-mecklenburg-hospitals",
+              "duplicate_group": "duke-caromont-mecklenburg-hospitals",
+              "priority_score": 7,
+              "primary_source": "CaroMont Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CaroMont Health",
+                  "url": "https://caromonthealth.org/news/duke-health-and-caromont-health-partner-to-develop-two-new-hospitals-in-mecklenburg-county/",
+                  "source_type": "web",
+                  "published_at": "2026-10-14T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/duke-health-caromont-health-seek-jointly-build-operate-2-charlotte-area-hospitals",
+                  "source_type": "rss",
+                  "published_at": "2026-10-15T20:13:00Z"
+                }
+              ],
+              "title": "Duke and CaroMont seek approval for two hospitals adding 200 beds in Mecklenburg County",
+              "summary": "Duke Health and CaroMont Health have filed Certificate of Need applications for a 120-bed hospital in University City and an 80-bed hospital in the River District. The equal partnership says the facilities would address part of the 389 additional beds identified as needed in the 2026 state facilities plan; a state decision is anticipated by March 2027, with openings currently projected for 2031 if approved.",
+              "strategic_implication": "The proposal could alter Charlotte-area referral patterns, competition, and capacity planning over the next several years, but it is not near-term capacity relief. Incumbent systems and local partners should monitor the state review and plan for a longer horizon of workforce, service-line, and capital competition.",
+              "confidence": "high",
+              "tags": [
+                "hospital-capacity",
+                "north-carolina",
+                "provider-partnership",
+                "capital-planning"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Federal health workers are being asked to complete new performance self-assessments amid continuing concern about the aftermath of layoffs and turnover. The issue places retention, institutional knowledge, and agency execution capacity back on the operating agenda for organizations that depend on federal policy and review functions.",
+          "items": [
+            {
+              "item_id": "2026-10-16-hhs-workforce-performance-reviews",
+              "canonical_topic": "hhs-workforce-performance-reviews",
+              "duplicate_group": "hhs-workforce-performance-reviews",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/16/federal-performance-reviews-health-agency-employees-wary-after-doge/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-16T08:30:00Z"
+                }
+              ],
+              "title": "HHS staff question new performance reviews amid lingering post-layoff uncertainty",
+              "summary": "STAT reports that federal health agency employees have been asked to submit 6,000-character self-assessments as part of a revised annual performance-review process. Administration officials describe the changes as an effort to calibrate ratings, while some employees are wary after layoffs and departures and raise concerns about limits on bonus eligibility.",
+              "strategic_implication": "For organizations that rely on federal regulatory, research, or program-administration capacity, workforce uncertainty is an operational signal to track alongside formal policy changes. Agency partners may need contingency planning for review timelines and continuity of key expertise.",
+              "confidence": "medium",
+              "tags": [
+                "hhs",
+                "federal-workforce",
+                "retention",
+                "agency-capacity"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-15",
       "generated_at": "2026-10-15T12:33:32Z",
       "headline": "Today's Healthcare Insights",
@@ -14673,5 +15015,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-15T12:33:32Z"
+  "last_updated": "2026-10-16T11:04:21Z"
 }

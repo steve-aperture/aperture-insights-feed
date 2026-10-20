@@ -3,6 +3,237 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-20",
+      "generated_at": "2026-10-20T11:07:34Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition covers state health-policy signals, medicine launch prices, behavioral-health access, resident work-hour standards, clinical AI, and measles. It draws on STAT, the Ohio State/JAMA Health Forum study, ACGME and CDC materials, and court-record reporting.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web searches on CMS/HHS/FDA, payer/provider issues, digital health and AI, drug pricing, workforce, and public health"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and parsed; October 20 reporting on drug launch prices, state ballot measures, and resident work-hour rules was reviewed.",
+          "Healthcare Dive RSS fetched and screened against recent editions.",
+          "Targeted web searches and primary materials from The Ohio State University, ACGME, CDC, and court records corroborated the selected items."
+        ],
+        "sources_failed": [
+          "Fierce Healthcare RSS returned an HTTP 200 response, but strict XML parsing stopped at an undefined entity; its available headlines were screened and the selected AI-settlement item was cross-checked against court-record and Modern Healthcare results."
+        ],
+        "run_notes": "Compared candidates with the October 19 edition and the recent feed to avoid repeating yesterday's items. The resident-hours story is an opinion about a draft, not a finalized standard; CDC measles figures are the latest weekly tally available, as of October 15."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "State ballot measures add a near-term signal for health-related policy and public sentiment. The issues and potential effects vary by state.",
+          "items": [
+            {
+              "item_id": "2026-10-20-health-care-midterm-ballot-measures",
+              "canonical_topic": "health-care-midterm-ballot-measures",
+              "duplicate_group": "health-care-midterm-ballot-measures",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News RSS",
+                  "url": "https://www.statnews.com/2026/10/20/what-health-policy-battles-reveal-about-america-midterms-2026/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-20T08:30:00Z"
+                }
+              ],
+              "title": "State health ballot measures put abortion, Medicaid and transgender-youth policies in focus",
+              "summary": "Four states will consider measures barring transgender youth from school athletic teams aligned with their gender identity, including two states that already have bans. Other ballot topics include abortion access, Medicaid expansion and school meals, while the overall volume of health-related initiatives is lower than in 2024.",
+              "strategic_implication": "Multistate health systems, plans and associations should map the specific measures in their operating states and prepare for post-election changes in policy and community needs.",
+              "confidence": "high",
+              "tags": [
+                "health-policy",
+                "state-ballot",
+                "abortion",
+                "medicaid"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "A high-profile clinical-AI dispute ended without a public merits ruling. The undisclosed settlement leaves commercial and product safeguards as the more actionable signal for vendors.",
+          "items": [
+            {
+              "item_id": "2026-10-20-openevidence-doximity-settlement",
+              "canonical_topic": "openevidence-doximity-settlement",
+              "duplicate_group": "openevidence-doximity-settlement",
+              "priority_score": 7,
+              "primary_source": "U.S. District Court for the District of Massachusetts",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CourtListener docket",
+                  "url": "https://www.courtlistener.com/docket/70596804/openevidence-inc-v-doximity-inc/",
+                  "source_type": "web",
+                  "published_at": "2026-10-16T00:00:00Z"
+                },
+                {
+                  "source": "Modern Healthcare",
+                  "url": "https://www.modernhealthcare.com/health-tech/mh-openevidence-doximity-ai-lawsuit/",
+                  "source_type": "web",
+                  "published_at": "2026-10-19T00:00:00Z"
+                }
+              ],
+              "title": "OpenEvidence and Doximity resolve clinical-AI dispute without a public merits ruling",
+              "summary": "OpenEvidence and Doximity resolved their Massachusetts federal case, and the docket records dismissal with prejudice of all claims and counterclaims on October 16. The parties will bear their own costs and attorneys' fees; settlement terms were not disclosed, so the allegations were not resolved through a public merits decision.",
+              "strategic_implication": "The case sets no public merits precedent, leaving clinical-AI vendors to manage platform access, user verification and intellectual-property protections through product controls and contracts.",
+              "confidence": "high",
+              "tags": [
+                "digital-health",
+                "clinical-ai",
+                "legal-risk",
+                "healthcare-technology"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "New launch-price analysis shows that net prices remain elevated despite a slight year-over-year dip. The findings reinforce the need to distinguish list prices from realized net costs.",
+          "items": [
+            {
+              "item_id": "2026-10-20-new-medicine-launch-net-prices",
+              "canonical_topic": "new-medicine-launch-net-prices",
+              "duplicate_group": "new-medicine-launch-net-prices",
+              "priority_score": 8,
+              "primary_source": "ICER and West Health analysis, reported by STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News RSS",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/20/launch-price-of-new-medicines-drop-very-slightly-2025/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-20T10:30:00Z"
+                }
+              ],
+              "title": "Net launch prices for new medicines rose 35% from 2022 to 2025, ICER analysis finds",
+              "summary": "An ICER and West Health analysis found the inflation-adjusted median net launch price for 202 newly launched medicines increased from $173,000 in 2022 to $257,000 in 2025, a 35% rise. About one quarter of 2025 launches had net prices above $500,000, while another 34% were priced between $200,000 and $500,000.",
+              "strategic_implication": "Payers and health systems should model net and list prices separately in formulary and budget decisions, with high-priced launches creating added pressure on affordability and coverage strategy.",
+              "confidence": "high",
+              "tags": [
+                "drug-pricing",
+                "net-price",
+                "launch-pricing",
+                "payer-budget"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "A multistate study found a substantial gap between listed behavioral-health networks and realized appointment access. Directory maintenance and usable capacity remain operational priorities for plans and provider groups.",
+          "items": [
+            {
+              "item_id": "2026-10-20-commercial-mental-health-directory-access",
+              "canonical_topic": "commercial-mental-health-directory-access",
+              "duplicate_group": "commercial-mental-health-directory-access",
+              "priority_score": 8,
+              "primary_source": "The Ohio State University / JAMA Health Forum",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "The Ohio State University",
+                  "url": "https://news.osu.edu/having-insurance-doesnt-mean-you-can-get-a-mental-health-appointment/",
+                  "source_type": "web",
+                  "published_at": "2026-10-16T15:17:00Z"
+                }
+              ],
+              "title": "Study finds inaccurate commercial mental-health directories and limited appointment access",
+              "summary": "Researchers called 5,822 psychiatrists and psychologists listed in commercial-plan directories across five states and analyzed 2,252 calls after excluding those that could not reach a person. Only 24% of answered calls led to an appointment with the listed clinician, 56% of analyzed calls found directory inaccuracies, and callers were quoted an average 20.5-day wait.",
+              "strategic_implication": "Plans and health systems should measure actual appointment availability and directory accuracy, not roster counts alone, to identify network-adequacy and member-access gaps.",
+              "confidence": "high",
+              "tags": [
+                "behavioral-health",
+                "network-adequacy",
+                "access-to-care",
+                "provider-directories"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Two clinical-workforce signals stand out: debate over proposed residency work-hour provisions and a further rise in U.S. measles cases. One is still a draft; the other is a current public-health response issue.",
+          "items": [
+            {
+              "item_id": "2026-10-20-acgme-resident-work-hour-draft",
+              "canonical_topic": "acgme-resident-work-hour-draft",
+              "duplicate_group": "acgme-resident-work-hour-draft",
+              "priority_score": 7,
+              "primary_source": "Accreditation Council for Graduate Medical Education",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "ACGME proposed Common Program Requirements",
+                  "url": "https://www.acgme.org/globalassets/pfassets/reviewandcomment/2026/cprresidency_rc_09082026.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-09-08T00:00:00Z"
+                },
+                {
+                  "source": "STAT News RSS",
+                  "url": "https://www.statnews.com/2026/10/20/acgme-resident-physicians-work-hour-rules-time-off-between-shifts/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-20T08:30:00Z"
+                }
+              ],
+              "title": "ACGME resident work-hour draft draws safety scrutiny ahead of Oct. 22 comment deadline",
+              "summary": "ACGME's draft requirements would raise required time off after 24-hour in-house call from 12 to 14 hours and more explicitly apply the 80-hour weekly cap within a rotation. A STAT First Opinion argues that other provisions could weaken protections between shifts and overnight call; the proposal is not final, and comments are open through October 22.",
+              "strategic_implication": "Residency sponsors should test scheduling and fatigue-risk scenarios against the draft and consider submitting feedback before the comment period closes.",
+              "confidence": "medium",
+              "tags": [
+                "resident-physicians",
+                "work-hours",
+                "accreditation",
+                "patient-safety"
+              ]
+            },
+            {
+              "item_id": "2026-10-20-us-measles-cases-weekly-update",
+              "canonical_topic": "us-measles-cases-weekly-update",
+              "duplicate_group": "us-measles-cases-weekly-update",
+              "priority_score": 9,
+              "primary_source": "Centers for Disease Control and Prevention",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CDC Measles Cases and Outbreaks",
+                  "url": "https://www.cdc.gov/measles/data-research/index.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-17T00:00:00Z"
+                },
+                {
+                  "source": "Center for Infectious Disease Research and Policy (CIDRAP)",
+                  "url": "https://www.cidrap.umn.edu/measles/us-measles-cases-grow-8-1-week-total-4410-cases",
+                  "source_type": "web",
+                  "published_at": "2026-10-16T00:00:00Z"
+                }
+              ],
+              "title": "CDC weekly tally adds 330 measles cases, bringing 2026 U.S. total to 4,410",
+              "summary": "CDC counted 4,410 confirmed U.S. measles cases as of October 15, 330 more than the prior week's tally, across 42 outbreaks reported in 2026. The agency said 96% of cases were outbreak-associated and reported 451 hospitalizations; the counts are preliminary.",
+              "strategic_implication": "Hospitals and public-health teams should sustain vaccination outreach, exposure response and readiness for additional cases in outbreak-affected communities.",
+              "confidence": "high",
+              "tags": [
+                "measles",
+                "infectious-disease",
+                "outbreak-response",
+                "vaccination"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-19",
       "generated_at": "2026-10-19T12:40:02Z",
       "headline": "Today's Healthcare Insights",
@@ -15238,5 +15469,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-19T12:40:02Z"
+  "last_updated": "2026-10-20T11:07:34Z"
 }

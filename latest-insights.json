@@ -4,13 +4,14 @@
   "editions": [
     {
       "edition_date": "2026-10-21",
-      "generated_at": "2026-10-21T11:05:57Z",
+      "generated_at": "2026-10-21T12:40:08Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's mix centers on new federal guidance and fraud enforcement, payer economics, and provider-system change. STAT, CMS, FDA, DOJ, issuer, provider, and nursing-association materials informed the curation, with RSS candidates screened against the October 20 edition.",
+      "summary_note": "Today's edition leads with final 2027 Medicare Advantage rates, an imported Ebola case in Nigeria, and a JAMA study of clinician use of OpenEvidence. It also covers No Surprises Act QPA audits, DOJ whistleblower rewards, Senate pressure on research-use-only peptides, Roche's second Hansoh ADC deal, payer moves from Elevance, Oscar, and St. Luke's, the Dana-Farber/BILH groundbreaking, worsening chemotherapy shortages, and earlier items on FDA software labeling, nursing homes, nursing incivility, and measles messaging.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
+          "Gmail labels: InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
           "STAT News RSS",
           "Healthcare Dive RSS",
           "Fierce Healthcare RSS",
@@ -20,15 +21,21 @@
           "STAT News RSS fetched and screened; October 20–21 reporting on rare-disease medicines, nursing homes, and measles was reviewed.",
           "Healthcare Dive RSS fetched and screened against the October 20 edition; no eligible unreported item was added from that feed.",
           "Fierce Healthcare RSS fetched and screened; selected developments were cross-checked against issuer or official materials.",
-          "Targeted web searches corroborated the selected items with official FDA, CMS, DOJ, Elevance, Oscar, Hackensack Meridian, and ANA materials, a Sentara/Regard announcement, and STAT reporting."
+          "Targeted web searches corroborated the selected items with official FDA, CMS, DOJ, Elevance, Oscar, Hackensack Meridian, and ANA materials, a Sentara/Regard announcement, and STAT reporting.",
+          "Curation pass: STAT News RSS (main, health, pharma, health tech, politics feeds) re-fetched; October 20-21 items on Nigeria's Ebola case, the Roche-Hansoh deal, the Dana-Farber/BILH hospital, the retatrutide letter, and the OpenEvidence JAMA study selected.",
+          "Primary and corroborating sources (WHO AFRO, CMS QPA audit report, AHA News, Sen. Banks press release, Hansoh Pharma release, St. Luke's Health Plan, Boston Globe, Medical Xpress, Becker's) supported 8 added items."
         ],
-        "sources_failed": [],
-        "run_notes": "Compared candidates with the October 20 edition and omitted repeats including the OpenEvidence–Doximity settlement and 340B pilot litigation. Today's edition emphasizes new October 20–21 developments; the CMS proposed rule and ANA position statement are recent policy/workforce signals from October 16. Gmail labels were not queried because they are supplementary and the RSS and web sources supplied adequate coverage."
+        "sources_failed": [
+          "Gmail label searches for Healthcare Brew, Healthcare Dive, Hospitalogy, and Modern Healthcare (and sender searches) returned no messages for the run window.",
+          "Fierce Healthcare RSS returned a Cloudflare bot-check page during the curation pass; no Fierce items were added in curation.",
+          "Healthcare Dive RSS re-fetch surfaced only the already-covered OpenEvidence-Doximity settlement for October 20-21."
+        ],
+        "run_notes": "Compared candidates with the October 20 edition and omitted repeats including the OpenEvidence–Doximity settlement and 340B pilot litigation. Today's edition emphasizes new October 20–21 developments; the CMS proposed rule and ANA position statement are recent policy/workforce signals from October 16. Gmail labels were not queried because they are supplementary and the RSS and web sources supplied adequate coverage. Curation pass retained 11 of 12 automated items and added 8 new ones (19 total). Dropped the CMS Medicare Advantage directory/Part D PBM proposal as a repeat of the October 19 edition. The Roche-Hansoh deal and Dana-Farber/BILH groundbreaking were announced October 19 but reported by STAT on October 20; the OpenEvidence JAMA paper was published mid-October and covered by STAT October 20. The OpenEvidence study has OpenEvidence-affiliated authors and does not assess accuracy or outcomes. The Nigeria Ebola case is distinct from the Kenya case covered October 15."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "CMS is seeking stronger Medicare Advantage directory accountability and new Part D PBM transparency, while DOJ's new fast-track rewards add another lever to its healthcare-fraud enforcement posture.",
+          "synthesis": "CMS finalized 2027 Medicare Advantage rates and published new No Surprises Act QPA audits, while DOJ added early whistleblower rewards and senators pressed FDA to close the research-use-only peptide loophole.",
           "items": [
             {
               "item_id": "2026-10-21-cms-2027-ma-part-d-rates",
@@ -64,33 +71,6 @@
               ]
             },
             {
-              "item_id": "2026-10-21-cms-ma-directories-pbm-transparency",
-              "canonical_topic": "cms-ma-directories-pbm-transparency",
-              "duplicate_group": "cms-ma-directories-pbm-transparency",
-              "priority_score": 9,
-              "primary_source": "Centers for Medicare & Medicaid Services",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "CMS: Proposed Medicare Advantage and Part D reforms",
-                  "url": "https://www.cms.gov/newsroom/press-releases/cms-proposes-reforms-strengthen-transparency-affordability-medicare-advantage-part-d",
-                  "source_type": "web",
-                  "published_at": "2026-10-16T00:00:00Z"
-                }
-              ],
-              "title": "CMS proposes quarterly MA directory checks and tighter Part D PBM transparency",
-              "summary": "CMS proposed CY 2028 rules that would require Medicare Advantage plans to verify directory data at least every 90 days, report accuracy scores, and limit enrollees' cost sharing when inaccurate listings lead them to out-of-network care. The proposal also calls for annual PBM compensation and cost reporting, with Part D PBM payments tied to fair-market-value service fees.",
-              "strategic_implication": "MA carriers should strengthen provider-data governance, while Part D sponsors and PBMs should assess compensation structures and reporting systems before the proposed requirements take effect.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "part-d",
-                "pbm",
-                "provider-directories",
-                "cms"
-              ]
-            },
-            {
               "item_id": "2026-10-21-doj-healthcare-fraud-whistleblower-rewards",
               "canonical_topic": "doj-healthcare-fraud-whistleblower-rewards",
               "duplicate_group": "doj-healthcare-fraud-whistleblower-rewards",
@@ -122,39 +102,80 @@
                 "hospice",
                 "home-health"
               ]
+            },
+            {
+              "item_id": "2026-10-21-cms-nsa-qpa-audits-caresource-sers",
+              "canonical_topic": "cms-nsa-qpa-audits-caresource-sers",
+              "duplicate_group": "cms-nsa-qpa-audits-caresource-sers",
+              "priority_score": 7,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS: QPA audit final report, School Employees Retirement System (OH)",
+                  "url": "https://www.cms.gov/files/document/qpa-final-report-school-employees-retirement-system-oh.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                },
+                {
+                  "source": "AHA News: CMS releases 2 qualifying payment amount audits",
+                  "url": "https://www.aha.org/news/headline/2026-10-20-cms-releases-2-qualifying-payment-amount-audits",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                }
+              ],
+              "title": "CMS publishes No Surprises Act QPA audits of CareSource Indiana and an Ohio school-employee plan",
+              "summary": "CMS released two qualifying payment amount audits covering January 2022 through May 2023. The CareSource Indiana review covered almost 25,000 mostly emergency and non-emergency claims; the Ohio School Employees Retirement System review covered six air-ambulance claims. Both plans must complete corrective actions; the Ohio report cites QPA calculations that excluded contracted rates and missing required QPA disclosures.",
+              "strategic_implication": "QPA audits are one of the few federal checks on the benchmark that anchors surprise-billing payments and arbitration. Providers in disputes should watch audit findings for leverage, and plans should test QPA methods and disclosure workflows before CMS selects them.",
+              "confidence": "high",
+              "tags": [
+                "no-surprises-act",
+                "qpa",
+                "payer-compliance",
+                "air-ambulance",
+                "cms"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-senators-fda-research-use-only-retatrutide",
+              "canonical_topic": "senators-fda-research-use-only-retatrutide",
+              "duplicate_group": "senators-fda-research-use-only-retatrutide",
+              "priority_score": 7,
+              "primary_source": "Office of Sen. Jim Banks",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Sen. Jim Banks: Banks urges FDA to crack down on illicit research-use-only drugs",
+                  "url": "https://www.banks.senate.gov/news/press-releases/banks-urges-fda-to-crack-down-on-illicit-research-use-only-drugs/",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                },
+                {
+                  "source": "STAT: A bipartisan group of lawmakers urges the FDA to close a peptide loophole",
+                  "url": "https://www.statnews.com/2026/10/20/health-policy-news-bipartisan-group-of-lawmaker-urges-fda-to-close-peptide-loophole/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-20T16:47:00Z"
+                }
+              ],
+              "title": "Senators press FDA and CBP to shut the research-use-only loophole used to sell knockoff retatrutide",
+              "summary": "A group of senators led by Sen. Jim Banks asked the FDA to work more closely with U.S. Customs and Border Protection and law enforcement against vendors that label unapproved drugs and APIs as research-use-only while marketing them to consumers. The letter cites a 265% rise in poisonings tied to illicit retatrutide, Eli Lilly's investigational obesity drug, in the first four months of 2026 compared with the last four months of 2025, and asks for an FDA briefing.",
+              "strategic_implication": "Gray-market peptides are becoming a patient-safety and enforcement issue, not only a branding problem for manufacturers. Clinicians and health systems should expect more patients who self-administer unapproved products, and compounders and telehealth operators face closer scrutiny of sourcing.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "peptides",
+                "retatrutide",
+                "drug-safety",
+                "enforcement",
+                "obesity"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "FDA clarified the labeling framework for prescription-drug companion software, while Sentara is extending AI from physician documentation into case-management and care-transition workflows.",
+          "synthesis": "A large JAMA usage study shows clinical AI is already routine at the point of care, as FDA finalizes labeling expectations for drug-companion software and Sentara extends AI into case management.",
           "items": [
-            {
-              "item_id": "2026-10-21-sentara-ai-case-management",
-              "canonical_topic": "sentara-ai-case-management",
-              "duplicate_group": "sentara-ai-case-management",
-              "priority_score": 7,
-              "primary_source": "Business Wire / Sentara Health and Regard",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Business Wire: Sentara Health extends AI clinical reasoning to case managers",
-                  "url": "https://www.businesswire.com/newsroom?industry=1085810",
-                  "source_type": "web",
-                  "published_at": "2026-10-21T00:00:00Z"
-                }
-              ],
-              "title": "Sentara extends Regard's AI clinical reasoning to case managers",
-              "summary": "Sentara Health announced deployment of an AI case-management solution co-developed with Regard, extending an existing physician documentation and diagnosis partnership into care-management workflows. The health system said it evaluated more than 100 AI technologies before selecting the tool to support acute-care case managers and care transitions.",
-              "strategic_implication": "The deployment illustrates how health systems are moving AI beyond note generation into coordination and discharge operations; realized value will depend on workflow integration, clinician oversight, and measurable effects on transitions.",
-              "confidence": "medium",
-              "tags": [
-                "clinical-ai",
-                "case-management",
-                "care-transitions",
-                "hospital-operations"
-              ]
-            },
             {
               "item_id": "2026-10-21-fda-prescription-drug-companion-software-guidance",
               "canonical_topic": "fda-prescription-drug-companion-software-guidance",
@@ -187,12 +208,71 @@
                 "software",
                 "labeling"
               ]
+            },
+            {
+              "item_id": "2026-10-21-openevidence-jama-clinician-use-study",
+              "canonical_topic": "openevidence-jama-clinician-use-study",
+              "duplicate_group": "openevidence-jama-clinician-use-study",
+              "priority_score": 8,
+              "primary_source": "JAMA (via Medical Xpress / Mass General Brigham)",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Medical Xpress: Study characterizes clinicians' use of the AI platform OpenEvidence",
+                  "url": "https://medicalxpress.com/news/2026-10-characterizes-clinicians-ai-platform-openevidence.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T00:00:00Z"
+                },
+                {
+                  "source": "STAT Health Tech: OpenEvidence's JAMA paper leaves open questions",
+                  "url": "https://www.statnews.com/2026/10/20/openevidence-jama-paper-leaves-open-questions-health-tech/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-20T14:40:00Z"
+                }
+              ],
+              "title": "JAMA study maps 271 million OpenEvidence queries from about 952,000 U.S. clinicians",
+              "summary": "A Harvard Medical School and Mass General Brigham analysis in JAMA found monthly active OpenEvidence users rose from 355 in January 2024 to 703,265 in June 2026. Most queries concerned treatment and management rather than diagnosis, use was heaviest among NPs, PAs, early-career physicians, and trainees, and clinicians often asked about topics outside their specialty. Three authors were affiliated with OpenEvidence, which supplied the de-identified data, and the study does not assess accuracy or patient outcomes.",
+              "strategic_implication": "Clinical AI is already a routine point-of-care reference, ahead of formal governance in many organizations. Health systems should set policies for approved tools, oversight of trainee use, and monitoring of answer quality instead of waiting for outcomes evidence.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "clinical-decision-support",
+                "openevidence",
+                "workforce",
+                "ai-governance"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-sentara-ai-case-management",
+              "canonical_topic": "sentara-ai-case-management",
+              "duplicate_group": "sentara-ai-case-management",
+              "priority_score": 7,
+              "primary_source": "Business Wire / Sentara Health and Regard",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Business Wire: Sentara Health extends AI clinical reasoning to case managers",
+                  "url": "https://www.businesswire.com/newsroom?industry=1085810",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "Sentara extends Regard's AI clinical reasoning to case managers",
+              "summary": "Sentara Health announced deployment of an AI case-management solution co-developed with Regard, extending an existing physician documentation and diagnosis partnership into care-management workflows. The health system said it evaluated more than 100 AI technologies before selecting the tool to support acute-care case managers and care transitions.",
+              "strategic_implication": "The deployment illustrates how health systems are moving AI beyond note generation into coordination and discharge operations; realized value will depend on workflow integration, clinician oversight, and measurable effects on transitions.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "case-management",
+                "care-transitions",
+                "hospital-operations"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "Elevance's improved quarterly medical-cost ratio, Oscar's 2027 product segmentation, and Cost Plus Drugs' custom-medicine experiment point to shifting strategies across payer and pharmaceutical business models.",
+          "synthesis": "Payer and pharma signals point to repositioning: Elevance raised guidance, Oscar and St. Luke's moved on 2027 products, Roche deepened its China ADC sourcing, and Cost Plus Drugs tested custom rare-disease medicines.",
           "items": [
             {
               "item_id": "2026-10-21-elevance-q3-results-guidance",
@@ -272,12 +352,78 @@
                 "product-design",
                 "open-enrollment"
               ]
+            },
+            {
+              "item_id": "2026-10-21-roche-hansoh-adc-portfolio-deal",
+              "canonical_topic": "roche-hansoh-adc-portfolio-deal",
+              "duplicate_group": "roche-hansoh-adc-portfolio-deal",
+              "priority_score": 7,
+              "primary_source": "Hansoh Pharmaceutical Group",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Hansoh Pharma: Strategic collaboration and license agreement with Roche",
+                  "url": "https://www.hspharm.com/news/news-detail-513518.htm",
+                  "source_type": "web",
+                  "published_at": "2026-10-19T00:00:00Z"
+                },
+                {
+                  "source": "STAT: Roche continues to look to China for new drugs",
+                  "url": "https://www.statnews.com/2026/10/20/biotech-news-roches-15b-hunt-for-new-drugs-in-china/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-20T16:42:00Z"
+                }
+              ],
+              "title": "Roche commits $400M upfront in a second Hansoh ADC pact worth potentially more than $15B",
+              "summary": "Roche signed a second antibody-drug conjugate collaboration with China's Hansoh Pharma covering two preclinical Hansoh programs and multiple programs against Roche-selected targets. Hansoh receives $400 million upfront, $110 million on the first anniversary, and is eligible for more than $15 billion in milestones plus royalties; it leads development through Phase Ia while Roche takes ex-Greater China rights. The deal is subject to Hart-Scott-Rodino review.",
+              "strategic_implication": "Big Pharma keeps sourcing early oncology assets from China even as U.S. and Chinese biotech-security policies tighten. Biotech investors and policymakers should weigh how future licensing restrictions or export controls could affect these pipelines.",
+              "confidence": "high",
+              "tags": [
+                "biopharma",
+                "licensing",
+                "adc",
+                "oncology",
+                "china",
+                "dealmaking"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-st-lukes-idaho-provider-sponsored-ma-plan",
+              "canonical_topic": "st-lukes-idaho-provider-sponsored-ma-plan",
+              "duplicate_group": "st-lukes-idaho-provider-sponsored-ma-plan",
+              "priority_score": 6,
+              "primary_source": "St. Luke's Health Plan",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "St. Luke's Health Plan: Introducing Medicare Advantage",
+                  "url": "https://www.stlukeshealthplan.org/articles/introducing-medicare-advantage",
+                  "source_type": "web",
+                  "published_at": "2026-10-08T00:00:00Z"
+                },
+                {
+                  "source": "Becker's: Why an Idaho health system is launching a Medicare Advantage plan",
+                  "url": "https://www.beckershospitalreview.com/finance/nows-the-right-time-why-an-idaho-health-system-is-launching-a-medicare-advantage-plan/",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                }
+              ],
+              "title": "St. Luke's Health System enters Medicare Advantage for 2027 as other payers exit",
+              "summary": "Boise-based St. Luke's Health System will offer its first Medicare Advantage plan, St. Luke's Advantage Rx (HMO), in seven Idaho counties for 2027. The plans include $0 primary care, outpatient mental health, and preventive visits; premiums range from $77 to $142 a month depending on county. Becker's describes it as one of a handful of new entrants in a market where many payers are exiting for 2027.",
+              "strategic_implication": "Provider-sponsored MA plans are a bet that integrated systems can manage risk better than retreating national payers. Other systems weighing entry should test capital reserves, risk-adjustment capability, and network breadth against the 2027 rate environment.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "provider-sponsored-plans",
+                "payer-strategy",
+                "idaho"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "A $230 million New Jersey health-system agreement pairs local governance with an Epic rollout, while Massachusetts' action against RegalCare illustrates mounting oversight risk in nursing-home operations.",
+          "synthesis": "Capital and consolidation moves (Dana-Farber/BILH, Hackensack/Hunterdon) contrast with operational strain from worsening chemotherapy shortages and a state crackdown on a nursing-home chain.",
           "items": [
             {
               "item_id": "2026-10-21-hackensack-hunterdon-merger-agreement",
@@ -330,39 +476,72 @@
                 "state-regulation",
                 "long-term-care"
               ]
+            },
+            {
+              "item_id": "2026-10-21-dana-farber-bilh-cancer-hospital-groundbreaking",
+              "canonical_topic": "dana-farber-bilh-cancer-hospital-groundbreaking",
+              "duplicate_group": "dana-farber-bilh-cancer-hospital-groundbreaking",
+              "priority_score": 7,
+              "primary_source": "The Boston Globe / STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "The Boston Globe: Dana-Farber, Beth Israel to begin construction of new $1.68 billion cancer hospital",
+                  "url": "https://www.bostonglobe.com/2026/10/19/business/dana-farber-cancer-hospital/",
+                  "source_type": "web",
+                  "published_at": "2026-10-19T00:00:00Z"
+                },
+                {
+                  "source": "STAT: Dana-Farber, Beth Israel to begin construction of new $1.68 billion cancer hospital",
+                  "url": "https://www.statnews.com/2026/10/20/dana-farber-beth-israel-new-cancer-hospital-construction/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-20T12:37:00Z"
+                }
+              ],
+              "title": "Dana-Farber and Beth Israel Lahey break ground on a $1.68B, 300-bed cancer hospital",
+              "summary": "Dana-Farber Cancer Institute and Beth Israel Lahey Health started construction on a 300-bed, 450,000-square-foot inpatient cancer hospital in Boston, scheduled to open in 2031. Dana-Farber plans to hire about 2,400 workers over four years, including 600 nurses. The project advances Dana-Farber's split from Mass General Brigham, which is investing $400 million in a competing cancer institute.",
+              "strategic_implication": "The project shows academic oncology realigning around dedicated inpatient capacity and new partners. Systems in competitive markets should expect cancer-service realignment to drive workforce competition, referral shifts, and capital commitments years before beds open.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "capital-projects",
+                "academic-medical-centers",
+                "competition",
+                "nursing-workforce"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-ashp-q3-chemo-shortages",
+              "canonical_topic": "ashp-q3-chemo-shortages",
+              "duplicate_group": "ashp-q3-chemo-shortages",
+              "priority_score": 7,
+              "primary_source": "American Society of Health-System Pharmacists (via Becker's)",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's: Cancer drug shortages worsen, 7 notes from ASHP's Q3 report",
+                  "url": "https://www.beckershospitalreview.com/pharmacy/cancer-drug-shortages-worsen-7-notes-from-ashps-q3-report/",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                }
+              ],
+              "title": "ASHP: Chemotherapy shortages worsen as active U.S. drug shortages hold at 225",
+              "summary": "ASHP's third-quarter report found chemotherapy shortages rose even as total active shortages held steady at 225. Flooding at a Pfizer plant in India that makes generic chemotherapy agents is a key driver, with disruption expected into 2028; cancer centers cite ifosfamide and carboplatin as their most common shortages. The 87 new shortages through September nearly match the 89 reported for all of 2025.",
+              "strategic_implication": "A shortage expected to last into 2028 calls for durable allocation protocols, therapeutic-substitution playbooks, and supplier diversification rather than one-time workarounds, especially for pediatric oncology, where alternatives are limited.",
+              "confidence": "high",
+              "tags": [
+                "drug-shortages",
+                "oncology",
+                "pharmacy",
+                "supply-chain"
+              ]
             }
           ]
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "ANA's new position statement frames workplace civility as a shared safety and retention issue, while measles reporting highlights how transparent communication may help rebuild trust in vaccination.",
+          "synthesis": "Outbreak readiness is in focus with an imported Ebola case in Nigeria and U.S. measles cases above 4,400, alongside ANA guidance on incivility in nursing.",
           "items": [
-            {
-              "item_id": "2026-10-21-ana-nursing-incivility-guidance",
-              "canonical_topic": "ana-nursing-incivility-guidance",
-              "duplicate_group": "ana-nursing-incivility-guidance",
-              "priority_score": 7,
-              "primary_source": "American Nurses Association",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "ANA: Position statement on incivility and bullying in nursing",
-                  "url": "https://www.nursingworld.org/news/news-releases/2026-news-releases/american-nurses-association-releases-new-position-statement-on-incivility-and-bullying-in-nursing/",
-                  "source_type": "web",
-                  "published_at": "2026-10-16T00:00:00Z"
-                }
-              ],
-              "title": "ANA calls for shared accountability and restorative responses to bullying in nursing",
-              "summary": "The American Nurses Association issued a position statement describing incivility and bullying as threats to psychological safety, teamwork, patient outcomes, and workforce stability. It recommends shared action by nurses, leaders, and organizations, and says restorative, tiered responses can address context and severity more effectively than zero-tolerance policies alone.",
-              "strategic_implication": "Health systems should review conduct standards, confidential reporting, manager training, and proportionate response processes as part of workforce-retention and patient-safety plans.",
-              "confidence": "high",
-              "tags": [
-                "nursing-workforce",
-                "workplace-culture",
-                "patient-safety",
-                "retention"
-              ]
-            },
             {
               "item_id": "2026-10-21-measles-vaccine-communication-strategy",
               "canonical_topic": "measles-vaccine-communication-strategy",
@@ -394,6 +573,65 @@
                 "public-health",
                 "risk-communication",
                 "trust"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-nigeria-imported-ebola-bundibugyo-case",
+              "canonical_topic": "nigeria-imported-ebola-bundibugyo-case",
+              "duplicate_group": "nigeria-imported-ebola-bundibugyo-case",
+              "priority_score": 8,
+              "primary_source": "World Health Organization Regional Office for Africa",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "WHO AFRO: Nigeria confirms imported case of Ebola Bundibugyo virus disease",
+                  "url": "https://www.afro.who.int/countries/nigeria/news/nigeria-confirms-imported-case-ebola-bundibugyo-virus-disease",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                },
+                {
+                  "source": "STAT: Nigeria identifies travel-related Ebola case",
+                  "url": "https://www.statnews.com/2026/10/21/health-news-nigeria-travel-related-ebola-case-outbreak/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T11:54:00Z"
+                }
+              ],
+              "title": "Nigeria confirms an imported Bundibugyo Ebola case, the fifth country tied to the Congo outbreak",
+              "summary": "Nigeria confirmed an imported case of Ebola Bundibugyo virus disease in Abuja on October 20, making it the fifth country to detect the virus since the DRC outbreak was declared on May 15. The patient, who traveled through Uganda after a trip to eastern DRC, became ill on October 7 and was treated at a private facility from October 11 before confirmation. Authorities are monitoring 44 contacts, most of them health workers.",
+              "strategic_implication": "The nine-day gap between care-seeking and confirmation is the operational lesson: travel-history screening and early isolation in outpatient and emergency settings remain the main protection for staff. U.S. facilities should confirm that identify-isolate-inform protocols reflect the current list of affected countries.",
+              "confidence": "high",
+              "tags": [
+                "ebola",
+                "outbreak",
+                "infection-prevention",
+                "travel-screening",
+                "health-security"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-ana-nursing-incivility-guidance",
+              "canonical_topic": "ana-nursing-incivility-guidance",
+              "duplicate_group": "ana-nursing-incivility-guidance",
+              "priority_score": 7,
+              "primary_source": "American Nurses Association",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "ANA: Position statement on incivility and bullying in nursing",
+                  "url": "https://www.nursingworld.org/news/news-releases/2026-news-releases/american-nurses-association-releases-new-position-statement-on-incivility-and-bullying-in-nursing/",
+                  "source_type": "web",
+                  "published_at": "2026-10-16T00:00:00Z"
+                }
+              ],
+              "title": "ANA calls for shared accountability and restorative responses to bullying in nursing",
+              "summary": "The American Nurses Association issued a position statement describing incivility and bullying as threats to psychological safety, teamwork, patient outcomes, and workforce stability. It recommends shared action by nurses, leaders, and organizations, and says restorative, tiered responses can address context and severity more effectively than zero-tolerance policies alone.",
+              "strategic_implication": "Health systems should review conduct standards, confidential reporting, manager training, and proportionate response processes as part of workforce-retention and patient-safety plans.",
+              "confidence": "high",
+              "tags": [
+                "nursing-workforce",
+                "workplace-culture",
+                "patient-safety",
+                "retention"
               ]
             }
           ]
@@ -15408,379 +15646,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-09",
-      "generated_at": "2026-09-09T11:03:26Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks regulatory execution, AI-enabled care infrastructure, and a biopharma pipeline full of differentiated but still unproven bets. The curation draws on fresh STAT, Healthcare Dive, and Fierce Healthcare RSS reporting, with the three required feeds read directly and yesterday's topics screened out.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "CMS/HHS/FDA web",
-          "Targeted web search",
-          "Supplementary Gmail newsletters"
-        ],
-        "sources_successful": [
-          "STAT RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS"
-        ],
-        "sources_failed": [
-          "Direct search_web interface unavailable in this scheduled run",
-          "Supplementary Gmail newsletters not used"
-        ],
-        "run_notes": "The three required RSS feeds were read with curl. Fresh items were selected from Sep. 8-9 reporting within the roughly 24-hour window; yesterday's edition topics were screened out and no duplicate group from the Sep. 8 edition was republished. Targeted web context was not available because the direct search_web interface was not exposed in this scheduled run."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Regulatory capacity and enforcement remain operating variables: FDA leadership continuity, manufacturing quality, and anti-fraud pressure will shape how quickly organizations can launch, supply, and reimburse care. The common thread is a shift from policy announcements to execution risk.",
-          "items": [
-            {
-              "item_id": "2026-09-09-fda-cder-cber-leadership-stability",
-              "canonical_topic": "fda-cder-cber-leadership-stability",
-              "duplicate_group": "fda-cder-cber-leadership-stability",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/08/fda-names-leaders-cder-cber-michael-davis-karim-mikhail/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T21:15:40Z"
-                }
-              ],
-              "title": "FDA names permanent leaders for drug and vaccine centers after a period of upheaval",
-              "summary": "The FDA named acting leaders Michael Davis and Karim Mikhail to permanent roles at the Center for Drug Evaluation and Research and the Center for Biologics Evaluation and Research, respectively. STAT reports that the moves bring stability after a series of senior departures. The appointments matter across drug and vaccine review, where leadership continuity affects prioritization and execution.",
-              "strategic_implication": "Manufacturers and investors should treat the appointments as an early signal of operating continuity, while still watching for broader agency staffing and policy changes. More predictable center leadership can reduce launch uncertainty, but it does not remove review or post-market compliance risk.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "drug-regulation",
-                "vaccine-policy",
-                "agency-leadership"
-              ]
-            },
-            {
-              "item_id": "2026-09-09-cms-dme-anti-fraud-pressure",
-              "canonical_topic": "cms-dme-anti-fraud-pressure",
-              "duplicate_group": "cms-dme-anti-fraud-pressure",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/payers/cms-puts-more-pressure-dme-suppliers-part-anti-fraud-push",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T20:11:00Z"
-                }
-              ],
-              "title": "CMS increases pressure on DME suppliers as the administration expands its anti-fraud push",
-              "summary": "Fierce Healthcare reports that the administration is applying additional pressure to durable medical equipment suppliers as part of a broader effort to root out fraud. The move adds scrutiny to a segment that depends on accurate eligibility, documentation, billing, and delivery controls. Supplier oversight is therefore becoming a more visible payment-integrity issue.",
-              "strategic_implication": "DME suppliers, Medicare Advantage plans, and providers should tighten documentation and vendor-monitoring controls before enforcement activity scales. Payers and operators may also see more prepayment review and friction around high-risk equipment categories.",
-              "confidence": "medium",
-              "tags": [
-                "cms",
-                "medicare",
-                "dme",
-                "fraud-prevention"
-              ]
-            },
-            {
-              "item_id": "2026-09-09-fda-api-supplier-quality-warning",
-              "canonical_topic": "fda-api-supplier-quality-warning",
-              "duplicate_group": "fda-api-supplier-quality-warning",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/pharmalot/2026/09/08/fda-warns-api-supplier-residue-corroded-production-line-sandals/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T17:38:59Z"
-                }
-              ],
-              "title": "FDA warning highlights basic manufacturing-control failures at an API supplier",
-              "summary": "The FDA warned an active pharmaceutical ingredient supplier about residue on facility walls, a corroded production line, and employees wearing open-toed sandals. STAT reports that the agency included photographs in its warning. The findings point to visible, foundational controls rather than an edge-case technical deviation.",
-              "strategic_implication": "Drug manufacturers should recheck supplier qualification, facility-audit cadence, and corrective-action follow-through across the API network. Even seemingly basic observations can become a supply-continuity or regulatory-escalation risk when they signal weak quality culture.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "api-supply",
-                "manufacturing-quality",
-                "drug-shortages"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Capital is still flowing to platforms that promise to extend digital health beyond a single workflow, but scale claims are increasingly tied to specialty access, data infrastructure, and an explicit AI narrative. The strategic question is whether financing and partnerships translate into measurable clinical adoption.",
-          "items": [
-            {
-              "item_id": "2026-09-09-oura-ipo-ai-health-platform",
-              "canonical_topic": "oura-ipo-ai-health-platform",
-              "duplicate_group": "oura-ipo-ai-health-platform",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/08/health-tech-newsletter-oura-goes-public-reports-profitability/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T14:18:41Z"
-                }
-              ],
-              "title": "Oura files to go public as it pitches a profitable, AI-enabled preventive-health platform",
-              "summary": "Oura filed to go public and reported profitability and roughly $1.2 billion in earnings in the health-tech update covered by STAT. The smart-ring company is positioning its next phase around an AI-powered health platform rather than hardware alone. The filing places consumer-generated health data and preventive-health software under a more public-market lens.",
-              "strategic_implication": "Digital-health buyers should distinguish durable engagement and clinical utility from a broad AI narrative when assessing consumer platforms. If public investors reward the model, it could raise the bar for evidence, retention, and data-governance discipline across connected-health businesses.",
-              "confidence": "medium",
-              "tags": [
-                "digital-health",
-                "wearables",
-                "artificial-intelligence",
-                "ipo"
-              ]
-            },
-            {
-              "item_id": "2026-09-09-forus-ai-network-series-c",
-              "canonical_topic": "forus-ai-network-series-c",
-              "duplicate_group": "forus-ai-network-series-c",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/health-tech/forus-secures-150m-series-c-3b-valuation",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T16:08:00Z"
-                }
-              ],
-              "title": "Forus raises $150 million at a reported $3 billion valuation to expand its AI health network",
-              "summary": "Fierce Healthcare reports that Forus secured a $150 million Series C at a reported $3 billion valuation. The company plans to expand its artificial-intelligence-powered network into more medical specialties and care settings. The financing signals continued investor appetite for infrastructure that can connect digital capabilities to provider workflows.",
-              "strategic_implication": "Health systems evaluating partnerships should test whether network expansion improves access and outcomes, not only platform breadth. The valuation also raises execution expectations around specialty coverage, integration, and measurable utilization.",
-              "confidence": "medium",
-              "tags": [
-                "health-tech",
-                "artificial-intelligence",
-                "venture-capital",
-                "care-access"
-              ]
-            },
-            {
-              "item_id": "2026-09-09-parakeet-qualderm-agentic-ai",
-              "canonical_topic": "parakeet-qualderm-agentic-ai",
-              "duplicate_group": "parakeet-qualderm-agentic-ai",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/parakeet-health-lands-major-ai-partnership-national-dermatology-group",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T12:33:00Z"
-                }
-              ],
-              "title": "Parakeet Health partners with Qualderm to apply agentic AI to specialty-care access",
-              "summary": "Parakeet Health formed a partnership with Qualderm, one of the largest dermatology organizations in the country, to apply agentic AI to specialty-care access. Fierce Healthcare describes the deal as an effort to address a growing access problem in dermatology. The partnership provides a live test of whether AI agents can support specialty workflows at organizational scale.",
-              "strategic_implication": "Specialty groups should define clinical boundaries, escalation rules, and access metrics before expanding agentic tools beyond administrative support. Early enterprise partnerships will be judged on whether they shorten time to care without creating new triage or liability gaps.",
-              "confidence": "medium",
-              "tags": [
-                "agentic-ai",
-                "dermatology",
-                "specialty-care",
-                "care-access"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "The pipeline and payer market are sending mixed signals: differentiated clinical data can revive an asset class, while strategic affiliations reflect the continuing push toward scale and operating leverage. Across both areas, the value is conditional on follow-through beyond the headline event.",
-          "items": [
-            {
-              "item_id": "2026-09-09-astrazeneca-tozorakimab-copd",
-              "canonical_topic": "astrazeneca-tozorakimab-copd",
-              "duplicate_group": "astrazeneca-tozorakimab-copd",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/08/astrazeneca-tozorakimab-copd-exacerbations-titania-oberon/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T11:45:00Z"
-                }
-              ],
-              "title": "AstraZeneca’s tozorakimab posts strong late-stage COPD results and targets a crowded market",
-              "summary": "AstraZeneca reported positive late-stage results for experimental COPD treatment tozorakimab in the TILIA and OBERON studies. STAT reports that the drug could compete with existing treatments and potentially occupy a differentiated segment. The results still require regulatory review and a clearer view of comparative efficacy and access.",
-              "strategic_implication": "Pulmonary providers and payers should watch for how the data translate into exacerbation reduction, guideline positioning, and total-cost-of-care claims. AstraZeneca gains a meaningful pipeline option, but commercial differentiation will depend on evidence beyond statistical success.",
-              "confidence": "medium",
-              "tags": [
-                "biopharma",
-                "copd",
-                "clinical-trials",
-                "respiratory-care"
-              ]
-            },
-            {
-              "item_id": "2026-09-09-caspian-therapeutics-cardiometabolic-spinout",
-              "canonical_topic": "caspian-therapeutics-cardiometabolic-spinout",
-              "duplicate_group": "caspian-therapeutics-cardiometabolic-spinout",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/09/kura-oncology-spins-off-diabetes-focused-caspian-therapeutics/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T11:00:00Z"
-                }
-              ],
-              "title": "Caspian Therapeutics launches with $50 million to test menin inhibitors in diabetes",
-              "summary": "Caspian Therapeutics launched with $50 million in financing to develop menin inhibitors for diabetes and other cardiometabolic diseases. The company spun out of Kura Oncology around an idea suggested by leukemia-drug data. The strategy reflects a broader effort to repurpose validated biology across disease areas, while the cardiometabolic thesis remains early-stage.",
-              "strategic_implication": "The spinout creates an additional option in a high-value disease market, but clinical translation and differentiation from established metabolic therapies will determine whether the platform earns strategic relevance. Partnerships and financing should be read as validation of the hypothesis, not proof of clinical benefit.",
-              "confidence": "medium",
-              "tags": [
-                "biopharma",
-                "diabetes",
-                "cardiometabolic",
-                "drug-development"
-              ]
-            },
-            {
-              "item_id": "2026-09-09-cambia-arkansas-blue-affiliation",
-              "canonical_topic": "cambia-arkansas-blue-affiliation",
-              "duplicate_group": "cambia-arkansas-blue-affiliation",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/cambia-arkansas-bcbs-affiliation-moves-ahead/829761/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T13:16:17Z"
-                }
-              ],
-              "title": "Cambia and Arkansas Blue Cross move toward an affiliation without an asset sale",
-              "summary": "Healthcare Dive reports that the Cambia Health Solutions and Arkansas Blue Cross Blue Shield affiliation is moving ahead and is expected to close in October. No assets are changing hands; Cambia is expected to assume control of the Arkansas plan's operations. The structure emphasizes operating scale and governance rather than a conventional acquisition.",
-              "strategic_implication": "Payer leaders should watch affiliation models as a way to gain scale while preserving local brand and market presence. The value case will depend on execution, regulatory approvals, and whether shared capabilities improve affordability and member experience.",
-              "confidence": "high",
-              "tags": [
-                "health-insurance",
-                "payer-strategy",
-                "affiliation",
-                "operating-scale"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Provider organizations are using coverage decisions and shared-services structures to manage access, cost, and complexity. These moves show that operational resilience increasingly depends on tighter alignment between payers, specialty partners, and independent systems.",
-          "items": [
-            {
-              "item_id": "2026-09-09-mgb-health-plan-dana-farber-ma",
-              "canonical_topic": "mgb-health-plan-dana-farber-ma",
-              "duplicate_group": "mgb-health-plan-dana-farber-ma",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/mass-general-brigham-health-plan-drops-ma-coverage-for-dana-farber-patients/829790/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T14:37:47Z"
-                }
-              ],
-              "title": "Mass General Brigham health plan drops Medicare Advantage coverage for Dana-Farber patients",
-              "summary": "Mass General Brigham's health plan is dropping Medicare Advantage coverage for Dana-Farber patients as the health system and cancer institute wind down a decades-old partnership, Healthcare Dive reports. The contract lapse creates a direct access and continuity issue for Medicare beneficiaries receiving specialty cancer care. It also illustrates how provider-system realignment can surface at the patient-benefit level.",
-              "strategic_implication": "Plans and health systems should treat partnership changes as transition-of-care events, with clear notices, continuity pathways, and specialty-network alternatives. Oncology patients are particularly sensitive to network disruption, making contract governance an operational and reputational priority.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "oncology",
-                "network-management",
-                "care-continuity"
-              ]
-            },
-            {
-              "item_id": "2026-09-09-kansas-health-systems-shared-services",
-              "canonical_topic": "kansas-health-systems-shared-services",
-              "duplicate_group": "kansas-health-systems-shared-services",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/providers/independent-kansas-health-systems-launch-shared-services-organization",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T19:44:00Z"
-                }
-              ],
-              "title": "Five independent Kansas health systems form shared-services organization to pursue scale",
-              "summary": "Five Kansas health systems that collectively serve more than half a million patients annually launched the Astra Health shared-services organization. Fierce Healthcare reports that the members aim to improve quality and trim costs while remaining independent. The model seeks operating leverage without immediate consolidation of ownership.",
-              "strategic_implication": "Shared-services structures offer community systems a middle path between stand-alone operations and full merger. Success will depend on measurable savings, interoperable governance, and the ability to preserve local decision-making while standardizing high-value functions.",
-              "confidence": "medium",
-              "tags": [
-                "health-systems",
-                "shared-services",
-                "rural-health",
-                "cost-management"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Hospitals are still building clinical capabilities around complex behavioral-health needs, with multidisciplinary models offering a practical path to better treatment and safer transitions. No major workforce headline surfaced beyond this clinical-practice signal in the current feed window.",
-          "items": [
-            {
-              "item_id": "2026-09-09-hospital-substance-use-disorder-consult-teams",
-              "canonical_topic": "hospital-substance-use-disorder-consult-teams",
-              "duplicate_group": "hospital-substance-use-disorder-consult-teams",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/hospitals/hospitals-need-better-sud-care-heres-how-few-are-leading-way",
-                  "source_type": "rss",
-                  "published_at": "2026-09-08T15:31:00Z"
-                }
-              ],
-              "title": "Multidisciplinary consult teams offer a hospital playbook for better substance-use care",
-              "summary": "Fierce Healthcare reports that new implementation guidelines from the American Society of Addiction Medicine emphasize better substance-use-disorder care in hospitals. Several leading programs use multidisciplinary addiction-medicine consult teams. The approach connects clinical expertise, workflow, and follow-up rather than leaving treatment to isolated referrals.",
-              "strategic_implication": "Hospitals should evaluate addiction-medicine consult teams as an operating model, not only a clinical service line. Staffing, escalation pathways, and post-discharge linkage will determine whether the model improves outcomes and reduces repeated acute-care use.",
-              "confidence": "medium",
-              "tags": [
-                "substance-use-disorder",
-                "addiction-medicine",
-                "hospital-operations",
-                "clinical-workforce"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-21T11:05:57Z"
+  "last_updated": "2026-10-21T12:40:08Z"
 }

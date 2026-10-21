@@ -3,6 +3,404 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-21",
+      "generated_at": "2026-10-21T11:05:57Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's mix centers on new federal guidance and fraud enforcement, payer economics, and provider-system change. STAT, CMS, FDA, DOJ, issuer, provider, and nursing-association materials informed the curation, with RSS candidates screened against the October 20 edition.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web searches across FDA, CMS, DOJ, payer/provider, digital health, and workforce news"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened; October 20–21 reporting on rare-disease medicines, nursing homes, and measles was reviewed.",
+          "Healthcare Dive RSS fetched and screened against the October 20 edition; no eligible unreported item was added from that feed.",
+          "Fierce Healthcare RSS fetched and screened; selected developments were cross-checked against issuer or official materials.",
+          "Targeted web searches corroborated the selected items with official FDA, CMS, DOJ, Elevance, Oscar, Hackensack Meridian, and ANA materials, a Sentara/Regard announcement, and STAT reporting."
+        ],
+        "sources_failed": [],
+        "run_notes": "Compared candidates with the October 20 edition and omitted repeats including the OpenEvidence–Doximity settlement and 340B pilot litigation. Today's edition emphasizes new October 20–21 developments; the CMS proposed rule and ANA position statement are recent policy/workforce signals from October 16. Gmail labels were not queried because they are supplementary and the RSS and web sources supplied adequate coverage."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS is seeking stronger Medicare Advantage directory accountability and new Part D PBM transparency, while DOJ's new fast-track rewards add another lever to its healthcare-fraud enforcement posture.",
+          "items": [
+            {
+              "item_id": "2026-10-21-cms-2027-ma-part-d-rates",
+              "canonical_topic": "cms-2027-ma-part-d-rates",
+              "duplicate_group": "cms-2027-ma-part-d-rates",
+              "priority_score": 9,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS: CY 2027 Medicare Advantage and Part D rate announcement",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-finalizes-2027-medicare-advantage-part-d-payment-policies-strengthen-accountability-long-term",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                },
+                {
+                  "source": "CMS: 2027 Medicare Advantage and Part D Rate Announcement fact sheet",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-rate-announcement",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                }
+              ],
+              "title": "CMS finalizes a 2.48% average 2027 Medicare Advantage payment increase",
+              "summary": "CMS finalized the 2027 Medicare Advantage and Part D rate announcement, projecting a 2.48% net average increase in MA payments, or more than $13 billion. CMS says that estimate rises to 4.98% when estimated risk-score trends from population changes and coding practices are included.",
+              "strategic_implication": "Plans should refresh 2027 revenue expectations against the final rate and risk-adjustment assumptions, while providers should monitor how payer responses affect network and benefit decisions.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "part-d",
+                "payment-rates",
+                "risk-adjustment",
+                "cms"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-cms-ma-directories-pbm-transparency",
+              "canonical_topic": "cms-ma-directories-pbm-transparency",
+              "duplicate_group": "cms-ma-directories-pbm-transparency",
+              "priority_score": 9,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS: Proposed Medicare Advantage and Part D reforms",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-proposes-reforms-strengthen-transparency-affordability-medicare-advantage-part-d",
+                  "source_type": "web",
+                  "published_at": "2026-10-16T00:00:00Z"
+                }
+              ],
+              "title": "CMS proposes quarterly MA directory checks and tighter Part D PBM transparency",
+              "summary": "CMS proposed CY 2028 rules that would require Medicare Advantage plans to verify directory data at least every 90 days, report accuracy scores, and limit enrollees' cost sharing when inaccurate listings lead them to out-of-network care. The proposal also calls for annual PBM compensation and cost reporting, with Part D PBM payments tied to fair-market-value service fees.",
+              "strategic_implication": "MA carriers should strengthen provider-data governance, while Part D sponsors and PBMs should assess compensation structures and reporting systems before the proposed requirements take effect.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "part-d",
+                "pbm",
+                "provider-directories",
+                "cms"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-doj-healthcare-fraud-whistleblower-rewards",
+              "canonical_topic": "doj-healthcare-fraud-whistleblower-rewards",
+              "duplicate_group": "doj-healthcare-fraud-whistleblower-rewards",
+              "priority_score": 8,
+              "primary_source": "U.S. Department of Justice",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "DOJ: Justice Department Announces Innovative Whistleblower Rewards Program to Combat Fraud",
+                  "url": "https://www.justice.gov/opa/pr/justice-department-announces-innovative-whistleblower-rewards-program-combat-fraud",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                },
+                {
+                  "source": "DOJ: National Fraud Enforcement Division Whistleblower Rewards Program",
+                  "url": "https://www.justice.gov/fraud/whistleblower",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                }
+              ],
+              "title": "DOJ offers $10,000–$30,000 early rewards for qualifying health-fraud tips",
+              "summary": "DOJ launched a whistleblower incentive program offering discretionary rewards of $10,000 to $30,000 for original, truthful tips that lead to criminal charges. Healthcare-related submissions are eligible, with hospice, home-health, day-care, and special-services fraud designated as priority areas.",
+              "strategic_implication": "The faster reward pathway raises the value of robust internal reporting and investigation processes, particularly for organizations operating in the program's priority segments.",
+              "confidence": "high",
+              "tags": [
+                "fraud-enforcement",
+                "whistleblower",
+                "compliance",
+                "hospice",
+                "home-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "FDA clarified the labeling framework for prescription-drug companion software, while Sentara is extending AI from physician documentation into case-management and care-transition workflows.",
+          "items": [
+            {
+              "item_id": "2026-10-21-sentara-ai-case-management",
+              "canonical_topic": "sentara-ai-case-management",
+              "duplicate_group": "sentara-ai-case-management",
+              "priority_score": 7,
+              "primary_source": "Business Wire / Sentara Health and Regard",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Business Wire: Sentara Health extends AI clinical reasoning to case managers",
+                  "url": "https://www.businesswire.com/newsroom?industry=1085810",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "Sentara extends Regard's AI clinical reasoning to case managers",
+              "summary": "Sentara Health announced deployment of an AI case-management solution co-developed with Regard, extending an existing physician documentation and diagnosis partnership into care-management workflows. The health system said it evaluated more than 100 AI technologies before selecting the tool to support acute-care case managers and care transitions.",
+              "strategic_implication": "The deployment illustrates how health systems are moving AI beyond note generation into coordination and discharge operations; realized value will depend on workflow integration, clinician oversight, and measurable effects on transitions.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "case-management",
+                "care-transitions",
+                "hospital-operations"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-fda-prescription-drug-companion-software-guidance",
+              "canonical_topic": "fda-prescription-drug-companion-software-guidance",
+              "duplicate_group": "fda-prescription-drug-companion-software-guidance",
+              "priority_score": 8,
+              "primary_source": "U.S. Food and Drug Administration",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA: Final guidance on prescription drug apps and software",
+                  "url": "https://www.fda.gov/news-events/press-announcements/fda-issues-final-guidance-prescription-drug-apps-and-software",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T13:03:14Z"
+                },
+                {
+                  "source": "FDA: Regulatory Considerations for Prescription Drug Use-Related Software",
+                  "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/regulatory-considerations-prescription-drug-use-related-software",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T13:03:14Z"
+                }
+              ],
+              "title": "FDA finalizes framework for prescription-drug companion apps and software labeling",
+              "summary": "FDA issued final guidance clarifying how it applies drug-labeling rules to software distributed by or for prescription-drug sponsors. It distinguishes device-connected software from standalone apps and explains when software should be described in prescribing information and when app content is generally promotional material.",
+              "strategic_implication": "Drug sponsors and digital-health partners should inventory companion-app functions, evidence claims, and labeling plans against the final framework as they develop or update software.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "digital-health",
+                "prescription-drugs",
+                "software",
+                "labeling"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Elevance's improved quarterly medical-cost ratio, Oscar's 2027 product segmentation, and Cost Plus Drugs' custom-medicine experiment point to shifting strategies across payer and pharmaceutical business models.",
+          "items": [
+            {
+              "item_id": "2026-10-21-elevance-q3-results-guidance",
+              "canonical_topic": "elevance-q3-results-guidance",
+              "duplicate_group": "elevance-q3-results-guidance",
+              "priority_score": 9,
+              "primary_source": "Elevance Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Elevance Health: Third quarter 2026 results",
+                  "url": "https://www.businesswire.com/news/home/20261020437030/en/",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T10:00:00Z"
+                }
+              ],
+              "title": "Elevance raises 2026 guidance as Q3 revenue reaches $50.4B",
+              "summary": "Elevance reported third-quarter operating revenue of $50.4 billion, up from $50.1 billion a year earlier, and raised its full-year 2026 earnings guidance. Its benefit expense ratio improved 70 basis points year over year to 90.6%, while membership was lower in Medicare Advantage, Medicaid, and employer-group risk products.",
+              "strategic_implication": "The results suggest stronger medical-cost performance is supporting the outlook even as membership contracts in several coverage lines, keeping enrollment mix and utilization central to payer planning.",
+              "confidence": "high",
+              "tags": [
+                "elevance",
+                "payer-earnings",
+                "medical-costs",
+                "medicare-advantage",
+                "medicaid"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-cost-plus-custom-rare-disease-medicines",
+              "canonical_topic": "cost-plus-custom-rare-disease-medicines",
+              "duplicate_group": "cost-plus-custom-rare-disease-medicines",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT: Mark Cuban wants to crack open the market for rare disease treatments",
+                  "url": "https://www.statnews.com/2026/10/21/mark-cuban-cost-plus-drugs-rare-disease-medicines/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T08:30:00Z"
+                }
+              ],
+              "title": "Cost Plus Drugs tests custom-made medicines for individual rare-disease patients",
+              "summary": "Cost Plus Drugs is testing a move beyond generics into custom-made rare-disease medicines, with early shipments of DNA-like therapies developed for individual patients. The company says its manufacturing capabilities could lower the cost of bespoke treatments, but this remains an early experiment rather than a scaled commercial model.",
+              "strategic_implication": "If the approach proves viable, it could create a new supply route for very small patient populations; manufacturing economics, clinical validation, regulatory requirements, and payment arrangements remain key hurdles.",
+              "confidence": "medium",
+              "tags": [
+                "rare-disease",
+                "custom-medicines",
+                "drug-manufacturing",
+                "gene-therapy"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-oscar-2027-marketplace-product-lineup",
+              "canonical_topic": "oscar-2027-marketplace-product-lineup",
+              "duplicate_group": "oscar-2027-marketplace-product-lineup",
+              "priority_score": 7,
+              "primary_source": "Oscar Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Oscar Health: 2027 open-enrollment product lineup",
+                  "url": "https://www.hioscar.com/blog/press-release-open-enrollment-2027-new-products",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                }
+              ],
+              "title": "Oscar unveils 2027 plans, including an early-retiree product and condition-focused benefits",
+              "summary": "Oscar announced its 2027 individual-market lineup ahead of open enrollment, with coverage across 21 states and new products including RetireEase for adults ages 55–64. The lineup also expands condition-focused benefits and is scheduled to become available for enrollment beginning November 1.",
+              "strategic_implication": "Product segmentation for near-retirees and people with specific health needs will add competitive pressure on plan design, network fit, and consumer-facing enrollment support.",
+              "confidence": "high",
+              "tags": [
+                "aca-marketplace",
+                "health-insurance",
+                "product-design",
+                "open-enrollment"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "A $230 million New Jersey health-system agreement pairs local governance with an Epic rollout, while Massachusetts' action against RegalCare illustrates mounting oversight risk in nursing-home operations.",
+          "items": [
+            {
+              "item_id": "2026-10-21-hackensack-hunterdon-merger-agreement",
+              "canonical_topic": "hackensack-hunterdon-merger-agreement",
+              "duplicate_group": "hackensack-hunterdon-merger-agreement",
+              "priority_score": 8,
+              "primary_source": "Hackensack Meridian Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Hackensack Meridian Health: Definitive agreement with Hunterdon Health",
+                  "url": "https://www.hackensackmeridianhealth.org/en/news/2026/10/20/hackensack-meridian-health-and-hunterdon-health-sign-definitive-agreement-to-merge",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                }
+              ],
+              "title": "Hackensack Meridian and Hunterdon sign merger agreement with $230M investment commitment",
+              "summary": "Hackensack Meridian Health and Hunterdon Health signed a definitive agreement for Hunterdon to join the network, including $200 million for facilities and access projects and $30 million for an Epic electronic health record rollout. Hunterdon would retain local board oversight for six years after closing, subject to state and federal reviews.",
+              "strategic_implication": "The package links regional scale with capital and technology investment, but integration planning, regulatory clearance, and delivery against local-governance commitments will shape the transaction's value.",
+              "confidence": "high",
+              "tags": [
+                "health-system-merger",
+                "hospital-operations",
+                "epic",
+                "capital-investment"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-massachusetts-regalcare-license-action",
+              "canonical_topic": "massachusetts-regalcare-license-action",
+              "duplicate_group": "massachusetts-regalcare-license-action",
+              "priority_score": 8,
+              "primary_source": "STAT / The Boston Globe",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT / The Boston Globe: Massachusetts regulators move to seize RegalCare licenses",
+                  "url": "https://www.statnews.com/2026/10/20/massachusetts-regulators-move-to-seize-regal-care-nursing-home-licenses-boston-globe-investigation/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-20T20:14:29Z"
+                }
+              ],
+              "title": "Massachusetts moves to revoke licenses across RegalCare's nursing-home chain",
+              "summary": "Massachusetts regulators moved to revoke licenses held by RegalCare, which operates 12 nursing homes in the state, after reporting by The Boston Globe documented cuts to nursing and other services at facilities acquired by the chain. The homes remain under the operator's control for now and are subject to enhanced state monitoring.",
+              "strategic_implication": "The case reinforces the importance of staffing, quality, and related-party oversight in nursing-home ownership and acquisition reviews.",
+              "confidence": "high",
+              "tags": [
+                "nursing-homes",
+                "quality-of-care",
+                "state-regulation",
+                "long-term-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "ANA's new position statement frames workplace civility as a shared safety and retention issue, while measles reporting highlights how transparent communication may help rebuild trust in vaccination.",
+          "items": [
+            {
+              "item_id": "2026-10-21-ana-nursing-incivility-guidance",
+              "canonical_topic": "ana-nursing-incivility-guidance",
+              "duplicate_group": "ana-nursing-incivility-guidance",
+              "priority_score": 7,
+              "primary_source": "American Nurses Association",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "ANA: Position statement on incivility and bullying in nursing",
+                  "url": "https://www.nursingworld.org/news/news-releases/2026-news-releases/american-nurses-association-releases-new-position-statement-on-incivility-and-bullying-in-nursing/",
+                  "source_type": "web",
+                  "published_at": "2026-10-16T00:00:00Z"
+                }
+              ],
+              "title": "ANA calls for shared accountability and restorative responses to bullying in nursing",
+              "summary": "The American Nurses Association issued a position statement describing incivility and bullying as threats to psychological safety, teamwork, patient outcomes, and workforce stability. It recommends shared action by nurses, leaders, and organizations, and says restorative, tiered responses can address context and severity more effectively than zero-tolerance policies alone.",
+              "strategic_implication": "Health systems should review conduct standards, confidential reporting, manager training, and proportionate response processes as part of workforce-retention and patient-safety plans.",
+              "confidence": "high",
+              "tags": [
+                "nursing-workforce",
+                "workplace-culture",
+                "patient-safety",
+                "retention"
+              ]
+            },
+            {
+              "item_id": "2026-10-21-measles-vaccine-communication-strategy",
+              "canonical_topic": "measles-vaccine-communication-strategy",
+              "duplicate_group": "measles-vaccine-communication-strategy",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT: A counterintuitive way to build trust in measles vaccines and public health",
+                  "url": "https://www.statnews.com/2026/10/21/measles-vaccination-uptake-experts-suggest-messaging-change/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T08:30:00Z"
+                },
+                {
+                  "source": "CDC: Measles data and research",
+                  "url": "https://www.cdc.gov/measles/data-research/index.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "Experts urge more candid measles messaging as U.S. cases top 4,400",
+              "summary": "STAT reported that the United States has recorded more than 4,400 measles cases in 2026, about twice the 2025 total. Some risk-communication experts argue that acknowledging most healthy children recover, while clearly explaining risks to vulnerable people and the protection vaccines provide, may make public health messaging more credible.",
+              "strategic_implication": "Public-health agencies and clinicians should pair accurate, balanced risk communication with accessible vaccination services to address both trust and practical barriers to uptake.",
+              "confidence": "medium",
+              "tags": [
+                "measles",
+                "vaccination",
+                "public-health",
+                "risk-communication",
+                "trust"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-20",
       "generated_at": "2026-10-20T12:35:39Z",
       "headline": "Today's Healthcare Insights",
@@ -15384,5 +15782,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-20T12:35:39Z"
+  "last_updated": "2026-10-21T11:05:57Z"
 }

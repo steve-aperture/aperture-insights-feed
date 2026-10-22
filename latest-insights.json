@@ -3,6 +3,341 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-22",
+      "generated_at": "2026-10-22T11:05:05Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks a new affordability signal in employer coverage, federal prior-authorization and Medicaid oversight actions, and strategic moves in provider networks and oncology services. Signals were selected from STAT, Healthcare Dive, and Fierce Healthcare RSS feeds and cross-checked with CMS, KFF, company, and state materials.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web searches across CMS/HHS, employer benefits, provider strategy, digital health/AI, rural workforce, and clinical practice"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened; selected the October 22 KFF employer-premium and telehealth GLP-1 reporting.",
+          "Healthcare Dive RSS fetched and screened for October 21-22 developments; used to identify the current health-system and payer reporting window.",
+          "Fierce Healthcare RSS fetched and screened; selected coverage on employer prior authorization, Doximity/UpToDate, Cencora/AON, and Baba.",
+          "Targeted web searches confirmed details against CMS, KFF, the New York Governor's Office, Risant Health, Wolters Kluwer, Cencora, and sector reporting."
+        ],
+        "sources_failed": [],
+        "run_notes": "Compared candidates with the October 21 edition and excluded previously covered topics including Elevance earnings, Hackensack-Hunterdon, the OpenEvidence-Doximity settlement, and mental-health directory access. Added 9 distinct items published or developed October 21-22. Gmail labels were not queried because they are supplementary and RSS plus targeted web research supplied adequate coverage. The New York social adult day care item describes active investigations and allegations, not findings against all providers."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS and DOL are pressing electronic prior-authorization expansion into self-funded employer plans as federal and New York officials intensify Medicaid program-integrity scrutiny. Both developments raise operational expectations for plans and providers.",
+          "items": [
+            {
+              "item_id": "2026-10-22-employers-electronic-prior-authorization-pledge",
+              "canonical_topic": "employers-electronic-prior-authorization-pledge",
+              "duplicate_group": "employers-electronic-prior-authorization-pledge",
+              "priority_score": 8,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS: Leading Employers Back Expansion of Electronic Prior Authorization to Self-Funded Health Plans",
+                  "url": "https://www.cms.gov/newsroom/press-releases/leading-employers-back-expansion-electronic-prior-authorization-self-funded-health-plans",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare: Amazon, Google among self-funded employers joining CMS prior auth pledge",
+                  "url": "https://www.fiercehealthcare.com/payers/amazon-google-among-self-funded-employers-joining-cms-prior-auth-pledge",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "Major employers back electronic prior authorization for self-funded plans",
+              "summary": "CMS and the Department of Labor said five major employers have signed a statement supporting expansion of electronic prior-authorization capabilities to self-funded plans. Amazon, Axon, Google, Meta, and Oracle are among the signers; they are urging third-party administrators to make pledge capabilities available for plan sponsors to consider, rather than announcing a single mandatory plan design.",
+              "strategic_implication": "Employers and TPAs should map how interoperable authorization workflows will reach self-funded products ahead of the 2027 implementation cycle, while providers can prepare for broader electronic submission and status tracking.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "self-funded-plans",
+                "employer-benefits",
+                "cms",
+                "administrative-burden"
+              ]
+            },
+            {
+              "item_id": "2026-10-22-new-york-social-adult-day-care-medicaid-review",
+              "canonical_topic": "new-york-social-adult-day-care-medicaid-review",
+              "duplicate_group": "new-york-social-adult-day-care-medicaid-review",
+              "priority_score": 8,
+              "primary_source": "New York State Governor's Office",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "New York Governor: Joint effort to protect taxpayer dollars and crack down on fraud within Social Adult Day Care",
+                  "url": "https://www.governor.ny.gov/news/governor-hochul-announces-joint-effort-protect-taxpayer-dollars-and-crack-down-fraud-within",
+                  "source_type": "web",
+                  "published_at": "2026-10-22T00:00:00Z"
+                },
+                {
+                  "source": "STAT: CMS extends fraud crackdown to New York’s adult day care program",
+                  "url": "https://www.statnews.com/2026/10/21/cms-medicaid-fraud-nyc-adult-daycare-operators/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T21:38:41Z"
+                }
+              ],
+              "title": "Federal and state officials widen Medicaid scrutiny of New York adult day care",
+              "summary": "CMS and New York agencies launched coordinated oversight actions involving the state Medicaid Social Adult Day Care program, with more than 100 providers under scrutiny for suspected fraud or other illegal conduct. Officials described concerns involving billing and service documentation; the investigation does not establish wrongdoing by every provider or determine the future of the benefit.",
+              "strategic_implication": "Adult day service operators and managed-care plans should review attendance, service, and claims-validation controls as scrutiny grows; any program changes would also affect care access for older adults who rely on the benefit.",
+              "confidence": "medium",
+              "tags": [
+                "medicaid",
+                "program-integrity",
+                "adult-day-care",
+                "fraud-oversight"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Clinical AI is moving closer to evidence-rich reference material, while investors are backing AI-assisted care navigation that combines software with human support. Safe scaling will depend on transparent evidence and clear escalation pathways.",
+          "items": [
+            {
+              "item_id": "2026-10-22-doximity-uptodate-clinical-ai-integration",
+              "canonical_topic": "doximity-uptodate-clinical-ai-integration",
+              "duplicate_group": "doximity-uptodate-clinical-ai-integration",
+              "priority_score": 8,
+              "primary_source": "Wolters Kluwer Health and Doximity",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Wolters Kluwer: Doximity and Wolters Kluwer bring UpToDate to Doximity Ask",
+                  "url": "https://www.wolterskluwer.com/en/news/doximity-wolters-kluwer-uptodate-doximity-ask",
+                  "source_type": "web",
+                  "published_at": "2026-10-20T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare: Doximity adds UpToDate to Ask",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/doximity-adds-uptodate-ask-push-become-doctors-go-ai-platform",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T21:31:00Z"
+                }
+              ],
+              "title": "Doximity adds UpToDate’s clinical reference content to its AI decision-support tool",
+              "summary": "Doximity and Wolters Kluwer plan to make UpToDate content spanning 13,000 topics available inside Doximity Ask alongside its AI-generated answers. The rollout is intended for clinicians at health systems using both services and is expected to begin in the coming weeks.",
+              "strategic_implication": "Embedding established reference content may strengthen clinician trust and adoption, but health systems should assess source visibility, update controls, and clinical oversight within the combined workflow.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "clinical-decision-support",
+                "uptodate",
+                "evidence-based-care"
+              ]
+            },
+            {
+              "item_id": "2026-10-22-baba-series-a-ai-care-navigation",
+              "canonical_topic": "baba-series-a-ai-care-navigation",
+              "duplicate_group": "baba-series-a-ai-care-navigation",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare: Baba raises $40M for AI-powered Medicare patient navigation",
+                  "url": "https://www.fiercehealthcare.com/finance/baba-nabs-40m-series-backed-firstmark-capital-and-cvs-health-ventures-medicare-ai-care",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                },
+                {
+                  "source": "HLTH: Baba secures $40M to expand AI-powered Medicare care navigation",
+                  "url": "https://hlth.com/insights/news/baba-secures-40m-to-expand-ai-powered-medicare-care-navigation-and-launches-bababench",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "Baba raises $40 million to scale AI-assisted Medicare care navigation",
+              "summary": "Baba raised a $40 million Series A led by FirstMark Capital, with CVS Health Ventures and other investors participating. The company combines AI with care coordinators and licensed clinicians to help Medicare and Medicaid patients navigate appointments, benefits, and care transitions; it plans to use the funding to expand research, health-plan reach, and value-based arrangements.",
+              "strategic_implication": "The round signals investor interest in human-supported AI navigation; payer buyers will look for evidence that the model improves access and continuity while reducing avoidable administrative and care costs.",
+              "confidence": "medium",
+              "tags": [
+                "care-navigation",
+                "medicare",
+                "medicaid",
+                "healthcare-ai",
+                "funding"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Employer health premiums continue to strain household budgets, even as Cencora deepens its position in community oncology through a major provider-network acquisition. Both signals put affordability and ownership strategy in sharper focus.",
+          "items": [
+            {
+              "item_id": "2026-10-22-kff-2026-employer-family-premium-contributions",
+              "canonical_topic": "kff-2026-employer-family-premium-contributions",
+              "duplicate_group": "kff-2026-employer-family-premium-contributions",
+              "priority_score": 9,
+              "primary_source": "KFF",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF: 2026 Employer Health Benefits Survey and news release",
+                  "url": "https://www.kff.org/?orderby=date",
+                  "source_type": "web",
+                  "published_at": "2026-10-22T00:00:00Z"
+                },
+                {
+                  "source": "STAT: Workers are paying 9% more for family health coverage this year",
+                  "url": "https://www.statnews.com/2026/10/22/kff-2026-benefits-survey-9-percent-premium-increase/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T09:00:00Z"
+                }
+              ],
+              "title": "Worker contributions to family health premiums jump 9%, KFF finds",
+              "summary": "KFF reports that average employer-sponsored family premiums rose 5% in 2026 to $28,303, while workers’ average annual contribution increased 9% to $7,471. Worker wage growth was 3.7%, and employees at smaller firms contributed an average $9,687 toward family coverage.",
+              "strategic_implication": "Renewal pressure is likely to intensify employer scrutiny of benefit design, provider prices, and pharmacy spending, while affordability remains a salient workforce and policy issue.",
+              "confidence": "high",
+              "tags": [
+                "employer-coverage",
+                "health-benefits",
+                "premiums",
+                "affordability"
+              ]
+            },
+            {
+              "item_id": "2026-10-22-cencora-american-oncology-network-acquisition",
+              "canonical_topic": "cencora-american-oncology-network-acquisition",
+              "duplicate_group": "cencora-american-oncology-network-acquisition",
+              "priority_score": 8,
+              "primary_source": "Cencora",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Cencora: Agreement to acquire American Oncology Network",
+                  "url": "https://investor.cencora.com/news/news-details/2026/Cencora-to-Acquire-American-Oncology-Network-to-Strengthen-Support-of-Community-Oncology/default.aspx",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare: Cencora to acquire majority stake in American Oncology Network",
+                  "url": "https://www.fiercehealthcare.com/finance/cencora-acquire-majority-stake-24b-american-oncology-network",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "Cencora agrees to acquire American Oncology Network at a $2.4 billion enterprise value",
+              "summary": "Cencora signed a definitive agreement to acquire the remaining equity interests in American Oncology Network, a physician-led network of more than 350 oncology providers across 21 states. The transaction values AON at $2.4 billion, including $2.3 billion at closing and up to $100 million in contingent value rights, and remains subject to regulatory and shareholder approvals.",
+              "strategic_implication": "The transaction would extend a major pharmaceutical distributor’s reach into community oncology services, reinforcing the strategic value of provider-facing capabilities while raising integration and market-concentration questions.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "physician-services",
+                "acquisition",
+                "vertical-integration"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Oklahoma’s largest nonprofit health system has agreed to join Risant Health, signaling another route for regional providers to access technology and value-based-care infrastructure without an immediate brand or workforce change.",
+          "items": [
+            {
+              "item_id": "2026-10-22-integris-risant-health-agreement",
+              "canonical_topic": "integris-risant-health-agreement",
+              "duplicate_group": "integris-risant-health-agreement",
+              "priority_score": 8,
+              "primary_source": "Risant Health and INTEGRIS Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Risant Health: INTEGRIS Health to become part of Risant Health",
+                  "url": "https://risanthealth.org/content/kp/risant/risanthealth/en/home/news/integris-health-become-part-risant-health.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive: Integris Health to join Kaiser Permanente’s Risant Health",
+                  "url": "https://www.healthcaredive.com/news/integris-health-join-kaiser-permanentes-risant-health/833610/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T16:21:14Z"
+                }
+              ],
+              "title": "INTEGRIS Health agrees to join Kaiser-backed Risant Health network",
+              "summary": "INTEGRIS Health and Risant Health signed a definitive agreement, pending regulatory approvals, that would make the Oklahoma system the third health system in Risant’s network. INTEGRIS says it will retain its name, medical staff, and leadership team while gaining access to Risant’s technology and value-based-care capabilities.",
+              "strategic_implication": "The agreement adds a large regional nonprofit to a growing national network; peers may view shared technology and care-management infrastructure as an alternative to operating entirely independently.",
+              "confidence": "high",
+              "tags": [
+                "health-system-strategy",
+                "value-based-care",
+                "provider-network",
+                "oklahoma"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Mississippi’s rural-health awards target clinician shortages and emergency behavioral-health access, while telehealth use of GLP-1s for addiction is advancing before approval for those indications.",
+          "items": [
+            {
+              "item_id": "2026-10-22-mississippi-rural-workforce-mental-health-funding",
+              "canonical_topic": "mississippi-rural-workforce-mental-health-funding",
+              "duplicate_group": "mississippi-rural-workforce-mental-health-funding",
+              "priority_score": 7,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS: $32 million for rural doctors, healthcare workers, and emergency mental healthcare in Mississippi",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-news-trump-administration-announces-32-million-recruit-rural-doctors-train-healthcare-workers",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "CMS directs roughly $32 million to Mississippi rural workforce and emergency mental-health capacity",
+              "summary": "CMS announced about $32 million in Rural Health Transformation Program funding for 60 Mississippi awards. The initiatives include recruiting and retaining rural clinicians, expanding training pathways, and establishing three psychiatric emergency units adjacent to hospital emergency departments.",
+              "strategic_implication": "The awards may strengthen rural access and behavioral-health crisis response, but local leaders will need to translate one-time funding into sustainable staffing and measurable service capacity.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "workforce",
+                "behavioral-health",
+                "funding"
+              ]
+            },
+            {
+              "item_id": "2026-10-22-telehealth-glp1-off-label-addiction-prescribing",
+              "canonical_topic": "telehealth-glp1-off-label-addiction-prescribing",
+              "duplicate_group": "telehealth-glp1-off-label-addiction-prescribing",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT: Telehealth leapfrogs FDA approval with off-label GLP-1 prescriptions for addiction",
+                  "url": "https://www.statnews.com/2026/10/22/glp-1-drugs-substance-use-disorder-telehealth-off-label-prescription/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T08:30:00Z"
+                }
+              ],
+              "title": "Telehealth platforms market GLP-1 prescriptions for addiction before FDA approval",
+              "summary": "Some telehealth companies specializing in addiction care have begun marketing GLP-1 prescriptions for alcohol use disorder and other addictions, while clinical studies are still underway. FDA has not approved GLP-1 medicines for substance-use treatment, and addiction specialists cited concerns about fragmented care and patients being left to evaluate risks on their own.",
+              "strategic_implication": "Health systems and addiction-care providers should assess informed consent, safety monitoring, and continuity of treatment when patients seek these medicines through virtual or compounded-drug channels.",
+              "confidence": "medium",
+              "tags": [
+                "telehealth",
+                "glp-1",
+                "addiction-treatment",
+                "off-label",
+                "patient-safety"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-21",
       "generated_at": "2026-10-21T12:40:08Z",
       "headline": "Today's Healthcare Insights",
@@ -15648,5 +15983,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-21T12:40:08Z"
+  "last_updated": "2026-10-22T11:05:05Z"
 }

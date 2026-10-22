@@ -4,15 +4,21 @@
   "editions": [
     {
       "edition_date": "2026-10-22",
-      "generated_at": "2026-10-22T11:05:05Z",
+      "generated_at": "2026-10-22T12:36:53Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks a new affordability signal in employer coverage, federal prior-authorization and Medicaid oversight actions, and strategic moves in provider networks and oncology services. Signals were selected from STAT, Healthcare Dive, and Fierce Healthcare RSS feeds and cross-checked with CMS, KFF, company, and state materials.",
+      "summary_note": "Today's briefing tracks rising coverage strain, with worker family premiums up 9% and the working-age uninsured rate at 11.2%, alongside federal prior-authorization and Medicaid oversight actions, 2027 ACA insurer footprint shifts, FDA device-center capacity and generative AI guidance, and strategic moves in oncology, nutrition, and specialty drugs. Signals came from STAT, Healthcare Dive, BioPharma Dive, MedTech Dive, and Fierce Healthcare RSS and were checked against Commonwealth Fund, CMS, KFF, and company materials.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
-          "STAT News RSS",
+          "Gmail label InsightsSources/Healthcare Brew",
+          "Gmail label InsightsSources/Healthcare Dive",
+          "Gmail label InsightsSources/Hospitalogy",
+          "Gmail label InsightsSources/Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics)",
           "Healthcare Dive RSS",
+          "BioPharma Dive RSS",
+          "MedTech Dive RSS",
           "Fierce Healthcare RSS",
           "Targeted web searches across CMS/HHS, employer benefits, provider strategy, digital health/AI, rural workforce, and clinical practice"
         ],
@@ -20,15 +26,20 @@
           "STAT News RSS fetched and screened; selected the October 22 KFF employer-premium and telehealth GLP-1 reporting.",
           "Healthcare Dive RSS fetched and screened for October 21-22 developments; used to identify the current health-system and payer reporting window.",
           "Fierce Healthcare RSS fetched and screened; selected coverage on employer prior authorization, Doximity/UpToDate, Cencora/AON, and Baba.",
-          "Targeted web searches confirmed details against CMS, KFF, the New York Governor's Office, Risant Health, Wolters Kluwer, Cencora, and sector reporting."
+          "Targeted web searches confirmed details against CMS, KFF, the New York Governor's Office, Risant Health, Wolters Kluwer, Cencora, and sector reporting.",
+          "Curated refresh: STAT RSS feeds re-screened for October 21-22; added the Commonwealth Fund uninsured survey, liver-transplant prehab study, GSK/Ionis hepatitis B approval, Roivant uveitis data, and ADA leadership item.",
+          "Curated refresh: Healthcare Dive, BioPharma Dive, and MedTech Dive RSS screened; added 2027 ACA insurer footprints, Abbott nutrition spinoff, CDRH staffing, and FDA generative AI guidance items.",
+          "Commonwealth Fund survey page used to confirm uninsured and underinsurance figures."
         ],
-        "sources_failed": [],
-        "run_notes": "Compared candidates with the October 21 edition and excluded previously covered topics including Elevance earnings, Hackensack-Hunterdon, the OpenEvidence-Doximity settlement, and mental-health directory access. Added 9 distinct items published or developed October 21-22. Gmail labels were not queried because they are supplementary and RSS plus targeted web research supplied adequate coverage. The New York social adult day care item describes active investigations and allegations, not findings against all providers."
+        "sources_failed": [
+          "Gmail InsightsSources labels (Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare): date-bounded searches from 2026-10-20 (Hospitalogy from 2026-10-15) returned no messages in the connected mailbox; RSS used instead."
+        ],
+        "run_notes": "Compared candidates with the October 21 edition and excluded previously covered topics including Elevance earnings, Hackensack-Hunterdon, the OpenEvidence-Doximity settlement, and mental-health directory access. Added 9 distinct items published or developed October 21-22. Gmail labels were not queried because they are supplementary and RSS plus targeted web research supplied adequate coverage. The New York social adult day care item describes active investigations and allegations, not findings against all providers. Curated refresh retained all 9 automated items and added 9 new items (18 total) after checking against the prior 12 editions; Isomorphic Labs, Cost Plus rare-disease, and KFF premium follow-ups were excluded as previously covered. Liver-transplant prehab figures come from STAT's study summary; the Hibsago list price was not disclosed."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "CMS and DOL are pressing electronic prior-authorization expansion into self-funded employer plans as federal and New York officials intensify Medicaid program-integrity scrutiny. Both developments raise operational expectations for plans and providers.",
+          "synthesis": "CMS and DOL are pressing electronic prior authorization into self-funded plans while federal and New York officials widen Medicaid program-integrity scrutiny. New Commonwealth Fund data show coverage eroding before 2027 Medicaid changes, and the FDA device center is rebuilding review capacity after heavy attrition.",
           "items": [
             {
               "item_id": "2026-10-22-employers-electronic-prior-authorization-pledge",
@@ -94,12 +105,72 @@
                 "adult-day-care",
                 "fraud-oversight"
               ]
+            },
+            {
+              "item_id": "2026-10-22-commonwealth-fund-uninsured-rate-2026",
+              "canonical_topic": "commonwealth-fund-uninsured-rate-2026",
+              "duplicate_group": "commonwealth-fund-uninsured-rate-2026",
+              "priority_score": 9,
+              "primary_source": "The Commonwealth Fund",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Commonwealth Fund: The State of Health Insurance Coverage in 2026",
+                  "url": "https://www.commonwealthfund.org/publications/surveys/2026/oct/state-health-insurance-coverage-2026-biennial-survey",
+                  "source_type": "web",
+                  "published_at": "2026-10-22T00:00:00Z"
+                },
+                {
+                  "source": "STAT: Health insurance premiums jump 9%, and more Americans don't have access to coverage",
+                  "url": "https://www.statnews.com/2026/10/22/health-news-insurance-premiums-jump-more-americans-lose-coverage/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T00:00:00Z"
+                }
+              ],
+              "title": "Uninsured rate for working-age adults climbs to 11.2%, Commonwealth Fund survey finds",
+              "summary": "The Commonwealth Fund's 2026 Biennial Health Insurance Survey found the uninsured rate among adults ages 19 to 64 rose from 8.9% in 2024 to 11.2% in 2026, alongside a decline in marketplace and individual-market coverage from 8.5% to 6.4%. Overall, 46% of working-age adults were inadequately insured: 11% uninsured, 12% with a coverage gap, and 23% underinsured. STAT reported that half of uninsured people skipped needed care because of cost. The survey was fielded May 7 to July 20, 2026.",
+              "strategic_implication": "The coverage erosion predates the 2027 Medicaid changes, so hospitals and safety-net providers should model uncompensated-care growth now and tighten financial-assistance and enrollment-navigation workflows ahead of work-requirement implementation.",
+              "confidence": "high",
+              "tags": [
+                "uninsured",
+                "coverage",
+                "medicaid",
+                "aca-marketplace",
+                "affordability"
+              ]
+            },
+            {
+              "item_id": "2026-10-22-cdrh-hiring-after-staff-losses",
+              "canonical_topic": "cdrh-hiring-after-staff-losses",
+              "duplicate_group": "cdrh-hiring-after-staff-losses",
+              "priority_score": 7,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive: CDRH on hiring spree after significant staff losses, director says",
+                  "url": "https://www.medtechdive.com/news/cdrh-on-hiring-spree-after-significant-staff-losses-director-says/833659/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "FDA device center rebuilds staff after about 22% attrition",
+              "summary": "CDRH Director Michelle Tarver said at AdvaMed's MedTech Conference that the device center had roughly 22% attrition over the past year-plus, including losses of up to 30% of clinical reviewers and many digital health and AI specialists. CDRH has hired more than 65 people, exceeding its fiscal 2026 MDUFA target of 63, while it awaits final orders on its share of the FDA's authorization to hire 2,200 people.",
+              "strategic_implication": "Device sponsors should plan for uneven review capacity, especially for AI-enabled and software submissions, and build extra time into premarket and change-control timelines until reviewer staffing stabilizes.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "cdrh",
+                "medical-devices",
+                "regulatory-capacity",
+                "mdufa"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "Clinical AI is moving closer to evidence-rich reference material, while investors are backing AI-assisted care navigation that combines software with human support. Safe scaling will depend on transparent evidence and clear escalation pathways.",
+          "synthesis": "Clinical-AI platforms are adding licensed reference content and Medicare navigation capital, while FDA signals generative AI device guidance with a heavier postmarket focus.",
           "items": [
             {
               "item_id": "2026-10-22-doximity-uptodate-clinical-ai-integration",
@@ -165,12 +236,39 @@
                 "healthcare-ai",
                 "funding"
               ]
+            },
+            {
+              "item_id": "2026-10-22-fda-generative-ai-device-draft-guidance",
+              "canonical_topic": "fda-generative-ai-device-draft-guidance",
+              "duplicate_group": "fda-generative-ai-device-draft-guidance",
+              "priority_score": 7,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive: Gen AI policy is a White House priority, CDRH digital health leader says",
+                  "url": "https://www.medtechdive.com/news/gen-ai-policy-is-a-white-house-priority-cdrh-digital-health-leader-says/833551/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "FDA signals draft generative AI device guidance in coming months",
+              "summary": "Rick Abramson, director of the FDA's Digital Health Center of Excellence, said draft guidance on generative AI is expected in the coming months after a discussion-paper comment period drew more than 500 submissions. The discussion paper puts more weight on postmarket monitoring. CDRH's fiscal 2027 priorities include a draft on generative AI-enabled devices for mental disorders and an umbrella draft on risk assessment and evidence generation.",
+              "strategic_implication": "Developers of generative AI tools, including mental-health chatbots, should prepare postmarket performance monitoring and evidence plans now, since those are likely to anchor FDA expectations.",
+              "confidence": "medium",
+              "tags": [
+                "generative-ai",
+                "fda",
+                "digital-health",
+                "mental-health",
+                "regulation"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "Employer health premiums continue to strain household budgets, even as Cencora deepens its position in community oncology through a major provider-network acquisition. Both signals put affordability and ownership strategy in sharper focus.",
+          "synthesis": "Employer premium growth, selective 2027 ACA footprint changes, oncology and nutrition portfolio moves, and new specialty-drug approvals and data point to sustained cost pressure and portfolio reshaping.",
           "items": [
             {
               "item_id": "2026-10-22-kff-2026-employer-family-premium-contributions",
@@ -235,6 +333,126 @@
                 "acquisition",
                 "vertical-integration"
               ]
+            },
+            {
+              "item_id": "2026-10-22-aca-insurers-2027-county-footprints",
+              "canonical_topic": "aca-insurers-2027-county-footprints",
+              "duplicate_group": "aca-insurers-2027-county-footprints",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive: Centene, Oscar, UnitedHealthcare sidle into some new counties in 2027 ACA plans",
+                  "url": "https://www.healthcaredive.com/news/centene-oscar-unitedhealthcare-new-counties-aca-2027/833442/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "Centene, Oscar and UnitedHealthcare reshuffle 2027 ACA footprints",
+              "summary": "Centene is adding 55 counties across seven states but exiting Delaware and New Hampshire, with no net change to its overall footprint. Oscar is adding 140 counties, including a first entry into South Carolina, and targets 400 to 600 more counties by 2029. UnitedHealthcare is leaving Georgia's exchange while holding near 1,300 counties across its remaining 29 states; HCSC and GuideWell reported no footprint changes.",
+              "strategic_implication": "Selective county moves amid shrinking marketplace enrollment mean local competition and network breadth will vary sharply in 2027; providers should confirm which exchange contracts are entering or leaving their markets before open enrollment.",
+              "confidence": "high",
+              "tags": [
+                "aca-marketplace",
+                "centene",
+                "oscar",
+                "unitedhealthcare",
+                "2027-plans"
+              ]
+            },
+            {
+              "item_id": "2026-10-22-gsk-ionis-hibsago-hepatitis-b-approval",
+              "canonical_topic": "gsk-ionis-hibsago-hepatitis-b-approval",
+              "duplicate_group": "gsk-ionis-hibsago-hepatitis-b-approval",
+              "priority_score": 7,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive: GSK, Ionis win US approval for first-of-its-kind hepatitis B drug",
+                  "url": "https://www.biopharmadive.com/news/gsk-ionis-fda-approve-hibsago-chronic-hepatitis-b-bepirovirsen/833541/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                },
+                {
+                  "source": "STAT: GSK picks up hep B drug approval",
+                  "url": "https://www.statnews.com/2026/10/21/biotech-news-gsk-picks-up-hep-b-drug-approval/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "FDA approves GSK and Ionis's Hibsago as a potential functional cure for chronic hepatitis B",
+              "summary": "The FDA approved Hibsago, an RNA-based medicine, for use with standard antivirals in certain adults with chronic hepatitis B without cirrhosis who have been on antivirals for at least six months. Treatment is a six-month course of injections, most of which can be self-administered. In two late-stage studies, about one-fifth of recipients achieved a functional cure versus none on placebo. GSK has not disclosed a list price and estimates 1.7 million people in the U.S. have chronic hepatitis B.",
+              "strategic_implication": "Payers and hepatology programs will need criteria for identifying eligible patients and measuring functional cure; pricing, once disclosed, will shape whether the drug is managed like other time-limited curative therapies.",
+              "confidence": "high",
+              "tags": [
+                "hepatitis-b",
+                "fda-approval",
+                "gsk",
+                "rna-therapeutics",
+                "specialty-pharmacy"
+              ]
+            },
+            {
+              "item_id": "2026-10-22-abbott-nutrition-spinoff",
+              "canonical_topic": "abbott-nutrition-spinoff",
+              "duplicate_group": "abbott-nutrition-spinoff",
+              "priority_score": 7,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive: Abbott plans to spin out its nutrition business",
+                  "url": "https://www.medtechdive.com/news/abbott-plans-to-spin-out-its-nutrition-business/833601/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "Abbott plans to spin off its $8.5 billion nutrition business",
+              "summary": "Abbott plans to separate its nutrition business, whose brands include Similac, Pedialyte and Ensure, into an independent public company by the end of 2027. The remaining company, focused on devices, diagnostics and established pharmaceuticals, would have about $42 billion in sales. Abbott reported third-quarter sales of $13.01 billion, up 14.5%, but cut its 2026 sales growth guidance to 6% from 6.5% to 7.5%.",
+              "strategic_implication": "The move fits a broader medtech pattern of portfolio pruning toward higher-growth device and diagnostics lines; health-system supply-chain teams should watch for contracting and distribution changes across infant and adult nutrition products as the separation proceeds.",
+              "confidence": "high",
+              "tags": [
+                "abbott",
+                "spinoff",
+                "medtech",
+                "nutrition",
+                "portfolio-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-10-22-roivant-brepocitinib-uveitis-phase-3",
+              "canonical_topic": "roivant-brepocitinib-uveitis-phase-3",
+              "duplicate_group": "roivant-brepocitinib-uveitis-phase-3",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive: Roivant, continuing ascent, claims another victory for rare disease drug",
+                  "url": "https://www.biopharmadive.com/news/roivant-brepocitinib-uveitis-study-results/833569/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                },
+                {
+                  "source": "STAT: Roivant says closely watched immune drug succeeded in new eye disease",
+                  "url": "https://www.statnews.com/2026/10/21/roivant-immune-drug-lisraya-noninfectious-uveitis-trial-results/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "Roivant's brepocitinib succeeds in two Phase 3 uveitis trials",
+              "summary": "Roivant subsidiary Priovant said brepocitinib, already approved as Lisraya for dermatomyositis, met its goals in the Clarity-1 and Clarity-2 trials in non-infectious uveitis. Patients on the drug had a median of more than 48 weeks before treatment failure versus 12 weeks on placebo, and the drug succeeded on all secondary endpoints. Priovant plans a supplemental filing in the first half of 2027.",
+              "strategic_implication": "A steroid-sparing oral option for a blinding inflammatory eye disease would add another high-cost specialty therapy for ophthalmology and rheumatology formularies to evaluate in 2027.",
+              "confidence": "medium",
+              "tags": [
+                "roivant",
+                "uveitis",
+                "phase-3",
+                "rare-disease",
+                "specialty-drugs"
+              ]
             }
           ]
         },
@@ -278,7 +496,7 @@
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "Mississippi’s rural-health awards target clinician shortages and emergency behavioral-health access, while telehealth use of GLP-1s for addiction is advancing before approval for those indications.",
+          "synthesis": "Rural workforce funding, off-label GLP-1 telehealth marketing, transplant prehab evidence, and turnover at a major diabetes society are shaping clinical practice and professional governance.",
           "items": [
             {
               "item_id": "2026-10-22-mississippi-rural-workforce-mental-health-funding",
@@ -331,6 +549,60 @@
                 "addiction-treatment",
                 "off-label",
                 "patient-safety"
+              ]
+            },
+            {
+              "item_id": "2026-10-22-liver-transplant-prehab-survival",
+              "canonical_topic": "liver-transplant-prehab-survival",
+              "duplicate_group": "liver-transplant-prehab-survival",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT: Health insurance premiums jump 9%, and more Americans don't have access to coverage",
+                  "url": "https://www.statnews.com/2026/10/22/health-news-insurance-premiums-jump-more-americans-lose-coverage/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T00:00:00Z"
+                }
+              ],
+              "title": "Personalized prehab tied to better survival for liver transplant candidates",
+              "summary": "A Northwestern Medicine and University of Pittsburgh study in Clinical Gastroenterology and Hepatology tested a home-based exercise and diet program in 355 patients awaiting liver transplant, each designed with a physical therapist and dietitian. Two-thirds improved on a frailty score. Patients with at least three follow-up visits improved by at least 0.4 points, which was associated with about a 50% lower risk of dying on the waitlist; the authors plan a larger trial.",
+              "strategic_implication": "Transplant programs can treat structured physical therapy and nutrition follow-up as a modifiable waitlist-survival lever, though the findings still need confirmation before payers are likely to treat prehab as standard coverage.",
+              "confidence": "medium",
+              "tags": [
+                "liver-transplant",
+                "prehabilitation",
+                "frailty",
+                "clinical-research",
+                "care-models"
+              ]
+            },
+            {
+              "item_id": "2026-10-22-american-diabetes-association-leadership-exit",
+              "canonical_topic": "american-diabetes-association-leadership-exit",
+              "duplicate_group": "american-diabetes-association-leadership-exit",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT: Another diabetes association leader is out while review continues",
+                  "url": "https://www.statnews.com/2026/10/21/american-diabetes-association-leadership-change-controversy/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-21T00:00:00Z"
+                }
+              ],
+              "title": "ADA's chief scientific and medical officer exits as review of June expulsions continues",
+              "summary": "The American Diabetes Association said Rita Kalyani is no longer chief scientific and medical officer, effective immediately, without giving a reason. The departure comes before the ADA has completed its review of a June 5 incident at its New Orleans meeting, where five members were escorted out by armed security after distributing a Diabetes Care editorial raising alarm about federal research-funding cuts.",
+              "strategic_implication": "Leadership turnover at a major guideline-issuing society adds governance uncertainty; clinicians and partners relying on ADA standards and meetings should monitor the review's findings and any effects on scientific leadership.",
+              "confidence": "medium",
+              "tags": [
+                "professional-societies",
+                "diabetes",
+                "governance",
+                "clinical-guidelines",
+                "research-funding"
               ]
             }
           ]
@@ -15520,468 +15792,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-10",
-      "generated_at": "2026-09-10T12:55:00Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing centers on Medicaid payment pressure, Medicare Advantage positioning, and the operational consequences of healthcare cost growth. It adds a growing Pennsylvania measles outbreak with confirmed infant deaths, five midterm races that could reset vaccine policy, and new evidence that virtual kidney-care programs are not changing progression or cost. AI coverage runs from federally funded heart-failure decision support to rural access claims and nursing workload relief.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail: InsightsSources/Healthcare Brew",
-          "Gmail: InsightsSources/Healthcare Dive",
-          "Gmail: InsightsSources/Hospitalogy",
-          "Gmail: InsightsSources/Modern Healthcare",
-          "STAT News RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "MedCity News RSS"
-        ],
-        "sources_successful": [
-          "STAT News RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "MedCity News RSS"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources labels unavailable: the connected mailbox (Georgetown account) contains no InsightsSources label hierarchy",
-          "Healthcare Brew RSS (404)",
-          "Hospitalogy RSS (403)",
-          "Modern Healthcare RSS (403)"
-        ],
-        "run_notes": "Manual mid-morning rebuild of the 2026-09-10 edition, replacing the 07:04 ET cron output for the same date (duplicate-date handling: one edition per date). All four Gmail InsightsSources labels returned zero mail because the connected Gmail account has no such labels, so newsletter outlets were substituted with publisher RSS where reachable. STAT News, Healthcare Dive, Fierce Healthcare, and MedCity News feeds yielded fresh Sept. 9-10 items; four new items were added and the rural-AI item gained a second source. Topics from the Sept. 4-9 editions were screened out. Feed trimmed to the 30-edition cap; editions before 2026-07-30 were moved to archive/editions-archive-2026-09-10.json."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Payment integrity and regulatory governance are moving from abstract policy to near-term operating exposure. Medicaid directed-payment caps, No Surprises arbitration oversight, and emerging AI rules each create new requirements for financial controls, contracting, and technology governance.",
-          "items": [
-            {
-              "item_id": "2026-09-10-medicaid-state-directed-payment-caps",
-              "canonical_topic": "medicaid-state-directed-payment-caps",
-              "duplicate_group": "medicaid-state-directed-payment-caps",
-              "priority_score": 9,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/providers/obbbas-state-directed-payment-caps-will-trim-some-states-medicaid-spend-quarter-study",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T18:45:00Z"
-                }
-              ],
-              "title": "New state-directed-payment caps could cut Medicaid spending sharply in hard-hit states",
-              "summary": "A study covered by Fierce Healthcare estimates that upcoming statutory limits on provider state-directed payments will reduce tens of billions of dollars in state Medicaid spending. In 17 particularly exposed states, the reduction could equal 10% to 25% of annual Medicaid spending. The change would put pressure on funding arrangements that many providers use to support Medicaid access.",
-              "strategic_implication": "Medicaid providers and state agencies should model the effect on service lines, supplemental payments, and access before the caps take effect. Health systems with high Medicaid exposure may need a faster mix of cost redesign, partnership planning, and advocacy.",
-              "confidence": "medium",
-              "tags": [
-                "medicaid",
-                "state-directed-payments",
-                "provider-finance",
-                "payment-policy"
-              ]
-            },
-            {
-              "item_id": "2026-09-10-no-surprises-arbiters-congressional-oversight",
-              "canonical_topic": "no-surprises-arbiters-congressional-oversight",
-              "duplicate_group": "no-surprises-arbiters-congressional-oversight",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/pallone-investigates-no-surprises-arbiters-idr-oversight-congress/829835/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T17:48:40Z"
-                }
-              ],
-              "title": "Congressional oversight targets how No Surprises arbiters make payment awards",
-              "summary": "Rep. Frank Pallone sent oversight letters to six No Surprises Act arbiters requesting information about award decisions, compensation, and related operations, Healthcare Dive reports. His office is also speaking with other arbiters. The inquiry puts the independent dispute-resolution process under a more visible governance lens.",
-              "strategic_implication": "Plans, providers, and arbitration vendors should expect continued scrutiny of documentation, incentives, and consistency in dispute outcomes. Organizations that rely on the process should preserve a clear audit trail and watch for rule or process changes.",
-              "confidence": "high",
-              "tags": [
-                "no-surprises-act",
-                "payment-disputes",
-                "congressional-oversight",
-                "healthcare-contracting"
-              ]
-            },
-            {
-              "item_id": "2026-09-10-midterm-races-vaccine-policy",
-              "canonical_topic": "midterm-races-vaccine-policy",
-              "duplicate_group": "midterm-races-vaccine-policy",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/10/2026-midterms-health-care-issues-analyzed-vaccine-policy/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T08:30:00Z"
-                }
-              ],
-              "title": "Five midterm races could reset the direction of state and federal vaccine policy",
-              "summary": "STAT identifies five 2026 midterm contests likely to shape vaccine policy, with GOP candidates in Iowa and Florida campaigning on vaccine skepticism while Democrats in Michigan and South Carolina are positioning to defend existing immunization policy. The races sit alongside a broader Democratic health agenda built around Medicaid cuts and ACA subsidies.",
-              "strategic_implication": "Immunization programs, health systems, and payers should build scenario plans for divergent state vaccine requirements and funding after November. Clinical and communications leaders will need messaging that holds up in jurisdictions where mandates and school requirements may loosen.",
-              "confidence": "medium",
-              "tags": [
-                "vaccine-policy",
-                "midterms",
-                "state-policy",
-                "public-health"
-              ]
-            },
-            {
-              "item_id": "2026-09-10-uk-ai-medicine-regulation-recommendations",
-              "canonical_topic": "uk-ai-medicine-regulation-recommendations",
-              "duplicate_group": "uk-ai-medicine-regulation-recommendations",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/09/uk-unveils-recommendations-ai-regulation-medicine/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T23:01:00Z"
-                }
-              ],
-              "title": "U.K. commission recommends a clearer framework for regulating AI in medicine",
-              "summary": "A U.K. commission unveiled recommendations for regulating artificial intelligence in medicine, according to STAT. The recommendations add to the growing body of policy work aimed at governing clinical AI as it moves into real-world use. The signal is relevant beyond the U.K. because multinational developers and health systems increasingly need consistent controls across markets.",
-              "strategic_implication": "AI vendors should map product claims, evidence, monitoring, and accountability to emerging regulatory expectations rather than treating governance as a post-launch task. Health systems can use the recommendations as a benchmark for procurement and clinical-risk review.",
-              "confidence": "medium",
-              "tags": [
-                "artificial-intelligence",
-                "medical-regulation",
-                "uk-healthcare",
-                "clinical-governance"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "AI investment is concentrating on applications that can influence treatment decisions or extend capacity into underserved settings. The opportunity is significant, but adoption will depend on authorization, clinical validation, workflow integration, and trust.",
-          "items": [
-            {
-              "item_id": "2026-09-10-arpa-h-heart-failure-ai",
-              "canonical_topic": "arpa-h-heart-failure-ai",
-              "duplicate_group": "arpa-h-heart-failure-ai",
-              "priority_score": 9,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T16:01:00Z"
-                }
-              ],
-              "title": "ARPA-H plans $62.7 million program for FDA-authorized AI to guide heart-failure treatment",
-              "summary": "ARPA-H plans to commit $62.7 million to develop artificial-intelligence bots that direct heart-failure treatment, STAT reports. The program is aimed at FDA-authorized technology rather than purely experimental software. That focus links public research funding to the harder question of deploying AI inside regulated clinical decision-making.",
-              "strategic_implication": "Cardiology leaders and digital-health investors should watch for evidence that autonomous tools can improve treatment titration without increasing clinical risk. The FDA-authorization target also reinforces that successful health AI will need a credible regulatory and implementation pathway.",
-              "confidence": "high",
-              "tags": [
-                "arpa-h",
-                "heart-failure",
-                "clinical-ai",
-                "fda-authorization"
-              ]
-            },
-            {
-              "item_id": "2026-09-10-rural-health-ai-adoption-gap",
-              "canonical_topic": "rural-health-ai-adoption-gap",
-              "duplicate_group": "rural-health-ai-adoption-gap",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/10/rural-health-care-ai-adoption-challenges-part-4-unraveled-series/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T08:30:00Z"
-                },
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/10/health-news-oz-says-ai-based-avatars-can-help-rural-communities-despite-skepticism/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T11:34:59Z"
-                }
-              ],
-              "title": "Rural providers question whether AI can offset the financial and workforce strain on care",
-              "summary": "STAT reports that rural health providers are confronting long-running challenges while facing nearly $1 trillion in Medicaid cuts over the coming decade. Federal officials are pointing to AI as a possible aid, but some rural leaders are skeptical that technology alone can solve the underlying capacity and financing problems. The gap between policy promise and local implementation is the central signal. CMS Administrator Mehmet Oz has pointed to \"AI-based avatars\" as a way to extend access in rural communities, a framing several rural health leaders publicly dispute.",
-              "strategic_implication": "AI strategies for rural care should start with infrastructure, staffing, reimbursement, and workflow constraints rather than assume software can substitute for missing capacity. Vendors and policymakers will need measurable use cases tied to access and sustainability.",
-              "confidence": "medium",
-              "tags": [
-                "rural-health",
-                "artificial-intelligence",
-                "medicaid",
-                "care-access"
-              ]
-            },
-            {
-              "item_id": "2026-09-10-phti-virtual-ckd-evidence-gap",
-              "canonical_topic": "phti-virtual-ckd-evidence-gap",
-              "duplicate_group": "phti-virtual-ckd-evidence-gap",
-              "priority_score": 8,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News RSS",
-                  "url": "https://medcitynews.com/2026/09/virtual-ckd-solutions-dont-slow-disease-progression-or-reduce-costs-report-finds/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T21:48:29Z"
-                }
-              ],
-              "title": "PHTI finds virtual kidney-care programs do not slow disease progression or cut spending",
-              "summary": "A Peterson Health Technology Institute analysis reported by MedCity News concludes that virtual chronic kidney disease management programs show little measurable effect on disease progression or total healthcare spending. The review recommends redirecting investment toward earlier diagnosis and treatment rather than virtual disease-management layers.",
-              "strategic_implication": "Payers and employers should ask for progression and total-cost endpoints, not engagement metrics, before renewing virtual specialty-care contracts. Health systems can reposition kidney strategy around earlier CKD detection in primary care, where the evidence is stronger.",
-              "confidence": "medium",
-              "tags": [
-                "digital-health",
-                "chronic-kidney-disease",
-                "evidence-evaluation",
-                "cost-of-care"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Payers and life-science companies are positioning around a tougher cost environment and differentiated clinical upside. The signals favor organizations that can convert scale, transparency, or novel biology into measurable value rather than relying on headline growth alone.",
-          "items": [
-            {
-              "item_id": "2026-09-10-unitedhealthcare-2027-medicare-advantage-competitiveness",
-              "canonical_topic": "unitedhealthcare-2027-medicare-advantage-competitiveness",
-              "duplicate_group": "unitedhealthcare-2027-medicare-advantage-competitiveness",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/unitedhealthcare-medicare-advantage-2027-market-competitive/829889/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T12:55:59Z"
-                }
-              ],
-              "title": "UnitedHealthcare says it expects to remain competitive in 2027 Medicare Advantage",
-              "summary": "UnitedHealthcare expects to be “very competitive” in Medicare Advantage next year, CFO Wayne DeVeydt said, according to Healthcare Dive. The insurer is still working on strategies to keep its MA markets as profitable as possible ahead of 2027 open enrollment. The comment signals active portfolio and pricing management rather than a passive growth posture.",
-              "strategic_implication": "Providers and competing plans should prepare for continued benefit, network, and pricing adjustments as insurers balance enrollment with margins. MA operators will need market-specific discipline as competitive positioning meets tighter economics.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "unitedhealthcare",
-                "payer-strategy",
-                "health-insurance"
-              ]
-            },
-            {
-              "item_id": "2026-09-10-healthcare-spending-premium-growth",
-              "canonical_topic": "healthcare-spending-premium-growth",
-              "duplicate_group": "healthcare-spending-premium-growth",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/payers/increases-healthcare-spending-largest-driver-behind-premium-growth-yale-study",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T16:06:00Z"
-                }
-              ],
-              "title": "Yale study identifies rising healthcare spending as the largest driver of premium growth",
-              "summary": "A Yale study covered by Fierce Healthcare finds that escalating healthcare spending is the leading factor behind rising insurance premiums. The finding shifts attention from premium mechanics to the underlying cost of care. It reinforces the pressure on plans, employers, providers, and policymakers to address utilization and unit-price growth together.",
-              "strategic_implication": "Cost strategies focused only on benefit design or consumer contribution are unlikely to be sufficient. Executives should connect premium planning to provider economics, site-of-care management, and high-cost condition interventions.",
-              "confidence": "medium",
-              "tags": [
-                "healthcare-costs",
-                "insurance-premiums",
-                "payer-strategy",
-                "employer-benefits"
-              ]
-            },
-            {
-              "item_id": "2026-09-10-uniqure-huntington-gene-therapy-readout",
-              "canonical_topic": "uniqure-huntington-gene-therapy-readout",
-              "duplicate_group": "uniqure-huntington-gene-therapy-readout",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/10/uniqure-huntingtons-gene-therapy-trial-readout/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T10:30:00Z"
-                }
-              ],
-              "title": "UniQure’s Huntington’s gene-therapy readout could test durability of a high-risk platform",
-              "summary": "UniQure is expected to report four-year results before the end of September from a closely watched clinical trial of its Huntington’s disease gene therapy, STAT reports. The timing puts long-term durability and safety in focus after earlier development milestones. The readout could materially shape expectations for gene therapy in a difficult neurodegenerative disease.",
-              "strategic_implication": "Investors and clinical leaders should evaluate the durability, functional outcomes, and safety profile rather than treat an upcoming readout as a binary catalyst. The result will also inform how developers design evidence and commercialization plans for one-time therapies.",
-              "confidence": "medium",
-              "tags": [
-                "gene-therapy",
-                "huntingtons-disease",
-                "clinical-trials",
-                "biopharma"
-              ]
-            },
-            {
-              "item_id": "2026-09-10-starkrx-transparent-pbm-model",
-              "canonical_topic": "starkrx-transparent-pbm-model",
-              "duplicate_group": "starkrx-transparent-pbm-model",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/payers/judi-health-employers-health-team-launch-new-pbm-model-starkrx",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T15:10:00Z"
-                }
-              ],
-              "title": "Employers Health and Judi Health launch StarkRx cost-plus PBM model",
-              "summary": "Employers Health and Judi Health are teaming up to launch StarkRx, a cost-plus pharmacy-benefit offering designed to increase transparency for employers, Fierce Healthcare reports. The model adds another alternative to conventional PBM arrangements. Its relevance will depend on whether transparent pricing produces measurable savings and usable employer oversight.",
-              "strategic_implication": "Employers should compare transparent PBM models on net cost, formulary governance, rebate treatment, and operational service—not only fee structure. Incumbent PBMs may face more pressure to explain where value is created across the pharmacy supply chain.",
-              "confidence": "medium",
-              "tags": [
-                "pbm",
-                "drug-pricing",
-                "employer-benefits",
-                "transparency"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Provider organizations are responding to financial and technology pressure with workforce restructuring while reassessing whether AI can address capacity gaps. The operational priority is to align technology investment with sustainable staffing and service access.",
-          "items": [
-            {
-              "item_id": "2026-09-10-trinity-health-it-layoffs",
-              "canonical_topic": "trinity-health-it-layoffs",
-              "duplicate_group": "trinity-health-it-layoffs",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/trinity-health-to-lay-off-557-it-workers/829916/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T14:55:22Z"
-                }
-              ],
-              "title": "Trinity Health to lay off 557 IT workers as it outsources some technology roles",
-              "summary": "Trinity Health plans to lay off 557 IT workers, the second layoff wave at the nonprofit this year, Healthcare Dive reports. Trinity cited financial pressures and increasingly complex technology requirements as it moves to outsource some technology roles. The decision highlights the tension between rising digital demands and constrained provider budgets.",
-              "strategic_implication": "Health-system leaders should treat technology sourcing as a service-continuity and change-management decision, not only a labor-cost action. Outsourcing can create scale, but transition controls, cybersecurity, and retained internal expertise will determine whether savings persist.",
-              "confidence": "high",
-              "tags": [
-                "health-systems",
-                "it-workforce",
-                "outsourcing",
-                "provider-finance"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Clinical education is experimenting with new ways to build skills and engagement as care becomes more technology-enabled. The workforce signal is less about novelty than about whether training methods improve readiness without adding friction to already constrained teams.",
-          "items": [
-            {
-              "item_id": "2026-09-10-pennsylvania-measles-infant-deaths",
-              "canonical_topic": "pennsylvania-measles-infant-deaths",
-              "duplicate_group": "pennsylvania-measles-infant-deaths",
-              "priority_score": 9,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/09/coroner-details-infant-deaths-pennsylvania-measles-outbreak/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T21:44:07Z"
-                }
-              ],
-              "title": "Coroner confirms infant deaths in a growing Pennsylvania measles outbreak",
-              "summary": "A Pennsylvania coroner confirmed that the two measles-related deaths reported last month involved infants, and that measles itself caused one of the deaths. The confirmation comes as the state outbreak continues to grow.",
-              "strategic_implication": "Hospitals and clinics in and near affected counties should re-verify airborne isolation readiness, staff immunity records, and post-exposure prophylaxis pathways for infants too young to vaccinate. Public health and provider communications should be coordinated before case counts rise further.",
-              "confidence": "high",
-              "tags": [
-                "measles",
-                "outbreak-response",
-                "infection-prevention",
-                "pennsylvania"
-              ]
-            },
-            {
-              "item_id": "2026-09-10-lifepoint-ai-nursing-time",
-              "canonical_topic": "lifepoint-ai-nursing-time",
-              "duplicate_group": "lifepoint-ai-nursing-time",
-              "priority_score": 7,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News RSS",
-                  "url": "https://medcitynews.com/2026/09/lifepoint-health-ai-nurses/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T20:40:11Z"
-                }
-              ],
-              "title": "Lifepoint Health uses ambient AI and patient prioritization to return time to nurses",
-              "summary": "Lifepoint Health's chief nurse executive told MedCity News that ambient listening and AI-driven patient prioritization are helping nurses recover time spent on tasks that do not require clinical judgment. The approach frames AI as workload relief rather than staffing replacement.",
-              "strategic_implication": "Nursing leaders can use documentation and prioritization pilots as the lowest-friction entry point for clinical AI, provided time saved is measured and redirected to bedside care. Governance should define escalation rules before prioritization tools influence assignment decisions.",
-              "confidence": "medium",
-              "tags": [
-                "nursing-workforce",
-                "ambient-ai",
-                "clinical-operations",
-                "documentation-burden"
-              ]
-            },
-            {
-              "item_id": "2026-09-10-video-games-medical-education",
-              "canonical_topic": "video-games-medical-education",
-              "duplicate_group": "video-games-medical-education",
-              "priority_score": 6,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/providers/how-video-games-are-changing-medical-education",
-                  "source_type": "rss",
-                  "published_at": "2026-09-09T13:12:00Z"
-                }
-              ],
-              "title": "Video-game design is being used to train doctors and build clinical skills",
-              "summary": "Fierce Healthcare reports that video-game design is being applied to medical education, including doctor training and clinical-skill development. The approach uses interactive mechanics to make practice and feedback more engaging. It adds to the broader shift toward simulation and digital learning in health-profession training.",
-              "strategic_implication": "Education leaders should evaluate game-based training against objective competency, retention, and transfer-to-practice measures. Used selectively, interactive simulation could help scale training while making complex clinical scenarios safer to rehearse.",
-              "confidence": "medium",
-              "tags": [
-                "medical-education",
-                "clinical-training",
-                "simulation",
-                "workforce-development"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-22T11:05:05Z"
+  "last_updated": "2026-10-22T12:36:53Z"
 }

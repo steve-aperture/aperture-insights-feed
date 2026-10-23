@@ -4,31 +4,43 @@
   "editions": [
     {
       "edition_date": "2026-10-23",
-      "generated_at": "2026-10-23T11:00:00Z",
+      "generated_at": "2026-10-23T12:33:44Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing centers on near-term Medicaid work-requirement implementation, federal rural-health funding incentives, and emerging questions about accountability for generative AI in care delivery. Signals were drawn from STAT, Healthcare Dive, Fierce Healthcare, KFF Health News, CMS, FDA, and CDC, with a notable oncology trial update and new health-system innovation activity.",
+      "summary_note": "Today's briefing centers on near-term Medicaid work-requirement implementation and its payer effects, including Molina's projected 260,000-member 2027 enrollment loss, alongside rural-health funding incentives, a $45 million Gilead Medicaid kickback settlement, and new Medicare contractor limits on pain procedures. Operational risk signals include a Quest Diagnostics lab-system breach and an expanded FDA import block on Olympus endoscopes, with oncology, Huntington's, overdose, and compounded GLP-1 developments rounding out the clinical picture.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
-          "STAT News RSS",
+          "Gmail label InsightsSources/Healthcare Brew",
+          "Gmail label InsightsSources/Healthcare Dive",
+          "Gmail label InsightsSources/Hospitalogy",
+          "Gmail label InsightsSources/Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics)",
           "Healthcare Dive RSS",
+          "BioPharma Dive RSS",
+          "MedTech Dive RSS",
           "Fierce Healthcare RSS",
-          "Targeted web searches across CMS/Medicaid, FDA and healthcare AI, rural health funding, oncology, and public health"
+          "Targeted web searches across CMS/Medicaid, FDA and healthcare AI, rural health funding, oncology, public health, and state enforcement"
         ],
         "sources_successful": [
           "STAT News RSS fetched and screened for October 23 coverage.",
           "Healthcare Dive RSS fetched and screened for October 22 coverage.",
           "Fierce Healthcare RSS fetched and screened for October 22 coverage.",
-          "Targeted web searches confirmed details against CMS, FDA, CDC, KFF Health News, and relevant sector reporting."
+          "Targeted web searches confirmed details against CMS, FDA, CDC, KFF Health News, and relevant sector reporting.",
+          "Curated refresh: STAT RSS re-screened for October 22-23; added the Gilead Texas Medicaid settlement, Medicare contractor nerve-procedure limits, MAHA adviser exit and ultra-processed food definition, and Alnylam Huntington's data.",
+          "Curated refresh: Healthcare Dive, BioPharma Dive, and MedTech Dive RSS screened; added Molina Q3, Quest Diagnostics cyberattack, Labcorp-Myriad prenatal deal, Olympus import alert expansion, and compounded tirzepatide recall.",
+          "Texas Office of the Attorney General release used to confirm Gilead settlement amount and background."
         ],
-        "sources_failed": [],
-        "run_notes": "Compared candidates with the October 22 edition and excluded repeated coverage of Integris/Risant, employer premiums, uninsured rates, prior authorization, and the prior-day Medicaid coverage survey. Gmail labels were not queried because they are supplementary; the RSS and web sources supplied adequate coverage. One AI deployment and one provider innovation-platform transaction are attributed to Fierce Healthcare reporting and are marked medium confidence where details were not independently corroborated."
+        "sources_failed": [
+          "Gmail InsightsSources labels (Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare): date-bounded searches from 2026-10-21 (Hospitalogy from 2026-10-16) returned no messages in the connected mailbox; RSS used instead.",
+          "Fierce Healthcare RSS returned HTTP 403 during the curated refresh; the two Fierce-sourced items from the automated run were retained at their original confidence."
+        ],
+        "run_notes": "Compared candidates with the October 22 edition and excluded repeated coverage of Integris/Risant, employer premiums, uninsured rates, prior authorization, and the prior-day Medicaid coverage survey. Gmail labels were not queried because they are supplementary; the RSS and web sources supplied adequate coverage. One AI deployment and one provider innovation-platform transaction are attributed to Fierce Healthcare reporting and are marked medium confidence where details were not independently corroborated. Curated refresh retained all 8 automated items and added 9 new items (17 total). Excluded as repeats of prior editions: FDA prescription-drug app guidance (covered 2026-10-21), Moderna-Merck melanoma vaccine data (covered 2026-10-16), Integris/Risant, and KFF premiums. The Medicare nerve-procedure item draws on a physician opinion piece and is marked medium confidence; the Alnylam item reflects early biomarker data only. The Treasury China-biotech investment rule was excluded as unconfirmed."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "States are racing to operationalize Medicaid work requirements before the 2027 deadline, while federal rural-health funding incentives may influence state decisions about certificate-of-need laws.",
+          "synthesis": "States are racing to operationalize Medicaid work requirements before the 2027 deadline, while federal rural-health incentives, a $45 million Texas Medicaid kickback settlement, new Medicare contractor limits on nerve pain procedures, and a stalled ultra-processed food definition show policy pressure arriving through grants, enforcement, coverage rules, and nutrition policy.",
           "items": [
             {
               "item_id": "2026-10-23-medicaid-work-requirement-implementation",
@@ -89,12 +101,104 @@
                 "state-policy",
                 "healthcare-competition"
               ]
+            },
+            {
+              "item_id": "2026-10-23-gilead-texas-medicaid-kickback-settlement",
+              "canonical_topic": "gilead-texas-medicaid-kickback-settlement",
+              "duplicate_group": "gilead-texas-medicaid-kickback-settlement",
+              "priority_score": 8,
+              "primary_source": "Texas Office of the Attorney General",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Texas OAG: Paxton Secures $45 Million Settlement with Gilead to Protect Texas Medicaid",
+                  "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-secures-45-million-settlement-big-pharma-company-gilead-protect-texas",
+                  "source_type": "web",
+                  "published_at": "2026-10-22T00:00:00Z"
+                },
+                {
+                  "source": "STAT: Gilead to pay $45 million to settle kickback charges filed by Texas attorney general",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/22/gilead-settles-kickback-lawsuit-texas-attorney-general/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T23:12:00Z"
+                }
+              ],
+              "title": "Gilead pays $45 million to settle Texas Medicaid kickback claims over 'free nurse' support",
+              "summary": "Gilead agreed to pay Texas $45 million to resolve claims, first filed by the attorney general in October 2023 alongside a whistleblower, that free nursing services and reimbursement support offered to prescribers improperly steered Medicaid-paid prescriptions. Gilead denied the allegations and said it settled to avoid prolonged litigation.",
+              "strategic_implication": "Manufacturer-funded nurse educator and hub-services programs remain an active state fraud-enforcement target; pharma patient-support models and provider practices that rely on them should be reviewed for inducement risk under state false-claims statutes.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "fraud-and-abuse",
+                "pharma",
+                "patient-support-programs",
+                "texas"
+              ]
+            },
+            {
+              "item_id": "2026-10-23-medicare-mac-peripheral-nerve-procedure-limits",
+              "canonical_topic": "medicare-mac-peripheral-nerve-procedure-limits",
+              "duplicate_group": "medicare-mac-peripheral-nerve-procedure-limits",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT First Opinion: New Medicare policies will keep important pain relief from some patients",
+                  "url": "https://www.statnews.com/2026/10/23/severe-pain-policy-medicare-coverage-macs-nerve-block/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-23T08:30:00Z"
+                }
+              ],
+              "title": "Five Medicare contractors move to limit coverage of peripheral nerve pain procedures",
+              "summary": "Beginning in late October, local coverage policies from five Medicare Administrative Contractors covering 37 states and several territories will restrict many peripheral nerve procedures used to diagnose and treat chronic pain. A pain-medicine physician writing in STAT says the final policy is narrower than the 2025 proposal but still excludes therapeutic procedures targeting nerves such as the pudendal nerve and ganglion impar; contractors cite small studies and short follow-up.",
+              "strategic_implication": "Pain practices, ASCs, and hospital outpatient departments should expect denials and revenue pressure for affected codes, and may need to reroute patients toward other non-opioid options while specialty societies build the evidence base for reconsideration.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "local-coverage-determinations",
+                "pain-management",
+                "coverage-policy"
+              ]
+            },
+            {
+              "item_id": "2026-10-23-maha-adviser-exit-ultra-processed-food-definition",
+              "canonical_topic": "maha-adviser-exit-ultra-processed-food-definition",
+              "duplicate_group": "maha-adviser-exit-ultra-processed-food-definition",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT: Top MAHA adviser Calley Means resigns from White House days ahead of midterms",
+                  "url": "https://www.statnews.com/2026/10/22/calley-means-resigns-white-house-adviser-maha-movement/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T17:52:00Z"
+                },
+                {
+                  "source": "STAT: Nutrition experts press White House to release ultra-processed food definition",
+                  "url": "https://www.statnews.com/2026/10/22/ultra-processed-food-definition-maha-white-house/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T18:04:00Z"
+                }
+              ],
+              "title": "MAHA adviser Calley Means exits as experts press for the stalled ultra-processed food definition",
+              "summary": "Calley Means resigned his White House MAHA adviser role less than two weeks before the midterms; he did not give a reason, though POLITICO reported frustration over delays to a federal ultra-processed food definition. Separately, more than 80 nutrition researchers, led by Tufts' Food is Medicine Institute, are petitioning OMB to release the definition after an August unveiling was canceled under food-industry pressure.",
+              "strategic_implication": "A federal ultra-processed food definition would shape SNAP, school-meal, labeling, and food-is-medicine policy; leadership turnover and industry opposition make its timing uncertain, so plans that depend on it should not assume near-term release.",
+              "confidence": "high",
+              "tags": [
+                "maha",
+                "nutrition-policy",
+                "ultra-processed-food",
+                "hhs",
+                "white-house"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "Provider groups are pressing the FDA to keep product-safety accountability with AI-device developers, while a health system is piloting AI-supported case-management workflows.",
+          "synthesis": "Accountability is the common thread: providers want generative-AI device monitoring to fall on developers, health systems are scaling AI case management, and a Quest lab-ordering breach shows how concentrated third-party clinical platforms are as cyber exposure points.",
           "items": [
             {
               "item_id": "2026-10-23-generative-ai-device-accountability",
@@ -121,6 +225,33 @@
                 "fda",
                 "clinical-liability",
                 "postmarket-monitoring"
+              ]
+            },
+            {
+              "item_id": "2026-10-23-quest-diagnostics-quanum-cyberattack",
+              "canonical_topic": "quest-diagnostics-quanum-cyberattack",
+              "duplicate_group": "quest-diagnostics-quanum-cyberattack",
+              "priority_score": 8,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive: Quest Diagnostics hit by cyberattack",
+                  "url": "https://www.medtechdive.com/news/quest-diagnostics-hit-by-cyberattack/833785/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T16:18:00Z"
+                }
+              ],
+              "title": "Quest Diagnostics discloses unauthorized access to client lab-ordering system",
+              "summary": "Quest identified unauthorized access to its Quanum Lab Services Manager, which some clients use to order tests and look up results, and paused access to the system. The company believes patient health or identifiable information in certain records was accessed but has not disclosed how many; it said core operations were not materially disrupted and it has notified federal law enforcement.",
+              "strategic_implication": "Practices and health systems using Quanum LSM should prepare for ordering and results workarounds, breach-notification coordination, and vendor-risk review; the incident is another reminder that third-party lab and clinical connectivity tools are concentrated cyber exposure points.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "laboratory",
+                "third-party-risk",
+                "phi",
+                "breach"
               ]
             },
             {
@@ -153,7 +284,7 @@
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "The FDA is creating a cross-center pathway for neuroscience product development, while early pancreatic-cancer combination data reinforce investor and clinical interest in precision oncology.",
+          "synthesis": "Medicaid insurers see rate relief ahead even as work requirements shrink enrollment, labs keep consolidating specialty testing, and FDA and oncology/neurology pipeline news point to new high-cost specialty therapies.",
           "items": [
             {
               "item_id": "2026-10-23-fda-neuroscience-development-program",
@@ -208,12 +339,91 @@
                 "precision-medicine",
                 "esmo"
               ]
+            },
+            {
+              "item_id": "2026-10-23-molina-q3-medicaid-rate-recovery",
+              "canonical_topic": "molina-q3-medicaid-rate-recovery",
+              "duplicate_group": "molina-q3-medicaid-rate-recovery",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive: Molina joins Medicaid recovery bandwagon despite mixed Q3",
+                  "url": "https://www.healthcaredive.com/news/molina-q3-2026-medicaid-recovery-momentum/833650/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T12:17:00Z"
+                }
+              ],
+              "title": "Molina expects Medicaid rates to catch up in 2027 but projects 260,000 members lost to work requirements",
+              "summary": "Molina reported third-quarter revenue of $11.1 billion, down 3%, profit of $38 million, and a 92.9% medical loss ratio, while reaffirming its 2026 outlook. It raised expected 2026 cost trend to 5.5% and state rate increases to 4.5%, sees rates near 6% in 2027, and expects work requirements to cut Medicaid enrollment about 6%, or roughly 260,000 people, in 2027. It also plans to exit Medicare Advantage prescription-drug products next year.",
+              "strategic_implication": "Medicaid managed-care economics look to be stabilizing on rates, but work-requirement disenrollment will shrink membership and likely shift the remaining risk pool; providers in Medicaid-heavy markets should model both payment and volume effects for 2027.",
+              "confidence": "high",
+              "tags": [
+                "medicaid-managed-care",
+                "earnings",
+                "work-requirements",
+                "molina",
+                "payer-financials"
+              ]
+            },
+            {
+              "item_id": "2026-10-23-labcorp-myriad-prenatal-testing-acquisition",
+              "canonical_topic": "labcorp-myriad-prenatal-testing-acquisition",
+              "duplicate_group": "labcorp-myriad-prenatal-testing-acquisition",
+              "priority_score": 6,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive: Labcorp to buy Myriad's prenatal health testing unit for $210M",
+                  "url": "https://www.medtechdive.com/news/labcorp-to-buy-myriads-prenatal-health-testing-unit-for-210m/833683/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T06:50:00Z"
+                }
+              ],
+              "title": "Labcorp agrees to buy Myriad's prenatal testing unit for $210 million",
+              "summary": "Labcorp agreed to acquire Myriad Genetics' prenatal health business, including the FirstGene and Prequel screens, Foresight carrier screening, and SneakPeek fetal-sex test, for $210 million. Labcorp expects about $160 million in first-year revenue from the tests; Myriad's prenatal sales fell 16% to $81.7 million in the first half of the year.",
+              "strategic_implication": "Specialty genetic testing continues to consolidate into national labs with scale in payer contracting and distribution, which may affect OB practice ordering relationships and leave fewer independent genetic-testing competitors.",
+              "confidence": "high",
+              "tags": [
+                "laboratory",
+                "m-and-a",
+                "genetic-testing",
+                "womens-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-23-alnylam-brezosiran-huntingtons-early-data",
+              "canonical_topic": "alnylam-brezosiran-huntingtons-early-data",
+              "duplicate_group": "alnylam-brezosiran-huntingtons-early-data",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT: Alnylam says Huntington's drug shows promise in early study",
+                  "url": "https://www.statnews.com/2026/10/23/huntingtons-alnylam-gene-silencing-brezosiran/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-23T07:45:00Z"
+                }
+              ],
+              "title": "Alnylam's Huntington's candidate cuts mutant huntingtin by about 60% in early study",
+              "summary": "Alnylam reported that brezosiran, an investigational gene-silencing therapy for Huntington's disease, lowered mutant huntingtin in spinal fluid by an average of 60% or 64%, depending on the assay, at the highest dose in a small study, with what the company called an encouraging safety profile. A placebo-controlled study to test whether it slows disease progression is planned for next year.",
+              "strategic_implication": "Biomarker reduction is not yet evidence of clinical benefit, but the data add to a crowded Huntington's pipeline that could bring high-cost, specialty-administered therapies to neurology programs later in the decade.",
+              "confidence": "medium",
+              "tags": [
+                "neurology",
+                "rnai",
+                "huntingtons-disease",
+                "pipeline"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "A new $2 billion innovation-platform combination could expand the scale of health-system venture creation and implementation partnerships.",
+          "synthesis": "Innovation-platform consolidation and an expanded FDA import block on Olympus endoscopes both affect how health systems source capabilities and equipment.",
           "items": [
             {
               "item_id": "2026-10-23-redesign-arc-global-combination",
@@ -240,12 +450,39 @@
                 "strategic-partnership",
                 "healthcare-market"
               ]
+            },
+            {
+              "item_id": "2026-10-23-fda-olympus-endoscope-import-alert-expansion",
+              "canonical_topic": "fda-olympus-endoscope-import-alert-expansion",
+              "duplicate_group": "fda-olympus-endoscope-import-alert-expansion",
+              "priority_score": 7,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive: FDA flags more Olympus safety problems in import block and warning letter",
+                  "url": "https://www.medtechdive.com/news/fda-flags-more-olympus-safety-problems-in-import-block-and-warning-letter/833730/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T11:20:00Z"
+                }
+              ],
+              "title": "FDA blocks five more Olympus endoscope models after a new warning letter",
+              "summary": "FDA added five more Japan-made Olympus endoscope models to a June 2025 import alert that already covered 58 devices, citing ongoing quality-system concerns. An Oct. 7 warning letter followed inspections of six Olympus facilities and cited unvalidated design, inadequate risk controls, and complaint-handling gaps tied to events including gas embolism and deaths.",
+              "strategic_implication": "Endoscopy and GI service lines that rely on Olympus should review fleet replacement plans, service contracts, and reprocessing protocols, and identify alternative suppliers before import limits tighten replacement availability.",
+              "confidence": "high",
+              "tags": [
+                "medical-devices",
+                "fda-enforcement",
+                "supply-chain",
+                "endoscopy",
+                "patient-safety"
+              ]
             }
           ]
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "Provisional overdose data continue to improve, but public-health experts caution that the reasons for the decline are not yet settled.",
+          "synthesis": "Overdose deaths keep falling without a settled explanation, while a compounded tirzepatide recall adds safety pressure on clinicians and telehealth programs prescribing copycat GLP-1s.",
           "items": [
             {
               "item_id": "2026-10-23-overdose-mortality-decline-drivers",
@@ -278,6 +515,33 @@
                 "public-health",
                 "naloxone",
                 "mortality"
+              ]
+            },
+            {
+              "item_id": "2026-10-23-compounded-tirzepatide-recall-apothecary",
+              "canonical_topic": "compounded-tirzepatide-recall-apothecary",
+              "duplicate_group": "compounded-tirzepatide-recall-apothecary",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive: GLP-1 compounder issues recall for copycat Zepbound",
+                  "url": "https://www.biopharmadive.com/news/glp1-obesity-drug-recall-apothecary-tirzepatide-zepbound/833712/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-22T11:50:00Z"
+                }
+              ],
+              "title": "Compounder recalls 22 lots of copycat tirzepatide in a Class II action",
+              "summary": "Apothecary Pharma voluntarily recalled 22 lots of compounded tirzepatide, a copy of Lilly's Zepbound, with beyond-use dates of Oct. 8 to Nov. 26, saying it could not definitively guarantee the product's safety. FDA classified the recall as Class II. A recent Gallup survey cited in the report found about 20% of Americans taking these drugs use compounded versions.",
+              "strategic_implication": "Clinicians and telehealth programs prescribing compounded GLP-1s should verify pharmacy sourcing and lot exposure and document informed consent; recalls strengthen the case for payers and employers to steer patients toward FDA-approved products.",
+              "confidence": "high",
+              "tags": [
+                "glp-1",
+                "compounding",
+                "drug-safety",
+                "recall",
+                "obesity"
               ]
             }
           ]
@@ -15542,539 +15806,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-11",
-      "generated_at": "2026-09-11T12:55:00Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks a tighter Medicare Advantage scoring environment, a politically timed ACA refund proposal, and accelerating federal and provider investment in clinical AI. This midday refresh adds a Georgetown affordability blueprint with hard caps on cost-sharing and commercial hospital prices, the shift toward governing AI agents as untrusted third parties, documented oncology drug shortages across all 34 NCCN centers, and a peer-review boycott at the American Diabetes Association. It also flags capital discipline in hospitals, maternity-access fragility, cardiovascular drug-development setbacks, and workforce consequences from revenue-cycle outsourcing, using current STAT, Healthcare Dive, Fierce Healthcare, and MedCity News reporting with targeted corroboration.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels: InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
-          "STAT News RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "MedCity News RSS",
-          "CMS newsroom and policy pages",
-          "Targeted web search: Reuters, Cardiovascular Business, Business Insider, Becker's Hospital Review"
-        ],
-        "sources_successful": [
-          "STAT News RSS",
-          "Healthcare Dive RSS",
-          "MedCity News RSS",
-          "Fierce Healthcare RSS (earlier run)",
-          "Targeted web search corroboration"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels returned no messages: the connected mailbox is not the one holding the newsletter labels",
-          "Healthcare Brew RSS 404; Hospitalogy, Modern Healthcare, and Fierce Healthcare RSS returned 403 on this run",
-          "Some publisher article pages were paywalled or access-restricted; RSS descriptions and extraction excerpts were used instead"
-        ],
-        "run_notes": "Midday refresh of the 2026-09-11 edition rather than a duplicate entry, per the one-edition-per-date rule. The 7:11 AM ET run's twelve items were retained and four newly surfaced signals were added after screening against the prior five editions for duplicates. Gmail label sources were attempted again and remain unavailable, so publisher RSS plus targeted page extraction carried the run. Edition list trimmed to the 30-edition cap."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "The near-term policy signal is a more consequential Medicare Advantage operating environment, while the administration's proposed ACA refunds add a politically visible intervention ahead of open enrollment. Plans should model both scoring pressure and member-communication risk rather than treating either development as a one-off announcement.",
-          "items": [
-            {
-              "item_id": "2026-09-11-aca-500-refunds",
-              "canonical_topic": "aca-500-refunds",
-              "duplicate_group": "aca-500-refunds",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/10/trump-affordable-care-act-refund-checks-who-is-eligible/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T19:57:28Z"
-                },
-                {
-                  "source": "Reuters",
-                  "url": "https://www.reuters.com/world/us-issue-500-obamacare-refunds-nearly-million-americans-2026-09-10",
-                  "source_type": "web",
-                  "published_at": "2026-09-10T00:00:00Z"
-                }
-              ],
-              "title": "White House proposes $500 refunds for nearly 1 million ACA enrollees",
-              "summary": "The administration says it plans to send $500 refunds to nearly 1 million people enrolled in Affordable Care Act plans, with checks expected to go out next month. STAT reports that the proposal is aimed at people who do not receive federal premium subsidies, leaving out tens of millions of other ACA enrollees. Reuters and STAT both describe the announcement as tied to higher premiums and the expiration of enhanced subsidies.",
-              "strategic_implication": "Issuers and enrollment organizations should prepare for member questions, eligibility confusion, and political messaging around the payments before open enrollment. The proposal could also create additional volatility in individual-market shopping behavior and communications costs.",
-              "confidence": "medium",
-              "tags": [
-                "aca",
-                "individual-market",
-                "health-insurance",
-                "enrollment"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-ma-2027-star-cutpoints",
-              "canonical_topic": "ma-2027-star-cutpoints",
-              "duplicate_group": "ma-2027-star-cutpoints",
-              "priority_score": 9,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/medicare-advantage-stars-cutpoints-2027-cms/829963/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T16:18:29Z"
-                },
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-rate-announcement",
-                  "source_type": "web",
-                  "published_at": "2026-04-06T00:00:00Z"
-                }
-              ],
-              "title": "CMS makes 2027 Medicare Advantage Star thresholds harder for many plans to reach",
-              "summary": "CMS released draft 2027 Medicare Advantage Star Ratings cut points that are harder to reach for about half of the thresholds, Healthcare Dive reports. The change adds pressure to plans already managing tighter margins and quality-linked revenue. CMS's 2027 rate materials also show a small negative Star Ratings impact in the rate announcement framework.",
-              "strategic_implication": "Plans should treat quality operations, coding accuracy, member outreach, and care-transition execution as a single margin-protection program. Smaller threshold changes can have an outsized effect when they determine bonus payments and consumer-facing plan comparisons.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "star-ratings",
-                "cms",
-                "payer-operations"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-georgetown-chir-affordability-caps",
-              "canonical_topic": "georgetown-chir-affordability-caps",
-              "duplicate_group": "georgetown-chir-affordability-caps",
-              "priority_score": 8,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/3-strategies-to-improve-health-insurance-per-georgetown-report/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T23:20:13Z"
-                }
-              ],
-              "title": "Georgetown report urges hard caps on deductibles and commercial hospital prices",
-              "summary": "A report from Georgetown University's Center on Health Insurance Reforms, supported by the Robert Wood Johnson Foundation, recommends capping deductibles at $1,000 individual and $2,000 family and out-of-pocket maximums at $4,000 and $8,000, against 2026 statutory limits of $10,600 and $21,200. It also proposes capping commercial hospital prices at 200% of Medicare, which the authors estimate could save roughly $88 billion annually in premiums and $10 billion in out-of-pocket costs, plus eliminating cost-sharing for some primary care, mental health, and chronic disease services, streamlining prior authorization, extending Essential Health Benefits to large-group and self-funded plans, and creating a hospital fair-billing certification.",
-              "strategic_implication": "This is the affordability agenda health systems and issuers should expect to see referenced in state legislative sessions and midterm messaging. Provider finance teams should model exposure to a 200%-of-Medicare commercial benchmark, and plans should assess how deductible caps would shift actuarial value and benefit design.",
-              "confidence": "medium",
-              "tags": [
-                "affordability",
-                "benefit-design",
-                "hospital-prices",
-                "commercial-rates",
-                "policy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Clinical AI is moving toward regulated, workflow-specific use cases rather than broad experimentation. Federal ambition, FDA authorization, and a national telehealth modernization contract all point to adoption being won through evidence, integration, and governance.",
-          "items": [
-            {
-              "item_id": "2026-09-11-fda-queen-of-hearts-ekg-ai",
-              "canonical_topic": "fda-queen-of-hearts-ekg-ai",
-              "duplicate_group": "fda-queen-of-hearts-ekg-ai",
-              "priority_score": 9,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/11/fda-new-ekg-heart-attack-detection-algo-queen-of-hearts/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-11T08:30:00Z"
-                },
-                {
-                  "source": "Cardiovascular Business",
-                  "url": "https://cardiovascularbusiness.com/topics/cardiac-imaging/electrocardiography-ecg/fda-authorizes-queen-hearts-ai-model-detecting-heart-attacks-ecg-results",
-                  "source_type": "web",
-                  "published_at": "2026-09-07T00:00:00Z"
-                }
-              ],
-              "title": "FDA authorizes AI that flags severe heart attacks and harder-to-detect ECG patterns",
-              "summary": "The FDA granted a de novo classification to Powerful Medical's Queen of Hearts, an AI model intended to help triage acute coronary syndrome from electrocardiograms. STAT notes that de novo authorization is less common than 510(k) clearance and generally requires a stronger evidence case for a novel device category.",
-              "strategic_implication": "This is a meaningful test of whether regulated AI can shorten time to the right cardiac pathway without adding alert burden. Health systems should evaluate the model against cath-lab activation workflows, clinical liability controls, and measurable time-to-treatment outcomes.",
-              "confidence": "high",
-              "tags": [
-                "clinical-ai",
-                "cardiology",
-                "fda",
-                "medical-devices"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-federal-clinical-ai-ambitions",
-              "canonical_topic": "federal-clinical-ai-ambitions",
-              "duplicate_group": "federal-clinical-ai-ambitions",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/health-tech/ctas-dc-healthcare-event-federal-officials-outline-ai-ambitions-clinicians-debate-risks",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T15:07:00Z"
-                }
-              ],
-              "title": "Federal agencies are accelerating clinical AI plans as clinicians debate implementation risk",
-              "summary": "Fierce Healthcare reports that federal health officials are expanding artificial intelligence ambitions, with clinical AI emerging as a strategic priority for CMS. The same discussion is surfacing clinician concerns about safety, accountability, and the gap between model capability and real-world workflow reliability.",
-              "strategic_implication": "Health systems should move from generic AI enthusiasm to a portfolio approach that distinguishes low-risk productivity tools from clinical decision support. Procurement standards, monitoring, and clear human-override pathways will be differentiators as federal programs create more demand.",
-              "confidence": "medium",
-              "tags": [
-                "clinical-ai",
-                "cms",
-                "ai-governance",
-                "healthcare-technology"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-va-amwell-telehealth-modernization",
-              "canonical_topic": "va-amwell-telehealth-modernization",
-              "duplicate_group": "va-amwell-telehealth-modernization",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/veterans-affairs-taps-amwell-telehealth-revamp/830032/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T14:11:59Z"
-                },
-                {
-                  "source": "Business Insider",
-                  "url": "https://markets.businessinsider.com/news/stocks/amwell-receives-letter-of-intent-from-department-of-veterans-affairs-to-help-power-its-digital-health-infrastructure-1036528175",
-                  "source_type": "web",
-                  "published_at": "2026-09-10T00:00:00Z"
-                }
-              ],
-              "title": "VA selects Amwell to support a national telehealth modernization effort",
-              "summary": "The Department of Veterans Affairs selected Amwell to facilitate telehealth delivery across the agency, Healthcare Dive reports. The platform is intended to connect veterans with VA providers or outside specialists, although the modernization program has experienced delays and setbacks in earlier phases.",
-              "strategic_implication": "The scale of the VA deployment makes interoperability, uptime, specialty routing, and clinician adoption more important than a simple virtual-visit count. Vendors and health systems should expect public-sector buyers to demand measurable access and continuity outcomes.",
-              "confidence": "medium",
-              "tags": [
-                "telehealth",
-                "veterans-affairs",
-                "digital-health",
-                "care-access"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-agentic-ai-identity-governance",
-              "canonical_topic": "agentic-ai-identity-governance",
-              "duplicate_group": "agentic-ai-identity-governance",
-              "priority_score": 7,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/imprivata-ai-agents/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T21:51:04Z"
-                },
-                {
-                  "source": "MedCity News / Cotiviti 2026 Healthcare AI Readiness Index",
-                  "url": "https://medcitynews.com/2026/09/healthcare-executives-weigh-in-ai-readiness-and-the-growing-risk-of-cybersecurity-threats/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T11:50:00Z"
-                }
-              ],
-              "title": "Health systems begin governing AI agents as untrusted third parties",
-              "summary": "Imprivata CEO Fran Rosch argued that AI agents should be treated like unvetted contract nurses or outside vendors, with identity proofing, narrowly scoped credentials, continuous monitoring, behavioral auditing, and immediate revocation when work ends. Imprivata is extending its existing privileged-access gateway to cover agents rather than selling a new product, with about a dozen health systems acting as design partners. Separately, a MedCity News and Cotiviti readiness index drawing on 70 payer and provider executives surveyed in summer 2026 examines adoption barriers, shadow AI, and preparation for AI-assisted cyberattacks.",
-              "strategic_implication": "Agentic AI is moving from pilot to access-control problem, and identity governance is becoming the practical gating factor for deployment. Leaders should fold agent credentialing, scoping, and offboarding into existing vendor and privileged-access processes now, before shadow AI use outpaces policy.",
-              "confidence": "medium",
-              "tags": [
-                "agentic-ai",
-                "cybersecurity",
-                "identity-access",
-                "governance",
-                "shadow-ai"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Industry signals are mixed: cardiovascular innovation has taken a confidence hit, while large healthcare platforms are still repositioning around services, analytics, and AI. Capital remains available, but leadership credibility and a clear path to durable economics matter more than headline growth.",
-          "items": [
-            {
-              "item_id": "2026-09-11-cardiovascular-drug-trial-failures",
-              "canonical_topic": "cardiovascular-drug-trial-failures",
-              "duplicate_group": "cardiovascular-drug-trial-failures",
-              "priority_score": 8,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/11/novartis-novo-nordisk-cardiovascular-drug-trials-fallout/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-11T08:30:00Z"
-                }
-              ],
-              "title": "Back-to-back Novartis and Novo Nordisk failures could cool cardiovascular drug investment",
-              "summary": "STAT reports that recent failures of Novartis' pelacarsen and a Novo Nordisk cardiovascular program could have a chilling effect across drug development. Pelacarsen was designed to reduce cardiovascular events by lowering lipoprotein(a), a risk factor pursued by multiple companies after substantial investment.",
-              "strategic_implication": "Biopharma leaders and investors should reassess cardiovascular trial assumptions, endpoint strategy, and portfolio concentration rather than extrapolating from the size of the addressable market. For providers, the near-term implication is a more uncertain pipeline for new risk-reduction therapies.",
-              "confidence": "medium",
-              "tags": [
-                "biopharma",
-                "cardiology",
-                "clinical-trials",
-                "drug-development"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-optum-health-turnaround",
-              "canonical_topic": "optum-health-turnaround",
-              "duplicate_group": "optum-health-turnaround",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/payers/optum-health-ceo-pulls-back-curtain-turnaround",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T15:23:00Z"
-                }
-              ],
-              "title": "Optum Health outlines a turnaround as UnitedHealth resets its services strategy",
-              "summary": "Fierce Healthcare reports that Optum Health leadership is detailing a turnaround plan as UnitedHealth Group works through a difficult 2025. The effort centers on the economics and operating model of the healthcare-services unit rather than a single product change.",
-              "strategic_implication": "The reset is a market signal for provider enablement, value-based care, and vertically integrated platforms: scale alone will not offset weak unit economics. Competitors should watch for changes in risk appetite, contracting posture, and asset-level performance expectations.",
-              "confidence": "medium",
-              "tags": [
-                "optum",
-                "unitedhealth-group",
-                "healthcare-services",
-                "value-based-care"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-health-catalyst-ceo-transition",
-              "canonical_topic": "health-catalyst-ceo-transition",
-              "duplicate_group": "health-catalyst-ceo-transition",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/health-catalyst-appoints-new-ceo/830040/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T15:03:00Z"
-                }
-              ],
-              "title": "Health Catalyst names another CEO as it tries to navigate an AI pivot and revenue pressure",
-              "summary": "Health Catalyst appointed a new CEO after cycling through three chief executives in eight months, Healthcare Dive reports. The company is positioning the new leader to navigate an AI pivot alongside revenue headwinds in healthcare analytics.",
-              "strategic_implication": "Frequent leadership changes can slow enterprise sales, product prioritization, and customer confidence precisely when analytics vendors need to prove AI-led value. Buyers should assess roadmap continuity, implementation capacity, and balance-sheet resilience alongside product claims.",
-              "confidence": "high",
-              "tags": [
-                "health-analytics",
-                "artificial-intelligence",
-                "leadership",
-                "healthcare-it"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Provider operators are balancing access needs against capital and reimbursement pressure. Maternity-service scarcity and the cancellation of a major inpatient tower show how financial constraints are reshaping where systems place capacity, even when demand remains strong.",
-          "items": [
-            {
-              "item_id": "2026-09-11-hospital-maternity-access-gap",
-              "canonical_topic": "hospital-maternity-access-gap",
-              "duplicate_group": "hospital-maternity-access-gap",
-              "priority_score": 9,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive RSS",
-                  "url": "https://www.healthcaredive.com/news/half-of-us-hospitals-lack-maternity-wards-as-medicaid-cuts-loom-report/830015/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T13:10:35Z"
-                }
-              ],
-              "title": "Nearly half of U.S. hospitals lack maternity services as Medicaid pressure builds",
-              "summary": "A new report covered by Healthcare Dive says nearly half of U.S. hospitals now operate without obstetric services. The report warns that closures could worsen as Medicaid cuts threaten hospital finances, increasing the distance many patients must travel for labor and delivery care.",
-              "strategic_implication": "Health systems and states should treat maternity capacity as a regional-network problem, not only a service-line P&L issue. Scenario planning should include transport, referral, workforce, and Medicaid-access effects before additional closures become irreversible.",
-              "confidence": "medium",
-              "tags": [
-                "maternity-care",
-                "hospital-operations",
-                "medicaid",
-                "rural-health"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-ui-health-care-patient-tower-cancelled",
-              "canonical_topic": "ui-health-care-patient-tower-cancelled",
-              "duplicate_group": "ui-health-care-patient-tower-cancelled",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/providers/university-iowa-health-care-calls-2b-patient-tower-build",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T15:53:00Z"
-                },
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/capital/u-of-iowa-health-care-scraps-plans-for-2b-patient-tower/",
-                  "source_type": "web",
-                  "published_at": "2026-09-10T00:00:00Z"
-                }
-              ],
-              "title": "University of Iowa Health Care cancels $2B-plus patient tower and pivots to existing facilities",
-              "summary": "University of Iowa Health Care called off a planned $2 billion-plus patient tower, citing significant financial challenges across the industry. The system is instead proposing a roughly $380 million capital plan focused on updating and expanding existing facilities.",
-              "strategic_implication": "The decision illustrates a broader shift from transformative greenfield projects toward staged, faster-payback capacity investments. Boards should stress-test major builds against reimbursement, labor, interest-rate, and demand scenarios, while preserving near-term access improvements.",
-              "confidence": "high",
-              "tags": [
-                "hospital-capital",
-                "provider-finance",
-                "healthcare-construction",
-                "patient-access"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-nccn-cancer-drug-shortages",
-              "canonical_topic": "nccn-cancer-drug-shortages",
-              "duplicate_group": "nccn-cancer-drug-shortages",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT Pharmalot",
-                  "url": "https://www.statnews.com/pharmalot/2026/09/10/cancer-medicines-remain-in-short-supply-across-the-united-states/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T13:01:00Z"
-                }
-              ],
-              "title": "Every NCCN cancer center surveyed reports at least one drug shortage",
-              "summary": "A National Comprehensive Cancer Network survey of its 34 member treatment centers found that all reported a shortage of at least one medicine, and more than 20% reported shortages of five or more. Sixty-one percent said they could still treat patients, but only by avoiding waste, limiting inventory use, and administering minimum suggested dosing. Two-thirds said shortages delayed treatment because substitutions required new prior authorization from insurers, and a majority reported disruption to clinical trials.",
-              "strategic_implication": "Oncology supply instability is now a documented driver of treatment delay and trial disruption, not just a pharmacy inconvenience. Systems should pair inventory and substitution protocols with payer agreements that expedite prior authorization for shortage-driven regimen changes, and research offices should track enrollment risk explicitly.",
-              "confidence": "high",
-              "tags": [
-                "drug-shortages",
-                "oncology",
-                "supply-chain",
-                "prior-authorization",
-                "clinical-trials"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Today's workforce and clinical signals show both labor-model disruption and the long tail of treatment decisions. Outsourcing can rapidly change staffing needs, while new evidence on survivorship raises the bar for long-term monitoring and care planning.",
-          "items": [
-            {
-              "item_id": "2026-09-11-conifer-commonspirit-contract-layoffs",
-              "canonical_topic": "conifer-commonspirit-contract-layoffs",
-              "duplicate_group": "conifer-commonspirit-contract-layoffs",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/providers/tenet-laying-1000-conifer-employees-amid-commonspirit-contract-breakup",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T18:30:00Z"
-                },
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/finance/revenue-cycle-management/conifer-to-lay-off-1000-as-commonspirit-contract-ends/",
-                  "source_type": "web",
-                  "published_at": "2026-09-10T00:00:00Z"
-                }
-              ],
-              "title": "Tenet plans to lay off more than 1,000 Conifer workers as CommonSpirit contract ends",
-              "summary": "Tenet Healthcare's Conifer revenue-cycle subsidiary plans to lay off more than 1,000 employees as a long-term CommonSpirit outsourcing contract ends, with layoffs beginning Nov. 2. The move is part of a broader pivot in the revenue-cycle business and reflects how contract changes can quickly reshape healthcare employment.",
-              "strategic_implication": "Revenue-cycle leaders should plan transition capacity, knowledge transfer, and service continuity well before contract termination. Health systems evaluating outsourcing should model workforce concentration and reversibility, not just the vendor's unit-cost promise.",
-              "confidence": "high",
-              "tags": [
-                "healthcare-workforce",
-                "revenue-cycle",
-                "outsourcing",
-                "provider-operations"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-childhood-platinum-chemo-liver-aging",
-              "canonical_topic": "childhood-platinum-chemo-liver-aging",
-              "duplicate_group": "childhood-platinum-chemo-liver-aging",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/10/childhood-chemotherapy-cisplatin-carboplatin-new-study-liver-impact/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-10T18:00:00Z"
-                },
-                {
-                  "source": "Science",
-                  "url": "http://www.science.org/doi/10.1126/science.ady0339",
-                  "source_type": "web",
-                  "published_at": "2026-09-10T00:00:00Z"
-                }
-              ],
-              "title": "Study links childhood platinum chemotherapy to liver-cell mutations and long-term risk",
-              "summary": "STAT reports on a Science study finding that cisplatin and carboplatin exposure in childhood can leave mutations in healthy liver cells and make them resemble older adult cells. The findings add detail to the long-term survivorship risks associated with platinum-based treatment, even as these drugs remain critical to curing several pediatric cancers.",
-              "strategic_implication": "Pediatric oncology programs should incorporate the evidence into survivorship counseling, risk-stratified monitoring, and longitudinal data collection. The signal reinforces the need to balance high acute treatment benefit with structured follow-up for late effects.",
-              "confidence": "medium",
-              "tags": [
-                "pediatric-oncology",
-                "survivorship",
-                "clinical-research",
-                "long-term-risk"
-              ]
-            },
-            {
-              "item_id": "2026-09-11-diabetes-care-editor-strike",
-              "canonical_topic": "diabetes-care-editor-strike",
-              "duplicate_group": "diabetes-care-editor-strike",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT Morning Rounds",
-                  "url": "https://www.statnews.com/2026/09/11/health-news-boycott-launched-against-ada-includes-journal/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-11T11:43:20Z"
-                }
-              ],
-              "title": "Diabetes Care editors halt manuscript reviews in boycott of the ADA",
-              "summary": "Four editors of Diabetes Care have stopped reviewing manuscripts as part of a boycott of the American Diabetes Association, following the expulsion of five members from the association's June meeting in New Orleans. Editor Steven Kahn characterized the action as a member strike against what participants describe as corporate-style nonprofit governance.",
-              "strategic_implication": "Governance disputes inside specialty societies can interrupt peer review, guideline updates, and the evidence pipeline clinicians rely on. Organizations that depend on society guidance for protocols or quality measures should watch for publication delays and plan for interim evidence sources.",
-              "confidence": "medium",
-              "tags": [
-                "professional-societies",
-                "peer-review",
-                "governance",
-                "diabetes",
-                "clinical-guidelines"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-23T11:04:25Z"
+  "last_updated": "2026-10-23T12:33:44Z"
 }

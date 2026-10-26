@@ -3,6 +3,292 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-26",
+      "generated_at": "2026-10-26T11:10:50Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing spans a proposed Medicare remote-monitoring payment change, a new NIH research center, and a nursing-home workforce initiative entering its launch window. It also tracks a provider technology disruption, a reported health-system transaction, and new AI, oncology, and women's cardiovascular-health signals from CMS, KFF Health News, STAT, Reuters, the Financial Times, and sector reporting.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web searches across CMS/HHS/NIH, Medicare payment, digital health and AI, provider operations, provider transactions, oncology, and women's cardiovascular care"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened; current coverage included the women's heart-health framework and NIH research-center reporting.",
+          "Healthcare Dive RSS fetched; its October 26 item was sponsored content and was not used as an editorial signal.",
+          "Fierce Healthcare RSS fetched and screened; the CMS nursing-home staffing initiative was also corroborated against the CMS release.",
+          "Targeted web searches and available source pages supported the policy, provider, AI, oncology, and clinical-practice items."
+        ],
+        "sources_failed": [],
+        "run_notes": "Coverage focused on weekend and Monday developments since the October 23 edition. The October 23 Quest Diagnostics incident was not repeated; University Hospitals is a separate, unresolved service disruption, and no connection between the incidents has been confirmed. The CMS nursing-home initiative was announced October 23, with its first 90-day launch period beginning October 26. The remote-monitoring story concerns a proposed rule, not a finalized policy; the reported Surgery Partners transaction has not been confirmed as closed; Microsoft results are from a controlled text-based benchmark; and STAT reported no disclosed name, funding level, or leadership details for the NIH center."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "A proposed Medicare payment restriction could reshape access to vendor-supported remote monitoring, while NIH's newly described research center signals attention to vaccine injuries and post-infection illness. Both developments warrant monitoring as scope and implementation details emerge.",
+          "items": [
+            {
+              "item_id": "2026-10-26-medicare-remote-monitoring-vendor-reimbursement",
+              "canonical_topic": "medicare-remote-monitoring-vendor-reimbursement",
+              "duplicate_group": "medicare-remote-monitoring-vendor-reimbursement",
+              "priority_score": 9,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "KFF Health News: Many Medicare Patients Could Lose Access to Remote Monitoring Devices",
+                  "url": "https://kffhealthnews.org/medicare/remote-patient-monitoring-cms-medicare-rule-reimbursements-access-rural-health/",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                }
+              ],
+              "title": "CMS proposal could limit Medicare coverage for vendor-run remote monitoring",
+              "summary": "CMS's proposed Medicare Physician Fee Schedule would stop reimbursing clinicians for remote monitoring services operated by outside technology vendors, limiting payment to monitoring delivered by staff at the clinician's own facility. The proposal applies to traditional Medicare, and KFF reports that rural patients and providers relying on third-party programs could face the greatest access disruption as CMS cites oversight and care-coordination concerns.",
+              "strategic_implication": "Providers and digital-health vendors should model how the proposal could affect enrollment, contracts, staffing, and remote-care economics. Because the policy is still proposed, stakeholder comments and contingency planning may influence final terms.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "remote-monitoring",
+                "reimbursement",
+                "rural-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-nih-vaccine-injury-post-infection-research-center",
+              "canonical_topic": "nih-vaccine-injury-post-infection-research-center",
+              "duplicate_group": "nih-vaccine-injury-post-infection-research-center",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT: NIH's new vaccine injury center has broad goals beyond RFK Jr.'s focus on shots",
+                  "url": "https://www.statnews.com/2026/10/26/nih-vaccine-injury-center-probes-post-infection-illness/",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                }
+              ],
+              "title": "NIH research center's stated scope extends from vaccine injuries to post-infection illness",
+              "summary": "NIH officials said a new center would study vaccine injuries and long-term symptoms after infection, including post-COVID conditions, amid challenges distinguishing symptoms that follow infection from those that follow vaccination. STAT reported that the center's name, leadership, funding level, and formal mandate had not been disclosed.",
+              "strategic_implication": "The broader scope could shape federal attention to post-infectious conditions and related research, but the absence of public details on governance, funding, and study priorities makes the program's scale and execution uncertain.",
+              "confidence": "medium",
+              "tags": [
+                "nih",
+                "vaccine-safety",
+                "post-infection",
+                "research-policy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Microsoft's sequential diagnostic system produced strong results on controlled text-based cases, but the study does not establish performance in live clinical care or against specialist teams.",
+          "items": [
+            {
+              "item_id": "2026-10-26-microsoft-diagnostic-orchestrator-benchmark",
+              "canonical_topic": "microsoft-diagnostic-orchestrator-benchmark",
+              "duplicate_group": "microsoft-diagnostic-orchestrator-benchmark",
+              "priority_score": 8,
+              "primary_source": "Medical Economics",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Medical Economics: AI system outperforms physicians on diagnostic accuracy in Microsoft study",
+                  "url": "https://www.medicaleconomics.com/view/ai-system-outperforms-physicians-on-diagnostic-accuracy-in-microsoft-study",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review: Microsoft AI diagnostic tool tops generalist physicians, 83% to 36%",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/digital-health/microsoft-ai-diagnostic-tool-tops-generalist-physicians-83-to-36/",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                }
+              ],
+              "title": "Microsoft's diagnostic AI leads generalists in a controlled clinical benchmark",
+              "summary": "Microsoft's Diagnostic Orchestrator reached 83.2% accuracy on 304 difficult New England Journal of Medicine cases, compared with 36.1% for generalist physicians using reference tools, and scored 80.3% on a separate set of emergency visits versus 46.8% for doctors. The study used a controlled, text-based benchmark and does not establish superiority over specialists, multidisciplinary teams, or real-world clinical practice.",
+              "strategic_implication": "The results strengthen the case for prospective evaluation of AI-assisted differential diagnosis, but they do not justify autonomous diagnosis. Health-system buyers should require external validation, workflow and outcome evidence, and clear human-oversight and liability controls.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "diagnostic-support",
+                "microsoft",
+                "clinical-validation",
+                "patient-safety"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "A reported large-scale provider acquisition and positive late-stage oncology data highlight continued capital and pipeline activity, although the deal remains unconfirmed and the drug remains investigational.",
+          "items": [
+            {
+              "item_id": "2026-10-26-bon-secours-surgery-partners-takeover",
+              "canonical_topic": "bon-secours-surgery-partners-takeover",
+              "duplicate_group": "bon-secours-surgery-partners-takeover",
+              "priority_score": 9,
+              "primary_source": "Financial Times",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Financial Times: Bon Secours nears $6bn takeover of Bain-backed Surgery Partners",
+                  "url": "https://www.ft.com/content/e7b82fe0-db51-49cf-bad4-2168a905652b",
+                  "source_type": "web",
+                  "published_at": "2026-10-25T00:00:00Z"
+                }
+              ],
+              "title": "Bon Secours reportedly nears a $6 billion takeover of Surgery Partners",
+              "summary": "The Financial Times reports that Bon Secours is nearing an approximately $6 billion takeover of Bain-backed Surgery Partners. The report does not say a deal has closed, and the available details do not specify financing, timing, or regulatory conditions.",
+              "strategic_implication": "If completed, the transaction would be a high-profile combination of a nonprofit provider and an investor-backed healthcare platform, putting capital structure, governance, integration, and site-of-care strategy in focus.",
+              "confidence": "medium",
+              "tags": [
+                "provider-consolidation",
+                "ambulatory-surgery",
+                "mergers-acquisitions",
+                "healthcare-market"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-takeda-arcotatug-gastric-cancer-phase-three",
+              "canonical_topic": "takeda-arcotatug-gastric-cancer-phase-three",
+              "duplicate_group": "takeda-arcotatug-gastric-cancer-phase-three",
+              "priority_score": 8,
+              "primary_source": "Reuters",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Reuters: Takeda to seek Japan approval for gastric cancer drug next year",
+                  "url": "https://www.reuters.com/legal/litigation/takeda-seek-japan-approval-gastric-cancer-drug-next-year-2026-10-25/",
+                  "source_type": "web",
+                  "published_at": "2026-10-25T00:00:00Z"
+                }
+              ],
+              "title": "Takeda plans Japan filing after positive late-stage gastric cancer results",
+              "summary": "Takeda's phase 3 trial enrolled 464 patients in Japan and China with advanced gastric or gastroesophageal-junction cancer after at least two prior therapies and high CLDN18.2 expression. Arcotatug tavatecan improved median overall survival to 10.2 months from 6.9 and progression-free survival to 7.1 months from 3.1 versus physician-choice chemotherapy; serious side effects occurred in about 47% of treated patients versus 56% on chemotherapy.",
+              "strategic_implication": "The readout could strengthen Takeda's position in biomarker-selected gastric cancer, but commercial potential depends on regulatory review, safety assessment, and the company's planned Japanese filing next year.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "gastric-cancer",
+                "late-stage-trial",
+                "biomarker",
+                "drug-development"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "University Hospitals' precautionary network shutdown disrupted digital access while its investigation continued, underscoring the operational importance of patient-facing downtime plans.",
+          "items": [
+            {
+              "item_id": "2026-10-26-university-hospitals-digital-services-disruption",
+              "canonical_topic": "university-hospitals-digital-services-disruption",
+              "duplicate_group": "university-hospitals-digital-services-disruption",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review: University Hospitals takes IT systems offline after 'unusual activity'",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/cybersecurity/university-hospitals-takes-it-systems-offline-after-unusual-activity/",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "Cleveland.com: University Hospitals takes digital services offline after finding unusual server activity",
+                  "url": "https://www.cleveland.com/news/2026/10/university-hospitals-takes-digital-services-offline-after-finding-unusual-server-activity.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T13:59:00Z"
+                }
+              ],
+              "title": "University Hospitals reports continuing digital-service disruption during server investigation",
+              "summary": "University Hospitals disconnected systems after detecting unusual server activity, disrupting MyChart and other digital services, and on October 26 expected interruptions to continue for several days. The system said patient care had not been affected, but the cause and any data exposure remained under investigation; it has not confirmed a connection to Quest Diagnostics' separate incident.",
+              "strategic_implication": "Providers should test downtime workflows for patient portals, appointment access, and results communications, and communicate clearly about which services remain available while security reviews proceed.",
+              "confidence": "medium",
+              "tags": [
+                "cybersecurity",
+                "business-continuity",
+                "patient-portal",
+                "health-system-operations"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "A new funding initiative aims to bolster nursing-home staffing, while coordinated cardiovascular guidance encourages care teams to connect women's health risks across life stages.",
+          "items": [
+            {
+              "item_id": "2026-10-26-cms-nurses-for-nursing-homes",
+              "canonical_topic": "cms-nurses-for-nursing-homes",
+              "duplicate_group": "cms-nurses-for-nursing-homes",
+              "priority_score": 8,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS: CMS and States Launch $275 Million Initiative to Recruit and Retain Nurses in Nursing Homes",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-states-launch-275-million-initiative-recruit-retain-nurses-nursing-homes",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare: CMS launches $275M nurse staffing initiative for nursing homes",
+                  "url": "https://www.fiercehealthcare.com/regulatory/cms-launches-275m-nurse-staffing-initiative-nursing-homes",
+                  "source_type": "rss",
+                  "published_at": "2026-10-23T20:29:00Z"
+                }
+              ],
+              "title": "CMS and states commit $275 million to recruit and retain nursing-home nurses",
+              "summary": "CMS and participating states committed $275 million in civil monetary penalty funds to support more than 4,000 nursing-home nurses and nursing students. Eligible participants may receive up to $40,000 in loan repayment or a $10,000 stipend in exchange for a three-year service commitment, and the initiative's first 90-day period began October 26.",
+              "strategic_implication": "The program creates a new recruitment incentive for long-term-care employers and may help address vacancy pressure. Facilities will need to compete for participants and build onboarding and retention plans beyond the funded commitment.",
+              "confidence": "high",
+              "tags": [
+                "nursing-homes",
+                "nurse-workforce",
+                "recruitment",
+                "retention",
+                "long-term-care"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-womens-heart-health-life-course-framework",
+              "canonical_topic": "womens-heart-health-life-course-framework",
+              "duplicate_group": "womens-heart-health-life-course-framework",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT: The 4 stages of women's heart health: Experts present new framework",
+                  "url": "https://www.statnews.com/2026/10/26/heart-health-women-four-life-stages-qa-sadiya-khan/",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                }
+              ],
+              "title": "Four medical societies publish a life-stage framework for women's heart health",
+              "summary": "The American Heart Association, American Academy of Pediatrics, Society for Maternal-Fetal Medicine, and American College of Obstetricians and Gynecologists published three coordinated cardiovascular guidance papers in Circulation. The framework connects menstrual and reproductive health, pregnancy and postpartum care, perimenopause, menopause, and cardiovascular and psychosocial risk rather than treating each stage in isolation.",
+              "strategic_implication": "Health systems can use the framework to strengthen life-stage screening and handoffs among primary care, cardiology, obstetrics, and maternal-fetal medicine. Adoption and outcome effects remain to be measured.",
+              "confidence": "high",
+              "tags": [
+                "women-health",
+                "cardiovascular",
+                "clinical-guidance",
+                "life-course-care",
+                "circulation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-23",
       "generated_at": "2026-10-23T12:33:44Z",
       "headline": "Today's Healthcare Insights",
@@ -15808,5 +16094,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-23T12:33:44Z"
+  "last_updated": "2026-10-26T11:10:50Z"
 }

@@ -4,31 +4,42 @@
   "editions": [
     {
       "edition_date": "2026-10-26",
-      "generated_at": "2026-10-26T11:10:50Z",
+      "generated_at": "2026-10-26T12:34:26Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing spans a proposed Medicare remote-monitoring payment change, a new NIH research center, and a nursing-home workforce initiative entering its launch window. It also tracks a provider technology disruption, a reported health-system transaction, and new AI, oncology, and women's cardiovascular-health signals from CMS, KFF Health News, STAT, Reuters, the Financial Times, and sector reporting.",
+      "summary_note": "Today's briefing pairs CMS proposals on Medicare remote monitoring and up-front ACA subsidy verification with a second lawsuit over the Marketplace broker freeze and Treasury's proposed limits on China biotech investment. It also tracks payer-provider and diagnostics deal activity, an AI drug-development raise, oncology and MS evidence, a hospital IT disruption, nursing labor tension, and clinical-safety signals from CMS, FDA, STAT, KFF Health News, Healthcare Dive, and sector reporting.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
+          "Gmail label InsightsSources/Healthcare Brew",
+          "Gmail label InsightsSources/Healthcare Dive",
+          "Gmail label InsightsSources/Hospitalogy",
+          "Gmail label InsightsSources/Modern Healthcare",
           "STAT News RSS",
           "Healthcare Dive RSS",
           "Fierce Healthcare RSS",
-          "Targeted web searches across CMS/HHS/NIH, Medicare payment, digital health and AI, provider operations, provider transactions, oncology, and women's cardiovascular care"
+          "Targeted web searches across CMS/HHS/NIH, Medicare payment, digital health and AI, provider operations, provider transactions, oncology, and women's cardiovascular care",
+          "Curated refresh: STAT News RSS (main, health, pharma, health-tech, politics), Healthcare Dive, BioPharma Dive, MedTech Dive, and Fierce Healthcare RSS; targeted searches across CMS, FDA, Treasury, provider transactions, and labor"
         ],
         "sources_successful": [
           "STAT News RSS fetched and screened; current coverage included the women's heart-health framework and NIH research-center reporting.",
           "Healthcare Dive RSS fetched; its October 26 item was sponsored content and was not used as an editorial signal.",
           "Fierce Healthcare RSS fetched and screened; the CMS nursing-home staffing initiative was also corroborated against the CMS release.",
-          "Targeted web searches and available source pages supported the policy, provider, AI, oncology, and clinical-practice items."
+          "Targeted web searches and available source pages supported the policy, provider, AI, oncology, and clinical-practice items.",
+          "Curated refresh: STAT RSS re-screened for October 23-26; added the Treasury China biotech rule, Pathos AI financing, ESMO-MCBS analysis, Novartis remibrutinib data, and BMS CAR-T trial death.",
+          "Curated refresh: Healthcare Dive and MedTech Dive RSS screened; added the second ACA broker-freeze lawsuit, Qiagen take-private, and Edwards tricuspid approval.",
+          "Curated refresh: CMS, FDA, Novartis, Edwards, and Pathos primary releases used to confirm the ACA pre-eligibility rule, Awiqli pediatric approval, and trial and deal figures; ROI-NJ and Boston.com used for the Horizon-Summit deal and Brigham contract vote."
         ],
-        "sources_failed": [],
-        "run_notes": "Coverage focused on weekend and Monday developments since the October 23 edition. The October 23 Quest Diagnostics incident was not repeated; University Hospitals is a separate, unresolved service disruption, and no connection between the incidents has been confirmed. The CMS nursing-home initiative was announced October 23, with its first 90-day launch period beginning October 26. The remote-monitoring story concerns a proposed rule, not a finalized policy; the reported Surgery Partners transaction has not been confirmed as closed; Microsoft results are from a controlled text-based benchmark; and STAT reported no disclosed name, funding level, or leadership details for the NIH center."
+        "sources_failed": [
+          "Gmail InsightsSources labels (Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare): date-bounded label and sender searches from 2026-10-22 (Hospitalogy from 2026-10-16) returned no messages, and the labels were not found in the connected mailbox; RSS and web sources used instead.",
+          "Fierce Healthcare RSS returned HTTP 403 during the curated refresh; the automated run had already screened it."
+        ],
+        "run_notes": "Coverage focused on weekend and Monday developments since the October 23 edition. The October 23 Quest Diagnostics incident was not repeated; University Hospitals is a separate, unresolved service disruption, and no connection between the incidents has been confirmed. The CMS nursing-home initiative was announced October 23, with its first 90-day launch period beginning October 26. The remote-monitoring story concerns a proposed rule, not a finalized policy; the reported Surgery Partners transaction has not been confirmed as closed; Microsoft results are from a controlled text-based benchmark; and STAT reported no disclosed name, funding level, or leadership details for the NIH center. Curated refresh retained all 8 automated items and added 12 new items (20 total). Excluded as repeats of prior editions: employer electronic prior-authorization pledge (covered 2026-10-22), Medicaid work-requirement implementation (covered 2026-10-23), Moderna-Merck melanoma vaccine data (covered 2026-10-16), ADA convention review, and health-system leadership cuts (covered 2026-10-19). The Treasury rule and CMS pre-eligibility rule are proposals; CMS gave no quantified enrollment impact. The Horizon-Summit price is unconfirmed (reported about $1 billion) and that item is marked medium confidence. BMS says causality in the CAR-T trial death is confounded. The Awiqli pediatric approval rests on adult efficacy data plus a pediatric pharmacokinetic study."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "A proposed Medicare payment restriction could reshape access to vendor-supported remote monitoring, while NIH's newly described research center signals attention to vaccine injuries and post-infection illness. Both developments warrant monitoring as scope and implementation details emerge.",
+          "synthesis": "Federal policy moved on several fronts: a proposed Medicare restriction on vendor-run remote monitoring, a CMS plan to verify ACA subsidy eligibility up front, renewed litigation over the Marketplace broker freeze, a new NIH research center, and Treasury limits on China biotech investment. Most are proposals or contested actions, so comment periods and court rulings will set final scope.",
           "items": [
             {
               "item_id": "2026-10-26-medicare-remote-monitoring-vendor-reimbursement",
@@ -81,12 +92,98 @@
                 "post-infection",
                 "research-policy"
               ]
+            },
+            {
+              "item_id": "2026-10-26-cms-exchange-pre-eligibility-verification-rule",
+              "canonical_topic": "cms-exchange-pre-eligibility-verification-rule",
+              "duplicate_group": "cms-exchange-pre-eligibility-verification-rule",
+              "priority_score": 9,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS fact sheet: Exchange Pre-Eligibility Verification Proposed Rule (CMS-9873-P)",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/exchange-pre-eligibility-verification-proposed-rule-cms-9873-p",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T00:00:00Z"
+                }
+              ],
+              "title": "CMS proposes verifying ACA subsidy eligibility before premium tax credits flow",
+              "summary": "CMS's proposed rule would require Exchanges to verify income, household size, immigration status, other coverage, and residence before paying advance premium tax credits or cost-sharing reductions, ending subsidies during unresolved inconsistency periods. Enrollees would be auto-re-enrolled with assistance only if they return annually for re-verification. The provisions would start with plan year 2028, with a first pre-open-enrollment verification window opening August 1, 2027; comments are due 30 days after publication.",
+              "strategic_implication": "Marketplace insurers, navigators, and state-based Exchanges should model enrollment attrition among subsidized members who do not complete verification, along with system and outreach costs. CMS provided no quantified enrollment or subsidy estimates, so independent impact modeling will shape comment strategy.",
+              "confidence": "high",
+              "tags": [
+                "aca",
+                "marketplace",
+                "eligibility-verification",
+                "cms",
+                "proposed-rule"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-aca-broker-freeze-second-lawsuit",
+              "canonical_topic": "aca-broker-freeze-second-lawsuit",
+              "duplicate_group": "aca-broker-freeze-second-lawsuit",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive: Trump administration sued for second time over ACA broker freeze",
+                  "url": "https://www.healthcaredive.com/news/aca-broker-agent-freeze-lawsuit-hafa-hhs-cms/833828/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-23T09:22:00Z"
+                }
+              ],
+              "title": "Second trade group sues to block ACA new-broker freeze before open enrollment",
+              "summary": "Health Agents for America, representing more than 1,000 independent agents, sued HHS and CMS in Maryland federal court over a September interim final rule that bars agents and brokers without prior Exchange registration from 2027 open enrollment. The group argues the moratorium exceeds CMS authority and violates the Administrative Procedure Act, and asks the court to halt it before open enrollment begins November 1 in most states. It follows an earlier suit from the National Association of Benefits and Insurance Professionals.",
+              "strategic_implication": "Carriers and broker agencies that hired new agents for 2027 enrollment need contingency staffing plans if no injunction arrives before November 1. Combined with the proposed pre-eligibility verification rule, the freeze signals a tighter, more enforcement-oriented Marketplace distribution channel.",
+              "confidence": "high",
+              "tags": [
+                "aca",
+                "brokers",
+                "litigation",
+                "open-enrollment"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-treasury-coins-china-biotech-investment-rule",
+              "canonical_topic": "treasury-coins-china-biotech-investment-rule",
+              "duplicate_group": "treasury-coins-china-biotech-investment-rule",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT: Treasury proposes major restrictions to U.S. investment in Chinese biotech sector",
+                  "url": "https://www.statnews.com/2026/10/23/new-china-biotech-limits-coins-act-proposal-us-pharma-reaction/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-23T14:03:00Z"
+                },
+                {
+                  "source": "Politico: Biotech investment is the new front in the U.S.-China trade fight",
+                  "url": "https://www.politico.com/news/2026/10/22/biotech-investment-is-the-new-front-in-the-u-s-china-trade-fight-01132819",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T00:00:00Z"
+                }
+              ],
+              "title": "Treasury proposes outbound-investment limits on Chinese biotech, while preserving licensing deals",
+              "summary": "Treasury proposed a rule under the Comprehensive Outbound Investment National Security (COINS) Act that adds biotechnology to the sectors where U.S. investment in China is restricted, alongside semiconductors, AI, and quantum technology. Politico reports it would bar transactions involving certain bio-derived materials, biomanufacturing equipment and facilities, biological design and sequencing technology, and automated discovery tools. STAT reports U.S. drugmakers could still license rights to China-discovered medicines, and that the proposal was more aggressive than expected but could change.",
+              "strategic_implication": "Biopharma business-development teams and investors should map current China equity stakes, joint ventures, and manufacturing ties against the proposed prohibited categories. Licensing remains open for now, but the rule adds diligence cost and political risk to China-sourced pipeline strategies.",
+              "confidence": "high",
+              "tags": [
+                "biotech",
+                "china",
+                "outbound-investment",
+                "treasury",
+                "national-security"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "Microsoft's sequential diagnostic system produced strong results on controlled text-based cases, but the study does not establish performance in live clinical care or against specialist teams.",
+          "synthesis": "AI signals span clinical diagnosis and drug development: Microsoft's diagnostic orchestrator outperformed generalist physicians on a controlled benchmark, while BMS led a $237 million round for Pathos AI. Both point to AI value concentrating where curated data and clinical workflows meet.",
           "items": [
             {
               "item_id": "2026-10-26-microsoft-diagnostic-orchestrator-benchmark",
@@ -120,12 +217,45 @@
                 "clinical-validation",
                 "patient-safety"
               ]
+            },
+            {
+              "item_id": "2026-10-26-pathos-ai-237m-series-e-bms",
+              "canonical_topic": "pathos-ai-237m-series-e-bms",
+              "duplicate_group": "pathos-ai-237m-series-e-bms",
+              "priority_score": 7,
+              "primary_source": "Pathos AI",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Pathos AI: Pathos AI Secures $237 Million in Series E Financing",
+                  "url": "https://www.pathos.com/pathos-ai-secures-237-million-in-series-e-financing-to-scale-agentic-ai-drug-development-platform-and-advance-oncology-pipeline",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T00:00:00Z"
+                },
+                {
+                  "source": "STAT: AI drug firm Pathos raises $237 million, pushing valuation to $3 billion",
+                  "url": "https://www.statnews.com/2026/10/23/pathos-ai-bristol-myers-squibb-tempus-deal/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-23T13:00:00Z"
+                }
+              ],
+              "title": "Bristol Myers Squibb leads $237 million Pathos AI round at a $3 billion valuation",
+              "summary": "Pathos AI closed a $237 million Series E at a post-money valuation of about $3 billion, led by Bristol Myers Squibb with existing investors participating. Proceeds will scale its agentic AI drug-development platform and fund a registrational study of its AI-identified oncology asset JSKN-016. STAT reports the deal links a large Tempus dataset, Pathos AI analysis, and BMS drug development.",
+              "strategic_implication": "The round shows large pharma paying for AI-enabled development capacity through strategic equity rather than service contracts alone. Health systems and data holders should note the rising value of curated clinical datasets in these three-way arrangements.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "drug-development",
+                "venture-funding",
+                "oncology",
+                "real-world-data"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "A reported large-scale provider acquisition and positive late-stage oncology data highlight continued capital and pipeline activity, although the deal remains unconfirmed and the drug remains investigational.",
+          "synthesis": "Deal activity spans a reported health-system move on Surgery Partners, an insurer purchase of a large New Jersey physician and urgent-care footprint, and a $12.1 billion diagnostics take-private. Product signals include oncology and MS readouts, a tricuspid device approval, and evidence that most new EU cancer-drug indications fall short of high clinical benefit.",
           "items": [
             {
               "item_id": "2026-10-26-bon-secours-surgery-partners-takeover",
@@ -179,6 +309,162 @@
                 "biomarker",
                 "drug-development"
               ]
+            },
+            {
+              "item_id": "2026-10-26-qiagen-eqt-take-private",
+              "canonical_topic": "qiagen-eqt-take-private",
+              "duplicate_group": "qiagen-eqt-take-private",
+              "priority_score": 7,
+              "primary_source": "MarketWatch",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MarketWatch: EQT-Led Coalition Reaches Deal to Take Qiagen Private at $12.1B Enterprise Value",
+                  "url": "https://www.marketwatch.com/story/eqt-led-coalition-reaches-deal-to-take-qiagen-private-at-12-1b-enterprise-value-5fc53f79",
+                  "source_type": "web",
+                  "published_at": "2026-10-22T00:00:00Z"
+                },
+                {
+                  "source": "LabMedica: Qiagen Agrees to Go Private Through EQT-Led Acquisition",
+                  "url": "https://www.labmedica.com/industry-news/articles/294814197/qiagen-agrees-to-go-private-through-eqt-led-acquisition.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-24T00:00:00Z"
+                }
+              ],
+              "title": "EQT-led group agrees to take Qiagen private at a $12.1 billion enterprise value",
+              "summary": "An investor group led by EQT Private Equity, with the Abu Dhabi Investment Authority and CPP Investments, agreed to an all-cash offer of EUR 46.50 per share for diagnostics and sample-prep company Qiagen. The deal values Qiagen at about EUR 10.8 billion ($12.1 billion) including $1.1 billion of net debt, a 40.3% premium to its pre-speculation July 8 close. Qiagen's board recommends the offer; closing is expected in mid-2027, subject to shareholder acceptance and regulatory approvals.",
+              "strategic_implication": "Private equity continues to pay sizable premiums for diagnostics platforms with recurring consumables revenue. Lab and health-system customers should watch for pricing, portfolio, and service changes under private ownership.",
+              "confidence": "high",
+              "tags": [
+                "diagnostics",
+                "private-equity",
+                "take-private",
+                "m-and-a"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-horizon-bcbs-summit-health-citymd-new-jersey",
+              "canonical_topic": "horizon-bcbs-summit-health-citymd-new-jersey",
+              "duplicate_group": "horizon-bcbs-summit-health-citymd-new-jersey",
+              "priority_score": 8,
+              "primary_source": "ROI-NJ",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "ROI-NJ: Horizon Blue Cross agrees to purchase Summit Health physician group",
+                  "url": "https://www.roi-nj.com/2026/10/22/healthcare/horizon-blue-cross-agrees-to-purchase-summit-health-physician-group/",
+                  "source_type": "web",
+                  "published_at": "2026-10-22T00:00:00Z"
+                }
+              ],
+              "title": "Horizon Blue Cross agrees to buy Summit Health's New Jersey operations, including CityMD sites",
+              "summary": "Horizon Blue Cross Blue Shield of New Jersey, the state's largest insurer, agreed to acquire Summit Health's New Jersey operations, including the state's CityMD urgent-care sites. Financial terms were not disclosed, though some outlets reported about $1 billion. Summit Health operates more than 120 locations and CityMD more than 180 urgent-care centers across New Jersey, New York, and Connecticut; the deal is subject to regulatory review.",
+              "strategic_implication": "A dominant regional Blue plan buying a large multispecialty and urgent-care footprint extends payer-provider vertical integration beyond national insurers. New Jersey health systems and independent groups should expect shifts in referral patterns and network leverage, and the deal may draw state antitrust scrutiny.",
+              "confidence": "medium",
+              "tags": [
+                "payer-provider-integration",
+                "physician-groups",
+                "urgent-care",
+                "new-jersey",
+                "m-and-a"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-edwards-pascal-precision-tricuspid-teer-approval",
+              "canonical_topic": "edwards-pascal-precision-tricuspid-teer-approval",
+              "duplicate_group": "edwards-pascal-precision-tricuspid-teer-approval",
+              "priority_score": 6,
+              "primary_source": "Edwards Lifesciences",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Edwards Lifesciences: FDA Approval of PASCAL Precision System for tricuspid valve disease",
+                  "url": "https://www.edwards.com/cr/newsroom/news/2026-10-21-fda-approval-of-edwards-lifesciences--pascal-preci",
+                  "source_type": "web",
+                  "published_at": "2026-10-21T00:00:00Z"
+                },
+                {
+                  "source": "MedTech Dive: Edwards wins FDA approval for tricuspid valve repair device",
+                  "url": "https://www.medtechdive.com/news/edwards-wins-fda-approval-for-tricuspid-valve-repair-device/833815/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-23T06:20:00Z"
+                }
+              ],
+              "title": "FDA approves Edwards PASCAL Precision for transcatheter tricuspid repair",
+              "summary": "FDA approved Edwards Lifesciences' PASCAL Precision system for transcatheter edge-to-edge tricuspid repair (T-TEER) in patients with symptomatic severe tricuspid regurgitation despite optimal medical therapy who are at intermediate or greater surgical risk. Edwards announced the approval October 21; it already markets the EVOQUE tricuspid replacement system, and analysts told MedTech Dive the approval strengthens its position in an underpenetrated transcatheter tricuspid market.",
+              "strategic_implication": "Structural heart programs gain a second Edwards tricuspid option, covering both repair and replacement. Hospitals should plan for heart-team capacity, imaging resources, and payer coverage as tricuspid procedure volumes grow.",
+              "confidence": "high",
+              "tags": [
+                "medtech",
+                "structural-heart",
+                "fda-approval",
+                "cardiology"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-esmo-mcbs-europe-cancer-drug-benefit-analysis",
+              "canonical_topic": "esmo-mcbs-europe-cancer-drug-benefit-analysis",
+              "duplicate_group": "esmo-mcbs-europe-cancer-drug-benefit-analysis",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT: Most cancer drugs approved by European regulators lack a high clinical benefit, analysis finds",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/23/cancer-drugs-approved-europe-lack-high-clinical-benefit/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-23T18:48:00Z"
+                },
+                {
+                  "source": "ESMO-MCBS scorecard press release (via STAT)",
+                  "url": "https://www.statnews.com/wp-content/uploads/2026/10/ESMO-MCBS-Scorecard-Press-Release-20261020-1.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T00:00:00Z"
+                }
+              ],
+              "title": "Fewer than a third of new EU cancer-drug indications meet a high clinical-benefit bar",
+              "summary": "A Harvard analysis presented at ESMO 2026 scored 97 indications for 63 cancer medicines approved by the European Medicines Agency from January 2022 through July 2026 using ESMO's Magnitude of Clinical Benefit Scale. Only 30 of the 97 reached the threshold for high clinical benefit, and the researchers ranked manufacturers by the number and share of high-benefit approvals.",
+              "strategic_implication": "Value-based scoring of oncology approvals gives payers, pharmacy and therapeutics committees, and health-technology assessors a ready tool for differentiating coverage and pricing. Manufacturers should expect benefit-magnitude evidence to weigh more heavily in launch and contracting discussions.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "drug-value",
+                "hta",
+                "europe",
+                "pricing"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-novartis-remibrutinib-ms-phase-three-data",
+              "canonical_topic": "novartis-remibrutinib-ms-phase-three-data",
+              "duplicate_group": "novartis-remibrutinib-ms-phase-three-data",
+              "priority_score": 6,
+              "primary_source": "Novartis",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Novartis: Remibrutinib delivered comprehensive disease control in Phase III RMS trials",
+                  "url": "https://www.novartis.com/news/media-releases/novartis-remibrutinib-delivered-comprehensive-disease-control-phase-iii-rms-trials-proven-robust-safety-profile",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T00:00:00Z"
+                },
+                {
+                  "source": "STAT: Novartis multiple sclerosis treatment cuts rates of relapse in pivotal trials",
+                  "url": "https://www.statnews.com/2026/10/23/novartis-remibrutinib-multiple-sclerosis-trial-results/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-23T16:47:00Z"
+                }
+              ],
+              "title": "Novartis oral BTK inhibitor cuts MS relapses by about a third versus teriflunomide",
+              "summary": "Full Phase 3 REMODEL-1 and REMODEL-2 results presented October 23 showed oral remibrutinib lowered annualized relapse rates versus teriflunomide (0.073 vs. 0.112 and 0.080 vs. 0.116), with no liver safety signal reported by Novartis. STAT characterized the reduction as about one-third. Topline results were disclosed in September.",
+              "strategic_implication": "An oral, non-B-cell-depleting option with a clean liver profile could reshape relapsing-MS treatment sequencing and specialty-pharmacy spend if approved. Payers should anticipate step-therapy and pricing debates against generic and infused therapies.",
+              "confidence": "high",
+              "tags": [
+                "multiple-sclerosis",
+                "neurology",
+                "clinical-trials",
+                "btk-inhibitor"
+              ]
             }
           ]
         },
@@ -222,7 +508,7 @@
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "A new funding initiative aims to bolster nursing-home staffing, while coordinated cardiovascular guidance encourages care teams to connect women's health risks across life stages.",
+          "synthesis": "A new funding initiative aims to bolster nursing-home staffing, while coordinated cardiovascular guidance encourages care teams to connect women's health risks across life stages. Brigham nurses' rejection of a final offer, a patient death in an autoimmune CAR-T trial, and a pediatric weekly-insulin approval add labor and clinical-safety signals.",
           "items": [
             {
               "item_id": "2026-10-26-cms-nurses-for-nursing-homes",
@@ -282,6 +568,97 @@
                 "clinical-guidance",
                 "life-course-care",
                 "circulation"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-brigham-nurses-reject-final-offer",
+              "canonical_topic": "brigham-nurses-reject-final-offer",
+              "duplicate_group": "brigham-nurses-reject-final-offer",
+              "priority_score": 7,
+              "primary_source": "Boston.com",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Boston.com: Brigham nurses reject hospital's 'best and final' contract offer",
+                  "url": "https://www.boston.com/news/local-news/2026/10/25/brigham-nurses-reject-hospitals-best-and-final-contract-offer/",
+                  "source_type": "web",
+                  "published_at": "2026-10-25T00:00:00Z"
+                }
+              ],
+              "title": "Brigham and Women's nurses reject final contract offer, keeping strike risk alive",
+              "summary": "A majority of Brigham and Women's Hospital nurses voted October 22-23 to reject Mass General Brigham's 'last, best and final' offer, citing the lack of across-the-board inflation raises, health-insurance terms, and patient-safety concerns. The union's indefinite-strike authorization, approved 2,986 to 215 in September, remains active, but its bargaining committee says returning to negotiations is the priority; any strike requires 10 days' notice. About 4,000 nurses held a one-day strike in July, followed by a four-day lockout.",
+              "strategic_implication": "Academic medical centers facing affordability-driven wage demands should budget for contingency staffing and prolonged bargaining. The Brigham dispute will be watched as a benchmark for nurse contracts across high-cost labor markets.",
+              "confidence": "high",
+              "tags": [
+                "nursing",
+                "labor",
+                "collective-bargaining",
+                "academic-medical-centers"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-bms-zola-cel-ms-car-t-trial-death",
+              "canonical_topic": "bms-zola-cel-ms-car-t-trial-death",
+              "duplicate_group": "bms-zola-cel-ms-car-t-trial-death",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT: Patient dies in Bristol Myers Squibb autoimmune CAR-T trial",
+                  "url": "https://www.statnews.com/2026/10/23/bristol-myers-squibb-car-t-therapy-autoimmune-trial-death/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-23T18:55:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review: Bristol Myers Squibb discloses death from CAR-T autoimmune therapy trial",
+                  "url": "https://www.beckershospitalreview.com/pharmacy/bristol-myers-squibb-discloses-death-from-car-t-autoimmune-therapy-trial/",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T00:00:00Z"
+                }
+              ],
+              "title": "Patient death in BMS multiple sclerosis CAR-T trial sharpens autoimmune safety questions",
+              "summary": "Bristol Myers Squibb disclosed that a participant in its 66-patient Phase 1 trial of the CD19 CAR-T zolacabtagene autoleucel in multiple sclerosis died of septic pneumonia about six weeks after dosing, after receiving immunosuppression for unresolved motor symptoms. Twenty-eight participants had cytokine release syndrome and six had neurotoxicity, including one life-threatening case that resolved. BMS told STAT the patient's prior complications confound causality; enrollment in its autoimmune trials had already been paused in August.",
+              "strategic_implication": "Autoimmune CAR-T programs will face a higher safety bar than oncology, which affects trial-site readiness, infection monitoring, and eventual patient-selection criteria. Neurology and rheumatology centers planning cell-therapy capacity should build in toxicity-management and infectious-disease support.",
+              "confidence": "high",
+              "tags": [
+                "cell-therapy",
+                "car-t",
+                "patient-safety",
+                "multiple-sclerosis",
+                "clinical-trials"
+              ]
+            },
+            {
+              "item_id": "2026-10-26-fda-awiqli-pediatric-weekly-insulin",
+              "canonical_topic": "fda-awiqli-pediatric-weekly-insulin",
+              "duplicate_group": "fda-awiqli-pediatric-weekly-insulin",
+              "priority_score": 6,
+              "primary_source": "U.S. Food and Drug Administration",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA: FDA Approves First Once-Weekly Insulin for Type 2 Diabetes Mellitus in Pediatric Patients",
+                  "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-once-weekly-insulin-type-2-diabetes-mellitus-pediatric-patients",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T00:00:00Z"
+                },
+                {
+                  "source": "Novo Nordisk: Awiqli receives FDA approval for children 10 and older with type 2 diabetes",
+                  "url": "https://www.novonordisk-us.com/media/news-archive/news-details.html?id=918803",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T00:00:00Z"
+                }
+              ],
+              "title": "FDA clears first once-weekly insulin for children with type 2 diabetes",
+              "summary": "FDA approved Novo Nordisk's Awiqli (insulin icodec-abae) as an adjunct to diet and exercise for children 10 and older with type 2 diabetes, making it the first once-weekly insulin approved for that pediatric group. The approval relied on adult efficacy and safety data and a single-dose pharmacokinetic study in patients aged 10 to under 18; Awiqli was approved for adults earlier in 2026. It cuts basal injections from seven per week to one.",
+              "strategic_implication": "Pediatric endocrinology practices gain an option that may ease adherence and caregiver burden as youth type 2 diabetes rises. Clinical teams will need dosing protocols and hypoglycemia education tailored to weekly basal insulin.",
+              "confidence": "high",
+              "tags": [
+                "diabetes",
+                "pediatrics",
+                "insulin",
+                "fda-approval"
               ]
             }
           ]
@@ -15826,273 +16203,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-14",
-      "generated_at": "2026-09-14T11:15:50Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing centers on the implementation gap between federal healthcare policy and frontline operating realities: rural hospitals question how usable new funding will be, drug-pricing savings face transparency risk, and No Surprises arbitration remains contested. Market and operating signals include a second positive psychedelic-therapy trial, Novo's strategic rebrand, Abridge's expansion into revenue-cycle AI, and broader scrutiny of hospital mergers, using STAT News and Fierce Healthcare RSS with targeted web-search context.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT News RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "Targeted web search: CMS/HHS/FDA, hospital operations, digital health/AI, drug pricing, Medicare/Medicaid"
-        ],
-        "sources_successful": [
-          "STAT News RSS",
-          "Fierce Healthcare RSS",
-          "Healthcare Dive RSS (feed reachable; no major non-sponsored editorial signal selected)",
-          "Targeted web search"
-        ],
-        "sources_failed": [
-          "Gmail supplementary labels not used in this run"
-        ],
-        "run_notes": "Built from current STAT and Fierce Healthcare RSS entries plus targeted web-search context. Healthcare Dive RSS was reachable but its current entries were sponsored items, so it was not used for a selected item; no email source was needed. Stories were screened against recent editions to avoid straightforward duplicates."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Today's policy signal is less about headline appropriations than about execution: rural providers question the usability of new funding, drug-pricing savings may depend on opaque deal terms, and No Surprises arbitration remains under pressure from employers and consumers.",
-          "items": [
-            {
-              "item_id": "2026-09-14-rural-health-fund-shortfall",
-              "canonical_topic": "rural-health-transformation-fund",
-              "duplicate_group": "rural-health-transformation-fund",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/14/rural-health-transformation-fund-skepticism-shortcomings-part-5-unraveled-series/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T08:30:00Z"
-                }
-              ],
-              "title": "Hospital leaders say the $50 billion rural health fund is falling short",
-              "summary": "STAT reports that hospital leaders who initially welcomed the Rural Health Transformation Fund became more skeptical after reviewing its requirements and limitations. The story frames the gap between the headline funding figure and what rural providers believe they can practically use.",
-              "strategic_implication": "Rural systems should model the fund as constrained, conditional capital rather than assume it will close operating or infrastructure gaps. State and federal implementation details may matter as much as the topline appropriation.",
-              "confidence": "high",
-              "tags": [
-                "rural-health",
-                "hospital-finance",
-                "federal-policy",
-                "health-equity"
-              ]
-            },
-            {
-              "item_id": "2026-09-14-mfn-secretive-pharma-deals",
-              "canonical_topic": "most-favored-nation-drug-pricing",
-              "duplicate_group": "most-favored-nation-drug-pricing",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/pharmalot/2026/09/13/trump-secretive-pharma-deals-undermine-most-favored-nation-pricing/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-13T22:30:00Z"
-                }
-              ],
-              "title": "Secretive pharma deals could weaken projected savings from most-favored-nation pricing",
-              "summary": "STAT reports that a new analysis finds confidential agreements with pharmaceutical companies could substantially reduce the savings projected from the administration’s most-favored-nation drug-pricing policy. The concern is that deal structures may obscure the effective prices used to estimate policy impact.",
-              "strategic_implication": "Plans, employers, and health systems should stress-test drug-spend forecasts against multiple net-price scenarios instead of relying on headline list-price reductions. Contract transparency and implementation mechanics will be central to determining who captures savings.",
-              "confidence": "medium",
-              "tags": [
-                "drug-pricing",
-                "pharma",
-                "policy-risk",
-                "health-economics"
-              ]
-            },
-            {
-              "item_id": "2026-09-14-no-surprises-idr-reform",
-              "canonical_topic": "no-surprises-act-idr-reform",
-              "duplicate_group": "no-surprises-act-idr-reform",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/payers/employer-consumer-groups-urge-lawmakers-reform-no-surprises-acts-idr",
-                  "source_type": "rss",
-                  "published_at": "2026-09-11T11:59:00Z"
-                }
-              ],
-              "title": "Employers and consumer groups press lawmakers to close No Surprises arbitration loopholes",
-              "summary": "Fierce Healthcare reports that employer and consumer organizations are urging Congress to address loopholes in the No Surprises Act’s independent dispute resolution process. The groups argue that the current structure can create payment and affordability pressures.",
-              "strategic_implication": "Payers, providers, and self-funded employers should monitor any legislative changes that could alter arbitration leverage, administrative burden, or out-of-network payment exposure. Contracting strategies may need to adapt if policymakers tighten the process.",
-              "confidence": "high",
-              "tags": [
-                "no-surprises-act",
-                "payer-provider",
-                "employer-benefits",
-                "surprise-billing"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Revenue-cycle AI is moving beyond documentation into pre-bill review, shifting the evaluation question from note efficiency to measurable financial and clinical controls.",
-          "items": [
-            {
-              "item_id": "2026-09-14-abridge-revenue-cycle-ai",
-              "canonical_topic": "abridge-revenue-cycle-ai",
-              "duplicate_group": "abridge-revenue-cycle-ai",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-expands-revenue-cycle-ai-powered-pre-bill-claim-review",
-                  "source_type": "rss",
-                  "published_at": "2026-09-13T19:22:00Z"
-                }
-              ],
-              "title": "Abridge expands from clinical documentation into AI-powered pre-bill claim review",
-              "summary": "Fierce Healthcare reports that Abridge has launched a pre-bill review capability for clinical documentation integrity, coding, and revenue-cycle teams. The move extends the company’s clinical AI footprint into a mid-cycle workflow where documentation quality and claim accuracy directly affect cash collection.",
-              "strategic_implication": "Health systems should evaluate ambient and generative AI vendors on end-to-end revenue-cycle value, not only note-generation productivity. Governance, auditability, and denial-rate measurement will become differentiators as clinical AI moves closer to billing.",
-              "confidence": "high",
-              "tags": [
-                "clinical-ai",
-                "revenue-cycle",
-                "coding",
-                "health-systems"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Biopharma signals are mixed: a second large psychedelic-therapy trial supports the sector's regulatory case, while Novo's rebrand signals a need to sharpen competitive positioning in obesity and diabetes.",
-          "items": [
-            {
-              "item_id": "2026-09-14-definium-lsd-anxiety-trial",
-              "canonical_topic": "definium-lsd-anxiety-therapy",
-              "duplicate_group": "definium-lsd-anxiety-therapy",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/14/definiums-lsd-therapy-eased-anxiety-large-trial-psychedelic/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T11:00:00Z"
-                }
-              ],
-              "title": "Definium’s LSD therapy eases anxiety in a second large trial",
-              "summary": "STAT reports that Definium’s LSD-based therapy eased anxiety in a second large trial. The result arrives as the first wave of psychedelic biotechs moves closer to potential regulatory approvals for treatments intended to deliver rapid benefits.",
-              "strategic_implication": "Behavioral-health organizations and investors should prepare for a more crowded evidence and commercialization landscape if psychedelic therapies continue to produce confirmatory trial results. Delivery infrastructure, clinician training, and reimbursement design may become bottlenecks alongside regulatory review.",
-              "confidence": "medium",
-              "tags": [
-                "psychedelics",
-                "mental-health",
-                "clinical-trials",
-                "biotech"
-              ]
-            },
-            {
-              "item_id": "2026-09-14-novo-rebrand-obesity-diabetes",
-              "canonical_topic": "novo-nordisk-rebrand",
-              "duplicate_group": "novo-nordisk-rebrand",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT RSS",
-                  "url": "https://www.statnews.com/2026/09/14/novo-nordisk-company-rebrand-obesity-diabetes/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T08:58:48Z"
-                }
-              ],
-              "title": "Novo Nordisk rebrands as Novo amid pressure to sharpen its competitive focus",
-              "summary": "STAT reports that Novo Nordisk is adopting the name Novo as part of a rebrand intended to signal a more focused and competitive future. The change comes as the company operates across obesity and diabetes markets with intensifying competition.",
-              "strategic_implication": "The rebrand is a market signal, not an operating turnaround by itself; partners should watch for accompanying portfolio, access, and commercial decisions. Competitors and payers should treat branding changes as an indicator to reassess Novo’s strategic positioning and negotiation posture.",
-              "confidence": "medium",
-              "tags": [
-                "obesity-care",
-                "diabetes",
-                "pharma",
-                "market-competition"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Hospital strategy is being tested on two fronts: access to rural capital and the broader community-impact case for mergers under antitrust review.",
-          "items": [
-            {
-              "item_id": "2026-09-14-aha-hospital-merger-antitrust",
-              "canonical_topic": "hospital-merger-antitrust",
-              "duplicate_group": "hospital-merger-antitrust",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/providers/aha-regulators-look-beyond-commercial-prices-when-weighing-hospital-mergers",
-                  "source_type": "rss",
-                  "published_at": "2026-09-11T14:19:00Z"
-                }
-              ],
-              "title": "AHA urges regulators to look beyond commercial prices in hospital-merger reviews",
-              "summary": "Fierce Healthcare reports that the American Hospital Association is using a commissioned analysis to emphasize the stakes for vulnerable patients and facilities when hospital mergers face antitrust scrutiny. The argument asks regulators to consider more than commercial price effects when assessing a transaction.",
-              "strategic_implication": "Health systems pursuing affiliation or merger strategies should expect broader scrutiny of access, service continuity, and community impact. Boards should pair transaction economics with a defensible operating plan for vulnerable populations and essential services.",
-              "confidence": "medium",
-              "tags": [
-                "hospital-mergers",
-                "antitrust",
-                "provider-strategy",
-                "rural-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Leadership accountability and patient trust remain operating requirements as health systems manage affordability, access, and technology change.",
-          "items": [
-            {
-              "item_id": "2026-09-14-scan-ethical-healthcare-leadership",
-              "canonical_topic": "ethical-healthcare-leadership",
-              "duplicate_group": "ethical-healthcare-leadership",
-              "priority_score": 4,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare RSS",
-                  "url": "https://www.fiercehealthcare.com/payers/scan-ceo-sachin-jain-publishing-book-ethical-healthcare-leadership-heres-why",
-                  "source_type": "rss",
-                  "published_at": "2026-09-11T17:06:00Z"
-                }
-              ],
-              "title": "SCAN Health Plan CEO uses new book to challenge normalized leadership practices",
-              "summary": "Fierce Healthcare reports that SCAN CEO Sachin Jain is publishing a book that calls on healthcare leaders to acknowledge their role in normalizing practices that should be questioned. The project frames ethical leadership as an active responsibility rather than a compliance exercise.",
-              "strategic_implication": "Clinical and operational leaders should connect ethics to concrete decisions about access, incentives, workforce treatment, and patient trust. A stronger leadership narrative can support culture change only when paired with measurable accountability.",
-              "confidence": "low",
-              "tags": [
-                "healthcare-leadership",
-                "ethics",
-                "patient-trust",
-                "workforce-culture"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-26T11:10:50Z"
+  "last_updated": "2026-10-26T12:34:26Z"
 }

@@ -1,0 +1,375 @@
+{
+  "archived_at": "2026-10-27T12:40:31Z",
+  "note": "Editions trimmed from latest-insights.json by the 30-edition cap.",
+  "editions": [
+    {
+      "edition_date": "2026-09-15",
+      "generated_at": "2026-09-15T12:45:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks the gap between healthcare policy design and operating reality: documents show Medicare's WISeR AI prior-authorization pilot launched over vendor objections, J&J is conditioning 340B discounts on claims-data reporting, and NIH has opened research-infrastructure funding to businesses and local governments. Operating and market signals include Oracle's nurse-facing clinical AI agent, Conifer's 1,037-person layoff, strong final Phase 3 data for Vera's Trutakna, Abbott's $385 million formula settlement, a court pause on visa-duration limits, and a third measles death in Pennsylvania's 676-case outbreak. Built from STAT News and Healthcare Dive RSS with Fierce Healthcare items carried from the earlier run; the InsightsSources Gmail labels were unavailable in the connected mailbox.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels: InsightsSources/Healthcare Brew, InsightsSources/Healthcare Dive, InsightsSources/Hospitalogy, InsightsSources/Modern Healthcare",
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_successful": [
+          "STAT News RSS",
+          "Healthcare Dive RSS"
+        ],
+        "sources_failed": [
+          "Gmail InsightsSources/* labels returned no messages — the connected mailbox does not hold these labels",
+          "Fierce Healthcare RSS blocked by bot protection on this run (items retained from the earlier same-day run)"
+        ],
+        "run_notes": "Same-day refresh of the 2026-09-15 edition per the one-edition-per-date rule. All four InsightsSources Gmail labels were queried and returned no messages, consistent with the connected mailbox being separate from the one holding those labels. STAT News and Healthcare Dive RSS were read directly and key figures were verified against the source articles (Abbott $385M; Pennsylvania 676 cases, 124 hospitalizations; Conifer 1,037 layoffs). Fierce Healthcare RSS was blocked by bot protection, so its three items from the earlier run were retained with their original links. New signals added in this refresh: NIH research-funding eligibility expansion and Pennsylvania's third measles death. Items were screened against the prior six editions to avoid duplicates."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Today's policy signal is implementation risk on three fronts: Medicare's AI prior-authorization pilot is under scrutiny, manufacturers are tightening 340B data conditions, and NIH is redrawing who can compete for federal research infrastructure.",
+          "items": [
+            {
+              "item_id": "2026-09-15-medicare-wiser-ai-pilot",
+              "canonical_topic": "medicare-ai-prior-authorization",
+              "duplicate_group": "medicare-ai-prior-authorization",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T08:30:00Z"
+                }
+              ],
+              "title": "Medicare’s AI prior-authorization pilot draws scrutiny over rushed rollout and delayed care",
+              "summary": "STAT reports that newly released documents and data describe a rushed, error-prone rollout of the WISeR Medicare pilot, which uses AI to approve or deny selected procedures and products. The program operates in six states and has reportedly been associated with delayed care in some instances.",
+              "strategic_implication": "Payers and providers should treat AI-enabled utilization management as a clinical-governance and service-level risk, not only an automation project. Auditability, escalation paths, vendor readiness, and patient-impact monitoring need to be designed before expansion.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "prior-authorization",
+                "clinical-ai",
+                "utilization-management"
+              ]
+            },
+            {
+              "item_id": "2026-09-15-jnj-340b-claims-reporting",
+              "canonical_topic": "340b-claims-data-reporting",
+              "duplicate_group": "340b-claims-data-reporting",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/jnj-340b-reporting-requirement-drug-discounts-claims-data/830259/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T13:21:24Z"
+                }
+              ],
+              "title": "J&J adds claims-data reporting requirement for providers seeking 340B discounts",
+              "summary": "Healthcare Dive reports that Johnson & Johnson is requiring providers to share claims data to receive 340B discounts. The drugmaker says tighter reporting guardrails are intended to prevent duplicative discounts, making data exchange a condition of access for affected providers.",
+              "strategic_implication": "340B participants should assess the operational, legal, and cybersecurity implications of manufacturer data requests before implementation. The move also signals continued friction over who controls claims data and how duplicate-discount risk should be reconciled.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "claims-data",
+                "manufacturer-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-15-fda-psychedelic-hearing",
+              "canonical_topic": "psychedelic-medicine-regulation",
+              "duplicate_group": "psychedelic-medicine-regulation",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/biotech/cultural-weight-psychedelic-approval-looms-fda-hearing-focuses-access-and-safety",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T21:48:00Z"
+                }
+              ],
+              "title": "FDA hearing puts access, safety, and real-world monitoring at center of psychedelic approval debate",
+              "summary": "Fierce Healthcare reports that the FDA convened a public hearing as the agency approaches a likely first approval of a psychedelic medicine. Discussion focused on how these drugs should be used, monitored, and studied after launch, alongside questions of access and safety.",
+              "strategic_implication": "Potential approval would create a new care pathway whose economics depend on monitoring, clinician training, and evidence collection as much as on the product label. Health systems and payers should begin scenario planning for controlled access and post-market obligations.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "psychedelics",
+                "drug-approval",
+                "patient-safety"
+              ]
+            },
+            {
+              "item_id": "2026-09-15-nih-grant-eligibility-expansion",
+              "canonical_topic": "nih-research-funding-eligibility",
+              "duplicate_group": "nih-research-funding-eligibility",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/15/health-news-businesses-can-now-apply-for-nih-funding/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T12:03:33Z"
+                }
+              ],
+              "title": "NIH opens research-infrastructure funding to businesses, local governments, and community organizations",
+              "summary": "STAT reports that NIH has expanded eligibility for research-facility and equipment funding beyond universities and nonprofits to include for-profit businesses, local governments, community-based organizations, and other federal agencies. NIH Director Jay Bhattacharya framed the change as breaking a catch-22 in which only institutions with existing infrastructure can attract talent and win grants. The National Science Foundation is pursuing a parallel shift through its X-Labs program favoring independent research organizations.",
+              "strategic_implication": "Health systems, rural providers, and community organizations that previously lacked academic partners now have a direct path to federal research-infrastructure capital and should assess grant-readiness, indirect-cost accounting, and compliance capacity. Academic medical centers should expect more competition for the same pool and may need to reposition around partnership and data assets rather than facilities alone.",
+              "confidence": "high",
+              "tags": [
+                "nih",
+                "research-funding",
+                "federal-policy",
+                "community-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI deployment is moving closer to frontline nursing workflows, while remote-monitoring programs remain exposed to reimbursement changes that could undermine their economics.",
+          "items": [
+            {
+              "item_id": "2026-09-15-oracle-nurse-ai-agent",
+              "canonical_topic": "nursing-workflow-ai",
+              "duplicate_group": "nursing-workflow-ai",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/oracle-targets-nurses-with-latest-ai-tool/830279/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T14:47:39Z"
+                }
+              ],
+              "title": "Oracle targets nurses with a voice-enabled clinical AI agent for chart navigation and summaries",
+              "summary": "Healthcare Dive reports that Oracle’s clinical AI agent lets U.S. nurses search and navigate patient charts with voice commands and generate nursing summaries. The product extends ambient and generative AI from documentation support into day-to-day information retrieval for clinical staff.",
+              "strategic_implication": "The near-term value case is reduced search and handoff friction, but adoption will depend on accuracy, identity controls, workflow integration, and clear accountability for generated summaries. Nursing leaders should pilot against measurable time-saved and safety metrics rather than broad deployment claims.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "nursing",
+                "workflow-automation",
+                "oracle-health"
+              ]
+            },
+            {
+              "item_id": "2026-09-15-remote-monitoring-medicare-payment",
+              "canonical_topic": "remote-monitoring-reimbursement",
+              "duplicate_group": "remote-monitoring-reimbursement",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/states-are-betting-millions-remote-patient-monitoring-providers-tech-groups-say",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T16:01:00Z"
+                }
+              ],
+              "title": "Proposed Medicare changes put state-backed remote-monitoring investments at risk",
+              "summary": "Fierce Healthcare reports that states are investing heavily in remote monitoring and virtual-care infrastructure to address rural access gaps. Providers and technology groups warn that proposed Medicare reimbursement changes could weaken the financial model supporting those services.",
+              "strategic_implication": "Virtual-care operators should stress-test utilization, reimbursement, and device-cost assumptions before scaling programs dependent on Medicare revenue. State leaders may need contingency plans if federal policy changes shift more of the operating burden to local budgets or providers.",
+              "confidence": "high",
+              "tags": [
+                "remote-monitoring",
+                "telehealth",
+                "medicare",
+                "rural-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Late-stage drug evidence is strengthening one kidney-care opportunity, while a large settlement tied to a baby-formula plant closure underscores the cost of concentrated supply chains and operational disruption.",
+          "items": [
+            {
+              "item_id": "2026-09-15-vera-trutakna-phase3",
+              "canonical_topic": "iga-nephropathy-drug-development",
+              "duplicate_group": "iga-nephropathy-drug-development",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/15/vera-kidney-drug-trutakna-shows-strong-phase-3-results-igan/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-15T10:30:00Z"
+                }
+              ],
+              "title": "Vera’s Trutakna posts strong final Phase 3 results in IgA nephropathy",
+              "summary": "STAT reports that Vera Therapeutics said its recently approved Trutakna stabilized kidney function and reduced the risk of kidney-related death and other complications in IgA nephropathy patients. With two-year Phase 3 results available, the company plans to seek full FDA approval in the fourth quarter.",
+              "strategic_implication": "A successful conversion from accelerated to full approval could increase treatment competition in a chronic disease with severe downstream costs, while creating new budget and evidence questions for payers. Kidney-care organizations should track durability, utilization, and access implications as the label and evidence mature.",
+              "confidence": "high",
+              "tags": [
+                "biotech",
+                "kidney-disease",
+                "fda",
+                "drug-development"
+              ]
+            },
+            {
+              "item_id": "2026-09-15-abbott-formula-settlement",
+              "canonical_topic": "infant-formula-supply-chain",
+              "duplicate_group": "infant-formula-supply-chain",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/14/abbott-settlement-closure-baby-formula-plant-shortages/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T19:18:37Z"
+                }
+              ],
+              "title": "Abbott agrees to $385 million settlement tied to baby-formula plant closure",
+              "summary": "STAT reports that Abbott agreed to a $385 million settlement over the closure of the largest baby-formula plant in the United States, an event that contributed to the 2022 supply shortages. The episode keeps concentration and resilience in essential medical-product supply chains in focus.",
+              "strategic_implication": "Health systems, public agencies, and manufacturers should continue treating supply continuity as a strategic capability rather than a procurement afterthought. Financial settlements may resolve claims without eliminating the need for diversified capacity, contingency inventory, and transparent disruption planning.",
+              "confidence": "high",
+              "tags": [
+                "supply-chain",
+                "infant-nutrition",
+                "manufacturing",
+                "operational-resilience"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Provider operations are being reshaped by labor reductions and competitive signaling: revenue-cycle restructuring is affecting more than 1,000 workers, while children’s hospitals use rankings to differentiate quality and specialty depth.",
+          "items": [
+            {
+              "item_id": "2026-09-15-conifer-layoffs",
+              "canonical_topic": "revenue-cycle-outsourcing-layoffs",
+              "duplicate_group": "revenue-cycle-outsourcing-layoffs",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/conifer-to-lay-off-over-1000-workers/830287/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T15:02:24Z"
+                }
+              ],
+              "title": "Conifer to lay off more than 1,000 workers after major client contract exit",
+              "summary": "Healthcare Dive reports that Conifer is planning to lay off more than 1,000 workers months after CommonSpirit ended its service contract early and exited its stake in Tenet’s revenue-cycle company. The announcement illustrates how client concentration and contract changes can quickly flow through outsourced operating models.",
+              "strategic_implication": "Health systems using third-party revenue-cycle services should review vendor concentration, transition provisions, and business-continuity plans. For operators, the episode reinforces the need to balance scale economics with workforce redeployment and resilience when anchor contracts change.",
+              "confidence": "high",
+              "tags": [
+                "revenue-cycle",
+                "outsourcing",
+                "workforce",
+                "hospital-operations"
+              ]
+            },
+            {
+              "item_id": "2026-09-15-childrens-hospital-rankings",
+              "canonical_topic": "childrens-hospital-quality-rankings",
+              "duplicate_group": "childrens-hospital-quality-rankings",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/us-news-best-childrens-hospitals-lurie-childrens-upmc-join-honor-roll-boston-childrens",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T18:20:00Z"
+                }
+              ],
+              "title": "Children’s hospital rankings highlight Lurie Children’s and UPMC as new honor-roll entrants",
+              "summary": "Fierce Healthcare reports that U.S. News’ annual children’s-hospital rankings added Lurie Children’s and UPMC to the honor roll, while Boston Children’s led specialty rankings. The methodology weighs structural measures and processes, outcomes, and expert opinion.",
+              "strategic_implication": "Rankings remain an external signal that can affect referral flows, recruitment, philanthropy, and service-line positioning. Children’s hospitals should translate ranking inputs into a broader quality-and-access narrative instead of optimizing narrowly for a single annual score.",
+              "confidence": "high",
+              "tags": [
+                "childrens-health",
+                "quality-measures",
+                "hospital-strategy",
+                "referrals"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce and clinical exposure are both tightening: a court has paused visa-duration limits on the research pipeline while Pennsylvania's measles outbreak keeps generating hospitalizations and adult deaths.",
+          "items": [
+            {
+              "item_id": "2026-09-15-visa-duration-rule-blocked",
+              "canonical_topic": "international-medical-trainee-visas",
+              "duplicate_group": "international-medical-trainee-visas",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/14/court-halts-dhs-visa-limits-foreign-scholars/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T21:20:48Z"
+                }
+              ],
+              "title": "Judge blocks visa-duration limits affecting graduate students and postdocs",
+              "summary": "STAT reports that a federal judge halted an administration plan to impose a four-year cap on visas used by graduate students and postdocs. The decision arrives as health systems and academic programs depend on international trainees, researchers, and clinicians to sustain training pipelines.",
+              "strategic_implication": "The ruling provides temporary relief but not durable workforce certainty. Teaching hospitals should map visa-dependent roles, maintain contingency recruitment plans, and monitor litigation and rulemaking that could affect residency, fellowship, and research continuity.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "international-medical-graduates",
+                "residency",
+                "immigration-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-15-pennsylvania-third-measles-death",
+              "canonical_topic": "pennsylvania-measles-outbreak",
+              "duplicate_group": "pennsylvania-measles-outbreak",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/14/third-measles-related-death-pennsylvania-outbreak/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-14T14:34:20Z"
+                }
+              ],
+              "title": "Pennsylvania reports a third measles death as the outbreak reaches 676 cases",
+              "summary": "STAT reports that a 40-year-old woman in Jefferson County died of measles complications, the state's third measles-related death this year. Pennsylvania had recorded 676 cases across 37 of its 67 counties as of Friday, including 124 hospitalizations. Four cases involved previously vaccinated people.",
+              "strategic_implication": "A 124-hospitalization case count signals sustained transmission and real inpatient and infection-control load, so hospitals in and near affected counties should confirm airborne-isolation capacity, staff immunity records, and ED triage screening. Public health and clinical leaders should also prepare messaging on adult susceptibility, since this death involved an adult rather than a young child.",
+              "confidence": "high",
+              "tags": [
+                "measles",
+                "outbreak-response",
+                "infection-control",
+                "vaccination"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

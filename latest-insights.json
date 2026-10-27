@@ -4,33 +4,43 @@
   "editions": [
     {
       "edition_date": "2026-10-27",
-      "generated_at": "2026-10-27T11:08:23Z",
+      "generated_at": "2026-10-27T12:40:31Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's edition balances federal shifts in health IT and program integrity with deal and drug-development signals, while emphasizing cybersecurity resilience, pediatric service capacity, and nutrition-led care. We screened STAT News, Healthcare Dive, and Fierce Healthcare RSS and checked key stories against CMS, HHS, FDA, company filings and releases, UNM, and KFF/AP reporting.",
+      "summary_note": "Today's edition balances federal shifts in health IT, program integrity, Medicare Advantage ratings, and PBM oversight with ESMO oncology readouts and deal activity, while emphasizing cybersecurity resilience, pediatric capacity, and early infectious-disease signals. We screened STAT News, Healthcare Dive, BioPharma Dive, MedTech Dive, and Fierce Healthcare RSS and checked key stories against CMS, HHS, FDA, House Oversight, SEC, company releases, UC San Diego, and other reporting.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
+          "Gmail label InsightsSources/Healthcare Brew",
+          "Gmail label InsightsSources/Healthcare Dive",
+          "Gmail label InsightsSources/Hospitalogy",
+          "Gmail label InsightsSources/Modern Healthcare",
           "STAT News RSS",
           "Healthcare Dive RSS",
           "Fierce Healthcare RSS",
-          "Web searches across CMS/HHS/FDA policy, health IT and AI, drug development, provider transactions, hospital operations, and workforce"
+          "Web searches across CMS/HHS/FDA policy, health IT and AI, drug development, provider transactions, hospital operations, and workforce",
+          "Curated refresh: STAT News RSS (main and category feeds), Healthcare Dive, BioPharma Dive, MedTech Dive, and Fierce Healthcare RSS; targeted searches across House Oversight, SEC EDGAR, Amgen, Merck, Incyte, UC San Diego, and French/WHO reporting on Shamonda virus"
         ],
         "sources_successful": [
           "STAT News RSS fetched and screened",
           "Healthcare Dive RSS fetched and screened",
           "Fierce Healthcare RSS fetched and screened",
-          "Targeted web searches returned official CMS, HHS, FDA, SEC, company, UNM, and healthcare-news context"
+          "Targeted web searches returned official CMS, HHS, FDA, SEC, company, UNM, and healthcare-news context",
+          "Curated refresh: STAT RSS re-screened for October 25-27; added the Comer PBM audit probe, Merck sac-TMT, Incyte KRAS G12D, Shamonda virus, N. fowleri compound, and Lancaster MSUD gene therapy items.",
+          "Curated refresh: Healthcare Dive, BioPharma Dive, and MedTech Dive RSS screened; added the Centene star-ratings lawsuit, Epic prior-authorization API readiness, Amgen Imdelltra data, Corxel SPAC, and AdvaMed CEO takeaways.",
+          "Curated refresh: House Oversight, SEC EDGAR, Amgen, Merck, Incyte, and UC San Diego primary releases used to confirm figures; BBC used for French ministry and WHO statements on Shamonda virus."
         ],
         "sources_failed": [
-          "Fierce Healthcare Avery article page fetch was blocked; the RSS entry and targeted search results were used instead"
+          "Gmail InsightsSources labels (Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare): label and sender searches from 2026-10-25 (Hospitalogy from 2026-10-20) returned no messages, and the labels were not found in the connected mailbox; RSS and web sources used instead.",
+          "Fierce Healthcare Avery article page fetch was blocked; the RSS entry and targeted search results were used instead",
+          "Fierce Healthcare RSS returned HTTP 403 during the curated refresh; the automated run had already screened it."
         ],
-        "run_notes": "All three requested RSS feeds returned usable items. Gmail labels were not queried because they are supplementary. The Avery item is attributed to Fierce Healthcare and phrased cautiously because its full article page could not be read."
+        "run_notes": "All three requested RSS feeds returned usable items. The Avery item is attributed to Fierce Healthcare and phrased cautiously because its full article page could not be read. Curated refresh retained all 11 automated items and added 11 new items (22 total). Excluded as repeats of prior editions: Commonwealth Fund uninsured-rate survey (covered 2026-10-22), CMS ACA subsidy pre-eligibility proposal and NIH vaccine-injury center (covered 2026-10-26), and Moderna-Merck melanoma vaccine data (covered 2026-10-16). The STAT pediatric emergency-care opinion was folded into the existing pediatric ICU item rather than added. BioNTech-DualityBio's modest HER2-low ADC result was screened but not included. The Centene suit is a pending complaint; Comer's inquiry has no findings; Corxel's merger is announced, not closed; Incyte data are Phase 1; the Shamonda causal link is described by officials as very likely but under investigation; rutamycin B and the MSUD gene therapy have not been tested in humans."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "The policy signal centers on lower health IT certification burdens and a CMS request for input on a possible future fraud-contractor model; neither should be mistaken for an immediate change to provider rules.",
+          "synthesis": "Federal action pairs lower health IT certification burdens and a CMS fraud-contractor RFI with mounting pressure points: a third insurer lawsuit over 2027 star ratings and a House probe of alleged PBM retaliation. None changes provider rules immediately.",
           "items": [
             {
               "item_id": "2026-10-27-hti-5-final-rule",
@@ -65,6 +75,32 @@
               ]
             },
             {
+              "item_id": "2026-10-27-centene-ma-star-ratings-lawsuit",
+              "canonical_topic": "centene-2027-ma-star-ratings-lawsuit",
+              "duplicate_group": "ma-star-ratings-litigation-2027",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/centene-medicare-advantage-stars-lawsuit-cms-2027/833922/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T12:55:00Z"
+                }
+              ],
+              "title": "Centene sues CMS over 2027 Medicare Advantage star ratings, citing a $448M bonus hit",
+              "summary": "Centene filed suit in federal district court in Georgia arguing CMS unlawfully used 17 measures to calculate its 2027 Medicare Advantage star ratings, and asks the court to set aside and recalculate the ratings. Centene says its share of members in plans rated 4 stars or higher fell from 16% to 12% and estimates a $448 million hit to 2028 quality bonuses and rebates. It is at least the third 2027 ratings challenge, after Alignment Healthcare and Healthfirst; no ruling has been issued.",
+              "strategic_implication": "Star-ratings litigation is becoming a routine revenue-defense tool for MA plans; plans and their provider partners should model bonus exposure under both current and recalculated ratings rather than assume the published scores will hold.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "star-ratings",
+                "litigation",
+                "payers"
+              ]
+            },
+            {
               "item_id": "2026-10-27-cms-fraud-defense-rfi",
               "canonical_topic": "cms-fraud-defense-contracts-rfi",
               "duplicate_group": "cms-fraud-defense-contracts-rfi",
@@ -89,12 +125,45 @@
                 "fraud-prevention",
                 "program-integrity"
               ]
+            },
+            {
+              "item_id": "2026-10-27-comer-pbm-retaliatory-audit-probe",
+              "canonical_topic": "house-oversight-pbm-audit-probe",
+              "duplicate_group": "house-oversight-pbm-audit-probe",
+              "priority_score": 7,
+              "primary_source": "House Committee on Oversight and Government Reform",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "House Oversight Committee",
+                  "url": "https://oversight.house.gov/release/comer-investigates-pbms-for-retaliatory-audits-of-independent-pharmacies/",
+                  "source_type": "web",
+                  "published_at": "2026-10-23T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/26/lawmaker-probes-pbms-for-punitive-audits-independent-pharmacies/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T16:26:00Z"
+                }
+              ],
+              "title": "House Oversight chair probes big three PBMs over alleged retaliatory pharmacy audits",
+              "summary": "House Oversight Chairman James Comer sent letters to CVS Caremark, Express Scripts, and Optum Rx investigating whether independent pharmacies faced a surge of burdensome audits after publicly backing H.R. 6610, the Pharmacists Fight Back in FEHB Plans Act, which the committee marked up in July. The committee is requesting documents, communications, staff briefings, nationwide audit totals, and audit records for pharmacies in Kentucky, Mississippi, and Florida. This is an inquiry; no findings have been issued and the bill has not been enacted.",
+              "strategic_implication": "The probe adds a retaliation angle to ongoing PBM reform pressure; PBMs and plan sponsors should expect audit-practice documentation to become a discoverable reform issue, especially for FEHB contracts.",
+              "confidence": "high",
+              "tags": [
+                "pbm",
+                "pharmacy",
+                "congress",
+                "oversight",
+                "fehb"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "AI activity spans both insurer-facing member navigation and broader healthcare offerings from a frontier-model company, with accuracy, safety, and human-escalation controls remaining central.",
+          "synthesis": "AI and automation activity spans insurer member navigation, a frontier-model company's healthcare push, and the Jan. 1 prior-authorization API deadline, where payer readiness remains uneven.",
           "items": [
             {
               "item_id": "2026-10-27-anthropic-healthcare-ai-ipo-filing",
@@ -165,12 +234,39 @@
                 "care-navigation",
                 "member-experience"
               ]
+            },
+            {
+              "item_id": "2026-10-27-epic-prior-auth-api-deadline",
+              "canonical_topic": "cms-prior-authorization-api-deadline-2027",
+              "duplicate_group": "cms-prior-authorization-api-deadline-2027",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/prior-authorization-takeaways-from-epic-ahead-of-looming-API-deadline/833919/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T12:56:00Z"
+                }
+              ],
+              "title": "Epic reports early prior-authorization API results as payers face a Jan. 1 deadline",
+              "summary": "CMS-regulated payers must stand up three prior-authorization APIs by Jan. 1 under the 2024 interoperability and prior authorization final rule, covering requirement checks, documentation retrieval, and electronic submission and response. Epic, which made API-based prior authorization available in its February release, says UnitedHealthcare is live with health systems and Network Health supports all three APIs; larger payers are ready or testing while some smaller regional plans are still preparing. Early adopters report fewer canceled appointments.",
+              "strategic_implication": "Readiness is uneven heading into the deadline; health systems should map which contracted payers are live and plan for parallel manual workflows with lagging regional plans through early 2027.",
+              "confidence": "medium",
+              "tags": [
+                "prior-authorization",
+                "interoperability",
+                "ehr",
+                "payers",
+                "cms"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "Capital is shifting toward outpatient surgery, while oncology headlines pair a major investigational phase 3 readout with an FDA expansion into an earlier prostate-cancer treatment setting.",
+          "synthesis": "Capital is shifting toward outpatient surgery, while ESMO produced several survival-changing oncology readouts and investors continued funding oral obesity drugs licensed from China.",
           "items": [
             {
               "item_id": "2026-10-27-bon-secours-surgery-partners-definitive-deal",
@@ -273,12 +369,141 @@
                 "precision-medicine",
                 "oncology"
               ]
+            },
+            {
+              "item_id": "2026-10-27-amgen-imdelltra-dellphi-305",
+              "canonical_topic": "amgen-imdelltra-first-line-sclc",
+              "duplicate_group": "esmo-2026-oncology-readouts",
+              "priority_score": 7,
+              "primary_source": "Amgen",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Amgen",
+                  "url": "https://investors.amgen.com/news-releases/news-release-details/imdelltrar-combination-imfinzir-reduced-risk-death-unprecedented",
+                  "source_type": "web",
+                  "published_at": "2026-10-24T00:00:00Z"
+                },
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/esmo-2026-intismeran-melanoma-imdelltra-divarasib-kras-g12c/833921/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T11:58:00Z"
+                }
+              ],
+              "title": "Amgen's Imdelltra plus Imfinzi cuts death risk 58% in first-line small cell lung cancer",
+              "summary": "Interim Phase 3 DeLLphi-305 results presented at ESMO and published in NEJM showed Imdelltra (tarlatamab) plus AstraZeneca's Imfinzi reduced the risk of death by 58% as first-line maintenance therapy for extensive-stage small cell lung cancer (HR 0.42). Median overall survival was 21.1 months versus 12.7 months with Imfinzi alone, and nearly 80% of patients were alive at one year versus 53%. Imdelltra sales were $627 million in 2025.",
+              "strategic_implication": "A move into first-line maintenance would substantially expand use of a bispecific T-cell engager that requires monitoring for cytokine release; cancer centers and community oncology practices should anticipate infusion-capacity and site-of-care planning needs if labeling expands.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "esmo",
+                "lung-cancer",
+                "bispecifics"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-merck-sac-tmt-endometrial",
+              "canonical_topic": "merck-sac-tmt-endometrial-cancer",
+              "duplicate_group": "esmo-2026-oncology-readouts",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/26/merck-kelun-sac-tmt-endometrial-cancer-study-esmo-2026/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T15:30:00Z"
+                },
+                {
+                  "source": "Merck",
+                  "url": "https://www.merck.com/news/merck-showcases-first-time-pivotal-phase-3-results-from-oncology-pipeline-and-continued-innovative-potential-of-existing-portfolio-at-esmo-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                }
+              ],
+              "title": "Merck's TROP2 ADC cuts death risk by one-third in previously treated endometrial cancer",
+              "summary": "Phase 3 TroFuse-005 results presented at ESMO showed Merck and Kelun-Biotech's sacituzumab tirumotecan (sac-TMT) reduced the risk of death by about one-third in patients with advanced or recurrent endometrial cancer who progressed after platinum chemotherapy and immunotherapy, according to STAT. The drug is approved in China but not in the U.S.; Merck is running 18 global Phase 3 trials, including 10 in women's cancers.",
+              "strategic_implication": "Sac-TMT is central to Merck's plan to offset Keytruda's 2028 patent cliff, and the readout strengthens China-originated assets as a source of late-stage oncology pipelines; payers should expect another high-cost ADC entering a crowded TROP2 class.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "esmo",
+                "adc",
+                "womens-health",
+                "pharma"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-incyte-kras-g12d-pancreatic",
+              "canonical_topic": "incyte-incb161734-pancreatic-cancer",
+              "duplicate_group": "esmo-2026-oncology-readouts",
+              "priority_score": 5,
+              "primary_source": "Incyte",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Incyte",
+                  "url": "https://investor.incyte.com/news-releases/news-release-details/incyte-highlights-new-data-advancing-its-gastrointestinal-cancer",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/26/incyte-esmo-pancreatic-cancer-incb161734-results/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T13:57:00Z"
+                }
+              ],
+              "title": "Incyte's KRAS G12D inhibitor shows durable responses with chemo in pancreatic cancer",
+              "summary": "Incyte presented Phase 1 data (n=54) at ESMO for INCB161734 combined with standard chemotherapy in metastatic pancreatic cancer with a KRAS G12D mutation, which STAT reported produced lasting tumor responses. A global Phase 3 trial (DAWN-303) is ongoing with topline data expected in 2028, and an adjuvant Phase 3 is planned for 2027. These are early-stage results, not approval-supporting data.",
+              "strategic_implication": "The RAS-targeted pancreatic cancer field is moving quickly after Revolution Medicines' 2026 approval; oncology programs should expect broader KRAS mutation testing at diagnosis to become standard practice.",
+              "confidence": "medium",
+              "tags": [
+                "oncology",
+                "esmo",
+                "pancreatic-cancer",
+                "precision-medicine"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-corxel-spac-obesity",
+              "canonical_topic": "corxel-amanat-spac-obesity",
+              "duplicate_group": "corxel-amanat-spac-obesity",
+              "priority_score": 5,
+              "primary_source": "SEC EDGAR (Corxel and Amanat press release)",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "SEC EDGAR",
+                  "url": "https://www.sec.gov/Archives/edgar/data/2112457/000121390026112239/ea030895401ex99-1.htm",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/corxel-pharmaceuticals-spac-public-obesity-drugs/872772/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T15:17:00Z"
+                }
+              ],
+              "title": "Oral obesity drug developer Corxel plans $377M SPAC listing with $300M PIPE",
+              "summary": "Corxel Pharmaceuticals agreed to merge with Amanat Acquisition Corp in a deal expected to provide about $377 million in gross proceeds, including a roughly $300 million PIPE from RTW, NEA, RA Capital, and others. The company is advancing CX11, a once-daily oral GLP-1 pill licensed from China's Vincentage Pharma that produced up to 11.5% average weight loss at 36 weeks in a U.S. Phase 2 trial. The deal is expected to close in the first half of 2027.",
+              "strategic_implication": "Investor appetite for oral obesity drugs and China-licensed assets remains strong; employers and payers should expect a growing pipeline of lower-cost-to-manufacture oral GLP-1 competitors later this decade.",
+              "confidence": "high",
+              "tags": [
+                "obesity",
+                "glp-1",
+                "biotech-financing",
+                "spac"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "UNM's disruption illustrates the immediate clinical consequences of a cyber incident, while South Carolina's pilot tests a resilience package for rural hospitals.",
+          "synthesis": "Cyber resilience dominates: UNM's recovery, South Carolina's rural hospital pilot, and Stryker's account of its own attack, alongside device makers designing for staffing-constrained and outpatient workflows.",
           "items": [
             {
               "item_id": "2026-10-27-unm-health-cyber-disruption",
@@ -343,12 +568,38 @@
                 "hospital-operations",
                 "resilience"
               ]
+            },
+            {
+              "item_id": "2026-10-27-advamed-medtech-ceos-costs-cyber",
+              "canonical_topic": "advamed-2026-medtech-ceo-outlook",
+              "duplicate_group": "advamed-2026-medtech-ceo-outlook",
+              "priority_score": 5,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/overheard-in-boston-medtech-ceos-talk-rising-costs-turbulent-markets-cyb/872744/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T10:24:00Z"
+                }
+              ],
+              "title": "Medtech CEOs flag workflow burden, ASC migration, and cyber recovery at AdvaMed",
+              "summary": "At AdvaMed's MedTech Conference in Boston, Medtronic's Geoff Martha said adding even five minutes to an hour-long procedure burdens staff, and Boston Scientific's Mike Mahoney said some interventional cardiology procedures, including pulsed-field ablation, have been approved for ambulatory surgery centers, though broader use needs strong safety evidence. Stryker COO and incoming CEO Spencer Stiles described the company's response to the cyberattack that began March 11, emphasizing safety and transparent communication.",
+              "strategic_implication": "Device makers are designing around staffing-constrained workflows and outpatient migration; hospitals should weigh procedure time and supply-chain cyber resilience, not just device price, in value-analysis decisions.",
+              "confidence": "medium",
+              "tags": [
+                "medtech",
+                "ambulatory-surgery",
+                "cybersecurity",
+                "supply-chain"
+              ]
             }
           ]
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "Pediatric critical-care capacity remains exposed to staffing and low-volume economics, while a growing number of hospitals have made voluntary commitments to improve nutrition in patient care.",
+          "synthesis": "Pediatric critical-care capacity and hospital nutrition commitments lead, with early infectious-disease signals (a first human Shamonda case and a preclinical amoeba compound) and a community-built rare-disease therapy effort.",
           "items": [
             {
               "item_id": "2026-10-27-pediatric-icu-capacity",
@@ -406,6 +657,95 @@
                 "hospital-operations",
                 "patient-care",
                 "prevention"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-shamonda-virus-first-human-case",
+              "canonical_topic": "shamonda-virus-first-human-case-france",
+              "duplicate_group": "shamonda-virus-first-human-case-france",
+              "priority_score": 6,
+              "primary_source": "BBC News (French health and agriculture ministries)",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BBC News",
+                  "url": "https://www.bbc.com/news/articles/c6reyx1d9ge9o",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/26/health-news-virus-afflicting-cows-makes-the-jump-to-humans/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T13:26:00Z"
+                }
+              ],
+              "title": "France reports the first known human Shamonda virus infection, a cattle virus spread by midges",
+              "summary": "French authorities reported the first documented human case of Shamonda virus, a midge-borne virus that mainly affects cattle, in a severely immunocompromised patient treated in Lyon who died in early October. Officials said neurological complications were very likely linked to the virus and believe infection occurred through a midge bite in eastern France, where animal cases were identified this spring. WHO and ECDC are monitoring; officials say there is currently no risk to the public, and WHO has not issued a formal risk assessment.",
+              "strategic_implication": "The case is a One Health signal rather than a public threat; infectious-disease and transplant programs should note it as a possible consideration for unexplained encephalitis in immunocompromised patients with relevant exposure.",
+              "confidence": "medium",
+              "tags": [
+                "infectious-disease",
+                "zoonotic",
+                "one-health",
+                "surveillance"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-rutamycin-b-naegleria-fowleri",
+              "canonical_topic": "naegleria-fowleri-marine-compound",
+              "duplicate_group": "naegleria-fowleri-marine-compound",
+              "priority_score": 4,
+              "primary_source": "UC San Diego",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "UC San Diego",
+                  "url": "https://today.ucsd.edu/story/marine-molecule-may-help-combat-brain-eating-amoeba",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/27/health-news-possible-treatment-for-brain-eating-amoebas-found-in-sea/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T12:22:00Z"
+                }
+              ],
+              "title": "UC San Diego finds a marine-derived compound that kills brain-eating amoeba in lab tests",
+              "summary": "UC San Diego researchers reported that rutamycin B, a compound isolated from a marine bacterium, killed multiple clinical strains of Naegleria fowleri faster and more selectively than current treatments in laboratory studies. Primary amoebic meningoencephalitis has a fatality rate above 97%. The compound is a preclinical candidate; researchers still need to test whether it can cross the blood-brain barrier.",
+              "strategic_implication": "This is early-stage science, but it matters to states with warm freshwater exposure, including Florida, where rapid diagnosis and access to existing therapies remain the clinical priority.",
+              "confidence": "medium",
+              "tags": [
+                "infectious-disease",
+                "drug-discovery",
+                "public-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-lancaster-msud-community-gene-therapy",
+              "canonical_topic": "lancaster-msud-community-gene-therapy",
+              "duplicate_group": "lancaster-msud-community-gene-therapy",
+              "priority_score": 4,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/27/gene-therapy-cow-rare-disease-amish-mennonite-patients-waiting/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T08:30:00Z"
+                }
+              ],
+              "title": "Lancaster County clinicians and Mennonite families build their own rare-disease gene therapy effort",
+              "summary": "STAT reports that rural physician Kevin Strauss and a Mennonite community network in Lancaster, Pa., are developing a gene therapy for maple syrup urine disease, which is unusually common in the local Plain community, after two decades without industry investment. The therapy worked in cattle, including a calf now five years old, but no human patient has received it, even in a clinical trial.",
+              "strategic_implication": "Community-financed development is an emerging model for ultra-rare diseases that industry deprioritizes; academic and rural health systems may become sponsors, raising new questions about trial infrastructure, manufacturing, and payer coverage.",
+              "confidence": "medium",
+              "tags": [
+                "rare-disease",
+                "gene-therapy",
+                "rural-health",
+                "community-health"
               ]
             }
           ]
@@ -16244,376 +16584,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-15",
-      "generated_at": "2026-09-15T12:45:00Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks the gap between healthcare policy design and operating reality: documents show Medicare's WISeR AI prior-authorization pilot launched over vendor objections, J&J is conditioning 340B discounts on claims-data reporting, and NIH has opened research-infrastructure funding to businesses and local governments. Operating and market signals include Oracle's nurse-facing clinical AI agent, Conifer's 1,037-person layoff, strong final Phase 3 data for Vera's Trutakna, Abbott's $385 million formula settlement, a court pause on visa-duration limits, and a third measles death in Pennsylvania's 676-case outbreak. Built from STAT News and Healthcare Dive RSS with Fierce Healthcare items carried from the earlier run; the InsightsSources Gmail labels were unavailable in the connected mailbox.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels: InsightsSources/Healthcare Brew, InsightsSources/Healthcare Dive, InsightsSources/Hospitalogy, InsightsSources/Modern Healthcare",
-          "STAT News RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS"
-        ],
-        "sources_successful": [
-          "STAT News RSS",
-          "Healthcare Dive RSS"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels returned no messages — the connected mailbox does not hold these labels",
-          "Fierce Healthcare RSS blocked by bot protection on this run (items retained from the earlier same-day run)"
-        ],
-        "run_notes": "Same-day refresh of the 2026-09-15 edition per the one-edition-per-date rule. All four InsightsSources Gmail labels were queried and returned no messages, consistent with the connected mailbox being separate from the one holding those labels. STAT News and Healthcare Dive RSS were read directly and key figures were verified against the source articles (Abbott $385M; Pennsylvania 676 cases, 124 hospitalizations; Conifer 1,037 layoffs). Fierce Healthcare RSS was blocked by bot protection, so its three items from the earlier run were retained with their original links. New signals added in this refresh: NIH research-funding eligibility expansion and Pennsylvania's third measles death. Items were screened against the prior six editions to avoid duplicates."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Today's policy signal is implementation risk on three fronts: Medicare's AI prior-authorization pilot is under scrutiny, manufacturers are tightening 340B data conditions, and NIH is redrawing who can compete for federal research infrastructure.",
-          "items": [
-            {
-              "item_id": "2026-09-15-medicare-wiser-ai-pilot",
-              "canonical_topic": "medicare-ai-prior-authorization",
-              "duplicate_group": "medicare-ai-prior-authorization",
-              "priority_score": 9,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T08:30:00Z"
-                }
-              ],
-              "title": "Medicare’s AI prior-authorization pilot draws scrutiny over rushed rollout and delayed care",
-              "summary": "STAT reports that newly released documents and data describe a rushed, error-prone rollout of the WISeR Medicare pilot, which uses AI to approve or deny selected procedures and products. The program operates in six states and has reportedly been associated with delayed care in some instances.",
-              "strategic_implication": "Payers and providers should treat AI-enabled utilization management as a clinical-governance and service-level risk, not only an automation project. Auditability, escalation paths, vendor readiness, and patient-impact monitoring need to be designed before expansion.",
-              "confidence": "high",
-              "tags": [
-                "medicare",
-                "prior-authorization",
-                "clinical-ai",
-                "utilization-management"
-              ]
-            },
-            {
-              "item_id": "2026-09-15-jnj-340b-claims-reporting",
-              "canonical_topic": "340b-claims-data-reporting",
-              "duplicate_group": "340b-claims-data-reporting",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/jnj-340b-reporting-requirement-drug-discounts-claims-data/830259/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T13:21:24Z"
-                }
-              ],
-              "title": "J&J adds claims-data reporting requirement for providers seeking 340B discounts",
-              "summary": "Healthcare Dive reports that Johnson & Johnson is requiring providers to share claims data to receive 340B discounts. The drugmaker says tighter reporting guardrails are intended to prevent duplicative discounts, making data exchange a condition of access for affected providers.",
-              "strategic_implication": "340B participants should assess the operational, legal, and cybersecurity implications of manufacturer data requests before implementation. The move also signals continued friction over who controls claims data and how duplicate-discount risk should be reconciled.",
-              "confidence": "high",
-              "tags": [
-                "340b",
-                "drug-pricing",
-                "claims-data",
-                "manufacturer-policy"
-              ]
-            },
-            {
-              "item_id": "2026-09-15-fda-psychedelic-hearing",
-              "canonical_topic": "psychedelic-medicine-regulation",
-              "duplicate_group": "psychedelic-medicine-regulation",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/biotech/cultural-weight-psychedelic-approval-looms-fda-hearing-focuses-access-and-safety",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T21:48:00Z"
-                }
-              ],
-              "title": "FDA hearing puts access, safety, and real-world monitoring at center of psychedelic approval debate",
-              "summary": "Fierce Healthcare reports that the FDA convened a public hearing as the agency approaches a likely first approval of a psychedelic medicine. Discussion focused on how these drugs should be used, monitored, and studied after launch, alongside questions of access and safety.",
-              "strategic_implication": "Potential approval would create a new care pathway whose economics depend on monitoring, clinician training, and evidence collection as much as on the product label. Health systems and payers should begin scenario planning for controlled access and post-market obligations.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "psychedelics",
-                "drug-approval",
-                "patient-safety"
-              ]
-            },
-            {
-              "item_id": "2026-09-15-nih-grant-eligibility-expansion",
-              "canonical_topic": "nih-research-funding-eligibility",
-              "duplicate_group": "nih-research-funding-eligibility",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/15/health-news-businesses-can-now-apply-for-nih-funding/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T12:03:33Z"
-                }
-              ],
-              "title": "NIH opens research-infrastructure funding to businesses, local governments, and community organizations",
-              "summary": "STAT reports that NIH has expanded eligibility for research-facility and equipment funding beyond universities and nonprofits to include for-profit businesses, local governments, community-based organizations, and other federal agencies. NIH Director Jay Bhattacharya framed the change as breaking a catch-22 in which only institutions with existing infrastructure can attract talent and win grants. The National Science Foundation is pursuing a parallel shift through its X-Labs program favoring independent research organizations.",
-              "strategic_implication": "Health systems, rural providers, and community organizations that previously lacked academic partners now have a direct path to federal research-infrastructure capital and should assess grant-readiness, indirect-cost accounting, and compliance capacity. Academic medical centers should expect more competition for the same pool and may need to reposition around partnership and data assets rather than facilities alone.",
-              "confidence": "high",
-              "tags": [
-                "nih",
-                "research-funding",
-                "federal-policy",
-                "community-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "AI deployment is moving closer to frontline nursing workflows, while remote-monitoring programs remain exposed to reimbursement changes that could undermine their economics.",
-          "items": [
-            {
-              "item_id": "2026-09-15-oracle-nurse-ai-agent",
-              "canonical_topic": "nursing-workflow-ai",
-              "duplicate_group": "nursing-workflow-ai",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/oracle-targets-nurses-with-latest-ai-tool/830279/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T14:47:39Z"
-                }
-              ],
-              "title": "Oracle targets nurses with a voice-enabled clinical AI agent for chart navigation and summaries",
-              "summary": "Healthcare Dive reports that Oracle’s clinical AI agent lets U.S. nurses search and navigate patient charts with voice commands and generate nursing summaries. The product extends ambient and generative AI from documentation support into day-to-day information retrieval for clinical staff.",
-              "strategic_implication": "The near-term value case is reduced search and handoff friction, but adoption will depend on accuracy, identity controls, workflow integration, and clear accountability for generated summaries. Nursing leaders should pilot against measurable time-saved and safety metrics rather than broad deployment claims.",
-              "confidence": "high",
-              "tags": [
-                "clinical-ai",
-                "nursing",
-                "workflow-automation",
-                "oracle-health"
-              ]
-            },
-            {
-              "item_id": "2026-09-15-remote-monitoring-medicare-payment",
-              "canonical_topic": "remote-monitoring-reimbursement",
-              "duplicate_group": "remote-monitoring-reimbursement",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/states-are-betting-millions-remote-patient-monitoring-providers-tech-groups-say",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T16:01:00Z"
-                }
-              ],
-              "title": "Proposed Medicare changes put state-backed remote-monitoring investments at risk",
-              "summary": "Fierce Healthcare reports that states are investing heavily in remote monitoring and virtual-care infrastructure to address rural access gaps. Providers and technology groups warn that proposed Medicare reimbursement changes could weaken the financial model supporting those services.",
-              "strategic_implication": "Virtual-care operators should stress-test utilization, reimbursement, and device-cost assumptions before scaling programs dependent on Medicare revenue. State leaders may need contingency plans if federal policy changes shift more of the operating burden to local budgets or providers.",
-              "confidence": "high",
-              "tags": [
-                "remote-monitoring",
-                "telehealth",
-                "medicare",
-                "rural-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Late-stage drug evidence is strengthening one kidney-care opportunity, while a large settlement tied to a baby-formula plant closure underscores the cost of concentrated supply chains and operational disruption.",
-          "items": [
-            {
-              "item_id": "2026-09-15-vera-trutakna-phase3",
-              "canonical_topic": "iga-nephropathy-drug-development",
-              "duplicate_group": "iga-nephropathy-drug-development",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/15/vera-kidney-drug-trutakna-shows-strong-phase-3-results-igan/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T10:30:00Z"
-                }
-              ],
-              "title": "Vera’s Trutakna posts strong final Phase 3 results in IgA nephropathy",
-              "summary": "STAT reports that Vera Therapeutics said its recently approved Trutakna stabilized kidney function and reduced the risk of kidney-related death and other complications in IgA nephropathy patients. With two-year Phase 3 results available, the company plans to seek full FDA approval in the fourth quarter.",
-              "strategic_implication": "A successful conversion from accelerated to full approval could increase treatment competition in a chronic disease with severe downstream costs, while creating new budget and evidence questions for payers. Kidney-care organizations should track durability, utilization, and access implications as the label and evidence mature.",
-              "confidence": "high",
-              "tags": [
-                "biotech",
-                "kidney-disease",
-                "fda",
-                "drug-development"
-              ]
-            },
-            {
-              "item_id": "2026-09-15-abbott-formula-settlement",
-              "canonical_topic": "infant-formula-supply-chain",
-              "duplicate_group": "infant-formula-supply-chain",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/14/abbott-settlement-closure-baby-formula-plant-shortages/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T19:18:37Z"
-                }
-              ],
-              "title": "Abbott agrees to $385 million settlement tied to baby-formula plant closure",
-              "summary": "STAT reports that Abbott agreed to a $385 million settlement over the closure of the largest baby-formula plant in the United States, an event that contributed to the 2022 supply shortages. The episode keeps concentration and resilience in essential medical-product supply chains in focus.",
-              "strategic_implication": "Health systems, public agencies, and manufacturers should continue treating supply continuity as a strategic capability rather than a procurement afterthought. Financial settlements may resolve claims without eliminating the need for diversified capacity, contingency inventory, and transparent disruption planning.",
-              "confidence": "high",
-              "tags": [
-                "supply-chain",
-                "infant-nutrition",
-                "manufacturing",
-                "operational-resilience"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Provider operations are being reshaped by labor reductions and competitive signaling: revenue-cycle restructuring is affecting more than 1,000 workers, while children’s hospitals use rankings to differentiate quality and specialty depth.",
-          "items": [
-            {
-              "item_id": "2026-09-15-conifer-layoffs",
-              "canonical_topic": "revenue-cycle-outsourcing-layoffs",
-              "duplicate_group": "revenue-cycle-outsourcing-layoffs",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/conifer-to-lay-off-over-1000-workers/830287/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T15:02:24Z"
-                }
-              ],
-              "title": "Conifer to lay off more than 1,000 workers after major client contract exit",
-              "summary": "Healthcare Dive reports that Conifer is planning to lay off more than 1,000 workers months after CommonSpirit ended its service contract early and exited its stake in Tenet’s revenue-cycle company. The announcement illustrates how client concentration and contract changes can quickly flow through outsourced operating models.",
-              "strategic_implication": "Health systems using third-party revenue-cycle services should review vendor concentration, transition provisions, and business-continuity plans. For operators, the episode reinforces the need to balance scale economics with workforce redeployment and resilience when anchor contracts change.",
-              "confidence": "high",
-              "tags": [
-                "revenue-cycle",
-                "outsourcing",
-                "workforce",
-                "hospital-operations"
-              ]
-            },
-            {
-              "item_id": "2026-09-15-childrens-hospital-rankings",
-              "canonical_topic": "childrens-hospital-quality-rankings",
-              "duplicate_group": "childrens-hospital-quality-rankings",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/us-news-best-childrens-hospitals-lurie-childrens-upmc-join-honor-roll-boston-childrens",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T18:20:00Z"
-                }
-              ],
-              "title": "Children’s hospital rankings highlight Lurie Children’s and UPMC as new honor-roll entrants",
-              "summary": "Fierce Healthcare reports that U.S. News’ annual children’s-hospital rankings added Lurie Children’s and UPMC to the honor roll, while Boston Children’s led specialty rankings. The methodology weighs structural measures and processes, outcomes, and expert opinion.",
-              "strategic_implication": "Rankings remain an external signal that can affect referral flows, recruitment, philanthropy, and service-line positioning. Children’s hospitals should translate ranking inputs into a broader quality-and-access narrative instead of optimizing narrowly for a single annual score.",
-              "confidence": "high",
-              "tags": [
-                "childrens-health",
-                "quality-measures",
-                "hospital-strategy",
-                "referrals"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Workforce and clinical exposure are both tightening: a court has paused visa-duration limits on the research pipeline while Pennsylvania's measles outbreak keeps generating hospitalizations and adult deaths.",
-          "items": [
-            {
-              "item_id": "2026-09-15-visa-duration-rule-blocked",
-              "canonical_topic": "international-medical-trainee-visas",
-              "duplicate_group": "international-medical-trainee-visas",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/14/court-halts-dhs-visa-limits-foreign-scholars/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T21:20:48Z"
-                }
-              ],
-              "title": "Judge blocks visa-duration limits affecting graduate students and postdocs",
-              "summary": "STAT reports that a federal judge halted an administration plan to impose a four-year cap on visas used by graduate students and postdocs. The decision arrives as health systems and academic programs depend on international trainees, researchers, and clinicians to sustain training pipelines.",
-              "strategic_implication": "The ruling provides temporary relief but not durable workforce certainty. Teaching hospitals should map visa-dependent roles, maintain contingency recruitment plans, and monitor litigation and rulemaking that could affect residency, fellowship, and research continuity.",
-              "confidence": "high",
-              "tags": [
-                "workforce",
-                "international-medical-graduates",
-                "residency",
-                "immigration-policy"
-              ]
-            },
-            {
-              "item_id": "2026-09-15-pennsylvania-third-measles-death",
-              "canonical_topic": "pennsylvania-measles-outbreak",
-              "duplicate_group": "pennsylvania-measles-outbreak",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/14/third-measles-related-death-pennsylvania-outbreak/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T14:34:20Z"
-                }
-              ],
-              "title": "Pennsylvania reports a third measles death as the outbreak reaches 676 cases",
-              "summary": "STAT reports that a 40-year-old woman in Jefferson County died of measles complications, the state's third measles-related death this year. Pennsylvania had recorded 676 cases across 37 of its 67 counties as of Friday, including 124 hospitalizations. Four cases involved previously vaccinated people.",
-              "strategic_implication": "A 124-hospitalization case count signals sustained transmission and real inpatient and infection-control load, so hospitals in and near affected counties should confirm airborne-isolation capacity, staff immunity records, and ED triage screening. Public health and clinical leaders should also prepare messaging on adult susceptibility, since this death involved an adult rather than a young child.",
-              "confidence": "high",
-              "tags": [
-                "measles",
-                "outbreak-response",
-                "infection-control",
-                "vaccination"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-27T11:08:23Z"
+  "last_updated": "2026-10-27T12:40:31Z"
 }

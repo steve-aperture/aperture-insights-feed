@@ -3,6 +3,416 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-27",
+      "generated_at": "2026-10-27T11:08:23Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition balances federal shifts in health IT and program integrity with deal and drug-development signals, while emphasizing cybersecurity resilience, pediatric service capacity, and nutrition-led care. We screened STAT News, Healthcare Dive, and Fierce Healthcare RSS and checked key stories against CMS, HHS, FDA, company filings and releases, UNM, and KFF/AP reporting.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web searches across CMS/HHS/FDA policy, health IT and AI, drug development, provider transactions, hospital operations, and workforce"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened",
+          "Healthcare Dive RSS fetched and screened",
+          "Fierce Healthcare RSS fetched and screened",
+          "Targeted web searches returned official CMS, HHS, FDA, SEC, company, UNM, and healthcare-news context"
+        ],
+        "sources_failed": [
+          "Fierce Healthcare Avery article page fetch was blocked; the RSS entry and targeted search results were used instead"
+        ],
+        "run_notes": "All three requested RSS feeds returned usable items. Gmail labels were not queried because they are supplementary. The Avery item is attributed to Fierce Healthcare and phrased cautiously because its full article page could not be read."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "The policy signal centers on lower health IT certification burdens and a CMS request for input on a possible future fraud-contractor model; neither should be mistaken for an immediate change to provider rules.",
+          "items": [
+            {
+              "item_id": "2026-10-27-hti-5-final-rule",
+              "canonical_topic": "hti-5-final-rule",
+              "duplicate_group": "hti-5-final-rule",
+              "priority_score": 8,
+              "primary_source": "U.S. Department of Health and Human Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "HHS",
+                  "url": "https://www.hhs.gov/press-room/hhs-finalizes-hti-5-deregulatory-rule.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/26/health-data-interoperability-hti5-relaxes-privacy-security-requirements/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T21:16:11Z"
+                }
+              ],
+              "title": "HHS finalizes HTI-5 rule, projecting $1.5B in health IT compliance savings",
+              "summary": "HHS released HTI-5, a final rule that streamlines the ONC Health IT Certification Program and reduces administrative requirements for participating developers. HHS projects more than $1.5 billion in regulatory cost savings and says the changes are intended to free resources for interoperability, automation, and user experience. The agency says comments on proposed information-blocking changes remain under consideration.",
+              "strategic_implication": "Health IT vendors may revisit certification roadmaps and compliance spending, while hospitals should track which criteria change and how those changes affect interoperability and procurement; the release does not establish blanket relief from other health-data obligations.",
+              "confidence": "high",
+              "tags": [
+                "health-it",
+                "interoperability",
+                "certification",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-cms-fraud-defense-rfi",
+              "canonical_topic": "cms-fraud-defense-contracts-rfi",
+              "duplicate_group": "cms-fraud-defense-contracts-rfi",
+              "priority_score": 7,
+              "primary_source": "Centers for Medicare & Medicaid Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/fraud",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                }
+              ],
+              "title": "CMS seeks industry input on a new Medicare and Medicaid fraud-contractor model",
+              "summary": "CMS is seeking industry input on future Fraud Defense contracts intended to combat Medicare and Medicaid fraud. The agency says the proposed framework would increase CMS direction of investigations and seeks ideas for a contractor model not bound by current UPIC policies or the Medicare Program Integrity Manual. Responses are due at 11 a.m. ET on November 4; this is an RFI, not a final contract or a new provider rule.",
+              "strategic_implication": "Program-integrity vendors should assess the RFI and consider targeted input; plans and providers should watch for future changes in oversight priorities, but no immediate operational requirement follows from this notice.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "medicaid",
+                "fraud-prevention",
+                "program-integrity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI activity spans both insurer-facing member navigation and broader healthcare offerings from a frontier-model company, with accuracy, safety, and human-escalation controls remaining central.",
+          "items": [
+            {
+              "item_id": "2026-10-27-anthropic-healthcare-ai-ipo-filing",
+              "canonical_topic": "anthropic-healthcare-ai-ipo-filing",
+              "duplicate_group": "anthropic-healthcare-ai-ipo-filing",
+              "priority_score": 8,
+              "primary_source": "U.S. Securities and Exchange Commission",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "SEC EDGAR",
+                  "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/0001628280-26-067168-index.htm",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T13:00:11Z"
+                },
+                {
+                  "source": "Anthropic",
+                  "url": "https://www.anthropic.com/news/s1-sec",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/biotech/anthropic-extols-ais-drug-rd-potential-including-risks-mammoth-ipo-filing",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T15:51:00Z"
+                }
+              ],
+              "title": "Anthropic's IPO filing details healthcare AI offerings and drug-R&D ambitions",
+              "summary": "Anthropic filed an S-1 for a proposed Nasdaq IPO. The filing describes Claude for Healthcare for providers, payers, and health technology companies, including CMS Coverage Database and ICD-10 connectors and agent skills for FHIR interoperability and prior-authorization review. The filing also discusses risks from inaccurate outputs and misuse, while Fierce Healthcare highlights the company's stated ambitions in biology research and drug R&D; these are product and market claims, not evidence of validated drug-development performance.",
+              "strategic_implication": "Health organizations should assess potential integration value alongside accuracy, privacy, security, and oversight requirements, rather than treating product claims as proof of clinical benefit.",
+              "confidence": "medium",
+              "tags": [
+                "artificial-intelligence",
+                "drug-discovery",
+                "health-it",
+                "ipo"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-uhc-avery-expansion",
+              "canonical_topic": "unitedhealthcare-avery-ai-expansion",
+              "duplicate_group": "unitedhealthcare-avery-ai-expansion",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/unitedhealthcare-expands-ai-companion-avery-21m-members",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T19:46:00Z"
+                },
+                {
+                  "source": "UnitedHealthcare",
+                  "url": "https://www.uhc.com/news-articles/newsroom/avery-announcement",
+                  "source_type": "web",
+                  "published_at": "2026-03-26T00:00:00Z"
+                }
+              ],
+              "title": "UnitedHealthcare expands its Avery AI companion to about 21 million members",
+              "summary": "Fierce Healthcare reports that UnitedHealthcare has expanded Avery, its generative-AI member companion, to about 21 million members. UHC's initial launch materials described access for about 6.5 million employer-sponsored members and 160,000 Medicare Advantage members, with expansion to 20.5 million commercial, Medicare, and Medicaid members planned by year-end. UHC describes Avery as a benefits and care-navigation tool and warns that its answers can be incomplete or inaccurate and are not medical advice.",
+              "strategic_implication": "Broader member-facing AI could change call volumes and referral pathways; plans and providers should set clear escalation rules and evaluate answer quality rather than equating self-service containment with better care.",
+              "confidence": "medium",
+              "tags": [
+                "payer-technology",
+                "generative-ai",
+                "care-navigation",
+                "member-experience"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital is shifting toward outpatient surgery, while oncology headlines pair a major investigational phase 3 readout with an FDA expansion into an earlier prostate-cancer treatment setting.",
+          "items": [
+            {
+              "item_id": "2026-10-27-bon-secours-surgery-partners-definitive-deal",
+              "canonical_topic": "bon-secours-surgery-partners-takeover",
+              "duplicate_group": "bon-secours-surgery-partners-takeover",
+              "priority_score": 9,
+              "primary_source": "Surgery Partners",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Surgery Partners",
+                  "url": "https://ir.surgerypartners.com/news-releases/news-release-details/healthspan-partners-acquire-surgery-partners-establishing",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/26/bon-secours-mercy-health-surgery-partners-deal-ambulatory-surgery-centers-bain-capital/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T21:54:24Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/bon-secours-mercy-health-acquire-majority-stake-surgery-partners",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T15:42:00Z"
+                }
+              ],
+              "title": "Bon Secours affiliate agrees to acquire Surgery Partners in a $5.7B deal",
+              "summary": "HealthSpan Partners, a supporting organization of Bon Secours Mercy Health, agreed to acquire Surgery Partners in an all-cash transaction valued at about $5.7 billion in enterprise value. Shareholders other than Bain Capital affiliates are to receive $23.50 per share, while Bain affiliates will roll over equity. The parties expect the transaction to close in the first quarter of 2027, subject to shareholder and regulatory approvals.",
+              "strategic_implication": "If completed, the combination could reshape outpatient referral capacity, contracting, and local competition; monitor regulatory review, financing, governance, and integration plans.",
+              "confidence": "high",
+              "tags": [
+                "mergers-and-acquisitions",
+                "ambulatory-surgery",
+                "health-system",
+                "private-equity"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-roche-divarasib-phase-3",
+              "canonical_topic": "roche-divarasib-kras-lung-cancer-phase-three",
+              "duplicate_group": "roche-divarasib-kras-lung-cancer-phase-three",
+              "priority_score": 8,
+              "primary_source": "Roche",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Roche",
+                  "url": "https://www.roche.com/media/releases/med-cor-2026-10-25",
+                  "source_type": "web",
+                  "published_at": "2026-10-25T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/26/roche-kras-drug-divarasib-lung-cancer-treatment-win/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T23:17:13Z"
+                }
+              ],
+              "title": "Roche reports phase 3 survival advantage for investigational KRAS lung-cancer drug",
+              "summary": "Roche reported phase 3 KRASCENDO 1 results for investigational divarasib in previously treated KRAS G12C-mutated non-small cell lung cancer. The company reported median overall survival of 17.7 months versus 12.0 months for control (hazard ratio 0.56) and median progression-free survival of 9.8 versus 5.7 months (hazard ratio 0.58). The results were presented at ESMO and published in the New England Journal of Medicine; divarasib is not yet approved.",
+              "strategic_implication": "If regulatory review confirms the benefit, divarasib could challenge current second-line KRAS G12C standards; the data also raise the competitive stakes for targeted oncology development.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "lung-cancer",
+                "clinical-trial",
+                "biopharma"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-fda-talazoparib-enzalutamide-expansion",
+              "canonical_topic": "fda-talazoparib-enzalutamide-prostate-cancer-expansion",
+              "duplicate_group": "fda-talazoparib-enzalutamide-prostate-cancer-expansion",
+              "priority_score": 8,
+              "primary_source": "U.S. Food and Drug Administration",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-talazoparib-enzalutamide-metastatic-androgen-pathway-modulation-naive-or-sensitive",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "Pfizer",
+                  "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizers-talzenna-plus-xtandi-fda-approved-earlier",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                }
+              ],
+              "title": "FDA expands talazoparib-enzalutamide use to earlier HRR-mutated prostate cancer",
+              "summary": "FDA approved talazoparib with enzalutamide for adults with HRR gene-mutated metastatic androgen-pathway modulation-naïve or -sensitive prostate cancer, extending the combination into an earlier metastatic setting. The approval was supported by the 599-patient TALAPRO-3 trial, which showed a radiographic progression-free survival hazard ratio of 0.48 versus enzalutamide alone; overall-survival data were immature at the analysis.",
+              "strategic_implication": "The label expansion increases the importance of identifying eligible HRR mutations and coordinating treatment decisions around efficacy, toxicity, and patient preferences in metastatic hormone-sensitive disease.",
+              "confidence": "high",
+              "tags": [
+                "fda-approval",
+                "prostate-cancer",
+                "precision-medicine",
+                "oncology"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "UNM's disruption illustrates the immediate clinical consequences of a cyber incident, while South Carolina's pilot tests a resilience package for rural hospitals.",
+          "items": [
+            {
+              "item_id": "2026-10-27-unm-health-cyber-disruption",
+              "canonical_topic": "unm-health-cybersecurity-disruption",
+              "duplicate_group": "unm-health-cybersecurity-disruption",
+              "priority_score": 8,
+              "primary_source": "University of New Mexico Health Sciences Center",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "UNM Health Sciences Center",
+                  "url": "https://hscnews.unm.edu/news/ambulance-traffic-diverted-clinical-appointments-cancelled-and-classes-cancelled-due-to-cybersecurity-issue-at-unm-hsc",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T04:27:00Z"
+                },
+                {
+                  "source": "Associated Press",
+                  "url": "https://apnews.com/article/new-mexico-health-cybersecurity-hack-7a3593f8a3cee4ca895774ab1574919f",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T02:37:00Z"
+                }
+              ],
+              "title": "UNM Health begins recovery after cyber event disrupted patient access",
+              "summary": "UNM Health Sciences Center reported a cybersecurity event on October 26. The response temporarily limited new-patient acceptance and diverted ambulances for about two hours, while outpatient appointments and procedures were suspended for the rest of the day. In its late-night update, UNM said its hospitals remained open and clinics would resume scheduled care on October 27; law enforcement and external partners were assisting, and the investigation remained active.",
+              "strategic_implication": "The event reinforces the need for tested downtime procedures, ambulance coordination, manual workflows, and rapid patient communication; UNM has not publicly established the incident's cause or whether data were accessed.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "hospital-operations",
+                "business-continuity",
+                "patient-access"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-south-carolina-rural-hospital-cyber-pilot",
+              "canonical_topic": "south-carolina-rural-hospital-cybersecurity-pilot",
+              "duplicate_group": "south-carolina-rural-hospital-cybersecurity-pilot",
+              "priority_score": 7,
+              "primary_source": "South Carolina Governor's Office",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "South Carolina Governor's Office",
+                  "url": "https://www.governor.sc.gov/news/2026-10/gov-mcmaster-white-house-national-cyber-director-cairncross-launch-project-lifeline",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/south-carolinas-rural-hospitals-receiving-free-cyber-support-under-pilot-program",
+                  "source_type": "rss",
+                  "published_at": "2026-10-26T20:27:00Z"
+                }
+              ],
+              "title": "South Carolina launches no-cost cybersecurity pilot for rural hospitals",
+              "summary": "South Carolina, the White House Office of the National Cyber Director, state agencies, and private technology partners launched Project Lifeline 250, a six-month pilot at no cost to participating rural hospitals. The program aims to strengthen network defenses, deploy backup technology to maintain critical care after an incident, and identify high-risk or legacy devices. Organizers intend to evaluate solutions for possible wider deployment.",
+              "strategic_implication": "The pilot may offer practical resilience support to resource-constrained hospitals; participating systems should clarify eligibility, vendor responsibilities, and how pilot outcomes will inform any broader rollout.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "cybersecurity",
+                "hospital-operations",
+                "resilience"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Pediatric critical-care capacity remains exposed to staffing and low-volume economics, while a growing number of hospitals have made voluntary commitments to improve nutrition in patient care.",
+          "items": [
+            {
+              "item_id": "2026-10-27-pediatric-icu-capacity",
+              "canonical_topic": "pediatric-intensive-care-capacity-contraction",
+              "duplicate_group": "pediatric-intensive-care-capacity-contraction",
+              "priority_score": 8,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "CBS News / KFF Health News",
+                  "url": "https://www.cbsnews.com/news/pediatric-intensive-care-units-closing-nationwide/?ref=upstract.com",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T09:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/27/pediatric-emergency-care-rural-hospital-closures/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T08:30:00Z"
+                }
+              ],
+              "title": "Pediatric intensive-care capacity contracts as hospitals close units",
+              "summary": "KFF Health News reports that hospitals in Montana, Oregon, and Missouri closed pediatric intensive care units within the past year, while pediatric inpatient wings also closed in Illinois and California. The report cites an analysis finding pediatric inpatient units fell nearly 30% from 2008 to 2022. Hospitals point to low patient volumes and difficulty recruiting pediatric specialists; greater centralization can lengthen transfers for critically ill children.",
+              "strategic_implication": "Hospitals and regional planners should stress-test pediatric transfer capacity, specialty coverage, telehealth support, and payment models as closures concentrate services and increase travel burdens, particularly for rural families.",
+              "confidence": "high",
+              "tags": [
+                "pediatrics",
+                "critical-care",
+                "workforce",
+                "rural-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-27-hospital-food-healthier-pledge",
+              "canonical_topic": "hhs-hospital-food-healthier-pledge",
+              "duplicate_group": "hhs-hospital-food-healthier-pledge",
+              "priority_score": 6,
+              "primary_source": "U.S. Department of Health and Human Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "HHS",
+                  "url": "https://www.hhs.gov/press-room/secretary-kennedy-250-hospitals-make-hospital-food-healthier-pledge.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                }
+              ],
+              "title": "More than 250 hospitals sign HHS's voluntary healthier-food pledge",
+              "summary": "HHS said more than 250 hospitals have signed its voluntary Make Hospital Food Healthier Pledge. Signatories commit to reviewing food-service practices against the Dietary Guidelines where clinically appropriate and feasible, including limiting ultra-processed foods and sugary drinks, expanding healthier options, and strengthening patient nutrition education. The pledge encourages operational changes but is described by HHS as voluntary.",
+              "strategic_implication": "The initiative could influence food purchasing, menu design, dietary-service workflows, and discharge education; executives should distinguish signed commitments from measurable implementation and patient outcomes.",
+              "confidence": "high",
+              "tags": [
+                "nutrition",
+                "hospital-operations",
+                "patient-care",
+                "prevention"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-26",
       "generated_at": "2026-10-26T12:34:26Z",
       "headline": "Today's Healthcare Insights",
@@ -16205,5 +16615,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-26T12:34:26Z"
+  "last_updated": "2026-10-27T11:08:23Z"
 }

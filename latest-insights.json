@@ -7,28 +7,35 @@
       "generated_at": "2026-10-28T11:05:51Z",
       "headline": "Today's Healthcare Insights",
       "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Coverage churn, 340B disputes and draft FDA pathways lead today's policy mix, while new retatrutide data and debates about EHR data access and AI governance shape the market and technology agenda. We drew on STAT, Healthcare Dive, Fierce Healthcare, agency and legislative releases, company earnings disclosures, and UT Austin's announcement.",
+      "summary_note": "Coverage churn, 340B disputes and draft FDA pathways lead today's policy mix, including 4.3 million Medicare enrollees facing plan terminations. Retatrutide data, an obesity-ad ruling, fertility and diagnostics deals, and debates over EHR data access and AI shape the market and technology agenda, while health systems signal that cost cutting has hit its limits. We drew on STAT, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, Fierce Healthcare, KFF, Becker's, HHS, FDA, legislative releases and company disclosures.",
       "publish_ready": true,
       "source_run": {
         "sources_targeted": [
           "STAT News RSS",
           "Healthcare Dive RSS",
           "Fierce Healthcare RSS",
-          "Web searches across CMS/HHS/FDA policy, Medicare/Medicaid, hospital earnings, digital health/AI, drug pricing, payer/provider moves, and workforce"
+          "Web searches across CMS/HHS/FDA policy, Medicare/Medicaid, hospital earnings, digital health/AI, drug pricing, payer/provider moves, and workforce",
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare (curated refresh)",
+          "Curated refresh: STAT News, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, Fierce Healthcare, Hospitalogy and Modern Healthcare RSS; targeted searches across KFF, HHS, Anthropic, GE HealthCare, Abbott, Reuters and Becker's"
         ],
         "sources_successful": [
           "STAT News RSS fetched and screened",
           "Healthcare Dive RSS fetched and screened",
           "Fierce Healthcare RSS fetched and screened",
-          "Targeted web searches returned FDA/HHS, Senate, Missouri AG, company earnings, UT Austin, and healthcare-news context"
+          "Targeted web searches returned FDA/HHS, Senate, Missouri AG, company earnings, UT Austin, and healthcare-news context",
+          "Curated refresh: STAT, Healthcare Dive, BioPharma Dive, MedTech Dive and MedCity News RSS fetched and screened for October 27-28; added Artiva, Ferring-Gameto, Novo-Lilly ad ruling, Abbott Oncodetect and ClarityCare items.",
+          "Curated refresh: KFF, HHS, Anthropic, GE HealthCare (Business Wire), Reuters and Becker's sources used to verify figures for the Medicare plan-termination, breast-screening, Mithril, GE HealthCare, ad-ruling and cost-cutting items."
         ],
-        "sources_failed": [],
-        "run_notes": "Ten items cover developments reported October 27-28. The previous edition was checked to avoid repeats; recurring coverage of yesterday’s HTI-5 rule, PBM audit inquiry, and existing Medicare Advantage rating litigation was excluded. Allegations and draft guidance are identified as such; the retatrutide comparison is attributed to STAT and its on-treatment analysis caveat is retained."
+        "sources_failed": [
+          "Gmail InsightsSources labels: not present in the connected mailbox, and label and sender searches returned no messages; RSS and web sources used instead.",
+          "Fierce Healthcare, Hospitalogy and Modern Healthcare RSS returned HTTP 403 during the curated refresh; the automated run had already screened Fierce Healthcare."
+        ],
+        "run_notes": "Ten items cover developments reported October 27-28. The previous edition was checked to avoid repeats; recurring coverage of yesterday’s HTI-5 rule, PBM audit inquiry, and existing Medicare Advantage rating litigation was excluded. Allegations and draft guidance are identified as such; the retatrutide comparison is attributed to STAT and its on-treatment analysis caveat is retained. Curated refresh retained all 10 automated items and added 10 new items (20 total). Excluded as repeats or outside the window: overdose-decline coverage (already in the feed), the June 2026 COVID-19 EUA termination, the California Medicaid deferral announced October 20, and the BMS CAR-T trial death (covered 2026-10-26). Willow's maternal-health acquisitions and Stryker's ZuriMED close were screened but not included. Anthropic's drug-development results are company-reported and preclinical; ClarityCare performance figures are company-reported; the Novo-Lilly ruling denies a preliminary injunction only; Fertilo is not FDA-approved; Abbott's Oncodetect is not FDA-cleared or approved."
       },
       "editorial_buckets": [
         {
           "name": "Policy, Payment, and Regulation",
-          "synthesis": "Coverage eligibility, 340B access, and FDA pathways for rare-disease therapies are the main policy signals. The congressional and state actions remain inquiries or allegations, and the FDA document is draft guidance rather than a final rule.",
+          "synthesis": "Coverage eligibility, 340B access and FDA pathways for rare-disease therapies lead the policy signals, joined by KFF's count of 4.3 million Medicare enrollees whose plans end this year. The congressional and state actions remain inquiries or allegations, and the FDA document is draft guidance rather than a final rule.",
           "items": [
             {
               "item_id": "2026-10-28-fda-individualized-genome-editing-guidance",
@@ -132,12 +139,38 @@
                 "claims-data",
                 "litigation"
               ]
+            },
+            {
+              "item_id": "2026-10-28-kff-medicare-plan-terminations-2027",
+              "canonical_topic": "kff-medicare-plan-terminations-2027",
+              "duplicate_group": "kff-medicare-plan-terminations-2027",
+              "priority_score": 8,
+              "primary_source": "KFF",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/medicare/more-than-4-million-medicare-beneficiaries-will-have-their-medicare-advantage-or-stand-alone-prescription-drug-plan-terminated-at-the-end-of-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                }
+              ],
+              "title": "KFF counts 4.3 million Medicare enrollees whose plans end Dec. 31",
+              "summary": "A KFF analysis of CMS plan data finds 3.1 million Medicare Advantage drug-plan enrollees and 1.2 million stand-alone Part D enrollees will have their plans terminated at the end of 2026. The 2.8 million affected general-enrollment MA-PD members are 14% of that market, up from 13% a year earlier. Humana (530,000), UnitedHealth Group (367,000), CVS Health (254,000) and Aware Integrated (249,000) account for half. Members who do not pick a new MA plan move to traditional Medicare, and PDP enrollees must choose new drug coverage; another 1.4 million MA members are in plans being consolidated.",
+              "strategic_implication": "Insurer margin repair is translating into member disruption during open enrollment. Providers, brokers and navigators should expect churn in network attribution, prior-authorization relationships and drug-coverage gaps in January, especially in Humana- and UnitedHealth-heavy markets.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "part-d",
+                "open-enrollment",
+                "payers"
+              ]
             }
           ]
         },
         {
           "name": "Digital Health and AI",
-          "synthesis": "Data access is becoming a strategic fault line in both EHR competition and AI-device oversight. FDA leaders signaled more GenAI policy work, but no final framework or timeline is in place.",
+          "synthesis": "EHR data access, FDA's coming generative-AI device guidance, an AI company's move into in-house drug programs, and payer prior-authorization automation built to approve or escalate rather than deny define today's technology agenda. Most performance claims are company-reported.",
           "items": [
             {
               "item_id": "2026-10-28-epic-ehr-data-access-scrutiny",
@@ -196,12 +229,70 @@
                 "medical-devices",
                 "regulation"
               ]
+            },
+            {
+              "item_id": "2026-10-28-anthropic-mithril-drug-development",
+              "canonical_topic": "anthropic-mithril-drug-development",
+              "duplicate_group": "anthropic-mithril-drug-development",
+              "priority_score": 7,
+              "primary_source": "Anthropic",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Anthropic",
+                  "url": "https://www.anthropic.com/research/early-progress-drug-development",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                },
+                {
+                  "source": "The Next Web",
+                  "url": "https://thenextweb.com/news/anthropic-mithril-acquisition-claude-drug-development",
+                  "source_type": "web",
+                  "published_at": "2026-10-28T00:00:00Z"
+                }
+              ],
+              "title": "Anthropic buys a one-person biotech and starts in-house drug programs",
+              "summary": "Anthropic said it acquired Mithril Medicine, a one-person company developing treatments for two rare forms of muscular dystrophy whose founder used Claude to coordinate work with 11 outside labs; the company says one candidate went from idea to promising mouse results in under 18 months and could enter human trials as soon as late 2028. Anthropic also described partnerships with six organizations, including Bristol Myers Squibb, BigHat Biosciences and Enveda, citing gains such as faster review of manufacturing documents. Terms were not disclosed, and all results are company-reported and preclinical.",
+              "strategic_implication": "Frontier-model companies are moving from selling tools to running discovery programs themselves. For pharma and research partners, the near-term value is in operational work such as regulatory drafting, document QC and trial planning, while claims about faster drug development remain unproven until human data arrive.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "drug-development",
+                "life-sciences",
+                "anthropic"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-claritycare-series-a-prior-authorization",
+              "canonical_topic": "claritycare-series-a-prior-authorization",
+              "duplicate_group": "claritycare-series-a-prior-authorization",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/10/claritycare-raises-16-5m-to-speed-up-prior-authorizations/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T18:33:00Z"
+                }
+              ],
+              "title": "ClarityCare raises $16.5M for an AI prior-authorization agent that never issues denials",
+              "summary": "ClarityCare raised a $16.5 million Series A led by Headline, bringing total funding to $19.8 million. Its Electra agent assembles prior-authorization cases, drafts summaries and recommendations for clinician review, and can approve or escalate requests but is designed never to deny. The company reports seven customers, including health plans, TPAs and government-program contractors, with workflows affecting about 6 million people; one customer cut waits from 12 days to two, according to the company.",
+              "strategic_implication": "Payer-side automation is being built around approve-or-escalate guardrails that anticipate regulatory and reputational risk tied to AI denials. Plans facing CMS decision-time requirements will weigh these tools against audit trails and clinician-oversight obligations.",
+              "confidence": "medium",
+              "tags": [
+                "prior-authorization",
+                "ai",
+                "payers",
+                "funding"
+              ]
             }
           ]
         },
         {
           "name": "Market and Industry Signals",
-          "synthesis": "Retatrutide’s reported active-comparator results could sharpen competition in metabolic medicines, while UHS’s quarter shows how revenue growth can coexist with lower earnings and payment-related offsets.",
+          "synthesis": "Obesity-drug competition plays out in trial data and court, fertility and MRD diagnostics draw strategic investment, imaging demand lifts GE HealthCare, and trial deaths end another autoimmune cell-therapy program. Mixed hospital and insurer earnings remain the backdrop.",
           "items": [
             {
               "item_id": "2026-10-28-retatrutide-ozempic-diabetes-study",
@@ -267,12 +358,166 @@
                 "medicaid",
                 "operating-margin"
               ]
+            },
+            {
+              "item_id": "2026-10-28-ferring-gameto-acquisition",
+              "canonical_topic": "ferring-gameto-acquisition",
+              "duplicate_group": "ferring-gameto-acquisition",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/ferring-gameto-acquire-ivf-fertilo-womens-health/872904/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T16:53:00Z"
+                },
+                {
+                  "source": "Bloomberg",
+                  "url": "https://www.bloomberg.com/news/articles/2026-10-27/ferring-signs-1-4-billion-deal-to-buy-gameto-egg-freezing-startup",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                }
+              ],
+              "title": "Ferring agrees to buy IVF startup Gameto in a deal worth up to $1.4B",
+              "summary": "Swiss reproductive-medicine company Ferring agreed to acquire Gameto, whose Fertilo technology aims to shorten and simplify IVF cycles. The upfront payment was not disclosed; the total includes development, regulatory and sales milestones. Fertilo is cleared in Australia and parts of Latin America and is in Phase 3 testing in the U.S.",
+              "strategic_implication": "Fertility is drawing strategic capital as employers and payers expand benefits. A shorter, less hormone-intensive IVF pathway, if approved in the U.S., could change clinic throughput and cost per cycle.",
+              "confidence": "high",
+              "tags": [
+                "fertility",
+                "m-and-a",
+                "womens-health",
+                "biopharma"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-ge-healthcare-q3-2026",
+              "canonical_topic": "ge-healthcare-q3-2026",
+              "duplicate_group": "ge-healthcare-q3-2026",
+              "priority_score": 6,
+              "primary_source": "GE HealthCare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "GE HealthCare via Business Wire",
+                  "url": "https://www.businesswire.com/news/home/20261028662941/en/",
+                  "source_type": "web",
+                  "published_at": "2026-10-28T00:00:00Z"
+                }
+              ],
+              "title": "GE HealthCare raises 2026 guidance after 7.2% Q3 revenue growth",
+              "summary": "GE HealthCare reported Q3 revenue of $5.5 billion, up 7.2% (6.2% organic), with orders up 4% organically and a $23.7 billion backlog. Net income rose to $615 million from $446 million, and adjusted EBIT margin improved to 16.6%. The company raised 2026 adjusted EPS guidance to $4.95-$5.05 and organic growth to about 4%, citing volume, pricing, productivity and a favorable year-over-year tariff impact.",
+              "strategic_implication": "Hospital capital spending on imaging is holding up despite provider margin pressure. Health systems negotiating imaging replacement cycles should expect suppliers to protect pricing given strong backlog.",
+              "confidence": "high",
+              "tags": [
+                "medtech",
+                "earnings",
+                "imaging",
+                "capital-spending"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-novo-lilly-advertising-injunction-denied",
+              "canonical_topic": "novo-lilly-advertising-injunction-denied",
+              "duplicate_group": "novo-lilly-advertising-injunction-denied",
+              "priority_score": 6,
+              "primary_source": "Reuters",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/world/us-judge-lets-eli-lilly-continue-ads-weight-loss-drugs-rules-against-novo-2026-10-26/",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/novo-lilly-lawsuit-ruling-false-advertising-wegovy-zepbound/872856/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T12:03:00Z"
+                }
+              ],
+              "title": "Judge refuses Novo's request to halt Lilly's comparative obesity-drug ads",
+              "summary": "A federal judge in New Jersey denied Novo Nordisk a preliminary injunction against Eli Lilly's consumer ads for Zepbound and Mounjaro, finding Novo had not shown irreparable harm to sales, goodwill or clinical reputation. Novo's July lawsuit alleges the ads mislead by omitting its highest-dose Wegovy and Ozempic options. The ruling did not decide whether the ads are false; the case continues.",
+              "strategic_implication": "Comparative direct-to-consumer marketing in GLP-1s will continue during the litigation, reinforcing Lilly's momentum as both companies compete on price and formulary access.",
+              "confidence": "high",
+              "tags": [
+                "glp-1",
+                "litigation",
+                "pharma",
+                "advertising"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-artiva-shuts-down-after-trial-deaths",
+              "canonical_topic": "artiva-shuts-down-after-trial-deaths",
+              "duplicate_group": "artiva-shuts-down-after-trial-deaths",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/27/autoimmune-cell-therapy-trial-artiva-therapeutics-shutting-down/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T18:05:00Z"
+                },
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/artiva-discontinue-nk-cell-therapy-autoimmune-patient-death/872873/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T11:44:00Z"
+                }
+              ],
+              "title": "Artiva winds down after two deaths in its autoimmune NK cell-therapy trial",
+              "summary": "Artiva Biotherapeutics is stopping development of AlloNK and laying off most staff after two participants died in a Phase 2a autoimmune trial; FDA had asked the company to pause the study. Artiva said one death was likely tied to the pre-treatment chemotherapy rather than the cell therapy and the other was unrelated to treatment. The decision follows a recent patient death in a Bristol Myers Squibb autoimmune CAR-T trial.",
+              "strategic_implication": "Safety events, including those tied to lymphodepleting chemotherapy, are raising the evidence bar for cell therapy in non-oncology diseases. Expect more scrutiny of conditioning regimens and slower capital formation for smaller developers.",
+              "confidence": "high",
+              "tags": [
+                "cell-therapy",
+                "autoimmune",
+                "clinical-trials",
+                "biotech"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-abbott-oncodetect-mrd-launch",
+              "canonical_topic": "abbott-oncodetect-mrd-launch",
+              "duplicate_group": "abbott-oncodetect-mrd-launch",
+              "priority_score": 5,
+              "primary_source": "Abbott",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Abbott",
+                  "url": "https://abbott.mediaroom.com/2026-10-26-Abbott-launches-whole-genome-sequencing-Oncodetect-R-molecular-residual-disease-MRD-test-to-detect-traces-of-cancer-during-and-after-treatment",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/abbott-launches-mrd-test-with-improved-cancer-detection-tech/872867/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T10:14:00Z"
+                }
+              ],
+              "title": "Abbott launches a whole-genome Oncodetect test for molecular residual disease",
+              "summary": "Abbott made commercially available a next-generation, tumor-informed, whole-genome-sequencing version of its Oncodetect molecular residual disease (MRD) test, which looks for circulating tumor DNA to help assess recurrence risk and monitor treatment response. Abbott notes the test has not been cleared or approved by FDA.",
+              "strategic_implication": "MRD testing is becoming a crowded, large-company market. Oncology programs and payers will need evidence of clinical utility and coverage policies to determine how these results change surveillance and adjuvant-therapy decisions.",
+              "confidence": "high",
+              "tags": [
+                "diagnostics",
+                "oncology",
+                "mrd",
+                "medtech"
+              ]
             }
           ]
         },
         {
           "name": "Provider Operations",
-          "synthesis": "HCA’s results pair sustained utilization growth with a material uninsured-payer headwind. UT Austin’s new academic-health-system identity and planned AI-native medical center represent a long-horizon capacity and infrastructure bet rather than near-term supply.",
+          "synthesis": "Volume growth is colliding with payer-mix deterioration and shrinking room for further cuts, pushing systems toward growth, throughput and sourcing decisions, while UT Austin bets on a new AI-native academic hospital.",
           "items": [
             {
               "item_id": "2026-10-28-hca-uninsured-payer-mix-q3",
@@ -337,12 +582,38 @@
                 "hospital-capacity",
                 "capital-investment"
               ]
+            },
+            {
+              "item_id": "2026-10-28-health-system-cost-cutting-limits",
+              "canonical_topic": "health-system-cost-cutting-limits",
+              "duplicate_group": "health-system-cost-cutting-limits",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/weve-already-cut-to-the-bone-health-system-cost-cutting-reaches-its-limits/",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                }
+              ],
+              "title": "Health system leaders say cost cutting alone will not carry them into 2027",
+              "summary": "Becker's reviewed 31 health system workforce reductions announced from July through mid-October: 12 involved only leadership, administrative, IT or support roles, and eight named clinical roles, always alongside nonclinical cuts and half tied to closing a facility or program. Trinity Health has moved 557 IT positions to a vendor, while CommonSpirit is bringing revenue-cycle work back in-house and consolidating five regions into three. Executives at Banner, Sutter and Hillsdale Hospital said growth, not further cuts, must close the gap.",
+              "strategic_implication": "With administrative cuts largely made, 2027 plans will lean on throughput, length-of-stay reduction, service-line growth and outsourcing-versus-insourcing decisions. That raises execution risk as federal coverage cuts take effect.",
+              "confidence": "medium",
+              "tags": [
+                "hospital-finance",
+                "workforce-reductions",
+                "outsourcing",
+                "operations"
+              ]
             }
           ]
         },
         {
           "name": "Workforce & Clinical Practice",
-          "synthesis": "Centene’s workforce reduction is a clear cost-restructuring signal amid a faster-than-expected Medicare Advantage recovery. The operational question is whether savings can be sustained without weakening member service, clinical coordination, or execution capacity.",
+          "synthesis": "Payer workforce reductions continue, while HHS enlists more than 40 health systems to tighten breast-cancer screening follow-up.",
           "items": [
             {
               "item_id": "2026-10-28-centene-workforce-reduction",
@@ -374,6 +645,38 @@
                 "payers",
                 "restructuring",
                 "medicare-advantage"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-hhs-breast-cancer-screening-initiative",
+              "canonical_topic": "hhs-breast-cancer-screening-initiative",
+              "duplicate_group": "hhs-breast-cancer-screening-initiative",
+              "priority_score": 6,
+              "primary_source": "U.S. Department of Health and Human Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "HHS",
+                  "url": "https://www.hhs.gov/press-room/hhs-strengthens-breast-cancer-screening-early-detection.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                },
+                {
+                  "source": "AHA News",
+                  "url": "https://www.aha.org/news/headline/2026-10-27-hhs-launches-effort-improve-breast-cancer-screening-early-detection",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                }
+              ],
+              "title": "HHS launches a breast-screening follow-up effort with more than 40 health systems",
+              "summary": "HHS's Office on Women's Health, AHRQ and DenseBreast-info.org launched an initiative to strengthen breast cancer screening, expand breast-density education and reduce delays in diagnostic follow-up, with a focus on midlife women. The initiative will analyze national screening and follow-up patterns, and a collaborative of more than 40 health systems will expand evidence-based practices.",
+              "strategic_implication": "Closing the gap between an abnormal or dense-breast result and diagnostic follow-up is an operational problem as much as a clinical one. Participating systems should expect attention on navigation, scheduling capacity and results communication.",
+              "confidence": "high",
+              "tags": [
+                "womens-health",
+                "cancer-screening",
+                "quality",
+                "ahrq"
               ]
             }
           ]
@@ -16482,487 +16785,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-16",
-      "generated_at": "2026-09-16T12:39:54Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing centers on measurable operating pressure. The U.S. has now recorded four measles deaths in 2026 — the most since 1992 — while CDC mortality registration lags state reporting. Hospital operating margins fell to 1.4% in July as outpatient volume cooled and bad debt rose 14% year over year. Federal payment policy is moving on two fronts: Medicare is expanding reimbursement for chronic-care technology and FDA opened a pilot to shorten drug approval timelines, alongside tighter Medicare Advantage supplier screening, a growing No Surprises arbitration system, and Urban Institute estimates of large young-adult Medicaid coverage loss. Market signals include GSK's up-to-$750 million tri-specific myeloma licensing deal, Waystar sale speculation, a women's-health financing round, and a $1.1 billion Providence gift.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels: InsightsSources/Healthcare Brew, InsightsSources/Healthcare Dive, InsightsSources/Hospitalogy, InsightsSources/Modern Healthcare",
-          "STAT News RSS",
-          "Healthcare Dive RSS",
-          "MedCity News RSS"
-        ],
-        "sources_successful": [
-          "STAT News RSS",
-          "Healthcare Dive RSS",
-          "MedCity News RSS"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels returned no messages (connected mailbox does not contain the newsletter labels); broader keyword searches for Hospitalogy, Healthcare Brew, and Modern Healthcare also returned nothing",
-          "Fierce Healthcare RSS not re-queried this run (Cloudflare bot protection); Fierce-sourced items carried over from the earlier run remain cited"
-        ],
-        "run_notes": "Refresh run at 2026-09-16T12:39:54Z on top of the 11:04Z automated edition for the same date, preserving the one-edition-per-date contract. 6 new items appended from sources published after the earlier run or not previously used, screened against the 2026-09-14 and 2026-09-15 editions for duplicate canonical topics. Lead facts for the national measles mortality total and the Kaufman Hall margin data were verified against the full source articles, not RSS summaries. Feed trimmed to the 30-edition cap and dropped editions moved to archive/."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Policy pressure is compounding: state-reported measles deaths have outrun federal mortality registration, Medicare is widening payment for chronic-care technology, FDA is compressing review timelines, and Medicaid eligibility friction plus payment-integrity scrutiny will test administrative capacity.",
-          "items": [
-            {
-              "item_id": "2026-09-16-medicaid-young-adult-disruption",
-              "canonical_topic": "medicaid-young-adult-disruption",
-              "duplicate_group": "medicaid-young-adult-disruption",
-              "priority_score": 9,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/2-million-young-adults-lose-medicaid-big-beautiful-bill-urban-institute/830382/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T13:25:06Z"
-                }
-              ],
-              "title": "Study estimates 2.3 million young adults could lose Medicaid coverage",
-              "summary": "Healthcare Dive reports an Urban Institute estimate that 2.3 million young adults could lose Medicaid coverage under the Big Beautiful Bill's requirements. The scale of disenrollment will depend heavily on how states make it possible for people who move frequently or work in hard-to-track gig jobs to prove continuing eligibility.",
-              "strategic_implication": "Safety-net providers and managed-care organizations should model churn, uncompensated-care exposure, and outreach needs for mobile younger members. State implementation choices will materially determine whether the headline estimate becomes actual coverage loss.",
-              "confidence": "high",
-              "tags": [
-                "medicaid",
-                "coverage-loss",
-                "young-adults",
-                "eligibility"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-us-measles-mortality-record",
-              "canonical_topic": "us-measles-mortality-2026",
-              "duplicate_group": "us-measles-mortality-2026",
-              "priority_score": 9,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/16/health-news-us-reaches-measles-death-high-in-decades/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-16T11:56:12Z"
-                }
-              ],
-              "title": "U.S. measles deaths reach the highest annual total since 1992",
-              "summary": "STAT reports that Pennsylvania disclosed two additional measles-related deaths on September 15 — a 40-year-old woman and an 18-year-old — bringing the national 2026 total to four, more than any year since 1992. The state outbreak now spans 693 cases across 38 counties. CDC had not yet registered any 2026 measles deaths, with HHS Secretary Robert F. Kennedy Jr. stating that CDC will report deaths only once the National Center for Health Statistics records measles as the underlying cause from state death records.",
-              "strategic_implication": "The gap between state-reported deaths and federal mortality registration creates a surveillance and communications problem for health systems and jurisdictions that rely on federal counts for situational awareness. Public-health and emergency-management leaders should anchor outbreak messaging and resource requests to state case and mortality data, and document the reconciliation lag explicitly in executive reporting.",
-              "confidence": "high",
-              "tags": [
-                "measles",
-                "public-health",
-                "surveillance",
-                "vaccination",
-                "cdc"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-no-surprises-idr-expansion",
-              "canonical_topic": "no-surprises-idr-capacity",
-              "duplicate_group": "no-surprises-idr-capacity",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/hhs-adds-new-idr-entity-surprise-billing-disputes-surge-physio-solutions-medlitix/830421/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T15:36:39Z"
-                }
-              ],
-              "title": "HHS adds a 17th No Surprises arbitration entity as payment disputes surge",
-              "summary": "Healthcare Dive reports that HHS certified Physio Solutions, doing business as Medlitix, as the 17th entity eligible to resolve out-of-network payment disputes under the No Surprises Act. The expansion comes as independent dispute-resolution entities face increasing scrutiny from researchers and lawmakers.",
-              "strategic_implication": "The growing arbitration footprint may improve throughput but also raises the stakes for payer and provider evidence quality, timelines, and consistency. Revenue-cycle teams should monitor award patterns and standardize the data packages used in disputes.",
-              "confidence": "high",
-              "tags": [
-                "no-surprises-act",
-                "payment-integrity",
-                "revenue-cycle",
-                "arbitration"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-oig-medicare-advantage-dme-screening",
-              "canonical_topic": "medicare-advantage-dme-screening",
-              "duplicate_group": "medicare-advantage-dme-screening",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/oig-urges-crackdown-on-equipment-suppliers-in-medicare-advantage/830387/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T13:31:17Z"
-                }
-              ],
-              "title": "OIG urges stronger screening of durable-equipment suppliers in Medicare Advantage",
-              "summary": "Healthcare Dive reports that the HHS Office of Inspector General says CMS and Medicare Advantage organizations are not doing enough to vet durable medical equipment suppliers. The concern is especially acute for out-of-network companies that are not enrolled in Medicare.",
-              "strategic_implication": "MA organizations should treat supplier credentialing and network controls as an audit and fraud-exposure priority, not a back-office check. Providers relying on DME partners should also validate enrollment, ownership, and referral controls.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "dme",
-                "oig",
-                "fraud-prevention"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-pennsylvania-measles-fourth-death",
-              "canonical_topic": "pennsylvania-measles-outbreak",
-              "duplicate_group": "pennsylvania-measles-outbreak",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/15/fourth-measles-death-pennsylvania-acute-disseminated-encephalomyelitis/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T18:43:59Z"
-                }
-              ],
-              "title": "Pennsylvania reports a fourth measles-associated death in the state outbreak",
-              "summary": "STAT reports that Pennsylvania officials recorded a fourth measles-associated death within the past month. The latest death involved an unvaccinated 18-year-old in Mifflin County; the coroner cited acute disseminated encephalomyelitis, a rare and severe neurologic complication of measles.",
-              "strategic_implication": "Health systems and public-health agencies should plan for continued demand on vaccination outreach, case investigation, and neurologic complication management. The new death reinforces that outbreak response is an operating and workforce issue as well as a communications challenge.",
-              "confidence": "high",
-              "tags": [
-                "measles",
-                "public-health",
-                "vaccination",
-                "infectious-disease"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-medicare-chronic-care-tech-pilot",
-              "canonical_topic": "medicare-chronic-care-technology-pilot",
-              "duplicate_group": "medicare-chronic-care-technology-pilot",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/15/medicare-access-chronic-care-management-tech-pilot-expanding/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T14:28:44Z"
-                }
-              ],
-              "title": "Medicare expands pilot paying for technology that helps patients manage chronic disease",
-              "summary": "STAT reports that a recently launched Medicare experiment reimbursing technology used to help beneficiaries manage chronic conditions is being expanded. The pilot represents one of the more direct federal tests of paying for digital chronic-care tools rather than only clinician time.",
-              "strategic_implication": "Expansion signals a durable reimbursement pathway for digital chronic-disease management and raises the value of enrollment, adherence, and outcome data. Provider and digital-health organizations should evaluate eligibility now and build the measurement infrastructure that a scaled pilot will require.",
-              "confidence": "medium",
-              "tags": [
-                "medicare",
-                "chronic-care",
-                "digital-health",
-                "reimbursement",
-                "cms"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-house-health-oversight-planning",
-              "canonical_topic": "house-healthcare-oversight-planning",
-              "duplicate_group": "house-healthcare-oversight-planning",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/16/healthcare-reform-house-democrats-oversight-targets-after-midterms/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-16T08:30:00Z"
-                }
-              ],
-              "title": "House Democrats map health-care oversight as a potential platform for post-election reform",
-              "summary": "STAT reports that House Democrats are planning to use committee oversight powers to examine health-care issues if they win control of a chamber in November. Potential targets include the administration's drug-pricing deals and other health policy actions; a flip would bring subpoena authority and the ability to compel testimony and documents.",
-              "strategic_implication": "Health plans, manufacturers, and providers should expect a more document-intensive policy environment if control of a chamber changes. Preserving decision records, vendor evidence, and policy rationale now can reduce response friction later.",
-              "confidence": "medium",
-              "tags": [
-                "congress",
-                "health-policy",
-                "drug-pricing",
-                "oversight"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-fda-accelerated-review-program",
-              "canonical_topic": "fda-approval-timeline-pilot",
-              "duplicate_group": "fda-approval-timeline-pilot",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/15/fda-launches-program-to-shorten-drug-approval-times/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T14:00:00Z"
-                }
-              ],
-              "title": "FDA opens applications for a pilot designed to shorten drug approval timelines",
-              "summary": "STAT reports that the FDA is accepting applications for a pilot program intended to compress drug approval timelines, framed in part as a competitiveness response to countries such as China and Australia.",
-              "strategic_implication": "Faster review pathways shift pressure onto payers, formulary committees, and health-system pharmacy teams to evaluate new agents with less accumulated real-world evidence. Coverage and utilization-management processes should be stress-tested for compressed launch cycles.",
-              "confidence": "medium",
-              "tags": [
-                "fda",
-                "drug-approval",
-                "regulatory",
-                "pharma",
-                "competitiveness"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "AI governance is becoming an enterprise-control problem: adoption is outpacing formal approval processes, and identity architecture is emerging as a prerequisite for safe deployment.",
-          "items": [
-            {
-              "item_id": "2026-09-16-unsanctioned-healthcare-ai-deployment",
-              "canonical_topic": "unsanctioned-healthcare-ai",
-              "duplicate_group": "unsanctioned-healthcare-ai",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/imprivata-survey-finds-most-health-systems-deploy-some-ai-tools-without-formal-it",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T19:11:00Z"
-                }
-              ],
-              "title": "Survey finds most health systems deploy some AI without formal IT approval",
-              "summary": "Fierce Healthcare reports survey findings that most health-care organizations deploy AI tools at least sometimes without formal IT approval. Only 17% of surveyed executives believe current identity approaches are sufficient without adaptation, according to the report.",
-              "strategic_implication": "Clinical AI programs need an inventory, identity controls, and a lightweight approval path that clinicians can actually use. Closing the gap between sanctioned and shadow deployments is now a patient-safety and cyber-risk priority.",
-              "confidence": "medium",
-              "tags": [
-                "clinical-ai",
-                "identity-governance",
-                "cybersecurity",
-                "health-systems"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Capital is flowing toward health-care infrastructure, precision diagnostics, and China-originated oncology assets, while payment-technology consolidation speculation continues.",
-          "items": [
-            {
-              "item_id": "2026-09-16-waystar-strategic-options",
-              "canonical_topic": "waystar-strategic-options",
-              "duplicate_group": "waystar-strategic-options",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/waystar-weighs-strategic-options-according-media-reports-analysts-see-ma-appeal",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T15:40:00Z"
-                }
-              ],
-              "title": "Waystar reportedly weighs strategic alternatives as payment software attracts M&A interest",
-              "summary": "Fierce Healthcare reports that a Reuters story is fueling speculation that health-care payment software company Waystar is exploring strategic alternatives, including a potential sale. Analysts cited in the report see appeal in the company's position within a consolidating payment-technology market.",
-              "strategic_implication": "A transaction would put a spotlight on ownership, integration, and pricing power in revenue-cycle infrastructure. Health systems should keep vendor-concentration and roadmap-continuity scenarios current even when a report remains unconfirmed.",
-              "confidence": "medium",
-              "tags": [
-                "waystar",
-                "health-tech",
-                "revenue-cycle",
-                "mergers-acquisitions"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-gsk-chimagen-myeloma-deal",
-              "canonical_topic": "gsk-trispecific-myeloma-licensing",
-              "duplicate_group": "gsk-trispecific-myeloma-licensing",
-              "priority_score": 7,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/gsk-chimagen-trispecific-t-cell-engager-multiple-myeloma-cancer-tce/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T18:57:36Z"
-                }
-              ],
-              "title": "GSK commits up to $750 million for a China-developed tri-specific myeloma T-cell engager",
-              "summary": "MedCity News reports that GSK is acquiring global rights to a Phase 1-ready tri-specific T-cell engager developed by Chimagen Biosciences for multiple myeloma, in a deal valued at up to $750 million. GSK is betting that hitting three targets can outperform currently available bi-specific agents.",
-              "strategic_implication": "The deal reinforces China-originated assets as a mainstream source of late-preclinical pipeline value for large pharma. Oncology service lines and specialty pharmacy programs should track tri-specific development given the infusion capacity, toxicity-monitoring, and cost implications if these agents reach market.",
-              "confidence": "high",
-              "tags": [
-                "gsk",
-                "oncology",
-                "multiple-myeloma",
-                "licensing",
-                "pipeline"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-evvy-vaginal-health-funding",
-              "canonical_topic": "precision-vaginal-health-funding",
-              "duplicate_group": "precision-vaginal-health-funding",
-              "priority_score": 6,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/finance/evvy-raises-40m-expand-precision-medicine-vaginal-health",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T12:44:00Z"
-                }
-              ],
-              "title": "Evvy raises $40 million to expand clinician-reviewed precision vaginal health testing",
-              "summary": "Fierce Healthcare reports that Evvy raised $40 million to expand an at-home vaginal-health test whose results are reviewed by clinicians and paired with personalized treatment plans. The company is also using the platform to build real-world data and research in women's health.",
-              "strategic_implication": "The financing reflects continued investor interest in condition-specific diagnostics that combine testing, clinical interpretation, and longitudinal data. Providers should watch whether these models prove additive to care pathways and reimbursement rather than simply shifting testing outside the system.",
-              "confidence": "medium",
-              "tags": [
-                "womens-health",
-                "diagnostics",
-                "precision-medicine",
-                "digital-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Operating economics are turning volatile as outpatient dependence grows and bad debt rises, even as philanthropic capital funds selective service-line expansion.",
-          "items": [
-            {
-              "item_id": "2026-09-16-hospital-margin-outpatient-volatility",
-              "canonical_topic": "hospital-operating-margin-july-2026",
-              "duplicate_group": "hospital-operating-margin-july-2026",
-              "priority_score": 9,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/hospital-finance-2/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-15T23:10:28Z"
-                }
-              ],
-              "title": "Hospital operating margins slipped to 1.4% in July as outpatient volume cooled",
-              "summary": "MedCity News reports Kaufman Hall data covering roughly 1,300 hospitals showing year-to-date operating margin falling to 1.4% in July from 2.2% across May and June. Operating-room minutes and observation days declined even as discharges rose, and bad debt and charity care increased 14% year over year.",
-              "strategic_implication": "Growing outpatient dependence makes margins more sensitive to month-to-month volume swings, which weakens annual-budget assumptions. Finance and operations leaders should move to rolling forecasts, tighten OR scheduling and block utilization, and model rising bad-debt exposure as coverage churn accelerates.",
-              "confidence": "high",
-              "tags": [
-                "hospital-finance",
-                "operating-margin",
-                "outpatient",
-                "bad-debt",
-                "kaufman-hall"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-providence-philanthropic-capital",
-              "canonical_topic": "providence-philanthropic-capital",
-              "duplicate_group": "providence-philanthropic-capital",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/providence-receives-11b-gift-toward-cardiac-care-oregons-first-womens-hospital",
-                  "source_type": "rss",
-                  "published_at": "2026-09-14T20:36:00Z"
-                }
-              ],
-              "title": "Providence receives $1.1 billion gift for cardiac care and Oregon's first women's hospital",
-              "summary": "Fierce Healthcare reports that Phil and Penny Knight committed a $1.1 billion gift to Providence for cardiac care and Oregon's first women's hospital. The donors have already contributed $200 million to the Providence Heart Institute over the past decade.",
-              "strategic_implication": "The gift creates a differentiated capital position for Providence in cardiovascular and women's services, with implications for recruitment, referral flows, and regional competition. Other systems should view philanthropy as a strategic asset that can change market capacity, not just a funding supplement.",
-              "confidence": "high",
-              "tags": [
-                "providers",
-                "philanthropy",
-                "cardiology",
-                "womens-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Clinical and workforce themes converge on lived experience and caregiving capacity — how clinicians are trained, and how aging-related care burden becomes a policy and staffing question.",
-          "items": [
-            {
-              "item_id": "2026-09-16-dementia-policy-discourse",
-              "canonical_topic": "dementia-as-policy-issue",
-              "duplicate_group": "dementia-as-policy-issue",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/16/dementia-november-2026-midterm-elections-policy-privacy-caregivers-economy/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-16T08:30:00Z"
-                }
-              ],
-              "title": "Commentary argues dementia belongs in policy debate, not political insult",
-              "summary": "In a STAT opinion column, physician Jason Karlawish argues that politicians in both parties discuss dementia as a personal attack rather than a policy question, and that dementia is tied directly to midterm issues including the economy, health care, and immigration — particularly through caregiving labor.",
-              "strategic_implication": "Dementia care sits at the intersection of workforce supply, long-term-care financing, and family caregiver capacity. Systems serving aging populations should prepare positioning on caregiver support and cognitive-care pathways ahead of a likely sharper post-election policy debate.",
-              "confidence": "medium",
-              "tags": [
-                "dementia",
-                "long-term-care",
-                "caregiving",
-                "health-policy",
-                "workforce"
-              ]
-            },
-            {
-              "item_id": "2026-09-16-cancer-experience-physician-training",
-              "canonical_topic": "patient-experience-physician-training",
-              "duplicate_group": "patient-experience-physician-training",
-              "priority_score": 5,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/16/medical-school-cancer-structure-pathology-professor-personal-experience/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-16T08:30:00Z"
-                }
-              ],
-              "title": "Physician-educator uses his own cancer diagnosis to deepen how he trains future doctors",
-              "summary": "In a STAT opinion essay, pathology and medical-education professor David Elkowitz describes teaching first-year students through his own cancer experience. He connects pathology, genetics, scans, symptoms, treatment decisions, and emotional realities with patient and family encounters.",
-              "strategic_implication": "The example supports a broader shift toward clinical training that integrates biomedical knowledge with patient perspective and communication. Health systems can reinforce that model through patient-partnered education, reflective practice, and structured feedback on how care feels as well as how it performs.",
-              "confidence": "medium",
-              "tags": [
-                "medical-education",
-                "physician-training",
-                "patient-experience",
-                "oncology"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-28T11:05:51Z"
+  "last_updated": "2026-10-28T12:41:47Z"
 }

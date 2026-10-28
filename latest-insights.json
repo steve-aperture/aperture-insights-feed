@@ -3,6 +3,384 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-28",
+      "generated_at": "2026-10-28T11:05:51Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Coverage churn, 340B disputes and draft FDA pathways lead today's policy mix, while new retatrutide data and debates about EHR data access and AI governance shape the market and technology agenda. We drew on STAT, Healthcare Dive, Fierce Healthcare, agency and legislative releases, company earnings disclosures, and UT Austin's announcement.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Web searches across CMS/HHS/FDA policy, Medicare/Medicaid, hospital earnings, digital health/AI, drug pricing, payer/provider moves, and workforce"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened",
+          "Healthcare Dive RSS fetched and screened",
+          "Fierce Healthcare RSS fetched and screened",
+          "Targeted web searches returned FDA/HHS, Senate, Missouri AG, company earnings, UT Austin, and healthcare-news context"
+        ],
+        "sources_failed": [],
+        "run_notes": "Ten items cover developments reported October 27-28. The previous edition was checked to avoid repeats; recurring coverage of yesterday’s HTI-5 rule, PBM audit inquiry, and existing Medicare Advantage rating litigation was excluded. Allegations and draft guidance are identified as such; the retatrutide comparison is attributed to STAT and its on-treatment analysis caveat is retained."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Coverage eligibility, 340B access, and FDA pathways for rare-disease therapies are the main policy signals. The congressional and state actions remain inquiries or allegations, and the FDA document is draft guidance rather than a final rule.",
+          "items": [
+            {
+              "item_id": "2026-10-28-fda-individualized-genome-editing-guidance",
+              "canonical_topic": "fda-individualized-genome-editing-guidance",
+              "duplicate_group": "fda-individualized-genome-editing-guidance",
+              "priority_score": 8,
+              "primary_source": "U.S. Food and Drug Administration",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/individualized-human-genome-editing-products-considerations-bla-submission-and-postapproval",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                },
+                {
+                  "source": "HHS",
+                  "url": "https://www.hhs.gov/press-room/fda-cms-advance-gene-therapies-rare-diseases-patient-access.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                }
+              ],
+              "title": "FDA proposes one-BLA framework for patient-specific genome-editing therapies",
+              "summary": "FDA issued draft guidance describing how sponsors could include multiple patient-specific genome-editing variants for rare genetic diseases in one biologics license application. A pre-defined “individualized feature space” would set the permissible variation; qualifying new variants within those boundaries could be added after approval using safety and activity evidence, including laboratory data. The draft addresses manufacturing, safety, labeling, and postapproval management, with comments due November 27.",
+              "strategic_implication": "A workable framework could reduce the need to repeat clinical development for each rare variant, but sponsors will need to establish scientifically defensible boundaries and robust safety, potency, and manufacturing controls early.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "gene-editing",
+                "rare-disease",
+                "draft-guidance"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-senate-aca-coverage-termination-inquiry",
+              "canonical_topic": "senate-aca-coverage-termination-inquiry",
+              "duplicate_group": "senate-aca-coverage-termination-inquiry",
+              "priority_score": 8,
+              "primary_source": "U.S. Senate Democrats and Fierce Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/payers/democratic-senators-probe-insurers-role-canceling-aca-coverage-760k",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T17:12:00Z"
+                },
+                {
+                  "source": "Senator Ron Wyden",
+                  "url": "https://www.wyden.senate.gov/news/press-releases/wyden-sanders-senate-democrats-call-out-insurance-company-collusion-with-trump-administration-to-kick-thousands-of-americans-off-health-insurance",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                }
+              ],
+              "title": "Senators seek insurer records on ACA coverage terminations affecting 760,000 people",
+              "summary": "Thirteen Senate Democrats sent letters to 10 insurers asking about their role in the termination of roughly 315,000 ACA policies that covered more than 760,000 people. The lawmakers allege the process lacked established midyear consumer protections and question requests for enrollees to verify identifying information; CMS has described the affected enrollments as unauthorized. Insurers were asked to respond by November 6, and no findings have been issued.",
+              "strategic_implication": "The inquiry could intensify regulatory and reputational scrutiny of marketplace enrollment controls as open enrollment proceeds; plans should preserve decision records and assess member-notice and reinstatement processes.",
+              "confidence": "high",
+              "tags": [
+                "aca",
+                "marketplace",
+                "coverage",
+                "congressional-oversight"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-lilly-340b-claims-data-dispute",
+              "canonical_topic": "lilly-340b-claims-data-dispute",
+              "duplicate_group": "lilly-340b-claims-data-dispute",
+              "priority_score": 8,
+              "primary_source": "Missouri Attorney General and STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News RSS",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/27/missouri-ag-warns-lilly-340b-drug-pricing-data/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T18:45:34Z"
+                },
+                {
+                  "source": "Missouri Attorney General",
+                  "url": "https://ago.mo.gov/wp-content/uploads/CD-Letter-Re.-Eli-Lillys-Claims-Data-Submission-Policy.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-10-26T00:00:00Z"
+                },
+                {
+                  "source": "Becker’s Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/pharmacy/5-massachusetts-hospitals-sue-eli-lilly-over-340b-data-demands/",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                }
+              ],
+              "title": "Missouri AG challenges Lilly’s 340B data policy as five hospitals file suit",
+              "summary": "Missouri’s attorney general sent Lilly a cease-and-desist letter alleging that conditioning 340B discounts on detailed claims-data submissions violates state consumer-protection law; Lilly says the data requirements address fraud, waste, and abuse. Separately, five Massachusetts hospitals sued Lilly on October 27, alleging that the policy unlawfully withheld discounts when they declined to provide patient claims data. The state action and lawsuit are pending, and the allegations have not been adjudicated.",
+              "strategic_implication": "State enforcement and provider litigation are broadening the 340B dispute beyond a single contract issue, increasing legal, data-governance, and drug-access uncertainty for manufacturers and covered entities.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "drug-pricing",
+                "hospital",
+                "claims-data",
+                "litigation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Data access is becoming a strategic fault line in both EHR competition and AI-device oversight. FDA leaders signaled more GenAI policy work, but no final framework or timeline is in place.",
+          "items": [
+            {
+              "item_id": "2026-10-28-epic-ehr-data-access-scrutiny",
+              "canonical_topic": "epic-ehr-data-access-scrutiny",
+              "duplicate_group": "epic-ehr-data-access-scrutiny",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT News RSS",
+                  "url": "https://www.statnews.com/2026/10/28/epic-systems-ehr-dominance-health-tech-antitrust-scrutiny/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-28T08:30:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/28/epic-systems-ehr-dominance-health-tech-antitrust-scrutiny/",
+                  "source_type": "web",
+                  "published_at": "2026-10-28T08:30:00Z"
+                }
+              ],
+              "title": "Epic’s data-access practices draw renewed scrutiny from hospitals and software developers",
+              "summary": "A STAT investigation reports that some hospital executives and app developers say Epic’s control of patient-data access and its commercial practices make it harder for rival software to reach health systems. Epic says it provides more data connections than federal law requires and that its hospital customers control access to their records. The reporting documents concerns and competing positions, not a finding of unlawful conduct.",
+              "strategic_implication": "Hospitals and digital-health vendors should treat data portability, API terms, and vendor concentration as procurement and innovation risks; further scrutiny could reshape partnership economics and interoperability expectations.",
+              "confidence": "medium",
+              "tags": [
+                "ehr",
+                "interoperability",
+                "data-access",
+                "competition"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-fda-generative-ai-device-policy",
+              "canonical_topic": "fda-generative-ai-device-policy",
+              "duplicate_group": "fda-generative-ai-device-policy",
+              "priority_score": 7,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/gen-ai-policy-is-a-white-house-priority-cdrh-digital-health-leader-says/833551/",
+                  "source_type": "web",
+                  "published_at": "2026-10-28T00:00:00Z"
+                }
+              ],
+              "title": "FDA digital-health chief says draft guidance on generative-AI devices is coming",
+              "summary": "At an industry conference, FDA Digital Health Center of Excellence director Rick Abramson said the agency expects to draft policy on generative-AI medical devices in the coming months. The agency had received more than 500 submissions to its discussion paper, and its FY2027 priorities include work on AI-enabled devices for mental disorders and broader risk-assessment and evidence-generation guidance. No specific publication date was given.",
+              "strategic_implication": "Developers should plan for evidence-generation and postmarket-monitoring expectations to evolve, while avoiding assumptions that the FDA has already finalized a regulatory pathway or timetable.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "generative-ai",
+                "medical-devices",
+                "regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Retatrutide’s reported active-comparator results could sharpen competition in metabolic medicines, while UHS’s quarter shows how revenue growth can coexist with lower earnings and payment-related offsets.",
+          "items": [
+            {
+              "item_id": "2026-10-28-retatrutide-ozempic-diabetes-study",
+              "canonical_topic": "retatrutide-ozempic-diabetes-study",
+              "duplicate_group": "retatrutide-ozempic-diabetes-study",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT News RSS",
+                  "url": "https://www.statnews.com/2026/10/28/retatrutide-vs-ozempic-lilly-diabetes-study/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-28T10:45:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/28/retatrutide-vs-ozempic-lilly-diabetes-study/",
+                  "source_type": "web",
+                  "published_at": "2026-10-28T10:45:00Z"
+                }
+              ],
+              "title": "Lilly reports retatrutide advantage over Ozempic in an 80-week diabetes comparison",
+              "summary": "STAT reports that Lilly said its investigational triple-agonist retatrutide outperformed Ozempic in a diabetes study: at the highest dose, A1C fell 2.2 percentage points versus 1.8, while weight fell 20.9% versus 9.4% after 80 weeks. The reported figures reflect participants who stayed on treatment rather than all randomized participants. Retatrutide remains investigational, and the findings are reported by STAT from Lilly’s data.",
+              "strategic_implication": "If confirmed in full study reporting and regulatory review, the result could strengthen Lilly’s future cardiometabolic franchise and intensify competition with Novo Nordisk; executives should distinguish on-treatment efficacy from real-world persistence and approved-product evidence.",
+              "confidence": "medium",
+              "tags": [
+                "retatrutide",
+                "semaglutide",
+                "diabetes",
+                "clinical-trial",
+                "drug-development"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-uhs-third-quarter-results",
+              "canonical_topic": "uhs-third-quarter-results",
+              "duplicate_group": "uhs-third-quarter-results",
+              "priority_score": 7,
+              "primary_source": "Universal Health Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/universal-health-services-grows-revenues-trims-earnings-q3",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T21:13:00Z"
+                },
+                {
+                  "source": "Universal Health Services (GlobeNewswire)",
+                  "url": "https://www.globenewswire.com/news-release/2026/10/27/3389648/0/en/universal-health-services-inc-announces-financial-results-for-the-three-and-nine-month-periods-ended-september-30-2026.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                }
+              ],
+              "title": "UHS Q3 revenue rises 5.3% as net income and per-share earnings decline",
+              "summary": "Universal Health Services reported third-quarter revenue of $4.733 billion, up 5.3% year over year, while net income fell to $308.7 million from $373.0 million and diluted earnings per share declined to $5.22 from $5.86. The company cited a $47 million pretax benefit from state Medicaid supplemental-payment programs relative to its midyear forecast, partly offset by $26 million added to liability reserves after a tentative legal settlement.",
+              "strategic_implication": "The results highlight that volume and revenue growth do not automatically translate into earnings growth; operators and investors should separate underlying demand from supplemental-payment timing and legal-reserve volatility.",
+              "confidence": "high",
+              "tags": [
+                "hospital-earnings",
+                "behavioral-health",
+                "medicaid",
+                "operating-margin"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "HCA’s results pair sustained utilization growth with a material uninsured-payer headwind. UT Austin’s new academic-health-system identity and planned AI-native medical center represent a long-horizon capacity and infrastructure bet rather than near-term supply.",
+          "items": [
+            {
+              "item_id": "2026-10-28-hca-uninsured-payer-mix-q3",
+              "canonical_topic": "hca-uninsured-payer-mix-q3",
+              "duplicate_group": "hca-uninsured-payer-mix-q3",
+              "priority_score": 9,
+              "primary_source": "HCA Healthcare",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "HCA Healthcare Investor Relations",
+                  "url": "https://investor.hcahealthcare.com/news/news-details/2026/HCA-Healthcare-Reports-Third-Quarter-2026-Results/default.aspx",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare RSS",
+                  "url": "https://www.fiercehealthcare.com/providers/hca-healthcare-tops-q3-expectations-strong-demand-warns-persistent-payer-mix-issues",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T16:50:00Z"
+                }
+              ],
+              "title": "HCA volumes climb, but exchange-to-uninsured shifts cost about $400M in Q3",
+              "summary": "HCA reported third-quarter revenue of $19.85 billion, with same-facility admissions up 2.7%, equivalent admissions up 3.0%, and emergency-department visits up 5.1%. The company estimated that a payer-mix shift, driven mainly by patients losing exchange coverage and becoming uninsured, reduced pretax income by about $400 million; uninsured patients represented 10.5% of equivalent admissions, versus 8.5% a year earlier.",
+              "strategic_implication": "Strong demand is not insulating hospitals from coverage-related revenue pressure; systems should stress-test uncompensated-care exposure, eligibility support, and payer-mix assumptions alongside volume and capacity plans.",
+              "confidence": "high",
+              "tags": [
+                "hospital-operations",
+                "payer-mix",
+                "uninsured",
+                "hospital-earnings"
+              ]
+            },
+            {
+              "item_id": "2026-10-28-ut-dell-medicine-ai-native-hospital",
+              "canonical_topic": "ut-dell-medicine-ai-native-hospital",
+              "duplicate_group": "ut-dell-medicine-ai-native-hospital",
+              "priority_score": 7,
+              "primary_source": "The University of Texas at Austin",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "The University of Texas at Austin",
+                  "url": "https://news.utexas.edu/2026/10/27/ut-introduces-ut-dell-medicine-shares-plans-for-advanced-specialty-care-in-central-texas/",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/university-texas-austin-unveils-new-academic-health-system-it-builds-ai-native-hospital",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                }
+              ],
+              "title": "UT Austin launches UT Dell Medicine ahead of a planned $5B AI-native hospital",
+              "summary": "The University of Texas at Austin introduced UT Dell Medicine as its academic health system, uniting its medical school and clinical practice with plans for a new UT Dell Medical Center. The approximately $5 billion center is planned to open in 2030, with focus areas including cancer, cardiovascular, neurological, transplant, and advanced intensive care; the university says full build-out is intended to double clinical capability and more than triple patient volumes.",
+              "strategic_implication": "The project illustrates how new hospital development may embed AI, data infrastructure, and specialty partnerships from the outset, but workforce design, governance, and demonstrated clinical value will determine whether the long-term investment delivers its promised capacity gains.",
+              "confidence": "high",
+              "tags": [
+                "academic-medicine",
+                "ai-native",
+                "hospital-capacity",
+                "capital-investment"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Centene’s workforce reduction is a clear cost-restructuring signal amid a faster-than-expected Medicare Advantage recovery. The operational question is whether savings can be sustained without weakening member service, clinical coordination, or execution capacity.",
+          "items": [
+            {
+              "item_id": "2026-10-28-centene-workforce-reduction",
+              "canonical_topic": "centene-workforce-reduction",
+              "duplicate_group": "centene-workforce-reduction",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive RSS",
+                  "url": "https://www.healthcaredive.com/news/centene-progresses-profit-recovery-cuts-workforce-by-6k/872816/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-27T16:32:45Z"
+                },
+                {
+                  "source": "Centene Investor Relations",
+                  "url": "https://investors.centene.com/2026-10-27-CENTENE-CORPORATION-REPORTS-THIRD-QUARTER-2026-RESULTS",
+                  "source_type": "web",
+                  "published_at": "2026-10-27T00:00:00Z"
+                }
+              ],
+              "title": "Centene sheds nearly 6,000 employees as it accelerates its margin-recovery plan",
+              "summary": "Centene’s workforce fell from about 59,800 in the second quarter to 53,900 in the third, a decline of nearly 6,000 employees that the company attributed to layoffs and a voluntary separation program. The reductions came with higher severance costs; executives said the moves should support margins in 2027. Centene also said its Medicare business was on track to break even in 2026, a year earlier than previously expected.",
+              "strategic_implication": "Payer cost programs may improve margins but can strain service and care-coordination capacity during coverage and benefit transitions; partners should monitor operational responsiveness as well as headline financial recovery.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "payers",
+                "restructuring",
+                "medicare-advantage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-27",
       "generated_at": "2026-10-27T12:40:31Z",
       "headline": "Today's Healthcare Insights",
@@ -16586,5 +16964,5 @@
       ]
     }
   ],
-  "last_updated": "2026-10-27T12:40:31Z"
+  "last_updated": "2026-10-28T11:05:51Z"
 }

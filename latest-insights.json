@@ -3,6 +3,582 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-10-30",
+      "generated_at": "2026-10-30T12:42:11Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "A final Labor Department rule forcing PBMs to disclose fees to self-insured employers, a court ruling that widens Medicaid's medically frail exemption, and a projected 50% jump in stand-alone Part D premiums lead today's policy news. New data on AI dosing errors, hard-to-predict Epic AI bills, Lilly's strong quarter, Genmab's head and neck cancer win, and a Pennsylvania hospital pausing inpatient care round out the picture. Sources include Healthcare Dive, STAT, KFF Health News, BioPharma Dive, MedTech Dive, MedCity News and Becker's.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics)",
+          "Healthcare Dive RSS",
+          "BioPharma Dive, MedTech Dive, MedCity News, KFF Health News, Becker's Hospital Review and Fierce Healthcare RSS"
+        ],
+        "sources_successful": [
+          "STAT News RSS feeds fetched and screened for October 29-30",
+          "Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News and Becker's RSS fetched and screened",
+          "Full articles read on Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News and Becker's to verify figures"
+        ],
+        "sources_failed": [
+          "Gmail InsightsSources labels and Healthcare Brew/Healthcare Dive sender searches (since Oct. 28) returned no messages in the connected mailbox; RSS sources used instead.",
+          "Fierce Healthcare RSS returned an unparseable response (likely bot protection)."
+        ],
+        "run_notes": "19 items cover developments reported October 29-30. Checked against the previous four editions for repeats; excluded HHS peptide compounding, Etcelera, the colorectal-cancer atlas, the urgent-care EpiPen story and the affordability midterm series (all in 2026-10-29), UHS Q3 (2026-10-28), and the Treasury China-rule debate (2026-10-26). The Novartis write-down was omitted from the Lilly item because it ran 2026-10-29. Vertex kidney-drug item excluded because paywalled details could not be verified. Doximity dosing results are company-reported. STAT+ items (state AI sandboxes, hybrid ER billing) drafted from visible article text and RSS summaries."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Washington is pushing hard on drug-supply transparency through the new PBM disclosure rule, while courts and markets push back elsewhere: a judge widened the Medicaid work-requirement exemption, and stand-alone Part D premiums are set to jump 50%. Turnover at the top of the CDC continues.",
+          "items": [
+            {
+              "item_id": "2026-10-30-dol-pbm-fee-disclosure-final-rule",
+              "canonical_topic": "dol-pbm-fee-disclosure-final-rule",
+              "duplicate_group": "dol-pbm-fee-disclosure-final-rule",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/pbm-transparency-final-rule-labor-department-employer/873089/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/29/prescription-drug-price-reform-pbm-disclosure-rules-face-challenge/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "Labor Department finalizes PBM fee-disclosure rule for self-insured employers",
+              "summary": "The Labor Department finalized a rule requiring PBMs that serve self-insured employer plans to disclose compensation from drugmakers, pharmacies and other supply-chain players, including rebates and spread payments, at contract signing or renewal and every six months. Employers may audit the disclosures annually. The rule takes effect in July 2027, and regulators estimate it will cut drug costs for employers and workers by $22 billion over 10 years. Employer groups welcomed it; PBMs called it government overreach, and STAT reports it may face a legal challenge.",
+              "strategic_implication": "Self-insured employers, including health systems with their own employee plans, should start preparing now: review PBM contracts up for renewal, set up audit rights, and decide which disclosed fee data they will actually use in negotiations.",
+              "confidence": "high",
+              "tags": [
+                "pbm",
+                "erisa",
+                "drug-pricing",
+                "employer-plans",
+                "transparency"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-court-vacates-cms-medically-frail-limit",
+              "canonical_topic": "court-vacates-cms-medically-frail-limit",
+              "duplicate_group": "court-vacates-cms-medically-frail-limit",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/legal-regulatory-issues/judge-rules-cms-overstepped-on-medically-frail-definition-for-medicaid-work-requirements/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/29/medicaid-work-requirements-judge-blocks-new-limits-medical-frailty/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "Judge rules CMS overstepped in narrowing the Medicaid 'medically frail' exemption",
+              "summary": "A federal judge in Massachusetts on Oct. 29 vacated a CMS provision that required a person's condition to significantly impair their ability to meet Medicaid work requirements before qualifying as medically frail. The judge called the conditions Congress listed in HR 1 a floor, barred CMS from applying the provision in the plaintiff states and gave them six months to update verification systems without penalty. The suit was brought in June by 25 states and the District of Columbia. Work requirements are still scheduled to start Jan. 1.",
+              "strategic_implication": "Hospitals and Medicaid plans in the plaintiff states should expect a broader exemption pool and different verification rules than in other states, and should keep documenting enrollees' diagnoses to support exemption claims as the Jan. 1 start date approaches.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "cms",
+                "litigation",
+                "hr-1"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-kff-part-d-standalone-premiums-2027",
+              "canonical_topic": "kff-part-d-standalone-premiums-2027",
+              "duplicate_group": "kff-part-d-standalone-premiums-2027",
+              "priority_score": 8,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/medicare/medicare-drug-plans-premium-hikes-affordability-trump-cms/",
+                  "source_type": "web",
+                  "published_at": "2026-10-30T00:00:00Z"
+                }
+              ],
+              "title": "KFF projects stand-alone Part D premiums will rise 50% in 2027",
+              "summary": "A KFF analysis projects that average monthly premiums for stand-alone Medicare drug plans will rise from $34 in 2026 to $51 in 2027, while average deductibles climb from $540 to $643. Nearly 25 million people have stand-alone plans. Medicare Advantage enrollees are projected to pay about $9 a month for drug coverage, up less than $2. KFF points to CMS's July decision to end a premium-stabilization pilot early as one possible cause. Enrollees can still switch plans before open enrollment closes Dec. 7.",
+              "strategic_implication": "The growing price gap between stand-alone Part D and Medicare Advantage could push more seniors toward MA. Health systems and pharmacies should expect questions from patients about plan switching and should watch for 2027 changes to formularies and patient cost-sharing.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "part-d",
+                "premiums",
+                "open-enrollment",
+                "medicare-advantage"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-cdc-deputy-director-shuford-departs",
+              "canonical_topic": "cdc-deputy-director-shuford-departs",
+              "duplicate_group": "cdc-deputy-director-shuford-departs",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hospital-executive-moves/cdc-leadership-churn-8-moves-since-august-2025/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "CDC deputy director and chief medical officer Jennifer Shuford is leaving after six months",
+              "summary": "Jennifer Shuford, MD, an infectious disease physician and former Texas health commissioner, announced Oct. 27 that she will leave her role as CDC deputy director and chief medical officer. Her last day is Nov. 12. She was hired in April as part of a leadership team meant to rebuild trust in the agency. Becker's counts eight major CDC leadership changes since August 2025. No reason for her departure was given.",
+              "strategic_implication": "More turnover at the top of the CDC adds to uncertainty about federal guidance for the respiratory season. State and local health departments and hospital infection-prevention teams should keep relying on their own surveillance and their professional societies' recommendations.",
+              "confidence": "high",
+              "tags": [
+                "cdc",
+                "public-health",
+                "leadership",
+                "federal-workforce"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Clinical AI is spreading faster than the rules and budgets around it. New dosing-error data, unpredictable usage-based pricing and unsettled state-versus-federal oversight all call for tighter governance, while location-data brokers show privacy gaps outside HIPAA.",
+          "items": [
+            {
+              "item_id": "2026-10-30-doximity-ai-medication-dosing-errors",
+              "canonical_topic": "doximity-ai-medication-dosing-errors",
+              "duplicate_group": "doximity-ai-medication-dosing-errors",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/popular-ai-models-get-medication-doses-wrong-some-dangerously-doximity/873207/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "Doximity study finds general AI models make serious medication-dosing errors",
+              "summary": "Doximity tested nine widely used AI models released in 2026 on more than 8,500 dosing questions covering more than 2,200 FDA-approved drugs. It reports serious or potentially lethal errors in about 19.5 of every 1,000 answers, with newly approved drugs carrying five times the odds of an error. The most common mistake was failing to adjust doses for age, kidney function or drug interactions even when the question gave that information. Doximity says its own DoseCheck tool was correct 99.9% of the time. These are company-reported results that promote its own product.",
+              "strategic_implication": "Health systems should treat general-purpose chatbots as unverified for dosing, require pharmacist or decision-support checks on AI-assisted medication answers, and ask any clinical AI vendor for independent dosing-accuracy data.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "medication-safety",
+                "doximity",
+                "llm-evaluation"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-epic-ai-usage-pricing-budget-uncertainty",
+              "canonical_topic": "epic-ai-usage-pricing-budget-uncertainty",
+              "duplicate_group": "epic-ai-usage-pricing-budget-uncertainty",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/it-could-be-10-it-could-be-10k-why-epics-ai-bill-is-hard-to-predict/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "Health system CIOs say Epic's usage-based AI pricing is hard to budget",
+              "summary": "Epic says more than 85% of its customers use its AI tools, but CIOs say next year's costs are hard to predict because charges depend on how much features are used, which model runs them and how many patients they touch. Ochsner's CIO said a feature's cost could be $10 or $10,000 depending on usage. Baptist Health South Florida leaders described a fixed fee plus variable charges tied to model and token costs, and asked who pays for tokens as Agent Factory use grows.",
+              "strategic_implication": "Finance and IT leaders should model AI spending as a variable cost, set usage limits and governance review for high-volume features, and ask Epic and other vendors for cost caps or forecasts before rolling tools out widely.",
+              "confidence": "high",
+              "tags": [
+                "epic",
+                "ai-pricing",
+                "health-it",
+                "budgeting",
+                "governance"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-fda-cms-state-ai-sandboxes-jurisdiction",
+              "canonical_topic": "fda-cms-state-ai-sandboxes-jurisdiction",
+              "duplicate_group": "fda-cms-state-ai-sandboxes-jurisdiction",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/30/fda-cms-health-ai-regulation-state-sandboxes-run-into-federal-rules/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-30T00:00:00Z"
+                }
+              ],
+              "title": "FDA and CMS work to head off clashes as states test clinical AI in sandboxes",
+              "summary": "STAT reports that federal health officials are working behind the scenes to prevent a conflict as more states set up sandboxes to test AI in clinical settings. States license clinicians and regulate medical practice, while FDA regulates medical devices. AI that performs clinical tasks such as writing prescriptions without human supervision would likely fall under FDA jurisdiction. The administration has also been trying to reduce regulatory burden on health AI and create new ways to pay for it.",
+              "strategic_implication": "Organizations joining state AI pilots should not assume state approval covers them federally; they should check whether a tool could be considered a medical device and track coordinated FDA–CMS guidance before scaling autonomous uses.",
+              "confidence": "medium",
+              "tags": [
+                "ai-regulation",
+                "fda",
+                "cms",
+                "state-policy",
+                "sandboxes"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-health-location-data-brokers-hipaa-gap",
+              "canonical_topic": "health-location-data-brokers-hipaa-gap",
+              "duplicate_group": "health-location-data-brokers-hipaa-gap",
+              "priority_score": 6,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/health-industry/data-brokers-phone-location-tracking-sensitive-medical-data-targeted-ads/",
+                  "source_type": "web",
+                  "published_at": "2026-10-30T00:00:00Z"
+                }
+              ],
+              "title": "Phone location data from medical visits keeps feeding data brokers outside HIPAA",
+              "summary": "KFF Health News reports that location data showing visits to hospitals, oncology clinics and other sensitive sites is still bought and sold to target ads, because HIPAA does not cover it. Connecticut, Delaware, Maryland, New Jersey, Oregon and Virginia have banned sales of precise geolocation data. California Gov. Gavin Newsom vetoed a broader bill on Sept. 27, and a Stanford study found only 9% of brokers complied with California's data-deletion law.",
+              "strategic_implication": "Health systems should review the tracking tools and ad technology on their websites and apps, and consider geofencing and patient-privacy risk in marketing contracts, since state laws and FTC enforcement are moving faster than HIPAA.",
+              "confidence": "high",
+              "tags": [
+                "privacy",
+                "data-brokers",
+                "location-data",
+                "hipaa",
+                "state-law"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Lilly's results and Genmab's trial win show strong demand for products with clear clinical gains. Activist pressure at Cooper, a low-end IPO price for Aspen and BioMarin's modest licensing deal point to a more selective capital market.",
+          "items": [
+            {
+              "item_id": "2026-10-30-lilly-q3-2026-raises-guidance",
+              "canonical_topic": "lilly-q3-2026-raises-guidance",
+              "duplicate_group": "lilly-q3-2026-raises-guidance",
+              "priority_score": 8,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/biopharma-earnings-q3-2026-lilly-novartis-gsk/873167/",
+                  "source_type": "web",
+                  "published_at": "2026-10-30T00:00:00Z"
+                }
+              ],
+              "title": "Lilly beats Q3 estimates with $24.4B in revenue and raises 2026 outlook to $91B–$92B",
+              "summary": "Eli Lilly reported third-quarter revenue of $24.4 billion, about 8% above consensus, including $10.7 billion from Mounjaro and $5.4 billion from Zepbound. Its obesity pill Foundayo brought in $184 million, below estimates. Lilly raised its full-year revenue guidance to $91 billion–$92 billion and says it holds 63% of the U.S. incretin market. The results eased investor concerns about GLP-1 price pressure for now.",
+              "strategic_implication": "Lilly's growing share of the obesity market strengthens its position in price and coverage talks. Payers and employers should expect GLP-1 spending to keep rising even as unit prices fall.",
+              "confidence": "high",
+              "tags": [
+                "eli-lilly",
+                "earnings",
+                "glp-1",
+                "obesity",
+                "pharma"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-genmab-petosemtamab-phase3-head-neck",
+              "canonical_topic": "genmab-petosemtamab-phase3-head-neck",
+              "duplicate_group": "genmab-petosemtamab-phase3-head-neck",
+              "priority_score": 7,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/genmab-stock-soars-positive-head-neck-cancer-antibody-phase-3/873164/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "Genmab's petosemtamab plus Keytruda halves death risk in a first-line head and neck cancer trial",
+              "summary": "In an early analysis of a Phase 3 trial, Genmab's bispecific antibody petosemtamab plus Keytruda cut the risk of death in half compared with Keytruda alone in first-line PD-L1-positive head and neck squamous cell carcinoma, meeting both response and survival goals. Genmab gained the drug in its $8 billion acquisition of Merus. Its market value rose by more than $7 billion to over $35 billion. Detailed data will go to regulators and a future medical meeting.",
+              "strategic_implication": "If the full data hold up, oncology programs and payers should prepare for a likely new first-line standard in a cancer with few options, and for the cost of combining two drugs.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "genmab",
+                "head-and-neck-cancer",
+                "bispecifics",
+                "phase-3"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-cooper-companies-ceo-exit-jana",
+              "canonical_topic": "cooper-companies-ceo-exit-jana",
+              "duplicate_group": "cooper-companies-ceo-exit-jana",
+              "priority_score": 6,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/cooper-companies-ceo-steps-down-after-activist-investor-pressure/873142/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "Cooper Companies CEO steps down after activist pressure from Jana Partners",
+              "summary": "Albert White stepped down as Cooper Companies CEO effective immediately after eight years in the role. Independent director and former Steris CEO Walter Rosebrough Jr. becomes executive chair and will run day-to-day operations during the CEO search. The move follows Cooper's September cuts to its revenue and earnings forecasts and calls from Jana Partners for an outside CEO search and possible sales of its fertility and medical device assets.",
+              "strategic_implication": "Possible asset sales could change ownership of fertility and women's health device lines. Fertility clinics and supply-chain teams should watch for changes to contracts and product continuity.",
+              "confidence": "high",
+              "tags": [
+                "medtech",
+                "cooper-companies",
+                "activist-investor",
+                "leadership",
+                "fertility"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-abbott-amplatzer-paraclose-pvl-approval",
+              "canonical_topic": "abbott-amplatzer-paraclose-pvl-approval",
+              "duplicate_group": "abbott-amplatzer-paraclose-pvl-approval",
+              "priority_score": 6,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/abbott-grows-cardiac-portfolio-with-amplatzer-approval-for-valve-leaks/873163/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "FDA approves Abbott's first-of-its-kind catheter device to close valve leaks",
+              "summary": "Abbott received FDA approval for the Amplatzer Paraclose PVL Occluder, which it calls the first minimally invasive device approved in the U.S. to close paravalvular leaks around surgically replaced heart valves. Abbott says these leaks occur in 7% to 17% of mitral and 5% to 10% of aortic valve replacements. Approval was based on the 200-patient, single-arm PARADIGM trial, with 30-day results due at the TCT conference.",
+              "strategic_implication": "Structural heart programs can offer a catheter option to patients who would otherwise need repeat open-heart surgery, which affects referral flow, cath lab capacity and device-cost planning.",
+              "confidence": "high",
+              "tags": [
+                "medtech",
+                "structural-heart",
+                "fda-approval",
+                "abbott"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-biomarin-fabry-ert-licensing-deal",
+              "canonical_topic": "biomarin-fabry-ert-licensing-deal",
+              "duplicate_group": "biomarin-fabry-ert-licensing-deal",
+              "priority_score": 5,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/10/biomarin-fabry-subcutaneous-enzyme-replacement-hanmi-gc-biopharma-gb3-bmrn/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "BioMarin pays $70M upfront for a long-acting under-the-skin Fabry therapy",
+              "summary": "BioMarin will pay GC Biopharma and Hanmi Pharm $70 million upfront, with up to $405 million more in milestones plus royalties, for worldwide rights outside South Korea to HM15421/GC1134A. The drug is a long-acting enzyme replacement therapy for Fabry disease designed to be injected under the skin. It is in a global Phase 1/2 trial, and the companies have not said how often it would be dosed. Current Fabry enzyme therapies are infused every other week.",
+              "strategic_implication": "A less frequent injection given under the skin could move some rare-disease infusion volume out of hospital infusion centers, though that is still several years away.",
+              "confidence": "medium",
+              "tags": [
+                "rare-disease",
+                "biomarin",
+                "licensing",
+                "enzyme-replacement"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-aspen-neuroscience-parkinsons-ipo",
+              "canonical_topic": "aspen-neuroscience-parkinsons-ipo",
+              "duplicate_group": "aspen-neuroscience-parkinsons-ipo",
+              "priority_score": 5,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/aspen-neuroscience-parkinsons-ipo-pricing/873050/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "Aspen Neuroscience raises $140.6M in IPO for a personalized Parkinson's cell therapy",
+              "summary": "Aspen Neuroscience sold about 9.4 million shares at $15, the low end of its range, raising $140.6 million. The company was set to begin trading Friday under the ticker ASPE. Its one-time therapy, sasineprocel, turns a patient's own skin cells into dopamine-producing precursor cells and is in a Phase 1/2a study. Aspen plans to start a Phase 3 trial by the end of next year and expects long-term data in 2028. Bayer's BlueRock is already in Phase 3 with a competing approach.",
+              "strategic_implication": "Pricing at the low end of the range points to a selective biotech IPO market. For neurology programs, patient-specific cell therapies would require specialized surgical and cell-processing capacity if they reach approval.",
+              "confidence": "high",
+              "tags": [
+                "ipo",
+                "cell-therapy",
+                "parkinsons",
+                "biotech-funding"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Fragile hospitals, billing models that confuse patients and costly EHR conversions are testing operating margins and patient trust, especially where turnaround or private equity ownership is involved.",
+          "items": [
+            {
+              "item_id": "2026-10-30-sharon-regional-pauses-inpatient-payroll",
+              "canonical_topic": "sharon-regional-pauses-inpatient-payroll",
+              "duplicate_group": "sharon-regional-pauses-inpatient-payroll",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/pennsylvania-hospital-pauses-inpatient-care-after-payroll-struggles/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "Sharon Regional pauses inpatient care after missing two payrolls",
+              "summary": "Sharon (Pa.) Regional Medical Center has paused inpatient services after missing paychecks scheduled for Oct. 9 and Oct. 23. Its emergency department remains open, and patients needing admission will be stabilized and transferred. The hospital closed in early 2025 under Steward Health Care and reopened in May 2025 under turnaround operator Tenor Health Foundation. A spokesperson said no final decisions have been made about its future.",
+              "strategic_implication": "Hospitals rescued by turnaround operators remain fragile. Nearby hospitals and EMS should plan for more transfers, and state officials should watch payroll and cash problems as early signs of another closure.",
+              "confidence": "high",
+              "tags": [
+                "hospital-finance",
+                "closures",
+                "rural-health",
+                "steward-health-care",
+                "pennsylvania"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-hybrid-er-urgent-care-surprise-bills",
+              "canonical_topic": "hybrid-er-urgent-care-surprise-bills",
+              "duplicate_group": "hybrid-er-urgent-care-surprise-bills",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/30/hybrid-er-urgent-care-clinics-hidden-billing-complaints-intuitive-health/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-30T00:00:00Z"
+                }
+              ],
+              "title": "STAT investigation finds hybrid ER and urgent care clinics billing routine visits as ER care",
+              "summary": "STAT reports that patients who went to hybrid ER–urgent care centers for coughs, flu or urinary tract infections received emergency-room bills, often totaling thousands of dollars. One Texas patient paid $211 for a UTI visit at a Methodist-branded center and later got a $1,756 bill, which was reduced to $667 after she disputed it. Intuitive Health, a private equity-backed operator of nearly 50 such centers, says the model saves patients from guessing whether they need an ER.",
+              "strategic_implication": "Health systems that co-brand hybrid sites face reputational and regulatory risk. They should review signage, how visits are triaged and billed, and price-estimate practices before state regulators or payers act.",
+              "confidence": "medium",
+              "tags": [
+                "billing",
+                "urgent-care",
+                "freestanding-er",
+                "private-equity",
+                "price-transparency"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-penn-state-health-epic-bond-financing",
+              "canonical_topic": "penn-state-health-epic-bond-financing",
+              "duplicate_group": "penn-state-health-epic-bond-financing",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/epic-bonds-havent-slowed-penn-state-healths-capital-pipeline-facilities-leader-says/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "Penn State Health issues about $225M in bonds to help fund its Oct. 31 Epic go-live",
+              "summary": "Penn State Health plans to issue about $225 million in bonds to help pay for its Oct. 31 switch from Oracle Health to Epic and other capital needs. Its facilities chief says the bonds have had no effect on capital projects. The system reported $131.2 million in operating income, a 2.6% margin, on about $5 billion in revenue for the fiscal year ended June 30, and is opening a level 2 NICU at Lancaster Medical Center the same day.",
+              "strategic_implication": "Using debt to pay for an EHR switch shows how expensive the move to Epic has become. Systems planning a conversion should budget for go-live productivity losses alongside financing costs.",
+              "confidence": "high",
+              "tags": [
+                "epic",
+                "ehr-conversion",
+                "capital-planning",
+                "bonds",
+                "oracle-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "AI is changing leadership and IT roles mostly through attrition and redesigned jobs rather than layoffs, making retraining and succession planning key priorities.",
+          "items": [
+            {
+              "item_id": "2026-10-30-bcg-ceos-plan-c-suite-replacements",
+              "canonical_topic": "bcg-ceos-plan-c-suite-replacements",
+              "duplicate_group": "bcg-ceos-plan-c-suite-replacements",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hospital-management-administration/nearly-60-of-ceos-plan-to-replace-a-top-exec-survey/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "BCG survey: nearly 60% of CEOs plan to replace a top executive within six months",
+              "summary": "Boston Consulting Group's October CEO survey of 645 executives, including 110 in healthcare, found that nearly 60% plan to replace a senior leader within six months, rising to 70% at the largest companies. CFOs were most often slated for replacement at 16%, followed by COOs, CHROs and chief marketing officers at 12% each. BCG said CEOs are judging which leaders are rebuilding their functions around AI. Results were not broken out by industry.",
+              "strategic_implication": "Boards and CEOs should expect more C-suite turnover across industries, including healthcare, and should plan for succession and AI-related skills in finance and operations roles.",
+              "confidence": "medium",
+              "tags": [
+                "leadership",
+                "c-suite",
+                "succession",
+                "ai-skills"
+              ]
+            },
+            {
+              "item_id": "2026-10-30-health-it-roles-shrinking-ai-cloud",
+              "canonical_topic": "health-it-roles-shrinking-ai-cloud",
+              "duplicate_group": "health-it-roles-shrinking-ai-cloud",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/digital-health/the-health-it-roles-shrinking-as-ai-grows/",
+                  "source_type": "web",
+                  "published_at": "2026-10-29T00:00:00Z"
+                }
+              ],
+              "title": "Health systems are phasing out legacy IT roles as cloud and AI work expands",
+              "summary": "Becker's reports that health systems are reducing roles focused on on-premise infrastructure, ticket-based support and custom development, while adding work in cloud engineering, data, AI, cybersecurity and clinical informatics. Most changes are happening by leaving vacancies unfilled and rewriting jobs, not through layoffs. The Bureau of Labor Statistics projects a 7% decline in computer-programmer jobs from 2025 to 2035.",
+              "strategic_implication": "IT leaders should build retraining paths from infrastructure and help-desk roles into cloud, security and informatics work, so they keep institutional knowledge while changing the mix of skills.",
+              "confidence": "high",
+              "tags": [
+                "health-it-workforce",
+                "ai",
+                "cloud",
+                "reskilling"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-10-29",
       "generated_at": "2026-10-29T12:42:12Z",
       "headline": "Today's Healthcare Insights",
@@ -16500,336 +17076,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-18",
-      "generated_at": "2026-09-18T11:12:46Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing highlights scrutiny of Medicare Advantage coding, a widening governance gap around agentic AI, and thin hospital operating margins. It also tracks Ascension's turnaround, Walmart's rural-care workforce pilot, new autism-diagnosis research activity, and clinician well-being signals across STAT, Healthcare Dive, and Fierce Healthcare.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT News RSS (main, health tech, politics)",
-          "Healthcare Dive RSS (news, payer, health IT)",
-          "Fierce Healthcare RSS (regulatory, providers, health tech, finance)",
-          "Targeted web search across CMS/HHS/FDA, hospital earnings, Medicare/Medicaid, digital health/AI, drug pricing, and payer/provider moves"
-        ],
-        "sources_successful": [
-          "STAT News RSS (main, health tech, politics)",
-          "Healthcare Dive RSS (news, payer, health IT)",
-          "Fierce Healthcare RSS (regulatory, providers, health tech, finance)"
-        ],
-        "sources_failed": [
-          "Direct search_web tool was unavailable in this run; RSS titles and descriptions supplied sufficient signal depth for synthesis"
-        ],
-        "run_notes": "Fresh-clone run for 2026-09-18. Signals were screened against the prior five editions to avoid repeating yesterday's topics unless the development was distinct. The edition uses current RSS titles and descriptions from the last approximately 24 hours; Gmail labels were supplementary and not required."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Payment oversight is moving from broad debate to specific enforcement evidence, while federal prevention infrastructure is being repopulated after a long vacancy period. Together, the developments point to more contested quality and risk-adjustment assumptions in 2027 planning.",
-          "items": [
-            {
-              "item_id": "2026-09-18-ma-upcoding-oig-audits",
-              "canonical_topic": "ma-upcoding-oig-audits",
-              "duplicate_group": "ma-upcoding-oig-audits",
-              "priority_score": 9,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/hhs-oig-audit-humana-unitedhealthcare-medicare-advantage-upcoding-overpayments/830632/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-17T13:01:49Z"
-                }
-              ],
-              "title": "HHS watchdog flags nearly $180M in Medicare Advantage overpayments from upcoding",
-              "summary": "Newly released HHS OIG audits of HumanaChoice and UnitedHealthcare of Wisconsin found that both Medicare Advantage plans frequently overstated members' health needs. Healthcare Dive reports that the audits identified almost $180 million in overpayments across two years.",
-              "strategic_implication": "The audits add concrete enforcement evidence to the broader debate over MA payment accuracy and may increase pressure for tighter encounter-data validation and recovery. Plans should recheck high-impact diagnosis categories, while providers and investors should treat risk-adjustment revenue assumptions as more exposed to audit and methodology changes.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "upcoding",
-                "oig",
-                "overpayments",
-                "risk-adjustment"
-              ]
-            },
-            {
-              "item_id": "2026-09-18-uspstf-reconstitution",
-              "canonical_topic": "uspstf-reconstitution",
-              "duplicate_group": "uspstf-reconstitution",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/17/kennedy-names-eight-new-members-uspstf-task-force/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-17T14:57:41Z"
-                },
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/kennedy-appoints-8-new-us-preventive-services-task-force-members",
-                  "source_type": "rss",
-                  "published_at": "2026-09-17T15:45:00Z"
-                }
-              ],
-              "title": "Kennedy names eight members to restart the U.S. Preventive Services Task Force",
-              "summary": "Health Secretary Robert F. Kennedy Jr. named eight new members to the U.S. Preventive Services Task Force after the influential panel had not met for more than a year. The appointments follow months of vacancies and come after the administration canceled a prior task-force meeting.",
-              "strategic_implication": "A reconstituted USPSTF can eventually alter the evidence basis for preventive-service recommendations that influence coverage, quality measures, and clinical workflows. Payers, provider guideline committees, and employers should watch the panel's first agenda and distinguish interim political signals from formal recommendation changes.",
-              "confidence": "high",
-              "tags": [
-                "uspstf",
-                "preventive-care",
-                "hhs",
-                "clinical-guidelines",
-                "coverage-policy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "AI adoption is advancing across clinical and consumer settings faster than governance practices are maturing. The practical risk is shifting from experimentation alone to deployment controls, especially for older adults and workflows that can affect patient safety.",
-          "items": [
-            {
-              "item_id": "2026-09-18-agentic-ai-governance-gap",
-              "canonical_topic": "agentic-ai-governance-gap",
-              "duplicate_group": "agentic-ai-governance-gap",
-              "priority_score": 9,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/healthcares-agentic-ai-boom-is-outpacing-security-governance-report/830697/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-17T18:45:00Z"
-                }
-              ],
-              "title": "Healthcare's agentic AI rollout is outpacing security and governance controls",
-              "summary": "A report highlighted by Healthcare Dive says healthcare organizations are moving quickly toward agentic AI while security and governance practices lag behind. Imprivata's chief medical and growth officer warned that patient safety could be at risk if tools are deployed without appropriate guardrails.",
-              "strategic_implication": "The next AI control point is operational autonomy, not model novelty. Health systems should require defined approval boundaries, audit trails, human escalation, and rollback procedures before agentic tools can act across scheduling, documentation, triage, or clinical workflows.",
-              "confidence": "medium",
-              "tags": [
-                "agentic-ai",
-                "healthcare-ai",
-                "patient-safety",
-                "cybersecurity",
-                "governance"
-              ]
-            },
-            {
-              "item_id": "2026-09-18-ai-older-adult-care-scrutiny",
-              "canonical_topic": "ai-older-adult-care-scrutiny",
-              "duplicate_group": "ai-older-adult-care-scrutiny",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-18T08:30:00Z"
-                }
-              ],
-              "title": "Geriatrician urges careful scrutiny as AI enters older-adult care decisions",
-              "summary": "A UCSF geriatrician told STAT that AI could offer benefits for older adults but deserves careful scrutiny when used to inform care decisions. The discussion centers on both the potential utility of AI and the risks of applying it to a population with complex needs and vulnerabilities.",
-              "strategic_implication": "AI governance should include population-specific validation rather than assuming that a general deployment is safe for every age group. Geriatrics leaders should define when AI outputs require caregiver involvement, clinician review, or a second source of evidence before they influence care.",
-              "confidence": "medium",
-              "tags": [
-                "artificial-intelligence",
-                "geriatrics",
-                "clinical-decision-support",
-                "patient-safety"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "The market is separating operators that are restoring margin through focused execution from those still absorbing volume and charity-care pressure. Recent product and regulatory signals also show continued investment in hybrid retail and specialty-care models.",
-          "items": [
-            {
-              "item_id": "2026-09-18-ascension-operating-loss-reduction",
-              "canonical_topic": "ascension-operating-loss-reduction",
-              "duplicate_group": "ascension-operating-loss-reduction",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/ascension-trims-operating-losses-491m-120m-fy2026",
-                  "source_type": "rss",
-                  "published_at": "2026-09-17T18:00:00Z"
-                }
-              ],
-              "title": "Ascension narrows fiscal 2026 operating loss from $491M to $120M",
-              "summary": "Ascension reported that its fiscal 2026 operating loss narrowed to $120 million from $491 million. Leadership attributed the improvement to a tighter acute-care footprint, targeted capacity investments, and increased efficiency.",
-              "strategic_implication": "The result is a useful benchmark for systems attempting to restore performance without abandoning strategic capacity. Boards should separate repeatable operating improvements from one-time footprint actions and track whether targeted investments are improving throughput, payer performance, and service-line contribution.",
-              "confidence": "high",
-              "tags": [
-                "hospital-finance",
-                "operating-margin",
-                "health-systems",
-                "capacity-management"
-              ]
-            },
-            {
-              "item_id": "2026-09-18-hospital-margin-pressure-july",
-              "canonical_topic": "hospital-margin-pressure-july",
-              "duplicate_group": "hospital-margin-pressure-july",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/hospital-operating-margins-dive-july-amid-soft-outpatient-volumes-charity-care-pressures",
-                  "source_type": "rss",
-                  "published_at": "2026-09-17T13:57:00Z"
-                }
-              ],
-              "title": "Hospital operating margins fell in July as outpatient volume softened",
-              "summary": "Kaufman Hall's latest monthly benchmark showed a calendar-year-to-date hospital operating-margin index of 1.4% and a single-month July index of 1.1%. Fierce Healthcare said softer outpatient volumes and charity-care pressure contributed to the decline.",
-              "strategic_implication": "Thin system-wide margins leave little room for forecast error in outpatient growth or uncompensated-care assumptions. CFOs should stress-test July-like volume and charity-care conditions against labor, debt-service, and capital plans rather than relying on year-to-date averages that can mask a deteriorating run rate.",
-              "confidence": "high",
-              "tags": [
-                "hospital-margins",
-                "outpatient-care",
-                "charity-care",
-                "health-system-finance"
-              ]
-            },
-            {
-              "item_id": "2026-09-18-sanfilippo-gene-therapy-approval",
-              "canonical_topic": "sanfilippo-gene-therapy-approval",
-              "duplicate_group": "sanfilippo-gene-therapy-approval",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/17/sanfilippo-syndrome-treatment-ultragenyx-approval/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-17T19:55:46Z"
-                }
-              ],
-              "title": "FDA approves Ultragenyx gene therapy for ultra-rare Sanfilippo syndrome",
-              "summary": "The FDA approved a new gene therapy for Sanfilippo syndrome type A, an ultra-rare disease sometimes known as childhood Alzheimer's. STAT described the approval as a new treatment option for a condition with severe pediatric consequences.",
-              "strategic_implication": "Ultra-rare approvals continue to test how health systems, payers, and manufacturers manage one-time or high-cost therapies with small evidence bases. Specialty pharmacies and pediatric centers should prepare for referral, genomic confirmation, outcomes tracking, and coverage coordination requirements that can arrive before operational playbooks are mature.",
-              "confidence": "high",
-              "tags": [
-                "gene-therapy",
-                "rare-disease",
-                "fda",
-                "pediatrics",
-                "specialty-pharmacy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Providers are testing retail and workforce models that extend access without recreating a full clinic footprint. The strategic question is whether these pilots can improve rural navigation and preventive touchpoints while preserving clinical accountability.",
-          "items": [
-            {
-              "item_id": "2026-09-18-walmart-rural-health-ambassador-pilot",
-              "canonical_topic": "walmart-rural-health-ambassador-pilot",
-              "duplicate_group": "walmart-rural-health-ambassador-pilot",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/retail/walmart-launch-six-month-health-ambassador-pilot-program-rural-us-stores",
-                  "source_type": "rss",
-                  "published_at": "2026-09-17T17:25:00Z"
-                }
-              ],
-              "title": "Walmart launches a six-month health ambassador pilot in rural stores",
-              "summary": "Walmart is testing Health Ambassador Associate roles in rural U.S. stores, with trained pharmacists serving in the positions. The pilot is designed to add a health-navigation and education layer within the retail footprint rather than opening a new traditional clinic model.",
-              "strategic_implication": "Retail access experiments are becoming a competitive channel for patient navigation, prevention, and referral capture in underserved markets. Health systems should assess partnership or referral strategies around these sites while monitoring whether pharmacist-led ambassadors create measurable follow-through into primary and specialty care.",
-              "confidence": "high",
-              "tags": [
-                "rural-health",
-                "retail-health",
-                "pharmacists",
-                "care-navigation",
-                "access"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "The workforce signal is less about absolute staffing counts than about the burden carried by employed clinicians and the direction of diagnostic practice. Leaders should treat well-being and changing clinical definitions as operating variables that affect retention, demand, and measurement.",
-          "items": [
-            {
-              "item_id": "2026-09-18-employed-physician-wellbeing-gap",
-              "canonical_topic": "employed-physician-wellbeing-gap",
-              "duplicate_group": "employed-physician-wellbeing-gap",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/mental-health-gap-widens-between-employed-and-independent-physicians-surve/830670/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-17T15:15:46Z"
-                }
-              ],
-              "title": "Employed physicians report worse well-being than independent peers",
-              "summary": "A survey reported by Healthcare Dive found a mental-health and well-being gap between employed and independent physicians, with workload and administrative burden driving distress among employed doctors. The finding points to employment-model differences rather than a uniform physician experience.",
-              "strategic_implication": "Retention programs that focus only on individual resilience will miss the structural drivers of distress. Medical groups should measure administrative time, inbox load, schedule control, and staffing adequacy by employment setting, then tie leader incentives to reducing avoidable burden.",
-              "confidence": "medium",
-              "tags": [
-                "physician-wellbeing",
-                "workforce",
-                "administrative-burden",
-                "medical-groups"
-              ]
-            },
-            {
-              "item_id": "2026-09-18-autism-diagnosis-research-effort",
-              "canonical_topic": "autism-diagnosis-research-effort",
-              "duplicate_group": "autism-diagnosis-research-effort",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/17/kennedy-announces-new-research-fund-to-improve-autism-diagnoses/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-17T22:09:30Z"
-                }
-              ],
-              "title": "Kennedy announces a new effort to speed and improve autism diagnoses",
-              "summary": "Health Secretary Robert F. Kennedy Jr. announced a new research effort intended to improve autism diagnoses, arguing that the current diagnostic model is outdated. The initiative is framed around making diagnosis faster and more accurate.",
-              "strategic_implication": "Any change that increases diagnostic throughput will affect developmental-pediatrics demand, referral queues, school services, and behavioral-health capacity. Provider organizations should monitor the research design and avoid assuming that faster identification will reduce near-term workload; it may initially increase demand for evaluation and early-intervention services.",
-              "confidence": "medium",
-              "tags": [
-                "autism",
-                "diagnosis",
-                "pediatrics",
-                "behavioral-health",
-                "research"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-10-29T12:42:12Z"
+  "last_updated": "2026-10-30T12:42:11Z"
 }

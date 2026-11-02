@@ -1,0 +1,410 @@
+{
+  "archived_at": "2026-11-02T14:30:00Z",
+  "note": "Editions trimmed from latest-insights.json by the 30-edition cap.",
+  "editions": [
+    {
+      "edition_date": "2026-09-21",
+      "generated_at": "2026-09-21T12:42:51Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing leads with Medicaid drug-pricing execution reaching every state under the GENEROUS model, then turns to claims-clearinghouse concentration that still puts provider cash flow at risk, continued provider retreat from owning insurance risk, and two clinical-practice shifts arriving without any policy trigger. This is a same-day rebuild of the 2026-09-21 edition that replaces the earlier automated run, drawing on STAT News, Healthcare Dive, and MedCity News RSS plus primary CMS and wire verification of the drug-pricing and vaccine items.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels: InsightsSources/Healthcare Brew, InsightsSources/Healthcare Dive, InsightsSources/Hospitalogy, InsightsSources/Modern Healthcare",
+          "STAT News RSS (main, health, business, health tech)",
+          "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Modern Healthcare RSS",
+          "Targeted web verification via CMS.gov, Reuters, Washington Post, and KFF"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main, health, business, health tech)",
+          "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Targeted web verification via CMS.gov, Reuters, Washington Post, and KFF"
+        ],
+        "sources_failed": [
+          "Gmail InsightsSources/* labels returned zero messages again; the connected mailbox is not the one holding those labels",
+          "Modern Healthcare RSS returned HTTP 403",
+          "Healthcare Dive payer topic feed returned HTTP 404"
+        ],
+        "run_notes": "Manual same-day rebuild replacing the 07:14 ET automated edition for 2026-09-21 rather than appending a duplicate date. All twelve items were screened against the prior 2026-09-21 run and the preceding ten editions; overlapping topics from the earlier run (NCQA ratings, supplemental Medicaid funds, medical debt, Novo strategy, CMS ACCESS, radiopharma merger, Alkermes, Summa, broadband telehealth, clinical-research AI) were dropped in favor of unused signals. The USPSTF item is retained under the existing uspstf-reconstitution duplicate group because it adds panel-composition and governance detail beyond the 2026-09-18 appointment coverage. Sponsored Healthcare Dive placements were excluded. GENEROUS and vaccine-dose items were verified against CMS primary sources and wire reporting because the STAT originals are paywalled."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal drug-pricing policy moved from announcement to near-universal state execution, while vaccine policy and preventive-services governance continue to generate downstream coverage and clinical-protocol risk. The common thread is that headline commitments are outrunning the operational detail organizations need to plan against.",
+          "items": [
+            {
+              "item_id": "2026-09-21-generous-model-state-participation",
+              "canonical_topic": "generous-model-state-participation",
+              "duplicate_group": "generous-model-state-participation",
+              "priority_score": 9,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS Newsroom",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-announces-participants-landmark-medicaid-drug-payment-model-bring-down-drug-costs-most",
+                  "source_type": "web",
+                  "published_at": "2026-09-18T00:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/18/trump-touts-state-participation-generous-medicaid-drug-discount-program/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-18T20:22:36Z"
+                },
+                {
+                  "source": "KFF",
+                  "url": "https://www.kff.org/medicaid/a-look-at-the-generous-model-and-factors-that-could-impact-medicaid-drug-costs/",
+                  "source_type": "web",
+                  "published_at": "2026-05-08T00:00:00Z"
+                }
+              ],
+              "title": "All 50 states apply to Medicaid's GENEROUS most-favored-nation drug model as CMS projects $64.3B in savings",
+              "summary": "CMS announced that all 50 states, the District of Columbia, and Puerto Rico have applied to the GENEROUS model, with 40 states and Puerto Rico already signed; remaining states have until September 30, 2026. The model pegs Medicaid net prices for brand drugs to the second-lowest net price across eight comparison countries, delivered through CMS-negotiated supplemental rebates, and CMS estimates $64.3 billion in savings over ten years while sharing in rebates through a reduced federal match.",
+              "strategic_implication": "The binding operational change is not price but coverage: participating states must adopt uniform, CMS-negotiated utilization criteria including prior authorization and step therapy across fee-for-service and managed care. Medicaid plans, PBM partners, and health systems should map which drugs their state has opted into and model the formulary, appeals, and pharmacy-workflow changes before the September 30 signing deadline.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "drug-pricing",
+                "most-favored-nation",
+                "cms-innovation-center",
+                "formulary"
+              ]
+            },
+            {
+              "item_id": "2026-09-21-childhood-vaccine-dose-splitting-demand",
+              "canonical_topic": "childhood-vaccine-dose-splitting-demand",
+              "duplicate_group": "childhood-vaccine-dose-splitting-demand",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/21/health-news-trump-newest-vaccine-demands-repeat-old-misinformation/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T12:03:49Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/trump-says-he-will-demand-some-childhood-vaccines-be-split-into-five-shots-2026-09-18/",
+                  "source_type": "web",
+                  "published_at": "2026-09-18T00:00:00Z"
+                },
+                {
+                  "source": "Washington Post",
+                  "url": "https://www.washingtonpost.com/health/2026/09/18/trump-says-he-will-demand-drug-companies-split-up-vaccines-into-more-doses/",
+                  "source_type": "web",
+                  "published_at": "2026-09-19T00:00:00Z"
+                }
+              ],
+              "title": "President says he will demand manufacturers split childhood vaccines into five doses six months apart",
+              "summary": "Speaking at the White House, President Trump said his administration will demand that manufacturers reformulate certain childhood vaccines into five roughly 20% doses given at six-month intervals, asserting this would sharply reduce autism rates, a claim repeatedly refuted by scientific evidence. He did not identify which vaccines are targeted. The statement follows an August executive order narrowing the childhood schedule to 11 immunizations and directing separate measles, mumps, and rubella products that are not currently licensed in the United States.",
+              "strategic_implication": "Even without a regulatory vehicle, this signals sustained pressure on immunization schedules that pediatric practices, school-entry compliance programs, and immunization registries will absorb first. Systems should prepare clinician talking points and monitor state-level schedule divergence, since a five-dose regimen would multiply visits, cold-chain volume, and documented refusal encounters well before any product change is feasible.",
+              "confidence": "high",
+              "tags": [
+                "vaccines",
+                "immunization-schedule",
+                "fda",
+                "pediatrics",
+                "public-health-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-21-uspstf-panel-completion",
+              "canonical_topic": "uspstf-panel-completion",
+              "duplicate_group": "uspstf-reconstitution",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/rfk-jr-uspstf-medical/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-20T14:33:00Z"
+                }
+              ],
+              "title": "USPSTF reaches a full 16-seat panel amid continuing disputes over its direction",
+              "summary": "Follow-on reporting details that Secretary Kennedy's eight new appointments complete the 16-seat U.S. Preventive Services Task Force, closing months of vacancies during which the panel did not meet, while tension over its leadership and independence persists. This extends the appointment news covered in the September 18 edition with the composition and governance specifics.",
+              "strategic_implication": "Because ACA preventive-services coverage without cost sharing is tied to task-force recommendations, the panel's restored quorum reopens a live pathway for changes to screening mandates. Payers and health systems should track the first meeting agenda as the leading indicator for benefit-design and screening-volume shifts.",
+              "confidence": "medium",
+              "tags": [
+                "uspstf",
+                "preventive-services",
+                "aca",
+                "coverage-mandates"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Two structural failures dominate today's technology signal, and neither requires new science to fix. Claims infrastructure remains concentrated enough to halt cash flow nationally, and trial participation still fails on discoverability rather than eligibility.",
+          "items": [
+            {
+              "item_id": "2026-09-21-clearinghouse-redundancy-gap",
+              "canonical_topic": "clearinghouse-redundancy-gap",
+              "duplicate_group": "clearinghouse-redundancy-gap",
+              "priority_score": 8,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/two-years-after-the-change-healthcare-cyberattack-healthcare-still-has-a-clearinghouse-redundancy-problem/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-20T13:45:00Z"
+                }
+              ],
+              "title": "Two years after Change Healthcare, many payers still run on a single clearinghouse",
+              "summary": "An analysis marking two years since the February 2024 Change Healthcare attack argues the event was as much an infrastructure failure as a cybersecurity one. Senate Finance Committee material described Change as the nation's largest clearinghouse, processing roughly $1.5 trillion in claims annually, and Chairman Ron Wyden noted that exclusive contracts prevented more than a third of providers from switching during the outage. The piece identifies numerous Blue Cross plans plus Independence Blue Cross, Humana, Amerigroup, Texas Children's Health Plan, and Utah Medicaid as still operating with a single clearinghouse point of failure.",
+              "strategic_implication": "Revenue-cycle continuity is a payer-dependency problem, not only an internal IT problem. Systems should inventory which payers accept only one clearinghouse, quantify the share of monthly cash at risk behind those single paths, and press for secondary connectivity or contract language permitting rerouting during an outage.",
+              "confidence": "medium",
+              "tags": [
+                "cyber-resilience",
+                "claims-clearinghouse",
+                "revenue-cycle",
+                "business-continuity",
+                "health-it"
+              ]
+            },
+            {
+              "item_id": "2026-09-21-clinical-trial-discoverability-gap",
+              "canonical_topic": "clinical-trial-discoverability-gap",
+              "duplicate_group": "clinical-trial-discoverability-gap",
+              "priority_score": 5,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 3",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/the-trials-were-always-there-patients-just-couldnt-find-them/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-20T13:17:00Z"
+                }
+              ],
+              "title": "Commentary frames low trial enrollment as a findability problem, not a supply problem",
+              "summary": "A MedCity News commentary argues that eligible patients routinely fail to reach trials that already exist and for which they qualify, describing this as a structural matching and navigation failure that requires no new science, regulation, or data to address. The framing is opinion rather than new study evidence.",
+              "strategic_implication": "For systems with research operations, this points toward embedding trial matching into referral and point-of-care workflows rather than funding recruitment campaigns. The near-term test is whether matching tools measurably raise screen-to-enroll conversion, not whether they surface more candidates.",
+              "confidence": "low",
+              "tags": [
+                "clinical-trials",
+                "patient-matching",
+                "research-operations",
+                "care-navigation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital is flowing to employer-benefit intermediaries and precision immunology, but public-market reception stayed cautious. Investment in physical research capacity also continues despite broader R&D cost pressure.",
+          "items": [
+            {
+              "item_id": "2026-09-21-angle-health-600m-round",
+              "canonical_topic": "angle-health-600m-round",
+              "duplicate_group": "angle-health-600m-round",
+              "priority_score": 7,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/angle-health-raises-600m-to-grow-employer-health-benefits-platform/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-20T21:48:17Z"
+                }
+              ],
+              "title": "Angle Health raises $600M at a $2.7B valuation for employer benefits administration",
+              "summary": "Angle Health announced $600 million at a $2.7 billion valuation, structured as $200 million in Series C financing plus a $400 million tender offer, led by Vitruvian Partners with Town Hall Ventures, Blumberg Capital, Portage Ventures, PruVen Capital, and Y Combinator. The company serves more than 5,000 employers across 47 states with customizable plans and app-based care navigation, and has raised $334 million in primary equity to date. Roughly 30% of businesses with fewer than 50 employees report health costs are worsening their position, per a Morgan Health survey.",
+              "strategic_implication": "Small and mid-sized employer coverage is consolidating around technology-led intermediaries that own navigation and steerage, following the ICHRA-platform funding pattern seen earlier this month. Providers should expect more narrow, condition-specific steering logic from this segment and negotiate accordingly.",
+              "confidence": "high",
+              "tags": [
+                "employer-benefits",
+                "digital-health-funding",
+                "care-navigation",
+                "small-business-coverage"
+              ]
+            },
+            {
+              "item_id": "2026-09-21-electra-therapeutics-ipo",
+              "canonical_topic": "electra-therapeutics-ipo",
+              "duplicate_group": "electra-therapeutics-ipo",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/electra-ipo-sirp-shlh-immunology-inflammation-precision-medicine-etra/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-20T22:22:27Z"
+                }
+              ],
+              "title": "Electra Therapeutics lands a $350M upsized IPO but closes below offer price",
+              "summary": "Electra Therapeutics raised $350 million in an upsized Nasdaq IPO, pricing more than 23.3 million shares at $15 and trading under ETRA, though shares closed the first session at $13.25, nearly 12% below the offer. Lead candidate ipsoprubart, a pan-SIRP antibody, targets secondary hemophagocytic lymphohistiocytosis, where a Phase 1b in malignancy-associated HLH reported 100% overall survival and 100% response at eight weeks; a Phase 2/3 in treatment-naive patients expects to complete enrollment in the second half of 2027. Marea Therapeutics and Sensorion also signaled US listings.",
+              "strategic_implication": "Upsized raises alongside weak first-day trading suggest a reopening but price-sensitive biotech window. For academic and referral centers, a targeted sHLH therapy would shift a currently off-label, steroid-anchored pathway and warrants early attention from hematology, ICU, and pharmacy formulary committees.",
+              "confidence": "high",
+              "tags": [
+                "biotech-ipo",
+                "immunology",
+                "rare-disease",
+                "capital-markets"
+              ]
+            },
+            {
+              "item_id": "2026-09-21-roche-boston-research-expansion",
+              "canonical_topic": "roche-boston-research-expansion",
+              "duplicate_group": "roche-boston-research-expansion",
+              "priority_score": 4,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/18/biotech-news-roche-expands-it-boston-footprint-with-research-center/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-18T13:42:29Z"
+                }
+              ],
+              "title": "Roche adds a Boston research center, deepening its US discovery footprint",
+              "summary": "STAT reported that Roche is expanding its Boston presence with a new research center, alongside other biotech developments including a gene therapy approval for Sanfilippo syndrome. Detailed scope, headcount, and timing were not available in the accessible reporting.",
+              "strategic_implication": "Continued large-pharma investment in Boston research capacity sustains competition for scientific talent and academic partnership capacity in the region. Systems and universities negotiating research collaborations should expect tighter labor markets for translational staff.",
+              "confidence": "medium",
+              "tags": [
+                "pharma-rd",
+                "boston-biotech",
+                "site-investment"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Health systems keep shedding insurance risk to stabilize margins, while payers are competing on administrative friction. Both trends change the operating burden inside provider organizations more than they change clinical care.",
+          "items": [
+            {
+              "item_id": "2026-09-21-ascension-mercy-care-divestiture",
+              "canonical_topic": "ascension-mercy-care-divestiture",
+              "duplicate_group": "ascension-mercy-care-divestiture",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ascension-sells-ownership-in-arizona-medicaid-plan-to-aetna/830827/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-18T20:49:00Z"
+                }
+              ],
+              "title": "Ascension sells its Mercy Care stake to Aetna, shedding Medicaid insurance risk",
+              "summary": "Ascension is selling its ownership interest in Mercy Care, an Arizona Medicaid and dual-eligible insurer covering about 404,000 members, to CVS Health's Aetna, which has administered the plan since 2002. Terms were undisclosed and closing awaits regulatory approval. Mercy Care reported $34 million in income last year, and its dual-eligible special needs business is typically more profitable than standard Medicare Advantage. The sale continues a portfolio reduction that included exiting the Texas ACA market and selling a Network Health stake, alongside the AmSurg acquisition; Ascension posted $1.5 billion in FY2026 net income, up from $918 million.",
+              "strategic_implication": "The provider-sponsored plan retreat is now a consistent pattern rather than isolated exits, and it transfers dual-eligible care management leverage back to national payers. Systems still holding plan assets should decide deliberately whether they are buying population-health capability or simply warehousing actuarial risk they cannot price.",
+              "confidence": "high",
+              "tags": [
+                "provider-sponsored-plans",
+                "medicaid-managed-care",
+                "dual-eligibles",
+                "divestiture",
+                "ascension"
+              ]
+            },
+            {
+              "item_id": "2026-09-21-aetna-cancer-prior-auth-bundling",
+              "canonical_topic": "aetna-cancer-prior-auth-bundling",
+              "duplicate_group": "aetna-cancer-prior-auth-bundling",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cvs-aetna-cancer-prior-authorization-bundles-expansion/830700/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-17T18:40:06Z"
+                }
+              ],
+              "title": "Aetna bundles cancer prior authorizations into a single upfront request",
+              "summary": "CVS Health's Aetna, covering 26 million members, is combining separate preapprovals for chemotherapy, immunotherapy, radiation oncology, and related imaging such as MRI and CT into one upfront request. Providers previously submitted an average of four prior authorizations per member with cancer. The bundle became available to eligible Medicaid members on September 2 in Oklahoma, Illinois, Maryland, New Jersey, Virginia, Florida, Kentucky, and West Virginia using a designated submission portal, with Medicare and commercial expansion planned for the first half of 2027. It follows a pilot in lung, breast, and prostate cancer that covered nearly a quarter of eligible members.",
+              "strategic_implication": "This is a concrete administrative-burden reduction that only pays off if provider intake workflows are rebuilt around a single consolidated submission. Oncology service lines in the eight launch states should reconfigure authorization staffing and time-to-treatment tracking now to capture the benefit before the 2027 commercial expansion.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "oncology",
+                "payer-provider",
+                "administrative-burden",
+                "medicaid"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Frontline clinical practice is absorbing two changes with no reimbursement or policy trigger behind them: an unregulated opioid-like product driving real withdrawal volume, and a religious-directive shift that alters longstanding transfusion consent assumptions.",
+          "items": [
+            {
+              "item_id": "2026-09-21-kratom-7oh-withdrawal-surge",
+              "canonical_topic": "kratom-7oh-withdrawal-surge",
+              "duplicate_group": "kratom-7oh-withdrawal-surge",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/21/kratom-withdrawal-addiction-centers-report-surge/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T08:30:00Z"
+                }
+              ],
+              "title": "Addiction programs report sharp growth in kratom and 7-OH withdrawal cases",
+              "summary": "At Boulder Care, patients reporting kratom use rose from 3% of new patients in September 2025 to 8% in July 2026 and 14% in August 2026, and nearly a third of new patients starting buprenorphine last month reported current kratom or 7-OH use. Two Recovery Centers of America clinics in Massachusetts went from roughly one kratom-related admission per week last year to 10 to 20 patients weekly, with withdrawal now managed like fentanyl, oxycodone, or heroin rather than with comfort medications. 7-hydroxymitragynine acts directly on opioid receptors, is sold in powders, pills, gummies, and shots, and products have contained undisclosed additives.",
+              "strategic_implication": "Demand is arriving through a product category that is retail-available and largely outside clinical surveillance, so intake screening, EHR substance-use fields, and buprenorphine capacity planning are all mis-specified for it. Behavioral health programs should add explicit kratom and 7-OH screening questions and revise withdrawal protocols to full opioid severity assumptions.",
+              "confidence": "high",
+              "tags": [
+                "substance-use-disorder",
+                "kratom",
+                "7-oh",
+                "behavioral-health",
+                "clinical-protocols"
+              ]
+            },
+            {
+              "item_id": "2026-09-21-jehovahs-witnesses-blood-policy-shift",
+              "canonical_topic": "jehovahs-witnesses-blood-policy-shift",
+              "duplicate_group": "jehovahs-witnesses-blood-policy-shift",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/19/jehovahs-witnesses-blood-derived-products-transfusions/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-19T14:13:11Z"
+                }
+              ],
+              "title": "Jehovah's Witnesses now permit blood-derived products while maintaining the whole-blood ban",
+              "summary": "The Jehovah's Witnesses have partly eased a longstanding prohibition on medical use of donated blood, permitting blood-derived products while retaining the prohibition on whole-blood transfusion, according to STAT reporting.",
+              "strategic_implication": "Bloodless-medicine programs, surgical consent scripts, and patient-blood-management protocols were built on the prior, broader prohibition and now carry outdated assumptions. Transfusion services, surgery, and obstetrics should update consent language and clinician guidance so individual patient preferences are elicited rather than presumed.",
+              "confidence": "medium",
+              "tags": [
+                "transfusion-medicine",
+                "patient-blood-management",
+                "informed-consent",
+                "surgery",
+                "religious-directives"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

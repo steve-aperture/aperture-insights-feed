@@ -1,0 +1,490 @@
+{
+  "archived_at": "2026-11-03T13:37:12Z",
+  "note": "Editions trimmed from latest-insights.json by the 30-edition cap.",
+  "editions": [
+    {
+      "edition_date": "2026-09-22",
+      "generated_at": "2026-09-22T12:38:24Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing is dominated by contested process in federal health governance: medical groups are suing over Medicaid work requirements, political appointees may be inserted into NIH grant approval, and the new federal autism committee chair has financial ties to the treatment he champions. The forward-looking policy signal is that the architect of this year's Medicaid cuts is now pointing at site-neutral payment and 340B. Market and operating news is more constructive but capital-intensive: Lilly's targeted breast-cancer approval, a $1.65B radiopharmaceutical consolidation, a Mayo–Thermo Fisher multi-omics venture, measurable documentation-AI gains at Intermountain, and the court-approved wind-down of CVS's Omnicare.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web verification for autism committee, Medicaid policy agenda, Ohio race, Telix/ITM, Intermountain, Array"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Primary-source and secondary verification via Reuters, Paragon Health Institute testimony, Array Behavioral Care press release, ABC 6 Columbus"
+        ],
+        "sources_failed": [
+          "Gmail InsightsSources/* label queries returned zero messages (connected mailbox is not the one holding these labels)",
+          "Fierce Healthcare RSS returned HTTP 403",
+          "Hospitalogy RSS returned HTTP 403; Becker's RSS returned HTTP 404; Modern Healthcare RSS remains unavailable"
+        ],
+        "run_notes": "Fresh clone performed before drafting. The 7:07 AM ET automated run had already written a 7-item 2026-09-22 edition and left the feed at 31 editions. Rather than append a duplicate date, this run rebuilt 2026-09-22 in place: the seven automated items were retained and verified, six additional items were added from the 2026-09-21 to 2026-09-22 window, and bucket syntheses and the summary note were rewritten for the fuller set. All new items were screened against the prior ten editions; repeated Novo Nordisk, kratom/7-OH, USPSTF, and vaccine-demand threads were excluded absent a materially new development. Feed trimmed and verified at 30 editions with no duplicate dates."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal health governance and coverage policy are both being contested on process rather than merits: litigation over Medicaid work requirements, political appointees inserted into NIH grant approval, and a new autism committee chair with financial ties to the treatment he promotes. Underneath that, the architect of this year's Medicaid reductions is already naming site-neutral payment and 340B as the next targets, and Ohio's governor race will test whether pandemic-era public-health authority is still a political liability.",
+          "items": [
+            {
+              "item_id": "2026-09-22-medicaid-work-requirements-lawsuit",
+              "canonical_topic": "medicaid-work-requirements-lawsuit",
+              "duplicate_group": "medicaid-work-requirements-lawsuit",
+              "priority_score": 9,
+              "primary_source": "Stateline",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Stateline",
+                  "url": "https://stateline.org/2026/09/21/medical-groups-patients-sue-trump-administration-over-medicaid-work-requirements/",
+                  "source_type": "web",
+                  "published_at": "2026-09-21T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/medical-groups-city-columbus-sue-challenge-final-medicaid-work-requirements-rule",
+                  "source_type": "web",
+                  "published_at": "2026-09-21T00:00:00Z"
+                }
+              ],
+              "title": "Medical groups and Medicaid enrollees sue to block new work-reporting requirements",
+              "summary": "Medicaid enrollees from five states and leading medical organizations filed suit against the administration's new work-requirements rule. The rule applies to adults ages 19–64 and generally requires 80 hours a month of work, education, community service, or related activity to maintain coverage. The case adds another legal challenge to a policy that states are expected to operationalize through eligibility and reporting systems.",
+              "strategic_implication": "States and managed-care organizations should model both implementation and injunction scenarios now: eligibility churn, call-center demand, provider bad debt, and uncompensated care can move before the merits are resolved.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "coverage-loss",
+                "litigation",
+                "eligibility"
+              ]
+            },
+            {
+              "item_id": "2026-09-22-nih-political-grant-review-board",
+              "canonical_topic": "nih-political-grant-review-board",
+              "duplicate_group": "nih-political-grant-review-board",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/21/trump-plan-for-commission-to-review-nih-grants-push-back/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T22:17:21Z"
+                }
+              ],
+              "title": "Reported NIH grant commission would put political appointees in the approval chain",
+              "summary": "The administration is reportedly drafting an executive order creating a board of political appointees to sign off on NIH grants. Reporting says OMB Director Russell Vought and NIH Director Jay Bhattacharya could sit on the board and that unanimous decisions may be required. Senators and research organizations pushed back, warning that the structure could politicize or delay merit-based peer review.",
+              "strategic_implication": "Academic medical centers, research hospitals, and life-science partners should stress-test grant-dependent programs, review timing assumptions, and preserve documentation for peer-review and compliance decisions if approval pathways change.",
+              "confidence": "high",
+              "tags": [
+                "nih",
+                "research-funding",
+                "peer-review",
+                "health-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-22-autism-committee-chair-conflicts",
+              "canonical_topic": "autism-committee-chair-conflicts",
+              "duplicate_group": "autism-committee-chair-conflicts",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/22/health-news-federal-autism-committee-head-has-financial-ties-to-leucovorin/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T11:54:41Z"
+                },
+                {
+                  "source": "Reuters",
+                  "url": "https://www.reuters.com/world/kennedy-names-new-chair-us-autism-advisory-panel-sources-say-2026-09-18/",
+                  "source_type": "web",
+                  "published_at": "2026-09-18T00:00:00Z"
+                }
+              ],
+              "title": "New federal autism committee chair has financial ties to the treatment he promotes",
+              "summary": "Dr. John Gaitanis, the pediatric neurologist installed last month as director of NIH's child health institute, has been named chair of the Interagency Autism Coordinating Committee, which helps steer roughly $2 billion in federal autism spending. Reporting ties him financially to leucovorin, an autism treatment he has publicly promoted, and notes prior paid work as a medical expert in vaccine-injury cases. He replaces Dr. Sylvia Fogel, who had just shepherded a new strategic plan through the committee.",
+              "strategic_implication": "Health systems and academic centers with autism service lines should expect federal research and guidance priorities to tilt toward leucovorin and related interventions, and should document their own evidence thresholds now so clinical policy does not move faster than the data.",
+              "confidence": "high",
+              "tags": [
+                "autism",
+                "nih",
+                "conflict-of-interest",
+                "research-priorities",
+                "hhs"
+              ]
+            },
+            {
+              "item_id": "2026-09-22-medicaid-cuts-next-policy-target",
+              "canonical_topic": "medicaid-cuts-next-policy-target",
+              "duplicate_group": "medicaid-cuts-next-policy-target",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/22/brian-blase-paragon-health-institute-gop-aca-medicaid-reforms/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T08:30:00Z"
+                },
+                {
+                  "source": "Paragon Health Institute",
+                  "url": "https://paragoninstitute.org/private-health/testimony-of-brian-blase-before-the-united-states-house-judiciary-committee-subcommittee-on-the-administrative-state-regulatory-reform-and-antitrust-examining-healthcare-markets-fraud-a/",
+                  "source_type": "web",
+                  "published_at": "2026-09-14T00:00:00Z"
+                }
+              ],
+              "title": "Architect of the Medicaid cuts signals hospital payment policy is the next target",
+              "summary": "Paragon Health Institute president Brian Blase, an influential voice behind the roughly $1 trillion in ten-year Medicaid reductions in the One Big Beautiful Bill Act, is standing by those cuts as providers reorganize care around them; CBO preliminary estimates put coverage loss near 7 million people. His recent congressional testimony lays out the follow-on agenda: broad site-neutral payment, repeal of restrictions on physician-owned hospitals, state certificate-of-need repeal, 340B redesign, and tighter ACA and Medicaid enrollment verification.",
+              "strategic_implication": "Treat site-neutral payment and 340B redesign as live planning scenarios rather than think-tank talk. Hospital finance teams should quantify outpatient-department and 340B margin exposure this fiscal year so advocacy and contingency plans are built on real numbers.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "site-neutral",
+                "340b",
+                "certificate-of-need",
+                "hospital-finance"
+              ]
+            },
+            {
+              "item_id": "2026-09-22-ohio-governor-health-politics",
+              "canonical_topic": "ohio-governor-health-politics",
+              "duplicate_group": "ohio-governor-health-politics",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/22/ohio-governor-election-health-care-policy-acton-ramaswamy/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T08:30:00Z"
+                },
+                {
+                  "source": "ABC 6 Columbus",
+                  "url": "https://abc6onyourside.com/news/election/healthcare-hot-topic-ohio-governors-race-heats-dr-doctor-amy-acton-vivek-ramaswamy-governor-gubernatorial-issues-politics-government-voting-elections",
+                  "source_type": "web",
+                  "published_at": "2026-09-17T00:00:00Z"
+                }
+              ],
+              "title": "Ohio's governor race becomes the clearest November test of pandemic-era health politics",
+              "summary": "The contest between Amy Acton, the physician who led Ohio's aggressive Covid-19 response as state health director, and Vivek Ramaswamy, the Roivant founder, is turning on the pandemic record, affordability, and trust in science. Organized medicine is split in practice: the Ohio State Medical Association's PAC has backed Ramaswamy, citing physician-led care, workforce growth, and administrative-burden relief.",
+              "strategic_implication": "This race is a usable read on whether public-health authority remains a liability at the state level. Systems operating in Ohio should prepare parallel briefing packages for a health-officer-led administration and a deregulatory, physician-practice-focused one, since both paths change state agency posture quickly.",
+              "confidence": "high",
+              "tags": [
+                "elections",
+                "public-health-authority",
+                "state-policy",
+                "ohio",
+                "affordability"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "The AI and diagnostics agenda is shifting from promise to proof. Grail's multi-cancer test faces an advisory committee, Mayo and Thermo Fisher are building the population-scale molecular substrate that future diagnostics will need, and Intermountain is publishing paired throughput and clinician-experience gains from documentation AI. The common requirement is evidence that survives external review.",
+          "items": [
+            {
+              "item_id": "2026-09-22-grail-galleri-fda-advisory-review",
+              "canonical_topic": "grail-galleri-fda-advisory-review",
+              "duplicate_group": "grail-galleri-fda-advisory-review",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/21/grail-galleri-fda-advisory-committee-meeting-documents/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T17:58:51Z"
+                },
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/september-23-2026-molecular-and-clinical-genetics-panel",
+                  "source_type": "web",
+                  "published_at": "2026-09-23T00:00:00Z"
+                }
+              ],
+              "title": "FDA advisory panel is set to review Grail's Galleri multi-cancer detection test",
+              "summary": "The FDA posted briefing documents ahead of a September 23 advisory-committee meeting on Grail's Galleri blood test. The panel will review the company's premarket approval application for a multi-cancer early-detection test, a step that sent Grail shares higher as investors assessed the regulatory path. The meeting puts clinical utility, false-positive management, and evidence standards for broad screening in the spotlight.",
+              "strategic_implication": "Health systems considering multi-cancer screening partnerships should wait for the committee's evidence discussion and map downstream diagnostic, referral, and patient-communication capacity before scaling adoption.",
+              "confidence": "high",
+              "tags": [
+                "multi-cancer-detection",
+                "fda",
+                "screening",
+                "clinical-evidence"
+              ]
+            },
+            {
+              "item_id": "2026-09-22-mayo-thermo-precure-multiomics",
+              "canonical_topic": "mayo-thermo-precure-multiomics",
+              "duplicate_group": "mayo-thermo-precure-multiomics",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/mayo-clinic-thermo-fisher-partner-to-create-biomedical-database/830895/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T15:00:00Z"
+                }
+              ],
+              "title": "Mayo Clinic and Thermo Fisher launch Precure to build a population-scale biomedical dataset",
+              "summary": "Mayo Clinic and Thermo Fisher Scientific are forming Precure, a company intended to generate a large human multi-omics dataset linking molecular measurements with longitudinal health information. Reporting describes a goal of roughly one million biospecimens; Thermo Fisher will provide proteomics, mass-spectrometry expertise, and products as a minority owner. The platform is aimed at diagnostics, therapeutics, and other healthcare-product development.",
+              "strategic_implication": "Provider systems with differentiated longitudinal data may have a new strategic option beyond one-off licensing: co-owning data infrastructure that supports discovery, diagnostics, and AI partnerships while requiring clear consent and governance controls.",
+              "confidence": "high",
+              "tags": [
+                "multiomics",
+                "biomedical-data",
+                "provider-strategy",
+                "thermo-fisher",
+                "ai"
+              ]
+            },
+            {
+              "item_id": "2026-09-22-intermountain-ai-cdi-outcomes",
+              "canonical_topic": "intermountain-ai-cdi-outcomes",
+              "duplicate_group": "intermountain-ai-cdi-outcomes",
+              "priority_score": 7,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/how-ai-is-transforming-clinical-documentation-at-intermountain-health/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T17:20:53Z"
+                }
+              ],
+              "title": "Intermountain reports measurable gains from AI clinical documentation improvement",
+              "summary": "Intermountain Health says AI-assisted clinical documentation improvement has produced a 22 percentage-point increase in inpatient charts completed during or immediately after rounds, alongside an 11.5-point rise in its Net EHR Experience Score. The physician leading appeals and denials describes review and synthesis work that once took hours now finishing in minutes.",
+              "strategic_implication": "This is one of the few AI deployments reporting paired throughput and clinician-experience metrics, which makes it a useful benchmark structure. Operators evaluating documentation AI should insist on the same two-sided measurement — chart timeliness plus EHR experience — before approving enterprise spend.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-documentation",
+                "ai",
+                "revenue-integrity",
+                "clinician-burnout",
+                "benchmarking"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital is concentrating around modalities with hard operational constraints. Lilly's ESR1-mutated breast cancer approval expands targeted therapy, while the $1.65 billion Telix–ITM combination consolidates radiopharmaceuticals into a field where isotope logistics, not molecules, will decide which sites can deliver.",
+          "items": [
+            {
+              "item_id": "2026-09-22-lilly-inluriyo-verzenio-breast-cancer",
+              "canonical_topic": "lilly-inluriyo-verzenio-breast-cancer",
+              "duplicate_group": "lilly-inluriyo-verzenio-breast-cancer",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/21/biotech-news-lilly-breast-cancer-combo-wins-approval/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T15:08:38Z"
+                },
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications",
+                  "source_type": "web",
+                  "published_at": "2026-09-18T00:00:00Z"
+                }
+              ],
+              "title": "FDA approves Lilly's Inluriyo–Verzenio combination for ESR1-mutated advanced breast cancer",
+              "summary": "The FDA approved imlunestrant (Inluriyo) in combination with abemaciclib (Verzenio) for adults with estrogen-receptor-positive, HER2-negative, ESR1-mutated advanced or metastatic breast cancer. Reporting on the Phase 3 data cited progression-free survival of 11.1 months for the combination versus 5.5 months for Inluriyo alone. The decision expands Lilly's role in biomarker-directed oral oncology treatment.",
+              "strategic_implication": "Oncology providers and payers should prepare for biomarker-testing, pathway, and prior-authorization demand while tracking whether the combination shifts sequencing and infusion-versus-oral economics in metastatic breast cancer.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "breast-cancer",
+                "biomarker",
+                "fda",
+                "lilly"
+              ]
+            },
+            {
+              "item_id": "2026-09-22-telix-itm-radiopharma-acquisition",
+              "canonical_topic": "telix-itm-radiopharma-acquisition",
+              "duplicate_group": "telix-itm-radiopharma-acquisition",
+              "priority_score": 8,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/telix-itm-merger-acquisition-radiopharmaceutical-cancer-gep-nets-tlx/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T20:36:07Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/20/radiopharma-companies-itm-telix-merger/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-20T23:25:57Z"
+                }
+              ],
+              "title": "Telix to acquire ITM for $1.65B, consolidating the radiopharmaceuticals field",
+              "summary": "Telix Pharmaceuticals is acquiring Isotope Technologies Munich in a stock transaction valued at about $1.65 billion, including roughly $1.25 billion in Telix shares and assumption of $302 million in ITM net debt, with up to $700 million in milestones tied to ITM-11 approval and 2030 sales. Telix shareholders would hold about 76% of the combined company. The deal follows a surprise FDA rejection for ITM's lead asset, aimed first at Grade 1 and 2 GEP-NETs.",
+              "strategic_implication": "Radiopharmaceutical consolidation moves the constraint from science to logistics. Cancer programs should revisit isotope supply agreements, hot-lab capacity, and radiation-safety staffing now, because scaled sponsors will push volume toward sites that can already handle short half-life delivery windows.",
+              "confidence": "high",
+              "tags": [
+                "radiopharmaceuticals",
+                "m-and-a",
+                "oncology",
+                "supply-chain",
+                "fda"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Two ends of the operating spectrum: CVS's Omnicare wind-down closes out a long-tail liability through the courts, while a new virtual behavioral health triage layer targets the ED boarding gap that quietly drives avoidable acute-care cost.",
+          "items": [
+            {
+              "item_id": "2026-09-22-cvs-omnicare-bankruptcy-plan",
+              "canonical_topic": "cvs-omnicare-bankruptcy-plan",
+              "duplicate_group": "cvs-omnicare-bankruptcy-plan",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/cvs-omnicare-bankruptcy-plan-approved-texas-judge/830868/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T13:25:08Z"
+                }
+              ],
+              "title": "Texas judge approves CVS unit Omnicare's wind-down bankruptcy plan",
+              "summary": "A Texas bankruptcy judge approved a plan for CVS's Omnicare after the pharmacy-services business sold its operations. The plan reorganizes some assets and liquidates others, with reporting indicating that creditors, including the Department of Justice, are expected to be paid in full and that the plan takes effect in October. The case follows a settlement resolving a large federal fraud judgment for substantially less than the original claim.",
+              "strategic_implication": "Skilled-nursing operators and other Omnicare-dependent customers should confirm replacement pharmacy, dispensing, and transition arrangements before the October effective date rather than treating court approval as the end of operational risk.",
+              "confidence": "high",
+              "tags": [
+                "omnicare",
+                "long-term-care",
+                "pharmacy-services",
+                "bankruptcy"
+              ]
+            },
+            {
+              "item_id": "2026-09-22-array-rapid-care-behavioral-triage",
+              "canonical_topic": "array-rapid-care-behavioral-triage",
+              "duplicate_group": "array-rapid-care-behavioral-triage",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/array-behavioral-care-unveils-new-triage-model/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T19:44:25Z"
+                },
+                {
+                  "source": "Array Behavioral Care",
+                  "url": "https://arraybc.com/press/array-rapid-care-urgent-behavioral-health-needs/",
+                  "source_type": "web",
+                  "published_at": "2026-09-17T00:00:00Z"
+                }
+              ],
+              "title": "Array launches a virtual triage layer between outpatient behavioral health and the ED",
+              "summary": "Array Behavioral Care introduced Array Rapid Care, a clinician-led triage and routing service that connects referred patients with a clinician within 30 minutes for a short assessment of acuity, risk, and immediate clinical need, then navigates them to an appropriate level of care. The model explicitly targets the gap between outpatient behavioral health and the emergency department.",
+              "strategic_implication": "Behavioral health boarding is still one of the most expensive avoidable throughput problems in acute care. Systems should price a virtual triage layer against the fully loaded cost of ED boarding hours and sitter coverage rather than against outpatient visit rates.",
+              "confidence": "medium",
+              "tags": [
+                "behavioral-health",
+                "ed-throughput",
+                "virtual-care",
+                "triage",
+                "care-navigation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical value keeps outrunning the payment and capital systems around it. Evidence-backed integrative oncology services still lack coverage, and nurse-led innovation remains underfunded even though nursing largely determines whether new tools are adopted at all.",
+          "items": [
+            {
+              "item_id": "2026-09-22-integrative-oncology-insurance-gap",
+              "canonical_topic": "integrative-oncology-insurance-gap",
+              "duplicate_group": "integrative-oncology-insurance-gap",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/22/integrative-oncology-cancer-symptoms-insurance-asco-sio-pain-fatigue/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-22T08:30:00Z"
+                }
+              ],
+              "title": "Evidence-backed integrative oncology services still face an insurance-coverage gap",
+              "summary": "A STAT analysis highlights evidence that integrative therapies can reduce cancer-related pain, fatigue, anxiety, and nausea, while many services remain outside routine insurance coverage. The gap leaves patients and oncology teams to navigate fragmented payment and referral pathways even when symptom-management benefits are clinically relevant. The issue is less about a new therapy than about how benefits define standard supportive care.",
+              "strategic_implication": "Cancer programs should inventory which supportive services are covered, quantify unmet symptom-management demand, and evaluate whether contracting or bundled-care approaches can improve access without shifting costs to patients.",
+              "confidence": "medium",
+              "tags": [
+                "oncology",
+                "symptom-management",
+                "integrative-care",
+                "coverage"
+              ]
+            },
+            {
+              "item_id": "2026-09-22-nurse-founder-capital-gap",
+              "canonical_topic": "nurse-founder-capital-gap",
+              "duplicate_group": "nurse-founder-capital-gap",
+              "priority_score": 5,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 3",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/the-nurse-is-health-cares-most-underpriced-founder/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-21T13:31:00Z"
+                }
+              ],
+              "title": "Nurses are described as healthcare's most underpriced founders and adoption gatekeepers",
+              "summary": "A commentary argues that nurses see workflow failures first, build the practical fixes, and ultimately determine whether a tool is adopted, yet investor norms push them to downplay the clinical credential that most reduces execution risk. The piece frames nurse-led innovation as systematically undervalued relative to its influence over frontline adoption.",
+              "strategic_implication": "Treat nursing leadership as a procurement control point, not a change-management afterthought. Innovation programs that route pilot selection and vendor scoring through nurse leaders tend to avoid the tools that fail at the bedside regardless of executive enthusiasm.",
+              "confidence": "low",
+              "tags": [
+                "nursing",
+                "innovation",
+                "technology-adoption",
+                "workforce",
+                "commentary"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

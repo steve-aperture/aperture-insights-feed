@@ -1,0 +1,518 @@
+{
+  "archived_at": "2026-11-06T13:38:15Z",
+  "note": "Editions trimmed from latest-insights.json by the 30-edition cap.",
+  "editions": [
+    {
+      "edition_date": "2026-09-25",
+      "generated_at": "2026-09-25T12:38:44Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's signals point to a more contested operating environment: FDA and HHS leadership is advancing, Medicare Advantage contract exits are growing ahead of open enrollment, and questions about AI economics, Medicaid financing, and public-health data remain unsettled. Coverage draws on STAT News, Healthcare Dive, MedCity News, Fierce Healthcare, Becker's, and the AMA.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Hospitalogy RSS",
+          "Fierce Healthcare RSS",
+          "Modern Healthcare RSS",
+          "Healthcare Brew RSS",
+          "Targeted web verification (Becker's, AMA)"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Direct page verification of Fierce Healthcare items from the automated run",
+          "Becker's Hospital Review and AMA pages via direct fetch"
+        ],
+        "sources_failed": [
+          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
+          "Hospitalogy RSS returned HTTP 403 (newly failing)",
+          "Fierce Healthcare RSS returned HTTP 403 (items verified via page fetch)",
+          "Modern Healthcare RSS returned HTTP 403",
+          "Healthcare Brew RSS returned HTTP 404"
+        ],
+        "items_captured": 16,
+        "run_notes": "Same-day rebuild in place: the 11:03 UTC automated run had already written 2026-09-25 and left the feed at 31 editions. Retained and verified all 9 automated items, enriched three with verified figures, added 7 new items from the 9/23-9/25 window screened against the prior 12 editions, and trimmed to 30 editions with overflow archived."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal health leadership is taking shape through the Overton hearing and the Klomp vote, while fights over process (menthol comments, the scope of provider-tax rules) and a WHO leadership race under financial strain show how governance is shaping the operating environment.",
+          "items": [
+            {
+              "item_id": "2026-09-25-fda-nominee-overton-confirmation-hearing",
+              "canonical_topic": "fda-nominee-overton-confirmation-hearing",
+              "duplicate_group": "fda-nominee-overton-confirmation-hearing",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/24/fda-commissioner-nominee-heidi-overton-senate-hearing-dodges-questions/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T20:21:32Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/biotech/fda-nominee-overton-calls-vaccines-mifepristone-safe-and-effective-confirmation-hearing",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T18:10:00Z"
+                }
+              ],
+              "title": "FDA nominee Overton advances through a contentious confirmation hearing",
+              "summary": "Senators pressed Heidi Overton on vaccines, abortion medication, flavored vapes, and the independence of the FDA during her confirmation hearing. Reporting described a hearing in which she offered limited positions on several politically charged questions while emphasizing a need for speed and efficiency.",
+              "strategic_implication": "Life-science companies and health systems should plan for regulatory continuity with potentially faster review priorities, but keep scenarios open for changes in evidence standards, communications, and agency independence.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "confirmation",
+                "regulation",
+                "drug-development"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-hhs-deputy-secretary-klomp-advances",
+              "canonical_topic": "hhs-deputy-secretary-klomp-advances",
+              "duplicate_group": "hhs-deputy-secretary-klomp-advances",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/24/chris-klomp-vote-senate-finance-committee-hhs-deputy-secretary/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T16:38:12Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/senate-finance-committee-advances-klomps-nomination-hhs-deputy-secretary",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T17:12:00Z"
+                }
+              ],
+              "title": "Senate Finance advances Chris Klomp for HHS deputy secretary",
+              "summary": "The Senate Finance Committee advanced Chris Klomp's nomination for HHS deputy secretary, moving the behind-the-scenes HHS power player closer to a full Senate vote. The committee also advanced another key HHS nominee, according to reporting from STAT and Fierce Healthcare.",
+              "strategic_implication": "Organizations that depend on CMS, FDA, or public-health policy should map likely decision rights and implementation timelines as the department fills senior operating roles.",
+              "confidence": "high",
+              "tags": [
+                "hhs",
+                "senate",
+                "leadership",
+                "health-policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-menthol-ban-public-comments",
+              "canonical_topic": "menthol-ban-public-comments",
+              "duplicate_group": "menthol-ban-public-comments",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/fake-grassroots-campaign-jama-study-rutgers-researchers-fda-menthol-ban/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T08:30:00Z"
+                }
+              ],
+              "title": "Study finds tobacco-linked form letters dominated comments on FDA menthol proposal",
+              "summary": "A study of the 175,000 public comments submitted on the FDA's 2022 proposal to ban menthol cigarettes found that virtually all were form letters. The comments largely echoed tobacco-industry talking points, according to STAT's summary of the research.",
+              "strategic_implication": "Regulated-health stakeholders should treat volume-based public-comment signals cautiously and invest in transparent, evidence-linked engagement when major rules are under review.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "tobacco",
+                "public-comments",
+                "regulatory-process"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-who-director-general-race",
+              "canonical_topic": "who-director-general-race",
+              "duplicate_group": "who-director-general-race",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/world-health-organization-candidates-for-next-director-general/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T12:30:00Z"
+                }
+              ],
+              "title": "Five candidates vie to lead a financially strained WHO after the U.S. exit",
+              "summary": "Nominations closed with at least five candidates for WHO director-general, including Europe regional director Hans Kluge, Eastern Mediterranean regional director Hanan Balkhy, and Indonesian health minister Budi Gunadi Sadikin. The U.S. left nearly $278 million in unpaid fees; Tedros's successor takes office Aug. 16, 2027, with an official shortlist expected after regional meetings in early November.",
+              "strategic_implication": "Global health, biosecurity, and surveillance partners should plan for a WHO with thinner financing and an unsettled U.S. relationship, and track whether the next leader moves to restore collaboration with Washington.",
+              "confidence": "high",
+              "tags": [
+                "who",
+                "global-health",
+                "health-security",
+                "governance"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-ama-opposes-cms-provider-tax-rule",
+              "canonical_topic": "ama-opposes-cms-provider-tax-rule",
+              "duplicate_group": "ama-opposes-cms-provider-tax-rule",
+              "priority_score": 7,
+              "primary_source": "American Medical Association",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "American Medical Association",
+                  "url": "https://www.ama-assn.org/health-care-advocacy/advocacy-update/sept-25-2026-national-advocacy-update",
+                  "source_type": "web",
+                  "published_at": "2026-09-25T12:00:00Z"
+                }
+              ],
+              "title": "AMA urges CMS not to stretch Medicaid provider-tax limits beyond H.R. 1",
+              "summary": "In Sept. 17 comments, the AMA said CMS's proposed rule goes beyond what H.R. 1 requires by extending provider-tax restrictions to all state taxes and fees on insurer services and removing a pathway for states to show compliance. The AMA warned the change could also hit user fees that fund state-based ACA marketplaces. H.R. 1 already freezes existing provider-tax rates and phases down expansion-state rates starting October 2027.",
+              "strategic_implication": "Physicians are joining hospitals in opposing the rule, which raises the odds CMS narrows it. States and health systems should still model Medicaid financing under the broader version, including the effect on marketplace funding.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "provider-tax",
+                "cms",
+                "state-financing",
+                "aca"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI and remote-care technology are shifting from pilots to operating decisions: Cigna is embedding frontier models in case management, Oz warns of near-term cost inflation, and telesurgery is advancing abroad ahead of U.S. regulators.",
+          "items": [
+            {
+              "item_id": "2026-09-25-cigna-openai-complex-care-support",
+              "canonical_topic": "cigna-openai-complex-care-support",
+              "duplicate_group": "cigna-openai-complex-care-support",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/cigna-group-openai-team-support-patients-complex-conditions",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T20:57:00Z"
+                }
+              ],
+              "title": "Cigna and OpenAI target personalized support for patients with complex conditions",
+              "summary": "Cigna is embedding OpenAI's reasoning models into its clinical workflows and consumer experiences, starting with cancer and other complex conditions. The first tools go to oncology nurses and case managers at Cigna Healthcare and Accredo Specialty Pharmacy, combining clinical, pharmacy, behavioral, benefits, and patient-reported information to flag needs earlier between physician visits.",
+              "strategic_implication": "Payers and providers should define clinical boundaries, escalation paths, privacy controls, and measurable outcomes before similar AI support tools become embedded in oncology and other complex-care journeys.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "cigna",
+                "oncology",
+                "care-navigation"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-cms-ai-healthcare-costs-warning",
+              "canonical_topic": "cms-ai-healthcare-costs-warning",
+              "duplicate_group": "cms-ai-healthcare-costs-warning",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ai-will-inflate-healthcare-costs-before-lowering-them-oz-says/831277/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T16:00:27Z"
+                }
+              ],
+              "title": "CMS Administrator Oz warns AI may raise healthcare costs before delivering savings",
+              "summary": "CMS Administrator Mehmet Oz said AI could 'turbocharge' medical billing and increase healthcare costs in the short term. He argued that the near-term disruption could be worthwhile if the technology ultimately produces longer-term savings.",
+              "strategic_implication": "Executives should evaluate AI investments against total-cost and utilization outcomes, not just labor productivity, and build transition budgets for a period in which automation may increase payment friction.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "cms",
+                "medical-billing",
+                "healthcare-costs"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-telerobotic-surgery-us-gap",
+              "canonical_topic": "telerobotic-surgery-us-gap",
+              "duplicate_group": "telerobotic-surgery-us-gap",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/telerobotic-surgery-is-advancing-around-the-world-will-the-us-embrace-it/831238/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-23T13:00:00Z"
+                }
+              ],
+              "title": "Telerobotic surgery is scaling abroad while no U.S. system is cleared for remote use",
+              "summary": "Roughly 5,000 remote surgeries have been performed worldwide, including a transatlantic prostatectomy from Florida and the first telerobotic neurosurgery this year, but no surgical robot is authorized for remote procedures in the U.S. ARPA-H has committed up to $175.3 million to long-distance thrombectomy robots, citing that more than half of Americans live over an hour from a thrombectomy-capable stroke center.",
+              "strategic_implication": "Rural and regional systems should watch telesurgery as a future access model for stroke and specialty care, and start tracking the FDA, credentialing, licensure, and network-latency questions that will decide adoption.",
+              "confidence": "high",
+              "tags": [
+                "telesurgery",
+                "robotics",
+                "rural-health",
+                "stroke",
+                "arpa-h"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Pharma keeps licensing early pipeline from China, while an Indonesian patent ruling and UnitedHealth's new administrative chief point to pressure on pricing leverage and operating efficiency.",
+          "items": [
+            {
+              "item_id": "2026-09-25-unitedhealth-chief-administrative-officer",
+              "canonical_topic": "unitedhealth-chief-administrative-officer",
+              "duplicate_group": "unitedhealth-chief-administrative-officer",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/unitedhealth-first-chief-administrative-officer-jodee-kozlak/831247/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T13:22:58Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/unitedhealth-group-creates-new-chief-administrative-officer-position",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T18:12:00Z"
+                }
+              ],
+              "title": "UnitedHealth creates its first chief administrative officer role",
+              "summary": "UnitedHealth Group named Jodee Kozlak to a newly created chief administrative officer role, effective September 28. She will lead enterprise modernization, initially overseeing people, real estate, procurement, and corporate security.",
+              "strategic_implication": "The move suggests enterprise coordination and operating-model simplification are strategic priorities for diversified healthcare companies, creating a benchmark for peers managing scale and complexity.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealth",
+                "leadership",
+                "operations",
+                "healthcare-industry"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-lilly-innocare-china-rd-pact",
+              "canonical_topic": "lilly-innocare-china-rd-pact",
+              "duplicate_group": "lilly-innocare-china-rd-pact",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/eli-lilly-innocare-pharma-china-drug-discovery-research-development-lly/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T22:31:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/24/fda-commissioner-nominee-heidi-overton-lilly-china-partnership/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T17:21:00Z"
+                }
+              ],
+              "title": "Lilly pays InnoCare $100M upfront in its third China R&D pact this year",
+              "summary": "Eli Lilly will pay Beijing-based InnoCare $100 million upfront and near term, plus up to $3.25 billion in milestones, to discover drugs against up to five undisclosed targets using InnoCare's antibody-drug conjugate platform. The deal follows Lilly's 2026 pacts with Innovent ($350 million upfront) and Insilico Medicine ($115 million).",
+              "strategic_implication": "Big pharma keeps sourcing early pipeline from China despite political pressure, so investors and policymakers should expect the U.S.-China biotech competition debate, already raised at the FDA nominee's hearing, to intensify.",
+              "confidence": "high",
+              "tags": [
+                "pharma",
+                "china",
+                "dealmaking",
+                "drug-discovery"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-indonesia-patent-evergreening-ruling",
+              "canonical_topic": "indonesia-patent-evergreening-ruling",
+              "duplicate_group": "indonesia-patent-evergreening-ruling",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/24/indonesian-court-rules-against-patent-evergreening-boosting-access-medicines/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T18:57:00Z"
+                }
+              ],
+              "title": "Indonesia's top court restores a ban on pharmaceutical patent evergreening",
+              "summary": "Indonesia's Constitutional Court struck down a two-year-old amendment that had removed the country's prohibition on patent evergreening, reinstating the restriction to balance patent rights against public health. Patients and advocacy groups brought the case and say it signals other countries to challenge secondary patents on minor drug tweaks.",
+              "strategic_implication": "Drugmakers relying on secondary patents in emerging markets face rising legal risk, and the ruling adds global momentum to U.S. patent-thicket and drug-pricing debates.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "patents",
+                "global-health",
+                "access"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Payer-provider friction is hitting operations: Medicare Advantage contract exits are multiplying before open enrollment, and executives are demanding measurable returns from revenue-cycle and utilization technology.",
+          "items": [
+            {
+              "item_id": "2026-09-25-health-it-investment-returns",
+              "canonical_topic": "health-it-investment-returns",
+              "duplicate_group": "health-it-investment-returns",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/health-execs-want-strong-returns-on-it-investments/831298/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T18:18:55Z"
+                }
+              ],
+              "title": "Health executives demand clearer returns from revenue-cycle and utilization technology",
+              "summary": "A new survey found providers are particularly interested in tools aimed at revenue-cycle management, while payers are buying technology focused on utilization management. The findings reflect stronger pressure on health IT investments to demonstrate operational and financial returns.",
+              "strategic_implication": "Provider leaders should stage technology portfolios around measurable throughput, denial, and cash metrics, while avoiding tools that shift work to clinical teams or trading partners without a verified net benefit.",
+              "confidence": "medium",
+              "tags": [
+                "health-it",
+                "revenue-cycle",
+                "utilization-management",
+                "provider-operations"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-health-systems-dropping-medicare-advantage",
+              "canonical_topic": "health-systems-dropping-medicare-advantage",
+              "duplicate_group": "health-systems-dropping-medicare-advantage",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/16-health-systems-dropping-medicare-advantage-plans-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-09-24T12:00:00Z"
+                }
+              ],
+              "title": "Becker's list of health systems leaving Medicare Advantage contracts grows to 34",
+              "summary": "Becker's tally reached 34 health systems ending contracts with some Medicare Advantage plans, citing prior-authorization denials and slow payment. Examples include OHSU leaving Regence, Endeavor Health leaving Aetna, and Florida's Lee Health going out of network with UnitedHealthcare after 2026. NKC Health and Valley Health leave UnitedHealthcare on Oct. 1, ahead of the Oct. 15 open-enrollment window.",
+              "strategic_implication": "Before Oct. 15, systems should prepare patient communications, continuity-of-care plans, and payer-mix scenarios for 2027. Payers should expect network adequacy and member churn to face closer scrutiny.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "payer-provider",
+                "networks",
+                "open-enrollment",
+                "florida"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Labor conflict at Prime's Maine hospital, a new ARPA-H autism initiative, and disputes over how measles deaths are counted all show that workforce, research, and public-health data decisions are becoming more contested.",
+          "items": [
+            {
+              "item_id": "2026-09-25-maine-nurses-prime-healthcare-dispute",
+              "canonical_topic": "maine-nurses-prime-healthcare-dispute",
+              "duplicate_group": "maine-nurses-prime-healthcare-dispute",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/maine-governor-urges-prime-healthcare-hospital-reinstate-fired-nurses-ahead-heated-union",
+                  "source_type": "rss",
+                  "published_at": "2026-09-24T20:31:00Z"
+                }
+              ],
+              "title": "Maine governor urges Prime Healthcare to reinstate nurses amid union conflict",
+              "summary": "Gov. Janet Mills called the firing or suspension of 20 nurses at Prime Healthcare's 250-bed Central Maine Medical Center \"unconscionable\" ahead of a union election. The Maine AFL-CIO counts 14 firings and six suspensions; Prime reports 15 and five and says the actions were for documented policy violations, not union activity. Prime acquired the hospital in February with a $150 million, five-year investment commitment.",
+              "strategic_implication": "Health systems facing labor disputes should treat staffing actions as a public operating issue, with escalation protocols that integrate patient safety, workforce communication, legal review, and community trust.",
+              "confidence": "medium",
+              "tags": [
+                "nurses",
+                "labor-relations",
+                "hospital-operations",
+                "workforce"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-arpa-h-autism-lifespan-research",
+              "canonical_topic": "arpa-h-autism-lifespan-research",
+              "duplicate_group": "arpa-h-autism-lifespan-research",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/russell-shilling-leads-arpa-h-spectra-initiative-autism-care/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T08:30:00Z"
+                }
+              ],
+              "title": "ARPA-H plans a lifespan-oriented autism research initiative",
+              "summary": "ARPA-H is planning a total-lifespan research project focused on autism care, led by Russell Shilling, according to STAT. The initiative reflects a shift toward research agendas that span development, adulthood, and care delivery rather than focusing only on early diagnosis.",
+              "strategic_implication": "Academic medical centers and autism-care providers should watch for partnership and evidence-building opportunities while assessing whether their services can support longitudinal outcomes across the lifespan.",
+              "confidence": "medium",
+              "tags": [
+                "autism",
+                "arpa-h",
+                "clinical-research",
+                "lifespan-care"
+              ]
+            },
+            {
+              "item_id": "2026-09-25-measles-death-count-definition",
+              "canonical_topic": "measles-death-count-definition",
+              "duplicate_group": "measles-death-count-definition",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/25/measles-deaths-statistics-pennsylvania-outbreak-cdc-nchs/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-09-25T12:30:00Z"
+                }
+              ],
+              "title": "Federal switch to NCHS death records is undercounting measles deaths versus states",
+              "summary": "Pennsylvania has reported four measles-associated deaths among more than 800 cases, while the CDC dashboard shows one. That's because HHS now counts only deaths where NCHS lists measles as the underlying cause, not a contributing one. The authors of the STAT opinion piece note that NCHS suppresses counts from one to nine and that adjudication can take months, which they warn could breed confusion and slow federal response.",
+              "strategic_implication": "Health departments and hospital infection-prevention teams should rely on state and local counts for real-time situational awareness, and clearly explain the definitional gap in public communications.",
+              "confidence": "medium",
+              "tags": [
+                "measles",
+                "surveillance",
+                "public-health-data",
+                "cdc"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,784 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-09",
+      "generated_at": "2026-11-09T13:41:18Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Four states sued to delay Medicaid work requirements and Democrats targeted Medicaid cuts and ACA subsidies for early votes. A NYT analysis found nearly 30% of surprise-billing awards unpaid, Pennsylvania ordered Sharon Regional closed, Humana forecast more MA growth, and two heart drugs failed at AHA. Sources include STAT, Healthcare Dive, Becker's, KFF Health News, MedCity News, BioPharma Dive and MedTech Dive.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS",
+          "BioPharma Dive, MedTech Dive, MedCity News, KFF Health News and Becker's Hospital Review RSS",
+          "Targeted web search for Nov. 7-9 developments"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for Nov. 6-9",
+          "Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News and Becker's RSS fetched and screened",
+          "Articles read on Healthcare Dive, MedTech Dive, BioPharma Dive, Becker's, MedCity News, KFF Health News and STAT to verify figures",
+          "Web reading for NYT surprise-billing analysis, KFF Health News Nebraska work-requirements story, NYU Langone Lang1 release and NSTM-6 coverage"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and sender searches since Nov. 6 returned no messages in the connected mailbox; RSS sources used instead.",
+          "Several STAT+ articles (Medicaid lawsuit, BIO lawsuit, Democrats' agenda, AHA trials) were paywalled; those items rely on visible text, headlines and RSS descriptions.",
+          "NSTM-6 details come from secondary coverage (Pandora Report, STAT teaser) rather than the White House memo itself."
+        ],
+        "run_notes": "26 items cover developments reported Nov. 6 afternoon through Nov. 9. Checked against the prior 30 editions for repeats; excluded the Zolgensma tumor reports, ACA broker ruling, arbitrator decertifications, Siemens Olyrian and CVS split stories already covered. The Medicare billing-privileges provisions were covered in the Nov. 6 home health item and were not repeated. Medicaid lawsuit and GLOBE suit outcomes are pending."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Four states sued to delay Medicaid work requirements as Nebraska's early rollout showed paperwork-driven losses, while Democrats lined up early votes on Medicaid and ACA subsidies. BIO challenged the GLOBE drug pricing pilot, an analysis found nearly 30% of surprise-billing awards unpaid, and the White House tightened synthetic DNA screening for federally funded labs.",
+          "items": [
+            {
+              "item_id": "2026-11-09-states-sue-delay-medicaid-work-requirements",
+              "canonical_topic": "states-sue-delay-medicaid-work-requirements",
+              "duplicate_group": "states-sue-delay-medicaid-work-requirements",
+              "priority_score": 10,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/06/states-sue-trump-delay-medicaid-work-requirements/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T22:05:00Z"
+                },
+                {
+                  "source": "KFF Health News",
+                  "url": "https://news.prairiepublic.org/news-from-npr/2026-11-09/nebraska-rushed-medicaid-work-rules-then-a-cancer-patient-was-told-hed-lost-coverage",
+                  "source_type": "web",
+                  "published_at": "2026-11-09T10:00:00Z"
+                }
+              ],
+              "title": "Four states sue to delay Medicaid work requirements as Nebraska's early rollout shows paperwork-driven losses",
+              "summary": "Oregon, Minnesota, New Mexico and Washington sued the Trump administration in federal court in Oregon on Nov. 5, arguing the One Big Beautiful Bill Act's Medicaid overhaul causes irreparable sovereign, fiscal and public-health harm and seeking to delay it. The suit follows a federal ruling less than a week earlier that implementing work requirements would cause irreparable harm. KFF Health News reports Nebraska, which started May 1, has about 70,000 adults subject to the 80-hour monthly rule; about 1,100 were denied for work-requirement reasons as of August, mostly for not answering information requests, and call-center waits doubled to 26 minutes by July.",
+              "strategic_implication": "With most states due to start Jan. 1, hospitals and FQHCs should plan for coverage churn driven by paperwork rather than employment status. Patient financial services teams should build enrollment-assistance and presumptive-eligibility workflows now, while tracking whether litigation or the new Congress pushes timelines back.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "litigation",
+                "obbba",
+                "coverage"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-democrats-health-agenda-first-100-hours",
+              "canonical_topic": "democrats-health-agenda-first-100-hours",
+              "duplicate_group": "democrats-health-agenda-first-100-hours",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/09/democrat-healthcare-agenda-new-lawmakers-weigh-popular-vs-possible/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T14:30:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/06/why-democrats-midterm-landslide-helps-hospital-industry/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T17:46:00Z"
+                }
+              ],
+              "title": "Democrats converge on reversing Medicaid cuts and restoring ACA subsidies, a relief for hospitals",
+              "summary": "After the midterm landslide, congressional Democrats broadly agree on two early moves: rolling back the Medicaid cuts in the 2025 tax law and permanently restoring the enhanced ACA premium tax credits that expired earlier in 2026. A party leadership memo cited by STAT aims to act in the first 100 hours of the new Congress in January and to block a drug discount model hospitals oppose. STAT notes hospital prices and consolidation are likely to get a pass while coverage expansion leads, though some members are pushing for bigger reforms.",
+              "strategic_implication": "Hospital finance teams can model an upside scenario for 2027-2028 Medicaid and exchange volume, but should not bank on it before legislation passes and survives a likely veto. Payers and exchange plans should prepare pricing and enrollment scenarios for restored subsidies.",
+              "confidence": "medium",
+              "tags": [
+                "midterms",
+                "medicaid",
+                "aca-subsidies",
+                "congress",
+                "hospitals"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-texas-democrats-medicaid-expansion-agenda",
+              "canonical_topic": "texas-democrats-medicaid-expansion-agenda",
+              "duplicate_group": "texas-democrats-medicaid-expansion-agenda",
+              "priority_score": 7,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/elections/texas-democrats-state-healthcare-agenda-election-blue-wave-hinojosa-goodwin/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T23:32:00Z"
+                }
+              ],
+              "title": "Texas Democrats won statewide on health costs, but Medicaid expansion faces a 140-day session",
+              "summary": "Gov.-elect Gina Hinojosa and Lt. Gov.-elect Vikki Goodwin will be sworn in Jan. 19, 2027, a week after the legislative session opens. Both campaigned on expanding coverage, and Goodwin floated a state health plan funded through Texas' $24 billion rainy day fund. Nearly 5 million of the state's 32 million residents are uninsured, and expansion could make about 1 million newly eligible, with the federal government paying 90% of costs. The session ends in May, and the next regular session is in 2029.",
+              "strategic_implication": "Texas is the largest non-expansion state, so even partial action would shift uncompensated-care economics for safety-net and rural hospitals. Hospitals and county systems should prepare data on uncompensated care and coverage gaps before the January session.",
+              "confidence": "high",
+              "tags": [
+                "texas",
+                "medicaid-expansion",
+                "state-policy",
+                "uninsured",
+                "midterms"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-bio-sues-globe-drug-pricing-model",
+              "canonical_topic": "bio-sues-globe-drug-pricing-model",
+              "duplicate_group": "bio-sues-globe-drug-pricing-model",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/07/bio-sues-to-block-globe-drug-pricing-model/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-07T16:57:00Z"
+                }
+              ],
+              "title": "BIO sues to block Medicare's GLOBE pilot tying drug prices to peer countries",
+              "summary": "The Biotechnology Innovation Organization and two California biotech trade groups filed suit Nov. 6 in the Northern District of California to stop the Global Benchmark for Efficient Drug Pricing (GLOBE) demonstration, arguing it exceeds Medicare's statutory authority. GLOBE tests the administration's most-favored-nation approach. STAT reports its direct impact is likely limited, but the industry wants to prevent a precedent.",
+              "strategic_implication": "The case will help define how far CMMI can use demonstration authority on drug pricing. Pharma market access teams and 340B or specialty pharmacy leaders should track it alongside negotiation and site-neutral changes, since a ruling could limit future international reference pricing.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "cmmi",
+                "most-favored-nation",
+                "litigation",
+                "pharma"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-surprise-billing-awards-unpaid",
+              "canonical_topic": "surprise-billing-awards-unpaid",
+              "duplicate_group": "surprise-billing-awards-unpaid",
+              "priority_score": 9,
+              "primary_source": "The New York Times",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "The New York Times",
+                  "url": "https://www.hawaiitribune-herald.com/2026/11/09/nation-world-news/flouting-consumer-law-insurers-refuse-to-pay-medical-bills-for-emergency-care/",
+                  "source_type": "web",
+                  "published_at": "2026-11-09T05:05:00Z"
+                }
+              ],
+              "title": "Nearly 30% of No Surprises Act arbitration awards have gone unpaid since 2024, NYT analysis finds",
+              "summary": "A New York Times analysis of 400,000 awards supplied by billing firm HaloMD found nearly 30% unpaid since 2024. Anthem had the highest nonpayment rate at 74%, and 83% in 2026; Cigna, UnitedHealthcare and Aetna also left significant shares unpaid, and Cigna disputed the 2026 figure. The law requires payment within 30 days and allows $100-per-day fines, but CMS has issued no penalties. Three federal appeals courts have ruled providers have no private right to sue, and the Labor Department is investigating Anthem.",
+              "strategic_implication": "Out-of-network ED, anesthesia and air ambulance providers should treat IDR wins as receivables that may not convert to cash. Revenue cycle leaders should track award aging by payer, file CMS complaints, and factor nonpayment into contract talks, alongside last week's arbitrator decertifications.",
+              "confidence": "high",
+              "tags": [
+                "no-surprises-act",
+                "idr",
+                "payers",
+                "revenue-cycle",
+                "air-ambulance"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-dna-synthesis-screening-policy-nstm6",
+              "canonical_topic": "dna-synthesis-screening-policy-nstm6",
+              "duplicate_group": "dna-synthesis-screening-policy-nstm6",
+              "priority_score": 7,
+              "primary_source": "The White House (OSTP/NSC)",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "The White House (OSTP/NSC)",
+                  "url": "https://pandorareport.org/2026/11/06/pandora-report-11-06-2026-biological-wargames-synbio-rules-and-avian-flu-updates/",
+                  "source_type": "web",
+                  "published_at": "2026-11-06T12:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/09/health-news-new-rule-to-prevent-bioweapon-spread/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T17:55:00Z"
+                }
+              ],
+              "title": "White House requires federally funded labs to buy synthetic DNA only from certified, screened suppliers",
+              "summary": "The National Policy for Nucleic Acid Synthesis Screening (NSTM-6), released Nov. 5, replaces the 2024 framework and its supplier self-attestation. Federal funding recipients must buy synthetic nucleic acids and benchtop synthesizers only from HHS- or USDA-certified suppliers that screen orders of 50 or more nucleotides with NIST-verified tools, verify customers, report flagged orders and keep records for eight years. NIST standards are due in 90 days, and full DNA procurement compliance in 250 days. Violations risk False Claims Act exposure and up to five years of funding ineligibility. STAT framed the policy as a response to AI-enabled bioweapon risk.",
+              "strategic_implication": "Academic medical centers and research institutes need to inventory synthetic DNA purchasing and benchtop equipment now, because noncompliance is tied to federal grants and False Claims Act liability. Research compliance, procurement and biosafety offices should assign an owner before the 160-day supplier list is published.",
+              "confidence": "high",
+              "tags": [
+                "biosecurity",
+                "dna-synthesis",
+                "research-compliance",
+                "ai",
+                "nist"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "A health-system-trained model beat general LLMs on denials and readmissions, while commentary stressed that AI device performance must be monitored after authorization. Chatbots may lower barriers for men seeking mental health support.",
+          "items": [
+            {
+              "item_id": "2026-11-09-nyu-langone-lang1-prediction-model",
+              "canonical_topic": "nyu-langone-lang1-prediction-model",
+              "duplicate_group": "nyu-langone-lang1-prediction-model",
+              "priority_score": 8,
+              "primary_source": "NYU Langone Health",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "NYU Langone Health",
+                  "url": "https://nyulangone.org/news/ai-models-predictions-accurate-enough-quickly-improve-medical-decisions",
+                  "source_type": "web",
+                  "published_at": "2026-11-09T12:00:00Z"
+                }
+              ],
+              "title": "NYU Langone's Lang1 model beats general LLMs at predicting denials and readmissions",
+              "summary": "NYU Langone researchers reported in Nature Medicine on Lang1, a prediction model trained on 80 billion tokens of EHR notes from more than 10 million patients over 20 years, plus general text. Compared with ChatGPT-4o, Llama and DeepSeek R1, it was nearly 24% better at predicting insurance denials, 9% better for 30-day readmissions and 1.6% better for in-hospital mortality, with validation at Beth Israel. NYU Langone plans to offer Lang1 to other hospitals as a confidential service.",
+              "strategic_implication": "This supports the case that health-system-specific models can beat general LLMs on operational tasks such as denials and capacity. CIOs and revenue cycle leaders should ask vendors for task-level evidence against local data rather than relying on general model benchmarks.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "predictive-models",
+                "denials",
+                "readmissions",
+                "academic-medicine"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-ai-device-postmarket-performance-drift",
+              "canonical_topic": "ai-device-postmarket-performance-drift",
+              "duplicate_group": "ai-device-postmarket-performance-drift",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/the-big-challenge-for-ai-in-healthcare-comes-after-approval/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T14:43:00Z"
+                }
+              ],
+              "title": "AI devices face their biggest test after FDA authorization",
+              "summary": "A MedCity News commentary notes the FDA has authorized about 1,450 AI-enabled devices, including about 295 in 2025 compared with about 6 in 2015. Performance can change after launch even without a model update: one authorized autonomous diabetic retinopathy system returned no result for a quarter of patients because of camera quality and pupil size. The author points to FDA predetermined change control plans and notes that no generative AI medical device had yet been authorized in the U.S.",
+              "strategic_implication": "AI governance committees should require local monitoring of no-result rates, subgroup performance and workflow failures, not just vendor clearance letters. Contracts should give the health system post-deployment performance data and change notifications.",
+              "confidence": "medium",
+              "tags": [
+                "ai-governance",
+                "fda",
+                "medical-devices",
+                "post-market-surveillance"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-ai-chatbots-men-mental-health",
+              "canonical_topic": "ai-chatbots-men-mental-health",
+              "duplicate_group": "ai-chatbots-men-mental-health",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/09/ai-chatbots-can-overcome-mental-health-barriers-in-men/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T14:30:00Z"
+                }
+              ],
+              "title": "Men report feeling less judged opening up to AI chatbots than to people",
+              "summary": "STAT reports that men, who are less likely to seek mental health care, often say they feel more comfortable and less judged talking with AI chatbots. The story examines whether that lower barrier could be a way into care, while noting chatbots are imperfect substitutes for therapists.",
+              "strategic_implication": "Behavioral health leaders and employers can treat chatbots as a possible front door to reach men who avoid care, but only with clear escalation to clinicians and safety guardrails. Track outcomes before scaling.",
+              "confidence": "medium",
+              "tags": [
+                "behavioral-health",
+                "chatbots",
+                "mens-health",
+                "ai"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Humana expects more MA growth and better star ratings, while systems split on owning health plans and keep selling noncore hospitals. Lilly moved branded GLP-1s into Hims, two heart drugs failed at AHA, and J&J won a subcutaneous oncology approval.",
+          "items": [
+            {
+              "item_id": "2026-11-09-humana-q3-2026-ma-growth-2027",
+              "canonical_topic": "humana-q3-2026-ma-growth-2027",
+              "duplicate_group": "humana-q3-2026-ma-growth-2027",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/humana-expects-medicare-advantage-membership-growth-2027-hum-q3/873966/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T12:23:00Z"
+                }
+              ],
+              "title": "Humana expects more Medicare Advantage growth in 2027 and targets a 3% MA margin in 2028",
+              "summary": "Humana reported third-quarter profit of $162 million on $41.2 billion in revenue and raised 2026 adjusted EPS guidance to at least $9.50. More than 1 million new seniors joined in 2026, and early 2027 sign-ups beat expectations. The share of members in plans rated 4 stars or higher rises from 41% in 2026 to 93% in 2027, supporting 2028 bonus payments. MA is 40% of membership and 80% of premiums.",
+              "strategic_implication": "Humana's star-rating recovery gives it more room to compete on benefits in 2027-2028. Providers negotiating MA contracts should expect Humana to push growth while protecting margin, and should use quality performance as leverage.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "humana",
+                "earnings",
+                "star-ratings",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-health-systems-weigh-owning-health-plans",
+              "canonical_topic": "health-systems-weigh-owning-health-plans",
+              "duplicate_group": "health-systems-weigh-owning-health-plans",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/to-insure-or-not-to-insure-7-systems-weigh-the-health-plan-question/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T22:37:00Z"
+                }
+              ],
+              "title": "Health systems split on owning health plans as some enter MA and others exit",
+              "summary": "Carle Health, Michigan Medicine, Memorial Hermann, Providence and UMass Memorial have closed or sold insurance arms in the last two years. Others are expanding: MultiCare enters Medicare Advantage in three counties in 2027, St. Luke's (about 65,000 members) adds MA in seven counties, and Henry Ford Health's MA enrollment rose nearly 46% to more than 132,000. WVU Medicine's Peak Health estimates it needs 30,000 MA members to break even, while Presbyterian is winding down most MA plans for 2027.",
+              "strategic_implication": "Provider-owned plans need scale, risk capital and years of value-based infrastructure. Boards weighing a plan should test break-even membership and capital reserves against the payer partnership or risk-contract alternatives.",
+              "confidence": "high",
+              "tags": [
+                "provider-sponsored-plans",
+                "medicare-advantage",
+                "value-based-care",
+                "strategy"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-large-systems-divesting-hospitals",
+              "canonical_topic": "large-systems-divesting-hospitals",
+              "duplicate_group": "large-systems-divesting-hospitals",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hospital-transactions-and-valuation/7-large-health-systems-selling-hospitals/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T22:18:00Z"
+                }
+              ],
+              "title": "Ten large systems are selling hospitals to exit noncore markets",
+              "summary": "Becker's tracks divestitures by CommonSpirit, CHS, ScionHealth, Providence, Trinity, Quorum, Franciscan Alliance, Banner, HCA and Sanford. CHS sold Crestwood Medical Center for $459 million, four Arkansas hospitals for $110 million and its Tennessee stake for $623 million. CommonSpirit sold three Ohio hospitals to UPMC, and Trinity transferred a 182-bed Massachusetts hospital to Baystate effective Nov. 1.",
+              "strategic_implication": "Portfolio pruning favors regional systems that buy density in their home markets. Buyers should check post-close service-line commitments and Medicaid exposure, and state regulators will likely look harder at rural service changes.",
+              "confidence": "high",
+              "tags": [
+                "m-and-a",
+                "divestitures",
+                "community-health-systems",
+                "commonspirit"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-lilly-hims-glp1-self-pay-deal",
+              "canonical_topic": "lilly-hims-glp1-self-pay-deal",
+              "duplicate_group": "lilly-hims-glp1-self-pay-deal",
+              "priority_score": 7,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/lilly-hims-alnylam-boehringer-ultragenyx-sevasemten-ani-egetis/873843/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T13:13:00Z"
+                }
+              ],
+              "title": "Lilly brings Zepbound and Foundayo to Hims & Hers at standard self-pay prices",
+              "summary": "Eli Lilly will offer Zepbound, from $299 a month, and oral Foundayo, from $149 a month, to eligible Hims & Hers patients at the same self-pay prices available elsewhere. Hims previously sold compounded GLP-1s, changed course in March after a Novo legal challenge and signed a similar Novo deal that month.",
+              "strategic_implication": "Branded GLP-1s are moving through direct-to-consumer telehealth at prices close to cash-pay alternatives, which shrinks the compounding market. Employers that dropped GLP-1 coverage should expect members to buy around the benefit, and health systems should consider how obesity care keeps patients in their networks.",
+              "confidence": "high",
+              "tags": [
+                "glp-1",
+                "direct-to-consumer",
+                "telehealth",
+                "eli-lilly",
+                "obesity"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-aha-2026-pelacarsen-ziltivekimab-fail",
+              "canonical_topic": "aha-2026-pelacarsen-ziltivekimab-fail",
+              "duplicate_group": "aha-2026-pelacarsen-ziltivekimab-fail",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/07/aha-conference-news-novartis-lp-a-pelacarsen-heart-disease-trial-mystery/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-07T19:50:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/07/aha-2026-conference-novo-nordisk-zeus-trial-ziltivekimab-results/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-07T19:35:00Z"
+                }
+              ],
+              "title": "Novartis Lp(a) and Novo anti-inflammatory heart drugs fail outcomes trials at AHA",
+              "summary": "At AHA Scientific Sessions on Nov. 7, Novartis' Phase 3 HORIZON trial showed pelacarsen sharply lowered lipoprotein(a), which 1 in 5 people carry, but did not reduce heart attacks, strokes, revascularization or deaths over almost five years. Novo Nordisk's ZEUS trial found ziltivekimab lowered IL-6 without reducing cardiovascular events, and Novo had already halted two other trials. Both studies were published in NEJM.",
+              "strategic_implication": "The failures weaken the case for biomarker-driven cardiovascular drugs and may slow investment in Lp(a) and inflammation programs. Health systems and payers should be cautious about broad Lp(a) testing campaigns until outcome data exist.",
+              "confidence": "high",
+              "tags": [
+                "cardiology",
+                "clinical-trials",
+                "novartis",
+                "novo-nordisk",
+                "aha-2026"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-rybrevant-faspro-head-neck-approval",
+              "canonical_topic": "rybrevant-faspro-head-neck-approval",
+              "duplicate_group": "rybrevant-faspro-head-neck-approval",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/johnson-johnson-rybrevant-faspro-fda-approval-bispecific-antibody-egfr-met-head-neck-cancer-oncology-jnj/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T22:35:00Z"
+                }
+              ],
+              "title": "FDA grants accelerated approval to J&J's subcutaneous Rybrevant Faspro for head and neck cancer",
+              "summary": "The FDA granted accelerated approval to Rybrevant Faspro as a single agent for advanced head and neck squamous cell carcinoma that progressed after chemotherapy and immunotherapy, excluding HPV-associated oropharyngeal cancer. A Phase 1b/2 study showed a 42% response rate, with complete responses in 15%. The injection takes about five minutes compared with two to five hours for IV Rybrevant, and a confirmatory Phase 3 trial is ongoing.",
+              "strategic_implication": "Subcutaneous oncology biologics free up infusion chair time and may shift where patients are treated. Cancer centers should update capacity, pharmacy and reimbursement models as more subcutaneous options arrive.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "fda-approval",
+                "subcutaneous",
+                "johnson-and-johnson"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-natera-tandem-ceo-transitions",
+              "canonical_topic": "natera-tandem-ceo-transitions",
+              "duplicate_group": "natera-tandem-ceo-transitions",
+              "priority_score": 5,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/natera-promotes-solomon-moshkevich-to-ceo/874022/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T17:46:00Z"
+                },
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/tandem-diabetes-care-names-next-ceo/874001/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T15:36:00Z"
+                }
+              ],
+              "title": "Natera and Tandem Diabetes name new CEOs",
+              "summary": "Natera made Solomon Moshkevich CEO immediately, replacing Steve Chapman despite 34.1% revenue growth to $794 million in the third quarter. Shares fell nearly 14% on the surprise. Tandem Diabetes Care named GE HealthCare's Jeannette Bankes CEO starting Nov. 16, succeeding John Sheridan, who retires at year-end, as its Mobi Tubeless pump is in late-stage FDA review.",
+              "strategic_implication": "Leadership changes at diagnostics and diabetes device companies can shift pricing, channel and partnership priorities. Health system supply chain and lab leaders should watch for strategy changes at Natera on oncology testing and at Tandem on pharmacy-channel distribution.",
+              "confidence": "high",
+              "tags": [
+                "medtech",
+                "diagnostics",
+                "leadership",
+                "diabetes-devices"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Pennsylvania ordered Sharon Regional closed after a utility shutoff threat, part of a rise in missed hospital payrolls. Rural hospitals are weighing critical access conversion, denials keep climbing and academic systems are absorbing losses to fill psychiatric gaps.",
+          "items": [
+            {
+              "item_id": "2026-11-09-sharon-regional-license-revoked",
+              "canonical_topic": "sharon-regional-license-revoked",
+              "duplicate_group": "sharon-regional-license-revoked",
+              "priority_score": 9,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/pennsylvania-revokes-hospitals-license-orders-closure/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-07T00:07:00Z"
+                }
+              ],
+              "title": "Pennsylvania revokes Sharon Regional's license after its power company threatened shutoff",
+              "summary": "The Pennsylvania Department of Health revoked Sharon Regional Medical Center's license effective Nov. 17 and ordered it to close after Penn Power moved to cut electricity over a $638,527 unpaid bill. New admissions stopped Nov. 4, emergency services were suspended Nov. 6, and a closure plan is due Nov. 10. Tenor Health Foundation reopened the former Steward hospital in May 2025 and has 30 days to appeal.",
+              "strategic_implication": "The case shows how quickly vendor and utility defaults can turn into regulatory closure for distressed hospitals. Regional EMS and neighboring hospitals need surge and transfer plans, and anyone acquiring former Steward or distressed assets should test liquidity runway, not just reopening plans.",
+              "confidence": "high",
+              "tags": [
+                "hospital-closures",
+                "financial-distress",
+                "steward",
+                "pennsylvania",
+                "regulatory"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-delayed-hospital-payroll-wave-2026",
+              "canonical_topic": "delayed-hospital-payroll-wave-2026",
+              "duplicate_group": "delayed-hospital-payroll-wave-2026",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/whats-driving-a-wave-of-delayed-hospital-payroll/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T21:51:00Z"
+                }
+              ],
+              "title": "More hospitals are missing payroll in 2026 as margins thin",
+              "summary": "Becker's counts four hospitals with delayed or disrupted payroll so far in 2026, compared with two in all of 2025, and four more that warned payroll was at risk. Cases include Sharon Regional, Vista Medical Center East and Gateway Regional, which delayed pay for more than 600 employees in August. Kaufman Hall put the national median operating margin at 1.8% in August, with 43% of hospitals losing money, and the AHA says more than 300 rural hospitals are at risk from Medicaid cuts.",
+              "strategic_implication": "Missed payroll is often a leading indicator of closure or sudden service loss. State health departments, payers and nearby systems should treat it as an early warning for access planning, and workforce agencies should expect displaced staff.",
+              "confidence": "high",
+              "tags": [
+                "financial-distress",
+                "payroll",
+                "rural-hospitals",
+                "margins"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-olympic-medical-center-cah-conversion",
+              "canonical_topic": "olympic-medical-center-cah-conversion",
+              "duplicate_group": "olympic-medical-center-cah-conversion",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/washington-hospital-weighs-critical-access-designation/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T21:56:00Z"
+                }
+              ],
+              "title": "Washington's Olympic Medical Center weighs converting to a critical access hospital",
+              "summary": "Port Angeles-based Olympic Medical Center, with 67 beds and an average census of 47, is studying critical access designation, which could raise Medicare reimbursement but cap it at 25 beds. Consultants are looking at separate rehab or psych units, hospice and nursing-facility partnerships, and a final options comparison is due later this month.",
+              "strategic_implication": "Critical access conversion is becoming a margin strategy for mid-size rural hospitals, not just very small ones. Leaders should model whether distinct-part units and post-acute partnerships can keep services that would otherwise exceed the 25-bed cap.",
+              "confidence": "high",
+              "tags": [
+                "critical-access-hospitals",
+                "rural-health",
+                "medicare-reimbursement"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-experian-2026-state-of-claims-denials",
+              "canonical_topic": "experian-2026-state-of-claims-denials",
+              "duplicate_group": "experian-2026-state-of-claims-denials",
+              "priority_score": 7,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/experian-health-survey-providers-struggle-amid-increasing-claim-denials/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T19:19:00Z"
+                }
+              ],
+              "title": "Experian survey: 75% of providers say claim denials are still rising",
+              "summary": "Experian Health's 2026 State of Claims survey of 204 revenue cycle professionals found 75% see denials increasing and 40% have at least 10% of claims denied. Seventy-eight percent said payer policies change more often, up from 67% in 2022, and services not covered was the top denial reason. Eighty-four percent said AI could improve claims management, and 64% plan to invest in it.",
+              "strategic_implication": "Front-end eligibility and coverage accuracy remains the biggest fix. CFOs should require denial-prevention AI to be measured on overturn and first-pass rates by payer, and pair it with the Lang1-style prediction work emerging from academic systems.",
+              "confidence": "high",
+              "tags": [
+                "revenue-cycle",
+                "denials",
+                "payers",
+                "ai"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-health-systems-fill-psych-social-gaps",
+              "canonical_topic": "health-systems-fill-psych-social-gaps",
+              "duplicate_group": "health-systems-fill-psych-social-gaps",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hospital-management-administration/50m-a-year-what-happens-when-health-systems-cover-gaps-no-one-else-will/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T21:51:00Z"
+                }
+              ],
+              "title": "UCLA expects its new 139-bed psychiatric campus to lose $50 million a year",
+              "summary": "UCLA Health is opening a $650 million, 139-bed mental health campus in Mid-Wilshire in January because its psychiatric hospital runs at 110% capacity and EDs start each day with 15 to 20 patients waiting for beds. CEO Johnese Spisso expects it to lose about $50 million a year. Johns Hopkins cut ED visits among high utilizers by 30% through a housing program under an 1115 waiver, and UNC Health cut rural maternity drive times from 90 minutes to under 45.",
+              "strategic_implication": "Academic systems are absorbing structural losses to fill community gaps. Boards should make that tradeoff explicit, tie it to ED boarding and throughput savings, and seek state or Medicaid waiver funding to share the cost.",
+              "confidence": "high",
+              "tags": [
+                "behavioral-health",
+                "ed-boarding",
+                "community-benefit",
+                "1115-waiver"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Nurses at Endeavor's Edward Hospital unionized during a merger, and nursing students are adopting AI ahead of their schools. AHA trials questioned community cardiac arrest training at current scale and refined blood pressure targets, and liver experts agreed on an ACLF definition.",
+          "items": [
+            {
+              "item_id": "2026-11-09-endeavor-edward-nurses-unionize",
+              "canonical_topic": "endeavor-edward-nurses-unionize",
+              "duplicate_group": "endeavor-edward-nurses-unionize",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hr/endeavor-hospital-nurses-vote-to-unionize-amid-rush-merger-plans/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T22:27:00Z"
+                }
+              ],
+              "title": "Endeavor Edward Hospital nurses vote to unionize as Rush merger advances",
+              "summary": "More than 1,200 registered nurses at Endeavor Health Edward Hospital in Naperville, Ill., voted 65% to join National Nurses Organizing Committee, with ballots counted Nov. 6. The union now represents more than 10,000 Chicago-area nurses. Nurses at four other Endeavor hospitals petitioned Oct. 22 to join Teamsters Local 743, as Endeavor and Rush pursue a merger that would create a 12-hospital, 46,000-employee system.",
+              "strategic_implication": "Merger periods are triggering union drives as nurses seek staffing protections before integration. Systems planning combinations should budget for first-contract bargaining and staffing commitments in integration plans.",
+              "confidence": "high",
+              "tags": [
+                "nursing",
+                "unions",
+                "labor",
+                "mergers",
+                "endeavor-rush"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-nursing-students-ai-adoption-survey",
+              "canonical_topic": "nursing-students-ai-adoption-survey",
+              "duplicate_group": "nursing-students-ai-adoption-survey",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/quality/nursing/nursing-students-are-using-ai-faster-than-schools-can-govern-it-survey/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-06T21:26:00Z"
+                }
+              ],
+              "title": "Nursing students are using AI faster than their schools can govern it",
+              "summary": "A Wolters Kluwer survey of 394 U.S. nursing students found AI use among 79% of BSN, 77% of LPN and 66% of ADN students, mostly for studying and exam prep. The top concern was accuracy at 57%, followed by school approval and clinical-skills development. A 2025 study found only 24% of RN programs use generative AI and 17% teach AI or digital health.",
+              "strategic_implication": "New graduates will arrive already using AI but with little formal training in its limits. Nurse residency and education leaders should add AI literacy, verification habits and policy expectations to onboarding.",
+              "confidence": "high",
+              "tags": [
+                "nursing-education",
+                "ai",
+                "workforce",
+                "academic-practice"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-nc-cardiac-arrest-community-training-trial",
+              "canonical_topic": "nc-cardiac-arrest-community-training-trial",
+              "duplicate_group": "nc-cardiac-arrest-community-training-trial",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/08/sudden-cardiac-arrest-survival-cpr-defibrillation-training/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T03:15:00Z"
+                }
+              ],
+              "title": "Large North Carolina trial finds cardiac arrest training did not improve survival",
+              "summary": "A randomized trial across 60 North Carolina counties, presented at AHA Nov. 8 and published in NEJM, tested intensive training for 911 dispatchers, first responders and communities. Among 22,459 out-of-hospital cardiac arrests over five years, survival with good neurologic outcome did not improve, though bystander CPR rose in year four with nearly 5% of residents trained. Denmark, where CPR training is tied to driver's licenses and about 80% of people are trained, reports 16% survival compared with 10% in the U.S.",
+              "strategic_implication": "Training programs below population scale may not change outcomes. EMS and public health leaders should focus on dispatcher-assisted CPR, AED access and broad training mandates, and measure bystander CPR as an intermediate target.",
+              "confidence": "high",
+              "tags": [
+                "ems",
+                "cardiac-arrest",
+                "public-health",
+                "emergency-preparedness",
+                "aha-2026"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-aha-2026-blood-pressure-targets",
+              "canonical_topic": "aha-2026-blood-pressure-targets",
+              "duplicate_group": "aha-2026-blood-pressure-targets",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/07/new-studies-on-blood-pressure-management-aha-conference-news/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-08T02:39:00Z"
+                }
+              ],
+              "title": "AHA trials support lower blood pressure targets after stroke but not in diabetes",
+              "summary": "OPTIMAL-STROKE, published in NEJM, found a systolic target of 120 mm Hg or lower reduced death or cardiovascular events over four years compared with a target below 140. The companion OPTIMAL-DIABETES trial found no benefit from the lower target in type 2 diabetes. A small REDUCE trial found early spironolactone after stroke helped more patients reach below 130/80 at three months.",
+              "strategic_implication": "Stroke programs and primary care should review post-stroke hypertension protocols, with kidney-function monitoring and care coordination. Quality measures should not assume one intensive target fits all.",
+              "confidence": "high",
+              "tags": [
+                "hypertension",
+                "stroke",
+                "clinical-guidelines",
+                "aha-2026"
+              ]
+            },
+            {
+              "item_id": "2026-11-09-aclf-unified-definition",
+              "canonical_topic": "aclf-unified-definition",
+              "duplicate_group": "aclf-unified-definition",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/09/acute-on-chronic-liver-failure-new-definition/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T14:30:00Z"
+                }
+              ],
+              "title": "Liver societies agree on a single definition of acute-on-chronic liver failure",
+              "summary": "Five liver societies, drug companies and regulators agreed on unified criteria for acute-on-chronic liver failure, published in Hepatology, after a May meeting in Barcelona. The definition starts with bilirubin and INR thresholds and then assesses brain, kidney, circulatory and respiratory dysfunction, benchmarked against 30-day mortality. Experts said differing definitions had delayed treatment and stalled trials; unlike acute liver failure, ACLF does not get extra transplant-list priority in the U.S.",
+              "strategic_implication": "A common definition should speed drug trials and could support future transplant allocation changes. Transplant and hepatology programs should update case identification and registry coding.",
+              "confidence": "medium",
+              "tags": [
+                "hepatology",
+                "transplant",
+                "clinical-definitions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-06",
       "generated_at": "2026-11-06T13:38:15Z",
       "headline": "Today's Healthcare Insights",
@@ -17104,435 +17882,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-28",
-      "generated_at": "2026-09-28T12:42:48Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's signals include a pocket rescission of nearly $1 billion in HHS spending, a court order narrowing Section 504 disability protections, a CMS-state push on Medicaid quality measurement, and continued pressure on surgical access, nurse labor, and drug costs. Coverage draws on STAT News, Healthcare Dive, MedCity News, and Fierce Healthcare, focused on developments from Sept. 25-28.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
-          "STAT News RSS (main)",
-          "Healthcare Dive RSS (news)",
-          "MedCity News RSS",
-          "Hospitalogy RSS",
-          "Fierce Healthcare RSS",
-          "Modern Healthcare RSS",
-          "Healthcare Brew RSS",
-          "Targeted web verification (FDA, Lilly)"
-        ],
-        "sources_successful": [
-          "STAT News RSS (main)",
-          "Healthcare Dive RSS (news)",
-          "MedCity News RSS",
-          "Hospitalogy RSS (reachable; no new items since 9/21)",
-          "Direct page verification of Fierce Healthcare items from the automated run",
-          "FDA page via web search"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
-          "Fierce Healthcare RSS returned HTTP 403 (items verified via page fetch)",
-          "Modern Healthcare RSS returned HTTP 403",
-          "Healthcare Brew RSS returned HTTP 404"
-        ],
-        "run_notes": "Same-day rebuild in place: the automated run (generated 11:04 UTC) had already written 2026-09-28 and left the feed at 31 editions. Retained and verified all 8 automated items, enriched all 8 with verified figures (corrected Brigham strike details; added STAT 9/28 and FDA source refs), added 5 new items from the 9/25-9/28 window screened against the prior 12 editions, and trimmed to 30 editions with overflow archived.",
-        "items_captured": 13
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Washington is changing health policy through executive and court action more than legislation: a pocket rescission of nearly $1 billion in approved spending, a court order narrowing Section 504 disability protections, and a CMS-state pact to overhaul Medicaid quality measurement. The 340B fight over community benefit is also getting sharper.",
-          "items": [
-            {
-              "item_id": "2026-09-28-medicaid-quality-measures-37-state-partnership",
-              "canonical_topic": "medicaid-quality-measures-37-state-partnership",
-              "duplicate_group": "medicaid-quality-measures-37-state-partnership",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/37-states-partner-cms-initiative-rethink-medicaid-quality-measures",
-                  "source_type": "rss",
-                  "published_at": "2026-09-25T17:33:00-04:00"
-                }
-              ],
-              "title": "CMS and 37 states launch partnership to rethink Medicaid and CHIP quality measures",
-              "summary": "CMS announced a partnership with 37 states under a new Investing in Health Outcomes program to rethink Medicaid and CHIP quality measurement. CMS's May 2026 review of 42 states found 450 reporting requirements tied to roughly 260 unique measures; participating states pledge to prioritize outcomes over process, streamline measures, move toward digital measurement, and align financial results with outcomes.",
-              "strategic_implication": "Health plans, state agencies, and safety-net providers should prepare for measure-set changes, new benchmarking expectations, and possible rework of quality-improvement investments. Organizations that can link clinical operations to outcomes data will be better positioned as the framework evolves.",
-              "confidence": "medium",
-              "tags": [
-                "medicaid",
-                "chip",
-                "quality-measures",
-                "cms",
-                "state-policy"
-              ]
-            },
-            {
-              "item_id": "2026-09-28-hhs-nearly-1b-spending-rescission",
-              "canonical_topic": "hhs-nearly-1b-spending-rescission",
-              "duplicate_group": "hhs-nearly-1b-spending-rescission",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/25/trump-administration-cancel-spending-hhs-programs/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-26T01:03:38Z"
-                },
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/28/health-news-trump-uses-contested-power-to-cut-more-funding-to-hhs/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T12:22:00Z"
-                }
-              ],
-              "title": "Trump administration moves to claw back nearly $1 billion in approved HHS spending",
-              "summary": "The administration used a contested \"pocket rescission\" to cancel nearly $1 billion in congressionally approved spending, announced with only five days left in the fiscal year. Most cuts hit HHS programs serving refugees and unaccompanied minors, plus $28 million in HHS research grants, including studies on primary-care access and racism in emergency medicine. Senate Appropriations Chair Susan Collins condemned the move, and GAO considers the maneuver illegal.",
-              "strategic_implication": "Public-health and community-care organizations should stress-test grant-dependent services and avoid treating enacted federal appropriations as fully secure until funds are obligated and available. Boards and finance teams may need contingency plans for delayed or rescinded awards.",
-              "confidence": "high",
-              "tags": [
-                "hhs",
-                "federal-spending",
-                "public-health",
-                "grants",
-                "policy-risk"
-              ]
-            },
-            {
-              "item_id": "2026-09-28-texas-v-kennedy-section-504-community-integration",
-              "canonical_topic": "texas-v-kennedy-section-504-community-integration",
-              "duplicate_group": "texas-v-kennedy-section-504-community-integration",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/25/health-news-federal-judge-rolls-back-landmark-disability-protections/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-25T12:53:00Z"
-                }
-              ],
-              "title": "Federal judge orders HHS to strip community-integration language from Section 504 disability rule",
-              "summary": "In Texas v. Kennedy, a federal judge in Texas ruled that HHS must remove every reference to community integration from its updated Section 504 rule under the Rehabilitation Act. The case began in 2024 when 17 states challenged the Biden-era update. The Justice Department said in June it would no longer enforce laws prioritizing community-based services over institutional care, although the ADA's protections are unchanged.",
-              "strategic_implication": "Medicaid agencies, home- and community-based services providers, and long-term care operators should watch for weaker federal pressure to shift care out of institutions. Olmstead obligations under the ADA remain, so providers should not assume compliance exposure has disappeared.",
-              "confidence": "high",
-              "tags": [
-                "section-504",
-                "disability",
-                "hcbs",
-                "litigation",
-                "hhs"
-              ]
-            },
-            {
-              "item_id": "2026-09-28-340b-charity-care-spending-gap",
-              "canonical_topic": "340b-charity-care-spending-gap",
-              "duplicate_group": "340b-charity-care-spending-gap",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/340b-hospitals-lag-behind-peers-in-charity-care-spending-report/831394/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-25T11:46:03-04:00"
-                }
-              ],
-              "title": "Report says 340B hospitals lag peers in charity-care spending",
-              "summary": "A Pioneer Institute and CancerCare report found 340B hospitals spent 2.16% of operating expenses on charity care versus 2.82% at non-340B hospitals, using CMS cost data from Q1 2025. The AHA disputed the analysis, saying it wrongly treats charity care as the only measure of community benefit. 340B drug purchases reached $100 billion in 2025, up nearly 23%.",
-              "strategic_implication": "340B hospitals should expect continued scrutiny of community-benefit documentation and should be ready to connect discounted drug purchasing to access, services, and patient outcomes. Policymakers may use the dispute to justify tighter reporting or eligibility rules.",
-              "confidence": "medium",
-              "tags": [
-                "340b",
-                "charity-care",
-                "hospital-finance",
-                "drug-discounts"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "AI is becoming a strategic health-security issue, not only a productivity tool. The latest warning is that generative systems may lower barriers to biological weapons faster than defensive capabilities can mature.",
-          "items": [
-            {
-              "item_id": "2026-09-28-ai-bioweapons-barriers-warning",
-              "canonical_topic": "ai-bioweapons-barriers-warning",
-              "duplicate_group": "ai-bioweapons-barriers-warning",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/28/ai-bioweapons-pathogens-guardrails-policy-warning/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T08:30:00Z"
-                }
-              ],
-              "title": "AI is eroding barriers that have kept biological weapons rare, researcher warns",
-              "summary": "A STAT opinion essay argues AI is lowering the barriers that have kept biological weapons rare. It cites Anthropic's September report of five cases in which its models were used for work that could support bioweapons development, and a 2026 study in which 36 of 38 DNA synthesis companies shipped fragments of the 1918 influenza virus. Harvard and RAND reports this year reached similar conclusions.",
-              "strategic_implication": "Health systems, life-science companies, and public agencies should treat AI governance as part of biosecurity and business continuity, with clear escalation paths for suspicious requests, model access, and laboratory risk. Investments in detection and response may need to move ahead of mature regulatory standards.",
-              "confidence": "medium",
-              "tags": [
-                "ai",
-                "biosecurity",
-                "biothreats",
-                "public-health",
-                "risk-management"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Drug markets are being reshaped by how products are sold, delivered, and funded: GLP-1s marketed as lifestyle products, weekly insulin, an upsized biotech IPO, another ultra-rare disease approval, and generic flu-antiviral licensing for pandemic preparedness.",
-          "items": [
-            {
-              "item_id": "2026-09-28-glp1-lifestyle-drug-marketing-shift",
-              "canonical_topic": "glp1-lifestyle-drug-marketing-shift",
-              "duplicate_group": "glp1-lifestyle-drug-marketing-shift",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/28/glp1-marketing-shift-obesity-medicine-weight-loss-drug/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T08:30:00Z"
-                }
-              ],
-              "title": "GLP-1 makers shift obesity medicines from patient framing toward lifestyle consumers",
-              "summary": "STAT reports that GLP-1 makers, led by Novo Nordisk, are repositioning obesity medicines as lifestyle products. Novo has run \"Live lighter\" and \"Summer Glow Up\" campaigns, now describes Wegovy as a \"weight loss\" drug rather than an anti-obesity medicine, and increasingly refers to \"customers\" rather than \"patients.\"",
-              "strategic_implication": "Payers, providers, and employers should expect broader utilization and stronger demand for coverage decisions as obesity medicines move further into consumer channels. Commercial strategy will need to balance access, clinical appropriateness, adherence support, and long-term cost exposure.",
-              "confidence": "medium",
-              "tags": [
-                "glp-1",
-                "obesity",
-                "pharma",
-                "consumer-health",
-                "drug-pricing"
-              ]
-            },
-            {
-              "item_id": "2026-09-28-weekly-basal-insulin-approval",
-              "canonical_topic": "weekly-basal-insulin-approval",
-              "duplicate_group": "weekly-basal-insulin-approval",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/25/biotech-news-lilly-wins-approval-for-weekly-insulin-shot/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-25T15:25:10Z"
-                },
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-once-weekly-insulin-type-2-diabetes-mellitus",
-                  "source_type": "web",
-                  "published_at": "2026-09-23"
-                }
-              ],
-              "title": "FDA approves Lilly's once-weekly basal insulin for adults with type 2 diabetes",
-              "summary": "The FDA approved Eli Lilly's Onswik (insulin efsitora alfa), a once-weekly basal insulin for adults with type 2 diabetes, based on the Phase 3 QWINT program. It offers an alternative to daily long-acting insulin injections in an increasingly competitive diabetes market.",
-              "strategic_implication": "Payers and diabetes-care teams should assess whether weekly dosing improves adherence enough to offset acquisition and training costs. Manufacturers will compete not only on efficacy but also on access, delivery logistics, and the patient experience of chronic therapy.",
-              "confidence": "high",
-              "tags": [
-                "insulin",
-                "diabetes",
-                "fda",
-                "lilly",
-                "drug-approval"
-              ]
-            },
-            {
-              "item_id": "2026-09-28-mpp-xofluza-generic-sublicenses-pandemic",
-              "canonical_topic": "mpp-xofluza-generic-sublicenses-pandemic",
-              "duplicate_group": "mpp-xofluza-generic-sublicenses-pandemic",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/pharmalot/2026/09/25/roche-xofluza-influenza-treatment-agreements/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-09-25T17:50:00Z"
-                }
-              ],
-              "title": "Medicines Patent Pool licenses 11 manufacturers to make generic Roche flu drug for 129 countries",
-              "summary": "The U.N.-backed Medicines Patent Pool signed sublicenses with 11 manufacturers to develop, make, and supply generic versions of Roche's influenza antiviral Xofluza in 129 countries, covering nearly all low- and middle-income nations. Manufacturers will receive technical data and reference products to support regulatory approval.",
-              "strategic_implication": "This builds global antiviral manufacturing capacity ahead of a potential flu pandemic. U.S. preparedness planners and manufacturers should watch whether it changes supply competition or stockpiling strategy.",
-              "confidence": "high",
-              "tags": [
-                "pandemic-preparedness",
-                "influenza",
-                "generics",
-                "global-health",
-                "roche"
-              ]
-            },
-            {
-              "item_id": "2026-09-28-adarx-535m-ipo-sirna",
-              "canonical_topic": "adarx-535m-ipo-sirna",
-              "duplicate_group": "adarx-535m-ipo-sirna",
-              "priority_score": 6,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/adarx-ipo-small-interfering-rna-gene-silencing-sirna-hae-adrx/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-25T19:29:00Z"
-                }
-              ],
-              "title": "ADARx raises $535M in upsized IPO, a sign the biotech market is reopening",
-              "summary": "Gene-silencing biotech ADARx priced an upsized IPO at $17 a share, raising $446.3 million, plus an $89 million private placement from partner AbbVie, for $535.3 million total. Its lead siRNA drug, onvuzosiran, is in a 90-patient Phase 3 trial for hereditary angioedema, with data expected by the end of 2027.",
-              "strategic_implication": "Large, upsized biotech IPOs suggest investors are paying again for late-stage RNA medicines. Payers should expect more competition in high-cost rare-disease categories such as hereditary angioedema later this decade.",
-              "confidence": "high",
-              "tags": [
-                "biotech",
-                "ipo",
-                "sirna",
-                "rare-disease",
-                "capital-markets"
-              ]
-            },
-            {
-              "item_id": "2026-09-28-mirum-atebrioz-fop-approval",
-              "canonical_topic": "mirum-atebrioz-fop-approval",
-              "duplicate_group": "mirum-atebrioz-fop-approval",
-              "priority_score": 6,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/mirum-pharmaceuticals-incyte-fda-approval-zilurgisertib-atebrioz-ultra-rare-disease-mirm-incy/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-27T17:54:00Z"
-                }
-              ],
-              "title": "FDA approves Mirum's oral Atebrioz, the third drug for ultra-rare FOP",
-              "summary": "The FDA approved Mirum Pharmaceuticals' Atebrioz (zilurgisertib), a once-daily oral pill for fibrodysplasia ossificans progressiva in patients 12 and older, even though the pivotal Phase 2 trial missed its primary endpoint. It is the second FOP approval in two months after Regeneron's Pasatru. Leerink estimates about 300 U.S. patients and $200 million in peak sales.",
-              "strategic_implication": "Approval on secondary endpoints shows the FDA remains flexible for ultra-rare diseases. Payers should expect three competing high-cost FOP therapies and tighter coverage criteria as a result.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "rare-disease",
-                "approvals",
-                "drug-pricing"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Access and administrative strain remain structural. Millions of Americans lack a local surgeon, and physician practices report hours each week handling drug-cost callbacks and prior authorization.",
-          "items": [
-            {
-              "item_id": "2026-09-28-surgeon-access-county-gap",
-              "canonical_topic": "surgeon-access-county-gap",
-              "duplicate_group": "surgeon-access-county-gap",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/millions-americans-dont-have-surgeon-their-home-county-study",
-                  "source_type": "rss",
-                  "published_at": "2026-09-25T16:53:00-04:00"
-                }
-              ],
-              "title": "More than 15 million Americans live in counties without a general surgeon",
-              "summary": "An American College of Surgeons and UNC analysis found just over 15 million people live in counties with no general surgeon and nearly 10 million in counties with no specialty surgeon. General surgeons were absent from 38% of counties, and 434 critical access hospitals sit in rural counties with no recorded full-time surgeon. National supply is 59.2 surgeons per 100,000 people.",
-              "strategic_implication": "Health systems should treat surgical coverage as a network-design and workforce problem, not only a recruitment problem, using regional partnerships, teleconsultation, transportation, and targeted training to extend scarce capacity. Payers and policymakers may face pressure to fund access models that cross county and system boundaries.",
-              "confidence": "high",
-              "tags": [
-                "surgical-access",
-                "workforce",
-                "rural-health",
-                "health-equity"
-              ]
-            },
-            {
-              "item_id": "2026-09-28-physician-drug-cost-burden-survey",
-              "canonical_topic": "physician-drug-cost-burden-survey",
-              "duplicate_group": "physician-drug-cost-burden-survey",
-              "priority_score": 7,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/report-high-drug-costs-are-creating-hidden-burden-for-physicians/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-25T22:11:00Z"
-                }
-              ],
-              "title": "Survey finds drug costs create hours of weekly administrative work for practices",
-              "summary": "RazorMetrics' 2026 Physician Drug Cost Survey of 104 physicians found 96% have had a patient quietly stop a medication because of cost, and 84% of practices field at least five patient calls a week about prescription prices. Seventy-two percent spend five or more hours a week on prior authorization, and 42% manage more than 30 requests weekly.",
-              "strategic_implication": "Practices and health systems should count prescription-cost friction as a staffing and adherence cost, not just a patient issue. Point-of-prescribing price tools and lower-cost substitution workflows can cut callbacks and prior-authorization work.",
-              "confidence": "medium",
-              "tags": [
-                "prior-authorization",
-                "drug-costs",
-                "physician-practices",
-                "adherence"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "A potential 4,000-nurse strike at Mass General Brigham signals that labor pressure remains acute even at major academic systems. Workforce disputes are increasingly tied to operating resilience, patient throughput, and community reputation.",
-          "items": [
-            {
-              "item_id": "2026-09-28-brigham-nurses-strike-authorization",
-              "canonical_topic": "brigham-nurses-strike-authorization",
-              "duplicate_group": "brigham-nurses-strike-authorization",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/brigham-and-womens-nurses-authorize-open-ended-strike",
-                  "source_type": "rss",
-                  "published_at": "2026-09-25T11:53:00-04:00"
-                }
-              ],
-              "title": "Brigham and Women's nurses authorize open-ended strike",
-              "summary": "Nurses at Brigham and Women's Hospital voted 93% to authorize an open-ended strike involving about 4,000 members, which would be the largest nurses' strike in Massachusetts history. No date is set, and the union must give 10 days' notice. Talks have run since November after the contract expired March 31, while Mass General Brigham reports a 0.1% operating margin through nine months of its fiscal year.",
-              "strategic_implication": "Large systems should model strike contingencies as patient-flow and capacity events, including staffing agency availability, elective-case triage, and communication with payers and communities. Leaders should also treat bargaining outcomes as a benchmark for retention and labor-cost assumptions across regional markets.",
-              "confidence": "high",
-              "tags": [
-                "nurses",
-                "labor-relations",
-                "hospital-operations",
-                "staffing",
-                "massachusetts"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-06T13:38:15Z"
+  "last_updated": "2026-11-09T13:41:18Z"
 }

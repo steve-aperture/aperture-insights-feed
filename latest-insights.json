@@ -3,6 +3,717 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-10",
+      "generated_at": "2026-11-10T13:37:59Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "The FDA warned of a rare vision-loss risk with GLP-1 drugs and approved Bayer's first-in-class stroke drug. Hospitals wrote off an estimated $132 billion despite AI spending, private equity now owns about 12% of private hospitals, BIO proposed a national biotech plan to counter China, and an early H1N1-driven flu surge is building. Sources include STAT, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News and Becker's.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS",
+          "BioPharma Dive, MedTech Dive, MedCity News, KFF Health News, Becker's Hospital Review and Fierce Healthcare RSS"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for Nov. 9-10",
+          "Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News and Becker's RSS fetched and screened",
+          "Articles read on Healthcare Dive, BioPharma Dive, MedTech Dive, Becker's and STAT to verify figures"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and sender searches since Nov. 7-9 returned no messages in the connected mailbox; RSS sources used instead.",
+          "Fierce Healthcare RSS returned malformed XML and was not parsed.",
+          "STAT+ articles (NAION warning, WuXi, Ionis, Foundayo, BIO op-ed) were paywalled; those items rely on visible text and RSS descriptions."
+        ],
+        "run_notes": "24 items cover developments reported Nov. 9 through the morning of Nov. 10. Checked against the prior 30 editions for repeats; excluded the CMS remote-monitoring delay (covered Nov. 5-6), Zolgensma tumor reports, synthetic DNA screening rule, Hims-Lilly deal and the KFF Health News Nebraska work-requirements story already covered. STAT's Medicaid expansion holdout-state analysis overlaps the Nov. 9 Texas item and was not repeated. The U.S. News nursing home count is reported as a number, not a share, because the source's 18% figure does not match 1,018 of 14,669."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "The FDA added a rare vision-loss warning to GLP-1 drugs, BIO pitched a national biotech strategy to counter China, and the Pentagon dropped WuXi AppTec from its military list. MediKids emerged as a narrower coverage idea for the new Congress, and drug access in poorer countries improved unevenly.",
+          "items": [
+            {
+              "item_id": "2026-11-10-fda-glp1-naion-eye-risk-warning",
+              "canonical_topic": "fda-glp1-naion-eye-risk-warning",
+              "duplicate_group": "fda-glp1-naion-eye-risk-warning",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/09/glp-1-drugs-potential-risk-rare-eye-condition-naion-fda/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T15:56:55Z"
+                }
+              ],
+              "title": "FDA warns GLP-1 drugs may carry a risk of NAION, a rare 'eye stroke,' and orders labeling updates",
+              "summary": "The FDA said on Nov. 9 that GLP-1 drugs, including Novo Nordisk's Ozempic and Wegovy and Eli Lilly's Mounjaro and Zepbound, may carry a risk of non-arteritic anterior ischemic optic neuropathy, and required manufacturers to inform patients and clinicians. NAION is caused by insufficient blood flow to the optic nerve, typically causes sudden vision loss, can lead to blindness and has no proven treatment. The signal emerged from real-world use rather than trials.",
+              "strategic_implication": "Prescribers and obesity programs should add NAION to consent and counseling scripts and set a clear referral path for sudden vision changes. Employers and plans covering GLP-1s should expect members to ask questions, and direct-to-consumer telehealth sellers will need to show their safety messaging keeps pace.",
+              "confidence": "medium",
+              "tags": [
+                "glp-1",
+                "fda",
+                "drug-safety",
+                "labeling",
+                "obesity"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-bio-bioadvance-plan-china-competition",
+              "canonical_topic": "bio-bioadvance-plan-china-competition",
+              "duplicate_group": "bio-bioadvance-plan-china-competition",
+              "priority_score": 8,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/bio-bioadvance-proposal-us-trial-competition-china/874162/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T05:01:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/10/china-biotech-bio-plan-space-race/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T09:30:00Z"
+                }
+              ],
+              "title": "BIO proposes a seven-part BioAdvance plan, including a White House biotech office, to counter China",
+              "summary": "The Biotechnology Innovation Organization released 'BioAdvance: Securing America's Biotech Century' on Nov. 10, urging Congress and the administration to act as China starts more than a quarter of the world's clinical trials and targets a quarter of first-in-class drugs by 2030. The plan calls for more flexible first-in-human trial rules, alternatives to animal testing, earlier FDA engagement, centralized multisite trial approvals, more predictable NIH funding, startup tax incentives and a White House Office of Biotechnology. BIO says some U.S. companies are moving early-stage work to China and Australia.",
+              "strategic_implication": "Academic medical centers and research hospitals have a stake in the trial-infrastructure pieces: centralized IRB and contracting reforms would favor sites that can activate quickly. Research leaders should benchmark study start-up times now, since sponsors are already shopping internationally on speed and cost.",
+              "confidence": "high",
+              "tags": [
+                "biotech",
+                "china",
+                "clinical-trials",
+                "nih",
+                "industrial-policy"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-wuxi-apptec-removed-chinese-military-list",
+              "canonical_topic": "wuxi-apptec-removed-chinese-military-list",
+              "duplicate_group": "wuxi-apptec-removed-chinese-military-list",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/11/09/trump-administration-removes-wuxi-apptec-from-its-chinese-military-list/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T20:51:50Z"
+                }
+              ],
+              "title": "Pentagon removes WuXi AppTec from its Chinese military companies list after a court ruling",
+              "summary": "The Defense Department removed contract manufacturer WuXi AppTec from its list of Chinese military companies operating in the U.S., saying it was complying with a federal court ruling. A district judge had temporarily blocked the designation after WuXi sued under the Administrative Procedure Act. The listing, added about two months earlier, could have set up a 'biotech company of concern' designation. Details beyond the opening are behind STAT's paywall.",
+              "strategic_implication": "The removal eases near-term supply-chain risk for drugmakers that rely on WuXi for development and manufacturing, but the policy fight is not over. Health system pharmacy and supply leaders should keep tracking drug-supply exposure to Chinese CDMOs as the new Congress revisits biosecure-style legislation.",
+              "confidence": "medium",
+              "tags": [
+                "supply-chain",
+                "china",
+                "biosecure",
+                "pharma-manufacturing"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-medikids-medicare-for-all-debate",
+              "canonical_topic": "medikids-medicare-for-all-debate",
+              "duplicate_group": "medikids-medicare-for-all-debate",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/medicare-for-all-or-just-for-kids/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T02:23:49Z"
+                }
+              ],
+              "title": "With Democrats taking Congress, MediKids emerges as a narrower alternative to Medicare for All",
+              "summary": "KFF polling before the midterms found two-thirds of adults support Medicare for All, up from 53% in October 2020, though an Axios/Ipsos poll found 43% support for a plan largely replacing private insurance. House Democrats' agenda calls for a universal-coverage consensus in the new Congress's first year without endorsing Medicare for All. Sen. Andy Kim's MediKids bill would cover children and young people through age 26 by broadening Medicaid, auto-enrolling newborns and setting the federal match at 100% for the newly eligible, with most provisions taking effect two years after enactment. The AAP and ACOG endorsed it.",
+              "strategic_implication": "Pediatric systems and children's hospitals, which depend heavily on Medicaid, would be most exposed to any MediKids rate structure. Any bill would still face a Senate filibuster and a likely presidential veto, so treat this as a 2027 to 2028 agenda signal rather than a near-term payment change.",
+              "confidence": "medium",
+              "tags": [
+                "coverage",
+                "medicaid",
+                "pediatrics",
+                "congress",
+                "universal-coverage"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-pharma-lmic-access-mixed-analysis",
+              "canonical_topic": "pharma-lmic-access-mixed-analysis",
+              "duplicate_group": "pharma-lmic-access-mixed-analysis",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/11/10/access-to-key-drugs-mixed-in-poor-countries-cancer-diabetes/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T13:00:00Z"
+                }
+              ],
+              "title": "Analysis finds pharma's access plans for low- and middle-income countries expanding but uneven",
+              "summary": "A new analysis reported Nov. 10 found pre-launch access plans now cover 69% of late-stage pipeline candidates, up from 18% in 2018, and 65% of cancer drugs, up from 5%. Drugs developed with a nonprofit partner were far more likely to have a plan (95% vs. 67%). But 43% of access plans for sickle cell disease, diabetes and mental health focus only on regulatory registrations, mostly in wealthy countries.",
+              "strategic_implication": "For global health programs and academic partners, nonprofit co-development is the clearest lever for access commitments. U.S. policymakers weighing most-favored-nation pricing should note that international pricing pressure and LMIC access pledges are increasingly linked in manufacturer strategy.",
+              "confidence": "medium",
+              "tags": [
+                "global-health",
+                "drug-access",
+                "pharma",
+                "equity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Hospital write-offs climbed to an estimated $132 billion despite revenue-cycle AI spending. The FDA opened a framework discussion on autonomous and remote surgical robots, a JAMA Pediatrics study flagged widespread EHR contact errors that threaten adolescent privacy, and AWS offered $100 million in equity-focused cloud credits.",
+          "items": [
+            {
+              "item_id": "2026-11-10-hospitals-write-off-132b-ai-rcm",
+              "canonical_topic": "hospitals-write-off-132b-ai-rcm",
+              "duplicate_group": "hospitals-write-off-132b-ai-rcm",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hospitals-write-off-132b-ai-fails-to-move-needle-with-finances/874161/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T19:30:52Z"
+                }
+              ],
+              "title": "Hospitals wrote off an estimated $132 billion in bad debt and denials, up 18%, despite AI spending",
+              "summary": "Kodiak Solutions estimates U.S. hospitals wrote off $132 billion last year in bad debt and final claim denials, nearly 18% more than in 2024 and about 10% of net revenue, extrapolated from $52 billion at hospitals on its platform. Bad debt held near 7% of net revenue and final denials near 3%, with growth driven by high-dollar denials, case-mix shifts and revenue growth. Hospital technology budgets rose 7.6% to $69 billion in 2026, yet revenue-cycle AI has not produced matching financial gains, a dynamic Kodiak described as a payer-provider AI arms race.",
+              "strategic_implication": "CFOs should judge revenue-cycle AI on net collections and denial overturn rates, not productivity or automation counts. Kodiak's distinction between tools that run the revenue cycle and tools that improve financial performance is a useful filter for 2027 budget reviews and vendor renewals.",
+              "confidence": "high",
+              "tags": [
+                "revenue-cycle",
+                "ai",
+                "denials",
+                "bad-debt",
+                "hospital-finance"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-fda-telesurgery-autonomous-robotics-paper",
+              "canonical_topic": "fda-telesurgery-autonomous-robotics-paper",
+              "duplicate_group": "fda-telesurgery-autonomous-robotics-paper",
+              "priority_score": 7,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/fda-seeks-input-on-telesurgery-autonomous-robotics/874124/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T15:47:04Z"
+                }
+              ],
+              "title": "FDA issues discussion paper on autonomous and remote telesurgery robots, with comments due Jan. 5",
+              "summary": "The FDA released a discussion paper on robotic devices with autonomous or remote teleoperation capabilities and requested public comment by Jan. 5, with a public workshop Dec. 2-3. As of July, no remotely teleoperated or fully autonomous robotic device had U.S. marketing authorization. The agency cited potential gains in accuracy, reproducibility and workflow, and risks including incorrect autonomous execution, reduced user vigilance and limited adaptability. In October, AdventHealth's Dr. Vipul Patel performed an investigational robotic prostatectomy on a patient about 35 miles away.",
+              "strategic_implication": "Systems with large robotic programs should weigh in on credentialing, connectivity and liability questions before the FDA sets the framework. Telesurgery could eventually extend specialist reach to rural sites, but network redundancy and on-site backup surgeon requirements will drive feasibility.",
+              "confidence": "high",
+              "tags": [
+                "robotics",
+                "telesurgery",
+                "fda",
+                "medtech",
+                "rural-access"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-pediatric-ehr-contact-errors",
+              "canonical_topic": "pediatric-ehr-contact-errors",
+              "duplicate_group": "pediatric-ehr-contact-errors",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/pediatric-ehr-contact-errors-hit-90-of-patients-across-3-sites/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T22:44:07Z"
+                }
+              ],
+              "title": "JAMA Pediatrics study finds contact-information errors in EHRs of 90% of young patients at three sites",
+              "summary": "A research letter published Nov. 9 in JAMA Pediatrics analyzed EHR data for 1.2 million patients ages 0-21 at Stanford Medicine Children's Health, Boston Children's Pediatric Physicians' Organization and Children's National. Phone-field errors, usually a caregiver's number in the patient field, affected 98% of children, 88% of adolescents and 60% of young adults; email errors affected 44%. Researchers blamed EHR design in both Epic and Oracle Health and warned that confidential adolescent information could reach caregivers, including in custody or foster-care situations.",
+              "strategic_implication": "This is a privacy and compliance exposure, not just a data-quality issue. Pediatric and family medicine practices should audit patient-level contact fields for adolescents, tighten registration workflows at age transitions and press EHR vendors for consent-aware field logic.",
+              "confidence": "high",
+              "tags": [
+                "ehr",
+                "adolescent-privacy",
+                "pediatrics",
+                "data-quality",
+                "patient-portal"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-aws-100m-health-equity-credits",
+              "canonical_topic": "aws-100m-health-equity-credits",
+              "duplicate_group": "aws-100m-health-equity-credits",
+              "priority_score": 5,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/aws-pledges-100m-in-cloud-ai-credits-to-close-health-equity-gaps/874103/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T14:59:09Z"
+                }
+              ],
+              "title": "AWS pledges $100 million in cloud and AI credits over five years for health-equity projects",
+              "summary": "Amazon Web Services launched the AWS Health Impact Initiative, offering $100 million in cloud and AI credits, not cash, over five years to health systems, nonprofits, governments, researchers and health-tech firms. Projects must address access to care, women's and children's health research or access to healthy food. Awards start at up to $10,000 and must be used within two years; AWS says the goal is to de-risk new work, not subsidize operations.",
+              "strategic_implication": "Safety-net and rural providers can use the credits to pilot data or AI projects, but they need a sustainability plan before the credits expire. Leaders should also watch for cloud lock-in when free capacity shapes architecture decisions.",
+              "confidence": "high",
+              "tags": [
+                "cloud",
+                "ai",
+                "health-equity",
+                "safety-net",
+                "philanthropy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Private equity now owns about 12% of private hospitals. Bayer won the first Factor XIa approval for stroke prevention, Ionis lost a quarter of its value on a weak launch, and Argenx and Labcorp continued dealmaking. Novocure was denied approval, while Vir and Lilly posted positive late-stage data.",
+          "items": [
+            {
+              "item_id": "2026-11-10-pe-owns-12-percent-hospitals",
+              "canonical_topic": "pe-owns-12-percent-hospitals",
+              "duplicate_group": "pe-owns-12-percent-hospitals",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/12-of-us-hospitals-are-owned-by-private-equity/874098/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T14:52:23Z"
+                }
+              ],
+              "title": "Private equity now owns 561 U.S. hospitals, about 12% of private hospitals, PESP tracker finds",
+              "summary": "Private Equity Stakeholder Project data show 561 of 4,714 tracked Medicare-enrolled private hospitals are PE-backed, up from 488 in March 2025 and about one-third of for-profit hospitals. Apollo owns 200 facilities, including through Lifepoint and ScionHealth, and Welsh Carson owns 124. Rehabilitation hospitals and LTACHs are heavily represented, and 23% are joint ventures with nonprofit systems. Among the 17% with ratings data, most scored three stars or fewer.",
+              "strategic_implication": "Nonprofit systems in PE joint ventures, especially post-acute and rehab, should expect more scrutiny as 11 states have passed oversight laws and a Democratic Congress revisits Steward and Prospect. Transaction teams should build ownership-transparency and quality-reporting terms into JV agreements now.",
+              "confidence": "high",
+              "tags": [
+                "private-equity",
+                "ownership",
+                "post-acute",
+                "oversight",
+                "m-and-a"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-fda-approves-bayer-sunharbo-asundexian",
+              "canonical_topic": "fda-approves-bayer-sunharbo-asundexian",
+              "duplicate_group": "fda-approves-bayer-sunharbo-asundexian",
+              "priority_score": 8,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/bayer-sunharbo-asundexian-fda-approve-stroke-factor-xi/872837/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T22:40:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/09/cardiovascular-stroke-recurrence-bayer-drug-fda-approval/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T22:28:43Z"
+                }
+              ],
+              "title": "FDA approves Bayer's Sunharbo, the first Factor XIa inhibitor, for secondary stroke prevention",
+              "summary": "The FDA approved Bayer's Sunharbo (asundexian) on Nov. 9 for certain adults with a prior transient ischemic attack or non-cardioembolic ischemic stroke, used with antiplatelet therapy. In a trial of more than 12,000 adults it cut ischemic stroke risk by 26% versus placebo with similar major bleeding. The list price is $748.50 for a 30-day supply, and Bayer said access could limit the launch.",
+              "strategic_implication": "Stroke centers and neurology services should update secondary-prevention pathways and pharmacy and therapeutics reviews. At roughly $9,000 a year, payer step-therapy and prior-authorization rules will shape uptake, and the Factor XI class, including BMS-J&J's milvexian, may become a significant Part D cost line.",
+              "confidence": "high",
+              "tags": [
+                "stroke",
+                "fda-approval",
+                "anticoagulation",
+                "drug-pricing",
+                "cardiology"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-ionis-tryngolza-slow-launch",
+              "canonical_topic": "ionis-tryngolza-slow-launch",
+              "duplicate_group": "ionis-tryngolza-slow-launch",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/09/ionis-pharmaceuticals-shares-plummet-after-tryngolza-slow-rollout/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T00:50:50Z"
+                }
+              ],
+              "title": "Ionis loses more than $1 billion in value after halving its Tryngolza sales forecast",
+              "summary": "Ionis cut its 2026 sales outlook for triglyceride-lowering drug Tryngolza to $50 million from $100 million to $110 million after third-quarter sales of $9 million missed the $21 million consensus. Shares fell about 25% within hours on Nov. 9, erasing more than $1 billion in market value. Analysts said physicians have been slow to prescribe a drug once viewed as a potential blockbuster.",
+              "strategic_implication": "The miss shows how hard it is to move specialty launches beyond the rarest indications without payer and prescriber pull. Manufacturers will lean harder on patient-identification programs, so health systems should expect more outreach tied to lipid and genetic-testing data.",
+              "confidence": "medium",
+              "tags": [
+                "pharma",
+                "launch",
+                "cardiometabolic",
+                "biotech"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-argenx-acquires-unnatural-products",
+              "canonical_topic": "argenx-acquires-unnatural-products",
+              "duplicate_group": "argenx-acquires-unnatural-products",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/argenx-unnatural-products-acquisition-deal-peptides-protein-macrocyclic-immune/874119/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T16:27:00Z"
+                },
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/argenx-unnatural-products-acquisition-macrocyclic-oral-peptides-immunology-inflammation-unp-argx/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T21:42:18Z"
+                }
+              ],
+              "title": "Argenx agrees to buy Unnatural Products for $550 million upfront to develop oral immunology peptides",
+              "summary": "Argenx will pay $550 million in cash upfront and up to $595 million in milestones for Unnatural Products, whose machine-learning platform designs oral macrocyclic peptides. Argenx, whose Vyvgart brought in $4.5 billion in net sales through September, plans to use the platform for durable oral medicines for immune-mediated diseases. The deal is expected to close by year-end.",
+              "strategic_implication": "Oral alternatives to infused biologics would shift immunology care from infusion centers to retail and specialty pharmacy, affecting site-of-care economics and buy-and-bill revenue. Health system specialty pharmacies should track this pipeline in long-range planning.",
+              "confidence": "high",
+              "tags": [
+                "m-and-a",
+                "immunology",
+                "biotech",
+                "site-of-care"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-labcorp-closes-millennium-health",
+              "canonical_topic": "labcorp-closes-millennium-health",
+              "duplicate_group": "labcorp-closes-millennium-health",
+              "priority_score": 6,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/labcorp-completes-375m-millennium-health-takeover/874075/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T18:00:00Z"
+                }
+              ],
+              "title": "Labcorp closes its up to $375 million Millennium Health deal and signals more PAMA-driven buys",
+              "summary": "Labcorp completed its acquisition of toxicology lab Millennium Health for $245 million upfront plus up to $130 million in milestones, expanding drug-testing capacity and geographic reach. It was one of four deals Labcorp struck in September and October, alongside MLM Medical Labs, BioReference testing businesses and Myriad Genetics' prenatal business. CEO Adam Schechter said PAMA pressures on smaller hospital and regional labs are expanding acquisition opportunities.",
+              "strategic_implication": "Hospitals with outreach lab programs should model PAMA rate exposure and assess whether to sell, partner or invest in scale. National labs are actively prospecting, so systems that wait may negotiate from weaker positions.",
+              "confidence": "high",
+              "tags": [
+                "laboratory",
+                "m-and-a",
+                "pama",
+                "outreach-lab"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-novocure-optune-mya-not-approvable",
+              "canonical_topic": "novocure-optune-mya-not-approvable",
+              "duplicate_group": "novocure-optune-mya-not-approvable",
+              "priority_score": 5,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/novocure-denied-fda-approval-for-metastatic-cancer-treatment/874127/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T16:40:09Z"
+                }
+              ],
+              "title": "FDA issues not-approvable letter for Novocure's Optune Mya for lung cancer brain metastases",
+              "summary": "The FDA declined to approve Novocure's Optune Mya tumor-treating fields device for non-small cell lung cancer that has spread to the brain, citing uncertainty about the degree of clinical benefit but raising no safety concerns. The pivotal trial delayed brain-metastasis progression but showed no difference in neurocognitive failure, overall survival or radiological response. Novocure had planned an early 2027 launch and will seek a path to approval without new studies.",
+              "strategic_implication": "The decision signals FDA scrutiny of surrogate endpoints when patient-centered outcomes do not move. Oncology service lines should not plan Optune Mya capacity for 2027.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "oncology",
+                "medtech",
+                "endpoints"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-vir-hepatitis-d-phase3-success",
+              "canonical_topic": "vir-hepatitis-d-phase3-success",
+              "duplicate_group": "vir-hepatitis-d-phase3-success",
+              "priority_score": 5,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/vir-chronic-hepatitis-d-drug-results-elebsiran-tobevibart/874089/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T17:09:00Z"
+                }
+              ],
+              "title": "Vir's hepatitis D combination succeeds in the first of three Phase 3 trials",
+              "summary": "Vir's elebsiran plus tobevibart met its main goal in 44% of chronic hepatitis D patients at 48 weeks versus 0% with delayed treatment, and 79% achieved a viral-reduction response. Two more Phase 3 readouts are due early next year, supporting a possible 2027 filing. Gilead's Hepcludex became the first U.S. hepatitis D treatment earlier in 2026.",
+              "strategic_implication": "Hepatology programs should strengthen hepatitis B patient screening for delta co-infection, since a growing set of therapies will reward systems that have already identified these patients.",
+              "confidence": "high",
+              "tags": [
+                "hepatology",
+                "infectious-disease",
+                "pipeline",
+                "biotech"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-lilly-foundayo-sleep-apnea-data",
+              "canonical_topic": "lilly-foundayo-sleep-apnea-data",
+              "duplicate_group": "lilly-foundayo-sleep-apnea-data",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/09/eli-lilly-foundayo-sleep-apnea/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T14:30:00Z"
+                }
+              ],
+              "title": "Lilly's oral GLP-1 Foundayo eases sleep apnea in late-stage trials, though less than Zepbound",
+              "summary": "In one-year data presented Nov. 9 at the American Heart Association meeting and published in JAMA, Foundayo cut the apnea-hypopnea index by 17.8 events per hour versus 4.5 with placebo among patients not using PAP therapy, and 28% reached remission or mild disease versus 13%. Injectable Zepbound appeared more effective. Full details are behind STAT's paywall.",
+              "strategic_implication": "An oral option could widen the obstructive sleep apnea indication for GLP-1s and add another route to coverage for weight-related conditions. Plans and sleep medicine programs should prepare for formulary and step-therapy decisions between oral and injectable options.",
+              "confidence": "medium",
+              "tags": [
+                "glp-1",
+                "sleep-apnea",
+                "obesity",
+                "pharma"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Deaconess Illinois moved to reopen obstetrics in a rural maternity desert, Stanford and Sutter opened a joint cancer center, and Baptist Health South Florida added a 216-room tower. New nursing home ratings tied top performance to fewer readmissions and higher staffing.",
+          "items": [
+            {
+              "item_id": "2026-11-10-deaconess-illinois-ob-desert-plan",
+              "canonical_topic": "deaconess-illinois-ob-desert-plan",
+              "duplicate_group": "deaconess-illinois-ob-desert-plan",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/strategy/deaconess-illinois-aims-to-reverse-ob-desert/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T22:52:35Z"
+                }
+              ],
+              "title": "Deaconess Illinois plans to reopen obstetrics in a Southern Illinois region it calls a '60% OB desert'",
+              "summary": "Deaconess Illinois President Will Davis plans to seek state review board approval in the coming months to restore obstetric services, which would be the region's first OB reinstatement in more than a decade. Three of Illinois' 44 planning areas have no OB beds, and 16 Illinois hospitals have dropped obstetrics since 2020. The system is exploring partnerships with FQHCs, OB-GYN groups and a local university.",
+              "strategic_implication": "Reopening obstetrics is rare and costly, so the model to watch is the partnership structure with FQHCs and academic programs for staffing. Rural systems facing OB closures should study whether a regional hub-and-spoke approach can hold up financially under Medicaid-heavy payer mixes.",
+              "confidence": "high",
+              "tags": [
+                "maternity-care",
+                "rural-health",
+                "ob-desert",
+                "service-lines"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-stanford-sutter-oakland-cancer-center",
+              "canonical_topic": "stanford-sutter-oakland-cancer-center",
+              "duplicate_group": "stanford-sutter-oakland-cancer-center",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/capital/stanford-medicine-sutter-health-debut-cancer-center/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T22:20:23Z"
+                }
+              ],
+              "title": "Stanford Medicine and Sutter Health open a joint outpatient cancer center in Oakland",
+              "summary": "Stanford Medicine and Sutter Health held a ribbon-cutting Nov. 9 for the Stanford Medicine Sutter Health Cancer Center on Sutter's Alta Bates Summit campus. It opens Dec. 1 and should be fully operational by February 2027, with more than 70 physicians and advanced practice providers and 300 staff in joint disease-based teams. Services include infusion, radiation oncology, ambulatory surgery and access to both systems' clinical trials.",
+              "strategic_implication": "Academic-community oncology joint ventures let AMCs extend trial access and brand reach without owning the hospital. Competing systems in contested markets should expect more of these partnerships to anchor outpatient oncology volume.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "joint-venture",
+                "academic-medicine",
+                "ambulatory"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-baptist-boca-raton-patient-tower",
+              "canonical_topic": "baptist-boca-raton-patient-tower",
+              "duplicate_group": "baptist-boca-raton-patient-tower",
+              "priority_score": 4,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/baptist-health-south-florida-opens-8-story-patient-tower-in-boca-raton/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T22:49:16Z"
+                }
+              ],
+              "title": "Baptist Health South Florida opens an eight-story tower, making Boca Raton Regional Palm Beach County's largest hospital",
+              "summary": "Baptist Health South Florida opened the 427,000-square-foot Gloria Drummond Patient Tower at Boca Raton Regional Hospital on Nov. 9, adding 216 patient rooms, 20 operating rooms, an ICU and expanded surgical and cardiovascular services. The hospital now has 561 beds. The system raised more than $450 million through its Keeping the Promise campaign.",
+              "strategic_implication": "Philanthropy-funded inpatient growth in high-income Florida markets contrasts with closures elsewhere. Competitors in Palm Beach County should expect intensified competition for surgical and cardiovascular volume and staff.",
+              "confidence": "high",
+              "tags": [
+                "capital",
+                "florida",
+                "inpatient-capacity",
+                "philanthropy"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-us-news-nursing-home-ratings",
+              "canonical_topic": "us-news-nursing-home-ratings",
+              "duplicate_group": "us-news-nursing-home-ratings",
+              "priority_score": 4,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/rankings-and-ratings/states-with-the-most-least-top-performing-nursing-homes-us-news/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T12:00:00Z"
+                }
+              ],
+              "title": "U.S. News rates 1,018 nursing homes high performing; top facilities show 21% fewer readmissions",
+              "summary": "U.S. News evaluated 14,669 nursing homes using CMS data and rated 1,018 high performing in both short-term rehab and long-term care. Those homes had 19% fewer ED visits, 21% fewer readmissions and 19% more staffing per resident per day than national averages. California (293), Florida (191) and Pennsylvania (170) had the most.",
+              "strategic_implication": "Hospital care-transition teams can use the ratings alongside CMS stars to shape preferred SNF networks, but the staffing link reinforces that readmission performance depends on post-acute workforce stability.",
+              "confidence": "high",
+              "tags": [
+                "post-acute",
+                "nursing-homes",
+                "readmissions",
+                "quality"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "An early flu surge driven by a mutated H1N1 strain may hit teens and young adults hard. Labor costs keep rising, with CharterCARE settling one contract as more workers organize and 58 systems announcing raises.",
+          "items": [
+            {
+              "item_id": "2026-11-10-early-flu-season-teens-young-adults",
+              "canonical_topic": "early-flu-season-teens-young-adults",
+              "duplicate_group": "early-flu-season-teens-young-adults",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/10/health-news-why-flu-season-could-hit-teens-and-young-adults-hard/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T12:49:35Z"
+                }
+              ],
+              "title": "Early flu surge reaches 1.7 million cases, and a mutated H1N1 strain may hit teens and young adults hardest",
+              "summary": "CDC estimates cited by STAT show at least 1.7 million U.S. flu cases and 1,400 deaths so far this season, higher than usual for early November, with clusters in the South and West Coast. The dominant mutated H1N1 strain surged in Japan earlier this year, and University of Washington pulmonologist Vin Gupta said Asian travel gateways may explain the early West Coast spike. A preliminary study suggests people without H1N1 exposure before 2009 may be more vulnerable; higher case counts do not necessarily mean more severe illness.",
+              "strategic_implication": "Emergency departments, urgent care and school-health partners should push vaccination now, including outreach to adolescents and young adults who often skip flu shots. Capacity planners should prepare for an early respiratory surge overlapping with holiday staffing gaps.",
+              "confidence": "medium",
+              "tags": [
+                "influenza",
+                "surveillance",
+                "vaccination",
+                "capacity",
+                "respiratory"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-chartercare-contract-roger-williams-union-drive",
+              "canonical_topic": "chartercare-contract-roger-williams-union-drive",
+              "duplicate_group": "chartercare-contract-roger-williams-union-drive",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hr/chartercare-signs-contract-with-1100-workers-as-200-seek-union-vote/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T23:08:43Z"
+                }
+              ],
+              "title": "CharterCARE signs a 3-year contract covering 1,100 staff as 235 more Roger Williams workers seek a union vote",
+              "summary": "CharterCARE Health of Rhode Island reached a three-year agreement with United Nurses and Allied Professionals covering more than 1,100 nurses and technical staff. SEIU 1199 New England filed NLRB petitions Nov. 3 and Nov. 5 for 235 more Roger Williams Medical Center workers, including CNAs, patient care techs, phlebotomists and maintenance staff, citing staffing and wages. CharterCARE was formed in 2026 when the Centurion Foundation bought two hospitals from bankrupt Prospect Medical.",
+              "strategic_implication": "Post-bankruptcy hospitals face union organizing as soon as ownership stabilizes. New owners of distressed facilities should budget for labor contracts in turnaround plans rather than treat wage resets as upside risk.",
+              "confidence": "high",
+              "tags": [
+                "labor",
+                "unions",
+                "prospect-medical",
+                "turnaround"
+              ]
+            },
+            {
+              "item_id": "2026-11-10-hospital-pay-raises-tracker-nov",
+              "canonical_topic": "hospital-pay-raises-tracker-nov",
+              "duplicate_group": "hospital-pay-raises-tracker-nov",
+              "priority_score": 4,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/compensation-issues/58-hospitals-health-systems-raising-workers-pay/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-09T23:00:41Z"
+                }
+              ],
+              "title": "58 hospitals and health systems have announced raises since December 2025, many through strike settlements",
+              "summary": "Becker's updated tracker counts 58 systems raising pay. Recent contracts include 17%-24% raises for Ascension Via Christi nurses, about 16% for Allegheny General nurses, 13% for Henry Ford Genesys nurses after a 411-day strike and nearly 11% for Cleveland Clinic Lutheran workers after a strike. Hartford HealthCare will raise its minimum wage to $20 an hour on Dec. 27.",
+              "strategic_implication": "Double-digit settlements are setting new market baselines while margins thin. CFOs should model 2027 labor cost scenarios against Medicaid cuts and denial trends rather than assuming wage growth will moderate.",
+              "confidence": "high",
+              "tags": [
+                "compensation",
+                "labor",
+                "nursing",
+                "strikes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-09",
       "generated_at": "2026-11-09T13:41:18Z",
       "headline": "Today's Healthcare Insights",
@@ -17375,514 +18086,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-29",
-      "generated_at": "2026-09-29T12:34:08Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's edition tracks a projected drop in 2027 Medicare Advantage premiums, the end of automatic Medicare add-on payments for breakthrough devices, a payer-vendor dispute over AI coding costs, and a rise in social-engineering attacks, plus drug approvals, dealmaking, and leadership moves. It draws on STAT News, Healthcare Dive, MedCity News, and Fierce Healthcare, with verification from AbbVie and BioSpace.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
-          "STAT News RSS (main)",
-          "Healthcare Dive RSS (news)",
-          "MedCity News RSS",
-          "Hospitalogy RSS",
-          "Fierce Healthcare RSS",
-          "Modern Healthcare RSS",
-          "Healthcare Brew RSS",
-          "Targeted web verification (AbbVie, BioSpace)"
-        ],
-        "sources_successful": [
-          "STAT News RSS (main)",
-          "Healthcare Dive RSS (news)",
-          "MedCity News RSS",
-          "Direct page verification of Fierce Healthcare items from the automated run",
-          "AbbVie press release and BioSpace via web search"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
-          "Hospitalogy RSS returned HTTP 403",
-          "Fierce Healthcare RSS returned HTTP 403 (items verified via page fetch)",
-          "Modern Healthcare RSS returned HTTP 403",
-          "Healthcare Brew RSS returned HTTP 404"
-        ],
-        "run_notes": "Same-day rebuild in place: the automated run (generated 11:05 UTC) had already written 2026-09-29 and left the feed at 31 editions. Retained and verified all 10 automated items, enriched all 10 with verified figures (named AbbVie's Juvmo/tavapadon with AbbVie and BioSpace refs; corrected Memorial Hermann item to reflect named successor Alec King), added 6 new items from the 9/25-9/29 window screened against the prior 12 editions, and trimmed to 30 editions with overflow archived.",
-        "items_captured": 16
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "CMS premium projections and Medicare's treatment of breakthrough devices create two different payment signals for plans, providers, and innovators.",
-          "items": [
-            {
-              "item_id": "2026-09-29-cms-medicare-advantage-premium-projection",
-              "canonical_topic": "cms-medicare-advantage-premium-projection",
-              "duplicate_group": "cms-medicare-advantage-premium-projection",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/cms-projects-medicare-advantage-premiums-decline-16-2027",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T21:39:00Z"
-                }
-              ],
-              "title": "CMS projects Medicare Advantage premiums will fall more than 16% in 2027",
-              "summary": "CMS projects the weighted average monthly Medicare Advantage premium will fall from $14.37 in 2026 to $12 in 2027, a decline of more than 16%. Average MA prescription-drug plan premiums after rebates are projected to drop 38%, from $11.32 to $7, while average Part D premiums rise from $35.09 to $36. CMS expects about 34 million MA enrollees (47.4% of eligibles) and says supplemental benefits will remain stable. Open enrollment runs Oct. 15-Dec. 7.",
-              "strategic_implication": "Lower headline premiums will sharpen price competition during open enrollment; plans should pressure-test benefit design, supplemental benefits, and retention strategy, while standalone Part D sponsors face a widening premium gap versus MA-PD offerings.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "cms",
-                "premiums",
-                "2027",
-                "health-plans"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-medicare-breakthrough-device-payment",
-              "canonical_topic": "medicare-breakthrough-device-payment",
-              "duplicate_group": "medicare-breakthrough-device-payment",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/29/fda-breakthrough-medical-devices-special-treatment-medicare/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T08:30:00Z"
-                }
-              ],
-              "title": "Newly designated FDA breakthrough devices lose automatic Medicare add-on payment eligibility in October",
-              "summary": "Starting in October, devices newly designated as FDA breakthroughs will no longer qualify for special treatment for extra Medicare payments. In August, CMS finalized removal of the alternative pathways that since 2020 let breakthrough devices qualify for new technology add-on payments and transitional pass-through payments without showing substantial clinical improvement. STAT's tracker has logged nearly 800 devices reported to have breakthrough status since 2022.",
-              "strategic_implication": "Medtech companies should rebuild launch and reimbursement plans around demonstrating substantial clinical improvement, and hospitals should expect fewer add-on payments to offset the cost of new devices.",
-              "confidence": "high",
-              "tags": [
-                "medicare",
-                "fda",
-                "breakthrough-devices",
-                "reimbursement"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Debates over data access and cross-border clinical AI deployment put governance, evidence, and responsible scaling at the center of digital-health strategy.",
-          "items": [
-            {
-              "item_id": "2026-09-29-maha-health-data-access",
-              "canonical_topic": "maha-health-data-access",
-              "duplicate_group": "maha-health-data-access",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/29/why-maha-wants-to-make-health-data-much-more-accessible/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T08:30:00Z"
-                }
-              ],
-              "title": "MAHA leaders call for broader health-data access for research",
-              "summary": "At a MAHA Institute event, HHS Secretary Robert F. Kennedy Jr. proposed combining immunization, clinical, lab, pharmacy, and claims data from state health information exchanges, EHRs, Medicare, Medicaid, and commercial platforms to study autism and chronic disease, and criticized data 'gatekeepers.' MAHA Institute President Mark Gorton cited Nebraska's CyncHealth partnership with the federal government as a state-federal model. Experts flagged unresolved privacy, consent, and governance issues.",
-              "strategic_implication": "HIEs, health systems, and data vendors should expect federal requests for broader research access and should review consent terms, data-use agreements, and governance policies before they are tested.",
-              "confidence": "medium",
-              "tags": [
-                "health-data",
-                "research",
-                "maha",
-                "hhs",
-                "privacy"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-openevidence-ai-global-clinical-support",
-              "canonical_topic": "openevidence-ai-global-clinical-support",
-              "duplicate_group": "openevidence-ai-global-clinical-support",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-partners-anthropic-and-penn-medicine-expand-medical-ai",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T16:55:00Z"
-                }
-              ],
-              "title": "OpenEvidence, Anthropic, and Penn Medicine target broader physician access to AI",
-              "summary": "OpenEvidence is partnering with Anthropic to offer a free version of its clinical decision-support platform to physicians in 100 lower-resourced countries, including Uganda, Angola, Sudan, Haiti, and Mongolia; Anthropic is contributing Claude credits, engineers, and funding. Through a separate Penn Medicine partnership tied to the Botswana-UPenn Partnership, OpenEvidence will build region-specific tools, and Penn is making the platform available to 10,000 clinicians across its seven hospitals. OpenEvidence reports 1.12 million verified U.S. clinician users.",
-              "strategic_implication": "Clinical AI tools are spreading through free physician access and academic partnerships, so health systems should formalize governance, validation, and acceptable-use policies for tools clinicians may already be using.",
-              "confidence": "high",
-              "tags": [
-                "clinical-ai",
-                "openevidence",
-                "global-health",
-                "clinical-decision-support"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-ai-coding-tools-cost-dispute",
-              "canonical_topic": "ai-coding-tools-cost-dispute",
-              "duplicate_group": "ai-coding-tools-cost-dispute",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/insurers-say-ai-could-add-billions-in-health-costs-billing-companies-disag/831497/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T11:11:00-04:00"
-                }
-              ],
-              "title": "Insurers say AI coding tools are inflating costs; billing vendors say they capture valid care",
-              "summary": "The Blue Cross Blue Shield Association says AI coding, documentation, and ambient-listening tools added about $942 million in costs over two years without more treatment, citing more complex inpatient billing and more anemia diagnoses without transfusions. PwC analysts attribute part of a projected 9% rise in insurers' medical costs next year to AI billing tools. Solventum, whose platform serves more than 80% of U.S. hospitals, and Codametrix say their tools document valid, previously missed conditions within coding-compliance guardrails.",
-              "strategic_implication": "Providers using AI coding should expect more payer audits, downcoding, and contract language on AI-assisted documentation, and should keep audit trails that tie coded conditions to clinical evidence.",
-              "confidence": "high",
-              "tags": [
-                "ai",
-                "coding",
-                "upcoding",
-                "payers",
-                "revenue-cycle"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-dreamed-modi-fda-clearance",
-              "canonical_topic": "dreamed-modi-fda-clearance",
-              "duplicate_group": "dreamed-modi-fda-clearance",
-              "priority_score": 6,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/dreamed-wins-fda-clearance-for-cgm-driven-insulin-automation-tool-for-both-type-2-injection-regimens/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T23:12:00Z"
-                }
-              ],
-              "title": "FDA clears DreaMed app that adjusts insulin doses from CGM data for type 2 diabetes",
-              "summary": "DreaMed Diabetes received FDA 510(k) clearance for MODI, a prescription mobile app that analyzes continuous glucose monitor data and insulin use to recommend dose changes for people with type 2 diabetes on basal-only or multiple-daily-injection regimens. DreaMed says it is the first cleared app to optimize both regimens, and individual adjustments do not need clinician sign-off. Pricing and reimbursement have not been disclosed.",
-              "strategic_implication": "Autonomous dosing software could shift routine insulin titration away from office visits; payers and primary care practices will need to decide how to cover, prescribe, and monitor it.",
-              "confidence": "high",
-              "tags": [
-                "diabetes",
-                "cgm",
-                "fda",
-                "digital-therapeutics"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "A new Parkinson's approval, withdrawal of an important antibiotic, and a regional Medicare Advantage expansion illustrate divergent growth and supply pressures across the health market.",
-          "items": [
-            {
-              "item_id": "2026-09-29-abbvie-parkinsons-pill-approval",
-              "canonical_topic": "abbvie-parkinsons-pill-approval",
-              "duplicate_group": "abbvie-parkinsons-pill-approval",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/28/biotech-news-abbvie-wins-fda-nod-for-parkinsons-pill/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T13:40:32Z"
-                },
-                {
-                  "source": "AbbVie",
-                  "url": "https://news.abbvie.com/2026-09-28-U-S-FDA-Approves-AbbVies-JUVMO-TM-tavapadon-for-Parkinsons-Disease",
-                  "source_type": "press_release",
-                  "published_at": "2026-09-28T12:00:00Z"
-                },
-                {
-                  "source": "BioSpace",
-                  "url": "https://www.biospace.com/fda/abbvie-wins-fda-approval-for-parkinsons-drug-from-8-7b-cerevel-takeover",
-                  "source_type": "web",
-                  "published_at": "2026-09-28T00:00:00Z"
-                }
-              ],
-              "title": "FDA approves AbbVie's once-daily Parkinson's pill Juvmo (tavapadon)",
-              "summary": "The FDA approved AbbVie's Juvmo (tavapadon), the first selective D1/D5 receptor agonist for adults with Parkinson's disease, taken once daily with or without levodopa. In the Phase 3 TEMPO program, the drug improved daily-living and motor scores at 26 weeks in early disease and added 1.7 hours of daily 'on' time without troublesome dyskinesia as adjunctive therapy, versus 0.6 hours for placebo. AbbVie announced the approval Sept. 28 and expects U.S. availability in October 2026.",
-              "strategic_implication": "Neurology practices and payers should prepare formulary, prior-authorization, and titration protocols for a new branded option that AbbVie acquired through its $8.7 billion Cerevel deal.",
-              "confidence": "high",
-              "tags": [
-                "parkinsons",
-                "abbvie",
-                "fda",
-                "drug-approval"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-merck-recarbrio-discontinuation",
-              "canonical_topic": "merck-recarbrio-discontinuation",
-              "duplicate_group": "merck-recarbrio-discontinuation",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/pharmalot/2026/09/28/merck-discontinues-antibiotic-recarbrio-in-u-s-despite-superbug-concerns/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T20:45:43Z"
-                }
-              ],
-              "title": "Merck discontinues Recarbrio in the U.S. amid concern about drug-resistant infections",
-              "summary": "Merck stopped supplying Recarbrio in the U.S. earlier this month without explaining why. The three-drug injectable antibiotic, approved seven years ago, treats hospital- and ventilator-associated pneumonia and complicated urinary-tract and abdominal infections in patients with few or no alternatives. Its designation as a last-resort treatment to slow resistance also limited sales, which Merck did not disclose.",
-              "strategic_implication": "Hospital pharmacies and infectious-disease teams should confirm substitution pathways for resistant infections, and policymakers will likely cite the exit as further evidence that antibiotic development needs new payment incentives.",
-              "confidence": "medium",
-              "tags": [
-                "antibiotics",
-                "antimicrobial-resistance",
-                "merck",
-                "drug-supply"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-scan-oregon-senior-living-partnership",
-              "canonical_topic": "scan-oregon-senior-living-partnership",
-              "duplicate_group": "scan-oregon-senior-living-partnership",
-              "priority_score": 6,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/scan-expands-reach-oregon-partnership-springs-living",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T20:36:00Z"
-                }
-              ],
-              "title": "SCAN expands into Oregon through senior-living partnership",
-              "summary": "SCAN Health Plan is partnering with The Springs Living to launch co-branded products for seniors in Clackamas and Washington counties, marking SCAN's entry into Oregon. Available Jan. 1, the offering pairs SCAN's experience with institutional special needs plans with senior-housing operations, bringing services such as in-home podiatry to residents to avoid ER visits and hospital-acquired complications.",
-              "strategic_implication": "The arrangement is another example of plans using senior-living partnerships to reach older adults and coordinate services; execution will depend on enrollment, care integration, and member experience.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "senior-living",
-                "oregon",
-                "payer-provider"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-merck-scibrunch-kras-g12d-license",
-              "canonical_topic": "merck-scibrunch-kras-g12d-license",
-              "duplicate_group": "merck-scibrunch-kras-g12d-license",
-              "priority_score": 6,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/merck-cancer-drug-scibrunch-china-ras-inhibitor-kras-g12d-mrk/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T20:32:00Z"
-                },
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/28/biotech-news-abbvie-wins-fda-nod-for-parkinsons-pill/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T13:40:32Z"
-                }
-              ],
-              "title": "Merck pays $400M upfront for China-based SciBrunch's preclinical KRAS G12D cancer drug",
-              "summary": "Merck paid Shanghai-based SciBrunch Therapeutics $400 million upfront for global rights to SPR2015, a preclinical small molecule targeting KRAS G12D, the most common RAS mutation; milestones could bring the deal to $2.13 billion. SciBrunch was founded in 2024 and had raised $65 million. Separately, Merck and Daiichi Sankyo withdrew their accelerated-approval application for I-DXd after FDA concerns about Phase 2 data.",
-              "strategic_implication": "Big Pharma keeps paying large upfront sums for early-stage Chinese assets, raising the stakes of any U.S. policy restricting China-origin biotech licensing.",
-              "confidence": "high",
-              "tags": [
-                "merck",
-                "china-biotech",
-                "oncology",
-                "licensing"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-uniqure-amt130-four-year-data",
-              "canonical_topic": "uniqure-amt130-four-year-data",
-              "duplicate_group": "uniqure-amt130-four-year-data",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/29/uniqure-huntingtons-gene-therapy-slows-disease-progression-four-years/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T11:05:00Z"
-                }
-              ],
-              "title": "uniQure's Huntington's gene therapy shows slowing at four years, but the benefit narrows",
-              "summary": "uniQure said the high dose of its one-time gene therapy AMT-130 slowed Huntington's disease progression by 44% at four years versus an external natural-history control group. The difference was not statistically significant, and the benefit had narrowed compared with the analysis a year earlier, raising durability questions while the FDA reviews the company's marketing application.",
-              "strategic_implication": "The FDA's decision will test how far regulators will accept external-control data for rare-disease gene therapies, which matters for payers weighing one-time, high-cost treatments.",
-              "confidence": "medium",
-              "tags": [
-                "gene-therapy",
-                "huntingtons",
-                "fda",
-                "rare-disease"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-association-for-direct-care-launch",
-              "canonical_topic": "association-for-direct-care-launch",
-              "duplicate_group": "association-for-direct-care-launch",
-              "priority_score": 6,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/new-coalition-launches-to-expand-direct-contracting/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T22:59:00Z"
-                }
-              ],
-              "title": "New employer-clinician coalition launches to expand direct contracting",
-              "summary": "The Association for Direct Care, a coalition of employers, clinicians, and health-tech companies, launched to promote direct contracts between purchasers and providers. Its six priorities include a federal contracting framework, joint employer purchasing, removing patient-steering restrictions, employer access to claims and pricing data, multistate regulatory clarity, and Department of Labor support. Business Group on Health projects employer health costs will rise 9.2% in 2027.",
-              "strategic_implication": "With employer costs climbing, direct-to-employer contracting is becoming a growth channel for provider groups and centers of excellence that can show transparent prices and outcomes, and a competitive threat to traditional network models.",
-              "confidence": "medium",
-              "tags": [
-                "employers",
-                "direct-contracting",
-                "price-transparency",
-                "benefits"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "A major payer-provider settlement, a planned CEO succession, and a surge in social-engineering attacks put contracting, leadership continuity, and security in focus.",
-          "items": [
-            {
-              "item_id": "2026-09-29-unitedhealthcare-teamhealth-settlement",
-              "canonical_topic": "unitedhealthcare-teamhealth-settlement",
-              "duplicate_group": "unitedhealthcare-teamhealth-settlement",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/unitedhealthcare-team-health-settle-100m-fraud-suit-tennessee",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T17:17:00Z"
-                }
-              ],
-              "title": "UnitedHealthcare and TeamHealth settle $100 million Tennessee fraud suit",
-              "summary": "UnitedHealthcare and TeamHealth settled and dismissed UHC's October 2021 Tennessee lawsuit, which accused the physician-staffing firm of upcoding and submitting about $100 million in fraudulent claims. Terms are confidential, and each side pays its own legal costs. Separately, a Nevada jury had ordered UHC to pay $60 million for underpaying emergency physicians tied to a TeamHealth affiliate.",
-              "strategic_implication": "The resolution closes a high-profile dispute but underscores the financial and operational exposure embedded in payer-provider billing and contracting conflicts.",
-              "confidence": "high",
-              "tags": [
-                "unitedhealthcare",
-                "teamhealth",
-                "litigation",
-                "payer-provider",
-                "billing"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-memorial-hermann-ceo-retirement",
-              "canonical_topic": "memorial-hermann-ceo-retirement",
-              "duplicate_group": "memorial-hermann-ceo-retirement",
-              "priority_score": 5,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/hospitals/memorial-hermann-ceo-set-retire-end-year",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T21:04:00Z"
-                }
-              ],
-              "title": "Memorial Hermann CEO David Callender to retire; CFO Alec King to succeed him Jan. 1",
-              "summary": "Memorial Hermann Health System CEO David Callender, M.D., who has led the Houston system since 2019, will retire at year-end. CFO Alec King, who joined in 2020 and oversees payer relationships, revenue cycle, supply chain, and cybersecurity, will become CEO on Jan. 1 under what the system called a multi-year succession plan.",
-              "strategic_implication": "Elevating a CFO with payer and revenue-cycle responsibility signals a financially focused agenda; payers and partners should expect continuity in contracting posture and a sharper focus on margin and growth in the Houston market.",
-              "confidence": "high",
-              "tags": [
-                "hospital-leadership",
-                "memorial-hermann",
-                "succession",
-                "health-system"
-              ]
-            },
-            {
-              "item_id": "2026-09-29-healthcare-social-engineering-attacks",
-              "canonical_topic": "healthcare-social-engineering-attacks",
-              "duplicate_group": "healthcare-social-engineering-attacks",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/threat-groups-social-engineering-attacks-healthcare/831466/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-25T11:10:00-04:00"
-                }
-              ],
-              "title": "Threat groups step up voice-phishing and impersonation attacks on healthcare organizations",
-              "summary": "Health-ISAC warned that ShinyHunters has used voice phishing and medical-themed impersonation domains to steal healthcare employees' credentials, hitting more than a dozen member organizations in recent months by pressuring staff to click password- or MFA-reset links. Palo Alto Networks' Unit 42 and ReliaQuest report related phishing infrastructure targeting healthcare and pharma, with new domain registrations continuing into late September.",
-              "strategic_implication": "Help desks and identity-reset processes are now a main attack surface; organizations should require call-back verification for reset requests, move toward phishing-resistant MFA, and train staff on vishing.",
-              "confidence": "high",
-              "tags": [
-                "cybersecurity",
-                "social-engineering",
-                "health-isac",
-                "identity"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "New evidence on persistent long COVID among healthcare workers reinforces the need to account for post-infectious illness in workforce planning.",
-          "items": [
-            {
-              "item_id": "2026-09-29-healthcare-workers-persistent-long-covid",
-              "canonical_topic": "healthcare-workers-persistent-long-covid",
-              "duplicate_group": "healthcare-workers-persistent-long-covid",
-              "priority_score": 6,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/healthcare-workers-battle-persistent-long-covid/831493/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-28T14:47:17Z"
-                }
-              ],
-              "title": "Study highlights persistent long COVID among healthcare workers",
-              "summary": "A University of Iowa-led study of about 1,600 healthcare workers infected between August 2022 and May 2024 found 20% reported moderate or severe symptoms at three months and 27.6% at six months; 11.3% had persistent symptoms at both points. Older, female, and chronically ill workers were at higher risk, and recent vaccination was not significantly associated with persistent symptoms. The study appeared in the American Journal of Industrial Medicine.",
-              "strategic_implication": "Employers should plan for roughly one in ten infected staff needing accommodations, reduced hours, or role changes, and build that into occupational-health, scheduling, and retention planning.",
-              "confidence": "high",
-              "tags": [
-                "long-covid",
-                "healthcare-workforce",
-                "occupational-health",
-                "staffing"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-09T13:41:18Z"
+  "last_updated": "2026-11-10T13:37:59Z"
 }

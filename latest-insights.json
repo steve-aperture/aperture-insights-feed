@@ -3,6 +3,686 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-11",
+      "generated_at": "2026-11-11T19:00:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "The U.S. may lose measles elimination status as a PAHO panel meets, and USDA proposed SNAP changes that would cut benefits for an estimated 6.3 million people. Oura is buying Counsel Health for $625 million, the Surgery Partners bidding war reached $6 billion, Beam's sickle cell base-editing therapy hit its pivotal goal and most hospitals are not ready for Medicare's mandatory CJR-X joint bundle. Sources include STAT, the Federal Register, KFF Health News, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News and Becker's.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS",
+          "BioPharma Dive, MedTech Dive, MedCity News, KFF Health News, Becker's Hospital Review and Fierce Healthcare RSS"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for Nov. 10-11",
+          "Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News and Becker's RSS fetched and screened",
+          "Articles read on Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News, Becker's and STAT to verify figures; SNAP figures verified in the Federal Register proposed rule"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and sender searches since Nov. 9 returned no messages in the connected mailbox; RSS sources used instead.",
+          "Fierce Healthcare RSS returned malformed XML and was not parsed.",
+          "STAT+ articles (USPSTF waivers, MFN letters, MDCalc, Oura, Lilly lawsuit, Biogen) were paywalled; those items rely on visible text, RSS descriptions and corroborating sources."
+        ],
+        "run_notes": "23 items cover developments reported from midday Nov. 10 through Nov. 11. Checked against the prior 30 editions for repeats; excluded Bayer's Sunharbo approval, the GLP-1 NAION warning, Labcorp-Millennium, the Nebraska work-requirements story and BIO's biotech plan already covered Nov. 10. STAT's Wyden-Sanders Medicare for All item overlaps Nov. 4 and Nov. 10 coverage and was not repeated. The PHI Health employer-lawsuit item is a new angle distinct from the Nov. 9 unpaid-awards analysis. Healthcare Dive and Becker's differ on whether the raised Surgery Partners bid came Nov. 9 or Nov. 10, so no date is given."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Public-health and safety-net policy dominated: the U.S. faces a likely loss of measles elimination status, USDA proposed cutting SNAP for 6.3 million people, and STAT found blanket ethics waivers for the USPSTF. Democrats are preparing oversight of drug pricing deals, while employers are being sued over surprise-billing awards.",
+          "items": [
+            {
+              "item_id": "2026-11-11-us-measles-elimination-paho-review",
+              "canonical_topic": "us-measles-elimination-paho-review",
+              "duplicate_group": "us-measles-elimination-paho-review",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/11/health-news-us-may-soon-lose-measles-elimination-status/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T12:56:13Z"
+                }
+              ],
+              "title": "PAHO panel opens four-day review of whether the U.S. has kept measles elimination status",
+              "summary": "A Pan American Health Organization committee began a four-day meeting on Nov. 11 to decide whether the U.S. has maintained measles elimination. STAT reports that all signs point to the U.S. losing the status after cases soared this year, with at least eight measles deaths reported in 2026. In January, then-CDC official Ralph Abraham called losing the status 'the cost of doing business.'",
+              "strategic_implication": "Loss of elimination status would be a reputational and operational marker, not just a label: expect pressure on state immunization programs, school-entry enforcement and hospital infection-control readiness. Health systems should confirm staff immunity records, isolation capacity and exposure-notification playbooks ahead of winter respiratory season.",
+              "confidence": "high",
+              "tags": [
+                "measles",
+                "vaccination",
+                "public-health",
+                "paho",
+                "outbreaks"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-usda-snap-categorical-eligibility-rule",
+              "canonical_topic": "usda-snap-categorical-eligibility-rule",
+              "duplicate_group": "usda-snap-categorical-eligibility-rule",
+              "priority_score": 9,
+              "primary_source": "Federal Register",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Federal Register",
+                  "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22936/supplemental-nutrition-assistance-program-reforming-categorical-eligibility",
+                  "source_type": "web",
+                  "published_at": "2026-11-10T13:45:00Z"
+                }
+              ],
+              "title": "USDA proposes ending broad-based SNAP categorical eligibility, cutting an estimated 6.3 million people",
+              "summary": "A USDA proposed rule published Nov. 10 would limit SNAP categorical eligibility to households receiving TANF cash assistance, ending the use of non-cash TANF services to qualify households. USDA estimates 3.2 million households, or 6.3 million people (17.6% of participants), would lose benefits in FY 2029, cutting federal SNAP spending by about $44.6 billion over FY 2027-2031. Comments are due Dec. 10.",
+              "strategic_implication": "Food insecurity is a direct driver of avoidable utilization, so hospitals, Medicaid plans and FQHCs with social-needs programs should model higher demand for food referrals in 2028-2029. Because SNAP also confers school-meal and WIC eligibility, community-benefit and population-health teams should consider joining the comment record.",
+              "confidence": "high",
+              "tags": [
+                "snap",
+                "usda",
+                "social-determinants",
+                "food-insecurity",
+                "proposed-rule"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-uspstf-blanket-conflict-waivers",
+              "canonical_topic": "uspstf-blanket-conflict-waivers",
+              "duplicate_group": "uspstf-blanket-conflict-waivers",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/11/kennedy-hhs-preventive-care-panel-conflict-interest-waivers/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T09:30:00Z"
+                }
+              ],
+              "title": "HHS granted blanket conflict-of-interest waivers to every USPSTF member, STAT finds",
+              "summary": "Federal officials granted blanket ethics waivers to every member of the U.S. Preventive Services Task Force, according to documents obtained by STAT. Two members own private medical practices that could profit from panel recommendations, and other disclosed interests include pharmaceutical and device stocks. STAT reports newer members have more extensive conflicts, which contrasts with Secretary Kennedy's criticism of corporate influence in health care.",
+              "strategic_implication": "USPSTF A and B grades drive no-cost-sharing coverage under the ACA, so questions about panel independence raise legal and political risk for future recommendations. Payers and preventive-service lines should track whether new grades draw challenges and whether the incoming Democratic majority makes the waivers an oversight target.",
+              "confidence": "medium",
+              "tags": [
+                "uspstf",
+                "hhs",
+                "preventive-care",
+                "ethics",
+                "coverage-mandates"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-democrats-probe-mfn-drug-deals",
+              "canonical_topic": "democrats-probe-mfn-drug-deals",
+              "duplicate_group": "democrats-probe-mfn-drug-deals",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/10/democrats-investigate-most-favored-nation-deals-letters-drugmakers/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T23:55:00Z"
+                }
+              ],
+              "title": "Incoming Democratic chairs send new letters to all 27 drugmakers with MFN pricing deals",
+              "summary": "Incoming Democratic committee chairs sent a new round of letters to all 27 companies that signed most-favored-nation drug pricing agreements with the Trump administration, according to a congressional source cited by STAT. The deals tie Medicaid drug prices to levels in peer countries. Democrats expect the agreements to be a major oversight priority after they take the majority in January.",
+              "strategic_implication": "Manufacturers should prepare for document requests and hearings on deal terms, and state Medicaid programs should not assume MFN-linked pricing is stable. Expect oversight to pair with the Wyden-Sanders coverage agenda, raising the profile of drug pricing in the first months of the new Congress.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "mfn",
+                "congress",
+                "oversight",
+                "medicaid"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-phi-health-sues-employers-nsa-awards",
+              "canonical_topic": "phi-health-sues-employers-nsa-awards",
+              "duplicate_group": "phi-health-sues-employers-nsa-awards",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/11/no-surprises-act-phi-health-air-ambulance-sues-employers/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T09:30:00Z"
+                }
+              ],
+              "title": "Air ambulance firm PHI Health is suing hundreds of employers to collect No Surprises Act awards",
+              "summary": "STAT reports PHI Health has sued hundreds of employers, including Amazon, Walmart, Eli Lilly and Toyota, seeking tens of millions of dollars in unpaid or delayed arbitration awards. One Kentucky contractor was dropped from a suit after Anthem confirmed his plan was fully insured. Elevance says PHI charges 700% of Medicare rates; Georgetown researchers estimate the arbitration process has added about $20 billion in costs.",
+              "strategic_implication": "Self-funded employers now face direct litigation exposure from the No Surprises Act process, not just higher claims. Benefits leaders should review TPA contracts for who pays arbitration awards and on what timeline, and providers will watch whether these suits become a template for collecting unpaid awards.",
+              "confidence": "medium",
+              "tags": [
+                "no-surprises-act",
+                "air-ambulance",
+                "employers",
+                "erisa",
+                "litigation"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-aca-enrollment-navigator-cuts-young-adults",
+              "canonical_topic": "aca-enrollment-navigator-cuts-young-adults",
+              "duplicate_group": "aca-enrollment-navigator-cuts-young-adults",
+              "priority_score": 6,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/insurance/healthq-beginners-guide-buying-insurance-aca-marketplace-obamacare-free-assisters/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T10:00:00Z"
+                }
+              ],
+              "title": "Young adults face 2027 ACA enrollment with roughly 90% less federal navigator funding",
+              "summary": "KFF Health News follows a 22-year-old uninsured St. Louis worker getting help from an independent assister. For 2027, a single adult earning up to $63,480 may qualify for a subsidy; at $30,000 the tax credit covers nearly three-quarters of the cost. The administration cut navigator and assister funding by about 90% in 2025, calling the program inefficient, and Ohio's paid navigators fell from 50 to five. The federal deadline is Jan. 15.",
+              "strategic_implication": "Fewer navigators means more uninsured young adults who are subsidy-eligible but never enroll, adding to uncompensated care. Hospitals, FQHCs and Medicaid plans with community-outreach budgets can fill part of the gap with on-site enrollment help before Jan. 15.",
+              "confidence": "high",
+              "tags": [
+                "aca",
+                "open-enrollment",
+                "navigators",
+                "uninsured",
+                "young-adults"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Oura's $625 million Counsel Health deal shows wearable makers moving into diagnosis and virtual care. New tools and expert panels focused on guardrails, clinician trust and governance rather than speed alone.",
+          "items": [
+            {
+              "item_id": "2026-11-11-oura-acquires-counsel-health",
+              "canonical_topic": "oura-acquires-counsel-health",
+              "duplicate_group": "oura-acquires-counsel-health",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/10/oura-acquires-counsel-health-big-bet-ai-care/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T17:14:42Z"
+                },
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/ouras-buys-counsel-for-625m-but-will-payers-and-consumers-get-on-board/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T00:12:49Z"
+                }
+              ],
+              "title": "Oura agrees to buy clinical AI startup Counsel Health for $625 million",
+              "summary": "Oura said Nov. 10 it will acquire Counsel Health for $625 million in cash, with closing expected by year-end. Counsel's AI chatbot discusses users' health concerns and can hand them to a clinician for telehealth care. Oura will build the service into its app with a 30-day free trial, then $159 a year, on top of ring and subscription costs; it cites more than 6 million members. The deal comes about a month after Oura delayed its IPO.",
+              "strategic_implication": "Wearable companies are moving from data to diagnosis and treatment, competing with primary care, virtual-first plans and retail clinics for the front door. Health systems should decide whether to partner with these platforms for referrals and data exchange or treat them as competitors for low-acuity visits.",
+              "confidence": "high",
+              "tags": [
+                "wearables",
+                "clinical-ai",
+                "telehealth",
+                "m-and-a",
+                "consumer-health"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-mdcalc-crosscover-ai-guardrail",
+              "canonical_topic": "mdcalc-crosscover-ai-guardrail",
+              "duplicate_group": "mdcalc-crosscover-ai-guardrail",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/11/mdcalc-launches-crosscover-rumble-strip-for-clinical-ai-chatbots/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T09:30:00Z"
+                }
+              ],
+              "title": "MDCalc launches CrossCover to check clinical AI chatbot answers and strip patient data from queries",
+              "summary": "MDCalc announced CrossCover on Nov. 11, a tool meant to help clinicians judge the accuracy of medical AI chatbot answers and screen queries for privacy concerns. Head of AI Graham Walker called it 'an accelerator for clinical generative AI.' Unlike tools from OpenEvidence, Abridge and Epic, CrossCover focuses on removing patient and provider information from clinicians' questions.",
+              "strategic_implication": "Clinicians are already using general chatbots at the point of care, so a privacy and verification layer addresses real HIPAA and accuracy exposure. CMIOs should inventory unsanctioned chatbot use and decide whether to block it, sanction a tool or add a guardrail product like this one.",
+              "confidence": "medium",
+              "tags": [
+                "clinical-ai",
+                "chatbots",
+                "privacy",
+                "clinical-decision-support"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-experts-ai-adoption-governance",
+              "canonical_topic": "experts-ai-adoption-governance",
+              "duplicate_group": "experts-ai-adoption-governance",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/8-healthcare-experts-on-adopting-ai-tools-virtual-event/874130/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T16:50:23Z"
+                }
+              ],
+              "title": "Healthcare AI leaders say clinician trust, governance and cost should drive adoption decisions",
+              "summary": "At a Healthcare Dive event, leaders from Mayo Clinic, Ochsner, Epic, Hackensack Meridian, Google Cloud, Machinify and CHAI said AI adoption should hinge on governance, clinician trust and total cost. Mayo said a nurse-built handoff-summary tool saw strong adoption because clinicians helped design it. Ochsner urged cash-strapped hospitals to start with administrative uses like prior authorization, and Hackensack described state-by-state AI rules as a 'wild west.'",
+              "strategic_implication": "The practical lesson is to start where returns are measurable, such as revenue cycle and prior authorization, and involve frontline clinicians in design. Systems operating in several states need a single governance framework that can absorb diverging state rules.",
+              "confidence": "medium",
+              "tags": [
+                "ai-governance",
+                "clinician-trust",
+                "revenue-cycle",
+                "state-regulation"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-wearables-steer-lab-demand",
+              "canonical_topic": "wearables-steer-lab-demand",
+              "duplicate_group": "wearables-steer-lab-demand",
+              "priority_score": 5,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/the-laboratory-industrys-next-competitor-may-be-the-company-on-your-patients-wrist/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T14:46:00Z"
+                }
+              ],
+              "title": "Analysis: Wearables could steer diagnostic demand away from traditional lab channels",
+              "summary": "A MedCity News analysis argues wearable companies may become competitors to clinical labs by detecting health changes before people seek care. It cites Apple Watch rhythm, sleep apnea and hypertension notifications, and describes a model in which 'the wearable notices, the laboratory confirms, and the clinician interprets.' Labcorp OnDemand and Quest already offer consumer-initiated testing.",
+              "strategic_implication": "Read with the Oura-Counsel deal, the signal is that consumer devices will increasingly decide when and where confirmatory testing happens. Lab and outpatient leaders should build simple ordering and result pathways for wearable-triggered patients so that demand lands in their networks.",
+              "confidence": "low",
+              "tags": [
+                "wearables",
+                "laboratory",
+                "diagnostics",
+                "consumer-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "The fight for ambulatory surgery scale intensified as a Bon Secours affiliate raised its Surgery Partners bid to $6 billion. Beam's sickle cell base-editing data, a new bladder robot and early rare-disease and Alzheimer's bets rounded out the pipeline.",
+          "items": [
+            {
+              "item_id": "2026-11-11-surgery-partners-bidding-war-asc",
+              "canonical_topic": "surgery-partners-bidding-war-asc",
+              "duplicate_group": "surgery-partners-bidding-war-asc",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthspan-partners-ups-surgery-partners-offer-to-6b-after-rival-bid/874313/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T20:42:21Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/ascension-bon-secours-make-multibillion-dollar-bets-on-ascs/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T22:26:42Z"
+                }
+              ],
+              "title": "Bon Secours affiliate raises Surgery Partners bid to $6 billion after a reported UnitedHealth offer",
+              "summary": "HealthSpan Partners, a Bon Secours Mercy Health affiliate, raised its cash offer for Surgery Partners to $25 a share from $23.50, valuing the deal at $6 billion, with delay payments up to $26.61 a share. Surgery Partners rejected a $28 offer from a bidder Bloomberg identified as UnitedHealth, citing timing and regulatory risk. The deal is expected to close in the first quarter of 2027. Surgery Partners has more than 200 facilities in 30 states, and Ascension closed its $3.9 billion Amsurg purchase in June.",
+              "strategic_implication": "Nonprofit systems and payers are now competing directly for ASC scale, which will push valuations up and intensify competition for orthopedic and spine volume. Systems without an ASC strategy should assess joint ventures before more independent centers are absorbed.",
+              "confidence": "high",
+              "tags": [
+                "ascs",
+                "m-and-a",
+                "bon-secours",
+                "unitedhealth",
+                "outpatient-shift"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-beam-risto-cel-sickle-cell-pivotal",
+              "canonical_topic": "beam-risto-cel-sickle-cell-pivotal",
+              "duplicate_group": "beam-risto-cel-sickle-cell-pivotal",
+              "priority_score": 8,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/beam-sickle-cell-base-editing-risto-cel-results/874242/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T17:06:00Z"
+                }
+              ],
+              "title": "Beam's base-editing sickle cell therapy meets pivotal goal; filing possible by year-end",
+              "summary": "Beam Therapeutics said its pivotal trial of risto-cel met its primary goal of freedom from severe vaso-occlusive crises in 31 patients with 12 months of follow-up, though detailed data were not released. Beam plans to seek FDA approval as soon as year-end, which would be a first for base editing. Shares fell as much as 10%. Vertex's Casgevy has reported $219 million in sales in the first nine months of 2026.",
+              "strategic_implication": "A second gene-editing option will add to the payer and treatment-center questions already raised by Casgevy, including outcomes-based contracts and limited center capacity. Sickle cell centers should plan for patient selection, fertility preservation and long inpatient stays.",
+              "confidence": "medium",
+              "tags": [
+                "gene-editing",
+                "sickle-cell",
+                "cell-and-gene-therapy",
+                "fda"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-pepgen-dm1-splicing-data",
+              "canonical_topic": "pepgen-dm1-splicing-data",
+              "duplicate_group": "pepgen-dm1-splicing-data",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/pepgen-myotonic-dystrophy-dm1-drug-results-freedom/874249/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T21:48:00Z"
+                }
+              ],
+              "title": "PepGen shares nearly double on early myotonic dystrophy data",
+              "summary": "PepGen shares rose more than 90% after Phase 2 data showed its drug PGN-EDODM1 corrected an average 46.5% of splicing errors in six patients with myotonic dystrophy type 1 after four monthly doses. Side effects were mild to moderate, and no cumulative kidney damage was seen over 16 weeks. U.S. dosing remains under an FDA partial hold; higher-dose results are expected in the first half of 2027.",
+              "strategic_implication": "DM1 affects an estimated 110,000 people in the U.S. and Europe and has no approved disease-modifying therapy, so competing RNA programs from PepGen, Novartis and Dyne point to a future high-cost rare-disease category. Neuromuscular centers should track trial access for their patients.",
+              "confidence": "medium",
+              "tags": [
+                "rare-disease",
+                "rna-therapeutics",
+                "biotech",
+                "clinical-trials"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-virtuoso-bladder-robot-de-novo",
+              "canonical_topic": "virtuoso-bladder-robot-de-novo",
+              "duplicate_group": "virtuoso-bladder-robot-de-novo",
+              "priority_score": 6,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/virtuoso-robot-wins-fda-nod-for-bladder-tumor-removal/874261/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T16:05:51Z"
+                }
+              ],
+              "title": "FDA grants de novo authorization to Virtuoso's endoscopic robot for bladder tumor removal",
+              "summary": "The FDA granted de novo authorization to Virtuoso Surgical's system, which places two miniature robotic arms at the tip of a standard endoscope to remove bladder tumors in one piece through the urethra. It is the first device in a new FDA class for endoluminal electromechanical surgical systems. In the first 20 study patients, detrusor muscle was present in 94% of lesions, versus about 70% for conventional resection. A focused U.S. launch is planned for 2027.",
+              "strategic_implication": "Better specimens can improve staging accuracy and may reduce repeat resections, a quality and cost lever for urology programs. Capital committees should watch for outcome data and coding guidance before 2027 purchase decisions.",
+              "confidence": "medium",
+              "tags": [
+                "surgical-robotics",
+                "fda",
+                "urology",
+                "medtech"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-oyster-60m-tau-degraders",
+              "canonical_topic": "oyster-60m-tau-degraders",
+              "duplicate_group": "oyster-60m-tau-degraders",
+              "priority_score": 4,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/oyster-venture-financing-tau-targeted-protein-degraders/874160/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T07:00:00Z"
+                }
+              ],
+              "title": "Oyster Therapeutics raises $60 million, with Lilly participating, for tau-targeting Alzheimer's drugs",
+              "summary": "London-based Oyster Therapeutics announced a $60 million Series A extension led by 4BIO Capital, with Eli Lilly among eight other investors. The company is developing protein degraders aimed at disease-causing tau while sparing healthy tau, and has not said when its lead drug will enter clinical testing. Its CEO likened Alzheimer's drug prospects to 'the next obesity opportunity.'",
+              "strategic_implication": "Big pharma interest in tau suggests a future of combination amyloid-tau regimens, which would add infusion, imaging and monitoring demand for memory-care programs. This is an early-stage signal, not a near-term capacity issue.",
+              "confidence": "low",
+              "tags": [
+                "alzheimers",
+                "biotech-funding",
+                "neurology",
+                "eli-lilly"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-lilly-mounjaro-off-label-lawsuit",
+              "canonical_topic": "lilly-mounjaro-off-label-lawsuit",
+              "duplicate_group": "lilly-mounjaro-off-label-lawsuit",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/11/10/former-lilly-rep-claims-she-was-fired-for-complaining-about-marketing-of-mounjaro-diabetes-drug/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T18:04:30Z"
+                }
+              ],
+              "title": "Former Lilly rep alleges she was fired for objecting to off-label Mounjaro weight-loss promotion",
+              "summary": "A former Eli Lilly sales representative sued in federal court in Texas, alleging she was fired after complaining that reps promoted Mounjaro for weight loss before it was approved for that use. She also alleges a physician presented Mounjaro as a weight-loss option at a Lilly-sponsored luncheon. Lilly denies wrongdoing and says the claim should be dismissed.",
+              "strategic_implication": "The case is an allegation, but it adds to scrutiny of GLP-1 marketing in the same week the FDA added a vision-loss warning. Compliance teams at practices that host industry-sponsored education should reinforce on-label speaking rules.",
+              "confidence": "low",
+              "tags": [
+                "glp-1",
+                "off-label-marketing",
+                "compliance",
+                "eli-lilly",
+                "litigation"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-biogen-dutch-antitrust-tysabri-test",
+              "canonical_topic": "biogen-dutch-antitrust-tysabri-test",
+              "duplicate_group": "biogen-dutch-antitrust-tysabri-test",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/11/10/dutch-antitrust-regulators-probe-biogen-over-multiple-sclerosis-drug-test/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T13:38:35Z"
+                }
+              ],
+              "title": "Dutch regulators probe Biogen over withholding a free MS safety test from biosimilar patients",
+              "summary": "The Netherlands Authority for Consumers and Markets is investigating whether Biogen abused a dominant position by offering a free blood test only to patients on Tysabri and not to those on rival drugs, including Sandoz's biosimilar Tyruko. Tysabri patients are regularly tested for PML, a potentially fatal brain infection.",
+              "strategic_implication": "Bundling a required safety service with the brand drug is a tactic that can slow biosimilar uptake, and U.S. payers and health systems switching to biosimilars should confirm that equivalent monitoring is available and covered.",
+              "confidence": "medium",
+              "tags": [
+                "biosimilars",
+                "antitrust",
+                "multiple-sclerosis",
+                "biogen"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Hospitals face a 2028 mandatory joint bundle most are not ready for, while systems keep moving procedures to outpatient sites. Expense growth outpaced revenue at McLeod, and a small hospital's outage showed the fragility of ancillary services.",
+          "items": [
+            {
+              "item_id": "2026-11-11-cjr-x-hospital-readiness",
+              "canonical_topic": "cjr-x-hospital-readiness",
+              "duplicate_group": "cjr-x-hospital-readiness",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/the-cjr-x-reckoning-coming-for-2217-hospitals/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T21:56:18Z"
+                }
+              ],
+              "title": "Most of the 2,217 hospitals in Medicare's mandatory CJR-X joint bundle are not ready, Duke surgeon warns",
+              "summary": "CMS's mandatory CJR-X model will hold 2,217 hospitals accountable for Medicare hip, knee and ankle replacement episodes through 90 days after discharge starting Jan. 1, 2028, with projected savings of $736 million over five years. A Duke surgeon leading his system's preparation said most hospitals are unprepared and called the model 'a forcing function.' TEAM's 716 hospitals are exempt until that model ends in 2030, and he expects bundles to reach ASCs within three to five years.",
+              "strategic_implication": "With about 13 months before performance starts, orthopedic service lines should map episode costs, post-acute partners and outpatient joint pathways now. Pair this with the ASC bidding war: the hospitals that keep joint volume in-network at lower cost will be best positioned under the bundle.",
+              "confidence": "high",
+              "tags": [
+                "cjr-x",
+                "cmmi",
+                "bundled-payments",
+                "orthopedics",
+                "value-based-care"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-uc-san-diego-434m-outpatient-pavilion",
+              "canonical_topic": "uc-san-diego-434m-outpatient-pavilion",
+              "duplicate_group": "uc-san-diego-434m-outpatient-pavilion",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/capital/uc-san-diego-health-breaks-ground-on-434m-outpatient-pavilion/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T22:23:00Z"
+                }
+              ],
+              "title": "UC San Diego Health breaks ground on $434 million outpatient pavilion built around surgery",
+              "summary": "UC San Diego Health broke ground Nov. 10 on a $434 million, 180,000-square-foot outpatient pavilion in La Jolla expected to open in 2030. It will include an ASC with nine operating rooms, interventional radiology suites, urgent care and extended recovery, focused on orthopedic, spine and neurosurgical care. Moving those services will free inpatient space at Jacobs Medical Center for complex cases.",
+              "strategic_implication": "This is a clear example of the outpatient shift: move procedural volume out to free scarce inpatient beds for higher-acuity work. The extended-recovery design anticipates more same-day procedures that once required admission.",
+              "confidence": "high",
+              "tags": [
+                "outpatient-shift",
+                "capital-projects",
+                "academic-medical-centers",
+                "ascs"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-mcleod-health-fy2026-results",
+              "canonical_topic": "mcleod-health-fy2026-results",
+              "duplicate_group": "mcleod-health-fy2026-results",
+              "priority_score": 4,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/mcleod-healths-operating-income-slips-9-7-in-fiscal-2026-5-things-to-know/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T22:33:49Z"
+                }
+              ],
+              "title": "McLeod Health's operating income falls 9.7% as expenses outpace revenue",
+              "summary": "South Carolina-based McLeod Health reported fiscal 2026 operating income of $137.5 million, down 9.7%, as expenses rose 9.4% to $2.13 billion and revenue rose 8% to $2.26 billion. Net income fell 5.1% to $321.6 million, and days cash on hand rose to about 422.",
+              "strategic_implication": "The pattern of expense growth outrunning revenue growth matches results at many regional systems this cycle. Strong liquidity gives McLeod room to absorb Medicaid and exchange enrollment losses expected in 2027, a buffer many rural-serving systems lack.",
+              "confidence": "high",
+              "tags": [
+                "hospital-finance",
+                "margins",
+                "regional-systems",
+                "south-carolina"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-monadnock-network-outage",
+              "canonical_topic": "monadnock-network-outage",
+              "duplicate_group": "monadnock-network-outage",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/new-hampshire-hospital-cancels-appointments-due-to-network-outage/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T22:44:27Z"
+                }
+              ],
+              "title": "New Hampshire hospital cancels outpatient lab and radiology appointments after network outage",
+              "summary": "Monadnock Community Hospital in Peterborough, N.H., canceled all outpatient laboratory and radiology appointments 'until further notice' on Nov. 10 after a network outage that began with a phone outage on Nov. 9. Its OB-GYN practice remained open. The cause had not been disclosed.",
+              "strategic_implication": "Even without a confirmed cyberattack, a multi-day outage at a small hospital shows how quickly ancillary services stop. Small and critical access hospitals should test downtime procedures for phones, lab and imaging, not just the EHR.",
+              "confidence": "medium",
+              "tags": [
+                "cybersecurity",
+                "downtime",
+                "rural-hospitals",
+                "it-resilience"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Ballad Health's systemwide weapons screening reflects rising workplace violence, and researchers urged clinicians to make firearm safety part of dementia care.",
+          "items": [
+            {
+              "item_id": "2026-11-11-ballad-weapons-detection-all-hospitals",
+              "canonical_topic": "ballad-weapons-detection-all-hospitals",
+              "duplicate_group": "ballad-weapons-detection-all-hospitals",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/quality/patient-safety-outcomes/ballad-health-launches-weapons-detection-at-all-hospitals/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T23:22:44Z"
+                }
+              ],
+              "title": "Ballad Health deploys weapons detection at all hospitals after workplace violence rises 19%",
+              "summary": "Ballad Health began using weapons-detection systems at designated inpatient entrances of all its hospitals on Nov. 11. The system reported 1,541 workplace violence incidents in 2025, nearly 19% more than the year before, and 12 random bag checks at three hospitals found 318 weapons, including 65 guns. A patient recently fired a gun inside Holston Valley Medical Center; no one was injured.",
+              "strategic_implication": "Workplace violence is now a retention and recruitment issue, not only a security one. Systems weighing screening should plan for entrance staffing, patient-experience messaging and data tracking so they can show staff the program is working.",
+              "confidence": "high",
+              "tags": [
+                "workplace-violence",
+                "security",
+                "workforce",
+                "nursing"
+              ]
+            },
+            {
+              "item_id": "2026-11-11-dementia-firearm-access-older-adults",
+              "canonical_topic": "dementia-firearm-access-older-adults",
+              "duplicate_group": "dementia-firearm-access-older-adults",
+              "priority_score": 6,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/aging/new-old-age-guns-firearms-safety-dementia-weapons-suicide/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-10T10:00:00Z"
+                }
+              ],
+              "title": "Researchers urge routine firearm-safety talks as at least one-third of people with dementia have gun access",
+              "summary": "KFF Health News reports researchers estimate at least one-third of people with dementia have access to firearms. In 2024, 8,226 Americans 65 and older died by firearms, and more than 90% of older adults' gun deaths are suicides. Only 22 states and D.C. have extreme risk protection order laws, and a 2020 study found only about 5% of dementia caregivers had discussed firearm safety with a professional. One researcher proposed adding the topic to Medicare wellness visits.",
+              "strategic_implication": "Primary care, geriatrics and memory-care programs can add firearm access and safe storage to cognitive-decline workflows and caregiver education. It is a low-cost safety intervention that fits into existing annual wellness visits.",
+              "confidence": "high",
+              "tags": [
+                "dementia",
+                "firearm-safety",
+                "geriatrics",
+                "suicide-prevention",
+                "primary-care"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-10",
       "generated_at": "2026-11-10T13:37:59Z",
       "headline": "Today's Healthcare Insights",
@@ -17508,585 +18188,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-09-30",
-      "generated_at": "2026-09-30T12:40:17Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's edition covers FDA leadership delays, the health policy stakes of the midterms, drug-import and 7-OH rules, 2027 Medicare Advantage plan cuts, PhRMA's new CEO, a proposed Midwest health-system merger, growing clinical AI investment, food-as-medicine infrastructure, and clinician-supply and measles-surveillance gaps. It draws on STAT News, Healthcare Dive, MedCity News, and Fierce Healthcare.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
-          "STAT News RSS (main)",
-          "Healthcare Dive RSS (news)",
-          "MedCity News RSS",
-          "Fierce Healthcare RSS"
-        ],
-        "sources_successful": [
-          "STAT News RSS (main)",
-          "Healthcare Dive RSS (news)",
-          "MedCity News RSS",
-          "Fierce Healthcare items retained from the automated run (RSS returned current items at 11:11 UTC)",
-          "Direct page reads of STAT and MedCity News articles for new items"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
-          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch"
-        ],
-        "run_notes": "Same-day rebuild in place: the automated run (generated 11:11 UTC) had already written 2026-09-30 and left the feed at 31 editions. Retained all 11 automated items, added 8 new items from the 9/29-9/30 window screened against the prior 12 editions, refreshed bucket syntheses, and trimmed to 30 editions with overflow archived.",
-        "items_captured": 19
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "FDA leadership remains unresolved into November, and midterm outcomes will shape Medicaid and drug-pricing debates. Meanwhile, federal import and 7-OH rules, 2027 Medicare Advantage cuts, and California's hepatitis C prior-authorization ban show pressure on access and affordability.",
-          "items": [
-            {
-              "item_id": "2026-09-30-medicare-advantage-plan-cuts-2027",
-              "canonical_topic": "medicare-advantage-plan-cuts-2027",
-              "duplicate_group": "medicare-advantage-plan-cuts-2027",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/medicare-advantage-cuts-2027-cms-landscape/831563/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T12:04:05-04:00"
-                }
-              ],
-              "title": "Insurers continue trimming Medicare Advantage plan options for 2027",
-              "summary": "New CMS data show insurers are reducing the number of Medicare Advantage plans they will offer for 2027 as they adjust to pressure in the privatized Medicare program. Healthcare Dive reports that the administration's release emphasized program stability, but the updated landscape reflects continued plan culling.",
-              "strategic_implication": "Plan reductions may limit member choice and create local market disruption during the 2027 enrollment cycle; health systems should refresh payer-mix, network, and outreach plans in affected markets.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "cms",
-                "2027",
-                "health-plans",
-                "enrollment"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-overton-fda-vote-delayed",
-              "canonical_topic": "overton-fda-vote-delayed",
-              "duplicate_group": "overton-fda-vote-delayed",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/29/heidi-overton-fda-commissioner-vote-midterms-health-care-policy/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T16:14:00Z"
-                }
-              ],
-              "title": "FDA nominee Heidi Overton will not get a committee vote before the midterms",
-              "summary": "The Senate health committee is voting Sept. 30 on three HHS nominees, but FDA commissioner nominee Heidi Overton is not among them. The Senate leaves after this week and does not return until Nov. 9, and at least one Republican committee member could sink the nomination.",
-              "strategic_implication": "FDA leadership stays unsettled for at least another six weeks. Sponsors and device makers should plan for continued acting leadership and possible shifts in review priorities once the nomination is resolved.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "nominations",
-                "senate",
-                "leadership",
-                "regulation"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-kratom-7oh-regulatory-debate",
-              "canonical_topic": "kratom-7oh-regulatory-debate",
-              "duplicate_group": "kratom-7oh-regulatory-debate",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/30/dea-proposal-7-oh-kratom-schedule-1-drug/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T08:30:00Z"
-                }
-              ],
-              "title": "Experts agree concentrated 7-OH products need safeguards, but differ on how to regulate them",
-              "summary": "STAT reports that clinicians and recovery advocates warn highly concentrated 7-hydroxymitragynine (7-OH) products may carry greater dependence risks than kratom leaf products, although research remains limited. Experts broadly agree safeguards are needed but disagree on the appropriate regulatory approach.",
-              "strategic_implication": "Regulators, addiction-care teams, and retailers should monitor emerging rules and prepare for changes to product access and safety controls, while evidence on concentrated 7-OH remains limited.",
-              "confidence": "medium",
-              "tags": [
-                "kratom",
-                "7-oh",
-                "dea",
-                "drug-safety",
-                "regulation"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-prescription-import-rule-costs",
-              "canonical_topic": "prescription-import-rule-costs",
-              "duplicate_group": "prescription-import-rule-costs",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/pharmalot/2026/09/29/lawmakers-urge-trump-rethink-new-rule-that-could-restrict-imported-medicines/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T20:41:40Z"
-                }
-              ],
-              "title": "Lawmakers urge reconsideration of a rule that could raise costs for imported prescription medicines",
-              "summary": "A pending federal rule would require medicines mailed from abroad to pass through a customs process involving a licensed broker and an entry bond, adding cost and administrative burden for Americans using licensed international pharmacies. STAT reports that lawmakers are urging the administration to reconsider the change, which is due to take effect next month.",
-              "strategic_implication": "If the rule restricts a lower-cost supply route, patients who rely on international pharmacies may face affordability pressure; health plans and policymakers should track the impact on medication access.",
-              "confidence": "high",
-              "tags": [
-                "drug-pricing",
-                "prescription-imports",
-                "customs",
-                "access",
-                "policy"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-midterms-health-policy-stakes",
-              "canonical_topic": "midterms-health-policy-stakes",
-              "duplicate_group": "midterms-health-policy-stakes",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/29/healthcare-industry-midterm-elections-analysis/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T08:30:00Z"
-                }
-              ],
-              "title": "Drug pricing, Medicaid, and research funding top the health policy stakes in the midterms",
-              "summary": "Based on interviews with nearly a dozen industry leaders and lobbyists, STAT reports that the November elections could reshape debates over Medicaid funding, drug prices, and research funding. The largest shifts would follow a Democratic takeover of either chamber, though major legislation would still need President Trump's signature.",
-              "strategic_implication": "Health systems and plans should scenario-plan for divided government in 2027, particularly Medicaid financing and drug-pricing legislation, rather than assuming today's policy trajectory holds.",
-              "confidence": "medium",
-              "tags": [
-                "midterms",
-                "medicaid",
-                "drug-pricing",
-                "research-funding",
-                "congress"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-california-hep-c-prior-auth-ban",
-              "canonical_topic": "california-hep-c-prior-auth-ban",
-              "duplicate_group": "california-hep-c-prior-auth-ban",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/30/health-news-cdc-measles-death-count-still-lags-pennsylvania/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T11:59:00Z"
-                }
-              ],
-              "title": "California bars commercial insurers from requiring prior authorization for hepatitis C antivirals",
-              "summary": "Gov. Gavin Newsom signed more than 200 bills, including one that stops commercial insurers from requiring prior authorization for hepatitis C antivirals. Another new law creates a front-of-package seal for products that are not ultra-processed.",
-              "strategic_implication": "The hepatitis C law adds to state-level limits on prior authorization. Commercial plans operating in California will need to update utilization-management rules, and other states may follow.",
-              "confidence": "high",
-              "tags": [
-                "prior-authorization",
-                "hepatitis-c",
-                "state-policy",
-                "california",
-                "payers"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Investment in clinical AI and consumer diagnostics keeps growing. Companies are now funding trials and federal partnerships to build clinical credibility.",
-          "items": [
-            {
-              "item_id": "2026-09-30-anthropic-arpa-h-clinical-ai",
-              "canonical_topic": "anthropic-arpa-h-clinical-ai",
-              "duplicate_group": "anthropic-arpa-h-clinical-ai",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/29/anthropic-joins-arpa-h-clinical-ai-moonshot-health-tech/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T14:32:24Z"
-                }
-              ],
-              "title": "Anthropic joins ARPA-H clinical AI initiative as health-sector engagement expands",
-              "summary": "STAT reports that Anthropic has joined ARPA-H's clinical AI \"moonshot\" and plans to hold a closed-door healthcare event. The development adds a major AI company to a federal clinical-AI effort as healthcare regulation of the technology remains unsettled.",
-              "strategic_implication": "Health systems and federal partners should establish clear clinical validation, oversight, and procurement criteria as external AI developers deepen their healthcare presence.",
-              "confidence": "medium",
-              "tags": [
-                "anthropic",
-                "arpa-h",
-                "clinical-ai",
-                "federal-research"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-eliseai-funding-valuation",
-              "canonical_topic": "eliseai-funding-valuation",
-              "duplicate_group": "eliseai-funding-valuation",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/finance/eliseai-banks-350m-hits-4b-valuation-accelerated-new-product-development",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T11:01:00-04:00"
-                }
-              ],
-              "title": "EliseAI raises $350M at a $4B valuation to accelerate product development",
-              "summary": "EliseAI raised $350 million at a $4 billion valuation to accelerate product development across healthcare and housing operations. Company executives said it exceeded $200 million in annual recurring revenue in June and had doubled revenue year over year for five consecutive years.",
-              "strategic_implication": "The financing could accelerate AI vendor expansion and product competition; health systems should evaluate automation partners on measurable workflow and patient-service outcomes, not funding momentum alone.",
-              "confidence": "high",
-              "tags": [
-                "eliseai",
-                "healthcare-ai",
-                "funding",
-                "automation"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-tiny-health-series-b",
-              "canonical_topic": "tiny-health-series-b",
-              "duplicate_group": "tiny-health-series-b",
-              "priority_score": 5,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/tiny-health-secures-33m-to-expand-microbiome-testing/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T22:16:00Z"
-                }
-              ],
-              "title": "Tiny Health raises $33M to expand clinical research on at-home microbiome testing",
-              "summary": "Tiny Health's Series B, led by B Capital, brings total funding to $46 million. The company has served nearly 200,000 customers and more than 6,000 practitioners. It says a first randomized trial showed an 83% lower chance of infant eczema with targeted interventions and plans a $5 million research program covering IBS, menopause, and GLP-1s.",
-              "strategic_implication": "Direct-to-consumer diagnostics companies are investing in trials to earn clinical credibility. Clinicians and payers should expect more pressure to recognize microbiome testing and should judge those claims against peer-reviewed outcome data.",
-              "confidence": "medium",
-              "tags": [
-                "digital-health",
-                "diagnostics",
-                "microbiome",
-                "funding",
-                "consumer-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Health-system consolidation, pharma dealmaking around China-originated oncology assets, and PhRMA's new leadership point to a market preparing for heavier drug-pricing policy after the midterms.",
-          "items": [
-            {
-              "item_id": "2026-09-30-healthpartners-essentia-merger",
-              "canonical_topic": "healthpartners-essentia-merger",
-              "duplicate_group": "healthpartners-essentia-merger",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/healthpartners-essentia-health-announce-merger-plans",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T12:58:00-04:00"
-                }
-              ],
-              "title": "HealthPartners and Essentia Health announce plans to combine in a $12.5B nonprofit system",
-              "summary": "HealthPartners and Essentia Health announced merger plans that would create a multi-state integrated nonprofit with roughly $12.5 billion in scale, 22 hospitals, and a 1.6 million-member insurance business. The proposed combination would bring together provider operations and a substantial regional health-plan footprint.",
-              "strategic_implication": "The combination could reshape contracting leverage, provider competition, and payer relationships across the region; counterparties should assess integration milestones and the resulting market footprint.",
-              "confidence": "high",
-              "tags": [
-                "health-systems",
-                "merger",
-                "minnesota",
-                "nonprofit",
-                "market-consolidation"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-waltz-fresenius-biosimilar-program",
-              "canonical_topic": "waltz-fresenius-biosimilar-program",
-              "duplicate_group": "waltz-fresenius-biosimilar-program",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/waltz-health-fresenius-kabi-partner-direct-payer-biosimilar-program",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T16:56:00-04:00"
-                }
-              ],
-              "title": "Waltz Health and Fresenius Kabi launch a direct-to-payer biosimilar program",
-              "summary": "Waltz Health and Fresenius Kabi are partnering on a direct-to-payer biosimilar program to support direct-to-employer efforts for key biosimilar medicines. The arrangement is intended to expand access through an alternative contracting channel.",
-              "strategic_implication": "Employers and payers should compare direct biosimilar programs with existing pharmacy and medical-benefit channels on net cost, access, and administrative burden.",
-              "confidence": "medium",
-              "tags": [
-                "biosimilars",
-                "fresenius-kabi",
-                "waltz-health",
-                "direct-contracting",
-                "employers"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-phrma-names-eric-cantor-ceo",
-              "canonical_topic": "phrma-names-eric-cantor-ceo",
-              "duplicate_group": "phrma-names-eric-cantor-ceo",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/29/eric-cantor-named-phrma-ceo/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T17:56:00Z"
-                }
-              ],
-              "title": "PhRMA names former House Majority Leader Eric Cantor as its next CEO",
-              "summary": "Cantor takes over the brand-drug lobby as pressure on drug prices builds in both parties. The administration wants to write its most-favored-nation deals with more than two dozen drugmakers into law, and Democrats are weighing international reference prices in Medicare negotiation.",
-              "strategic_implication": "Hiring a former GOP leader suggests the industry will rely on congressional relationships to shape any most-favored-nation legislation. Stakeholders should watch for industry-backed alternatives in the post-midterm session.",
-              "confidence": "high",
-              "tags": [
-                "pharma",
-                "phrma",
-                "drug-pricing",
-                "most-favored-nation",
-                "lobbying"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-oura-ipo-delay",
-              "canonical_topic": "oura-ipo-delay",
-              "duplicate_group": "oura-ipo-delay",
-              "priority_score": 6,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/oura-delays-ipo/831655/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T11:42:41-04:00"
-                }
-              ],
-              "title": "Oura delays its planned IPO, citing uncertainty in public markets",
-              "summary": "Smart-ring maker Oura postponed a previously expected initial public offering, citing market uncertainty. Healthcare Dive reported that the planned offering had been expected to raise up to $2.2 billion.",
-              "strategic_implication": "The delay underscores public-market timing risk for digital-health companies; peers may need to extend private financing runways or adjust growth and liquidity plans.",
-              "confidence": "high",
-              "tags": [
-                "oura",
-                "wearables",
-                "ipo",
-                "digital-health",
-                "financing"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-astrazeneca-summit-investment",
-              "canonical_topic": "astrazeneca-summit-investment",
-              "duplicate_group": "astrazeneca-summit-investment",
-              "priority_score": 6,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/astrazeneca-summit-therapeutics-gastrointestinal-cancer-pd-1-vegf-bispecific-antibody-adc-combination-smmt-azn/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T19:25:00Z"
-                },
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/29/biotech-news-astrazeneca-invests-2-billion-in-summit-therapeautics/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T13:52:00Z"
-                }
-              ],
-              "title": "AstraZeneca makes a $2B equity investment in Summit Therapeutics tied to ivonescimab",
-              "summary": "AstraZeneca will buy Summit shares at $18.36, an 18.6% premium, and will collaborate on testing Summit's PD-1/VEGF bispecific ivonescimab with its ADC sonesitatug vedotin, starting with gastrointestinal cancers. Ivonescimab was developed by China-based Akeso.",
-              "strategic_implication": "This deal adds to the recent run of large pharma bets on China-originated oncology assets. Oncology service lines and payers should expect more combination regimens and pricing pressure in the late-stage GI and lung cancer pipeline.",
-              "confidence": "high",
-              "tags": [
-                "pharma",
-                "oncology",
-                "dealmaking",
-                "china",
-                "biotech"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Payer site-of-care policies and leadership changes are altering provider economics, while food-as-medicine infrastructure is maturing into measurable, closed-loop programs.",
-          "items": [
-            {
-              "item_id": "2026-09-30-elevance-site-of-care-billing",
-              "canonical_topic": "elevance-site-of-care-billing",
-              "duplicate_group": "elevance-site-of-care-billing",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/elevance-health-rolls-out-new-site-care-billing-policies",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T15:13:00-04:00"
-                }
-              ],
-              "title": "Elevance introduces new site-of-care billing policies",
-              "summary": "Elevance Health is rolling out billing policies intended to ensure services are paid at the appropriate level and increase transparency about where patients receive care. The move puts site-of-care practices and reimbursement settings in focus for providers.",
-              "strategic_implication": "Providers should review contract terms, site-specific payment rules, and patient-routing workflows to anticipate reimbursement exposure and possible shifts toward lower-cost settings.",
-              "confidence": "high",
-              "tags": [
-                "elevance",
-                "site-of-care",
-                "billing",
-                "payer-policy",
-                "provider-operations"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-unitedhealthcare-president-appointment",
-              "canonical_topic": "unitedhealthcare-president-appointment",
-              "duplicate_group": "unitedhealthcare-president-appointment",
-              "priority_score": 6,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/unitedhealthcare-names-new-president-in-latest-leadership-shuffle/831643/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T11:38:00-04:00"
-                }
-              ],
-              "title": "UnitedHealthcare names Robert Hunter president amid broader leadership changes",
-              "summary": "UnitedHealthcare named Robert Hunter president, with a focus on the insurer's modernization agenda. Healthcare Dive described the appointment as part of a series of leadership changes at UnitedHealth as the company works to restore its image.",
-              "strategic_implication": "Providers and vendors should monitor whether the leadership shift changes UnitedHealthcare's modernization priorities, operating practices, or engagement with external partners.",
-              "confidence": "high",
-              "tags": [
-                "unitedhealthcare",
-                "leadership",
-                "modernization",
-                "payer-operations"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-unite-us-instacart-food-as-medicine",
-              "canonical_topic": "unite-us-instacart-food-as-medicine",
-              "duplicate_group": "unite-us-instacart-food-as-medicine",
-              "priority_score": 6,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/unite-us-instacart-link-care-coordination-and-grocery-benefits-to-scale-food-as-medicine/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T21:43:00Z"
-                }
-              ],
-              "title": "Unite Us and Instacart link care-coordination referrals with grocery benefits",
-              "summary": "The partnership pairs Unite Us's referral platform, which identifies eligible members, with Instacart's system for redeeming grocery stipends. It covers Medicare and Medicaid grocery benefits, chronic-condition nutrition support, and post-discharge help, and is designed to work alongside SNAP and WIC.",
-              "strategic_implication": "Food-as-medicine programs have been hard to scale and measure. Health systems and plans with SDOH or post-discharge nutrition programs can use closed-loop redemption data to show outcomes and support benefit design.",
-              "confidence": "medium",
-              "tags": [
-                "food-as-medicine",
-                "sdoh",
-                "care-coordination",
-                "medicaid",
-                "medicare-advantage"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Projected clinician shortages and mismatched measles data put more of the burden on frontline clinicians and local health departments to give patients clear guidance.",
-          "items": [
-            {
-              "item_id": "2026-09-30-clinician-shortage-projection-2040",
-              "canonical_topic": "clinician-shortage-projection-2040",
-              "duplicate_group": "clinician-shortage-projection-2040",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/clinician-shortage-to-double-by-2040/831630/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-29T10:37:13-04:00"
-                }
-              ],
-              "title": "A new report projects the U.S. clinician shortage will nearly double by 2040",
-              "summary": "A report from healthcare education company Covista projects that the U.S. clinician shortage will nearly double by 2040. Healthcare Dive characterizes the forecast as a looming workforce crisis but notes that mitigation remains possible.",
-              "strategic_implication": "Health systems and workforce planners should prioritize multi-year recruitment, retention, training, and role redesign to preserve access as supply constraints deepen.",
-              "confidence": "medium",
-              "tags": [
-                "clinician-workforce",
-                "staffing",
-                "shortage",
-                "2040",
-                "workforce-planning"
-              ]
-            },
-            {
-              "item_id": "2026-09-30-measles-death-count-vaccine-confusion",
-              "canonical_topic": "measles-death-count-vaccine-confusion",
-              "duplicate_group": "measles-death-count-vaccine-confusion",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/30/health-news-cdc-measles-death-count-still-lags-pennsylvania/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T11:59:00Z"
-                }
-              ],
-              "title": "CDC measles death count still trails Pennsylvania, and a survey finds public confusion on vaccine guidance",
-              "summary": "CDC now reports two U.S. measles deaths in 2026, while Pennsylvania counts four in its outbreak, and it is unclear which deaths CDC included. An Annenberg survey found that 31% of adults think HHS Secretary Kennedy recommends measles vaccination, 29% think he does not, and 40% are unsure.",
-              "strategic_implication": "Federal and state numbers do not match, and the public is unsure what federal leaders recommend. Clinicians and local health departments should give clear vaccination recommendations directly and use state surveillance data for outbreak response.",
-              "confidence": "high",
-              "tags": [
-                "measles",
-                "vaccination",
-                "surveillance",
-                "public-health",
-                "clinical-practice"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-10T13:37:59Z"
+  "last_updated": "2026-11-11T19:00:00Z"
 }

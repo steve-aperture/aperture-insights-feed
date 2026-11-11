@@ -1,0 +1,584 @@
+{
+  "archived_at": "2026-11-11T19:00:00Z",
+  "note": "Editions trimmed from latest-insights.json by the 30-edition cap.",
+  "editions": [
+    {
+      "edition_date": "2026-09-30",
+      "generated_at": "2026-09-30T12:40:17Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition covers FDA leadership delays, the health policy stakes of the midterms, drug-import and 7-OH rules, 2027 Medicare Advantage plan cuts, PhRMA's new CEO, a proposed Midwest health-system merger, growing clinical AI investment, food-as-medicine infrastructure, and clinician-supply and measles-surveillance gaps. It draws on STAT News, Healthcare Dive, MedCity News, and Fierce Healthcare.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Fierce Healthcare RSS"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main)",
+          "Healthcare Dive RSS (news)",
+          "MedCity News RSS",
+          "Fierce Healthcare items retained from the automated run (RSS returned current items at 11:11 UTC)",
+          "Direct page reads of STAT and MedCity News articles for new items"
+        ],
+        "sources_failed": [
+          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
+          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch"
+        ],
+        "run_notes": "Same-day rebuild in place: the automated run (generated 11:11 UTC) had already written 2026-09-30 and left the feed at 31 editions. Retained all 11 automated items, added 8 new items from the 9/29-9/30 window screened against the prior 12 editions, refreshed bucket syntheses, and trimmed to 30 editions with overflow archived.",
+        "items_captured": 19
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "FDA leadership remains unresolved into November, and midterm outcomes will shape Medicaid and drug-pricing debates. Meanwhile, federal import and 7-OH rules, 2027 Medicare Advantage cuts, and California's hepatitis C prior-authorization ban show pressure on access and affordability.",
+          "items": [
+            {
+              "item_id": "2026-09-30-medicare-advantage-plan-cuts-2027",
+              "canonical_topic": "medicare-advantage-plan-cuts-2027",
+              "duplicate_group": "medicare-advantage-plan-cuts-2027",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/medicare-advantage-cuts-2027-cms-landscape/831563/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T12:04:05-04:00"
+                }
+              ],
+              "title": "Insurers continue trimming Medicare Advantage plan options for 2027",
+              "summary": "New CMS data show insurers are reducing the number of Medicare Advantage plans they will offer for 2027 as they adjust to pressure in the privatized Medicare program. Healthcare Dive reports that the administration's release emphasized program stability, but the updated landscape reflects continued plan culling.",
+              "strategic_implication": "Plan reductions may limit member choice and create local market disruption during the 2027 enrollment cycle; health systems should refresh payer-mix, network, and outreach plans in affected markets.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "cms",
+                "2027",
+                "health-plans",
+                "enrollment"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-overton-fda-vote-delayed",
+              "canonical_topic": "overton-fda-vote-delayed",
+              "duplicate_group": "overton-fda-vote-delayed",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/29/heidi-overton-fda-commissioner-vote-midterms-health-care-policy/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T16:14:00Z"
+                }
+              ],
+              "title": "FDA nominee Heidi Overton will not get a committee vote before the midterms",
+              "summary": "The Senate health committee is voting Sept. 30 on three HHS nominees, but FDA commissioner nominee Heidi Overton is not among them. The Senate leaves after this week and does not return until Nov. 9, and at least one Republican committee member could sink the nomination.",
+              "strategic_implication": "FDA leadership stays unsettled for at least another six weeks. Sponsors and device makers should plan for continued acting leadership and possible shifts in review priorities once the nomination is resolved.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "nominations",
+                "senate",
+                "leadership",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-kratom-7oh-regulatory-debate",
+              "canonical_topic": "kratom-7oh-regulatory-debate",
+              "duplicate_group": "kratom-7oh-regulatory-debate",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/30/dea-proposal-7-oh-kratom-schedule-1-drug/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T08:30:00Z"
+                }
+              ],
+              "title": "Experts agree concentrated 7-OH products need safeguards, but differ on how to regulate them",
+              "summary": "STAT reports that clinicians and recovery advocates warn highly concentrated 7-hydroxymitragynine (7-OH) products may carry greater dependence risks than kratom leaf products, although research remains limited. Experts broadly agree safeguards are needed but disagree on the appropriate regulatory approach.",
+              "strategic_implication": "Regulators, addiction-care teams, and retailers should monitor emerging rules and prepare for changes to product access and safety controls, while evidence on concentrated 7-OH remains limited.",
+              "confidence": "medium",
+              "tags": [
+                "kratom",
+                "7-oh",
+                "dea",
+                "drug-safety",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-prescription-import-rule-costs",
+              "canonical_topic": "prescription-import-rule-costs",
+              "duplicate_group": "prescription-import-rule-costs",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/09/29/lawmakers-urge-trump-rethink-new-rule-that-could-restrict-imported-medicines/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T20:41:40Z"
+                }
+              ],
+              "title": "Lawmakers urge reconsideration of a rule that could raise costs for imported prescription medicines",
+              "summary": "A pending federal rule would require medicines mailed from abroad to pass through a customs process involving a licensed broker and an entry bond, adding cost and administrative burden for Americans using licensed international pharmacies. STAT reports that lawmakers are urging the administration to reconsider the change, which is due to take effect next month.",
+              "strategic_implication": "If the rule restricts a lower-cost supply route, patients who rely on international pharmacies may face affordability pressure; health plans and policymakers should track the impact on medication access.",
+              "confidence": "high",
+              "tags": [
+                "drug-pricing",
+                "prescription-imports",
+                "customs",
+                "access",
+                "policy"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-midterms-health-policy-stakes",
+              "canonical_topic": "midterms-health-policy-stakes",
+              "duplicate_group": "midterms-health-policy-stakes",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/29/healthcare-industry-midterm-elections-analysis/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T08:30:00Z"
+                }
+              ],
+              "title": "Drug pricing, Medicaid, and research funding top the health policy stakes in the midterms",
+              "summary": "Based on interviews with nearly a dozen industry leaders and lobbyists, STAT reports that the November elections could reshape debates over Medicaid funding, drug prices, and research funding. The largest shifts would follow a Democratic takeover of either chamber, though major legislation would still need President Trump's signature.",
+              "strategic_implication": "Health systems and plans should scenario-plan for divided government in 2027, particularly Medicaid financing and drug-pricing legislation, rather than assuming today's policy trajectory holds.",
+              "confidence": "medium",
+              "tags": [
+                "midterms",
+                "medicaid",
+                "drug-pricing",
+                "research-funding",
+                "congress"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-california-hep-c-prior-auth-ban",
+              "canonical_topic": "california-hep-c-prior-auth-ban",
+              "duplicate_group": "california-hep-c-prior-auth-ban",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/30/health-news-cdc-measles-death-count-still-lags-pennsylvania/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T11:59:00Z"
+                }
+              ],
+              "title": "California bars commercial insurers from requiring prior authorization for hepatitis C antivirals",
+              "summary": "Gov. Gavin Newsom signed more than 200 bills, including one that stops commercial insurers from requiring prior authorization for hepatitis C antivirals. Another new law creates a front-of-package seal for products that are not ultra-processed.",
+              "strategic_implication": "The hepatitis C law adds to state-level limits on prior authorization. Commercial plans operating in California will need to update utilization-management rules, and other states may follow.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "hepatitis-c",
+                "state-policy",
+                "california",
+                "payers"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Investment in clinical AI and consumer diagnostics keeps growing. Companies are now funding trials and federal partnerships to build clinical credibility.",
+          "items": [
+            {
+              "item_id": "2026-09-30-anthropic-arpa-h-clinical-ai",
+              "canonical_topic": "anthropic-arpa-h-clinical-ai",
+              "duplicate_group": "anthropic-arpa-h-clinical-ai",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/29/anthropic-joins-arpa-h-clinical-ai-moonshot-health-tech/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T14:32:24Z"
+                }
+              ],
+              "title": "Anthropic joins ARPA-H clinical AI initiative as health-sector engagement expands",
+              "summary": "STAT reports that Anthropic has joined ARPA-H's clinical AI \"moonshot\" and plans to hold a closed-door healthcare event. The development adds a major AI company to a federal clinical-AI effort as healthcare regulation of the technology remains unsettled.",
+              "strategic_implication": "Health systems and federal partners should establish clear clinical validation, oversight, and procurement criteria as external AI developers deepen their healthcare presence.",
+              "confidence": "medium",
+              "tags": [
+                "anthropic",
+                "arpa-h",
+                "clinical-ai",
+                "federal-research"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-eliseai-funding-valuation",
+              "canonical_topic": "eliseai-funding-valuation",
+              "duplicate_group": "eliseai-funding-valuation",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/eliseai-banks-350m-hits-4b-valuation-accelerated-new-product-development",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T11:01:00-04:00"
+                }
+              ],
+              "title": "EliseAI raises $350M at a $4B valuation to accelerate product development",
+              "summary": "EliseAI raised $350 million at a $4 billion valuation to accelerate product development across healthcare and housing operations. Company executives said it exceeded $200 million in annual recurring revenue in June and had doubled revenue year over year for five consecutive years.",
+              "strategic_implication": "The financing could accelerate AI vendor expansion and product competition; health systems should evaluate automation partners on measurable workflow and patient-service outcomes, not funding momentum alone.",
+              "confidence": "high",
+              "tags": [
+                "eliseai",
+                "healthcare-ai",
+                "funding",
+                "automation"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-tiny-health-series-b",
+              "canonical_topic": "tiny-health-series-b",
+              "duplicate_group": "tiny-health-series-b",
+              "priority_score": 5,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/tiny-health-secures-33m-to-expand-microbiome-testing/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T22:16:00Z"
+                }
+              ],
+              "title": "Tiny Health raises $33M to expand clinical research on at-home microbiome testing",
+              "summary": "Tiny Health's Series B, led by B Capital, brings total funding to $46 million. The company has served nearly 200,000 customers and more than 6,000 practitioners. It says a first randomized trial showed an 83% lower chance of infant eczema with targeted interventions and plans a $5 million research program covering IBS, menopause, and GLP-1s.",
+              "strategic_implication": "Direct-to-consumer diagnostics companies are investing in trials to earn clinical credibility. Clinicians and payers should expect more pressure to recognize microbiome testing and should judge those claims against peer-reviewed outcome data.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "diagnostics",
+                "microbiome",
+                "funding",
+                "consumer-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Health-system consolidation, pharma dealmaking around China-originated oncology assets, and PhRMA's new leadership point to a market preparing for heavier drug-pricing policy after the midterms.",
+          "items": [
+            {
+              "item_id": "2026-09-30-healthpartners-essentia-merger",
+              "canonical_topic": "healthpartners-essentia-merger",
+              "duplicate_group": "healthpartners-essentia-merger",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/providers/healthpartners-essentia-health-announce-merger-plans",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T12:58:00-04:00"
+                }
+              ],
+              "title": "HealthPartners and Essentia Health announce plans to combine in a $12.5B nonprofit system",
+              "summary": "HealthPartners and Essentia Health announced merger plans that would create a multi-state integrated nonprofit with roughly $12.5 billion in scale, 22 hospitals, and a 1.6 million-member insurance business. The proposed combination would bring together provider operations and a substantial regional health-plan footprint.",
+              "strategic_implication": "The combination could reshape contracting leverage, provider competition, and payer relationships across the region; counterparties should assess integration milestones and the resulting market footprint.",
+              "confidence": "high",
+              "tags": [
+                "health-systems",
+                "merger",
+                "minnesota",
+                "nonprofit",
+                "market-consolidation"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-waltz-fresenius-biosimilar-program",
+              "canonical_topic": "waltz-fresenius-biosimilar-program",
+              "duplicate_group": "waltz-fresenius-biosimilar-program",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/waltz-health-fresenius-kabi-partner-direct-payer-biosimilar-program",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T16:56:00-04:00"
+                }
+              ],
+              "title": "Waltz Health and Fresenius Kabi launch a direct-to-payer biosimilar program",
+              "summary": "Waltz Health and Fresenius Kabi are partnering on a direct-to-payer biosimilar program to support direct-to-employer efforts for key biosimilar medicines. The arrangement is intended to expand access through an alternative contracting channel.",
+              "strategic_implication": "Employers and payers should compare direct biosimilar programs with existing pharmacy and medical-benefit channels on net cost, access, and administrative burden.",
+              "confidence": "medium",
+              "tags": [
+                "biosimilars",
+                "fresenius-kabi",
+                "waltz-health",
+                "direct-contracting",
+                "employers"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-phrma-names-eric-cantor-ceo",
+              "canonical_topic": "phrma-names-eric-cantor-ceo",
+              "duplicate_group": "phrma-names-eric-cantor-ceo",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/29/eric-cantor-named-phrma-ceo/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T17:56:00Z"
+                }
+              ],
+              "title": "PhRMA names former House Majority Leader Eric Cantor as its next CEO",
+              "summary": "Cantor takes over the brand-drug lobby as pressure on drug prices builds in both parties. The administration wants to write its most-favored-nation deals with more than two dozen drugmakers into law, and Democrats are weighing international reference prices in Medicare negotiation.",
+              "strategic_implication": "Hiring a former GOP leader suggests the industry will rely on congressional relationships to shape any most-favored-nation legislation. Stakeholders should watch for industry-backed alternatives in the post-midterm session.",
+              "confidence": "high",
+              "tags": [
+                "pharma",
+                "phrma",
+                "drug-pricing",
+                "most-favored-nation",
+                "lobbying"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-oura-ipo-delay",
+              "canonical_topic": "oura-ipo-delay",
+              "duplicate_group": "oura-ipo-delay",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/oura-delays-ipo/831655/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T11:42:41-04:00"
+                }
+              ],
+              "title": "Oura delays its planned IPO, citing uncertainty in public markets",
+              "summary": "Smart-ring maker Oura postponed a previously expected initial public offering, citing market uncertainty. Healthcare Dive reported that the planned offering had been expected to raise up to $2.2 billion.",
+              "strategic_implication": "The delay underscores public-market timing risk for digital-health companies; peers may need to extend private financing runways or adjust growth and liquidity plans.",
+              "confidence": "high",
+              "tags": [
+                "oura",
+                "wearables",
+                "ipo",
+                "digital-health",
+                "financing"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-astrazeneca-summit-investment",
+              "canonical_topic": "astrazeneca-summit-investment",
+              "duplicate_group": "astrazeneca-summit-investment",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/astrazeneca-summit-therapeutics-gastrointestinal-cancer-pd-1-vegf-bispecific-antibody-adc-combination-smmt-azn/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T19:25:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/29/biotech-news-astrazeneca-invests-2-billion-in-summit-therapeautics/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T13:52:00Z"
+                }
+              ],
+              "title": "AstraZeneca makes a $2B equity investment in Summit Therapeutics tied to ivonescimab",
+              "summary": "AstraZeneca will buy Summit shares at $18.36, an 18.6% premium, and will collaborate on testing Summit's PD-1/VEGF bispecific ivonescimab with its ADC sonesitatug vedotin, starting with gastrointestinal cancers. Ivonescimab was developed by China-based Akeso.",
+              "strategic_implication": "This deal adds to the recent run of large pharma bets on China-originated oncology assets. Oncology service lines and payers should expect more combination regimens and pricing pressure in the late-stage GI and lung cancer pipeline.",
+              "confidence": "high",
+              "tags": [
+                "pharma",
+                "oncology",
+                "dealmaking",
+                "china",
+                "biotech"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Payer site-of-care policies and leadership changes are altering provider economics, while food-as-medicine infrastructure is maturing into measurable, closed-loop programs.",
+          "items": [
+            {
+              "item_id": "2026-09-30-elevance-site-of-care-billing",
+              "canonical_topic": "elevance-site-of-care-billing",
+              "duplicate_group": "elevance-site-of-care-billing",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/elevance-health-rolls-out-new-site-care-billing-policies",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T15:13:00-04:00"
+                }
+              ],
+              "title": "Elevance introduces new site-of-care billing policies",
+              "summary": "Elevance Health is rolling out billing policies intended to ensure services are paid at the appropriate level and increase transparency about where patients receive care. The move puts site-of-care practices and reimbursement settings in focus for providers.",
+              "strategic_implication": "Providers should review contract terms, site-specific payment rules, and patient-routing workflows to anticipate reimbursement exposure and possible shifts toward lower-cost settings.",
+              "confidence": "high",
+              "tags": [
+                "elevance",
+                "site-of-care",
+                "billing",
+                "payer-policy",
+                "provider-operations"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-unitedhealthcare-president-appointment",
+              "canonical_topic": "unitedhealthcare-president-appointment",
+              "duplicate_group": "unitedhealthcare-president-appointment",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/unitedhealthcare-names-new-president-in-latest-leadership-shuffle/831643/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T11:38:00-04:00"
+                }
+              ],
+              "title": "UnitedHealthcare names Robert Hunter president amid broader leadership changes",
+              "summary": "UnitedHealthcare named Robert Hunter president, with a focus on the insurer's modernization agenda. Healthcare Dive described the appointment as part of a series of leadership changes at UnitedHealth as the company works to restore its image.",
+              "strategic_implication": "Providers and vendors should monitor whether the leadership shift changes UnitedHealthcare's modernization priorities, operating practices, or engagement with external partners.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealthcare",
+                "leadership",
+                "modernization",
+                "payer-operations"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-unite-us-instacart-food-as-medicine",
+              "canonical_topic": "unite-us-instacart-food-as-medicine",
+              "duplicate_group": "unite-us-instacart-food-as-medicine",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/09/unite-us-instacart-link-care-coordination-and-grocery-benefits-to-scale-food-as-medicine/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T21:43:00Z"
+                }
+              ],
+              "title": "Unite Us and Instacart link care-coordination referrals with grocery benefits",
+              "summary": "The partnership pairs Unite Us's referral platform, which identifies eligible members, with Instacart's system for redeeming grocery stipends. It covers Medicare and Medicaid grocery benefits, chronic-condition nutrition support, and post-discharge help, and is designed to work alongside SNAP and WIC.",
+              "strategic_implication": "Food-as-medicine programs have been hard to scale and measure. Health systems and plans with SDOH or post-discharge nutrition programs can use closed-loop redemption data to show outcomes and support benefit design.",
+              "confidence": "medium",
+              "tags": [
+                "food-as-medicine",
+                "sdoh",
+                "care-coordination",
+                "medicaid",
+                "medicare-advantage"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Projected clinician shortages and mismatched measles data put more of the burden on frontline clinicians and local health departments to give patients clear guidance.",
+          "items": [
+            {
+              "item_id": "2026-09-30-clinician-shortage-projection-2040",
+              "canonical_topic": "clinician-shortage-projection-2040",
+              "duplicate_group": "clinician-shortage-projection-2040",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/clinician-shortage-to-double-by-2040/831630/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-29T10:37:13-04:00"
+                }
+              ],
+              "title": "A new report projects the U.S. clinician shortage will nearly double by 2040",
+              "summary": "A report from healthcare education company Covista projects that the U.S. clinician shortage will nearly double by 2040. Healthcare Dive characterizes the forecast as a looming workforce crisis but notes that mitigation remains possible.",
+              "strategic_implication": "Health systems and workforce planners should prioritize multi-year recruitment, retention, training, and role redesign to preserve access as supply constraints deepen.",
+              "confidence": "medium",
+              "tags": [
+                "clinician-workforce",
+                "staffing",
+                "shortage",
+                "2040",
+                "workforce-planning"
+              ]
+            },
+            {
+              "item_id": "2026-09-30-measles-death-count-vaccine-confusion",
+              "canonical_topic": "measles-death-count-vaccine-confusion",
+              "duplicate_group": "measles-death-count-vaccine-confusion",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/09/30/health-news-cdc-measles-death-count-still-lags-pennsylvania/",
+                  "source_type": "rss",
+                  "published_at": "2026-09-30T11:59:00Z"
+                }
+              ],
+              "title": "CDC measles death count still trails Pennsylvania, and a survey finds public confusion on vaccine guidance",
+              "summary": "CDC now reports two U.S. measles deaths in 2026, while Pennsylvania counts four in its outbreak, and it is unclear which deaths CDC included. An Annenberg survey found that 31% of adults think HHS Secretary Kennedy recommends measles vaccination, 29% think he does not, and 40% are unsure.",
+              "strategic_implication": "Federal and state numbers do not match, and the public is unsure what federal leaders recommend. Clinicians and local health departments should give clear vaccination recommendations directly and use state surveillance data for outbreak response.",
+              "confidence": "high",
+              "tags": [
+                "measles",
+                "vaccination",
+                "surveillance",
+                "public-health",
+                "clinical-practice"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

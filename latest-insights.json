@@ -3,6 +3,671 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-12",
+      "generated_at": "2026-11-12T16:00:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "The American Cancer Society now recommends routine PSA screening for men 50 to 69, CMS denied Minnesota more than $112 million in Medicaid funds, and the Senate HELP Committee set a Nov. 18 vote on FDA nominee Heidi Overton. Google Cloud launched an agentic Gemini platform for providers and payers, Tandem is correcting more than 80,900 Mobi insulin pumps, and ousted HSA Florida founder Mike Sarian will give up control of five Miami-area hospitals. Sources include STAT, KFF Health News, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News and Becker's.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS",
+          "BioPharma Dive, MedTech Dive, MedCity News, KFF Health News, Becker's Hospital Review and Fierce Healthcare RSS"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for Nov. 11-12",
+          "Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News and Becker's RSS fetched and screened",
+          "Articles read on STAT, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News and Becker's to verify figures"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and newsletter-name searches since Nov. 9-10 returned no messages in the connected mailbox; RSS sources used instead.",
+          "Fierce Healthcare RSS returned malformed XML and was not parsed.",
+          "STAT+ articles (Overton vote, MFN launches, clinical-obesity framework, Alnylam, Biogen) were paywalled; those items rely on visible text, RSS descriptions and corroborating sources."
+        ],
+        "run_notes": "22 items cover developments reported from midday Nov. 11 (a lighter Veterans Day news cycle) through midday Nov. 12. Checked against the prior 30 editions for repeats; excluded Oura-Counsel, the measles elimination review, MDCalc CrossCover, PHI Health employer suits, Democrats' MFN letters, the Lilly Mounjaro lawsuit, the GLP-1 NAION warning and the Surgery Partners bid, all covered Nov. 10-11. STAT opinion pieces on governors' health priorities and MAHA were screened but not itemized; MedCity's midterm-impact analysis overlaps Nov. 4-9 coverage."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal pressure on state Medicaid programs and drug pricing is sharpening in the lame-duck window: CMS denied Minnesota more than $112 million in Medicaid funds, Senate HELP set a Nov. 18 vote on FDA nominee Heidi Overton, and a Harvard-led study warns that pushing up foreign drug prices could raise U.S. costs. A new KFF Health News review of $3.7 billion in 2025 opioid settlement spending shows uneven local stewardship.",
+          "items": [
+            {
+              "item_id": "2026-11-12-cms-denies-minnesota-medicaid-112m",
+              "canonical_topic": "cms-denies-minnesota-medicaid-112m",
+              "duplicate_group": "cms-denies-minnesota-medicaid-112m",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/cms-denies-minnesota-112m-in-medicaid-funds-7-things-to-know/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T21:47:03Z"
+                }
+              ],
+              "title": "CMS denies Minnesota more than $112 million in Medicaid reimbursement after a high-risk services review",
+              "summary": "CMS disallowed more than $112 million in Minnesota Medicaid reimbursement for the quarter ending Sept. 30, 2025, stemming from a $259 million deferral issued in February over mostly high-risk services. State officials said the denial was about 1,000 times the claims initially flagged and questioned CMS's extrapolation from 330 sampled claims out of more than 6 million. CMS has deferred $550 million since February, has not ruled on two more freezes totaling $350 million, and Minnesota has 60 days to appeal.",
+              "strategic_implication": "Sample-and-extrapolate program integrity actions can turn documentation gaps into nine-figure state liabilities, and states may claw back payments from providers. Providers in behavioral health, home- and community-based services and other high-risk Medicaid lines should audit signature, date and sign-off documentation now, before similar reviews spread to other states.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "program-integrity",
+                "cms",
+                "minnesota",
+                "state-budgets"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-overton-fda-nomination-help-vote",
+              "canonical_topic": "overton-fda-nomination-help-vote",
+              "duplicate_group": "overton-fda-nomination-help-vote",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/11/fda-commissioner-nominee-heidi-overton-senate-committee-vote/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T15:07:28Z"
+                }
+              ],
+              "title": "Senate HELP schedules Nov. 18 vote on FDA nominee Heidi Overton as Cassidy stays undecided",
+              "summary": "HELP Committee Chair Bill Cassidy (R-La.) scheduled a Nov. 18 committee vote on Heidi Overton's nomination to lead the FDA, while saying he and other Republican members remain undecided. A single Republican defection could sink the nomination if all Democrats vote no. Republicans are racing to confirm nominees before Democrats take control of Congress in January.",
+              "strategic_implication": "FDA leadership remains unsettled heading into a divided-government period, adding uncertainty to review timelines, user-fee negotiations and policy on vaccines and AI-enabled devices. Sponsors and health systems should plan for either a confirmed commissioner facing heavy Democratic oversight or a prolonged acting-leadership period.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "nominations",
+                "senate-help",
+                "lame-duck",
+                "regulatory-leadership"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-germany-drug-prices-mfn-us-costs",
+              "canonical_topic": "germany-drug-prices-mfn-us-costs",
+              "duplicate_group": "germany-drug-prices-mfn-us-costs",
+              "priority_score": 7,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/germany-us-drug-price-study-healthcare-costs/874360/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T16:11:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/11/biotech-news-mfn-makes-drugmakers-rethink-launches-abroad/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T19:44:07Z"
+                }
+              ],
+              "title": "Harvard-led study finds higher German drug prices would raise costs in both Germany and U.S. Medicaid",
+              "summary": "A Harvard Medical School-led analysis found that a 25% increase in German drug prices would add about $6.2 billion to German statutory insurance spending and about $300 million to U.S. Medicaid spending under a most-favored-nation pricing approach. The study was initiated and supported by Germany's national association of statutory health insurance funds, which said the researchers had full control. STAT separately reports that drugmakers are rethinking launches abroad to protect U.S. prices from MFN referencing.",
+              "strategic_implication": "MFN referencing gives manufacturers an incentive to delay or skip launches in lower-priced countries rather than cut U.S. prices, which could limit the savings federal programs expect. Payers and Medicaid agencies should model MFN savings conservatively, and incoming Democratic oversight of the administration's pricing deals will likely probe this dynamic.",
+              "confidence": "high",
+              "tags": [
+                "drug-pricing",
+                "most-favored-nation",
+                "medicaid",
+                "germany",
+                "international-reference-pricing"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-opioid-settlement-spending-2025-review",
+              "canonical_topic": "opioid-settlement-spending-2025-review",
+              "duplicate_group": "opioid-settlement-spending-2025-review",
+              "priority_score": 8,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/public-health/opioid-settlements-database-local-spending-control-addiction-advocates-2025/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T10:00:00Z"
+                },
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/public-health/opioid-settlements-housing-homelessness-addiction-substance-use-state-local/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T10:00:00Z"
+                }
+              ],
+              "title": "KFF Health News review of $3.7 billion in 2025 opioid settlement spending flags questionable local uses",
+              "summary": "KFF Health News, Johns Hopkins and Shatterproof examined about 17,500 opioid settlement expenditures and found state and local governments spent or committed about $3.7 billion in 2025, with much of the questionable spending at the county and city level. Examples include street lighting, license-plate cameras and a pickleball court, while syringe-service programs and services for babies exposed to drugs in utero each received less than 1% of spending. More than $340 million, about 9%, went to housing initiatives, not all of them clearly tied to addiction.",
+              "strategic_implication": "With roughly $60 billion in settlement payments expected over nearly two decades and local officials controlling nearly half, health systems, FQHCs and treatment providers have a real opening to shape spending. They should bring outcome data and ready-to-fund proposals for treatment, recovery housing and harm reduction to county opioid councils before funds drift to general budgets.",
+              "confidence": "high",
+              "tags": [
+                "opioid-settlements",
+                "substance-use",
+                "public-health-funding",
+                "housing",
+                "local-government"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-physician-lawmakers-trust-in-science",
+              "canonical_topic": "physician-lawmakers-trust-in-science",
+              "duplicate_group": "physician-lawmakers-trust-in-science",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/12/trust-in-science-physician-lawmakers-rebuild-belief/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T09:30:00Z"
+                }
+              ],
+              "title": "Newly elected doctors and scientists aim to rebuild trust in science, facing a large anti-vaccine bloc",
+              "summary": "Doctors and scientists endorsed by 314 Action flipped 10 congressional seats, and South Carolina elected pediatrician Annie Andrews to the Senate. At the same time, more than 120 newly elected lawmakers nationwide oppose Covid shots, and Florida Governor-elect Byron Donalds called eliminating state vaccine requirements a 'step in the right direction.' Democrats plan vigorous oversight of HHS Secretary Robert F. Kennedy Jr., possibly including subpoenas.",
+              "strategic_implication": "Vaccine policy will increasingly diverge by state, so health systems should track state-level school and employer immunization rules, especially in Florida. Expect congressional oversight of HHS to create new public records on vaccine and research decisions that health leaders can use in their own communication.",
+              "confidence": "high",
+              "tags": [
+                "vaccine-policy",
+                "trust-in-science",
+                "midterms",
+                "florida",
+                "hhs-oversight"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Big Tech and virtual care moved further into core workflows: Google Cloud launched an agentic Gemini platform for providers and payers with HCA, Northwell, Highmark and Optum as early users, and Maven Clinic's virtual care went in-network with more than 475 plans. NIH's All of Us data surfaced thousands of new drug-response variants, while a Georgia rural hospital breach went undetected for 17 days.",
+          "items": [
+            {
+              "item_id": "2026-11-12-google-cloud-gemini-for-healthcare",
+              "canonical_topic": "google-cloud-gemini-for-healthcare",
+              "duplicate_group": "google-cloud-gemini-for-healthcare",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/google-cloud-debuts-gemini-for-healthcare/874371/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T14:55:28Z"
+                }
+              ],
+              "title": "Google Cloud launches agentic Gemini for healthcare with HCA, Northwell, Highmark and Optum in preview",
+              "summary": "Google Cloud debuted Gemini for healthcare, an agentic AI platform for providers and payers that connects to EHRs and claims workflows to surface records, prepare paperwork and check insurance details. It includes connectors for Epic and Oracle EHRs, CMS standards and the NPI registry, and can run models from Google, OpenAI and Anthropic under one governance layer. HCA Healthcare, Highmark Health, Northwell Health and Optum are early adopters; Google did not give a date for broader availability.",
+              "strategic_implication": "Hyperscalers are now selling governed, multi-model agent platforms aimed at prior authorization, eligibility and documentation, the same territory as EHR vendors and point-solution startups. CIOs should define agent governance, audit logging and payer-provider data-sharing rules before pilots spread informally across departments.",
+              "confidence": "high",
+              "tags": [
+                "agentic-ai",
+                "google-cloud",
+                "ehr-integration",
+                "prior-authorization",
+                "payer-provider"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-maven-clinic-in-network-475-plans",
+              "canonical_topic": "maven-clinic-in-network-475-plans",
+              "duplicate_group": "maven-clinic-in-network-475-plans",
+              "priority_score": 7,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/maven-clinics-virtual-care-clinic-goes-in-network-with-475-plans/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T21:41:19Z"
+                }
+              ],
+              "title": "Maven Clinic's virtual women's health care goes in-network with more than 475 health plans",
+              "summary": "Maven Clinic said its virtual care is now covered by more than 475 health plans, including Aetna, UnitedHealthcare and Blue Cross Blue Shield plans, reaching about 80% of commercially insured lives. It is starting with perimenopause, menopause and hormone-care visits and plans to add OB-GYNs, maternal-fetal medicine specialists and nutritionists in coming months. Members pay their usual cost share, which Maven shows before booking.",
+              "strategic_implication": "The move shifts Maven from an employer-paid benefit to a direct competitor for health-plan members in menopause and maternity care. Health systems with women's health service lines should check their virtual access, menopause capacity and referral leakage, since in-network virtual options will draw commercially insured patients.",
+              "confidence": "high",
+              "tags": [
+                "virtual-care",
+                "womens-health",
+                "menopause",
+                "payer-networks",
+                "maven"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-all-of-us-pharmacogenomic-variants",
+              "canonical_topic": "all-of-us-pharmacogenomic-variants",
+              "duplicate_group": "all-of-us-pharmacogenomic-variants",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/11/all-of-us-study-finds-gene-variants-drug-responses/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T21:37:27Z"
+                }
+              ],
+              "title": "All of Us study of nearly 100,000 Americans finds thousands of new drug-response gene variants",
+              "summary": "A study in Science Translational Medicine using NIH All of Us data from nearly 100,000 diverse Americans identified thousands of new variants across 16 pharmacogenes. Every participant carried at least one variant in those genes, and one in four had taken a medication that could be affected. The cohort's broader ancestry could make pharmacogenomic guidance more useful across populations.",
+              "strategic_implication": "Pharmacogenomics is moving from niche testing toward population-scale relevance. Health systems with precision-medicine or pharmacy programs should evaluate preemptive testing and EHR clinical decision support for high-risk drug-gene pairs, starting with commonly prescribed medicines.",
+              "confidence": "medium",
+              "tags": [
+                "pharmacogenomics",
+                "all-of-us",
+                "nih",
+                "precision-medicine",
+                "health-equity"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-bacon-county-hospital-breach-17-days",
+              "canonical_topic": "bacon-county-hospital-breach-17-days",
+              "duplicate_group": "bacon-county-hospital-breach-17-days",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/cybersecurity/hackers-lurked-in-georgia-hospitals-network-for-17-days-copied-files/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T22:57:53Z"
+                }
+              ],
+              "title": "Intruder spent 17 days inside a rural Georgia hospital's network and copied files before detection",
+              "summary": "Bacon County Health Services in Alma, Ga., said an unauthorized party gained access to its network July 10 and copied certain files on or about July 27, when unusual activity was detected. Patient care was not disrupted, and at least 501 affected individuals were reported to HHS's Office for Civil Rights, an estimate that will be updated. The organization said it is too early to know what information was involved.",
+              "strategic_implication": "A 17-day dwell time at a small rural system shows the detection gap many critical access and rural hospitals face. Rural leaders should consider managed detection and response, shared security services through networks or state hospital associations, and tested downtime procedures.",
+              "confidence": "high",
+              "tags": [
+                "cybersecurity",
+                "rural-hospitals",
+                "data-breach",
+                "hipaa",
+                "georgia"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Investors are pricing in the congressional shift, with hospital stocks holding post-election gains on expectations Democrats will soften Medicaid and ACA cuts. Tandem's Mobi pump correction covers more than 80,900 devices, Merck KGaA added another rare-tumor approval, AstraZeneca bought vaccine partner Omniose, and Alnylam and Biogen face key growth tests. UnitedHealth added former CHOP CEO Madeline Bell to its board.",
+          "items": [
+            {
+              "item_id": "2026-11-12-hospital-stocks-hold-post-election-gains",
+              "canonical_topic": "hospital-stocks-hold-post-election-gains",
+              "duplicate_group": "hospital-stocks-hold-post-election-gains",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/hospital-stocks-spike-after-congressional-blue-wave-wsj/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T21:48:39Z"
+                }
+              ],
+              "title": "Hospital stocks hold post-election gains as investors bet on softer Medicaid and ACA cuts",
+              "summary": "Hospital and insurer stocks have held gains since Democrats won both chambers Nov. 3. From the Nov. 3 close to Nov. 11, Universal Health Services rose 10.6%, Tenet 9.3%, HCA 8.7% and Community Health Systems 5.4%. Investors expect Democrats to try to reverse HR1 Medicaid cuts, restore enhanced ACA subsidies and protect state provider taxes, which a Baird analyst estimates account for 15% to 20% of HCA's earnings.",
+              "strategic_implication": "Markets are treating provider-tax and supplemental-payment protection as the key policy variable for hospital earnings. Hospital CFOs should model scenarios for the 2028 provider-tax changes rather than assume relief, since any reversal still needs a presidential signature.",
+              "confidence": "high",
+              "tags": [
+                "hospital-finance",
+                "capital-markets",
+                "medicaid",
+                "provider-taxes",
+                "midterms"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-tandem-mobi-pump-recall",
+              "canonical_topic": "tandem-mobi-pump-recall",
+              "duplicate_group": "tandem-mobi-pump-recall",
+              "priority_score": 8,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/tandem-recalls-mobi-insulin-pump-reports-230-adverse-events/874386/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T15:54:22Z"
+                }
+              ],
+              "title": "Tandem corrects more than 80,900 Mobi insulin pumps over false occlusion alarms; 230 adverse events reported",
+              "summary": "Tandem Diabetes Care issued a correction for more than 80,900 Mobi insulin pumps, mostly in the U.S., because a false occlusion alarm can suspend insulin delivery until the user responds. As of Oct. 29, Tandem had received 230 adverse-event reports requiring medical intervention or hospitalization and no deaths. Users may keep using the pump but should respond to every occlusion alarm and keep backup insulin on hand.",
+              "strategic_implication": "Endocrinology and primary care practices should identify Mobi users, reinforce alarm response and backup-insulin plans, and watch for hyperglycemia and DKA presentations. Supply chain and DME teams should track the exchange program and any effect on Tandem's pending tubeless Mobi review.",
+              "confidence": "high",
+              "tags": [
+                "medical-devices",
+                "recall",
+                "diabetes",
+                "insulin-pumps",
+                "patient-safety"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-merck-kgaa-pimjetmi-tgct-approval",
+              "canonical_topic": "merck-kgaa-pimjetmi-tgct-approval",
+              "duplicate_group": "merck-kgaa-pimjetmi-tgct-approval",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/merck-kgaa-emd-serono-pimicotinib-pimjetmi-fda-approval-tgct-rare-tumor/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T23:19:06Z"
+                }
+              ],
+              "title": "FDA approves Merck KGaA's once-daily Pimjetmi for tenosynovial giant cell tumor",
+              "summary": "The FDA approved Merck KGaA's pimicotinib, branded Pimjetmi, for adults with tenosynovial giant cell tumor when surgery could worsen function or cause severe complications. In the Phase 3 trial, the once-daily CSF-1R inhibitor had a 56% overall response rate at 25 weeks versus 3% for placebo. It competes with Daiichi Sankyo's Turalio and Ono's Romvimza and builds on Merck's $3.9 billion SpringWorks deal and pending $1.1 billion Silence Therapeutics acquisition.",
+              "strategic_implication": "A third oral TGCT option increases competition in a small rare-tumor market, giving payers room to manage formularies on dosing convenience and liver-safety profile. Mid-size pharma companies continue to build rare-disease portfolios through acquisitions rather than internal discovery.",
+              "confidence": "high",
+              "tags": [
+                "fda-approval",
+                "rare-disease",
+                "oncology",
+                "merck-kgaa",
+                "pharma-strategy"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-astrazeneca-acquires-omniose",
+              "canonical_topic": "astrazeneca-acquires-omniose",
+              "duplicate_group": "astrazeneca-acquires-omniose",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/glp1-naion-compass-zura-abeona/874076/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T13:42:00Z"
+                }
+              ],
+              "title": "AstraZeneca acquires conjugate-vaccine partner Omniose",
+              "summary": "AstraZeneca acquired vaccine startup Omniose, a development partner since January 2024, for undisclosed terms. Omniose's bioconjugation technology is designed to make conjugate vaccines more efficiently and at higher quality, and AstraZeneca plans to use it for vaccines against serious bacterial infections.",
+              "strategic_implication": "Large pharma is still investing in bacterial vaccine platforms despite federal vaccine-policy turbulence, a signal of confidence in global and long-term markets. Infection-prevention and antimicrobial-resistance leaders should watch this pipeline as a possible prevention tool for hospital-associated pathogens.",
+              "confidence": "high",
+              "tags": [
+                "vaccines",
+                "m-and-a",
+                "astrazeneca",
+                "bacterial-infections",
+                "antimicrobial-resistance"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-alnylam-amvuttra-growth-slowdown",
+              "canonical_topic": "alnylam-amvuttra-growth-slowdown",
+              "duplicate_group": "alnylam-amvuttra-growth-slowdown",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/12/alnylam-amvuttra-heart-drug-growth/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T11:30:00Z"
+                }
+              ],
+              "title": "Alnylam's growth hinges on fixing slowing sales of heart drug Amvuttra",
+              "summary": "STAT reports that Alnylam is heavily dependent on Amvuttra, its treatment for ATTR cardiomyopathy, for growth and that sales have slowed and the stock has fallen. In 2025 the company was seen as a candidate to rival Vertex's roughly $100 billion market value.",
+              "strategic_implication": "Slower uptake of a high-priced cardiomyopathy therapy suggests real limits in diagnosis, payer management and competition. Cardiology programs and specialty pharmacies should expect continued manufacturer investment in ATTR screening and access support.",
+              "confidence": "medium",
+              "tags": [
+                "alnylam",
+                "attr-cm",
+                "biotech",
+                "cardiology",
+                "specialty-drugs"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-biogen-litifilimab-lupus-readout",
+              "canonical_topic": "biogen-litifilimab-lupus-readout",
+              "duplicate_group": "biogen-litifilimab-lupus-readout",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/12/biogen-lupus-litifilimab-what-to-know/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T11:30:00Z"
+                }
+              ],
+              "title": "Biogen's December Phase 3 lupus readout for litifilimab will test its R&D turnaround",
+              "summary": "Biogen expects results in the first half of December from TOPAZ-1 and TOPAZ-2, twin Phase 3 trials of the lupus drug litifilimab. STAT calls the readout risky and a key test of CEO Chris Viehbacher's R&D overhaul and growth strategy.",
+              "strategic_implication": "Lupus has few effective therapies, so a positive result would add a new high-cost biologic for rheumatology and specialty pharmacy planning in 2027 and 2028. A miss would increase pressure on Biogen to buy late-stage assets.",
+              "confidence": "medium",
+              "tags": [
+                "biogen",
+                "lupus",
+                "clinical-trials",
+                "immunology",
+                "biotech"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-unitedhealth-board-madeline-bell",
+              "canonical_topic": "unitedhealth-board-madeline-bell",
+              "duplicate_group": "unitedhealth-board-madeline-bell",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/unitedhealth-board-adds-childrens-hospital-ceo-madeline-bell/874367/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T14:24:11Z"
+                }
+              ],
+              "title": "UnitedHealth adds former CHOP CEO and nurse Madeline Bell to its board",
+              "summary": "UnitedHealth Group appointed Madeline Bell, a former nurse who led Children's Hospital of Philadelphia as president and CEO for 11 years before retiring in October, to its board, effective immediately. CHOP grew to a $6 billion enterprise with more than 30,000 employees during her tenure. It is the company's second board addition under CEO Stephen Hemsley's turnaround, after former FDA Commissioner Scott Gottlieb.",
+              "strategic_implication": "Adding a provider leader with a clinical background signals UnitedHealth wants credibility with clinicians and health systems while its Optum and payer practices face scrutiny. Health systems negotiating with UnitedHealthcare should watch whether board changes lead to changes in prior authorization or provider relations.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealth",
+                "governance",
+                "payers",
+                "optum",
+                "board-appointments"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Governance and payer-contract disputes dominated provider news: ousted HSA Florida founder Mike Sarian agreed to give up control of five Miami-area hospitals, Jefferson's Lehigh Valley specialty pharmacy sued Highmark over a closed specialty-drug list, and Novant named COO John Gizdic interim CEO after Carl Armato's retirement.",
+          "items": [
+            {
+              "item_id": "2026-11-12-hsa-florida-sarian-settlement-five-hospitals",
+              "canonical_topic": "hsa-florida-sarian-settlement-five-hospitals",
+              "duplicate_group": "hsa-florida-sarian-settlement-five-hospitals",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/legal-regulatory-issues/ousted-ceo-to-cede-control-of-5-florida-hospitals-in-lawsuit-settlement/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T23:29:10Z"
+                }
+              ],
+              "title": "Ousted HSA Florida founder Mike Sarian agrees to give up control of five Miami-area hospitals",
+              "summary": "Healthcare Systems of America-Florida and founder and former CEO Mike Sarian settled two Miami-Dade lawsuits alleging financial misconduct, including a claim that at least $14 million was diverted between September 2024 and January 2026. Sarian will give up all ownership and control of Palmetto General, Coral Gables, Florida Medical Center, North Shore Medical Center and Hialeah Hospital; the claims were dismissed with prejudice. Sarian denied the allegations, Faisal Gill remains CEO, and Sarian's separate California suit continues.",
+              "strategic_implication": "The settlement removes a governance cloud over five safety-net-heavy South Florida hospitals, but their finances remain fragile after a year of litigation and payroll trouble at affiliated hospitals. Payers, state regulators and nearby systems should watch for divestitures, service cuts or affiliation talks.",
+              "confidence": "high",
+              "tags": [
+                "hospital-governance",
+                "florida",
+                "safety-net-hospitals",
+                "litigation",
+                "miami"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-lehigh-valley-sues-highmark-specialty-pharmacy",
+              "canonical_topic": "lehigh-valley-sues-highmark-specialty-pharmacy",
+              "duplicate_group": "lehigh-valley-sues-highmark-specialty-pharmacy",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/pharmacy/lehigh-valley-hospital-sues-highmark-over-specialty-drug-access/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T22:13:21Z"
+                }
+              ],
+              "title": "Jefferson's Lehigh Valley specialty pharmacy sues Highmark over closed specialty-drug list",
+              "summary": "Lehigh Valley Health Network's specialty pharmacy, part of Jefferson Health, sued Highmark in state court Nov. 10. It alleges the insurer created an undisclosed closed specialty list around summer 2024 that steers high-cost self-administered drugs, including prescriptions for LVHN patients, to other pharmacies such as Allegheny Health Network Specialty Pharmacy. LVHN seeks to void the list and claims damages in the millions; Jefferson and Highmark are negotiating ahead of 2027.",
+              "strategic_implication": "Health-system specialty pharmacies are a key margin source, and payer steering toward affiliated pharmacies, here a payer-owned health system's pharmacy, directly threatens it. Systems should review payer contracts for exclusion-list notice and amendment terms and document continuity-of-care harms to strengthen negotiating and legal positions.",
+              "confidence": "high",
+              "tags": [
+                "specialty-pharmacy",
+                "payer-contracting",
+                "vertical-integration",
+                "highmark",
+                "jefferson-health"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-novant-names-gizdic-interim-ceo",
+              "canonical_topic": "novant-names-gizdic-interim-ceo",
+              "duplicate_group": "novant-names-gizdic-interim-ceo",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/novant-coo-tapped-to-lead-system-after-ceo-retires/874428/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T18:55:08Z"
+                }
+              ],
+              "title": "Novant names COO John Gizdic president and interim CEO as Carl Armato retires",
+              "summary": "Novant Health's board unanimously named COO John Gizdic president and interim CEO effective Jan. 1, as Carl Armato retires at the end of 2026. During Armato's tenure as CEO, annual operating revenue grew from $3.5 billion to nearly $12 billion and net assets from $2.2 billion to $8.2 billion. Novant has also faced rising expenses and cut employee retirement benefits.",
+              "strategic_implication": "An internal operations leader as interim CEO suggests continuity while the board weighs a permanent pick, but the job comes with cost pressure and heavy Medicare and Medicaid exposure. Expect a focus on margin and operating efficiency over new expansion in the near term.",
+              "confidence": "high",
+              "tags": [
+                "leadership-transitions",
+                "novant-health",
+                "health-systems",
+                "north-carolina",
+                "governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Clinical standards are shifting: the American Cancer Society now recommends routine PSA screening for men 50 to 69, a study in Nature finds a proposed clinical-obesity framework would change diagnoses for millions, and Baltimore emergency physicians report daily preventable ER visits tied to unsupervised GLP-1 use.",
+          "items": [
+            {
+              "item_id": "2026-11-12-acs-routine-psa-prostate-screening",
+              "canonical_topic": "acs-routine-psa-prostate-screening",
+              "duplicate_group": "acs-routine-psa-prostate-screening",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/12/prostate-cancer-screening-guidelines-updated-acs/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T12:00:00Z"
+                }
+              ],
+              "title": "American Cancer Society reverses course and recommends routine PSA screening for men 50 to 69",
+              "summary": "The American Cancer Society on Nov. 12 recommended PSA testing every two years for average-risk men ages 50 to 69 and yearly screening from age 45 for Black men and men with a strong family history, replacing guidance in place since 2010. A PSA of 3.0 ng/mL or higher is considered elevated; two elevated readings should lead to MRI or biomarker testing before biopsy. The USPSTF still advises individual decision-making and has announced an upcoming update.",
+              "strategic_implication": "Conflicting ACS and USPSTF guidance will create confusion over coverage, quality measures and patient demand. Primary care and urology leaders should prepare for more PSA testing and expanded prostate MRI needs, update decision aids, and confirm that payers will cover MRI before biopsy.",
+              "confidence": "high",
+              "tags": [
+                "prostate-cancer",
+                "cancer-screening",
+                "acs",
+                "uspstf",
+                "primary-care"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-clinical-obesity-framework-reclassifies-millions",
+              "canonical_topic": "clinical-obesity-framework-reclassifies-millions",
+              "duplicate_group": "clinical-obesity-framework-reclassifies-millions",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/11/obesity-diagnosis-bmi-lancet-commission-proposal-impact/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T16:00:00Z"
+                }
+              ],
+              "title": "Study finds replacing BMI with a clinical-obesity framework would change diagnoses for millions",
+              "summary": "A study published Nov. 11 in Nature found that the Lancet commission's proposed framework, which distinguishes preclinical from clinical obesity rather than relying on BMI alone, would change the obesity diagnosis for millions of people, in both directions. BMI currently drives regulatory decisions, insurance coverage and eligibility for treatments such as GLP-1 drugs.",
+              "strategic_implication": "If payers or regulators adopt the framework, GLP-1 coverage criteria could shift from BMI cutoffs to evidence of weight-related organ dysfunction, which would change prior-authorization documentation. Obesity medicine and primary care programs should start capturing body-composition and comorbidity data.",
+              "confidence": "medium",
+              "tags": [
+                "obesity",
+                "bmi",
+                "glp-1",
+                "coverage-criteria",
+                "clinical-guidelines"
+              ]
+            },
+            {
+              "item_id": "2026-11-12-baltimore-er-glp1-side-effect-visits",
+              "canonical_topic": "baltimore-er-glp1-side-effect-visits",
+              "duplicate_group": "baltimore-er-glp1-side-effect-visits",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/glp-1s/baltimore-ers-see-surge-in-glp-1-side-effects-physician-says/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-11T22:30:59Z"
+                }
+              ],
+              "title": "Baltimore emergency physicians report daily ER visits tied to unsupervised GLP-1 use",
+              "summary": "A MedStar Health emergency physician told WBAL-TV that Baltimore ERs see patients daily with GLP-1 side effects, including severe dehydration, gallbladder and biliary disease, pancreatitis and kidney stones, as more people buy the drugs online and use them without medical supervision. The FDA has received reports of two deaths after people took illicit products claiming to be retatrutide.",
+              "strategic_implication": "Gray-market GLP-1 use is becoming an emergency-department and poison-control issue. EDs should screen for nonprescribed GLP-1 and compounded or illicit product use, and health systems can reduce avoidable visits with supervised, affordable weight-management access.",
+              "confidence": "medium",
+              "tags": [
+                "glp-1",
+                "emergency-medicine",
+                "drug-safety",
+                "compounding",
+                "patient-safety"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-11",
       "generated_at": "2026-11-11T19:00:00Z",
       "headline": "Today's Healthcare Insights",
@@ -17606,589 +18271,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-10-01",
-      "generated_at": "2026-10-01T12:32:55Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's edition covers the final GLOBE Part B pricing model, Medicaid eligibility cuts for some lawfully present immigrants, Senate health-committee turnover, FDA advisory-panel recruitment, rural health polling, HHS AI clinical-trial efforts, outcome-based digital-health contracting, September health-tech funding, UnitedHealth litigation, obesity and biotech pipeline signals, and visa-policy and pediatric GLP-1 trends. It draws on STAT News, Healthcare Dive, Fierce Healthcare, and MedCity News.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
-          "STAT News RSS (main)",
-          "Healthcare Dive RSS (news)",
-          "MedCity News RSS",
-          "Fierce Healthcare RSS"
-        ],
-        "sources_successful": [
-          "STAT News RSS (main)",
-          "Healthcare Dive RSS (news; no new distinct items beyond prior editions)",
-          "MedCity News RSS",
-          "Fierce Healthcare items retained from the automated run",
-          "Direct page reads of STAT and MedCity News articles for new items"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
-          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch",
-          "STAT health-tech policy newsletter item skipped because content was paywalled"
-        ],
-        "run_notes": "Same-day rebuild in place: the automated run (generated 11:07 UTC) had already written 2026-10-01 and left the feed at 31 editions. Retained all 10 automated items, added 9 new items from the 9/30-10/1 window screened against the prior 8 editions, refreshed bucket syntheses, and trimmed to 30 editions with overflow archived.",
-        "items_captured": 19
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "A narrower Medicare Part B pricing model and an Oct. 1 Medicaid eligibility shift headline policy, while Senate committee turnover, FDA advisory-panel recruitment, and rural polling point to a reshaped 2027 health-policy agenda.",
-          "items": [
-            {
-              "item_id": "2026-10-01-cms-globe-part-b-pricing-model",
-              "canonical_topic": "cms-globe-part-b-pricing-model",
-              "duplicate_group": "cms-globe-part-b-pricing-model",
-              "priority_score": 9,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/cms-finalizes-model-aims-bring-most-favored-nation-pricing-part-b",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T21:40:00Z"
-                },
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/30/trump-final-globe-rule-will-save-medicare-much-less-money-on-drugs/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T23:15:09Z"
-                }
-              ],
-              "title": "CMS finalizes a narrower most-favored-nation model for Medicare Part B",
-              "summary": "The administration finalized the GLOBE model, which aims to apply most-favored-nation pricing to drugs administered under Medicare Part B. STAT reports the final rule covers four companies and is projected to save substantially less than the initial proposal.",
-              "strategic_implication": "Manufacturers and providers exposed to the selected drugs should assess the model’s pricing and reimbursement effects as implementation details emerge; the narrower scope may limit system-wide savings while still creating product-level disruption.",
-              "confidence": "high",
-              "tags": [
-                "cms",
-                "medicare-part-b",
-                "drug-pricing",
-                "globe-model",
-                "reimbursement"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-legal-immigrants-medicaid-coverage-cutoff",
-              "canonical_topic": "legal-immigrants-medicaid-coverage-cutoff",
-              "duplicate_group": "legal-immigrants-medicaid-coverage-cutoff",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/30/legal-immigrants-risk-losing-medicaid-coverage-trump/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T15:50:06Z"
-                }
-              ],
-              "title": "Federal eligibility changes put some lawfully present immigrants at risk of losing Medicaid",
-              "summary": "As of Oct. 1, hundreds of thousands of people with legal status—including refugees and survivors of sex trafficking—are at risk of losing government health coverage, according to STAT. The change follows federal legislation narrowing eligibility for some immigrant groups.",
-              "strategic_implication": "States, health systems, and safety-net providers should prepare for eligibility churn, increased uncompensated care, and urgent patient communications while tracking implementation and litigation.",
-              "confidence": "high",
-              "tags": [
-                "medicaid",
-                "immigrant-health",
-                "coverage",
-                "eligibility",
-                "safety-net"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-senate-health-committees-turnover",
-              "canonical_topic": "senate-health-committees-turnover",
-              "duplicate_group": "senate-health-committees-turnover",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/midterm-election-health-care-policy-impact-senate-republican-turnover/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T12:30:00Z"
-                }
-              ],
-              "title": "Senate Finance and HELP committees face major membership turnover after the midterms",
-              "summary": "STAT reports that the two Senate committees with the broadest health-policy jurisdiction are headed for unusual shake-ups. At least five of the Finance Committee's 14 Republicans are set to leave, and party control of both panels would flip if Democrats win the Senate.",
-              "strategic_implication": "Organizations with pending Medicare, Medicaid, drug-pricing, or FDA priorities should map relationships with likely incoming members and staff now, since committee agendas for 2027 may reset regardless of which party holds the majority.",
-              "confidence": "medium",
-              "tags": [
-                "senate-finance",
-                "senate-help",
-                "midterms",
-                "congress",
-                "health-policy"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-fda-advisory-committee-recruitment",
-              "canonical_topic": "fda-advisory-committee-recruitment",
-              "duplicate_group": "fda-advisory-committee-recruitment",
-              "priority_score": 6,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/fda-advisory-committee-recruit-adcomm-scientific-consumer-regulation/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T21:34:00Z"
-                }
-              ],
-              "title": "FDA opens recruitment for scientific and consumer voting members across its advisory committees",
-              "summary": "The FDA is seeking new voting members for vacancies across its 50 technical and scientific advisory committees, which review drugs, vaccines, and devices. Terms run up to four years; nominations for current and near-term scientific vacancies are due Nov. 30, 2026, and consumer-representative nominations are due Nov. 15.",
-              "strategic_implication": "Advisory-panel composition shapes approval outcomes and labeling debates; academic centers, patient groups, and professional societies have a near-term window to put qualified nominees forward.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "advisory-committees",
-                "regulation",
-                "drug-approval",
-                "devices"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-rural-voters-maha-health-poll",
-              "canonical_topic": "rural-voters-maha-health-poll",
-              "duplicate_group": "rural-voters-maha-health-poll",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/30/rural-maha-followers-poll-trump-hasnt-improved-community-health/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T14:12:00Z"
-                }
-              ],
-              "title": "Rural MAHA supporters say federal health policy has not improved their communities, AP-KFF poll finds",
-              "summary": "An AP-KFF survey of 2,241 rural registered voters (Aug. 12-24) found about half identify with MAHA, yet 68% of those supporters said administration health policies had a negative or no effect locally. Nearly half of rural voters said their communities lack enough clinicians, and 35% said they lack enough hospitals, up from 21% in 2017.",
-              "strategic_implication": "Rural access gaps and cost anxiety remain politically salient heading into the midterms; rural health systems and Rural Health Transformation Program stakeholders can use these findings to frame workforce and facility investments.",
-              "confidence": "high",
-              "tags": [
-                "rural-health",
-                "maha",
-                "polling",
-                "access-to-care",
-                "kff"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Federal AI clinical-trial initiatives, outcome-based employer contracting, and large late-stage funding rounds show capital and purchasers favoring measurable value, while AI genome interpretation highlights the need for clinical standards.",
-          "items": [
-            {
-              "item_id": "2026-10-01-hhs-ai-clinical-trials-initiative",
-              "canonical_topic": "hhs-ai-clinical-trials-initiative",
-              "duplicate_group": "hhs-ai-clinical-trials-initiative",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/30/hhs-arpa-h-clinical-trials-artificial-intelligence-surpass-program/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T20:09:15Z"
-                }
-              ],
-              "title": "HHS turns to AI to accelerate and expand clinical trials",
-              "summary": "HHS announced new efforts to use artificial intelligence to speed up and broaden clinical research, framing the work as part of the effort to compete with countries such as China. The initiative centers on federal support for applying AI to clinical-trial processes.",
-              "strategic_implication": "Sponsors and research institutions should watch for program details and partnership opportunities, while ensuring that AI-enabled recruitment and trial operations preserve evidence quality, privacy, and equitable enrollment.",
-              "confidence": "medium",
-              "tags": [
-                "hhs",
-                "arpa-h",
-                "clinical-trials",
-                "artificial-intelligence",
-                "research"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-performance-based-digital-health-contracts",
-              "canonical_topic": "performance-based-digital-health-contracts",
-              "duplicate_group": "performance-based-digital-health-contracts",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/digital-health/most-employers-health-plans-use-performance-based-digital-health-contracts-phti",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T19:57:00Z"
-                }
-              ],
-              "title": "Employers increasingly tie digital-health payments to outcomes",
-              "summary": "A PHTI survey of 321 digital-health purchasing professionals across employers, health plans, and health systems found growing use of performance-based payment arrangements. The findings point to buyers placing more emphasis on demonstrable results when structuring digital-health contracts.",
-              "strategic_implication": "Digital-health vendors should expect stronger demands for measurable outcomes and clearer attribution; purchasers can use contract design to align payment with clinical and financial value.",
-              "confidence": "medium",
-              "tags": [
-                "digital-health",
-                "employers",
-                "value-based-care",
-                "outcomes",
-                "health-plans"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-ai-genome-analysis-standards",
-              "canonical_topic": "ai-genome-analysis-standards",
-              "duplicate_group": "ai-genome-analysis-standards",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T12:30:00Z"
-                }
-              ],
-              "title": "Stanford medicine chair uses a general-purpose AI model to interpret his genome and calls for clinical standards",
-              "summary": "In a STAT opinion piece, Euan Ashley describes asking Anthropic's Claude to reanalyze his genome, a task that took nearly a year in 2010 and about 30 minutes and roughly $5 now. The model flagged APOE and pharmacogenomic variants but noted data limits, and Ashley calls for standards on detection thresholds, AI disclosure, confirmatory testing, and genetic counseling.",
-              "strategic_implication": "Consumer-accessible AI genome interpretation will reach patients ahead of clinical guardrails; health systems and genetics programs should prepare policies for confirmatory testing and counseling when patients bring AI-generated results.",
-              "confidence": "medium",
-              "tags": [
-                "generative-ai",
-                "genomics",
-                "clinical-standards",
-                "pharmacogenomics",
-                "opinion"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-september-health-tech-funding-roundup",
-              "canonical_topic": "september-health-tech-funding-roundup",
-              "duplicate_group": "september-health-tech-funding-roundup",
-              "priority_score": 6,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/09/4-notable-health-tech-funding-announcements-in-september/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T20:52:00Z"
-                }
-              ],
-              "title": "Large late-stage rounds for EliseAI, Rightway, Forus, and Thyme Care mark September health-tech funding",
-              "summary": "MedCity News highlights four September raises: EliseAI ($350 million), Rightway ($155 million Series E), Forus ($150 million Series C), and Thyme Care ($125 million Series E). Investors included Andreessen Horowitz, Bessemer, Bain Capital Ventures, Morgan Health, Humana, and CVS Health Ventures.",
-              "strategic_implication": "Capital is concentrating in later-stage companies tied to pharmacy benefits, navigation, and value-based specialty care; payer and employer-affiliated investors signal where purchasers expect near-term savings.",
-              "confidence": "high",
-              "tags": [
-                "venture-funding",
-                "digital-health",
-                "pharmacy-benefits",
-                "oncology-navigation",
-                "investment"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Litigation at UnitedHealth, renewed pharma partnerships, next-generation obesity combinations, and China's biotech speed pitch underscore shifting competitive dynamics across payers and life sciences.",
-          "items": [
-            {
-              "item_id": "2026-10-01-unitedhealth-investor-lawsuit-advances",
-              "canonical_topic": "unitedhealth-investor-lawsuit-advances",
-              "duplicate_group": "unitedhealth-investor-lawsuit-advances",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/30/unitedhealth-investor-lawsuit-moves-forward-allegations-of-manufactured-earnings-to-hide-declining-profits/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T22:40:54Z"
-                }
-              ],
-              "title": "Investor lawsuit against UnitedHealth advances after judge rejects dismissal bid",
-              "summary": "A federal judge declined UnitedHealth Group’s motion to dismiss an investor lawsuit alleging that the company manufactured earnings to conceal declining profits. The allegations remain claims in litigation, not established findings.",
-              "strategic_implication": "The case adds to scrutiny of UnitedHealth’s financial reporting and governance; health-sector leaders should monitor the discovery and any implications for investor confidence or regulatory attention.",
-              "confidence": "high",
-              "tags": [
-                "unitedhealth",
-                "litigation",
-                "investor-relations",
-                "governance",
-                "payer"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-sanofi-regeneron-extend-dupixent-partnership",
-              "canonical_topic": "sanofi-regeneron-extend-dupixent-partnership",
-              "duplicate_group": "sanofi-regeneron-extend-dupixent-partnership",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/sanofi-regeneron-agreement-dupixent-antibodies-immunology/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T06:16:27Z"
-                }
-              ],
-              "title": "Sanofi and Regeneron renew their antibody partnership after Dupixent success",
-              "summary": "Sanofi and Regeneron have renewed their collaboration, aiming to build on the commercial and development success of Dupixent. The companies are extending a long-running alliance focused on antibody medicines and immunology.",
-              "strategic_implication": "The renewed partnership reinforces the strategic value of shared development and commercialization for blockbuster biologics; competitors should watch for pipeline expansion and shifts in immunology market positioning.",
-              "confidence": "medium",
-              "tags": [
-                "sanofi",
-                "regeneron",
-                "dupixent",
-                "biopharma",
-                "immunology"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-invivyd-covid-antibody-development",
-              "canonical_topic": "invivyd-covid-antibody-development",
-              "duplicate_group": "invivyd-covid-antibody-development",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/invivyds-covid-antibody-development/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T10:30:00Z"
-                }
-              ],
-              "title": "Invivyd advances an injectable antibody as a potential COVID-19 protection option",
-              "summary": "Invivyd is developing an injectable, low-dose monoclonal antibody intended to protect against COVID-19. STAT reports that the program has received a lift but still faces a potential FDA hurdle.",
-              "strategic_implication": "A viable preventive antibody could add an option for people poorly served by vaccines, but investors and care organizations should treat the opportunity as contingent on regulatory review and clinical evidence.",
-              "confidence": "medium",
-              "tags": [
-                "covid-19",
-                "monoclonal-antibody",
-                "biotechnology",
-                "fda",
-                "prevention"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-pbm-satisfaction-2026-survey",
-              "canonical_topic": "pbm-satisfaction-2026-survey",
-              "duplicate_group": "pbm-satisfaction-2026-survey",
-              "priority_score": 6,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/plan-sponsors-pbm-satisfaction-stable-2026-psg-survey",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T16:50:00Z"
-                }
-              ],
-              "title": "Plan-sponsor satisfaction with PBMs holds near even as ratings diverge",
-              "summary": "A 2026 survey of 250 plan leaders found overall satisfaction with pharmacy benefit managers near an even split. Scores improved for the three largest PBMs while declining for other providers, according to Fierce Healthcare.",
-              "strategic_implication": "PBMs face a more segmented buyer landscape rather than a uniform shift in sentiment; plan sponsors should compare service, transparency, and outcomes rather than rely on category-wide assumptions.",
-              "confidence": "medium",
-              "tags": [
-                "pbm",
-                "pharmacy-benefits",
-                "employers",
-                "health-plans",
-                "survey"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-lilly-zepbound-amylin-combination-trial",
-              "canonical_topic": "lilly-zepbound-amylin-combination-trial",
-              "duplicate_group": "lilly-zepbound-amylin-combination-trial",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/09/30/eli-lilly-zepbound-amylin-combination-drug-study/",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T14:15:00Z"
-                }
-              ],
-              "title": "Lilly's Zepbound plus an amylin drug produced 23% weight loss in a mid-stage trial",
-              "summary": "Lilly reported at EASD that combining Zepbound with investigational eloralintide yielded 23.3% weight loss at 48 weeks among participants with obesity and type 2 diabetes who stayed on the highest dose, versus 14.8% for Zepbound alone. High discontinuation rates raised tolerability questions.",
-              "strategic_implication": "Next-generation combination obesity therapies could raise efficacy expectations and future price points; payers and employers should factor pipeline combinations into multi-year GLP-1 coverage and budget planning.",
-              "confidence": "high",
-              "tags": [
-                "obesity",
-                "glp-1",
-                "amylin",
-                "eli-lilly",
-                "clinical-trials"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-china-biotech-speed-pitch",
-              "canonical_topic": "china-biotech-speed-pitch",
-              "duplicate_group": "china-biotech-speed-pitch",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/china-biotech-boom-jefferies-conference-shanghai/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T12:30:00Z"
-                }
-              ],
-              "title": "Chinese biotechs pitch faster, cheaper drug development to global investors in Shanghai",
-              "summary": "At a Jefferies conference in Shanghai, Chinese biotech leaders argued drug development in China is faster and cheaper than in the U.S. and Europe. Abbisko, valued at about $6 billion, described completing a trial for a Merck KGaA-licensed drug in 11 months.",
-              "strategic_implication": "Licensing from China continues to reshape pharma pipelines and competitive dynamics; expect sustained policy scrutiny of cross-border biotech deals alongside continued dealmaking.",
-              "confidence": "medium",
-              "tags": [
-                "biotech",
-                "china",
-                "drug-development",
-                "licensing",
-                "pharma"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Providers face policy-driven behavioral-health delivery constraints while nutrition gains visibility as a health-system program area. Operational planning should connect community services, food support, and evolving reimbursement or coverage rules.",
-          "items": [
-            {
-              "item_id": "2026-10-01-joint-commission-healthy-food-recognition",
-              "canonical_topic": "joint-commission-healthy-food-recognition",
-              "duplicate_group": "joint-commission-healthy-food-recognition",
-              "priority_score": 6,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/joint-commission-launches-voluntary-healthy-food-recognition-program",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T16:17:00Z"
-                }
-              ],
-              "title": "Joint Commission adds voluntary recognition for healthy-food programs",
-              "summary": "The Joint Commission launched a voluntary recognition program encouraging hospitals and other healthcare organizations to strengthen healthy-food delivery and nutrition education. The initiative aligns accreditation activity with a broader federal and industry focus on nutrition.",
-              "strategic_implication": "Provider leaders can assess whether nutrition services and food-access initiatives merit investment or formal recognition, while incorporating dietary support into population-health and community-benefit strategies.",
-              "confidence": "medium",
-              "tags": [
-                "joint-commission",
-                "nutrition",
-                "hospitals",
-                "population-health",
-                "recognition"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-state-behavioral-health-delivery-pressures",
-              "canonical_topic": "state-behavioral-health-delivery-pressures",
-              "duplicate_group": "state-behavioral-health-delivery-pressures",
-              "priority_score": 6,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/state-officials-weigh-behavioral-health-policy-issues-bht-2026",
-                  "source_type": "rss",
-                  "published_at": "2026-09-30T18:20:00Z"
-                }
-              ],
-              "title": "States weigh behavioral-health delivery pressures as H.R. 1 effects loom",
-              "summary": "State officials described challenges in delivering equitable mental healthcare, including crisis-response pressures and the anticipated effects of H.R. 1, during policy sessions at the Behavioral Health Tech conference. The discussion underscored the operational strain on state behavioral-health systems.",
-              "strategic_implication": "Providers and state partners should revisit crisis capacity, community-service coordination, and funding assumptions as policy changes alter the environment for behavioral-health delivery.",
-              "confidence": "medium",
-              "tags": [
-                "behavioral-health",
-                "states",
-                "crisis-response",
-                "hr-1",
-                "mental-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Visa-policy litigation keeps uncertainty over international research trainees, and rising pediatric GLP-1 prescribing signals new demand and monitoring needs in primary and pediatric care.",
-          "items": [
-            {
-              "item_id": "2026-10-01-dhs-appeals-student-visa-limit-injunction",
-              "canonical_topic": "dhs-appeals-student-visa-limit-injunction",
-              "duplicate_group": "dhs-appeals-student-visa-limit-injunction",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/health-news-trump-administration-appeals-ruling-blocking-student-visa-limits/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T11:50:00Z"
-                }
-              ],
-              "title": "DHS appeals ruling that blocked a four-year cap on stays for international students and postdocs",
-              "summary": "The Department of Homeland Security asked the First Circuit to overturn a preliminary injunction against its proposed four-year limit on how long international students and postdoctoral researchers can remain in the U.S. Academic groups argue the rule violates federal law and threatens U.S. scientific leadership.",
-              "strategic_implication": "Academic medical centers and research institutions that rely on international trainees should keep contingency plans for program timelines and staffing while the appeal proceeds.",
-              "confidence": "high",
-              "tags": [
-                "immigration",
-                "research-workforce",
-                "academic-medicine",
-                "visas",
-                "litigation"
-              ]
-            },
-            {
-              "item_id": "2026-10-01-pediatric-glp-1-prescribing-trends",
-              "canonical_topic": "pediatric-glp-1-prescribing-trends",
-              "duplicate_group": "pediatric-glp-1-prescribing-trends",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/glp-1-weight-loss-drugs-children-research-obesity-disease/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T12:30:00Z"
-                }
-              ],
-              "title": "Researcher reports a sharp rise in GLP-1 prescribing for children ages 8 to 11 with obesity",
-              "summary": "In a STAT opinion piece, NYU Langone's Babak Orandi reports a 310-fold increase since 2019 in GLP-1 prescriptions for children ages 8 to 11 with obesity, though only 0.6% of more than 3.5 million children in that age group received one, and 94% of them had severe obesity. He describes his team's findings as reassuring.",
-              "strategic_implication": "Pediatric GLP-1 use remains concentrated in severe obesity; pediatric practices and payers should expect growing demand and may need clear eligibility, monitoring, and coverage criteria.",
-              "confidence": "medium",
-              "tags": [
-                "pediatrics",
-                "glp-1",
-                "obesity",
-                "prescribing",
-                "opinion"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-11T19:00:00Z"
+  "last_updated": "2026-11-12T16:00:00Z"
 }

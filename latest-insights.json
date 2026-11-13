@@ -3,6 +3,661 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-13",
+      "generated_at": "2026-11-13T16:00:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "CMS extended its nationwide freeze on new hospice and home health enrollments for six more months, and the AMA and 61 other groups urged Congress to extend the 2.5% Medicare physician pay update through 2027. Blackstone committed up to $1.5 billion to Pfizer's monthly obesity drug, Ardent agreed to buy Missouri's Boone Health for $47 million, and an NEJM study found AI care plans averaged $314 more per visit than physicians' plans. Sources include STAT, KFF Health News, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News and Becker's.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS",
+          "BioPharma Dive, MedTech Dive, MedCity News, KFF Health News, Becker's Hospital Review and Fierce Healthcare RSS"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for Nov. 12-13",
+          "Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News and Becker's RSS fetched and screened",
+          "Articles read on STAT, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News and Becker's to verify figures"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and newsletter-name searches since Nov. 8-12 returned no messages in the connected mailbox; RSS sources used instead.",
+          "Fierce Healthcare RSS returned malformed XML and was not parsed.",
+          "STAT+ articles (Medicare AI prior-authorization documents, Pharmalittle, Oura-Counsel conflict questions) were paywalled; the FDA voucher item relies on visible text, and the WISeR documents story was not itemized."
+        ],
+        "run_notes": "22 items cover developments reported from midday Nov. 12 through midday Nov. 13. Checked against the prior 30 editions for repeats; excluded the ACS PSA guideline, the Overton HELP vote (folded into the FDA voucher item), Oura-Counsel and physician-lawmaker trust-in-science stories, all covered Nov. 11-12. Screened but not itemized: the Senator-elect El-Sayed interview, the D.C. shooting involving a physician-executive (not a strategy item), STAT opinion pieces and a MedCity staffing op-ed."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS is tightening, not loosening, its post-acute program-integrity posture: the hospice and home health enrollment freeze runs another six months as review demonstrations expand. On Capitol Hill, a 62-organization coalition led by the AMA is pressing for year-end Medicare physician-pay fixes while Democrats outline an ACA-subsidy and Medicaid-restoration agenda for the next Congress. State and tribal implementation of HR 1 work rules, North Dakota's insulin cap, FDA's shelved priority-voucher program and an ARPA-H ibogaine push round out the regulatory picture.",
+          "items": [
+            {
+              "item_id": "2026-11-13-cms-extends-hospice-home-health-freeze",
+              "canonical_topic": "cms-extends-hospice-home-health-freeze",
+              "duplicate_group": "cms-extends-hospice-home-health-freeze",
+              "priority_score": 9,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/telehealth/cms-extends-nationwide-freeze-on-new-hospice-home-health-providers/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T21:47:31Z"
+                },
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/when-the-enrollment-freeze-ends-claim-review-takes-over-small-providers-need-clear-rules/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T14:59:00Z"
+                }
+              ],
+              "title": "CMS extends its nationwide freeze on new hospice and home health enrollments for another six months",
+              "summary": "CMS said Nov. 12 that fraud conditions had not improved enough to lift the moratorium on new Medicare hospice and home health enrollments and certain majority-ownership changes, first imposed May 13 and due to end Nov. 13. Currently enrolled providers may now add practice locations under existing enrollments. CMS cited an October two-day California operation that produced 145 revocations tied to more than $703 million in Medicare and Medicaid payments, and the CY2027 home health final rule finalized Nov. 4 allows retroactive revocations. Separately, the Home Health Review Choice Demonstration expands to California for billing periods on or after Jan. 18, 2027.",
+              "strategic_implication": "Hospice and home health growth strategies that rely on new provider numbers or acquisitions with ownership changes stay blocked into mid-2027, so operators should pivot to adding locations under existing enrollments. Expect pre-claim and postpayment review to spread; documentation readiness is now a revenue-protection issue, not just compliance.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "hospice",
+                "home-health",
+                "program-integrity",
+                "moratorium"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-ama-coalition-medicare-physician-pay-reforms",
+              "canonical_topic": "ama-coalition-medicare-physician-pay-reforms",
+              "duplicate_group": "ama-coalition-medicare-physician-pay-reforms",
+              "priority_score": 8,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/62-organizations-call-on-congress-to-advance-4-medicare-reforms/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T22:59:32Z"
+                }
+              ],
+              "title": "AMA and 61 other groups urge Congress to add four Medicare physician-payment fixes to a year-end package",
+              "summary": "The coalition's letter says Medicare physician pay has fallen about 33% since 2001 after adjusting for practice-cost inflation. It asks Congress to extend the temporary 2.5% physician payment update through 2027, pass the Provider Reimbursement Stability Act, delay the modifier 25 payment reduction for one year, and cap MIPS penalties at 2% with more timely performance data. Signers include the AAFP, American College of Cardiology and American Psychiatric Association.",
+              "strategic_implication": "The lame-duck window is the last chance to avoid a 2027 pay cliff for physician groups. Practices and health systems with large employed-physician bases should model 2027 scenarios with and without the 2.5% extension and the modifier 25 cut, and align advocacy with the coalition's four asks.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "physician-fee-schedule",
+                "congress",
+                "mips",
+                "advocacy"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-democrats-healthcare-agenda-aca-medicaid",
+              "canonical_topic": "democrats-healthcare-agenda-aca-medicaid",
+              "duplicate_group": "democrats-healthcare-agenda-aca-medicaid",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/legal-regulatory-issues/from-aca-subsidies-to-insurer-oversight-democrats-healthcare-agenda-takes-shape/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T22:20:21Z"
+                }
+              ],
+              "title": "Democrats' healthcare agenda takes shape around ACA subsidies, HR 1 Medicaid reversals and insurer oversight",
+              "summary": "House Democrats' first-100-days priorities include restoring the enhanced ACA subsidies that expired at the end of 2025 and reversing HR 1 Medicaid cuts; HR 1 work requirements and more frequent eligibility checks begin Jan. 1, and 16 Senate Democrats sought a two-year delay on Nov. 9. Pending Medicaid applications in Texas grew from 1,671 at the start of the year to 237,505 in September. Other threads include Sen. Andy Kim's MediKids bill, Sen. Tammy Baldwin's Medicare at 50 Act introduced Nov. 10, the PBM disclosure rule finalized Oct. 29, and state AI legislation (33 healthcare-AI bills became law across 21 states in 2025).",
+              "strategic_implication": "Even with Democratic majorities, the HR 1 work-requirement timeline is unlikely to move before Jan. 1, so providers should plan for coverage churn in early 2027 while tracking whether subsidy restoration or delay language rides on early-session vehicles. Insurer oversight and PBM transparency are likely bipartisan openings.",
+              "confidence": "medium",
+              "tags": [
+                "congress",
+                "aca",
+                "medicaid",
+                "hr-1",
+                "pbm"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-medicaid-work-rules-native-american-exemption",
+              "canonical_topic": "medicaid-work-rules-native-american-exemption",
+              "duplicate_group": "medicaid-work-rules-native-american-exemption",
+              "priority_score": 7,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/health-care-costs/medicaid-work-rule-requirement-native-american-north-carolina-exemption-coverage/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-13T10:00:00Z"
+                }
+              ],
+              "title": "Native Americans are exempt from Medicaid work rules, but states lack a standard way to verify it",
+              "summary": "The One Big Beautiful Bill Act exempts Native Americans from Medicaid work requirements, but CMS's June guidance set no standard verification process. KFF Health News asked 14 states about their plans; North Carolina said 3,400 Native enrollees were verified and will be automatically exempted, but it does not know how many others qualify. About 87% of Native people live outside tribal statistical areas, and an estimated 850,000 Native Americans lost coverage during unwinding by May 2024, often for paperwork reasons. Montana, Nebraska, Arkansas and Georgia began checks ahead of the Jan. 1, 2027 deadline; Iowa starts Dec. 1.",
+              "strategic_implication": "Exemptions only protect coverage if eligibility data match. IHS, tribal and urban Indian providers and safety-net hospitals should help patients document tribal status now and track state verification methods, or face uncompensated care from procedural disenrollment.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "tribal-health",
+                "hr-1",
+                "eligibility"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-north-dakota-insulin-copay-cap",
+              "canonical_topic": "north-dakota-insulin-copay-cap",
+              "duplicate_group": "north-dakota-insulin-copay-cap",
+              "priority_score": 6,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/health-industry/insulin-copay-price-caps-diabetes-patients-high-costs-north-dakota-common-ground/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-13T10:00:00Z"
+                }
+              ],
+              "title": "North Dakota's bipartisan $25 insulin cap shows cost-of-care populism crossing party lines",
+              "summary": "North Dakota, with a 42-5 Republican state Senate, passed a $25-a-month cap on patients' insulin costs with overwhelming bipartisan support, joining 29 states with such measures. Average annual private-insurance out-of-pocket insulin costs fell from $470 in 2018 to $220 in 2025; Medicare's $35 monthly cap began in 2022. KFF Health News frames the law as part of growing conservative frustration with the healthcare industry.",
+              "strategic_implication": "State-level affordability mandates are spreading in red states, not just blue ones. Payers and manufacturers should expect copay-cap proposals to extend beyond insulin to other chronic-disease drugs and supplies in 2027 sessions.",
+              "confidence": "high",
+              "tags": [
+                "state-policy",
+                "drug-pricing",
+                "insulin",
+                "affordability"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-fda-shelves-national-priority-vouchers",
+              "canonical_topic": "fda-shelves-national-priority-vouchers",
+              "duplicate_group": "fda-shelves-national-priority-vouchers",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/11/12/fda-fast-track-review-shelved-canadian-importer-arrested/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T14:14:55Z"
+                }
+              ],
+              "title": "FDA quietly shelves the Commissioner's National Priority Voucher fast-review program",
+              "summary": "STAT reports that FDA has shelved the Commissioner's National Priority Voucher program, launched in June 2025 under former Commissioner Marty Makary to cut reviews of national-priority therapies to one to two months. No new vouchers have been granted since Makary's departure, and the executive council overseeing the reviews has gone dormant. Critics had warned the program could favor companies meeting the administration's demands, including lower prices. The Senate HELP vote on nominee Heidi Overton remains set for Nov. 18.",
+              "strategic_implication": "Sponsors that built timelines around voucher-speed reviews should reset to standard or priority-review assumptions until a confirmed commissioner sets policy. The episode reinforces that personality-driven FDA programs carry continuity risk.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "drug-review",
+                "priority-voucher",
+                "overton"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-arpa-h-cost-plus-ibogaine",
+              "canonical_topic": "arpa-h-cost-plus-ibogaine",
+              "duplicate_group": "arpa-h-cost-plus-ibogaine",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/pharmacy/mark-cubans-cost-plus-to-develop-us-made-ibogaine-in-hhs-push/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T22:35:17Z"
+                }
+              ],
+              "title": "HHS taps Mark Cuban Cost Plus to lead U.S.-made ibogaine development with up to $4.9 million from ARPA-H",
+              "summary": "HHS committed up to $4.9 million over five years through ARPA-H, announced Nov. 12 with VA leaders, for teams led by Mark Cuban Cost Plus Drug Co. to build the regulatory, clinical, chemical and manufacturing foundation for a domestically made ibogaine hydrochloride product; Beond will generate clinical data. The funding supports IND-enabling work and clinical-grade supply but does not fund patient treatment or authorize trials, and HHS flagged cardiac rhythm risks requiring screening and monitoring. NIMH separately posted a $20 million opportunity for a rapid-acting treatment research network.",
+              "strategic_implication": "Psychedelic-adjacent therapies for veterans' PTSD and addiction are moving from advocacy into a federally sponsored development pathway. VA-affiliated and behavioral health systems should watch for future trial-site and safety-monitoring roles.",
+              "confidence": "high",
+              "tags": [
+                "arpa-h",
+                "psychedelics",
+                "veterans",
+                "behavioral-health",
+                "drug-development"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Physician AI use is now routine, yet new evidence questions whether AI-generated care plans save money. A Doximity survey shows daily use by most doctors alongside persistent accuracy and deskilling worries, while an NEJM study found AI plans ordered far more testing than physicians did.",
+          "items": [
+            {
+              "item_id": "2026-11-13-doximity-survey-physician-ai-daily-use",
+              "canonical_topic": "doximity-survey-physician-ai-daily-use",
+              "duplicate_group": "doximity-survey-physician-ai-daily-use",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/despite-concerns-ai-becomes-daily-fixture-in-physician-workflows/874541/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T18:46:46Z"
+                }
+              ],
+              "title": "More than half of physicians now use AI daily, Doximity survey finds, despite accuracy and deskilling concerns",
+              "summary": "Doximity surveyed more than 3,300 U.S. physicians: more than half use AI daily and another third at least weekly. Use for clinical decision support rose to 63% from 37% in 2025, and literature search to 70%. Yet 61% worry trainees will over-rely on AI, three in four encountered a factual inaccuracy in the past year, and more than half cite inaccuracies as the main reason they cut back.",
+              "strategic_implication": "Clinician AI use is outpacing institutional governance, often through consumer-grade tools. Systems should formalize sanctioned tools, verification expectations and trainee-competency safeguards rather than assume use is limited to approved pilots.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "physicians",
+                "clinical-decision-support",
+                "governance",
+                "survey"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-nejm-ai-care-plans-cost-more",
+              "canonical_topic": "nejm-ai-care-plans-cost-more",
+              "duplicate_group": "nejm-ai-care-plans-cost-more",
+              "priority_score": 7,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/is-ai-really-saving-hospitals-money-a-new-study-raises-questions-about-the-cost-of-ai-driven-care/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T17:54:03Z"
+                }
+              ],
+              "title": "NEJM study finds AI-generated care plans averaged $314 more per visit than physicians' plans",
+              "summary": "A New England Journal of Medicine study tested 24 AI systems, including 20 general-purpose LLMs and four specialized medical tools, on 200 de-identified outpatient and ED notes. Priced at 2026 Medicare rates, general-purpose LLM plans averaged $314 more per visit than physicians' plans, and specialized medical AI plans cost 2.7 to 3.5 times as much. Physicians ordered no diagnostic workup in 66.5% of visits, but every AI system suggested testing in some of those cases, and only about a fifth of AI plans aligned with guidelines.",
+              "strategic_implication": "Unconstrained AI recommendations can drive low-value utilization, a direct threat to value-based contracts and total-cost-of-care targets. Deployments should include cost- and guideline-aware prompting, utilization monitoring and clinician sign-off before AI suggestions become orders.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "utilization",
+                "value-based-care",
+                "llm",
+                "cost"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital keeps flowing to obesity and immunology: Blackstone is underwriting up to $1.5 billion of Pfizer's monthly GLP-1 program and Windward priced the 30th biotech IPO of 2026. Bristol Myers is merging research and development leadership, Ardent is buying independent Boone Health in Missouri, and UnitedHealth's self-commissioned policy audit sidestepped the denial question.",
+          "items": [
+            {
+              "item_id": "2026-11-13-blackstone-pfizer-berobenatide-1-5b",
+              "canonical_topic": "blackstone-pfizer-berobenatide-1-5b",
+              "duplicate_group": "blackstone-pfizer-berobenatide-1-5b",
+              "priority_score": 8,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/blackstone-pfizer-berobenatide-deal/874483/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T16:44:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/12/biotech-news-blackstone-backs-pfizer-bet-on-monthly-obesity-treatment/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T16:31:10Z"
+                }
+              ],
+              "title": "Blackstone commits up to $1.5 billion to fund Pfizer's monthly obesity drug trials",
+              "summary": "Blackstone Life Sciences will invest up to $1.5 billion, phased through 2028, to support as many as 10 Phase 3 trials of berobenatide, a potentially once-monthly injectable GLP-1 Pfizer gained through its roughly $10 billion Metsera acquisition after a bidding war with Novo. Pfizer will pay Blackstone milestones if FDA approves the drug as a once-monthly single agent for weight management and sales targets are met.",
+              "strategic_implication": "Royalty-style financing lets Pfizer de-risk a late entry into obesity without diluting earnings. For payers and employers, a monthly GLP-1 could improve adherence but adds another high-cost option by the late 2020s; benefit designs should anticipate more entrants, not fewer.",
+              "confidence": "high",
+              "tags": [
+                "obesity",
+                "glp-1",
+                "pfizer",
+                "private-equity",
+                "biopharma-financing"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-windward-bio-175m-ipo",
+              "canonical_topic": "windward-bio-175m-ipo",
+              "duplicate_group": "windward-bio-175m-ipo",
+              "priority_score": 5,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/windward-ipo-pricing-immune-drugs-china-deals-tezspire/874533/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-13T01:22:00Z"
+                }
+              ],
+              "title": "Windward Bio prices a $175 million IPO built on China-licensed respiratory drugs",
+              "summary": "Swiss biotech Windward Bio sold about 10.3 million shares at $17 in the 30th biotech IPO of 2026, with Sanofi buying $50 million in a concurrent private placement; shares were to begin trading Nov. 13 as WWB. Its lead TSLP antibody, WIN378, licensed from Kelun Biotech, is in Phase 3 for severe asthma and mid-stage testing for COPD. Biotech IPOs have raised more than $8 billion this year.",
+              "strategic_implication": "China-sourced assets remain a core biotech dealmaking pipeline despite BIOSECURE-era scrutiny. Investors and partners should weigh geopolitical licensing risk alongside the clinical case.",
+              "confidence": "high",
+              "tags": [
+                "biotech-ipo",
+                "china-licensing",
+                "respiratory",
+                "capital-markets"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-bristol-myers-merges-research-development",
+              "canonical_topic": "bristol-myers-merges-research-development",
+              "duplicate_group": "bristol-myers-merges-research-development",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/bristol-myers-robert-plenge-cristian-massacesi-research-transition/874476/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T16:03:00Z"
+                }
+              ],
+              "title": "Bristol Myers merges research and development under Massacesi as research chief Plenge departs",
+              "summary": "Bristol Myers Squibb is combining its research and development organizations to speed decisions and portfolio management. Chief Medical Officer Cristian Massacesi becomes head of R&D on Jan. 1, and Chief Research Officer Robert Plenge will leave after a transition through March 2027. The move follows pipeline setbacks, including a failed schizophrenia study for the drug acquired in the $14 billion Karuna deal, and $2 billion in additional cost cuts targeted by end-2027 as Eliquis faces patent expiry.",
+              "strategic_implication": "Big pharma is consolidating R&D governance to cut costs and kill programs faster ahead of patent cliffs. Expect more pipeline pruning and out-licensing, which creates partnering openings for smaller developers and academic centers.",
+              "confidence": "high",
+              "tags": [
+                "pharma",
+                "r-and-d",
+                "leadership",
+                "bristol-myers-squibb"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-ardent-acquires-boone-health-47m",
+              "canonical_topic": "ardent-acquires-boone-health-47m",
+              "duplicate_group": "ardent-acquires-boone-health-47m",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hospital-transactions-and-valuation/ardent-to-acquire-boone-health-for-47m/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T22:47:02Z"
+                }
+              ],
+              "title": "Ardent Health to acquire Missouri's Boone Health for $47 million with a $200 million capital pledge",
+              "summary": "Ardent Health signed a definitive agreement Nov. 12 to acquire Columbia, Mo.-based Boone Health, including 392-bed Boone Hospital Center, its medical group and 19 care sites, for $47 million in cash, with closing expected in Q1 2027. Ardent committed $200 million over 10 years for capital, physician recruitment and IT, and agreed to keep essential services, retain employees in good standing, form a local advisory board and maintain charity-care policy. Boone has been independent since 2021.",
+              "strategic_implication": "Low cash prices paired with long capital commitments are becoming the template for independent hospitals that cannot fund modernization alone. Boards of midsize independents should benchmark these terms when weighing partnership options.",
+              "confidence": "high",
+              "tags": [
+                "m-and-a",
+                "hospitals",
+                "ardent-health",
+                "independent-hospitals"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-unitedhealth-policy-audit-skips-denials",
+              "canonical_topic": "unitedhealth-policy-audit-skips-denials",
+              "duplicate_group": "unitedhealth-policy-audit-skips-denials",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/unitedhealth-internal-review-medical-policies-gaps-denials/874454/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T17:09:50Z"
+                }
+              ],
+              "title": "UnitedHealth's commissioned audit of its medical policies leaves out how they drive denials",
+              "summary": "An audit by FTI Consulting and Rubrum Advising reviewed the expertise and processes of UnitedHealthcare's 80-plus-person medical-policy team and a sample of nine policies, finding them evidence-based but noting documentation gaps and complexity. It did not assess policy content or how policies are applied to coverage decisions. KFF found UnitedHealthcare denied 17% of Medicare Advantage prior-authorization requests last year, with 60% of appealed denials overturned.",
+              "strategic_implication": "Process audits will not end scrutiny of MA denials, especially under a Democratic Congress. Providers should keep building denial-and-overturn data by payer to support contract negotiations, appeals and regulatory complaints.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealth",
+                "medicare-advantage",
+                "prior-authorization",
+                "denials",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-jj-leads-francis-medical-round",
+              "canonical_topic": "jj-leads-francis-medical-round",
+              "duplicate_group": "jj-leads-francis-medical-round",
+              "priority_score": 4,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/jj-leads-francis-medical-investment-to-fund-prostate-cancer-device/874352/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T15:07:00Z"
+                }
+              ],
+              "title": "J&J leads Francis Medical funding to take its Vanquish prostate cancer ablation device toward PMA",
+              "summary": "Johnson & Johnson Innovation led an undisclosed round in Francis Medical to scale commercialization and support a premarket approval submission for Vanquish, a water-vapor therapy cleared via 510(k) in December for prostate tissue ablation. In a U.S. trial of 235 intermediate-risk patients, six-month biopsies in the first 110 found only benign tissue in 75%.",
+              "strategic_implication": "Focal therapy for localized prostate cancer is gaining strategic backing, which could shift some urologic oncology volume from radical prostatectomy and radiation toward outpatient ablation.",
+              "confidence": "medium",
+              "tags": [
+                "medtech",
+                "prostate-cancer",
+                "venture-capital",
+                "johnson-and-johnson"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-abbott-ultisynq-defibrillation-lead",
+              "canonical_topic": "abbott-ultisynq-defibrillation-lead",
+              "duplicate_group": "abbott-ultisynq-defibrillation-lead",
+              "priority_score": 4,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/abbotts-defibrillation-lead-lands-fda-approval-and-ce-mark/874474/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T15:39:00Z"
+                }
+              ],
+              "title": "Abbott wins FDA approval and CE mark for UltiSynq, a defibrillation lead built for conduction system pacing",
+              "summary": "Abbott's UltiSynq is a purpose-built ICD lead for left bundle branch area pacing. In the ASCEND CSP study, it was implanted successfully in 202 of 205 patients, defibrillation succeeded in all 120 tested, and 97.5% were free of major complications at three months. Physicians implant about 150,000 ICDs a year in the U.S. and 140,000 in Europe.",
+              "strategic_implication": "Conduction system pacing is moving into the mainstream of cardiac device therapy. Electrophysiology programs should plan for training and supply contracts as dedicated CSP leads displace off-label approaches.",
+              "confidence": "high",
+              "tags": [
+                "medtech",
+                "cardiology",
+                "electrophysiology",
+                "fda-approval"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Rural and academic systems are managing tighter margins in different ways: AdventHealth leans on local control and virtual care for its rural hospitals, and ECU Health widened its margin to 4.5% despite rising bad debt. Post-acute access fights with Medicare Advantage plans are moving into federal court.",
+          "items": [
+            {
+              "item_id": "2026-11-13-adventhealth-rural-care-strategy",
+              "canonical_topic": "adventhealth-rural-care-strategy",
+              "duplicate_group": "adventhealth-rural-care-strategy",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/strategy/adventhealth-faces-rural-cares-no-new-money-less-old-money-reality/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T22:49:19Z"
+                }
+              ],
+              "title": "AdventHealth's CEO says rural care faces 'no new money, less old money' as HR 1 Medicaid changes loom",
+              "summary": "About 19 of AdventHealth's 56 hospital sites are rural or critical access. CEO David Banks described a model built on local decision-making, cost control and virtual services, including behavioral health in Walmart stores and remote ICU support from Orlando. The system broke ground in September on a $200 million replacement hospital in Murray County, Ga., and reopened AdventHealth Ottawa's birth unit in September 2025, now on pace for nearly 300 deliveries this year. HR 1 Medicaid changes take effect in 2027 and 2028.",
+              "strategic_implication": "Large faith-based systems are still investing in rural capacity but expect thinner federal support. Rural hospitals should pursue Rural Health Transformation Program dollars, hub-and-spoke virtual coverage and philanthropy to sustain services like obstetrics.",
+              "confidence": "medium",
+              "tags": [
+                "rural-health",
+                "adventhealth",
+                "obstetrics",
+                "virtual-care",
+                "medicaid"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-ecu-health-fy2026-margin",
+              "canonical_topic": "ecu-health-fy2026-margin",
+              "duplicate_group": "ecu-health-fy2026-margin",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/ecu-healths-operating-margin-rises-to-4-5-in-fiscal-2026-6-things-to-know/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T21:51:26Z"
+                }
+              ],
+              "title": "ECU Health's operating margin rises to 4.5% in fiscal 2026 even as bad debt nearly doubles",
+              "summary": "ECU Health reported fiscal 2026 operating income of $151.2 million (4.5% margin) on $3.4 billion in revenue, up from $125.4 million (4.1%). Bad debt rose to $56 million from $31.3 million and charity care to $263.4 million from $223 million. Admissions edged up, while patient days, ED visits, surgical cases and outpatient visits declined.",
+              "strategic_implication": "Rising bad debt and charity care in eastern North Carolina are an early signal of coverage erosion ahead of HR 1. Systems in high-Medicaid regions should stress-test 2027 budgets for further self-pay growth.",
+              "confidence": "high",
+              "tags": [
+                "health-system-finance",
+                "ecu-health",
+                "bad-debt",
+                "north-carolina"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-select-medical-sues-aetna-ltach-denials",
+              "canonical_topic": "select-medical-sues-aetna-ltach-denials",
+              "duplicate_group": "select-medical-sues-aetna-ltach-denials",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/post-acute/aetna-sued-over-alleged-denials-of-preauthorizations-for-long-term-acute-care/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T21:40:35Z"
+                }
+              ],
+              "title": "Select Medical sues Aetna over long-term acute care preauthorization denials",
+              "summary": "Select Medical alleges Aetna denied preauthorization for 200 of 207 Medicare Advantage patients referred to its Pennsylvania LTACHs in 2025 and 108 of 114 in early 2026, the lowest admission rate among principal payers in the market. The breach-of-contract suit moved to the U.S. District Court for the Middle District of Pennsylvania on Nov. 6 and cites an HHS OIG finding of an 80% CVS Health LTACH denial rate in June 2024. Aetna declined to comment.",
+              "strategic_implication": "MA post-acute denials create discharge bottlenecks that lengthen acute stays. Hospitals should track MA denial patterns for LTACH, SNF and IRF transfers and use contract and litigation leverage, as Select is doing.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "post-acute",
+                "ltach",
+                "aetna",
+                "litigation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Workforce constraints are showing up at FDA, where drug and biologics centers have 1,343 fewer staff than two years ago, while a Texas court found Tenet's executive noncompetes overbroad. STAT's investigation into commercial 'three-parent IVF' raises clinical-practice and oversight concerns.",
+          "items": [
+            {
+              "item_id": "2026-11-13-fda-staffing-shortage-drug-reviews",
+              "canonical_topic": "fda-staffing-shortage-drug-reviews",
+              "duplicate_group": "fda-staffing-shortage-drug-reviews",
+              "priority_score": 7,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/fda-staffing-shortages-drug-reviews-pharma/874480/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T14:38:00Z"
+                }
+              ],
+              "title": "FDA has more than 1,000 open jobs, and drug sponsors are feeling the staffing shortage",
+              "summary": "CDER and CBER together had 1,343 fewer employees in September 2026 than in September 2024 after layoffs and early-retirement offers; FDA's June hiring target was about 2,200 positions. Attorneys describe less informal feedback, inconsistent reviews and added submission costs, and estimate rebuilding could take one to two years. Nominee Heidi Overton awaits confirmation.",
+              "strategic_implication": "Regulatory timelines remain a planning risk for sponsors and device makers through 2027. Build buffer into submission schedules and invest in formal pre-submission meetings, since informal FDA guidance is scarcer.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "workforce",
+                "drug-review",
+                "regulatory"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-ascension-wins-tenet-noncompete-suit",
+              "canonical_topic": "ascension-wins-tenet-noncompete-suit",
+              "duplicate_group": "ascension-wins-tenet-noncompete-suit",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/legal-regulatory-issues/ascension-wins-summary-judgment-in-tenet-noncompete-lawsuit/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-12T21:37:13Z"
+                }
+              ],
+              "title": "Court finds Tenet's executive noncompetes overbroad, handing Ascension a summary-judgment win",
+              "summary": "Judge Brantley Starr of the Northern District of Texas granted Ascension summary judgment on Oct. 29, dismissing with prejudice Tenet's tortious-interference and civil-conspiracy claims over Ascension's hiring of former Tenet executives, including a vice president of workforce management and two of her direct reports. The court found the noncompete and nonsolicitation agreements overbroad under Texas law.",
+              "strategic_implication": "Broad executive restrictive covenants are increasingly hard to enforce. Systems should rely on retention, compensation and narrowly tailored nonsolicitation terms rather than sweeping noncompetes to protect leadership talent.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "noncompete",
+                "ascension",
+                "tenet",
+                "executive-talent"
+              ]
+            },
+            {
+              "item_id": "2026-11-13-stat-three-parent-ivf-investigation",
+              "canonical_topic": "stat-three-parent-ivf-investigation",
+              "duplicate_group": "stat-three-parent-ivf-investigation",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/11/13/fertility-tourism-5-takeaways-mrt-investigation/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-13T09:30:00Z"
+                }
+              ],
+              "title": "STAT investigation finds 'three-parent IVF' marketed abroad for age-related infertility with thin evidence",
+              "summary": "An eight-month STAT investigation found companies, including U.S.-based International Fertility Group, marketing mitochondrial replacement techniques for infertility, with patients paying tens of thousands of dollars to undergo the procedure abroad. Evidence is mixed: a 2023 Greek pilot reported a live-birth rate under 10% among 12 patients aged 39, while one Kyiv clinic reported 1 birth among 19 patients aged 36 to 44. IFG's average patient age rose from 39.2 in 2022 to 45.6 last year.",
+              "strategic_implication": "Fertility tourism for experimental procedures creates downstream obstetric and pediatric risk for U.S. systems and a consumer-protection gap. Reproductive medicine programs should prepare patient counseling and referral policies as demand grows.",
+              "confidence": "medium",
+              "tags": [
+                "reproductive-health",
+                "ivf",
+                "fertility-tourism",
+                "clinical-evidence"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-12",
       "generated_at": "2026-11-12T16:00:00Z",
       "headline": "Today's Healthcare Insights",
@@ -17703,575 +18358,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-10-02",
-      "generated_at": "2026-10-02T12:37:30Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today’s edition tracks NIH award delays and 340B rebate and orphan-drug policy, Medicare Advantage benefit cuts and PBM concentration, commercial adoption of the ACCESS chronic-care model, rural and addiction grant funding, a Pennsylvania measles outbreak that is likely undercounted, and strain on the disability-services workforce. It draws on STAT News, Healthcare Dive, Fierce Healthcare, MedCity News, CMS, AMA, and ANCOR reporting.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
-          "STAT News RSS (main, health-tech, pharma, business)",
-          "Healthcare Dive RSS (news)",
-          "MedCity News RSS",
-          "Fierce Healthcare RSS",
-          "Targeted web search for CMS, AMA, and workforce primary sources"
-        ],
-        "sources_successful": [
-          "STAT News RSS (main, health-tech, pharma, business)",
-          "Healthcare Dive RSS (news; no new distinct items beyond the automated run)",
-          "MedCity News RSS",
-          "Fierce Healthcare items retained from the automated run",
-          "CMS newsroom, AMA Advocacy Update, ANCOR, and Dr. Lorna Breen Foundation pages via targeted web search"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels returned no messages in the connected mailbox",
-          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch",
-          "STAT policy category feed returned HTTP 404; STAT D.C. Diagnosis (MAHA Summit) item skipped because substantive content was paywalled"
-        ],
-        "run_notes": "Same-day rebuild in place: the automated run (generated 11:11 UTC) had already written 2026-10-02 and left the feed at 31 editions. Retained all 9 automated items, added 9 new items from the 10/1-10/2 window screened against the prior 8 editions, refreshed bucket syntheses, and trimmed to 30 editions with the 2026-08-21 overflow archived.",
-        "items_captured": 18
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "NIH award delays, a wider 340B rebate pilot, and a renewed push to fix the orphan-drug exclusion show federal implementation choices squeezing research institutions and rural safety-net pharmacies. Proposed CDC survey changes add risk to the quality of public-health data.",
-          "items": [
-            {
-              "item_id": "2026-10-02-nih-fy2026-grant-allocation-delays",
-              "canonical_topic": "nih-fy2026-grant-allocation-delays",
-              "duplicate_group": "nih-fy2026-grant-allocation-delays",
-              "priority_score": 9,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/02/nih-grant-funding-fy2026-analysis/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-02T08:30:00Z"
-                }
-              ],
-              "title": "NIH spends its FY2026 grant budget as delayed, opaque awards unsettle researchers",
-              "summary": "A STAT analysis says NIH spent its roughly $34 billion external grants budget in fiscal 2026, but awarded about 58,000 projects, down from 61,000 in FY2025 and roughly 63,700 in the years before the current administration. Researchers described delayed, opaque review decisions that slowed work, while awards involving health disparities, race, and ethnicity continued to fall. NIH made little progress toward other administration priorities, including more even geographic distribution and expanded early-career support.",
-              "strategic_implication": "Research institutions should plan for longer award timelines and scrutinize changes in portfolio mix, since award timing and multiyear funding choices affect hiring, study continuity, and the pipeline for early-career investigators.",
-              "confidence": "high",
-              "tags": [
-                "nih",
-                "research-funding",
-                "grant-awards",
-                "clinical-research",
-                "early-career-scientists"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-hrsa-expands-340b-rebate-pilot",
-              "canonical_topic": "hrsa-expands-340b-rebate-pilot",
-              "duplicate_group": "hrsa-expands-340b-rebate-pilot",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/340b-rebate-program-approved-drugs-hrsa/831913/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T12:08:42-04:00"
-                }
-              ],
-              "title": "HRSA names 10 manufacturers and 21 drugs for an expanded 340B rebate pilot",
-              "summary": "HRSA disclosed that 10 drugmakers and 21 of their drugs will move from upfront discounts to after-the-fact payments under a revised 340B rebate pilot beginning next year. The change expands on the administration’s first attempt to launch the rebate approach.",
-              "strategic_implication": "Covered entities and pharmacy operators should assess cash-flow, reconciliation, and compliance workflows before implementation; shifting the timing of discounts can create operational strain even when nominal discount levels are unchanged.",
-              "confidence": "high",
-              "tags": [
-                "340b",
-                "hrsa",
-                "drug-pricing",
-                "rebate-pilot",
-                "covered-entities"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-cdc-survey-disability-measures-redesign",
-              "canonical_topic": "cdc-survey-disability-measures-redesign",
-              "duplicate_group": "cdc-survey-disability-measures-redesign",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/cdc-health-survey-redesign-removes-questions-about-disabilities/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T16:15:16Z"
-                }
-              ],
-              "title": "Proposed CDC survey redesign removes disability questions, advocates warn",
-              "summary": "A proposed redesign of the National Health Interview Survey would remove questions used to identify people with disabilities, according to STAT. Disability advocates warn that the changes could further undercount people with intellectual and developmental disabilities in a survey that has historically missed parts of this population.",
-              "strategic_implication": "Health agencies, researchers, and providers rely on population data to plan services and evaluate disparities; stakeholders should review the proposed instrument changes and preserve measures needed for disability-inclusive planning.",
-              "confidence": "medium",
-              "tags": [
-                "cdc",
-                "health-survey",
-                "disability",
-                "health-equity",
-                "public-health-data"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-340b-orphan-drug-exclusion",
-              "canonical_topic": "340b-orphan-drug-exclusion",
-              "duplicate_group": "340b-orphan-drug-exclusion",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/02/340b-policy-orphan-designated-drugs-pharmacy-losses-hrsa-congress/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-02T12:30:00Z"
-                }
-              ],
-              "title": "Critical access hospital pharmacist urges Congress to fix the 340B orphan-drug exclusion",
-              "summary": "A Nebraska specialty pharmacy manager writes in STAT that 340B rules let manufacturers withhold discounts from critical access hospitals on any drug with an orphan designation, even when it is prescribed for a common condition, so his pharmacy can lose money dispensing a drug such as Rinvoq for Crohn’s disease. Courts vacated HRSA’s earlier attempts to limit the exclusion in 2014 and 2015. He also notes that HRSA’s rebate pilot, starting Jan. 1, 2027, will require claims-level reporting that HRSA estimates costs about $34,000 per covered entity each year.",
-              "strategic_implication": "Rural hospitals should quantify revenue lost to orphan-designated drugs and to rebate-pilot reporting costs; this gives them concrete evidence for congressional fixes and for decisions about specialty pharmacy service lines.",
-              "confidence": "medium",
-              "tags": [
-                "340b",
-                "rural-hospitals",
-                "critical-access-hospitals",
-                "specialty-pharmacy",
-                "drug-pricing"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Commercial payers are starting to copy Medicare’s ACCESS outcome-based chronic-care model. At the same time, patient privacy concerns and the All of Us records gap show that trust and usable data, not technology alone, set the pace of digital-health adoption.",
-          "items": [
-            {
-              "item_id": "2026-10-02-blue-shield-ca-access-model-commercial",
-              "canonical_topic": "blue-shield-ca-access-model-commercial",
-              "duplicate_group": "blue-shield-ca-access-model-commercial",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/major-insurer-on-medicare-access-model-health-tech/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T18:02:00Z"
-                }
-              ],
-              "title": "Blue Shield of California plans commercial versions of Medicare’s ACCESS chronic-care model",
-              "summary": "Blue Shield of California, which has 6 million members, is one of 17 major health plans that have committed to payment models based on the CMS Innovation Center’s tech-enabled ACCESS chronic-care model. The insurer expects to launch similar models in its commercial plans in 2027. Its chief medical officer said details are still open, including whether to use CMS payment amounts and which organizations to contract with.",
-              "strategic_implication": "Digital chronic-care vendors and provider groups should get ready for outcome-based contracts across payers. If commercial plans adopt ACCESS-style payments, Medicare pilot economics could become a standard used across multiple payers.",
-              "confidence": "medium",
-              "tags": [
-                "cmmi",
-                "access-model",
-                "value-based-care",
-                "chronic-care",
-                "commercial-payers"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-patient-health-data-ai-privacy-concerns",
-              "canonical_topic": "patient-health-data-ai-privacy-concerns",
-              "duplicate_group": "patient-health-data-ai-privacy-concerns",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/data-privacy-concerns-could-hold-patients-back-from-using-ai/831902/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T11:27:21-04:00"
-                }
-              ],
-              "title": "Patient concern about health-data privacy may slow adoption of AI tools",
-              "summary": "A new survey cited by Healthcare Dive found that Americans are increasingly concerned about their health data as artificial intelligence becomes more integrated into everyday life. The report frames privacy concerns as a potential barrier to patient use of AI-enabled services.",
-              "strategic_implication": "Health systems and vendors should treat privacy, clear consent, and transparent data-use practices as adoption requirements, not merely compliance work, and test patient trust alongside technical performance.",
-              "confidence": "medium",
-              "tags": [
-                "artificial-intelligence",
-                "health-data",
-                "privacy",
-                "patient-trust",
-                "digital-health"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-payerset-ai-payer-rate-benchmarking",
-              "canonical_topic": "payerset-ai-payer-rate-benchmarking",
-              "duplicate_group": "payerset-ai-payer-rate-benchmarking",
-              "priority_score": 6,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/payerset-launches-ai-powered-research-assistant-turn-price-transparency",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T11:54:00-04:00"
-                }
-              ],
-              "title": "Payerset launches AI assistant to benchmark payer rates for health systems",
-              "summary": "Payerset introduced an AI-powered research assistant that brings together negotiated-rate data, claims, policy information, and market benchmarks. The product is positioned to help health systems analyze payer rates using multiple data sources in one platform.",
-              "strategic_implication": "Hospitals may gain a faster way to inform contract strategy, but should validate source data, comparison methods, and model outputs before using automated benchmarks in negotiations or financial forecasts.",
-              "confidence": "medium",
-              "tags": [
-                "artificial-intelligence",
-                "price-transparency",
-                "payer-contracting",
-                "health-systems",
-                "analytics"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-all-of-us-ehr-data-conversion-gap",
-              "canonical_topic": "all-of-us-ehr-data-conversion-gap",
-              "duplicate_group": "all-of-us-ehr-data-conversion-gap",
-              "priority_score": 6,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/10/the-real-gap-in-all-of-us-isnt-consent-its-conversion/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T17:19:00Z"
-                }
-              ],
-              "title": "All of Us records gap points to data conversion, not consent, as the bottleneck",
-              "summary": "Ninety-eight percent of the nearly 750,000 participants in NIH’s All of Us program agreed to share their electronic health records, yet more than 300,000 have no EHR data in the database. In a MedCity News opinion piece, a health-tech founder argues the main barrier is turning scans, faxes, PDFs, and inconsistent notes into structured research-grade data. He proposes pairing AI-based extraction with deterministic validation.",
-              "strategic_implication": "Being able to transfer records is not the same as being able to use them. Research programs and health systems should budget for structuring and validating data, not only for connecting to exchange networks.",
-              "confidence": "medium",
-              "tags": [
-                "all-of-us",
-                "nih",
-                "ehr-data",
-                "interoperability",
-                "ai-data-extraction"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Benefit cuts in 2027 Medicare Advantage plans, narrower losses at CommonSpirit, and a PBM market in which four firms control 75% point to continued margin recovery by large integrated players and more pressure on patients and purchasers.",
-          "items": [
-            {
-              "item_id": "2026-10-02-medicare-advantage-2027-cost-sharing-shifts",
-              "canonical_topic": "medicare-advantage-2027-cost-sharing-shifts",
-              "duplicate_group": "medicare-advantage-2027-cost-sharing-shifts",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/medicare-advantage-plans-have-higher-deductibles-fewer-benefits-in-2027/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T21:14:01Z"
-                }
-              ],
-              "title": "Medicare Advantage plans shift more costs to seniors for 2027 despite stable premiums",
-              "summary": "STAT’s analysis of federal data and plan offerings finds Medicare Advantage insurers are raising out-of-pocket costs, cutting dental and other supplemental benefits, and eliminating some broad-network options for 2027. The changes come as carriers seek to restore margins, even after receiving a payment increase and delayed reforms earlier this year.",
-              "strategic_implication": "Providers and enrollment counselors should prepare for questions about network access, higher cost sharing, and benefit reductions before annual enrollment begins, while monitoring how plan changes affect patient access and payer mix.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "health-insurance",
-                "benefit-design",
-                "cost-sharing",
-                "network-access"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-ama-pbm-market-concentration-2024",
-              "canonical_topic": "ama-pbm-market-concentration-2024",
-              "duplicate_group": "ama-pbm-market-concentration-2024",
-              "priority_score": 8,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/10/ama-pbm-market-concentration-is-on-the-rise/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-02T02:38:00Z"
-                }
-              ],
-              "title": "AMA finds the four largest PBMs now control 75% of the national market",
-              "summary": "An AMA analysis found that OptumRx, Express Scripts, CVS Caremark, and Prime Therapeutics held 75% of the national PBM market in 2024, up from 70% in 2022. Highly concentrated PBM markets grew from 82% to 94% of those studied. All 10 PBMs in the report share ownership with insurers, and 69% of people with commercial or Part D drug coverage are enrolled with an insurer that is vertically integrated with a PBM.",
-              "strategic_implication": "Growing concentration strengthens the case for PBM transparency rules and Part D reforms. Employers and health systems negotiating pharmacy contracts have fewer alternatives and should push harder for pass-through pricing and audit rights.",
-              "confidence": "high",
-              "tags": [
-                "pbm",
-                "market-concentration",
-                "vertical-integration",
-                "ama",
-                "pharmacy-benefits"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-commonspirit-fy2026-revenue-and-losses",
-              "canonical_topic": "commonspirit-fy2026-revenue-and-losses",
-              "duplicate_group": "commonspirit-fy2026-revenue-and-losses",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/commonspirit-health-grows-revenue-85-424b-fy2026",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T14:35:00-04:00"
-                }
-              ],
-              "title": "CommonSpirit reports 8.5% FY2026 revenue growth and narrower operating losses",
-              "summary": "The 156-hospital nonprofit reported $42.4 billion in operating revenue for fiscal 2026, up 8.5% year over year. Its operating losses narrowed by $257 million despite a multibillion-dollar impact associated with its revenue-cycle-management separation from Tenet Health.",
-              "strategic_implication": "The results suggest improved operating performance but should be read alongside the unusual revenue-cycle transition; health-system leaders can benchmark growth and loss reduction while separating recurring performance from one-time disruption.",
-              "confidence": "high",
-              "tags": [
-                "commonspirit",
-                "hospital-finance",
-                "operating-revenue",
-                "nonprofit-health-systems",
-                "revenue-cycle"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Federal addiction and rural transformation grants add short-term capacity, while heat-related marathon emergencies show why event and surge planning needs standardized medical data.",
-          "items": [
-            {
-              "item_id": "2026-10-02-hhs-addiction-overdose-grants",
-              "canonical_topic": "hhs-addiction-overdose-grants",
-              "duplicate_group": "hhs-addiction-overdose-grants",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/hhs-awards-nearly-250m-addiction-treatment-overdose-prevention-grants",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T11:26:00-04:00"
-                }
-              ],
-              "title": "HHS awards nearly $250 million for addiction treatment and overdose prevention",
-              "summary": "HHS announced nearly $250 million in grants for addiction treatment and overdose-prevention initiatives. Supported projects include stronger mental-health support in schools and expanded trauma treatment for families and children.",
-              "strategic_implication": "Community providers and local partners should track award details and align behavioral-health, school, and family-service capacity with the funded priorities; the grants reinforce demand for coordinated community-based care.",
-              "confidence": "high",
-              "tags": [
-                "hhs",
-                "behavioral-health",
-                "addiction-treatment",
-                "overdose-prevention",
-                "community-care"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-cms-alabama-rural-health-grants",
-              "canonical_topic": "cms-alabama-rural-health-grants",
-              "duplicate_group": "cms-alabama-rural-health-grants",
-              "priority_score": 7,
-              "primary_source": "CMS",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "CMS",
-                  "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-announces-nearly-55-million-expand-rural-maternal-emergency-care-cancer",
-                  "source_type": "web",
-                  "published_at": "2026-10-01T16:00:00Z"
-                },
-                {
-                  "source": "AL.com",
-                  "url": "https://www.al.com/news/2026/10/alabama-gets-55-million-for-rural-healthcare-advocates-warn-it-wont-solve-the-larger-problem.html",
-                  "source_type": "web",
-                  "published_at": "2026-10-01T20:00:00Z"
-                }
-              ],
-              "title": "Alabama awards nearly $55 million in second-round Rural Health Transformation grants",
-              "summary": "CMS and Alabama announced 34 grants totaling nearly $55 million under the Rural Health Transformation Program. The grants will fund maternal care networks, emergency care, cancer screening, and the rural workforce. The announcement follows a $20 million North Carolina award for rural telehealth and health IT, while Alabama advocates warn the funding will not solve broader rural hospital financing problems.",
-              "strategic_implication": "Rural providers should match grant-funded capacity to long-term operating revenue. One-time transformation dollars can stand up maternal and emergency networks, but keeping them running depends on Medicaid financing that is under pressure.",
-              "confidence": "high",
-              "tags": [
-                "rural-health",
-                "rural-health-transformation-program",
-                "maternal-health",
-                "cms",
-                "alabama"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-marathon-heat-illness-medical-planning",
-              "canonical_topic": "marathon-heat-illness-medical-planning",
-              "duplicate_group": "marathon-heat-illness-medical-planning",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/02/marathons-climate-change-extreme-heat-medical-planning/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-02T12:30:00Z"
-                }
-              ],
-              "title": "Physician calls for shared medical data to plan for heat stroke at marathons",
-              "summary": "A UCSF physician who treated a runner with a 107°F temperature at the record-hot 2022 NYC Marathon writes that finish-line tents ran short of ice, cold-water immersion capacity, and diagnostics. Race medical data are fragmented and rarely required by permits. She calls on organizers, including the World Marathon Majors with more than 300,000 runners last year, to share de-identified medical data linked to race and weather conditions.",
-              "strategic_implication": "Mass-gathering medical planners and nearby EDs should treat heat as a predictable driver of surge. Standard encounter data linked to WBGT conditions would support evidence-based staffing, cooling supplies, and modified race formats.",
-              "confidence": "medium",
-              "tags": [
-                "mass-gatherings",
-                "heat-illness",
-                "emergency-medicine",
-                "climate-and-health",
-                "event-medicine"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "An underestimated measles outbreak, a deepening disability-services staffing crisis, and progress on clinician mental-health licensure reforms show workforce capacity and public-health readiness under strain. Women’s health research gaps remain open.",
-          "items": [
-            {
-              "item_id": "2026-10-02-pennsylvania-measles-outbreak-scope",
-              "canonical_topic": "pennsylvania-measles-outbreak-scope",
-              "duplicate_group": "pennsylvania-measles-outbreak-scope",
-              "priority_score": 9,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/02/health-news-how-big-is-pennsylvania-measles-outbreak/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-02T15:53:00Z"
-                }
-              ],
-              "title": "Fifth measles death in Pennsylvania raises questions about the outbreak’s true size",
-              "summary": "Pennsylvania reported 943 confirmed measles cases as of Wednesday, about one-quarter of the 2026 U.S. total, along with a fifth death. Experts say counting only confirmed cases likely understates spread, especially in counties with large Amish populations where vaccination rates are low and families may not seek care unless illness is severe. About 20% of people infected need hospital care.",
-              "strategic_implication": "Hospitals in and near affected counties should keep airborne-isolation capacity, staff immunity verification, and exposure workflows in place. Underascertainment means hospital demand could exceed what confirmed case counts suggest.",
-              "confidence": "high",
-              "tags": [
-                "measles",
-                "outbreak-response",
-                "pennsylvania",
-                "vaccination",
-                "infection-prevention"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-ancor-disability-workforce-crisis-2026",
-              "canonical_topic": "ancor-disability-workforce-crisis-2026",
-              "duplicate_group": "ancor-disability-workforce-crisis-2026",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/02/health-news-how-big-is-pennsylvania-measles-outbreak/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-02T15:53:00Z"
-                },
-                {
-                  "source": "ANCOR",
-                  "url": "https://www.ancor.org/",
-                  "source_type": "web",
-                  "published_at": "2026-09-30T12:00:00Z"
-                }
-              ],
-              "title": "Disability-care providers report deepening staffing crisis ahead of Medicaid cuts",
-              "summary": "An ANCOR survey of 524 disability-service providers found that 85% faced moderate or severe staffing problems over the past year and 55% turned away people who needed care. Providers reported lower care quality and more reportable incidents. States have begun cutting caregiver pay and other services ahead of Medicaid reductions expected next year.",
-              "strategic_implication": "Home and community-based services capacity is weakening before federal Medicaid cuts take effect. Health systems and managed-care plans should expect longer discharge delays and more avoidable acute use among people with intellectual and developmental disabilities.",
-              "confidence": "high",
-              "tags": [
-                "disability-services",
-                "direct-support-workforce",
-                "medicaid",
-                "hcbs",
-                "staffing"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-womens-health-menopause-pain-research",
-              "canonical_topic": "womens-health-menopause-pain-research",
-              "duplicate_group": "womens-health-menopause-pain-research",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/01/womens-health-issues-academic-journal-science-special-edition/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-01T18:00:00Z"
-                }
-              ],
-              "title": "Journal special issue spotlights open questions in menopause and chronic pain research",
-              "summary": "STAT reports that a special issue at a leading journal examines new findings and persistent questions in women’s health, including menopause and chronic pain. The coverage notes that women remain underrepresented in clinical trials and that female health is still less well understood than male health.",
-              "strategic_implication": "Clinical and research leaders should consider whether study agendas, trial recruitment, and care pathways adequately address menopause and chronic pain, where evidence gaps can translate into inconsistent practice.",
-              "confidence": "medium",
-              "tags": [
-                "womens-health",
-                "menopause",
-                "chronic-pain",
-                "clinical-research",
-                "trial-representation"
-              ]
-            },
-            {
-              "item_id": "2026-10-02-wellbeing-first-licensure-questions",
-              "canonical_topic": "wellbeing-first-licensure-questions",
-              "duplicate_group": "wellbeing-first-licensure-questions",
-              "priority_score": 6,
-              "primary_source": "American Medical Association",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "American Medical Association",
-                  "url": "https://www.ama-assn.org/health-care-advocacy/advocacy-update/oct-2-2026-national-advocacy-update",
-                  "source_type": "web",
-                  "published_at": "2026-10-02T12:00:00Z"
-                },
-                {
-                  "source": "Dr. Lorna Breen Foundation",
-                  "url": "https://drlornabreen.org/nationwide-initiative-shifts-the-culture-to-normalize-mental-health-for-our-healthcare-workforce/",
-                  "source_type": "web",
-                  "published_at": "2026-09-30T12:00:00Z"
-                }
-              ],
-              "title": "More than 4.1 million health workers now have safer access to mental health care",
-              "summary": "The Dr. Lorna Breen Foundation’s Wellbeing First Champion Challenge has verified 46 medical boards, 36 pharmacy, nursing, and dental boards, 1,087 hospitals, and 3,306 other care facilities whose licensing or credentialing questions no longer discourage clinicians from seeking mental health care. That covers more than 4.1 million health workers. In September 2025 the count was 40 medical boards and 1,850 hospitals and facilities.",
-              "strategic_implication": "Health systems that have not reviewed credentialing applications are increasingly out of step with peers. Removing intrusive mental-health questions is a low-cost retention and burnout measure that boards and accreditors now expect.",
-              "confidence": "high",
-              "tags": [
-                "clinician-wellbeing",
-                "burnout",
-                "credentialing",
-                "licensure",
-                "mental-health"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-12T16:00:00Z"
+  "last_updated": "2026-11-13T16:00:00Z"
 }

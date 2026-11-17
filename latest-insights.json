@@ -3,6 +3,713 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-17",
+      "generated_at": "2026-11-17T13:45:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "CMS proposed its CRUSH anti-fraud rule, projecting $90 billion in 10-year savings mostly from Medicare Advantage audits, and a Lown analysis found 52% of nonprofit hospitals get more in tax breaks than they return. CVS put a roughly $350-a-month break-even price on GLP-1s, health AI spending doubled to $3.7 billion, AdventHealth will start grading payers in 2027, and J&J agreed to buy Ollin for $2.2 billion. Sources include STAT, KFF Health News, Healthcare Dive, BioPharma Dive, MedCity News and Becker's.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS and site",
+          "BioPharma Dive, MedCity News, KFF Health News, Becker's Hospital Review and Fierce Healthcare RSS"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for Nov. 16-17",
+          "Healthcare Dive, BioPharma Dive, MedCity News, KFF Health News and Becker's RSS fetched and screened; Healthcare Dive homepage checked for stories missing from RSS",
+          "Articles read on STAT, KFF Health News, Healthcare Dive, BioPharma Dive, MedCity News and Becker's to verify figures"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and newsletter-sender searches since Nov. 10-15 returned no messages in the connected mailbox; RSS sources used instead.",
+          "Fierce Healthcare RSS returned HTTP 403 and was not parsed.",
+          "Several STAT+ articles (CRUSH rule, NAC, visa ruling, giredestrant, Sellas, Capsida, biotech rebound, provider lawsuits against employers) were paywalled; items rely on visible text and corroborating sources."
+        ],
+        "run_notes": "23 items cover developments reported from midday Nov. 16 through the morning of Nov. 17. Checked against the prior 30 editions for repeats; excluded the Medicaid work-requirement delay and hospital preparation follow-ups, the Summit ivonescimab rejection, CG Oncology's bladder cancer data and Apple-OpenEvidence (all covered Nov. 16), PHI's lawsuits against employers (covered Nov. 11) and Oura's Counsel Health deal (covered Nov. 11). The American Healthcare Systems item is a new Illinois development after the Nov. 12 Florida settlement item. Screened but not itemized: STAT's biotech-rebound column (paywalled), executive appointments at Cook Children's and a Massachusetts hospital, a HLTH primary-care AI panel, a KFF consumer explainer on moving states, INVEST conference startup coverage and opinion pieces."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS's CRUSH proposal turns program integrity into a $90 billion Medicare Advantage audit agenda while tightening provider enrollment and Medicaid overpayment rules, with comments due Jan. 19. A new Lown analysis renews pressure on nonprofit tax exemptions, FDA opened a supplement pathway for the drug NAC, NIAID's new permanent director confirms a shift away from pandemic preparedness, and federal addiction policy is tilting toward faith-based recovery even as harm-reduction funding shrinks.",
+          "items": [
+            {
+              "item_id": "2026-11-17-cms-crush-anti-fraud-rule-90b",
+              "canonical_topic": "cms-crush-anti-fraud-rule-90b",
+              "duplicate_group": "cms-crush-anti-fraud-rule-90b",
+              "priority_score": 10,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/legal-regulatory-issues/cms-targets-90b-in-savings-with-sweeping-new-anti-fraud-rule/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T22:57:53Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/16/cms-proposes-more-agressive-audits-medicare-advantage-crush/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T23:45:36Z"
+                }
+              ],
+              "title": "CMS proposes CRUSH anti-fraud rule projecting $90 billion in 10-year savings, mostly from Medicare Advantage audits",
+              "summary": "CMS on Nov. 16 proposed the Comprehensive Regulations to Uncover Suspicious Healthcare (CRUSH) rule spanning Medicare, Medicaid/CHIP and the ACA marketplace, with comments due Jan. 19, 2027. CMS projects nearly $90 billion in federal savings over 10 years; STAT reports agency officials said all of it comes from more aggressive Medicare Advantage risk-adjustment audits, which could extrapolate back to 2018 at roughly $9 billion per payment year. Provider-facing changes include a 30-day window (down from 90) to report enrollment changes, traditional-Medicare screening for clinicians billing MA plans two years after finalization, a 60-day rule to report and return Medicaid fee-for-service overpayments, and penalties for states with eligibility error rates above 3%.",
+              "strategic_implication": "MA plans face the largest financial exposure, and that pressure will likely flow to providers through tighter documentation demands and coding scrutiny. Hospitals and medical groups should audit enrollment-change reporting processes now for the 30-day standard, confirm every MA-billing clinician is enrolled in traditional Medicare, and weigh filing comments before Jan. 19.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "program-integrity",
+                "medicare-advantage",
+                "radv",
+                "medicaid",
+                "provider-enrollment"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-lown-nonprofit-hospital-tax-break-fair-share",
+              "canonical_topic": "lown-nonprofit-hospital-tax-break-fair-share",
+              "duplicate_group": "lown-nonprofit-hospital-tax-break-fair-share",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/half-of-nonprofit-hospitals-get-more-in-tax-breaks-than-they-give-back-report/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T05:01:00Z"
+                }
+              ],
+              "title": "Lown Institute: 52% of nonprofit hospitals received more in tax breaks than they returned in charity care and community investment",
+              "summary": "A Lown Institute analysis released Nov. 17 of 3,037 nonprofit hospitals using FY2023 data found 52% ran a 'fair share' deficit, receiving $27.5 billion in tax exemptions while spending $12 billion on financial assistance, subsidized services and community investment, a $15.5 billion gap. Hospitals in surplus provided $13.8 billion more than their exemptions were worth. California, Florida, Illinois and Ohio each had deficits above $1 billion, and the method excludes Medicaid shortfalls, education and research, which hospitals typically count as community benefit.",
+              "strategic_implication": "Annual fair-share rankings feed state and federal scrutiny of tax exemptions, particularly in Florida and other large-deficit states. Nonprofit boards should know how their Form 990 figures look under Lown's narrower definition and be ready to explain the gap between reported community benefit and charity care.",
+              "confidence": "high",
+              "tags": [
+                "nonprofit-hospitals",
+                "tax-exemption",
+                "community-benefit",
+                "charity-care",
+                "florida"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-fda-nac-dietary-ingredient-category",
+              "canonical_topic": "fda-nac-dietary-ingredient-category",
+              "duplicate_group": "fda-nac-dietary-ingredient-category",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/16/fda-proposes-new-category-supplement-nac/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T18:54:06Z"
+                }
+              ],
+              "title": "FDA proposes new regulatory category that lets the drug NAC be sold as a dietary supplement",
+              "summary": "FDA on Nov. 16 proposed classifying N-acetyl-L-cysteine (NAC), approved as a drug since 1963 and as an acetaminophen-overdose treatment since 1985, as the agency's first 'Dietary Ingredient Not Excluded from the Dietary Supplement Definition.' FDA rules generally bar approved drugs from the supplement category; the proposal resolves a long legal gray area over NAC sold over the counter. STAT describes it as a win for supplement proponents, including the MAHA movement; full details are behind STAT's paywall.",
+              "strategic_implication": "The new category creates a template that could be applied to other drug-derived ingredients, loosening the drug-supplement boundary. Pharmacy, clinical and patient-safety leaders should watch whether further ingredients follow and reinforce supplement-use screening during medication reconciliation.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "dietary-supplements",
+                "maha",
+                "regulation"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-niaid-powers-permanent-director",
+              "canonical_topic": "niaid-powers-permanent-director",
+              "duplicate_group": "niaid-powers-permanent-director",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/health-news-nih-infectious-disease-unit-has-a-new-head-at-last/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T13:27:01Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/16/john-powers-appointed-niaid-director/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T17:47:11Z"
+                }
+              ],
+              "title": "Acting NIAID head John Powers III named permanent director, with a mandate to shift focus beyond HIV and pandemic preparedness",
+              "summary": "NIH named John Powers III, a physician-scientist who has led NIAID in an acting capacity since June, as the institute's permanent director, STAT reported Nov. 16-17. Powers co-authored a paper with NIH Director Jay Bhattacharya arguing NIAID should shift its emphasis from HIV and pandemic preparedness toward broader infectious disease and immunology. His predecessor, Jeanne Marrazzo, was forced out in 2025 after objecting to grant terminations.",
+              "strategic_implication": "Permanent leadership locks in a reprioritized NIAID portfolio. Academic medical centers and health-security programs dependent on HIV, emerging-pathogen and preparedness grants should plan for continued funding pressure and look for alignment with the institute's broader infectious-disease and immunology framing.",
+              "confidence": "high",
+              "tags": [
+                "nih",
+                "niaid",
+                "research-funding",
+                "pandemic-preparedness",
+                "health-security"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-hhs-faith-based-addiction-recovery-funding",
+              "canonical_topic": "hhs-faith-based-addiction-recovery-funding",
+              "duplicate_group": "hhs-faith-based-addiction-recovery-funding",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/rfk-jr-federal-funding-faith-based-recovery-groups/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T09:30:00Z"
+                }
+              ],
+              "title": "HHS steers more federal support toward faith-based addiction recovery as experts warn of gaps in evidence-based care",
+              "summary": "STAT reported Nov. 17 that the administration's 2026 National Drug Control Strategy and Great American Recovery Initiative promote faith-based recovery, and HHS has awarded $500,000 each to Alabama, Kansas and West Virginia for faith-based prevention. SAMHSA grant terms now caution against medication-only treatment. Health Secretary Robert F. Kennedy Jr. recently visited Iowa's Sheepgate, whose yearlong programs prohibit methadone and allow Suboxone only if tapered within three months; addiction experts urged funding safeguards that require evidence-based care.",
+              "strategic_implication": "Health systems that refer patients to community recovery partners should verify partners' policies on medications for opioid use disorder, since a referral to a program that bars methadone can disrupt treatment. Expect future SAMHSA notices to favor faith-based applicants and plan partnerships accordingly.",
+              "confidence": "high",
+              "tags": [
+                "samhsa",
+                "addiction",
+                "opioid-use-disorder",
+                "behavioral-health",
+                "grants"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-samhsa-test-strip-funding-cuts-overdose",
+              "canonical_topic": "samhsa-test-strip-funding-cuts-overdose",
+              "duplicate_group": "samhsa-test-strip-funding-cuts-overdose",
+              "priority_score": 6,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/public-health/fentanyl-test-strips-federal-cuts-samhsa-street-drugs-overdose-harm-reduction/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T10:00:00Z"
+                }
+              ],
+              "title": "SAMHSA ban on funding drug test strips leaves local harm-reduction groups unable to track tainted supply",
+              "summary": "KFF Health News reported Nov. 17 that SAMHSA said in April its funds could no longer buy test strips for fentanyl, xylazine, medetomidine or other substances, part of a more than $300 million national reduction in overdose-prevention and treatment funding. In North Carolina, SAMHSA had been the state opioid response program's only source of fentanyl and xylazine strips; small volunteer groups are now paying out of pocket. UNC-Chapel Hill's street drug lab has detected about 500 unique substances since 2022.",
+              "strategic_implication": "Less community drug checking means emergency departments may be the first to detect new adulterants such as medetomidine. Hospitals should strengthen links with local drug-checking labs and health departments and update ED protocols for atypical overdose and withdrawal presentations.",
+              "confidence": "high",
+              "tags": [
+                "overdose",
+                "harm-reduction",
+                "samhsa",
+                "public-health",
+                "emergency-department"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "HLTH-week data show AI spending doubled to $3.7 billion, with ambient scribing consolidating around Microsoft and Epic and new money moving to clinical copilots and front-office tools. Still, only 30% of organizations have scaled advanced AI, held back by integration and cost. Kaiser's physician group launched a spinout vehicle, and Noom brought a wearable to employer obesity programs.",
+          "items": [
+            {
+              "item_id": "2026-11-17-menlo-health-ai-spend-3-7b",
+              "canonical_topic": "menlo-health-ai-spend-3-7b",
+              "duplicate_group": "menlo-health-ai-spend-3-7b",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/health-ai-spend-doubles-as-providers-invest-in-clinical-copilots-front-off/874752/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T10:57:01-05:00"
+                }
+              ],
+              "title": "Health AI spending more than doubles to $3.7 billion as providers shift money to clinical copilots and front-office AI",
+              "summary": "A Menlo Partners report surveying more than 550 healthcare and life sciences executives found healthcare AI spending reached $3.7 billion, more than double the prior year, with providers accounting for 77%, Healthcare Dive reported Nov. 16. Provider spending on clinical copilots and patient engagement/front-office tools grew about fivefold, to $550 million and $450 million, while ambient scribing and coding spend grew less than twofold. Microsoft Dragon Copilot and Epic Art captured 68% of new ambient-scribing dollars in 2026, and startups lost 13 points of share.",
+              "strategic_implication": "Ambient scribing is consolidating around EHR-native vendors, so the competitive frontier has moved to clinical decision support and patient access. Systems should rationalize point-solution scribe contracts against EHR-bundled options and direct new budget to front-office and copilot use cases with measurable access or throughput gains.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "ambient-scribing",
+                "clinical-decision-support",
+                "epic",
+                "microsoft",
+                "investment"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-google-survey-ai-pilot-to-scale-gap",
+              "canonical_topic": "google-survey-ai-pilot-to-scale-gap",
+              "duplicate_group": "google-survey-ai-pilot-to-scale-gap",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-struggles-to-scale-ai-past-pilot-stage-google-report/874609/",
+                  "source_type": "web",
+                  "published_at": "2026-11-16T14:03:00Z"
+                }
+              ],
+              "title": "Google survey: only 30% of healthcare organizations have scaled advanced or agentic AI, trailing other industries",
+              "summary": "A Google Cloud survey of more than 250 healthcare executives found nearly 60% struggle with integration and deployment when moving AI from pilot to production, and 40% have paused initiatives over unpredictable costs, Healthcare Dive reported Nov. 16. Only 30% said they had scaled advanced or agentic AI across operations, 13 points below the all-industry benchmark, and more than 80% cited cost as a barrier to reducing dependence on existing AI vendors.",
+              "strategic_implication": "The binding constraint on AI value is operational, not technical: integration capacity, cost predictability and vendor lock-in. Leaders should require usage-based cost models and exit terms in AI contracts and fund integration staff alongside pilots rather than after them.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "agentic-ai",
+                "google-cloud",
+                "ai-governance",
+                "vendor-management"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-tpmg-permanentech-innovation-company",
+              "canonical_topic": "tpmg-permanentech-innovation-company",
+              "duplicate_group": "tpmg-permanentech-innovation-company",
+              "priority_score": 7,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/the-permanente-medical-group-launches-innovation-company-to-commercialize-clinicians-ideas/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T16:00:00Z"
+                }
+              ],
+              "title": "The Permanente Medical Group launches Permanentech to commercialize clinician-built tools, starting with infusion no-show AI",
+              "summary": "The Permanente Medical Group, Kaiser Permanente's roughly 10,000-physician Northern California group, launched Permanentech at HLTH on Nov. 16 to turn frontline clinician ideas into products, partnerships and spinout companies. Its first portfolio company, Wrapt Health, uses AI to predict missed infusion appointments, automate outreach and prioritize cases; it operates across 22 sites and 524 infusion chairs and reports reduced no-show rates.",
+              "strategic_implication": "Large physician groups are treating operational know-how as a commercial asset. Health systems with strong clinical informatics talent can consider similar venture structures, and infusion-center leaders should evaluate predictive scheduling, since unused chairs and wasted drug represent direct margin.",
+              "confidence": "high",
+              "tags": [
+                "innovation",
+                "kaiser-permanente",
+                "physician-groups",
+                "infusion",
+                "ai",
+                "hlth"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-noom-band-glp1-wearable",
+              "canonical_topic": "noom-band-glp1-wearable",
+              "duplicate_group": "noom-band-glp1-wearable",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/noom-introduces-wearable-to-support-obesity-care-programs/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T03:47:49Z"
+                }
+              ],
+              "title": "Noom unveils wearable for employer and health-plan obesity programs, citing early gains among GLP-1 users",
+              "summary": "Noom announced the Noom Band at HLTH, a Sensor Bio-powered wearable tracking activity, sleep, heart rate, HRV and oxygen saturation, launching in early 2027 for all employer and health-plan clients at no added upfront cost, MedCity News reported Nov. 16. Noom said GLP-1 users with a connected wearable were 34% more likely to lose 20 pounds by month four; CEO Geoff Cook said the results are preliminary and not peer-reviewed.",
+              "strategic_implication": "Obesity-program vendors are bundling devices and behavior support to justify their place beside costly GLP-1 coverage. Employers and plans should request outcomes and adherence data, not engagement metrics, before expanding these programs.",
+              "confidence": "medium",
+              "tags": [
+                "glp-1",
+                "obesity",
+                "wearables",
+                "employers",
+                "digital-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "CVS set a roughly $350-a-month break-even price for GLP-1s, giving employers a benchmark for 2027 negotiations. Medicare Advantage enrollment is concentrating in Humana and UnitedHealthcare as 4.3 million beneficiaries face plan terminations. On the biopharma side, J&J's $2.2 billion Ollin deal, Roche's giredestrant approval, Marrow's $173 million launch and Sellas' AML result signal continued deal and oncology momentum, while tobacco companies test new oral nicotine formats.",
+          "items": [
+            {
+              "item_id": "2026-11-17-cvs-glp1-white-paper-350-price",
+              "canonical_topic": "cvs-glp1-white-paper-350-price",
+              "duplicate_group": "cvs-glp1-white-paper-350-price",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/glp-1s-save-money-priced-350-month-cvs-lilly-novo/874705/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T10:05:49-05:00"
+                }
+              ],
+              "title": "CVS says GLP-1s become cost-saving for payers at about $350 a month, pressing Lilly and Novo on price",
+              "summary": "A CVS Health white paper released at HLTH, based on three years of Aetna commercial claims, found continuing GLP-1 users had 34% to 42% fewer hospitalizations and a 14% lower likelihood of major cardiovascular events, Healthcare Dive reported Nov. 16. Plan sponsors saved $9,400 per person in medical costs but spent $13,300 more on prescriptions, a $3,900 net cost. CVS said prices of roughly $350 a month or less would make the drugs cost-saving; employers typically pay $617 to $766 monthly, versus $245 in Medicare's pilot.",
+              "strategic_implication": "A large PBM-insurer has put a concrete break-even price in front of employers, which strengthens purchaser leverage in 2027 negotiations. Benefit consultants and self-insured health systems should model coverage decisions against the $350 benchmark and use outcomes data, not list price alone, to set utilization criteria.",
+              "confidence": "high",
+              "tags": [
+                "glp-1",
+                "cvs",
+                "aetna",
+                "pbm",
+                "employers",
+                "drug-pricing"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-spark-ma-aep-humana-unitedhealthcare-share",
+              "canonical_topic": "spark-ma-aep-humana-unitedhealthcare-share",
+              "duplicate_group": "spark-ma-aep-humana-unitedhealthcare-share",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/humana-unitedhealthcare-dominate-first-half-of-medicare-advantage-annual-enrollment/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T23:30:35Z"
+                }
+              ],
+              "title": "Humana and UnitedHealthcare capture 58% of early Medicare Advantage enrollment applications as plan terminations climb",
+              "summary": "A Spark Advisors analysis of applications from Oct. 15 to Nov. 6 found Humana with 30% and UnitedHealthcare with 28% of Medicare Advantage enrollments, with UnitedHealthcare volume up 49% year over year and Humana's down 11%, Becker's reported. About 4.3 million beneficiaries' MA plans or Part D plans will terminate Dec. 31, compared with 2.9 million a year earlier; 46.4% of beneficiaries face higher out-of-pocket maximums, and Devoted Health took 18% of switchers.",
+              "strategic_implication": "Plan exits and benefit cuts will shuffle payer mix on Jan. 1. Revenue-cycle and access teams should map which local plans are terminating, prepare to re-verify coverage for high volumes of switching patients in January and build authorization relationships with gaining plans such as Devoted.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "enrollment",
+                "humana",
+                "unitedhealthcare",
+                "payer-mix"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-jj-acquires-ollin-2-2b",
+              "canonical_topic": "jj-acquires-ollin-2-2b",
+              "duplicate_group": "jj-acquires-ollin-2-2b",
+              "priority_score": 7,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/Johnson-johnson-ollin-acquire-ophthalmology-vegf-ang2-drugs/874728/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T11:57:00-05:00"
+                },
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/johnson-johnson-jnj-ollin-biosciences-acquisition-bispecific-antibody-vegf-ang2-wet-amd-dme/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T18:55:25Z"
+                }
+              ],
+              "title": "J&J agrees to buy Ollin Biosciences for $2.2 billion upfront, with Blackstone funding $750 million of Phase 3 eye-drug trials",
+              "summary": "Johnson & Johnson agreed Nov. 16 to acquire Ollin Biosciences for $2.2 billion upfront plus up to $1.1 billion in milestones, gaining OLN324, a VEGF/Ang2 drug in Phase 3 testing for wet AMD and diabetic macular edema that could compete with Roche's Vabysmo and Regeneron's Eylea. Blackstone Life Sciences will provide $750 million to fund the late-stage trials, and the drug originated at Shanghai-based Innovent Biologics.",
+              "strategic_implication": "Big pharma is increasingly pairing China-sourced assets with private-capital trial financing to share late-stage risk. For retina practices and health-system pharmacy, more long-acting entrants could intensify competition and pricing in one of Medicare Part B's highest-spend drug classes later this decade.",
+              "confidence": "high",
+              "tags": [
+                "m-and-a",
+                "ophthalmology",
+                "johnson-and-johnson",
+                "biopharma",
+                "private-equity"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-fda-approves-roche-giredestrant",
+              "canonical_topic": "fda-approves-roche-giredestrant",
+              "duplicate_group": "fda-approves-roche-giredestrant",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/16/fda-approves-new-roche-breast-cancer-drug/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T20:56:47Z"
+                }
+              ],
+              "title": "FDA approves Roche's oral SERD giredestrant for ESR1-mutated advanced breast cancer",
+              "summary": "FDA on Nov. 16 approved Roche's Wilserdly (giredestrant), an oral selective estrogen receptor degrader, for HR-positive, HER2-negative advanced breast cancer with an ESR1 mutation, based on the evERA trial showing longer time to progression, STAT reported. Roche has said the drug could become its top-selling product ever, though estimates vary; the full article is paywalled.",
+              "strategic_implication": "Approval adds to the ESR1-mutation-directed options, making routine ESR1 testing at progression more important. Oncology service lines should confirm liquid-biopsy testing workflows and prepare for specialty-pharmacy and prior-authorization demands as oral options expand.",
+              "confidence": "medium",
+              "tags": [
+                "oncology",
+                "breast-cancer",
+                "fda-approval",
+                "roche",
+                "precision-medicine"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-marrow-therapeutics-173m-sickle-cell",
+              "canonical_topic": "marrow-therapeutics-173m-sickle-cell",
+              "duplicate_group": "marrow-therapeutics-173m-sickle-cell",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/marrow-therapeutics-sickle-cell-beta-thalassemia-drug/874789/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T07:00:00-05:00"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/new-startup-developing-novel-sickle-cell-anemia-infusion-no-gene-therapy/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T12:00:00Z"
+                }
+              ],
+              "title": "Marrow Therapeutics launches with $173 million to develop a redosable injectable alternative to sickle cell gene therapy",
+              "summary": "Marrow Therapeutics emerged from stealth Nov. 17 with $173 million in Series A and B financing from 11 investors, including Scion Life Sciences, OrbiMed and venBio. Its lead drug, MAR-101, is an antibody-siRNA conjugate meant to reactivate fetal hemoglobin and could be dosed repeatedly by injection for sickle cell disease and beta thalassemia; trial timing has not been disclosed. Approved gene therapies Casgevy and Lyfgenia require cell collection, chemotherapy conditioning and specialized centers.",
+              "strategic_implication": "Investors are betting that the infrastructure burden of curative gene therapy leaves room for simpler, outpatient-deliverable options. Sickle cell programs should keep building comprehensive care capacity, since any such therapy is years away and current gene-therapy uptake stays constrained by center capacity.",
+              "confidence": "high",
+              "tags": [
+                "sickle-cell",
+                "biotech-financing",
+                "sirna",
+                "gene-therapy",
+                "rare-disease"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-sellas-galinpepimut-aml-phase-3",
+              "canonical_topic": "sellas-galinpepimut-aml-phase-3",
+              "duplicate_group": "sellas-galinpepimut-aml-phase-3",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/sellas-blood-cancer-immunotherapy-succeeds-clinical-trial/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T12:00:00Z"
+                }
+              ],
+              "title": "Sellas says its AML immunotherapy cut the risk of death by 41% in a Phase 3 trial",
+              "summary": "Sellas Life Sciences said Nov. 17 that galinpepimut-S reduced the risk of death by 41% compared with standard treatment in patients with advanced-stage acute myeloid leukemia, meeting the Phase 3 trial's main goal, STAT reported. STAT called the result unexpected; its biotech columnist had predicted in September that the drug would fail. Full trial data were not available in the visible text.",
+              "strategic_implication": "The topline survival result is company-reported and needs full data and peer review before it changes practice. Hematologic oncology programs should track the results for possible FDA filing and maintenance-therapy pathways in AML.",
+              "confidence": "medium",
+              "tags": [
+                "oncology",
+                "aml",
+                "immunotherapy",
+                "clinical-trials",
+                "biotech"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-capsida-gene-therapy-death-investigation",
+              "canonical_topic": "capsida-gene-therapy-death-investigation",
+              "duplicate_group": "capsida-gene-therapy-death-investigation",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/capsida-gene-therapy-trial-death-follow-up-investigation/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T09:30:00Z"
+                }
+              ],
+              "title": "Capsida reports progress on screening for the safety risk behind a fatal brain gene therapy trial case",
+              "summary": "Capsida Biotherapeutics researchers presented findings on the death of a patient in its brain-disease gene therapy trial last year; STAT's Morning Rounds noted a 3-year-old died of brain swelling 65 hours after treatment. Researchers did not pinpoint the cause but proposed experiments, including tests in monkeys, to screen future therapies, STAT reported Nov. 17; the full report is paywalled.",
+              "strategic_implication": "Safety screening for CNS-targeted gene therapies is still developing, which will shape regulatory expectations and trial pace. Academic centers hosting such trials should reinforce informed-consent language and acute neurological monitoring protocols.",
+              "confidence": "medium",
+              "tags": [
+                "gene-therapy",
+                "clinical-trials",
+                "patient-safety",
+                "neurology"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-flavored-nicotine-tablets-zyn-melts",
+              "canonical_topic": "flavored-nicotine-tablets-zyn-melts",
+              "duplicate_group": "flavored-nicotine-tablets-zyn-melts",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/zyn-melts-tobacco-firms-test-market-nicotine-pouch-alternatives/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T09:30:00Z"
+                }
+              ],
+              "title": "Tobacco firms test flavored dissolving nicotine tablets abroad as U.S. child nicotine poisonings rise",
+              "summary": "Philip Morris International has introduced mint Zyn Melts in the U.K. and Switzerland, and Japan Tobacco International launched Perlz in the U.K. in May, STAT and The Examination reported Nov. 17. Global nicotine-pouch sales reached $9.2 billion in 2025, with volume forecast to grow 20.5% a year. U.S. nicotine-poisoning calls nearly doubled from 2024 to 2025, with three-quarters of 2025 cases involving children under 6.",
+              "strategic_implication": "Candy-like nicotine formats raise youth-initiation and pediatric-ingestion risks before U.S. regulators act on them. Pediatric practices, poison-control partners and school-health programs should add newer oral nicotine products to screening and anticipatory guidance.",
+              "confidence": "high",
+              "tags": [
+                "tobacco",
+                "nicotine",
+                "youth-health",
+                "public-health",
+                "regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "AdventHealth is formalizing payer scorecards and building litigation capacity, showing how large systems are pushing back on denial friction. American Healthcare Systems' Illinois hospital shows the knock-on effects of operator distress on EMS and trauma coverage, and Ascension Wisconsin's $340 million plan targets deferred imaging, equipment and behavioral health capacity.",
+          "items": [
+            {
+              "item_id": "2026-11-17-adventhealth-payer-scorecards-2027",
+              "canonical_topic": "adventhealth-payer-scorecards-2027",
+              "duplicate_group": "adventhealth-payer-scorecards-2027",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/revenue-cycle-management/adventhealths-revenue-cycle-management-approach-for-2027/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T22:12:43Z"
+                }
+              ],
+              "title": "AdventHealth will begin grading payers on scorecards in 2027 and is staffing up for arbitration and litigation",
+              "summary": "AdventHealth plans to start rating payers in 2027 on administrative friction, cost of doing business, time to pay and turnaround on records requests and appeals, reviewing the scorecards at quarterly payer meetings, revenue cycle SVP Tim Reiner told Becker's. About 10% to 12% of AdventHealth's claims are initially denied and 1.5% to 3% are ultimately written off, with prior authorization tied to about a quarter of denials. The Florida system is hiring paralegals and attorneys to use arbitration and litigation more often.",
+              "strategic_implication": "Large systems are formalizing payer performance management and becoming more willing to litigate. Florida providers in AdventHealth markets should expect contract talks to sharpen, and any revenue-cycle leader can adopt a similar scorecard to quantify the cost of payer friction ahead of renegotiations.",
+              "confidence": "high",
+              "tags": [
+                "revenue-cycle",
+                "denials",
+                "payer-relations",
+                "prior-authorization",
+                "adventhealth",
+                "florida"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-ahs-vista-waukegan-diversion-low-census",
+              "canonical_topic": "ahs-vista-waukegan-diversion-low-census",
+              "duplicate_group": "ahs-vista-waukegan-diversion-low-census",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/illinois-hospital-turns-to-medical-staff-for-leadership-amid-diversion-low-census/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T22:11:44Z"
+                }
+              ],
+              "title": "American Healthcare Systems' Waukegan hospital leans on medical staff leaders amid diversion, low census and payroll strain",
+              "summary": "Vista Medical Center East in Waukegan, Ill., owned by American Healthcare Systems, went on ambulance bypass in early November amid payroll struggles and said Nov. 16 it had a low census and is giving medical executive committee members a bigger leadership role, Becker's reported. Illinois revoked its Level 2 trauma designation in late October after its anesthesia group suspended services over missed payments. The update follows CEO Mike Sarian's early-November settlement of Florida lawsuits, which relinquished control of five Florida facilities.",
+              "strategic_implication": "This shows how a distressed hospital operator's problems spread across markets, affecting trauma coverage and EMS routing. Neighboring systems and county EMS agencies in AHS markets should plan for sustained diversion surges, and boards should treat physician-led interim governance as a warning sign of instability.",
+              "confidence": "high",
+              "tags": [
+                "distressed-hospitals",
+                "american-healthcare-systems",
+                "ems-diversion",
+                "trauma",
+                "governance"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-ascension-wisconsin-340m-modernization",
+              "canonical_topic": "ascension-wisconsin-340m-modernization",
+              "duplicate_group": "ascension-wisconsin-340m-modernization",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/capital/ascension-wisconsin-commits-340m-to-expansions-modernizations/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T22:21:58Z"
+                }
+              ],
+              "title": "Ascension Wisconsin commits $340 million to multi-year facility, equipment and behavioral-health upgrades",
+              "summary": "Ascension Wisconsin announced Nov. 16 a $340 million multi-year infrastructure plan, funded with $315 million from Ascension and $25 million from its foundation. The plan replaces 16 MRI, 20 CT and 13 X-ray machines and more than 560 beds, budgets $31 million for physiologic monitoring and includes a $10 million inpatient behavioral health expansion at St. Francis Hospital in Milwaukee to 61 beds.",
+              "strategic_implication": "After years of portfolio trimming, Ascension is reinvesting in markets it kept, with an emphasis on deferred imaging and monitoring replacement. Competing systems in southeastern Wisconsin should expect stronger imaging and behavioral health positioning, and other systems can use the mix as a benchmark for catching up on deferred capital.",
+              "confidence": "high",
+              "tags": [
+                "capital-spending",
+                "ascension",
+                "imaging",
+                "behavioral-health",
+                "facilities"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "A final court ruling keeps visa terms for international researchers open-ended for now, protecting academic research staffing. Early daraxonrasib use shows that access to new oral cancer drugs depends on prior-authorization speed and nurse-led toxicity management.",
+          "items": [
+            {
+              "item_id": "2026-11-17-judge-strikes-student-visa-duration-limit",
+              "canonical_topic": "judge-strikes-student-visa-duration-limit",
+              "duplicate_group": "judge-strikes-student-visa-duration-limit",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/16/judge-rejects-visa-limits-international-researchers-upholds-duration-of-status-policy/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-16T19:59:14Z"
+                }
+              ],
+              "title": "Federal judge issues final ruling striking down four-year visa cap for international graduate students and postdocs",
+              "summary": "U.S. District Judge F. Dennis Saylor IV in Boston on Nov. 16 issued a final ruling striking down the administration's rule capping 'duration of status' visas at four years, calling it 'arbitrary, capricious, an abuse of discretion,' STAT reported. Universities and research advocates had warned the cap would deter international students, since graduate degrees often run longer than four years. The government's appeal of Saylor's earlier temporary block remains pending.",
+              "strategic_implication": "The ruling preserves, for now, an international pipeline that academic medical centers depend on for research labs and future physician-scientists. Research leaders should still plan for an appeal and continued immigration-policy volatility in postdoc recruiting.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "immigration",
+                "academic-medicine",
+                "research",
+                "visas"
+              ]
+            },
+            {
+              "item_id": "2026-11-17-daraxonrasib-pancreatic-cancer-rollout",
+              "canonical_topic": "daraxonrasib-pancreatic-cancer-rollout",
+              "duplicate_group": "daraxonrasib-pancreatic-cancer-rollout",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/uncategorized/how-1-drug-is-reshaping-cancer-care/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T13:30:00Z"
+                }
+              ],
+              "title": "Cancer centers report one-to-two-week starts on daraxonrasib for pancreatic cancer, with insurance approval the main bottleneck",
+              "summary": "Nearly three months after FDA approved daraxonrasib for metastatic pancreatic cancer on Aug. 26, leaders at seven organizations, including Penn Medicine, Sylvester, UC San Diego Health and UW Health, told Becker's patients are often starting within one to two weeks, though Lowell General reported three to four weeks. Insurance approval is the main bottleneck. Jefferson estimates at least a third of patients need dose reductions for rash, mouth sores or diarrhea, and resistance develops after roughly seven months in nearly all patients.",
+              "strategic_implication": "Getting a breakthrough oral oncolytic to patients depends on fast authorization and toxicity management. Oncology programs should give specialty-pharmacy navigators clear ownership of prior authorization and set nurse-led side-effect protocols, which matters especially for community sites.",
+              "confidence": "high",
+              "tags": [
+                "oncology",
+                "pancreatic-cancer",
+                "specialty-pharmacy",
+                "prior-authorization",
+                "clinical-practice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-16",
       "generated_at": "2026-11-16T16:00:00Z",
       "headline": "Today's Healthcare Insights",
@@ -18029,593 +18736,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-10-06",
-      "generated_at": "2026-10-06T12:39:02Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today’s edition leads with payer accountability: a final insurer price-transparency rule, FTC warnings to 24 hospital systems, Texas probes of UnitedHealth and BCBS of Texas, and appeals-court skepticism of the Medicare Advantage RADV rule. It also covers Utah’s AI prescribing pilot and UK continuous AI-device oversight, MA prior-auth discharge delays, Trinity Health’s margin, rare-disease and cardiac-monitoring deals, and healthcare’s outsized share of job growth. Sources include STAT News, Healthcare Dive, Fierce Healthcare, Fierce Biotech, MedCity News, Becker’s Hospital Review, and primary government and company releases.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
-          "STAT News RSS (main, health, health-tech, pharma, business, politics)",
-          "Healthcare Dive RSS (news)",
-          "MedCity News RSS",
-          "Fierce Healthcare RSS",
-          "Hospitalogy RSS",
-          "Modern Healthcare RSS",
-          "Healthcare Brew RSS",
-          "Becker's Hospital Review RSS",
-          "Fierce Biotech RSS",
-          "Primary-source verification (FTC, FDA, Texas AG, Utah Commerce, company releases)"
-        ],
-        "sources_successful": [
-          "STAT News RSS (main, health, health-tech, pharma, business, politics)",
-          "Healthcare Dive RSS (news)",
-          "MedCity News RSS",
-          "Becker's Hospital Review RSS",
-          "Fierce Biotech RSS",
-          "Fierce Healthcare items retained from the automated run",
-          "Primary-source verification (FTC, FDA, Texas AG, Utah Commerce, Business Wire, GlobeNewswire)"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels returned no messages in the connected mailbox since 2026-10-02",
-          "Fierce Healthcare RSS and article pages returned HTTP 403 on the rebuild fetch; retained items verified against primary releases",
-          "Modern Healthcare RSS returned HTTP 403",
-          "Healthcare Brew RSS returned HTTP 404",
-          "Hospitalogy RSS returned no items in the window",
-          "STAT+ articles (RADV hearing, longevity clinics, Utah sandbox, Jaypirca) paywalled; drafted from previews plus primary sources"
-        ],
-        "run_notes": "Same-day rebuild in place: the automated run (generated 11:07 UTC) had already written 2026-10-06 and left the feed at 31 editions. Retained all 10 automated items and corrected or enriched them against source pages: Jaypirca approval dated Oct. 2 with the no-17p-deletion label; Utah item rewritten around Nolla Health's acne pilot and third-party audits (unverified women's-health reference removed); longevity-clinic price corrected to the verified $5,500 package; Texas item clarified that the BCBSTX probe began Sept. 28; price-transparency, FTC, iRhythm, and pulse-oximeter items given exact figures. Added 8 new items from the 10/2-10/6 window screened against the prior 12 editions, refreshed bucket syntheses, and trimmed to 30 editions with the 2026-08-25 overflow archived.",
-        "items_captured": 18
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Washington is pushing payer accountability on two fronts: a final rule that makes insurer price files more usable and certifiable, and a Medicare Advantage audit rule that appeals judges appear ready to strike again. Texas adds state pressure with back-to-back investigations of two major insurers.",
-          "items": [
-            {
-              "item_id": "2026-10-06-insurer-price-transparency-final-rule",
-              "canonical_topic": "insurer-price-transparency-final-rule",
-              "duplicate_group": "insurer-price-transparency-final-rule",
-              "priority_score": 9,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/hhs-health-insurer-price-transparency-overhaul-final-rule/832105/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T09:43:38-04:00"
-                },
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/05/trump-kennedy-transparency-in-coverage-regulations-health-care-prices-disclosure/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T18:33:00Z"
-                }
-              ],
-              "title": "HHS, Labor and Treasury finalize a more usable insurer price-transparency rule",
-              "summary": "HHS, Labor and Treasury finalized Transparency in Coverage changes that move insurer rate files from monthly to quarterly, require most in-network rates as dollar figures, let insurers drop documented “ghost” rates, and require a named official to certify accuracy. The out-of-network disclosure threshold falls from 20 claims to 11. Regulators estimate about $400 million in one-time compliance costs and roughly $175 million in annual net savings; existing-file changes take effect five months after Federal Register publication, new files in 11 months.",
-              "strategic_implication": "Payers and employer-plan fiduciaries should prepare to adapt reporting systems and executive certifications while using more structured rate data to identify price variation. The shift may improve purchaser leverage even as quarterly reporting reduces the frequency of file updates.",
-              "confidence": "high",
-              "tags": [
-                "price-transparency",
-                "insurers",
-                "employer-benefits",
-                "healthcare-costs"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-texas-investigates-unitedhealth-bcbstx",
-              "canonical_topic": "texas-investigates-unitedhealth-bcbstx",
-              "duplicate_group": "texas-investigates-unitedhealth-bcbstx",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/texas-ag-ken-paxton-launches-investigations-unitedhealth-group-bcbstx",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T15:48:00-04:00"
-                },
-                {
-                  "source": "Texas Office of the Attorney General",
-                  "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-paxton-investigates-blue-cross-blue-shield-insurance-company-over-denials-and",
-                  "source_type": "web",
-                  "published_at": "2026-09-28T00:00:00-05:00"
-                },
-                {
-                  "source": "Washington Examiner",
-                  "url": "https://www.washingtonexaminer.com/policy/healthcare/4754244/ken-paxton-investigation-unitedhealth-group-deceptive-unlawful-practices/",
-                  "source_type": "web",
-                  "published_at": "2026-10-05T14:47:00-04:00"
-                }
-              ],
-              "title": "Texas AG widens payer scrutiny with UnitedHealth probe after Blue Cross Blue Shield of Texas inquiry",
-              "summary": "Texas Attorney General Ken Paxton opened an investigation into UnitedHealth Group on Oct. 5, alleging deceptive and unlawful practices that denied Texans medically necessary care. It follows a Sept. 28 investigation of Blue Cross Blue Shield of Texas over denials and delays of urgent care. Both are investigations, not findings or completed enforcement actions.",
-              "strategic_implication": "Payers operating in Texas should monitor the scope of the inquiries, preserve relevant records, and assess whether access, utilization-management, or member-communications practices could attract similar scrutiny.",
-              "confidence": "medium",
-              "tags": [
-                "payer-oversight",
-                "texas",
-                "access-to-care",
-                "managed-care"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-fifth-circuit-radv-rule-hearing",
-              "canonical_topic": "fifth-circuit-radv-rule-hearing",
-              "duplicate_group": "fifth-circuit-radv-rule-hearing",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/05/humana-medicare-advantage-radv-audits-lawsuit-hearing/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T20:13:00Z"
-                }
-              ],
-              "title": "Appeals judges signal skepticism of HHS in Humana’s Medicare Advantage audit case",
-              "summary": "At an Oct. 5 hearing in Humana v. Kennedy, a three-judge Fifth Circuit panel pushed back on HHS’s defense of its risk adjustment data validation (RADV) audit rule. A federal judge invalidated the rule in September 2025, finding the final version departed from the proposal without proper notice and comment; HHS appealed in November.",
-              "strategic_implication": "If the panel upholds the ruling, CMS’s main tool for recovering Medicare Advantage coding overpayments would need a new rulemaking. MA plans should still keep audit-ready documentation, since DOJ and settlement activity on risk adjustment continues.",
-              "confidence": "medium",
-              "tags": [
-                "medicare-advantage",
-                "risk-adjustment",
-                "radv",
-                "litigation"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Regulators are testing how far AI can act on its own. Utah will let an AI write initial acne prescriptions under third-party audit, while the UK moves to continuous monitoring of AI devices. Datavant and ID.me show the quieter side of digital access: faster identity checks for records requests.",
-          "items": [
-            {
-              "item_id": "2026-10-06-utah-expands-health-ai-sandbox",
-              "canonical_topic": "utah-health-ai-sandbox-expansion",
-              "duplicate_group": "utah-health-ai-sandbox-expansion",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T16:00:14Z"
-                },
-                {
-                  "source": "Utah Department of Commerce",
-                  "url": "https://commerce.utah.gov/ai/",
-                  "source_type": "web",
-                  "published_at": "2026-10-05T00:00:00-06:00"
-                }
-              ],
-              "title": "Utah lets an AI service write initial acne prescriptions and adds third-party audits to its health AI sandbox",
-              "summary": "Utah’s Office of Artificial Intelligence Policy approved healthcare sandbox pilots, including Nolla Health’s AI service that assesses mild-to-moderate acne from a structured intake and photos and can prescribe from a list of low-risk drugs. Clinicians review prescriptions at first, but the plan allows the AI to eventually prescribe without prior human review. Responding to critics, the state also signed independent evaluators to audit pilot guardrails, decision logs, and patient outcomes.",
-              "strategic_implication": "Health systems and regulators should clarify clinical accountability, escalation pathways, monitoring, and patient disclosure before similar autonomous tools move into routine care. The pilots could establish a practical test of how state-level oversight handles AI acting directly on treatment decisions.",
-              "confidence": "medium",
-              "tags": [
-                "health-ai",
-                "regulatory-sandbox",
-                "prescribing",
-                "womens-health"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-uk-mhra-continuous-ai-device-monitoring",
-              "canonical_topic": "uk-mhra-continuous-ai-device-monitoring",
-              "duplicate_group": "uk-mhra-continuous-ai-device-monitoring",
-              "priority_score": 7,
-              "primary_source": "Fierce Biotech",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Biotech",
-                  "url": "https://www.fiercebiotech.com/medtech/uk-unveils-new-policy-constantly-monitor-ai-based-medical-devices",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T00:00:00Z"
-                }
-              ],
-              "title": "UK moves to continuous oversight of AI medical devices",
-              "summary": "The UK government accepted 44 recommendations from its National Commission into the Regulation of AI in Healthcare, including having the MHRA monitor AI-based medical devices continually instead of relying on a one-time pre-market check. An implementation roadmap is due next spring, and the MHRA opened applications for phase three of its AI Airlock sandbox.",
-              "strategic_implication": "Developers selling into both the UK and US should plan for ongoing real-world performance monitoring as a regulatory expectation, not just a pre-market hurdle. US health systems can borrow the model for their own post-deployment AI governance.",
-              "confidence": "high",
-              "tags": [
-                "ai-regulation",
-                "medical-devices",
-                "uk",
-                "post-market-surveillance"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-datavant-idme-records-access",
-              "canonical_topic": "datavant-idme-medical-records-access",
-              "duplicate_group": "datavant-idme-medical-records-access",
-              "priority_score": 6,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/datavant-idme-partner-digital-identity-verification-medical-records",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T08:25:00-04:00"
-                },
-                {
-                  "source": "Business Wire (Datavant)",
-                  "url": "https://www.businesswire.com/news/home/20261005426338/en/Datavant-and-ID.me-Partner-to-Make-Patient-Access-to-Medical-Records-Faster-and-More-Secure",
-                  "source_type": "web",
-                  "published_at": "2026-10-05T00:00:00-04:00"
-                }
-              ],
-              "title": "Datavant and ID.me partner to simplify digital verification for medical-record requests",
-              "summary": "Datavant added ID.me identity verification to its Patient Request Tool so patients can confirm their identity digitally when requesting medical records. The companies say the change reduces friction and speeds the records-request process.",
-              "strategic_implication": "Providers and health-data intermediaries should assess whether identity verification can reduce request handling time without creating new access barriers for patients who cannot or do not use digital identity tools.",
-              "confidence": "high",
-              "tags": [
-                "patient-access",
-                "identity-verification",
-                "medical-records",
-                "interoperability"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Trinity Health’s thin 1.1% margin shows large nonprofits still have little cushion. Deal activity continues in cardiac monitoring and rare disease, while hospitals test cash-pay longevity services and a new fund lets safety-net providers own the startups selling to them.",
-          "items": [
-            {
-              "item_id": "2026-10-06-trinity-health-fy2026-margin",
-              "canonical_topic": "trinity-health-fy2026-operating-margin",
-              "duplicate_group": "trinity-health-fy2026-operating-margin",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/trinity-health-improves-11-operating-margin-fy2026",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T16:10:00-04:00"
-                }
-              ],
-              "title": "Trinity Health improves to a 1.1% operating margin in fiscal 2026",
-              "summary": "Trinity Health improved its fiscal 2026 operating margin to 1.1%, while operating revenue grew 5.2%. The 91-hospital system cited volume gains and higher rates alongside expense management, including a reduction in full-time equivalents and cost growth below medical inflation.",
-              "strategic_implication": "The result signals ongoing recovery but leaves limited room for shocks, making labor productivity, payer-rate realization, and disciplined expense growth central priorities for large nonprofit systems.",
-              "confidence": "high",
-              "tags": [
-                "hospital-finances",
-                "operating-margin",
-                "cost-management",
-                "nonprofit-health-systems"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-irhythm-vitalconnect-acquisition",
-              "canonical_topic": "irhythm-vitalconnect-acquisition",
-              "duplicate_group": "irhythm-vitalconnect-acquisition",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/finance/irhythm-acquires-vitalconnect-2375m-all-cash-deal",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T12:08:00-04:00"
-                },
-                {
-                  "source": "GlobeNewswire (iRhythm)",
-                  "url": "https://www.globenewswire.com/news-release/2026/10/05/3374624/0/en/irhythm-completes-acquisition-of-vitalconnect-expanding-its-cardiac-monitoring-platform-across-ambulatory-inpatient-and-hospital-to-home-care.html",
-                  "source_type": "web",
-                  "published_at": "2026-10-05T00:00:00-04:00"
-                }
-              ],
-              "title": "iRhythm completes its $237.5 million acquisition of VitalConnect",
-              "summary": "iRhythm closed its acquisition of VitalConnect for $237.5 million in cash, subject to adjustments, plus up to 423,334 shares. VitalConnect adds wearable multi-vitals monitoring and mobile cardiac telemetry across ambulatory, inpatient, and hospital-to-home care. iRhythm expects the deal to lift revenue growth from 2027 while keeping its 15% adjusted EBITDA margin target.",
-              "strategic_implication": "The deal broadens iRhythm’s remote-monitoring portfolio and may intensify competition around integrated cardiac monitoring. Execution will depend on combining platforms and clinical workflows without disrupting existing provider relationships.",
-              "confidence": "medium",
-              "tags": [
-                "remote-patient-monitoring",
-                "cardiac-care",
-                "medtech",
-                "mergers-acquisitions"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-shionogi-intrabio-acquisition",
-              "canonical_topic": "shionogi-intrabio-acquisition",
-              "duplicate_group": "shionogi-intrabio-acquisition",
-              "priority_score": 7,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/10/shionogi-adds-to-its-rare-disease-strategy-with-2b-intrabio-acquisition/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T17:10:00-04:00"
-                }
-              ],
-              "title": "Shionogi agrees to buy IntraBio for $2 billion to expand in rare neurological disease",
-              "summary": "Shionogi will acquire IntraBio and its drug Aqneursa (levacetylleucine), approved for Niemann-Pick disease type C and, since September 2026, as the first therapy for ataxia-telangiectasia. Aqneursa generated $67.8 million in fiscal 2025. It is Shionogi’s second major rare-disease deal this year after a $2.5 billion purchase of Radicava rights; closing is expected by year-end.",
-              "strategic_implication": "The price relative to current sales shows buyers paying up for approved rare-disease assets with label-expansion potential. Payers should expect continued high launch pricing in small-population neurology.",
-              "confidence": "high",
-              "tags": [
-                "m-and-a",
-                "rare-disease",
-                "pharma"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-hospital-longevity-clinics",
-              "canonical_topic": "nonprofit-hospital-longevity-clinics",
-              "duplicate_group": "nonprofit-hospital-longevity-clinics",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/06/hospitals-longevity-clinics-healthy-aging-wellness-trend/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T08:30:00Z"
-                }
-              ],
-              "title": "Nonprofit hospitals enter the longevity-clinic market with premium self-pay services",
-              "summary": "STAT reports that Northwestern Medicine, Weill Cornell, and Mayo Clinic have launched cash-pay longevity clinics offering detailed fitness and aging assessments. Northwestern’s annual package costs $5,500. Critics question the out-of-pocket prices at nonprofit hospitals and whether some tests have evidence that they improve health.",
-              "strategic_implication": "Health systems should test demand and clinical value before expanding premium wellness offerings, while making evidence, limitations, and the self-pay nature of services clear to consumers.",
-              "confidence": "medium",
-              "tags": [
-                "longevity",
-                "hospital-strategy",
-                "self-pay",
-                "preventive-health"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-facktor-ventures-safety-net-fund",
-              "canonical_topic": "facktor-ventures-safety-net-fund",
-              "duplicate_group": "facktor-ventures-safety-net-fund",
-              "priority_score": 5,
-              "primary_source": "MedCity News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "MedCity News",
-                  "url": "https://medcitynews.com/2026/10/investing-in-community-health-a-new-model-for-safety-net-healthcare-innovation/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T19:20:00-04:00"
-                }
-              ],
-              "title": "New venture fund makes community health centers majority owners of the capital backing safety-net startups",
-              "summary": "Facktor Ventures, the venture arm of a consulting firm that works with more than 360 health centers, launched to invest at seed and Series A in software and services for community health centers. Care-delivery organizations are collectively majority limited partners. Target areas include patient access, revenue cycle, care management, workforce, and cybersecurity; fund size was not disclosed.",
-              "strategic_implication": "Health centers face Medicaid and marketplace coverage losses, and this structure gives them a say in which tools get built and a possible return. Vendors targeting the safety net should expect buyers who are also investors.",
-              "confidence": "medium",
-              "tags": [
-                "venture-capital",
-                "community-health-centers",
-                "safety-net"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Price transparency now carries FTC consumer-protection risk on top of CMS rules. Hospitals are also using MedPAC data to document how MA prior authorization delays discharges, and the Intermountain-UCHealth split shows how fragile cross-system value-based networks can be.",
-          "items": [
-            {
-              "item_id": "2026-10-06-ftc-hospital-price-transparency-letters",
-              "canonical_topic": "ftc-hospital-price-transparency-warning-letters",
-              "duplicate_group": "ftc-hospital-price-transparency-warning-letters",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/ftc-sends-price-transparency-warning-letters-24-large-hospital-systems-price",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T14:22:00-04:00"
-                },
-                {
-                  "source": "Federal Trade Commission",
-                  "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-issues-letters-warning-hospitals-against-deceptive-pricing-practices",
-                  "source_type": "web",
-                  "published_at": "2026-10-05T00:00:00-04:00"
-                }
-              ],
-              "title": "FTC warns 24 hospital systems that incomplete price disclosures may violate federal law",
-              "summary": "FTC Chairman Andrew Ferguson sent letters on Oct. 5 to 24 of the largest health systems, warning that incomplete, inaccurate, or untimely price information can be an unfair or deceptive practice under the FTC Act even when a system meets CMS hospital price-transparency rules.",
-              "strategic_implication": "Hospitals should audit machine-readable files and consumer-facing estimates for completeness, accuracy, and consistency, with clear ownership across finance, compliance, and patient-access teams.",
-              "confidence": "high",
-              "tags": [
-                "hospital-operations",
-                "price-transparency",
-                "ftc",
-                "compliance"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-aha-ma-prior-auth-post-acute-delays",
-              "canonical_topic": "aha-ma-prior-auth-post-acute-delays",
-              "duplicate_group": "aha-ma-prior-auth-post-acute-delays",
-              "priority_score": 8,
-              "primary_source": "Becker's Hospital Review",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/finance/aha-medicare-advantage-prior-auth-keeps-discharge-ready-patients-in-acute-care-beds/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T21:44:00Z"
-                }
-              ],
-              "title": "AHA tells MedPAC that Medicare Advantage prior auth keeps discharge-ready patients in hospital beds",
-              "summary": "Preliminary MedPAC data show MA enrollees had 5 inpatient rehab stays per 1,000 in 2023 versus 14 for traditional Medicare, with longer acute stays before transfer (9 vs. 6 days for rehab; 21 vs. 13 for long-term care hospitals). AHA attributed the gap to prior authorization and utilization management and said plans appear not to follow CMS’s 72-hour expedited and seven-day standard decision timelines in effect since January.",
-              "strategic_implication": "Hospitals should track authorization-to-transfer time and avoidable bed days by MA plan to support payer negotiations and complaints to CMS. The data could shape MedPAC’s next MA recommendations.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "prior-authorization",
-                "post-acute-care",
-                "throughput"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-intermountain-exits-trinsic-uchealth",
-              "canonical_topic": "intermountain-exits-trinsic-uchealth",
-              "duplicate_group": "intermountain-exits-trinsic-uchealth",
-              "priority_score": 6,
-              "primary_source": "Becker's Hospital Review",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/finance/intermountain-exits-colorado-care-network-joint-venture-with-uchealth/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T22:25:00Z"
-                }
-              ],
-              "title": "Intermountain exits its Colorado clinically integrated network with UCHealth",
-              "summary": "Intermountain Health is leaving Trinsic, the Colorado clinically integrated network it formed with UCHealth in 2023, which represents more than 900 primary care physicians. UCHealth takes over after Dec. 7. A WARN notice lists 117 affected employees, including 29 nurse care managers; most are expected to move to UCHealth.",
-              "strategic_implication": "Value-based networks between rival systems remain fragile. Physicians and payers in the Trinsic network should watch for changes to contracts, attribution, and care-management staffing during the handoff.",
-              "confidence": "high",
-              "tags": [
-                "clinically-integrated-network",
-                "value-based-care",
-                "joint-ventures",
-                "colorado"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Healthcare has driven most US job growth, but a slower September may signal coverage losses reaching staffing. Clinical updates include drifting pulse-oximeter accuracy, a first-line approval for Jaypirca in CLL, and a blood-based colorectal screening option with limited precancer detection.",
-          "items": [
-            {
-              "item_id": "2026-10-06-pulse-oximeter-performance-shifts",
-              "canonical_topic": "pulse-oximeter-performance-shifts",
-              "duplicate_group": "pulse-oximeter-performance-shifts",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/06/pulse-oximeters-overestimate-and-underestimate-blood-oxygen-study/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T08:30:00Z"
-                }
-              ],
-              "title": "Study finds pulse-oximeter readings shifted from overestimating to underestimating oxygen",
-              "summary": "A five-year retrospective study of Johns Hopkins Hospital ICU data, published in the Annals of the American Thoracic Society, found the same make of pulse oximeter shifted from overestimating to underestimating blood oxygen compared with arterial blood gas tests. Errors were worse in patients of color. Manufacturer Masimo said it knew of no sensor, software, or manufacturing changes that would explain the drift.",
-              "strategic_implication": "Clinical leaders should treat pulse-oximeter results as one input alongside symptoms and other measures, especially when readings conflict with a patient’s condition. Procurement and quality teams should also examine device performance across patient populations and over time.",
-              "confidence": "high",
-              "tags": [
-                "pulse-oximetry",
-                "patient-safety",
-                "clinical-equity",
-                "medical-devices"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-lilly-jaypirca-first-line-cll-approval",
-              "canonical_topic": "lilly-jaypirca-first-line-cll-approval",
-              "duplicate_group": "lilly-jaypirca-first-line-cll-approval",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/05/biotech-news-lilly-jaypirca-approved-as-first-line-cll-therapy/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T13:55:41Z"
-                },
-                {
-                  "source": "U.S. Food and Drug Administration",
-                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pirtobrutinib-previously-untreated-chronic-lymphocytic-leukemia-or-small-lymphocytic",
-                  "source_type": "web",
-                  "published_at": "2026-10-02T00:00:00-04:00"
-                }
-              ],
-              "title": "FDA approves Lilly’s Jaypirca as a first-line CLL and SLL therapy",
-              "summary": "On Oct. 2, the FDA approved Lilly’s Jaypirca (pirtobrutinib), a non-covalent BTK inhibitor, for adults with previously untreated chronic lymphocytic leukemia or small lymphocytic lymphoma with no known 17p deletion. The drug was previously approved only after other therapies.",
-              "strategic_implication": "Oncology service lines and payers should review treatment pathways, formulary positioning, and budget forecasts as clinicians assess the drug’s role in first-line care.",
-              "confidence": "high",
-              "tags": [
-                "oncology",
-                "fda-approval",
-                "cll",
-                "drug-therapy"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-kff-healthcare-job-growth",
-              "canonical_topic": "kff-healthcare-job-growth",
-              "duplicate_group": "kff-healthcare-job-growth",
-              "priority_score": 7,
-              "primary_source": "Becker's Hospital Review",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/workforce/healthcare-drove-75-of-us-job-growth-over-the-past-year-kff/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-05T21:18:00Z"
-                }
-              ],
-              "title": "Healthcare accounted for about 75% of US job growth over the past year",
-              "summary": "Peterson-KFF found healthcare added 372,000 jobs from September 2025 to September 2026 versus 124,000 in the rest of the economy, reaching a record 11.7% of US employment. September’s gain of 17,000 was about half the prior 12-month average, and KFF warned that falling revenue and rising uninsurance (CBO projects 37.4 million uninsured by 2036) could tighten hiring.",
-              "strategic_implication": "The slower September number may be an early sign that coverage losses are reaching provider staffing plans. Workforce leaders should test hiring plans against payer-mix and uncompensated-care scenarios.",
-              "confidence": "high",
-              "tags": [
-                "workforce",
-                "labor-market",
-                "uninsured"
-              ]
-            },
-            {
-              "item_id": "2026-10-06-abbott-simplescreen-crc-blood-test-launch",
-              "canonical_topic": "abbott-simplescreen-crc-blood-test-launch",
-              "duplicate_group": "abbott-simplescreen-crc-blood-test-launch",
-              "priority_score": 6,
-              "primary_source": "Fierce Biotech",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Biotech",
-                  "url": "https://www.fiercebiotech.com/medtech/abbott-launches-simplescreen-crc-blood-test-us",
-                  "source_type": "rss",
-                  "published_at": "2026-10-02T02:17:00Z"
-                }
-              ],
-              "title": "Abbott launches FDA-approved SimpleScreen CRC blood test for people who skip other screening",
-              "summary": "Abbott began the US launch of SimpleScreen CRC, a Freenome-developed blood test for average-risk adults 45 and older who decline or do not complete preferred screening. In the 48,000-person PREEMPT CRC study it showed 81.1% overall cancer sensitivity, 63.5% stage I sensitivity, and 13.7% sensitivity for advanced precancerous lesions.",
-              "strategic_implication": "The test could reach some of the estimated 28 million unscreened adults, but low precancer detection means it should not replace colonoscopy or stool tests. Primary care and quality teams should define where blood tests fit in screening outreach.",
-              "confidence": "high",
-              "tags": [
-                "cancer-screening",
-                "diagnostics",
-                "colorectal-cancer"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-16T16:00:00Z"
+  "last_updated": "2026-11-17T13:45:00Z"
 }

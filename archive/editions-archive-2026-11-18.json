@@ -1,0 +1,540 @@
+{
+  "archived_at": "2026-11-18T14:30:00Z",
+  "note": "Editions trimmed from latest-insights.json by the 30-edition cap.",
+  "editions": [
+    {
+      "edition_date": "2026-10-07",
+      "generated_at": "2026-10-07T12:37:12Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition leads with widening federal oversight: House pressure on CMS over remote-monitoring limits, a DOJ fraud directive that reaches drug and device makers, and a pending Grail decision that would trigger mandatory Medicare coverage. It also covers FDA's FY 2027 AI guidance agenda, Teladoc's AI rollouts, McKesson-CD&R's $5.8B Option Care deal, Caribou's shutdown, and new evidence that immigration enforcement is delaying emergency care in Los Angeles. Sources include STAT News, Healthcare Dive, Fierce Healthcare, and primary government and legal analyses.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
+          "STAT News RSS (main, health, health-tech, pharma, politics)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Primary-source verification (FDA CDRH, DOJ directive analyses, study coverage)"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main, health, health-tech, pharma, politics)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare items retained from the automated run",
+          "Primary-source verification (FDA CDRH FY 2027 guidance lists, Debevoise analysis of DOJ Directive 26-12, Medical Xpress study coverage)"
+        ],
+        "sources_failed": [
+          "Gmail InsightsSources/* labels and newsletter senders returned no messages in the connected mailbox since 2026-10-05",
+          "Fierce Healthcare RSS returned a Cloudflare bot challenge on the rebuild fetch; automated-run Fierce items retained",
+          "STAT+ articles (DOJ directive, FDA AI guidance, AstraZeneca site, MAHA) paywalled; drafted from previews plus primary or secondary sources"
+        ],
+        "run_notes": "Same-day rebuild in place: the automated run (generated 2026-10-07T11:08:40Z) had already written 2026-10-07 and trimmed the feed to 30 editions, but dropped 2026-08-26 without archiving it; that edition is now preserved in archive/editions-archive-2026-10-07.json. Retained 8 of 9 automated items; removed the Intermountain-UCHealth CIN exit item (2026-10-07-intermountain-exits-trinsic) because the same story ran in the 2026-10-06 edition. Added 9 new items from the 10/6-10/7 window screened against the prior 12 editions, and refreshed bucket syntheses.",
+        "items_captured": 17
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Federal oversight is widening on several fronts: Congress is pressing CMS on remote-monitoring limits, DOJ is extending fraud enforcement to drug and device makers, and a pending Grail decision would trigger mandatory Medicare coverage. Critics are also warning that AI documentation may be raising inpatient coding intensity.",
+          "items": [
+            {
+              "item_id": "2026-10-07-lawmakers-urge-cms-rpm-flexibility",
+              "canonical_topic": "lawmakers-urge-cms-rpm-flexibility",
+              "duplicate_group": "lawmakers-urge-cms-rpm-flexibility",
+              "priority_score": 8,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/lawmakers-press-cms-roll-back-proposed-restrictions-remote-patient-monitoring",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T14:07:00-04:00"
+                }
+              ],
+              "title": "32 House lawmakers ask CMS to reconsider proposed limits on remote patient monitoring",
+              "summary": "A bipartisan group of 32 House lawmakers urged CMS Administrator Mehmet Oz to reconsider proposed Medicare payment-rule changes affecting how remote patient monitoring services are staffed and delivered. The letter puts provider and patient access concerns into the debate over Medicare's RPM payment policy.",
+              "strategic_implication": "RPM operators should track the final rule closely and assess how staffing and delivery requirements could affect their care models. Congressional pushback signals that implementation details may remain contested.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "remote-patient-monitoring",
+                "cms",
+                "reimbursement"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-doj-fraud-directive-fdca-drugmakers",
+              "canonical_topic": "doj-fraud-directive-fdca-drugmakers",
+              "duplicate_group": "doj-fraud-directive-fdca-drugmakers",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/07/trump-administration-adds-pharma-to-list-priorities-combating-white-collar-fraud/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T12:10:00Z"
+                },
+                {
+                  "source": "Debevoise & Plimpton",
+                  "url": "https://www.debevoise.com/insights/publications/2026/10/new-doj-directive-details-fraud-divisions-corporat",
+                  "source_type": "web",
+                  "published_at": "2026-10-05T00:00:00Z"
+                }
+              ],
+              "title": "DOJ fraud directive puts drug and device makers in scope under the Food, Drug, and Cosmetic Act",
+              "summary": "Directive 26-12, issued Oct. 1 by DOJ's National Fraud Enforcement Division, sets corporate enforcement priorities that include healthcare fraud and explicitly cites the Food, Drug, and Cosmetic Act. STAT reports the reference signals closer scrutiny of pharmaceutical and medical-device manufacturers, a shift from the division's usual focus on providers, clinics, home health agencies, and hospices. A former DOJ official called it a subtle but significant expansion of the division's jurisdiction.",
+              "strategic_implication": "Life-sciences companies should revisit compliance programs covering promotion, manufacturing quality, and data integrity, along with self-disclosure readiness. The directive's cooperation factors give companies an incentive to find and report issues before prosecutors do.",
+              "confidence": "medium",
+              "tags": [
+                "doj",
+                "fraud-enforcement",
+                "pharma",
+                "medical-devices",
+                "compliance"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-ai-documentation-bump-codes-hospital-bills",
+              "canonical_topic": "ai-documentation-bump-codes-hospital-bills",
+              "duplicate_group": "ai-documentation-bump-codes-hospital-bills",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T08:30:00Z"
+                }
+              ],
+              "title": "Physician warns that AI documentation tools may inflate hospital bills through secondary-diagnosis bump codes",
+              "summary": "In a STAT opinion piece, resident physician Leah Pierson argues that AI-assisted documentation can raise DRG payments when secondary diagnoses such as anemia or low sodium are coded even when they do not meaningfully change care. Blue Cross Blue Shield says these codes have cost it hundreds of millions of dollars over two years. CMS last substantially revised the qualifying code list in 2007, and a 2019 proposal to prune it stalled after hospital pushback.",
+              "strategic_implication": "Expect payer audits and CMS policy attention on AI-driven coding intensity in inpatient settings. Revenue-cycle and compliance leaders should check whether ambient or CDI tools let clinicians flag a secondary diagnosis as not clinically significant.",
+              "confidence": "medium",
+              "tags": [
+                "coding-intensity",
+                "drg",
+                "ambient-ai",
+                "revenue-cycle",
+                "payer-audits"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-grail-mced-medicare-coverage-cost",
+              "canonical_topic": "grail-mced-medicare-coverage-cost",
+              "duplicate_group": "grail-mced-medicare-coverage-cost",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/grail-multi-cancer-screening-test-criticism/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T08:30:00Z"
+                }
+              ],
+              "title": "Ahead of an FDA decision on Grail's test, a critic flags Medicare's automatic coverage and a $60 billion to $100 billion annual cost",
+              "summary": "Writing in STAT, H. Gilbert Welch argues FDA should not approve Grail's multicancer blood test because its 140,000-person trial in England showed no reduction in late-stage cancers and did not show fewer cancer deaths. A 2026 law requires Medicare to cover multicancer screening tests once FDA approves them, bypassing the usual U.S. Preventive Services Task Force role. Welch estimates annual screening of Americans 50 and older could cost $60 billion to $100 billion.",
+              "strategic_implication": "An approval would create an immediate Medicare benefit with significant spending and downstream-workup implications. Health systems and payers should plan for follow-up diagnostic capacity, false-positive management, and patient counseling.",
+              "confidence": "medium",
+              "tags": [
+                "cancer-screening",
+                "medicare-coverage",
+                "fda",
+                "grail",
+                "diagnostics"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-democrats-court-maha-voters",
+              "canonical_topic": "democrats-court-maha-voters",
+              "duplicate_group": "democrats-court-maha-voters",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/democrats-focus-on-food-toxins-win-maha-voters-midterm-elections/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T08:30:00Z"
+                }
+              ],
+              "title": "Democrats court MAHA voters with food and environmental platforms ahead of the midterms",
+              "summary": "Key Democrats are meeting with Make America Healthy Again activists and rolling out food and environmental agendas to appeal to MAHA voters before the midterms. They are emphasizing food and toxins while setting aside HHS Secretary Robert F. Kennedy Jr.'s focus on vaccine injuries, which pollsters describe as a relatively fringe issue.",
+              "strategic_implication": "Food additives, chemical exposure, and nutrition policy look increasingly bipartisan. Food, ag, and consumer-health companies should expect regulatory pressure to continue whatever the election outcome.",
+              "confidence": "medium",
+              "tags": [
+                "maha",
+                "food-policy",
+                "midterms",
+                "environmental-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Vendors are packaging ambient documentation and remote monitoring into virtual and hospital care platforms while FDA's device center makes AI lifecycle and change-control guidance its top priority for fiscal 2027.",
+          "items": [
+            {
+              "item_id": "2026-10-07-fda-cdrh-fy2027-ai-guidance-agenda",
+              "canonical_topic": "fda-cdrh-fy2027-ai-guidance-agenda",
+              "duplicate_group": "fda-cdrh-fy2027-ai-guidance-agenda",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/fda-spells-out-2027-ai-guidance-plans-health-tech/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T13:59:00Z"
+                },
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/medical-devices/guidance-documents-medical-devices-and-radiation-emitting-products/cdrh-proposed-guidances-fiscal-year-2027-fy-2027",
+                  "source_type": "web",
+                  "published_at": "2026-09-30T00:00:00Z"
+                }
+              ],
+              "title": "FDA's device center puts AI lifecycle and change-control guidance at the top of its FY 2027 agenda",
+              "summary": "CDRH published its fiscal 2027 proposed guidance lists, and STAT Health Tech highlighted new AI guidances expected next year. Finalizing guidance on AI-enabled devices across the product lifecycle and on predetermined change control plans (PCCPs) leads the priority A-list, according to regulatory trade coverage.",
+              "strategic_implication": "AI device developers and health-system buyers should plan for firmer FDA expectations on postmarket monitoring and how model updates are managed. Final PCCP guidance would make it easier to plan iterative model updates without new submissions.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "ai-regulation",
+                "medical-devices",
+                "pccp",
+                "guidance"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-teladoc-remote-monitoring-ambient-ai",
+              "canonical_topic": "teladoc-remote-monitoring-ambient-ai",
+              "duplicate_group": "teladoc-remote-monitoring-ambient-ai",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/teladoc-unveils-remote-monitoring-ambient-ai-features/832328/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T06:02:00-04:00"
+                }
+              ],
+              "title": "Teladoc adds AI scribing and camera-based vital-sign monitoring to its virtual-care platform",
+              "summary": "Teladoc integrated artificial-intelligence scribing and camera-based vital-sign monitoring into its virtual-care platform, Healthcare Dive reported. The company is introducing the features as it works to recover from significant financial setbacks.",
+              "strategic_implication": "Health systems evaluating virtual-care platforms may increasingly expect documentation automation and remote monitoring to work together. Adoption will depend on workflow fit and evidence that the features improve care delivery at sustainable cost.",
+              "confidence": "high",
+              "tags": [
+                "virtual-care",
+                "ambient-ai",
+                "remote-monitoring",
+                "teladoc"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-teladoc-solo-hospital-ai",
+              "canonical_topic": "teladoc-solo-hospital-ai",
+              "duplicate_group": "teladoc-solo-hospital-ai",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/teladoc-health-unveils-2-new-ai-capabilities-within-solo-platform",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T15:28:00-04:00"
+                }
+              ],
+              "title": "Teladoc adds two AI capabilities to its Solo platform for hospitals",
+              "summary": "Teladoc unveiled two new AI capabilities within its Solo platform for hospitals. The tools are intended to surface timely patient insights in care environments and reduce technology fragmentation, according to the company.",
+              "strategic_implication": "Hospitals may favor AI features that plug into existing care environments rather than add another standalone system. Buyers should test whether the promised insight and consolidation translate into measurable workflow improvements.",
+              "confidence": "medium",
+              "tags": [
+                "hospital-ai",
+                "teladoc",
+                "clinical-workflow",
+                "technology-integration"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital is shifting toward scale players: McKesson and CD&R's $5.8 billion Option Care deal and AstraZeneca's Boston expansion contrast with Caribou's shutdown after it failed to finance a pivotal trial, alongside a CEO transition at Highmark.",
+          "items": [
+            {
+              "item_id": "2026-10-07-mckesson-cdr-option-care-acquisition",
+              "canonical_topic": "mckesson-cdr-option-care-acquisition",
+              "duplicate_group": "mckesson-cdr-option-care-acquisition",
+              "priority_score": 9,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/cdr-mckesson-acquiring-infusion-therapy-provider-option-care-health-58b",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T11:08:00-04:00"
+                }
+              ],
+              "title": "McKesson and CD&R agree to acquire Option Care Health in a $5.8B deal",
+              "summary": "McKesson and private-equity firm Clayton, Dubilier & Rice agreed to acquire Option Care Health in a transaction valued at $5.8 billion. Option Care is the largest independent provider of home and alternate-site infusion services, and the deal is expected to close in the first half of 2027.",
+              "strategic_implication": "The deal puts a large infusion-care platform at the center of a major distribution and investment transaction. Health systems, manufacturers, and competing infusion providers should watch for post-close changes to network strategy and service capacity.",
+              "confidence": "high",
+              "tags": [
+                "infusion-therapy",
+                "mergers-acquisitions",
+                "home-care",
+                "healthcare-investment"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-caribou-biosciences-shutdown",
+              "canonical_topic": "caribou-biosciences-shutdown",
+              "duplicate_group": "caribou-biosciences-shutdown",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/caribou-biosciences-shutting-down-lymphoma-car-t-therapy/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T08:30:00Z"
+                }
+              ],
+              "title": "Caribou Biosciences to shut down after failing to finance a late-stage CAR-T trial",
+              "summary": "Caribou Biosciences said it is shutting down after failing to raise the capital needed for a late-stage clinical trial of its off-the-shelf CAR-T therapy for lymphoma. The company will discontinue development of its two CRISPR-based CAR-T candidates, including a program for advanced B-cell non-Hodgkin lymphoma, despite having worked with FDA to finalize a Phase 3 trial design.",
+              "strategic_implication": "The closure highlights financing risk even for advanced cell-therapy programs with regulatory alignment and a defined pivotal-trial path. Biotechs approaching late-stage trials may need earlier partnering or alternative financing plans to protect programs from capital-market constraints.",
+              "confidence": "high",
+              "tags": [
+                "biotechnology",
+                "car-t",
+                "clinical-trials",
+                "venture-funding"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-highmark-ceo-transition",
+              "canonical_topic": "highmark-ceo-transition",
+              "duplicate_group": "highmark-ceo-transition",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/payers/highmark-taps-karen-hanlon-ceo-david-holmberg-transition-executive-chairman",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T14:18:00-04:00"
+                }
+              ],
+              "title": "Highmark names Karen Hanlon CEO as David Holmberg moves to executive chair",
+              "summary": "Highmark named Karen Hanlon as its next CEO, with the transition set for Jan. 1. Current CEO David Holmberg will become executive chairperson.",
+              "strategic_implication": "The transition creates a leadership inflection point for a major integrated payer-provider organization. Partners should monitor whether the new leadership team changes strategic priorities or operating plans.",
+              "confidence": "high",
+              "tags": [
+                "health-insurance",
+                "executive-transition",
+                "payer-leadership",
+                "highmark"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-astrazeneca-kendall-square-rd-center",
+              "canonical_topic": "astrazeneca-kendall-square-rd-center",
+              "duplicate_group": "astrazeneca-kendall-square-rd-center",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/biotech-news-astrazeneca-opens-new-boston-site/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T14:41:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/06/us-funded-psychedelic-trials-astrazeneca-research-center/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T13:36:00Z"
+                }
+              ],
+              "title": "AstraZeneca opens an 18-story Kendall Square R&D center, the centerpiece of its $1 billion Massachusetts investment",
+              "summary": "AstraZeneca opened a 570,000-square-foot, 18-story R&D site in Kendall Square in Cambridge, Massachusetts, as the centerpiece of a $1 billion state investment program. STAT framed the opening against an unsettled Boston biotech market following a run of Chinese licensing deals.",
+              "strategic_implication": "Large pharma is still committing to U.S. research hubs even as early-stage assets are increasingly sourced from China. Biotech employers and local health systems in Boston should expect continued competition for research talent.",
+              "confidence": "high",
+              "tags": [
+                "astrazeneca",
+                "biotech",
+                "r-and-d",
+                "boston"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "New evidence from Los Angeles shows immigration enforcement can push safety-net patients to delay emergency care until they need admission, raising acuity and cost pressure for providers.",
+          "items": [
+            {
+              "item_id": "2026-10-07-la-er-visits-foreign-born-ice-enforcement",
+              "canonical_topic": "la-er-visits-foreign-born-ice-enforcement",
+              "duplicate_group": "la-er-visits-foreign-born-ice-enforcement",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/health-news-er-visits-from-people-born-outside-the-u-s-dropped-after-ice-raids/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T11:50:00Z"
+                },
+                {
+                  "source": "Medical Xpress",
+                  "url": "https://medicalxpress.com/news/2026-10-immigration-la-foreign-born-patients.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-05T00:00:00Z"
+                }
+              ],
+              "title": "ER visits by foreign-born patients fell sharply at LA safety-net hospitals after immigration enforcement intensified",
+              "summary": "A USC study in JAMA Network Open found emergency department visits by people born outside the U.S. dropped sharply at three Los Angeles County safety-net hospitals after ICE operations increased last year. Visits were more than 20% lower than among U.S.-born patients in the first four weeks, while admissions in this population rose, suggesting patients delayed care until they were sicker.",
+              "strategic_implication": "Safety-net systems in enforcement-heavy markets should prepare for higher-acuity presentations and uncompensated-care pressure from delayed care. Outreach, community clinics, and clear privacy messaging may help keep patients from avoiding care.",
+              "confidence": "high",
+              "tags": [
+                "safety-net",
+                "emergency-department",
+                "immigration",
+                "access-to-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Staffing technology continues to attract capital, and clinical leaders face access and safety questions on precision rare-disease therapies, federally funded psychedelic trials, and an unconfirmed plague report in Russia.",
+          "items": [
+            {
+              "item_id": "2026-10-07-vitalize-hospital-staffing-ai",
+              "canonical_topic": "vitalize-hospital-staffing-ai",
+              "duplicate_group": "vitalize-hospital-staffing-ai",
+              "priority_score": 7,
+              "primary_source": "Fierce Healthcare",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/health-tech/vitalize-secures-31m-scale-ai-powered-operating-system-hospital-staffing-and-scheduling",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T11:21:00-04:00"
+                }
+              ],
+              "title": "Vitalize raises $31M to scale AI-powered hospital staffing and scheduling software",
+              "summary": "Vitalize raised $31 million to scale software designed to automate hospital staffing, forecast demand, and manage capacity. The company says its platform aims to reduce reliance on overtime and agency labor.",
+              "strategic_implication": "Labor-constrained hospitals are continuing to invest in tools that connect demand forecasting with staffing decisions. Buyers should evaluate whether automation improves coverage and lowers contingent-labor costs without compromising clinical judgment or staff experience.",
+              "confidence": "high",
+              "tags": [
+                "workforce-management",
+                "hospital-operations",
+                "artificial-intelligence",
+                "staffing"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-duchenne-exon-skipping-access",
+              "canonical_topic": "duchenne-exon-skipping-access",
+              "duplicate_group": "duchenne-exon-skipping-access",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/muscular-dystrophy-exon-skipping-drugs-novartis-dyne/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T08:30:00Z"
+                }
+              ],
+              "title": "Mutation-specific exon-skipping therapies leave most people with Duchenne ineligible",
+              "summary": "STAT reports that Avidity Biosciences' exon-skipping drug Del-zota, now under FDA review, is designed for a specific genetic mutation and may be suitable for about 7% of people with Duchenne muscular dystrophy in the United States. The broader exon-skipping approach could theoretically apply to a much larger share of patients, but each drug must match a patient's mutation.",
+              "strategic_implication": "Rare-disease developers and care teams must plan around genetically narrow populations, including diagnostic identification, trial recruitment, and access pathways. The case also illustrates the gap between a platform's theoretical reach and the number of patients eligible for an individual medicine.",
+              "confidence": "medium",
+              "tags": [
+                "duchenne",
+                "rare-disease",
+                "exon-skipping",
+                "drug-development",
+                "access-to-therapy"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-federal-ibogaine-trials-fda-docket",
+              "canonical_topic": "federal-ibogaine-trials-fda-docket",
+              "duplicate_group": "federal-ibogaine-trials-fda-docket",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/06/us-funded-psychedelic-trials-astrazeneca-research-center/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T13:36:00Z"
+                }
+              ],
+              "title": "FDA seeks input on the first federally funded ibogaine trials for opioid addiction and PTSD",
+              "summary": "The administration is advancing the first U.S. government-funded clinical trials of ibogaine for opioid use disorder and PTSD, backed by $50 million in research funding under an April executive order. FDA opened a public docket for feedback on trial design, dosing, eligibility, safety monitoring, and stopping rules, with comments due Nov. 20.",
+              "strategic_implication": "Addiction-medicine and behavioral-health leaders have a near-term chance to shape safety requirements, particularly cardiac monitoring, for a drug with known cardiotoxicity risks. Any eventual programs would need specialized clinical oversight.",
+              "confidence": "medium",
+              "tags": [
+                "psychedelics",
+                "opioid-use-disorder",
+                "ptsd",
+                "fda",
+                "clinical-trials"
+              ]
+            },
+            {
+              "item_id": "2026-10-07-irkutsk-pneumonia-plague-reports",
+              "canonical_topic": "irkutsk-pneumonia-plague-reports",
+              "duplicate_group": "irkutsk-pneumonia-plague-reports",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/06/russia-plague-reports-pneuomonia-siberia-expert-calm/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-06T23:41:00Z"
+                }
+              ],
+              "title": "Fatal pneumonia at a Siberian anti-plague institute draws scrutiny, but plague is unconfirmed and no spread is evident",
+              "summary": "A 28-year-old worker at Russia's Irkutsk Anti-Plague Research Institute was hospitalized with severe pneumonia on Sept. 29 and died about two days later; Russian authorities called it pneumonia of unknown cause. WHO reported no confirmed plague cases or further infections among contacts. Infectious disease physician Krutika Kuppalli writes that the event warrants attention, not panic.",
+              "strategic_implication": "Health-security teams should keep monitoring official WHO updates on this possible laboratory-associated event and not act on unverified reports. Clinicians should continue routine travel and exposure history-taking for severe pneumonia.",
+              "confidence": "medium",
+              "tags": [
+                "health-security",
+                "plague",
+                "laboratory-biosafety",
+                "outbreak-monitoring"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

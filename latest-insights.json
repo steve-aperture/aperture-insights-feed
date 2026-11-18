@@ -3,6 +3,696 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-18",
+      "generated_at": "2026-11-18T14:30:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "HHS finalized a HIPAA update requiring 15-day record access and delivery to patient-chosen apps, and the White House withdrew Heidi Overton's FDA nomination before her committee vote. CMS's clinical AI roadmap points to outcome-based payment, Optum is selling New York practices to Northwell and Westchester Medical Center, Baylor Scott & White's plan is dropping most prior authorizations, and Leapfrog's fall grades named three 'F' hospitals. Sources include STAT, KFF Health News, Healthcare Dive, BioPharma Dive, MedCity News and Becker's.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS and site",
+          "BioPharma Dive, MedCity News, KFF Health News, Becker's Hospital Review and Fierce Healthcare RSS"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for Nov. 17-18",
+          "Healthcare Dive, BioPharma Dive, MedCity News, KFF Health News and Becker's RSS fetched and screened",
+          "Articles read on STAT, KFF Health News, Healthcare Dive, BioPharma Dive, MedCity News and Becker's to verify figures; Nextgov, Health Law Diagnosis and PR Newswire used to fill in paywalled STAT items (CMS AI roadmap, Flagship)"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and newsletter-sender searches since Nov. 14-16 returned no messages in the connected mailbox; RSS sources used instead.",
+          "Fierce Healthcare RSS returned HTTP 403 and was not parsed.",
+          "STAT+ articles (Overton withdrawal and vaping dispute, CMS AI roadmap newsletter, Collins and science funding, Medicare for More, Flagship) were paywalled; items rely on visible text and corroborating sources.",
+          "Healthcare Dive homepage returned no dated headlines beyond RSS."
+        ],
+        "run_notes": "21 items cover developments reported from midday Nov. 17 through the morning of Nov. 18. Checked against the prior 30 editions for repeats; excluded U.S. measles elimination loss and Mayo's CEO pick (covered Nov. 16), and the NIAID director, Roche giredestrant approval, Marrow Therapeutics and Sellas AML data (covered Nov. 17). The Overton item is a new development following the Nov. 12 item on the scheduled HELP vote. The CMS AI roadmap was released Nov. 13 but had not been covered. Screened but not itemized: STAT's 'Medicare for More' newsletter (paywalled, little visible text), Pharmalittle roundup, INVEST sponsored content, BCI commentary, an RFK Jr. impeachment opinion and a Vanderbilt-to-UT Southwestern nursing executive move."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "HHS finalized a HIPAA update that halves record-access deadlines to 15 days and requires delivery to patient-chosen apps, while the White House pulled its FDA nominee on the eve of a committee vote. A JAMA study shows weight-loss GLP-1 use collapsed in Medicaid programs that ended coverage, CMS approved culturally specific waiver benefits for Utah and Maine, and Sen. Collins's defeat complicates the fight over political oversight of research grants.",
+          "items": [
+            {
+              "item_id": "2026-11-18-hipaa-privacy-rule-15-day-access-apps",
+              "canonical_topic": "hipaa-privacy-rule-15-day-access-apps",
+              "duplicate_group": "hipaa-privacy-rule-15-day-access-apps",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/updated-hipaa-privacy-law-sets-rules-for-sharing-health-data-with-apps/874845/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T15:38:55Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/hipaa-privacy-rule-update-aims-to-improve-patient-access-to-records/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T19:44:14Z"
+                }
+              ],
+              "title": "HHS finalizes HIPAA Privacy Rule update: 15-day record access and required delivery to patient-chosen health apps",
+              "summary": "HHS's Office for Civil Rights finalized changes to the HIPAA Privacy Rule on Nov. 16, with Federal Register publication expected this week and an effective date 60 days later; providers, payers and business associates would need to comply around July 10. The deadline to answer patient record requests drops from 30 calendar days to 15, and covered entities must send records to a qualifying personal health app when a patient asks. The rule bars unreasonable identity-verification steps such as requiring in-person visits when remote verification is available, and requires organizations to post record-access fees online. HHS estimates $784 million in first-year costs and $703 million in annual net savings in years two through five, mostly from dropping the signed privacy-notice acknowledgment.",
+              "strategic_implication": "Release-of-information is now a compliance clock, not a back-office queue. Health systems and plans should map current turnaround times against the 15-day standard, confirm their ROI vendor contracts and patient portal/API workflows can push records to third-party apps, and post fee schedules before the July compliance date. OCR has already acted against 55 organizations for slow access, so enforcement risk is real.",
+              "confidence": "high",
+              "tags": [
+                "hipaa",
+                "ocr",
+                "patient-access",
+                "interoperability",
+                "health-apps",
+                "privacy"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-overton-fda-nomination-withdrawn",
+              "canonical_topic": "overton-fda-nomination-withdrawn",
+              "duplicate_group": "overton-fda-nomination-withdrawn",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/heidi-overton-fda-commissioner-nomination-withdrawn/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T00:44:05Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/heidi-overton-fda-commissioner-nomination-vote-vaping-controversy/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T18:14:50Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hospital-management-administration/senate-vote-looms-for-fda-pick-3-federal-leadership-updates/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T22:39:39Z"
+                }
+              ],
+              "title": "White House pulls Heidi Overton's FDA commissioner nomination on the eve of the Senate HELP vote",
+              "summary": "The White House withdrew Heidi Overton's nomination to lead FDA late Nov. 17, a day before the Senate HELP Committee's scheduled vote, amid concerns she lacked enough Republican support on the panel. Her nomination had drawn fire from MAHA figures over her role in a policy loosening standards for fruit-flavored vapes, and more than 2,500 physicians had urged rejection over vaccine-policy and telehealth abortion positions. HELP Chair Bill Cassidy said she had the votes and that the White House \"abandoned a viable confirmation path.\" The same week, NIH named a permanent NIAID director and the president nominated Eric Ueland as comptroller general, the official who appoints MedPAC and MACPAC members.",
+              "strategic_implication": "FDA now heads into 2027 without a confirmed commissioner, after Makary's resignation, a staffing shortage of more than 1,000 open jobs and the shelving of the priority-voucher program. Expect slower, less predictable policy calls on drugs, devices and AI tools; manufacturers and health-system pharmacy and supply-chain leaders should plan for review delays. The GAO nomination also matters to providers because MedPAC and MACPAC recommendations shape Medicare and Medicaid payment rates.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "nominations",
+                "overton",
+                "federal-leadership",
+                "gao",
+                "medpac"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-medicaid-glp1-weight-loss-coverage-cut-84pct-drop",
+              "canonical_topic": "medicaid-glp1-weight-loss-coverage-cut-84pct-drop",
+              "duplicate_group": "medicaid-glp1-weight-loss-coverage-cut-84pct-drop",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/glp-1s/medicaid-glp-1-weight-loss-prescriptions-fell-84-after-4-states-ended-coverage-6-notes/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T22:39:00Z"
+                }
+              ],
+              "title": "JAMA study: weight-loss GLP-1 prescriptions fell 84% in four Medicaid programs that dropped coverage",
+              "summary": "A University of Pittsburgh study published Nov. 16 in JAMA compared California, New Hampshire, Pennsylvania and South Carolina, which ended Medicaid coverage of weight-loss GLP-1s on Jan. 1, with 10 states that kept coverage. Prescriptions fell from 2,914 to 421 per 100,000 beneficiaries between the fourth quarter of 2025 and the first quarter of 2026, with declines ranging from 60.8% in South Carolina to 95.5% in Pennsylvania. The authors estimate 175,500 to 526,600 fewer beneficiaries filled prescriptions, with no significant shift to diabetes-labeled GLP-1s. California cut Medi-Cal coverage after projecting costs would reach $800 million by fiscal 2028-29; 17 state programs have added optional coverage since 2022.",
+              "strategic_implication": "Coverage decisions, not clinical guidelines, are driving obesity treatment for low-income patients. Safety-net systems and Medicaid managed care plans in states that cut coverage should expect pent-up demand to show up in downstream cardiometabolic utilization, and should track whether patients shift to compounded or cash-pay channels. Combined with CVS's estimated $350 break-even price, the data gives states a reference point for revisiting coverage at lower net prices.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "glp-1",
+                "obesity",
+                "state-policy",
+                "pharmacy-benefits",
+                "jama"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-medicaid-traditional-healing-waivers-utah-maine",
+              "canonical_topic": "medicaid-traditional-healing-waivers-utah-maine",
+              "duplicate_group": "medicaid-traditional-healing-waivers-utah-maine",
+              "priority_score": 6,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/medicaid/medicaid-cms-native-american-traditional-healing-state-waivers-utah-maine/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T10:00:00Z"
+                }
+              ],
+              "title": "CMS approves Native American traditional-healing Medicaid waivers for Utah and Maine while denying full federal match for urban Indian clinics",
+              "summary": "The administration approved Utah's and Maine's Medicaid waivers to cover Native American traditional healing, bringing the number of states with such waivers to six alongside Arizona, California, New Mexico and Oregon. The benefit lets Native health providers bill Medicaid for practices such as sweat lodge ceremonies, which Maine's Mi'kmaq Nation has used in opioid recovery. CMS rejected Utah's request for 100% federal reimbursement at urban Indian health organizations, even though about 87% of Native Americans live outside tribal areas. California's broader waiver, which includes traditional healing, expires at the end of December with renewal pending and a 700-page CMS letter directing alignment with federal Medicaid changes.",
+              "strategic_implication": "The approvals show CMS will still back targeted, culturally specific waiver benefits even as it narrows Medicaid elsewhere. For tribal, urban Indian and safety-net partners, the funding gap at urban clinics limits how far the benefit can scale. States with pending 1115 renewals, especially California, should expect CMS to require alignment with the new federal work-requirement and eligibility rules as a condition of approval.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "1115-waivers",
+                "tribal-health",
+                "behavioral-health",
+                "state-policy"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-collins-defeat-science-funding-oversight",
+              "canonical_topic": "collins-defeat-science-funding-oversight",
+              "duplicate_group": "collins-defeat-science-funding-oversight",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/18/susan-collins-election-loss-impact-science-funding/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T09:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/18/health-news-what-redesigning-medical-school-might-look-like/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T13:03:55Z"
+                }
+              ],
+              "title": "Collins's defeat leaves science advocates without a key appropriations ally as the FY2027 HHS bill omits a block on political grant oversight",
+              "summary": "Sen. Susan Collins, chair of Senate Appropriations, lost her Maine race to Democrat Troy Jackson, and science advocates worry the loss weakens their ability to push back on administration research policy. Senate HHS spending bills released Nov. 16 did not include language blocking a White House proposal to put all federal research awards under more political oversight, though Collins told STAT she intends to block the rule before funding measures are final. STAT's Morning Rounds reports the fiscal 2027 HHS bill adds $500 million for NIH research.",
+              "strategic_implication": "Academic medical centers should treat the lame-duck appropriations window as the main chance to shape grant-oversight rules and NIH funding levels for 2027. Research-intensive systems should keep contingency plans for award delays and indirect-cost pressure, and coordinate advocacy through AAMC and state delegations before the new Congress is seated.",
+              "confidence": "medium",
+              "tags": [
+                "nih",
+                "appropriations",
+                "research-funding",
+                "congress",
+                "academic-medicine"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "CMS's clinical AI roadmap signals that future reimbursement will reward measurable outcomes, with a push for a national regulatory standard. Point-of-care integration is advancing through Viz.ai and UpToDate, but EHR consolidation at Northwell, weak follow-up for AI eye screening and low agentic-AI benchmark scores show that adoption still stalls at workflow and evaluation.",
+          "items": [
+            {
+              "item_id": "2026-11-18-cms-clinical-super-intelligence-roadmap",
+              "canonical_topic": "cms-clinical-super-intelligence-roadmap",
+              "duplicate_group": "cms-clinical-super-intelligence-roadmap",
+              "priority_score": 9,
+              "primary_source": "Nextgov/FCW",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Nextgov/FCW",
+                  "url": "https://www.nextgov.com/artificial-intelligence/2026/11/trump-administration-releases-roadmap-boost-clinical-ai/417254/",
+                  "source_type": "web",
+                  "published_at": "2026-11-16T00:00:00Z"
+                },
+                {
+                  "source": "Health Law Diagnosis",
+                  "url": "https://www.healthlawdiagnosis.com/2026/11/cms-releases-expansive-clinical-super-intelligence-roadmap/",
+                  "source_type": "web",
+                  "published_at": "2026-11-17T00:00:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/cms-ai-roadmap-and-news-from-hlth-health-tech/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T17:49:24Z"
+                }
+              ],
+              "title": "CMS roadmap for clinical 'super intelligence' points to outcome-based AI payment models and a national regulatory standard",
+              "summary": "CMS released a non-binding roadmap on Nov. 13 laying out the administration's plan to accelerate clinical AI, which it calls clinical super intelligence. Proposals include outcome-based payments for chronic care and prevention, AI-led accountable care and total-cost-of-care arrangements building on the ACCESS, AHEAD and LEAD models, possible AI delivery of parts of the Medicare annual wellness visit, and state partnerships on AI payment models, including in Medicaid. On regulation, it favors a national standard over state-by-state rules, risk-based oversight, post-market surveillance, and a \"better than today\" safety bar with staged deployment that prioritizes low-risk uses.",
+              "strategic_implication": "This is the clearest signal yet of where federal AI reimbursement is headed: payment will follow measurable outcomes, not software use. Health systems and ACOs should inventory AI tools that can show cost or quality impact in chronic care and wellness visits, and position for ACCESS-style or state Medicaid pilots. Watch for federal preemption fights with states that have passed their own AI-in-healthcare laws.",
+              "confidence": "medium",
+              "tags": [
+                "cms",
+                "ai-policy",
+                "payment-models",
+                "access-model",
+                "regulation",
+                "value-based-care"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-viz-ai-uptodate-expert-ai-integration",
+              "canonical_topic": "viz-ai-uptodate-expert-ai-integration",
+              "duplicate_group": "viz-ai-uptodate-expert-ai-integration",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/viz-ai-partners-with-wolters-kluwer-health-to-add-uptodate-resource-to-its-platform/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T23:50:29Z"
+                }
+              ],
+              "title": "Viz.ai embeds UpToDate Expert AI into its care-coordination platform used in 2,000 U.S. hospitals",
+              "summary": "Viz.ai and Wolters Kluwer Health announced at HLTH that UpToDate Expert AI will be integrated into Viz.ai One, letting clinicians ask clinical questions and get evidence-based answers informed by patient data without leaving their workflow. The tool cites its sources and provides information rather than decisions. Viz.ai says its platform is used in 2,000 U.S. hospitals; a 2023 study at one stroke center found door-to-groin times fell 39% for off-hours large vessel occlusion patients after deployment.",
+              "strategic_implication": "Clinical reference content is moving into the point of care rather than sitting in a separate app. Systems already running Viz.ai for stroke and other service lines should evaluate how the integration fits their existing UpToDate licenses and AI governance policies, including how sourced answers are logged and audited.",
+              "confidence": "high",
+              "tags": [
+                "clinical-decision-support",
+                "ai",
+                "stroke",
+                "care-coordination",
+                "hlth"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-northwell-retires-nora-after-epic-rollout",
+              "canonical_topic": "northwell-retires-nora-after-epic-rollout",
+              "duplicate_group": "northwell-retires-nora-after-epic-rollout",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/digital-health/northwell-retires-homegrown-digital-assistant-after-epic-rollout/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T22:42:11Z"
+                }
+              ],
+              "title": "Northwell retires its homegrown Nora clinical assistant after moving 21 hospitals onto Epic",
+              "summary": "Northwell Health retired Nora, an internally built assistant that pushed patient data to clinicians' mobile devices for rounds and diabetes management, after its early-November Wave 3 go-live moved 21 legacy hospitals and more than 800 ambulatory sites onto Epic. The roughly $1.2 billion project is consolidating more than 30 legacy EHRs across the 28-hospital system, with full transition targeted by 2030. Functions such as mobile interdisciplinary rounds will move to Epic's Haiku app.",
+              "strategic_implication": "EHR consolidation often retires homegrown innovation. Systems building custom AI or workflow tools on top of legacy platforms should plan exit paths and capture lessons before a migration, and push vendors to deliver equivalent functionality so frontline clinicians do not lose capability during the transition.",
+              "confidence": "high",
+              "tags": [
+                "epic",
+                "ehr-consolidation",
+                "digital-health",
+                "northwell",
+                "clinical-workflow"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-ai-retinal-screening-follow-up-gap",
+              "canonical_topic": "ai-retinal-screening-follow-up-gap",
+              "duplicate_group": "ai-retinal-screening-follow-up-gap",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/medicare-pays-for-the-ai-eye-scan-nobody-pays-for-what-comes-next/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T14:18:00Z"
+                }
+              ],
+              "title": "Five years after Medicare coverage, AI diabetic eye screening reaches fewer than 1 in 1,500 Medicare beneficiaries with diabetes",
+              "summary": "Four AI retinal screening systems are FDA-authorized and Medicare has paid for them since 2021, yet traditional Medicare claims rose only from about 400 in 2021 to 5,000 in 2024. Medicare's 2026 rates are $46.76 in an office and $60.27 in a hospital outpatient clinic, covering the image but not staff time, unreadable photos or follow-up. In five academic programs, 49% to 75% of photos were readable without dilation, and only 55% to 59% of positive screens in two programs reached an eye specialist. The proposed 2027 outpatient rule would create a payment category for these and similar software tools.",
+              "strategic_implication": "AI adoption fails at the handoff, not the algorithm. Primary care and endocrinology leaders deploying autonomous screening should budget for imaging staff, dilation protocols and closed-loop referral tracking, and payers in value-based contracts should measure completed follow-up rather than screening volume.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "diabetes",
+                "screening",
+                "medicare-payment",
+                "care-gaps"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-clinical-ai-evaluation-pilot-to-platform",
+              "canonical_topic": "clinical-ai-evaluation-pilot-to-platform",
+              "duplicate_group": "clinical-ai-evaluation-pilot-to-platform",
+              "priority_score": 5,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/your-ai-vendors-medical-exam-score-doesnt-mean-what-you-think-it-does/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T14:48:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/from-pilot-to-platform-johns-hopkins-researcher-on-healthcare-ais-next-ch/874708/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T15:14:14Z"
+                }
+              ],
+              "title": "Agentic AI benchmarks show best end-to-end healthcare task completion near 36% to 46%, as experts urge workflow-level evaluation",
+              "summary": "In a MedCity commentary, John Snow Labs CTO David Talby argues that licensing-exam scores say little about safe clinical performance, citing a Nature study in which a frontier model scored 80% to 89% on public prompts but as low as 47% on unpublished ones. On PhysicianBench's 100 long-horizon tasks, the best model succeeded 46% of the time on first attempt, and on HealthAdminBench, which simulates an EHR, payer portals and fax, best end-to-end completion was 36.3%. Separately, Johns Hopkins professor Ritu Agarwal told Healthcare Dive the industry still has not moved from pilots to operational deployment and predicted consolidation toward large platform vendors.",
+              "strategic_implication": "Vendor benchmark claims should not drive procurement. AI governance committees should require evidence on local data, end-to-end task completion and drift monitoring, set baseline metrics before go-live, and expect point-solution vendors to be absorbed by EHR and cloud platforms over the next few years.",
+              "confidence": "medium",
+              "tags": [
+                "ai-governance",
+                "benchmarks",
+                "agentic-ai",
+                "procurement",
+                "model-drift"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Optum is selling New York specialty practices to health systems, and Baylor Scott & White's plan is dropping most prior authorizations. Capital keeps concentrating in AI drug discovery, led by Isomorphic's $5 billion round and Flagship's London lab, while GLP-1 access splinters into employer defined-contribution models and a contested compounded market.",
+          "items": [
+            {
+              "item_id": "2026-11-18-optum-sells-ny-practices-northwell-westchester",
+              "canonical_topic": "optum-sells-ny-practices-northwell-westchester",
+              "duplicate_group": "optum-sells-ny-practices-northwell-westchester",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/optum-to-sell-physician-practices-to-2-new-york-health-systems/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T00:41:29Z"
+                }
+              ],
+              "title": "Optum sells New York physician practices to Northwell and Westchester Medical Center",
+              "summary": "Regulatory filings show Optum is selling New York practice assets to two health systems. Northwell's Lenox Hill Hospital will take on up to 87 physicians and 47 advanced practice providers from Optum Medical Care (formerly CareMount), CareMount Health Solutions and ProHealth in OB/GYN, orthopedics, surgery, urology, allergy and hospital medicine, closing Dec. 7, along with a clinical collaboration agreement. Westchester Medical Center will acquire four Hudson Valley sites with 25 physicians, 11 advanced practice providers and 84 staff, including Crystal Run locations, closing Dec. 4. Optum said in June it was in talks to sell specialty services in the state.",
+              "strategic_implication": "UnitedHealth is pruning specialty practices that do not fit its value-based primary care core, creating acquisition openings for health systems. Systems in markets with Optum, VillageMD or private-equity specialty groups should prepare to evaluate carve-outs, with attention to physician retention, payer contract assignment and FTC or state notice requirements.",
+              "confidence": "high",
+              "tags": [
+                "optum",
+                "unitedhealth",
+                "physician-practices",
+                "m-and-a",
+                "northwell",
+                "new-york"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-baylor-scott-white-plan-drops-prior-auth",
+              "canonical_topic": "baylor-scott-white-plan-drops-prior-auth",
+              "duplicate_group": "baylor-scott-white-plan-drops-prior-auth",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/baylor-scott-white-health-plan-to-drop-80-of-in-network-prior-authorizations/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T23:57:01Z"
+                }
+              ],
+              "title": "Baylor Scott & White Health Plan to drop all in-network inpatient and more than 80% of outpatient prior authorizations Jan. 1",
+              "summary": "Baylor Scott & White Health Plan will eliminate prior authorization for all in-network inpatient services and more than 80% of in-network outpatient requirements starting Jan. 1, across its commercial (fully insured and self-funded) and Medicare Advantage lines. The change applies to all in-network providers, including those outside the BSW system, and is expected to remove about 80% of in-network prior-authorization work. The plan will shift to \"clinical stewardship,\" sharing data and reviewing utilization with its medical group. Its exits from Medicaid and individual markets were separate decisions.",
+              "strategic_implication": "Provider-sponsored plans can move faster than national insurers on prior-auth relief, and BSW gives other integrated systems a template. Systems with their own plans should model the administrative savings against utilization risk, and all providers can cite the move in payer negotiations as evidence that gold-carding and data-sharing alternatives are workable.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "provider-sponsored-plans",
+                "medicare-advantage",
+                "utilization-management",
+                "texas"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-isomorphic-labs-5b-series-c",
+              "canonical_topic": "isomorphic-labs-5b-series-c",
+              "duplicate_group": "isomorphic-labs-5b-series-c",
+              "priority_score": 7,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/isomorphic-labs-ai-drug-discovery-financing/874863/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T15:51:00Z"
+                }
+              ],
+              "title": "Alphabet spinout Isomorphic Labs raises $5 billion, the largest biotech financing since 2022",
+              "summary": "Isomorphic Labs closed a $5 billion Series C on Nov. 17 led by Greenoaks and Sequoia Capital, with Alphabet, Andreessen Horowitz and others participating, six months after a $2.1 billion Series B. BioPharma Dive says the two rounds are the largest venture infusions this year among the firms it tracks. The company says it has positive preclinical oncology and immunology results and is preparing for clinical entry; partners include Novartis, Johnson & Johnson and Lilly. No AI-designed medicine has yet been approved.",
+              "strategic_implication": "Capital is concentrating in a few AI drug-discovery platforms even as broader AI markets wobble. For health systems with research arms, the near-term opportunity is clinical trial partnerships as these companies enter human studies; for payers, AI-designed drugs remain years from formularies.",
+              "confidence": "high",
+              "tags": [
+                "ai-drug-discovery",
+                "venture-capital",
+                "biotech",
+                "alphabet",
+                "clinical-trials"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-flagship-uk-origination-lab-100m",
+              "canonical_topic": "flagship-uk-origination-lab-100m",
+              "duplicate_group": "flagship-uk-origination-lab-100m",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/17/biotech-news-flagship-opens-biotech-creation-uk-outpost/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T17:05:10Z"
+                },
+                {
+                  "source": "PR Newswire",
+                  "url": "https://www.prnewswire.com/news-releases/flagship-pioneering-launches-flagship-origination-lab-in-london-to-create-ai-native-platform-companies-in-the-uk-302939394.html",
+                  "source_type": "web",
+                  "published_at": "2026-11-16T07:00:00Z"
+                }
+              ],
+              "title": "Flagship commits £100 million to a London lab for AI-native biotech companies, its first outside Cambridge, Mass.",
+              "summary": "Flagship Pioneering launched Flagship Origination Lab, U.K., in London on Nov. 16 with an initial £100 million commitment, which it hopes to scale with an additional £500 million from partners. The lab will create AI-native platform companies in human and planetary health and expects to recruit about 50 scientist-entrepreneurs and operators.",
+              "strategic_implication": "Company creation is globalizing, with the U.K. competing for AI-biotech talent and capital. U.S. academic medical centers that license research should note the competition for platform-company formation and keep their own tech-transfer and venture partnerships active.",
+              "confidence": "high",
+              "tags": [
+                "biotech",
+                "venture-capital",
+                "ai",
+                "flagship",
+                "uk"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-teladoc-employer-glp1-contribution",
+              "canonical_topic": "teladoc-employer-glp1-contribution",
+              "duplicate_group": "teladoc-employer-glp1-contribution",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/teladoc-launches-employer-contribution-option-for-glp-1s/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T03:04:23Z"
+                }
+              ],
+              "title": "Teladoc lets employers fund a fixed share of GLP-1 costs outside the pharmacy benefit",
+              "summary": "Teladoc Health launched an option at HLTH for employers to contribute a fixed amount per employee per fill toward FDA-approved GLP-1s from Lilly and Novo Nordisk, outside traditional pharmacy benefits, with employees paying the balance. Employers can tie funding to engagement such as food tracking, weigh-ins and education, and Teladoc manages eligibility and clinical support. First clients launch Jan. 1; WTW data show about half of employers do not cover GLP-1s for weight loss.",
+              "strategic_implication": "Defined-contribution GLP-1 coverage is emerging as a middle path between full coverage and exclusion, now that manufacturers sell direct at lower cash prices. Health systems that self-insure their workforce should compare this model with PBM coverage and their own weight-management programs, and payers should expect more carve-out pressure.",
+              "confidence": "high",
+              "tags": [
+                "glp-1",
+                "employer-benefits",
+                "virtual-care",
+                "teladoc",
+                "pharmacy-benefits"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-compounded-glp1-debate-hlth",
+              "canonical_topic": "compounded-glp1-debate-hlth",
+              "duplicate_group": "compounded-glp1-debate-hlth",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/compounded-glp-1s-telehealth-debate-snake-oil-fda/874840/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T15:51:55Z"
+                }
+              ],
+              "title": "Telehealth leaders split at HLTH over compounded GLP-1s as FDA moves to restrict them",
+              "summary": "Telehealth firms sell compounded GLP-1s for a few hundred dollars a month versus brand list prices above $1,000, even though FDA shortage-era compounding allowances ended in late 2024 and early 2025. Researchers estimate 27 million U.S. adults used a GLP-1 last year and at least 23% used compounded versions. FDA has logged nearly 1,000 adverse-event reports tied to compounded semaglutide and this spring proposed excluding semaglutide, tirzepatide and liraglutide from ingredients large compounders may use. At HLTH, Sesame's CEO called the legal basis \"tenuous,\" while OpenLoop said at least 6 million people could lose access if compounding stopped.",
+              "strategic_implication": "A large share of GLP-1 use is happening outside traditional care and oversight. Health systems and payers should expect patients to transition from compounded products if FDA finalizes its exclusion, and can capture them with lower-cost branded direct-to-consumer options paired with clinical monitoring.",
+              "confidence": "high",
+              "tags": [
+                "glp-1",
+                "compounding",
+                "telehealth",
+                "fda",
+                "obesity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Leapfrog's fall grades reset safety benchmarks amid an unresolved methodology lawsuit, Cleveland Clinic is shifting revenue-cycle work upstream toward denials prevention and autonomous coding, and pediatric boarding of children in state custody remains a costly, largely invisible capacity drain.",
+          "items": [
+            {
+              "item_id": "2026-11-18-leapfrog-fall-2026-safety-grades",
+              "canonical_topic": "leapfrog-fall-2026-safety-grades",
+              "duplicate_group": "leapfrog-fall-2026-safety-grades",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/rankings-and-ratings/leapfrogs-11-straight-a-3-f-hospitals/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T06:01:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/rankings-and-ratings/states-ranked-by-percentage-of-a-hospitals-leapfrog/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T06:01:00Z"
+                }
+              ],
+              "title": "Leapfrog fall 2026 grades: 900 'A' hospitals, three 'F's, and 450 hospitals ungraded for survey nonparticipation",
+              "summary": "Leapfrog's fall 2026 Hospital Safety Grades, released Nov. 18, gave 900 hospitals an \"A\" and three an \"F\": Howard University Hospital, Roseland Community Hospital in Chicago and WVU Fairmont Medical Center, down from five \"F\"s in spring. Eleven hospitals have earned 30 consecutive \"A\"s since 2012. Connecticut led states at 64.3% \"A\" hospitals, Florida ranked ninth at 42.4%, and Iowa, the Dakotas, Vermont and Wyoming had none. For the second cycle, Leapfrog withheld grades from 450 hospitals that skipped its 2024 or 2025 survey, while its appeal of a ruling won by five Tenet Palm Beach hospitals is pending at the 11th Circuit.",
+              "strategic_implication": "Grades still drive employer, consumer and board attention, but the methodology fight is unresolved. Quality leaders should benchmark against state peers, weigh the reputational cost of withheld grades against survey burden, and watch the 11th Circuit case, which could reshape how ratings organizations treat nonparticipating hospitals.",
+              "confidence": "high",
+              "tags": [
+                "patient-safety",
+                "leapfrog",
+                "quality-ratings",
+                "hospital-operations",
+                "litigation"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-cleveland-clinic-rcm-autonomous-coding-2027",
+              "canonical_topic": "cleveland-clinic-rcm-autonomous-coding-2027",
+              "duplicate_group": "cleveland-clinic-rcm-autonomous-coding-2027",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/revenue-cycle-management/cleveland-clinic-bets-on-autonomous-coding-upstream-denials-work-in-2027/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-17T22:21:15Z"
+                }
+              ],
+              "title": "Cleveland Clinic targets denials prevention, upfront collections and autonomous inpatient coding in 2027 after $200 million revenue-cycle gain",
+              "summary": "Cleveland Clinic expects more than $200 million in incremental revenue in 2026 and reports a 2.7% cost to collect across professional and hospital billing. For 2027, revenue cycle leaders are focused on predictive denial prevention, collecting patient cost shares before service through clearer estimates and MyChart payment options, stronger documentation and coding, and developing autonomous inpatient coding with a partner under governance controls. The system uses blinded payer scorecards and contract-rate audits, with litigation as a last resort, and calls patient balances its largest opportunity over the next two to three years.",
+              "strategic_implication": "High performers are moving revenue-cycle work upstream and treating patient financial experience as the next margin lever. CFOs should benchmark cost to collect against 2.7%, set governance before deploying autonomous coding, and build payer scorecards to support denial escalations, much like AdventHealth's 2027 payer-grading plan.",
+              "confidence": "high",
+              "tags": [
+                "revenue-cycle",
+                "denials",
+                "autonomous-coding",
+                "patient-collections",
+                "payer-relations"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-pediatric-hospital-boarding-social-stays",
+              "canonical_topic": "pediatric-hospital-boarding-social-stays",
+              "duplicate_group": "pediatric-hospital-boarding-social-stays",
+              "priority_score": 6,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/public-health/hospital-boarding-social-stays-jaloni-teens-children-kids-guns-missouri-illinois/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T10:00:00Z"
+                }
+              ],
+              "title": "Children in state custody are boarding in hospitals for months; Missouri spent $64.7 million over five years",
+              "summary": "KFF Health News profiles a teen gun-violence survivor who spent more than 475 days across three stays at SSM Health Cardinal Glennon Children's Hospital, partly because no safe discharge option existed. Missouri spent more than $64.7 million boarding children in state custody in hospitals over five years, which the state hospital association calls an undercount, and recorded 648 boarded youths in the fiscal year ending in June. Illinois reported 304 youths in psychiatric hospitals beyond medical necessity and 312 waiting more than 24 hours in emergency departments in fiscal 2025.",
+              "strategic_implication": "Social stays block beds and generate uncompensated cost that rarely shows up in throughput dashboards. Children's hospitals and pediatric units should track boarding days separately, document them for state reimbursement, and press child-welfare and Medicaid agencies for step-down placements and enhanced foster-care rates.",
+              "confidence": "high",
+              "tags": [
+                "boarding",
+                "pediatrics",
+                "throughput",
+                "child-welfare",
+                "uncompensated-care"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Proposals to unbundle medical school reflect pressure to shorten physician training, and the 2025 preterm birth rate of 10.4% shows maternal and infant outcomes are still well short of national targets.",
+          "items": [
+            {
+              "item_id": "2026-11-18-medical-school-core-to-clinic-redesign",
+              "canonical_topic": "medical-school-core-to-clinic-redesign",
+              "duplicate_group": "medical-school-core-to-clinic-redesign",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/18/core-to-clinic-medical-education-radical-proposal/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T09:30:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/18/health-news-what-redesigning-medical-school-might-look-like/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T13:03:55Z"
+                }
+              ],
+              "title": "STAT series proposes unbundling medical school with a centralized digital pre-clerkship curriculum",
+              "summary": "In the second essay of a STAT First Opinion series on redesigning medical school, M.D./Ph.D. student Alex Serafini proposes a centralized digital \"core-to-clinic\" curriculum for pre-clerkship studies, open to students who meet baseline criteria such as a minimum MCAT score, before hands-on training at clinical sites. He asks why hundreds of schools independently build parallel versions of the same curriculum. The first essay argued medical school should begin after Step 1.",
+              "strategic_implication": "Pressure to shorten and cheapen physician training is growing alongside workforce shortages. Health systems with teaching programs should watch for accelerated and decentralized pathways that could expand clinical-site training roles, and consider how such models might feed rural and primary care pipelines.",
+              "confidence": "medium",
+              "tags": [
+                "medical-education",
+                "workforce",
+                "physician-pipeline",
+                "opinion"
+              ]
+            },
+            {
+              "item_id": "2026-11-18-us-preterm-birth-rate-2025-10-4pct",
+              "canonical_topic": "us-preterm-birth-rate-2025-10-4pct",
+              "duplicate_group": "us-preterm-birth-rate-2025-10-4pct",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/18/health-news-what-redesigning-medical-school-might-look-like/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T13:03:55Z"
+                }
+              ],
+              "title": "U.S. preterm birth rate was 10.4% in 2025, a full point above the Healthy People 2030 target",
+              "summary": "STAT's Morning Rounds reports the 2025 U.S. preterm birth rate was 10.4%, compared with the Healthy People 2030 target of 9.4%; only nine states met the target. Sixteen states met the infant mortality goal of five deaths per 1,000 births, and the rate for Black infants remained twice the national average.",
+              "strategic_implication": "Maternal and infant outcomes remain a persistent quality and equity gap, particularly as Medicaid coverage changes take effect. Obstetric service lines and Medicaid plans should prioritize prenatal access, postpartum coverage continuity and rural labor-and-delivery capacity, where closures continue to widen gaps.",
+              "confidence": "medium",
+              "tags": [
+                "maternal-health",
+                "preterm-birth",
+                "infant-mortality",
+                "health-equity"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-17",
       "generated_at": "2026-11-17T13:45:00Z",
       "headline": "Today's Healthcare Insights",
@@ -18202,541 +18892,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-10-07",
-      "generated_at": "2026-10-07T12:37:12Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's edition leads with widening federal oversight: House pressure on CMS over remote-monitoring limits, a DOJ fraud directive that reaches drug and device makers, and a pending Grail decision that would trigger mandatory Medicare coverage. It also covers FDA's FY 2027 AI guidance agenda, Teladoc's AI rollouts, McKesson-CD&R's $5.8B Option Care deal, Caribou's shutdown, and new evidence that immigration enforcement is delaying emergency care in Los Angeles. Sources include STAT News, Healthcare Dive, Fierce Healthcare, and primary government and legal analyses.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
-          "STAT News RSS (main, health, health-tech, pharma, politics)",
-          "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS",
-          "Primary-source verification (FDA CDRH, DOJ directive analyses, study coverage)"
-        ],
-        "sources_successful": [
-          "STAT News RSS (main, health, health-tech, pharma, politics)",
-          "Healthcare Dive RSS (news)",
-          "Fierce Healthcare items retained from the automated run",
-          "Primary-source verification (FDA CDRH FY 2027 guidance lists, Debevoise analysis of DOJ Directive 26-12, Medical Xpress study coverage)"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels and newsletter senders returned no messages in the connected mailbox since 2026-10-05",
-          "Fierce Healthcare RSS returned a Cloudflare bot challenge on the rebuild fetch; automated-run Fierce items retained",
-          "STAT+ articles (DOJ directive, FDA AI guidance, AstraZeneca site, MAHA) paywalled; drafted from previews plus primary or secondary sources"
-        ],
-        "run_notes": "Same-day rebuild in place: the automated run (generated 2026-10-07T11:08:40Z) had already written 2026-10-07 and trimmed the feed to 30 editions, but dropped 2026-08-26 without archiving it; that edition is now preserved in archive/editions-archive-2026-10-07.json. Retained 8 of 9 automated items; removed the Intermountain-UCHealth CIN exit item (2026-10-07-intermountain-exits-trinsic) because the same story ran in the 2026-10-06 edition. Added 9 new items from the 10/6-10/7 window screened against the prior 12 editions, and refreshed bucket syntheses.",
-        "items_captured": 17
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Federal oversight is widening on several fronts: Congress is pressing CMS on remote-monitoring limits, DOJ is extending fraud enforcement to drug and device makers, and a pending Grail decision would trigger mandatory Medicare coverage. Critics are also warning that AI documentation may be raising inpatient coding intensity.",
-          "items": [
-            {
-              "item_id": "2026-10-07-lawmakers-urge-cms-rpm-flexibility",
-              "canonical_topic": "lawmakers-urge-cms-rpm-flexibility",
-              "duplicate_group": "lawmakers-urge-cms-rpm-flexibility",
-              "priority_score": 8,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/lawmakers-press-cms-roll-back-proposed-restrictions-remote-patient-monitoring",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T14:07:00-04:00"
-                }
-              ],
-              "title": "32 House lawmakers ask CMS to reconsider proposed limits on remote patient monitoring",
-              "summary": "A bipartisan group of 32 House lawmakers urged CMS Administrator Mehmet Oz to reconsider proposed Medicare payment-rule changes affecting how remote patient monitoring services are staffed and delivered. The letter puts provider and patient access concerns into the debate over Medicare's RPM payment policy.",
-              "strategic_implication": "RPM operators should track the final rule closely and assess how staffing and delivery requirements could affect their care models. Congressional pushback signals that implementation details may remain contested.",
-              "confidence": "medium",
-              "tags": [
-                "medicare",
-                "remote-patient-monitoring",
-                "cms",
-                "reimbursement"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-doj-fraud-directive-fdca-drugmakers",
-              "canonical_topic": "doj-fraud-directive-fdca-drugmakers",
-              "duplicate_group": "doj-fraud-directive-fdca-drugmakers",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/pharmalot/2026/10/07/trump-administration-adds-pharma-to-list-priorities-combating-white-collar-fraud/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T12:10:00Z"
-                },
-                {
-                  "source": "Debevoise & Plimpton",
-                  "url": "https://www.debevoise.com/insights/publications/2026/10/new-doj-directive-details-fraud-divisions-corporat",
-                  "source_type": "web",
-                  "published_at": "2026-10-05T00:00:00Z"
-                }
-              ],
-              "title": "DOJ fraud directive puts drug and device makers in scope under the Food, Drug, and Cosmetic Act",
-              "summary": "Directive 26-12, issued Oct. 1 by DOJ's National Fraud Enforcement Division, sets corporate enforcement priorities that include healthcare fraud and explicitly cites the Food, Drug, and Cosmetic Act. STAT reports the reference signals closer scrutiny of pharmaceutical and medical-device manufacturers, a shift from the division's usual focus on providers, clinics, home health agencies, and hospices. A former DOJ official called it a subtle but significant expansion of the division's jurisdiction.",
-              "strategic_implication": "Life-sciences companies should revisit compliance programs covering promotion, manufacturing quality, and data integrity, along with self-disclosure readiness. The directive's cooperation factors give companies an incentive to find and report issues before prosecutors do.",
-              "confidence": "medium",
-              "tags": [
-                "doj",
-                "fraud-enforcement",
-                "pharma",
-                "medical-devices",
-                "compliance"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-ai-documentation-bump-codes-hospital-bills",
-              "canonical_topic": "ai-documentation-bump-codes-hospital-bills",
-              "duplicate_group": "ai-documentation-bump-codes-hospital-bills",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T08:30:00Z"
-                }
-              ],
-              "title": "Physician warns that AI documentation tools may inflate hospital bills through secondary-diagnosis bump codes",
-              "summary": "In a STAT opinion piece, resident physician Leah Pierson argues that AI-assisted documentation can raise DRG payments when secondary diagnoses such as anemia or low sodium are coded even when they do not meaningfully change care. Blue Cross Blue Shield says these codes have cost it hundreds of millions of dollars over two years. CMS last substantially revised the qualifying code list in 2007, and a 2019 proposal to prune it stalled after hospital pushback.",
-              "strategic_implication": "Expect payer audits and CMS policy attention on AI-driven coding intensity in inpatient settings. Revenue-cycle and compliance leaders should check whether ambient or CDI tools let clinicians flag a secondary diagnosis as not clinically significant.",
-              "confidence": "medium",
-              "tags": [
-                "coding-intensity",
-                "drg",
-                "ambient-ai",
-                "revenue-cycle",
-                "payer-audits"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-grail-mced-medicare-coverage-cost",
-              "canonical_topic": "grail-mced-medicare-coverage-cost",
-              "duplicate_group": "grail-mced-medicare-coverage-cost",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/06/grail-multi-cancer-screening-test-criticism/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T08:30:00Z"
-                }
-              ],
-              "title": "Ahead of an FDA decision on Grail's test, a critic flags Medicare's automatic coverage and a $60 billion to $100 billion annual cost",
-              "summary": "Writing in STAT, H. Gilbert Welch argues FDA should not approve Grail's multicancer blood test because its 140,000-person trial in England showed no reduction in late-stage cancers and did not show fewer cancer deaths. A 2026 law requires Medicare to cover multicancer screening tests once FDA approves them, bypassing the usual U.S. Preventive Services Task Force role. Welch estimates annual screening of Americans 50 and older could cost $60 billion to $100 billion.",
-              "strategic_implication": "An approval would create an immediate Medicare benefit with significant spending and downstream-workup implications. Health systems and payers should plan for follow-up diagnostic capacity, false-positive management, and patient counseling.",
-              "confidence": "medium",
-              "tags": [
-                "cancer-screening",
-                "medicare-coverage",
-                "fda",
-                "grail",
-                "diagnostics"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-democrats-court-maha-voters",
-              "canonical_topic": "democrats-court-maha-voters",
-              "duplicate_group": "democrats-court-maha-voters",
-              "priority_score": 5,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/07/democrats-focus-on-food-toxins-win-maha-voters-midterm-elections/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T08:30:00Z"
-                }
-              ],
-              "title": "Democrats court MAHA voters with food and environmental platforms ahead of the midterms",
-              "summary": "Key Democrats are meeting with Make America Healthy Again activists and rolling out food and environmental agendas to appeal to MAHA voters before the midterms. They are emphasizing food and toxins while setting aside HHS Secretary Robert F. Kennedy Jr.'s focus on vaccine injuries, which pollsters describe as a relatively fringe issue.",
-              "strategic_implication": "Food additives, chemical exposure, and nutrition policy look increasingly bipartisan. Food, ag, and consumer-health companies should expect regulatory pressure to continue whatever the election outcome.",
-              "confidence": "medium",
-              "tags": [
-                "maha",
-                "food-policy",
-                "midterms",
-                "environmental-health"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Vendors are packaging ambient documentation and remote monitoring into virtual and hospital care platforms while FDA's device center makes AI lifecycle and change-control guidance its top priority for fiscal 2027.",
-          "items": [
-            {
-              "item_id": "2026-10-07-fda-cdrh-fy2027-ai-guidance-agenda",
-              "canonical_topic": "fda-cdrh-fy2027-ai-guidance-agenda",
-              "duplicate_group": "fda-cdrh-fy2027-ai-guidance-agenda",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/06/fda-spells-out-2027-ai-guidance-plans-health-tech/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T13:59:00Z"
-                },
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/medical-devices/guidance-documents-medical-devices-and-radiation-emitting-products/cdrh-proposed-guidances-fiscal-year-2027-fy-2027",
-                  "source_type": "web",
-                  "published_at": "2026-09-30T00:00:00Z"
-                }
-              ],
-              "title": "FDA's device center puts AI lifecycle and change-control guidance at the top of its FY 2027 agenda",
-              "summary": "CDRH published its fiscal 2027 proposed guidance lists, and STAT Health Tech highlighted new AI guidances expected next year. Finalizing guidance on AI-enabled devices across the product lifecycle and on predetermined change control plans (PCCPs) leads the priority A-list, according to regulatory trade coverage.",
-              "strategic_implication": "AI device developers and health-system buyers should plan for firmer FDA expectations on postmarket monitoring and how model updates are managed. Final PCCP guidance would make it easier to plan iterative model updates without new submissions.",
-              "confidence": "medium",
-              "tags": [
-                "fda",
-                "ai-regulation",
-                "medical-devices",
-                "pccp",
-                "guidance"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-teladoc-remote-monitoring-ambient-ai",
-              "canonical_topic": "teladoc-remote-monitoring-ambient-ai",
-              "duplicate_group": "teladoc-remote-monitoring-ambient-ai",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/teladoc-unveils-remote-monitoring-ambient-ai-features/832328/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T06:02:00-04:00"
-                }
-              ],
-              "title": "Teladoc adds AI scribing and camera-based vital-sign monitoring to its virtual-care platform",
-              "summary": "Teladoc integrated artificial-intelligence scribing and camera-based vital-sign monitoring into its virtual-care platform, Healthcare Dive reported. The company is introducing the features as it works to recover from significant financial setbacks.",
-              "strategic_implication": "Health systems evaluating virtual-care platforms may increasingly expect documentation automation and remote monitoring to work together. Adoption will depend on workflow fit and evidence that the features improve care delivery at sustainable cost.",
-              "confidence": "high",
-              "tags": [
-                "virtual-care",
-                "ambient-ai",
-                "remote-monitoring",
-                "teladoc"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-teladoc-solo-hospital-ai",
-              "canonical_topic": "teladoc-solo-hospital-ai",
-              "duplicate_group": "teladoc-solo-hospital-ai",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/teladoc-health-unveils-2-new-ai-capabilities-within-solo-platform",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T15:28:00-04:00"
-                }
-              ],
-              "title": "Teladoc adds two AI capabilities to its Solo platform for hospitals",
-              "summary": "Teladoc unveiled two new AI capabilities within its Solo platform for hospitals. The tools are intended to surface timely patient insights in care environments and reduce technology fragmentation, according to the company.",
-              "strategic_implication": "Hospitals may favor AI features that plug into existing care environments rather than add another standalone system. Buyers should test whether the promised insight and consolidation translate into measurable workflow improvements.",
-              "confidence": "medium",
-              "tags": [
-                "hospital-ai",
-                "teladoc",
-                "clinical-workflow",
-                "technology-integration"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Capital is shifting toward scale players: McKesson and CD&R's $5.8 billion Option Care deal and AstraZeneca's Boston expansion contrast with Caribou's shutdown after it failed to finance a pivotal trial, alongside a CEO transition at Highmark.",
-          "items": [
-            {
-              "item_id": "2026-10-07-mckesson-cdr-option-care-acquisition",
-              "canonical_topic": "mckesson-cdr-option-care-acquisition",
-              "duplicate_group": "mckesson-cdr-option-care-acquisition",
-              "priority_score": 9,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/finance/cdr-mckesson-acquiring-infusion-therapy-provider-option-care-health-58b",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T11:08:00-04:00"
-                }
-              ],
-              "title": "McKesson and CD&R agree to acquire Option Care Health in a $5.8B deal",
-              "summary": "McKesson and private-equity firm Clayton, Dubilier & Rice agreed to acquire Option Care Health in a transaction valued at $5.8 billion. Option Care is the largest independent provider of home and alternate-site infusion services, and the deal is expected to close in the first half of 2027.",
-              "strategic_implication": "The deal puts a large infusion-care platform at the center of a major distribution and investment transaction. Health systems, manufacturers, and competing infusion providers should watch for post-close changes to network strategy and service capacity.",
-              "confidence": "high",
-              "tags": [
-                "infusion-therapy",
-                "mergers-acquisitions",
-                "home-care",
-                "healthcare-investment"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-caribou-biosciences-shutdown",
-              "canonical_topic": "caribou-biosciences-shutdown",
-              "duplicate_group": "caribou-biosciences-shutdown",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/07/caribou-biosciences-shutting-down-lymphoma-car-t-therapy/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T08:30:00Z"
-                }
-              ],
-              "title": "Caribou Biosciences to shut down after failing to finance a late-stage CAR-T trial",
-              "summary": "Caribou Biosciences said it is shutting down after failing to raise the capital needed for a late-stage clinical trial of its off-the-shelf CAR-T therapy for lymphoma. The company will discontinue development of its two CRISPR-based CAR-T candidates, including a program for advanced B-cell non-Hodgkin lymphoma, despite having worked with FDA to finalize a Phase 3 trial design.",
-              "strategic_implication": "The closure highlights financing risk even for advanced cell-therapy programs with regulatory alignment and a defined pivotal-trial path. Biotechs approaching late-stage trials may need earlier partnering or alternative financing plans to protect programs from capital-market constraints.",
-              "confidence": "high",
-              "tags": [
-                "biotechnology",
-                "car-t",
-                "clinical-trials",
-                "venture-funding"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-highmark-ceo-transition",
-              "canonical_topic": "highmark-ceo-transition",
-              "duplicate_group": "highmark-ceo-transition",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/highmark-taps-karen-hanlon-ceo-david-holmberg-transition-executive-chairman",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T14:18:00-04:00"
-                }
-              ],
-              "title": "Highmark names Karen Hanlon CEO as David Holmberg moves to executive chair",
-              "summary": "Highmark named Karen Hanlon as its next CEO, with the transition set for Jan. 1. Current CEO David Holmberg will become executive chairperson.",
-              "strategic_implication": "The transition creates a leadership inflection point for a major integrated payer-provider organization. Partners should monitor whether the new leadership team changes strategic priorities or operating plans.",
-              "confidence": "high",
-              "tags": [
-                "health-insurance",
-                "executive-transition",
-                "payer-leadership",
-                "highmark"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-astrazeneca-kendall-square-rd-center",
-              "canonical_topic": "astrazeneca-kendall-square-rd-center",
-              "duplicate_group": "astrazeneca-kendall-square-rd-center",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/06/biotech-news-astrazeneca-opens-new-boston-site/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T14:41:00Z"
-                },
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/pharmalot/2026/10/06/us-funded-psychedelic-trials-astrazeneca-research-center/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T13:36:00Z"
-                }
-              ],
-              "title": "AstraZeneca opens an 18-story Kendall Square R&D center, the centerpiece of its $1 billion Massachusetts investment",
-              "summary": "AstraZeneca opened a 570,000-square-foot, 18-story R&D site in Kendall Square in Cambridge, Massachusetts, as the centerpiece of a $1 billion state investment program. STAT framed the opening against an unsettled Boston biotech market following a run of Chinese licensing deals.",
-              "strategic_implication": "Large pharma is still committing to U.S. research hubs even as early-stage assets are increasingly sourced from China. Biotech employers and local health systems in Boston should expect continued competition for research talent.",
-              "confidence": "high",
-              "tags": [
-                "astrazeneca",
-                "biotech",
-                "r-and-d",
-                "boston"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "New evidence from Los Angeles shows immigration enforcement can push safety-net patients to delay emergency care until they need admission, raising acuity and cost pressure for providers.",
-          "items": [
-            {
-              "item_id": "2026-10-07-la-er-visits-foreign-born-ice-enforcement",
-              "canonical_topic": "la-er-visits-foreign-born-ice-enforcement",
-              "duplicate_group": "la-er-visits-foreign-born-ice-enforcement",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/07/health-news-er-visits-from-people-born-outside-the-u-s-dropped-after-ice-raids/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T11:50:00Z"
-                },
-                {
-                  "source": "Medical Xpress",
-                  "url": "https://medicalxpress.com/news/2026-10-immigration-la-foreign-born-patients.html",
-                  "source_type": "web",
-                  "published_at": "2026-10-05T00:00:00Z"
-                }
-              ],
-              "title": "ER visits by foreign-born patients fell sharply at LA safety-net hospitals after immigration enforcement intensified",
-              "summary": "A USC study in JAMA Network Open found emergency department visits by people born outside the U.S. dropped sharply at three Los Angeles County safety-net hospitals after ICE operations increased last year. Visits were more than 20% lower than among U.S.-born patients in the first four weeks, while admissions in this population rose, suggesting patients delayed care until they were sicker.",
-              "strategic_implication": "Safety-net systems in enforcement-heavy markets should prepare for higher-acuity presentations and uncompensated-care pressure from delayed care. Outreach, community clinics, and clear privacy messaging may help keep patients from avoiding care.",
-              "confidence": "high",
-              "tags": [
-                "safety-net",
-                "emergency-department",
-                "immigration",
-                "access-to-care"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Staffing technology continues to attract capital, and clinical leaders face access and safety questions on precision rare-disease therapies, federally funded psychedelic trials, and an unconfirmed plague report in Russia.",
-          "items": [
-            {
-              "item_id": "2026-10-07-vitalize-hospital-staffing-ai",
-              "canonical_topic": "vitalize-hospital-staffing-ai",
-              "duplicate_group": "vitalize-hospital-staffing-ai",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/vitalize-secures-31m-scale-ai-powered-operating-system-hospital-staffing-and-scheduling",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T11:21:00-04:00"
-                }
-              ],
-              "title": "Vitalize raises $31M to scale AI-powered hospital staffing and scheduling software",
-              "summary": "Vitalize raised $31 million to scale software designed to automate hospital staffing, forecast demand, and manage capacity. The company says its platform aims to reduce reliance on overtime and agency labor.",
-              "strategic_implication": "Labor-constrained hospitals are continuing to invest in tools that connect demand forecasting with staffing decisions. Buyers should evaluate whether automation improves coverage and lowers contingent-labor costs without compromising clinical judgment or staff experience.",
-              "confidence": "high",
-              "tags": [
-                "workforce-management",
-                "hospital-operations",
-                "artificial-intelligence",
-                "staffing"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-duchenne-exon-skipping-access",
-              "canonical_topic": "duchenne-exon-skipping-access",
-              "duplicate_group": "duchenne-exon-skipping-access",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/07/muscular-dystrophy-exon-skipping-drugs-novartis-dyne/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T08:30:00Z"
-                }
-              ],
-              "title": "Mutation-specific exon-skipping therapies leave most people with Duchenne ineligible",
-              "summary": "STAT reports that Avidity Biosciences' exon-skipping drug Del-zota, now under FDA review, is designed for a specific genetic mutation and may be suitable for about 7% of people with Duchenne muscular dystrophy in the United States. The broader exon-skipping approach could theoretically apply to a much larger share of patients, but each drug must match a patient's mutation.",
-              "strategic_implication": "Rare-disease developers and care teams must plan around genetically narrow populations, including diagnostic identification, trial recruitment, and access pathways. The case also illustrates the gap between a platform's theoretical reach and the number of patients eligible for an individual medicine.",
-              "confidence": "medium",
-              "tags": [
-                "duchenne",
-                "rare-disease",
-                "exon-skipping",
-                "drug-development",
-                "access-to-therapy"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-federal-ibogaine-trials-fda-docket",
-              "canonical_topic": "federal-ibogaine-trials-fda-docket",
-              "duplicate_group": "federal-ibogaine-trials-fda-docket",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/pharmalot/2026/10/06/us-funded-psychedelic-trials-astrazeneca-research-center/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T13:36:00Z"
-                }
-              ],
-              "title": "FDA seeks input on the first federally funded ibogaine trials for opioid addiction and PTSD",
-              "summary": "The administration is advancing the first U.S. government-funded clinical trials of ibogaine for opioid use disorder and PTSD, backed by $50 million in research funding under an April executive order. FDA opened a public docket for feedback on trial design, dosing, eligibility, safety monitoring, and stopping rules, with comments due Nov. 20.",
-              "strategic_implication": "Addiction-medicine and behavioral-health leaders have a near-term chance to shape safety requirements, particularly cardiac monitoring, for a drug with known cardiotoxicity risks. Any eventual programs would need specialized clinical oversight.",
-              "confidence": "medium",
-              "tags": [
-                "psychedelics",
-                "opioid-use-disorder",
-                "ptsd",
-                "fda",
-                "clinical-trials"
-              ]
-            },
-            {
-              "item_id": "2026-10-07-irkutsk-pneumonia-plague-reports",
-              "canonical_topic": "irkutsk-pneumonia-plague-reports",
-              "duplicate_group": "irkutsk-pneumonia-plague-reports",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/06/russia-plague-reports-pneuomonia-siberia-expert-calm/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-06T23:41:00Z"
-                }
-              ],
-              "title": "Fatal pneumonia at a Siberian anti-plague institute draws scrutiny, but plague is unconfirmed and no spread is evident",
-              "summary": "A 28-year-old worker at Russia's Irkutsk Anti-Plague Research Institute was hospitalized with severe pneumonia on Sept. 29 and died about two days later; Russian authorities called it pneumonia of unknown cause. WHO reported no confirmed plague cases or further infections among contacts. Infectious disease physician Krutika Kuppalli writes that the event warrants attention, not panic.",
-              "strategic_implication": "Health-security teams should keep monitoring official WHO updates on this possible laboratory-associated event and not act on unverified reports. Clinicians should continue routine travel and exposure history-taking for severe pneumonia.",
-              "confidence": "medium",
-              "tags": [
-                "health-security",
-                "plague",
-                "laboratory-biosafety",
-                "outbreak-monitoring"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-17T13:45:00Z"
+  "last_updated": "2026-11-18T14:30:00Z"
 }

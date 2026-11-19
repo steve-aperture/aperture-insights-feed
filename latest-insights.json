@@ -3,6 +3,694 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-19",
+      "generated_at": "2026-11-19T14:30:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Only 1 in 10 payers say they are ready for CMS's Jan. 1 electronic prior authorization API deadline, and the Labor Department proposed ending the Schedule A green card fast track for foreign nurses and physical therapists. Minnesota cleared Sutter's Allina deal with $2.15 billion in commitments, Epic promised easier AI access to its records, and Abridge is offering its clinical Assistant free to community health centers, while NACHC warns up to 1,800 sites could close. Sources include STAT, Healthcare Dive, BioPharma Dive, MedCity News, Becker's, Fierce Healthcare and NBC News.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS and site",
+          "BioPharma Dive, MedCity News, KFF Health News, Becker's Hospital Review and Fierce Healthcare RSS"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for Nov. 18-19",
+          "Healthcare Dive, BioPharma Dive, MedCity News and KFF Health News RSS fetched and screened",
+          "Articles read on STAT, Healthcare Dive, BioPharma Dive, MedCity News and KFF Health News to verify figures; web search filled provider and workforce gaps (Becker's, Fierce Healthcare, NBC News, Chief Healthcare Executive, Yahoo Finance, St. Cloud Times, Delaware Business Times, Charlotte-area outlets)"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and newsletter-sender searches over the past 3 days returned no messages in the connected mailbox; RSS sources used instead.",
+          "Fierce Healthcare and Becker's RSS returned bot-check pages and were not parsed; their articles were reached through web search.",
+          "STAT+ articles (O'Neill/NSF, FDA post-Overton, USPSTF, Epic at HLTH, MAHA PAC, Merck-Isomorphic, STREAM column) were paywalled; items rely on visible text, STAT Morning Rounds and corroborating coverage."
+        ],
+        "run_notes": "21 items cover developments reported from midday Nov. 18 through the morning of Nov. 19. Checked against the prior 30 editions for repeats; excluded the CMS CRUSH anti-fraud proposed rule (covered Nov. 17), compounded GLP-1 debate and medical school redesign (covered Nov. 18), measles elimination loss (Nov. 16) and recurring flu-activity updates. The Summit, Medicare fee-schedule and FDA leadership items are new developments that follow earlier coverage. Screened but not itemized: Erasca KRAS preview (data embargoed until Nov. 20), NIH chimpanzee relocation, KFF Social Security early-claims analysis, Pharmalittle roundups and KFF reader letters."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Payers are largely unready for CMS's Jan. 1 electronic prior authorization API deadline, and Medicare's 20% same-day exam-plus-procedure cut could split visits starting the same day. A reconstituted USPSTF meets for the first time in over a year, and Cassidy's cancellation of the O'Neill NSF vote, a day after the Overton withdrawal, leaves FDA without a permanent leader into 2027. Democrats are coalescing around Medicare eligibility at 55, and MAHA's PAC spent little on its candidates.",
+          "items": [
+            {
+              "item_id": "2026-11-19-payers-unready-eprior-auth-api-2027",
+              "canonical_topic": "payers-unready-eprior-auth-api-2027",
+              "duplicate_group": "payers-unready-eprior-auth-api-2027",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/few-payers-are-ready-for-looming-electronic-prior-authorization-deadline/874879/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T14:48:00Z"
+                }
+              ],
+              "title": "Six weeks out, only 1 in 10 payers say they are fully ready for CMS's Jan. 1, 2027 electronic prior authorization API deadline",
+              "summary": "A WEDI survey found just 10% of government-regulated payers are completely ready to stand up the prior authorization and data-sharing APIs required under CMS's 2024 interoperability rule by Jan. 1, 2027. Nearly two-thirds are at least halfway there, but 17% have not started, and 62% said the work has cost more than expected; none said less. Providers are not required to build the APIs, yet fewer than 10% have fully implemented them, one-fifth have not started, and nearly three-quarters said payer readiness is very or extremely important. CMS estimates payer costs at $182 million in year one and up to $1.6 billion over a decade.",
+              "strategic_implication": "Expect an uneven go-live: some Medicare Advantage, Medicaid managed care and exchange plans will meet the date, others will rely on workarounds. Provider revenue-cycle leaders should confirm, payer by payer, which APIs will actually be live in January, line up ONC/CMS testing partners now, and avoid assuming fax and portal volume drops on day one.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "interoperability",
+                "cms",
+                "payers",
+                "api",
+                "revenue-cycle"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-medicare-modifier-25-same-day-cut-split-visits",
+              "canonical_topic": "medicare-modifier-25-same-day-cut-split-visits",
+              "duplicate_group": "medicare-modifier-25-same-day-cut-split-visits",
+              "priority_score": 8,
+              "primary_source": "NBC News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "NBC News",
+                  "url": "https://www.nbcnews.com/health/health-care/medicare-rule-change-turn-one-visit-doctor-two-rcna609187",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T10:00:00Z"
+                },
+                {
+                  "source": "Rolling Out",
+                  "url": "https://rollingout.com/2026/11/18/medicare-rule-change-and-what-next-visit/",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T00:00:00Z"
+                }
+              ],
+              "title": "Medicare's 20% same-day exam-plus-procedure cut takes effect Jan. 1, and specialists warn patients may need two visits",
+              "summary": "Under the 2027 Medicare physician fee schedule finalized Nov. 4, when a physician bills a separately identifiable office visit with modifier 25 on the same day as a minor procedure with a zero-day global period, Medicare will pay the lower-valued service at 20% less. The cut applies only to the same physician or same specialty in the same group, so different specialists seeing a patient the same day are paid in full. CMS says it was paying twice for overlapping intake and room work; some specialists, notably in dermatology and orthopedics, say they may split exams and injections or biopsies into separate appointments. The same rule lowers conversion-factor-based rates by 1.83% for APM participants and 2.31% for everyone else.",
+              "strategic_implication": "This follows the Nov. 5 fee-schedule item with the operational effect now coming into focus. Practices with heavy injection or biopsy volume should model the revenue impact by provider and decide on scheduling policy before January rather than letting it drift; health systems should watch for access complaints, added copays for patients, and slot capacity strain if visits split.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "physician-fee-schedule",
+                "modifier-25",
+                "specialty-practice",
+                "patient-access"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-uspstf-first-meeting-in-over-a-year",
+              "canonical_topic": "uspstf-first-meeting-in-over-a-year",
+              "duplicate_group": "uspstf-first-meeting-in-over-a-year",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/18/uspstf-task-force-after-rfk-jr-shakeup-to-meet/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T21:21:00Z"
+                }
+              ],
+              "title": "Reconstituted USPSTF meets this week for the first time in more than a year, with cervical cancer, perinatal depression and alcohol screening on the agenda",
+              "summary": "The U.S. Preventive Services Task Force, whose A and B grades determine which preventive services most insurers must cover without cost sharing, is scheduled to meet this week for the first time in more than a year, according to an AHRQ notice sent Nov. 18. HHS Secretary Robert F. Kennedy Jr. canceled meetings last year and overhauled the panel's membership, leaving several recommendations awaiting finalization. The agenda covers cervical cancer screening, perinatal depression and unhealthy alcohol use in teens and adults, each not updated in at least five years, plus an evidence presentation on healthy lifestyles to prevent cardiovascular disease, expert presentations on chronic kidney disease, colorectal and lung cancer screening, and a discussion of task force methods.",
+              "strategic_implication": "Restarting the pipeline matters more than any single vote: new grades flow into ACA no-cost coverage mandates. Payer benefit teams and population-health leaders should track the cervical cancer and perinatal depression outputs and the 'task force methods' discussion, which could signal how the reconstituted panel will weigh evidence going forward.",
+              "confidence": "medium",
+              "tags": [
+                "uspstf",
+                "preventive-services",
+                "aca-coverage",
+                "hhs",
+                "ahrq"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-cassidy-cancels-oneill-nsf-vote-fda-vacuum",
+              "canonical_topic": "cassidy-cancels-oneill-nsf-vote-fda-vacuum",
+              "duplicate_group": "cassidy-cancels-oneill-nsf-vote-fda-vacuum",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/18/bill-cassidy-rejects-jim-oneill-lead-national-science-foundation/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T15:36:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/18/fda-after-heidi-overton-burning-questions-agency-future/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T19:33:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/19/health-news-sanders-medicare-for-all-plan-accrues-more-support-in-congress/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T12:59:00Z"
+                }
+              ],
+              "title": "Cassidy cancels vote on Jim O'Neill for NSF a day after the FDA nomination collapse, leaving FDA leaderless into 2027",
+              "summary": "Senate HELP Chair Bill Cassidy (R-La.) canceled the committee vote on former HHS and CDC official Jim O'Neill's nomination to lead the National Science Foundation, saying O'Neill lacked support and 'did not do enough to stand up for science' against Secretary Kennedy's decisions. It came a day after the White House withdrew Heidi Overton's FDA nomination. FDA has had no permanent commissioner since May; acting commissioner Kyle Diamantas reportedly does not want the job and may leave after the new year, and Congress is unlikely to confirm a nominee before January, when Democrats take Senate control. User-fee reauthorization is the next big FDA test.",
+              "strategic_implication": "Two failed health-science nominations in two days signal that the lame-duck Senate will not rubber-stamp HHS-aligned picks. For drug, device and diagnostics sponsors, plan for continued acting leadership at FDA through at least early 2027 and a user-fee reauthorization negotiated with a Democratic Senate.",
+              "confidence": "medium",
+              "tags": [
+                "fda",
+                "nsf",
+                "senate-help",
+                "nominations",
+                "user-fees",
+                "hhs"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-medicare-expansion-momentum-sanders-wyden-jeffries",
+              "canonical_topic": "medicare-expansion-momentum-sanders-wyden-jeffries",
+              "duplicate_group": "medicare-expansion-momentum-sanders-wyden-jeffries",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/19/health-news-sanders-medicare-for-all-plan-accrues-more-support-in-congress/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T12:59:00Z"
+                }
+              ],
+              "title": "Sanders predicts Medicare eligibility at 55 can pass under Trump, with Wyden and Jeffries aligned on 'Medicare for More'",
+              "summary": "At a Nov. 18 press conference, Sen. Bernie Sanders said Democrats will pass legislation lowering Medicare eligibility while President Trump is in office and that he is 'not absolutely certain that Trump would not sign it.' His plan would lower the eligibility age from 65 to 55, add dental, vision and hearing coverage, and guarantee free Medicaid coverage to children through age 19. Sen. Ron Wyden, expected to lead the committee with jurisdiction, supports it, and House Democratic leader Hakeem Jeffries backs 'Medicare for More' and 'Medikids.' Sanders also signaled oversight of Secretary Kennedy, insurers and drug pricing if he chairs HELP.",
+              "strategic_implication": "Treat this as an agenda-setting marker for 2027 rather than near-term law, but it reframes the debate from 'Medicare for All' to incremental age-band expansion. Hospitals and MA plans should model the payer-mix effect of shifting 55-to-64 commercial lives to Medicare rates, and expect aggressive HELP oversight hearings on pharma and insurers.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "medicare-expansion",
+                "congress",
+                "midterms",
+                "health-policy"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-maha-pac-spending-midterm-losses",
+              "canonical_topic": "maha-pac-spending-midterm-losses",
+              "duplicate_group": "maha-pac-spending-midterm-losses",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/19/maha-pac-how-it-spent-money-insiders-candidates-nonprofit/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T09:30:00Z"
+                }
+              ],
+              "title": "STAT investigation: MAHA PAC had more than $10 million but spent little on candidates before midterm losses",
+              "summary": "A STAT review of filings found the MAHA PAC led by Tony Lyons had more than $10 million to spend through the cycle but directed most of it to allies, boosters, pundits and an affiliated nonprofit rather than to races. It spent less than $50,000 on a California House race it had called a priority. After a string of MAHA candidate losses, Lyons told supporters the movement was up against 'some of the most powerful and best funded interests in the world.'",
+              "strategic_implication": "MAHA's electoral weakness, alongside the Overton and O'Neill setbacks, suggests the movement's leverage in Congress is shrinking even as it keeps influence inside HHS. Food, beverage, vaccine and pharma stakeholders should expect MAHA priorities to advance mainly through administrative action rather than legislation in 2027.",
+              "confidence": "medium",
+              "tags": [
+                "maha",
+                "midterms",
+                "campaign-finance",
+                "hhs",
+                "politics"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "HLTH week is defining the next phase of clinical AI: Epic publicly promised easier AI access to its records, Abridge is offering its clinical Assistant free to 108,000 health center clinicians and adding local pathways, and Suki is backing a new agentic platform with outcome guarantees. Leaders debated how far AI can stretch primary care panels.",
+          "items": [
+            {
+              "item_id": "2026-11-19-epic-defends-practices-opens-ai-data-access",
+              "canonical_topic": "epic-defends-practices-opens-ai-data-access",
+              "duplicate_group": "epic-defends-practices-opens-ai-data-access",
+              "priority_score": 8,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/18/epic-defends-competitive-practices-promises-ai-access-to-records/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T23:07:00Z"
+                }
+              ],
+              "title": "Epic answers STAT's competition investigation at HLTH and promises easier AI access to its records",
+              "summary": "Speaking on a STAT stage at HLTH in Las Vegas, Epic executives responded publicly for the first time to a STAT investigation finding the company selectively withheld data access from rival app developers. EVP of R&D Seth Howard said Epic received about 75,000 data-access inquiries last year for systems holding records on more than 280 million Americans, and that building bespoke connections for each is not feasible. Executives said Epic will make it easier for companies to use AI to read data stored on its platform and is working toward a more open ecosystem.",
+              "strategic_implication": "A public commitment from Epic gives health systems leverage. CIOs negotiating with third-party AI vendors should ask Epic for specific, dated access paths (APIs, scopes, pricing) rather than general assurances, and track whether information-blocking scrutiny at ONC and the FTC builds on this record.",
+              "confidence": "medium",
+              "tags": [
+                "epic",
+                "ehr",
+                "interoperability",
+                "information-blocking",
+                "ai",
+                "hlth"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-abridge-assistant-free-nachc-local-pathways",
+              "canonical_topic": "abridge-assistant-free-nachc-local-pathways",
+              "duplicate_group": "abridge-assistant-free-nachc-local-pathways",
+              "priority_score": 7,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/abridge-announcements-during-hlth-emphasize-growing-healthcare-trend/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T18:12:00Z"
+                }
+              ],
+              "title": "Abridge offers its clinical Assistant free to 108,000 community health center clinicians and adds local care pathways and Cochrane evidence",
+              "summary": "Abridge said its Assistant clinical agent, already deployed across more than 300 health systems and more than 75 VA medical centers, where it answered more than 40,000 clinician questions last month, will be available at no cost to 108,000 clinicians at National Association of Community Health Centers member sites serving about 52 million people. A new opt-in Local Pathways feature lets the Assistant cite a health system's own care pathways alongside patient context, and Wiley will license nearly 10,000 Cochrane systematic reviews and about 4,000 Cochrane Clinical Answers to the tool. Viz.ai and Wolters Kluwer announced a similar UpToDate integration.",
+              "strategic_implication": "Ambient-scribe vendors are racing to become the point-of-care decision-support layer. Health systems should treat local-pathway features as a governance project: someone must own, version and retire the pathways the AI cites. The free FQHC offer also expands AI access in rural and safety-net settings, which can help close gaps in clinical decision support.",
+              "confidence": "high",
+              "tags": [
+                "abridge",
+                "ambient-ai",
+                "clinical-decision-support",
+                "fqhc",
+                "nachc",
+                "hlth"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-suki-os-agentic-platform-outcome-guarantee",
+              "canonical_topic": "suki-os-agentic-platform-outcome-guarantee",
+              "duplicate_group": "suki-os-agentic-platform-outcome-guarantee",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/suki-debuts-agentic-operating-system/874848/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T14:13:00Z"
+                }
+              ],
+              "title": "Suki launches 'Suki OS' agentic layer with prior authorization and documentation agents and offers fee refunds if outcomes miss",
+              "summary": "AI scribe company Suki launched Suki OS, a platform connecting existing health software and AI agents, with new agents for prior authorization and clinical documentation that can prepare pre-visit summaries, verify insurance and support revenue-cycle work. CEO Punit Singh Soni said 'ambient documentation is a starting point, not the destination.' Suki says it will return customer fees if agreed performance outcomes are not met, though it did not disclose targets. Competitors include Abridge and Ambience; partners include Optum and Wolters Kluwer's UpToDate.",
+              "strategic_implication": "Outcome-guarantee pricing is becoming a buying lever in ambient AI. Procurement teams should push vendors to define measurable targets (denial rates, prior auth turnaround, after-hours documentation time) and clawback terms in contracts, and avoid stacking overlapping agent platforms from multiple scribe vendors.",
+              "confidence": "high",
+              "tags": [
+                "suki",
+                "agentic-ai",
+                "prior-authorization",
+                "ambient-ai",
+                "value-based-contracting"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-ai-primary-care-hlth-debate",
+              "canonical_topic": "ai-primary-care-hlth-debate",
+              "duplicate_group": "ai-primary-care-hlth-debate",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ai-is-coming-for-primary-care/874966/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T15:45:00Z"
+                }
+              ],
+              "title": "HLTH leaders debate how far AI can stretch primary care capacity, from 1,500 to 2,500 patients per clinician",
+              "summary": "With about one-third of Americans lacking a primary care provider and only one-fourth of new doctors entering the field, HLTH speakers described AI as a way to extend primary care capacity. NACHC CEO Dr. Kyu Rhee said AI could let him manage 2,500 patients rather than 1,500 with a team of 11; Counsel Health, which Oura agreed to buy for $625 million, described its clinician-supervised AI as 'almost an Iron Man suit.' AMA CEO Dr. John Whyte pushed back that 'patients don't want to hear a cancer diagnosis from an LLM,' and Anthropic's Dr. Sarah Russell pointed to AI's role in routing patients.",
+              "strategic_implication": "Panel-size expansion claims will soon show up in workforce and staffing models. Primary care leaders should pilot AI-supported triage and asynchronous care with clear escalation rules and measure panel size, quality and patient experience before adjusting staffing ratios or productivity expectations.",
+              "confidence": "high",
+              "tags": [
+                "primary-care",
+                "ai",
+                "workforce",
+                "hlth",
+                "care-models"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Minnesota cleared Sutter's acquisition of Allina with $2.15 billion in binding commitments, a template for conditional approval of cross-market mergers. Pfizer joined the in vivo CAR-T race through a China deal, FDA's published Summit letter reset the bar for China-originated oncology data, Merck signed with Isomorphic, and Hone Health raised $228 million for cash-pay longevity care.",
+          "items": [
+            {
+              "item_id": "2026-11-19-sutter-allina-merger-cleared-2-15b-commitment",
+              "canonical_topic": "sutter-allina-merger-cleared-2-15b-commitment",
+              "duplicate_group": "sutter-allina-merger-cleared-2-15b-commitment",
+              "priority_score": 8,
+              "primary_source": "Yahoo Finance / Sacramento Bee",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Yahoo Finance",
+                  "url": "https://finance.yahoo.com/healthcare/articles/sutter-health-merger-oked-minnesota-231500301.html",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T00:00:00Z"
+                },
+                {
+                  "source": "St. Cloud Times",
+                  "url": "https://www.sctimes.com/story/news/local/minnesota/2026/11/18/minnesota-approves-sutter-health-allina-merger/92824171007/",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T11:06:00Z"
+                }
+              ],
+              "title": "Minnesota AG clears Sutter Health's Allina acquisition with a 10-year agreement and $2.15 billion investment commitment",
+              "summary": "Minnesota Attorney General Keith Ellison announced a 10-year oversight agreement with Sutter Health and Allina Health that clears the deal to close around Jan. 1. Sutter will invest $2.15 billion in Minnesota, with at least $150 million going to rural care and rural residency programs, and the systems agreed to keep Allina's core services and gender and reproductive care for five years, stay in Medicare and Medicaid, and honor existing labor contracts. The combined $26 billion system will have 39 hospitals and about 88,000 employees across California, Minnesota and Wisconsin. Allina reported nearly $1 billion in operating losses over five years.",
+              "strategic_implication": "This is a template for how state AGs are approving cross-market mergers: binding service-line, rural-investment and labor conditions in exchange for clearance. Systems pursuing out-of-state partners should expect similar multi-year commitments and price in compliance reporting. Competitors in the Twin Cities should prepare for a better-capitalized Allina.",
+              "confidence": "high",
+              "tags": [
+                "m-and-a",
+                "sutter-health",
+                "allina",
+                "state-ag",
+                "cross-market-mergers",
+                "rural-health"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-pfizer-starna-in-vivo-car-t-deal",
+              "canonical_topic": "pfizer-starna-in-vivo-car-t-deal",
+              "duplicate_group": "pfizer-starna-in-vivo-car-t-deal",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/pfizer-starna-in-vivo-cell-therapy-autoimmune-disease-deal/875018/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T15:55:00Z"
+                },
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/pfizer-immunology-inflammation-starna-in-vivo-car-t-cell-therapy-autoimmune-disease-pfe/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T19:25:00Z"
+                }
+              ],
+              "title": "Pfizer pays $330 million up front for China-based Starna's in vivo CAR-T programs in autoimmune disease",
+              "summary": "Pfizer will pay Starna Therapeutics $330 million up front and up to $2.3 billion in milestones, plus royalties, for ex-Greater China rights to three preclinical in vivo cell therapy programs for autoimmune disease and rights to use Starna's RNA technology in inflammation, immunology and oncology. It is Pfizer's first move into in vivo CAR-T and at least its fifth major alliance with a Chinese company since the start of 2025. In vivo approaches aim to reprogram immune cells inside the body, avoiding the lengthy manufacturing and chemotherapy conditioning of ex vivo CAR-T; AstraZeneca, AbbVie, Gilead, Bristol Myers Squibb and Eli Lilly have made similar acquisitions.",
+              "strategic_implication": "If in vivo CAR-T works, cell therapy could shift from specialized academic centers to a much broader site-of-care footprint, including for lupus and MS. Health systems building cell therapy programs should watch this class before overcommitting to ex vivo apheresis and manufacturing infrastructure; the steady flow of China-sourced assets also keeps U.S. biosecurity policy in play.",
+              "confidence": "high",
+              "tags": [
+                "pfizer",
+                "cell-therapy",
+                "car-t",
+                "autoimmune",
+                "china-biotech",
+                "dealmaking"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-fda-publishes-summit-ivonescimab-crl",
+              "canonical_topic": "fda-publishes-summit-ivonescimab-crl",
+              "duplicate_group": "fda-publishes-summit-ivonescimab-crl",
+              "priority_score": 5,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/summit-crl-sellas-data-nelkarmi-lilly-astrazeneca-biogen/874825/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T14:21:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/18/biotech-news-fda-discloses-reasons-for-rejecting-summit-drug/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T14:37:00Z"
+                }
+              ],
+              "title": "FDA publishes rejection letter for Summit's ivonescimab, calling benefits 'modest' and advising a new trial",
+              "summary": "FDA released the complete response letter rejecting Summit Therapeutics and Akeso's ivonescimab for lung cancer, citing concerns about the size of its effect on tumor progression, the relevance of the largely non-U.S. data to American patients and the lack of a clear survival benefit; it said the 'modest' benefits do not outweigh added safety risks and advised a new trial. A Leerink analyst said a new application alone is 'unlikely to change the approval outcome.' Separately, FDA approved GSK's Nelkarmi for previously treated ALK-positive lung cancer, the second approval from its $10.6 billion Nuvalent purchase, and AstraZeneca's self-administered C5 inhibitor Klygefa for generalized myasthenia gravis.",
+              "strategic_implication": "This follows the Nov. 16 rejection item with FDA's reasoning now public. The letter reinforces that overall survival and U.S.-relevant populations remain the bar for China-originated oncology assets, which affects licensing valuations and trial design for the many China-sourced deals now in U.S. pipelines.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "oncology",
+                "complete-response-letter",
+                "summit-therapeutics",
+                "china-biotech"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-merck-isomorphic-oncology-ai-collaboration",
+              "canonical_topic": "merck-isomorphic-oncology-ai-collaboration",
+              "duplicate_group": "merck-isomorphic-oncology-ai-collaboration",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/19/merck-isomorphic-labs-partner-to-develop-oncology-drug-candidates/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T11:45:00Z"
+                }
+              ],
+              "title": "Merck partners with Isomorphic Labs on AI-designed small molecules for an undisclosed oncology target",
+              "summary": "Merck and Isomorphic Labs announced a research collaboration on Nov. 19 to discover small-molecule candidates against an undisclosed oncology target that Merck called of 'strategic importance.' The partnership pairs Isomorphic's drug-design engine, built on Nobel-winning protein-structure modeling, with Merck's existing wet-lab data; Merck will handle development, manufacturing and commercialization. Financial terms were not disclosed in the visible text. The deal follows Isomorphic's $5 billion-plus Series C covered Nov. 18.",
+              "strategic_implication": "Large pharma is now feeding proprietary experimental data into AI design engines on high-priority targets, not just exploratory ones. The competitive edge is shifting to who owns high-quality proprietary datasets, which is relevant for academic medical centers and health systems weighing data-licensing partnerships with pharma and AI firms.",
+              "confidence": "medium",
+              "tags": [
+                "merck",
+                "isomorphic-labs",
+                "ai-drug-discovery",
+                "oncology",
+                "pharma-partnerships"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-hone-health-228m-longevity-platform",
+              "canonical_topic": "hone-health-228m-longevity-platform",
+              "duplicate_group": "hone-health-228m-longevity-platform",
+              "priority_score": 5,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/hone-health-secures-228m-for-longevity-platform/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T23:19:00Z"
+                }
+              ],
+              "title": "Hone Health raises $228 million, mostly growth financing, to scale direct-to-consumer longevity care and launch a peptide program",
+              "summary": "Direct-to-consumer longevity company Hone Health, which says it has served more than 200,000 patients, raised $228 million: $28 million in Series A equity led by MarcyPen Capital Partners and $200 million in growth financing from General Catalyst's Customer Value Fund. Plans include metabolic health, inflammation and immunity programs, MRI and gut-microbiome diagnostics, AI personalization, a physician-supervised peptide program and clinical-trials infrastructure. It also launched Hone Black, a concierge membership with testing of more than 1,600 biomarkers.",
+              "strategic_implication": "Cash-pay longevity and hormone platforms are drawing large structured financing, pulling commercially insured, higher-income patients toward subscription models outside traditional primary care. The peptide program lands amid shifting FDA compounding policy, a regulatory risk worth watching for any system considering partnerships with these platforms.",
+              "confidence": "medium",
+              "tags": [
+                "consumer-health",
+                "longevity",
+                "venture-funding",
+                "peptides",
+                "direct-to-consumer"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "NACHC warns up to 1,800 health center sites could close under H.R. 1 pressures, which would shift volume to hospitals. Delaware's CON board blocked ChristianaCare's micro-hospitals after incumbent opposition, while Atrium is investing $387 million to expand pediatric capacity in a fast-growing market.",
+          "items": [
+            {
+              "item_id": "2026-11-19-nachc-1800-health-center-sites-at-risk",
+              "canonical_topic": "nachc-1800-health-center-sites-at-risk",
+              "duplicate_group": "nachc-1800-health-center-sites-at-risk",
+              "priority_score": 7,
+              "primary_source": "Chief Healthcare Executive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Chief Healthcare Executive",
+                  "url": "https://www.chiefhealthcareexecutive.com/view/community-health-centers-push-for-triple-double-hlth-2026",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T00:00:00Z"
+                }
+              ],
+              "title": "NACHC warns up to 1,800 health center sites could close and pitches a 'triple double' for primary care",
+              "summary": "NACHC CEO Dr. Kyu Rhee told Chief Healthcare Executive at HLTH that the average community health center runs a negative 1% to 2% margin and nearly half have less than 90 days of cash on hand. Citing H.R. 1 Medicaid cuts and rising ACA premiums that could add 4 million uninsured patients, NACHC projects up to 1,800 sites could close and 34,000 jobs could be lost. Health centers serve 52 million people, including one in three rural residents. Rhee's 'triple double' calls for doubling primary care's share of spending from 5% to 10%, the share of people served at health centers from 10% to 20%, and the share of graduates entering primary care from 20% to 40%.",
+              "strategic_implication": "Health center closures push uninsured and Medicaid patients toward hospital EDs. Hospitals, especially in rural and safety-net markets, should identify which local FQHCs are financially fragile and consider specialty-access, referral or shared-staffing partnerships now, before closures shift volume and uncompensated care onto the hospital.",
+              "confidence": "medium",
+              "tags": [
+                "fqhc",
+                "community-health-centers",
+                "primary-care",
+                "medicaid",
+                "hr-1",
+                "rural-health"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-delaware-denies-christianacare-micro-hospitals",
+              "canonical_topic": "delaware-denies-christianacare-micro-hospitals",
+              "duplicate_group": "delaware-denies-christianacare-micro-hospitals",
+              "priority_score": 6,
+              "primary_source": "Delaware Business Times",
+              "source_tier": "Tier 3",
+              "source_refs": [
+                {
+                  "source": "Delaware Business Times",
+                  "url": "https://delawarebusinesstimes.com/?cat=-1/page/408//page/2/",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T00:00:00Z"
+                },
+                {
+                  "source": "WBOC/CoastTV",
+                  "url": "https://www.coasttv.com/news/delaware-board-rejects-christianacares-proposed-micro-hospitals-in-georgetown-and-camden/video_04c890b7-8987-52a3-9d30-d4512da58260.html",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T00:00:00Z"
+                }
+              ],
+              "title": "Delaware certificate-of-need board rejects ChristianaCare's $123 million micro-hospital campuses after Bayhealth opposition",
+              "summary": "Delaware's Health Resources Board on Nov. 18 denied ChristianaCare's applications for two health campuses with micro-hospitals in Camden (Kent County) and Georgetown (Sussex County), a combined $123.2 million investment. Bayhealth opposed the inpatient components, arguing that existing systems' expansions, including its own, will meet inpatient demand and that new investment should focus on outpatient care.",
+              "strategic_implication": "Certificate-of-need and similar boards remain a real barrier to growth into a competitor's backyard, and incumbents are winning by framing the need as outpatient rather than inpatient. Systems planning micro-hospital or neighborhood-hospital strategies in CON states should lead with outpatient-first designs and documented local access gaps.",
+              "confidence": "medium",
+              "tags": [
+                "certificate-of-need",
+                "micro-hospitals",
+                "christianacare",
+                "bayhealth",
+                "market-entry"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-atrium-levine-childrens-387m-expansion",
+              "canonical_topic": "atrium-levine-childrens-387m-expansion",
+              "duplicate_group": "atrium-levine-childrens-387m-expansion",
+              "priority_score": 6,
+              "primary_source": "Yahoo News / Charlotte Observer",
+              "source_tier": "Tier 3",
+              "source_refs": [
+                {
+                  "source": "Yahoo News",
+                  "url": "https://www.yahoo.com/news/us/articles/levine-children-hospital-announces-387-210349382.html",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T21:03:00Z"
+                },
+                {
+                  "source": "The Herald (Rock Hill)",
+                  "url": "https://www.heraldonline.com/news/business/article318134211.html",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T00:00:00Z"
+                }
+              ],
+              "title": "Atrium Health commits $387 million to expand Levine Children's Hospital to about 350 beds as regional pediatric volume rises 43%",
+              "summary": "Atrium Health, part of Advocate Health, announced a $387 million expansion of Levine Children's Hospital in Charlotte, its largest capital investment since opening in 2007. The project adds more than 60 inpatient pediatric beds and more than 40 NICU beds, bringing capacity to about 350, more than doubles emergency department and surgical/procedural space, and adds a dedicated pediatric imaging center. Greater Charlotte pediatric inpatient volume is up 43% in five years, and the hospital serves children from 96 of North Carolina's 100 counties.",
+              "strategic_implication": "While many systems close pediatric units, high-growth Sun Belt markets are going the other way and consolidating pediatric care into regional hubs. Community hospitals in those regions should plan transfer agreements and pediatric readiness around a stronger regional destination, and children's hospitals elsewhere can use the volume data to support their own capacity cases.",
+              "confidence": "high",
+              "tags": [
+                "pediatrics",
+                "capital-investment",
+                "atrium-health",
+                "advocate-health",
+                "capacity"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "The Labor Department's proposal to end Schedule A would slow international nurse and PT recruitment, about 23,800 petitions a year. A cardiologist urges caution on the STREAM statin-deprescribing results, and a veteran physician's account shows what ambient AI can do for after-hours burnout.",
+          "items": [
+            {
+              "item_id": "2026-11-19-dol-proposes-ending-schedule-a-nurses-pts",
+              "canonical_topic": "dol-proposes-ending-schedule-a-nurses-pts",
+              "duplicate_group": "dol-proposes-ending-schedule-a-nurses-pts",
+              "priority_score": 9,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/quality/nursing/feds-propose-ending-fast-track-green-cards-for-foreign-nurses-8-notes/",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T00:00:00Z"
+                },
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/regulatory/department-labor-moves-end-expedited-green-cards-nurses-physical-therapists",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T00:00:00Z"
+                }
+              ],
+              "title": "Labor Department proposes ending Schedule A, the fast-track green card pathway for foreign nurses and physical therapists",
+              "summary": "A Labor Department proposed rule published in the Federal Register Nov. 17 would eliminate Schedule A, the 30-plus-year exemption that lets employers sponsor professional nurses and physical therapists for green cards without first running the PERM labor-market test. DOL said it 'no longer possesses evidence' of a nationwide shortage and lacks statutory authority for occupation-wide exemptions. About 23,800 petitions a year would be affected (23,521 in FY2025). Employers would instead have to advertise for at least 90 days online, finish recruitment 30 to 60 days before filing, and would be barred from filing for two years after laying off U.S. workers in similar roles in the area. Comments are due Jan. 19, 2027.",
+              "strategic_implication": "International nurse recruitment pipelines would get slower and more expensive, hitting rural hospitals, nursing homes and rehab providers hardest. CNOs and HR leaders should inventory pending and planned Schedule A sponsorships, accelerate filings that can be made under current rules, check whether recent layoffs would trigger the two-year bar, and consider submitting comments with local vacancy data.",
+              "confidence": "high",
+              "tags": [
+                "nursing-workforce",
+                "immigration",
+                "schedule-a",
+                "perm",
+                "physical-therapy",
+                "rural-health"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-stream-statin-deprescribing-trial-caution",
+              "canonical_topic": "stream-statin-deprescribing-trial-caution",
+              "duplicate_group": "stream-statin-deprescribing-trial-caution",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/19/deprescribing-statins-study-stream-trial-aha-questions/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T09:30:00Z"
+                }
+              ],
+              "title": "Cardiologist urges caution on the STREAM statin-deprescribing trial: 'noninferior' but still worse",
+              "summary": "The STREAM trial, presented at the American Heart Association's annual meeting, found older adults without prior heart attack or stroke who stopped statins did not have significantly different outcomes from those who continued. In a STAT column, Northwestern preventive cardiologist Vishal Khetpal notes the event curves diverged and that deprescribing was technically noninferior by the trial's prespecified margin 'but nevertheless, still inferior.' The data safety monitoring board advised patients who had stopped statins to talk with their doctors about resuming them.",
+              "strategic_implication": "Deprescribing in older adults is a legitimate quality and polypharmacy goal, but STREAM is not a green light for blanket statin discontinuation protocols. Medical directors and pharmacy and therapeutics committees should hold off on embedding statin-stop prompts in geriatric or MA care-management workflows until full results and guideline commentary are out.",
+              "confidence": "medium",
+              "tags": [
+                "cardiology",
+                "statins",
+                "deprescribing",
+                "geriatrics",
+                "clinical-evidence"
+              ]
+            },
+            {
+              "item_id": "2026-11-19-physician-ambient-ai-pajama-time-workforce",
+              "canonical_topic": "physician-ambient-ai-pajama-time-workforce",
+              "duplicate_group": "physician-ambient-ai-pajama-time-workforce",
+              "priority_score": 4,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/ive-practiced-medicine-for-40-years-ai-gave-me-back-my-evenings/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-18T14:20:00Z"
+                }
+              ],
+              "title": "Veteran family physician: ambient AI took back the evenings EHR work had consumed for 20 years",
+              "summary": "In a MedCity News essay, retired family physician Dr. Michael Miller, a former chief of quality and physician advocacy for Ascension St. Thomas, describes how ambient AI documentation ended a 20-year routine of finishing notes at home until 9 or 10 p.m. He cites research estimating family physicians spend about 86 minutes on EHR work each night, a projected shortage of up to 124,000 physicians by 2034, nearly half in primary care, and burnout that reached 60% in 2024 and remains above half. His advice to colleagues: 'whatever tools exist to get your evenings back, use them now.'",
+              "strategic_implication": "Pair this account with hard metrics. Systems deploying ambient AI should measure after-hours EHR time and retention intent, not just note-completion speed, because getting time back is the benefit most likely to keep late-career physicians practicing.",
+              "confidence": "medium",
+              "tags": [
+                "ambient-ai",
+                "physician-burnout",
+                "primary-care",
+                "ehr",
+                "retention"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-18",
       "generated_at": "2026-11-18T14:30:00Z",
       "headline": "Today's Healthcare Insights",
@@ -18381,518 +19069,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-10-08",
-      "generated_at": "2026-10-08T12:37:03Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's edition covers drug trade and pricing fights (new tariffs, PhRMA's suit against the GLOBE model, 340B reform), patient-facing AI, and active dealmaking from Forbion, Roche, and academic health systems. It also covers Fairview's directory lawsuit against UnitedHealthcare before Medicare Advantage open enrollment, Los Angeles County's push against medical debt, and a proposed $70,000 fee that could hit the international research workforce. Sources include STAT News, Healthcare Dive, Becker's Hospital Review, FDA, WHO, and regional reporting.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
-          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
-          "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS",
-          "Targeted web/news searches and primary-source verification (FDA, ONC via Becker's, regional reporting)"
-        ],
-        "sources_successful": [
-          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
-          "Healthcare Dive RSS (reviewed; current items overlapped with the 2026-10-06 and 2026-10-07 editions)",
-          "Targeted web/news searches (Becker's Hospital Review, FOX 9, NPR/KVCR)",
-          "FDA oncology approval notifications",
-          "WHO guideline-launch page (automated run)"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels and newsletter-name searches returned no messages in the connected mailbox since 2026-10-06",
-          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch",
-          "STAT+ articles paywalled; drafted from RSS previews plus accessible article text"
-        ],
-        "run_notes": "Same-day rebuild in place: the automated run (generated 2026-10-08T11:06:25Z) appended 2026-10-08 and left the feed at 31 editions. Trimmed to 30; the displaced 2026-08-27 edition is preserved in archive/editions-archive-2026-10-08.json. Retained all 9 automated items, added 8 new items from the Oct. 7-8 window screened against the prior 15 editions (skipped Orlando Health-RMC as Oct. 1 news and the BCBSA AI-billing report as previously covered), and refreshed bucket syntheses.",
-        "items_captured": 17
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Drug pricing and trade rules are creating immediate legal and supply-chain uncertainty, as PhRMA challenges the GLOBE model and smaller biotechs seek tariff exemptions. An HHS perspective signals continuing debate over 340B design, and committee turnover could reshape health-policy oversight after the midterms.",
-          "items": [
-            {
-              "item_id": "2026-10-08-biotech-drug-tariff-exemptions",
-              "canonical_topic": "biotech-drug-tariff-exemptions",
-              "duplicate_group": "biotech-drug-tariff-exemptions",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/08/trump-tariffs-section-232-imported-prescription-drugs-challenge-biotech-companies/?utm_campaign=rss",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T08:30:00Z"
-                }
-              ],
-              "title": "Smaller biotech firms struggle to secure exemptions from new U.S. drug tariffs",
-              "summary": "Smaller biotechnology companies are trying to determine how to qualify for exemptions from new U.S. import tariffs on prescription drugs. Search results report that some medicines face a 100% tariff while larger pharmaceutical companies are largely exempt, leaving smaller firms with a more difficult compliance and supply-chain task.",
-              "strategic_implication": "Smaller manufacturers should map tariff exposure across finished products and inputs and assess eligibility for exemptions. Uncertainty may strengthen the economics of domestic production or alternative sourcing.",
-              "confidence": "medium",
-              "tags": [
-                "drug-tariffs",
-                "biotech",
-                "supply-chain",
-                "trade-policy"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-phrma-challenges-globe-model",
-              "canonical_topic": "phrma-challenges-globe-model",
-              "duplicate_group": "phrma-challenges-globe-model",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/07/phrma-sues-over-drug-pricing-model-globe/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T14:06:29Z"
-                }
-              ],
-              "title": "PhRMA sues to block Medicare drug-pricing pilot tied to prices in other countries",
-              "summary": "PhRMA sued the Trump administration over the GLOBE pilot, which tests a most-favored-nation approach to Medicare drug pricing. The trade group is seeking to invalidate the model, arguing that the administration lacks authority for the program.",
-              "strategic_implication": "The suit adds legal risk to the timing and design of Medicare drug-pricing demonstrations. Manufacturers and health systems should track court developments before assuming the model will proceed as written.",
-              "confidence": "high",
-              "tags": [
-                "medicare",
-                "drug-pricing",
-                "phrma",
-                "litigation"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-340b-program-reform-debate",
-              "canonical_topic": "340b-program-reform-debate",
-              "duplicate_group": "340b-program-reform-debate",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/08/340b-drug-discount-program-cms-reform-proposal/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T08:30:00Z"
-                }
-              ],
-              "title": "HHS official argues CMS should correct unintended effects of the 340B discount program",
-              "summary": "In a STAT opinion piece, an HHS leader argues that the 340B discount program has grown beyond its original safety-net purpose and become a costly institutional subsidy. The article frames CMS as planning a response, but the RSS excerpt does not specify a final policy, mechanism, or timeline.",
-              "strategic_implication": "Hospitals, clinics, and manufacturers with material 340B exposure should watch for concrete CMS proposals rather than treat the opinion as a finalized rule. Any changes could affect drug purchasing economics and safety-net resources.",
-              "confidence": "medium",
-              "tags": [
-                "340b",
-                "cms",
-                "drug-discounts",
-                "safety-net"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-house-health-committee-contests",
-              "canonical_topic": "house-health-committee-contests",
-              "duplicate_group": "house-health-committee-contests",
-              "priority_score": 5,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/08/midterm-election-democrats-vie-for-roles-house-health-care-committees/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T08:30:00Z"
-                }
-              ],
-              "title": "Dozens of Democrats compete for seats on influential House health committees",
-              "summary": "Dozens of Democratic lawmakers are seeking positions on key House health committees ahead of the midterms. Committee membership could change materially after the election, creating uncertainty around future legislative and oversight priorities.",
-              "strategic_implication": "Healthcare organizations should monitor committee assignments alongside election results because chair and member turnover can reset oversight attention and policy agendas. The immediate signal is political positioning, not a specific bill or regulatory change.",
-              "confidence": "medium",
-              "tags": [
-                "congress",
-                "midterms",
-                "health-policy",
-                "oversight"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "AI is moving toward patient-operated tools: Clairity is selling breast-cancer risk prediction directly to consumers, and ONC is funding infrastructure for patient-controlled AI agents and cleaner lab-data exchange.",
-          "items": [
-            {
-              "item_id": "2026-10-08-clairity-direct-to-patient-ai",
-              "canonical_topic": "clairity-direct-to-patient-ai",
-              "duplicate_group": "clairity-direct-to-patient-ai",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/08/why-clairity-took-breast-cancer-risk-prediction-ai-directly-to-patients/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T08:30:00Z"
-                }
-              ],
-              "title": "Clairity takes its AI breast-cancer risk tool directly to patients",
-              "summary": "Clairity is bringing its breast-cancer risk-prediction AI directly to patients instead of waiting for broad adoption by physicians and insurers. The strategy creates a consumer-facing route for a technology that search results describe as using mammogram images to estimate five-year risk.",
-              "strategic_implication": "Direct distribution may accelerate patient access but raises the importance of clear risk communication, clinical follow-up pathways, and evidence that supports use outside clinician-led workflows. Providers and payers should watch for effects on screening demand and downstream referrals.",
-              "confidence": "medium",
-              "tags": [
-                "health-ai",
-                "breast-cancer",
-                "risk-prediction",
-                "direct-to-consumer"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-onc-patient-controlled-ai-agents",
-              "canonical_topic": "onc-patient-controlled-ai-agents",
-              "duplicate_group": "onc-patient-controlled-ai-agents",
-              "priority_score": 7,
-              "primary_source": "Becker's Hospital Review",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/hhs-funds-development-of-patient-controlled-ai-agents/",
-                  "source_type": "web",
-                  "published_at": "2026-10-07T00:00:00Z"
-                }
-              ],
-              "title": "ONC funds patient-controlled AI agents and lab-data interoperability work",
-              "summary": "HHS' Office of the National Coordinator for Health IT awarded $1.5 million through its LEAP in Health IT program to MedStar Health Research Institute and Regenstrief Institute. MedStar is building an open-source bridge that lets patient-controlled AI agents coordinate clinical follow-ups with verifiable records of AI actions; Regenstrief will help small independent labs close terminology and data-quality gaps.",
-              "strategic_implication": "Federal health IT policy is beginning to treat patients, not only providers, as operators of AI agents. Health systems should anticipate patient-side agents requesting data and scheduling follow-ups, and labs should expect interoperability quality to become a measured expectation.",
-              "confidence": "high",
-              "tags": [
-                "onc",
-                "ai-agents",
-                "interoperability",
-                "lab-data"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Capital and dealmaking remain active, from Forbion's record $2.6 billion fund and Roche's discovery-stage China partnership to academic systems buying community hospitals. IP disputes, like Merck's Keytruda setback in Europe, are shaping product lifecycle strategy.",
-          "items": [
-            {
-              "item_id": "2026-10-08-forbion-raises-2-6b",
-              "canonical_topic": "forbion-raises-2-6b",
-              "duplicate_group": "forbion-raises-2-6b",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/07/biotech-news-forbion-raises-2-6-billion-largest-fundraise/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T13:38:52Z"
-                }
-              ],
-              "title": "Forbion raises $2.6 billion in its largest-ever fundraising",
-              "summary": "European biotech investor Forbion said it raised $2.6 billion, its largest fundraise to date. Search results identify the capital as spanning two venture funds and describe it as a substantial lift for European biotech financing.",
-              "strategic_implication": "The raise signals that large specialist funds can still attract substantial commitments despite uneven biotech financing conditions. Emerging companies should track deployment toward clinical-stage assets and regional investment priorities.",
-              "confidence": "medium",
-              "tags": [
-                "biotech",
-                "venture-capital",
-                "fundraising",
-                "europe"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-merck-keytruda-patent-injunction",
-              "canonical_topic": "merck-keytruda-patent-injunction",
-              "duplicate_group": "merck-keytruda-patent-injunction",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/pharmalot/2026/10/07/merck-suffers-setback-in-europe-over-new-keytruda-formulation/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T13:42:22Z"
-                }
-              ],
-              "title": "Dutch court blocks Merck’s subcutaneous Keytruda in several European markets",
-              "summary": "A Dutch court ruled that Merck infringed a patent related to the subcutaneous formulation of Keytruda and ordered a halt to manufacturing and marketing in several European countries. The ruling is a setback to Merck’s effort to broaden delivery options for the cancer drug.",
-              "strategic_implication": "The injunction may delay or constrain a formulation strategy with potential implications for convenience, capacity, and product lifecycle management. Merck and competitors will need to assess the ruling’s scope and the prospect of further litigation or appeal.",
-              "confidence": "medium",
-              "tags": [
-                "merck",
-                "keytruda",
-                "patent-litigation",
-                "oncology",
-                "europe"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-roche-defand-molecular-glue-deal",
-              "canonical_topic": "roche-defand-molecular-glue-deal",
-              "duplicate_group": "roche-defand-molecular-glue-deal",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/08/roche-defand-therapeutics-drug-development-deal/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T12:00:00Z"
-                }
-              ],
-              "title": "Roche partners with Chinese startup Defand on molecular glue drug discovery",
-              "summary": "Roche signed a collaboration with Chinese startup Defand Therapeutics to discover multiple molecular glue medicines for cancer and immune-driven diseases. Terms were not disclosed, but a source told STAT the deal could approach $1 billion including milestones. Unlike most recent China deals, Roche is partnering on early discovery rather than licensing a clinical-stage asset.",
-              "strategic_implication": "Big pharma reliance on Chinese biotech is moving upstream into discovery, even as U.S. tariff and biosecurity policy tightens. Investors and policymakers should watch whether early-stage partnerships draw the same scrutiny as asset licensing.",
-              "confidence": "medium",
-              "tags": [
-                "roche",
-                "china-biotech",
-                "molecular-glues",
-                "dealmaking"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-academic-systems-acquire-community-hospitals",
-              "canonical_topic": "academic-systems-acquire-community-hospitals",
-              "duplicate_group": "academic-systems-acquire-community-hospitals",
-              "priority_score": 7,
-              "primary_source": "Becker's Hospital Review",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/hospital-transactions-and-valuation/academic-health-systems-are-buying-up-community-hospitals/",
-                  "source_type": "web",
-                  "published_at": "2026-10-07T00:00:00Z"
-                }
-              ],
-              "title": "Academic health systems step up acquisitions of community hospitals",
-              "summary": "WVU Health System closed its acquisition of five-hospital Independence Health System in western Pennsylvania on Oct. 1, committing $800 million over five years and reaching 30 hospitals. The University of Kansas Health System signed a definitive agreement on Sept. 29 to take over Ardent Health's St. Francis Campus in Topeka, with closing expected by year-end pending regulatory approval.",
-              "strategic_implication": "Academic systems are using community hospitals to build regional referral networks and capture specialty volume. Independent and for-profit-operated community hospitals should expect more inbound interest, while state regulators continue to scrutinize cross-market consolidation.",
-              "confidence": "high",
-              "tags": [
-                "hospital-ma",
-                "academic-medical-centers",
-                "consolidation"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Medicare Advantage network exits are turning into directory litigation ahead of open enrollment, and California's presumptive-eligibility mandate is making automated financial-aid screening a core revenue-cycle requirement.",
-          "items": [
-            {
-              "item_id": "2026-10-08-fairview-sues-unitedhealthcare-ma-directory",
-              "canonical_topic": "fairview-sues-unitedhealthcare-ma-directory",
-              "duplicate_group": "fairview-sues-unitedhealthcare-ma-directory",
-              "priority_score": 8,
-              "primary_source": "FOX 9",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "FOX 9",
-                  "url": "https://www.fox9.com/news/fairview-sues-unitedhealthcare-medicare-advantage-oct-7-2026.amp",
-                  "source_type": "web",
-                  "published_at": "2026-10-08T02:17:00Z"
-                }
-              ],
-              "title": "Fairview sues UnitedHealthcare over in-network listings ahead of Medicare Advantage open enrollment",
-              "summary": "Fairview Health sued UnitedHealthcare for false advertising, saying the insurer still lists Fairview as in-network for 2027 Medicare Advantage plans even though Fairview said in June it would not renew. About 33,000 UnitedHealthcare MA members, mostly in Minnesota, use Fairview. Fairview is seeking a preliminary injunction before open enrollment begins Oct. 15; a hearing is expected Oct. 13.",
-              "strategic_implication": "Provider exits from Medicare Advantage contracts are moving from negotiation to litigation over provider directories. Systems leaving MA networks should document notice dates and monitor plan marketing materials before open enrollment.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "provider-directories",
-                "unitedhealthcare",
-                "litigation"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-la-county-presumptive-eligibility-medical-debt",
-              "canonical_topic": "la-county-presumptive-eligibility-medical-debt",
-              "duplicate_group": "la-county-presumptive-eligibility-medical-debt",
-              "priority_score": 7,
-              "primary_source": "NPR via KVCR",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "NPR via KVCR",
-                  "url": "https://kvcr.org/news/npr-top-stories/2026-10-08/hospital-california-healthcare-medical-debt",
-                  "source_type": "web",
-                  "published_at": "2026-10-08T00:00:00Z"
-                }
-              ],
-              "title": "Los Angeles County pushes hospitals toward automatic financial-aid screening to curb medical debt",
-              "summary": "Los Angeles County public health officials are helping hospitals adopt presumptive-eligibility systems that automatically screen patients for financial aid. About 800,000 county residents have medical bills they cannot pay, and only about 1 in 5 county hospitals uses such a system today. California will require all hospitals to screen this way by next July; L.A. Care committed $2 million and the regional hospital association is arranging bulk purchasing.",
-              "strategic_implication": "Automated charity-care screening is becoming a compliance expectation rather than an optional revenue-cycle practice. Hospitals in California, and in states watching its model, should budget for screening tools and expect higher financial-aid volumes alongside lower bad debt.",
-              "confidence": "high",
-              "tags": [
-                "medical-debt",
-                "charity-care",
-                "revenue-cycle",
-                "california"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "A proposed $70,000 OPT fee threatens the international research workforce. Clinical updates include WHO's first integrated pediatric obesity guidance, an FDA HER2 maintenance approval, an early optogenetics vision result, and renewed attention to gaps in U.S. hepatitis C treatment.",
-          "items": [
-            {
-              "item_id": "2026-10-08-who-child-adolescent-obesity-guidelines",
-              "canonical_topic": "who-child-adolescent-obesity-guidelines",
-              "duplicate_group": "who-child-adolescent-obesity-guidelines",
-              "priority_score": 7,
-              "primary_source": "World Health Organization",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "World Health Organization",
-                  "url": "https://www.who.int/news-room/events/detail/2026/10/07/default-calendar/launch-of-who-guidelines--integrated-management-of-obesity-in-children-and-adolescents",
-                  "source_type": "web",
-                  "published_at": "2026-10-07T11:00:00Z"
-                },
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/pharmalot/2026/10/07/who-obesity-guidelines-for-kids-doj-targets-pharma/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T12:56:49Z"
-                }
-              ],
-              "title": "WHO publishes its first integrated-care guidance for obesity in children and adolescents",
-              "summary": "WHO launched two guidelines describing how health systems and health workers can deliver timely, evidence-based, people-centered obesity care for children and adolescents. The guidance fills a global gap and arrives as the organization estimates that 400 million people aged 5–19 were overweight in 2024, including 170 million with obesity.",
-              "strategic_implication": "Pediatric providers and health systems should review the recommendations for implications to multidisciplinary services, workforce training, and family-centered care. The guidance may shape national policy and clinical pathways as countries respond to rising childhood obesity.",
-              "confidence": "high",
-              "tags": [
-                "who",
-                "pediatric-obesity",
-                "clinical-guidelines",
-                "public-health"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-optogenetics-retinitis-pigmentosa-trial",
-              "canonical_topic": "optogenetics-retinitis-pigmentosa-trial",
-              "duplicate_group": "optogenetics-retinitis-pigmentosa-trial",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/07/optogenetics-restores-some-vision-retinitis-pigmentosa/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T21:00:00Z"
-                }
-              ],
-              "title": "Small optogenetics trial restores some light sensitivity in retinitis pigmentosa",
-              "summary": "A small trial of an optogenetic approach reported that about half of participants regained photosensitivity after treatment for retinitis pigmentosa. The early result points to potential recovery of some visual function, but the available summary does not establish durability or the extent of real-world benefit.",
-              "strategic_implication": "The finding supports continued investment in mutation-agnostic therapies for advanced retinal disease, while underscoring the need for larger studies and functional outcome data. Providers should treat the result as investigational rather than a near-term change in standard care.",
-              "confidence": "medium",
-              "tags": [
-                "retinitis-pigmentosa",
-                "optogenetics",
-                "clinical-trial",
-                "vision-restoration"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-dhs-opt-fee-research-workforce",
-              "canonical_topic": "dhs-opt-fee-research-workforce",
-              "duplicate_group": "dhs-opt-fee-research-workforce",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/07/trump-administration-proposes-fee-targeting-interational-students-optional-practical-training/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-07T19:41:00Z"
-                }
-              ],
-              "title": "DHS proposes a $70,000 fee on international students' work program, threatening the life sciences pipeline",
-              "summary": "DHS proposed charging institutions $70,000 per student in Optional Practical Training, plus $30,000 for participation beyond one year, citing fraud and U.S. worker competition. International students make up about a quarter of life sciences Ph.D. graduates and 60% of postdocs, and a survey found 54% would not have come to the U.S. without OPT. Comments are open through Nov. 9.",
-              "strategic_implication": "The fee would raise the cost of foreign-trained research talent for universities, academic medical centers, and biotech employers. Research institutions should model exposure and consider filing comments before the Nov. 9 deadline.",
-              "confidence": "high",
-              "tags": [
-                "workforce",
-                "immigration",
-                "research-pipeline",
-                "dhs"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-us-hepatitis-c-elimination-gap",
-              "canonical_topic": "us-hepatitis-c-elimination-gap",
-              "duplicate_group": "us-hepatitis-c-elimination-gap",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/08/us-hepatitis-c-cure-medication-cost-elimination/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T08:30:00Z"
-                }
-              ],
-              "title": "Opinion: The U.S. trails England on hepatitis C elimination despite curative drugs",
-              "summary": "In a STAT opinion, Philip Chan, Alan Epstein, and Amy Nunn note that curative hepatitis C drugs clear more than 95% of infections in eight to 12 weeks, yet only about half of Americans with chronic infection are treated. England's testing and free-treatment approach reached its 80% treatment goal, while U.S. reported cases hit nearly 70,000 in 2023, double the CDC target. The authors cite cost, administrative hurdles, primary-care shortages, and stigma as barriers.",
-              "strategic_implication": "Hepatitis C remains a case where treatment exists but access design fails. Payers and public health agencies should weigh simplified test-and-treat models and fewer utilization barriers, given estimated lifetime savings near $70,000 per cured patient.",
-              "confidence": "medium",
-              "tags": [
-                "hepatitis-c",
-                "public-health",
-                "drug-access",
-                "opinion"
-              ]
-            },
-            {
-              "item_id": "2026-10-08-fda-tucatinib-her2-maintenance",
-              "canonical_topic": "fda-tucatinib-her2-maintenance",
-              "duplicate_group": "fda-tucatinib-her2-maintenance",
-              "priority_score": 6,
-              "primary_source": "FDA",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "FDA",
-                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications",
-                  "source_type": "web",
-                  "published_at": "2026-10-07T00:00:00Z"
-                }
-              ],
-              "title": "FDA approves tucatinib maintenance therapy for HER2-positive metastatic breast cancer",
-              "summary": "On Oct. 7, FDA approved Pfizer's tucatinib (Tukysa) with trastuzumab and pertuzumab as maintenance treatment for adults with unresectable or metastatic HER2-positive breast cancer after induction therapy. The approval is based on the 654-patient HER2CLIMB-05 trial.",
-              "strategic_implication": "Adding an oral agent to HER2 maintenance will extend treatment duration and raise drug spend in a common metastatic setting. Oncology practices and payers should update pathways and prior-authorization criteria.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "oncology",
-                "breast-cancer",
-                "approvals"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-18T14:30:00Z"
+  "last_updated": "2026-11-19T14:30:00Z"
 }

@@ -1,0 +1,517 @@
+{
+  "archived_at": "2026-11-19T14:30:00Z",
+  "note": "Editions trimmed from latest-insights.json by the 30-edition cap.",
+  "editions": [
+    {
+      "edition_date": "2026-10-08",
+      "generated_at": "2026-10-08T12:37:03Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's edition covers drug trade and pricing fights (new tariffs, PhRMA's suit against the GLOBE model, 340B reform), patient-facing AI, and active dealmaking from Forbion, Roche, and academic health systems. It also covers Fairview's directory lawsuit against UnitedHealthcare before Medicare Advantage open enrollment, Los Angeles County's push against medical debt, and a proposed $70,000 fee that could hit the international research workforce. Sources include STAT News, Healthcare Dive, Becker's Hospital Review, FDA, WHO, and regional reporting.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS (news)",
+          "Fierce Healthcare RSS",
+          "Targeted web/news searches and primary-source verification (FDA, ONC via Becker's, regional reporting)"
+        ],
+        "sources_successful": [
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS (reviewed; current items overlapped with the 2026-10-06 and 2026-10-07 editions)",
+          "Targeted web/news searches (Becker's Hospital Review, FOX 9, NPR/KVCR)",
+          "FDA oncology approval notifications",
+          "WHO guideline-launch page (automated run)"
+        ],
+        "sources_failed": [
+          "Gmail InsightsSources/* labels and newsletter-name searches returned no messages in the connected mailbox since 2026-10-06",
+          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch",
+          "STAT+ articles paywalled; drafted from RSS previews plus accessible article text"
+        ],
+        "run_notes": "Same-day rebuild in place: the automated run (generated 2026-10-08T11:06:25Z) appended 2026-10-08 and left the feed at 31 editions. Trimmed to 30; the displaced 2026-08-27 edition is preserved in archive/editions-archive-2026-10-08.json. Retained all 9 automated items, added 8 new items from the Oct. 7-8 window screened against the prior 15 editions (skipped Orlando Health-RMC as Oct. 1 news and the BCBSA AI-billing report as previously covered), and refreshed bucket syntheses.",
+        "items_captured": 17
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Drug pricing and trade rules are creating immediate legal and supply-chain uncertainty, as PhRMA challenges the GLOBE model and smaller biotechs seek tariff exemptions. An HHS perspective signals continuing debate over 340B design, and committee turnover could reshape health-policy oversight after the midterms.",
+          "items": [
+            {
+              "item_id": "2026-10-08-biotech-drug-tariff-exemptions",
+              "canonical_topic": "biotech-drug-tariff-exemptions",
+              "duplicate_group": "biotech-drug-tariff-exemptions",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/trump-tariffs-section-232-imported-prescription-drugs-challenge-biotech-companies/?utm_campaign=rss",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T08:30:00Z"
+                }
+              ],
+              "title": "Smaller biotech firms struggle to secure exemptions from new U.S. drug tariffs",
+              "summary": "Smaller biotechnology companies are trying to determine how to qualify for exemptions from new U.S. import tariffs on prescription drugs. Search results report that some medicines face a 100% tariff while larger pharmaceutical companies are largely exempt, leaving smaller firms with a more difficult compliance and supply-chain task.",
+              "strategic_implication": "Smaller manufacturers should map tariff exposure across finished products and inputs and assess eligibility for exemptions. Uncertainty may strengthen the economics of domestic production or alternative sourcing.",
+              "confidence": "medium",
+              "tags": [
+                "drug-tariffs",
+                "biotech",
+                "supply-chain",
+                "trade-policy"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-phrma-challenges-globe-model",
+              "canonical_topic": "phrma-challenges-globe-model",
+              "duplicate_group": "phrma-challenges-globe-model",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/phrma-sues-over-drug-pricing-model-globe/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T14:06:29Z"
+                }
+              ],
+              "title": "PhRMA sues to block Medicare drug-pricing pilot tied to prices in other countries",
+              "summary": "PhRMA sued the Trump administration over the GLOBE pilot, which tests a most-favored-nation approach to Medicare drug pricing. The trade group is seeking to invalidate the model, arguing that the administration lacks authority for the program.",
+              "strategic_implication": "The suit adds legal risk to the timing and design of Medicare drug-pricing demonstrations. Manufacturers and health systems should track court developments before assuming the model will proceed as written.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "drug-pricing",
+                "phrma",
+                "litigation"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-340b-program-reform-debate",
+              "canonical_topic": "340b-program-reform-debate",
+              "duplicate_group": "340b-program-reform-debate",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/340b-drug-discount-program-cms-reform-proposal/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T08:30:00Z"
+                }
+              ],
+              "title": "HHS official argues CMS should correct unintended effects of the 340B discount program",
+              "summary": "In a STAT opinion piece, an HHS leader argues that the 340B discount program has grown beyond its original safety-net purpose and become a costly institutional subsidy. The article frames CMS as planning a response, but the RSS excerpt does not specify a final policy, mechanism, or timeline.",
+              "strategic_implication": "Hospitals, clinics, and manufacturers with material 340B exposure should watch for concrete CMS proposals rather than treat the opinion as a finalized rule. Any changes could affect drug purchasing economics and safety-net resources.",
+              "confidence": "medium",
+              "tags": [
+                "340b",
+                "cms",
+                "drug-discounts",
+                "safety-net"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-house-health-committee-contests",
+              "canonical_topic": "house-health-committee-contests",
+              "duplicate_group": "house-health-committee-contests",
+              "priority_score": 5,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/midterm-election-democrats-vie-for-roles-house-health-care-committees/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T08:30:00Z"
+                }
+              ],
+              "title": "Dozens of Democrats compete for seats on influential House health committees",
+              "summary": "Dozens of Democratic lawmakers are seeking positions on key House health committees ahead of the midterms. Committee membership could change materially after the election, creating uncertainty around future legislative and oversight priorities.",
+              "strategic_implication": "Healthcare organizations should monitor committee assignments alongside election results because chair and member turnover can reset oversight attention and policy agendas. The immediate signal is political positioning, not a specific bill or regulatory change.",
+              "confidence": "medium",
+              "tags": [
+                "congress",
+                "midterms",
+                "health-policy",
+                "oversight"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI is moving toward patient-operated tools: Clairity is selling breast-cancer risk prediction directly to consumers, and ONC is funding infrastructure for patient-controlled AI agents and cleaner lab-data exchange.",
+          "items": [
+            {
+              "item_id": "2026-10-08-clairity-direct-to-patient-ai",
+              "canonical_topic": "clairity-direct-to-patient-ai",
+              "duplicate_group": "clairity-direct-to-patient-ai",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/why-clairity-took-breast-cancer-risk-prediction-ai-directly-to-patients/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T08:30:00Z"
+                }
+              ],
+              "title": "Clairity takes its AI breast-cancer risk tool directly to patients",
+              "summary": "Clairity is bringing its breast-cancer risk-prediction AI directly to patients instead of waiting for broad adoption by physicians and insurers. The strategy creates a consumer-facing route for a technology that search results describe as using mammogram images to estimate five-year risk.",
+              "strategic_implication": "Direct distribution may accelerate patient access but raises the importance of clear risk communication, clinical follow-up pathways, and evidence that supports use outside clinician-led workflows. Providers and payers should watch for effects on screening demand and downstream referrals.",
+              "confidence": "medium",
+              "tags": [
+                "health-ai",
+                "breast-cancer",
+                "risk-prediction",
+                "direct-to-consumer"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-onc-patient-controlled-ai-agents",
+              "canonical_topic": "onc-patient-controlled-ai-agents",
+              "duplicate_group": "onc-patient-controlled-ai-agents",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/hhs-funds-development-of-patient-controlled-ai-agents/",
+                  "source_type": "web",
+                  "published_at": "2026-10-07T00:00:00Z"
+                }
+              ],
+              "title": "ONC funds patient-controlled AI agents and lab-data interoperability work",
+              "summary": "HHS' Office of the National Coordinator for Health IT awarded $1.5 million through its LEAP in Health IT program to MedStar Health Research Institute and Regenstrief Institute. MedStar is building an open-source bridge that lets patient-controlled AI agents coordinate clinical follow-ups with verifiable records of AI actions; Regenstrief will help small independent labs close terminology and data-quality gaps.",
+              "strategic_implication": "Federal health IT policy is beginning to treat patients, not only providers, as operators of AI agents. Health systems should anticipate patient-side agents requesting data and scheduling follow-ups, and labs should expect interoperability quality to become a measured expectation.",
+              "confidence": "high",
+              "tags": [
+                "onc",
+                "ai-agents",
+                "interoperability",
+                "lab-data"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Capital and dealmaking remain active, from Forbion's record $2.6 billion fund and Roche's discovery-stage China partnership to academic systems buying community hospitals. IP disputes, like Merck's Keytruda setback in Europe, are shaping product lifecycle strategy.",
+          "items": [
+            {
+              "item_id": "2026-10-08-forbion-raises-2-6b",
+              "canonical_topic": "forbion-raises-2-6b",
+              "duplicate_group": "forbion-raises-2-6b",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/biotech-news-forbion-raises-2-6-billion-largest-fundraise/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T13:38:52Z"
+                }
+              ],
+              "title": "Forbion raises $2.6 billion in its largest-ever fundraising",
+              "summary": "European biotech investor Forbion said it raised $2.6 billion, its largest fundraise to date. Search results identify the capital as spanning two venture funds and describe it as a substantial lift for European biotech financing.",
+              "strategic_implication": "The raise signals that large specialist funds can still attract substantial commitments despite uneven biotech financing conditions. Emerging companies should track deployment toward clinical-stage assets and regional investment priorities.",
+              "confidence": "medium",
+              "tags": [
+                "biotech",
+                "venture-capital",
+                "fundraising",
+                "europe"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-merck-keytruda-patent-injunction",
+              "canonical_topic": "merck-keytruda-patent-injunction",
+              "duplicate_group": "merck-keytruda-patent-injunction",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/07/merck-suffers-setback-in-europe-over-new-keytruda-formulation/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T13:42:22Z"
+                }
+              ],
+              "title": "Dutch court blocks Merck’s subcutaneous Keytruda in several European markets",
+              "summary": "A Dutch court ruled that Merck infringed a patent related to the subcutaneous formulation of Keytruda and ordered a halt to manufacturing and marketing in several European countries. The ruling is a setback to Merck’s effort to broaden delivery options for the cancer drug.",
+              "strategic_implication": "The injunction may delay or constrain a formulation strategy with potential implications for convenience, capacity, and product lifecycle management. Merck and competitors will need to assess the ruling’s scope and the prospect of further litigation or appeal.",
+              "confidence": "medium",
+              "tags": [
+                "merck",
+                "keytruda",
+                "patent-litigation",
+                "oncology",
+                "europe"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-roche-defand-molecular-glue-deal",
+              "canonical_topic": "roche-defand-molecular-glue-deal",
+              "duplicate_group": "roche-defand-molecular-glue-deal",
+              "priority_score": 7,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/roche-defand-therapeutics-drug-development-deal/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T12:00:00Z"
+                }
+              ],
+              "title": "Roche partners with Chinese startup Defand on molecular glue drug discovery",
+              "summary": "Roche signed a collaboration with Chinese startup Defand Therapeutics to discover multiple molecular glue medicines for cancer and immune-driven diseases. Terms were not disclosed, but a source told STAT the deal could approach $1 billion including milestones. Unlike most recent China deals, Roche is partnering on early discovery rather than licensing a clinical-stage asset.",
+              "strategic_implication": "Big pharma reliance on Chinese biotech is moving upstream into discovery, even as U.S. tariff and biosecurity policy tightens. Investors and policymakers should watch whether early-stage partnerships draw the same scrutiny as asset licensing.",
+              "confidence": "medium",
+              "tags": [
+                "roche",
+                "china-biotech",
+                "molecular-glues",
+                "dealmaking"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-academic-systems-acquire-community-hospitals",
+              "canonical_topic": "academic-systems-acquire-community-hospitals",
+              "duplicate_group": "academic-systems-acquire-community-hospitals",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hospital-transactions-and-valuation/academic-health-systems-are-buying-up-community-hospitals/",
+                  "source_type": "web",
+                  "published_at": "2026-10-07T00:00:00Z"
+                }
+              ],
+              "title": "Academic health systems step up acquisitions of community hospitals",
+              "summary": "WVU Health System closed its acquisition of five-hospital Independence Health System in western Pennsylvania on Oct. 1, committing $800 million over five years and reaching 30 hospitals. The University of Kansas Health System signed a definitive agreement on Sept. 29 to take over Ardent Health's St. Francis Campus in Topeka, with closing expected by year-end pending regulatory approval.",
+              "strategic_implication": "Academic systems are using community hospitals to build regional referral networks and capture specialty volume. Independent and for-profit-operated community hospitals should expect more inbound interest, while state regulators continue to scrutinize cross-market consolidation.",
+              "confidence": "high",
+              "tags": [
+                "hospital-ma",
+                "academic-medical-centers",
+                "consolidation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Medicare Advantage network exits are turning into directory litigation ahead of open enrollment, and California's presumptive-eligibility mandate is making automated financial-aid screening a core revenue-cycle requirement.",
+          "items": [
+            {
+              "item_id": "2026-10-08-fairview-sues-unitedhealthcare-ma-directory",
+              "canonical_topic": "fairview-sues-unitedhealthcare-ma-directory",
+              "duplicate_group": "fairview-sues-unitedhealthcare-ma-directory",
+              "priority_score": 8,
+              "primary_source": "FOX 9",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "FOX 9",
+                  "url": "https://www.fox9.com/news/fairview-sues-unitedhealthcare-medicare-advantage-oct-7-2026.amp",
+                  "source_type": "web",
+                  "published_at": "2026-10-08T02:17:00Z"
+                }
+              ],
+              "title": "Fairview sues UnitedHealthcare over in-network listings ahead of Medicare Advantage open enrollment",
+              "summary": "Fairview Health sued UnitedHealthcare for false advertising, saying the insurer still lists Fairview as in-network for 2027 Medicare Advantage plans even though Fairview said in June it would not renew. About 33,000 UnitedHealthcare MA members, mostly in Minnesota, use Fairview. Fairview is seeking a preliminary injunction before open enrollment begins Oct. 15; a hearing is expected Oct. 13.",
+              "strategic_implication": "Provider exits from Medicare Advantage contracts are moving from negotiation to litigation over provider directories. Systems leaving MA networks should document notice dates and monitor plan marketing materials before open enrollment.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "provider-directories",
+                "unitedhealthcare",
+                "litigation"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-la-county-presumptive-eligibility-medical-debt",
+              "canonical_topic": "la-county-presumptive-eligibility-medical-debt",
+              "duplicate_group": "la-county-presumptive-eligibility-medical-debt",
+              "priority_score": 7,
+              "primary_source": "NPR via KVCR",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "NPR via KVCR",
+                  "url": "https://kvcr.org/news/npr-top-stories/2026-10-08/hospital-california-healthcare-medical-debt",
+                  "source_type": "web",
+                  "published_at": "2026-10-08T00:00:00Z"
+                }
+              ],
+              "title": "Los Angeles County pushes hospitals toward automatic financial-aid screening to curb medical debt",
+              "summary": "Los Angeles County public health officials are helping hospitals adopt presumptive-eligibility systems that automatically screen patients for financial aid. About 800,000 county residents have medical bills they cannot pay, and only about 1 in 5 county hospitals uses such a system today. California will require all hospitals to screen this way by next July; L.A. Care committed $2 million and the regional hospital association is arranging bulk purchasing.",
+              "strategic_implication": "Automated charity-care screening is becoming a compliance expectation rather than an optional revenue-cycle practice. Hospitals in California, and in states watching its model, should budget for screening tools and expect higher financial-aid volumes alongside lower bad debt.",
+              "confidence": "high",
+              "tags": [
+                "medical-debt",
+                "charity-care",
+                "revenue-cycle",
+                "california"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "A proposed $70,000 OPT fee threatens the international research workforce. Clinical updates include WHO's first integrated pediatric obesity guidance, an FDA HER2 maintenance approval, an early optogenetics vision result, and renewed attention to gaps in U.S. hepatitis C treatment.",
+          "items": [
+            {
+              "item_id": "2026-10-08-who-child-adolescent-obesity-guidelines",
+              "canonical_topic": "who-child-adolescent-obesity-guidelines",
+              "duplicate_group": "who-child-adolescent-obesity-guidelines",
+              "priority_score": 7,
+              "primary_source": "World Health Organization",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "World Health Organization",
+                  "url": "https://www.who.int/news-room/events/detail/2026/10/07/default-calendar/launch-of-who-guidelines--integrated-management-of-obesity-in-children-and-adolescents",
+                  "source_type": "web",
+                  "published_at": "2026-10-07T11:00:00Z"
+                },
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/pharmalot/2026/10/07/who-obesity-guidelines-for-kids-doj-targets-pharma/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T12:56:49Z"
+                }
+              ],
+              "title": "WHO publishes its first integrated-care guidance for obesity in children and adolescents",
+              "summary": "WHO launched two guidelines describing how health systems and health workers can deliver timely, evidence-based, people-centered obesity care for children and adolescents. The guidance fills a global gap and arrives as the organization estimates that 400 million people aged 5–19 were overweight in 2024, including 170 million with obesity.",
+              "strategic_implication": "Pediatric providers and health systems should review the recommendations for implications to multidisciplinary services, workforce training, and family-centered care. The guidance may shape national policy and clinical pathways as countries respond to rising childhood obesity.",
+              "confidence": "high",
+              "tags": [
+                "who",
+                "pediatric-obesity",
+                "clinical-guidelines",
+                "public-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-optogenetics-retinitis-pigmentosa-trial",
+              "canonical_topic": "optogenetics-retinitis-pigmentosa-trial",
+              "duplicate_group": "optogenetics-retinitis-pigmentosa-trial",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/optogenetics-restores-some-vision-retinitis-pigmentosa/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T21:00:00Z"
+                }
+              ],
+              "title": "Small optogenetics trial restores some light sensitivity in retinitis pigmentosa",
+              "summary": "A small trial of an optogenetic approach reported that about half of participants regained photosensitivity after treatment for retinitis pigmentosa. The early result points to potential recovery of some visual function, but the available summary does not establish durability or the extent of real-world benefit.",
+              "strategic_implication": "The finding supports continued investment in mutation-agnostic therapies for advanced retinal disease, while underscoring the need for larger studies and functional outcome data. Providers should treat the result as investigational rather than a near-term change in standard care.",
+              "confidence": "medium",
+              "tags": [
+                "retinitis-pigmentosa",
+                "optogenetics",
+                "clinical-trial",
+                "vision-restoration"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-dhs-opt-fee-research-workforce",
+              "canonical_topic": "dhs-opt-fee-research-workforce",
+              "duplicate_group": "dhs-opt-fee-research-workforce",
+              "priority_score": 8,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/07/trump-administration-proposes-fee-targeting-interational-students-optional-practical-training/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-07T19:41:00Z"
+                }
+              ],
+              "title": "DHS proposes a $70,000 fee on international students' work program, threatening the life sciences pipeline",
+              "summary": "DHS proposed charging institutions $70,000 per student in Optional Practical Training, plus $30,000 for participation beyond one year, citing fraud and U.S. worker competition. International students make up about a quarter of life sciences Ph.D. graduates and 60% of postdocs, and a survey found 54% would not have come to the U.S. without OPT. Comments are open through Nov. 9.",
+              "strategic_implication": "The fee would raise the cost of foreign-trained research talent for universities, academic medical centers, and biotech employers. Research institutions should model exposure and consider filing comments before the Nov. 9 deadline.",
+              "confidence": "high",
+              "tags": [
+                "workforce",
+                "immigration",
+                "research-pipeline",
+                "dhs"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-us-hepatitis-c-elimination-gap",
+              "canonical_topic": "us-hepatitis-c-elimination-gap",
+              "duplicate_group": "us-hepatitis-c-elimination-gap",
+              "priority_score": 6,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/08/us-hepatitis-c-cure-medication-cost-elimination/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-08T08:30:00Z"
+                }
+              ],
+              "title": "Opinion: The U.S. trails England on hepatitis C elimination despite curative drugs",
+              "summary": "In a STAT opinion, Philip Chan, Alan Epstein, and Amy Nunn note that curative hepatitis C drugs clear more than 95% of infections in eight to 12 weeks, yet only about half of Americans with chronic infection are treated. England's testing and free-treatment approach reached its 80% treatment goal, while U.S. reported cases hit nearly 70,000 in 2023, double the CDC target. The authors cite cost, administrative hurdles, primary-care shortages, and stigma as barriers.",
+              "strategic_implication": "Hepatitis C remains a case where treatment exists but access design fails. Payers and public health agencies should weigh simplified test-and-treat models and fewer utilization barriers, given estimated lifetime savings near $70,000 per cured patient.",
+              "confidence": "medium",
+              "tags": [
+                "hepatitis-c",
+                "public-health",
+                "drug-access",
+                "opinion"
+              ]
+            },
+            {
+              "item_id": "2026-10-08-fda-tucatinib-her2-maintenance",
+              "canonical_topic": "fda-tucatinib-her2-maintenance",
+              "duplicate_group": "fda-tucatinib-her2-maintenance",
+              "priority_score": 6,
+              "primary_source": "FDA",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "FDA",
+                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications",
+                  "source_type": "web",
+                  "published_at": "2026-10-07T00:00:00Z"
+                }
+              ],
+              "title": "FDA approves tucatinib maintenance therapy for HER2-positive metastatic breast cancer",
+              "summary": "On Oct. 7, FDA approved Pfizer's tucatinib (Tukysa) with trastuzumab and pertuzumab as maintenance treatment for adults with unresectable or metastatic HER2-positive breast cancer after induction therapy. The approval is based on the 654-patient HER2CLIMB-05 trial.",
+              "strategic_implication": "Adding an oral agent to HER2 maintenance will extend treatment duration and raise drug spend in a common metastatic setting. Oncology practices and payers should update pathways and prior-authorization criteria.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "oncology",
+                "breast-cancer",
+                "approvals"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,734 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-20",
+      "generated_at": "2026-11-20T14:00:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "CMS set the 2027 Part B premium at $209.40 and reported a record $2.5 billion in Medicare savings from Shared Savings Program ACOs, while UnitedHealth became at least the 15th insurer to sue over 2027 star ratings. A federal judge dismissed Tampa General's 340B suit against Eli Lilly, big drugmakers said they will stop starting trials at PLA-linked China hospitals, and a survey found healthcare enforces AI policies less consistently than any other sector. Sources include STAT, Healthcare Dive, BioPharma Dive, KFF Health News, MedCity News, CMS, Becker's and WUSF.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS and site",
+          "BioPharma Dive, MedTech Dive, MedCity News and KFF Health News RSS",
+          "CMS, Federal Register and state primary sources; Becker's and other outlets via web search"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for Nov. 19-20",
+          "Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News and KFF Health News RSS fetched and screened",
+          "Articles read on STAT, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News, CMS, the Federal Register and the New York governor's office to verify figures; web search filled provider and workforce gaps (Becker's, WUSF, Reuters via The News & Observer, KFF First Edition citing Modern Healthcare)"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and newsletter-name searches over the past 3-7 days returned no messages in the connected mailbox; RSS sources used instead.",
+          "STAT+ articles (UnitedHealth star-ratings suit, PLA-linked China trial sites, Hims/Noom peptides) were paywalled; items rely on visible text.",
+          "Modern Healthcare articles (home health consolidation, Tampa General 340B) were reached only through KFF First Edition summaries; the 340B item uses WUSF's full report.",
+          "Becker's Children's Health Q3 item relies on the visible summary."
+        ],
+        "run_notes": "23 items cover developments reported from midday Nov. 19 through the morning of Nov. 20, plus the Bain physician survey (Nov. 16) and the MSSP results (Nov. 18), which earlier editions had not covered. Checked against the prior 30 editions for repeats: the New York item is a state follow-up to the Nov. 16 federal work-requirement delay, the Tampa General ruling follows the Oct. 28 Lilly 340B dispute item, and the UnitedHealth suit adds the largest MA carrier to star-ratings litigation covered Oct. 14-29. Excluded repeats: measles elimination opinion, Overton/FDA leadership podcast, MAHA PAC spending. Screened but not itemized: Caribbean Princess GI outbreak (148 ill, cause pending), mpox awareness survey, Baltimore Legionnaires' cases, Noah Wyle/FIGS medical debt relief, ProPublica Defense Base Act investigation, Modern Healthcare home health consolidation analysis and the KFF open-enrollment assister guide."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS set the 2027 Part B premium at $209.40, up 3.2%, and reported a record $2.5 billion in Medicare savings from Shared Savings Program ACOs, with physician-led and primary care-heavy ACOs outperforming. UnitedHealth became at least the 15th insurer to sue over 2027 star ratings. On Capitol Hill, Republicans conceded stalled PBM and drug-patent bills, and Senate Democrats are preparing to escalate their probe of the 760,000 ACA cancellations. New York opted into the work-requirement hold-harmless period, and a federal judge struck down Ryan White grant conditions on transgender care.",
+          "items": [
+            {
+              "item_id": "2026-11-20-medicare-part-b-2027-premium-209",
+              "canonical_topic": "medicare-part-b-2027-premium-209",
+              "duplicate_group": "medicare-part-b-2027-premium-209",
+              "priority_score": 8,
+              "primary_source": "Federal Register (CMS)",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Federal Register (CMS)",
+                  "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23601.htm",
+                  "source_type": "web",
+                  "published_at": "2026-11-19T00:00:00Z"
+                },
+                {
+                  "source": "CMS MLN Connects",
+                  "url": "https://www.cms.gov/training-education/medicare-learning-network/newsletter/mln-connects-newsletter-november-19-2026",
+                  "source_type": "web",
+                  "published_at": "2026-11-19T00:00:00Z"
+                }
+              ],
+              "title": "2027 Medicare Part B standard premium rises 3.2% to $209.40, with a $292 deductible",
+              "summary": "CMS's Federal Register notice sets the standard monthly Part B premium at $209.40 for 2027, $6.50 (3.2%) above 2026's $202.90, and the annual Part B deductible at $292. The premium equals 50% of the $418.70 monthly actuarial rate for aged enrollees; the disabled-enrollee actuarial rate is $452.40. Higher-income beneficiaries will pay about 35% to 85% of total Part B cost through income-related adjustments. CMS released the Part A figures and Part D income-related amounts at the same time.",
+              "strategic_implication": "The increase is modest compared with recent years, but it lands as Medicare Advantage plans pull back benefits and Part D standalone premiums rise. Patient-financial-services and senior-market teams should update cost-share estimates and financial-assistance screening for January. Plans with Part B giveback benefits should check how the new base changes their member messaging.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "part-b",
+                "premiums",
+                "beneficiaries",
+                "cms"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-mssp-2025-record-2-5b-savings",
+              "canonical_topic": "mssp-2025-record-2-5b-savings",
+              "duplicate_group": "mssp-2025-record-2-5b-savings",
+              "priority_score": 8,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/medicare-shared-savings-program-accountable-care-organizations-performance-year-2025-financial",
+                  "source_type": "web",
+                  "published_at": "2026-11-18T00:00:00Z"
+                },
+                {
+                  "source": "CMS MLN Connects",
+                  "url": "https://www.cms.gov/training-education/medicare-learning-network/newsletter/mln-connects-newsletter-november-19-2026",
+                  "source_type": "web",
+                  "published_at": "2026-11-19T00:00:00Z"
+                }
+              ],
+              "title": "Shared Savings Program ACOs post a record $2.5 billion in Medicare savings for 2025; physician-led ACOs keep outperforming",
+              "summary": "CMS said 80% of the 472 Shared Savings Program ACOs, covering 84% of 10.9 million assigned beneficiaries, earned performance payments totaling $4.9 billion in performance year 2025, and Medicare saved $2.5 billion against benchmarks, the most in the program's history and its ninth straight year of savings. Gross per capita savings rose to $690 from $643, while Medicare's net per capita savings slipped to $234 from $241 as more ACOs moved into two-sided risk. Low-revenue ACOs, typically physician-led or built on FQHCs and rural health centers, generated $300 in net per capita savings versus $169 for hospital-led ACOs, and primary care-heavy ACOs generated $417 versus $208. CMS says the program reached a record 12.6 million beneficiaries.",
+              "strategic_implication": "The data favors primary care-anchored, physician-led models, a useful argument for independent groups, FQHC networks and rural providers deciding whether to take on downside risk. Hospital-led ACOs should look hard at referral leakage and specialist cost drivers. Expect CMS to cite these results as it pushes more beneficiaries into accountable-care arrangements.",
+              "confidence": "high",
+              "tags": [
+                "aco",
+                "value-based-care",
+                "mssp",
+                "medicare",
+                "primary-care",
+                "rural-health"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-unitedhealth-sues-cms-2027-star-ratings",
+              "canonical_topic": "unitedhealth-sues-cms-2027-star-ratings",
+              "duplicate_group": "unitedhealth-sues-cms-2027-star-ratings",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/20/unitedhealth-cms-medicare-advantage-lawsuit-star-rating/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T07:23:34Z"
+                }
+              ],
+              "title": "UnitedHealth becomes at least the 15th Medicare Advantage insurer to sue CMS over 2027 star ratings",
+              "summary": "UnitedHealth Group, the largest Medicare Advantage insurer with more than 9 million members, sued the federal government to reverse its lowered 2027 star ratings. Plans rated at least four stars receive bonus payments, and the insurers suing argue that CMS measured performance inconsistently and pushed scores below bonus thresholds. The suit comes as Medicare's annual enrollment period runs through Dec. 7. STAT's full report is paywalled; this summary relies on the visible text.",
+              "strategic_implication": "With the largest MA carrier now in court, the outcome could reshape 2028 bonus payments across the industry. Providers in MA value-based contracts tied to star performance should model both scenarios before year-end negotiations. Expect plans that lose bonus revenue to tighten benefits, networks or utilization management in 2028 bids.",
+              "confidence": "medium",
+              "tags": [
+                "medicare-advantage",
+                "star-ratings",
+                "unitedhealth",
+                "litigation",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-senate-judiciary-drug-pbm-bills-stalled",
+              "canonical_topic": "senate-judiciary-drug-pbm-bills-stalled",
+              "duplicate_group": "senate-judiciary-drug-pbm-bills-stalled",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/republicans-contend-with-lack-of-drug-policy-action-despite-controlling-co/875195/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T16:14:40Z"
+                }
+              ],
+              "title": "Republicans concede two years of inaction on drug pricing as Senate Judiciary revisits stalled PBM and patent bills",
+              "summary": "At a Senate Judiciary hearing, lawmakers from both parties called drug costs too high and pressed for PBM reform. The committee advanced six bipartisan bills last year targeting PBM self-dealing, product hopping, patent thickets and pay-for-delay deals, but only one, the Affordable Prescriptions for Patients Act limiting biologic patent suits against biosimilar makers, reached the floor. Sen. John Kennedy (R-La.) said, \"I am embarrassed that my side has been in control for two years, and we've done nothing.\" Chairman Chuck Grassley cited a crowded calendar and industry pushback.",
+              "strategic_implication": "With Democrats expected to control both chambers in January, PBM and patent reform could become a bipartisan opening, though health system pharmacy leaders should not count on it passing quickly. Employers and health plans should watch for delinking and transparency provisions that could change rebate economics in 2027-2028 contracts.",
+              "confidence": "high",
+              "tags": [
+                "pbm",
+                "drug-pricing",
+                "congress",
+                "biosimilars",
+                "patents"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-senate-democrats-aca-purge-probe-intensifies",
+              "canonical_topic": "senate-democrats-aca-purge-probe-intensifies",
+              "duplicate_group": "senate-democrats-aca-purge-probe-intensifies",
+              "priority_score": 6,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/elections/midterms-democratic-wins-aca-obamacare-purge-senate-insurance-investigation/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T10:00:00Z"
+                }
+              ],
+              "title": "Incoming Democratic majority sets up a tougher Senate probe of the 760,000 ACA enrollment cancellations",
+              "summary": "A dozen Democratic senators sent 28 questions to 10 insurers, including Elevance, Centene, Cigna, Oscar, Molina, Florida Blue and UnitedHealthcare, about their role in CMS's late-August cancellation of 760,000 ACA enrollments flagged as suspicious; responses were due Nov. 6. Another 419,000 enrollments remain under scrutiny. Marketplace enrollment fell to about 19 million for 2026 from nearly 22 million in 2025 after enhanced subsidies expired, and CMS says fewer than 0.01% of those purged sought reinstatement. With Democrats expected to control the Senate in January, Ron Wyden is in line to chair Finance and Bernie Sanders to chair HELP.",
+              "strategic_implication": "Insurers face subpoena-backed oversight in 2027 over how they handled flagged enrollees, which could lead to reinstatement demands or new rules on enrollment verification. Hospitals in high-marketplace states should track coverage loss among patients and work with navigators during open enrollment, which runs into January.",
+              "confidence": "high",
+              "tags": [
+                "aca",
+                "marketplace",
+                "enrollment",
+                "congress",
+                "oversight",
+                "payers"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-new-york-hold-harmless-bronx-exemption-navigators",
+              "canonical_topic": "new-york-hold-harmless-bronx-exemption-navigators",
+              "duplicate_group": "new-york-hold-harmless-bronx-exemption-navigators",
+              "priority_score": 5,
+              "primary_source": "New York State",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Office of Gov. Kathy Hochul",
+                  "url": "https://www.governor.ny.gov/news/governor-hochul-takes-actions-protect-medicaid-coverage-nearly-2-million-new-yorkers",
+                  "source_type": "web",
+                  "published_at": "2026-11-19T00:00:00Z"
+                },
+                {
+                  "source": "CMS MLN Connects",
+                  "url": "https://www.cms.gov/training-education/medicare-learning-network/newsletter/mln-connects-newsletter-november-19-2026",
+                  "source_type": "web",
+                  "published_at": "2026-11-19T00:00:00Z"
+                }
+              ],
+              "title": "New York opts into Medicaid work-requirement hold-harmless period, seeks a Bronx-wide exemption and commits $213 million to enrollment help",
+              "summary": "New York will use CMS's optional hold-harmless period through June 30, 2027, under which states assess compliance with the H.R. 1 work requirement but do not deny or disenroll otherwise eligible people solely for not meeting it. The state also asked to exempt all Bronx residents under the law's high-unemployment hardship standard, which it says only the Bronx currently meets. It committed $213 million in total Navigator funding, including $32 million a year for 49 community organizations, and says nearly 2 million eligible New Yorkers are at risk. This follows the federal enforcement delay covered Nov. 16.",
+              "strategic_implication": "New York offers a playbook for other expansion states: use the transition period to test systems and build outreach capacity instead of beginning terminations. Safety-net hospitals and FQHCs should coordinate with state navigators now, before enforcement starts in July 2027, and watch whether CMS approves county-level unemployment exemptions.",
+              "confidence": "high",
+              "tags": [
+                "medicaid",
+                "work-requirements",
+                "new-york",
+                "states",
+                "enrollment",
+                "safety-net"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-judge-blocks-ryan-white-transgender-conditions",
+              "canonical_topic": "judge-blocks-ryan-white-transgender-conditions",
+              "duplicate_group": "judge-blocks-ryan-white-transgender-conditions",
+              "priority_score": 5,
+              "primary_source": "Reuters",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Reuters via The News & Observer",
+                  "url": "https://www.newsobserver.com/living/article318158985.html",
+                  "source_type": "web",
+                  "published_at": "2026-11-19T19:48:00Z"
+                }
+              ],
+              "title": "Federal judge strikes Ryan White HIV grant conditions barring transgender-affirming care",
+              "summary": "U.S. District Judge William Young in Boston ruled that HRSA cannot bar providers funded by the Ryan White HIV/AIDS Program from acknowledging transgender patients' gender identity or providing gender-affirming care. In a 165-page decision after a September bench trial in a suit brought by groups including the American Academy of HIV Medicine, Young found the conditions violated the First Amendment and the Fifth Amendment's equal protection guarantee. The administration is likely to appeal.",
+              "strategic_implication": "Ryan White-funded clinics get relief on grant terms for now, but compliance teams should not change policies until the appeal path is clear. More broadly, the ruling shows courts are scrutinizing ideology-based federal grant conditions, a recurring issue for health centers and academic medical centers.",
+              "confidence": "high",
+              "tags": [
+                "hiv",
+                "ryan-white",
+                "hrsa",
+                "litigation",
+                "grants",
+                "lgbtq-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "A DNSFilter survey finds healthcare has the weakest enforcement of AI policies of any sector, and 1 in 10 respondents report an incident already caused by an unapproved AI tool. At HLTH, a BCBSA executive said AI should never make a medical-necessity denial on its own. Knit Health raised $35 million for a healthcare world model built to route patients to the right care, and Hims & Hers and Noom moved peptides into the mainstream consumer market.",
+          "items": [
+            {
+              "item_id": "2026-11-20-healthcare-shadow-ai-security-monitoring-gap",
+              "canonical_topic": "healthcare-shadow-ai-security-monitoring-gap",
+              "duplicate_group": "healthcare-shadow-ai-security-monitoring-gap",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/healthcare-ai-cybersecurity-monitoring/875171/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T16:03:24Z"
+                }
+              ],
+              "title": "Healthcare lags every sector in enforcing AI policies as shadow AI drives security incidents",
+              "summary": "A DNSFilter survey of 30 healthcare IT and security professionals, part of a 400-manager cross-industry sample, found 70% of healthcare organizations have AI policies but only 40% enforce them consistently, the lowest of any sector. Six in 10 rely on AI and SaaS vendors to alert them to incidents, versus 43% elsewhere; 4 in 10 monitor fewer than half their security tools; and at 47%, employees can grant a new AI tool system access without higher approval. Twenty-seven percent know of unauthorized AI connections, 1 in 10 say an unapproved tool has already caused an incident, and one-third had an incident they never reported to regulators or customers. The healthcare sample is small.",
+              "strategic_implication": "Ambient scribes, browser copilots and departmental AI purchases are growing faster than governance. CISOs and compliance officers should inventory AI and SaaS integrations, require approval before tools get access to EHR or identity systems, and make sure incidents involving third-party AI are reported under HIPAA.",
+              "confidence": "medium",
+              "tags": [
+                "cybersecurity",
+                "shadow-ai",
+                "ai-governance",
+                "hipaa",
+                "saas"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-hlth-ai-medical-necessity-human-decision",
+              "canonical_topic": "hlth-ai-medical-necessity-human-decision",
+              "duplicate_group": "hlth-ai-medical-necessity-human-decision",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/who-should-make-medical-necessity-decisions-ai-insurers-or-treating-physicians/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T23:44:27Z"
+                }
+              ],
+              "title": "BCBSA's COO says AI 'should not deny an authorization for medical necessity,' as HLTH panel debates who should decide",
+              "summary": "At HLTH, Blue Cross Blue Shield Association COO Sean Robbins said AI can assist, but a licensed clinician should make the final call on any medical-necessity denial. Claimable CEO Dr. Warris Bokhari argued that for oncology the decision should rest with the treating physician, and alleged that Blue Cross and Blue Shield of Illinois relied on 1994-era case data to deny liver transplants for cancer patients. Dr. Mandy Cohen, national advisor at Manatt Health, called for redesigning prior authorization instead of just speeding it up, since payment incentives drive low-value requests.",
+              "strategic_implication": "Payer leaders are publicly committing to keep a human in the loop on denials, which gives providers and regulators a standard to hold them to as AI-assisted review spreads. With CMS's electronic prior authorization API deadline on Jan. 1, revenue-cycle teams should track denial rationales and evidence citations so they can challenge outdated criteria on appeal.",
+              "confidence": "high",
+              "tags": [
+                "prior-authorization",
+                "ai",
+                "payers",
+                "denials",
+                "utilization-management"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-knit-health-35m-world-model-care-routing",
+              "canonical_topic": "knit-health-35m-world-model-care-routing",
+              "duplicate_group": "knit-health-35m-world-model-care-routing",
+              "priority_score": 5,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/knit-health-ceo-ai-startup-building-healthcare-world-model/875031/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T15:04:41Z"
+                }
+              ],
+              "title": "Knit Health raises $35 million for a healthcare 'world model' trained on 140 million records to route patients to the right care",
+              "summary": "Berkeley spinout Knit Health raised a $35 million Series A to commercialize Med-BEAM, a model trained on 140 million patient records that predicts patient needs and steers referrals and scheduling. CEO and health economist Jonathan Kolstad said the first three go-lives are targeted for February or March 2027, and one design partner identified 97 additional uses after starting with one. He cited rheumatology clinics booked 12 months out where one-third to one-half of patients turn out not to have rheumatologic disease. Knit is working with large systems, safety-net hospitals and now payers.",
+              "strategic_implication": "Access and referral triage is becoming a distinct AI category, competing with Epic Cosmos-based tools. Systems with long specialty waits should test whether predictive routing frees appointment slots before adding specialist FTEs, and should ask for evidence on equity and misrouting.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "access",
+                "referrals",
+                "scheduling",
+                "funding",
+                "health-tech"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-hims-noom-peptide-prescriptions-launch",
+              "canonical_topic": "hims-noom-peptide-prescriptions-launch",
+              "duplicate_group": "hims-noom-peptide-prescriptions-launch",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/19/hims-noom-enter-peptide-market-mainstream-products-health-risks/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T16:59:47Z"
+                }
+              ],
+              "title": "Hims & Hers and Noom launch peptide prescriptions, bringing largely untested compounds to a mass market",
+              "summary": "Hims & Hers and Noom, valued at more than $3.5 billion and $3.7 billion respectively, said they will offer peptide prescriptions to eligible patients, following smaller telehealth companies. Many consumer-marketed compounded peptides lack FDA approval and randomized human safety and efficacy data, but an HHS decision under Secretary Robert F. Kennedy Jr., a peptide enthusiast, cleared the way for wider sales. STAT called the launches a \"pivotal moment for peptides in the United States.\" The full article is paywalled.",
+              "strategic_implication": "After GLP-1s, direct-to-consumer telehealth is moving into peptides, which are less regulated. Primary care and emergency clinicians should start asking patients about peptide use, and pharmacy and compliance leaders should watch for adverse-event signals and any change in FDA enforcement discretion.",
+              "confidence": "medium",
+              "tags": [
+                "peptides",
+                "telehealth",
+                "compounding",
+                "dtc",
+                "fda",
+                "consumer-health"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "China is now a policy and dealmaking issue for drugmakers: five big drugmakers told House investigators they will not start trials at PLA-linked hospitals, and a congressional biotech commission warned China could 'corner' the sector. The FDA approved Regeneron's quarterly RNAi drug for myasthenia gravis at a $410,000 list price and Sanofi's first neurological Gaucher therapy. GeneDx is changing CEOs as whole-genome pricing compresses margins.",
+          "items": [
+            {
+              "item_id": "2026-11-20-big-pharma-halts-pla-linked-china-trial-sites",
+              "canonical_topic": "big-pharma-halts-pla-linked-china-trial-sites",
+              "duplicate_group": "big-pharma-halts-pla-linked-china-trial-sites",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/pharmalot/2026/11/19/china-pharma-biotech-clinical-trials-security-risk-patents-drug-development/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "Merck, Lilly, AbbVie, Pfizer and BMS tell House China committee they will stop starting trials at PLA-linked hospitals",
+              "summary": "The House Select Committee on China said five drugmakers, Merck, Eli Lilly, AbbVie, Pfizer and Bristol Myers Squibb, indicated they will not start new clinical studies at sites linked to the People's Liberation Army, at military-affiliated hospitals or in Xinjiang. The committee opened investigations into the companies in June, citing intellectual-property exposure, military entanglement, ethics at trial sites and security risks. STAT's full report is paywalled.",
+              "strategic_implication": "Shifting global trial sites back toward the U.S. and allied countries could bring more industry-sponsored trial volume to U.S. academic and community research sites. Research administrators should be ready for sponsors asking about site capacity and enrollment speed, and should expect more scrutiny of foreign data in submissions.",
+              "confidence": "medium",
+              "tags": [
+                "china",
+                "clinical-trials",
+                "pharma",
+                "national-security",
+                "congress"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-nsceb-warns-china-could-corner-biotech",
+              "canonical_topic": "nsceb-warns-china-could-corner-biotech",
+              "duplicate_group": "nsceb-warns-china-could-corner-biotech",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/us-china-biotech-report-commission-supply-chain-2026/875170/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T16:42:00Z"
+                },
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/biotech-china-deals-venture-returns-summit-stock/874912/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T12:00:00Z"
+                }
+              ],
+              "title": "Congressional biotech commission warns China could 'corner the sector' and endorses adding biotech to the COINS Act",
+              "summary": "The 11-member National Security Commission on Emerging Biotechnology warned that China's five-year plan, which aims to produce one-quarter of the world's first-in-class drugs by 2030, could leave U.S. patients \"vulnerable to supply chain weaponization.\" It endorsed a Treasury proposal to add biotech to the COINS Act's outbound-investment limits. BioPharma Dive counts more than 120 licensing deals between Western and Chinese drug developers since early 2025. Chair Caitlin Frazer said the deals \"are starting to favor the Chinese startups.\" Separately, BioPharma Dive notes that China-sourced startups such as Ouro, Candid and Ollin have produced billion-dollar exits in 2026.",
+              "strategic_implication": "Investment restrictions could slow the licensing of Chinese assets that has fed U.S. pipelines and lowered early-stage costs. Health system pharmacy and supply-chain leaders should add China-dependent ingredient and drug exposure to their risk registers, and investors should price in deal-review risk.",
+              "confidence": "high",
+              "tags": [
+                "china",
+                "biotech",
+                "supply-chain",
+                "national-security",
+                "licensing",
+                "policy"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-fda-approves-regeneron-livsayis-myasthenia-gravis",
+              "canonical_topic": "fda-approves-regeneron-livsayis-myasthenia-gravis",
+              "duplicate_group": "fda-approves-regeneron-livsayis-myasthenia-gravis",
+              "priority_score": 5,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/regeneron-fda-approve-cemdisiran-livsayis-myasthenia-gravis-alnylam/875160/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T15:10:00Z"
+                }
+              ],
+              "title": "FDA approves Regeneron's Livsayis, the first RNAi drug for an autoimmune disease, at a $410,000 list price",
+              "summary": "The FDA approved Livsayis (cemdisiran), an RNA interference therapy that reduces C5, for adults with AChR antibody-positive generalized myasthenia gravis. It is dosed by subcutaneous injection four times a year, compared with weekly dosing for AstraZeneca's newly approved Klygefa, and carries a $410,000 annual list price. Discovered by Alnylam, which earns a $25 million milestone plus royalties, it enters a crowded field with argenx and AstraZeneca. TD Cowen projects $1.5 billion in peak sales; RBC called the launch environment \"relatively challenging.\"",
+              "strategic_implication": "Myasthenia gravis now has several six-figure biologics competing on dosing convenience. Payers will likely use step therapy and site-of-care rules, and specialty pharmacy and infusion programs should weigh how a quarterly injection shifts volume away from infused therapies.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "approvals",
+                "rnai",
+                "specialty-drugs",
+                "drug-pricing",
+                "neurology"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-fda-approves-sanofi-infilbray-gaucher-type-3",
+              "canonical_topic": "fda-approves-sanofi-infilbray-gaucher-type-3",
+              "duplicate_group": "fda-approves-sanofi-infilbray-gaucher-type-3",
+              "priority_score": 4,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/sanofi-fda-infilbray-venglustat-approve-gaucher/875167/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T17:17:00Z"
+                },
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/sanofi-gaucher-disease-type3-venglustat-infilbray-fda-approval-gd3-san/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T21:41:53Z"
+                }
+              ],
+              "title": "FDA clears Sanofi's Infilbray, the first therapy for neurological symptoms of Type 3 Gaucher disease",
+              "summary": "Sanofi's once-daily pill Infilbray (venglustat) is approved for adults and children weighing at least 15 kg with Type 3 Gaucher disease, the first treatment for the disorder's neurological symptoms. One year of treatment improved neurological symptoms in a Phase 3 trial. The drug, acquired with Genzyme in 2011, had failed in Parkinson's, Fabry and other indications. Labeling warns of suicidal thoughts, pediatric lens clouding and fetal harm, and pricing has not been disclosed. RBC said sales expectations are modest as Sanofi prepares for Dupixent's patent loss.",
+              "strategic_implication": "This is a first-in-class oral option for a small rare-disease population that has had no neurological treatment. Specialty pharmacies and genetic centers should plan for prior authorization and safety monitoring requirements once pricing is set.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "approvals",
+                "rare-disease",
+                "sanofi",
+                "specialty-drugs"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-genedx-names-everett-cunningham-ceo",
+              "canonical_topic": "genedx-names-everett-cunningham-ceo",
+              "duplicate_group": "genedx-names-everett-cunningham-ceo",
+              "priority_score": 4,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/genedx-appoints-everett-cunningham-as-ceo/875157/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T15:00:00Z"
+                }
+              ],
+              "title": "GeneDx taps Quanterix's Everett Cunningham as CEO amid whole-genome margin pressure",
+              "summary": "GeneDx named Everett Cunningham, who left Quanterix after less than a year, CEO effective on or before Dec. 15, succeeding Katherine Stueland, who will advise through Jan. 31. TD Cowen said sales nearly tripled under Stueland since 2021 but have been \"more uneven\" as price realization slowed and demand shifted to lower-margin whole genomes. Analysts pointed to Cunningham's Exact Sciences experience in building primary care channels, which represent nearly two-thirds of GeneDx's rare-disease opportunity. Quanterix named Jim Gute interim CEO.",
+              "strategic_implication": "GeneDx's push into primary care, if it works, would bring genomic testing into general pediatric and primary care practices. Health systems should expect more vendor outreach on embedded genetic testing and should press on reimbursement, genetic counseling capacity and how results flow back into the EHR.",
+              "confidence": "high",
+              "tags": [
+                "genomics",
+                "diagnostics",
+                "leadership",
+                "primary-care",
+                "medtech"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "A federal judge dismissed Tampa General's 340B lawsuit against Eli Lilly, keeping manufacturers' claims-data requirements in place for now. Dallas-based Children's Health posted a 34% drop in third-quarter operating income, and Becker's November layoff tracker shows cuts concentrated in administrative, IT and health-plan roles as systems respond to reimbursement and cost pressure.",
+          "items": [
+            {
+              "item_id": "2026-11-20-tampa-general-lilly-340b-suit-dismissed",
+              "canonical_topic": "tampa-general-lilly-340b-suit-dismissed",
+              "duplicate_group": "tampa-general-lilly-340b-suit-dismissed",
+              "priority_score": 7,
+              "primary_source": "WUSF Health News Florida",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "WUSF Health News Florida",
+                  "url": "https://www.wusf.org/health-news-florida/2026-11-19/judge-dismisses-tampa-general-lawsuit-against-eli-lilly-over-340b-reporting-demands",
+                  "source_type": "web",
+                  "published_at": "2026-11-19T00:00:00Z"
+                },
+                {
+                  "source": "KFF Health News First Edition (citing Modern Healthcare)",
+                  "url": "https://kffhealthnews.org/morning-breakout/first-edition-friday-nov-20-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "Judge dismisses Tampa General's 340B lawsuit against Eli Lilly over claims-data demands",
+              "summary": "U.S. District Judge William Jung in Tampa granted Lilly's motion to dismiss Tampa General Hospital's July suit challenging the drugmaker's requirement that 340B hospitals submit prescription-level claims data through its Electronic Submission Platform. Relying largely on the Supreme Court's 2011 Astra decision, Jung found that hospitals cannot use Florida consumer-protection law to enforce 340B pricing terms. TGH said losing the discounts raised its Lilly drug costs by 25% to 50%, potentially tens of millions of dollars a year. Similar challenges are pending, including a Missouri AG action and a Massachusetts hospital suit.",
+              "strategic_implication": "The ruling weakens one legal route for covered entities, state consumer-protection claims, and strengthens manufacturers' leverage as the federal 340B rebate pilot begins in January. 340B program leaders should model the margin hit from complying with claims-data requirements versus losing discounts, and should focus advocacy on HRSA and state 340B contract-pharmacy laws.",
+              "confidence": "high",
+              "tags": [
+                "340b",
+                "litigation",
+                "eli-lilly",
+                "florida",
+                "pharmacy",
+                "safety-net"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-childrens-health-dallas-q3-operating-income-falls",
+              "canonical_topic": "childrens-health-dallas-q3-operating-income-falls",
+              "duplicate_group": "childrens-health-dallas-q3-operating-income-falls",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/childrens-health-operating-income-falls-34-in-q3-5-things-to-know/",
+                  "source_type": "web",
+                  "published_at": "2026-11-19T00:00:00Z"
+                }
+              ],
+              "title": "Children's Health operating income falls 34% in Q3, with margin dropping to 6.5% from 10.3%",
+              "summary": "Dallas-based Children's Health reported third-quarter 2026 operating income of $168.2 million, a 6.5% margin, down from $253.3 million and a 10.3% margin a year earlier, according to its Nov. 19 financial report. Becker's details are drawn from the visible summary.",
+              "strategic_implication": "Becker's summary does not give the drivers, but the drop shows that even strong pediatric systems are vulnerable as Medicaid-heavy payer mixes face H.R. 1 pressure. Pediatric CFOs should stress-test 2027 budgets for Medicaid enrollment losses and supplemental-payment changes.",
+              "confidence": "medium",
+              "tags": [
+                "finance",
+                "pediatrics",
+                "margins",
+                "medicaid",
+                "texas"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-health-system-layoffs-november-2026-admin-cuts",
+              "canonical_topic": "health-system-layoffs-november-2026-admin-cuts",
+              "duplicate_group": "health-system-layoffs-november-2026-admin-cuts",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/the-hospitals-health-systems-cutting-jobs-in-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-11-19T00:00:00Z"
+                }
+              ],
+              "title": "November layoffs concentrate in administrative, IT and health-plan roles at Keck, RWJBarnabas, Presbyterian and others",
+              "summary": "Becker's tracker shows a wave of non-clinical cuts this month. Keck Medicine of USC is laying off 77 people, including five C-suite executives, from Dec. 7 to Jan. 8 with more reductions expected; RWJBarnabas Health will eliminate 106 positions in February; Presbyterian Healthcare Services is cutting about 135, mostly health-plan roles, after exiting most Medicare Advantage plans for 2027; Kootenai Health is eliminating 80 positions, citing a $60 million increase in annual drug costs; and Ascension will close an insurance unit and lay off 51. Children's Mercy cut 115 positions and outsourced 473 revenue-cycle and scheduling staff.",
+              "strategic_implication": "Systems are cutting overhead first, specifically management layers, IT and provider-sponsored plan operations, rather than bedside staff. Executives planning similar moves should weigh the morale risk shown in Bain's latest physician survey and be clear about which functions automation or outsourcing will absorb.",
+              "confidence": "high",
+              "tags": [
+                "layoffs",
+                "workforce",
+                "finance",
+                "provider-sponsored-plans",
+                "medicare-advantage",
+                "outsourcing"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Bain's physician survey shows engagement at its lowest since 2017, with respect and recognition replacing burnout as the main reason physicians cite for wanting to leave. A National Academies report calling for faster retractions was pulled before release over suspect citations. Brain-implant trial participants are pressing for post-trial support and access to their neural data, and an infant malaria study warns that combining a monoclonal antibody with vaccines may reduce vaccine response.",
+          "items": [
+            {
+              "item_id": "2026-11-20-bain-physician-exit-respect-not-burnout",
+              "canonical_topic": "bain-physician-exit-respect-not-burnout",
+              "duplicate_group": "bain-physician-exit-respect-not-burnout",
+              "priority_score": 6,
+              "primary_source": "Becker's Physician Leadership",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Physician Leadership",
+                  "url": "https://www.beckersphysicianleadership.com/physician-workforce/physicians-are-leaving-over-respect-not-burnout-7-things-to-know/",
+                  "source_type": "web",
+                  "published_at": "2026-11-16T00:00:00Z"
+                }
+              ],
+              "title": "Bain: 25% of physicians are weighing an exit, and lack of respect, not burnout, is now the top non-pay driver",
+              "summary": "Bain's US Front Line of Healthcare 2026 report, based on a June survey of 400 physicians plus nurses and administrators, found physician employee Net Promoter Score fell from 33 in 2024 to 6, the lowest since 2017. A quarter of physicians are considering switching employers, up 5 points, and those in management-led organizations are more than twice as likely to leave as those in physician-led settings. Physicians who feel involved in decisions score 88 points higher. Fifty-five percent of administrators say physician recruiting has gotten harder, up from 35% in 2024. The report was released Nov. 16 and was not covered in earlier editions.",
+              "strategic_implication": "Retention is increasingly about governance, not just pay. CMOs and CEOs should formalize physician decision rights on scheduling, AI tool selection and service-line strategy. Bain says AI investments will not pay off if clinicians feel left out of the decisions.",
+              "confidence": "high",
+              "tags": [
+                "physician-workforce",
+                "retention",
+                "engagement",
+                "governance",
+                "bain"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-national-academies-retraction-report-paused",
+              "canonical_topic": "national-academies-retraction-report-paused",
+              "duplicate_group": "national-academies-retraction-report-paused",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/19/national-academies-report-proposes-faster-research-retractions/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T16:00:00Z"
+                }
+              ],
+              "title": "National Academies urges 12-week retraction timelines, then pauses its own report over apparently fabricated citations",
+              "summary": "A 157-page National Academies report chaired by Randy Schekman calls on journals to resolve research-integrity concerns within 12 weeks, or six months for complex cases, and says authors who cannot produce original data could face retraction. More than 5,000 studies were retracted in 2025, on average about 2.4 years after publication, as annual output grew to 6.7 million articles. The Academies paused publication after Science reported that 10 references appeared to contain fabricated co-author names, possibly from a large language model; no new release date has been set.",
+              "strategic_implication": "The irony is the lesson: AI-assisted drafting is getting into high-stakes evidence documents. Research offices, journal editors and clinical guideline committees should verify references and disclose AI use before anything is published.",
+              "confidence": "high",
+              "tags": [
+                "research-integrity",
+                "retractions",
+                "ai",
+                "evidence",
+                "academic-medicine"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-bci-pioneers-coalition-participant-rights",
+              "canonical_topic": "bci-pioneers-coalition-participant-rights",
+              "duplicate_group": "bci-pioneers-coalition-participant-rights",
+              "priority_score": 4,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/20/ian-burkhart-how-brain-implant-trials-can-serve-patients-better/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T09:30:00Z"
+                }
+              ],
+              "title": "Brain-implant trial participants push for post-trial support and ownership of their neural data",
+              "summary": "The BCI Pioneers Coalition released 13 recommendations for startups, researchers and regulators covering post-trial care, informed consent and neural-data privacy. Co-founder Ian Burkhart, implanted at Ohio State in 2014, said a proposed device removal during a funding gap made him feel \"more akin to a lab rat versus being a human,\" and called for participants to be able to access and share their own neural data. UCLA ethicist Anna Wexler said there are no good solutions yet for long-term support, despite discussion of insurance, escrows and institutional commitments.",
+              "strategic_implication": "As BCI trials grow, after Synchron's recent pause, IRBs and sponsors will face pressure to fund long-term device support and define data rights at enrollment. Academic medical centers hosting neurotech trials should add explicit post-trial obligations to their contracts.",
+              "confidence": "high",
+              "tags": [
+                "neurotech",
+                "bci",
+                "research-ethics",
+                "clinical-trials",
+                "patient-rights"
+              ]
+            },
+            {
+              "item_id": "2026-11-20-malaria-l9ls-monoclonal-vaccine-interference",
+              "canonical_topic": "malaria-l9ls-monoclonal-vaccine-interference",
+              "duplicate_group": "malaria-l9ls-monoclonal-vaccine-interference",
+              "priority_score": 4,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/19/malaria-monoclonal-antibody-l9ls-vaccine-r21-infant-study-mali/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-19T22:20:00Z"
+                }
+              ],
+              "title": "Malaria monoclonal L9LS is 78% effective in Mali infants but appears to reduce R21 vaccine antibody responses",
+              "summary": "In a study of infants 1 to 12 months old in Mali presented at the ASTMH annual meeting, the long-acting monoclonal antibody L9LS was 78% effective against malaria versus placebo over a six-month transmission season. When given after R21 vaccination, however, it was associated with 20% to 30% lower vaccine-generated antibody levels, and the clinical significance is unclear. NIAID's Robert Seder said pivotal trials, hoped to begin in 2028, will focus first on other groups such as pregnant people and children recovering after malaria hospitalization. Malaria killed about 610,000 people in 2024.",
+              "strategic_implication": "Global health funders will need to sequence monoclonals and vaccines carefully. For U.S. audiences, the finding is a reminder that layering preventives, as with RSV antibodies and maternal vaccines, needs interaction data before it becomes standard practice.",
+              "confidence": "medium",
+              "tags": [
+                "malaria",
+                "global-health",
+                "monoclonal-antibodies",
+                "vaccines",
+                "clinical-research"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-19",
       "generated_at": "2026-11-19T14:30:00Z",
       "headline": "Today's Healthcare Insights",
@@ -18577,499 +19305,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-10-09",
-      "generated_at": "2026-10-09T12:40:00Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's edition covers a proposed overhaul of surprise-billing arbitration, 2027 Medicare Advantage star ratings, Medicaid program-integrity and work-requirement developments, and the FDA's extended mifepristone review. It also covers AI-industry influence on CMS app policy, payer antitrust and retail Medicare Advantage competition, hospital payment litigation, and early flu-season signals. Sources include STAT News, Healthcare Dive, Fierce Healthcare, KFF Health News, Becker's, and ABC News.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
-          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
-          "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS",
-          "Targeted web/news searches and primary-source verification (KFF Health News, Becker's, Crain's New York, Walmart, ABC News)"
-        ],
-        "sources_successful": [
-          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
-          "Healthcare Dive RSS (reviewed; current items already in the automated run)",
-          "Fierce Healthcare RSS (automated run only)",
-          "Targeted web/news searches (KFF Health News, Becker's Hospital Review, Becker's Payer Issues, Crain's New York, ABC News)",
-          "Walmart and SCAN press materials"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels and newsletter-name searches returned no messages in the connected mailbox since 2026-10-07",
-          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch; the SCAN-Walmart item cites the press release, with Fierce's Oct. 8 analysis noted",
-          "STAT+ articles paywalled; drafted from RSS previews plus accessible article text"
-        ],
-        "run_notes": "Same-day rebuild in place: the automated run (generated 2026-10-09T11:04:25Z) appended 2026-10-09 and left the feed at 31 editions. Trimmed to 30; the displaced 2026-08-28 edition is preserved in archive/editions-archive-2026-10-09.json. Retained all 7 automated items, added 9 new items from the Oct. 7-9 window screened against the prior 15 editions (skipped MAHA midterm coverage and the Utah AI sandbox as recently covered), and refreshed bucket syntheses.",
-        "items_captured": 16
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Congress is weighing a reset of surprise-billing arbitration as CMS's 2027 star ratings land, while Medicaid policy shifts toward documentation integrity and county-level work-requirement exemptions, and the FDA extends its mifepristone review into 2027.",
-          "items": [
-            {
-              "item_id": "2026-10-09-no-surprises-arbitration-overhaul",
-              "canonical_topic": "no-surprises-arbitration-overhaul",
-              "duplicate_group": "no-surprises-arbitration-overhaul",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/08/house-democrat-proposes-change-to-no-surprises-act-arbitration-process/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T21:44:05Z"
-                }
-              ],
-              "title": "New bill would replace the No Surprises Act’s disputed arbitration system",
-              "summary": "Rep. Frank Pallone introduced the Lower Premiums, Faster Payments Act, which would replace the No Surprises Act’s independent dispute process with payments based on median in-network rates. Consumer advocates and academics praised the proposal, while provider groups opposed it; the bill is a proposal, not enacted policy.",
-              "strategic_implication": "A shift in the payment benchmark could alter out-of-network negotiation leverage, provider revenue expectations, and payer exposure if Congress advances the bill.",
-              "confidence": "high",
-              "tags": [
-                "surprise-billing",
-                "payment-policy",
-                "congress",
-                "provider-payer-disputes"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-2027-medicare-advantage-star-ratings",
-              "canonical_topic": "2027-medicare-advantage-star-ratings",
-              "duplicate_group": "2027-medicare-advantage-star-ratings",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/cms-about-71-mapd-plan-enrollees-coverage-four-or-more-stars-2027",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T17:05:00-04:00"
-                }
-              ],
-              "title": "CMS: 71% of Medicare Advantage drug-plan enrollees are in 4-star-or-better plans",
-              "summary": "CMS released the 2027 Medicare Advantage star ratings, reporting that about 71% of enrollees in Medicare Advantage prescription drug plans are in plans rated four stars or higher. The aggregate figure does not describe performance variation across individual contracts.",
-              "strategic_implication": "Plans should assess contract-level ratings and quality gaps as they refine competitive positioning and enrollment communications for the coming year.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "star-ratings",
-                "cms",
-                "quality-measures"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-fda-mifepristone-review-2027",
-              "canonical_topic": "fda-mifepristone-review-2027",
-              "duplicate_group": "fda-mifepristone-review-2027",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/08/fda-mifepristone-abortion-pill-safety-review-continue-into-2027/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T15:02:53Z"
-                }
-              ],
-              "title": "FDA extends its mifepristone safety review into 2027",
-              "summary": "In a court-ordered update in Louisiana's lawsuit over mail delivery, the FDA said it expects to complete a mifepristone safety study by mid-December and publish findings no later than March 2027, before deciding whether to change prescribing or distribution. The agency is also weighing citizen petitions; no new restrictions have been announced.",
-              "strategic_implication": "Reproductive-health providers, telehealth prescribers, and pharmacies face months of regulatory uncertainty and should plan for multiple outcomes rather than an imminent change.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "mifepristone",
-                "reproductive-health",
-                "telehealth-prescribing"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-medicaid-improper-payments-documentation",
-              "canonical_topic": "medicaid-improper-payments-documentation",
-              "duplicate_group": "medicaid-improper-payments-documentation",
-              "priority_score": 7,
-              "primary_source": "Becker's Hospital Review",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/finance/77-of-medicaid-improper-payments-tied-to-paperwork-not-fraud-report/",
-                  "source_type": "web",
-                  "published_at": "2026-10-08"
-                }
-              ],
-              "title": "CRS: 77% of Medicaid improper payments trace to documentation gaps, not fraud",
-              "summary": "An Oct. 7 Congressional Research Service report notes that CMS attributes 77% of fiscal 2025 Medicaid improper payments to insufficient documentation rather than fraud or abuse. Total Medicaid fraud is unknown; state fraud control units reported $2 billion in fiscal 2025 recoveries.",
-              "strategic_implication": "As program-integrity rhetoric intensifies, states, plans, and providers can reduce audit and recoupment exposure by tightening documentation and eligibility-verification processes.",
-              "confidence": "high",
-              "tags": [
-                "medicaid",
-                "program-integrity",
-                "improper-payments",
-                "crs"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-new-york-bronx-medicaid-work-exemption",
-              "canonical_topic": "new-york-bronx-medicaid-work-exemption",
-              "duplicate_group": "new-york-bronx-medicaid-work-exemption",
-              "priority_score": 7,
-              "primary_source": "Becker's Payer Issues",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Payer Issues",
-                  "url": "https://www.beckerspayer.com/payer/medicaid/new-york-moves-to-exempt-bronx-from-medicaid-work-rules/",
-                  "source_type": "web",
-                  "published_at": "2026-10-08"
-                },
-                {
-                  "source": "Crain's New York Business",
-                  "url": "https://www.crainsnewyork.com/health-care/cny-medicaid-work-requirements-bronx-20261007/",
-                  "source_type": "web",
-                  "published_at": "2026-10-07"
-                }
-              ],
-              "title": "New York moves to exempt the Bronx from Medicaid work requirements",
-              "summary": "New York notified CMS that it plans to use the H.R. 1 high-unemployment exception for the Bronx, the only state county meeting the threshold of 8% or 1.5 times the national rate. About 200,000 Bronx residents would otherwise be subject to rules that begin Jan. 1; the exemption is a stated plan, not yet a final determination.",
-              "strategic_implication": "County-level unemployment exceptions could create uneven coverage-loss risk within states, so safety-net providers and plans should model enrollment by geography rather than statewide averages.",
-              "confidence": "high",
-              "tags": [
-                "medicaid",
-                "work-requirements",
-                "hr-1",
-                "new-york"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Federal AI policy is being shaped in close quarters with technology firms, while regulators' insistence on human review limits how far payers can automate prior-authorization denials; quantum-era encryption risk adds a longer-range security agenda.",
-          "items": [
-            {
-              "item_id": "2026-10-09-cms-slack-ai-industry-lobbying",
-              "canonical_topic": "cms-slack-ai-industry-lobbying",
-              "duplicate_group": "cms-slack-ai-industry-lobbying",
-              "priority_score": 8,
-              "primary_source": "KFF Health News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "KFF Health News",
-                  "url": "https://kffhealthnews.org/health-industry/ai-tech-lobbying-medicare-medical-records-apps-trump-cms-slack-fda/",
-                  "source_type": "web",
-                  "published_at": "2026-10-09"
-                }
-              ],
-              "title": "KFF Health News: AI and tech leaders shaped CMS app policy through a government-run Slack",
-              "summary": "A KFF Health News investigation found that a CMS-managed Health Technology Ecosystem Slack workspace grew to about 1,700 members, with relatively few patient advocates, physicians, or hospitals, and served as a channel for companies to influence policy on apps, records access, and Medicare reimbursement for AI services. CMS has not disclosed all Medicare App Library listing criteria.",
-              "strategic_implication": "Health systems and patient groups should engage directly in CMS app-ecosystem policy, since reimbursement and records-access rules for consumer AI are being shaped largely by technology firms.",
-              "confidence": "high",
-              "tags": [
-                "cms",
-                "health-tech-ecosystem",
-                "ai-policy",
-                "interoperability",
-                "lobbying"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-quantum-cybersecurity-readiness",
-              "canonical_topic": "quantum-cybersecurity-readiness",
-              "duplicate_group": "quantum-cybersecurity-readiness",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/healthcare-organizations-are-underprepared-for-quantum-computing-threats/832516/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T13:24:00-04:00"
-                }
-              ],
-              "title": "Healthcare organizations urged to prepare for quantum-era encryption risks",
-              "summary": "Experts told Healthcare Dive that practical quantum computers could eventually break encryption methods now used to protect patient data. The article argues that healthcare organizations should begin preparing before the technology becomes practical.",
-              "strategic_implication": "Security leaders can reduce future migration risk by inventorying cryptographic dependencies, checking vendor road maps, and incorporating post-quantum readiness into long-range security planning.",
-              "confidence": "medium",
-              "tags": [
-                "cybersecurity",
-                "quantum-computing",
-                "patient-data",
-                "encryption"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-fitch-ai-prior-auth-human-review",
-              "canonical_topic": "fitch-ai-prior-auth-human-review",
-              "duplicate_group": "fitch-ai-prior-auth-human-review",
-              "priority_score": 6,
-              "primary_source": "Becker's Hospital Review",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/finance/revenue-cycle-management/fitch-human-review-in-ai-prior-authorization-denials-likely-here-to-stay/",
-                  "source_type": "web",
-                  "published_at": "2026-10-07"
-                }
-              ],
-              "title": "Fitch expects human review of AI prior-authorization denials to persist",
-              "summary": "Fitch Ratings' AI stress test scored health insurers 20 on a scale where 40 or higher signals possible negative rating action, indicating limited near-term disruption risk. Fitch expects regulators to keep requiring human involvement in care denials, which would limit the efficiency payers can capture from AI in prior authorization.",
-              "strategic_implication": "Providers should not expect fully automated denials, but should anticipate faster AI-assisted approvals and prepare appeal workflows that target the human-review step.",
-              "confidence": "medium",
-              "tags": [
-                "prior-authorization",
-                "ai",
-                "payers",
-                "credit-ratings"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Payer markets face antitrust scrutiny in Michigan and new retail-branded Medicare Advantage competition in Texas and Arizona, while Argenx's trial miss shows the risk in autoimmune label expansion.",
-          "items": [
-            {
-              "item_id": "2026-10-09-michigan-bcbsm-antitrust-suit",
-              "canonical_topic": "michigan-bcbsm-antitrust-suit",
-              "duplicate_group": "michigan-bcbsm-antitrust-suit",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/michigan-ag-hits-bcbsm-antitrust-suit",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T14:54:00-04:00"
-                }
-              ],
-              "title": "Michigan attorney general sues Blue Cross Blue Shield of Michigan over alleged monopoly",
-              "summary": "Michigan Attorney General Dana Nessel filed an antitrust suit against Blue Cross Blue Shield of Michigan, alleging that the insurer operated as a monopoly in the state. The allegations have not been adjudicated.",
-              "strategic_implication": "Payers, providers, and employers with Michigan exposure should monitor the case for potential remedies and broader implications for contracting and competition.",
-              "confidence": "high",
-              "tags": [
-                "antitrust",
-                "health-insurance",
-                "michigan",
-                "competition"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-scan-walmart-co-branded-ma-plans",
-              "canonical_topic": "scan-walmart-co-branded-ma-plans",
-              "duplicate_group": "scan-walmart-co-branded-ma-plans",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.cincinnati.com/press-release/story/133864/walmart-and-scan-launch-co-branded-medicare-advantage-plans-designed-to-deliver-more-personalized-health-support-for-older-adults/",
-                  "source_type": "web",
-                  "published_at": "2026-10-07"
-                },
-                {
-                  "source": "Walmart",
-                  "url": "https://corporate.walmart.com/news/2026/09/walmart-scan-launch-co-branded-medicare-plan",
-                  "source_type": "web",
-                  "published_at": "2026-09-16"
-                }
-              ],
-              "title": "SCAN and Walmart launch two co-branded Medicare Advantage plans for 2027",
-              "summary": "SCAN Health Plan and Walmart will offer SCAN Walmart Health Advantage (HMO) and a chronic-condition special needs plan beginning Jan. 1, 2027, in six Texas and three Arizona counties, reaching more than 2 million eligible enrollees. The HMO has a $0 premium and $0 primary-care copays; Fierce Healthcare examined the strategy behind the partnership on Oct. 8.",
-              "strategic_implication": "Retail-branded Medicare Advantage products add consumer-facing competition in Houston, San Antonio, and Phoenix-area markets, where incumbent plans and provider networks should watch enrollment shifts during open enrollment.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "retail-health",
-                "walmart",
-                "scan"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-argenx-vyvgart-sjogrens-phase3-miss",
-              "canonical_topic": "argenx-vyvgart-sjogrens-phase3-miss",
-              "duplicate_group": "argenx-vyvgart-sjogrens-phase3-miss",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/08/argenx-autoimmune-disease-study-sjogrens/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T14:02:29Z"
-                }
-              ],
-              "title": "Argenx's Vyvgart fails a Phase 3 trial in Sjögren's disease",
-              "summary": "Argenx said Vyvgart did not outperform placebo in a Phase 3 study of patients with Sjögren's disease, an unusual setback after a run of autoimmune wins. The company's shares fell about 13% on Thursday morning.",
-              "strategic_implication": "The miss is a reminder that label-expansion strategies for FcRn-class drugs carry real risk, which could affect payer formulary planning and competitor positioning in autoimmune disease.",
-              "confidence": "high",
-              "tags": [
-                "biopharma",
-                "autoimmune",
-                "clinical-trials",
-                "argenx"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Hospitals face continuing readmission-penalty exposure and accelerating outpatient migration, while HCA's escalating lawsuits show providers increasingly litigating denial and underpayment disputes.",
-          "items": [
-            {
-              "item_id": "2026-10-09-medicare-readmission-penalties",
-              "canonical_topic": "medicare-readmission-penalties",
-              "duplicate_group": "medicare-readmission-penalties",
-              "priority_score": 8,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/hospital-readmission-reduction-program-penalties-rise-2027-cms/832473/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T09:14:37-04:00"
-                }
-              ],
-              "title": "CMS data show Medicare readmission penalties reach about 80% of hospitals",
-              "summary": "About 80% of hospitals will have Medicare payments reduced for high readmission rates this fiscal year, up from 78% the year before, according to CMS data reported by Healthcare Dive. The increase extends a trend in the Hospital Readmissions Reduction Program.",
-              "strategic_implication": "The breadth of payment exposure reinforces readmission prevention and discharge coordination as near-term operating priorities, particularly for hospitals with persistent performance gaps.",
-              "confidence": "high",
-              "tags": [
-                "medicare",
-                "readmissions",
-                "hospital-payment",
-                "care-transitions"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-hca-hospitals-insurer-payment-suits",
-              "canonical_topic": "hca-hospitals-insurer-payment-suits",
-              "duplicate_group": "hca-hospitals-insurer-payment-suits",
-              "priority_score": 7,
-              "primary_source": "Becker's Payer Issues",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Payer Issues",
-                  "url": "https://www.beckerspayer.com/legal/hca-hospitals-escalate-payment-fight-with-insurers/",
-                  "source_type": "web",
-                  "published_at": "2026-10-07"
-                }
-              ],
-              "title": "HCA-affiliated hospitals escalate reimbursement lawsuits against insurers",
-              "summary": "Seven HCA-affiliated hospitals sued Anthem Blue Cross and Blue Shield Georgia on Oct. 5, alleging more than $501,000 in denied or underpaid claims, following a September suit against Independence Blue Cross. The breach-of-contract claims are unresolved; an earlier $145 million Florida suit against UnitedHealthcare was dismissed without prejudice.",
-              "strategic_implication": "Litigation is becoming a routine tool in denial disputes; revenue-cycle leaders should track claim-level evidence that can support contract enforcement, including against out-of-state Blue plans.",
-              "confidence": "high",
-              "tags": [
-                "claim-denials",
-                "payer-provider-disputes",
-                "hca",
-                "revenue-cycle"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-outpatient-shift-hospital-margins",
-              "canonical_topic": "outpatient-shift-hospital-margins",
-              "duplicate_group": "outpatient-shift-hospital-margins",
-              "priority_score": 6,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/outpatient-shift-accelerates-hospital-margins-rebound-strata/832490/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T10:10:53-04:00"
-                }
-              ],
-              "title": "Outpatient migration accelerates as hospital margins rebound",
-              "summary": "A new report cited by Healthcare Dive says patient demand and payer pressures are moving more procedures out of expensive inpatient settings. The report describes the outpatient shift as accelerating alongside a rebound in hospital margins.",
-              "strategic_implication": "Health systems should test whether outpatient volume, site-of-care economics, and capacity plans remain aligned as payer incentives and patient preferences continue to shift.",
-              "confidence": "medium",
-              "tags": [
-                "outpatient-care",
-                "hospital-margins",
-                "site-of-care",
-                "payer-pressure"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Visa-fraud investigations add compliance uncertainty for the research workforce, and early flu signals argue for moving respiratory-season staffing and vaccination plans forward.",
-          "items": [
-            {
-              "item_id": "2026-10-09-university-j1-visa-investigations",
-              "canonical_topic": "university-j1-visa-investigations",
-              "duplicate_group": "university-j1-visa-investigations",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/08/trump-administration-investigates-universities-j1-visa-fraud/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T23:09:27Z"
-                }
-              ],
-              "title": "U.S. investigates nine universities over alleged J-1 visa fraud",
-              "summary": "The administration announced investigations of nine universities for alleged fraud related to visas commonly used by postdoctoral researchers, according to STAT News. The inquiry concerns a visa channel used by a core part of the biomedical research workforce; the allegations remain under investigation.",
-              "strategic_implication": "Research institutions should review visa-program compliance and contingency planning while avoiding assumptions about findings that have not yet been established.",
-              "confidence": "high",
-              "tags": [
-                "research-workforce",
-                "j1-visas",
-                "university-compliance",
-                "biomedical-research"
-              ]
-            },
-            {
-              "item_id": "2026-10-09-early-flu-season-signals",
-              "canonical_topic": "early-flu-season-signals",
-              "duplicate_group": "early-flu-season-signals",
-              "priority_score": 7,
-              "primary_source": "ABC News",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "ABC News",
-                  "url": "https://abcnews.com/Health/cold-flu-medicine-purchases-22-year-walgreens-data/story?id=137091568",
-                  "source_type": "web",
-                  "published_at": "2026-10-08"
-                }
-              ],
-              "title": "Retail and EHR data point to an early start to the flu season",
-              "summary": "Walgreens reported cold and flu medicine purchases up 21.7% and cough-drop purchases up 16.6% from last year. Epic Research said flu diagnoses or positive tests reached 140 per 100,000 patients in the week of Sept. 13, the earliest start in five years.",
-              "strategic_implication": "Hospitals and clinics should move up respiratory-season staffing, vaccination outreach, and surge planning rather than relying on typical December peak timing.",
-              "confidence": "medium",
-              "tags": [
-                "influenza",
-                "respiratory-season",
-                "surge-planning",
-                "vaccination"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-19T14:30:00Z"
+  "last_updated": "2026-11-20T14:00:00Z"
 }

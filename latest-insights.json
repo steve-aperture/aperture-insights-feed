@@ -3,6 +3,701 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-23",
+      "generated_at": "2026-11-23T13:45:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "CMS proposed a 2028 Medicare Advantage rule that would cut Star Ratings to 15 measures, along with ADVaNCE MA, a mandatory model replacing stars with state-based Diamond Ratings in select states. Kaufman Hall data show the median hospital margin fell to 1.1%, with nearly half of hospitals losing money, while Oracle defended a $17 billion VA EHR cost increase and the FDA rejected Capricor's Duchenne therapy over data-integrity concerns. Sources include CMS, STAT, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News, Fierce Pharma and Becker's.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS and site",
+          "BioPharma Dive, MedTech Dive, MedCity News and KFF Health News RSS",
+          "CMS primary sources; Fierce Pharma, Becker's, AHA and other outlets via web search"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for Nov. 20-23",
+          "Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News and KFF Health News RSS fetched and screened",
+          "Articles read on STAT, Healthcare Dive, BioPharma Dive, MedTech Dive, MedCity News, KFF Health News, the CMS newsroom and CMS Innovation Center to verify figures; web search filled MA-rule, M&A and rural provider gaps (Fierce Pharma, Morningstar, Health Exec, Becker's, AHA)"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and newsletter-sender searches since Nov. 20 returned no messages in the connected mailbox; RSS sources used instead.",
+          "STAT+ articles (MAHA ELEVATE pilot, Pharmalittle, Capricor, MAHA Institute finances) were paywalled; items rely on visible text and, where available, non-paywalled reporting.",
+          "Modern Healthcare and Hospitalogy content was not available through Gmail or open feeds this run.",
+          "Becker's Iowa joint-venture item relies on the visible article text and AHA's account."
+        ],
+        "run_notes": "22 items cover developments reported from the afternoon of Nov. 20 through the morning of Nov. 23 (weekend window), plus the Nov. 17 Beren approval and Iowa joint venture, which earlier editions had not covered. Checked against the prior 30 editions for repeats: the USPSTF item follows the Nov. 19 first-meeting preview with the private-vote and AHRQ-edit outcome; the RHTP item adds congressional oversight to the Nov. 5 and Nov. 16 award coverage; the patent-reform item follows the Nov. 20 Senate Judiciary drug-pricing item; the Medicare for All item adds KFF polling to the Nov. 19 Medicare-expansion item; the ADA item follows the Oct. 22 officer departure. Excluded repeats: Medicare ACO savings (covered Nov. 20), RHTP five-year service commitments (covered Nov. 16), Brigham strike (averted Nov. 12). Screened but not itemized: MAHA Institute reserves (STAT+), Invivyd and Kymera trial results (STAT+), Genmab outlook, Erasca KRAS data, Alterome KRAS data, CTE blood-test research, FOIA-China opinion, measles/MAHA opinion and sponsored Healthcare Dive and BioPharma Dive content."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "CMS released its second 2028 Medicare Advantage and Part D proposed rule, which would cut Star Ratings to 15 measures, move network-adequacy proof to a plan's first operating year and set a whole-food standard for food benefits. Alongside it, CMMI proposed ADVaNCE MA, a mandatory model that would replace Star Ratings with state-based Diamond Ratings in select states starting in 2029. HHS also funded $47 million in MAHA ELEVATE lifestyle pilots in Medicare. On the Hill, Democrats pressed Oz on delayed rural transformation awards, consumer groups pushed for patent reform before year-end, and KFF analysis shows Medicare for All support depends heavily on how it is framed.",
+          "items": [
+            {
+              "item_id": "2026-11-23-cms-cy2028-ma-part-d-proposed-rule",
+              "canonical_topic": "cms-cy2028-ma-part-d-proposed-rule",
+              "duplicate_group": "cms-cy2028-ma-part-d-proposed-rule",
+              "priority_score": 9,
+              "primary_source": "CMS",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS Newsroom",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-proposes-reforms-strengthen-competition-elevate-care-quality-expand-beneficiary-choice-medicare",
+                  "source_type": "web",
+                  "published_at": "2026-11-20T00:00:00Z"
+                },
+                {
+                  "source": "CMS Fact Sheet (CMS-4214-P2)",
+                  "url": "https://www.cms.gov/newsroom/fact-sheets/contract-year-2028-policy-technical-changes-medicare-advantage-program-medicare-prescription-drug",
+                  "source_type": "web",
+                  "published_at": "2026-11-20T00:00:00Z"
+                },
+                {
+                  "source": "Health Exec",
+                  "url": "https://healthexec.com/topics/healthcare-management/healthcare-policy/cms-looking-better-serve-seniors-refining-rules-medicare-advantage-part-d",
+                  "source_type": "web",
+                  "published_at": "2026-11-21T00:00:00Z"
+                }
+              ],
+              "title": "CMS's 2028 Medicare Advantage rule would cut Star Ratings to 15 measures, delay network-adequacy proof and set a 'healthy food' standard",
+              "summary": "CMS's second proposed rule for contract year 2028 (CMS-4214-P2), issued Nov. 20, would focus MA and Part D Star Ratings on 15 measures weighted toward outcomes and patient experience, raise the bar for high ratings and bonus payments, and remove the reward factor. New plans would demonstrate network adequacy in their first operating year instead of at application, and three behavioral health specialty types would merge into one for network counts. Food and beverage supplemental benefits would have to meet a whole-food standard tied to the 2025-2030 Dietary Guidelines. Other provisions cap emergency cost sharing at $180-$240, require plans to keep in-network rates for at least 90 days after a significant provider termination, and route prior-authorization requests through FHIR-based APIs.",
+              "strategic_implication": "This is the rule that sets 2028 bids, and the Star Ratings changes reach the 2030 ratings that drive bonus dollars. Plans should model which of their current strong measures fall away. Providers gain leverage from the 90-day continuity protection and the FHIR prior-auth requirement, and should check whether their contracting and interface roadmaps match. Comments are due 60 days after Federal Register publication.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "part-d",
+                "star-ratings",
+                "network-adequacy",
+                "prior-authorization",
+                "cms"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-cmmi-advance-ma-mandatory-model-diamond-ratings",
+              "canonical_topic": "cmmi-advance-ma-mandatory-model-diamond-ratings",
+              "duplicate_group": "cmmi-advance-ma-mandatory-model-diamond-ratings",
+              "priority_score": 9,
+              "primary_source": "CMS Innovation Center",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CMS Innovation Center",
+                  "url": "https://www.cms.gov/initiatives/innovation-center/advance-ma",
+                  "source_type": "web",
+                  "published_at": "2026-11-20T00:00:00Z"
+                },
+                {
+                  "source": "CMS Newsroom",
+                  "url": "https://www.cms.gov/newsroom/press-releases/cms-proposes-reforms-strengthen-competition-elevate-care-quality-expand-beneficiary-choice-medicare",
+                  "source_type": "web",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "CMMI proposes ADVaNCE MA, a mandatory 10-year model that would replace Star Ratings with state-based 'Diamond Ratings' in select states",
+              "summary": "Alongside the 2028 rule, the CMS Innovation Center proposed ADVaNCE MA, a mandatory 10-year model starting Jan. 1, 2029, after a pre-implementation period that begins June 8, 2027. In the selected states, which CMS would name in the final 2028 rule, Diamond Ratings would replace Star Ratings and Quality Bonus Payments, comparing plans against others in the same state with similar populations. HMOs, local PPOs, PFFS plans, C-SNPs and D-SNPs would participate; state Medicaid directors could opt out their D-SNPs. The model would also let plans target food, transportation and caregiver benefits to Part D Low-Income Subsidy enrollees and would shadow-test an 'inferred' risk adjustment model that would not be used for payment.",
+              "strategic_implication": "A mandatory model that swaps the national quality bonus system for state-by-state comparisons would reshuffle which plans win bonus money, and national carriers would face different scoring rules in different states. The shadow risk-adjustment test is an early sign of where CMS wants to take coding-driven payment. Plans and provider-sponsored plans should comment on how states will be selected and how the model will interact with existing star-ratings litigation.",
+              "confidence": "high",
+              "tags": [
+                "medicare-advantage",
+                "cmmi",
+                "payment-models",
+                "star-ratings",
+                "risk-adjustment"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-maha-elevate-food-is-medicine-medicare-pilot",
+              "canonical_topic": "maha-elevate-food-is-medicine-medicare-pilot",
+              "duplicate_group": "maha-elevate-food-is-medicine-medicare-pilot",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/20/kennedy-food-is-medicine-maha-elevate-pilot/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "HHS funds $47 million MAHA ELEVATE pilots to test whether 'food is medicine' and lifestyle programs should be covered by Medicare",
+              "summary": "HHS announced MAHA ELEVATE, a Medicare pilot in which 15 groups will test nutrition, exercise and other lifestyle programs, such as cooking classes and nutrition coaching for people with chronic conditions, for effects on beneficiaries' health and federal spending. STAT reports $47 million in funding. CMS Administrator Mehmet Oz said the goal is to 'make it easier to be healthy in America.' Medicare does not cover many of these interventions today, and the pilots are meant to generate evidence over several years on whether coverage is warranted. Full award details sit behind STAT's paywall.",
+              "strategic_implication": "Together with the MA healthy-food standard, this shows CMS building the evidence base for nutrition benefits in both traditional Medicare and MA. Health systems and community organizations running food-is-medicine programs should track the 15 awardees and their measures, since those outcomes are likely to shape future coverage and MA benefit design.",
+              "confidence": "medium",
+              "tags": [
+                "medicare",
+                "food-is-medicine",
+                "maha",
+                "chronic-disease",
+                "prevention"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-democrats-press-oz-rural-health-transformation-delay",
+              "canonical_topic": "democrats-press-oz-rural-health-transformation-delay",
+              "duplicate_group": "democrats-press-oz-rural-health-transformation-delay",
+              "priority_score": 7,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/rural-health/rural-health-transformation-fund-delays-democrats-demand-answers-mehmet-oz/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "18 congressional Democrats demand answers from Oz on the delayed second-year Rural Health Transformation awards",
+              "summary": "Eighteen congressional Democrats wrote to CMS Administrator Mehmet Oz seeking answers on the nine-day delay in second-year awards from the $50 billion Rural Health Transformation Program, citing 'an alarming lack of public transparency.' Awards were due Oct. 31; CMS cited 'an additional administrative process requirement' and announced them Nov. 9. Most state awards changed less than 2% from year one; North Dakota and Iowa gained the most, while New Jersey, Florida and Vermont saw the largest reductions. The lawmakers asked for a searchable spending database, a performance evaluation plan and a briefing, with answers due Nov. 25. Five rural hospitals have closed or converted since the fund was created.",
+              "strategic_implication": "With Democrats taking both chambers in January, RHTP oversight is likely to turn into formal hearings and data requests. States and rural providers should expect more scrutiny of how year-one money was spent and should document results now. Florida's reduced award matters for in-state rural planning.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "rhtp",
+                "cms",
+                "congressional-oversight",
+                "medicaid"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-consumer-groups-urge-drug-patent-reform-lame-duck",
+              "canonical_topic": "consumer-groups-urge-drug-patent-reform-lame-duck",
+              "duplicate_group": "consumer-groups-urge-drug-patent-reform-lame-duck",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/15-organizations-call-on-congress-to-address-abuse-of-drug-patent-system/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "15 consumer groups push Congress to pass patent-thicket and pay-for-delay bills before year-end",
+              "summary": "Fifteen consumer advocacy groups led by Families USA urged Congress to reform drug patent law before the end of the year, targeting patent thickets, 'product hopping' and pay-for-delay settlements. They named the ETHIC Act, the Affordable Prescriptions for Patients Act and the Preserve Access to Affordable Generics and Biosimilars Act. The letter points to Amgen's challenge of Colorado's upper payment limit on Enbrel, whose list price has risen more than 1,500% since 1998, and warns that a win could make federal patents 'a shield against every state affordability standard.' At least 11 states have prescription drug affordability boards, and four have upper payment limit authority.",
+              "strategic_implication": "The Amgen-Colorado case is the one to watch: if patents can preempt state upper payment limits, the state PDAB route to drug cost control narrows sharply. Patent bills have stalled for two years, as last week's Senate Judiciary hearing showed, so health systems and employers should plan on drug-cost relief coming, if at all, from the next Congress.",
+              "confidence": "medium",
+              "tags": [
+                "drug-pricing",
+                "patents",
+                "pdab",
+                "congress",
+                "biosimilars"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-medicare-for-all-revival-kff-polling",
+              "canonical_topic": "medicare-for-all-revival-kff-polling",
+              "duplicate_group": "medicare-for-all-revival-kff-polling",
+              "priority_score": 5,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/insurance/congress-democrats-medicare-for-all-unity-challenge-universal-healthcare/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-23T00:00:00Z"
+                }
+              ],
+              "title": "Medicare for All is back in play, but KFF polling shows support swings from three-quarters to the 20s depending on framing",
+              "summary": "Julie Rovner writes that Democrats, who won House and Senate majorities, now have to choose between restoring Trump-era cuts to Medicaid and ACA subsidies and pursuing broader coverage expansion. Candidates backing universal coverage won Senate seats in Michigan, Maine, Iowa and Texas, and presumptive Speaker Hakeem Jeffries supports lowering the Medicare eligibility age and covering all children. KFF's September poll found Medicare for All support at its highest level since regular tracking began, but KFF's Mollyann Brodie says support can reach three-quarters when framed as guaranteed care and fall to the 20s when framed around taxes. Any bill faces a likely veto, and Medicare's hospital trust fund is projected to run out in 2033.",
+              "strategic_implication": "Expect 2027 to bring messaging bills and hearings rather than law. The near-term policy fight is over restoring ACA subsidies and Medicaid funding, while Medicare-at-55 and coverage for children are the incremental options most likely to be scored and debated. Systems and plans should prepare positions on those narrower proposals.",
+              "confidence": "high",
+              "tags": [
+                "medicare-for-all",
+                "coverage-expansion",
+                "congress",
+                "polling",
+                "aca"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Oracle's CEO defended a $17 billion increase to the VA EHR contract ceiling before House lawmakers. KFF Health News reports patients suing over sensor-equipped knee implants they say they never agreed to, as Medicare remote-monitoring spending passed $500 million. HLTH takeaways point to agentic AI in prior auth and scheduling, and a STAT essay warns that an AI market downturn could strand hospitals before they finish evaluating their tools.",
+          "items": [
+            {
+              "item_id": "2026-11-23-oracle-va-ehr-17b-ceiling-hearing",
+              "canonical_topic": "oracle-va-ehr-17b-ceiling-hearing",
+              "duplicate_group": "oracle-va-ehr-17b-ceiling-hearing",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/lawmakers-press-oracle-ceo-on-ballooning-va-ehr-modernization-costs/875345/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "Oracle CEO defends a $17 billion increase to the VA EHR contract ceiling as House Democrats call it a 'blank check'",
+              "summary": "Oracle CEO Mike Sicilia told the House Veterans' Affairs Committee that a $17 billion increase in the VA EHR contract ceiling, to $27 billion, is 'an estimate to finish the deployments' and 'not a commitment to spend at Oracle.' He said task orders would be fixed-price, with Oracle absorbing overruns, and that the intended user base grew 129%, from 85,000 in 2022 to 195,000. Ranking member Mark Takano said he saw no justification for the increase. The VA paused the program in 2023 with 5 of 170 medical centers live, restarted in April 2026 with 13 sites, plans 26 more next year and targets all 170 by 2031. Senators questioned Sicilia the day before.",
+              "strategic_implication": "For VA-adjacent providers and community care partners, the 2027 wave of 26 sites is the operational milestone to plan around. For other health systems, the hearing is a reminder of how far scope and training costs can push EHR budgets past initial estimates. Incoming Democratic control of the committees in January points to tighter oversight of the spending ceiling.",
+              "confidence": "high",
+              "tags": [
+                "ehr",
+                "veterans-health",
+                "oracle",
+                "va",
+                "congressional-oversight"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-smart-knee-implants-rpm-billing-lawsuits",
+              "canonical_topic": "smart-knee-implants-rpm-billing-lawsuits",
+              "duplicate_group": "smart-knee-implants-rpm-billing-lawsuits",
+              "priority_score": 7,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/health-industry/smart-joint-implants-knees-health-costs-patients-surprised/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-23T00:00:00Z"
+                }
+              ],
+              "title": "Patients sue over 'smart' knee implants they say they never agreed to, as Medicare remote-monitoring spending passes $500 million",
+              "summary": "Two patients are suing Zimmer Biomet, Canary Medical and their surgeons, alleging they received Persona IQ sensor-equipped knee implants without informed consent; one says the device later kept him from getting an MRI. Zimmer's own website says the implant is 'not intended to support clinical decision-making' and 'has not been shown to provide any clinical benefit,' though the company says nearly 90% of surveyed recipients would choose it again. Nearly 1 million Medicare beneficiaries received remote patient monitoring in 2024, and Medicare paid $536 million for it, more than double the amount three years earlier. HHS's inspector general found 43% of those patients did not receive all required components of the service.",
+              "strategic_implication": "Remote monitoring billing is growing faster than the evidence behind it, and the OIG is watching. Orthopedic programs that use connected implants should review consent forms, MRI-compatibility disclosures and RPM billing documentation. Payers may tighten RPM coverage criteria for devices without demonstrated clinical benefit.",
+              "confidence": "high",
+              "tags": [
+                "remote-patient-monitoring",
+                "medical-devices",
+                "informed-consent",
+                "medicare",
+                "orthopedics"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-hlth-2026-agentic-ai-affordability-takeaways",
+              "canonical_topic": "hlth-2026-agentic-ai-affordability-takeaways",
+              "duplicate_group": "hlth-2026-agentic-ai-affordability-takeaways",
+              "priority_score": 6,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/ai-affordability-glp-1s-longevity-hlth-2026-takeaways/875048/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "HLTH wrap-up: agentic AI moves into prior auth and scheduling, while affordability and GLP-1 costs dominate payer talk",
+              "summary": "Healthcare Dive's HLTH 2026 takeaways note that OpenAI announced partnerships on computer-use agents for insurance preapprovals and discharge planning, and AWS rolled out patient-facing Amazon Health Connect tools for booking, identity verification and prescriptions. AWS said UC San Diego cut staff phone time by 630 hours a week and abandoned calls by about 30%. Morgan Health's Dan Mendelson said GLP-1 coverage can reach 5% of employers' total medical spending, and Twin Health said two-thirds of patients stop within a year. Coalition for Health AI CEO Brian Anderson warned that digital tools have historically widened both the digital divide and costs.",
+              "strategic_implication": "The practical AI story out of HLTH is front-office and utilization-management automation with measurable labor savings, not clinical decision-making. Access centers and revenue cycle teams should benchmark vendor claims against the UC San Diego figures. Employers remain the pressure point on GLP-1 spending.",
+              "confidence": "high",
+              "tags": [
+                "agentic-ai",
+                "patient-access",
+                "glp-1",
+                "hlth",
+                "employers"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-health-ai-bubble-evaluation-continuity-risk",
+              "canonical_topic": "health-ai-bubble-evaluation-continuity-risk",
+              "duplicate_group": "health-ai-bubble-evaluation-continuity-risk",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "STAT First Opinion",
+                  "url": "https://www.statnews.com/2026/11/23/ai-bubble-medical-artificial-intelligence-health/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-23T00:00:00Z"
+                }
+              ],
+              "title": "Opinion: if the AI investment bubble bursts, hospitals could lose tools before they finish proving whether they work",
+              "summary": "In a STAT First Opinion essay, pathologist-researcher David Adler argues that an AI market downturn, following the Oct. 30 sell-off that Anthropic's Nov. 19 IPO did not reverse, could leave hospitals without vendors before evaluations are complete. He cites cancer-trial matching studies at Penn and Emory and in Australia in which AI improved eligibility accuracy or found more eligible patients but did not increase enrollment. 'A health AI company's market value and the medical value of its technology are two different things,' he writes. He recommends that hospitals set clear success criteria up front and keep research data so tools can be evaluated independently if a vendor scales back or closes.",
+              "strategic_implication": "This is an opinion piece, but the risk is concrete for systems with many early-stage AI vendors. AI governance committees should add vendor financial health, data portability and exit terms to contracting checklists, and should define outcome measures before deployment rather than after.",
+              "confidence": "medium",
+              "tags": [
+                "ai-governance",
+                "vendor-risk",
+                "clinical-trials",
+                "health-ai"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Sanofi is weighing a bid for Insmed, valued above $30 billion, to offset its Dupixent patent cliff. The FDA rejected Capricor's Duchenne therapy a second time and publicly cited data-integrity violations, while approving Beren's Lembaz for Niemann-Pick type C on survival data. Compass and Usona are racing for the first psilocybin approval, and Zimmer filed for clearance of an autonomous knee robot.",
+          "items": [
+            {
+              "item_id": "2026-11-23-sanofi-weighs-insmed-takeover",
+              "canonical_topic": "sanofi-weighs-insmed-takeover",
+              "duplicate_group": "sanofi-weighs-insmed-takeover",
+              "priority_score": 7,
+              "primary_source": "Fierce Pharma",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Pharma",
+                  "url": "https://www.fiercepharma.com/pharma/facing-down-dupixent-cliff-sanofi-mulls-buyout-insmed-and-its-blockbuster-be-brinsupri",
+                  "source_type": "web",
+                  "published_at": "2026-11-19T00:00:00Z"
+                },
+                {
+                  "source": "Morningstar",
+                  "url": "https://www.morningstar.com/company-reports/1511705-sanofi-reportedly-in-talks-to-purchase-insmed",
+                  "source_type": "web",
+                  "published_at": "2026-11-23T00:00:00Z"
+                },
+                {
+                  "source": "STAT Pharmalittle",
+                  "url": "https://www.statnews.com/pharmalot/2026/11/20/sanofi-eyeing-insmed-ai-speeding-drug-development/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "Sanofi weighs a takeover of Insmed, valued above $30 billion, to offset its Dupixent patent cliff",
+              "summary": "Bloomberg reported that Sanofi is working with advisers on a possible acquisition of Insmed, whose bronchiectasis drug Brinsupri was the first DPP1 inhibitor on the U.S. market. Insmed reported more than $917 million in Brinsupri sales in the first nine months of 2026 and guided to $1.35 billion to $1.4 billion for the year; Mizuho projects $6.6 billion in peak sales. Insmed's market value reached $31 billion at the Nov. 20 close, up 18% in two days. Analysts say a price near $40 billion would test Sanofi's balance sheet, which carries about EUR 12 billion in net debt. Talks could take weeks and may not produce a deal.",
+              "strategic_implication": "A deal of this size would be one of the year's largest and would signal how far big pharma will pay for de-risked, launched assets ahead of patent cliffs. Respiratory and pulmonary programs should expect stronger commercial support behind Brinsupri either way, and pharmacy teams should watch for pricing and contracting changes if ownership changes.",
+              "confidence": "medium",
+              "tags": [
+                "pharma-mna",
+                "sanofi",
+                "insmed",
+                "respiratory",
+                "patent-cliff"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-fda-rejects-capricor-deramiocel-data-integrity",
+              "canonical_topic": "fda-rejects-capricor-deramiocel-data-integrity",
+              "duplicate_group": "fda-rejects-capricor-deramiocel-data-integrity",
+              "priority_score": 7,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/capricor-fda-duchenne-cell-therapy-deramiocel/875384/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-21T00:00:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/20/fda-rejects-capricor-duchenne-therapy/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "FDA rejects Capricor's Duchenne cell therapy a second time and accuses the company of 'serious data integrity violations'",
+              "summary": "The FDA again turned down deramiocel, Capricor's donor-derived cardiac cell therapy for Duchenne muscular dystrophy, saying the data were not 'sufficient to establish substantial evidence of effectiveness.' In an unusual public statement, the agency also cited 'serious data integrity violations,' including breaches of study blinding and after-the-fact changes to the statistical analysis plan. Capricor said HOPE-3 met both main goals and CEO Linda Marban said the company stands behind its data. The FDA first rejected the therapy in July 2025. More than two dozen investigators supported approval, but an advisory committee majority found no clear evidence of benefit.",
+              "strategic_implication": "The FDA is making its reasoning public in high-profile rare-disease decisions, as it did with Summit's ivonescimab letter last week. For sponsors, protecting the blind and locking analysis plans before unblinding are now reputational risks, not just regulatory ones. Duchenne families and treating centers lose a near-term option.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "rare-disease",
+                "cell-therapy",
+                "duchenne",
+                "data-integrity"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-fda-approves-beren-lembaz-niemann-pick-c",
+              "canonical_topic": "fda-approves-beren-lembaz-niemann-pick-c",
+              "duplicate_group": "fda-approves-beren-lembaz-niemann-pick-c",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/beren-therapeutics-fda-approval-niemann-pick-type-c-lembaz-adrabetadex-cyclodextrin-npc-pbc/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-22T00:00:00Z"
+                }
+              ],
+              "title": "FDA approves Beren's Lembaz, the first Niemann-Pick type C therapy with a survival benefit, after a 20-year development path",
+              "summary": "The FDA approved Beren Therapeutics' Lembaz (adrabetadex) on Nov. 17 to reduce the risk of death in children and adults with Niemann-Pick disease type C whose neurological symptoms began before age 6. Beren reported median survival of 8.5 years in treated patients versus 4.9 years in an external control. The molecule began with NIH natural-history research in 2006 and passed through Vtesse, Sucampo and Mallinckrodt, which abandoned it after a failed trial and its 2020 bankruptcy, before Beren bought it in 2021. Hearing loss carries a boxed warning. Beren plans an early-December launch, has not disclosed a price and received a rare pediatric disease priority review voucher.",
+              "strategic_implication": "This is a case study in rescuing an abandoned asset with NIH-generated natural-history data and external controls, a path the FDA is increasingly accepting in ultra-rare disease. Pediatric specialty pharmacies and payers should prepare for another high-cost orphan therapy alongside Miplyffa and Aqneursa, with audiology monitoring built into the care pathway.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "rare-disease",
+                "orphan-drugs",
+                "pediatrics",
+                "nih"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-psilocybin-race-compass-usona-commercial-outlook",
+              "canonical_topic": "psilocybin-race-compass-usona-commercial-outlook",
+              "duplicate_group": "psilocybin-race-compass-usona-commercial-outlook",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/race-first-psilocybin-blockbuster-compass-usona/875369/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "Compass and Usona race for the first psilocybin approval, with an estimated $34,000-a-year price and in-clinic dosing shaping access",
+              "summary": "Compass Pathways has filed COMP360 for treatment-resistant depression, and an analyst reports that Usona Institute has filed PSIL201 for major depressive disorder using an FDA national priority voucher; Usona has not confirmed its filing or released Phase 3 data. Citeline estimates COMP360's list price at about $34,000 a year based on two to four doses, and RBC projects $1.9 billion in peak sales in treatment-resistant depression alone. Stifel analysts question whether Usona's six-week blinded period will satisfy FDA and noted that CDER head Michael Davis previously worked at Usona. Each dose requires several hours in clinic with trained staff.",
+              "strategic_implication": "The real limit on psilocybin uptake will be care delivery: dosing rooms, monitoring staff, and step therapy requirements for patients who fail generics first. Behavioral health service lines should start sizing space and staffing models now, and payers will likely require prior treatment failures, as they do for Spravato.",
+              "confidence": "high",
+              "tags": [
+                "psychedelics",
+                "behavioral-health",
+                "fda",
+                "drug-pricing",
+                "depression"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-zimmer-files-autonomous-monogram-robot-510k",
+              "canonical_topic": "zimmer-files-autonomous-monogram-robot-510k",
+              "duplicate_group": "zimmer-files-autonomous-monogram-robot-510k",
+              "priority_score": 5,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/zimmer-submits-monogram-robot-to-fda/875347/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "Zimmer files for FDA clearance of an autonomous knee-replacement robot, aiming for a 2027 launch a year ahead of plan",
+              "summary": "Zimmer Biomet submitted a 510(k) for a fully autonomous version of the Monogram orthopedic robot it acquired for $177 million in 2025, and hopes for clearance in 2027 rather than the 2028 timeline it originally set. Unlike its existing Rosa robot, Monogram works with CT imaging. CEO Ivan Tornos said the trial had no safety events and called it a 'game-changing platform,' but added, 'I wouldn't be surprised if there's some back and forth with the FDA, given that this is new-to-the-world technology.' Surgeons at a Stifel conference said it could save time, reduce instrument trays and ease physical strain.",
+              "strategic_implication": "An autonomous cutting robot would test FDA's framework and hospitals' credentialing and liability policies. Orthopedic service lines planning capital purchases for 2027 should factor in this option and the separate scrutiny Zimmer faces over its sensor-equipped Persona IQ knee.",
+              "confidence": "medium",
+              "tags": [
+                "surgical-robotics",
+                "medtech",
+                "orthopedics",
+                "fda",
+                "autonomy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Kaufman Hall data show the median hospital operating margin fell to 1.1% through September, with nearly half of hospitals losing money and uncompensated care rising ahead of 2027 Medicaid changes. J&J will place its first U.S. Ottava robot at Memorial Hermann, giving buyers two major alternatives to Intuitive in general surgery. In Iowa, two rival critical access hospitals are jointly building a foundation-funded cancer center.",
+          "items": [
+            {
+              "item_id": "2026-11-23-kaufman-hall-margins-1-1pct-half-losing-money",
+              "canonical_topic": "kaufman-hall-margins-1-1pct-half-losing-money",
+              "duplicate_group": "kaufman-hall-margins-1-1pct-half-losing-money",
+              "priority_score": 9,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/margins-hit-new-low-as-hospitals-brace-for-uninsured-surge/875353/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "Kaufman Hall: median hospital operating margin falls to 1.1% and nearly half of hospitals are losing money",
+              "summary": "Kaufman Hall's latest data from more than 1,300 hospitals put the median year-to-date operating margin through September at 1.1%, down from more than 3% through the summer, with nearly half of hospitals and health systems operating at a loss. Bad debt and charity care as a share of gross operating revenue rose 8% from a year earlier and 13% from three years earlier. Daily net operating revenue rose 6%, and outpatient revenue is up nearly a third over three years. Managing director Erik Swanson said providers are vulnerable to even slight revenue reductions as states prepare Medicaid work requirements for the first half of 2027, which research suggests could remove up to 10.1 million people from Medicaid.",
+              "strategic_implication": "Margins this thin leave little room before the 2027 coverage losses hit. CFOs should stress-test 2027 budgets for higher uncompensated care, accelerate financial-assistance screening and Medicaid enrollment help, and check bond covenant headroom. Swanson's 'double-edged sword' warning on outpatient growth suggests reviewing whether new ambulatory capacity is pulling volume from inpatient settings that carry fixed costs.",
+              "confidence": "high",
+              "tags": [
+                "hospital-finance",
+                "margins",
+                "uncompensated-care",
+                "medicaid",
+                "kaufman-hall"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-jj-ottava-first-us-install-memorial-hermann",
+              "canonical_topic": "jj-ottava-first-us-install-memorial-hermann",
+              "duplicate_group": "jj-ottava-first-us-install-memorial-hermann",
+              "priority_score": 6,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/jj-to-install-first-ottava-robot-in-us-hospital/875343/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "Memorial Hermann-Texas Medical Center will be the first U.S. hospital to install J&J's Ottava surgical robot",
+              "summary": "Johnson & Johnson said Memorial Hermann-Texas Medical Center in Houston will be the first U.S. hospital to commercially install and use its Ottava robotic surgery system through an early-access program. The FDA granted Ottava de novo authorization in July 2026 for 10 upper-abdominal procedures, including gastric bypass, cholecystectomy, appendectomy and hernia repair. Its four arms are built into a standard surgical table to save operating-room space. The same week, Medtronic said its Hugo robot won expanded FDA clearance for upper-abdominal general surgery, so Intuitive now faces two major competitors in general surgery.",
+              "strategic_implication": "With three major vendors now cleared in general surgery, health systems have more leverage on robot pricing, service contracts and placement terms than they did when Intuitive was effectively the only option. Perioperative leaders planning 2027 capital should seek competing bids and assess OR footprint and training requirements.",
+              "confidence": "high",
+              "tags": [
+                "surgical-robotics",
+                "perioperative",
+                "capital-planning",
+                "medtech",
+                "competition"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-iowa-rival-cahs-radiation-therapy-joint-venture",
+              "canonical_topic": "iowa-rival-cahs-radiation-therapy-joint-venture",
+              "duplicate_group": "iowa-rival-cahs-radiation-therapy-joint-venture",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/care-coordination/2-competing-iowa-hospitals-to-build-cancer-treatment-center-in-joint-venture/",
+                  "source_type": "web",
+                  "published_at": "2026-11-17T00:00:00Z"
+                },
+                {
+                  "source": "American Hospital Association",
+                  "url": "https://www.aha.org/tellingthehospitalstory/stories/iowa-hospitals-join-forces-bring-radiation-therapy-closer-home",
+                  "source_type": "web",
+                  "published_at": "2026-11-16T00:00:00Z"
+                }
+              ],
+              "title": "Two competing Iowa critical access hospitals build a $14.3 million shared cancer center to bring radiation therapy home",
+              "summary": "Pella Regional Health Center and Knoxville Hospital & Clinics, independent critical access hospitals about 15 miles apart in Marion County, Iowa, formed a joint venture to build a 7,800-square-foot cancer center with a linear accelerator and PET/CT scanner. The $14.3 million project is funded entirely through a capital campaign run by the hospitals' foundations and is scheduled to open in February 2027. It is the first time the two hospitals have partnered on radiation therapy. Knoxville's CEO said roughly half of its cancer patients need radiation and families had asked why it was not available locally.",
+              "strategic_implication": "Competitor joint ventures are a practical model for rural service lines that neither hospital could support alone, and foundation-funded capital avoids adding debt. Rural leaders, and states deploying Rural Health Transformation funds, should look at shared specialty services like this as an alternative to full mergers.",
+              "confidence": "high",
+              "tags": [
+                "rural-health",
+                "oncology",
+                "joint-ventures",
+                "critical-access-hospitals",
+                "service-lines"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "The USPSTF met for the first time since March 2025 but voted privately, while AHRQ's director removed subpopulation data from recommendations. Turmoil at the American Diabetes Association raises questions about its December standards of care. UMMS is offering its nurse orientation tool to other systems after avoiding about $4 million in labor costs, and the ICE detention of a Princeton researcher adds to concerns about international research talent.",
+          "items": [
+            {
+              "item_id": "2026-11-23-uspstf-meets-private-votes-ahrq-edits",
+              "canonical_topic": "uspstf-meets-private-votes-ahrq-edits",
+              "duplicate_group": "uspstf-meets-private-votes-ahrq-edits",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/23/health-news-preventive-services-panel-votes-cast-in-private/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-23T00:00:00Z"
+                }
+              ],
+              "title": "At its first meeting since March 2025, USPSTF votes in private as AHRQ's director strips subpopulation data from recommendations",
+              "summary": "The 16-member U.S. Preventive Services Task Force voted on recommendations for cervical cancer screening, perinatal depression and unhealthy alcohol use, but cast its votes privately even though the meeting was livestreamed. STAT reports that AHRQ director Roger Klein removed subpopulation data from recommendation language under an administration policy requiring removal of DEI language. Member Alicia Fernandez warned that edits by political leadership could undermine perceptions of the panel's scientific independence. Members also raised concerns about bias among expert presenters and about documenting AI use in evidence reviews.",
+              "strategic_implication": "Task Force 'A' and 'B' grades drive ACA no-cost coverage, so any perceived politicization creates both clinical and coverage uncertainty. Quality and population health teams should note the removal of subpopulation data, which affects how targeted screening outreach is justified, and watch for the published cervical cancer and perinatal depression recommendations.",
+              "confidence": "high",
+              "tags": [
+                "uspstf",
+                "preventive-services",
+                "clinical-guidelines",
+                "ahrq",
+                "aca-coverage"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-ada-turmoil-guidelines-journals-risk",
+              "canonical_topic": "ada-turmoil-guidelines-journals-risk",
+              "duplicate_group": "ada-turmoil-guidelines-journals-risk",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/23/ada-convention-fallout-will-turmoil-impact-patients-research/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-23T00:00:00Z"
+                }
+              ],
+              "title": "American Diabetes Association turmoil raises questions about its December standards of care and journal independence",
+              "summary": "The American Diabetes Association is facing a 1,221-member boycott, resignations and dismissals after five members were removed by armed security from its June meeting for distributing an editorial critical of NIH funding cuts before NIH Director Jay Bhattacharya spoke. Diabetes Care editor-in-chief Steven Kahn and deputy editors joined the boycott, and publications vice president Chris Kohler resigned Nov. 6, citing threats to editorial independence. The ADA has appointed interim journal editors and says it will publish their names. Its 2027 standards of care are due in December and were nearly complete, while the agenda for the June 2027 meeting is not set.",
+              "strategic_implication": "The ADA standards of care underpin diabetes quality measures, formularies and payer policies. Clinical leaders should review the December release closely, and quality teams should watch whether any changes appear without the usual journal and expert review.",
+              "confidence": "high",
+              "tags": [
+                "diabetes",
+                "clinical-guidelines",
+                "professional-societies",
+                "scientific-integrity"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-umms-oars-nurse-orientation-tool-savings",
+              "canonical_topic": "umms-oars-nurse-orientation-tool-savings",
+              "duplicate_group": "umms-oars-nurse-orientation-tool-savings",
+              "priority_score": 6,
+              "primary_source": "MedCity News",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedCity News",
+                  "url": "https://medcitynews.com/2026/11/orientation-solution-supports-new-nurses-saves-millions-at-marylands-largest-healthcare-system/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-22T00:00:00Z"
+                }
+              ],
+              "title": "University of Maryland Medical System offers its nurse orientation tool to other systems after avoiding about $4 million in labor costs",
+              "summary": "UMMS is making its nurse-designed Orientation Assessment Reporting System (OARS) available to other health systems through its iHarbor innovation studio. The tool tracks new nurses' readiness for independent practice and gives preceptors and managers standardized progress data. From January 2023 through Nov. 4, 2026, UMMS links it to a net reduction of 3,439 orientation shifts, about $4 million in avoided labor costs, across 125 units and 2,205 orientees. Developer Susie Williams said the tool 'isn't intended to rush nurses through orientation' and also flags nurses who need more support. Its effect on retention has not been measured.",
+              "strategic_implication": "Orientation length is a large and rarely measured nursing cost. CNOs can use standardized readiness data to shorten orientation for nurses who are ready and extend it for those who are not. Systems weighing OARS or similar tools should require retention and safety outcomes, not just shift savings.",
+              "confidence": "medium",
+              "tags": [
+                "nursing-workforce",
+                "orientation",
+                "labor-costs",
+                "retention",
+                "health-system-innovation"
+              ]
+            },
+            {
+              "item_id": "2026-11-23-princeton-researcher-ice-detention-international-talent",
+              "canonical_topic": "princeton-researcher-ice-detention-international-talent",
+              "duplicate_group": "princeton-researcher-ice-detention-international-talent",
+              "priority_score": 5,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/20/princeton-researcher-eva-yi-xie-ice-detention-rattles-interational-scholars/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-20T00:00:00Z"
+                }
+              ],
+              "title": "ICE detention of a Princeton neuroscience PhD student after a conference deepens worries about international research talent",
+              "summary": "ICE detained Eva Yi Xie, a third-year Princeton PhD student working in neuroscience and AI who has lived in the U.S. since 2016, as she traveled home from the Society for Neuroscience meeting in Washington. The New York Times reported her visa had expired; her lawyers said she has a pending asylum application and is legally allowed to remain. Princeton's graduate dean called the news 'distressing' and said the university arranged legal representation. STAT notes smaller attendance at some U.S. conferences over the past two years and a report released earlier in the week showing international graduate enrollment at academic medical centers down by a third.",
+              "strategic_implication": "Academic medical centers depend on international trainees and researchers. A one-third drop in international graduate enrollment, plus conference-travel risk, threatens research staffing and future faculty pipelines. AMC leaders should review immigration legal support, travel guidance and workforce plans for international trainees.",
+              "confidence": "medium",
+              "tags": [
+                "research-workforce",
+                "immigration",
+                "academic-medicine",
+                "international-talent"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-20",
       "generated_at": "2026-11-20T14:00:00Z",
       "headline": "Today's Healthcare Insights",
@@ -18779,533 +19474,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-10-12",
-      "generated_at": "2026-10-12T13:05:00Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing covers renewed 340B litigation, federal vaccine-injury initiatives, the start of Medicaid eligibility limits for lawfully present immigrants, CMS's CJR-X participant list, and proposed census changes that would reshape public-health denominators. It also covers FDA clearance of Epic's Deterioration Index, the Oracle Health breach, rural hospital divestitures, Northwell layoffs, and the postponed Brigham nurses' strike. Sources include STAT, Becker's, the Associated Press, The Boston Globe, Fierce Healthcare, and FDA records.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
-          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
-          "Healthcare Dive RSS (news)",
-          "Fierce Healthcare RSS",
-          "Targeted web/news searches and primary-source verification (Becker's, AP, Boston Globe, FDA 510(k) database, Federal Register notice via STAT)"
-        ],
-        "sources_successful": [
-          "STAT News RSS (all six feeds HTTP 200; latest substantive item Oct. 10)",
-          "Healthcare Dive RSS (HTTP 200; only sponsored posts since Oct. 9)",
-          "Fierce Healthcare RSS (automated run only)",
-          "Targeted web/news searches (Becker's Hospital Review, Becker's Spine Review, AP via WKMG, Boston Globe, WWLP/State House News Service, CBS Boston, Newsday)",
-          "FDA 510(k) record K260008"
-        ],
-        "sources_failed": [
-          "Gmail InsightsSources/* labels and newsletter-name searches returned no messages in the connected mailbox since 2026-10-08",
-          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch",
-          "KFF Health News morning briefing page could not be fetched",
-          "STAT+ articles paywalled; drafted from RSS previews plus accessible article text"
-        ],
-        "run_notes": "Same-day rebuild in place: the automated run (generated 2026-10-12T11:12:52Z) appended 2026-10-12 and left the feed at 31 editions. Trimmed to 30; the displaced 2026-08-31 edition is preserved in archive/editions-archive-2026-10-12.json. Retained all 8 automated items, added 8 new items from the Oct. 5-11 holiday-weekend window, screened against the prior 12 editions (skipped MA star ratings, MAHA midterm coverage, and HealthPartners-Essentia as already covered), and refreshed bucket syntheses.",
-        "items_captured": 16
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Hospital groups have sued again over the 340B rebate pilot, and HHS has launched vaccine-injury initiatives. Medicaid limits for lawfully present immigrants are now in effect, CMS has named 2,217 hospitals for mandatory CJR-X bundles, and proposed census changes threaten the population baselines behind public-health data.",
-          "items": [
-            {
-              "item_id": "2026-10-12-340b-rebate-pilot-lawsuit",
-              "canonical_topic": "340b-rebate-pilot-lawsuit",
-              "duplicate_group": "340b-rebate-pilot-lawsuit",
-              "priority_score": 9,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/09/hospitals-sue-to-halt-340b-rebate-pilot-trump/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-09T20:27:27Z"
-                },
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/hospital-industry-files-lawsuit-block-hhs-340b-rebate-pilot-again",
-                  "source_type": "rss",
-                  "published_at": "2026-10-09T11:01:00-04:00"
-                }
-              ],
-              "title": "Hospital groups sue to block HHS’s revised 340B rebate pilot",
-              "summary": "The American Hospital Association and other hospital plaintiffs filed a new suit challenging HHS’s revised 340B rebate model, which would replace upfront discounts with after-the-fact rebates for selected drugs. They seek to stop the pilot before its planned 2027 launch, arguing the model underestimates administrative and cash-flow burdens; the claims remain unresolved.",
-              "strategic_implication": "Safety-net hospitals and drug manufacturers should plan for continued legal and operational uncertainty around 340B purchasing, including potential working-capital needs if the pilot proceeds.",
-              "confidence": "high",
-              "tags": [
-                "340b",
-                "drug-pricing",
-                "hospital-finance",
-                "litigation"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-hhs-vaccine-injury-initiatives",
-              "canonical_topic": "hhs-vaccine-injury-initiatives",
-              "duplicate_group": "hhs-vaccine-injury-initiatives",
-              "priority_score": 8,
-              "primary_source": "U.S. Department of Health and Human Services",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "U.S. Department of Health and Human Services",
-                  "url": "https://www.hhs.gov/press-room/hhs-strengthens-vaccine-injury-research-reporting-patient-care.html",
-                  "source_type": "web",
-                  "published_at": "2026-10-08"
-                },
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/regulatory/hhs-launches-4-new-vaccine-injury-research-reporting-initiatives",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T15:36:00-04:00"
-                }
-              ],
-              "title": "HHS launches new vaccine-injury research and reporting initiatives",
-              "summary": "HHS announced a package of actions that includes a new NIH clinic, an updated monitoring system, and reimbursements for clinicians who report suspected vaccine side effects. The initiatives change federal research and reporting infrastructure; they do not, by themselves, establish that a reported event was caused by vaccination.",
-              "strategic_implication": "Health systems and public-health leaders should monitor the program’s evidence standards, referral pathways, and reporting requirements as federal vaccine-safety policy evolves.",
-              "confidence": "high",
-              "tags": [
-                "hhs",
-                "nih",
-                "vaccine-safety",
-                "adverse-event-reporting"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-census-2030-changes-public-health-data",
-              "canonical_topic": "census-2030-changes-public-health-data",
-              "duplicate_group": "census-2030-changes-public-health-data",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/09/2030-census-public-health-data-equity-morbidity-mortality/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-09T08:30:00Z"
-                },
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/09/health-news-census-changes-threaten-public-data-collection/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-09T13:23:29Z"
-                }
-              ],
-              "title": "Proposed 2030 census changes would reshape the denominators behind public-health data",
-              "summary": "A Sept. 10 Federal Register notice proposes counting only citizens and lawful permanent residents, assigning residence by tax-record address rather than Census Day location, and dropping race, ethnicity, and sexual-orientation questions. The comment deadline was extended from Oct. 13 to Nov. 2. A STAT opinion by epidemiologist Nancy Krieger argues the changes would distort morbidity, mortality, and equity measures; the proposals are untested and their legal status is contested.",
-              "strategic_implication": "Health departments, hospitals preparing community health needs assessments, and grant-dependent programs should assess how altered population counts would shift rates and funding formulas, and consider filing comments before Nov. 2.",
-              "confidence": "medium",
-              "tags": [
-                "census",
-                "public-health-data",
-                "health-equity",
-                "federal-policy"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-medicaid-immigrant-eligibility-losses",
-              "canonical_topic": "medicaid-immigrant-eligibility-losses",
-              "duplicate_group": "medicaid-immigrant-eligibility-losses",
-              "priority_score": 8,
-              "primary_source": "Associated Press",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Associated Press via WKMG News 6",
-                  "url": "https://www.clickorlando.com/news/politics/2026/10/10/trumps-medicaid-cuts-strip-refugees-and-other-legal-immigrants-of-their-health-coverage/",
-                  "source_type": "web",
-                  "published_at": "2026-10-10T13:07:00Z"
-                }
-              ],
-              "title": "Medicaid eligibility limits take effect for refugees and other lawfully present immigrants",
-              "summary": "Oct. 1 restrictions under the 2025 budget law removed Medicaid coverage for certain lawfully present immigrants, including refugees, asylees, and trafficking and domestic-violence survivors; green-card holders are not affected by this change. KFF estimates more than 281,000 people across nine states and D.C. will lose coverage. Arizona reported 29,000 removals on Oct. 1, and Florida estimates are near 177,000.",
-              "strategic_implication": "Safety-net hospitals and FQHCs in affected states, especially Florida, should expect higher uncompensated care and emergency-department use, and should route affected patients to marketplace, charity-care, or emergency Medicaid options.",
-              "confidence": "high",
-              "tags": [
-                "medicaid",
-                "immigration",
-                "coverage",
-                "uncompensated-care"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-cjr-x-participant-list",
-              "canonical_topic": "cjr-x-participant-list",
-              "duplicate_group": "cjr-x-participant-list",
-              "priority_score": 7,
-              "primary_source": "Becker's",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Spine Review",
-                  "url": "https://www.beckersspine.com/orthopedic/whos-on-the-final-cjr-x-list/",
-                  "source_type": "web",
-                  "published_at": "2026-10-06T00:00:00Z"
-                }
-              ],
-              "title": "CMS lists 2,217 hospitals for mandatory CJR-X joint-replacement bundles",
-              "summary": "CMS published the participant list for the Comprehensive Care for Joint Replacement Expanded Model, finalized in the FY 2027 IPPS rule: 2,217 acute care hospitals as of Sept. 30. Beginning Jan. 1, 2028, participants will be accountable for hip, knee, and ankle replacement episodes through 90 days of recovery. TEAM participants and Maryland hospitals are exempt, and CMS will update the list for openings, mergers, and closures.",
-              "strategic_implication": "Listed hospitals have roughly 14 months to build post-acute networks, episode cost baselines, and orthopedic care pathways before downside risk begins.",
-              "confidence": "high",
-              "tags": [
-                "cms",
-                "value-based-care",
-                "bundled-payments",
-                "orthopedics"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-niaid-director-search",
-              "canonical_topic": "niaid-director-search",
-              "duplicate_group": "niaid-director-search",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/09/steven-quay-no-longer-in-consideration-for-top-infectious-disease-role/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-09T21:03:52Z"
-                }
-              ],
-              "title": "Steven Quay is no longer under consideration to lead NIAID",
-              "summary": "Steven Quay, a biopharmaceutical executive who had been considered for director of the National Institute of Allergy and Infectious Diseases, is no longer being considered for the role, STAT reported. A source told the outlet he is instead expected to serve in a consulting capacity; the White House and HHS did not comment.",
-              "strategic_implication": "The leadership decision leaves uncertainty about the institute’s near-term direction and reinforces the importance of tracking how HHS fills senior infectious-disease research roles.",
-              "confidence": "medium",
-              "tags": [
-                "niaid",
-                "nih",
-                "hhs",
-                "research-leadership"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "FDA clearance of Epic's Deterioration Index raises governance expectations for EHR-embedded AI. Meanwhile, the scale of the Oracle Health breach and an enterprise-wide Abridge deal show both the risk and the momentum in health-system technology.",
-          "items": [
-            {
-              "item_id": "2026-10-12-oracle-health-breach-reported-scale",
-              "canonical_topic": "oracle-health-breach-reported-scale",
-              "duplicate_group": "oracle-health-breach-reported-scale",
-              "priority_score": 9,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/health-tech/oracle-health-data-breach-2025-compromised-data-20m-people-report",
-                  "source_type": "rss",
-                  "published_at": "2026-10-09T15:15:00-04:00"
-                }
-              ],
-              "title": "Report puts Oracle Health breach at nearly 20 million affected people",
-              "summary": "Fierce Healthcare reported that a 2025 breach involving Oracle Health’s legacy Cerner systems compromised personal and medical information belonging to nearly 20 million people, citing updated state reporting. The latest figure reflects the reported scope of an earlier incident, not a newly detected intrusion.",
-              "strategic_implication": "Health systems should inventory legacy EHR environments and third-party data flows, validate breach-notification coverage, and ensure that migration plans do not leave older systems outside current security controls.",
-              "confidence": "medium",
-              "tags": [
-                "cybersecurity",
-                "oracle-health",
-                "ehr",
-                "patient-privacy"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-abridge-ut-system-expansion",
-              "canonical_topic": "abridge-ut-system-expansion",
-              "duplicate_group": "abridge-ut-system-expansion",
-              "priority_score": 8,
-              "primary_source": "Abridge",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Abridge",
-                  "url": "https://www.abridge.com/press-release/ut-health-enterprise-wide",
-                  "source_type": "web",
-                  "published_at": "2026-10-08"
-                },
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-university-texas-system-enter-enterprise-wide-agreement-expanded-ai",
-                  "source_type": "rss",
-                  "published_at": "2026-10-09T11:15:00-04:00"
-                }
-              ],
-              "title": "Abridge secures enterprise-wide ambient AI agreement across UT System",
-              "summary": "The University of Texas System and Abridge established a systemwide framework to expand access to the company’s ambient AI tools across eight health institutions, following a pilot at five locations. The agreement is designed to preserve local implementation choices while supporting broader clinical documentation and workflow use.",
-              "strategic_implication": "The move illustrates how health systems are shifting from isolated scribe pilots to enterprise procurement; buyers should evaluate clinician adoption, note quality, governance, and measurable time savings before scaling.",
-              "confidence": "high",
-              "tags": [
-                "ambient-ai",
-                "clinical-documentation",
-                "health-systems",
-                "enterprise-adoption"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-epic-deterioration-index-fda-clearance",
-              "canonical_topic": "epic-deterioration-index-fda-clearance",
-              "duplicate_group": "epic-deterioration-index-fda-clearance",
-              "priority_score": 8,
-              "primary_source": "Becker's",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/epics-deterioration-index-wins-fda-clearance-after-years-of-use/",
-                  "source_type": "web",
-                  "published_at": "2026-10-11T00:00:00Z"
-                },
-                {
-                  "source": "FDA 510(k) database",
-                  "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K260008",
-                  "source_type": "primary",
-                  "published_at": "2026-09-18T00:00:00Z"
-                }
-              ],
-              "title": "Epic's Deterioration Index receives FDA 510(k) clearance after years of unregulated use",
-              "summary": "FDA cleared Epic's Deterioration Index Version 2 (K260008) on Sept. 18, using AgileMD's eCART as the predicate. The EHR-embedded model scores 195 chart inputs to predict escalation of care within 24 hours or death within 72 hours for adult inpatients and observation patients. It is Epic's first AI/ML clearance through FDA's device center, and the clearance does not include a predetermined change control plan.",
-              "strategic_implication": "Health systems using the earlier, uncleared version should review their AI governance, validation, and labeling, since clearance raises expectations for model updates, intended-use limits, and local performance monitoring.",
-              "confidence": "high",
-              "tags": [
-                "ai",
-                "fda",
-                "clinical-decision-support",
-                "epic"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Acute-care supply continues to contract as closures outpace openings, while divestitures in rural Louisiana and HCA's exit from home health and hospice point to portfolio pruning.",
-          "items": [
-            {
-              "item_id": "2026-10-12-us-hospital-closures-study",
-              "canonical_topic": "us-hospital-closures-study",
-              "duplicate_group": "us-hospital-closures-study",
-              "priority_score": 7,
-              "primary_source": "Fierce Healthcare",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/providers/hospital-closures-accelerated-2010-rates-similar-among-rural-urban-facilities",
-                  "source_type": "rss",
-                  "published_at": "2026-10-08T15:46:00-04:00"
-                }
-              ],
-              "title": "U.S. recorded 432 acute hospital closures and 216 openings from 2010–2025",
-              "summary": "A new study counted 432 acute-care hospital closures and 216 openings in the United States from 2010 through 2025. Closures accelerated and openings slowed over the period, while closure rates were statistically similar for rural and urban facilities.",
-              "strategic_implication": "The supply trend strengthens the case for market-by-market access planning, partnership strategies, and early monitoring of hospitals with persistent financial or service-line strain.",
-              "confidence": "high",
-              "tags": [
-                "hospital-closures",
-                "acute-care",
-                "rural-health",
-                "market-supply"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-allegiance-louisiana-hospital-divestitures",
-              "canonical_topic": "allegiance-louisiana-hospital-divestitures",
-              "duplicate_group": "allegiance-louisiana-hospital-divestitures",
-              "priority_score": 6,
-              "primary_source": "Becker's",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/hospital-transactions-and-valuation/the-week-in-hospital-ma-32/",
-                  "source_type": "web",
-                  "published_at": "2026-10-09T00:00:00Z"
-                }
-              ],
-              "title": "Allegiance Health Management plans to divest four rural Louisiana hospitals",
-              "summary": "Bossier City-based Allegiance plans to divest Minden Medical Center, Northern Louisiana Medical Center, Acadian Medical Center, and Mercy Regional Medical Center, citing long-term sustainability. Buyers and timing have not been disclosed. In the same week, Quorum Health's planned acquisition of Banner Lassen Medical Center slipped to an expected March 31, 2027 close.",
-              "strategic_implication": "Regional systems may find acquisition opportunities in rural Louisiana, while state officials and communities should watch for service-line reductions if buyers are not found.",
-              "confidence": "medium",
-              "tags": [
-                "m-and-a",
-                "rural-hospitals",
-                "divestiture"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-hca-home-health-hospice-sale-deaconess",
-              "canonical_topic": "hca-home-health-hospice-sale-deaconess",
-              "duplicate_group": "hca-home-health-hospice-sale-deaconess",
-              "priority_score": 6,
-              "primary_source": "Becker's",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/hospital-transactions-and-valuation/the-week-in-hospital-ma-32/",
-                  "source_type": "web",
-                  "published_at": "2026-10-09T00:00:00Z"
-                }
-              ],
-              "title": "HCA sells 31 home health and hospice agencies to Deaconess Associations",
-              "summary": "HCA Healthcare closed the sale of 31 home health and hospice agencies across eight states to Cincinnati-based Deaconess Associations. The agencies will join Deaconess subsidiary Central Pyramid. The closing date and price were not disclosed.",
-              "strategic_implication": "The deal signals that large hospital operators are narrowing their focus to acute care. Referral partners should confirm continuity of post-acute pathways as the agencies change ownership.",
-              "confidence": "medium",
-              "tags": [
-                "m-and-a",
-                "home-health",
-                "hospice",
-                "post-acute"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Northwell's third undisclosed layoff round shows margin pressure persisting at large systems heading into FY 2027 budgets.",
-          "items": [
-            {
-              "item_id": "2026-10-12-northwell-third-layoff-round",
-              "canonical_topic": "northwell-third-layoff-round",
-              "duplicate_group": "northwell-third-layoff-round",
-              "priority_score": 6,
-              "primary_source": "Becker's",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/finance/northwell-plans-3rd-round-of-layoffs-in-under-1-year/",
-                  "source_type": "web",
-                  "published_at": "2026-10-05T00:00:00Z"
-                },
-                {
-                  "source": "Newsday",
-                  "url": "https://www.newsday.com/business/northwell-health-hospital-layoff-jobs-m773ihu6",
-                  "source_type": "web",
-                  "published_at": "2026-10-06T00:00:00Z"
-                }
-              ],
-              "title": "Northwell begins its third round of layoffs in under a year",
-              "summary": "Northwell Health, New York's largest private employer, confirmed Oct. 5 that it is eliminating a limited number of positions to manage financial pressures. It did not disclose the headcount or affected roles. The cuts follow rounds in November 2025 and February 2026, and Becker's ongoing tracker lists additional October cuts at systems including City of Hope.",
-              "strategic_implication": "Repeated, undisclosed cuts at a large system suggest margin pressure is persisting into FY 2027 budgeting. Peer systems should benchmark administrative cost structures ahead of Medicaid revenue declines.",
-              "confidence": "medium",
-              "tags": [
-                "layoffs",
-                "hospital-finance",
-                "workforce"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Brigham nurses postponed an open-ended strike to vote on a final offer that leaves wage disputes unresolved. New evidence also links drugmaker payments to prescribing, and a survey finds U.S. trust in science outpaces confidence in hospitals.",
-          "items": [
-            {
-              "item_id": "2026-10-12-brigham-nurses-postpone-strike",
-              "canonical_topic": "brigham-nurses-postpone-strike",
-              "duplicate_group": "brigham-nurses-postpone-strike",
-              "priority_score": 8,
-              "primary_source": "The Boston Globe",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "The Boston Globe",
-                  "url": "https://www.bostonglobe.com/2026/10/11/business/brigham-nurses-strike-postponed/",
-                  "source_type": "web",
-                  "published_at": "2026-10-11T00:00:00Z"
-                },
-                {
-                  "source": "State House News Service via WWLP",
-                  "url": "https://www.wwlp.com/news/massachusetts/nurses-postpone-major-strike-plan-vote-on-hospitals-final-offer/",
-                  "source_type": "web",
-                  "published_at": "2026-10-11T00:00:00Z"
-                },
-                {
-                  "source": "CBS News Boston",
-                  "url": "https://www.cbsnews.com/boston/news/brigham-nurses-strike-postponed/",
-                  "source_type": "web",
-                  "published_at": "2026-10-11T00:00:00Z"
-                }
-              ],
-              "title": "Brigham nurses postpone the planned Oct. 14 open-ended strike to vote on a final offer",
-              "summary": "After a 13-hour bargaining session on Oct. 10, Mass General Brigham presented a final offer, and the Massachusetts Nurses Association postponed the indefinite strike by about 4,000 Brigham and Women's nurses. A ratification vote is expected in about two weeks. The offer runs through Sept. 30, 2028 but omits across-the-board raises, and the union's bargaining chair expects members to reject it. A new strike would require another 10-day notice.",
-              "strategic_implication": "The immediate disruption is averted, but unresolved wage terms keep the risk of a strike alive. Academic medical centers facing similar contract cycles should expect cost-of-living raises and travel-nurse limits to stay central to bargaining.",
-              "confidence": "high",
-              "tags": [
-                "labor",
-                "nursing",
-                "strikes",
-                "academic-medical-centers"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-pharma-payments-prescribing-review",
-              "canonical_topic": "pharma-payments-prescribing-review",
-              "duplicate_group": "pharma-payments-prescribing-review",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/pharmalot/2026/10/09/pharma-free-lunches-to-doctors-boost-inappropriate-prescribing/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-09T16:33:55Z"
-                }
-              ],
-              "title": "Review links drugmaker payments to more inappropriate physician prescribing",
-              "summary": "A Cochrane review of prior studies found that gifts and payments from pharmaceutical companies to physicians were associated with more inappropriate prescribing and a higher number of prescriptions. The review also found that policies restricting or managing industry interactions probably improved prescribing practices, while evidence was insufficient on effects on hospital formulary decisions.",
-              "strategic_implication": "Health systems and medical groups should review conflict-of-interest safeguards and clinician education practices, while treating the findings as evidence about aggregate associations rather than proof about any individual prescribing decision.",
-              "confidence": "high",
-              "tags": [
-                "prescribing",
-                "pharma-payments",
-                "clinical-practice",
-                "conflicts-of-interest"
-              ]
-            },
-            {
-              "item_id": "2026-10-12-us-trust-science-and-healthcare",
-              "canonical_topic": "us-trust-science-and-healthcare",
-              "duplicate_group": "us-trust-science-and-healthcare",
-              "priority_score": 6,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/10/u-s-trust-science-higher-than-other-nations-wellcome-survey/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-10T23:01:00Z"
-                }
-              ],
-              "title": "U.S. respondents report more trust in science than peers, but lower hospital confidence",
-              "summary": "The Wellcome Global Monitor survey, covering 140 countries, found that 52% of U.S. respondents had a lot of trust in science, compared with 26% globally. Only 40% reported a lot of confidence in U.S. hospitals and clinics, the same share reported in Portugal and Uruguay.",
-              "strategic_implication": "The gap between general trust in science and confidence in care institutions suggests that health systems should treat transparency, patient experience, and visible evidence-based practice as distinct trust-building priorities.",
-              "confidence": "high",
-              "tags": [
-                "trust-in-science",
-                "public-health",
-                "patient-confidence",
-                "wellcome-survey"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-20T14:00:00Z"
+  "last_updated": "2026-11-23T13:45:00Z"
 }

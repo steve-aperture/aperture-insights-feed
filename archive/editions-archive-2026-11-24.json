@@ -1,0 +1,649 @@
+{
+  "archived_at": "2026-11-24T13:45:00Z",
+  "note": "Editions trimmed from latest-insights.json by the 30-edition cap.",
+  "editions": [
+    {
+      "edition_date": "2026-10-13",
+      "generated_at": "2026-10-13T11:04:50Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "Today's briefing tracks a same-day Medicare device-comment deadline, the start of the federal Medicaid and CHIP funding cutoff for youth gender-transition care, new insurer price-disclosure and surprise-billing proposals, and state pressure on hospital facility fees. It also covers imaging-AI consolidation, AI device certification, an early rise in flu admissions, a physician noncompete fight in New York, and new federal limits on international researchers. Sources include STAT, Healthcare Dive, CMS, CDC, the Associated Press, Bridge Michigan, Becker's, KFF Health News, and company announcements.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare",
+          "STAT News RSS",
+          "Healthcare Dive RSS",
+          "Fierce Healthcare RSS",
+          "Targeted web/news searches across CMS/HHS/FDA, Medicare payment, AI/digital health, workforce, drug safety, provider operations, and earnings",
+          "Primary-source checks: CMS, Federal Register, HHS, UnitedHealth Group, Northwestern Medicine, and published industry survey materials",
+          "Structured finance data check for UnitedHealth Group Q3 2026",
+          "STAT News RSS category feeds (health, health-tech, politics, pharma) on rebuild"
+        ],
+        "sources_successful": [
+          "STAT News RSS (HTTP 200; current Oct. 13 drug-safety story)",
+          "Healthcare Dive RSS (HTTP 200; latest Oct. 12 policy coverage)",
+          "Fierce Healthcare RSS (HTTP 200; latest Oct. 12 capital-allocation coverage)",
+          "Targeted web/news searches (CMS, Federal Register, HHS, KFF Health News, Northwestern Medicine, Google, UnitedHealth Group, and workforce reporting)",
+          "UnitedHealth Group Q3 2026 structured financial data check",
+          "STAT News RSS rebuild fetch (5 feeds HTTP 200; Oct. 13 international-researcher story)",
+          "Healthcare Dive RSS rebuild fetch (HTTP 200; no new non-sponsored items beyond the automated run)",
+          "Targeted web/news searches on rebuild (AJMC, AP, California DHCS, Bridge Michigan, PR Newswire, Tech.eu, Business Wire, CDC FluView, Becker's, The Daily Gazette)"
+        ],
+        "sources_failed": [
+          "Gmail InsightsSources/* labels and newsletter-name searches returned no messages in the connected mailbox since 2026-10-09",
+          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch (automated-run items retained)",
+          "STAT+ opinion content paywalled and not used"
+        ],
+        "run_notes": "Built 11 items, prioritizing policy deadlines and developments, current clinical/technology deployments, workforce retention, and patient-safety signals. Avoided repeating the prior edition's 340B litigation and broad Medicare Advantage star-rating coverage. Same-day rebuild in place: the automated run (generated 2026-10-13T11:04:50Z) appended 2026-10-13 and left the feed at 31 editions. Trimmed to 30; the displaced edition is preserved in archive/editions-archive-2026-10-13.json. Retained all 11 automated items, added 8 new items, screened against the prior 12 editions (skipped 340B litigation, Medicaid work-requirement frailty lawsuit, LA immigration-enforcement ED study, Quorum nonprofit conversion, and WVU-Independence Health as already covered or not current), and refreshed bucket syntheses.",
+        "items_captured": 19
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "Today brings a final insurer-transparency framework, a House proposal to replace No Surprises Act arbitration, and the closing day for comments on CMS's RAPID breakthrough-device pathway. Federal Medicaid and CHIP funding for youth gender-transition care also ends today, and Michigan's facility-fee debate shows state scrutiny of hospital outpatient pricing is intensifying.",
+          "items": [
+            {
+              "item_id": "2026-10-13-rapid-medicare-device-comment-deadline",
+              "canonical_topic": "rapid-medicare-device-comment-deadline",
+              "duplicate_group": "rapid-medicare-device-comment-deadline",
+              "priority_score": 8,
+              "primary_source": "Federal Register",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Federal Register",
+                  "url": "https://www.federalregister.gov/documents/full_text/html/2026/08/11/2026-16368.html",
+                  "source_type": "web",
+                  "published_at": "2026-08-11T00:00:00Z"
+                }
+              ],
+              "title": "CMS RAPID device-coverage comment deadline is today",
+              "summary": "CMS is seeking comment on the proposed RAPID pathway, which would coordinate an accelerated Medicare national coverage process for certain FDA breakthrough devices. Eligible categories include specified Class II devices in FDA's TAP program and Class III devices, with an IDE study involving Medicare beneficiaries and agreed clinical outcomes. Comments must be received by October 13.",
+              "strategic_implication": "Device manufacturers, health systems, and patient groups have a final opportunity today to shape eligibility and evidence expectations. Companies with near-term breakthrough-device programs should align Medicare access planning with the proposed FDA-CMS process.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "medicare-coverage",
+                "breakthrough-devices",
+                "regulatory-deadline"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-insurer-price-transparency-final-rule",
+              "canonical_topic": "insurer-price-transparency-final-rule",
+              "duplicate_group": "insurer-price-transparency-final-rule",
+              "priority_score": 8,
+              "primary_source": "U.S. Department of Health and Human Services",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "U.S. Department of Health and Human Services",
+                  "url": "https://www.hhs.gov/press-room/fact-sheet-cms-finalizes-healthcare-price-transparency-rules.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-05T00:00:00Z"
+                },
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/hhs-health-insurer-price-transparency-overhaul-final-rule/832105/",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "Final rule resets insurer price-transparency reporting and accountability",
+              "summary": "HHS, Labor, and Treasury finalized changes to Transparency in Coverage reporting, including one in-network rate file per provider network, quarterly updates, and removal of implausible provider-service rates. Plans must add contextual files, expand out-of-network reporting, attest to data accuracy, and make personalized cost-sharing information available by phone on request. Several file requirements phase in relative to Federal Register publication, while the consumer-tool amendments apply for plan years beginning in 2027.",
+              "strategic_implication": "Payers and self-funded plan administrators should assign accountable executives and map data, taxonomy, and file-publication changes to the phased implementation dates. Providers may gain more comparable negotiated-rate data, but should prepare for continued scrutiny of network-level pricing.",
+              "confidence": "high",
+              "tags": [
+                "price-transparency",
+                "payer-compliance",
+                "health-plan-data",
+                "consumer-costs"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-medicaid-chip-youth-gender-care-funding-cutoff",
+              "canonical_topic": "medicaid-chip-youth-gender-care-funding-cutoff",
+              "duplicate_group": "medicaid-chip-youth-gender-care-funding-cutoff",
+              "priority_score": 8,
+              "primary_source": "AJMC",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "AJMC",
+                  "url": "https://www.ajmc.com/view/cms-final-rule-ends-federal-medicaid-chip-funding-for-youth-gender-affirming-care",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                },
+                {
+                  "source": "Associated Press",
+                  "url": "https://apnews.com/article/transgender-genderaffirming-hospitals-trump-justice-agreement-34faeeab4575b81160ae6531254584cb",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                },
+                {
+                  "source": "California DHCS",
+                  "url": "https://www.dhcs.ca.gov/news/stakeholder-news-october-5-2026/",
+                  "source_type": "web",
+                  "published_at": "2026-10-08T00:00:00Z"
+                }
+              ],
+              "title": "Federal Medicaid and CHIP funding for youth gender-transition care ends today",
+              "summary": "A CMS final rule barring federal Medicaid and CHIP matching funds for puberty blockers, cross-sex hormones, and related surgeries for enrollees under 18 (Medicaid) and under 19 (CHIP) takes effect October 13. Federal funding continues for up to six months only to taper hormone therapy already underway; mental health services and EPSDT are not affected, and states may still pay with state-only funds. The cutoff follows Justice Department settlements in which at least six major hospitals, most recently NYU Langone ($8.5 million) and UPMC ($950,000), agreed to stop providing these treatments to patients under 19.",
+              "strategic_implication": "The roughly 17 state programs that covered these services must now choose between state-only funding and ending coverage, and providers must manage tapering timelines and patient transitions. Combined with DOJ settlement pressure, the rule signals that federal payment and enforcement levers are being used together to reshape service lines, a pattern health systems should anticipate in other contested areas.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "medicaid",
+                "chip",
+                "federal-funding",
+                "doj-settlements",
+                "pediatrics"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-no-surprises-arbitration-overhaul-bill",
+              "canonical_topic": "no-surprises-arbitration-overhaul-bill",
+              "duplicate_group": "no-surprises-arbitration-overhaul-bill",
+              "priority_score": 7,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/new-bill-would-overhaul-no-surprises-acts-arbitration-process-frank-pallone/832713/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-12T09:56:04-04:00"
+                },
+                {
+                  "source": "House Energy and Commerce Committee Democrats",
+                  "url": "https://democrats-energycommerce.house.gov/media/press-releases/pallone-introduces-lower-premiums-faster-payments-act",
+                  "source_type": "web",
+                  "published_at": "2026-10-08T00:00:00Z"
+                }
+              ],
+              "title": "Pallone bill would replace No Surprises Act arbitration with a rate benchmark",
+              "summary": "Rep. Frank Pallone introduced the Lower Premiums, Faster Payments Act, which would end the No Surprises Act's independent dispute-resolution process for services beginning in 2028. The proposal would instead use a qualifying payment amount based on median contracted rates, adjusted for inflation, require payment within 30 days, and direct annual audits. The measure is a legislative proposal, not enacted law; existing patient protections would remain.",
+              "strategic_implication": "If enacted, the change could redistribute leverage and reimbursement in out-of-network disputes, particularly for specialties that rely heavily on arbitration. Payers and provider groups should model the benchmark's effects while tracking committee support and competing reform proposals.",
+              "confidence": "high",
+              "tags": [
+                "no-surprises-act",
+                "out-of-network",
+                "payment-policy",
+                "legislation"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-michigan-hospital-facility-fees-disclosure",
+              "canonical_topic": "michigan-hospital-facility-fees-disclosure",
+              "duplicate_group": "michigan-hospital-facility-fees-disclosure",
+              "priority_score": 6,
+              "primary_source": "Bridge Michigan",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Bridge Michigan",
+                  "url": "https://bridgemi.com/michigan-health-watch/michigans-biggest-hospitals-wont-say-how-much-they-collect-in-facility-fees/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                },
+                {
+                  "source": "Bridge Michigan",
+                  "url": "https://bridgemi.com/michigan-health-watch/hidden-fees-cost-michigan-patients-millions-lawmakers-push-reforms/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                }
+              ],
+              "title": "Michigan's largest health systems decline to disclose facility-fee revenue as lawmakers weigh limits",
+              "summary": "Bridge Michigan asked the state's 10 largest health systems how much they collect in facility fees; none disclosed dollar amounts, and neither the state nor the Michigan Health & Hospital Association tracks the total. House Bill 5770 would bar facility fees for routine care at hospital-owned off-campus sites, certain in-hospital outpatient services, and telehealth. The hospital association opposes the bill, saying the fees fund overhead such as cybersecurity, EHRs, and 24/7 emergency staffing.",
+              "strategic_implication": "Facility-fee reform continues to spread at the state level, and the inability to quantify the revenue weakens hospitals' position in legislative debates. Systems with large hospital-based outpatient networks should model exposure to site-neutral restrictions and prepare defensible cost data before they are required to produce it.",
+              "confidence": "high",
+              "tags": [
+                "facility-fees",
+                "site-neutral",
+                "state-policy",
+                "price-transparency",
+                "michigan"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "Google is extending AI-supported consumer health coaching, Northwestern Medicine is embedding OpenEvidence in Epic, and a KFF investigation raises governance questions about federal health-tech policy. Sopris's purchase of Blackford and Scarlet's $50 million raise point to consolidation and investment in the infrastructure that deploys and certifies clinical AI.",
+          "items": [
+            {
+              "item_id": "2026-10-13-cms-health-technology-slack-governance",
+              "canonical_topic": "cms-health-technology-slack-governance",
+              "duplicate_group": "cms-health-technology-slack-governance",
+              "priority_score": 8,
+              "primary_source": "KFF Health News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "KFF Health News",
+                  "url": "https://kffhealthnews.org/health-industry/ai-tech-lobbying-medicare-medical-records-apps-trump-cms-slack/",
+                  "source_type": "web",
+                  "published_at": "2026-10-09T00:00:00Z"
+                }
+              ],
+              "title": "KFF investigation details technology firms' access to a CMS health-tech forum",
+              "summary": "KFF Health News reviewed messages, meeting records, and recordings from a CMS-run Health Technology Ecosystem Slack workspace that grew to about 1,700 members. The investigation reports that technology companies and investors discussed health apps, access to medical records, and potential federal promotion or reimbursement pathways with agency officials. CMS described the workspace as a voluntary technical collaboration; the reporting does not establish that the forum violated a law.",
+              "strategic_implication": "The report puts process transparency and stakeholder representation in focus as CMS develops health-data and AI initiatives with commercial implications. Organizations should track formal agency notices and public comment opportunities alongside informal technical forums.",
+              "confidence": "high",
+              "tags": [
+                "cms",
+                "health-ai",
+                "digital-health-policy",
+                "governance"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-openevidence-northwestern-epic-integration",
+              "canonical_topic": "openevidence-northwestern-epic-integration",
+              "duplicate_group": "openevidence-northwestern-epic-integration",
+              "priority_score": 7,
+              "primary_source": "Northwestern Medicine",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Northwestern Medicine",
+                  "url": "https://news.nm.org/openevidence-and-northwestern-medicine-launch-collaboration-to-integrate-clinical-evidence-into-the-ehr/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T17:00:00Z"
+                }
+              ],
+              "title": "Northwestern Medicine embeds OpenEvidence clinical search inside Epic",
+              "summary": "Northwestern Medicine and OpenEvidence announced an enterprise-wide collaboration to make the clinical evidence platform accessible directly from Epic. The health system says physicians, nurses, pharmacists, and other staff can use existing credentials to review drug information, guidelines, and cited answers grounded in peer-reviewed literature. The workflow went live on October 8.",
+              "strategic_implication": "Point-of-care integration may lower adoption friction and extend evidence-search tools beyond physicians, but it also raises the bar for local review of answer quality, citations, and safe-use workflows. Health systems evaluating similar tools should define monitoring and escalation processes before broad deployment.",
+              "confidence": "high",
+              "tags": [
+                "clinical-ai",
+                "ehr-integration",
+                "clinical-decision-support",
+                "evidence"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-google-fitbit-edge-health-tracking",
+              "canonical_topic": "google-fitbit-edge-health-tracking",
+              "duplicate_group": "google-fitbit-edge-health-tracking",
+              "priority_score": 6,
+              "primary_source": "Google",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Google",
+                  "url": "https://blog.google/products-and-platforms/devices/fitbit/google-fitbit-edge/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                }
+              ],
+              "title": "Google unveils Fitbit Edge with AI coaching and expanded health trends",
+              "summary": "Google introduced Fitbit Edge, a new tracker with heart-rate, sleep, recovery, ECG, and activity features, alongside its Google Health app. The company says paid Health Premium subscribers will receive Health Guardian trend reports, including blood-pressure and insulin-resistance trends, and AI-generated coaching; retail availability is scheduled for October 27.",
+              "strategic_implication": "Consumer devices are packaging more health-adjacent measurements with personalized AI guidance, increasing the chance that patients bring wearable-generated questions into care. Health systems should set clear expectations about provenance, limitations, and how consumer data is handled in clinical workflows.",
+              "confidence": "high",
+              "tags": [
+                "wearables",
+                "consumer-health",
+                "ai-coaching",
+                "digital-health"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-sopris-acquires-blackford-analysis",
+              "canonical_topic": "sopris-acquires-blackford-analysis",
+              "duplicate_group": "sopris-acquires-blackford-analysis",
+              "priority_score": 6,
+              "primary_source": "PR Newswire",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "PR Newswire",
+                  "url": "https://www.prnewswire.com/news-releases/sopris-capital-acquires-blackford-analysis-strengthening-ai-orchestration-capabilities-across-its-healthtech-portfolio-302903112.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-09T00:00:00Z"
+                },
+                {
+                  "source": "Pulse 2.0",
+                  "url": "https://pulse2.com/sopris-capital-acquires-blackford-analysis-from-bayer/",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                },
+                {
+                  "source": "The Imaging Wire",
+                  "url": "https://theimagingwire.com/2025/09/07/investment-in-ai-platform-company-blackford/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                }
+              ],
+              "title": "Sopris Capital buys imaging-AI platform Blackford from Bayer and will combine it with Azra AI",
+              "summary": "Sopris Capital completed its acquisition of Blackford Analysis, a vendor-neutral platform for deploying medical imaging AI, from Bayer, which had deprioritized its digital platform business in 2025. Blackford's platform offers more than 130 AI applications from over 45 vendors. Sopris plans to combine it with portfolio company Azra AI, which focuses on identifying and coordinating patients with cancer and other complex conditions, while Blackford remains a separate legal entity serving existing OEM and health-system customers. Terms were not disclosed.",
+              "strategic_implication": "Value in imaging AI is shifting from single algorithms to the orchestration layer that connects detections to downstream care navigation. Radiology and oncology leaders should evaluate vendor roadmaps and contract continuity as platforms consolidate, especially where a large corporate parent has exited.",
+              "confidence": "high",
+              "tags": [
+                "imaging-ai",
+                "radiology",
+                "m-and-a",
+                "ai-orchestration",
+                "oncology-navigation"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-scarlet-ai-device-certification-series-b",
+              "canonical_topic": "scarlet-ai-device-certification-series-b",
+              "duplicate_group": "scarlet-ai-device-certification-series-b",
+              "priority_score": 5,
+              "primary_source": "Tech.eu",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Tech.eu",
+                  "url": "https://tech.eu/2026/10/12/scarlet-raises-50m-series-b-to-accelerate-ai-medical-device-certification/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                },
+                {
+                  "source": "Medical Device Network",
+                  "url": "https://www.medicaldevice-network.com/news/scarlet-nabs-50m-grow-ai-native-medtech-certification-platform/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                }
+              ],
+              "title": "AI device certification body Scarlet raises $50 million to expand in the U.S.",
+              "summary": "London-based Scarlet, a government-designated certification body specializing in software and AI medical devices, raised a $50 million Series B led by Headline. Scarlet is an EU notified body, a UK approved body, and an FDA-recognized third-party review organization. It says conventional assessments take 12 to 18 months, with six to eight more months for minor updates, and its subscription model covers ongoing surveillance, audits, and product changes. The funding will support expansion in the U.S. and Asia-Pacific and more AI reviewers.",
+              "strategic_implication": "Regulatory review capacity is becoming an investable bottleneck as AI device updates outpace traditional conformity assessment. Health systems buying AI tools should expect faster update cycles and should ask vendors how changes are reviewed and monitored after certification.",
+              "confidence": "high",
+              "tags": [
+                "ai-regulation",
+                "samd",
+                "medical-devices",
+                "funding",
+                "fda-third-party-review"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "UnitedHealth's quarterly release signals improved profitability and a higher full-year outlook, while a hospital investment survey points to continued reliance on reserves. Doximity's extended U.S. News partnership shows physician data continuing to shape consumer-facing rankings.",
+          "items": [
+            {
+              "item_id": "2026-10-13-unitedhealth-q3-2026-results",
+              "canonical_topic": "unitedhealth-q3-2026-results",
+              "duplicate_group": "unitedhealth-q3-2026-results",
+              "priority_score": 8,
+              "primary_source": "UnitedHealth Group",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "UnitedHealth Group Investor Relations",
+                  "url": "https://www.unitedhealthgroup.com/content/dam/UHG/PDF/investors/2026/unh-reports-third-quarter-2026-results.pdf",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "UnitedHealth raises 2026 outlook as Q3 operating performance improves",
+              "summary": "UnitedHealth Group reported third-quarter results and raised its full-year adjusted earnings outlook. The company's release described stronger operating income and improved medical-cost performance even as year-over-year revenue was lower. The update centers on margin recovery, medical-cost management, and performance across UnitedHealthcare and Optum.",
+              "strategic_implication": "The results sharpen the distinction between revenue growth and margin repair at a large payer-provider conglomerate. Health systems and suppliers should monitor whether cost controls and care-delivery changes persist as UnitedHealth enters the final quarter.",
+              "confidence": "high",
+              "tags": [
+                "unitedhealth",
+                "earnings",
+                "medical-costs",
+                "payer-provider"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-hospital-reserves-liquidity-survey",
+              "canonical_topic": "hospital-reserves-liquidity-survey",
+              "duplicate_group": "hospital-reserves-liquidity-survey",
+              "priority_score": 7,
+              "primary_source": "Marsh",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Fierce Healthcare",
+                  "url": "https://www.fiercehealthcare.com/finance/marsh-survey-examines-how-health-orgs-are-managing-capital-investment-strategies",
+                  "source_type": "rss",
+                  "published_at": "2026-10-12T10:45:00-04:00"
+                },
+                {
+                  "source": "Mercer",
+                  "url": "https://www.mercer.com/en-us/insights/investments/2026-healthcare-asset-owner-survey-key-investment-trends/",
+                  "source_type": "web",
+                  "published_at": "2026-10-05T00:00:00Z"
+                }
+              ],
+              "title": "Marsh survey finds many health systems expect to tap reserves again",
+              "summary": "Marsh's 2026 Healthcare Asset Owner Survey, based on responses from 77 hospitals and health systems, found that 43% expect to draw on investment reserves in 2026. The survey describes liquidity as a persistent issue amid uneven operating-margin recovery and continuing capital needs. The results are a limited-sample indicator, not a census of the sector.",
+              "strategic_implication": "Boards and finance leaders should stress-test liquidity plans against operating volatility, debt access, and investment-market swings rather than treating reserve draws as a one-off bridge. The survey also highlights the need to protect strategically important capital projects while preserving cash flexibility.",
+              "confidence": "high",
+              "tags": [
+                "hospital-finance",
+                "liquidity",
+                "investment-reserves",
+                "capital-planning"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-doximity-us-news-partnership-extension",
+              "canonical_topic": "doximity-us-news-partnership-extension",
+              "duplicate_group": "doximity-us-news-partnership-extension",
+              "priority_score": 4,
+              "primary_source": "Business Wire",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Business Wire",
+                  "url": "https://www.businesswire.com/newsroom/industry/health/hospitals",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T04:01:00Z"
+                }
+              ],
+              "title": "Doximity extends its 13-year data partnership with U.S. News & World Report",
+              "summary": "Doximity announced an extension of its 13-year partnership with U.S. News & World Report, under which Doximity serves as a data provider for U.S. News physician- and hospital-facing products that help patients identify doctors and hospitals.",
+              "strategic_implication": "Physician network data will keep shaping the rankings and directories patients use to choose care. Health-system marketing and medical-staff leaders should keep clinician profile data current, since it feeds consumer-facing reputation channels.",
+              "confidence": "medium",
+              "tags": [
+                "doximity",
+                "hospital-rankings",
+                "physician-data",
+                "consumer-choice"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "UnityPoint Health is scaling a clinical-data intelligence platform across its regional hospitals, while CDC data show flu admissions rising earlier than usual. The Schenectady cardiology dispute illustrates how fragile physician-group alignment becomes after a failed merger.",
+          "items": [
+            {
+              "item_id": "2026-10-13-flu-hospitalizations-nearly-triple",
+              "canonical_topic": "flu-hospitalizations-nearly-triple",
+              "duplicate_group": "early-flu-season-2026",
+              "priority_score": 7,
+              "primary_source": "CDC FluView",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "CDC FluView",
+                  "url": "https://www.cdc.gov/fluview/surveillance/2026-week-39.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-09T00:00:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/quality/public-health/flu-hospitalizations-nearly-triple-in-early-start-to-season-6-cdc-notes/",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "Weekly flu hospital admissions have nearly tripled since early September",
+              "summary": "Hospitals reported 3,334 laboratory-confirmed flu admissions in the week ending Oct. 3, up from 2,572 the prior week and 1,133 in the week ending Sept. 5; the national admission rate rose to 1.0 per 100,000. CDC says activity remains low overall but has been rising across multiple indicators since late August and is higher than typical for this time of year, though within expected seasonal variation. Last week's edition flagged early retail and EHR signals; this update confirms the trend in hospital admissions data.",
+              "strategic_implication": "An early rise in admissions shortens the window for vaccination campaigns, staffing plans, and surge-capacity preparation. Operations leaders should move up respiratory-season playbooks, including bed management, staffing contingencies, and antiviral supply checks.",
+              "confidence": "high",
+              "tags": [
+                "influenza",
+                "hospital-capacity",
+                "cdc",
+                "respiratory-season",
+                "surge-planning"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-unitypoint-clinical-data-platform-rollout",
+              "canonical_topic": "unitypoint-clinical-data-platform-rollout",
+              "duplicate_group": "unitypoint-clinical-data-platform-rollout",
+              "priority_score": 6,
+              "primary_source": "Evidently via Business Wire",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Evidently via Business Wire",
+                  "url": "https://lasvegassun.com/news/2026/oct/13/unitypoint-health-expands-evidentlys-clinical-data/",
+                  "source_type": "web",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "UnityPoint expands longitudinal-chart intelligence across 18 regional hospitals",
+              "summary": "UnityPoint Health selected Evidently's clinical-data intelligence platform for deployment across its 18 regional hospitals, beginning with emergency physicians and hospitalists. The vendor reports that an evaluation surfaced an average of four to five additional quality-impacting conditions per admission note for clinician review, and that surveyed clinicians reported satisfaction and time savings. Those evaluation figures are company-reported and should be distinguished from independently validated outcomes.",
+              "strategic_implication": "Enterprise rollouts are extending AI beyond note generation into chart review, documentation integrity, and quality workflows. Provider leaders should independently validate clinical accuracy, clinician burden, coding effects, and patient-safety outcomes before using pilot metrics to justify broader scaling.",
+              "confidence": "medium",
+              "tags": [
+                "health-systems",
+                "clinical-data",
+                "documentation",
+                "ai-operations"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-schenectady-cardiologists-noncompete-dispute",
+              "canonical_topic": "schenectady-cardiologists-noncompete-dispute",
+              "duplicate_group": "schenectady-cardiologists-noncompete-dispute",
+              "priority_score": 6,
+              "primary_source": "Becker's ASC Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's ASC Review",
+                  "url": "https://www.beckersasc.com/cardiology/20-cardiologists-resign-amid-new-york-health-system-legal-battle/",
+                  "source_type": "web",
+                  "published_at": "2026-10-11T00:00:00Z"
+                },
+                {
+                  "source": "The Daily Gazette",
+                  "url": "https://www.dailygazette.com/cjfund/ellis-st-peters-cardiology-dispute-concerns-medical/article_4946072a-4521-4fa5-9917-8c160633420b.html",
+                  "source_type": "web",
+                  "published_at": "2026-10-08T00:00:00Z"
+                }
+              ],
+              "title": "Twenty of 27 Schenectady cardiologists resign from St. Peter's to join Ellis Medicine despite noncompetes",
+              "summary": "Twenty cardiologists from Cardiology Associates of Schenectady, the county's only cardiology practice, have resigned from Trinity Health's St. Peter's Health Partners and signed with Ellis Medicine for a January start, along with 10 advanced practice providers. The move comes despite one-year noncompete clauses at the center of competing lawsuits that followed the collapse of six years of merger talks in June. The New York Attorney General's Antitrust Bureau has told the court the dispute likely suppresses labor competition; Ellis plans to use locum physicians during the transition.",
+              "strategic_implication": "Noncompetes are an increasingly fragile tool for retaining physician groups, especially when antitrust regulators get involved and patient access in a single-practice market is at stake. Systems that acquire specialty groups should plan retention around partnership terms, call coverage, and privileges rather than relying on restrictive covenants.",
+              "confidence": "high",
+              "tags": [
+                "noncompetes",
+                "physician-alignment",
+                "cardiology",
+                "antitrust",
+                "failed-merger"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "A national survey shows a gap between worker-reported job-change intent and employer estimates, and new federal visa actions threaten the international pipeline behind biomedical research. STAT also reports renewed scrutiny of a rare-disease therapy's post-market safety.",
+          "items": [
+            {
+              "item_id": "2026-10-13-vykat-xr-post-market-safety-scrutiny",
+              "canonical_topic": "vykat-xr-post-market-safety-scrutiny",
+              "duplicate_group": "vykat-xr-post-market-safety-scrutiny",
+              "priority_score": 9,
+              "primary_source": "STAT News",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT News",
+                  "url": "https://www.statnews.com/2026/10/13/neurocrine-biosciences-prader-willi-vykat-xr/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-13T08:30:00Z"
+                }
+              ],
+              "title": "STAT reports renewed safety concerns around Prader-Willi drug Vykat XR",
+              "summary": "STAT reports that patient advocates and some experts are pressing for closer scrutiny of Neurocrine Biosciences' Vykat XR, citing FDA post-market reports involving seven deaths and nearly 100 hospitalizations since approval. The reports do not establish that the drug caused the events; many cases involved complex medical conditions and multiple medications. The latest coverage describes disagreement among experts about whether the signal warrants stronger regulatory action.",
+              "strategic_implication": "Prescribers and care teams should review current labeling and safety communications, assess individual risk factors, and discuss emerging evidence with patients and families. Adverse-event reports are an important signal for monitoring, but should not be presented as proof of causation.",
+              "confidence": "medium",
+              "tags": [
+                "drug-safety",
+                "prader-willi-syndrome",
+                "fda",
+                "post-market-surveillance"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-healthcare-workforce-turnover-intent",
+              "canonical_topic": "healthcare-workforce-turnover-intent",
+              "duplicate_group": "healthcare-workforce-turnover-intent",
+              "priority_score": 7,
+              "primary_source": "The Harris Poll",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/workforce/70-of-gen-z-healthcare-workers-eye-the-exit/",
+                  "source_type": "web",
+                  "published_at": "2026-10-12T00:00:00Z"
+                },
+                {
+                  "source": "Workforce Edge / The Harris Poll",
+                  "url": "https://www.businesswire.com/news/home/20260916296354/en/",
+                  "source_type": "web",
+                  "published_at": "2026-09-16T00:00:00Z"
+                }
+              ],
+              "title": "Survey finds worker-reported healthcare job-change intent exceeds employer estimates",
+              "summary": "The 2026 Healthcare Workforce Barometer found that 59% of surveyed direct-care healthcare employees were likely to look for a new role within a year, compared with employers' estimate of 39%; the reported share among Gen Z workers was 70%. The Harris Poll surveyed 1,514 healthcare employees and 304 healthcare employers in June and July. These are stated intentions, not observed turnover, and the survey was commissioned by Workforce Edge's parent company.",
+              "strategic_implication": "The worker-employer perception gap suggests leaders may be underestimating retention risk if they rely only on managerial estimates. Use local pulse data, stay interviews, and visible development pathways to identify preventable exits before they become vacancies.",
+              "confidence": "high",
+              "tags": [
+                "healthcare-workforce",
+                "retention",
+                "gen-z",
+                "career-development"
+              ]
+            },
+            {
+              "item_id": "2026-10-13-international-researcher-visa-crackdown",
+              "canonical_topic": "international-researcher-visa-crackdown",
+              "duplicate_group": "international-researcher-visa-crackdown",
+              "priority_score": 7,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/10/13/health-news-trump-admin-clamps-down-on-international-researchers/",
+                  "source_type": "rss",
+                  "published_at": "2026-10-13T00:00:00Z"
+                }
+              ],
+              "title": "New federal actions target international students and postdocs in the biomedical workforce",
+              "summary": "In two days last week, DHS proposed a $70,000 fee for a work-authorization program many foreign students use to gain professional experience, and the Labor Department said it is investigating nine universities, including Harvard, Stanford, and Yale, for alleged fraud tied to postdoctoral visas. DHS is also seeking in court a four-year cap on U.S. stays for graduate students and postdocs and is trying to revive $100,000 visa fees. None of the changes has taken effect, but the Association of American Universities found international Ph.D. applications fell 21% this year while domestic applications rose 3%.",
+              "strategic_implication": "Academic medical centers and life-sciences employers that depend on international trainees and postdocs face a shrinking pipeline and rising sponsorship costs. Research and workforce leaders should quantify their exposure, review immigration-compliance practices ahead of audits, and plan for recruiting gaps in labs and clinical research.",
+              "confidence": "high",
+              "tags": [
+                "research-workforce",
+                "immigration",
+                "academic-medicine",
+                "postdocs",
+                "visas"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

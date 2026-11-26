@@ -3,6 +3,549 @@
   "workflow_version": "2.0",
   "editions": [
     {
+      "edition_date": "2026-11-26",
+      "generated_at": "2026-11-26T13:45:00Z",
+      "headline": "Today's Healthcare Insights",
+      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
+      "summary_note": "The AMA finds 95% of metro insurance markets remain highly concentrated, the FDA cleared the first image-based AI to predict five-year breast cancer risk from 3D mammograms, and medtech earnings confirm an elective surgery slowdown. Healthcare bankruptcies reached 17 for 2026, Brigham nurses ratified a contract that limits temporary staffing, and Penn State Health will pay for medical school for future family physicians. This is a lighter Thanksgiving edition. Sources include STAT, Healthcare Dive, BioPharma Dive, MedTech Dive, Becker's, MedPage Today, MobiHealthNews, Euronews and RadNet.",
+      "publish_ready": true,
+      "source_run": {
+        "sources_targeted": [
+          "Gmail labels InsightsSources/Healthcare Brew, Healthcare Dive, Hospitalogy, Modern Healthcare",
+          "STAT News RSS (main, health, pharma, health-tech, politics, biotech)",
+          "Healthcare Dive RSS and site",
+          "BioPharma Dive, MedTech Dive, MedCity News, KFF Health News, Becker's, Healthcare Brew, Fierce Healthcare and Modern Healthcare RSS",
+          "Targeted web search for Nov. 24-26 digital health and AI developments"
+        ],
+        "sources_successful": [
+          "STAT News RSS fetched and screened for late Nov. 24 through the morning of Nov. 26",
+          "Healthcare Dive, BioPharma Dive, MedTech Dive, KFF Health News, Becker's and Healthcare Brew RSS fetched and screened",
+          "Articles read on STAT, Healthcare Dive, BioPharma Dive, MedTech Dive, Becker's, Healthcare Brew, MedPage Today, MobiHealthNews, Euronews and RadNet"
+        ],
+        "sources_failed": [
+          "Gmail: label searches for all four InsightsSources labels and newsletter-sender searches since Nov. 20-24 returned no messages in the connected mailbox; RSS sources used instead.",
+          "STAT+ articles (Cogent approval, BioNTech founders, Boston primary care access) were paywalled; items rely on visible STAT text plus open BioPharma Dive coverage.",
+          "MedCity News RSS was blocked by Cloudflare; Fierce Healthcare, Fierce Pharma and Fierce Biotech RSS returned challenge pages or no recent items; Modern Healthcare RSS was unavailable; Hospitalogy content was unavailable."
+        ],
+        "run_notes": "17 items cover developments reported from late Nov. 24 through the morning of Nov. 26. The Thanksgiving holiday reduced publisher output, so this edition is smaller than usual. Checked against the prior 30 editions for repeats: the Medicare same-day cut item updates the Nov. 19 item with specialty impact; the Iowa lead azide item updates the Nov. 25 HHS item with hospital readiness; the Brigham item follows the Oct. 26 contract-rejection item. Excluded repeats: IRA 2028 negotiated prices (covered Nov. 24 from CMS), Compass psilocybin NDA (filed Nov. 9; race covered Nov. 23), HLTH 2026 roundup, KFF Nebraska Medicaid, Medicare open enrollment and single-payer pieces (covered Nov. 23-25), STAT U.S.-China biotech opinion and international student enrollment (covered Nov. 25), NHS EDITH AI breast screening trial (began Nov. 23, outside U.S. focus). Screened but not itemized: Insulet CFO change, Becker's CFO-move and CEO-CFO lists, University of Michigan Health-Sparrow Lansing president departure, Fortune op-ed on AI incentives."
+      },
+      "editorial_buckets": [
+        {
+          "name": "Policy, Payment, and Regulation",
+          "synthesis": "The AMA's annual competition study finds 95% of metro commercial markets, 98% of exchange markets and 97% of Medicare Advantage markets remain highly concentrated, renewing its call for merger scrutiny as insurers point back at hospital consolidation. Specialists are also mapping the impact of Medicare's 20% same-day service reduction, which takes effect Jan. 1 and falls hardest on podiatry, dermatology and otolaryngology. Both items point to payment and market-structure pressure on independent physician practices heading into 2027.",
+          "items": [
+            {
+              "item_id": "2026-11-26-ama-insurer-market-concentration-2026",
+              "canonical_topic": "ama-insurer-market-concentration-2026",
+              "duplicate_group": "ama-insurer-market-concentration-2026",
+              "priority_score": 8,
+              "primary_source": "Healthcare Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "Healthcare Dive",
+                  "url": "https://www.healthcaredive.com/news/just-a-handful-of-payers-control-us-health-insurance-markets-ama-warns/875719/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "AMA finds 95% of metro health insurance markets remain highly concentrated, with UnitedHealthcare leading MA and Centene leading the exchanges",
+              "summary": "The American Medical Association's annual insurer-competition analysis found 95% of metro markets were highly concentrated in 2025, down from 97% in 2024. By segment, 95% of commercial, 98% of exchange and 97% of Medicare Advantage markets met the federal 'highly concentrated' threshold, figures that have barely moved over 12 years of tracking. UnitedHealthcare held 15% of the national commercial market, 30% of MA (ahead of Humana at 17% and Aetna at 12%), and Centene led the exchanges at 24%. Combined, Blue Cross Blue Shield plans would hold 42% of the national commercial market and had the largest commercial share in 84% of metro areas. The AMA argues blocked horizontal mergers pushed insurers toward vertical integration such as PBM ownership; AHIP countered that hospital and drugmaker concentration drive spending.",
+              "strategic_implication": "The AMA's data will be used in Congress and at the FTC and DOJ to push for scrutiny of payer-provider and payer-PBM vertical deals, especially with Democrats taking control of Congress in January. Health systems negotiating with a dominant regional Blue or MA plan can use the state-level concentration data in contract disputes. They should also expect insurers to answer with hospital-concentration data of their own.",
+              "confidence": "high",
+              "tags": [
+                "insurers",
+                "market-concentration",
+                "antitrust",
+                "medicare-advantage",
+                "aca-exchanges",
+                "ama"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-medicare-same-day-cut-specialty-impact",
+              "canonical_topic": "medicare-same-day-cut-specialty-impact",
+              "duplicate_group": "medicare-modifier-25-same-day-cut-split-visits",
+              "priority_score": 6,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/25/medicare-physician-fee-schedule-change-worry-some-specialists/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "Podiatrists, dermatologists and ENTs brace for Medicare's 20% same-day service cut as small practices weigh consolidation",
+              "summary": "STAT reports that under the final 2027 physician fee schedule, Medicare will pay the highest-valued same-day service at 100% and reduce each additional evaluation or routine outpatient service by the same physician or practice that day by 20%, starting Jan. 1, 2027. An AMA analysis identifies podiatry, dermatology and otolaryngology as the hardest-hit specialties. CMS says the change modernizes billing and reflects lower resource use. MedPAC supports it and the Justice Department has found fraud tied to the code, while the AMA warns of split visits, higher cost-sharing and longer waits, especially in rural areas. A California podiatrist profiled by STAT estimates a 6% profit hit and has shelved a hiring plan. The cut was 50% when first proposed in 2018.",
+              "strategic_implication": "This follows the Nov. 19 item on the same rule with specialty-level impact. The policy speeds up consolidation pressure on independent specialty groups, as one Holland & Knight adviser noted they may turn to hospitals or private equity. Health systems recruiting specialists should model the 2027 payment change in practice-acquisition and employment offers. Ambulatory leaders should also review scheduling templates that bundle multiple services into one visit.",
+              "confidence": "high",
+              "tags": [
+                "medicare",
+                "physician-fee-schedule",
+                "specialists",
+                "independent-practice",
+                "consolidation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Digital Health and AI",
+          "synthesis": "AI is moving from detection to prediction in breast imaging: the FDA cleared DeepHealth's first image-based five-year risk tool for 3D mammography, and a new Category III CPT code begins Jan. 1 to track use. Houston Methodist's HLTH case study shows predictive AI cut post-discharge deaths about 35% and readmissions about 18% without new staff by targeting follow-up. In Europe, an OECD-European Commission report finds AI imaging in about 75% of EU countries but national health AI strategies in only five of 24, a reminder that infrastructure spending does not guarantee use.",
+          "items": [
+            {
+              "item_id": "2026-11-26-deephealth-mammo-risk-fda-clearance",
+              "canonical_topic": "deephealth-mammo-risk-fda-clearance",
+              "duplicate_group": "deephealth-mammo-risk-fda-clearance",
+              "priority_score": 8,
+              "primary_source": "RadNet",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "RadNet",
+                  "url": "https://www.radnet.com/newsroom/press-releases/deephealth-mammo-risk-fda-clearance",
+                  "source_type": "web",
+                  "published_at": "2026-11-24T00:00:00Z"
+                },
+                {
+                  "source": "MobiHealthNews",
+                  "url": "https://www.mobihealthnews.com/news/deephealth-wins-fda-clearance-ai-tool-predicts-cancer-risk",
+                  "source_type": "web",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "FDA clears DeepHealth's Mammo Risk, the first image-based AI to predict five-year breast cancer risk from 3D mammograms",
+              "summary": "RadNet subsidiary DeepHealth received FDA 510(k) clearance (K262709, dated Nov. 23) for Mammo Risk, software that estimates a woman's three-, four- and five-year breast cancer risk from an existing 3D mammogram without an extra scan or questionnaire. DeepHealth calls it the first FDA-cleared image-based risk tool for 3D mammography, which is available at more than 90% of U.S. mammography facilities. The model was trained on 220,000 studies and evaluated in an independent pivotal study of more than 65,000 screening mammograms from 10 U.S. sites, with what the company describes as consistent performance among Black women and women with dense breasts. The AMA has created a Category III CPT code, effective Jan. 1, 2027, to track use of image-based risk assessment. The tool is commercially available now.",
+              "strategic_implication": "Image-based risk scores could move breast screening from age-based to risk-based pathways, sending more women to supplemental MRI or ultrasound. A Category III code tracks use but does not guarantee payment, so imaging leaders should plan for unreimbursed adoption at first. They should also check capacity for supplemental imaging and work with payers on coverage criteria before scaling.",
+              "confidence": "high",
+              "tags": [
+                "ai",
+                "fda",
+                "radiology",
+                "breast-cancer",
+                "screening",
+                "cpt"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-houston-methodist-predictive-ai-post-discharge",
+              "canonical_topic": "houston-methodist-predictive-ai-post-discharge",
+              "duplicate_group": "houston-methodist-predictive-ai-post-discharge",
+              "priority_score": 7,
+              "primary_source": "MedPage Today",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "MedPage Today",
+                  "url": "https://www.medpagetoday.com/hospitalbasedmedicine/generalhospitalpractice/124037",
+                  "source_type": "web",
+                  "published_at": "2026-11-24T00:00:00Z"
+                }
+              ],
+              "title": "Houston Methodist cuts 30-day post-discharge deaths about 35% and readmissions about 18% using predictive AI with no added staff",
+              "summary": "At HLTH, Houston Methodist Hospital presented results from using Health Data Analytics Institute models, trained on Medicare data covering 150 million lives, to flag its highest-risk Medicare surgical patients for clinician follow-up within 14 days. From 2021-2022 to 2025-Q1 2026 (a partial period), the observed-to-expected ratio for 30-day post-discharge deaths fell from 0.48 to 0.31 and for readmissions from 1.17 to 0.96. Follow-up within 14 days rose from 54.6% to 62.2% in the top mortality-risk group and from 55.8% to 64.5% in the top readmission-risk group. The effort began after the cardiovascular service line ranked 7th for in-hospital mortality but 43rd for 30-day post-discharge mortality among more than 100 academic centers; about 70% of those deaths were in the highest-risk quintile.",
+              "strategic_implication": "This is a case-study result presented at a conference, not a controlled trial, but it shows a practical ROI model: predictive AI aimed at reallocating scarce follow-up capacity, not adding headcount. Quality leaders facing readmission penalties should ask vendors for observed-to-expected results by risk tier. Embedding predictions in the EHR worklist, as Houston Methodist did, appears key to adoption.",
+              "confidence": "medium",
+              "tags": [
+                "ai",
+                "predictive-analytics",
+                "readmissions",
+                "post-acute",
+                "quality"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-oecd-ec-europe-digital-health-implementation-gap",
+              "canonical_topic": "oecd-ec-europe-digital-health-implementation-gap",
+              "duplicate_group": "oecd-ec-europe-digital-health-implementation-gap",
+              "priority_score": 5,
+              "primary_source": "Euronews",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Euronews",
+                  "url": "https://www.euronews.com/2026/11/25/europe-is-embracing-digital-health-but-do-patients-actually-benefit",
+                  "source_type": "web",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "OECD-European Commission report finds a 'digital health implementation gap': AI imaging in about 75% of EU countries but only five national health AI strategies",
+              "summary": "The OECD and European Commission's Health at a Glance: Europe 2026 report, released Nov. 25, finds that public investment and binding EU rules have expanded electronic health records and digital services, but routine and equitable use lags availability. The EU is investing at least 16 billion euros in health digitalization, and digital assets average 14.7% of health-sector capital investment, ranging from 39.2% in the Netherlands to 3.5% in Latvia. AI-powered diagnostic imaging is used in about 75% of EU countries, yet dedicated national health AI strategies exist in only five of 24 countries surveyed, and evaluation standards and workforce preparation lag deployment.",
+              "strategic_implication": "The European finding mirrors U.S. hospitals, where adoption is outrunning governance and measurement. For U.S. health system boards, the takeaway is to fund the adoption layer (workflow redesign, training and outcome tracking) alongside AI and data infrastructure. Infrastructure spending alone does not produce patient-level benefit.",
+              "confidence": "medium",
+              "tags": [
+                "digital-health",
+                "ai-governance",
+                "europe",
+                "oecd",
+                "ehr"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Market and Industry Signals",
+          "synthesis": "Medtech's third quarter showed softer elective surgery volumes, with J&J, Boston Scientific, Intuitive and Stryker citing slower procedures while Edwards and Zimmer raised forecasts. On the drug side, the FDA approved Cogent's Ekitna, the first new option in second-line GIST in more than two decades, and Amgen secured an Oct. 1, 2028 U.S. launch date for its Opdivo biosimilar. BioNTech's founders are reportedly raising about $1 billion for a new mRNA cancer company. Together, these point to lower elective volume in 2027 budgets and a clearer biosimilar timeline for a major oncology drug.",
+          "items": [
+            {
+              "item_id": "2026-11-26-medtech-q3-surgery-volume-slowdown",
+              "canonical_topic": "medtech-q3-surgery-volume-slowdown",
+              "duplicate_group": "medtech-q3-surgery-volume-slowdown",
+              "priority_score": 7,
+              "primary_source": "MedTech Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "MedTech Dive",
+                  "url": "https://www.medtechdive.com/news/medtech-earnings-surgery-slowdown-takes-a-toll/875737/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "Medtech earnings show an elective surgery slowdown: J&J, Boston Scientific, Intuitive and Stryker cite softer procedure volumes",
+              "summary": "MedTech Dive's third-quarter roundup finds Johnson & Johnson, Boston Scientific, Intuitive and Stryker among device makers citing lower procedure volumes as a drag on growth, as hospital chains report patients postponing elective care because of costs and lost insurance. Boston Scientific cut 2026 guidance for the third time, Stryker lowered guidance after a hip and knee slowdown it tied to economic concerns, and Intuitive's U.S. da Vinci procedure growth slowed again. Not every company saw pressure: Edwards and Zimmer Biomet raised forecasts, and Zimmer's CEO rejected the idea of an orthopedic slowdown. Medtronic remained bullish on cardiac ablation.",
+              "strategic_implication": "Device makers' commentary confirms what hospitals are seeing in elective volumes: coverage losses and cost-sharing are deferring procedures. CFOs building 2027 budgets should stress-test orthopedic and general-surgery volume assumptions. They should also expect vendors to compete harder on price and utilization guarantees as their own growth slows.",
+              "confidence": "high",
+              "tags": [
+                "medtech",
+                "earnings",
+                "surgical-volume",
+                "elective-procedures",
+                "orthopedics"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-fda-approves-cogent-ekitna-gist",
+              "canonical_topic": "fda-approves-cogent-ekitna-gist",
+              "duplicate_group": "fda-approves-cogent-ekitna-gist",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/arcus-quemliclustat-belite-amgen-opdivo-biosimilar/875512/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                },
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/2026/11/25/biotech-news-fda-approves-cogents-drug-for-rare-stomach-cancer/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "FDA approves Cogent's Ekitna with Pfizer's Sutent for previously treated advanced GIST, the first new option in that setting in more than two decades",
+              "summary": "The FDA on Nov. 24 approved Cogent Biosciences' kinase inhibitor, to be sold as Ekitna, in combination with Pfizer's older drug Sutent for adults with advanced gastrointestinal stromal tumors previously treated with imatinib. Cogent says it is the first treatment approved in this setting in more than two decades. Ekitna is available by prescription now, with a Cogent patient support program. BioPharma Dive's roundup also notes that Arcus Biosciences stopped a late-stage pancreatic cancer study of quemliclustat after it failed an interim survival benchmark.",
+              "strategic_implication": "GIST is rare, so budget impact will be limited, but oncology pharmacy and P&T committees will need to add a new combination regimen in second-line care. Specialty pharmacies should prepare for limited-distribution and prior-authorization steps for a newly launched oral oncology drug.",
+              "confidence": "high",
+              "tags": [
+                "fda",
+                "oncology",
+                "drug-approval",
+                "rare-cancer",
+                "specialty-pharmacy"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-amgen-opdivo-biosimilar-settlement-2028",
+              "canonical_topic": "amgen-opdivo-biosimilar-settlement-2028",
+              "duplicate_group": "amgen-opdivo-biosimilar-settlement-2028",
+              "priority_score": 6,
+              "primary_source": "BioPharma Dive",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "BioPharma Dive",
+                  "url": "https://www.biopharmadive.com/news/arcus-quemliclustat-belite-amgen-opdivo-biosimilar/875512/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "Amgen settles with Bristol Myers and Ono to launch an Opdivo biosimilar Oct. 1, 2028, as BMS names a new CFO",
+              "summary": "Amgen said Nov. 24 that a settlement with Bristol Myers Squibb and Ono Pharmaceutical allows it to launch a biosimilar to the PD-1 inhibitor Opdivo in the U.S. on Oct. 1, 2028, before Opdivo's patents expire, pending FDA approval expected by the end of the year. Terms are confidential. Separately, BMS CFO David Elkins will leave March 1 for Coca-Cola and will be succeeded by Kevin Dillon, the second senior BMS departure this month after Chief Research Officer Robert Plenge.",
+              "strategic_implication": "A fixed launch date gives health systems and payers a clear timeline for the first checkpoint-inhibitor biosimilar in a very high-spend oncology class. Infusion centers and 340B programs should begin modeling 2028-2029 Opdivo biosimilar conversion, including the effect on ASP-based reimbursement and site-of-care economics.",
+              "confidence": "high",
+              "tags": [
+                "biosimilars",
+                "oncology",
+                "drug-pricing",
+                "amgen",
+                "bristol-myers-squibb"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-biontech-founders-arife-1b-raise",
+              "canonical_topic": "biontech-founders-arife-1b-raise",
+              "duplicate_group": "biontech-founders-arife-1b-raise",
+              "priority_score": 4,
+              "primary_source": "STAT",
+              "source_tier": "Tier 1",
+              "source_refs": [
+                {
+                  "source": "STAT",
+                  "url": "https://www.statnews.com/pharmalot/2026/11/25/biontech-founders-oncology-startup-gsk-egpa-drug-exdensur/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "BioNTech founders reportedly seek about $1 billion for Arife, an mRNA cancer startup, as GSK's twice-yearly Exdensur matches Nucala in EGPA",
+              "summary": "STAT's Pharmalittle, citing the Financial Times, reports that BioNTech cofounders Uğur Şahin and Özlem Türeci are in talks to raise about $1 billion, led by European venture firm Plural, for a new company called Arife focused on using messenger RNA to treat cancer, as they prepare to step down from BioNTech. STAT also cites Fierce Pharma: GSK's long-acting Exdensur, dosed twice over a year, achieved remission rates at least on par with monthly Nucala in eosinophilic granulomatosis with polyangiitis, with similar adverse event rates.",
+              "strategic_implication": "A $1 billion first raise would be one of the largest biotech startup rounds this year and signals investor confidence in mRNA oncology despite weaker vaccine markets. Long-acting biologics like Exdensur may change site-of-care and adherence economics, which matters for health-system specialty pharmacy and infusion planning.",
+              "confidence": "medium",
+              "tags": [
+                "biotech",
+                "mrna",
+                "venture-funding",
+                "oncology",
+                "long-acting-biologics"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Provider Operations",
+          "synthesis": "Becker's has now tracked 17 healthcare bankruptcies in 2026, mostly rural and safety-net hospitals, after 20 in 2025. The latest is Alabama's Crenshaw Community Hospital, which is seeking to reject its contract with its operator. Hospitals downwind of the Army's Iowa lead azide detonation prepared emergency departments and decontamination but did not change operations. Bon Secours Mercy Health and five rural leaders described two strategies for growth under tight margins: statewide service-line governance, and expanding what a hospital already does well rather than building new programs.",
+          "items": [
+            {
+              "item_id": "2026-11-26-healthcare-bankruptcies-2026-crenshaw-chapter-11",
+              "canonical_topic": "healthcare-bankruptcies-2026-crenshaw-chapter-11",
+              "duplicate_group": "healthcare-bankruptcies-2026-crenshaw-chapter-11",
+              "priority_score": 8,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/9-healthcare-bankruptcies-in-2026/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                },
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/alabama-hospital-operator-files-for-chapter-11/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "Healthcare bankruptcies reach 17 in 2026 as Alabama's Crenshaw Community Hospital files Chapter 11 and moves to reject its rural turnaround operator",
+              "summary": "Becker's has counted 17 hospitals, health systems and healthcare organizations seeking or exiting bankruptcy in 2026, after 20 in 2025 and 15 in 2024. The latest filer is Crenshaw County Health Care Authority, operator of the 25-bed Crenshaw Community Hospital in Luverne, Ala., which filed Chapter 11 on Nov. 23. The authority moved to reject its contract with Frey Medical Management, a rural hospital transformation company that took over in January and is its largest unsecured creditor with a disputed claim of about $1.6 million, and asked the court to compel Frey to turn over records, passwords and funds. It seeks to hire Veritas Medical Associates as chief restructuring officer; a final hearing is set for Dec. 15, and a patient care ombudsman must be appointed by Dec. 23. Other 2026 filers include Roseland Community Hospital (citing potential HR 1 Medicaid cuts), Redeemer Health, North Star Health Alliance and several Alabama rural hospitals.",
+              "strategic_implication": "Alabama now accounts for several of this year's filings, consistent with rural non-expansion-state stress. The Crenshaw dispute is a warning for boards that hand operations to third-party turnaround firms. Contracts should guarantee the hospital's access to its own records, systems and cash, and set clear performance-based exit terms.",
+              "confidence": "high",
+              "tags": [
+                "bankruptcy",
+                "rural-hospitals",
+                "hospital-finance",
+                "alabama",
+                "turnaround-management"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-iowa-illinois-hospitals-lead-azide-readiness",
+              "canonical_topic": "iowa-illinois-hospitals-lead-azide-readiness",
+              "duplicate_group": "iowa-army-detonation-lead-plume-hhs-response",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/quality/public-health/iowa-illinois-hospitals-monitor-fallout-from-army-lead-azide-detonation/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "Iowa and Illinois hospitals readied EDs and decontamination after the Army's lead azide detonation; early EPA air samples stayed in the 'good' range",
+              "summary": "After the U.S. Army detonated nearly five tons of degraded lead azide at the Iowa Army Ammunition Plant in Middletown, Iowa, on Nov. 25, officials advised nearby residents to stay indoors for 24 to 48 hours as lead-containing dust moved southwest. As of 3 p.m. Central, the EPA's air-sampling page showed four readings under 32 micrograms per cubic meter, within its 'good' category. Great River Health in West Burlington, Iowa, said it prepared its emergency department for added patients and had decontamination stations ready, and evaluated but did not enact air-handling changes based on Army information. OSF HealthCare, whose Monmouth and Galesburg, Ill., hospitals are 40 to 55 miles east, said no locations were affected and its emergency management team is monitoring. Iowa HHS notes no safe lead exposure level has been identified, with young children and pregnant women at greatest risk.",
+              "strategic_implication": "This updates the Nov. 25 item on HHS's pre-detonation response. Hospital emergency managers should treat this as a model for planned hazardous-materials events: confirm direct lines to the responsible agency, pre-stage decontamination, and set clear decision criteria for HVAC changes. Pediatric and prenatal blood-lead screening demand may rise in the coming weeks, even if air readings stay low.",
+              "confidence": "medium",
+              "tags": [
+                "emergency-management",
+                "environmental-health",
+                "lead-exposure",
+                "hospital-preparedness",
+                "iowa"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-bon-secours-mercy-statewide-leadership-model",
+              "canonical_topic": "bon-secours-mercy-statewide-leadership-model",
+              "duplicate_group": "bon-secours-mercy-statewide-leadership-model",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hospital-management-administration/2-states-1-task-the-gains-from-bon-secours-mercy-healths-leadership-restructuring/",
+                  "source_type": "web",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "Bon Secours Mercy Health's state-based leadership model targets the same four service lines in Ohio and Virginia for 2027",
+              "summary": "About 18 months after replacing a market-based structure with state president roles, created in April 2025, Bon Secours Mercy Health says the model has improved visibility across assets and enabled service-line standardization. In Ohio, the system moved away from six regional markets that had strong care but could not spread best practices. Each state also added a chief growth officer accountable for statewide clinical service lines. For 2027, both states will focus on cardiology, orthopedics, neurosciences and oncology, with mirrored leadership teams so every leader has a peer in the other state. Strategy and growth sit at the state level, while day-to-day operations stay with hospital and market leaders.",
+              "strategic_implication": "Multi-state systems are adding a state-level layer to reduce variation and coordinate service-line growth, which also positions them for state-level payer contracting and Medicaid policy shifts. Leaders considering a similar redesign should separate growth accountability from operational authority, as Bon Secours did, so the state layer does not become another layer of overhead.",
+              "confidence": "medium",
+              "tags": [
+                "health-system-strategy",
+                "organizational-design",
+                "service-lines",
+                "bon-secours-mercy"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-rural-hospital-leaders-targeted-service-growth",
+              "canonical_topic": "rural-hospital-leaders-targeted-service-growth",
+              "duplicate_group": "rural-hospital-leaders-targeted-service-growth",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/5-rural-hospital-leaders-on-expanding-access-without-overreaching/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "Rural hospital leaders say growth comes from building on what already works, not new service lines, as Hazel Hawkins rises from single-digit cash days to 60-90",
+              "summary": "At a Becker's roundtable, five rural leaders described expanding access while protecting stability. Hazel Hawkins Memorial Hospital, a 25-bed California critical access hospital whose CEO was first asked to write a closure plan in 2022, grew from single-digit days cash on hand to 60 to 90 days at its peaks by building orthopedics and growing gastroenterology from one provider to four or five rather than trying to build a cardiac program. Hospital Sisters Health System's Southern Illinois market replaced four competing hospitals with one executive team and assigned roles. Jones Memorial in New York, licensed for 49 beds but staffing about 28, chose not to grow inpatient volume. Trego County-Lemke Memorial in Kansas has invested about $14 million in a new ED and other services.",
+              "strategic_implication": "These approaches line up with Rural Health Transformation Program priorities on regional coordination and right-sized services. Rural boards should base growth on community health needs assessment demand that the hospital can staff and sustain. Assigning distinct roles across nearby hospitals keeps care local while avoiding duplicate service lines.",
+              "confidence": "medium",
+              "tags": [
+                "rural-health",
+                "critical-access-hospitals",
+                "service-line-strategy",
+                "hospital-finance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Workforce & Clinical Practice",
+          "synthesis": "Brigham and Women's nurses ratified a contract that limits temporary nurse use with a 15% unit-level disclosure trigger, a staffing provision other unions are likely to seek. Health systems are building their own physician and leader pipelines: Penn State Health will pay for medical school for family physicians who commit eight years, and OSF HealthCare paired a $60 million nurse pay adjustment with daily leadership rounding. On the clinical side, an RSNA study found substantial GLP-1 weight loss often raises measured breast density and doubled mammogram recall rates.",
+          "items": [
+            {
+              "item_id": "2026-11-26-brigham-nurses-ratify-temp-staffing-limits",
+              "canonical_topic": "brigham-nurses-ratify-temp-staffing-limits",
+              "duplicate_group": "brigham-nurses-reject-final-offer",
+              "priority_score": 7,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/hr/4000-brigham-and-womens-nurses-ratify-2-year-deal/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "4,000 Brigham and Women's nurses ratify a contract with limits on temporary nurse use and a 15% unit-level disclosure trigger",
+              "summary": "Nurses represented by the Massachusetts Nurses Association ratified a contract with Mass General Brigham on Nov. 24, two weeks after a Nov. 11 tentative deal that averted an open-ended strike and following a one-day strike in July. The contract runs through Sept. 30, 2028. The hospital stated in contract language that it does not intend to replace permanent nurses with temporary nurses, will post 20 new 36-hour float pool positions, will track floating and temporary nurse use through a new joint staffing committee, and must give the union a rationale when temporary nurses cover more than 15% of full-time-equivalent positions on any unit. Pay terms add a new top wage step 2.5% higher, effective Nov. 15, and another 2.5% step on Sept. 30, 2027, plus a $1,000 bonus for nurses below the top step. New hires working 40 hours will pay 2.5% of individual plan premiums.",
+              "strategic_implication": "This follows the Oct. 26 item on the rejected final offer. The temporary-staffing transparency clause is the provision to watch, since it turns agency use into a contract issue. Unionized systems should expect similar demands and should build unit-level tracking of temporary nurse FTEs now, before bargaining.",
+              "confidence": "high",
+              "tags": [
+                "nursing",
+                "labor-unions",
+                "staffing",
+                "contract-negotiations",
+                "mass-general-brigham"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-penn-state-health-family-medicine-loan-forgiveness",
+              "canonical_topic": "penn-state-health-family-medicine-loan-forgiveness",
+              "duplicate_group": "penn-state-health-family-medicine-loan-forgiveness",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/quality/hospital-physician-relationships/penn-state-health-commits-4-5m-to-cover-medical-school-for-future-family-physicians/",
+                  "source_type": "web",
+                  "published_at": "2026-11-25T00:00:00Z"
+                },
+                {
+                  "source": "Penn State Health News",
+                  "url": "https://pennstatehealthnews.org/2026/11/penn-state-college-of-medicine-penn-state-health-launch-loan-forgiveness-opportunity-for-future-family-medicine-physicians/",
+                  "source_type": "web",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "Penn State Health commits $4.5M to fund medical school for family physicians who commit eight years to the system",
+              "summary": "Penn State Health and Penn State College of Medicine launched the Family and Community Medicine Loan Forgiveness Program, known as the 3+3+5 program, backed by a $4.5 million system commitment. It provides $100,000 per year in tuition and stipend support for three years, or $300,000 per student, to five students per year in the college's three-year Family Medicine Accelerated Pathway. In return, graduates complete a three-year family medicine residency at a Penn State Health program in Hershey, Reading or University Park, then practice five years with the system.",
+              "strategic_implication": "Paying for medical school in exchange for a service commitment gives health systems a more predictable primary care pipeline than signing bonuses. Paired with a three-year accelerated MD, it reaches independent practice about a year sooner. Systems facing primary care shortages, like the months-long Boston waits STAT and the Boston Globe reported Nov. 26, should test whether a similar program costs less than recruiting at today's market rates.",
+              "confidence": "high",
+              "tags": [
+                "primary-care",
+                "physician-pipeline",
+                "medical-education",
+                "workforce",
+                "loan-forgiveness"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-osf-workforce-retention-beyond-pay",
+              "canonical_topic": "osf-workforce-retention-beyond-pay",
+              "duplicate_group": "osf-workforce-retention-beyond-pay",
+              "priority_score": 5,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/finance/time-is-the-currency-3-health-leaders-on-winning-the-workforce-battle-beyond-pay/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "OSF pairs a $60 million, 9% nurse pay adjustment with daily leader rounding, as executives say pay must be market-rate before culture matters",
+              "summary": "At a Becker's roundtable, OSF HealthCare West Central region president Zachary Yoder said OSF recently completed a market adjustment that raised average nurse pay 9%, an investment of about $60 million. He described pay as the base of the hierarchy: culture cannot matter until employees earn market rate. OSF's Spark Rounds send senior leaders to units daily at 2 p.m.; since they began, quality, safety and HCAHPS scores have risen, and more than 150 more employees completed the engagement survey. Birmingham Green, a Virginia post-acute provider, reported about 94.6% retention after creating a paid hospitality aide pipeline into free CNA training. Sutter North Medical Group now asks recruits up front about leadership interest and funds training.",
+              "strategic_implication": "The message for 2027 workforce budgets is to fix pay first, then invest in mentorship, visible leadership and internal pipelines. Entry-level 'earn while you wait' roles, like Birmingham Green's, are a low-cost way for post-acute and rural providers to compete with hospitals for CNAs.",
+              "confidence": "medium",
+              "tags": [
+                "workforce",
+                "retention",
+                "nursing",
+                "leadership-development",
+                "compensation"
+              ]
+            },
+            {
+              "item_id": "2026-11-26-glp1-weight-loss-breast-density-recalls",
+              "canonical_topic": "glp1-weight-loss-breast-density-recalls",
+              "duplicate_group": "glp1-weight-loss-breast-density-recalls",
+              "priority_score": 6,
+              "primary_source": "Becker's Hospital Review",
+              "source_tier": "Tier 2",
+              "source_refs": [
+                {
+                  "source": "Becker's Hospital Review",
+                  "url": "https://www.beckershospitalreview.com/radiology/glp-1-weight-loss-linked-to-unexpected-mammogram-changes-4-notes/",
+                  "source_type": "rss",
+                  "published_at": "2026-11-25T00:00:00Z"
+                }
+              ],
+              "title": "GLP-1 weight loss raised breast density in 62.5% of women and doubled mammogram recall rates in an RSNA study",
+              "summary": "Researchers at Brigham and Women's Hospital and Mass General Brigham compared mammograms taken before and at least one year after women began GLP-1 therapy for weight loss. Automated breast density rose at least one category in 65 of 104 women (62.5%), eight rose two categories, and none decreased; the women lost an average of 40 pounds. About 22% were called back for more screening, more than double the roughly 10% national recall rate, and four had biopsies, all benign. The lead author said the change likely reflects loss of breast fat making fibroglandular tissue more visible, not a direct drug effect, and the study has not been peer reviewed or assessed cancer risk.",
+              "strategic_implication": "As GLP-1 use grows, breast imaging programs could see more 'dense breast' notifications, recalls and supplemental imaging referrals, with added cost and patient anxiety. Imaging centers should add GLP-1 use and recent weight loss to intake forms. Radiologists may also need to factor prior-weight comparisons into density reporting.",
+              "confidence": "medium",
+              "tags": [
+                "glp-1",
+                "radiology",
+                "breast-imaging",
+                "screening",
+                "rsna"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "edition_date": "2026-11-25",
       "generated_at": "2026-11-25T13:50:00Z",
       "headline": "Today's Healthcare Insights",
@@ -18829,620 +19372,7 @@
           ]
         }
       ]
-    },
-    {
-      "edition_date": "2026-10-15",
-      "generated_at": "2026-10-15T12:33:32Z",
-      "headline": "Today's Healthcare Insights",
-      "subheadline": "A cross-source executive briefing on healthcare policy, operations, and market signals.",
-      "summary_note": "Today's briefing tracks the opening of Medicare enrollment, expanding federal program-integrity actions and reported wrongful ACA terminations, a 90-day delay to customs rules affecting imported prescriptions, and FDA's new rare-disease framework. It also covers outcomes-based payment for consumer wearables, health system combinations in Chicago and the Pacific Northwest, Kenya's second Ebola case, a CDC survey on adolescent binge eating, and new nurse contracts. Sources include STAT and Healthcare Dive RSS, Fierce Healthcare from the automated run, and primary releases from CMS, FDA, CDC, PHTI, Kaufman Hall, and the health systems involved.",
-      "publish_ready": true,
-      "source_run": {
-        "sources_targeted": [
-          "STAT News RSS",
-          "Healthcare Dive RSS",
-          "Fierce Healthcare RSS",
-          "Targeted web searches across CMS, Medicare/Medicaid, digital health and AI, payer/provider operations, hospital M&A, and workforce",
-          "Primary-source checks: CMS, Peterson Health Technology Institute, Kaufman Hall, and Rush University System for Health",
-          "Gmail labels InsightsSources/Healthcare Brew, /Healthcare Dive, /Hospitalogy, /Modern Healthcare (rebuild)",
-          "STAT News RSS category feeds (main, health, health-tech, politics, pharma) on rebuild",
-          "Healthcare Dive RSS on rebuild",
-          "Fierce Healthcare RSS on rebuild",
-          "Primary-source checks on rebuild: FDA, CDC MMWR, Samaritan Health Services"
-        ],
-        "sources_successful": [
-          "STAT News RSS (HTTP 200; Oct. 14-15 reporting)",
-          "Healthcare Dive RSS (HTTP 200; Oct. 14 reporting)",
-          "Fierce Healthcare RSS (HTTP 200; Oct. 14 reporting)",
-          "Targeted web searches corroborated selected stories and added context from CMS, STAT, Healthcare Dive, Becker's, and local reporting",
-          "Primary-source checks: CMS, Peterson Health Technology Institute, Kaufman Hall, and Rush University System for Health",
-          "STAT News RSS rebuild fetch (5 feeds HTTP 200; Oct. 14-15 Ebola, CDC survey, Whoop, import-rule items)",
-          "Healthcare Dive RSS rebuild fetch (HTTP 200; Oct. 14 MultiCare-Samaritan)",
-          "Targeted web/news searches on rebuild (FDA, CDC MMWR, BBC, AP, KFF Health News, Samaritan, Becker's, Wichita Business Journal, Tech Funding News)"
-        ],
-        "sources_failed": [
-          "Fierce Healthcare full article page for the Q3 hospital M&A story was blocked by robots policy; the market item instead uses Kaufman Hall's primary report and Becker's coverage",
-          "Gmail InsightsSources/* labels and newsletter-name searches returned no messages in the connected mailbox since 2026-10-13",
-          "Fierce Healthcare RSS returned HTTP 403 on the rebuild fetch (automated-run items retained)",
-          "STAT+ import-rule and biotech-market stories paywalled; import-rule item drafted from the STAT headline/description plus AP and other reporting"
-        ],
-        "run_notes": "Built 8 distinct items from Oct. 13-15 reporting and primary releases, screened against the Oct. 14 edition to avoid repeating its stories. RSS descriptions plus targeted search results provided sufficient evidence; Gmail labels were not queried because they are supplementary. Same-day rebuild in place: the automated run (generated 2026-10-15T11:04:21Z) appended 2026-10-15 and left the feed at 31 editions. Trimmed to 30; the displaced 2026-09-03 edition is preserved in archive/editions-archive-2026-10-15.json. Retained all 8 automated items, added 10 new items (18 total), and enriched the ACA eligibility item with KFF Health News reporting on reinstatements and the 419,000-enrollee second phase. Screened against the full 30-edition feed (skipped the CVS opioid settlement, Sanofi EU probe, FDA advisory-committee ties, GLP-1 criminal-justice study, health system administrative job cuts, Medicaid work-requirement explainers, and the postponed Brigham strike as already covered) and refreshed bucket syntheses."
-      },
-      "editorial_buckets": [
-        {
-          "name": "Policy, Payment, and Regulation",
-          "synthesis": "Medicare's 2027 enrollment window opens with lower projected Medicare Advantage premiums while CMS steps up program-integrity actions across DME suppliers and ACA subsidies. Reports of wrongful ACA terminations, a 90-day delay to customs rules affecting imported prescriptions, and FDA's new rare-disease framework show how quickly enforcement and regulatory design are being recalibrated.",
-          "items": [
-            {
-              "item_id": "2026-10-15-medicare-open-enrollment-2027-premiums",
-              "canonical_topic": "medicare-open-enrollment-2027-premiums",
-              "duplicate_group": "medicare-open-enrollment-2027-premiums",
-              "priority_score": 9,
-              "primary_source": "Centers for Medicare & Medicaid Services",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Centers for Medicare & Medicaid Services",
-                  "url": "https://www.cms.gov/newsroom/press-releases/medicare-advantage-medicare-prescription-drug-programs-expected-remain-stable-2027",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "Medicare Open Enrollment opens as CMS projects lower 2027 Medicare Advantage premiums",
-              "summary": "CMS projects weighted-average monthly premiums across Medicare Advantage plans will fall 16.5% to $12 in 2027, while average Part D premiums within Medicare Advantage plans are projected to decline 38%. The average stand-alone Part D premium is projected to rise by less than $1 to $36 monthly; beneficiaries can compare 2027 options during Open Enrollment from Oct. 15 through Dec. 7.",
-              "strategic_implication": "Lower averages make total cost, provider networks, and benefit design more important than headline premiums alone; plans and provider groups should prepare for concentrated member education and retention activity during the enrollment window.",
-              "confidence": "high",
-              "tags": [
-                "medicare-advantage",
-                "part-d",
-                "open-enrollment",
-                "premiums"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-cms-dmepos-fraud-payment-controls",
-              "canonical_topic": "cms-dmepos-fraud-payment-controls",
-              "duplicate_group": "cms-dmepos-fraud-payment-controls",
-              "priority_score": 8,
-              "primary_source": "Centers for Medicare & Medicaid Services",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Centers for Medicare & Medicaid Services",
-                  "url": "https://www.cms.gov/newsroom/press-releases/cms-cracks-down-massive-3-4-billion-medical-equipment-supplier-fraud-scheme",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "CMS bars 11 medical suppliers after flagging $3.4 billion in suspected Medicare fraud",
-              "summary": "CMS said it barred 11 durable medical equipment suppliers from future Medicare Advantage Part C and Part D payments after identifying more than $3.4 billion in suspected fraudulent billing during 2025 and 2026. The agency said the suppliers billed for deceased beneficiaries and equipment not requested or received; payment suspensions stopped nearly $24 million in claims in two cited cases.",
-              "strategic_implication": "The action signals stronger use of data analytics, payment suspensions, and preclusion tools, raising the value of rigorous supplier screening, order validation, and claims controls across plans and provider networks.",
-              "confidence": "high",
-              "tags": [
-                "medicare",
-                "program-integrity",
-                "dmepos",
-                "fraud-prevention"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-cms-aca-duplicate-deceased-enrollment-review",
-              "canonical_topic": "cms-aca-duplicate-deceased-enrollment-review",
-              "duplicate_group": "cms-aca-duplicate-deceased-enrollment-review",
-              "priority_score": 8,
-              "primary_source": "Centers for Medicare & Medicaid Services",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Centers for Medicare & Medicaid Services",
-                  "url": "https://www.cms.gov/newsroom/press-releases/trump-administration-delivers-second-year-savings-stopping-taxpayer-payments-duplicate-deceased",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                },
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/trump-administration-boots-189000-deceased-duplicate-enrollees-off-aca-subsi/833037/",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                },
-                {
-                  "source": "KFF Health News (via NPR Illinois)",
-                  "url": "https://www.nprillinois.org/2026-10-15/after-booting-760k-off-aca-health-plans-the-trump-administration-adds-some-people-back",
-                  "source_type": "web",
-                  "published_at": "2026-10-15T11:06:00Z"
-                }
-              ],
-              "title": "CMS identifies 189,000 duplicate or deceased ACA subsidy enrollees",
-              "summary": "CMS said it identified 189,000 people who had subsidized Affordable Care Act marketplace coverage while also having duplicate Medicare, Medicaid, or CHIP coverage, or who were deceased. The agency said the review could save taxpayers approximately $1.5 billion over the next year as it continues periodic eligibility matching. Separately, KFF Health News reported that CMS has reinstated a small number of people whose coverage was wrongly canceled in the earlier 760,000-enrollee removal, while another 419,000 sign-ups remain under review with insurer responses due around mid-to-late November.",
-              "strategic_implication": "Marketplace plans and state agencies should expect closer eligibility reconciliation and should prepare expedited-review and reinstatement workflows, since reported wrongful terminations show that coverage gaps may surface only at the point of care.",
-              "confidence": "high",
-              "tags": [
-                "aca-marketplace",
-                "eligibility",
-                "subsidies",
-                "program-integrity"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-cbp-mail-rule-imported-prescriptions-delay",
-              "canonical_topic": "cbp-mail-rule-imported-prescriptions-delay",
-              "duplicate_group": "cbp-mail-rule-imported-prescriptions-delay",
-              "priority_score": 8,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/pharmalot/2026/10/14/trump-administration-delays-new-rule-that-could-restrict-imported-meds-from-canad-and-overseas/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-14T20:16:00Z"
-                },
-                {
-                  "source": "Associated Press",
-                  "url": "https://apnews.com/article/drug-prices-trump-customs-canada-healthcare-f3986c8d9214f57c3a5233b6c0a2a2fa",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "Administration delays the customs rule that threatened imported prescriptions by 90 days",
-              "summary": "STAT reported that the Trump administration is delaying by 90 days a U.S. Customs and Border Protection requirement that was set to take effect Oct. 22 and could have prevented Americans from receiving prescription drugs from licensed international pharmacies. The rule ends de minimis treatment for international mail and would require FDA-regulated shipments to clear through formal entry or a new Entry Type 13 filing with a qualified filer and customs bond. More than 70 lawmakers had urged a pause.",
-              "strategic_implication": "The delay buys time but does not resolve the policy conflict between border enforcement and patient affordability. Employers, self-funded plans, and state importation programs that rely on international mail-order pharmacies should use the window to model alternatives and member communications.",
-              "confidence": "medium",
-              "tags": [
-                "drug-importation",
-                "customs",
-                "drug-prices",
-                "fda",
-                "de-minimis"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-fda-rare-disease-framework-initiative",
-              "canonical_topic": "fda-rare-disease-framework-initiative",
-              "duplicate_group": "fda-rare-disease-framework-initiative",
-              "priority_score": 8,
-              "primary_source": "U.S. Food and Drug Administration",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "U.S. Food and Drug Administration",
-                  "url": "https://www.fda.gov/news-events/press-announcements/fda-launches-rare-disease-framework-initiative-develop-holistic-fit-purpose-framework-rare-disease",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                },
-                {
-                  "source": "FDA Rare Disease Innovation Hub",
-                  "url": "https://www.fda.gov/industry/fda-rare-disease-innovation-hub/rare-disease-framework",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "FDA launches a Rare Disease Framework Initiative built on fit-for-purpose evidence",
-              "summary": "FDA announced an initiative, outlined in a new white paper, to develop a rare-disease drug development framework tailored to each disease, patient needs, product type, and the evidence realistically attainable in small populations. The Rare Disease Innovation Hub leads the effort with CDER, CBER, and the Office of the Commissioner. A hybrid public meeting with the Reagan-Udall Foundation is set for Oct. 28, followed by roundtables and requests for information that could lead to new guidance, regulatory revisions, and organizational changes.",
-              "strategic_implication": "This is the start of a policy process rather than a finished standard, so sponsors and patient groups have an early opportunity to shape evidentiary expectations. Health systems running rare-disease programs should watch for changes that affect trial design, natural-history data, and real-world evidence demands.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "rare-disease",
-                "drug-development",
-                "regulatory-science"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Digital Health and AI",
-          "synthesis": "Clinical AI is moving toward evidence and outcomes tests: PHTI calls for outcomes-based pathways, Whoop must hit blood pressure, A1C, and LDL targets to earn full ACCESS payments, and an AI-operated physiotherapy clinic is scaling inside the NHS.",
-          "items": [
-            {
-              "item_id": "2026-10-15-phti-high-value-clinical-ai-roadmap",
-              "canonical_topic": "phti-high-value-clinical-ai-roadmap",
-              "duplicate_group": "phti-high-value-clinical-ai-roadmap",
-              "priority_score": 8,
-              "primary_source": "Peterson Health Technology Institute",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Peterson Health Technology Institute",
-                  "url": "https://www.phti.org/announcement/new-phti-report-provides-roadmap-to-scale-high-value-ai-in-healthcare/",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "PHTI calls for evidence- and outcomes-based pathways to scale clinical AI",
-              "summary": "The Peterson Health Technology Institute released a roadmap focused on four areas for scaling high-value healthcare AI: evidence, coverage and use rules, purchasing and payment, and care delivery redesign. PHTI says current licensure and liability gaps, unclear coverage, and activity-based payment can steer adoption toward administrative tools rather than clinical applications with measurable patient benefit.",
-              "strategic_implication": "Health systems and payers should tie procurement and expansion decisions to comparative evidence and patient outcomes, while redesigning workflows and reimbursement so clinical AI is not treated as an add-on automation layer.",
-              "confidence": "high",
-              "tags": [
-                "clinical-ai",
-                "evidence",
-                "value-based-care",
-                "care-delivery"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-whoop-medicare-access-model",
-              "canonical_topic": "whoop-medicare-access-model",
-              "duplicate_group": "whoop-medicare-access-model",
-              "priority_score": 7,
-              "primary_source": "STAT News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/14/whoop-ami-bhatt-population-health-stat-summit-boston-2026/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-14T18:16:00Z"
-                }
-              ],
-              "title": "Whoop enters Medicare's ACCESS model with outcomes-based payment for chronic conditions",
-              "summary": "Whoop is one of the first consumer wearable companies accepted into Medicare's 10-year ACCESS model, offering eligible traditional Medicare beneficiaries a wearable, a 12-month app subscription, and clinician support at little or no cost for high blood pressure, high cholesterol, obesity, and prediabetes. To receive full payment, Whoop must show improvement or control of blood pressure, hemoglobin A1C, and LDL cholesterol. Its new chief medical officer told the STAT Summit the company is working with the National Council on Aging and AARP to adapt the product for older adults.",
-              "strategic_implication": "ACCESS turns consumer engagement into a payment test for clinical outcomes. Primary care groups and health systems should expect more beneficiaries to arrive with vendor-generated data and should decide how that data will be reviewed, integrated, and acted on.",
-              "confidence": "high",
-              "tags": [
-                "wearables",
-                "medicare",
-                "access-model",
-                "outcomes-based-payment",
-                "chronic-disease"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-flok-health-ai-physiotherapy-series-a",
-              "canonical_topic": "flok-health-ai-physiotherapy-series-a",
-              "duplicate_group": "flok-health-ai-physiotherapy-series-a",
-              "priority_score": 5,
-              "primary_source": "Tech Funding News",
-              "source_tier": "Tier 3",
-              "source_refs": [
-                {
-                  "source": "Tech Funding News",
-                  "url": "https://techfundingnews.com/cambridge-based-flok-health-raises-12-5m-to-scale-the-worlds-first-ai-physiotherapy-clinic-across-the-nhs/",
-                  "source_type": "web",
-                  "published_at": "2026-10-15T00:00:00Z"
-                }
-              ],
-              "title": "Flok Health raises $12.5 million to scale its AI-operated physiotherapy clinic in the NHS",
-              "summary": "Cambridge, U.K.-based Flok Health raised a $12.5 million Series A led by Albion VC, with Eka Ventures, Form Ventures, and new investor Mercia Ventures. The company said it will expand its AI-operated physiotherapy clinic across the U.K., extend clinical scope beyond back pain, and accelerate international growth.",
-              "strategic_implication": "Autonomous musculoskeletal care is moving from pilot to scale inside a national health system. U.S. providers and payers should watch the NHS evidence on access, safety, and outcomes as a reference point for state-level debates over autonomous clinical AI.",
-              "confidence": "medium",
-              "tags": [
-                "ai",
-                "physical-therapy",
-                "msk",
-                "nhs",
-                "venture-funding"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Market and Industry Signals",
-          "synthesis": "Consolidation and capital commitments continue despite margin strain, with Rush-Endeavor and MultiCare-Samaritan combinations, accelerating hospital M&A, and AdventHealth's $475 million Colorado replacement hospital.",
-          "items": [
-            {
-              "item_id": "2026-10-15-rush-endeavor-proposed-merger",
-              "canonical_topic": "rush-endeavor-proposed-merger",
-              "duplicate_group": "rush-endeavor-proposed-merger",
-              "priority_score": 9,
-              "primary_source": "Rush University System for Health and Endeavor Health",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Rush University System for Health",
-                  "url": "https://www.rush.edu/news/rush-university-system-health-and-endeavor-health-announce-plans-merge",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                },
-                {
-                  "source": "WTTW News",
-                  "url": "https://news.wttw.com/2026/10/14/rush-and-endeavor-health-announce-plans-merge-hospital-systems",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "Rush and Endeavor plan a 12-hospital combination with $1 billion in new investment",
-              "summary": "Rush University System for Health and Endeavor Health announced plans to combine under the Rush name, subject to regulatory review and targeted for completion in early 2027. The proposed system would include 12 hospitals and more than 400 care sites, serve over 2 million patients annually, employ more than 46,000 people and clinicians, and receive an incremental $1 billion investment from Endeavor.",
-              "strategic_implication": "The proposed combination illustrates regional scale-building through academic and community-network integration; regulatory review, service continuity, governance, and execution of the investment commitments will determine whether scale translates into durable community value.",
-              "confidence": "high",
-              "tags": [
-                "hospital-merger",
-                "academic-health-system",
-                "chicago",
-                "capital-investment"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-hospital-ma-record-pace-margin-pressure",
-              "canonical_topic": "hospital-ma-record-pace-margin-pressure",
-              "duplicate_group": "hospital-ma-record-pace-margin-pressure",
-              "priority_score": 8,
-              "primary_source": "Kaufman Hall",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Kaufman Hall",
-                  "url": "https://www.kaufmanhall.com/news/ma-activity-remains-strong-among-large-health-systems-amid-continued-industry-transformation",
-                  "source_type": "web",
-                  "published_at": "2026-10-13T00:00:00Z"
-                },
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/hospital-transactions-and-valuation/hospital-ma-on-pace-for-busiest-year-since-pandemic-as-megamergers-mount/",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "Hospital M&A accelerates as August results show continued margin strain",
-              "summary": "Kaufman Hall counted 16 hospital and health system transactions in the third quarter, including two megamergers and $8.2 billion in transacted revenue; it was the third consecutive quarter with multiple megamergers. In its August performance data, Kaufman Hall reported a 2.5% year-to-date operating margin including allocations, nearly 43% of hospitals operating at a loss, and year-to-date non-labor expense growth of 6% per adjusted discharge.",
-              "strategic_implication": "Scale-seeking deals are increasingly strategic, but widespread margin pressure makes capital allocation, integration capacity, payer mix, and non-labor cost assumptions essential parts of diligence.",
-              "confidence": "high",
-              "tags": [
-                "hospital-ma",
-                "operating-margins",
-                "health-system-strategy",
-                "cost-pressure"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-multicare-samaritan-affiliation-close",
-              "canonical_topic": "multicare-samaritan-affiliation-close",
-              "duplicate_group": "multicare-samaritan-affiliation-close",
-              "priority_score": 7,
-              "primary_source": "Samaritan Health Services",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "Samaritan Health Services",
-                  "url": "https://samhealth.org/news/samaritan-multicare-announce-official-date-for-affiliation/",
-                  "source_type": "web",
-                  "published_at": "2026-10-12T00:00:00Z"
-                },
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/multicare-samaritan-combination-close-november/832973/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-14T10:49:00Z"
-                }
-              ],
-              "title": "MultiCare and Samaritan set a Nov. 1 close with a $700 million, 10-year investment pledge",
-              "summary": "Tacoma-based MultiCare, which operates 13 hospitals, will begin its affiliation with Oregon-based Samaritan Health Services and its five hospitals on Nov. 1 after all reviewing public agencies approved the deal or signaled intent to do so. MultiCare will invest $700 million in Samaritan over 10 years. Samaritan keeps its name and local governance, and its health plan and coordinated care organization members will see no interruption in care.",
-              "strategic_implication": "The deal shows regional systems using capital commitments and local-brand retention to secure approval for cross-state combinations under Oregon's transaction review law. Rural and mid-sized systems weighing partners should expect regulators to scrutinize investment and access commitments.",
-              "confidence": "high",
-              "tags": [
-                "mergers-acquisitions",
-                "health-systems",
-                "oregon",
-                "washington",
-                "rural-health"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-adventhealth-louisville-colorado-hospital",
-              "canonical_topic": "adventhealth-louisville-colorado-hospital",
-              "duplicate_group": "adventhealth-louisville-colorado-hospital",
-              "priority_score": 5,
-              "primary_source": "Becker's Hospital Review",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Becker's Hospital Review",
-                  "url": "https://www.beckershospitalreview.com/capital/adventhealth-breaks-ground-on-475m-colorado-hospital/",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "AdventHealth breaks ground on a $475 million replacement hospital in Louisville, Colo.",
-              "summary": "AdventHealth broke ground Oct. 14 on AdventHealth Louisville, a 375,000-square-foot hospital with up to 150 beds on a 40-acre site that will replace AdventHealth Avista and significantly expand emergency care. The hospital is expected to open in the first quarter of 2029.",
-              "strategic_implication": "Large nonprofit systems continue to commit capital to growth markets despite margin pressure elsewhere in the sector. Competing Front Range providers should expect a stronger emergency and inpatient presence in Boulder County within the next planning cycle.",
-              "confidence": "high",
-              "tags": [
-                "capital-projects",
-                "hospital-construction",
-                "colorado",
-                "adventhealth"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Provider Operations",
-          "synthesis": "Payer prior-authorization exemptions are spreading, while Kenya's second Ebola case, tied to an undetected imported infection, underscores the need for travel-history screening and special-pathogen readiness.",
-          "items": [
-            {
-              "item_id": "2026-10-15-kenya-second-ebola-case",
-              "canonical_topic": "kenya-second-ebola-case",
-              "duplicate_group": "kenya-second-ebola-case",
-              "priority_score": 8,
-              "primary_source": "BBC News",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "BBC News",
-                  "url": "https://www.bbc.com/news/articles/cw5yn8rn04ljo",
-                  "source_type": "web",
-                  "published_at": "2026-10-15T00:00:00Z"
-                },
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/15/health-news-kenya-reports-second-ebola-case/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-15T11:55:00Z"
-                }
-              ],
-              "title": "Kenya confirms a second Ebola case linked to an imported infection from Congo",
-              "summary": "Kenya's health ministry confirmed a second Ebola case in a 39-year-old close relative of the country's first case, who was already in quarantine when he became ill. The first patient died Oct. 5 after traveling from the Democratic Republic of Congo through Uganda to Nairobi without being detected at airport screenings. Officials have identified 128 contacts, 113 of whom have been found, and say there is no evidence of wider community spread.",
-              "strategic_implication": "The undetected multi-country journey highlights the limits of exit and entry screening. U.S. emergency departments and health systems should reinforce travel-history screening and special pathogen readiness, particularly at facilities serving international travelers.",
-              "confidence": "high",
-              "tags": [
-                "ebola",
-                "global-health",
-                "special-pathogens",
-                "emergency-preparedness",
-                "travel-screening"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-centene-national-provider-gold-card",
-              "canonical_topic": "centene-national-provider-gold-card",
-              "duplicate_group": "centene-national-provider-gold-card",
-              "priority_score": 7,
-              "primary_source": "Healthcare Dive",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Healthcare Dive",
-                  "url": "https://www.healthcaredive.com/news/centene-joins-insurers-waiving-prior-authorizations-for-top-providers/832975/",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                },
-                {
-                  "source": "Fierce Healthcare",
-                  "url": "https://www.fiercehealthcare.com/payers/centene-unveils-national-provider-gold-card-program",
-                  "source_type": "rss",
-                  "published_at": "2026-10-14T19:11:00Z"
-                }
-              ],
-              "title": "Centene extends prior-authorization exemptions to more than 160,000 providers",
-              "summary": "Centene plans to launch its National Performance-Based Gold Card Program in November, giving more than 160,000 providers access to exemptions from routine prior authorization for selected services based on approval history, documentation quality, and compliance. The initial scope is limited to certain outpatient services, and participating providers must still submit pre-notification.",
-              "strategic_implication": "Provider organizations should confirm eligibility and service-specific conditions, then measure effects on authorization turnaround and scheduling; payers will need to show that selective exemptions reduce administrative friction while preserving oversight.",
-              "confidence": "high",
-              "tags": [
-                "prior-authorization",
-                "payer-provider",
-                "outpatient-care",
-                "administrative-burden"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Workforce & Clinical Practice",
-          "synthesis": "Workforce signals span FDA staffing losses and new nurse contracts with double-digit raises; clinical signals include a CDC finding that 40% of high school students reported binge eating and an expanded bladder-sparing option for BCG-unresponsive bladder cancer.",
-          "items": [
-            {
-              "item_id": "2026-10-15-former-fda-leaders-warn-workforce-losses",
-              "canonical_topic": "former-fda-leaders-warn-workforce-losses",
-              "duplicate_group": "former-fda-leaders-warn-workforce-losses",
-              "priority_score": 7,
-              "primary_source": "STAT",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "STAT",
-                  "url": "https://www.statnews.com/2026/10/14/former-fda-commissioners-say-recruit-defend-support-agency-workforce/",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "Former FDA commissioners warn staff cuts eroded institutional knowledge",
-              "summary": "Former FDA commissioners Robert Califf, Scott Gottlieb, and Norman Sharpless criticized staffing reductions and warned that lost institutional knowledge could take years to rebuild. STAT reported that roughly 3,500 DOGE-related cuts preceded a larger staff exodus and that some companies now meet with less-experienced drug and device reviewers.",
-              "strategic_implication": "Drug, device, and diagnostics organizations should plan for potential review-capacity variability and maintain complete evidence packages and disciplined regulatory engagement while the agency works to rebuild experienced teams.",
-              "confidence": "medium",
-              "tags": [
-                "fda",
-                "regulatory-capacity",
-                "workforce",
-                "drug-and-device-review"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-cdc-yrbs-adolescent-binge-eating",
-              "canonical_topic": "cdc-yrbs-adolescent-binge-eating",
-              "duplicate_group": "cdc-yrbs-adolescent-binge-eating",
-              "priority_score": 7,
-              "primary_source": "Centers for Disease Control and Prevention",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "CDC Morbidity and Mortality Weekly Report",
-                  "url": "https://www.cdc.gov/mmwr/volumes/75/su/su7501a5.htm",
-                  "source_type": "web",
-                  "published_at": "2026-10-15T00:00:00Z"
-                },
-                {
-                  "source": "STAT News",
-                  "url": "https://www.statnews.com/2026/10/15/teenage-binge-eating-cdc-survey-finds-alarming-rate/",
-                  "source_type": "rss",
-                  "published_at": "2026-10-15T08:30:00Z"
-                }
-              ],
-              "title": "CDC survey finds 40% of high school students reported binge eating in the past month",
-              "summary": "In the first Youth Risk Behavior Survey to measure binge eating, 40.5% of U.S. high school students reported at least one binge-eating day in the past 30 days and 17.2% reported three or more. Frequent binge eating was more common among female, Hispanic, Black, and multiracial students, and among students who used social media hourly or more, reported poor mental health or persistent sadness, or had seriously considered suicide.",
-              "strategic_implication": "The overlap with social media use and suicide risk supports adding eating-behavior questions to adolescent behavioral health screening. Pediatric practices, school-based clinics, and payers should review referral capacity for eating-disorder care, which is already limited in many markets.",
-              "confidence": "high",
-              "tags": [
-                "adolescent-health",
-                "eating-disorders",
-                "behavioral-health",
-                "cdc",
-                "yrbs"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-fda-anktiva-papillary-bladder-cancer",
-              "canonical_topic": "fda-anktiva-papillary-bladder-cancer",
-              "duplicate_group": "fda-anktiva-papillary-bladder-cancer",
-              "priority_score": 6,
-              "primary_source": "U.S. Food and Drug Administration",
-              "source_tier": "Tier 1",
-              "source_refs": [
-                {
-                  "source": "U.S. Food and Drug Administration",
-                  "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-certain-people-bcg-unresponsive-bladder-cancer",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                },
-                {
-                  "source": "U.S. Food and Drug Administration oncology approvals",
-                  "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "FDA expands Anktiva to papillary-only BCG-unresponsive bladder cancer",
-              "summary": "FDA expanded the approval of ImmunityBio's Anktiva (nogapendekin alfa inbakicept-pmln) with BCG to adults with high-grade, papillary-only non-muscle-invasive bladder cancer that has not responded to BCG, making it the first treatment approved specifically for that group. The prior indication covered carcinoma in situ with or without papillary tumors. FDA said the approval reflects a new approach to evaluating treatments for BCG-unresponsive disease; therapy is given into the bladder weekly for six weeks, with maintenance for up to 37 months.",
-              "strategic_implication": "A bladder-sparing option for a broader group may shift some patients away from cystectomy. Urology practices and cancer centers should plan for intravesical treatment capacity, BCG supply, and long maintenance schedules.",
-              "confidence": "high",
-              "tags": [
-                "fda",
-                "oncology",
-                "bladder-cancer",
-                "drug-approval",
-                "urology"
-              ]
-            },
-            {
-              "item_id": "2026-10-15-ascension-via-christi-nurses-contract",
-              "canonical_topic": "ascension-via-christi-nurses-contract",
-              "duplicate_group": "ascension-via-christi-nurses-contract",
-              "priority_score": 5,
-              "primary_source": "Wichita Business Journal",
-              "source_tier": "Tier 2",
-              "source_refs": [
-                {
-                  "source": "Wichita Business Journal",
-                  "url": "https://www.bizjournals.com/wichita/news/2026/10/14/via-christi-nurses-union-labor-contract-approved.html",
-                  "source_type": "web",
-                  "published_at": "2026-10-14T00:00:00Z"
-                }
-              ],
-              "title": "Wichita nurses ratify a three-year Ascension Via Christi contract after a July strike",
-              "summary": "About 1,100 union nurses at Ascension Via Christi's St. Francis and St. Joseph hospitals in Wichita ratified a three-year contract through 2029 that includes 17% to 24% wage increases and staffing protections. The agreement follows a one-day strike in July.",
-              "strategic_implication": "The settlement adds to a pattern of nurse contracts pairing double-digit raises with enforceable staffing language. Systems with upcoming negotiations should expect these terms to serve as reference points, as talks continue at Brigham and Women's and Allegheny General.",
-              "confidence": "medium",
-              "tags": [
-                "nursing",
-                "labor",
-                "union-contracts",
-                "staffing",
-                "ascension"
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
-  "last_updated": "2026-11-25T13:50:00Z"
+  "last_updated": "2026-11-26T13:45:00Z"
 }
